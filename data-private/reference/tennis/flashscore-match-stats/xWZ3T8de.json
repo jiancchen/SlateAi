@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-bellucci-vs-bolt-2026-06-02",
+  "boardTitle": "Mattia Bellucci vs Alex Bolt",
+  "boardPlayerName": "Alex Bolt",
+  "recentOpponentName": "Sun F.",
+  "recentIndex": 1,
+  "recentEvent": "Wuxi (China)",
+  "recentDate": "May 05, 26",
+  "recentIsoDate": "2026-05-05",
+  "recentResult": "Loss 7-6 3-6 3-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Bolt A. - Sun F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/wuxi/",
+  "players": [
+    "Bolt A.",
+    "Sun F."
+  ],
+  "generatedAt": "2026-06-02T02:39:21.365Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/xWZ3T8de/",
+  "matchId": "xWZ3T8de",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_xWZ3T8de",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_xWZ3T8de"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 9,
+        "rightGames": 7,
+        "duration": "1:18"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:48"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:45"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "8",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "60%",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (47/69)",
+              "right": "76% (47/62)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (17/39)",
+              "right": "51% (21/41)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/10",
+              "right": "2/3",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (15/62)",
+              "right": "32% (22/69)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "49% (20/41)",
+              "right": "56% (22/39)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "4/10",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "31",
+              "right": "31",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "46",
+              "right": "40",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Net points won",
+              "left": "65% (13/20)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (64/108)",
+              "right": "66% (68/103)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (35/103)",
+              "right": "41% (44/108)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (99/211)",
+              "right": "53% (112/211)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "73% (11/15)",
+              "right": "93% (14/15)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Return games won",
+              "left": "7% (1/15)",
+              "right": "27% (4/15)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (12/30)",
+              "right": "60% (18/30)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "4",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "58%",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (26/38)",
+              "right": "83% (25/30)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "69% (11/16)",
+              "right": "45% (10/22)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "1/1",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (5/30)",
+              "right": "32% (12/38)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (12/22)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "0/4",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "11",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "20",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (4/8)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (36/53)",
+              "right": "66% (33/50)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (17/50)",
+              "right": "32% (17/53)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (53/103)",
+              "right": "49% (50/103)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "57%",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (13/20)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (4/11)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (4/16)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "12",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "11",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Net points won",
+              "left": "78% (7/9)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (18/32)",
+              "right": "69% (20/29)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (9/29)",
+              "right": "44% (14/32)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (27/61)",
+              "right": "56% (34/61)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "70%",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (8/11)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "17% (2/12)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "1/2",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (6/16)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (3/7)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "3/4",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "8",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "9",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "43% (10/23)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (9/24)",
+              "right": "57% (13/23)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (19/47)",
+              "right": "60% (28/47)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Bolt A.",
+              "rightPlayer": "Sun F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

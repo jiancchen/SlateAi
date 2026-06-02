@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-watt-vs-wendelken-2026-06-02",
+  "boardTitle": "James Watt vs Harry Wendelken",
+  "boardPlayerName": "James Watt",
+  "recentOpponentName": "Ghibaudo A.",
+  "recentIndex": 1,
+  "recentEvent": "Birmingham (United Kingdom)",
+  "recentDate": "May 31, 26",
+  "recentIsoDate": "2026-05-31",
+  "recentResult": "Win 7-6 6-4",
+  "recentSurface": "Grass",
+  "flashscoreLabel": "Watt J. - Ghibaudo A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/birmingham/",
+  "players": [
+    "Watt J.",
+    "Ghibaudo A."
+  ],
+  "generatedAt": "2026-06-02T02:39:23.772Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/lvDnTFOq/",
+  "matchId": "lvDnTFOq",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_lvDnTFOq",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_lvDnTFOq"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 2,
+        "duration": "0:40"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:41"
+      }
+    ],
+    "totalDuration": "1:21"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "9",
+              "right": "5",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "76%",
+              "right": "65%",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (41/51)",
+              "right": "77% (30/39)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (12/16)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "1/2",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (9/39)",
+              "right": "20% (10/51)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (7/21)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/2",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "30",
+              "right": "19",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "14",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "79% (53/67)",
+              "right": "73% (44/60)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (16/60)",
+              "right": "21% (14/67)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (69/127)",
+              "right": "46% (58/127)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (11/11)",
+              "right": "91% (10/11)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Return games won",
+              "left": "9% (1/11)",
+              "right": "0% (0/11)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Total games won",
+              "left": "55% (12/22)",
+              "right": "45% (10/22)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "82%",
+              "right": "70%",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "89% (24/27)",
+              "right": "83% (19/23)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "83% (5/6)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (6/23)",
+              "right": "15% (4/27)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "30% (3/10)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "9",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "7",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "88% (29/33)",
+              "right": "79% (26/33)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "21% (7/33)",
+              "right": "12% (4/33)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (36/66)",
+              "right": "45% (30/66)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "59%",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (17/24)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "70% (7/10)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "1/2",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (3/16)",
+              "right": "25% (6/24)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/2",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "10",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "7",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (24/34)",
+              "right": "67% (18/27)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (9/27)",
+              "right": "29% (10/34)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (33/61)",
+              "right": "46% (28/61)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Ghibaudo A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

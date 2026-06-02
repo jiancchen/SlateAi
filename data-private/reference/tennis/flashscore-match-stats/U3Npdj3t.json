@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-blanchet-vs-gill-2026-06-02",
+  "boardTitle": "Ugo Blanchet vs Felix Gill",
+  "boardPlayerName": "Ugo Blanchet",
+  "recentOpponentName": "Chazal M.",
+  "recentIndex": 3,
+  "recentEvent": "Bordeaux (France)",
+  "recentDate": "May 11, 26",
+  "recentIsoDate": "2026-05-11",
+  "recentResult": "Win 6-1 5-7 6-2",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Blanchet U. - Chazal M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/bordeaux/",
+  "players": [
+    "Blanchet U.",
+    "Chazal M."
+  ],
+  "generatedAt": "2026-06-02T02:39:21.589Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/U3Npdj3t/",
+  "matchId": "U3Npdj3t",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_U3Npdj3t",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_U3Npdj3t"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:18"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:48"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "1:51"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "2",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "60%",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (35/41)",
+              "right": "79% (34/43)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "62% (18/29)",
+              "right": "38% (11/29)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "1/5",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (9/43)",
+              "right": "15% (6/41)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (18/29)",
+              "right": "38% (11/29)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/5",
+              "right": "1/2",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "27",
+              "right": "25",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "23",
+              "right": "23",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Net points won",
+              "left": "58% (7/12)",
+              "right": "82% (9/11)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (53/70)",
+              "right": "63% (45/72)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (27/72)",
+              "right": "24% (17/70)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (80/142)",
+              "right": "44% (62/142)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "93% (13/14)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Return games won",
+              "left": "31% (4/13)",
+              "right": "7% (1/14)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Total games won",
+              "left": "63% (17/27)",
+              "right": "37% (10/27)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "60%",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "90% (9/10)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "88% (7/8)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (3/9)",
+              "right": "10% (1/10)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "83% (5/6)",
+              "right": "13% (1/8)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "89% (16/18)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (8/15)",
+              "right": "11% (2/18)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "73% (24/33)",
+              "right": "27% (9/33)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "63%",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "94% (16/17)",
+              "right": "89% (17/19)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "11% (2/19)",
+              "right": "6% (1/17)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "10",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "10",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Net points won",
+              "left": "43% (3/7)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (20/27)",
+              "right": "80% (24/30)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (6/30)",
+              "right": "26% (7/27)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (26/57)",
+              "right": "54% (31/57)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "56%",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (10/14)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (7/11)",
+              "right": "25% (3/12)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "1/3",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (4/15)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (9/12)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/1",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "12",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "13",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (17/25)",
+              "right": "52% (14/27)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (13/27)",
+              "right": "32% (8/25)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (30/52)",
+              "right": "42% (22/52)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Chazal M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,546 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-sachko-vs-kumstat-2026-06-02",
+  "boardTitle": "Vitaliy Sachko vs Jan Kumstat",
+  "boardPlayerName": "Vitaliy Sachko",
+  "recentOpponentName": "Bueno G.",
+  "recentIndex": 0,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 20, 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "Loss 2-6 4-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Bueno G. - Sachko V.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Bueno G.",
+    "Sachko V."
+  ],
+  "generatedAt": "2026-06-02T02:39:35.533Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/WnzzP5xp/",
+  "matchId": "WnzzP5xp",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_WnzzP5xp",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_WnzzP5xp"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:29"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:48"
+      }
+    ],
+    "totalDuration": "1:17"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "51%",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (22/35)",
+              "right": "62% (16/26)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (12/17)",
+              "right": "40% (10/25)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "3/8",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "178 km/h",
+              "right": "178 km/h",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "132 km/h",
+              "right": "145 km/h",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (10/26)",
+              "right": "37% (13/35)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (15/25)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/8",
+              "right": "2/4",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "16",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "35",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Net points won",
+              "left": "40% (2/5)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (34/52)",
+              "right": "51% (26/51)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (25/51)",
+              "right": "35% (18/52)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (59/103)",
+              "right": "43% (44/103)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "78% (7/9)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Return games won",
+              "left": "56% (5/9)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (12/18)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "63%",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (10/12)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "86% (6/7)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (5/15)",
+              "right": "17% (2/12)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (6/9)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "5",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "14",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "84% (16/19)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (11/24)",
+              "right": "16% (3/19)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "63% (27/43)",
+              "right": "37% (16/43)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "41%",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (12/23)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "1/4",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (5/11)",
+              "right": "48% (11/23)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (9/16)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "2/4",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "11",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "21",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Net points won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (18/33)",
+              "right": "48% (13/27)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (14/27)",
+              "right": "45% (15/33)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (32/60)",
+              "right": "47% (28/60)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Bueno G.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,546 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-legout-vs-andrade-2026-06-02",
+  "boardTitle": "Timo Legout vs Andres Andrade",
+  "boardPlayerName": "Andres Andrade",
+  "recentOpponentName": "Choinski J.",
+  "recentIndex": 0,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 19, 26",
+  "recentIsoDate": "2026-05-19",
+  "recentResult": "Loss 6-7 4-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Choinski J. - Andrade A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Choinski J.",
+    "Andrade A."
+  ],
+  "generatedAt": "2026-06-02T02:39:37.188Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/KGvhqZN6/",
+  "matchId": "KGvhqZN6",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_KGvhqZN6",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_KGvhqZN6"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 4,
+        "duration": "0:54"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:50"
+      }
+    ],
+    "totalDuration": "1:44"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "6",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "61%",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (38/56)",
+              "right": "67% (26/39)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "35% (9/26)",
+              "right": "24% (6/25)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/9",
+              "right": "3/8",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "186 km/h",
+              "right": "181 km/h",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "149 km/h",
+              "right": "142 km/h",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (13/39)",
+              "right": "32% (18/56)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "76% (19/25)",
+              "right": "65% (17/26)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/8",
+              "right": "4/9",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "18",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "24",
+              "right": "42",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (12/14)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (47/82)",
+              "right": "50% (32/64)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (32/64)",
+              "right": "43% (35/82)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (79/146)",
+              "right": "46% (67/146)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "64% (7/11)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Return games won",
+              "left": "45% (5/11)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Total games won",
+              "left": "55% (12/22)",
+              "right": "45% (10/22)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "63%",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (20/30)",
+              "right": "73% (16/22)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (6/14)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "1/3",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (6/22)",
+              "right": "33% (10/30)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (8/13)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "2/5",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "12",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "20",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (26/44)",
+              "right": "60% (21/35)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (14/35)",
+              "right": "41% (18/44)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (40/79)",
+              "right": "49% (39/79)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "59%",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (18/26)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (3/12)",
+              "right": "8% (1/12)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "2/5",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (7/17)",
+              "right": "31% (8/26)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "92% (11/12)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "2/4",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "6",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "22",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (7/7)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (21/38)",
+              "right": "38% (11/29)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "62% (18/29)",
+              "right": "45% (17/38)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (39/67)",
+              "right": "42% (28/67)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Andrade A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

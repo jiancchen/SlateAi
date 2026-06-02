@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-dalmasso-vs-bittoun-kouzmine-2026-06-02",
+  "boardTitle": "Guillaume Dalmasso vs Constantin Bittoun Kouzmine",
+  "boardPlayerName": "Guillaume Dalmasso",
+  "recentOpponentName": "Singh K.",
+  "recentIndex": 3,
+  "recentEvent": "Centurion (South Africa)",
+  "recentDate": "May 26, 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "Win 7-6 4-1",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Singh K. - Dalmasso G.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion/",
+  "players": [
+    "Singh K.",
+    "Dalmasso G."
+  ],
+  "generatedAt": "2026-06-02T02:39:25.475Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/27SHeNoL/",
+  "matchId": "27SHeNoL",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_27SHeNoL",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_27SHeNoL"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "0:47"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 4,
+        "duration": "0:28"
+      }
+    ],
+    "totalDuration": "1:15"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "6",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "8",
+              "right": "4",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "63%",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (20/29)",
+              "right": "80% (32/40)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (13/26)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "4/5",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (8/40)",
+              "right": "31% (9/29)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (11/23)",
+              "right": "50% (13/26)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "2/6",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "12",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "36",
+              "right": "17",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (33/55)",
+              "right": "70% (44/63)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (19/63)",
+              "right": "40% (22/55)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (52/118)",
+              "right": "56% (66/118)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "1",
+              "right": "9",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (6/8)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Return games won",
+              "left": "11% (1/9)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Total games won",
+              "left": "41% (7/17)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "4",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "2",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "79%",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (16/21)",
+              "right": "77% (23/30)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (9/17)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "1/2",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (7/30)",
+              "right": "24% (5/21)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (4/8)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "1/2",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "7",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "12",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (25/38)",
+              "right": "71% (27/38)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (11/38)",
+              "right": "34% (13/38)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (36/76)",
+              "right": "53% (40/76)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "40%",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (4/8)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "3/3",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "10% (1/10)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (7/15)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "1/4",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "5",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "5",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "47% (8/17)",
+              "right": "68% (17/25)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (8/25)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (16/42)",
+              "right": "62% (26/42)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (1/2)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Total games won",
+              "left": "20% (1/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Singh K.",
+              "rightPlayer": "Dalmasso G."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

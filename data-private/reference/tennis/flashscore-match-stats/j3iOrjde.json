@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-baez-vs-gueymard-wayenburg-2026-06-02",
+  "boardTitle": "Sebastian Baez vs Sascha Gueymard Wayenburg",
+  "boardPlayerName": "Sebastian Baez",
+  "recentOpponentName": "Carreno-Busta P.",
+  "recentIndex": 2,
+  "recentEvent": "Valencia (Spain)",
+  "recentDate": "May 14, 26",
+  "recentIsoDate": "2026-05-14",
+  "recentResult": "Loss 7-5 5-7 5-7",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Baez S. - Carreno-Busta P.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/valencia/",
+  "players": [
+    "Baez S.",
+    "Carreno-Busta P."
+  ],
+  "generatedAt": "2026-06-02T02:39:32.212Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/j3iOrjde/",
+  "matchId": "j3iOrjde",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_j3iOrjde",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_j3iOrjde"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:59"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:48"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:51"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "72%",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (45/75)",
+              "right": "55% (52/94)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (14/28)",
+              "right": "54% (20/37)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/9",
+              "right": "9/15",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (42/94)",
+              "right": "40% (30/75)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (17/37)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/15",
+              "right": "7/9",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "42",
+              "right": "26",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "54",
+              "right": "51",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Net points won",
+              "left": "47% (7/15)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (59/103)",
+              "right": "55% (72/131)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (59/131)",
+              "right": "43% (44/103)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (118/234)",
+              "right": "50% (116/234)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "56% (10/18)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Return games won",
+              "left": "39% (7/18)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Total games won",
+              "left": "47% (17/36)",
+              "right": "53% (19/36)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "77%",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (13/23)",
+              "right": "47% (16/34)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (7/15)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "3/7",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "53% (18/34)",
+              "right": "43% (10/23)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "80% (8/10)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/7",
+              "right": "3/4",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "6",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "17",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (5/10)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (20/38)",
+              "right": "41% (18/44)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "59% (26/44)",
+              "right": "47% (18/38)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (46/82)",
+              "right": "44% (36/82)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (2/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Return games won",
+              "left": "83% (5/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "84%",
+              "right": "74%",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (16/27)",
+              "right": "64% (18/28)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (3/5)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "2/3",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (10/28)",
+              "right": "41% (11/27)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (4/10)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "2/2",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "7",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "13",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (19/32)",
+              "right": "63% (24/38)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (14/38)",
+              "right": "41% (13/32)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (33/70)",
+              "right": "53% (37/70)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "76%",
+              "right": "65%",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (16/25)",
+              "right": "56% (18/32)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (4/8)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "4/5",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (14/32)",
+              "right": "36% (9/25)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (5/17)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "2/3",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "13",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "21",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (20/33)",
+              "right": "61% (30/49)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (19/49)",
+              "right": "39% (13/33)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (39/82)",
+              "right": "52% (43/82)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Baez S.",
+              "rightPlayer": "Carreno-Busta P."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

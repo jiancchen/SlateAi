@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-peliwo-vs-coulibaly-2026-06-02",
+  "boardTitle": "Filip Peliwo vs Eliakim Coulibaly",
+  "boardPlayerName": "Filip Peliwo",
+  "recentOpponentName": "Pearson K.",
+  "recentIndex": 1,
+  "recentEvent": "Jiujiang (China)",
+  "recentDate": "Apr 26, 26",
+  "recentIsoDate": "2026-04-26",
+  "recentResult": "Loss 4-6 6-7",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Pearson K. - Peliwo F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/jiujiang/",
+  "players": [
+    "Pearson K.",
+    "Peliwo F."
+  ],
+  "generatedAt": "2026-06-02T02:39:28.448Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/E1EP5zv2/",
+  "matchId": "E1EP5zv2",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_E1EP5zv2",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_E1EP5zv2"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:51"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:09"
+      }
+    ],
+    "totalDuration": "2:00"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "68%",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (33/41)",
+              "right": "65% (42/65)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (15/31)",
+              "right": "42% (13/31)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "13/16",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (23/65)",
+              "right": "20% (8/41)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (18/31)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/16",
+              "right": "2/6",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "25",
+              "right": "24",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "39",
+              "right": "47",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Net points won",
+              "left": "70% (7/10)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (48/72)",
+              "right": "57% (55/96)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (41/96)",
+              "right": "33% (24/72)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (89/168)",
+              "right": "47% (79/168)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "82% (9/11)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Return games won",
+              "left": "27% (3/11)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Total games won",
+              "left": "55% (12/22)",
+              "right": "45% (10/22)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "68%",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (11/14)",
+              "right": "63% (19/30)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "62% (8/13)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "7/9",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (11/30)",
+              "right": "21% (3/14)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (9/14)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/9",
+              "right": "1/4",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "7",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "19",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (19/27)",
+              "right": "55% (24/44)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (20/44)",
+              "right": "30% (8/27)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (39/71)",
+              "right": "45% (32/71)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "67%",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (22/27)",
+              "right": "66% (23/35)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "39% (7/18)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "6/7",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "34% (12/35)",
+              "right": "19% (5/27)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (9/17)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/7",
+              "right": "1/2",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "17",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "28",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (29/45)",
+              "right": "60% (31/52)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (21/52)",
+              "right": "36% (16/45)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (50/97)",
+              "right": "48% (47/97)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Pearson K.",
+              "rightPlayer": "Peliwo F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

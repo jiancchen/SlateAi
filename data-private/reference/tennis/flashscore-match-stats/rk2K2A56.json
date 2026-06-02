@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-damas-vs-dzumhur-2026-06-02",
+  "boardTitle": "Miguel Damas vs Damir Dzumhur",
+  "boardPlayerName": "Miguel Damas",
+  "recentOpponentName": "Carboni L.",
+  "recentIndex": 2,
+  "recentEvent": "Oeiras 6 (Portugal)",
+  "recentDate": "May 10, 26",
+  "recentIsoDate": "2026-05-10",
+  "recentResult": "Loss 5-7 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Damas M. - Carboni L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/oeiras-6/",
+  "players": [
+    "Damas M.",
+    "Carboni L."
+  ],
+  "generatedAt": "2026-06-02T02:39:33.394Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/rk2K2A56/",
+  "matchId": "rk2K2A56",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_rk2K2A56",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_rk2K2A56"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:00"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:55"
+      }
+    ],
+    "totalDuration": "1:55"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "66%",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (23/42)",
+              "right": "62% (29/47)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (11/24)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/10",
+              "right": "4/6",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (18/47)",
+              "right": "45% (19/42)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (11/24)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "5/10",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "22",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "40",
+              "right": "38",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (34/66)",
+              "right": "59% (42/71)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (29/71)",
+              "right": "48% (32/66)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (63/137)",
+              "right": "54% (74/137)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "55% (6/11)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (2/10)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total games won",
+              "left": "38% (8/21)",
+              "right": "62% (13/21)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "70%",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (16/24)",
+              "right": "70% (16/23)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (5/12)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "1/2",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (7/23)",
+              "right": "33% (8/24)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (5/10)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/4",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "13",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "23",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (21/36)",
+              "right": "64% (21/33)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (12/33)",
+              "right": "42% (15/36)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (33/69)",
+              "right": "52% (36/69)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "63%",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "39% (7/18)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "3/4",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (11/24)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (6/14)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "3/6",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "9",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "15",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "43% (13/30)",
+              "right": "55% (21/38)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (17/38)",
+              "right": "57% (17/30)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (30/68)",
+              "right": "56% (38/68)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

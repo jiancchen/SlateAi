@@ -1,0 +1,525 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-blanchet-vs-gill-2026-06-02",
+  "boardTitle": "Ugo Blanchet vs Felix Gill",
+  "boardPlayerName": "Felix Gill",
+  "recentOpponentName": "Kolar Z.",
+  "recentIndex": 3,
+  "recentEvent": "Francavilla (Italy)",
+  "recentDate": "May 05, 26",
+  "recentIsoDate": "2026-05-05",
+  "recentResult": "Loss 4-6 4-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Gill F. - Kolar Z.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/francavilla/",
+  "players": [
+    "Gill F.",
+    "Kolar Z."
+  ],
+  "generatedAt": "2026-06-02T02:39:21.810Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/IB2IvbGG/",
+  "matchId": "IB2IvbGG",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_IB2IvbGG",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_IB2IvbGG"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:46"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:55"
+      }
+    ],
+    "totalDuration": "1:41"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "68%",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (29/49)",
+              "right": "68% (27/40)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (10/21)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/11",
+              "right": "1/3",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (13/40)",
+              "right": "41% (20/49)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "37% (7/19)",
+              "right": "52% (11/21)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "4/11",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "23",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "25",
+              "right": "35",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "25% (2/8)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (39/70)",
+              "right": "66% (39/59)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (20/59)",
+              "right": "44% (31/70)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (59/129)",
+              "right": "54% (70/129)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (6/10)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (2/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (8/20)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "73%",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (14/21)",
+              "right": "68% (13/19)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (4/12)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "0/1",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (7/19)",
+              "right": "33% (7/21)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (2/7)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/3",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "10",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "17",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (18/33)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (8/26)",
+              "right": "45% (15/33)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (26/59)",
+              "right": "56% (33/59)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "76%",
+              "right": "64%",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "54% (15/28)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (6/9)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/8",
+              "right": "1/2",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (6/21)",
+              "right": "46% (13/28)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/8",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "13",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "18",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (21/37)",
+              "right": "64% (21/33)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (12/33)",
+              "right": "43% (16/37)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (33/70)",
+              "right": "53% (37/70)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Gill F.",
+              "rightPlayer": "Kolar Z."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

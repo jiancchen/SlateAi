@@ -1,0 +1,668 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-sun-vs-ilagan-2026-06-02",
+  "boardTitle": "Fajing Sun vs Andre Ilagan",
+  "boardPlayerName": "Andre Ilagan",
+  "recentOpponentName": "Mayo A.",
+  "recentIndex": 1,
+  "recentEvent": "Little Rock (USA)",
+  "recentDate": "May 30, 26",
+  "recentIsoDate": "2026-05-30",
+  "recentResult": "Win 7-6 6-7 6-3",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Ilagan A. - Mayo A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/little-rock/",
+  "players": [
+    "Ilagan A.",
+    "Mayo A."
+  ],
+  "generatedAt": "2026-06-02T02:39:40.169Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/pEC9cmXi/",
+  "matchId": "pEC9cmXi",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_pEC9cmXi",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_pEC9cmXi"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 12,
+        "rightGames": 10,
+        "duration": "1:15"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "1:13"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:18"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "20",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "59%",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (56/80)",
+              "right": "83% (53/64)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "66% (35/53)",
+              "right": "53% (24/45)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "9/9",
+              "right": "3/4",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (11/64)",
+              "right": "30% (24/80)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (21/45)",
+              "right": "34% (18/53)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "0/9",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "29",
+              "right": "17",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "46",
+              "right": "30",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (91/133)",
+              "right": "71% (77/109)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (32/109)",
+              "right": "32% (42/133)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (123/242)",
+              "right": "49% (119/242)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (17/17)",
+              "right": "94% (15/16)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Return games won",
+              "left": "6% (1/16)",
+              "right": "0% (0/17)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Total games won",
+              "left": "55% (18/33)",
+              "right": "45% (15/33)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "59%",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (22/28)",
+              "right": "81% (22/27)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (15/24)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "0/0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (7/27)",
+              "right": "29% (8/28)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (8/19)",
+              "right": "38% (9/24)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/3",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "11",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "25",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (37/52)",
+              "right": "72% (33/46)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (13/46)",
+              "right": "29% (15/52)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (50/98)",
+              "right": "49% (48/98)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "11",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "59%",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (20/32)",
+              "right": "88% (21/24)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (12/18)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "0/0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "8% (2/24)",
+              "right": "31% (10/32)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (9/17)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/3",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "6",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "5",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (31/48)",
+              "right": "72% (28/39)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (11/39)",
+              "right": "35% (17/48)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (42/87)",
+              "right": "52% (45/87)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "6",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "59%",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (14/20)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "73% (8/11)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "3/4",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (2/13)",
+              "right": "30% (6/20)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (4/9)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "0/3",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (23/33)",
+              "right": "67% (16/24)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (8/24)",
+              "right": "30% (10/33)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (31/57)",
+              "right": "46% (26/57)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

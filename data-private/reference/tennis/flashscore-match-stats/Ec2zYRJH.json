@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-walton-vs-wu-2026-06-02",
+  "boardTitle": "Adam Walton vs Tung-Lin Wu",
+  "boardPlayerName": "Tung-Lin Wu",
+  "recentOpponentName": "Delaney Ja.",
+  "recentIndex": 4,
+  "recentEvent": "Jiujiang (China)",
+  "recentDate": "Apr 27, 26",
+  "recentIsoDate": "2026-04-27",
+  "recentResult": "Win 6-4 6-4",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Wu Tung-Lin - Delaney Ja.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/jiujiang/",
+  "players": [
+    "Wu Tung-Lin",
+    "Delaney Ja."
+  ],
+  "generatedAt": "2026-06-02T02:39:39.944Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Ec2zYRJH/",
+  "matchId": "Ec2zYRJH",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Ec2zYRJH",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Ec2zYRJH"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:39"
+      }
+    ],
+    "totalDuration": "1:24"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "5",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "78%",
+              "right": "69%",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (35/42)",
+              "right": "72% (36/50)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (7/12)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "10/12",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (14/50)",
+              "right": "17% (7/42)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (14/22)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/12",
+              "right": "0/1",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "23",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "34",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (4/4)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "78% (42/54)",
+              "right": "61% (44/72)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (28/72)",
+              "right": "22% (12/54)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (70/126)",
+              "right": "44% (56/126)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (10/10)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (2/10)",
+              "right": "0% (0/10)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "71%",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "84% (16/19)",
+              "right": "63% (20/32)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (4/7)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "7/8",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (12/32)",
+              "right": "16% (3/19)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (8/13)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/8",
+              "right": "0/0",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "15",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "20",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "77% (20/26)",
+              "right": "57% (24/42)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (18/42)",
+              "right": "23% (6/26)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (38/68)",
+              "right": "44% (30/68)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "82%",
+              "right": "67%",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (19/23)",
+              "right": "89% (16/18)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (3/5)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "3/4",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "11% (2/18)",
+              "right": "17% (4/23)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (6/9)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "0/1",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "8",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "14",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "79% (22/28)",
+              "right": "67% (20/30)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (10/30)",
+              "right": "21% (6/28)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (32/58)",
+              "right": "45% (26/58)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Delaney Ja."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

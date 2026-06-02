@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-watt-vs-wendelken-2026-06-02",
+  "boardTitle": "James Watt vs Harry Wendelken",
+  "boardPlayerName": "Harry Wendelken",
+  "recentOpponentName": "Ferreira Silva F.",
+  "recentIndex": 2,
+  "recentEvent": "Francavilla (Italy)",
+  "recentDate": "May 05, 26",
+  "recentIsoDate": "2026-05-05",
+  "recentResult": "Loss 3-6 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Wendelken H. - Ferreira Silva F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/francavilla/",
+  "players": [
+    "Wendelken H.",
+    "Ferreira Silva F."
+  ],
+  "generatedAt": "2026-06-02T02:39:24.513Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/8xBfdUB4/",
+  "matchId": "8xBfdUB4",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_8xBfdUB4",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_8xBfdUB4"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:52"
+      }
+    ],
+    "totalDuration": "1:37"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "42%",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (26/36)",
+              "right": "86% (19/22)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "26% (5/19)",
+              "right": "67% (20/30)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "0/0",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "14% (3/22)",
+              "right": "28% (10/36)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (10/30)",
+              "right": "74% (14/19)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/4",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "11",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "42",
+              "right": "15",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Net points won",
+              "left": "40% (2/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (31/55)",
+              "right": "75% (39/52)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (13/52)",
+              "right": "44% (24/55)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (44/107)",
+              "right": "59% (63/107)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (6/9)",
+              "right": "100% (9/9)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (6/18)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "32%",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (12/19)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (4/12)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/0",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "14% (1/7)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "27% (4/15)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/2",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "5",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "10",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/1)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (16/31)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (5/22)",
+              "right": "48% (15/31)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (21/53)",
+              "right": "60% (32/53)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "50%",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (14/17)",
+              "right": "87% (13/15)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "14% (1/7)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "13% (2/15)",
+              "right": "18% (3/17)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (6/15)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "6",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "5",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (15/24)",
+              "right": "73% (22/30)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (8/30)",
+              "right": "38% (9/24)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (23/54)",
+              "right": "57% (31/54)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Wendelken H.",
+              "rightPlayer": "Ferreira Silva F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

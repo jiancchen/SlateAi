@@ -1,0 +1,710 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-lajal-vs-riedi-2026-06-02",
+  "boardTitle": "Leandro Riedi vs Mark Lajal",
+  "boardPlayerName": "Leandro Riedi",
+  "recentOpponentName": "Herbert P.",
+  "recentIndex": 0,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 22, 26",
+  "recentIsoDate": "2026-05-22",
+  "recentResult": "Loss 4-6 7-6 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Herbert P. - Riedi L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Herbert P.",
+    "Riedi L."
+  ],
+  "generatedAt": "2026-06-02T02:39:22.455Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/OfYLgBge/",
+  "matchId": "OfYLgBge",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_OfYLgBge",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_OfYLgBge"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 8,
+        "rightGames": 10,
+        "duration": "1:11"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:33"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "11",
+              "right": "5",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "0",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "61%",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (56/75)",
+              "right": "74% (42/57)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "61% (23/38)",
+              "right": "61% (22/36)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "10/10",
+              "right": "1/3",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "181 km/h",
+              "right": "191 km/h",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "157 km/h",
+              "right": "144 km/h",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (15/57)",
+              "right": "25% (19/75)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "39% (14/36)",
+              "right": "39% (15/38)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/10",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "44",
+              "right": "43",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "28",
+              "right": "25",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "70% (26/37)",
+              "right": "53% (16/30)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (79/113)",
+              "right": "69% (64/93)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (29/93)",
+              "right": "30% (34/113)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (108/206)",
+              "right": "48% (98/206)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (16/16)",
+              "right": "87% (13/15)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "13% (2/15)",
+              "right": "0% (0/16)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (18/31)",
+              "right": "42% (13/31)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "56%",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (16/21)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (6/8)",
+              "right": "82% (9/11)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "0/1",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (5/14)",
+              "right": "24% (5/21)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "18% (2/11)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/2",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "10",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "5",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "89% (8/9)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (22/29)",
+              "right": "72% (18/25)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (7/25)",
+              "right": "24% (7/29)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (29/54)",
+              "right": "46% (25/54)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "72%",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (25/36)",
+              "right": "82% (23/28)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (11/20)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/6",
+              "right": "0/0",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "18% (5/28)",
+              "right": "31% (11/36)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/6",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "20",
+              "right": "21",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "11",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "56% (10/18)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (36/56)",
+              "right": "77% (30/39)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (9/39)",
+              "right": "36% (20/56)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (45/95)",
+              "right": "53% (50/95)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "52%",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (15/18)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "1/2",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (5/15)",
+              "right": "17% (3/18)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (8/14)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/2",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "12",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "9",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (8/10)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (21/28)",
+              "right": "55% (16/29)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (13/29)",
+              "right": "25% (7/28)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (34/57)",
+              "right": "40% (23/57)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Herbert P.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

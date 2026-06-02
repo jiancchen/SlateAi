@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-kimhi-vs-henning-2026-06-02",
+  "boardTitle": "Orel Kimhi vs Philip Henning",
+  "boardPlayerName": "Philip Henning",
+  "recentOpponentName": "Koenig L.",
+  "recentIndex": 1,
+  "recentEvent": "Centurion (South Africa)",
+  "recentDate": "May 28, 26",
+  "recentIsoDate": "2026-05-28",
+  "recentResult": "Win 6-2 6-2",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Henning P. - Koenig L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion/",
+  "players": [
+    "Henning P.",
+    "Koenig L."
+  ],
+  "generatedAt": "2026-06-02T02:39:26.395Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/hOuMXXgo/",
+  "matchId": "hOuMXXgo",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_hOuMXXgo",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_hOuMXXgo"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:26"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:38"
+      }
+    ],
+    "totalDuration": "1:04"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "8",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "6",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "67%",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (27/36)",
+              "right": "65% (22/34)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (9/16)",
+              "right": "18% (3/17)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/5",
+              "right": "7/11",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (12/34)",
+              "right": "25% (9/36)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "82% (14/17)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/11",
+              "right": "0/5",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "10",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (36/52)",
+              "right": "49% (25/51)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (26/51)",
+              "right": "31% (16/52)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (62/103)",
+              "right": "40% (41/103)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (8/8)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (4/8)",
+              "right": "0% (0/8)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (12/16)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "5",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "56%",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (12/15)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "80% (4/5)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "4/6",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (4/14)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "82% (9/11)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "0/0",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "10",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "80% (16/20)",
+              "right": "48% (12/25)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (13/25)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "64% (29/45)",
+              "right": "36% (16/45)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "7",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "77%",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (15/21)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (5/11)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/5",
+              "right": "3/5",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (8/20)",
+              "right": "29% (6/21)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "83% (5/6)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "0/5",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (20/32)",
+              "right": "50% (13/26)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (13/26)",
+              "right": "38% (12/32)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (33/58)",
+              "right": "43% (25/58)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Koenig L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

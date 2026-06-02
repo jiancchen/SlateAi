@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-sun-vs-ilagan-2026-06-02",
+  "boardTitle": "Fajing Sun vs Andre Ilagan",
+  "boardPlayerName": "Fajing Sun",
+  "recentOpponentName": "Noguchi R.",
+  "recentIndex": 4,
+  "recentEvent": "Wuxi (China)",
+  "recentDate": "May 06, 26",
+  "recentIsoDate": "2026-05-06",
+  "recentResult": "Loss 6-7 6-4 6-7",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Sun F. - Noguchi R.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/wuxi/",
+  "players": [
+    "Sun F.",
+    "Noguchi R."
+  ],
+  "generatedAt": "2026-06-02T02:39:40.174Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Ya8CHqK0/",
+  "matchId": "Ya8CHqK0",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Ya8CHqK0",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Ya8CHqK0"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 7,
+        "duration": "0:58"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:50"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 8,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:11"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "68%",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (49/65)",
+              "right": "70% (57/82)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (29/53)",
+              "right": "46% (18/39)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/9",
+              "right": "5/8",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (25/82)",
+              "right": "25% (16/65)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (21/39)",
+              "right": "45% (24/53)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/8",
+              "right": "2/9",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "35",
+              "right": "26",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "45",
+              "right": "35",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Net points won",
+              "left": "73% (19/26)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (78/118)",
+              "right": "62% (75/121)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (46/121)",
+              "right": "34% (40/118)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (124/239)",
+              "right": "48% (115/239)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "88% (15/17)",
+              "right": "82% (14/17)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Return games won",
+              "left": "18% (3/17)",
+              "right": "12% (2/17)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Total games won",
+              "left": "53% (18/34)",
+              "right": "47% (16/34)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "68%",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (15/20)",
+              "right": "76% (19/25)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (8/15)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/1",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (6/25)",
+              "right": "25% (5/20)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (6/12)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "1/1",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "1",
+              "right": "6",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "7",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (23/35)",
+              "right": "68% (25/37)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (12/37)",
+              "right": "34% (12/35)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (35/72)",
+              "right": "51% (37/72)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "58%",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (15/17)",
+              "right": "62% (13/21)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (6/11)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "4/5",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (8/21)",
+              "right": "12% (2/17)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (7/15)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "0/0",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "8",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "11",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (21/28)",
+              "right": "58% (21/36)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (15/36)",
+              "right": "25% (7/28)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (36/64)",
+              "right": "44% (28/64)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "51%",
+              "right": "75%",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (19/28)",
+              "right": "69% (25/36)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (15/27)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/8",
+              "right": "1/2",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (11/36)",
+              "right": "32% (9/28)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (8/12)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "1/8",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "22",
+              "right": "12",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "17",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Net points won",
+              "left": "78% (14/18)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (34/55)",
+              "right": "60% (29/48)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (19/48)",
+              "right": "38% (21/55)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (53/103)",
+              "right": "49% (50/103)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Noguchi R."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

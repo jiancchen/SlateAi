@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-rawat-vs-winter-2026-06-02",
+  "boardTitle": "Sidharth Rawat vs Edward Winter",
+  "boardPlayerName": "Sidharth Rawat",
+  "recentOpponentName": "Jasika O.",
+  "recentIndex": 2,
+  "recentEvent": "Bengaluru 3 (India)",
+  "recentDate": "May 19, 26",
+  "recentIsoDate": "2026-05-19",
+  "recentResult": "Win 7-6 6-2",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Jasika O. - Rawat S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/bengaluru-3/",
+  "players": [
+    "Jasika O.",
+    "Rawat S."
+  ],
+  "generatedAt": "2026-06-02T02:39:28.076Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/lGnZDHVs/",
+  "matchId": "lGnZDHVs",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_lGnZDHVs",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_lGnZDHVs"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "1:12"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:33"
+      }
+    ],
+    "totalDuration": "1:45"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "1",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "53%",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (34/60)",
+              "right": "84% (27/32)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (15/32)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "14/18",
+              "right": "4/6",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "16% (5/32)",
+              "right": "43% (26/60)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (14/28)",
+              "right": "53% (17/32)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "4/18",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "22",
+              "right": "25",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "41",
+              "right": "33",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Net points won",
+              "left": "70% (14/20)",
+              "right": "100% (8/8)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (49/92)",
+              "right": "68% (41/60)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (19/60)",
+              "right": "47% (43/92)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (68/152)",
+              "right": "55% (84/152)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (6/10)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (2/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (8/20)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "50%",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (26/45)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (11/23)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "11/13",
+              "right": "4/6",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (5/21)",
+              "right": "42% (19/45)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (12/21)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "2/13",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "18",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "24",
+              "right": "26",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Net points won",
+              "left": "76% (13/17)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (37/68)",
+              "right": "60% (25/42)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (17/42)",
+              "right": "46% (31/68)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (54/110)",
+              "right": "51% (56/110)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "61%",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (8/15)",
+              "right": "100% (11/11)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "0/0",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "0% (0/11)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (2/7)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/5",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "7",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "7",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (12/24)",
+              "right": "89% (16/18)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "11% (2/18)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "33% (14/42)",
+              "right": "67% (28/42)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Jasika O.",
+              "rightPlayer": "Rawat S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

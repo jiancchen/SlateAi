@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-weightman-vs-badenhorst-2026-06-02",
+  "boardTitle": "Oscar Weightman vs Devin Badenhorst",
+  "boardPlayerName": "Devin Badenhorst",
+  "recentOpponentName": "Santillan A.",
+  "recentIndex": 1,
+  "recentEvent": "Centurion (South Africa)",
+  "recentDate": "May 26, 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "Win 6-3 6-1",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Badenhorst D. - Santillan A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion/",
+  "players": [
+    "Badenhorst D.",
+    "Santillan A."
+  ],
+  "generatedAt": "2026-06-02T02:39:28.800Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/AeOkpanI/",
+  "matchId": "AeOkpanI",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_AeOkpanI",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_AeOkpanI"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:31"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:23"
+      }
+    ],
+    "totalDuration": "0:54"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "9",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "50%",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "95% (21/22)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (12/20)",
+              "right": "41% (9/22)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "0/4",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (8/22)",
+              "right": "5% (1/22)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "59% (13/22)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/4",
+              "right": "0/2",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "6",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "23",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Net points won",
+              "left": "79% (11/14)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "79% (33/42)",
+              "right": "52% (23/44)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (21/44)",
+              "right": "21% (9/42)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "63% (54/86)",
+              "right": "37% (32/86)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (8/8)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (4/8)",
+              "right": "0% (0/8)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (12/16)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "41%",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (13/13)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (7/12)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (2/9)",
+              "right": "0% (0/13)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (5/13)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "4",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "8",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Net points won",
+              "left": "78% (7/9)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "80% (20/25)",
+              "right": "68% (15/22)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (7/22)",
+              "right": "20% (5/25)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (27/47)",
+              "right": "43% (20/47)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "59%",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "89% (8/9)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (5/8)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "0/3",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (6/13)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "89% (8/9)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "0/2",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "2",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "15",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (13/17)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "64% (14/22)",
+              "right": "24% (4/17)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "69% (27/39)",
+              "right": "31% (12/39)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Badenhorst D.",
+              "rightPlayer": "Santillan A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

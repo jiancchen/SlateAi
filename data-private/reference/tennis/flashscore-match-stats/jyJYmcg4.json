@@ -1,0 +1,668 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-olivieri-vs-krumich-2026-06-02",
+  "boardTitle": "Genaro Alberto Olivieri vs Martin Krumich",
+  "boardPlayerName": "Martin Krumich",
+  "recentOpponentName": "Erhard M.",
+  "recentIndex": 1,
+  "recentEvent": "Kosice (Slovakia)",
+  "recentDate": "May 30, 26",
+  "recentIsoDate": "2026-05-30",
+  "recentResult": "Win 6-3 2-6 6-4",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Krumich M. - Erhard M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/kosice/",
+  "players": [
+    "Krumich M.",
+    "Erhard M."
+  ],
+  "generatedAt": "2026-06-02T02:39:35.206Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/jyJYmcg4/",
+  "matchId": "jyJYmcg4",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_jyJYmcg4",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_jyJYmcg4"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:40"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:47"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:29"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "51%",
+              "right": "75%",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (31/40)",
+              "right": "66% (42/64)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (20/38)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "4/7",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "34% (22/64)",
+              "right": "23% (9/40)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (9/21)",
+              "right": "47% (18/38)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "3/3",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "15",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "27",
+              "right": "28",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (51/78)",
+              "right": "63% (53/84)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (31/84)",
+              "right": "35% (27/78)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (82/162)",
+              "right": "49% (80/162)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "79% (11/14)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Return games won",
+              "left": "23% (3/13)",
+              "right": "21% (3/14)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Total games won",
+              "left": "52% (14/27)",
+              "right": "48% (13/27)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "68%",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (13/13)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (7/11)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (7/17)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (2/8)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "6",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "16",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "83% (20/24)",
+              "right": "67% (16/24)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (8/24)",
+              "right": "17% (4/24)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (28/48)",
+              "right": "42% (20/48)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "63%",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (8/10)",
+              "right": "82% (14/17)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "2/2",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "12% (2/17)",
+              "right": "10% (1/10)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (6/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "2/2",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "1",
+              "right": "9",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "11",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (10/21)",
+              "right": "68% (19/28)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (9/28)",
+              "right": "52% (11/21)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (19/49)",
+              "right": "61% (30/49)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "91%",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (10/17)",
+              "right": "57% (17/30)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (9/17)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "2/4",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (13/30)",
+              "right": "24% (4/17)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (1/3)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/1",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (21/33)",
+              "right": "56% (18/32)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (14/32)",
+              "right": "36% (12/33)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (35/65)",
+              "right": "46% (30/65)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Krumich M.",
+              "rightPlayer": "Erhard M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

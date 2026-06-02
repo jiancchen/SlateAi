@@ -1,0 +1,546 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-choinski-vs-gentzsch-2026-06-02",
+  "boardTitle": "Jan Choinski vs Tom Gentzsch",
+  "boardPlayerName": "Tom Gentzsch",
+  "recentOpponentName": "Kym J.",
+  "recentIndex": 2,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 19, 26",
+  "recentIsoDate": "2026-05-19",
+  "recentResult": "Win 6-2 6-3",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Kym J. - Gentzsch T.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Kym J.",
+    "Gentzsch T."
+  ],
+  "generatedAt": "2026-06-02T02:39:18.177Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/2wg4YH9l/",
+  "matchId": "2wg4YH9l",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_2wg4YH9l",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_2wg4YH9l"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:29"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:47"
+      }
+    ],
+    "totalDuration": "1:16"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "58%",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (18/26)",
+              "right": "78% (29/37)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "30% (6/20)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/4",
+              "right": "6/7",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "197 km/h",
+              "right": "197 km/h",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "152 km/h",
+              "right": "161 km/h",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (8/37)",
+              "right": "31% (8/26)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (15/27)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/7",
+              "right": "4/4",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "12",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "30",
+              "right": "23",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (24/46)",
+              "right": "64% (41/64)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (23/64)",
+              "right": "48% (22/46)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (47/110)",
+              "right": "57% (63/110)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (4/8)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Return games won",
+              "left": "11% (1/9)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Total games won",
+              "left": "29% (5/17)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "43%",
+              "right": "65%",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (8/10)",
+              "right": "92% (12/13)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "31% (4/13)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/0",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "8% (1/13)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (3/7)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/2",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "6",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "8",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (12/23)",
+              "right": "80% (16/20)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (4/20)",
+              "right": "48% (11/23)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (16/43)",
+              "right": "63% (27/43)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "55%",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (10/16)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (2/7)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "6/7",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (7/24)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (12/20)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/7",
+              "right": "2/2",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "6",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "15",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (12/23)",
+              "right": "57% (25/44)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (19/44)",
+              "right": "48% (11/23)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (31/67)",
+              "right": "54% (36/67)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Kym J.",
+              "rightPlayer": "Gentzsch T."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-durasovic-vs-gombos-2026-06-02",
+  "boardTitle": "Viktor Durasovic vs Norbert Gombos",
+  "boardPlayerName": "Norbert Gombos",
+  "recentOpponentName": "Zink T.",
+  "recentIndex": 2,
+  "recentEvent": "Zagreb (Croatia)",
+  "recentDate": "May 10, 26",
+  "recentIsoDate": "2026-05-10",
+  "recentResult": "Loss 6-7 4-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Gombos N. - Zink T.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/zagreb/",
+  "players": [
+    "Gombos N.",
+    "Zink T."
+  ],
+  "generatedAt": "2026-06-02T02:39:33.800Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/APVqkxJG/",
+  "matchId": "APVqkxJG",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_APVqkxJG",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_APVqkxJG"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 7,
+        "duration": "1:04"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:50"
+      }
+    ],
+    "totalDuration": "1:54"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "5",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "49%",
+              "right": "60%",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (23/36)",
+              "right": "73% (37/51)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (22/38)",
+              "right": "53% (18/34)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "5/6",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (14/51)",
+              "right": "36% (13/36)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (16/34)",
+              "right": "42% (16/38)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/6",
+              "right": "2/6",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "22",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "42",
+              "right": "34",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (6/8)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (45/74)",
+              "right": "65% (55/85)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (30/85)",
+              "right": "39% (29/74)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (75/159)",
+              "right": "53% (84/159)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "82% (9/11)",
+              "right": "91% (10/11)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Return games won",
+              "left": "9% (1/11)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Total games won",
+              "left": "45% (10/22)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "35%",
+              "right": "66%",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "92% (11/12)",
+              "right": "68% (26/38)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (12/22)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "5/6",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (12/38)",
+              "right": "8% (1/12)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (11/20)",
+              "right": "45% (10/22)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/6",
+              "right": "1/1",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "13",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "21",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (23/34)",
+              "right": "60% (35/58)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (23/58)",
+              "right": "32% (11/34)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (46/92)",
+              "right": "50% (46/92)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "48%",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (12/24)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (10/16)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "0/0",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (2/13)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (5/14)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/5",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "9",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "24",
+              "right": "13",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (22/40)",
+              "right": "74% (20/27)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (7/27)",
+              "right": "45% (18/40)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (29/67)",
+              "right": "57% (38/67)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Gombos N.",
+              "rightPlayer": "Zink T."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

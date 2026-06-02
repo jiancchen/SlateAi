@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-legout-vs-andrade-2026-06-02",
+  "boardTitle": "Timo Legout vs Andres Andrade",
+  "boardPlayerName": "Andres Andrade",
+  "recentOpponentName": "Cecchinato M.",
+  "recentIndex": 2,
+  "recentEvent": "Zagreb (Croatia)",
+  "recentDate": "May 14, 26",
+  "recentIsoDate": "2026-05-14",
+  "recentResult": "Win 6-4 6-4",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Cecchinato M. - Andrade A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/zagreb/",
+  "players": [
+    "Cecchinato M.",
+    "Andrade A."
+  ],
+  "generatedAt": "2026-06-02T02:39:37.108Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/ERZweHv1/",
+  "matchId": "ERZweHv1",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_ERZweHv1",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_ERZweHv1"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:48"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:45"
+      }
+    ],
+    "totalDuration": "1:33"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "64%",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (20/30)",
+              "right": "66% (33/50)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (18/34)",
+              "right": "54% (15/28)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/9",
+              "right": "9/10",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "34% (17/50)",
+              "right": "33% (10/30)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (13/28)",
+              "right": "47% (16/34)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/10",
+              "right": "3/9",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "26",
+              "right": "20",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "39",
+              "right": "19",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Net points won",
+              "left": "78% (7/9)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (38/64)",
+              "right": "62% (48/78)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (30/78)",
+              "right": "41% (26/64)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (68/142)",
+              "right": "52% (74/142)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "70% (7/10)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Return games won",
+              "left": "10% (1/10)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (8/20)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "42%",
+              "right": "66%",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (9/13)",
+              "right": "76% (19/25)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "61% (11/18)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "4/4",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (6/25)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "31% (4/13)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/4",
+              "right": "1/4",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "8",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "11",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (20/31)",
+              "right": "66% (25/38)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (13/38)",
+              "right": "35% (11/31)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (33/69)",
+              "right": "52% (36/69)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "63%",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (11/17)",
+              "right": "56% (14/25)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (7/16)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "5/6",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (11/25)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (9/15)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/6",
+              "right": "2/5",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "12",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "8",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (18/33)",
+              "right": "57% (23/40)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (17/40)",
+              "right": "45% (15/33)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (35/73)",
+              "right": "52% (38/73)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Cecchinato M.",
+              "rightPlayer": "Andrade A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

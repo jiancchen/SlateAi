@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-butvilas-vs-svajda-2026-06-02",
+  "boardTitle": "Edas Butvilas vs Trevor Svajda",
+  "boardPlayerName": "Trevor Svajda",
+  "recentOpponentName": "Draxl L.",
+  "recentIndex": 4,
+  "recentEvent": "San Diego (USA)",
+  "recentDate": "Jan 29, 26",
+  "recentIsoDate": "2026-01-29",
+  "recentResult": "Loss 3-6 4-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Svajda T. - Draxl L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/san-diego/",
+  "players": [
+    "Svajda T.",
+    "Draxl L."
+  ],
+  "generatedAt": "2026-06-02T02:39:36.982Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/8ObXVvyg/",
+  "matchId": "8ObXVvyg",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_8ObXVvyg",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_8ObXVvyg"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:43"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "1:02"
+      }
+    ],
+    "totalDuration": "1:45"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "5",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "55%",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (21/42)",
+              "right": "75% (24/32)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (17/37)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/11",
+              "right": "5/7",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (8/32)",
+              "right": "50% (21/42)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (14/26)",
+              "right": "54% (20/37)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "5/11",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "26",
+              "right": "13",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "45",
+              "right": "22",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (11/22)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (38/79)",
+              "right": "62% (36/58)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (22/58)",
+              "right": "52% (41/79)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (60/137)",
+              "right": "56% (77/137)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (5/10)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Return games won",
+              "left": "22% (2/9)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Total games won",
+              "left": "37% (7/19)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "78%",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "40% (8/20)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (11/22)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "1/2",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (4/14)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (1/4)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "3/5",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "6",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "25",
+              "right": "7",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Net points won",
+              "left": "55% (6/11)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "45% (19/42)",
+              "right": "72% (13/18)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (5/18)",
+              "right": "55% (23/42)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (24/60)",
+              "right": "60% (36/60)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "5",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "45%",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (13/22)",
+              "right": "78% (14/18)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (6/15)",
+              "right": "41% (9/22)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "4/5",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (4/18)",
+              "right": "41% (9/22)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "59% (13/22)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "2/6",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "7",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "15",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Net points won",
+              "left": "45% (5/11)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "51% (19/37)",
+              "right": "57% (23/40)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (17/40)",
+              "right": "49% (18/37)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (36/77)",
+              "right": "53% (41/77)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Svajda T.",
+              "rightPlayer": "Draxl L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

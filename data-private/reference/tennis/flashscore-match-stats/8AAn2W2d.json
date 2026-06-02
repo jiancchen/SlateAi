@@ -1,0 +1,546 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-bellucci-vs-bolt-2026-06-02",
+  "boardTitle": "Mattia Bellucci vs Alex Bolt",
+  "boardPlayerName": "Mattia Bellucci",
+  "recentOpponentName": "Burruchaga R. A.",
+  "recentIndex": 3,
+  "recentEvent": "Rome (Italy)",
+  "recentDate": "May 07, 26",
+  "recentIsoDate": "2026-05-07",
+  "recentResult": "Win 6-4 6-4",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Burruchaga R. A. - Bellucci M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/",
+  "players": [
+    "Burruchaga R. A.",
+    "Bellucci M."
+  ],
+  "generatedAt": "2026-06-02T02:39:20.855Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/8AAn2W2d/",
+  "matchId": "8AAn2W2d",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_8AAn2W2d",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_8AAn2W2d"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:47"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "1:08"
+      }
+    ],
+    "totalDuration": "1:55"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "3",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "55%",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (34/58)",
+              "right": "76% (29/38)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (6/15)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "7/8",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "188 km/h",
+              "right": "203 km/h",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "145 km/h",
+              "right": "164 km/h",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (9/38)",
+              "right": "41% (24/58)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (15/31)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/8",
+              "right": "3/7",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "31",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "24",
+              "right": "36",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (6/6)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (40/73)",
+              "right": "65% (45/69)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (24/69)",
+              "right": "45% (33/73)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (64/142)",
+              "right": "55% (78/142)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "70% (7/10)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Return games won",
+              "left": "10% (1/10)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (8/20)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "82%",
+              "right": "58%",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (12/23)",
+              "right": "74% (14/19)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (3/5)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "3/4",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (5/19)",
+              "right": "48% (11/23)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (7/14)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "2/2",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "16",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "18",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (15/28)",
+              "right": "64% (21/33)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (12/33)",
+              "right": "46% (13/28)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (27/61)",
+              "right": "56% (34/61)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "78%",
+              "right": "53%",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (22/35)",
+              "right": "79% (15/19)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "30% (3/10)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "4/4",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (4/19)",
+              "right": "37% (13/35)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (8/17)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/4",
+              "right": "1/5",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "15",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "18",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (4/4)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (25/45)",
+              "right": "67% (24/36)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (12/36)",
+              "right": "44% (20/45)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (37/81)",
+              "right": "54% (44/81)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Burruchaga R. A.",
+              "rightPlayer": "Bellucci M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

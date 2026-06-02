@@ -1,0 +1,546 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-mrva-vs-svrcina-2026-06-02",
+  "boardTitle": "Maxim Mrva vs Dalibor Svrcina",
+  "boardPlayerName": "Dalibor Svrcina",
+  "recentOpponentName": "Gomez F. A.",
+  "recentIndex": 1,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 20, 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "Win 7-6 6-2",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Svrcina D. - Gomez F. A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Svrcina D.",
+    "Gomez F. A."
+  ],
+  "generatedAt": "2026-06-02T02:39:36.006Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/vPuefhS8/",
+  "matchId": "vPuefhS8",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_vPuefhS8",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_vPuefhS8"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 3,
+        "duration": "0:58"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:35"
+      }
+    ],
+    "totalDuration": "1:33"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "59%",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (32/48)",
+              "right": "50% (18/36)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "39% (7/18)",
+              "right": "40% (10/25)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/8",
+              "right": "4/10",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "160 km/h",
+              "right": "191 km/h",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "134 km/h",
+              "right": "162 km/h",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (18/36)",
+              "right": "33% (16/48)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (15/25)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/10",
+              "right": "4/8",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "30",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "45",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Net points won",
+              "left": "89% (8/9)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (39/66)",
+              "right": "46% (28/61)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (33/61)",
+              "right": "41% (27/66)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (72/127)",
+              "right": "43% (55/127)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "65%",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (18/30)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (4/12)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/7",
+              "right": "1/5",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "54% (14/26)",
+              "right": "40% (12/30)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (8/14)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/5",
+              "right": "4/7",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "21",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "26",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Net points won",
+              "left": "89% (8/9)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (22/42)",
+              "right": "45% (18/40)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "55% (22/40)",
+              "right": "48% (20/42)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (44/82)",
+              "right": "46% (38/82)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "48%",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (14/18)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (3/6)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "3/5",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (4/10)",
+              "right": "22% (4/18)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (7/11)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "0/1",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "9",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "19",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (17/24)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (11/21)",
+              "right": "29% (7/24)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "62% (28/45)",
+              "right": "38% (17/45)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Gomez F. A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

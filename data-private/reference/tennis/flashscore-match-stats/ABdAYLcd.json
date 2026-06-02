@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-qualification-shick-vs-hohmann-2026-06-02",
+  "boardTitle": "Braden Shick vs Ronald Hohmann",
+  "boardPlayerName": "Braden Shick",
+  "recentOpponentName": "Matusevich A.",
+  "recentIndex": 2,
+  "recentEvent": "M25 Nottingham 2 (United Kingdom)",
+  "recentDate": "May 10, 26",
+  "recentIsoDate": "2026-05-10",
+  "recentResult": "Win 7-6 6-4",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Matusevich A. - Shick B.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m25-nottingham-2/",
+  "players": [
+    "Matusevich A.",
+    "Shick B."
+  ],
+  "generatedAt": "2026-06-02T02:39:37.771Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/ABdAYLcd/",
+  "matchId": "ABdAYLcd",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_ABdAYLcd",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_ABdAYLcd"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 7,
+        "duration": "0:58"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:46"
+      }
+    ],
+    "totalDuration": "1:44"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Matusevich A.",
+              "rightPlayer": "Shick B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Matusevich A.",
+              "rightPlayer": "Shick B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Matusevich A.",
+              "rightPlayer": "Shick B."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

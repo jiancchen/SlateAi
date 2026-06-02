@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-carballes-baena-vs-carboni-2026-06-02",
+  "boardTitle": "Lorenzo Carboni vs Roberto Carballes Baena",
+  "boardPlayerName": "Lorenzo Carboni",
+  "recentOpponentName": "Forti F.",
+  "recentIndex": 4,
+  "recentEvent": "Cervia (Italy)",
+  "recentDate": "May 18, 26",
+  "recentIsoDate": "2026-05-18",
+  "recentResult": "Loss 7-5 6-7 1-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Forti F. - Carboni L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/cervia/",
+  "players": [
+    "Forti F.",
+    "Carboni L."
+  ],
+  "generatedAt": "2026-06-02T02:39:30.673Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/OGyHSazS/",
+  "matchId": "OGyHSazS",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_OGyHSazS",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_OGyHSazS"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:49"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:16"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:48"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "0",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "57%",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (53/69)",
+              "right": "70% (38/54)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (15/28)",
+              "right": "60% (24/40)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "3/6",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (16/54)",
+              "right": "23% (16/69)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (16/40)",
+              "right": "46% (13/28)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "2/2",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "35",
+              "right": "13",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "46",
+              "right": "28",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Net points won",
+              "left": "73% (16/22)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (68/97)",
+              "right": "66% (62/94)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (32/94)",
+              "right": "30% (29/97)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (100/191)",
+              "right": "48% (91/191)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "88% (14/16)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (3/15)",
+              "right": "13% (2/16)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total games won",
+              "left": "55% (17/31)",
+              "right": "45% (14/31)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "62%",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (17/23)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (6/9)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/1",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (5/21)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "31% (4/13)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/1",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "8",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "8",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (23/32)",
+              "right": "74% (25/34)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (9/34)",
+              "right": "28% (9/32)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (32/66)",
+              "right": "52% (34/66)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "58%",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (23/28)",
+              "right": "73% (16/22)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (7/12)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (6/22)",
+              "right": "18% (5/28)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "19% (3/16)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "2",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "8",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Net points won",
+              "left": "70% (7/10)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (30/40)",
+              "right": "76% (29/38)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (9/38)",
+              "right": "25% (10/40)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (39/78)",
+              "right": "50% (39/78)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "50%",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (13/18)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (2/7)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "2/5",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (5/11)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "82% (9/11)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "1/1",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "3",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "12",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (15/25)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "64% (14/22)",
+              "right": "40% (10/25)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "62% (29/47)",
+              "right": "38% (18/47)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Forti F.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

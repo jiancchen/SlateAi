@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-searle-vs-krueger-2026-06-02",
+  "boardTitle": "Henry Searle vs Mitchell Krueger",
+  "boardPlayerName": "Mitchell Krueger",
+  "recentOpponentName": "Hara Friend J. D.",
+  "recentIndex": 0,
+  "recentEvent": "Little Rock (USA)",
+  "recentDate": "May 26, 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "Loss 2-6 3-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Hara Friend J. D. - Krueger M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/little-rock/",
+  "players": [
+    "Hara Friend J. D.",
+    "Krueger M."
+  ],
+  "generatedAt": "2026-06-02T02:39:38.030Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/YFrLzGSF/",
+  "matchId": "YFrLzGSF",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_YFrLzGSF",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_YFrLzGSF"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:44"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:44"
+      }
+    ],
+    "totalDuration": "1:28"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "68%",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (28/37)",
+              "right": "60% (29/48)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (11/24)",
+              "right": "39% (9/23)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "4/8",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (19/48)",
+              "right": "24% (9/37)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (14/23)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/8",
+              "right": "0/4",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "14",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "30",
+              "right": "39",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (39/61)",
+              "right": "54% (38/71)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (33/71)",
+              "right": "36% (22/61)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (72/132)",
+              "right": "45% (60/132)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (8/8)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Return games won",
+              "left": "44% (4/9)",
+              "right": "0% (0/8)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "71%",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (15/22)",
+              "right": "60% (15/25)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "2/4",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (10/25)",
+              "right": "32% (7/22)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "70% (7/10)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/3",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "9",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "20",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (21/34)",
+              "right": "51% (18/35)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (17/35)",
+              "right": "38% (13/34)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (38/69)",
+              "right": "45% (31/69)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "64%",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "87% (13/15)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (5/12)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "2/4",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (9/23)",
+              "right": "13% (2/15)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (7/13)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/1",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "5",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "19",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (18/27)",
+              "right": "56% (20/36)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (16/36)",
+              "right": "33% (9/27)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (34/63)",
+              "right": "46% (29/63)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Hara Friend J. D.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

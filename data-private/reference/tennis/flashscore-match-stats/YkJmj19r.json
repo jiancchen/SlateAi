@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-duran-vs-napolitano-2026-06-02",
+  "boardTitle": "Tuncay Duran vs Stefano Napolitano",
+  "boardPlayerName": "Stefano Napolitano",
+  "recentOpponentName": "Vujic S.",
+  "recentIndex": 3,
+  "recentEvent": "Centurion (South Africa)",
+  "recentDate": "May 26, 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "Win 6-2 6-4",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Vujic S. - Napolitano S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion/",
+  "players": [
+    "Vujic S.",
+    "Napolitano S."
+  ],
+  "generatedAt": "2026-06-02T02:39:26.018Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/YkJmj19r/",
+  "matchId": "YkJmj19r",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_YkJmj19r",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_YkJmj19r"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:50"
+      }
+    ],
+    "totalDuration": "1:26"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "14",
+              "right": "3",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "7",
+              "right": "1",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "56%",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (27/35)",
+              "right": "73% (22/30)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "30% (9/30)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/8",
+              "right": "3/3",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (8/30)",
+              "right": "23% (8/35)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (7/24)",
+              "right": "70% (21/30)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "3/8",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "28",
+              "right": "14",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "33",
+              "right": "10",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (3/6)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (36/65)",
+              "right": "72% (39/54)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (15/54)",
+              "right": "45% (29/65)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (51/119)",
+              "right": "57% (68/119)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (6/9)",
+              "right": "100% (9/9)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (6/18)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "0",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "43%",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (10/16)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (4/14)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "0/0",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (2/9)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (3/12)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/5",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "3",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "3",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "47% (14/30)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (5/21)",
+              "right": "53% (16/30)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (19/51)",
+              "right": "63% (32/51)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "8",
+              "right": "3",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "64%",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "89% (17/19)",
+              "right": "71% (15/21)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "31% (5/16)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "3/3",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (6/21)",
+              "right": "11% (2/19)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (4/12)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "1/3",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "11",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "7",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (22/35)",
+              "right": "70% (23/33)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (10/33)",
+              "right": "37% (13/35)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (32/68)",
+              "right": "53% (36/68)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Vujic S.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-pinnington-jones-vs-vukic-2026-06-02",
+  "boardTitle": "Jack Pinnington Jones vs Aleksandar Vukic",
+  "boardPlayerName": "Aleksandar Vukic",
+  "recentOpponentName": "Mpetshi Perricard G.",
+  "recentIndex": 1,
+  "recentEvent": "Bordeaux (France)",
+  "recentDate": "May 14, 26",
+  "recentIsoDate": "2026-05-14",
+  "recentResult": "Loss 0-6 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Vukic A. - Mpetshi Perricard G.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/bordeaux/",
+  "players": [
+    "Vukic A.",
+    "Mpetshi Perricard G."
+  ],
+  "generatedAt": "2026-06-02T02:39:23.344Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/zNBEICXG/",
+  "matchId": "zNBEICXG",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_zNBEICXG",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_zNBEICXG"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:24"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:35"
+      }
+    ],
+    "totalDuration": "0:59"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "68%",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (18/32)",
+              "right": "82% (23/28)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (8/20)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/11",
+              "right": "0/0",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "18% (5/28)",
+              "right": "44% (14/32)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "31% (4/13)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "4/11",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "20",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "17",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Net points won",
+              "left": "57% (4/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (26/52)",
+              "right": "78% (32/41)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "22% (9/41)",
+              "right": "50% (26/52)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (35/93)",
+              "right": "62% (58/93)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "43% (3/7)",
+              "right": "100% (8/8)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/8)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Total games won",
+              "left": "20% (3/15)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "76%",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "47% (7/15)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "22% (2/9)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "0/0",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (2/13)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (3/4)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/6",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "6",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "38% (9/24)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (5/17)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "34% (14/41)",
+              "right": "66% (27/41)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "63%",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (11/17)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (6/11)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "0/0",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (3/15)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "11% (1/9)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/5",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "13",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "11",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Net points won",
+              "left": "40% (2/5)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (17/28)",
+              "right": "83% (20/24)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "17% (4/24)",
+              "right": "39% (11/28)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (21/52)",
+              "right": "60% (31/52)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

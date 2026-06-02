@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-bicknell-vs-monday-2026-06-02",
+  "boardTitle": "Johannus Monday vs Blaise Bicknell",
+  "boardPlayerName": "Johannus Monday",
+  "recentOpponentName": "Ganesan A.",
+  "recentIndex": 3,
+  "recentEvent": "Little Rock (USA)",
+  "recentDate": "May 24, 26",
+  "recentIsoDate": "2026-05-24",
+  "recentResult": "Win 3-6 6-3 6-4",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Monday J. - Ganesan A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/little-rock/",
+  "players": [
+    "Monday J.",
+    "Ganesan A."
+  ],
+  "generatedAt": "2026-06-02T02:39:36.261Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/8OadphYI/",
+  "matchId": "8OadphYI",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_8OadphYI",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_8OadphYI"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:46"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:38"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "65%",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (42/60)",
+              "right": "70% (50/71)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (23/41)",
+              "right": "49% (19/39)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/7",
+              "right": "9/11",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (21/71)",
+              "right": "30% (18/60)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "51% (20/39)",
+              "right": "44% (18/41)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/11",
+              "right": "1/7",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "24",
+              "right": "38",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "44",
+              "right": "50",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Net points won",
+              "left": "59% (13/22)",
+              "right": "78% (14/18)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (65/101)",
+              "right": "63% (69/110)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (41/110)",
+              "right": "36% (36/101)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (106/211)",
+              "right": "50% (105/211)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "93% (13/14)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Return games won",
+              "left": "14% (2/14)",
+              "right": "7% (1/14)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Total games won",
+              "left": "54% (15/28)",
+              "right": "46% (13/28)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "62%",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (13/21)",
+              "right": "75% (18/24)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (5/11)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "3/3",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (6/24)",
+              "right": "38% (8/21)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (6/15)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "1/3",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "11",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "18",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (3/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (18/32)",
+              "right": "69% (27/39)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (12/39)",
+              "right": "44% (14/32)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (30/71)",
+              "right": "58% (41/71)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "74%",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (14/19)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (10/15)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "0/1",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (9/23)",
+              "right": "26% (5/19)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/2",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "15",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "15",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (24/34)",
+              "right": "55% (17/31)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (14/31)",
+              "right": "29% (10/34)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (38/65)",
+              "right": "42% (27/65)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "60%",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (15/20)",
+              "right": "75% (18/24)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (8/15)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "6/7",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (6/24)",
+              "right": "25% (5/20)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (9/16)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/7",
+              "right": "0/2",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "12",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "17",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (8/12)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (23/35)",
+              "right": "63% (25/40)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (15/40)",
+              "right": "34% (12/35)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (38/75)",
+              "right": "49% (37/75)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Ganesan A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

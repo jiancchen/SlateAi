@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-butvilas-vs-svajda-2026-06-02",
+  "boardTitle": "Edas Butvilas vs Trevor Svajda",
+  "boardPlayerName": "Edas Butvilas",
+  "recentOpponentName": "Bublik A.",
+  "recentIndex": 1,
+  "recentEvent": "Geneva (Switzerland)",
+  "recentDate": "May 20, 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "Loss 4-6 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Butvilas E. - Bublik A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/geneva/",
+  "players": [
+    "Butvilas E.",
+    "Bublik A."
+  ],
+  "generatedAt": "2026-06-02T02:39:36.520Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/40YsNq7d/",
+  "matchId": "40YsNq7d",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_40YsNq7d",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_40YsNq7d"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:44"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:36"
+      }
+    ],
+    "totalDuration": "1:20"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "4",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "70%",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (26/39)",
+              "right": "81% (34/42)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (13/28)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "2/2",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (8/42)",
+              "right": "33% (13/39)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (10/18)",
+              "right": "54% (15/28)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "2/6",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "21",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "24",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Net points won",
+              "left": "43% (6/14)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (39/67)",
+              "right": "70% (42/60)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (18/60)",
+              "right": "42% (28/67)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (57/127)",
+              "right": "55% (70/127)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "78% (7/9)",
+              "right": "100% (10/10)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/10)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Total games won",
+              "left": "37% (7/19)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "71%",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (17/27)",
+              "right": "80% (16/20)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (9/17)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "0/0",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (4/20)",
+              "right": "37% (10/27)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (4/8)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/5",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "12",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "13",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (5/10)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (26/44)",
+              "right": "71% (20/28)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (8/28)",
+              "right": "41% (18/44)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (34/72)",
+              "right": "53% (38/72)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "69%",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (9/12)",
+              "right": "82% (18/22)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (4/11)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "2/2",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "18% (4/22)",
+              "right": "25% (3/12)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (6/10)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "1/1",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "9",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "11",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Net points won",
+              "left": "25% (1/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (13/23)",
+              "right": "69% (22/32)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (10/32)",
+              "right": "43% (10/23)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (23/55)",
+              "right": "58% (32/55)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Bublik A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-santillan-vs-donski-2026-06-02",
+  "boardTitle": "Akira Santillan vs Alexander Donski",
+  "boardPlayerName": "Alexander Donski",
+  "recentOpponentName": "Strydom J.",
+  "recentIndex": 3,
+  "recentEvent": "Centurion (South Africa)",
+  "recentDate": "May 24, 26",
+  "recentIsoDate": "2026-05-24",
+  "recentResult": "Win 6-1 7-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Donski A. - Strydom J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion/",
+  "players": [
+    "Donski A.",
+    "Strydom J."
+  ],
+  "generatedAt": "2026-06-02T02:39:28.010Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/jcUBRxTh/",
+  "matchId": "jcUBRxTh",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_jcUBRxTh",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_jcUBRxTh"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:28"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 4,
+        "duration": "0:52"
+      }
+    ],
+    "totalDuration": "1:20"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "11",
+              "right": "7",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "37%",
+              "right": "63%",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (18/25)",
+              "right": "56% (22/39)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (20/42)",
+              "right": "30% (7/23)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/5",
+              "right": "4/10",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (17/39)",
+              "right": "28% (7/25)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "70% (16/23)",
+              "right": "52% (22/42)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/10",
+              "right": "4/5",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "8",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "41",
+              "right": "29",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (6/9)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (38/67)",
+              "right": "47% (29/62)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (33/62)",
+              "right": "43% (29/67)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (71/129)",
+              "right": "45% (58/129)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (6/10)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (6/9)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Total games won",
+              "left": "63% (12/19)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "37%",
+              "right": "50%",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (8/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (9/17)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/3",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "60% (6/10)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "70% (7/10)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "1/1",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "3",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "11",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (17/27)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "65% (13/20)",
+              "right": "37% (10/27)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "64% (30/47)",
+              "right": "36% (17/47)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "8",
+              "right": "3",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "38%",
+              "right": "69%",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (10/15)",
+              "right": "62% (18/29)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (11/25)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "4/7",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (11/29)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "69% (9/13)",
+              "right": "56% (14/25)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "3/4",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "5",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "32",
+              "right": "18",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (3/6)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (21/40)",
+              "right": "52% (22/42)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (20/42)",
+              "right": "48% (19/40)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (41/82)",
+              "right": "50% (41/82)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Strydom J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

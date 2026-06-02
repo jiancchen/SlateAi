@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-mrva-vs-svrcina-2026-06-02",
+  "boardTitle": "Maxim Mrva vs Dalibor Svrcina",
+  "boardPlayerName": "Maxim Mrva",
+  "recentOpponentName": "Vavassori A.",
+  "recentIndex": 4,
+  "recentEvent": "Rome (Italy)",
+  "recentDate": "Apr 21, 26",
+  "recentIsoDate": "2026-04-21",
+  "recentResult": "Loss 6-7 7-6 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Vavassori A. - Mrva M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/rome/",
+  "players": [
+    "Vavassori A.",
+    "Mrva M."
+  ],
+  "generatedAt": "2026-06-02T02:39:35.550Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/dKjyWNMM/",
+  "matchId": "dKjyWNMM",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_dKjyWNMM",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_dKjyWNMM"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 4,
+        "duration": "0:46"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "0:49"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:23"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "9",
+              "right": "4",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "59%",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (50/69)",
+              "right": "73% (43/59)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (25/47)",
+              "right": "54% (22/41)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/7",
+              "right": "2/4",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (16/59)",
+              "right": "28% (19/69)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (19/41)",
+              "right": "47% (22/47)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/7",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "28",
+              "right": "41",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "48",
+              "right": "50",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Net points won",
+              "left": "69% (11/16)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (75/116)",
+              "right": "65% (65/100)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (35/100)",
+              "right": "35% (41/116)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (110/216)",
+              "right": "49% (106/216)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "94% (16/17)",
+              "right": "88% (14/16)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Return games won",
+              "left": "13% (2/16)",
+              "right": "6% (1/17)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Total games won",
+              "left": "55% (18/33)",
+              "right": "45% (15/33)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "51%",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (17/26)",
+              "right": "83% (15/18)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (6/11)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "1/2",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (7/18)",
+              "right": "38% (10/26)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "35% (6/17)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "1/2",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "11",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "13",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (23/37)",
+              "right": "63% (22/35)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (13/35)",
+              "right": "38% (14/37)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (36/72)",
+              "right": "50% (36/72)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "64%",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (16/20)",
+              "right": "72% (18/25)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (10/17)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "12% (3/25)",
+              "right": "15% (3/20)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (9/14)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "15",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "18",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (6/8)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (26/37)",
+              "right": "69% (27/39)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (12/39)",
+              "right": "30% (11/37)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (38/76)",
+              "right": "50% (38/76)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "62%",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (17/23)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (9/19)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/5",
+              "right": "1/2",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (6/16)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (4/10)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/5",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "15",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "19",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (26/42)",
+              "right": "62% (16/26)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (10/26)",
+              "right": "38% (16/42)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (36/68)",
+              "right": "47% (32/68)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Vavassori A.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

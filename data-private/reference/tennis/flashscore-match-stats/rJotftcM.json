@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-mikrut-vs-marti-pujolras-2026-06-02",
+  "boardTitle": "Luka Mikrut vs Alex Marti Pujolras",
+  "boardPlayerName": "Alex Marti Pujolras",
+  "recentOpponentName": "Watzka R.",
+  "recentIndex": 4,
+  "recentEvent": "M25 Mataro (Spain)",
+  "recentDate": "May 22, 26",
+  "recentIsoDate": "2026-05-22",
+  "recentResult": "Win 6-0 6-2",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Watzka R. - Marti Pujolras A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m25-mataro/",
+  "players": [
+    "Watzka R.",
+    "Marti Pujolras A."
+  ],
+  "generatedAt": "2026-06-02T02:39:19.466Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/rJotftcM/",
+  "matchId": "rJotftcM",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_rJotftcM",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_rJotftcM"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:24"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:45"
+      }
+    ],
+    "totalDuration": "1:09"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Watzka R.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Watzka R.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Watzka R.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

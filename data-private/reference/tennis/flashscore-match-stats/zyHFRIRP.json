@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-martin-vs-ellis-2026-06-02",
+  "boardTitle": "Andres Martin vs Blake Ellis",
+  "boardPlayerName": "Blake Ellis",
+  "recentOpponentName": "Matsuda R.",
+  "recentIndex": 2,
+  "recentEvent": "M25 Luzhou (China)",
+  "recentDate": "Apr 23, 26",
+  "recentIsoDate": "2026-04-23",
+  "recentResult": "Win 6-3 6-4",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Ellis B. - Matsuda R.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m25-luzhou/",
+  "players": [
+    "Ellis B.",
+    "Matsuda R."
+  ],
+  "generatedAt": "2026-06-02T02:39:37.551Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/zyHFRIRP/",
+  "matchId": "zyHFRIRP",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_zyHFRIRP",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_zyHFRIRP"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:29"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:48"
+      }
+    ],
+    "totalDuration": "1:17"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Ellis B.",
+              "rightPlayer": "Matsuda R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ellis B.",
+              "rightPlayer": "Matsuda R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ellis B.",
+              "rightPlayer": "Matsuda R."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

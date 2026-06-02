@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02",
+  "boardTitle": "Henrique Rocha vs Enrico Dalla Valle",
+  "boardPlayerName": "Enrico Dalla Valle",
+  "recentOpponentName": "Tobon M.",
+  "recentIndex": 0,
+  "recentEvent": "Perugia (Italy)",
+  "recentDate": "Jun 01, 26",
+  "recentIsoDate": "2026-06-01",
+  "recentResult": "Win 6-2 6-4",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Tobon M. - Dalla Valle E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/perugia/",
+  "players": [
+    "Tobon M.",
+    "Dalla Valle E."
+  ],
+  "generatedAt": "2026-06-02T02:39:31.794Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/hUrfwERG/",
+  "matchId": "hUrfwERG",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_hUrfwERG",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_hUrfwERG"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:34"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:41"
+      }
+    ],
+    "totalDuration": "1:15"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "69%",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (21/28)",
+              "right": "90% (28/31)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (10/23)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "0/0",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "10% (3/31)",
+              "right": "25% (7/28)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (6/14)",
+              "right": "57% (13/23)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/4",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "17",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "17",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (31/51)",
+              "right": "80% (36/45)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (9/45)",
+              "right": "39% (20/51)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (40/96)",
+              "right": "58% (56/96)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (6/9)",
+              "right": "100% (9/9)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (6/18)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "55%",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (9/14)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (5/11)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "0/0",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (2/12)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (4/10)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/3",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "9",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "8",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (13/24)",
+              "right": "73% (16/22)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (6/22)",
+              "right": "46% (11/24)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (19/46)",
+              "right": "59% (27/46)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "83%",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "86% (12/14)",
+              "right": "95% (18/19)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (5/12)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "5% (1/19)",
+              "right": "7% (1/14)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (2/4)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "8",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "9",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (18/27)",
+              "right": "87% (20/23)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "13% (3/23)",
+              "right": "33% (9/27)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (21/50)",
+              "right": "58% (29/50)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Tobon M.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

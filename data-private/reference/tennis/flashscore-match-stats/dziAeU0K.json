@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-bautista-agut-vs-barton-2026-06-02",
+  "boardTitle": "Hynek Barton vs Roberto Bautista Agut",
+  "boardPlayerName": "Roberto Bautista Agut",
+  "recentOpponentName": "Bergs Z.",
+  "recentIndex": 1,
+  "recentEvent": "Valencia (Spain)",
+  "recentDate": "May 14, 26",
+  "recentIsoDate": "2026-05-14",
+  "recentResult": "Loss 7-6 3-6 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Bautista-Agut R. - Bergs Z.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/valencia/",
+  "players": [
+    "Bautista-Agut R.",
+    "Bergs Z."
+  ],
+  "generatedAt": "2026-06-02T02:39:32.696Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/dziAeU0K/",
+  "matchId": "dziAeU0K",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_dziAeU0K",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_dziAeU0K"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:08"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:59"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:02"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "8",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "9",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "59%",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (47/78)",
+              "right": "78% (43/55)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "39% (15/38)",
+              "right": "37% (14/38)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/13",
+              "right": "3/7",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (12/55)",
+              "right": "40% (31/78)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (24/38)",
+              "right": "61% (23/38)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/7",
+              "right": "7/13",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "20",
+              "right": "46",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "34",
+              "right": "22",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "48% (10/21)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (62/116)",
+              "right": "61% (57/93)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (36/93)",
+              "right": "47% (54/116)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (98/209)",
+              "right": "53% (111/209)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "53% (8/15)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "27% (4/15)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (12/30)",
+              "right": "60% (18/30)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "54%",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (17/25)",
+              "right": "86% (18/21)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (10/14)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/2",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "14% (3/21)",
+              "right": "32% (8/25)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (11/18)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "1/1",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "16",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "21",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (2/6)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (27/39)",
+              "right": "64% (25/39)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (14/39)",
+              "right": "31% (12/39)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (41/78)",
+              "right": "47% (37/78)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "66%",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (16/26)",
+              "right": "79% (15/19)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "20% (2/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/7",
+              "right": "0/1",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (4/19)",
+              "right": "38% (10/26)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (6/10)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/7",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "12",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "1",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (6/9)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (18/36)",
+              "right": "66% (19/29)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (10/29)",
+              "right": "50% (18/36)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (28/65)",
+              "right": "57% (37/65)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "60%",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (14/27)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "21% (3/14)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/5",
+              "right": "2/4",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (5/15)",
+              "right": "48% (13/27)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "70% (7/10)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "4/5",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "18",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "0",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (2/6)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "41% (17/41)",
+              "right": "52% (13/25)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (12/25)",
+              "right": "59% (24/41)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (29/66)",
+              "right": "56% (37/66)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Bergs Z."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

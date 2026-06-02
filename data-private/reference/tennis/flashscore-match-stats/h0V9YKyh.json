@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-fearnley-vs-hijikata-2026-06-02",
+  "boardTitle": "Jacob Fearnley vs Rinky Hijikata",
+  "boardPlayerName": "Rinky Hijikata",
+  "recentOpponentName": "Squire H.",
+  "recentIndex": 2,
+  "recentEvent": "Hamburg (Germany)",
+  "recentDate": "May 17, 26",
+  "recentIsoDate": "2026-05-17",
+  "recentResult": "Win 6-7 7-5 7-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Hijikata R. - Squire H.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/hamburg/",
+  "players": [
+    "Hijikata R.",
+    "Squire H."
+  ],
+  "generatedAt": "2026-06-02T02:39:22.897Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/h0V9YKyh/",
+  "matchId": "h0V9YKyh",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_h0V9YKyh",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_h0V9YKyh"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "1:06"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:13"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:22"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "7",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "14",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "68%",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (56/88)",
+              "right": "72% (73/102)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (29/58)",
+              "right": "27% (13/48)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "18/22",
+              "right": "11/16",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (29/102)",
+              "right": "36% (32/88)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "73% (35/48)",
+              "right": "50% (29/58)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/16",
+              "right": "4/22",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "42",
+              "right": "52",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "51",
+              "right": "62",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Net points won",
+              "left": "68% (15/22)",
+              "right": "65% (20/31)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (85/146)",
+              "right": "57% (86/150)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (64/150)",
+              "right": "42% (61/146)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (149/296)",
+              "right": "50% (147/296)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "78% (14/18)",
+              "right": "72% (13/18)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Return games won",
+              "left": "28% (5/18)",
+              "right": "22% (4/18)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Total games won",
+              "left": "53% (19/36)",
+              "right": "47% (17/36)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "80%",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (21/31)",
+              "right": "63% (26/41)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "39% (7/18)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/7",
+              "right": "3/4",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (15/41)",
+              "right": "32% (10/31)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (6/10)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "1/7",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "16",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "21",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (28/49)",
+              "right": "60% (30/50)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (20/50)",
+              "right": "43% (21/49)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (48/99)",
+              "right": "52% (51/99)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "6",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "70%",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "66% (19/29)",
+              "right": "74% (29/39)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (11/20)",
+              "right": "12% (2/17)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "4/6",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (10/39)",
+              "right": "34% (10/29)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "88% (15/17)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "1/5",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "18",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "19",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (6/10)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (30/49)",
+              "right": "53% (31/58)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (27/58)",
+              "right": "39% (19/49)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (57/107)",
+              "right": "47% (50/107)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "6",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "51%",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (16/28)",
+              "right": "82% (18/22)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (11/20)",
+              "right": "33% (7/21)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/10",
+              "right": "4/6",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "18% (4/22)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (14/21)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "2/10",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "18",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "22",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (27/48)",
+              "right": "60% (25/42)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (17/42)",
+              "right": "44% (21/48)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (44/90)",
+              "right": "51% (46/90)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Hijikata R.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

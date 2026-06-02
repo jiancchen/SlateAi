@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-karol-vs-caniato-2026-06-02",
+  "boardTitle": "Carlo Alberto Caniato vs Milos Karol",
+  "boardPlayerName": "Carlo Alberto Caniato",
+  "recentOpponentName": "Carboni L.",
+  "recentIndex": 4,
+  "recentEvent": "Cervia (Italy)",
+  "recentDate": "May 20, 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "Win 7-6 2-6 6-4",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Caniato C. A. - Carboni L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/cervia/",
+  "players": [
+    "Caniato C. A.",
+    "Carboni L."
+  ],
+  "generatedAt": "2026-06-02T02:39:34.215Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/GGuCPlJM/",
+  "matchId": "GGuCPlJM",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_GGuCPlJM",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_GGuCPlJM"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:57"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:35"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:23"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "68%",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (51/68)",
+              "right": "72% (43/60)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (14/33)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "14/18",
+              "right": "1/4",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (17/60)",
+              "right": "25% (17/68)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (14/28)",
+              "right": "58% (19/33)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "4/18",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "39",
+              "right": "18",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "48",
+              "right": "22",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (7/14)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (65/101)",
+              "right": "65% (57/88)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (31/88)",
+              "right": "36% (36/101)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (96/189)",
+              "right": "49% (93/189)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "73% (11/15)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (3/15)",
+              "right": "27% (4/15)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total games won",
+              "left": "47% (14/30)",
+              "right": "53% (16/30)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "59%",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (21/26)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "62% (8/13)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "0/1",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (5/22)",
+              "right": "19% (5/26)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (7/15)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "1/3",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "7",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "15",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (29/39)",
+              "right": "68% (25/37)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (12/37)",
+              "right": "26% (10/39)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (41/76)",
+              "right": "46% (35/76)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "89%",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (11/21)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "14% (1/7)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/9",
+              "right": "1/2",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (5/17)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (1/2)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "3/9",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "4",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "1",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (3/6)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "43% (12/28)",
+              "right": "68% (13/19)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (6/19)",
+              "right": "57% (16/28)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (18/47)",
+              "right": "62% (29/47)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "66%",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "90% (19/21)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (5/13)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/6",
+              "right": "0/1",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (7/21)",
+              "right": "10% (2/21)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/6",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "7",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "6",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Net points won",
+              "left": "40% (2/5)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (24/34)",
+              "right": "59% (19/32)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (13/32)",
+              "right": "29% (10/34)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (37/66)",
+              "right": "44% (29/66)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Caniato C. A.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

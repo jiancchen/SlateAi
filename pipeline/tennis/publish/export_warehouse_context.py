@@ -213,6 +213,88 @@ def recent_form_metrics(conn: sqlite3.Connection, match_id: str) -> dict[str, di
     return by_player
 
 
+def as_number(value: Any) -> float | None:
+    if isinstance(value, (int, float)):
+        return float(value)
+    try:
+        text = str(value or "").strip()
+        if text.endswith("%"):
+            text = text[:-1]
+        return float(text)
+    except (TypeError, ValueError):
+        return None
+
+
+def pct_from_fraction_text(value: Any) -> float | None:
+    match = re.search(r"(\d+(?:\.\d+)?)\s*/\s*(\d+(?:\.\d+)?)", str(value or ""))
+    if not match:
+        return None
+    made = float(match.group(1))
+    total = float(match.group(2))
+    return round(made / total * 100, 1) if total else None
+
+
+def expected_stats_from_form_metrics(form_metrics: dict[str, Any] | None) -> dict[str, Any] | None:
+    if not form_metrics:
+        return None
+    service_stats = []
+    for match in form_metrics.get("matches") or []:
+        metric_rows = (match.get("metrics") or {}).values()
+        stat_payload = next(
+            (
+                ((metric.get("raw") or {}).get("serviceStats") or {})
+                for metric in metric_rows
+                if ((metric.get("raw") or {}).get("serviceStats") or {})
+            ),
+            {},
+        )
+        if stat_payload:
+            service_stats.append(stat_payload)
+    if not service_stats:
+        return None
+
+    def avg(*keys: str) -> float | None:
+        values = []
+        for row in service_stats:
+            for key in keys:
+                parsed = as_number(row.get(key))
+                if parsed is not None:
+                    values.append(parsed)
+                    break
+        return average(values)
+
+    stats = {
+        "holdPct": avg("holdPct", "serviceHoldPct"),
+        "aces": avg("aces"),
+        "avgAces": avg("aces"),
+        "doubleFaults": avg("doubleFaults"),
+        "avgDoubleFaults": avg("doubleFaults"),
+        "firstServePct": avg("firstServePct"),
+        "firstServeWonPct": avg("firstServeWonPct"),
+        "secondServeWonPct": avg("secondServeWonPct"),
+        "servicePointsWonPct": avg("servicePointsWonPct"),
+        "returnPointsWonPct": avg("returnPointsWonPct"),
+        "breakPointsSavedPct": avg("breakPointsSavedPct")
+        or average([pct for pct in (pct_from_fraction_text(row.get("breakPointsSaved")) for row in service_stats) if pct is not None]),
+        "breakPointsConvertedPct": average(
+            [pct for pct in (pct_from_fraction_text(row.get("breakPointsConverted")) for row in service_stats) if pct is not None]
+        ),
+        "winners": avg("winners"),
+        "unforcedErrors": avg("unforcedErrors"),
+        "forcedErrors": None,
+    }
+    stats = {key: value for key, value in stats.items() if value is not None}
+    if not stats:
+        return None
+    return {
+        "source": "Flashscore player-page recent-match stats",
+        "matches": len(service_stats),
+        "note": "Pregame expected stats are averaged from Flashscore player-page recent singles matches joined to stat feeds.",
+        "stats": stats,
+        "sourceUrl": None,
+    }
+
+
 def h2h_match_rows(conn: sqlite3.Connection, match_id: str) -> list[dict[str, Any]]:
     return [
         {
@@ -635,6 +717,7 @@ def export_context(date: str) -> dict[str, Any]:
                 row.get("surface"),
             ) or {}
             season_expected = side_expected.get(side or "") or {}
+            form_expected = expected_stats_from_form_metrics(form_metrics_by_player.get(normalize_name(player_name))) or {}
             recent_stats = {
                 key: value
                 for key, value in (recent_expected.get("stats") or {}).items()
@@ -650,17 +733,27 @@ def export_context(date: str) -> dict[str, Any]:
                 for key, value in (season_expected.get("stats") or {}).items()
                 if value is not None
             }
-            stats = {**season_stats, **page_stats, **recent_stats}
+            form_stats = {
+                key: value
+                for key, value in (form_expected.get("stats") or {}).items()
+                if value is not None
+            }
+            stats = {**season_stats, **page_stats, **recent_stats, **form_stats}
             if not stats:
                 return None
             source = (
-                recent_expected.get("source")
+                form_expected.get("source")
+                if form_stats
+                else recent_expected.get("source")
                 if recent_stats
                 else page_expected.get("source")
                 if page_stats
                 else season_expected.get("source")
             )
             note = (
+                form_expected.get("note")
+                if form_stats
+                else
                 "Pregame expected stats merge recent joined match rows with SofaScore player-page/tournament aggregates where available."
                 if recent_stats
                 else page_expected.get("note")
@@ -668,10 +761,10 @@ def export_context(date: str) -> dict[str, Any]:
             )
             return {
                 "source": source,
-                "matches": recent_expected.get("matches") or page_expected.get("matches") or season_expected.get("matches"),
+                "matches": form_expected.get("matches") or recent_expected.get("matches") or page_expected.get("matches") or season_expected.get("matches"),
                 "note": note,
                 "stats": stats,
-                "sourceUrl": recent_expected.get("sourceUrl") or page_expected.get("sourceUrl"),
+                "sourceUrl": form_expected.get("sourceUrl") or recent_expected.get("sourceUrl") or page_expected.get("sourceUrl"),
             }
 
         for player_key, expected in player_expected.items():
@@ -806,6 +899,31 @@ def export_context(date: str) -> dict[str, Any]:
                 elif page_expected:
                     expected = page_expected
                 form_metrics = form_metrics_by_player.get(player_key)
+                form_expected = expected_stats_from_form_metrics(form_metrics)
+                if expected and form_expected:
+                    expected_stats_non_null = {
+                        key: value
+                        for key, value in (expected.get("stats") or {}).items()
+                        if value is not None
+                    }
+                    form_stats_non_null = {
+                        key: value
+                        for key, value in (form_expected.get("stats") or {}).items()
+                        if value is not None
+                    }
+                    expected = {
+                        **expected,
+                        "source": form_expected.get("source") if form_stats_non_null else expected.get("source"),
+                        "matches": form_expected.get("matches") or expected.get("matches"),
+                        "note": form_expected.get("note") if form_stats_non_null else expected.get("note"),
+                        "stats": {
+                            **expected_stats_non_null,
+                            **form_stats_non_null,
+                        },
+                        "sourceUrl": expected.get("sourceUrl") or form_expected.get("sourceUrl"),
+                    }
+                elif form_expected:
+                    expected = form_expected
                 stats = {}
                 if expected and expected.get("stats"):
                     stats = expected.get("stats") or {}

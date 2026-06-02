@@ -1,0 +1,469 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-sun-vs-ilagan-2026-06-02",
+  "boardTitle": "Fajing Sun vs Andre Ilagan",
+  "boardPlayerName": "Andre Ilagan",
+  "recentOpponentName": "Aguiard E.",
+  "recentIndex": 2,
+  "recentEvent": "Little Rock (USA)",
+  "recentDate": "May 29, 26",
+  "recentIsoDate": "2026-05-29",
+  "recentResult": "Win 7-6 3-1",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Aguiard E. - Ilagan A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/little-rock/",
+  "players": [
+    "Aguiard E.",
+    "Ilagan A."
+  ],
+  "generatedAt": "2026-06-02T02:39:40.399Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/vNhCcaZj/",
+  "matchId": "vNhCcaZj",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_vNhCcaZj",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_vNhCcaZj"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 8,
+        "duration": "1:05"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 3,
+        "duration": "0:19"
+      }
+    ],
+    "totalDuration": "1:24"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "2",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "52%",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (20/35)",
+              "right": "73% (19/26)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (12/24)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "2/4",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (7/26)",
+              "right": "43% (15/35)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (11/24)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "3/5",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "54% (32/59)",
+              "right": "64% (32/50)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (18/50)",
+              "right": "46% (27/59)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (50/109)",
+              "right": "54% (59/109)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "63% (5/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (2/8)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "Total games won",
+              "left": "44% (7/16)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "49%",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (15/25)",
+              "right": "75% (15/20)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (11/22)",
+              "right": "52% (11/21)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "2/4",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (7/20)",
+              "right": "40% (10/25)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (10/21)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "2/4",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "55% (26/47)",
+              "right": "59% (24/41)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (17/41)",
+              "right": "45% (21/47)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (43/88)",
+              "right": "51% (45/88)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "83%",
+              "right": "67%",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (5/10)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (1/2)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "0% (0/6)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (1/3)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "50% (6/12)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "11% (1/9)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "33% (7/21)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (1/2)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/2)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Aguiard E.",
+              "rightPlayer": "Ilagan A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

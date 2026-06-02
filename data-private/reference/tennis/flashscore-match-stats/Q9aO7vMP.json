@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-duran-vs-napolitano-2026-06-02",
+  "boardTitle": "Tuncay Duran vs Stefano Napolitano",
+  "boardPlayerName": "Tuncay Duran",
+  "recentOpponentName": "Vujic S.",
+  "recentIndex": 1,
+  "recentEvent": "Centurion 2 (South Africa)",
+  "recentDate": "May 31, 26",
+  "recentIsoDate": "2026-05-31",
+  "recentResult": "Win 6-4 7-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Duran T. - Vujic S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+  "players": [
+    "Duran T.",
+    "Vujic S."
+  ],
+  "generatedAt": "2026-06-02T02:39:25.703Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Q9aO7vMP/",
+  "matchId": "Q9aO7vMP",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Q9aO7vMP",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Q9aO7vMP"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:43"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:10"
+      }
+    ],
+    "totalDuration": "1:53"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "9",
+              "right": "5",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "54%",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (28/38)",
+              "right": "74% (29/39)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "61% (19/31)",
+              "right": "45% (15/33)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "3/6",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (11/39)",
+              "right": "29% (11/38)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (18/33)",
+              "right": "39% (12/31)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "2/6",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "32",
+              "right": "21",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "33",
+              "right": "28",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (47/69)",
+              "right": "62% (44/71)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (27/71)",
+              "right": "32% (22/69)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (74/140)",
+              "right": "47% (66/140)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "82% (9/11)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Return games won",
+              "left": "27% (3/11)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Total games won",
+              "left": "55% (12/22)",
+              "right": "45% (10/22)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "46%",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (14/17)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (7/16)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "0/2",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (3/13)",
+              "right": "18% (3/17)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (8/15)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "1/4",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "10",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "7",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (21/33)",
+              "right": "61% (17/28)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (11/28)",
+              "right": "36% (12/33)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (32/61)",
+              "right": "48% (29/61)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "4",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "59%",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (14/21)",
+              "right": "73% (19/26)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "80% (12/15)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "3/4",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (8/26)",
+              "right": "38% (8/21)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (10/18)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "1/2",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "11",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "21",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (26/36)",
+              "right": "63% (27/43)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (16/43)",
+              "right": "28% (10/36)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (42/79)",
+              "right": "47% (37/79)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Vujic S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,682 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-baez-vs-gueymard-wayenburg-2026-06-02",
+  "boardTitle": "Sebastian Baez vs Sascha Gueymard Wayenburg",
+  "boardPlayerName": "Sascha Gueymard Wayenburg",
+  "recentOpponentName": "Dalla Valle E.",
+  "recentIndex": 1,
+  "recentEvent": "Tunis (Tunisia)",
+  "recentDate": "May 10, 26",
+  "recentIsoDate": "2026-05-10",
+  "recentResult": "Loss 4-6 7-6 6-7",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Gueymard Wayenburg S. - Dalla Valle E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/tunis/",
+  "players": [
+    "Gueymard Wayenburg S.",
+    "Dalla Valle E."
+  ],
+  "generatedAt": "2026-06-02T02:39:32.282Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/YaKP61pJ/",
+  "matchId": "YaKP61pJ",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_YaKP61pJ",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_YaKP61pJ"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:43"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 1,
+        "duration": "1:06"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:13"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "8",
+              "right": "0",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "70%",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (52/74)",
+              "right": "60% (50/83)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (25/50)",
+              "right": "60% (21/35)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "10/14",
+              "right": "5/8",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (33/83)",
+              "right": "30% (22/74)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (14/35)",
+              "right": "50% (25/50)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/8",
+              "right": "4/14",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "40",
+              "right": "25",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "79",
+              "right": "59",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (77/124)",
+              "right": "60% (71/118)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (47/118)",
+              "right": "38% (47/124)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (124/242)",
+              "right": "49% (118/242)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "76% (13/17)",
+              "right": "82% (14/17)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Return games won",
+              "left": "18% (3/17)",
+              "right": "24% (4/17)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Total games won",
+              "left": "47% (16/34)",
+              "right": "53% (18/34)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "73%",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (11/16)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (8/15)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "0/0",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (5/22)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/4",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "4",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "17",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (19/31)",
+              "right": "73% (22/30)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (8/30)",
+              "right": "39% (12/31)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (27/61)",
+              "right": "56% (34/61)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "68%",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (21/28)",
+              "right": "54% (15/28)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (7/12)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "0/1",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (13/28)",
+              "right": "25% (7/28)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "31% (4/13)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "1/5",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "8",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "25",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (28/40)",
+              "right": "59% (24/41)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (17/41)",
+              "right": "30% (12/40)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (45/81)",
+              "right": "44% (36/81)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "70%",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (20/30)",
+              "right": "55% (18/33)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (10/23)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "5/7",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (15/33)",
+              "right": "33% (10/30)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (7/14)",
+              "right": "57% (13/23)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "2/5",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "13",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "27",
+              "right": "17",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (30/53)",
+              "right": "53% (25/47)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (22/47)",
+              "right": "43% (23/53)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (52/100)",
+              "right": "48% (48/100)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

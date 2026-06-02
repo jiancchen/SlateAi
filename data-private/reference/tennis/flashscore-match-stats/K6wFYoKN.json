@@ -1,0 +1,668 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-molcan-vs-piros-2026-06-02",
+  "boardTitle": "Zsombor Piros vs Alex Molcan",
+  "boardPlayerName": "Zsombor Piros",
+  "recentOpponentName": "Moller E.",
+  "recentIndex": 2,
+  "recentEvent": "Zagreb (Croatia)",
+  "recentDate": "May 17, 26",
+  "recentIsoDate": "2026-05-17",
+  "recentResult": "Win 6-2 3-6 6-4",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Moller E. - Piros Z.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/zagreb/",
+  "players": [
+    "Moller E.",
+    "Piros Z."
+  ],
+  "generatedAt": "2026-06-02T02:39:35.111Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/K6wFYoKN/",
+  "matchId": "K6wFYoKN",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_K6wFYoKN",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_K6wFYoKN"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:34"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:02"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "4",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "52%",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (36/58)",
+              "right": "63% (30/48)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "37% (7/19)",
+              "right": "52% (23/44)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/9",
+              "right": "6/10",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (18/48)",
+              "right": "38% (22/58)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (21/44)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/10",
+              "right": "5/9",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "24",
+              "right": "19",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "37",
+              "right": "33",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (43/77)",
+              "right": "58% (53/92)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (39/92)",
+              "right": "44% (34/77)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (82/169)",
+              "right": "51% (87/169)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "62% (8/13)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "29% (4/14)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "44% (12/27)",
+              "right": "56% (15/27)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "59%",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "45% (5/11)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (3/9)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "2/3",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (6/17)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (6/12)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "3/3",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "10",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "35% (7/20)",
+              "right": "57% (16/28)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (12/28)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (19/48)",
+              "right": "60% (29/48)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "95%",
+              "right": "47%",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (15/19)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "0% (0/1)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "53% (8/15)",
+              "right": "16% (3/19)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (9/17)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "5",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "9",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "80% (16/20)",
+              "right": "53% (18/34)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (16/34)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (32/54)",
+              "right": "41% (22/54)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "76%",
+              "right": "52%",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (16/28)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "3/4",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (4/16)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (6/15)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "2/6",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "8",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "14",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (20/37)",
+              "right": "63% (19/30)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (11/30)",
+              "right": "46% (17/37)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (31/67)",
+              "right": "54% (36/67)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Moller E.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

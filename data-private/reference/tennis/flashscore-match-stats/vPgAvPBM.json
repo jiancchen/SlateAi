@@ -1,0 +1,125 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-moeller-vs-onclin-2026-06-02",
+  "boardTitle": "Marvin Moeller vs Gauthier Onclin",
+  "boardPlayerName": "Marvin Moeller",
+  "recentOpponentName": "Jong S.",
+  "recentIndex": 4,
+  "recentEvent": "M25 Troisdorf (Germany)",
+  "recentDate": "May 26, 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "Win 6-4 4-6 7-5",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Jong S. - Moeller M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m25-troisdorf/",
+  "players": [
+    "Jong S.",
+    "Moeller M."
+  ],
+  "generatedAt": "2026-06-02T02:39:19.055Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/vPgAvPBM/",
+  "matchId": "vPgAvPBM",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_vPgAvPBM",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_vPgAvPBM"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:56"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:55"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:55"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "1",
+              "right": "9",
+              "leftPlayer": "Jong S.",
+              "rightPlayer": "Moeller M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jong S.",
+              "rightPlayer": "Moeller M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jong S.",
+              "rightPlayer": "Moeller M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jong S.",
+              "rightPlayer": "Moeller M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

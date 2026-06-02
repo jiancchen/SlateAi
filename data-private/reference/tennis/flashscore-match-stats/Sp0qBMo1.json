@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-carballes-baena-vs-carboni-2026-06-02",
+  "boardTitle": "Lorenzo Carboni vs Roberto Carballes Baena",
+  "boardPlayerName": "Lorenzo Carboni",
+  "recentOpponentName": "Tu L.",
+  "recentIndex": 1,
+  "recentEvent": "Perugia (Italy)",
+  "recentDate": "May 31, 26",
+  "recentIsoDate": "2026-05-31",
+  "recentResult": "Win 6-3 6-4",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Tu L. - Carboni L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/perugia/",
+  "players": [
+    "Tu L.",
+    "Carboni L."
+  ],
+  "generatedAt": "2026-06-02T02:39:30.478Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Sp0qBMo1/",
+  "matchId": "Sp0qBMo1",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Sp0qBMo1",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Sp0qBMo1"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:53"
+      }
+    ],
+    "totalDuration": "1:34"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "68%",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (23/38)",
+              "right": "61% (27/44)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "31% (8/26)",
+              "right": "38% (8/21)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/14",
+              "right": "7/10",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (17/44)",
+              "right": "39% (15/38)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (13/21)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/10",
+              "right": "6/14",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "24",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "36",
+              "right": "27",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (31/64)",
+              "right": "54% (35/65)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (30/65)",
+              "right": "52% (33/64)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (61/129)",
+              "right": "53% (68/129)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (4/10)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (3/9)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total games won",
+              "left": "37% (7/19)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "60%",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (9/17)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "31% (4/13)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/7",
+              "right": "6/8",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (9/18)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (6/12)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/8",
+              "right": "4/7",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "12",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "13",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "39% (11/28)",
+              "right": "50% (15/30)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (15/30)",
+              "right": "61% (17/28)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (26/58)",
+              "right": "55% (32/58)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "74%",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (14/21)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "31% (4/13)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/7",
+              "right": "1/2",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (8/26)",
+              "right": "24% (5/21)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "78% (7/9)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/7",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "12",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "14",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (20/36)",
+              "right": "57% (20/35)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (15/35)",
+              "right": "44% (16/36)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (35/71)",
+              "right": "51% (36/71)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Tu L.",
+              "rightPlayer": "Carboni L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

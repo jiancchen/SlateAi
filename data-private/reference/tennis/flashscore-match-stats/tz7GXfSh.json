@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-searle-vs-krueger-2026-06-02",
+  "boardTitle": "Henry Searle vs Mitchell Krueger",
+  "boardPlayerName": "Henry Searle",
+  "recentOpponentName": "Matusevich A.",
+  "recentIndex": 3,
+  "recentEvent": "M25 Nottingham (United Kingdom)",
+  "recentDate": "May 03, 26",
+  "recentIsoDate": "2026-05-03",
+  "recentResult": "Loss 6-7 6-7",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Matusevich A. - Searle H.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m25-nottingham/",
+  "players": [
+    "Matusevich A.",
+    "Searle H."
+  ],
+  "generatedAt": "2026-06-02T02:39:37.991Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/tz7GXfSh/",
+  "matchId": "tz7GXfSh",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_tz7GXfSh",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_tz7GXfSh"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 8,
+        "rightGames": 6,
+        "duration": "1:06"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 11,
+        "rightGames": 9,
+        "duration": "1:04"
+      }
+    ],
+    "totalDuration": "2:10"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Matusevich A.",
+              "rightPlayer": "Searle H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Matusevich A.",
+              "rightPlayer": "Searle H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Matusevich A.",
+              "rightPlayer": "Searle H."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

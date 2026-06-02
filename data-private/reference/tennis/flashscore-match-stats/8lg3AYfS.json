@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-schoolkate-vs-fery-2026-06-02",
+  "boardTitle": "Tristan Schoolkate vs Arthur Fery",
+  "boardPlayerName": "Arthur Fery",
+  "recentOpponentName": "Choinski J.",
+  "recentIndex": 2,
+  "recentEvent": "Zagreb (Croatia)",
+  "recentDate": "May 17, 26",
+  "recentIsoDate": "2026-05-17",
+  "recentResult": "Loss 7-5 6-7 2-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Choinski J. - Fery A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/zagreb/",
+  "players": [
+    "Choinski J.",
+    "Fery A."
+  ],
+  "generatedAt": "2026-06-02T02:39:24.122Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/8lg3AYfS/",
+  "matchId": "8lg3AYfS",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_8lg3AYfS",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_8lg3AYfS"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:54"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 4,
+        "duration": "0:53"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:27"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "8",
+              "right": "6",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "56%",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (54/83)",
+              "right": "68% (46/68)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (16/28)",
+              "right": "49% (26/53)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/9",
+              "right": "7/11",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (22/68)",
+              "right": "35% (29/83)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "51% (27/53)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/11",
+              "right": "2/9",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "26",
+              "right": "39",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "35",
+              "right": "53",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Net points won",
+              "left": "44% (11/25)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (63/91)",
+              "right": "60% (62/103)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (41/103)",
+              "right": "31% (28/91)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (104/194)",
+              "right": "46% (90/194)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "85% (11/13)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Return games won",
+              "left": "31% (4/13)",
+              "right": "15% (2/13)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (15/26)",
+              "right": "42% (11/26)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "0",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "78%",
+              "right": "49%",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "54% (25/46)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "31% (4/13)",
+              "right": "48% (11/23)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "2/4",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (8/22)",
+              "right": "46% (21/46)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (12/23)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/5",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "17",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "19",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Net points won",
+              "left": "47% (7/15)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (22/39)",
+              "right": "56% (15/27)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (12/27)",
+              "right": "44% (17/39)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (34/66)",
+              "right": "48% (32/66)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Total games won",
+              "left": "56% (5/9)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "55%",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (16/22)",
+              "right": "86% (18/21)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "91% (10/11)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "1/1",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (5/21)",
+              "right": "27% (6/22)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "41% (7/17)",
+              "right": "9% (1/11)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/4",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "13",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "17",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (2/6)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "78% (25/32)",
+              "right": "72% (26/36)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (10/36)",
+              "right": "22% (7/32)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (35/68)",
+              "right": "49% (33/68)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Total games won",
+              "left": "44% (4/9)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "66%",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "87% (13/15)",
+              "right": "56% (14/25)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (2/4)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "4/6",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (9/25)",
+              "right": "13% (2/15)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (8/13)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "0/0",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "9",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "17",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "80% (16/20)",
+              "right": "53% (21/40)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (19/40)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (35/60)",
+              "right": "42% (25/60)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Fery A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,546 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-dellien-vs-schoenhaus-2026-06-02",
+  "boardTitle": "Hugo Dellien vs Max Schoenhaus",
+  "boardPlayerName": "Hugo Dellien",
+  "recentOpponentName": "Cuenin S.",
+  "recentIndex": 3,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 19, 26",
+  "recentIsoDate": "2026-05-19",
+  "recentResult": "Win 6-4 6-4",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Cuenin S. - Dellien H.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Cuenin S.",
+    "Dellien H."
+  ],
+  "generatedAt": "2026-06-02T02:39:18.095Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/biVNtRqI/",
+  "matchId": "biVNtRqI",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_biVNtRqI",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_biVNtRqI"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:44"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:51"
+      }
+    ],
+    "totalDuration": "1:35"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "80%",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "66% (21/32)",
+              "right": "65% (33/51)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (11/25)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/5",
+              "right": "4/6",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "174 km/h",
+              "right": "174 km/h",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "144 km/h",
+              "right": "146 km/h",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (18/51)",
+              "right": "34% (11/32)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (6/13)",
+              "right": "56% (14/25)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "4/5",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "23",
+              "right": "23",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "32",
+              "right": "15",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Net points won",
+              "left": "64% (7/11)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (32/57)",
+              "right": "63% (40/64)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (24/64)",
+              "right": "44% (25/57)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (56/121)",
+              "right": "54% (65/121)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (6/10)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (2/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (8/20)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "75%",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (9/16)",
+              "right": "59% (16/27)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (7/11)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "4/5",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (11/27)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (3/9)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "2/3",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "13",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "8",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Net points won",
+              "left": "63% (5/8)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (16/27)",
+              "right": "61% (22/36)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (14/36)",
+              "right": "41% (11/27)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (30/63)",
+              "right": "52% (33/63)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "86%",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (12/16)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (4/14)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/1",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (7/24)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (3/4)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/2",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "10",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "7",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (16/30)",
+              "right": "64% (18/28)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (10/28)",
+              "right": "47% (14/30)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (26/58)",
+              "right": "55% (32/58)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Cuenin S.",
+              "rightPlayer": "Dellien H."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

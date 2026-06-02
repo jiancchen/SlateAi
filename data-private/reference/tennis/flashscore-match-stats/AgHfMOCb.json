@@ -1,0 +1,654 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-sun-vs-ilagan-2026-06-02",
+  "boardTitle": "Fajing Sun vs Andre Ilagan",
+  "boardPlayerName": "Andre Ilagan",
+  "recentOpponentName": "Sweeny D.",
+  "recentIndex": 4,
+  "recentEvent": "Wuxi (China)",
+  "recentDate": "May 06, 26",
+  "recentIsoDate": "2026-05-06",
+  "recentResult": "Loss 3-6 7-6 4-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Ilagan A. - Sweeny D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/wuxi/",
+  "players": [
+    "Ilagan A.",
+    "Sweeny D."
+  ],
+  "generatedAt": "2026-06-02T02:39:40.113Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/AgHfMOCb/",
+  "matchId": "AgHfMOCb",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_AgHfMOCb",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_AgHfMOCb"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 2,
+        "duration": "1:05"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:50"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "8",
+              "right": "3",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "5",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "63%",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (37/63)",
+              "right": "60% (46/77)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (20/44)",
+              "right": "49% (22/45)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/15",
+              "right": "9/14",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (31/77)",
+              "right": "41% (26/63)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "51% (23/45)",
+              "right": "55% (24/44)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/14",
+              "right": "7/15",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "7",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (57/107)",
+              "right": "56% (68/122)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (54/122)",
+              "right": "47% (50/107)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (111/229)",
+              "right": "52% (118/229)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "53% (8/15)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Return games won",
+              "left": "31% (5/16)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (13/31)",
+              "right": "58% (18/31)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "45%",
+              "right": "71%",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (5/9)",
+              "right": "52% (14/27)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (4/11)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/1",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "48% (13/27)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/2",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "45% (9/20)",
+              "right": "55% (21/38)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (17/38)",
+              "right": "55% (11/20)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (26/58)",
+              "right": "55% (32/58)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "51%",
+              "right": "60%",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (13/19)",
+              "right": "63% (19/30)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (10/18)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "4/6",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (11/30)",
+              "right": "32% (6/19)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (10/20)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "2/4",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "62% (23/37)",
+              "right": "58% (29/50)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (21/50)",
+              "right": "38% (14/37)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (44/87)",
+              "right": "49% (43/87)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "59%",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "54% (19/35)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (6/15)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/9",
+              "right": "5/7",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (7/20)",
+              "right": "46% (16/35)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (9/14)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "3/9",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "7",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (25/50)",
+              "right": "53% (18/34)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (16/34)",
+              "right": "50% (25/50)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (41/84)",
+              "right": "51% (43/84)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

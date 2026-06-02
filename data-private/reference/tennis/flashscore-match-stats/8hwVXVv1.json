@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-bicknell-vs-monday-2026-06-02",
+  "boardTitle": "Johannus Monday vs Blaise Bicknell",
+  "boardPlayerName": "Johannus Monday",
+  "recentOpponentName": "Langmo C.",
+  "recentIndex": 2,
+  "recentEvent": "Little Rock (USA)",
+  "recentDate": "May 25, 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "Win 6-2 3-6 6-3",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Monday J. - Langmo C.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/little-rock/",
+  "players": [
+    "Monday J.",
+    "Langmo C."
+  ],
+  "generatedAt": "2026-06-02T02:39:36.222Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/8hwVXVv1/",
+  "matchId": "8hwVXVv1",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_8hwVXVv1",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_8hwVXVv1"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:32"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:33"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "1:53"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "11",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "60%",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (39/55)",
+              "right": "79% (34/43)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "68% (15/22)",
+              "right": "48% (14/29)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "3/6",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (9/43)",
+              "right": "29% (16/55)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (15/29)",
+              "right": "32% (7/22)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "1/3",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "26",
+              "right": "24",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "33",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (12/14)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (54/77)",
+              "right": "67% (48/72)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (24/72)",
+              "right": "30% (23/77)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (78/149)",
+              "right": "48% (71/149)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "92% (12/13)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Return games won",
+              "left": "23% (3/13)",
+              "right": "8% (1/13)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (15/26)",
+              "right": "42% (11/26)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "43%",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (15/17)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (3/7)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "2/4",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (2/10)",
+              "right": "12% (2/17)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (8/13)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/1",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "4",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "11",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (18/24)",
+              "right": "57% (13/23)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (10/23)",
+              "right": "25% (6/24)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (28/47)",
+              "right": "40% (19/47)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "65%",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "54% (7/13)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "86% (6/7)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/1",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (4/17)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "11% (1/9)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/1",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "10",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "9",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (13/20)",
+              "right": "81% (21/26)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "19% (5/26)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (18/46)",
+              "right": "61% (28/46)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "76%",
+              "right": "70%",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (17/25)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (6/8)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (3/16)",
+              "right": "32% (8/25)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "86% (6/7)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "10",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "13",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (6/7)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (23/33)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (9/23)",
+              "right": "30% (10/33)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (32/56)",
+              "right": "43% (24/56)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Langmo C."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

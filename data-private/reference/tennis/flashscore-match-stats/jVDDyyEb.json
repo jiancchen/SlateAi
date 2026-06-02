@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-mikrut-vs-marti-pujolras-2026-06-02",
+  "boardTitle": "Luka Mikrut vs Alex Marti Pujolras",
+  "boardPlayerName": "Alex Marti Pujolras",
+  "recentOpponentName": "Kennedy J.",
+  "recentIndex": 3,
+  "recentEvent": "M25 Mataro (Spain)",
+  "recentDate": "May 23, 26",
+  "recentIsoDate": "2026-05-23",
+  "recentResult": "Win 6-2 6-0",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Marti Pujolras A. - Kennedy J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m25-mataro/",
+  "players": [
+    "Marti Pujolras A.",
+    "Kennedy J."
+  ],
+  "generatedAt": "2026-06-02T02:39:19.441Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/jVDDyyEb/",
+  "matchId": "jVDDyyEb",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_jVDDyyEb",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_jVDDyyEb"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:34"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 0,
+        "duration": "0:30"
+      }
+    ],
+    "totalDuration": "1:04"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Marti Pujolras A.",
+              "rightPlayer": "Kennedy J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Marti Pujolras A.",
+              "rightPlayer": "Kennedy J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Marti Pujolras A.",
+              "rightPlayer": "Kennedy J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

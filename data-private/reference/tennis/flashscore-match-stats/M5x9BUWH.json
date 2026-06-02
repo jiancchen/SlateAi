@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-sun-vs-ilagan-2026-06-02",
+  "boardTitle": "Fajing Sun vs Andre Ilagan",
+  "boardPlayerName": "Fajing Sun",
+  "recentOpponentName": "Bobo D.",
+  "recentIndex": 1,
+  "recentEvent": "Little Rock (USA)",
+  "recentDate": "May 25, 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "Win 6-2 6-1",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Sun F. - Bobo D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/little-rock/",
+  "players": [
+    "Sun F.",
+    "Bobo D."
+  ],
+  "generatedAt": "2026-06-02T02:39:40.078Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/M5x9BUWH/",
+  "matchId": "M5x9BUWH",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_M5x9BUWH",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_M5x9BUWH"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:06"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:34"
+      }
+    ],
+    "totalDuration": "0:40"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "48%",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "95% (18/19)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (8/15)",
+              "right": "40% (12/30)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "4/8",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "71% (20/28)",
+              "right": "16% (3/19)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (18/30)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/8",
+              "right": "0/0",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "9",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "38",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "89% (16/18)",
+              "right": "39% (15/38)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "61% (23/38)",
+              "right": "11% (2/18)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "70% (39/56)",
+              "right": "30% (17/56)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Return games won",
+              "left": "80% (4/5)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Total games won",
+              "left": "89% (8/9)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "62%",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "92% (11/12)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (3/8)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "56% (9/16)",
+              "right": "8% (1/12)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (6/10)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "15",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "100% (4/4)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "67% (4/6)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "80% (8/10)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (1/1)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (1/1)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Total games won",
+              "left": "100% (2/2)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "38%",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (7/7)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (5/7)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "4/7",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "92% (11/12)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (12/20)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "0/0",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "5",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "23",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "86% (12/14)",
+              "right": "41% (13/32)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "59% (19/32)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "67% (31/46)",
+              "right": "33% (15/46)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Bobo D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

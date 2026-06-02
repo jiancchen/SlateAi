@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-fearnley-vs-hijikata-2026-06-02",
+  "boardTitle": "Jacob Fearnley vs Rinky Hijikata",
+  "boardPlayerName": "Rinky Hijikata",
+  "recentOpponentName": "Altmaier D.",
+  "recentIndex": 1,
+  "recentEvent": "Hamburg (Germany)",
+  "recentDate": "May 18, 26",
+  "recentIsoDate": "2026-05-18",
+  "recentResult": "Loss 5-7 2-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Altmaier D. - Hijikata R.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/hamburg/",
+  "players": [
+    "Altmaier D.",
+    "Hijikata R."
+  ],
+  "generatedAt": "2026-06-02T02:39:23.019Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/IZ0Meb4E/",
+  "matchId": "IZ0Meb4E",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_IZ0Meb4E",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_IZ0Meb4E"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:54"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:48"
+      }
+    ],
+    "totalDuration": "1:42"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "0",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "50%",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (26/33)",
+              "right": "68% (26/38)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (12/19)",
+              "right": "37% (14/38)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "5/9",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (12/38)",
+              "right": "21% (7/33)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (24/38)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/9",
+              "right": "1/2",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "31",
+              "right": "19",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "26",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (12/15)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "73% (38/52)",
+              "right": "53% (40/76)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (36/76)",
+              "right": "27% (14/52)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (74/128)",
+              "right": "42% (54/128)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "90% (9/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (4/10)",
+              "right": "10% (1/10)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Total games won",
+              "left": "65% (13/20)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "54%",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (14/19)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (8/12)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "2/4",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (5/21)",
+              "right": "26% (5/19)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (12/18)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/2",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "10",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "14",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Net points won",
+              "left": "78% (7/9)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (22/31)",
+              "right": "56% (22/39)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (17/39)",
+              "right": "29% (9/31)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (39/70)",
+              "right": "44% (31/70)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "46%",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "86% (12/14)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (4/7)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/5",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (7/17)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (12/20)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "0/0",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "9",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "12",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (16/21)",
+              "right": "49% (18/37)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (19/37)",
+              "right": "24% (5/21)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (35/58)",
+              "right": "40% (23/58)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Altmaier D.",
+              "rightPlayer": "Hijikata R."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

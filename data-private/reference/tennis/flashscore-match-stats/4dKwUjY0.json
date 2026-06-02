@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-moeller-vs-onclin-2026-06-02",
+  "boardTitle": "Marvin Moeller vs Gauthier Onclin",
+  "boardPlayerName": "Gauthier Onclin",
+  "recentOpponentName": "Alkaya M.",
+  "recentIndex": 3,
+  "recentEvent": "Abidjan 2 (Ivory Coast)",
+  "recentDate": "May 01, 26",
+  "recentIsoDate": "2026-05-01",
+  "recentResult": "Win 6-3 7-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Onclin G. - Alkaya M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/abidjan-2/",
+  "players": [
+    "Onclin G.",
+    "Alkaya M."
+  ],
+  "generatedAt": "2026-06-02T02:39:19.645Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/4dKwUjY0/",
+  "matchId": "4dKwUjY0",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_4dKwUjY0",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_4dKwUjY0"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 3,
+        "duration": "1:08"
+      }
+    ],
+    "totalDuration": "1:44"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "12",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "58%",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (31/39)",
+              "right": "65% (31/48)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (17/32)",
+              "right": "51% (18/35)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "6/9",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (17/48)",
+              "right": "21% (8/39)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "49% (17/35)",
+              "right": "47% (15/32)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/9",
+              "right": "1/4",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "25",
+              "right": "26",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "31",
+              "right": "38",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Net points won",
+              "left": "88% (7/8)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (48/71)",
+              "right": "59% (49/83)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (34/83)",
+              "right": "32% (23/71)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (82/154)",
+              "right": "47% (72/154)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "90% (9/10)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Return games won",
+              "left": "27% (3/11)",
+              "right": "10% (1/10)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Total games won",
+              "left": "57% (12/21)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "58%",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "90% (9/10)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (7/11)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "5/7",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "48% (11/23)",
+              "right": "10% (1/10)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "41% (7/17)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "0/0",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "10",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "13",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (16/21)",
+              "right": "55% (22/40)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (18/40)",
+              "right": "24% (5/21)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (34/61)",
+              "right": "44% (27/61)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "8",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "58%",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (22/29)",
+              "right": "76% (19/25)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (10/21)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "1/2",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (6/25)",
+              "right": "24% (7/29)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (10/18)",
+              "right": "52% (11/21)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "1/4",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "16",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "25",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (4/4)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (32/50)",
+              "right": "63% (27/43)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (16/43)",
+              "right": "36% (18/50)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (48/93)",
+              "right": "48% (45/93)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Onclin G.",
+              "rightPlayer": "Alkaya M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

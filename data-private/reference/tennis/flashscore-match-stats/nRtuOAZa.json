@@ -1,0 +1,546 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-blanchet-vs-gill-2026-06-02",
+  "boardTitle": "Ugo Blanchet vs Felix Gill",
+  "boardPlayerName": "Ugo Blanchet",
+  "recentOpponentName": "Llamas Ruiz P.",
+  "recentIndex": 0,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 20, 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "Loss 4-6 2-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Blanchet U. - Llamas Ruiz P.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Blanchet U.",
+    "Llamas Ruiz P."
+  ],
+  "generatedAt": "2026-06-02T02:39:21.537Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/nRtuOAZa/",
+  "matchId": "nRtuOAZa",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_nRtuOAZa",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_nRtuOAZa"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:52"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:36"
+      }
+    ],
+    "totalDuration": "1:28"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "38%",
+              "right": "69%",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (15/27)",
+              "right": "80% (28/35)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "51% (23/45)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "10/14",
+              "right": "4/5",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "185 km/h",
+              "right": "158 km/h",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "154 km/h",
+              "right": "137 km/h",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (7/35)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (7/16)",
+              "right": "49% (22/45)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "4/14",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "20",
+              "right": "20",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "36",
+              "right": "20",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (7/14)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (38/72)",
+              "right": "73% (37/51)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (14/51)",
+              "right": "47% (34/72)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (52/123)",
+              "right": "58% (71/123)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "56% (5/9)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Return games won",
+              "left": "11% (1/9)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (6/18)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "40%",
+              "right": "65%",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (11/17)",
+              "right": "80% (16/20)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (11/25)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/8",
+              "right": "4/5",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (4/20)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "56% (14/25)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "2/8",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "14",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "10",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Net points won",
+              "left": "56% (5/9)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (22/42)",
+              "right": "68% (21/31)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (10/31)",
+              "right": "48% (20/42)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (32/73)",
+              "right": "56% (41/73)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "33%",
+              "right": "75%",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "40% (4/10)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (12/20)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "0/0",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (3/15)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "20% (1/5)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/6",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "6",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "10",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Net points won",
+              "left": "40% (2/5)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (16/30)",
+              "right": "80% (16/20)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (4/20)",
+              "right": "47% (14/30)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (20/50)",
+              "right": "60% (30/50)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Llamas Ruiz P."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

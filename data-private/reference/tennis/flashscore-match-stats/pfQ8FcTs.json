@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-watt-vs-wendelken-2026-06-02",
+  "boardTitle": "James Watt vs Harry Wendelken",
+  "boardPlayerName": "James Watt",
+  "recentOpponentName": "Nedic A.",
+  "recentIndex": 4,
+  "recentEvent": "Davis Cup - World Group I (World)",
+  "recentDate": "Feb 08, 26",
+  "recentIsoDate": "2026-02-08",
+  "recentResult": "Win 6-3 7-6",
+  "recentSurface": "Unknown",
+  "flashscoreLabel": "Watt J. - Nedic A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/davis-cup-world-group-i/",
+  "players": [
+    "Watt J.",
+    "Nedic A."
+  ],
+  "generatedAt": "2026-06-02T02:39:23.821Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/pfQ8FcTs/",
+  "matchId": "pfQ8FcTs",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_pfQ8FcTs",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_pfQ8FcTs"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 4,
+        "duration": "1:05"
+      }
+    ],
+    "totalDuration": "1:47"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Nedic A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Nedic A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Nedic A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

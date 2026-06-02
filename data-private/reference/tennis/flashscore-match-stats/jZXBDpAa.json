@@ -1,0 +1,668 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-santillan-vs-donski-2026-06-02",
+  "boardTitle": "Akira Santillan vs Alexander Donski",
+  "boardPlayerName": "Alexander Donski",
+  "recentOpponentName": "Honda N.",
+  "recentIndex": 0,
+  "recentEvent": "Centurion 2 (South Africa)",
+  "recentDate": "Jun 01, 26",
+  "recentIsoDate": "2026-06-01",
+  "recentResult": "Win 2-6 6-3 6-4",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Donski A. - Honda N.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+  "players": [
+    "Donski A.",
+    "Honda N."
+  ],
+  "generatedAt": "2026-06-02T02:39:27.853Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/jZXBDpAa/",
+  "matchId": "jZXBDpAa",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_jZXBDpAa",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_jZXBDpAa"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:40"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:02"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "19",
+              "right": "7",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "12",
+              "right": "8",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "58%",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (39/49)",
+              "right": "73% (35/48)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (27/56)",
+              "right": "51% (18/35)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "2/4",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (13/48)",
+              "right": "20% (10/49)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "49% (17/35)",
+              "right": "52% (29/56)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "2/5",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "32",
+              "right": "18",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "51",
+              "right": "37",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (66/105)",
+              "right": "64% (53/83)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (30/83)",
+              "right": "37% (39/105)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (96/188)",
+              "right": "49% (92/188)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "86% (12/14)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Return games won",
+              "left": "15% (2/13)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Total games won",
+              "left": "52% (14/27)",
+              "right": "48% (13/27)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "2",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "7",
+              "right": "1",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "42%",
+              "right": "65%",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (15/19)",
+              "right": "82% (14/17)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "31% (8/26)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "1/1",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "18% (3/17)",
+              "right": "32% (6/19)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (4/9)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "2/5",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "8",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "11",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "51% (23/45)",
+              "right": "72% (18/25)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (7/25)",
+              "right": "49% (22/45)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (30/70)",
+              "right": "57% (40/70)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "3",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "56%",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (10/15)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (10/14)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (5/15)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (6/12)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "6",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "10",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (20/29)",
+              "right": "59% (16/27)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (11/27)",
+              "right": "31% (9/29)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (31/56)",
+              "right": "45% (25/56)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "53%",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "93% (14/15)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (9/16)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (5/16)",
+              "right": "7% (1/15)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (7/14)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "4",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "16",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (23/31)",
+              "right": "61% (19/31)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (12/31)",
+              "right": "26% (8/31)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (35/62)",
+              "right": "44% (27/62)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Honda N."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

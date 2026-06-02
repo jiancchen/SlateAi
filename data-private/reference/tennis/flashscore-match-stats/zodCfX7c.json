@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-cretu-vs-vasami-2026-06-02",
+  "boardTitle": "Cezar Cretu (b. 2001) vs Jacopo Vasami",
+  "boardPlayerName": "Cezar Cretu (b. 2001)",
+  "recentOpponentName": "Watanuki Y.",
+  "recentIndex": 4,
+  "recentEvent": "Chisinau (Moldova)",
+  "recentDate": "May 26, 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "Win 6-1 6-4",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Cretu C. - Watanuki Y.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/chisinau/",
+  "players": [
+    "Cretu C.",
+    "Watanuki Y."
+  ],
+  "generatedAt": "2026-06-02T02:39:30.815Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/zodCfX7c/",
+  "matchId": "zodCfX7c",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_zodCfX7c",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_zodCfX7c"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:49"
+      }
+    ],
+    "totalDuration": "1:26"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "58%",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "47% (18/38)",
+              "right": "46% (17/37)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (9/14)",
+              "right": "19% (5/27)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/6",
+              "right": "8/16",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "54% (20/37)",
+              "right": "53% (20/38)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "81% (22/27)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "8/16",
+              "right": "4/6",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "11",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "47",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (27/52)",
+              "right": "34% (22/64)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "66% (42/64)",
+              "right": "48% (25/52)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (69/116)",
+              "right": "41% (47/116)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (4/8)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "89% (8/9)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "57%",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (9/17)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (4/7)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "4/8",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "59% (10/17)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "85% (11/13)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/8",
+              "right": "1/2",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "7",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "23",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (13/24)",
+              "right": "32% (10/31)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "68% (21/31)",
+              "right": "46% (11/24)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "62% (34/55)",
+              "right": "38% (21/55)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "59%",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "43% (9/21)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (5/7)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "4/8",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (10/20)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "79% (11/14)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/8",
+              "right": "3/4",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "24",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (14/28)",
+              "right": "36% (12/33)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "64% (21/33)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (35/61)",
+              "right": "43% (26/61)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Watanuki Y."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

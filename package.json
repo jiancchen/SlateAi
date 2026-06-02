@@ -151,6 +151,7 @@
     "data:fetch:tennis-robinhood": "node pipeline/tennis/fetchers/scrape-robinhood-tennis-page.mjs",
     "data:fetch:tennis-flashscore-slate": "node pipeline/tennis/fetchers/fetch-flashscore-tennis-slate.mjs",
     "data:fetch:tennis-flashscore-recent": "node pipeline/tennis/fetchers/fetch-flashscore-tennis-recent-stats.mjs",
+    "data:fetch:tennis-flashscore-player-pages": "node pipeline/tennis/fetchers/fetch-flashscore-tennis-player-pages.mjs",
     "data:fetch:tennis-sofascore-match": "node pipeline/tennis/fetchers/fetch-sofascore-tennis-match.mjs",
     "data:fetch:tennis-sofascore-slate": "node pipeline/tennis/fetchers/fetch-sofascore-tennis-slate.mjs",
     "data:fetch:tennis-sofascore-player-stats": "node pipeline/tennis/fetchers/fetch-sofascore-player-page-stats.mjs",

@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-martin-vs-ellis-2026-06-02",
+  "boardTitle": "Andres Martin vs Blake Ellis",
+  "boardPlayerName": "Andres Martin",
+  "recentOpponentName": "Watt J.",
+  "recentIndex": 3,
+  "recentEvent": "Oeiras 6 (Portugal)",
+  "recentDate": "May 11, 26",
+  "recentIsoDate": "2026-05-11",
+  "recentResult": "Win 6-4 6-4",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Martin A. - Watt J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/oeiras-6/",
+  "players": [
+    "Martin A.",
+    "Watt J."
+  ],
+  "generatedAt": "2026-06-02T02:39:37.186Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/4v146h6s/",
+  "matchId": "4v146h6s",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_4v146h6s",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_4v146h6s"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:44"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:37"
+      }
+    ],
+    "totalDuration": "1:21"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "4",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "70%",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (25/36)",
+              "right": "58% (28/48)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (14/28)",
+              "right": "38% (8/21)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/9",
+              "right": "4/9",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (20/48)",
+              "right": "31% (11/36)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (13/21)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/9",
+              "right": "3/9",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "31",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "48",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (39/64)",
+              "right": "52% (36/69)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (33/69)",
+              "right": "39% (25/64)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (72/133)",
+              "right": "46% (61/133)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "70% (7/10)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (5/10)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "61%",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (16/21)",
+              "right": "64% (16/25)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (7/14)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "2/4",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (10/25)",
+              "right": "29% (6/21)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (9/16)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/4",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "19",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "25",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (23/35)",
+              "right": "56% (23/41)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (18/41)",
+              "right": "34% (12/35)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (41/76)",
+              "right": "46% (35/76)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "82%",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (9/15)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (7/14)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "2/5",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (10/23)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "80% (4/5)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "2/5",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "12",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "23",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (16/29)",
+              "right": "46% (13/28)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (15/28)",
+              "right": "45% (13/29)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (31/57)",
+              "right": "46% (26/57)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

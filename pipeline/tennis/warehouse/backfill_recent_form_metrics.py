@@ -33,6 +33,28 @@ def clamp(value: float | None, low: float = 0, high: float = 100) -> float | Non
     return max(low, min(high, value))
 
 
+def result_only_fallback(metric_key: str, closeout: float | None) -> float | None:
+    """Low-authority fallback for Flashscore rows without service stat sections.
+
+    Some Challenger player pages expose a completed recent result but no
+    service/return stat feed beyond a small points widget. The UI still needs a
+    visible row, but these estimates must remain marked as estimated so they do
+    not masquerade as exact hold/serve data.
+    """
+    base_close = closeout if closeout is not None else 55.0
+    if metric_key == "hold":
+        return clamp(68 + (base_close - 55) * 0.35, 56, 78)
+    if metric_key == "secondServe":
+        return clamp(48 + (base_close - 55) * 0.12, 42, 55)
+    if metric_key == "errorControl":
+        return clamp(58 + (base_close - 55) * 0.25, 44, 72)
+    if metric_key == "returnPressure":
+        return clamp(40 + (base_close - 55) * 0.15, 32, 50)
+    if metric_key == "closeout":
+        return clamp(base_close)
+    return None
+
+
 def fraction(value: Any) -> tuple[float, float] | None:
     text = str(value or "")
     match = re.search(r"(\d+(?:\.\d+)?)\s*/\s*(\d+(?:\.\d+)?)", text)
@@ -145,12 +167,21 @@ def fill_missing_player_metric_estimates(conn: sqlite3.Connection, match_id: str
         values = [float(row["score"]) for row in rows if row["metric_key"] == metric_key and row["score"] is not None]
         if values:
             averages[metric_key] = round(sum(values) / len(values), 1)
+    closeout_by_index = {
+        row["recent_index"]: float(row["score"])
+        for row in rows
+        if row["metric_key"] == "closeout" and row["score"] is not None
+    }
 
     updated = 0
     for row in rows:
         if row["score"] is not None:
             continue
         fallback = averages.get(row["metric_key"])
+        source = "Player recent exact average fallback"
+        if fallback is None:
+            fallback = result_only_fallback(row["metric_key"], closeout_by_index.get(row["recent_index"]))
+            source = "Flashscore result-only estimate"
         if fallback is None:
             continue
         conn.execute(
@@ -158,14 +189,14 @@ def fill_missing_player_metric_estimates(conn: sqlite3.Connection, match_id: str
             update tennis_recent_form_metrics
             set score = ?,
                 estimated = 1,
-                source = 'Player recent exact average fallback',
-                raw_json = json_set(coalesce(raw_json, '{}'), '$.scoreSource', 'Player recent exact average fallback')
+                source = ?,
+                raw_json = json_set(coalesce(raw_json, '{}'), '$.scoreSource', ?)
             where match_id = ?
               and normalized_name = ?
               and recent_index = ?
               and metric_key = ?
             """,
-            (fallback, match_id, normalized, row["recent_index"], row["metric_key"]),
+            (round(fallback, 1), source, source, match_id, normalized, row["recent_index"], row["metric_key"]),
         )
         updated += 1
     return updated

@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-peliwo-vs-coulibaly-2026-06-02",
+  "boardTitle": "Filip Peliwo vs Eliakim Coulibaly",
+  "boardPlayerName": "Filip Peliwo",
+  "recentOpponentName": "Azkara A.",
+  "recentIndex": 0,
+  "recentEvent": "Centurion (South Africa)",
+  "recentDate": "May 26, 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "Loss 6-4 4-6 3-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Peliwo F. - Azkara A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion/",
+  "players": [
+    "Peliwo F.",
+    "Azkara A."
+  ],
+  "generatedAt": "2026-06-02T02:39:28.428Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/88qIVaXO/",
+  "matchId": "88qIVaXO",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_88qIVaXO",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_88qIVaXO"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:46"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:55"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:32"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "5",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "9",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "53%",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (31/55)",
+              "right": "71% (42/59)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (18/38)",
+              "right": "42% (22/53)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/12",
+              "right": "5/10",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (17/59)",
+              "right": "44% (24/55)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (31/53)",
+              "right": "53% (20/38)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/10",
+              "right": "7/12",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "24",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "45",
+              "right": "59",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Net points won",
+              "left": "64% (7/11)",
+              "right": "67% (16/24)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (49/93)",
+              "right": "57% (64/112)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (48/112)",
+              "right": "47% (44/93)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (97/205)",
+              "right": "53% (108/205)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "53% (8/15)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Return games won",
+              "left": "36% (5/14)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Total games won",
+              "left": "45% (13/29)",
+              "right": "55% (16/29)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "51%",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (14/21)",
+              "right": "72% (13/18)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "2/4",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (5/18)",
+              "right": "33% (7/21)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "59% (10/17)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/2",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "8",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "21",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (19/30)",
+              "right": "55% (21/38)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (17/38)",
+              "right": "37% (11/30)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (36/68)",
+              "right": "47% (32/68)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "48%",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (8/15)",
+              "right": "79% (15/19)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (6/15)",
+              "right": "33% (7/21)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "2/4",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (4/19)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (14/21)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "3/3",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "9",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "21",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "47% (14/30)",
+              "right": "55% (22/40)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (18/40)",
+              "right": "53% (16/30)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (32/70)",
+              "right": "54% (38/70)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "59%",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "47% (9/19)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (7/14)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "1/2",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (8/22)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (7/15)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "3/7",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "7",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "17",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (16/33)",
+              "right": "62% (21/34)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (13/34)",
+              "right": "52% (17/33)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (29/67)",
+              "right": "57% (38/67)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

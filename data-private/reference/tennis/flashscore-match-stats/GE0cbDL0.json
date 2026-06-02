@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-bicknell-vs-monday-2026-06-02",
+  "boardTitle": "Johannus Monday vs Blaise Bicknell",
+  "boardPlayerName": "Blaise Bicknell",
+  "recentOpponentName": "Vishal Balsekar A.",
+  "recentIndex": 2,
+  "recentEvent": "Brazzaville (Republic of the Congo)",
+  "recentDate": "May 06, 26",
+  "recentIsoDate": "2026-05-06",
+  "recentResult": "Win 6-4 6-4",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Vishal Balsekar A. - Bicknell B.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/brazzaville/",
+  "players": [
+    "Vishal Balsekar A.",
+    "Bicknell B."
+  ],
+  "generatedAt": "2026-06-02T02:39:36.421Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/GE0cbDL0/",
+  "matchId": "GE0cbDL0",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_GE0cbDL0",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_GE0cbDL0"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:26"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:56"
+      }
+    ],
+    "totalDuration": "1:22"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "1",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "75%",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (28/46)",
+              "right": "69% (31/45)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (11/24)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/9",
+              "right": "0/1",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (14/45)",
+              "right": "39% (18/46)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (5/15)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/9",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "21",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "23",
+              "right": "26",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (39/70)",
+              "right": "68% (41/60)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (19/60)",
+              "right": "44% (31/70)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (58/130)",
+              "right": "55% (72/130)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "70% (7/10)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Return games won",
+              "left": "10% (1/10)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (8/20)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "70%",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (11/17)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/1",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (8/21)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (3/9)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/2",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "6",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "12",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (14/26)",
+              "right": "65% (20/31)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (11/31)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (25/57)",
+              "right": "56% (32/57)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "80%",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (17/29)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (7/14)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/7",
+              "right": "0/0",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (6/24)",
+              "right": "41% (12/29)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (2/6)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/7",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "15",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "14",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (25/44)",
+              "right": "72% (21/29)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (8/29)",
+              "right": "43% (19/44)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (33/73)",
+              "right": "55% (40/73)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Vishal Balsekar A.",
+              "rightPlayer": "Bicknell B."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

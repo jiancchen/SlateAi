@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-dalmasso-vs-bittoun-kouzmine-2026-06-02",
+  "boardTitle": "Guillaume Dalmasso vs Constantin Bittoun Kouzmine",
+  "boardPlayerName": "Constantin Bittoun Kouzmine",
+  "recentOpponentName": "Dembo J.",
+  "recentIndex": 2,
+  "recentEvent": "M15 Gaborone 2 (Botswana)",
+  "recentDate": "May 22, 26",
+  "recentIsoDate": "2026-05-22",
+  "recentResult": "Win 7-5 6-0",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Dembo J. - Bittoun C.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m15-gaborone-2/",
+  "players": [
+    "Dembo J.",
+    "Bittoun C."
+  ],
+  "generatedAt": "2026-06-02T02:39:26.065Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/x89EWHOH/",
+  "matchId": "x89EWHOH",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_x89EWHOH",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_x89EWHOH"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": ""
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": ""
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Dembo J.",
+              "rightPlayer": "Bittoun C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dembo J.",
+              "rightPlayer": "Bittoun C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dembo J.",
+              "rightPlayer": "Bittoun C."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

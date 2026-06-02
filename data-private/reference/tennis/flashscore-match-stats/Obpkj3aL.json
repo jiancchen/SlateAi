@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-mikrut-vs-marti-pujolras-2026-06-02",
+  "boardTitle": "Luka Mikrut vs Alex Marti Pujolras",
+  "boardPlayerName": "Luka Mikrut",
+  "recentOpponentName": "Rodesch C.",
+  "recentIndex": 1,
+  "recentEvent": "Zagreb (Croatia)",
+  "recentDate": "May 14, 26",
+  "recentIsoDate": "2026-05-14",
+  "recentResult": "Loss 1-6 2-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Mikrut L. - Rodesch C.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/zagreb/",
+  "players": [
+    "Mikrut L.",
+    "Rodesch C."
+  ],
+  "generatedAt": "2026-06-02T02:39:19.202Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Obpkj3aL/",
+  "matchId": "Obpkj3aL",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Obpkj3aL",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Obpkj3aL"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:21"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:38"
+      }
+    ],
+    "totalDuration": "0:59"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "68%",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (16/26)",
+              "right": "89% (25/28)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "31% (4/13)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/7",
+              "right": "2/2",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "11% (3/28)",
+              "right": "38% (10/26)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "31% (4/13)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "4/7",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "20",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "10",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "51% (20/39)",
+              "right": "83% (34/41)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "17% (7/41)",
+              "right": "49% (19/39)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "34% (27/80)",
+              "right": "66% (53/80)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "43% (3/7)",
+              "right": "100% (8/8)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/8)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Total games won",
+              "left": "20% (3/15)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "88%",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (8/12)",
+              "right": "100% (14/14)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "17% (1/6)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "0% (0/14)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "0% (0/2)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "7",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (9/18)",
+              "right": "100% (16/16)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "0% (0/16)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "26% (9/34)",
+              "right": "74% (25/34)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "56%",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (8/14)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (3/7)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "2/2",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (3/14)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "2/3",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "13",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "9",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/1)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (11/21)",
+              "right": "72% (18/25)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (7/25)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (18/46)",
+              "right": "61% (28/46)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Rodesch C."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

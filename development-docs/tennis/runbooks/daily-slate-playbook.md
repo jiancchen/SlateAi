@@ -26,7 +26,9 @@ npm run data:fetch:tennis-sofascore-player-stats -- --date YYYY-MM-DD
 npm run data:import:tennis-sofascore-player-stats -- --date YYYY-MM-DD
 npm run data:fetch:tennis-weather -- --date YYYY-MM-DD
 npm run data:fetch:tennis-flashscore-slate -- --date YYYY-MM-DD
+npm run data:fetch:tennis-flashscore-player-pages -- --date YYYY-MM-DD --recent-limit 5
 npm run data:import:tennis-flashscore
+python3 pipeline/tennis/warehouse/backfill_recent_form_metrics.py --date YYYY-MM-DD
 python3 pipeline/tennis/research/multimodel_backtest.py --target-date YYYY-MM-DD
 python3 pipeline/tennis/research/analyze_kalshi_intramatch.py --target-date YYYY-MM-DD
 python3 pipeline/tennis/research/project_kalshi_trade_candidates.py
@@ -168,7 +170,8 @@ Minimum modeling inputs:
 
 - Current match winner probabilities from the ensemble, but never as the only input.
 - Recent hold, second serve, error control, return pressure, and closeout scores for both players.
-- Roland Garros replay flow: service games, hold rate, breaks lost, return games, breaks won, long-game rate, first-set shape where available. Prefer Livesport/Flashscore point-by-point when a match URL exists; use SofaScore replay only when event mapping is clean.
+- Flashscore player-page and current-match context for every Robinhood/Challenger row. Challenger matches do not exist in ESPN/Roland-Garros-only context, so resolve them from Flashscore tournament pages first, including player profile URLs, current match id, recent singles rows, and recent stat joins.
+- Replay flow: service games, hold rate, breaks lost, return games, breaks won, long-game rate, first-set shape where available. Prefer Flashscore point-by-point when a match URL exists; use Livesport only as a fallback and SofaScore replay only when event mapping is clean.
 - FanDuel `totalGames` and `gameHandicap` lines when offered.
 - Men/Women and best-of-five/best-of-three adjustment.
 - Surface-specific form, opponent quality, H2H surface context, and current tournament fatigue. Clay form is full-strength only for clay matches; it is context-only on hard, grass, or unknown surfaces.
@@ -194,8 +197,9 @@ Each singles match needs:
 - Surface-tagged record, recent record, recent opponent rank quality, and adjusted form.
 - Recent service and return metrics: hold, second serve, error control, return pressure, closeout.
 - SofaScore player-page pressure stats for the current slate: first serve in, first-serve points won, second-serve points won, break points saved %, and break points converted %. Use the row matching the actual match surface first; all-surface rows are fallback only. If the match is hard or grass and only clay rows exist, mark surface pressure data incomplete instead of silently joining clay.
-- Livesport/Flashscore point-by-point replay flow where available: service games, holds, breaks lost, return games, breaks won, break-point states, set-point states, long-game rate, and first-set shape. Store the URL player map: match id, source URL, home/away names, player slug ids, slate date, and board match id.
-- SofaScore replay flow is acceptable when mapped cleanly, but a failed SofaScore slate map cannot leave replay flow blank if a Livesport/Flashscore URL is available.
+- Flashscore player-page recent rows for Challenger/current-market matches: current match id, source URL, tournament URL, home/away names, player profile URLs, player slug ids, slate date, board match id, recent singles opponents, recent surfaces, and recent stat-feed joins.
+- Flashscore point-by-point replay flow where available: service games, holds, breaks lost, return games, breaks won, break-point states, set-point states, long-game rate, and first-set shape. Livesport is fallback only when Flashscore cannot supply the URL/feed. Store the URL player map in either case.
+- SofaScore replay flow is acceptable when mapped cleanly, but a failed SofaScore slate map cannot leave replay flow blank if a Flashscore or fallback Livesport URL is available.
 - H2H with dates and surfaces, not just total count.
 - FanDuel or sportsbook ML/spread/total from event pages, keyed as `moneyline`, `gameHandicap`, and `totalGames`.
 - Stored derivative predictions for expected match games, first-set games, O/U, and game handicap.
@@ -208,6 +212,7 @@ If any row is missing the core hold/return/error context, mark it "data incomple
 Every tennis slate must carry a surface per match before warehouse import or deploy:
 
 - Robinhood/Challenger rows must be tagged by tournament: Roland Garros/French Open, Perugia, Prostejov, and Bad Rappenau as `Clay`; Birmingham as `Grass`; Tyler and Centurion as `Hard`. Unknown events stay `Unknown`; do not default them to clay.
+- Robinhood/Challenger rows must be enriched from Flashscore before prediction: `npm run data:fetch:tennis-flashscore-player-pages -- --date YYYY-MM-DD --recent-limit 5`, then import Flashscore and backfill recent form. A Challenger row still labeled `Market only` after this pass is a data failure unless Flashscore could not resolve the match.
 - `pipeline/tennis/fetchers/scrape-robinhood-tennis-page.mjs --date YYYY-MM-DD` writes `surface` and `surfaceSource` into the Robinhood supplement.
 - `pipeline/tennis/research/multimodel_backtest.py --target-date YYYY-MM-DD` exports `surface` and `surfaceFlags` in the ensemble rows so value-board decisions can be audited.
 - `pipeline/tennis/publish/export_warehouse_context.py --date YYYY-MM-DD` must not attach Roland Garros/Paris fallback weather or clay player-page stats to non-Roland-Garros market-only rows.

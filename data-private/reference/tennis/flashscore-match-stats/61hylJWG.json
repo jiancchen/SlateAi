@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-peliwo-vs-coulibaly-2026-06-02",
+  "boardTitle": "Filip Peliwo vs Eliakim Coulibaly",
+  "boardPlayerName": "Filip Peliwo",
+  "recentOpponentName": "Sinclair C.",
+  "recentIndex": 4,
+  "recentEvent": "M25 Anning (China)",
+  "recentDate": "Apr 19, 26",
+  "recentIsoDate": "2026-04-19",
+  "recentResult": "Loss 3-6 0-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Peliwo F. - Sinclair C.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m25-anning/",
+  "players": [
+    "Peliwo F.",
+    "Sinclair C."
+  ],
+  "generatedAt": "2026-06-02T02:39:28.548Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/61hylJWG/",
+  "matchId": "61hylJWG",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_61hylJWG",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_61hylJWG"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:28"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:28"
+      }
+    ],
+    "totalDuration": "0:56"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Sinclair C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Sinclair C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Peliwo F.",
+              "rightPlayer": "Sinclair C."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

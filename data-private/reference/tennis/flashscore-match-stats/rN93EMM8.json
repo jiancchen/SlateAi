@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-duckworth-vs-harris-2026-06-02",
+  "boardTitle": "James Duckworth vs Billy Harris",
+  "boardPlayerName": "Billy Harris",
+  "recentOpponentName": "Brunclik P.",
+  "recentIndex": 1,
+  "recentEvent": "Oeiras 6 (Portugal)",
+  "recentDate": "May 11, 26",
+  "recentIsoDate": "2026-05-11",
+  "recentResult": "Loss 5-7 7-5 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Harris B. - Brunclik P.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/oeiras-6/",
+  "players": [
+    "Harris B.",
+    "Brunclik P."
+  ],
+  "generatedAt": "2026-06-02T02:39:22.679Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/rN93EMM8/",
+  "matchId": "rN93EMM8",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_rN93EMM8",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_rN93EMM8"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:02"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:57"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:54"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "10",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "8",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "61%",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (40/54)",
+              "right": "70% (57/82)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "51% (22/43)",
+              "right": "45% (24/53)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/7",
+              "right": "11/14",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (25/82)",
+              "right": "26% (14/54)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (29/53)",
+              "right": "49% (21/43)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/14",
+              "right": "4/7",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "32",
+              "right": "39",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "42",
+              "right": "50",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (62/97)",
+              "right": "60% (80/134)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (54/134)",
+              "right": "36% (35/97)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (116/231)",
+              "right": "50% (115/231)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (12/16)",
+              "right": "82% (14/17)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Return games won",
+              "left": "18% (3/17)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Total games won",
+              "left": "45% (15/33)",
+              "right": "55% (18/33)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "49%",
+              "right": "66%",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (15/18)",
+              "right": "73% (24/33)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (10/19)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "6/6",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (9/33)",
+              "right": "17% (3/18)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (9/17)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/6",
+              "right": "1/1",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "17",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "20",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (25/37)",
+              "right": "64% (32/50)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (18/50)",
+              "right": "32% (12/37)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (43/87)",
+              "right": "51% (44/87)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "65%",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (17/24)",
+              "right": "61% (17/28)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (9/15)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "1/3",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (11/28)",
+              "right": "33% (8/24)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (9/15)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "1/2",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "9",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "12",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (26/39)",
+              "right": "55% (21/38)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (17/38)",
+              "right": "33% (13/39)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (43/77)",
+              "right": "44% (34/77)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "50%",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (8/12)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (3/9)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "4/5",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (5/21)",
+              "right": "25% (3/12)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (11/21)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "2/4",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "13",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "18",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/1)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (11/21)",
+              "right": "59% (27/46)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (19/46)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (30/67)",
+              "right": "55% (37/67)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Harris B.",
+              "rightPlayer": "Brunclik P."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

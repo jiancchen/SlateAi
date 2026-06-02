@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-mukund-vs-hussey-2026-06-02",
+  "boardTitle": "Giles Hussey vs Sasikumar Mukund",
+  "boardPlayerName": "Sasikumar Mukund",
+  "recentOpponentName": "Yamanaka T.",
+  "recentIndex": 2,
+  "recentEvent": "Bengaluru 3 (India)",
+  "recentDate": "May 20, 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "Win 6-4 7-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Sasikumar M. - Yamanaka T.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/bengaluru-3/",
+  "players": [
+    "Sasikumar M.",
+    "Yamanaka T."
+  ],
+  "generatedAt": "2026-06-02T02:39:27.235Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/rN7pia5c/",
+  "matchId": "rN7pia5c",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_rN7pia5c",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_rN7pia5c"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:39"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 1,
+        "duration": "1:15"
+      }
+    ],
+    "totalDuration": "1:54"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "9",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "56%",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (36/45)",
+              "right": "73% (29/40)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (15/25)",
+              "right": "55% (17/31)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "3/5",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (11/40)",
+              "right": "20% (9/45)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (14/31)",
+              "right": "40% (10/25)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "1/5",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "28",
+              "right": "25",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "31",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Net points won",
+              "left": "93% (14/15)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "73% (51/70)",
+              "right": "65% (46/71)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (25/71)",
+              "right": "27% (19/70)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (76/141)",
+              "right": "46% (65/141)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "91% (10/11)",
+              "right": "82% (9/11)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Return games won",
+              "left": "18% (2/11)",
+              "right": "9% (1/11)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Total games won",
+              "left": "55% (12/22)",
+              "right": "45% (10/22)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "66%",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (15/18)",
+              "right": "74% (14/19)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (5/19)",
+              "right": "22% (4/18)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (4/10)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "9",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "11",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Net points won",
+              "left": "88% (7/8)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (20/27)",
+              "right": "68% (19/28)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (9/28)",
+              "right": "26% (7/27)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (29/55)",
+              "right": "47% (26/55)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "5",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "50%",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (21/27)",
+              "right": "71% (15/21)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (10/16)",
+              "right": "52% (11/21)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "3/4",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (6/21)",
+              "right": "19% (5/27)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (10/21)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "1/5",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "16",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "20",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (7/7)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (31/43)",
+              "right": "63% (27/43)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (16/43)",
+              "right": "28% (12/43)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (47/86)",
+              "right": "45% (39/86)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Yamanaka T."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-weightman-vs-badenhorst-2026-06-02",
+  "boardTitle": "Oscar Weightman vs Devin Badenhorst",
+  "boardPlayerName": "Devin Badenhorst",
+  "recentOpponentName": "Hussey G.",
+  "recentIndex": 0,
+  "recentEvent": "Centurion (South Africa)",
+  "recentDate": "May 27, 26",
+  "recentIsoDate": "2026-05-27",
+  "recentResult": "Loss 6-7 6-7",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Hussey G. - Badenhorst D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion/",
+  "players": [
+    "Hussey G.",
+    "Badenhorst D."
+  ],
+  "generatedAt": "2026-06-02T02:39:28.581Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/YqxNCAIc/",
+  "matchId": "YqxNCAIc",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_YqxNCAIc",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_YqxNCAIc"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 3,
+        "duration": "0:59"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 1,
+        "duration": "1:01"
+      }
+    ],
+    "totalDuration": "2:00"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "8",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "76%",
+              "right": "50%",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (42/60)",
+              "right": "76% (31/41)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (10/19)",
+              "right": "44% (18/41)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/10",
+              "right": "7/10",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (10/41)",
+              "right": "30% (18/60)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (23/41)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/10",
+              "right": "3/10",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "23",
+              "right": "25",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "30",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (52/79)",
+              "right": "60% (49/82)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (33/82)",
+              "right": "34% (27/79)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (85/161)",
+              "right": "47% (76/161)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "9",
+              "right": "1",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (9/12)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (3/12)",
+              "right": "25% (3/12)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (12/24)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "5",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "82%",
+              "right": "50%",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (23/32)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (4/7)",
+              "right": "45% (10/22)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "5/6",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (10/22)",
+              "right": "28% (9/32)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (12/22)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/6",
+              "right": "1/2",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "9",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "14",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (27/39)",
+              "right": "61% (27/44)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (17/44)",
+              "right": "31% (12/39)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (44/83)",
+              "right": "47% (39/83)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "50%",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (19/28)",
+              "right": "74% (14/19)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "42% (8/19)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/8",
+              "right": "2/4",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "0% (0/19)",
+              "right": "32% (9/28)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (11/19)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "2/8",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "16",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "16",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (25/40)",
+              "right": "58% (22/38)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (16/38)",
+              "right": "38% (15/40)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (41/78)",
+              "right": "47% (37/78)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Badenhorst D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-mcdonald-vs-budkov-kjaer-2026-06-02",
+  "boardTitle": "Mackenzie McDonald vs Nicolai Budkov Kjaer",
+  "boardPlayerName": "Mackenzie McDonald",
+  "recentOpponentName": "Pacheco Mendez R.",
+  "recentIndex": 4,
+  "recentEvent": "Mexico City (Mexico)",
+  "recentDate": "Apr 07, 26",
+  "recentIsoDate": "2026-04-07",
+  "recentResult": "Loss 2-6 2-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Pacheco Mendez R. - McDonald M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/mexico-city/",
+  "players": [
+    "Pacheco Mendez R.",
+    "McDonald M."
+  ],
+  "generatedAt": "2026-06-02T02:39:23.345Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/z5MG2Odl/",
+  "matchId": "z5MG2Odl",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_z5MG2Odl",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_z5MG2Odl"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:32"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:31"
+      }
+    ],
+    "totalDuration": "1:03"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "2",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "67%",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (29/33)",
+              "right": "55% (22/40)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (7/15)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "6/10",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (18/40)",
+              "right": "12% (4/33)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (12/20)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/10",
+              "right": "0/1",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "20",
+              "right": "15",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "30",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (36/48)",
+              "right": "50% (30/60)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (30/60)",
+              "right": "25% (12/48)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (66/108)",
+              "right": "39% (42/108)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (8/8)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (4/8)",
+              "right": "0% (0/8)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (12/16)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "57%",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "94% (16/17)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (3/8)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (8/17)",
+              "right": "6% (1/17)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (7/13)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "6",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "18",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (19/25)",
+              "right": "50% (15/30)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (15/30)",
+              "right": "24% (6/25)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "62% (34/55)",
+              "right": "38% (21/55)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "77%",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (13/16)",
+              "right": "57% (13/23)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (4/7)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "4/6",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (10/23)",
+              "right": "19% (3/16)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (5/7)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "0/1",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "9",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "12",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (17/23)",
+              "right": "50% (15/30)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (15/30)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (32/53)",
+              "right": "40% (21/53)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Pacheco Mendez R.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

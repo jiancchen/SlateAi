@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-petkovic-vs-moro-canas-2026-06-02",
+  "boardTitle": "Mika Petkovic vs Alejandro Moro Canas",
+  "boardPlayerName": "Mika Petkovic",
+  "recentOpponentName": "Mathes K.",
+  "recentIndex": 4,
+  "recentEvent": "M25 Troisdorf (Germany)",
+  "recentDate": "May 27, 26",
+  "recentIsoDate": "2026-05-27",
+  "recentResult": "Win 6-2 6-2",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Petkovic M. - Mathes K.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m25-troisdorf/",
+  "players": [
+    "Petkovic M.",
+    "Mathes K."
+  ],
+  "generatedAt": "2026-06-02T02:39:20.054Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/2ce04Uup/",
+  "matchId": "2ce04Uup",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_2ce04Uup",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_2ce04Uup"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:49"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:39"
+      }
+    ],
+    "totalDuration": "1:28"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Petkovic M.",
+              "rightPlayer": "Mathes K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Petkovic M.",
+              "rightPlayer": "Mathes K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Petkovic M.",
+              "rightPlayer": "Mathes K."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

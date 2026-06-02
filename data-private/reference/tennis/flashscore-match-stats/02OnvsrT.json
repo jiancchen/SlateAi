@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-shimizu-vs-sweeny-2026-06-02",
+  "boardTitle": "Yuta Shimizu vs Dane Sweeny",
+  "boardPlayerName": "Dane Sweeny",
+  "recentOpponentName": "Lajal M.",
+  "recentIndex": 2,
+  "recentEvent": "Wuxi (China)",
+  "recentDate": "May 08, 26",
+  "recentIsoDate": "2026-05-08",
+  "recentResult": "Loss 5-7 3-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Lajal M. - Sweeny D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/wuxi/",
+  "players": [
+    "Lajal M.",
+    "Sweeny D."
+  ],
+  "generatedAt": "2026-06-02T02:39:38.822Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/02OnvsrT/",
+  "matchId": "02OnvsrT",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_02OnvsrT",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_02OnvsrT"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:50"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:42"
+      }
+    ],
+    "totalDuration": "1:32"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "8",
+              "right": "0",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "72%",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (32/46)",
+              "right": "58% (25/43)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (11/20)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "5/9",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (18/43)",
+              "right": "30% (14/46)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "59% (10/17)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/9",
+              "right": "2/3",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "26",
+              "right": "19",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "25",
+              "right": "22",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Net points won",
+              "left": "77% (17/22)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (43/66)",
+              "right": "53% (32/60)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (28/60)",
+              "right": "35% (23/66)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (71/126)",
+              "right": "44% (55/126)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "82% (9/11)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (4/10)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Total games won",
+              "left": "62% (13/21)",
+              "right": "38% (8/21)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "70%",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (15/24)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "2/5",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "48% (11/23)",
+              "right": "38% (9/24)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "70% (7/10)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "2/2",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "10",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "12",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (8/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (20/34)",
+              "right": "45% (15/33)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "55% (18/33)",
+              "right": "41% (14/34)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (38/67)",
+              "right": "43% (29/67)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "74%",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (17/22)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "3/4",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (7/20)",
+              "right": "23% (5/22)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (3/7)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "0/1",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "9",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "10",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Net points won",
+              "left": "90% (9/10)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (23/32)",
+              "right": "63% (17/27)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (10/27)",
+              "right": "28% (9/32)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (33/59)",
+              "right": "44% (26/59)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

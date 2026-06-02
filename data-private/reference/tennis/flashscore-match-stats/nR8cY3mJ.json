@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-basile-vs-travaglia-2026-06-02",
+  "boardTitle": "Pierluigi Basile vs Stefano Travaglia",
+  "boardPlayerName": "Pierluigi Basile",
+  "recentOpponentName": "Ratti L.",
+  "recentIndex": 0,
+  "recentEvent": "M25 Grado (Italy)",
+  "recentDate": "May 29, 26",
+  "recentIsoDate": "2026-05-29",
+  "recentResult": "Loss 6-7 4-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Basile P. - Ratti L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m25-grado/",
+  "players": [
+    "Basile P.",
+    "Ratti L."
+  ],
+  "generatedAt": "2026-06-02T02:39:29.624Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/nR8cY3mJ/",
+  "matchId": "nR8cY3mJ",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_nR8cY3mJ",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_nR8cY3mJ"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "1:15"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:52"
+      }
+    ],
+    "totalDuration": "2:07"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Basile P.",
+              "rightPlayer": "Ratti L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Basile P.",
+              "rightPlayer": "Ratti L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Basile P.",
+              "rightPlayer": "Ratti L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

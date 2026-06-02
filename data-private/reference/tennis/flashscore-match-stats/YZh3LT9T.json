@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-shimizu-vs-sweeny-2026-06-02",
+  "boardTitle": "Yuta Shimizu vs Dane Sweeny",
+  "boardPlayerName": "Dane Sweeny",
+  "recentOpponentName": "Aguiard E.",
+  "recentIndex": 0,
+  "recentEvent": "Little Rock (USA)",
+  "recentDate": "May 27, 26",
+  "recentIsoDate": "2026-05-27",
+  "recentResult": "Loss 3-6 4-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Sweeny D. - Aguiard E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/little-rock/",
+  "players": [
+    "Sweeny D.",
+    "Aguiard E."
+  ],
+  "generatedAt": "2026-06-02T02:39:38.815Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/YZh3LT9T/",
+  "matchId": "YZh3LT9T",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_YZh3LT9T",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_YZh3LT9T"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:47"
+      }
+    ],
+    "totalDuration": "1:32"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "8",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "54%",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (15/27)",
+              "right": "64% (21/33)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "32% (8/25)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/5",
+              "right": "2/5",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (12/33)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (14/28)",
+              "right": "68% (17/25)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "5/5",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "17",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "34",
+              "right": "24",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Net points won",
+              "left": "55% (6/11)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "44% (23/52)",
+              "right": "57% (35/61)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (26/61)",
+              "right": "56% (29/52)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (49/113)",
+              "right": "57% (64/113)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "44% (4/9)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Return games won",
+              "left": "30% (3/10)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Total games won",
+              "left": "37% (7/19)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "46%",
+              "right": "50%",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "92% (11/12)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (4/14)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (5/17)",
+              "right": "8% (1/12)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "41% (7/17)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "12",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Net points won",
+              "left": "63% (5/8)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (15/26)",
+              "right": "65% (22/34)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (12/34)",
+              "right": "42% (11/26)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (27/60)",
+              "right": "55% (33/60)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "59%",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "27% (4/15)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (4/11)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/4",
+              "right": "2/5",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (7/16)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (7/11)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "4/4",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "10",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "12",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "31% (8/26)",
+              "right": "48% (13/27)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (14/27)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (22/53)",
+              "right": "58% (31/53)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Sweeny D.",
+              "rightPlayer": "Aguiard E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

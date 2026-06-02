@@ -1,0 +1,125 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-royer-vs-alvarez-varona-2026-06-02",
+  "boardTitle": "Valentin Royer vs Nicolas Alvarez Varona",
+  "boardPlayerName": "Nicolas Alvarez Varona",
+  "recentOpponentName": "Lalami Laaroussi Y.",
+  "recentIndex": 4,
+  "recentEvent": "M25 Mataro (Spain)",
+  "recentDate": "May 20, 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "Win 3-6 7-6 6-3",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Lalami Laaroussi Y. - Alvarez Varona N.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m25-mataro/",
+  "players": [
+    "Lalami Laaroussi Y.",
+    "Alvarez Varona N."
+  ],
+  "generatedAt": "2026-06-02T02:39:32.606Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Wd5DrrGj/",
+  "matchId": "Wd5DrrGj",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Wd5DrrGj",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Wd5DrrGj"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:35"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 10,
+        "rightGames": 12,
+        "duration": "1:13"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:44"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Lalami Laaroussi Y.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Lalami Laaroussi Y.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Lalami Laaroussi Y.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Lalami Laaroussi Y.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

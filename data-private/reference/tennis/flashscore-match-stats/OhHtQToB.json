@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-butvilas-vs-svajda-2026-06-02",
+  "boardTitle": "Edas Butvilas vs Trevor Svajda",
+  "boardPlayerName": "Edas Butvilas",
+  "recentOpponentName": "Mayo A.",
+  "recentIndex": 0,
+  "recentEvent": "Little Rock (USA)",
+  "recentDate": "May 26, 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "Loss 6-7 6-7",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Mayo A. - Butvilas E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/little-rock/",
+  "players": [
+    "Mayo A.",
+    "Butvilas E."
+  ],
+  "generatedAt": "2026-06-02T02:39:36.454Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/OhHtQToB/",
+  "matchId": "OhHtQToB",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_OhHtQToB",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_OhHtQToB"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 3,
+        "duration": "0:57"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 4,
+        "duration": "1:08"
+      }
+    ],
+    "totalDuration": "2:05"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "4",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "64%",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (35/48)",
+              "right": "64% (39/61)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "69% (22/32)",
+              "right": "56% (19/34)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "6/8",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (22/61)",
+              "right": "27% (13/48)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (15/34)",
+              "right": "31% (10/32)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/8",
+              "right": "2/6",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "16",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "39",
+              "right": "48",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (8/10)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (57/80)",
+              "right": "61% (58/95)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (37/95)",
+              "right": "29% (23/80)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (94/175)",
+              "right": "46% (81/175)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (10/12)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (2/12)",
+              "right": "17% (2/12)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (12/24)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "67%",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (16/21)",
+              "right": "62% (18/29)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "65% (11/17)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/2",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (11/29)",
+              "right": "24% (5/21)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (6/14)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "1/1",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "7",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "21",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (27/38)",
+              "right": "60% (26/43)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (17/43)",
+              "right": "29% (11/38)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (44/81)",
+              "right": "46% (37/81)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "62%",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (19/27)",
+              "right": "66% (21/32)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "73% (11/15)",
+              "right": "55% (11/20)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "5/6",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "34% (11/32)",
+              "right": "30% (8/27)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (9/20)",
+              "right": "27% (4/15)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/6",
+              "right": "1/5",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "9",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "27",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (30/42)",
+              "right": "62% (32/52)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (20/52)",
+              "right": "29% (12/42)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (50/94)",
+              "right": "47% (44/94)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Mayo A.",
+              "rightPlayer": "Butvilas E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

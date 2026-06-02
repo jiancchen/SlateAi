@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-chidekh-vs-romano-2026-06-02",
+  "boardTitle": "Clement Chidekh vs Filippo Romano",
+  "boardPlayerName": "Filippo Romano",
+  "recentOpponentName": "O'Connell B.",
+  "recentIndex": 1,
+  "recentEvent": "Birmingham (United Kingdom)",
+  "recentDate": "May 31, 26",
+  "recentIsoDate": "2026-05-31",
+  "recentResult": "Win 6-1 6-2",
+  "recentSurface": "Grass",
+  "flashscoreLabel": "O'Connell B. - Romano F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/birmingham/",
+  "players": [
+    "O'Connell B.",
+    "Romano F."
+  ],
+  "generatedAt": "2026-06-02T02:39:22.041Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/WCZR929O/",
+  "matchId": "WCZR929O",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_WCZR929O",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_WCZR929O"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:26"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:38"
+      }
+    ],
+    "totalDuration": "1:04"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "58%",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (18/32)",
+              "right": "74% (23/31)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (8/20)",
+              "right": "64% (14/22)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/7",
+              "right": "6/6",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (8/31)",
+              "right": "44% (14/32)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (8/22)",
+              "right": "60% (12/20)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/6",
+              "right": "4/7",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "19",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "17",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (26/52)",
+              "right": "70% (37/53)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (16/53)",
+              "right": "50% (26/52)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (42/105)",
+              "right": "60% (63/105)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "43% (3/7)",
+              "right": "100% (8/8)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/8)",
+              "right": "57% (4/7)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Total games won",
+              "left": "20% (3/15)",
+              "right": "80% (12/15)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "60%",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "46% (6/13)",
+              "right": "73% (11/15)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (3/7)",
+              "right": "70% (7/10)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "3/3",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (4/15)",
+              "right": "54% (7/13)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "30% (3/10)",
+              "right": "57% (4/7)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "2/3",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "8",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "5",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "45% (9/20)",
+              "right": "75% (18/24)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (6/24)",
+              "right": "55% (11/20)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "34% (15/44)",
+              "right": "66% (29/44)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "57%",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (12/19)",
+              "right": "75% (12/16)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (5/13)",
+              "right": "58% (7/12)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "3/3",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (4/16)",
+              "right": "37% (7/19)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "62% (8/13)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "2/4",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "11",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "12",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (17/32)",
+              "right": "66% (19/29)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (10/29)",
+              "right": "47% (15/32)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (27/61)",
+              "right": "56% (34/61)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "O'Connell B.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

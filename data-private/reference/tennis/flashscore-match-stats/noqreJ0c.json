@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02",
+  "boardTitle": "Luka Pavlovic vs Nikolas Sanchez Izquierdo",
+  "boardPlayerName": "Nikolas Sanchez Izquierdo",
+  "recentOpponentName": "Engel J.",
+  "recentIndex": 4,
+  "recentEvent": "Francavilla (Italy)",
+  "recentDate": "May 05, 26",
+  "recentIsoDate": "2026-05-05",
+  "recentResult": "Win 6-7 6-2 6-2",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Engel J. - Sanchez Izquierdo N.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/francavilla/",
+  "players": [
+    "Engel J.",
+    "Sanchez Izquierdo N."
+  ],
+  "generatedAt": "2026-06-02T02:39:39.700Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/noqreJ0c/",
+  "matchId": "noqreJ0c",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_noqreJ0c",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_noqreJ0c"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 2,
+        "duration": "0:59"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:50"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:29"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "81%",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (43/68)",
+              "right": "62% (42/68)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (18/45)",
+              "right": "88% (14/16)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "11/17",
+              "right": "4/6",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (26/68)",
+              "right": "37% (25/68)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "13% (2/16)",
+              "right": "60% (27/45)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "6/17",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "36",
+              "right": "20",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "59",
+              "right": "24",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Net points won",
+              "left": "78% (7/9)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (61/113)",
+              "right": "67% (56/84)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (28/84)",
+              "right": "46% (52/113)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (89/197)",
+              "right": "55% (108/197)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "57% (8/14)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Return games won",
+              "left": "14% (2/14)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Total games won",
+              "left": "36% (10/28)",
+              "right": "64% (18/28)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "77%",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (16/22)",
+              "right": "60% (18/30)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (11/19)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "1/2",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (12/30)",
+              "right": "27% (6/22)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "22% (2/9)",
+              "right": "42% (8/19)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "1/2",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "5",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "15",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (27/41)",
+              "right": "64% (25/39)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (14/39)",
+              "right": "34% (14/41)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (41/80)",
+              "right": "49% (39/80)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "92%",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (15/27)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "23% (3/13)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/10",
+              "right": "3/4",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (9/22)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "0% (0/2)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "3/10",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "9",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "6",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "45% (18/40)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (9/24)",
+              "right": "55% (22/40)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (27/64)",
+              "right": "58% (37/64)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "76%",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (12/19)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "31% (4/13)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "0/0",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (5/16)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "0% (0/5)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/5",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "6",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "3",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (16/32)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (5/21)",
+              "right": "50% (16/32)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (21/53)",
+              "right": "60% (32/53)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Engel J.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

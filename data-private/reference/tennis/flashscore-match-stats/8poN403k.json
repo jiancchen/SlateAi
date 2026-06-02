@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-bautista-agut-vs-barton-2026-06-02",
+  "boardTitle": "Hynek Barton vs Roberto Bautista Agut",
+  "boardPlayerName": "Hynek Barton",
+  "recentOpponentName": "Shelbayh A.",
+  "recentIndex": 2,
+  "recentEvent": "Kosice (Slovakia)",
+  "recentDate": "May 26, 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "Win 6-4 6-1",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Barton H. - Shelbayh A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/kosice/",
+  "players": [
+    "Barton H.",
+    "Shelbayh A."
+  ],
+  "generatedAt": "2026-06-02T02:39:32.916Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/8poN403k/",
+  "matchId": "8poN403k",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_8poN403k",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_8poN403k"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:33"
+      }
+    ],
+    "totalDuration": "1:15"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "2",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "56%",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (25/30)",
+              "right": "57% (20/35)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (7/14)",
+              "right": "46% (13/28)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/7",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (15/35)",
+              "right": "17% (5/30)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (15/28)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/7",
+              "right": "0/0",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "22",
+              "right": "12",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "29",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "73% (32/44)",
+              "right": "52% (33/63)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (30/63)",
+              "right": "27% (12/44)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (62/107)",
+              "right": "42% (45/107)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (8/8)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Return games won",
+              "left": "44% (4/9)",
+              "right": "0% (0/8)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "49%",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (16/20)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (4/7)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/4",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (7/18)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (8/19)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "0/0",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "18",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (20/27)",
+              "right": "59% (22/37)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (15/37)",
+              "right": "26% (7/27)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (35/64)",
+              "right": "45% (29/64)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "65%",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "90% (9/10)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (3/7)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/3",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (8/17)",
+              "right": "10% (1/10)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "78% (7/9)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "0/0",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "5",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "11",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (12/17)",
+              "right": "42% (11/26)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "58% (15/26)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "63% (27/43)",
+              "right": "37% (16/43)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Shelbayh A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

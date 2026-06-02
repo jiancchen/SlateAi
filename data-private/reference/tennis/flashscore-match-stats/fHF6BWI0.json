@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-shimizu-vs-sweeny-2026-06-02",
+  "boardTitle": "Yuta Shimizu vs Dane Sweeny",
+  "boardPlayerName": "Yuta Shimizu",
+  "recentOpponentName": "Takahashi Y.",
+  "recentIndex": 4,
+  "recentEvent": "Jiujiang (China)",
+  "recentDate": "Apr 27, 26",
+  "recentIsoDate": "2026-04-27",
+  "recentResult": "Win 7-6 6-2",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Takahashi Y. - Shimizu Y.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/jiujiang/",
+  "players": [
+    "Takahashi Y.",
+    "Shimizu Y."
+  ],
+  "generatedAt": "2026-06-02T02:39:38.285Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/fHF6BWI0/",
+  "matchId": "fHF6BWI0",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_fHF6BWI0",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_fHF6BWI0"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 8,
+        "duration": "0:57"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:44"
+      }
+    ],
+    "totalDuration": "1:41"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "69%",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (31/56)",
+              "right": "70% (31/44)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (15/27)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "10/13",
+              "right": "1/2",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (13/44)",
+              "right": "45% (25/56)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "35% (7/20)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "3/13",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "20",
+              "right": "27",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "40",
+              "right": "31",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (12/16)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (46/83)",
+              "right": "69% (44/64)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (20/64)",
+              "right": "45% (37/83)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (66/147)",
+              "right": "55% (81/147)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "70% (7/10)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "10% (1/10)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (8/20)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "64%",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (16/27)",
+              "right": "64% (18/28)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (9/14)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "1/2",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (10/28)",
+              "right": "41% (11/27)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (6/16)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "1/5",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "13",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "23",
+              "right": "21",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (25/41)",
+              "right": "64% (28/44)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (16/44)",
+              "right": "39% (16/41)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (41/85)",
+              "right": "52% (44/85)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "80%",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (15/29)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (6/13)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/8",
+              "right": "0/0",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (3/16)",
+              "right": "48% (14/29)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (1/4)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/8",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "14",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "10",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "82% (9/11)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (21/42)",
+              "right": "80% (16/20)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (4/20)",
+              "right": "50% (21/42)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (25/62)",
+              "right": "60% (37/62)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Takahashi Y.",
+              "rightPlayer": "Shimizu Y."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

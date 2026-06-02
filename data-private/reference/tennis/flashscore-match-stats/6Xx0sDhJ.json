@@ -1,0 +1,546 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-montsi-vs-hemery-2026-06-02",
+  "boardTitle": "Khololwam Montsi vs Calvin Hemery",
+  "boardPlayerName": "Calvin Hemery",
+  "recentOpponentName": "Reis Da Silva J.",
+  "recentIndex": 2,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 18, 26",
+  "recentIsoDate": "2026-05-18",
+  "recentResult": "Loss 4-6 4-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Reis Da Silva J. - Hemery C.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Reis Da Silva J.",
+    "Hemery C."
+  ],
+  "generatedAt": "2026-06-02T02:39:26.560Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/6Xx0sDhJ/",
+  "matchId": "6Xx0sDhJ",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_6Xx0sDhJ",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_6Xx0sDhJ"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:43"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:45"
+      }
+    ],
+    "totalDuration": "1:28"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "68%",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (30/38)",
+              "right": "64% (29/45)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (13/24)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "3/6",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "179 km/h",
+              "right": "190 km/h",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "144 km/h",
+              "right": "168 km/h",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (16/45)",
+              "right": "21% (8/38)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (12/21)",
+              "right": "46% (11/24)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "1/4",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "26",
+              "right": "20",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "26",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Net points won",
+              "left": "55% (6/11)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (43/62)",
+              "right": "58% (38/66)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (28/66)",
+              "right": "31% (19/62)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (71/128)",
+              "right": "45% (57/128)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "90% (9/10)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Return games won",
+              "left": "30% (3/10)",
+              "right": "10% (1/10)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "65%",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (16/22)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (5/11)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "3/5",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (8/22)",
+              "right": "27% (6/22)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (7/12)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "1/3",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "11",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "15",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Net points won",
+              "left": "29% (2/7)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (21/33)",
+              "right": "56% (19/34)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (15/34)",
+              "right": "36% (12/33)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (36/67)",
+              "right": "46% (31/67)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "72%",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (14/16)",
+              "right": "65% (15/23)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "62% (8/13)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (8/23)",
+              "right": "13% (2/16)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (5/9)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "9",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "11",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (4/4)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (22/29)",
+              "right": "59% (19/32)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (13/32)",
+              "right": "24% (7/29)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (35/61)",
+              "right": "43% (26/61)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Hemery C."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

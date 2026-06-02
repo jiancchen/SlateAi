@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-kimhi-vs-henning-2026-06-02",
+  "boardTitle": "Orel Kimhi vs Philip Henning",
+  "boardPlayerName": "Orel Kimhi",
+  "recentOpponentName": "Van Der Merwe M.",
+  "recentIndex": 0,
+  "recentEvent": "Centurion 2 (South Africa)",
+  "recentDate": "Jun 01, 26",
+  "recentIsoDate": "2026-06-01",
+  "recentResult": "Win 6-4 7-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Van Der Merwe M. - Kimhi O.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+  "players": [
+    "Van Der Merwe M.",
+    "Kimhi O."
+  ],
+  "generatedAt": "2026-06-02T02:39:26.248Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/6yVObCzB/",
+  "matchId": "6yVObCzB",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_6yVObCzB",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_6yVObCzB"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:50"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 7,
+        "duration": "1:09"
+      }
+    ],
+    "totalDuration": "1:59"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "80%",
+              "right": "77%",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (31/59)",
+              "right": "72% (34/47)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (6/15)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/10",
+              "right": "3/7",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (13/47)",
+              "right": "47% (28/59)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (10/14)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/7",
+              "right": "5/10",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "20",
+              "right": "9",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "52",
+              "right": "26",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (37/74)",
+              "right": "62% (38/61)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (23/61)",
+              "right": "50% (37/74)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (60/135)",
+              "right": "56% (75/135)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "55% (6/11)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Return games won",
+              "left": "36% (4/11)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Total games won",
+              "left": "45% (10/22)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "81%",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (15/27)",
+              "right": "73% (16/22)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (3/7)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "1/2",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (6/22)",
+              "right": "48% (13/27)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (2/5)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/6",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "3",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "23",
+              "right": "8",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (18/34)",
+              "right": "70% (19/27)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (8/27)",
+              "right": "47% (16/34)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (26/61)",
+              "right": "57% (35/61)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "80%",
+              "right": "74%",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (16/32)",
+              "right": "72% (18/25)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (3/8)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "2/5",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (7/25)",
+              "right": "47% (15/32)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "89% (8/9)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "3/4",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "6",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "29",
+              "right": "18",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (19/40)",
+              "right": "56% (19/34)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (15/34)",
+              "right": "53% (21/40)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (34/74)",
+              "right": "54% (40/74)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Van Der Merwe M.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-bicknell-vs-monday-2026-06-02",
+  "boardTitle": "Johannus Monday vs Blaise Bicknell",
+  "boardPlayerName": "Johannus Monday",
+  "recentOpponentName": "Bassem Sobhy M.",
+  "recentIndex": 4,
+  "recentEvent": "M25 Hurghada (Egypt)",
+  "recentDate": "May 16, 26",
+  "recentIsoDate": "2026-05-16",
+  "recentResult": "Result",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Monday J. - Bassem Sobhy M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m25-hurghada/",
+  "players": [
+    "Monday J.",
+    "Bassem Sobhy M."
+  ],
+  "generatedAt": "2026-06-02T02:39:36.297Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/bNaZpMTb/",
+  "matchId": "bNaZpMTb",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_bNaZpMTb",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_bNaZpMTb"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

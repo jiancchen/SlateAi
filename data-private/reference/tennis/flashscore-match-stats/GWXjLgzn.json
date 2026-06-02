@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-baez-vs-gueymard-wayenburg-2026-06-02",
+  "boardTitle": "Sebastian Baez vs Sascha Gueymard Wayenburg",
+  "boardPlayerName": "Sascha Gueymard Wayenburg",
+  "recentOpponentName": "Krumich M.",
+  "recentIndex": 2,
+  "recentEvent": "Francavilla (Italy)",
+  "recentDate": "May 04, 26",
+  "recentIsoDate": "2026-05-04",
+  "recentResult": "Loss 6-7 1-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Gueymard Wayenburg S. - Krumich M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/francavilla/",
+  "players": [
+    "Gueymard Wayenburg S.",
+    "Krumich M."
+  ],
+  "generatedAt": "2026-06-02T02:39:32.288Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/GWXjLgzn/",
+  "matchId": "GWXjLgzn",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_GWXjLgzn",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_GWXjLgzn"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "1:06"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:35"
+      }
+    ],
+    "totalDuration": "1:41"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "71%",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (24/34)",
+              "right": "75% (39/52)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (10/21)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "5/5",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (13/52)",
+              "right": "29% (10/34)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (9/21)",
+              "right": "52% (11/21)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/5",
+              "right": "2/4",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "17",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "40",
+              "right": "20",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Net points won",
+              "left": "88% (14/16)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (34/55)",
+              "right": "70% (51/73)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (22/73)",
+              "right": "38% (21/55)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (56/128)",
+              "right": "56% (72/128)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "78% (7/9)",
+              "right": "100% (10/10)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/10)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Total games won",
+              "left": "37% (7/19)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "69%",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (18/22)",
+              "right": "71% (25/35)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (9/16)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "5/5",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (10/35)",
+              "right": "18% (4/22)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (6/16)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/5",
+              "right": "0/0",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "7",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "28",
+              "right": "16",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (10/10)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (27/38)",
+              "right": "69% (34/49)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (15/49)",
+              "right": "29% (11/38)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (42/87)",
+              "right": "52% (45/87)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "77%",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (6/12)",
+              "right": "82% (14/17)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "18% (3/17)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "10",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "4",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "41% (7/17)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (7/24)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "34% (14/41)",
+              "right": "66% (27/41)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Krumich M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

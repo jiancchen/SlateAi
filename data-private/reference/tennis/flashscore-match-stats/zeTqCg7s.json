@@ -1,0 +1,354 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-bicknell-vs-monday-2026-06-02",
+  "boardTitle": "Johannus Monday vs Blaise Bicknell",
+  "boardPlayerName": "Blaise Bicknell",
+  "recentOpponentName": "Britto L.",
+  "recentIndex": 3,
+  "recentEvent": "Brazzaville (Republic of the Congo)",
+  "recentDate": "May 05, 26",
+  "recentIsoDate": "2026-05-05",
+  "recentResult": "Loss 2-3",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Britto L. - Bicknell B.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/brazzaville/",
+  "players": [
+    "Britto L.",
+    "Bicknell B."
+  ],
+  "generatedAt": "2026-06-02T02:39:36.443Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/zeTqCg7s/",
+  "matchId": "zeTqCg7s",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_zeTqCg7s",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_zeTqCg7s"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 2,
+        "duration": "0:24"
+      }
+    ],
+    "totalDuration": "0:24"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "60%",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (6/11)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "83% (5/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "0/1",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (3/9)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (3/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/2",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "7",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "10",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (11/17)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (6/15)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (17/32)",
+              "right": "47% (15/32)",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (2/2)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (1/3)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "60%",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (6/11)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "83% (5/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "0/1",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (3/9)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (3/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/2",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "7",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "10",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (11/17)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (6/15)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (17/32)",
+              "right": "47% (15/32)",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (2/2)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (1/3)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Britto L.",
+              "rightPlayer": "Bicknell B."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

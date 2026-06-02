@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-legout-vs-andrade-2026-06-02",
+  "boardTitle": "Timo Legout vs Andres Andrade",
+  "boardPlayerName": "Andres Andrade",
+  "recentOpponentName": "Moller E.",
+  "recentIndex": 1,
+  "recentEvent": "Zagreb (Croatia)",
+  "recentDate": "May 14, 26",
+  "recentIsoDate": "2026-05-14",
+  "recentResult": "Loss 5-7 2-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Andrade A. - Moller E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/zagreb/",
+  "players": [
+    "Andrade A.",
+    "Moller E."
+  ],
+  "generatedAt": "2026-06-02T02:39:37.218Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/IkZmidVg/",
+  "matchId": "IkZmidVg",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_IkZmidVg",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_IkZmidVg"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:53"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:40"
+      }
+    ],
+    "totalDuration": "1:33"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "74%",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "54% (19/35)",
+              "right": "60% (29/48)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "31% (8/26)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/9",
+              "right": "7/10",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (19/48)",
+              "right": "46% (16/35)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (8/17)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/10",
+              "right": "6/9",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "18",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "0",
+              "right": "18",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "44% (27/61)",
+              "right": "58% (38/65)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (27/65)",
+              "right": "56% (34/61)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (54/126)",
+              "right": "57% (72/126)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (4/10)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Return games won",
+              "left": "30% (3/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Total games won",
+              "left": "35% (7/20)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "68%",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (12/21)",
+              "right": "57% (16/28)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (5/14)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "6/8",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (12/28)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (6/13)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/8",
+              "right": "3/6",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "6",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "0",
+              "right": "12",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "49% (17/35)",
+              "right": "56% (23/41)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (18/41)",
+              "right": "51% (18/35)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (35/76)",
+              "right": "54% (41/76)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "83%",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (7/14)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (3/12)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "1/2",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (7/20)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (2/4)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "3/3",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "12",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "0",
+              "right": "6",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "38% (10/26)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (9/24)",
+              "right": "62% (16/26)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (19/50)",
+              "right": "62% (31/50)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Moller E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

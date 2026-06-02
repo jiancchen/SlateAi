@@ -1,0 +1,546 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-lajal-vs-riedi-2026-06-02",
+  "boardTitle": "Leandro Riedi vs Mark Lajal",
+  "boardPlayerName": "Leandro Riedi",
+  "recentOpponentName": "Rodesch C.",
+  "recentIndex": 2,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 19, 26",
+  "recentIsoDate": "2026-05-19",
+  "recentResult": "Win 6-2 7-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Rodesch C. - Riedi L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Rodesch C.",
+    "Riedi L."
+  ],
+  "generatedAt": "2026-06-02T02:39:22.488Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/U9GHaf8m/",
+  "matchId": "U9GHaf8m",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_U9GHaf8m",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_U9GHaf8m"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:25"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "0:54"
+      }
+    ],
+    "totalDuration": "1:19"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "3",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "68%",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (24/39)",
+              "right": "71% (32/45)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (9/22)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/5",
+              "right": "1/3",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "199 km/h",
+              "right": "187 km/h",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "180 km/h",
+              "right": "156 km/h",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (13/45)",
+              "right": "38% (15/39)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (11/21)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "4/5",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "18",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "14",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (12/16)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (33/61)",
+              "right": "64% (42/66)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (24/66)",
+              "right": "46% (28/61)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (57/127)",
+              "right": "55% (70/127)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (6/10)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (2/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (8/20)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "60%",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (9/16)",
+              "right": "92% (11/12)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "17% (1/6)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/0",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "8% (1/12)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/2",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "7",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "4",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (2/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "45% (10/22)",
+              "right": "80% (16/20)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (4/20)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "33% (14/42)",
+              "right": "67% (28/42)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "72%",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (15/23)",
+              "right": "64% (21/33)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (8/16)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "1/3",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (12/33)",
+              "right": "35% (8/23)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (8/13)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "2/3",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "11",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "10",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (10/10)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (23/39)",
+              "right": "57% (26/46)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (20/46)",
+              "right": "41% (16/39)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (43/85)",
+              "right": "49% (42/85)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Rodesch C.",
+              "rightPlayer": "Riedi L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

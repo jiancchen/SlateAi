@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-montsi-vs-hemery-2026-06-02",
+  "boardTitle": "Khololwam Montsi vs Calvin Hemery",
+  "boardPlayerName": "Khololwam Montsi",
+  "recentOpponentName": "Smith K.",
+  "recentIndex": 2,
+  "recentEvent": "M15 Fayetteville, AR (USA)",
+  "recentDate": "Sep 19, 25",
+  "recentIsoDate": "2025-09-19",
+  "recentResult": "Loss 3-6 6-7",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Montsi K. - Smith K.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m15-fayetteville-ar/",
+  "players": [
+    "Montsi K.",
+    "Smith K."
+  ],
+  "generatedAt": "2026-06-02T02:39:26.620Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/G8x1YyTg/",
+  "matchId": "G8x1YyTg",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_G8x1YyTg",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_G8x1YyTg"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": ""
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Montsi K.",
+              "rightPlayer": "Smith K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Montsi K.",
+              "rightPlayer": "Smith K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Montsi K.",
+              "rightPlayer": "Smith K."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

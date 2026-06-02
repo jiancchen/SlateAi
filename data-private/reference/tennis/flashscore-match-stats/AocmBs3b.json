@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02",
+  "boardTitle": "Henrique Rocha vs Enrico Dalla Valle",
+  "boardPlayerName": "Enrico Dalla Valle",
+  "recentOpponentName": "Ingildsen J.",
+  "recentIndex": 1,
+  "recentEvent": "Perugia (Italy)",
+  "recentDate": "May 31, 26",
+  "recentIsoDate": "2026-05-31",
+  "recentResult": "Win 7-5 6-4",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Ingildsen J. - Dalla Valle E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/perugia/",
+  "players": [
+    "Ingildsen J.",
+    "Dalla Valle E."
+  ],
+  "generatedAt": "2026-06-02T02:39:31.803Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/AocmBs3b/",
+  "matchId": "AocmBs3b",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_AocmBs3b",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_AocmBs3b"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:06"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:57"
+      }
+    ],
+    "totalDuration": "2:03"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "8",
+              "right": "1",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "72%",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (25/41)",
+              "right": "67% (37/55)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "49% (17/35)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/9",
+              "right": "5/7",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (18/55)",
+              "right": "39% (16/41)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (11/21)",
+              "right": "51% (18/35)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "4/9",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "27",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "32",
+              "right": "38",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (42/76)",
+              "right": "62% (47/76)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (29/76)",
+              "right": "45% (34/76)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (71/152)",
+              "right": "53% (81/152)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "64% (7/11)",
+              "right": "82% (9/11)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Return games won",
+              "left": "18% (2/11)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Total games won",
+              "left": "41% (9/22)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "71%",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (13/25)",
+              "right": "63% (19/30)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (12/20)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "3/4",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (11/30)",
+              "right": "48% (12/25)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "2/4",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "18",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "24",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (25/45)",
+              "right": "62% (26/42)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (16/42)",
+              "right": "44% (20/45)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (41/87)",
+              "right": "53% (46/87)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "74%",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (12/16)",
+              "right": "72% (18/25)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (5/15)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "2/3",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (7/25)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (6/9)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "2/5",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "9",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "14",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (17/31)",
+              "right": "62% (21/34)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (13/34)",
+              "right": "45% (14/31)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (30/65)",
+              "right": "54% (35/65)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Ingildsen J.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

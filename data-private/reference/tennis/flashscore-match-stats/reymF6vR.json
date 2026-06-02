@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-damas-vs-dzumhur-2026-06-02",
+  "boardTitle": "Miguel Damas vs Damir Dzumhur",
+  "boardPlayerName": "Damir Dzumhur",
+  "recentOpponentName": "Munar J.",
+  "recentIndex": 1,
+  "recentEvent": "Valencia (Spain)",
+  "recentDate": "May 14, 26",
+  "recentIsoDate": "2026-05-14",
+  "recentResult": "Loss 2-6 6-7",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Dzumhur D. - Munar J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/valencia/",
+  "players": [
+    "Dzumhur D.",
+    "Munar J."
+  ],
+  "generatedAt": "2026-06-02T02:39:33.173Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/reymF6vR/",
+  "matchId": "reymF6vR",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_reymF6vR",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_reymF6vR"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "1:24"
+      }
+    ],
+    "totalDuration": "2:05"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "76%",
+              "right": "45%",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (33/56)",
+              "right": "81% (30/37)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (8/18)",
+              "right": "46% (21/46)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/8",
+              "right": "8/10",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (7/37)",
+              "right": "41% (23/56)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (25/46)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/10",
+              "right": "4/8",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "22",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "41",
+              "right": "34",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Net points won",
+              "left": "40% (4/10)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (41/74)",
+              "right": "61% (51/83)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (32/83)",
+              "right": "45% (33/74)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (73/157)",
+              "right": "54% (84/157)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "5",
+              "right": "0",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (6/10)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (2/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (8/20)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "52%",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "48% (12/25)",
+              "right": "92% (11/12)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "27% (3/11)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "1/2",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "8% (1/12)",
+              "right": "52% (13/25)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (7/11)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "3/7",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "13",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "11",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/3)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "42% (15/36)",
+              "right": "65% (15/23)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (8/23)",
+              "right": "58% (21/36)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (23/59)",
+              "right": "61% (36/59)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "82%",
+              "right": "42%",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (21/31)",
+              "right": "76% (19/25)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (5/7)",
+              "right": "49% (17/35)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "7/8",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (6/25)",
+              "right": "32% (10/31)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "51% (18/35)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/8",
+              "right": "1/1",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "9",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "24",
+              "right": "23",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Net points won",
+              "left": "57% (4/7)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (26/38)",
+              "right": "60% (36/60)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (24/60)",
+              "right": "32% (12/38)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (50/98)",
+              "right": "49% (48/98)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "5",
+              "right": "0",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Dzumhur D.",
+              "rightPlayer": "Munar J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

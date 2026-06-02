@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-watt-vs-wendelken-2026-06-02",
+  "boardTitle": "James Watt vs Harry Wendelken",
+  "boardPlayerName": "James Watt",
+  "recentOpponentName": "Holmgren A.",
+  "recentIndex": 0,
+  "recentEvent": "Birmingham (United Kingdom)",
+  "recentDate": "Jun 01, 26",
+  "recentIsoDate": "2026-06-01",
+  "recentResult": "Win 6-2 7-5",
+  "recentSurface": "Grass",
+  "flashscoreLabel": "Holmgren A. - Watt J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/birmingham/",
+  "players": [
+    "Holmgren A.",
+    "Watt J."
+  ],
+  "generatedAt": "2026-06-02T02:39:23.757Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/UwGmph4K/",
+  "matchId": "UwGmph4K",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_UwGmph4K",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_UwGmph4K"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:22"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:39"
+      }
+    ],
+    "totalDuration": "1:01"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "8",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "2",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "76%",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (24/33)",
+              "right": "91% (31/34)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (13/26)",
+              "right": "82% (9/11)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "0/0",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "9% (3/34)",
+              "right": "27% (9/33)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "18% (2/11)",
+              "right": "50% (13/26)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/7",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "23",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "10",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (37/59)",
+              "right": "89% (40/45)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "11% (5/45)",
+              "right": "37% (22/59)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (42/104)",
+              "right": "60% (62/104)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "1",
+              "right": "9",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "70% (7/10)",
+              "right": "100% (10/10)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/10)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Total games won",
+              "left": "35% (7/20)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "33%",
+              "right": "82%",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (7/7)",
+              "right": "93% (13/14)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (7/14)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "0/0",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "7% (1/14)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "0% (0/3)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/3",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "9",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (10/20)",
+              "right": "94% (16/17)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "6% (1/17)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "30% (11/37)",
+              "right": "70% (26/37)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "71%",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (17/26)",
+              "right": "90% (18/20)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "0/0",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "10% (2/20)",
+              "right": "19% (5/26)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (2/8)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/4",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "14",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "8",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (27/39)",
+              "right": "86% (24/28)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "14% (4/28)",
+              "right": "31% (12/39)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (31/67)",
+              "right": "54% (36/67)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Holmgren A.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

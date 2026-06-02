@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-squire-vs-polmans-2026-06-02",
+  "boardTitle": "Henri Squire vs Marc Polmans",
+  "boardPlayerName": "Marc Polmans",
+  "recentOpponentName": "Schifris J.",
+  "recentIndex": 1,
+  "recentEvent": "Heilbronn (Germany)",
+  "recentDate": "Jun 01, 26",
+  "recentIsoDate": "2026-06-01",
+  "recentResult": "Win 6-2 6-3",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Schifris J. - Polmans M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/heilbronn/",
+  "players": [
+    "Schifris J.",
+    "Polmans M."
+  ],
+  "generatedAt": "2026-06-02T02:39:20.921Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/44EQmNOG/",
+  "matchId": "44EQmNOG",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_44EQmNOG",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_44EQmNOG"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:34"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:40"
+      }
+    ],
+    "totalDuration": "1:14"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "7",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "4",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "74%",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (21/42)",
+              "right": "80% (32/40)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (10/19)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/11",
+              "right": "5/6",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (8/40)",
+              "right": "50% (21/42)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (9/14)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/6",
+              "right": "4/11",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "24",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "32",
+              "right": "31",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "51% (31/61)",
+              "right": "69% (37/54)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (17/54)",
+              "right": "49% (30/61)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (48/115)",
+              "right": "58% (67/115)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (4/8)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Return games won",
+              "left": "11% (1/9)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Total games won",
+              "left": "29% (5/17)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "81%",
+              "right": "82%",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (15/29)",
+              "right": "89% (16/18)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (3/7)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/7",
+              "right": "0/0",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (3/18)",
+              "right": "48% (14/29)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (2/4)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/7",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "14",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "11",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (18/36)",
+              "right": "81% (17/21)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "19% (4/21)",
+              "right": "50% (18/36)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (22/57)",
+              "right": "61% (35/57)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "69%",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "46% (6/13)",
+              "right": "73% (16/22)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (7/12)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "5/6",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (5/22)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "70% (7/10)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/6",
+              "right": "2/4",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "10",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "20",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (13/25)",
+              "right": "61% (20/33)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (13/33)",
+              "right": "48% (12/25)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (26/58)",
+              "right": "55% (32/58)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Schifris J.",
+              "rightPlayer": "Polmans M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

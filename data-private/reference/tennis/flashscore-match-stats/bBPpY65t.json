@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-schoolkate-vs-fery-2026-06-02",
+  "boardTitle": "Tristan Schoolkate vs Arthur Fery",
+  "boardPlayerName": "Arthur Fery",
+  "recentOpponentName": "Stricker D.",
+  "recentIndex": 4,
+  "recentEvent": "Zagreb (Croatia)",
+  "recentDate": "May 14, 26",
+  "recentIsoDate": "2026-05-14",
+  "recentResult": "Win 6-1 6-4",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Fery A. - Stricker D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/zagreb/",
+  "players": [
+    "Fery A.",
+    "Stricker D."
+  ],
+  "generatedAt": "2026-06-02T02:39:24.426Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/bBPpY65t/",
+  "matchId": "bBPpY65t",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_bBPpY65t",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_bBPpY65t"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:32"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:51"
+      }
+    ],
+    "totalDuration": "1:23"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "48%",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (32/45)",
+              "right": "58% (15/26)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (8/17)",
+              "right": "39% (11/28)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "4/8",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (11/26)",
+              "right": "29% (13/45)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (17/28)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/8",
+              "right": "1/5",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "11",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "30",
+              "right": "39",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (40/62)",
+              "right": "48% (26/54)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (28/54)",
+              "right": "35% (22/62)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (68/116)",
+              "right": "41% (48/116)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "89% (8/9)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (4/8)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "55%",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (16/24)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (5/7)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "1/3",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "55% (6/11)",
+              "right": "33% (8/24)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (6/9)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/4",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "3",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "24",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (21/31)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "60% (12/20)",
+              "right": "32% (10/31)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "65% (33/51)",
+              "right": "35% (18/51)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "44%",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (16/21)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "30% (3/10)",
+              "right": "42% (8/19)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "3/5",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (5/15)",
+              "right": "24% (5/21)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (11/19)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "1/1",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "8",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "15",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (19/31)",
+              "right": "53% (18/34)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (16/34)",
+              "right": "39% (12/31)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (35/65)",
+              "right": "46% (30/65)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Stricker D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

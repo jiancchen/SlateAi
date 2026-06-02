@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-echargui-vs-tseng-2026-06-02",
+  "boardTitle": "Chun Hsin Tseng vs Moez Echargui",
+  "boardPlayerName": "Moez Echargui",
+  "recentOpponentName": "Garin C.",
+  "recentIndex": 3,
+  "recentEvent": "Rome (Italy)",
+  "recentDate": "May 04, 26",
+  "recentIsoDate": "2026-05-04",
+  "recentResult": "Loss 0-6 2-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Garin C. - Echargui M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/",
+  "players": [
+    "Garin C.",
+    "Echargui M."
+  ],
+  "generatedAt": "2026-06-02T02:39:31.640Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/M58D9HxQ/",
+  "matchId": "M58D9HxQ",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_M58D9HxQ",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_M58D9HxQ"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 0,
+        "duration": "0:29"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:53"
+      }
+    ],
+    "totalDuration": "1:22"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "68%",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (22/27)",
+              "right": "45% (19/42)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (9/18)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "6/11",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "55% (23/42)",
+              "right": "19% (5/27)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (10/20)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/11",
+              "right": "0/3",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "10",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "36",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (9/9)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (31/45)",
+              "right": "47% (29/62)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (33/62)",
+              "right": "31% (14/45)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (64/107)",
+              "right": "40% (43/107)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (7/7)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Return games won",
+              "left": "71% (5/7)",
+              "right": "0% (0/7)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (12/14)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "61%",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "91% (10/11)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "2/5",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "73% (8/11)",
+              "right": "9% (1/11)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (4/7)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "0/2",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "14",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (14/21)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "67% (12/18)",
+              "right": "33% (7/21)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "67% (26/39)",
+              "right": "33% (13/39)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Total games won",
+              "left": "100% (6/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "70%",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (12/16)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (5/8)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "4/6",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "48% (15/31)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (6/13)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "0/1",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "10",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "22",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Net points won",
+              "left": "133% (4/3)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (17/24)",
+              "right": "52% (23/44)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (21/44)",
+              "right": "29% (7/24)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (38/68)",
+              "right": "44% (30/68)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Garin C.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

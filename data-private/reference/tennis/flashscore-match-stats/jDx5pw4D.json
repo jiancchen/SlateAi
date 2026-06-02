@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-bueno-vs-lajovic-2026-06-02",
+  "boardTitle": "Dusan Lajovic vs Gonzalo Bueno",
+  "boardPlayerName": "Dusan Lajovic",
+  "recentOpponentName": "O'Connell C.",
+  "recentIndex": 3,
+  "recentEvent": "Valencia (Spain)",
+  "recentDate": "May 12, 26",
+  "recentIsoDate": "2026-05-12",
+  "recentResult": "Win 6-4 6-3",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Lajovic D. - O'Connell C.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/valencia/",
+  "players": [
+    "Lajovic D.",
+    "O'Connell C."
+  ],
+  "generatedAt": "2026-06-02T02:39:30.241Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/jDx5pw4D/",
+  "matchId": "jDx5pw4D",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_jDx5pw4D",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_jDx5pw4D"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:37"
+      }
+    ],
+    "totalDuration": "1:19"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "5",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "55%",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (28/34)",
+              "right": "59% (17/29)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "61% (11/18)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "2/5",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (12/29)",
+              "right": "18% (6/34)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (9/24)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "0/2",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "20",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "20",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (4/8)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (39/52)",
+              "right": "60% (32/53)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (21/53)",
+              "right": "25% (13/52)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (60/105)",
+              "right": "43% (45/105)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (9/9)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Return games won",
+              "left": "30% (3/10)",
+              "right": "0% (0/9)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Total games won",
+              "left": "63% (12/19)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "48%",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (14/19)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "73% (8/11)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "1/2",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (5/13)",
+              "right": "26% (5/19)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (5/14)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/2",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "10",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "73% (22/30)",
+              "right": "63% (17/27)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (10/27)",
+              "right": "27% (8/30)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (32/57)",
+              "right": "44% (25/57)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "62%",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "93% (14/15)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (3/7)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (7/16)",
+              "right": "7% (1/15)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (4/10)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "10",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "14",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "77% (17/22)",
+              "right": "58% (15/26)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (11/26)",
+              "right": "23% (5/22)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (28/48)",
+              "right": "42% (20/48)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "O'Connell C."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

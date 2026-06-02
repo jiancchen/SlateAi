@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-galan-vs-rehberg-2026-06-02",
+  "boardTitle": "Daniel Elahi Galan vs Max Hans Rehberg",
+  "boardPlayerName": "Daniel Elahi Galan",
+  "recentOpponentName": "Martinez A.",
+  "recentIndex": 2,
+  "recentEvent": "Chisinau (Moldova)",
+  "recentDate": "May 26, 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "Loss 6-3 3-6 6-7",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Galan D. E. - Martinez A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/chisinau/",
+  "players": [
+    "Galan D. E.",
+    "Martinez A."
+  ],
+  "generatedAt": "2026-06-02T02:39:17.659Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/n78exjhT/",
+  "matchId": "n78exjhT",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_n78exjhT",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_n78exjhT"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:32"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:55"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 1,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:36"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "61%",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "49% (33/67)",
+              "right": "60% (36/60)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (17/38)",
+              "right": "38% (15/39)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/10",
+              "right": "2/9",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (24/60)",
+              "right": "51% (34/67)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (24/39)",
+              "right": "55% (21/38)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "7/9",
+              "right": "7/10",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "31",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "51",
+              "right": "64",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (6/10)",
+              "right": "83% (15/18)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (50/105)",
+              "right": "52% (51/99)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (48/99)",
+              "right": "52% (55/105)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (98/204)",
+              "right": "52% (106/204)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "1",
+              "right": "9",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "53% (8/15)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Return games won",
+              "left": "47% (7/15)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (15/30)",
+              "right": "50% (15/30)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "42%",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (8/14)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (5/12)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/3",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (4/8)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "73% (8/11)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "2/2",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "6",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "19",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (13/26)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "63% (12/19)",
+              "right": "50% (13/26)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (25/45)",
+              "right": "44% (20/45)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "66%",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "46% (11/24)",
+              "right": "56% (14/25)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "2/4",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (11/25)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (7/13)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "3/6",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "9",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "24",
+              "right": "24",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "44% (15/34)",
+              "right": "53% (20/38)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (18/38)",
+              "right": "56% (19/34)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (33/72)",
+              "right": "54% (39/72)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "64%",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "48% (14/29)",
+              "right": "67% (18/27)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (8/16)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/2",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (9/27)",
+              "right": "52% (15/29)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (9/15)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "2/2",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "16",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "21",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Net points won",
+              "left": "40% (2/5)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "49% (22/45)",
+              "right": "57% (24/42)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (18/42)",
+              "right": "51% (23/45)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (40/87)",
+              "right": "54% (47/87)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Galan D. E.",
+              "rightPlayer": "Martinez A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

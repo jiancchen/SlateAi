@@ -1,0 +1,612 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02",
+  "boardTitle": "Henrique Rocha vs Enrico Dalla Valle",
+  "boardPlayerName": "Henrique Rocha",
+  "recentOpponentName": "Safiullin R.",
+  "recentIndex": 2,
+  "recentEvent": "Oeiras 6 (Portugal)",
+  "recentDate": "May 11, 26",
+  "recentIsoDate": "2026-05-11",
+  "recentResult": "Loss 7-5 6-7 2-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Rocha H. - Safiullin R.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/oeiras-6/",
+  "players": [
+    "Rocha H.",
+    "Safiullin R."
+  ],
+  "generatedAt": "2026-06-02T02:39:31.260Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/WnbziSOp/",
+  "matchId": "WnbziSOp",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_WnbziSOp",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_WnbziSOp"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:56"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:04"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:39"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "68%",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (41/57)",
+              "right": "67% (46/69)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "35% (14/40)",
+              "right": "52% (17/33)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/7",
+              "right": "1/5",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (25/69)",
+              "right": "28% (16/57)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (16/33)",
+              "right": "65% (26/40)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/5",
+              "right": "5/7",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "57% (55/97)",
+              "right": "62% (63/102)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (39/102)",
+              "right": "43% (42/97)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (94/199)",
+              "right": "53% (105/199)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "69% (11/16)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (4/16)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Total games won",
+              "left": "47% (15/32)",
+              "right": "53% (17/32)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "64%",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (15/19)",
+              "right": "68% (17/25)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (7/17)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "1/3",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (8/25)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (9/14)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "1/2",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "61% (22/36)",
+              "right": "56% (22/39)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (17/39)",
+              "right": "39% (14/36)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (39/75)",
+              "right": "48% (36/75)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "80%",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (21/28)",
+              "right": "67% (22/33)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (6/14)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/1",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (11/33)",
+              "right": "18% (5/28)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "1/2",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "64% (27/42)",
+              "right": "66% (27/41)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (14/41)",
+              "right": "36% (15/42)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (41/83)",
+              "right": "51% (42/83)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "50%",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (5/10)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "11% (1/9)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "0/1",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "55% (6/11)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/3",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "32% (6/19)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (8/22)",
+              "right": "68% (13/19)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "34% (14/41)",
+              "right": "66% (27/41)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

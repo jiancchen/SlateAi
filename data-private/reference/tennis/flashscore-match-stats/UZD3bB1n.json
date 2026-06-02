@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-mcdonald-vs-budkov-kjaer-2026-06-02",
+  "boardTitle": "Mackenzie McDonald vs Nicolai Budkov Kjaer",
+  "boardPlayerName": "Mackenzie McDonald",
+  "recentOpponentName": "Tseng C. H.",
+  "recentIndex": 3,
+  "recentEvent": "Oeiras 3 (Portugal)",
+  "recentDate": "Apr 14, 26",
+  "recentIsoDate": "2026-04-14",
+  "recentResult": "Loss 1-6 6-7",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Tseng C. H. - McDonald M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/oeiras-3/",
+  "players": [
+    "Tseng C. H.",
+    "McDonald M."
+  ],
+  "generatedAt": "2026-06-02T02:39:23.336Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/UZD3bB1n/",
+  "matchId": "UZD3bB1n",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_UZD3bB1n",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_UZD3bB1n"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:28"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 9,
+        "rightGames": 7,
+        "duration": "1:04"
+      }
+    ],
+    "totalDuration": "1:32"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "75%",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (29/40)",
+              "right": "53% (25/47)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (12/24)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "1/5",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (22/47)",
+              "right": "28% (11/40)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (9/16)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/5",
+              "right": "2/2",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "20",
+              "right": "18",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "23",
+              "right": "38",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Net points won",
+              "left": "63% (5/8)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (41/64)",
+              "right": "51% (32/63)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (31/63)",
+              "right": "36% (23/64)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (72/127)",
+              "right": "43% (55/127)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (8/10)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Return games won",
+              "left": "44% (4/9)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Total games won",
+              "left": "63% (12/19)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "82%",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (12/17)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (3/8)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/3",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "64% (9/14)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "100% (3/3)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "1/1",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "3",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "14",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (15/25)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "71% (12/17)",
+              "right": "40% (10/25)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "64% (27/42)",
+              "right": "36% (15/42)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "72%",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (17/23)",
+              "right": "61% (20/33)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (9/16)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/2",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (13/33)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (6/13)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "1/1",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "15",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "24",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (26/39)",
+              "right": "59% (27/46)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (19/46)",
+              "right": "33% (13/39)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (45/85)",
+              "right": "47% (40/85)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

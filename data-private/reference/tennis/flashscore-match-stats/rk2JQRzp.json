@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-choinski-vs-gentzsch-2026-06-02",
+  "boardTitle": "Jan Choinski vs Tom Gentzsch",
+  "boardPlayerName": "Tom Gentzsch",
+  "recentOpponentName": "Molleker R.",
+  "recentIndex": 4,
+  "recentEvent": "Ostrava (Czech Republic)",
+  "recentDate": "May 01, 26",
+  "recentIsoDate": "2026-05-01",
+  "recentResult": "Win 6-1 4-6 6-3",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Gentzsch T. - Molleker R.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/ostrava/",
+  "players": [
+    "Gentzsch T.",
+    "Molleker R."
+  ],
+  "generatedAt": "2026-06-02T02:39:18.326Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/rk2JQRzp/",
+  "matchId": "rk2JQRzp",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_rk2JQRzp",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_rk2JQRzp"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:23"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:44"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "1:47"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "9",
+              "right": "3",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "51%",
+              "right": "64%",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (34/43)",
+              "right": "62% (28/45)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (23/42)",
+              "right": "60% (15/25)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/8",
+              "right": "4/8",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (17/45)",
+              "right": "21% (9/43)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (10/25)",
+              "right": "48% (20/42)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/8",
+              "right": "1/8",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "31",
+              "right": "19",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "37",
+              "right": "26",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Net points won",
+              "left": "88% (7/8)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (56/85)",
+              "right": "61% (43/70)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (27/70)",
+              "right": "34% (29/85)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (83/155)",
+              "right": "46% (72/155)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "92% (12/13)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Return games won",
+              "left": "31% (4/13)",
+              "right": "8% (1/13)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Total games won",
+              "left": "62% (16/26)",
+              "right": "38% (10/26)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "71%",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "92% (11/12)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (5/11)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (5/10)",
+              "right": "8% (1/12)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (3/4)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "2",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "7",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (16/23)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "57% (8/14)",
+              "right": "30% (7/23)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "65% (24/37)",
+              "right": "35% (13/37)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "60%",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "86% (12/14)",
+              "right": "83% (15/18)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (9/16)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "1/1",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (3/18)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/5",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "11",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "8",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (20/30)",
+              "right": "73% (22/30)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (8/30)",
+              "right": "33% (10/30)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (28/60)",
+              "right": "53% (32/60)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "65%",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (11/17)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (9/15)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "1/3",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "53% (9/17)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "22% (2/9)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/3",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "6",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "11",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (20/32)",
+              "right": "58% (15/26)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (11/26)",
+              "right": "38% (12/32)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (31/58)",
+              "right": "47% (27/58)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Gentzsch T.",
+              "rightPlayer": "Molleker R."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

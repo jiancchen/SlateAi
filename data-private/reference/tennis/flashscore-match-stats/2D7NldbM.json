@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-durasovic-vs-gombos-2026-06-02",
+  "boardTitle": "Viktor Durasovic vs Norbert Gombos",
+  "boardPlayerName": "Norbert Gombos",
+  "recentOpponentName": "Seyboth Wild T.",
+  "recentIndex": 3,
+  "recentEvent": "Ostrava (Czech Republic)",
+  "recentDate": "Apr 28, 26",
+  "recentIsoDate": "2026-04-28",
+  "recentResult": "Loss 3-6 7-6 1-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Seyboth Wild T. - Gombos N.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/ostrava/",
+  "players": [
+    "Seyboth Wild T.",
+    "Gombos N."
+  ],
+  "generatedAt": "2026-06-02T02:39:33.831Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/2D7NldbM/",
+  "matchId": "2D7NldbM",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_2D7NldbM",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_2D7NldbM"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:52"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:02"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:30"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "51%",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (56/74)",
+              "right": "71% (29/41)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (18/30)",
+              "right": "56% (22/39)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "13/13",
+              "right": "2/5",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (12/41)",
+              "right": "24% (18/74)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (17/39)",
+              "right": "40% (12/30)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "0/13",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "27",
+              "right": "27",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "27",
+              "right": "48",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (74/104)",
+              "right": "64% (51/80)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (29/80)",
+              "right": "29% (30/104)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (103/184)",
+              "right": "44% (81/184)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (15/15)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Return games won",
+              "left": "23% (3/13)",
+              "right": "0% (0/15)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Total games won",
+              "left": "64% (18/28)",
+              "right": "36% (10/28)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "58%",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (17/25)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/7",
+              "right": "2/3",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (5/15)",
+              "right": "32% (8/25)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "0/7",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "10",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "18",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (27/42)",
+              "right": "58% (15/26)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (11/26)",
+              "right": "36% (15/42)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (38/68)",
+              "right": "44% (30/68)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "49%",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "87% (20/23)",
+              "right": "83% (15/18)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "73% (8/11)",
+              "right": "74% (14/19)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (3/18)",
+              "right": "13% (3/23)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "26% (5/19)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "11",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "17",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "82% (28/34)",
+              "right": "78% (29/37)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "22% (8/37)",
+              "right": "18% (6/34)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (36/71)",
+              "right": "49% (35/71)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "81%",
+              "right": "47%",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (19/26)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (3/6)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/6",
+              "right": "0/2",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (4/8)",
+              "right": "27% (7/26)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (6/9)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/6",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "6",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "13",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (19/28)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "59% (10/17)",
+              "right": "32% (9/28)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "64% (29/45)",
+              "right": "36% (16/45)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

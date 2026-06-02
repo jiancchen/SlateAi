@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-bueno-vs-lajovic-2026-06-02",
+  "boardTitle": "Dusan Lajovic vs Gonzalo Bueno",
+  "boardPlayerName": "Gonzalo Bueno",
+  "recentOpponentName": "Compagnucci T.",
+  "recentIndex": 0,
+  "recentEvent": "Vicenza (Italy)",
+  "recentDate": "May 26, 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "Loss 6-7 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Compagnucci T. - Bueno G.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/vicenza/",
+  "players": [
+    "Compagnucci T.",
+    "Bueno G."
+  ],
+  "generatedAt": "2026-06-02T02:39:29.880Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/QmdmfJtR/",
+  "matchId": "QmdmfJtR",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_QmdmfJtR",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_QmdmfJtR"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 2,
+        "duration": "1:01"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:52"
+      }
+    ],
+    "totalDuration": "1:53"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "72%",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (34/55)",
+              "right": "60% (33/55)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (8/16)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "8/12",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (22/55)",
+              "right": "38% (21/55)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (12/21)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/12",
+              "right": "3/5",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "25",
+              "right": "19",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "35",
+              "right": "35",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Net points won",
+              "left": "46% (6/13)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (42/71)",
+              "right": "55% (42/76)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (34/76)",
+              "right": "41% (29/71)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (76/147)",
+              "right": "48% (71/147)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "73% (8/11)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (4/10)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Total games won",
+              "left": "57% (12/21)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "78%",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (18/31)",
+              "right": "58% (18/31)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "3/5",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (13/31)",
+              "right": "42% (13/31)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (4/9)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "2/3",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "11",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "19",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Net points won",
+              "left": "38% (3/8)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (24/43)",
+              "right": "57% (23/40)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (17/40)",
+              "right": "44% (19/43)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (41/83)",
+              "right": "51% (42/83)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "86%",
+              "right": "67%",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (16/24)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (2/4)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "5/7",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (9/24)",
+              "right": "33% (8/24)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (8/12)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "1/2",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "8",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "16",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (18/28)",
+              "right": "53% (19/36)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (17/36)",
+              "right": "36% (10/28)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (35/64)",
+              "right": "45% (29/64)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Compagnucci T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

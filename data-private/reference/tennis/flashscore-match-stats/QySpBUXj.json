@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-duran-vs-napolitano-2026-06-02",
+  "boardTitle": "Tuncay Duran vs Stefano Napolitano",
+  "boardPlayerName": "Tuncay Duran",
+  "recentOpponentName": "Agamenone F.",
+  "recentIndex": 4,
+  "recentEvent": "Istanbul (Turkey)",
+  "recentDate": "May 18, 26",
+  "recentIsoDate": "2026-05-18",
+  "recentResult": "Loss 3-6 2-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Duran T. - Agamenone F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/istanbul/",
+  "players": [
+    "Duran T.",
+    "Agamenone F."
+  ],
+  "generatedAt": "2026-06-02T02:39:25.822Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/QySpBUXj/",
+  "matchId": "QySpBUXj",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_QySpBUXj",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_QySpBUXj"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:41"
+      }
+    ],
+    "totalDuration": "1:22"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "65%",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (16/32)",
+              "right": "75% (24/32)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (10/19)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/7",
+              "right": "3/4",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (8/32)",
+              "right": "50% (16/32)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "35% (6/17)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "4/7",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "9",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "34",
+              "right": "7",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Net points won",
+              "left": "77% (10/13)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "51% (26/51)",
+              "right": "71% (35/49)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (14/49)",
+              "right": "49% (25/51)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (40/100)",
+              "right": "60% (60/100)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (4/8)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Total games won",
+              "left": "38% (5/13)",
+              "right": "92% (12/13)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "71%",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (9/18)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (5/8)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "1/2",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (6/20)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (4/8)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/5",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "3",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "5",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (6/8)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (14/26)",
+              "right": "64% (18/28)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (10/28)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (24/54)",
+              "right": "56% (30/54)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "57%",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (7/14)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (5/11)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "2/2",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (2/12)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "22% (2/9)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "2/2",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "6",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "2",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (12/25)",
+              "right": "81% (17/21)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "19% (4/21)",
+              "right": "52% (13/25)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "35% (16/46)",
+              "right": "65% (30/46)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/0)",
+              "right": "100% (2/0)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (2/4)",
+              "right": "150% (6/4)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Agamenone F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

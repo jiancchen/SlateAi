@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-bautista-agut-vs-barton-2026-06-02",
+  "boardTitle": "Hynek Barton vs Roberto Bautista Agut",
+  "boardPlayerName": "Hynek Barton",
+  "recentOpponentName": "Michalski D.",
+  "recentIndex": 4,
+  "recentEvent": "Istanbul (Turkey)",
+  "recentDate": "May 21, 26",
+  "recentIsoDate": "2026-05-21",
+  "recentResult": "Win 6-3 6-4",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Barton H. - Michalski D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/istanbul/",
+  "players": [
+    "Barton H.",
+    "Michalski D."
+  ],
+  "generatedAt": "2026-06-02T02:39:32.953Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/CWGYJskl/",
+  "matchId": "CWGYJskl",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_CWGYJskl",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_CWGYJskl"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:43"
+      }
+    ],
+    "totalDuration": "1:19"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "0",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "51%",
+              "right": "70%",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (22/26)",
+              "right": "56% (22/39)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (15/25)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/4",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (17/39)",
+              "right": "15% (4/26)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "41% (7/17)",
+              "right": "40% (10/25)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "1/1",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "28",
+              "right": "7",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "24",
+              "right": "12",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "73% (37/51)",
+              "right": "57% (32/56)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (24/56)",
+              "right": "27% (14/51)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (61/107)",
+              "right": "43% (46/107)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "90% (9/10)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (3/9)",
+              "right": "10% (1/10)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Total games won",
+              "left": "63% (12/19)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "76%",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (10/13)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (7/11)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/2",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "53% (10/19)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (2/6)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "1/1",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "4",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "3",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (17/24)",
+              "right": "52% (13/25)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (12/25)",
+              "right": "29% (7/24)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (29/49)",
+              "right": "41% (20/49)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "65%",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "92% (12/13)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (8/14)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (7/20)",
+              "right": "8% (1/13)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (5/11)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "3",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "9",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (20/27)",
+              "right": "61% (19/31)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (12/31)",
+              "right": "26% (7/27)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (32/58)",
+              "right": "45% (26/58)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Barton H.",
+              "rightPlayer": "Michalski D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,546 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-shimizu-vs-sweeny-2026-06-02",
+  "boardTitle": "Yuta Shimizu vs Dane Sweeny",
+  "boardPlayerName": "Dane Sweeny",
+  "recentOpponentName": "Clarke J.",
+  "recentIndex": 1,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 18, 26",
+  "recentIsoDate": "2026-05-18",
+  "recentResult": "Loss 2-6 2-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Clarke J. - Sweeny D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Clarke J.",
+    "Sweeny D."
+  ],
+  "generatedAt": "2026-06-02T02:39:38.804Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/8KirUm0C/",
+  "matchId": "8KirUm0C",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_8KirUm0C",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_8KirUm0C"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:48"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:36"
+      }
+    ],
+    "totalDuration": "1:24"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "61%",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (22/25)",
+              "right": "51% (18/35)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (14/25)",
+              "right": "45% (10/22)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "5/9",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "165 km/h",
+              "right": "167 km/h",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "132 km/h",
+              "right": "142 km/h",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "49% (17/35)",
+              "right": "12% (3/25)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (12/22)",
+              "right": "44% (11/25)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/9",
+              "right": "0/1",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "21",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "38",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (10/12)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (42/62)",
+              "right": "49% (22/45)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (23/45)",
+              "right": "32% (20/62)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (65/107)",
+              "right": "39% (42/107)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (8/8)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (4/8)",
+              "right": "0% (0/8)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (12/16)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "46%",
+              "right": "69%",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (11/13)",
+              "right": "52% (13/25)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (8/15)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "4/6",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "48% (12/25)",
+              "right": "15% (2/13)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (5/11)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "0/1",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "13",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "23",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (25/40)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (11/24)",
+              "right": "38% (15/40)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (36/64)",
+              "right": "44% (28/64)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "48%",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "92% (11/12)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (5/10)",
+              "right": "8% (1/12)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (7/11)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "8",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "15",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (5/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "77% (17/22)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "57% (12/21)",
+              "right": "23% (5/22)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "67% (29/43)",
+              "right": "33% (14/43)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Sweeny D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

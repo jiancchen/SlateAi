@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-kimhi-vs-henning-2026-06-02",
+  "boardTitle": "Orel Kimhi vs Philip Henning",
+  "boardPlayerName": "Philip Henning",
+  "recentOpponentName": "Kouame M.",
+  "recentIndex": 4,
+  "recentEvent": "M25 Santa Margherita di Pula 3 (Italy)",
+  "recentDate": "Apr 17, 26",
+  "recentIsoDate": "2026-04-17",
+  "recentResult": "Loss 2-6 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Kouame M. - Henning P.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m25-santa-margherita-di-pula-3/",
+  "players": [
+    "Kouame M.",
+    "Henning P."
+  ],
+  "generatedAt": "2026-06-02T02:39:26.502Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/nREHGRpK/",
+  "matchId": "nREHGRpK",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_nREHGRpK",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_nREHGRpK"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:50"
+      }
+    ],
+    "totalDuration": "1:26"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Henning P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Henning P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kouame M.",
+              "rightPlayer": "Henning P."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

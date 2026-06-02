@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-broady-vs-jorda-sanchis-2026-06-02",
+  "boardTitle": "David Jorda Sanchis vs Liam Broady",
+  "boardPlayerName": "Liam Broady",
+  "recentOpponentName": "Galarneau A.",
+  "recentIndex": 4,
+  "recentEvent": "Jiujiang (China)",
+  "recentDate": "Apr 30, 26",
+  "recentIsoDate": "2026-04-30",
+  "recentResult": "Loss 3-6 4-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Broady L. - Galarneau A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/jiujiang/",
+  "players": [
+    "Broady L.",
+    "Galarneau A."
+  ],
+  "generatedAt": "2026-06-02T02:39:30.456Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/MZP8d6Nk/",
+  "matchId": "MZP8d6Nk",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_MZP8d6Nk",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_MZP8d6Nk"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "1:00"
+      }
+    ],
+    "totalDuration": "1:36"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "58%",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (20/34)",
+              "right": "72% (26/36)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (11/27)",
+              "right": "58% (15/26)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/7",
+              "right": "7/9",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (10/36)",
+              "right": "41% (14/34)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (11/26)",
+              "right": "59% (16/27)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/9",
+              "right": "4/7",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "20",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "31",
+              "right": "23",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Net points won",
+              "left": "44% (4/9)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "51% (31/61)",
+              "right": "66% (41/62)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (21/62)",
+              "right": "49% (30/61)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (52/123)",
+              "right": "58% (71/123)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "56% (5/9)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (2/10)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Total games won",
+              "left": "37% (7/19)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "46%",
+              "right": "54%",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (6/11)",
+              "right": "92% (12/13)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (5/13)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/1",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (2/13)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (5/11)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/2",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "8",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "8",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "46% (11/24)",
+              "right": "72% (18/25)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (7/25)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (18/49)",
+              "right": "63% (31/49)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "61%",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (14/23)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (6/14)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "7/8",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (8/23)",
+              "right": "39% (9/23)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (6/15)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/8",
+              "right": "2/5",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "12",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "15",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Net points won",
+              "left": "43% (3/7)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (20/37)",
+              "right": "62% (23/37)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (14/37)",
+              "right": "46% (17/37)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (34/74)",
+              "right": "54% (40/74)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Galarneau A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

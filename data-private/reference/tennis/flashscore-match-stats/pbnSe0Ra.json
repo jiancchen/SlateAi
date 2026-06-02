@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-royer-vs-alvarez-varona-2026-06-02",
+  "boardTitle": "Valentin Royer vs Nicolas Alvarez Varona",
+  "boardPlayerName": "Nicolas Alvarez Varona",
+  "recentOpponentName": "Mazza M.",
+  "recentIndex": 0,
+  "recentEvent": "Perugia (Italy)",
+  "recentDate": "Jun 01, 26",
+  "recentIsoDate": "2026-06-01",
+  "recentResult": "Win 7-5 6-4",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Mazza M. - Alvarez Varona N.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/perugia/",
+  "players": [
+    "Mazza M.",
+    "Alvarez Varona N."
+  ],
+  "generatedAt": "2026-06-02T02:39:32.467Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/pbnSe0Ra/",
+  "matchId": "pbnSe0Ra",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_pbnSe0Ra",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_pbnSe0Ra"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "1:04"
+      }
+    ],
+    "totalDuration": "1:49"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "7",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "75%",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "54% (26/48)",
+              "right": "64% (30/47)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (11/27)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "10/16",
+              "right": "5/9",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (17/47)",
+              "right": "46% (22/48)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (9/16)",
+              "right": "59% (16/27)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/9",
+              "right": "6/16",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "25",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "31",
+              "right": "22",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "49% (37/75)",
+              "right": "59% (37/63)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (26/63)",
+              "right": "51% (38/75)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (63/138)",
+              "right": "54% (75/138)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "45% (5/11)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Return games won",
+              "left": "36% (4/11)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Total games won",
+              "left": "41% (9/22)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "5",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "76%",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (16/20)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (4/12)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "1/2",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (5/22)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (2/7)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/3",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "12",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "6",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (20/32)",
+              "right": "76% (22/29)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (7/29)",
+              "right": "38% (12/32)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (27/61)",
+              "right": "56% (34/61)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "74%",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "36% (10/28)",
+              "right": "52% (13/25)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (7/15)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "9/13",
+              "right": "4/7",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "48% (12/25)",
+              "right": "64% (18/28)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "78% (7/9)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "4/13",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "13",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "16",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "40% (17/43)",
+              "right": "44% (15/34)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "56% (19/34)",
+              "right": "60% (26/43)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (36/77)",
+              "right": "53% (41/77)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Mazza M.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

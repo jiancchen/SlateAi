@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-bellucci-vs-bolt-2026-06-02",
+  "boardTitle": "Mattia Bellucci vs Alex Bolt",
+  "boardPlayerName": "Alex Bolt",
+  "recentOpponentName": "Smith K.",
+  "recentIndex": 3,
+  "recentEvent": "Jiujiang (China)",
+  "recentDate": "May 01, 26",
+  "recentIsoDate": "2026-05-01",
+  "recentResult": "Win 7-6 7-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Smith K. - Bolt A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/jiujiang/",
+  "players": [
+    "Smith K.",
+    "Bolt A."
+  ],
+  "generatedAt": "2026-06-02T02:39:21.368Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/dQsO1rzB/",
+  "matchId": "dQsO1rzB",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_dQsO1rzB",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_dQsO1rzB"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:55"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:49"
+      }
+    ],
+    "totalDuration": "1:44"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "5",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "58%",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (45/64)",
+              "right": "70% (33/47)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "65% (11/17)",
+              "right": "71% (24/34)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "4/5",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (14/47)",
+              "right": "30% (19/64)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (10/34)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "1/3",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "28",
+              "right": "31",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "33",
+              "right": "19",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Net points won",
+              "left": "59% (16/27)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (55/81)",
+              "right": "69% (56/81)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (25/81)",
+              "right": "32% (26/81)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (80/162)",
+              "right": "51% (82/162)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "92% (11/12)",
+              "right": "92% (11/12)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Return games won",
+              "left": "8% (1/12)",
+              "right": "8% (1/12)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (12/24)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "85%",
+              "right": "64%",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (28/41)",
+              "right": "70% (19/27)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (4/7)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "2/2",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (8/27)",
+              "right": "32% (13/41)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "20% (3/15)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "0/2",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "17",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "10",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Net points won",
+              "left": "58% (11/19)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (31/48)",
+              "right": "71% (30/42)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (12/42)",
+              "right": "35% (17/48)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (43/90)",
+              "right": "52% (47/90)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "4",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "51%",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (17/23)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "70% (7/10)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "2/3",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (6/20)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "37% (7/19)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "1/1",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "14",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "9",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Net points won",
+              "left": "63% (5/8)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "73% (24/33)",
+              "right": "67% (26/39)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (13/39)",
+              "right": "27% (9/33)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (37/72)",
+              "right": "49% (35/72)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

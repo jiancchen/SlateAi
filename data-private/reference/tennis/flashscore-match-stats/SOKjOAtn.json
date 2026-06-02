@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-bicknell-vs-monday-2026-06-02",
+  "boardTitle": "Johannus Monday vs Blaise Bicknell",
+  "boardPlayerName": "Johannus Monday",
+  "recentOpponentName": "Mayo A.",
+  "recentIndex": 0,
+  "recentEvent": "Little Rock (USA)",
+  "recentDate": "May 29, 26",
+  "recentIsoDate": "2026-05-29",
+  "recentResult": "Loss 6-7 5-7",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Monday J. - Mayo A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/little-rock/",
+  "players": [
+    "Monday J.",
+    "Mayo A."
+  ],
+  "generatedAt": "2026-06-02T02:39:36.176Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/SOKjOAtn/",
+  "matchId": "SOKjOAtn",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_SOKjOAtn",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_SOKjOAtn"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 7,
+        "duration": "0:57"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:15"
+      }
+    ],
+    "totalDuration": "2:12"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "11",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "4",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "52%",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (26/38)",
+              "right": "82% (32/39)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (25/42)",
+              "right": "64% (23/36)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "2/3",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "18% (7/39)",
+              "right": "32% (12/38)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (13/36)",
+              "right": "40% (17/42)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "2/6",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "26",
+              "right": "34",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "39",
+              "right": "32",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (12/14)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (51/80)",
+              "right": "73% (55/75)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (20/75)",
+              "right": "36% (29/80)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (71/155)",
+              "right": "54% (84/155)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "1",
+              "right": "9",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (10/12)",
+              "right": "92% (11/12)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Return games won",
+              "left": "8% (1/12)",
+              "right": "17% (2/12)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Total games won",
+              "left": "46% (11/24)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "7",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "46%",
+              "right": "61%",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (13/18)",
+              "right": "86% (19/22)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (14/21)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "0/1",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "14% (3/22)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (6/14)",
+              "right": "33% (7/21)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "1/3",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "14",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "17",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Net points won",
+              "left": "88% (7/8)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (27/40)",
+              "right": "75% (27/36)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (9/36)",
+              "right": "33% (13/40)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (36/76)",
+              "right": "53% (40/76)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "49%",
+              "right": "44%",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (13/20)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "52% (11/21)",
+              "right": "68% (15/22)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "2/2",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (4/17)",
+              "right": "30% (6/20)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "32% (7/22)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "1/3",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "20",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "15",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (24/40)",
+              "right": "72% (28/39)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (11/39)",
+              "right": "40% (16/40)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (35/79)",
+              "right": "56% (44/79)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Mayo A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

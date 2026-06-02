@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-weightman-vs-badenhorst-2026-06-02",
+  "boardTitle": "Oscar Weightman vs Devin Badenhorst",
+  "boardPlayerName": "Devin Badenhorst",
+  "recentOpponentName": "Koenig L.",
+  "recentIndex": 3,
+  "recentEvent": "M15 Hillcrest 2 (South Africa)",
+  "recentDate": "Jul 18, 25",
+  "recentIsoDate": "2025-07-18",
+  "recentResult": "Win 6-2 6-1",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Koenig L. - Badenhorst D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m15-hillcrest-2/",
+  "players": [
+    "Koenig L.",
+    "Badenhorst D."
+  ],
+  "generatedAt": "2026-06-02T02:39:28.874Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/4dF0iYgm/",
+  "matchId": "4dF0iYgm",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_4dF0iYgm",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_4dF0iYgm"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": ""
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Koenig L.",
+              "rightPlayer": "Badenhorst D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Koenig L.",
+              "rightPlayer": "Badenhorst D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Koenig L.",
+              "rightPlayer": "Badenhorst D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-moeller-vs-onclin-2026-06-02",
+  "boardTitle": "Marvin Moeller vs Gauthier Onclin",
+  "boardPlayerName": "Marvin Moeller",
+  "recentOpponentName": "Stricker D.",
+  "recentIndex": 0,
+  "recentEvent": "Heilbronn (Germany)",
+  "recentDate": "Jun 01, 26",
+  "recentIsoDate": "2026-06-01",
+  "recentResult": "Win 7-6 6-2",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Stricker D. - Moeller M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/heilbronn/",
+  "players": [
+    "Stricker D.",
+    "Moeller M."
+  ],
+  "generatedAt": "2026-06-02T02:39:18.978Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Yc91Xx1T/",
+  "matchId": "Yc91Xx1T",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Yc91Xx1T",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Yc91Xx1T"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 9,
+        "rightGames": 11,
+        "duration": "1:09"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:39"
+      }
+    ],
+    "totalDuration": "1:48"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "7",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "5",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "42%",
+              "right": "48%",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "89% (24/27)",
+              "right": "84% (32/38)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (18/38)",
+              "right": "49% (20/41)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "3/4",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "16% (6/38)",
+              "right": "11% (3/27)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "51% (21/41)",
+              "right": "53% (20/38)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "3/3",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "23",
+              "right": "19",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "38",
+              "right": "29",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (42/65)",
+              "right": "66% (52/79)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (27/79)",
+              "right": "35% (23/65)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (69/144)",
+              "right": "52% (75/144)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "70% (7/10)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Return games won",
+              "left": "10% (1/10)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (8/20)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "4",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "4",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "43%",
+              "right": "49%",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (15/17)",
+              "right": "78% (21/27)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "61% (14/23)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "3/4",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (6/27)",
+              "right": "12% (2/17)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (14/28)",
+              "right": "39% (9/23)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "1/1",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "12",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "25",
+              "right": "24",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "73% (29/40)",
+              "right": "64% (35/55)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (20/55)",
+              "right": "28% (11/40)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (49/95)",
+              "right": "48% (46/95)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "40%",
+              "right": "46%",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "90% (9/10)",
+              "right": "100% (11/11)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "27% (4/15)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/0",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "0% (0/11)",
+              "right": "10% (1/10)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (7/13)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/2",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "5",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (13/25)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (7/24)",
+              "right": "48% (12/25)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (20/49)",
+              "right": "59% (29/49)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Stricker D.",
+              "rightPlayer": "Moeller M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

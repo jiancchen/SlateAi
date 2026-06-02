@@ -1,0 +1,182 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-mikrut-vs-marti-pujolras-2026-06-02",
+  "boardTitle": "Luka Mikrut vs Alex Marti Pujolras",
+  "boardPlayerName": "Alex Marti Pujolras",
+  "recentOpponentName": "Kestelboim M.",
+  "recentIndex": 0,
+  "recentEvent": "Heilbronn (Germany)",
+  "recentDate": "Jun 01, 26",
+  "recentIsoDate": "2026-06-01",
+  "recentResult": "Result",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Kestelboim M. - Marti Pujolras A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/heilbronn/",
+  "players": [
+    "Kestelboim M.",
+    "Marti Pujolras A."
+  ],
+  "generatedAt": "2026-06-02T02:39:19.280Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/UyNKb8oT/",
+  "matchId": "UyNKb8oT",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_UyNKb8oT",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_UyNKb8oT"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kestelboim M.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kestelboim M.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "0%",
+              "right": "0%",
+              "leftPlayer": "Kestelboim M.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "0% (0/0)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Kestelboim M.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "0% (0/0)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Kestelboim M.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Kestelboim M.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "0% (0/0)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Kestelboim M.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "0% (0/0)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Kestelboim M.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Kestelboim M.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "0% (0/0)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Kestelboim M.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "0% (0/0)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Kestelboim M.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "0% (0/0)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Kestelboim M.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kestelboim M.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kestelboim M.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/0)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Kestelboim M.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/0)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Kestelboim M.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/0)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Kestelboim M.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

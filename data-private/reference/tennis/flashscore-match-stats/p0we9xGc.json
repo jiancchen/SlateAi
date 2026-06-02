@@ -1,0 +1,710 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02",
+  "boardTitle": "Henrique Rocha vs Enrico Dalla Valle",
+  "boardPlayerName": "Henrique Rocha",
+  "recentOpponentName": "Gojo B.",
+  "recentIndex": 0,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 20, 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "Loss 3-6 6-3 6-7",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Rocha H. - Gojo B.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Rocha H.",
+    "Gojo B."
+  ],
+  "generatedAt": "2026-06-02T02:39:31.162Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/p0we9xGc/",
+  "matchId": "p0we9xGc",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_p0we9xGc",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_p0we9xGc"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:40"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 9,
+        "rightGames": 11,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:29"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "6",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "64%",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (40/57)",
+              "right": "75% (46/61)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (18/34)",
+              "right": "49% (17/35)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "2/5",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "183 km/h",
+              "right": "206 km/h",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "159 km/h",
+              "right": "145 km/h",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (15/61)",
+              "right": "30% (17/57)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "51% (18/35)",
+              "right": "47% (16/34)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "3/5",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "25",
+              "right": "25",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "43",
+              "right": "36",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (9/12)",
+              "right": "72% (13/18)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (58/91)",
+              "right": "66% (63/96)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (33/96)",
+              "right": "36% (33/91)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (91/187)",
+              "right": "51% (96/187)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (12/15)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (3/15)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (15/30)",
+              "right": "50% (15/30)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "48%",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (9/13)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "14% (2/14)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (6/15)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "2",
+              "right": "11",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "14",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (13/22)",
+              "right": "72% (21/29)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (8/29)",
+              "right": "41% (9/22)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (21/51)",
+              "right": "59% (30/51)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "82%",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (13/16)",
+              "right": "72% (13/18)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (7/11)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (5/18)",
+              "right": "19% (3/16)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (3/4)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "7",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "11",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (20/27)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (8/22)",
+              "right": "26% (7/27)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (28/49)",
+              "right": "43% (21/49)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "64%",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (18/28)",
+              "right": "72% (21/29)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (7/14)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "1/3",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (8/29)",
+              "right": "36% (10/28)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (9/16)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "2/2",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "7",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "24",
+              "right": "11",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (6/9)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (25/42)",
+              "right": "62% (28/45)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (17/45)",
+              "right": "40% (17/42)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (42/87)",
+              "right": "52% (45/87)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Rocha H.",
+              "rightPlayer": "Gojo B."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

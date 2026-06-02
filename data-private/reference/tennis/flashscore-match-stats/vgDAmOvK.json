@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-galan-vs-rehberg-2026-06-02",
+  "boardTitle": "Daniel Elahi Galan vs Max Hans Rehberg",
+  "boardPlayerName": "Max Hans Rehberg",
+  "recentOpponentName": "Butvilas E.",
+  "recentIndex": 2,
+  "recentEvent": "Shymkent 2 (Kazakhstan)",
+  "recentDate": "May 01, 26",
+  "recentIsoDate": "2026-05-01",
+  "recentResult": "Loss 5-7 6-2 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Butvilas E. - Rehberg M. H.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/shymkent-2/",
+  "players": [
+    "Butvilas E.",
+    "Rehberg M. H."
+  ],
+  "generatedAt": "2026-06-02T02:39:18.801Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/vgDAmOvK/",
+  "matchId": "vgDAmOvK",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_vgDAmOvK",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_vgDAmOvK"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:56"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:18"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "2",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "69%",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (33/47)",
+              "right": "63% (35/56)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (23/41)",
+              "right": "64% (16/25)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/8",
+              "right": "3/6",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (21/56)",
+              "right": "30% (14/47)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (9/25)",
+              "right": "44% (18/41)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "3/8",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "24",
+              "right": "22",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "40",
+              "right": "40",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Net points won",
+              "left": "78% (14/18)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (56/88)",
+              "right": "63% (51/81)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (30/81)",
+              "right": "36% (32/88)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (86/169)",
+              "right": "49% (83/169)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (12/15)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Return games won",
+              "left": "21% (3/14)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Total games won",
+              "left": "52% (15/29)",
+              "right": "48% (14/29)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "76%",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (13/17)",
+              "right": "58% (18/31)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (10/16)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "3/5",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (13/31)",
+              "right": "24% (4/17)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (5/10)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "1/2",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "7",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "19",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (23/33)",
+              "right": "56% (23/41)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (18/41)",
+              "right": "30% (10/33)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (41/74)",
+              "right": "45% (33/74)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "46%",
+              "right": "62%",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (7/11)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "31% (4/13)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (3/13)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (2/8)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "8",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "46% (11/24)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (5/21)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (16/45)",
+              "right": "64% (29/45)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "63%",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (13/19)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (9/12)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "0/1",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (5/12)",
+              "right": "32% (6/19)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (2/7)",
+              "right": "25% (3/12)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/2",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "9",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "13",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Net points won",
+              "left": "89% (8/9)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (22/31)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (7/19)",
+              "right": "29% (9/31)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (29/50)",
+              "right": "42% (21/50)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Butvilas E.",
+              "rightPlayer": "Rehberg M. H."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-rawat-vs-winter-2026-06-02",
+  "boardTitle": "Sidharth Rawat vs Edward Winter",
+  "boardPlayerName": "Sidharth Rawat",
+  "recentOpponentName": "Sureshkumar M.",
+  "recentIndex": 4,
+  "recentEvent": "M25 Nakhon Pathom 2 (Thailand)",
+  "recentDate": "May 06, 26",
+  "recentIsoDate": "2026-05-06",
+  "recentResult": "Loss 6-3 4-6 5-7",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Sureshkumar M. - Rawat S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m25-nakhon-pathom-2/",
+  "players": [
+    "Sureshkumar M.",
+    "Rawat S."
+  ],
+  "generatedAt": "2026-06-02T02:39:28.212Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/80u9rfPk/",
+  "matchId": "80u9rfPk",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_80u9rfPk",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_80u9rfPk"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:31"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:55"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:28"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Sureshkumar M.",
+              "rightPlayer": "Rawat S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sureshkumar M.",
+              "rightPlayer": "Rawat S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sureshkumar M.",
+              "rightPlayer": "Rawat S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Sureshkumar M.",
+              "rightPlayer": "Rawat S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

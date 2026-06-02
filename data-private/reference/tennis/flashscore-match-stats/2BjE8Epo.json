@@ -1,0 +1,668 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-rawat-vs-winter-2026-06-02",
+  "boardTitle": "Sidharth Rawat vs Edward Winter",
+  "boardPlayerName": "Edward Winter",
+  "recentOpponentName": "Napolitano S.",
+  "recentIndex": 1,
+  "recentEvent": "Centurion (South Africa)",
+  "recentDate": "May 30, 26",
+  "recentIsoDate": "2026-05-30",
+  "recentResult": "Win 6-1 1-6 7-5",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Winter E. - Napolitano S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion/",
+  "players": [
+    "Winter E.",
+    "Napolitano S."
+  ],
+  "generatedAt": "2026-06-02T02:39:27.552Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/2BjE8Epo/",
+  "matchId": "2BjE8Epo",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_2BjE8Epo",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_2BjE8Epo"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:26"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:27"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:01"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "5",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "66%",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (34/46)",
+              "right": "72% (33/46)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (17/32)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/9",
+              "right": "4/8",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (13/46)",
+              "right": "26% (12/46)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (12/24)",
+              "right": "47% (15/32)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/8",
+              "right": "3/9",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "29",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "24",
+              "right": "36",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (51/78)",
+              "right": "64% (45/70)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (25/70)",
+              "right": "35% (27/78)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (76/148)",
+              "right": "49% (72/148)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "77% (10/13)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return games won",
+              "left": "31% (4/13)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total games won",
+              "left": "54% (14/26)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "64%",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (11/13)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (6/9)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (4/9)",
+              "right": "15% (2/13)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "80% (4/5)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "12",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "77% (17/22)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "57% (8/14)",
+              "right": "23% (5/22)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "69% (25/36)",
+              "right": "31% (11/36)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "94%",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (7/12)",
+              "right": "88% (15/17)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (2/7)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "0/0",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "12% (2/17)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "0% (0/1)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/3",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "13",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "5",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "47% (9/19)",
+              "right": "89% (16/18)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "11% (2/18)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "30% (11/37)",
+              "right": "70% (26/37)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "53%",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (16/21)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (9/16)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/6",
+              "right": "3/5",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (7/20)",
+              "right": "24% (5/21)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (8/18)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "1/6",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "14",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "19",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (25/37)",
+              "right": "61% (23/38)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (15/38)",
+              "right": "32% (12/37)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (40/75)",
+              "right": "47% (35/75)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

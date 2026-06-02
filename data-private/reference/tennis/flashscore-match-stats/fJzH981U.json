@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-sun-vs-ilagan-2026-06-02",
+  "boardTitle": "Fajing Sun vs Andre Ilagan",
+  "boardPlayerName": "Andre Ilagan",
+  "recentOpponentName": "Uchiyama Y.",
+  "recentIndex": 3,
+  "recentEvent": "Little Rock (USA)",
+  "recentDate": "May 25, 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "Win 6-7 6-4 7-5",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Ilagan A. - Uchiyama Y.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/little-rock/",
+  "players": [
+    "Ilagan A.",
+    "Uchiyama Y."
+  ],
+  "generatedAt": "2026-06-02T02:39:40.327Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/fJzH981U/",
+  "matchId": "fJzH981U",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_fJzH981U",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_fJzH981U"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 7,
+        "duration": "1:02"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:44"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:46"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "8",
+              "right": "9",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "9",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "58%",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (45/53)",
+              "right": "75% (53/71)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (25/47)",
+              "right": "44% (23/52)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "5/8",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (18/71)",
+              "right": "25% (13/53)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (29/52)",
+              "right": "47% (22/47)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/8",
+              "right": "1/3",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "33",
+              "right": "38",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "37",
+              "right": "57",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (6/9)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (70/100)",
+              "right": "62% (76/123)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (47/123)",
+              "right": "30% (30/100)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (117/223)",
+              "right": "48% (106/223)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "94% (16/17)",
+              "right": "82% (14/17)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "18% (3/17)",
+              "right": "6% (1/17)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "56% (19/34)",
+              "right": "44% (15/34)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "6",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "62%",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (18/25)",
+              "right": "79% (23/29)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (10/18)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (6/29)",
+              "right": "28% (7/25)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (11/18)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "16",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "25",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (27/41)",
+              "right": "64% (30/47)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (17/47)",
+              "right": "34% (14/41)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (44/88)",
+              "right": "50% (44/88)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "50%",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "108% (13/12)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (5/12)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "4/5",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (6/16)",
+              "right": "-8% (-1/12)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (7/16)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "0/0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "8",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "11",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (20/27)",
+              "right": "63% (20/32)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (12/32)",
+              "right": "26% (7/27)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (32/59)",
+              "right": "46% (27/59)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "59%",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (14/16)",
+              "right": "73% (19/26)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (10/17)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "1/3",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (6/26)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (11/18)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "1/2",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "14",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "21",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (23/32)",
+              "right": "59% (26/44)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (18/44)",
+              "right": "28% (9/32)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (41/76)",
+              "right": "46% (35/76)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Uchiyama Y."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

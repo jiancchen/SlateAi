@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-mikrut-vs-marti-pujolras-2026-06-02",
+  "boardTitle": "Luka Mikrut vs Alex Marti Pujolras",
+  "boardPlayerName": "Luka Mikrut",
+  "recentOpponentName": "Forejtek J.",
+  "recentIndex": 4,
+  "recentEvent": "Kigali (Rwanda)",
+  "recentDate": "Mar 02, 26",
+  "recentIsoDate": "2026-03-02",
+  "recentResult": "Win 6-3 7-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Forejtek J. - Mikrut L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/kigali/",
+  "players": [
+    "Forejtek J.",
+    "Mikrut L."
+  ],
+  "generatedAt": "2026-06-02T02:39:19.246Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/r5K3c6qC/",
+  "matchId": "r5K3c6qC",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_r5K3c6qC",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_r5K3c6qC"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:31"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:12"
+      }
+    ],
+    "totalDuration": "1:43"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "11",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "64%",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (31/41)",
+              "right": "81% (34/42)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (13/31)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "2/3",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (8/42)",
+              "right": "24% (10/41)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (7/24)",
+              "right": "58% (18/31)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "2/5",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "29",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "20",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (11/11)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (44/72)",
+              "right": "77% (51/66)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (15/66)",
+              "right": "39% (28/72)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (59/138)",
+              "right": "57% (79/138)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (8/10)",
+              "right": "91% (10/11)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Return games won",
+              "left": "9% (1/11)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Total games won",
+              "left": "43% (9/21)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "62%",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (13/18)",
+              "right": "92% (12/13)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (2/8)",
+              "right": "100% (8/8)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "8% (1/13)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "0% (0/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "9",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "4",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (15/26)",
+              "right": "95% (20/21)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "5% (1/21)",
+              "right": "42% (11/26)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "34% (16/47)",
+              "right": "66% (31/47)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "8",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "64%",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (18/23)",
+              "right": "76% (22/29)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (11/23)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "2/3",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (7/29)",
+              "right": "22% (5/23)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (7/16)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "1/4",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "20",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "16",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (8/8)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (29/46)",
+              "right": "69% (31/45)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (14/45)",
+              "right": "37% (17/46)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (43/91)",
+              "right": "53% (48/91)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Forejtek J.",
+              "rightPlayer": "Mikrut L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

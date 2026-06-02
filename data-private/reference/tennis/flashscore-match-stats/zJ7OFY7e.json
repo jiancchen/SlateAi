@@ -1,0 +1,490 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02",
+  "boardTitle": "Henrique Rocha vs Enrico Dalla Valle",
+  "boardPlayerName": "Enrico Dalla Valle",
+  "recentOpponentName": "Xilas I.",
+  "recentIndex": 3,
+  "recentEvent": "Vicenza (Italy)",
+  "recentDate": "May 25, 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "Win 6-2 7-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Xilas I. - Dalla Valle E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/vicenza/",
+  "players": [
+    "Xilas I.",
+    "Dalla Valle E."
+  ],
+  "generatedAt": "2026-06-02T02:39:31.806Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/zJ7OFY7e/",
+  "matchId": "zJ7OFY7e",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_zJ7OFY7e",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_zJ7OFY7e"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "1:19"
+      }
+    ],
+    "totalDuration": "2:01"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "83%",
+              "right": "77%",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (37/57)",
+              "right": "74% (35/47)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "2/2",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (13/47)",
+              "right": "35% (20/57)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "21% (3/14)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "2/4",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Unforced errors",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (43/68)",
+              "right": "75% (46/61)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (15/61)",
+              "right": "37% (25/68)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (58/129)",
+              "right": "55% (71/129)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (8/10)",
+              "right": "100% (10/10)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/10)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (8/20)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "89%",
+              "right": "83%",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (12/24)",
+              "right": "74% (14/19)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (2/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "1/1",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (5/19)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (1/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "2/2",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Unforced errors",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (14/27)",
+              "right": "74% (17/23)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (6/23)",
+              "right": "48% (13/27)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (20/50)",
+              "right": "60% (30/50)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "74%",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (25/33)",
+              "right": "75% (21/28)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "1/1",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (8/28)",
+              "right": "24% (8/33)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "20% (2/10)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "0/2",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Unforced errors",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (29/41)",
+              "right": "76% (29/38)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (9/38)",
+              "right": "29% (12/41)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (38/79)",
+              "right": "52% (41/79)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Xilas I.",
+              "rightPlayer": "Dalla Valle E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

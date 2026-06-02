@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-walton-vs-wu-2026-06-02",
+  "boardTitle": "Adam Walton vs Tung-Lin Wu",
+  "boardPlayerName": "Tung-Lin Wu",
+  "recentOpponentName": "Walton A.",
+  "recentIndex": 2,
+  "recentEvent": "Jiujiang (China)",
+  "recentDate": "Apr 30, 26",
+  "recentIsoDate": "2026-04-30",
+  "recentResult": "Loss 7-5 3-6 6-7",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Walton A. - Wu Tung-Lin",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/jiujiang/",
+  "players": [
+    "Walton A.",
+    "Wu Tung-Lin"
+  ],
+  "generatedAt": "2026-06-02T02:39:39.776Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/G0ZstB1L/",
+  "matchId": "G0ZstB1L",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_G0ZstB1L",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_G0ZstB1L"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:48"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 7,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:38"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "15",
+              "right": "5",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "71%",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (54/72)",
+              "right": "79% (53/67)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (25/42)",
+              "right": "54% (15/28)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/8",
+              "right": "2/3",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (14/67)",
+              "right": "25% (18/72)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (13/28)",
+              "right": "40% (17/42)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "1/8",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "34",
+              "right": "52",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "44",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "70% (16/23)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (79/114)",
+              "right": "72% (68/95)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (27/95)",
+              "right": "31% (35/114)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (106/209)",
+              "right": "49% (103/209)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Match points saved",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "94% (16/17)",
+              "right": "94% (15/16)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Return games won",
+              "left": "6% (1/16)",
+              "right": "6% (1/17)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Total games won",
+              "left": "52% (17/33)",
+              "right": "48% (16/33)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "71%",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (18/23)",
+              "right": "81% (22/27)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "1/1",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (5/27)",
+              "right": "22% (5/23)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (7/11)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/2",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "20",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "15",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (22/32)",
+              "right": "68% (26/38)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (12/38)",
+              "right": "31% (10/32)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (34/70)",
+              "right": "51% (36/70)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "0",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "62%",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "1st serve points won",
+              "left": "93% (14/15)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (5/13)",
+              "right": "7% (1/15)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (2/8)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "7",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "10",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Service Points Won",
+              "left": "80% (20/25)",
+              "right": "68% (15/22)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (7/22)",
+              "right": "20% (5/25)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (27/47)",
+              "right": "43% (20/47)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "2",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "75%",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (22/34)",
+              "right": "85% (23/27)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "65% (15/23)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/6",
+              "right": "0/0",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (4/27)",
+              "right": "35% (12/34)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (4/9)",
+              "right": "35% (8/23)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/6",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "25",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "19",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (37/57)",
+              "right": "77% (27/35)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (8/35)",
+              "right": "35% (20/57)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (45/92)",
+              "right": "51% (47/92)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Match points saved",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

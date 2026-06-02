@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-strombachs-vs-hurrion-2026-06-02",
+  "boardTitle": "Robert Strombachs vs Millen Hurrion",
+  "boardPlayerName": "Robert Strombachs",
+  "recentOpponentName": "Bertrand R.",
+  "recentIndex": 2,
+  "recentEvent": "Centurion (South Africa)",
+  "recentDate": "May 26, 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "Win 6-0 7-5",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Strombachs R. - Bertrand R.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion/",
+  "players": [
+    "Strombachs R.",
+    "Bertrand R."
+  ],
+  "generatedAt": "2026-06-02T02:39:29.004Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/xrQsnLH5/",
+  "matchId": "xrQsnLH5",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_xrQsnLH5",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_xrQsnLH5"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 0,
+        "duration": "0:28"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:10"
+      }
+    ],
+    "totalDuration": "1:38"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "9",
+              "right": "1",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "61%",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (30/41)",
+              "right": "53% (19/36)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "37% (11/30)",
+              "right": "35% (8/23)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/8",
+              "right": "5/11",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (17/36)",
+              "right": "27% (11/41)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "65% (15/23)",
+              "right": "63% (19/30)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/11",
+              "right": "2/8",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "26",
+              "right": "10",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "42",
+              "right": "25",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (41/71)",
+              "right": "46% (27/59)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (32/59)",
+              "right": "42% (30/71)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (73/130)",
+              "right": "44% (57/130)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "78% (7/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (6/9)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Total games won",
+              "left": "72% (13/18)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "39%",
+              "right": "61%",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (5/7)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "73% (8/11)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/5",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "64% (7/11)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "86% (6/7)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "0/0",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "1",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "11",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (13/18)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "72% (13/18)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "72% (26/36)",
+              "right": "28% (10/36)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Total games won",
+              "left": "100% (6/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "9",
+              "right": "0",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "61%",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (25/34)",
+              "right": "60% (15/25)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "16% (3/19)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/8",
+              "right": "3/6",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (10/25)",
+              "right": "26% (9/34)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (9/16)",
+              "right": "84% (16/19)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "2/8",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "9",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "35",
+              "right": "14",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (28/53)",
+              "right": "54% (22/41)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (19/41)",
+              "right": "47% (25/53)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (47/94)",
+              "right": "50% (47/94)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Bertrand R."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

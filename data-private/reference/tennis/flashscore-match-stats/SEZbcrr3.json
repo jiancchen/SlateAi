@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-searle-vs-krueger-2026-06-02",
+  "boardTitle": "Henry Searle vs Mitchell Krueger",
+  "boardPlayerName": "Mitchell Krueger",
+  "recentOpponentName": "Dhamne M.",
+  "recentIndex": 1,
+  "recentEvent": "Cervia (Italy)",
+  "recentDate": "May 18, 26",
+  "recentIsoDate": "2026-05-18",
+  "recentResult": "Loss 6-3 4-6 6-7",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Dhamne M. - Krueger M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/cervia/",
+  "players": [
+    "Dhamne M.",
+    "Krueger M."
+  ],
+  "generatedAt": "2026-06-02T02:39:38.044Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/SEZbcrr3/",
+  "matchId": "SEZbcrr3",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_SEZbcrr3",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_SEZbcrr3"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "1:02"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 10,
+        "rightGames": 8,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:47"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "11",
+              "right": "7",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "70%",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (49/68)",
+              "right": "67% (54/81)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (17/38)",
+              "right": "50% (17/34)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/10",
+              "right": "6/9",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (27/81)",
+              "right": "28% (19/68)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (17/34)",
+              "right": "55% (21/38)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/9",
+              "right": "3/10",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "36",
+              "right": "40",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "36",
+              "right": "40",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (10/14)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (66/106)",
+              "right": "62% (71/115)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (44/115)",
+              "right": "38% (40/106)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (110/221)",
+              "right": "50% (111/221)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (12/15)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Return games won",
+              "left": "19% (3/16)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Total games won",
+              "left": "48% (15/31)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "71%",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (11/16)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (5/12)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "0/0",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (5/22)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (4/9)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/4",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "12",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "4",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (16/28)",
+              "right": "71% (22/31)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (9/31)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (25/59)",
+              "right": "58% (34/59)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "64%",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (18/27)",
+              "right": "56% (15/27)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (5/12)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "6/8",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (12/27)",
+              "right": "33% (9/27)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (7/15)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/8",
+              "right": "1/4",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "13",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "19",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Net points won",
+              "left": "64% (7/11)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (23/39)",
+              "right": "55% (23/42)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (19/42)",
+              "right": "41% (16/39)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (42/81)",
+              "right": "48% (39/81)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "76%",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (20/25)",
+              "right": "69% (22/32)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (7/14)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/1",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (10/32)",
+              "right": "20% (5/25)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (6/10)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "1/2",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "15",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "17",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (27/39)",
+              "right": "62% (26/42)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (16/42)",
+              "right": "31% (12/39)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (43/81)",
+              "right": "47% (38/81)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Dhamne M.",
+              "rightPlayer": "Krueger M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

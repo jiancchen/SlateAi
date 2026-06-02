@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-olivieri-vs-krumich-2026-06-02",
+  "boardTitle": "Genaro Alberto Olivieri vs Martin Krumich",
+  "boardPlayerName": "Genaro Alberto Olivieri",
+  "recentOpponentName": "Sakellaridis S.",
+  "recentIndex": 0,
+  "recentEvent": "Chisinau (Moldova)",
+  "recentDate": "May 30, 26",
+  "recentIsoDate": "2026-05-30",
+  "recentResult": "Loss 3-6 4-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Olivieri G. A. - Sakellaridis S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/chisinau/",
+  "players": [
+    "Olivieri G. A.",
+    "Sakellaridis S."
+  ],
+  "generatedAt": "2026-06-02T02:39:35.783Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Eaqh671l/",
+  "matchId": "Eaqh671l",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Eaqh671l",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Eaqh671l"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:51"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:58"
+      }
+    ],
+    "totalDuration": "1:49"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "53%",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (23/41)",
+              "right": "71% (30/42)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "61% (11/18)",
+              "right": "50% (19/38)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "4/5",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (14/42)",
+              "right": "44% (18/41)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (19/38)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "3/7",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "24",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "29",
+              "right": "40",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (34/59)",
+              "right": "61% (49/80)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (31/80)",
+              "right": "42% (25/59)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (65/139)",
+              "right": "53% (74/139)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (6/9)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Return games won",
+              "left": "10% (1/10)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Total games won",
+              "left": "37% (7/19)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "60%",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (14/21)",
+              "right": "77% (20/26)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "3/3",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (9/26)",
+              "right": "33% (7/21)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (9/17)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "1/3",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "12",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "23",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (18/30)",
+              "right": "65% (28/43)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (15/43)",
+              "right": "40% (12/30)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (33/73)",
+              "right": "55% (40/73)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "43%",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "45% (9/20)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "78% (7/9)",
+              "right": "52% (11/21)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "1/2",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (5/16)",
+              "right": "55% (11/20)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (10/21)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/4",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "12",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "17",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (16/29)",
+              "right": "57% (21/37)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (16/37)",
+              "right": "45% (13/29)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (32/66)",
+              "right": "52% (34/66)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Olivieri G. A.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

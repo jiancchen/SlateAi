@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-santillan-vs-donski-2026-06-02",
+  "boardTitle": "Akira Santillan vs Alexander Donski",
+  "boardPlayerName": "Alexander Donski",
+  "recentOpponentName": "Beckles D.",
+  "recentIndex": 1,
+  "recentEvent": "Centurion 2 (South Africa)",
+  "recentDate": "May 31, 26",
+  "recentIsoDate": "2026-05-31",
+  "recentResult": "Win 6-3 6-3",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Donski A. - Beckles D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+  "players": [
+    "Donski A.",
+    "Beckles D."
+  ],
+  "generatedAt": "2026-06-02T02:39:27.928Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/pjpRGHbt/",
+  "matchId": "pjpRGHbt",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_pjpRGHbt",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_pjpRGHbt"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:34"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:38"
+      }
+    ],
+    "totalDuration": "1:12"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "11",
+              "right": "2",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "16",
+              "right": "5",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "45%",
+              "right": "48%",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "90% (26/29)",
+              "right": "70% (19/27)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "34% (12/35)",
+              "right": "31% (9/29)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "1/6",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (8/27)",
+              "right": "10% (3/29)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "69% (20/29)",
+              "right": "66% (23/35)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/6",
+              "right": "2/3",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "24",
+              "right": "4",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "38",
+              "right": "19",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (38/64)",
+              "right": "50% (28/56)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (28/56)",
+              "right": "41% (26/64)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (66/120)",
+              "right": "45% (54/120)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "78% (7/9)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Return games won",
+              "left": "56% (5/9)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (12/18)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "2",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "38%",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (15/17)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (5/15)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/2",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "10% (1/10)",
+              "right": "12% (2/17)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (12/16)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "1/2",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "4",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "11",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (20/32)",
+              "right": "50% (13/26)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (13/26)",
+              "right": "38% (12/32)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (33/58)",
+              "right": "43% (25/58)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "0",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "10",
+              "right": "1",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "38%",
+              "right": "57%",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "92% (11/12)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "35% (7/20)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/4",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (7/17)",
+              "right": "8% (1/12)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (8/13)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "1/1",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "0",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "24",
+              "right": "8",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (18/32)",
+              "right": "50% (15/30)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (15/30)",
+              "right": "44% (14/32)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (33/62)",
+              "right": "47% (29/62)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Beckles D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

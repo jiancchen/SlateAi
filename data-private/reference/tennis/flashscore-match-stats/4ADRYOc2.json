@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-basile-vs-travaglia-2026-06-02",
+  "boardTitle": "Pierluigi Basile vs Stefano Travaglia",
+  "boardPlayerName": "Pierluigi Basile",
+  "recentOpponentName": "Poulsen Brostrom O.",
+  "recentIndex": 1,
+  "recentEvent": "M25 Grado (Italy)",
+  "recentDate": "May 28, 26",
+  "recentIsoDate": "2026-05-28",
+  "recentResult": "Win 6-2 7-5",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Basile P. - Poulsen Brostrom O.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m25-grado/",
+  "players": [
+    "Basile P.",
+    "Poulsen Brostrom O."
+  ],
+  "generatedAt": "2026-06-02T02:39:29.637Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/4ADRYOc2/",
+  "matchId": "4ADRYOc2",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_4ADRYOc2",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_4ADRYOc2"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:02"
+      }
+    ],
+    "totalDuration": "1:38"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Basile P.",
+              "rightPlayer": "Poulsen Brostrom O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Basile P.",
+              "rightPlayer": "Poulsen Brostrom O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Basile P.",
+              "rightPlayer": "Poulsen Brostrom O."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

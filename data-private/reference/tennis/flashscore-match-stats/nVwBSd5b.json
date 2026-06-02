@@ -1,0 +1,469 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-wong-vs-tarvet-2026-06-02",
+  "boardTitle": "Coleman Wong vs Oliver Tarvet",
+  "boardPlayerName": "Oliver Tarvet",
+  "recentOpponentName": "Mejia N.",
+  "recentIndex": 4,
+  "recentEvent": "Charlottesville (USA)",
+  "recentDate": "Oct 27, 25",
+  "recentIsoDate": "2025-10-27",
+  "recentResult": "Win 6-4 6-2",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Tarvet O. - Mejia N.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/charlottesville/",
+  "players": [
+    "Tarvet O.",
+    "Mejia N."
+  ],
+  "generatedAt": "2026-06-02T02:39:24.960Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/nVwBSd5b/",
+  "matchId": "nVwBSd5b",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_nVwBSd5b",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_nVwBSd5b"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:49"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:47"
+      }
+    ],
+    "totalDuration": "1:36"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "49%",
+              "right": "65%",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (19/23)",
+              "right": "65% (26/40)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (17/24)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "5/8",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (14/40)",
+              "right": "17% (4/23)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (14/22)",
+              "right": "29% (7/24)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/8",
+              "right": "0/0",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "77% (36/47)",
+              "right": "55% (34/62)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (28/62)",
+              "right": "23% (11/47)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (64/109)",
+              "right": "41% (45/109)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (9/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (3/9)",
+              "right": "0% (0/9)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (12/18)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "69%",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (11/14)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "69% (9/13)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/3",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (5/22)",
+              "right": "21% (3/14)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "70% (7/10)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "0/0",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "74% (20/27)",
+              "right": "63% (20/32)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (12/32)",
+              "right": "26% (7/27)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (32/59)",
+              "right": "46% (27/59)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "45%",
+              "right": "60%",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "89% (8/9)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "73% (8/11)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/5",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (9/18)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (7/12)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "0/0",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "80% (16/20)",
+              "right": "47% (14/30)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (16/30)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "64% (32/50)",
+              "right": "36% (18/50)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Mejia N."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

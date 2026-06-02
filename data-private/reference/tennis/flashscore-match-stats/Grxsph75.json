@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-palan-vs-beckley-2026-06-02",
+  "boardTitle": "Dominik Palan vs Alec Beckley",
+  "boardPlayerName": "Dominik Palan",
+  "recentOpponentName": "Gray A.",
+  "recentIndex": 1,
+  "recentEvent": "Bengaluru 3 (India)",
+  "recentDate": "May 20, 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "Loss 3-6 6-7",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Palan D. - Gray A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/bengaluru-3/",
+  "players": [
+    "Palan D.",
+    "Gray A."
+  ],
+  "generatedAt": "2026-06-02T02:39:27.363Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Grxsph75/",
+  "matchId": "Grxsph75",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Grxsph75",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Grxsph75"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:54"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 7,
+        "duration": "0:58"
+      }
+    ],
+    "totalDuration": "1:52"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "2",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "51%",
+              "right": "65%",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (25/33)",
+              "right": "81% (39/48)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (15/32)",
+              "right": "54% (14/26)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "1/2",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (9/48)",
+              "right": "24% (8/33)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (12/26)",
+              "right": "53% (17/32)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/5",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "19",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "31",
+              "right": "17",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Net points won",
+              "left": "73% (11/15)",
+              "right": "72% (13/18)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (40/65)",
+              "right": "72% (53/74)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (21/74)",
+              "right": "38% (25/65)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (61/139)",
+              "right": "56% (78/139)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (8/10)",
+              "right": "91% (10/11)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Return games won",
+              "left": "9% (1/11)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Total games won",
+              "left": "43% (9/21)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "57%",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (12/18)",
+              "right": "83% (20/24)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (5/12)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "1/1",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (4/24)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (10/18)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/4",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "10",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "7",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Net points won",
+              "left": "70% (7/10)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (17/30)",
+              "right": "67% (28/42)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (14/42)",
+              "right": "43% (13/30)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (31/72)",
+              "right": "57% (41/72)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "43%",
+              "right": "75%",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "87% (13/15)",
+              "right": "79% (19/24)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (10/20)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/1",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (5/24)",
+              "right": "13% (2/15)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (2/8)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "1/1",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "9",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "10",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (23/35)",
+              "right": "78% (25/32)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "22% (7/32)",
+              "right": "34% (12/35)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (30/67)",
+              "right": "55% (37/67)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

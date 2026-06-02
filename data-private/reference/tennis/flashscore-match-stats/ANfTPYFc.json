@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-strombachs-vs-hurrion-2026-06-02",
+  "boardTitle": "Robert Strombachs vs Millen Hurrion",
+  "boardPlayerName": "Millen Hurrion",
+  "recentOpponentName": "Rodrigues N.",
+  "recentIndex": 3,
+  "recentEvent": "M25 Nottingham 2 (United Kingdom)",
+  "recentDate": "May 06, 26",
+  "recentIsoDate": "2026-05-06",
+  "recentResult": "Win 6-1 6-1",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Rodrigues N. - Hurrion M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m25-nottingham-2/",
+  "players": [
+    "Rodrigues N.",
+    "Hurrion M."
+  ],
+  "generatedAt": "2026-06-02T02:39:28.759Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/ANfTPYFc/",
+  "matchId": "ANfTPYFc",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_ANfTPYFc",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_ANfTPYFc"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:36"
+      }
+    ],
+    "totalDuration": "1:13"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Rodrigues N.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rodrigues N.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Rodrigues N.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

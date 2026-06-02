@@ -1,0 +1,710 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-mrva-vs-svrcina-2026-06-02",
+  "boardTitle": "Maxim Mrva vs Dalibor Svrcina",
+  "boardPlayerName": "Dalibor Svrcina",
+  "recentOpponentName": "Den Ouden G.",
+  "recentIndex": 2,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 18, 26",
+  "recentIsoDate": "2026-05-18",
+  "recentResult": "Win 6-7 6-3 6-2",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Svrcina D. - Den Ouden G.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Svrcina D.",
+    "Den Ouden G."
+  ],
+  "generatedAt": "2026-06-02T02:39:36.039Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/AmQanVFt/",
+  "matchId": "AmQanVFt",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_AmQanVFt",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_AmQanVFt"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 7,
+        "duration": "0:56"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:18"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "2",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "65%",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (40/59)",
+              "right": "63% (38/60)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "62% (26/42)",
+              "right": "53% (17/32)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/6",
+              "right": "7/11",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "168 km/h",
+              "right": "169 km/h",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "137 km/h",
+              "right": "149 km/h",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (22/60)",
+              "right": "32% (19/59)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (15/32)",
+              "right": "38% (16/42)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/11",
+              "right": "1/6",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "26",
+              "right": "34",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "33",
+              "right": "48",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (18/27)",
+              "right": "68% (32/47)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (66/101)",
+              "right": "60% (55/92)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (37/92)",
+              "right": "35% (35/101)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (103/193)",
+              "right": "47% (90/193)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "93% (14/15)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Return games won",
+              "left": "29% (4/14)",
+              "right": "7% (1/15)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Total games won",
+              "left": "62% (18/29)",
+              "right": "38% (11/29)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "68%",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (23/32)",
+              "right": "72% (18/25)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (7/15)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "0/0",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (7/25)",
+              "right": "28% (9/32)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "17% (2/12)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/3",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "18",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "16",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (6/8)",
+              "right": "73% (16/22)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (30/47)",
+              "right": "76% (28/37)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (9/37)",
+              "right": "36% (17/47)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (39/84)",
+              "right": "54% (45/84)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "43%",
+              "right": "60%",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (9/12)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "81% (13/16)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (3/12)",
+              "right": "25% (3/12)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "19% (3/16)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "13",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (6/10)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "79% (22/28)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (8/20)",
+              "right": "21% (6/28)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "63% (30/48)",
+              "right": "38% (18/48)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "66%",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (8/15)",
+              "right": "48% (11/23)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (6/11)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "7/10",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "52% (12/23)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (8/12)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/10",
+              "right": "1/2",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "9",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "19",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (6/9)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (14/26)",
+              "right": "43% (15/35)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "57% (20/35)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (34/61)",
+              "right": "44% (27/61)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Den Ouden G."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

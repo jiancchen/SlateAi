@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-walton-vs-wu-2026-06-02",
+  "boardTitle": "Adam Walton vs Tung-Lin Wu",
+  "boardPlayerName": "Adam Walton",
+  "recentOpponentName": "McCabe J.",
+  "recentIndex": 3,
+  "recentEvent": "Wuxi (China)",
+  "recentDate": "May 07, 26",
+  "recentIsoDate": "2026-05-07",
+  "recentResult": "Win 6-3 7-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Walton A. - McCabe J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/wuxi/",
+  "players": [
+    "Walton A.",
+    "McCabe J."
+  ],
+  "generatedAt": "2026-06-02T02:39:39.051Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/IBdoDfgR/",
+  "matchId": "IBdoDfgR",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_IBdoDfgR",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_IBdoDfgR"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:50"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 1,
+        "duration": "0:56"
+      }
+    ],
+    "totalDuration": "1:46"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "8",
+              "right": "15",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "61%",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (37/47)",
+              "right": "77% (34/44)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "68% (15/22)",
+              "right": "46% (13/28)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "4/5",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (10/44)",
+              "right": "21% (10/47)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (15/28)",
+              "right": "32% (7/22)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "0/2",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "20",
+              "right": "38",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "32",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Net points won",
+              "left": "70% (7/10)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (52/69)",
+              "right": "65% (47/72)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (25/72)",
+              "right": "25% (17/69)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (77/141)",
+              "right": "45% (64/141)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "9",
+              "right": "1",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (11/11)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Return games won",
+              "left": "10% (1/10)",
+              "right": "0% (0/11)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Total games won",
+              "left": "57% (12/21)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "7",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "60%",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (12/17)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (10/15)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "4/5",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (7/24)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "69% (11/16)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "0/1",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "17",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "20",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (22/32)",
+              "right": "55% (22/40)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (18/40)",
+              "right": "31% (10/32)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (40/72)",
+              "right": "44% (32/72)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "8",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "81%",
+              "right": "63%",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (25/30)",
+              "right": "85% (17/20)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (5/7)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (3/20)",
+              "right": "17% (5/30)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (4/12)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "21",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "12",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "81% (30/37)",
+              "right": "78% (25/32)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "22% (7/32)",
+              "right": "19% (7/37)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (37/69)",
+              "right": "46% (32/69)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "McCabe J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

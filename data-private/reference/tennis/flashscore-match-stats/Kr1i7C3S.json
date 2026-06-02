@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-royer-vs-alvarez-varona-2026-06-02",
+  "boardTitle": "Valentin Royer vs Nicolas Alvarez Varona",
+  "boardPlayerName": "Nicolas Alvarez Varona",
+  "recentOpponentName": "Roca Batalla O.",
+  "recentIndex": 2,
+  "recentEvent": "M25 Mataro (Spain)",
+  "recentDate": "May 22, 26",
+  "recentIsoDate": "2026-05-22",
+  "recentResult": "Loss 4-6 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Roca Batalla O. - Alvarez Varona N.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m25-mataro/",
+  "players": [
+    "Roca Batalla O.",
+    "Alvarez Varona N."
+  ],
+  "generatedAt": "2026-06-02T02:39:32.519Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Kr1i7C3S/",
+  "matchId": "Kr1i7C3S",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Kr1i7C3S",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Kr1i7C3S"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:56"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:49"
+      }
+    ],
+    "totalDuration": "1:45"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Roca Batalla O.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Roca Batalla O.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Roca Batalla O.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-mikrut-vs-marti-pujolras-2026-06-02",
+  "boardTitle": "Luka Mikrut vs Alex Marti Pujolras",
+  "boardPlayerName": "Alex Marti Pujolras",
+  "recentOpponentName": "Roca Batalla O.",
+  "recentIndex": 2,
+  "recentEvent": "M25 Mataro (Spain)",
+  "recentDate": "May 24, 26",
+  "recentIsoDate": "2026-05-24",
+  "recentResult": "Loss 4-6 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Roca Batalla O. - Marti Pujolras A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m25-mataro/",
+  "players": [
+    "Roca Batalla O.",
+    "Marti Pujolras A."
+  ],
+  "generatedAt": "2026-06-02T02:39:19.425Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Ysm6y0Hi/",
+  "matchId": "Ysm6y0Hi",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Ysm6y0Hi",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Ysm6y0Hi"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:47"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:55"
+      }
+    ],
+    "totalDuration": "1:42"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Roca Batalla O.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Roca Batalla O.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Roca Batalla O.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

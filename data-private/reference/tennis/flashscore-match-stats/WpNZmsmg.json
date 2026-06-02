@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-mukund-vs-hussey-2026-06-02",
+  "boardTitle": "Giles Hussey vs Sasikumar Mukund",
+  "boardPlayerName": "Giles Hussey",
+  "recentOpponentName": "Zahraj P.",
+  "recentIndex": 4,
+  "recentEvent": "Centurion (South Africa)",
+  "recentDate": "May 25, 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "Win 6-2 5-7 6-4",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Zahraj P. - Hussey G.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion/",
+  "players": [
+    "Zahraj P.",
+    "Hussey G."
+  ],
+  "generatedAt": "2026-06-02T02:39:26.788Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/WpNZmsmg/",
+  "matchId": "WpNZmsmg",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_WpNZmsmg",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_WpNZmsmg"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:29"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:27"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:53"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "10",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "21",
+              "right": "4",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "44%",
+              "right": "55%",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (33/47)",
+              "right": "65% (45/69)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "37% (22/60)",
+              "right": "49% (28/57)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/11",
+              "right": "12/16",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (25/69)",
+              "right": "32% (15/47)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "51% (29/57)",
+              "right": "63% (38/60)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/16",
+              "right": "6/11",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "27",
+              "right": "16",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "74",
+              "right": "41",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Net points won",
+              "left": "73% (16/22)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (55/104)",
+              "right": "57% (72/126)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (54/126)",
+              "right": "47% (49/104)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (109/230)",
+              "right": "53% (121/230)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (9/15)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Return games won",
+              "left": "27% (4/15)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Total games won",
+              "left": "43% (13/30)",
+              "right": "57% (17/30)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "7",
+              "right": "0",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "58%",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (7/11)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (3/9)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "2/2",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (4/14)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "20% (2/10)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "2/3",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "9",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (10/21)",
+              "right": "74% (17/23)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (6/23)",
+              "right": "52% (11/21)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (16/44)",
+              "right": "64% (28/44)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "6",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "2",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "43%",
+              "right": "58%",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (15/18)",
+              "right": "55% (23/42)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (8/24)",
+              "right": "39% (12/31)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "9/12",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (19/42)",
+              "right": "11% (2/18)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (19/31)",
+              "right": "67% (16/24)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/12",
+              "right": "2/4",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "8",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "32",
+              "right": "23",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (6/8)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (21/38)",
+              "right": "49% (36/73)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (37/73)",
+              "right": "45% (17/38)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (58/111)",
+              "right": "48% (53/111)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "40%",
+              "right": "45%",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (11/18)",
+              "right": "92% (12/13)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (11/27)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "1/2",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (2/13)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (8/16)",
+              "right": "59% (16/27)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/4",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "3",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "30",
+              "right": "9",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Net points won",
+              "left": "82% (9/11)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (24/45)",
+              "right": "63% (19/30)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (11/30)",
+              "right": "47% (21/45)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (35/75)",
+              "right": "53% (40/75)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

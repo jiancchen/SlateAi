@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-mrva-vs-svrcina-2026-06-02",
+  "boardTitle": "Maxim Mrva vs Dalibor Svrcina",
+  "boardPlayerName": "Maxim Mrva",
+  "recentOpponentName": "Forejtek J.",
+  "recentIndex": 1,
+  "recentEvent": "Istanbul (Turkey)",
+  "recentDate": "May 18, 26",
+  "recentIsoDate": "2026-05-18",
+  "recentResult": "Win 4-6 6-4 6-2",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Mrva M. - Forejtek J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/istanbul/",
+  "players": [
+    "Mrva M.",
+    "Forejtek J."
+  ],
+  "generatedAt": "2026-06-02T02:39:35.329Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/O8w7ICuH/",
+  "matchId": "O8w7ICuH",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_O8w7ICuH",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_O8w7ICuH"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:06"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "4",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "63%",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (27/52)",
+              "right": "58% (37/64)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "51% (18/35)",
+              "right": "34% (13/38)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/10",
+              "right": "10/18",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (27/64)",
+              "right": "48% (25/52)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "66% (25/38)",
+              "right": "49% (17/35)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "8/18",
+              "right": "6/10",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "30",
+              "right": "23",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "43",
+              "right": "43",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Net points won",
+              "left": "73% (11/15)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (45/87)",
+              "right": "49% (50/102)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (52/102)",
+              "right": "48% (42/87)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (97/189)",
+              "right": "49% (92/189)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "57% (8/14)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Return games won",
+              "left": "57% (8/14)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Total games won",
+              "left": "57% (16/28)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "71%",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "35% (6/17)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "22% (2/9)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/5",
+              "right": "4/7",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (9/22)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "89% (8/9)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "4/5",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "9",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "12",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "31% (8/26)",
+              "right": "45% (14/31)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "55% (17/31)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (25/57)",
+              "right": "56% (32/57)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "61%",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (12/24)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (7/12)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "1/4",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (8/20)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (8/13)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "2/4",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "8",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "17",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (19/36)",
+              "right": "52% (17/33)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (16/33)",
+              "right": "47% (17/36)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (35/69)",
+              "right": "49% (34/69)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "44%",
+              "right": "58%",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (9/11)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (9/14)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "5/7",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (10/22)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (9/16)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "0/1",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "6",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "14",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (18/25)",
+              "right": "50% (19/38)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (19/38)",
+              "right": "28% (7/25)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (37/63)",
+              "right": "41% (26/63)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Mrva M.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

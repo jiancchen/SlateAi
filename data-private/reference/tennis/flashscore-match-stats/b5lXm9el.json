@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-pinnington-jones-vs-vukic-2026-06-02",
+  "boardTitle": "Jack Pinnington Jones vs Aleksandar Vukic",
+  "boardPlayerName": "Aleksandar Vukic",
+  "recentOpponentName": "Kypson P.",
+  "recentIndex": 4,
+  "recentEvent": "Rome (Italy)",
+  "recentDate": "May 06, 26",
+  "recentIsoDate": "2026-05-06",
+  "recentResult": "Win 6-3 5-7 6-0",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Vukic A. - Kypson P.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/",
+  "players": [
+    "Vukic A.",
+    "Kypson P."
+  ],
+  "generatedAt": "2026-06-02T02:39:23.557Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/b5lXm9el/",
+  "matchId": "b5lXm9el",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_b5lXm9el",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_b5lXm9el"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:39"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:57"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 0,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:00"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "11",
+              "right": "12",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "58%",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (39/51)",
+              "right": "67% (35/52)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (15/34)",
+              "right": "32% (12/37)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "6/12",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (17/52)",
+              "right": "24% (12/51)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "68% (25/37)",
+              "right": "56% (19/34)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/12",
+              "right": "3/7",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "34",
+              "right": "29",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "34",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (6/6)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (54/85)",
+              "right": "53% (47/89)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (42/89)",
+              "right": "36% (31/85)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (96/174)",
+              "right": "45% (78/174)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "10",
+              "right": "0",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "79% (11/14)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Return games won",
+              "left": "46% (6/13)",
+              "right": "21% (3/14)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Total games won",
+              "left": "63% (17/27)",
+              "right": "37% (10/27)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "64%",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (17/23)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (5/14)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "1/3",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (6/18)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "70% (7/10)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "1/4",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "11",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "13",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (22/37)",
+              "right": "54% (15/28)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (13/28)",
+              "right": "41% (15/37)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (35/65)",
+              "right": "46% (30/65)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "5",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "54%",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (12/18)",
+              "right": "86% (18/21)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (8/18)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "5/6",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "14% (3/21)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (11/18)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/6",
+              "right": "2/3",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "14",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "10",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (20/36)",
+              "right": "64% (25/39)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (14/39)",
+              "right": "44% (16/36)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (34/75)",
+              "right": "55% (41/75)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "83%",
+              "right": "59%",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (10/10)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "100% (2/2)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/3",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "62% (8/13)",
+              "right": "0% (0/10)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "78% (7/9)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "0/0",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "4",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "0",
+              "right": "11",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "100% (12/12)",
+              "right": "32% (7/22)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "68% (15/22)",
+              "right": "0% (0/12)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "79% (27/34)",
+              "right": "21% (7/34)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            },
+            {
+              "label": "Total games won",
+              "left": "100% (6/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Vukic A.",
+              "rightPlayer": "Kypson P."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-bertrand-vs-zahraj-2026-06-02",
+  "boardTitle": "Robin Bertrand vs Patrick Zahraj",
+  "boardPlayerName": "Patrick Zahraj",
+  "recentOpponentName": "Lawlor R.",
+  "recentIndex": 4,
+  "recentEvent": "M25 Nottingham (United Kingdom)",
+  "recentDate": "May 01, 26",
+  "recentIsoDate": "2026-05-01",
+  "recentResult": "Win 6-2 6-3",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Zahraj P. - Lawlor R.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m25-nottingham/",
+  "players": [
+    "Zahraj P.",
+    "Lawlor R."
+  ],
+  "generatedAt": "2026-06-02T02:39:25.596Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/2FQFl4hn/",
+  "matchId": "2FQFl4hn",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_2FQFl4hn",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_2FQFl4hn"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:46"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:59"
+      }
+    ],
+    "totalDuration": "1:45"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Lawlor R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Lawlor R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Lawlor R."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

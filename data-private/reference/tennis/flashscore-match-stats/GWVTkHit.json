@@ -1,0 +1,668 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-karol-vs-caniato-2026-06-02",
+  "boardTitle": "Carlo Alberto Caniato vs Milos Karol",
+  "boardPlayerName": "Milos Karol",
+  "recentOpponentName": "Gengel M.",
+  "recentIndex": 0,
+  "recentEvent": "Prostejov (Czech Republic)",
+  "recentDate": "Jun 01, 26",
+  "recentIsoDate": "2026-06-01",
+  "recentResult": "Win 4-6 6-3 6-3",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Gengel M. - Karol M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/prostejov/",
+  "players": [
+    "Gengel M.",
+    "Karol M."
+  ],
+  "generatedAt": "2026-06-02T02:39:34.660Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/GWVTkHit/",
+  "matchId": "GWVTkHit",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_GWVTkHit",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_GWVTkHit"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:43"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:35"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "1:56"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "21",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "2",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "65%",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (42/59)",
+              "right": "80% (41/51)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "37% (17/46)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/12",
+              "right": "5/7",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (10/51)",
+              "right": "29% (17/59)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (14/28)",
+              "right": "63% (29/46)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "4/12",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "25",
+              "right": "51",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "34",
+              "right": "32",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (59/105)",
+              "right": "70% (55/79)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (24/79)",
+              "right": "44% (46/105)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (83/184)",
+              "right": "55% (101/184)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "71% (10/14)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Return games won",
+              "left": "14% (2/14)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Total games won",
+              "left": "43% (12/28)",
+              "right": "57% (16/28)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "5",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "68%",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (19/23)",
+              "right": "79% (15/19)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (8/19)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "2/3",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (5/19)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (5/9)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "0/3",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "14",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "15",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (27/42)",
+              "right": "68% (19/28)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (9/28)",
+              "right": "36% (15/42)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (36/70)",
+              "right": "49% (34/70)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "7",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "73%",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (9/14)",
+              "right": "74% (14/19)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (5/14)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "1/2",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (5/19)",
+              "right": "21% (3/14)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (4/7)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/6",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "14",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "10",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (14/28)",
+              "right": "68% (19/28)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (9/28)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (23/56)",
+              "right": "59% (33/56)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "9",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "52%",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (14/22)",
+              "right": "92% (12/13)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "31% (4/13)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "2/2",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "0% (0/13)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "2/3",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "23",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "7",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "51% (18/35)",
+              "right": "74% (17/23)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (6/23)",
+              "right": "49% (17/35)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (24/58)",
+              "right": "59% (34/58)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Gengel M.",
+              "rightPlayer": "Karol M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-shimizu-vs-sweeny-2026-06-02",
+  "boardTitle": "Yuta Shimizu vs Dane Sweeny",
+  "boardPlayerName": "Yuta Shimizu",
+  "recentOpponentName": "Martin A.",
+  "recentIndex": 1,
+  "recentEvent": "Little Rock (USA)",
+  "recentDate": "May 25, 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "Win 7-6 7-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Martin A. - Shimizu Y.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/little-rock/",
+  "players": [
+    "Martin A.",
+    "Shimizu Y."
+  ],
+  "generatedAt": "2026-06-02T02:39:38.231Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/EuZ0Dj25/",
+  "matchId": "EuZ0Dj25",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_EuZ0Dj25",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_EuZ0Dj25"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 8,
+        "rightGames": 10,
+        "duration": "1:10"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:13"
+      }
+    ],
+    "totalDuration": "2:23"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "64%",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (36/59)",
+              "right": "66% (38/58)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (20/40)",
+              "right": "53% (17/32)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/12",
+              "right": "3/7",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (21/58)",
+              "right": "44% (26/59)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (15/32)",
+              "right": "50% (20/40)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/7",
+              "right": "4/12",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "29",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "42",
+              "right": "48",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "69% (11/16)",
+              "right": "86% (19/22)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (56/99)",
+              "right": "61% (55/90)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (35/90)",
+              "right": "43% (43/99)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (91/189)",
+              "right": "52% (98/189)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (8/12)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (4/12)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (12/24)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "67%",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (20/34)",
+              "right": "68% (19/28)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "65% (13/20)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "0/1",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (9/28)",
+              "right": "41% (14/34)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (4/14)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "1/5",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "14",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "23",
+              "right": "26",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (5/5)",
+              "right": "82% (9/11)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (33/54)",
+              "right": "69% (29/42)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (13/42)",
+              "right": "39% (21/54)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (46/96)",
+              "right": "52% (50/96)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "63%",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (16/25)",
+              "right": "63% (19/30)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "35% (7/20)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "3/6",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (12/30)",
+              "right": "48% (12/25)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (11/18)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "3/7",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "15",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "22",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "55% (6/11)",
+              "right": "91% (10/11)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "51% (23/45)",
+              "right": "54% (26/48)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (22/48)",
+              "right": "49% (22/45)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (45/93)",
+              "right": "52% (48/93)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Martin A.",
+              "rightPlayer": "Shimizu Y."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

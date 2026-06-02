@@ -1,0 +1,612 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-wong-vs-tarvet-2026-06-02",
+  "boardTitle": "Coleman Wong vs Oliver Tarvet",
+  "boardPlayerName": "Oliver Tarvet",
+  "recentOpponentName": "Ilagan A.",
+  "recentIndex": 1,
+  "recentEvent": "Knoxville (USA)",
+  "recentDate": "Nov 04, 25",
+  "recentIsoDate": "2025-11-04",
+  "recentResult": "Win 3-6 6-3 7-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Ilagan A. - Tarvet O.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/knoxville/",
+  "players": [
+    "Ilagan A.",
+    "Tarvet O."
+  ],
+  "generatedAt": "2026-06-02T02:39:24.877Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Gl48IaPP/",
+  "matchId": "Gl48IaPP",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Gl48IaPP",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Gl48IaPP"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:47"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 8,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:36"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "16",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "60%",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (50/65)",
+              "right": "76% (48/63)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (15/35)",
+              "right": "50% (21/42)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "1/3",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (19/63)",
+              "right": "23% (15/65)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (21/42)",
+              "right": "57% (20/35)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "2/5",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "65% (64/99)",
+              "right": "66% (69/105)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (36/105)",
+              "right": "35% (35/99)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (100/204)",
+              "right": "51% (104/204)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "87% (13/15)",
+              "right": "87% (13/15)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Return games won",
+              "left": "13% (2/15)",
+              "right": "13% (2/15)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (15/30)",
+              "right": "50% (15/30)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "6",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "60%",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "86% (19/22)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (7/16)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "0/1",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (3/12)",
+              "right": "14% (3/22)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/3",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "68% (25/37)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (6/20)",
+              "right": "32% (12/37)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (31/57)",
+              "right": "46% (26/57)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "56%",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (11/15)",
+              "right": "75% (15/20)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (3/6)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (5/20)",
+              "right": "27% (4/15)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (7/16)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "67% (14/21)",
+              "right": "67% (24/36)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (12/36)",
+              "right": "33% (7/21)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (26/57)",
+              "right": "54% (31/57)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "8",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "63%",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (20/28)",
+              "right": "77% (24/31)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (5/13)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/2",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (11/31)",
+              "right": "29% (8/28)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (11/18)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "1/1",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "61% (25/41)",
+              "right": "63% (31/49)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (18/49)",
+              "right": "39% (16/41)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (43/90)",
+              "right": "52% (47/90)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

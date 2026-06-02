@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-galan-vs-rehberg-2026-06-02",
+  "boardTitle": "Daniel Elahi Galan vs Max Hans Rehberg",
+  "boardPlayerName": "Max Hans Rehberg",
+  "recentOpponentName": "Cuenin S.",
+  "recentIndex": 4,
+  "recentEvent": "Shymkent 2 (Kazakhstan)",
+  "recentDate": "Apr 28, 26",
+  "recentIsoDate": "2026-04-28",
+  "recentResult": "Win 7-6 6-2",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Rehberg M. H. - Cuenin S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/shymkent-2/",
+  "players": [
+    "Rehberg M. H.",
+    "Cuenin S."
+  ],
+  "generatedAt": "2026-06-02T02:39:18.934Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/6HrR3rle/",
+  "matchId": "6HrR3rle",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_6HrR3rle",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_6HrR3rle"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 9,
+        "rightGames": 7,
+        "duration": "1:04"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:38"
+      }
+    ],
+    "totalDuration": "1:42"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "58%",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (28/41)",
+              "right": "61% (25/41)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (9/19)",
+              "right": "37% (11/30)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "6/11",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (16/41)",
+              "right": "32% (13/41)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (19/30)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/11",
+              "right": "3/6",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "19",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "35",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (6/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (37/60)",
+              "right": "51% (36/71)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (35/71)",
+              "right": "38% (23/60)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (72/131)",
+              "right": "45% (59/131)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "70% (7/10)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (5/10)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "60%",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (17/23)",
+              "right": "66% (19/29)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (4/12)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "4/6",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "34% (10/29)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (12/19)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "2/2",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "17",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "25",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (21/35)",
+              "right": "54% (26/48)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (22/48)",
+              "right": "40% (14/35)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (43/83)",
+              "right": "48% (40/83)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "52%",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (11/18)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (5/7)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "2/5",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (6/12)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (7/11)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "1/4",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "2",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "10",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (16/25)",
+              "right": "43% (10/23)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "57% (13/23)",
+              "right": "36% (9/25)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (29/48)",
+              "right": "40% (19/48)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Rehberg M. H.",
+              "rightPlayer": "Cuenin S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

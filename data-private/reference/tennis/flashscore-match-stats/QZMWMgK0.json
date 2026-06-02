@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-sun-vs-ilagan-2026-06-02",
+  "boardTitle": "Fajing Sun vs Andre Ilagan",
+  "boardPlayerName": "Andre Ilagan",
+  "recentOpponentName": "Smith C.",
+  "recentIndex": 0,
+  "recentEvent": "Little Rock (USA)",
+  "recentDate": "May 31, 26",
+  "recentIsoDate": "2026-05-31",
+  "recentResult": "Loss 3-6 5-7",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Ilagan A. - Smith C.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/little-rock/",
+  "players": [
+    "Ilagan A.",
+    "Smith C."
+  ],
+  "generatedAt": "2026-06-02T02:39:40.165Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/QZMWMgK0/",
+  "matchId": "QZMWMgK0",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_QZMWMgK0",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_QZMWMgK0"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:18"
+      }
+    ],
+    "totalDuration": "1:54"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "11",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "46%",
+              "right": "67%",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "54% (20/37)",
+              "right": "71% (32/45)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "39% (17/44)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/13",
+              "right": "4/7",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (14/45)",
+              "right": "46% (17/37)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (14/22)",
+              "right": "61% (27/44)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "6/13",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "20",
+              "right": "19",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "49",
+              "right": "25",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "46% (37/81)",
+              "right": "60% (40/67)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (27/67)",
+              "right": "54% (44/81)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (64/148)",
+              "right": "57% (84/148)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "45% (5/11)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Return games won",
+              "left": "30% (3/10)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Total games won",
+              "left": "38% (8/21)",
+              "right": "62% (13/21)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "7",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "36%",
+              "right": "78%",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (7/10)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "39% (7/18)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (5/21)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (3/6)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/2",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "9",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "7",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (14/28)",
+              "right": "70% (19/27)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (8/27)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (22/55)",
+              "right": "60% (33/55)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "51%",
+              "right": "60%",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "48% (13/27)",
+              "right": "67% (16/24)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (10/26)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/11",
+              "right": "4/7",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (9/24)",
+              "right": "52% (14/27)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "69% (11/16)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "4/11",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "10",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "35",
+              "right": "18",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "43% (23/53)",
+              "right": "53% (21/40)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (19/40)",
+              "right": "57% (30/53)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (42/93)",
+              "right": "55% (51/93)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (2/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Ilagan A.",
+              "rightPlayer": "Smith C."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

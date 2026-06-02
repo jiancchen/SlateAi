@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-peliwo-vs-coulibaly-2026-06-02",
+  "boardTitle": "Filip Peliwo vs Eliakim Coulibaly",
+  "boardPlayerName": "Filip Peliwo",
+  "recentOpponentName": "Charlton J.",
+  "recentIndex": 2,
+  "recentEvent": "M25 Luzhou (China)",
+  "recentDate": "Apr 23, 26",
+  "recentIsoDate": "2026-04-23",
+  "recentResult": "Loss 1-6 6-7",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Charlton J. - Peliwo F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m25-luzhou/",
+  "players": [
+    "Charlton J.",
+    "Peliwo F."
+  ],
+  "generatedAt": "2026-06-02T02:39:28.549Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/b567U524/",
+  "matchId": "b567U524",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_b567U524",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_b567U524"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:20"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 2,
+        "duration": "0:55"
+      }
+    ],
+    "totalDuration": "1:15"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Charlton J.",
+              "rightPlayer": "Peliwo F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Charlton J.",
+              "rightPlayer": "Peliwo F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Charlton J.",
+              "rightPlayer": "Peliwo F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

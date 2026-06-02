@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-sachko-vs-kumstat-2026-06-02",
+  "boardTitle": "Vitaliy Sachko vs Jan Kumstat",
+  "boardPlayerName": "Vitaliy Sachko",
+  "recentOpponentName": "Sanchez Izquierdo N.",
+  "recentIndex": 3,
+  "recentEvent": "Ostrava (Czech Republic)",
+  "recentDate": "Apr 30, 26",
+  "recentIsoDate": "2026-04-30",
+  "recentResult": "Loss 7-6 5-7 4-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Sanchez Izquierdo N. - Sachko V.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/ostrava/",
+  "players": [
+    "Sanchez Izquierdo N.",
+    "Sachko V."
+  ],
+  "generatedAt": "2026-06-02T02:39:35.643Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Ozru8Z0L/",
+  "matchId": "Ozru8Z0L",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Ozru8Z0L",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Ozru8Z0L"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 9,
+        "duration": "1:33"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:01"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:19"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "56%",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (42/62)",
+              "right": "63% (46/73)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "70% (30/43)",
+              "right": "53% (31/58)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "9/13",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (28/73)",
+              "right": "35% (22/62)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (27/58)",
+              "right": "30% (13/43)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/13",
+              "right": "2/5",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "26",
+              "right": "37",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "40",
+              "right": "68",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (12/15)",
+              "right": "100% (18/18)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (72/105)",
+              "right": "59% (77/131)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (54/131)",
+              "right": "31% (33/105)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (126/236)",
+              "right": "47% (110/236)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "88% (15/17)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Return games won",
+              "left": "24% (4/17)",
+              "right": "12% (2/17)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Total games won",
+              "left": "56% (19/34)",
+              "right": "44% (15/34)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "58%",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (18/32)",
+              "right": "55% (21/38)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (8/17)",
+              "right": "57% (16/28)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "8/10",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (18/38)",
+              "right": "44% (14/32)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (12/28)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/10",
+              "right": "2/4",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "15",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "29",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (6/8)",
+              "right": "100% (10/10)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (26/47)",
+              "right": "55% (37/67)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (30/67)",
+              "right": "45% (21/47)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (56/114)",
+              "right": "51% (58/114)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "54%",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (15/20)",
+              "right": "68% (13/19)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "85% (11/13)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (6/19)",
+              "right": "25% (5/20)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (8/16)",
+              "right": "15% (2/13)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "10",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "16",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (26/35)",
+              "right": "64% (21/33)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (12/33)",
+              "right": "26% (9/35)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (38/68)",
+              "right": "44% (30/68)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "43%",
+              "right": "53%",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "90% (9/10)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "85% (11/13)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (4/16)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (7/14)",
+              "right": "15% (2/13)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "12",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "23",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "87% (20/23)",
+              "right": "61% (19/31)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (12/31)",
+              "right": "13% (3/23)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (32/54)",
+              "right": "41% (22/54)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Sanchez Izquierdo N.",
+              "rightPlayer": "Sachko V."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

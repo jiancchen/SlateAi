@@ -1,0 +1,546 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-chidekh-vs-romano-2026-06-02",
+  "boardTitle": "Clement Chidekh vs Filippo Romano",
+  "boardPlayerName": "Clement Chidekh",
+  "recentOpponentName": "Schwaerzler J. J.",
+  "recentIndex": 2,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 19, 26",
+  "recentIsoDate": "2026-05-19",
+  "recentResult": "Loss 1-6 5-7",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Schwaerzler J. J. - Chidekh C.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Schwaerzler J. J.",
+    "Chidekh C."
+  ],
+  "generatedAt": "2026-06-02T02:39:21.141Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/4049AWw3/",
+  "matchId": "4049AWw3",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_4049AWw3",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_4049AWw3"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:34"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:54"
+      }
+    ],
+    "totalDuration": "1:28"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "5",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "66%",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (27/34)",
+              "right": "64% (27/42)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (11/20)",
+              "right": "27% (6/22)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "8/12",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "192 km/h",
+              "right": "179 km/h",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "162 km/h",
+              "right": "140 km/h",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (15/42)",
+              "right": "21% (7/34)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "73% (16/22)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/12",
+              "right": "1/2",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "13",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "31",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (10/14)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (38/54)",
+              "right": "52% (33/64)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (31/64)",
+              "right": "30% (16/54)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (69/118)",
+              "right": "42% (49/118)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "90% (9/10)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Return games won",
+              "left": "44% (4/9)",
+              "right": "10% (1/10)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Total games won",
+              "left": "68% (13/19)",
+              "right": "32% (6/19)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "65%",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (13/16)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (4/7)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "5/7",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (8/17)",
+              "right": "19% (3/16)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (6/9)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "0/1",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "3",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "11",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Net points won",
+              "left": "89% (8/9)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (17/23)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (14/26)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "63% (31/49)",
+              "right": "37% (18/49)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "66%",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (14/18)",
+              "right": "72% (18/25)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "3/5",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (7/25)",
+              "right": "22% (4/18)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "77% (10/13)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "1/1",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "10",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "20",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Net points won",
+              "left": "40% (2/5)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (21/31)",
+              "right": "55% (21/38)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (17/38)",
+              "right": "32% (10/31)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (38/69)",
+              "right": "45% (31/69)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Schwaerzler J. J.",
+              "rightPlayer": "Chidekh C."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

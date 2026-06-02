@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-broady-vs-jorda-sanchis-2026-06-02",
+  "boardTitle": "David Jorda Sanchis vs Liam Broady",
+  "boardPlayerName": "Liam Broady",
+  "recentOpponentName": "Dutra Da Silva D.",
+  "recentIndex": 2,
+  "recentEvent": "Chisinau (Moldova)",
+  "recentDate": "May 26, 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "Win 6-3 6-0",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Dutra Da Silva D. - Broady L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/chisinau/",
+  "players": [
+    "Dutra Da Silva D.",
+    "Broady L."
+  ],
+  "generatedAt": "2026-06-02T02:39:30.329Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/vs5mvCNG/",
+  "matchId": "vs5mvCNG",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_vs5mvCNG",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_vs5mvCNG"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:40"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:30"
+      }
+    ],
+    "totalDuration": "1:10"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "69%",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "45% (14/31)",
+              "right": "74% (23/31)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (3/12)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/8",
+              "right": "1/2",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (8/31)",
+              "right": "55% (17/31)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (7/14)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "5/8",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "14",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "33",
+              "right": "25",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Net points won",
+              "left": "20% (1/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "40% (17/43)",
+              "right": "67% (30/45)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (15/45)",
+              "right": "60% (26/43)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (32/88)",
+              "right": "64% (56/88)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "29% (2/7)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Return games won",
+              "left": "13% (1/8)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Total games won",
+              "left": "20% (3/15)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "68%",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (11/20)",
+              "right": "68% (13/19)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "17% (1/6)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "1/2",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (6/19)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (4/9)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/5",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "2",
+              "right": "7",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "18",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/1)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "46% (12/26)",
+              "right": "64% (18/28)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (10/28)",
+              "right": "54% (14/26)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (22/54)",
+              "right": "59% (32/54)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "71%",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "27% (3/11)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (2/6)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "0/0",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (2/12)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (3/5)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/3",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "7",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Net points won",
+              "left": "25% (1/4)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "29% (5/17)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (5/17)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "29% (10/34)",
+              "right": "71% (24/34)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Broady L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

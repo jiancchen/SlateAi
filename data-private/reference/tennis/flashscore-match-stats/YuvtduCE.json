@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-rocha-vs-dalla-valle-2026-06-02",
+  "boardTitle": "Henrique Rocha vs Enrico Dalla Valle",
+  "boardPlayerName": "Enrico Dalla Valle",
+  "recentOpponentName": "Schwaerzler J. J.",
+  "recentIndex": 2,
+  "recentEvent": "Vicenza (Italy)",
+  "recentDate": "May 26, 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "Loss 3-6 6-3 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Dalla Valle E. - Schwaerzler J. J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/vicenza/",
+  "players": [
+    "Dalla Valle E.",
+    "Schwaerzler J. J."
+  ],
+  "generatedAt": "2026-06-02T02:39:31.803Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/YuvtduCE/",
+  "matchId": "YuvtduCE",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_YuvtduCE",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_YuvtduCE"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:44"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:51"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:21"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "75%",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (36/55)",
+              "right": "74% (48/65)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (16/34)",
+              "right": "41% (9/22)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/10",
+              "right": "4/6",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (17/65)",
+              "right": "35% (19/55)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "59% (13/22)",
+              "right": "53% (18/34)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "3/10",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "26",
+              "right": "28",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "31",
+              "right": "34",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (6/12)",
+              "right": "72% (13/18)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (52/89)",
+              "right": "66% (57/87)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (30/87)",
+              "right": "42% (37/89)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (82/176)",
+              "right": "53% (94/176)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "77% (10/13)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Return games won",
+              "left": "14% (2/14)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Total games won",
+              "left": "44% (12/27)",
+              "right": "56% (15/27)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "73%",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (10/15)",
+              "right": "74% (20/27)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (2/8)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "4/5",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (7/27)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "70% (7/10)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "2/3",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "10",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "11",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (12/23)",
+              "right": "62% (23/37)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (14/37)",
+              "right": "48% (11/23)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (26/60)",
+              "right": "57% (34/60)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "81%",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (20/30)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (6/15)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/6",
+              "right": "0/1",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (6/17)",
+              "right": "33% (10/30)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (2/4)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/6",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "8",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "15",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (28/45)",
+              "right": "62% (13/21)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (8/21)",
+              "right": "38% (17/45)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (36/66)",
+              "right": "45% (30/66)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "72%",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (6/10)",
+              "right": "81% (17/21)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "73% (8/11)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (4/21)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (4/8)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "10",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "8",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Net points won",
+              "left": "20% (1/5)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (12/21)",
+              "right": "72% (21/29)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (8/29)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (20/50)",
+              "right": "60% (30/50)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Dalla Valle E.",
+              "rightPlayer": "Schwaerzler J. J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

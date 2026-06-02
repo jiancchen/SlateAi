@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-weightman-vs-badenhorst-2026-06-02",
+  "boardTitle": "Oscar Weightman vs Devin Badenhorst",
+  "boardPlayerName": "Oscar Weightman",
+  "recentOpponentName": "Salton D.",
+  "recentIndex": 1,
+  "recentEvent": "Centurion 2 (South Africa)",
+  "recentDate": "May 31, 26",
+  "recentIsoDate": "2026-05-31",
+  "recentResult": "Win 6-1 6-1",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Weightman O. - Salton D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+  "players": [
+    "Weightman O.",
+    "Salton D."
+  ],
+  "generatedAt": "2026-06-02T02:39:29.135Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/UwAHdEDO/",
+  "matchId": "UwAHdEDO",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_UwAHdEDO",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_UwAHdEDO"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:34"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:32"
+      }
+    ],
+    "totalDuration": "1:06"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "56%",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (18/24)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (14/22)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "4/9",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (14/28)",
+              "right": "29% (7/24)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (14/22)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/9",
+              "right": "0/2",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "10",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "27",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (32/46)",
+              "right": "44% (22/50)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "56% (28/50)",
+              "right": "30% (14/46)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "63% (60/96)",
+              "right": "38% (36/96)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (7/7)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Return games won",
+              "left": "71% (5/7)",
+              "right": "0% (0/7)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (12/14)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "44%",
+              "right": "52%",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (9/11)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (9/14)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "3/5",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (7/14)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (8/13)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "0/2",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "4",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "14",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (18/25)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "56% (15/27)",
+              "right": "28% (7/25)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "63% (33/52)",
+              "right": "37% (19/52)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "61%",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (9/13)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (5/8)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/4",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (7/14)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (6/9)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "0/0",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "6",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "13",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (14/21)",
+              "right": "43% (10/23)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "57% (13/23)",
+              "right": "33% (7/21)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (27/44)",
+              "right": "39% (17/44)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Salton D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

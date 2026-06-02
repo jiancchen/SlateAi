@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-mukund-vs-hussey-2026-06-02",
+  "boardTitle": "Giles Hussey vs Sasikumar Mukund",
+  "boardPlayerName": "Sasikumar Mukund",
+  "recentOpponentName": "Gray A.",
+  "recentIndex": 1,
+  "recentEvent": "Bengaluru 3 (India)",
+  "recentDate": "May 21, 26",
+  "recentIsoDate": "2026-05-21",
+  "recentResult": "Loss 2-6 7-5 6-7",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Sasikumar M. - Gray A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/bengaluru-3/",
+  "players": [
+    "Sasikumar M.",
+    "Gray A."
+  ],
+  "generatedAt": "2026-06-02T02:39:27.170Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/OMjP1IYa/",
+  "matchId": "OMjP1IYa",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_OMjP1IYa",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_OMjP1IYa"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:28"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:58"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:42"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "14",
+              "right": "9",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "8",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "62%",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (41/59)",
+              "right": "74% (49/66)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (16/34)",
+              "right": "45% (18/40)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/7",
+              "right": "9/13",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (17/66)",
+              "right": "31% (18/59)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (22/40)",
+              "right": "53% (18/34)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/13",
+              "right": "5/7",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "44",
+              "right": "39",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "39",
+              "right": "33",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Net points won",
+              "left": "53% (8/15)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (57/93)",
+              "right": "63% (67/106)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (39/106)",
+              "right": "39% (36/93)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (96/199)",
+              "right": "52% (103/199)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "69% (11/16)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (4/16)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Total games won",
+              "left": "47% (15/32)",
+              "right": "53% (17/32)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "78%",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (7/14)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "14% (1/7)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "1/2",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (4/14)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (1/4)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "3/4",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "7",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "5",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Net points won",
+              "left": "40% (2/5)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "38% (8/21)",
+              "right": "72% (13/18)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (5/18)",
+              "right": "62% (13/21)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "33% (13/39)",
+              "right": "67% (26/39)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "57%",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (18/25)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (7/14)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "2/4",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (4/17)",
+              "right": "28% (7/25)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (7/13)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/2",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "14",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "9",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (25/39)",
+              "right": "63% (19/30)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (11/30)",
+              "right": "36% (14/39)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (36/69)",
+              "right": "48% (33/69)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "10",
+              "right": "5",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "60%",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (16/20)",
+              "right": "74% (26/35)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "62% (8/13)",
+              "right": "39% (9/23)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "6/7",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (9/35)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (14/23)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/7",
+              "right": "1/1",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "23",
+              "right": "18",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "19",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "73% (24/33)",
+              "right": "60% (35/58)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (23/58)",
+              "right": "27% (9/33)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (47/91)",
+              "right": "48% (44/91)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Gray A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

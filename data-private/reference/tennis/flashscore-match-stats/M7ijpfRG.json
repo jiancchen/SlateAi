@@ -1,0 +1,354 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-dellien-vs-schoenhaus-2026-06-02",
+  "boardTitle": "Hugo Dellien vs Max Schoenhaus",
+  "boardPlayerName": "Hugo Dellien",
+  "recentOpponentName": "Djere L.",
+  "recentIndex": 4,
+  "recentEvent": "Oeiras 6 (Portugal)",
+  "recentDate": "May 15, 26",
+  "recentIsoDate": "2026-05-15",
+  "recentResult": "Loss 2-2",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Dellien H. - Djere L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/oeiras-6/",
+  "players": [
+    "Dellien H.",
+    "Djere L."
+  ],
+  "generatedAt": "2026-06-02T02:39:18.107Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/M7ijpfRG/",
+  "matchId": "M7ijpfRG",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_M7ijpfRG",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_M7ijpfRG"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 2,
+        "duration": "0:17"
+      }
+    ],
+    "totalDuration": "0:17"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "70%",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (8/11)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (2/5)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (2/7)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "0% (0/3)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "4",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (10/16)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (2/10)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (12/26)",
+              "right": "54% (14/26)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (2/2)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/2)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (2/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "70%",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (8/11)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (2/5)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (2/7)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "0% (0/3)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "4",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (10/16)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (2/10)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (12/26)",
+              "right": "54% (14/26)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (2/2)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/2)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (2/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Dellien H.",
+              "rightPlayer": "Djere L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

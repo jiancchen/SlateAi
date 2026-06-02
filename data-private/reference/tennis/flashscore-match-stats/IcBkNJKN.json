@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-daniel-vs-forejtek-2026-06-02",
+  "boardTitle": "Taro Daniel vs Jonas Forejtek",
+  "boardPlayerName": "Jonas Forejtek",
+  "recentOpponentName": "Piros Z.",
+  "recentIndex": 1,
+  "recentEvent": "Zagreb (Croatia)",
+  "recentDate": "May 13, 26",
+  "recentIsoDate": "2026-05-13",
+  "recentResult": "Loss 6-4 1-6 0-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Piros Z. - Forejtek J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/zagreb/",
+  "players": [
+    "Piros Z.",
+    "Forejtek J."
+  ],
+  "generatedAt": "2026-06-02T02:39:33.036Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/IcBkNJKN/",
+  "matchId": "IcBkNJKN",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_IcBkNJKN",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_IcBkNJKN"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:44"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 0,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "1:43"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "65%",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (27/39)",
+              "right": "55% (28/51)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "62% (16/26)",
+              "right": "41% (11/27)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "8/14",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (23/51)",
+              "right": "31% (12/39)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "59% (16/27)",
+              "right": "38% (10/26)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/14",
+              "right": "1/2",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "30",
+              "right": "10",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "37",
+              "right": "28",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Net points won",
+              "left": "82% (9/11)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (43/65)",
+              "right": "50% (39/78)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (39/78)",
+              "right": "34% (22/65)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (82/143)",
+              "right": "43% (61/143)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "91% (10/11)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (6/12)",
+              "right": "9% (1/11)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Total games won",
+              "left": "70% (16/23)",
+              "right": "30% (7/23)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "61%",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (13/21)",
+              "right": "79% (15/19)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (7/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "1/1",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (5/19)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/2",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "12",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (19/32)",
+              "right": "71% (22/31)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (9/31)",
+              "right": "41% (13/32)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (28/63)",
+              "right": "56% (35/63)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "68%",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (7/9)",
+              "right": "52% (11/21)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (4/7)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "6/9",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "52% (11/21)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (6/10)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/9",
+              "right": "0/0",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "2",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "6",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (12/17)",
+              "right": "44% (14/32)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "56% (18/32)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (30/49)",
+              "right": "39% (19/49)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "69%",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (7/9)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (5/7)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/4",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "64% (7/11)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "100% (5/5)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "0/0",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "1",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "10",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (4/4)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (12/16)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "80% (12/15)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "77% (24/31)",
+              "right": "23% (7/31)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Total games won",
+              "left": "100% (6/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-molcan-vs-piros-2026-06-02",
+  "boardTitle": "Zsombor Piros vs Alex Molcan",
+  "boardPlayerName": "Zsombor Piros",
+  "recentOpponentName": "Neumayer L.",
+  "recentIndex": 3,
+  "recentEvent": "Zagreb (Croatia)",
+  "recentDate": "May 15, 26",
+  "recentIsoDate": "2026-05-15",
+  "recentResult": "Win 4-6 6-4 6-3",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Piros Z. - Neumayer L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/zagreb/",
+  "players": [
+    "Piros Z.",
+    "Neumayer L."
+  ],
+  "generatedAt": "2026-06-02T02:39:35.119Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/KCWfjrYN/",
+  "matchId": "KCWfjrYN",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_KCWfjrYN",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_KCWfjrYN"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "1:00"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:22"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "4",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "65%",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (36/58)",
+              "right": "60% (33/55)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (20/40)",
+              "right": "47% (14/30)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/13",
+              "right": "4/10",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (22/55)",
+              "right": "38% (22/58)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (16/30)",
+              "right": "50% (20/40)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/10",
+              "right": "5/13",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "25",
+              "right": "20",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "42",
+              "right": "45",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Net points won",
+              "left": "58% (7/12)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (56/98)",
+              "right": "55% (47/85)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (38/85)",
+              "right": "43% (42/98)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (94/183)",
+              "right": "49% (89/183)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (10/15)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Return games won",
+              "left": "43% (6/14)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Total games won",
+              "left": "55% (16/29)",
+              "right": "45% (13/29)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "79%",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (11/17)",
+              "right": "74% (14/19)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (8/16)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "1/2",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (5/19)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (2/5)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/4",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "7",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "7",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (19/33)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (7/24)",
+              "right": "42% (14/33)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (26/57)",
+              "right": "54% (31/57)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "62%",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (12/22)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (7/15)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "3/6",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (11/24)",
+              "right": "45% (10/22)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (9/15)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "2/6",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "8",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "25",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (4/8)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "51% (19/37)",
+              "right": "49% (19/39)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (20/39)",
+              "right": "49% (18/37)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (39/76)",
+              "right": "49% (37/76)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "55%",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (13/19)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "0/2",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (6/12)",
+              "right": "32% (6/19)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (5/10)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "1/3",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "5",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "13",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/1)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (18/28)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (11/22)",
+              "right": "36% (10/28)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (29/50)",
+              "right": "42% (21/50)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Piros Z.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

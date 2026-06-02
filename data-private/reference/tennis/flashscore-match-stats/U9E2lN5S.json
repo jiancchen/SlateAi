@@ -1,0 +1,546 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-mrva-vs-svrcina-2026-06-02",
+  "boardTitle": "Maxim Mrva vs Dalibor Svrcina",
+  "boardPlayerName": "Dalibor Svrcina",
+  "recentOpponentName": "Faurel T.",
+  "recentIndex": 0,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 21, 26",
+  "recentIsoDate": "2026-05-21",
+  "recentResult": "Loss 2-6 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Svrcina D. - Faurel T.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Svrcina D.",
+    "Faurel T."
+  ],
+  "generatedAt": "2026-06-02T02:39:35.996Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/U9E2lN5S/",
+  "matchId": "U9E2lN5S",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_U9E2lN5S",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_U9E2lN5S"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:40"
+      }
+    ],
+    "totalDuration": "1:22"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "69%",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (14/28)",
+              "right": "69% (25/36)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (10/22)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/8",
+              "right": "1/3",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "160 km/h",
+              "right": "170 km/h",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "127 km/h",
+              "right": "127 km/h",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (11/36)",
+              "right": "50% (14/28)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (8/16)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "5/8",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "15",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "31",
+              "right": "17",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Net points won",
+              "left": "69% (11/16)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (24/50)",
+              "right": "63% (33/52)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (19/52)",
+              "right": "52% (26/50)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (43/102)",
+              "right": "58% (59/102)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "38% (3/8)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Return games won",
+              "left": "22% (2/9)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Total games won",
+              "left": "29% (5/17)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "68%",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (7/14)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (6/14)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "1/2",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (6/17)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (4/8)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "3/6",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "9",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "9",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Net points won",
+              "left": "56% (5/9)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "46% (13/28)",
+              "right": "60% (15/25)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (10/25)",
+              "right": "54% (15/28)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (23/53)",
+              "right": "57% (30/53)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "70%",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (7/14)",
+              "right": "74% (14/19)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (4/8)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/1",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (5/19)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (4/8)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/2",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "6",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "8",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (6/7)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (11/22)",
+              "right": "67% (18/27)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (9/27)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (20/49)",
+              "right": "59% (29/49)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Faurel T."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

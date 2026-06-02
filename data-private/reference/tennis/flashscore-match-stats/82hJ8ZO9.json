@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-martin-vs-kopriva-2026-06-02",
+  "boardTitle": "Vit Kopriva vs Andrej Martin",
+  "boardPlayerName": "Andrej Martin",
+  "recentOpponentName": "Berkieta T.",
+  "recentIndex": 1,
+  "recentEvent": "Prostejov (Czech Republic)",
+  "recentDate": "May 31, 26",
+  "recentIsoDate": "2026-05-31",
+  "recentResult": "Win 6-2 6-4",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Berkieta T. - Martin A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/prostejov/",
+  "players": [
+    "Berkieta T.",
+    "Martin A."
+  ],
+  "generatedAt": "2026-06-02T02:39:34.275Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/82hJ8ZO9/",
+  "matchId": "82hJ8ZO9",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_82hJ8ZO9",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_82hJ8ZO9"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:31"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:39"
+      }
+    ],
+    "totalDuration": "1:10"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "2",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "58%",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (24/42)",
+              "right": "66% (21/32)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (8/22)",
+              "right": "70% (16/23)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/7",
+              "right": "3/4",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "34% (11/32)",
+              "right": "43% (18/42)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "30% (7/23)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "4/7",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "10",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "39",
+              "right": "19",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (32/64)",
+              "right": "67% (37/55)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (18/55)",
+              "right": "50% (32/64)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (50/119)",
+              "right": "58% (69/119)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "56% (5/9)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Return games won",
+              "left": "11% (1/9)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (6/18)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "68%",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (13/22)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (5/11)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "2/2",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (4/17)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "2/5",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "4",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "6",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (16/33)",
+              "right": "72% (18/25)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (7/25)",
+              "right": "52% (17/33)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (23/58)",
+              "right": "60% (35/58)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "50%",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (11/20)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "27% (3/11)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "1/2",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (7/15)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "27% (4/15)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/2",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "13",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (16/31)",
+              "right": "63% (19/30)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (11/30)",
+              "right": "48% (15/31)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (27/61)",
+              "right": "56% (34/61)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Berkieta T.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

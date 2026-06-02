@@ -1,0 +1,710 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02",
+  "boardTitle": "Luka Pavlovic vs Nikolas Sanchez Izquierdo",
+  "boardPlayerName": "Luka Pavlovic",
+  "recentOpponentName": "Wendelken H.",
+  "recentIndex": 3,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 19, 26",
+  "recentIsoDate": "2026-05-19",
+  "recentResult": "Win 3-6 7-6 6-2",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Pavlovic L. - Wendelken H.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Pavlovic L.",
+    "Wendelken H."
+  ],
+  "generatedAt": "2026-06-02T02:39:39.254Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/WIQwVr3d/",
+  "matchId": "WIQwVr3d",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_WIQwVr3d",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_WIQwVr3d"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:34"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 1,
+        "duration": "0:55"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:01"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "19",
+              "right": "7",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "58%",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (43/58)",
+              "right": "73% (38/52)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (18/34)",
+              "right": "58% (22/38)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "6/8",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "207 km/h",
+              "right": "185 km/h",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "155 km/h",
+              "right": "145 km/h",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (14/52)",
+              "right": "26% (15/58)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (16/38)",
+              "right": "47% (16/34)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/8",
+              "right": "1/3",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "49",
+              "right": "26",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "43",
+              "right": "20",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Net points won",
+              "left": "70% (14/20)",
+              "right": "52% (13/25)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (61/92)",
+              "right": "67% (60/90)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (30/90)",
+              "right": "34% (31/92)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (91/182)",
+              "right": "50% (91/182)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "93% (13/14)",
+              "right": "87% (13/15)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Return games won",
+              "left": "13% (2/15)",
+              "right": "7% (1/14)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Total games won",
+              "left": "52% (15/29)",
+              "right": "48% (14/29)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "53%",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (10/13)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "1/1",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (3/16)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (5/14)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/3",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "7",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "6",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (14/22)",
+              "right": "73% (22/30)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (8/30)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (22/52)",
+              "right": "58% (30/52)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "63%",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (18/25)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (10/17)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/2",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (7/24)",
+              "right": "28% (7/25)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (5/14)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "0/0",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "11",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "11",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Net points won",
+              "left": "79% (11/14)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (28/42)",
+              "right": "68% (26/38)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (12/38)",
+              "right": "33% (14/42)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (40/80)",
+              "right": "50% (40/80)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "55%",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (15/20)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (4/8)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/5",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (4/12)",
+              "right": "25% (5/20)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (6/10)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "0/0",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "20",
+              "right": "8",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "3",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (19/28)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (10/22)",
+              "right": "32% (9/28)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (29/50)",
+              "right": "42% (21/50)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

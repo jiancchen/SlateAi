@@ -1,0 +1,546 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-bueno-vs-lajovic-2026-06-02",
+  "boardTitle": "Dusan Lajovic vs Gonzalo Bueno",
+  "boardPlayerName": "Dusan Lajovic",
+  "recentOpponentName": "Rodionov J.",
+  "recentIndex": 0,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 19, 26",
+  "recentIsoDate": "2026-05-19",
+  "recentResult": "Loss 2-6 5-7",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Rodionov J. - Lajovic D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Rodionov J.",
+    "Lajovic D."
+  ],
+  "generatedAt": "2026-06-02T02:39:30.097Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/xE2H8A8F/",
+  "matchId": "xE2H8A8F",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_xE2H8A8F",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_xE2H8A8F"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:33"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:47"
+      }
+    ],
+    "totalDuration": "1:20"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "0",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "61%",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (24/33)",
+              "right": "53% (18/34)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "70% (16/23)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "0/4",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "186 km/h",
+              "right": "182 km/h",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "143 km/h",
+              "right": "144 km/h",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (16/34)",
+              "right": "27% (9/33)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (11/22)",
+              "right": "30% (7/23)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/4",
+              "right": "1/5",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "30",
+              "right": "11",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "18",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (19/22)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (40/56)",
+              "right": "52% (29/56)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (27/56)",
+              "right": "29% (16/56)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (67/112)",
+              "right": "40% (45/112)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "9",
+              "right": "1",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "90% (9/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (4/10)",
+              "right": "10% (1/10)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Total games won",
+              "left": "65% (13/20)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "60%",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (8/11)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (9/12)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "0/2",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "53% (8/15)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (5/10)",
+              "right": "25% (3/12)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/3",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "5",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "8",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (9/9)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (17/23)",
+              "right": "48% (12/25)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (13/25)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "63% (30/48)",
+              "right": "38% (18/48)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "61%",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (16/22)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (7/11)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/2",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (8/19)",
+              "right": "27% (6/22)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (6/12)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "1/2",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "6",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "10",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Net points won",
+              "left": "77% (10/13)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (23/33)",
+              "right": "55% (17/31)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (14/31)",
+              "right": "30% (10/33)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (37/64)",
+              "right": "42% (27/64)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Rodionov J.",
+              "rightPlayer": "Lajovic D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,546 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-bueno-vs-lajovic-2026-06-02",
+  "boardTitle": "Dusan Lajovic vs Gonzalo Bueno",
+  "boardPlayerName": "Dusan Lajovic",
+  "recentOpponentName": "Choinski J.",
+  "recentIndex": 4,
+  "recentEvent": "Rome (Italy)",
+  "recentDate": "May 04, 26",
+  "recentIsoDate": "2026-05-04",
+  "recentResult": "Loss 5-7 4-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Lajovic D. - Choinski J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/",
+  "players": [
+    "Lajovic D.",
+    "Choinski J."
+  ],
+  "generatedAt": "2026-06-02T02:39:30.242Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/UiFI58yh/",
+  "matchId": "UiFI58yh",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_UiFI58yh",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_UiFI58yh"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:02"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:44"
+      }
+    ],
+    "totalDuration": "1:46"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "9",
+              "right": "3",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "76%",
+              "right": "72%",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (36/51)",
+              "right": "71% (39/55)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (9/16)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "5/5",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "183 km/h",
+              "right": "186 km/h",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "175 km/h",
+              "right": "173 km/h",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (16/55)",
+              "right": "29% (15/51)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (9/21)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/5",
+              "right": "2/4",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "30",
+              "right": "21",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "29",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (45/67)",
+              "right": "67% (51/76)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (25/76)",
+              "right": "33% (22/67)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (70/143)",
+              "right": "51% (73/143)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "82% (9/11)",
+              "right": "100% (11/11)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/11)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Total games won",
+              "left": "41% (9/22)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "1",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "80%",
+              "right": "76%",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "66% (21/32)",
+              "right": "65% (22/34)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (5/8)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "4/4",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (12/34)",
+              "right": "34% (11/32)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (5/11)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/4",
+              "right": "1/3",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "20",
+              "right": "12",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "17",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/1)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (26/40)",
+              "right": "63% (29/46)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (17/46)",
+              "right": "35% (14/40)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (43/86)",
+              "right": "50% (43/86)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "68%",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (15/19)",
+              "right": "81% (17/21)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (4/8)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/1",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (4/21)",
+              "right": "21% (4/19)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (4/10)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/1",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "9",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "12",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/0)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (19/27)",
+              "right": "73% (22/30)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (8/30)",
+              "right": "30% (8/27)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (27/57)",
+              "right": "53% (30/57)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Lajovic D.",
+              "rightPlayer": "Choinski J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

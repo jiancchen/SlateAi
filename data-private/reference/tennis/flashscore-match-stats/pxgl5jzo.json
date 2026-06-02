@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-pinnington-jones-vs-vukic-2026-06-02",
+  "boardTitle": "Jack Pinnington Jones vs Aleksandar Vukic",
+  "boardPlayerName": "Jack Pinnington Jones",
+  "recentOpponentName": "Fatic N.",
+  "recentIndex": 4,
+  "recentEvent": "Ostrava (Czech Republic)",
+  "recentDate": "Apr 28, 26",
+  "recentIsoDate": "2026-04-28",
+  "recentResult": "Loss 2-6 5-7",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Fatic N. - Pinnington Jones J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/ostrava/",
+  "players": [
+    "Fatic N.",
+    "Pinnington Jones J."
+  ],
+  "generatedAt": "2026-06-02T02:39:24.062Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/pxgl5jzo/",
+  "matchId": "pxgl5jzo",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_pxgl5jzo",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_pxgl5jzo"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:47"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:08"
+      }
+    ],
+    "totalDuration": "1:55"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "60%",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (27/43)",
+              "right": "53% (23/43)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (17/24)",
+              "right": "48% (14/29)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/7",
+              "right": "8/13",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (20/43)",
+              "right": "37% (16/43)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (15/29)",
+              "right": "29% (7/24)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/13",
+              "right": "2/7",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "22",
+              "right": "18",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "23",
+              "right": "39",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Net points won",
+              "left": "62% (8/13)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (44/67)",
+              "right": "51% (37/72)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (35/72)",
+              "right": "34% (23/67)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (79/139)",
+              "right": "43% (60/139)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (8/10)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (5/10)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Total games won",
+              "left": "65% (13/20)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "50%",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (9/16)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (9/12)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "4/7",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "60% (9/15)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (8/15)",
+              "right": "25% (3/12)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "1/4",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "7",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "17",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (18/28)",
+              "right": "43% (13/30)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "57% (17/30)",
+              "right": "36% (10/28)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (35/58)",
+              "right": "40% (23/58)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "67%",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (18/27)",
+              "right": "61% (17/28)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (8/12)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "4/6",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (11/28)",
+              "right": "33% (9/27)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (7/14)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "1/3",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "11",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "22",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Net points won",
+              "left": "62% (8/13)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (26/39)",
+              "right": "57% (24/42)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (18/42)",
+              "right": "33% (13/39)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (44/81)",
+              "right": "46% (37/81)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Pinnington Jones J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

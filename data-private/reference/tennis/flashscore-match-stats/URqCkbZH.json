@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-bueno-vs-lajovic-2026-06-02",
+  "boardTitle": "Dusan Lajovic vs Gonzalo Bueno",
+  "boardPlayerName": "Gonzalo Bueno",
+  "recentOpponentName": "Soto M.",
+  "recentIndex": 4,
+  "recentEvent": "Santa Cruz (Bolivia)",
+  "recentDate": "Apr 17, 26",
+  "recentIsoDate": "2026-04-17",
+  "recentResult": "Loss 0-6 0-2",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Soto M. - Bueno G.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/santa-cruz/",
+  "players": [
+    "Soto M.",
+    "Bueno G."
+  ],
+  "generatedAt": "2026-06-02T02:39:30.038Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/URqCkbZH/",
+  "matchId": "URqCkbZH",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_URqCkbZH",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_URqCkbZH"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 0,
+        "duration": "0:23"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 0,
+        "duration": "0:16"
+      }
+    ],
+    "totalDuration": "0:39"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "36%",
+              "right": "59%",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (7/8)",
+              "right": "42% (8/19)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (9/14)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "4/8",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "58% (11/19)",
+              "right": "13% (1/8)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "77% (10/13)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/8",
+              "right": "0/0",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "5",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "18",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "73% (16/22)",
+              "right": "34% (11/32)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "66% (21/32)",
+              "right": "27% (6/22)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "69% (37/54)",
+              "right": "31% (17/54)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (4/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Total games won",
+              "left": "100% (8/8)",
+              "right": "0% (0/8)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "38%",
+              "right": "69%",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (6/6)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/5",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "73% (8/11)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "100% (5/5)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "0/0",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "2",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "9",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (12/16)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "75% (12/16)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "75% (24/32)",
+              "right": "25% (8/32)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Total games won",
+              "left": "100% (6/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "33%",
+              "right": "50%",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (1/2)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (3/4)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/3",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (3/8)",
+              "right": "-150% (-3/2)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "0/0",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "2",
+              "right": "9",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (4/6)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "56% (9/16)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (13/22)",
+              "right": "41% (9/22)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (1/1)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (1/1)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Total games won",
+              "left": "100% (2/2)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Soto M.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

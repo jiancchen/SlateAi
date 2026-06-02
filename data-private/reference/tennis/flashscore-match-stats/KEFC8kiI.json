@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-echargui-vs-tseng-2026-06-02",
+  "boardTitle": "Chun Hsin Tseng vs Moez Echargui",
+  "boardPlayerName": "Moez Echargui",
+  "recentOpponentName": "Tomic B.",
+  "recentIndex": 1,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 18, 26",
+  "recentIsoDate": "2026-05-18",
+  "recentResult": "Loss 6-3 5-7 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Tomic B. - Echargui M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Tomic B.",
+    "Echargui M."
+  ],
+  "generatedAt": "2026-06-02T02:39:31.578Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/KEFC8kiI/",
+  "matchId": "KEFC8kiI",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_KEFC8kiI",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_KEFC8kiI"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:51"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:05"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "7",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "6",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "63%",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (40/55)",
+              "right": "64% (41/64)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (21/37)",
+              "right": "55% (21/38)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "4/7",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (23/64)",
+              "right": "27% (15/55)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (17/38)",
+              "right": "43% (16/37)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "2/6",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "31",
+              "right": "20",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "55",
+              "right": "42",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Net points won",
+              "left": "65% (11/17)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (61/92)",
+              "right": "61% (62/102)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (40/102)",
+              "right": "34% (31/92)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (101/194)",
+              "right": "48% (93/194)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "87% (13/15)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (3/15)",
+              "right": "13% (2/15)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Total games won",
+              "left": "53% (16/30)",
+              "right": "47% (14/30)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "40%",
+              "right": "50%",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (6/10)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (9/15)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (6/18)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "39% (7/18)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "8",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "15",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (15/25)",
+              "right": "64% (23/36)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (13/36)",
+              "right": "40% (10/25)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (28/61)",
+              "right": "54% (33/61)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "67%",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (17/20)",
+              "right": "58% (18/31)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (5/12)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "4/6",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (13/31)",
+              "right": "15% (3/20)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (8/15)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "1/2",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "7",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "13",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (22/32)",
+              "right": "54% (25/46)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (21/46)",
+              "right": "31% (10/32)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (43/78)",
+              "right": "45% (35/78)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "75%",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (17/25)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "70% (7/10)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "0/1",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (4/15)",
+              "right": "32% (8/25)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (2/5)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/3",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "5",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "14",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (2/6)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (24/35)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (6/20)",
+              "right": "31% (11/35)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (30/55)",
+              "right": "45% (25/55)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Tomic B.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

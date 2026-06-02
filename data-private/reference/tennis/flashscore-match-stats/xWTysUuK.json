@@ -1,0 +1,125 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-strombachs-vs-hurrion-2026-06-02",
+  "boardTitle": "Robert Strombachs vs Millen Hurrion",
+  "boardPlayerName": "Millen Hurrion",
+  "recentOpponentName": "Knaff A.",
+  "recentIndex": 2,
+  "recentEvent": "M25 Nottingham 2 (United Kingdom)",
+  "recentDate": "May 07, 26",
+  "recentIsoDate": "2026-05-07",
+  "recentResult": "Win 6-0 5-7 6-1",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Knaff A. - Hurrion M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m25-nottingham-2/",
+  "players": [
+    "Knaff A.",
+    "Hurrion M."
+  ],
+  "generatedAt": "2026-06-02T02:39:28.678Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/xWTysUuK/",
+  "matchId": "xWTysUuK",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_xWTysUuK",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_xWTysUuK"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:28"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:00"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:12"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Knaff A.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Knaff A.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Knaff A.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Knaff A.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

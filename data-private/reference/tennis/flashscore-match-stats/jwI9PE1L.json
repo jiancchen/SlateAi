@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-squire-vs-polmans-2026-06-02",
+  "boardTitle": "Henri Squire vs Marc Polmans",
+  "boardPlayerName": "Henri Squire",
+  "recentOpponentName": "Garin C.",
+  "recentIndex": 3,
+  "recentEvent": "Hamburg (Germany)",
+  "recentDate": "May 16, 26",
+  "recentIsoDate": "2026-05-16",
+  "recentResult": "Win 1-6 6-4 6-3",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Squire H. - Garin C.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/hamburg/",
+  "players": [
+    "Squire H.",
+    "Garin C."
+  ],
+  "generatedAt": "2026-06-02T02:39:20.700Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/jwI9PE1L/",
+  "matchId": "jwI9PE1L",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_jwI9PE1L",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_jwI9PE1L"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:24"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "1:46"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "2",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "60%",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (37/59)",
+              "right": "74% (32/43)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (13/30)",
+              "right": "45% (13/29)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/6",
+              "right": "0/4",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (11/43)",
+              "right": "37% (22/59)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (16/29)",
+              "right": "57% (17/30)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/4",
+              "right": "4/6",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "26",
+              "right": "14",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "49",
+              "right": "27",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (6/7)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (50/89)",
+              "right": "63% (45/72)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (27/72)",
+              "right": "44% (39/89)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (77/161)",
+              "right": "52% (84/161)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "69% (9/13)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Return games won",
+              "left": "31% (4/13)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (13/26)",
+              "right": "50% (13/26)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "59%",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "36% (4/11)",
+              "right": "100% (10/10)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "0/0",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (4/10)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (4/7)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/4",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "5",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "33% (7/21)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (4/16)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "30% (11/37)",
+              "right": "70% (26/37)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "67%",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (24/37)",
+              "right": "88% (14/16)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (4/11)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "0% (0/16)",
+              "right": "32% (12/37)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "7",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "9",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/1)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (29/46)",
+              "right": "72% (18/25)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (7/25)",
+              "right": "37% (17/46)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (36/71)",
+              "right": "49% (35/71)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "55%",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (9/11)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/3",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (7/17)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (7/14)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "1/1",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "3",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "13",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (6/6)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (14/22)",
+              "right": "48% (15/31)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (16/31)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (30/53)",
+              "right": "43% (23/53)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Squire H.",
+              "rightPlayer": "Garin C."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

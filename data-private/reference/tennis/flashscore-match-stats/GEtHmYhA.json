@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-rawat-vs-winter-2026-06-02",
+  "boardTitle": "Sidharth Rawat vs Edward Winter",
+  "boardPlayerName": "Edward Winter",
+  "recentOpponentName": "Sasikumar M.",
+  "recentIndex": 4,
+  "recentEvent": "Centurion (South Africa)",
+  "recentDate": "May 26, 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "Win 6-4 6-0",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Sasikumar M. - Winter E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion/",
+  "players": [
+    "Sasikumar M.",
+    "Winter E."
+  ],
+  "generatedAt": "2026-06-02T02:39:27.781Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/GEtHmYhA/",
+  "matchId": "GEtHmYhA",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_GEtHmYhA",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_GEtHmYhA"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:44"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:36"
+      }
+    ],
+    "totalDuration": "1:20"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "72%",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (19/32)",
+              "right": "74% (29/39)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "39% (9/23)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/12",
+              "right": "2/2",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (10/39)",
+              "right": "41% (13/32)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (8/15)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "4/12",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "9",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "35",
+              "right": "26",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Net points won",
+              "left": "38% (3/8)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "51% (28/55)",
+              "right": "67% (36/54)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (18/54)",
+              "right": "49% (27/55)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (46/109)",
+              "right": "58% (63/109)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (4/8)",
+              "right": "100% (8/8)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/8)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (4/16)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "73%",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (13/17)",
+              "right": "75% (18/24)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (5/11)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "1/1",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (6/24)",
+              "right": "24% (4/17)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (5/9)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/3",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "4",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "16",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (18/28)",
+              "right": "67% (22/33)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (11/33)",
+              "right": "36% (10/28)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (29/61)",
+              "right": "52% (32/61)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "71%",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "40% (6/15)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (4/12)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/9",
+              "right": "1/1",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (4/15)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (3/6)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "3/9",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "10",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Net points won",
+              "left": "25% (1/4)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "37% (10/27)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (7/21)",
+              "right": "63% (17/27)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "35% (17/48)",
+              "right": "65% (31/48)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-bertrand-vs-zahraj-2026-06-02",
+  "boardTitle": "Robin Bertrand vs Patrick Zahraj",
+  "boardPlayerName": "Patrick Zahraj",
+  "recentOpponentName": "Matusevich A.",
+  "recentIndex": 3,
+  "recentEvent": "M25 Nottingham (United Kingdom)",
+  "recentDate": "May 02, 26",
+  "recentIsoDate": "2026-05-02",
+  "recentResult": "Loss 4-6 1-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Zahraj P. - Matusevich A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m25-nottingham/",
+  "players": [
+    "Zahraj P.",
+    "Matusevich A."
+  ],
+  "generatedAt": "2026-06-02T02:39:25.576Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/p4agRXSH/",
+  "matchId": "p4agRXSH",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_p4agRXSH",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_p4agRXSH"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:57"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:47"
+      }
+    ],
+    "totalDuration": "1:44"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Matusevich A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Matusevich A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Zahraj P.",
+              "rightPlayer": "Matusevich A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

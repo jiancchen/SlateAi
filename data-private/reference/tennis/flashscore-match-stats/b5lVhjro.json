@@ -1,0 +1,37 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-choinski-vs-gentzsch-2026-06-02",
+  "boardTitle": "Jan Choinski vs Tom Gentzsch",
+  "boardPlayerName": "Jan Choinski",
+  "recentOpponentName": "Herbert P.",
+  "recentIndex": 0,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 20, 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "Result",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Choinski J. - Herbert P.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Choinski J.",
+    "Herbert P."
+  ],
+  "generatedAt": "2026-06-02T02:39:18.479Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/b5lVhjro/",
+  "matchId": "b5lVhjro",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_b5lVhjro",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_b5lVhjro"
+  },
+  "scoreSummary": {
+    "sets": [],
+    "totalDuration": ""
+  },
+  "scopes": [],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

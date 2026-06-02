@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-qualification-shick-vs-hohmann-2026-06-02",
+  "boardTitle": "Braden Shick vs Ronald Hohmann",
+  "boardPlayerName": "Braden Shick",
+  "recentOpponentName": "Monday J.",
+  "recentIndex": 1,
+  "recentEvent": "Little Rock (USA)",
+  "recentDate": "May 26, 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "Loss 4-6 4-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Monday J. - Shick B.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/little-rock/",
+  "players": [
+    "Monday J.",
+    "Shick B."
+  ],
+  "generatedAt": "2026-06-02T02:39:37.607Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/dCWKwBPc/",
+  "matchId": "dCWKwBPc",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_dCWKwBPc",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_dCWKwBPc"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:46"
+      }
+    ],
+    "totalDuration": "1:28"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "43%",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (31/42)",
+              "right": "71% (15/21)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (14/25)",
+              "right": "68% (19/28)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "0/2",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (6/21)",
+              "right": "26% (11/42)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "32% (9/28)",
+              "right": "44% (11/25)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/3",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "10",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "31",
+              "right": "20",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (45/67)",
+              "right": "69% (34/49)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (15/49)",
+              "right": "33% (22/67)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (60/116)",
+              "right": "48% (56/116)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (10/10)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (2/10)",
+              "right": "0% (0/10)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "56%",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (14/18)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "62% (8/13)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "0/1",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (5/14)",
+              "right": "22% (4/18)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/2",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "6",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "10",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (22/31)",
+              "right": "64% (16/25)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (9/25)",
+              "right": "29% (9/31)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (31/56)",
+              "right": "45% (25/56)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "29%",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (17/24)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "14% (1/7)",
+              "right": "29% (7/24)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (5/17)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "4",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "10",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (23/36)",
+              "right": "75% (18/24)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (6/24)",
+              "right": "36% (13/36)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (29/60)",
+              "right": "52% (31/60)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Monday J.",
+              "rightPlayer": "Shick B."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

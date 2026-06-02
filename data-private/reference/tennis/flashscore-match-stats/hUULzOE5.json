@@ -1,0 +1,668 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-searle-vs-krueger-2026-06-02",
+  "boardTitle": "Henry Searle vs Mitchell Krueger",
+  "boardPlayerName": "Mitchell Krueger",
+  "recentOpponentName": "Hassan B.",
+  "recentIndex": 2,
+  "recentEvent": "Oeiras 6 (Portugal)",
+  "recentDate": "May 11, 26",
+  "recentIsoDate": "2026-05-11",
+  "recentResult": "Loss 4-6 6-2 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Krueger M. - Hassan B.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/oeiras-6/",
+  "players": [
+    "Krueger M.",
+    "Hassan B."
+  ],
+  "generatedAt": "2026-06-02T02:39:38.063Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/hUULzOE5/",
+  "matchId": "hUULzOE5",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_hUULzOE5",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_hUULzOE5"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:39"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "1:52"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "11",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "60%",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (38/53)",
+              "right": "74% (35/47)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (14/26)",
+              "right": "61% (19/31)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "3/5",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (12/47)",
+              "right": "34% (18/53)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "39% (12/31)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "2/4",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "40",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "43",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (52/79)",
+              "right": "69% (54/78)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (24/78)",
+              "right": "34% (27/79)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (76/157)",
+              "right": "52% (81/157)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "85% (11/13)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Return games won",
+              "left": "14% (2/14)",
+              "right": "15% (2/13)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Total games won",
+              "left": "48% (13/27)",
+              "right": "52% (14/27)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "61%",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (15/23)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "2/2",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (7/20)",
+              "right": "35% (8/23)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "31% (4/13)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "1/1",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "15",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "21",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (20/31)",
+              "right": "67% (22/33)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (11/33)",
+              "right": "35% (11/31)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (31/64)",
+              "right": "52% (33/64)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "62%",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (13/18)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (5/7)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "1/3",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "56% (9/16)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "70% (7/10)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/2",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "12",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "15",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (19/27)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (11/23)",
+              "right": "30% (8/27)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (30/50)",
+              "right": "40% (20/50)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "58%",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (10/12)",
+              "right": "118% (13/11)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "-36% (-4/11)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "13% (1/8)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "13",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (13/21)",
+              "right": "91% (20/22)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "9% (2/22)",
+              "right": "38% (8/21)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "35% (15/43)",
+              "right": "65% (28/43)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Krueger M.",
+              "rightPlayer": "Hassan B."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

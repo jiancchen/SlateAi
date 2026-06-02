@@ -1,0 +1,710 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-bueno-vs-lajovic-2026-06-02",
+  "boardTitle": "Dusan Lajovic vs Gonzalo Bueno",
+  "boardPlayerName": "Gonzalo Bueno",
+  "recentOpponentName": "Samuel T.",
+  "recentIndex": 1,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 21, 26",
+  "recentIsoDate": "2026-05-21",
+  "recentResult": "Loss 7-5 1-6 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Samuel T. - Bueno G.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Samuel T.",
+    "Bueno G."
+  ],
+  "generatedAt": "2026-06-02T02:39:30.015Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/O0FEJVnT/",
+  "matchId": "O0FEJVnT",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_O0FEJVnT",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_O0FEJVnT"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:43"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:27"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "1:47"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "65%",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (40/58)",
+              "right": "67% (31/46)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (15/25)",
+              "right": "44% (11/25)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/9",
+              "right": "2/7",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "184 km/h",
+              "right": "171 km/h",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "155 km/h",
+              "right": "131 km/h",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (15/46)",
+              "right": "31% (18/58)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (14/25)",
+              "right": "40% (10/25)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/7",
+              "right": "2/9",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "33",
+              "right": "16",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "33",
+              "right": "26",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Net points won",
+              "left": "72% (21/29)",
+              "right": "78% (14/18)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (55/83)",
+              "right": "59% (42/71)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (29/71)",
+              "right": "34% (28/83)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (84/154)",
+              "right": "45% (70/154)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "86% (12/14)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Return games won",
+              "left": "36% (5/14)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Total games won",
+              "left": "61% (17/28)",
+              "right": "39% (11/28)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "53%",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (10/17)",
+              "right": "88% (14/16)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (9/15)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "2/3",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "13% (2/16)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (6/14)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "2/5",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "6",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "4",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Net points won",
+              "left": "78% (7/9)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (19/32)",
+              "right": "73% (22/30)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (8/30)",
+              "right": "41% (13/32)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (27/62)",
+              "right": "56% (35/62)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "78%",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (13/18)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (4/6)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (6/14)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "100% (4/4)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "6",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "11",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Net points won",
+              "left": "63% (5/8)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (17/24)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "56% (10/18)",
+              "right": "29% (7/24)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "64% (27/42)",
+              "right": "36% (15/42)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "85%",
+              "right": "70%",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (17/23)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (2/4)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "0/2",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (7/16)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (4/7)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/4",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "4",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "11",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (9/12)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (19/27)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (11/23)",
+              "right": "30% (8/27)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (30/50)",
+              "right": "40% (20/50)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Samuel T.",
+              "rightPlayer": "Bueno G."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

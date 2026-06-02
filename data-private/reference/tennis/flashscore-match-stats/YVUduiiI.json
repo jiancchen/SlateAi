@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-palan-vs-beckley-2026-06-02",
+  "boardTitle": "Dominik Palan vs Alec Beckley",
+  "boardPlayerName": "Dominik Palan",
+  "recentOpponentName": "Smith K.",
+  "recentIndex": 3,
+  "recentEvent": "Bengaluru 2 (India)",
+  "recentDate": "May 13, 26",
+  "recentIsoDate": "2026-05-13",
+  "recentResult": "Loss 6-4 3-6 4-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Smith K. - Palan D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/bengaluru-2/",
+  "players": [
+    "Smith K.",
+    "Palan D."
+  ],
+  "generatedAt": "2026-06-02T02:39:27.465Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/YVUduiiI/",
+  "matchId": "YVUduiiI",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_YVUduiiI",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_YVUduiiI"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:51"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:39"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:21"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "18",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "4",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "59%",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (52/72)",
+              "right": "71% (42/59)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (16/25)",
+              "right": "56% (23/41)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "10/11",
+              "right": "6/8",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (17/59)",
+              "right": "28% (20/72)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (18/41)",
+              "right": "36% (9/25)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/8",
+              "right": "1/11",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "42",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "25",
+              "right": "43",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Net points won",
+              "left": "68% (13/19)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (68/96)",
+              "right": "65% (65/100)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (35/100)",
+              "right": "29% (28/96)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (103/196)",
+              "right": "47% (93/196)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "93% (14/15)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Return games won",
+              "left": "14% (2/14)",
+              "right": "7% (1/15)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Total games won",
+              "left": "55% (16/29)",
+              "right": "45% (13/29)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "8",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "55%",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (21/34)",
+              "right": "72% (13/18)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/8",
+              "right": "2/2",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (5/18)",
+              "right": "38% (13/34)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "27% (4/15)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "1/8",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "14",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "12",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (25/43)",
+              "right": "73% (24/33)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (9/33)",
+              "right": "42% (18/43)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (34/76)",
+              "right": "55% (42/76)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "56%",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "87% (13/15)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "88% (7/8)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (7/15)",
+              "right": "13% (2/15)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "13% (1/8)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "9",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "13",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "91% (20/22)",
+              "right": "62% (16/26)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (10/26)",
+              "right": "9% (2/22)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "63% (30/48)",
+              "right": "38% (18/48)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "65%",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (18/23)",
+              "right": "73% (19/26)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (5/8)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "3/4",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (5/26)",
+              "right": "22% (5/23)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (9/14)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "0/3",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "19",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "18",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Net points won",
+              "left": "78% (7/9)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (23/31)",
+              "right": "61% (25/41)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (16/41)",
+              "right": "26% (8/31)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (39/72)",
+              "right": "46% (33/72)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Smith K.",
+              "rightPlayer": "Palan D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-rawat-vs-winter-2026-06-02",
+  "boardTitle": "Sidharth Rawat vs Edward Winter",
+  "boardPlayerName": "Sidharth Rawat",
+  "recentOpponentName": "Kimhi O.",
+  "recentIndex": 0,
+  "recentEvent": "Centurion (South Africa)",
+  "recentDate": "May 26, 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "Loss 3-6 3-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Rawat S. - Kimhi O.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion/",
+  "players": [
+    "Rawat S.",
+    "Kimhi O."
+  ],
+  "generatedAt": "2026-06-02T02:39:27.856Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/tGMeluve/",
+  "matchId": "tGMeluve",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_tGMeluve",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_tGMeluve"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "1:01"
+      }
+    ],
+    "totalDuration": "1:43"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "85%",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "48% (13/27)",
+              "right": "62% (29/47)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "30% (9/30)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/10",
+              "right": "3/6",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (18/47)",
+              "right": "52% (14/27)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (4/8)",
+              "right": "70% (21/30)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "6/10",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "11",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "45",
+              "right": "16",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Net points won",
+              "left": "56% (5/9)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "39% (22/57)",
+              "right": "60% (33/55)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (22/55)",
+              "right": "61% (35/57)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (44/112)",
+              "right": "61% (68/112)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (6/18)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "44%",
+              "right": "85%",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "33% (4/12)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "27% (4/15)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/5",
+              "right": "3/5",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (10/22)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (2/4)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "4/5",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "12",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "30% (8/27)",
+              "right": "54% (14/26)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (12/26)",
+              "right": "70% (19/27)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (20/53)",
+              "right": "62% (33/53)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "86%",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (9/15)",
+              "right": "68% (17/25)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (5/15)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "0/1",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (8/25)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (2/4)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/5",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "8",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "4",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Net points won",
+              "left": "57% (4/7)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "47% (14/30)",
+              "right": "66% (19/29)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (10/29)",
+              "right": "53% (16/30)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (24/59)",
+              "right": "59% (35/59)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Rawat S.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

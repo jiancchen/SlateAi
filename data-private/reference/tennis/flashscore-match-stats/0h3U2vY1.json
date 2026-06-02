@@ -1,0 +1,546 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-durasovic-vs-gombos-2026-06-02",
+  "boardTitle": "Viktor Durasovic vs Norbert Gombos",
+  "boardPlayerName": "Norbert Gombos",
+  "recentOpponentName": "Krajci M.",
+  "recentIndex": 1,
+  "recentEvent": "Kosice (Slovakia)",
+  "recentDate": "May 26, 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "Win 6-2 6-4",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Krajci M. - Gombos N.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/kosice/",
+  "players": [
+    "Krajci M.",
+    "Gombos N."
+  ],
+  "generatedAt": "2026-06-02T02:39:33.795Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/0h3U2vY1/",
+  "matchId": "0h3U2vY1",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_0h3U2vY1",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_0h3U2vY1"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:29"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:41"
+      }
+    ],
+    "totalDuration": "1:10"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "52%",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (17/29)",
+              "right": "79% (19/24)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (8/19)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/8",
+              "right": "0/2",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (5/24)",
+              "right": "41% (12/29)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "41% (9/22)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "5/8",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "9",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "24",
+              "right": "9",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (25/48)",
+              "right": "70% (32/46)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (14/46)",
+              "right": "48% (23/48)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (39/94)",
+              "right": "59% (55/94)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "38% (3/8)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Return games won",
+              "left": "13% (1/8)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (4/16)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Distance covered (metres)",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "63%",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "47% (7/15)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (2/7)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "0/1",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (2/12)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (3/7)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/3",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "5",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "41% (9/22)",
+              "right": "74% (14/19)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (5/19)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "34% (14/41)",
+              "right": "66% (27/41)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "44%",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (10/14)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "0/1",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (3/12)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (6/15)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/5",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "5",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "4",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (16/26)",
+              "right": "67% (18/27)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (9/27)",
+              "right": "38% (10/26)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (25/53)",
+              "right": "53% (28/53)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            },
+            {
+              "label": "Distance covered (metres)",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Krajci M.",
+              "rightPlayer": "Gombos N."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

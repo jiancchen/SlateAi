@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-mcdonald-vs-budkov-kjaer-2026-06-02",
+  "boardTitle": "Mackenzie McDonald vs Nicolai Budkov Kjaer",
+  "boardPlayerName": "Mackenzie McDonald",
+  "recentOpponentName": "Merida Aguilar D.",
+  "recentIndex": 1,
+  "recentEvent": "Rome (Italy)",
+  "recentDate": "May 04, 26",
+  "recentIsoDate": "2026-05-04",
+  "recentResult": "Loss 5-7 4-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Merida Aguilar D. - McDonald M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/",
+  "players": [
+    "Merida Aguilar D.",
+    "McDonald M."
+  ],
+  "generatedAt": "2026-06-02T02:39:23.239Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/v3S1I6xe/",
+  "matchId": "v3S1I6xe",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_v3S1I6xe",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_v3S1I6xe"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:49"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "1:00"
+      }
+    ],
+    "totalDuration": "1:49"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "7",
+              "right": "2",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "58%",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (36/58)",
+              "right": "60% (24/40)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (17/31)",
+              "right": "38% (11/29)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/10",
+              "right": "4/8",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (16/40)",
+              "right": "38% (22/58)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (18/29)",
+              "right": "45% (14/31)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/8",
+              "right": "2/10",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "34",
+              "right": "19",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "32",
+              "right": "33",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (53/89)",
+              "right": "51% (35/69)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (34/69)",
+              "right": "40% (36/89)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (87/158)",
+              "right": "45% (71/158)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "82% (9/11)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Return games won",
+              "left": "36% (4/11)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Total games won",
+              "left": "59% (13/22)",
+              "right": "41% (9/22)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "64%",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (14/21)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (10/16)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "2/4",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (9/23)",
+              "right": "33% (7/21)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (8/13)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/2",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "8",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "13",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (24/37)",
+              "right": "53% (19/36)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (17/36)",
+              "right": "35% (13/37)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (41/73)",
+              "right": "44% (32/73)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "2",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "52%",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (22/37)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (7/15)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/8",
+              "right": "2/4",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (7/17)",
+              "right": "41% (15/37)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (10/16)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/8",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "11",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "20",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (29/52)",
+              "right": "48% (16/33)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (17/33)",
+              "right": "44% (23/52)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (46/85)",
+              "right": "46% (39/85)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Merida Aguilar D.",
+              "rightPlayer": "McDonald M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

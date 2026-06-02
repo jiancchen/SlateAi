@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-peliwo-vs-coulibaly-2026-06-02",
+  "boardTitle": "Filip Peliwo vs Eliakim Coulibaly",
+  "boardPlayerName": "Eliakim Coulibaly",
+  "recentOpponentName": "Pankin S.",
+  "recentIndex": 1,
+  "recentEvent": "Centurion (South Africa)",
+  "recentDate": "May 29, 26",
+  "recentIsoDate": "2026-05-29",
+  "recentResult": "Win 3-6 6-4 7-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Pankin S. - Coulibaly E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion/",
+  "players": [
+    "Pankin S.",
+    "Coulibaly E."
+  ],
+  "generatedAt": "2026-06-02T02:39:28.261Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/0AOks1bK/",
+  "matchId": "0AOks1bK",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_0AOks1bK",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_0AOks1bK"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:55"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 2,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:37"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "8",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "45%",
+              "right": "56%",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (38/47)",
+              "right": "79% (45/57)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (31/58)",
+              "right": "52% (23/44)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "11/13",
+              "right": "4/6",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (12/57)",
+              "right": "19% (9/47)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (21/44)",
+              "right": "47% (27/58)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "2/13",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "20",
+              "right": "19",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "39",
+              "right": "54",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (3/6)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (69/105)",
+              "right": "67% (68/101)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (33/101)",
+              "right": "34% (36/105)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (102/206)",
+              "right": "50% (104/206)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "88% (14/16)",
+              "right": "87% (13/15)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Return games won",
+              "left": "13% (2/15)",
+              "right": "13% (2/16)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Total games won",
+              "left": "52% (16/31)",
+              "right": "48% (15/31)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "81%",
+              "right": "52%",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (10/13)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (1/3)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (3/13)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "133% (4/3)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (21/28)",
+              "right": "68% (17/25)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (8/25)",
+              "right": "25% (7/28)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (29/53)",
+              "right": "45% (24/53)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "40%",
+              "right": "48%",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (15/21)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "61% (19/31)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/7",
+              "right": "1/1",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (3/15)",
+              "right": "29% (6/21)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (6/16)",
+              "right": "32% (10/31)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/7",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "10",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (24/40)",
+              "right": "71% (22/31)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (9/31)",
+              "right": "40% (16/40)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (33/71)",
+              "right": "54% (38/71)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "35%",
+              "right": "64%",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (13/13)",
+              "right": "79% (23/29)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (11/24)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "3/4",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (6/29)",
+              "right": "0% (0/13)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (10/16)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "1/5",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "5",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "35",
+              "right": "51",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/3)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (24/37)",
+              "right": "64% (29/45)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (16/45)",
+              "right": "35% (13/37)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (40/82)",
+              "right": "51% (42/82)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Pankin S.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-bellucci-vs-bolt-2026-06-02",
+  "boardTitle": "Mattia Bellucci vs Alex Bolt",
+  "boardPlayerName": "Alex Bolt",
+  "recentOpponentName": "Neumayer L.",
+  "recentIndex": 0,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 18, 26",
+  "recentIsoDate": "2026-05-18",
+  "recentResult": "Loss 0-6 1-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Neumayer L. - Bolt A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Neumayer L.",
+    "Bolt A."
+  ],
+  "generatedAt": "2026-06-02T02:39:21.323Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/b5SVW4Yq/",
+  "matchId": "b5SVW4Yq",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_b5SVW4Yq",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_b5SVW4Yq"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 0,
+        "duration": "0:20"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:28"
+      }
+    ],
+    "totalDuration": "0:48"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "89%",
+              "right": "70%",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "96% (24/25)",
+              "right": "37% (13/35)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "0% (0/3)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "6/12",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "63% (22/35)",
+              "right": "4% (1/25)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (9/15)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/12",
+              "right": "0/0",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "8",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "23",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "86% (24/28)",
+              "right": "38% (19/50)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "62% (31/50)",
+              "right": "14% (4/28)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "71% (55/78)",
+              "right": "29% (23/78)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Return games won",
+              "left": "86% (6/7)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Total games won",
+              "left": "92% (12/13)",
+              "right": "8% (1/13)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "93%",
+              "right": "65%",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "92% (12/13)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "0% (0/1)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/4",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "62% (8/13)",
+              "right": "8% (1/13)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (5/7)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "0/0",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "2",
+              "right": "16",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "86% (12/14)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "65% (13/20)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "74% (25/34)",
+              "right": "26% (9/34)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Total games won",
+              "left": "100% (6/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "86%",
+              "right": "73%",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (12/12)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "0% (0/2)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "5/8",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "64% (14/22)",
+              "right": "0% (0/12)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (4/8)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/8",
+              "right": "0/0",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "4",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "7",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "86% (12/14)",
+              "right": "40% (12/30)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "60% (18/30)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "68% (30/44)",
+              "right": "32% (14/44)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Neumayer L.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

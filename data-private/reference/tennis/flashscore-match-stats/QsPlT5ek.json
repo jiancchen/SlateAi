@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-sachko-vs-kumstat-2026-06-02",
+  "boardTitle": "Vitaliy Sachko vs Jan Kumstat",
+  "boardPlayerName": "Jan Kumstat",
+  "recentOpponentName": "Staeheli L.",
+  "recentIndex": 4,
+  "recentEvent": "M15 Heraklion 3 (Greece)",
+  "recentDate": "Mar 29, 26",
+  "recentIsoDate": "2026-03-29",
+  "recentResult": "Win 6-1 6-2",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Staeheli L. - Kumstat J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m15-heraklion-3/",
+  "players": [
+    "Staeheli L.",
+    "Kumstat J."
+  ],
+  "generatedAt": "2026-06-02T02:39:39.481Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/QsPlT5ek/",
+  "matchId": "QsPlT5ek",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_QsPlT5ek",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_QsPlT5ek"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": ""
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": ""
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Staeheli L.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Staeheli L.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Staeheli L.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

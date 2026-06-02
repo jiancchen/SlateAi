@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-martin-vs-ellis-2026-06-02",
+  "boardTitle": "Andres Martin vs Blake Ellis",
+  "boardPlayerName": "Blake Ellis",
+  "recentOpponentName": "Dellavedova M.",
+  "recentIndex": 3,
+  "recentEvent": "M25 Luzhou (China)",
+  "recentDate": "Apr 21, 26",
+  "recentIsoDate": "2026-04-21",
+  "recentResult": "Win 7-6 7-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Dellavedova M. - Ellis B.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m25-luzhou/",
+  "players": [
+    "Dellavedova M.",
+    "Ellis B."
+  ],
+  "generatedAt": "2026-06-02T02:39:37.556Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/WOTBl3D6/",
+  "matchId": "WOTBl3D6",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_WOTBl3D6",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_WOTBl3D6"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 8,
+        "duration": "0:55"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:09"
+      }
+    ],
+    "totalDuration": "2:04"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Dellavedova M.",
+              "rightPlayer": "Ellis B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dellavedova M.",
+              "rightPlayer": "Ellis B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dellavedova M.",
+              "rightPlayer": "Ellis B."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

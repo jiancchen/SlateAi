@@ -1,0 +1,710 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-duran-vs-napolitano-2026-06-02",
+  "boardTitle": "Tuncay Duran vs Stefano Napolitano",
+  "boardPlayerName": "Stefano Napolitano",
+  "recentOpponentName": "Moro Canas A.",
+  "recentIndex": 4,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 18, 26",
+  "recentIsoDate": "2026-05-18",
+  "recentResult": "Loss 6-4 6-7 0-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Moro Canas A. - Napolitano S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Moro Canas A.",
+    "Napolitano S."
+  ],
+  "generatedAt": "2026-06-02T02:39:25.830Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/KdYivmtA/",
+  "matchId": "KdYivmtA",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_KdYivmtA",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_KdYivmtA"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 4,
+        "duration": "1:13"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 0,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:39"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "4",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "61%",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (49/66)",
+              "right": "69% (41/59)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "52% (16/31)",
+              "right": "49% (18/37)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/8",
+              "right": "6/9",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "181 km/h",
+              "right": "185 km/h",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "148 km/h",
+              "right": "139 km/h",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (18/59)",
+              "right": "26% (17/66)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "51% (19/37)",
+              "right": "48% (15/31)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/9",
+              "right": "1/8",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "42",
+              "right": "23",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "38",
+              "right": "34",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Net points won",
+              "left": "62% (13/21)",
+              "right": "64% (16/25)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (65/97)",
+              "right": "61% (59/96)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (37/96)",
+              "right": "33% (32/97)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (102/193)",
+              "right": "47% (91/193)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "93% (13/14)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return games won",
+              "left": "21% (3/14)",
+              "right": "7% (1/14)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total games won",
+              "left": "57% (16/28)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "61%",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (12/16)",
+              "right": "84% (16/19)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "16% (3/19)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (6/12)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "6",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "9",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Net points won",
+              "left": "20% (1/5)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (17/26)",
+              "right": "71% (22/31)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (9/31)",
+              "right": "35% (9/26)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (26/57)",
+              "right": "54% (31/57)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "64%",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (28/38)",
+              "right": "74% (20/27)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (6/14)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/5",
+              "right": "3/3",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (7/27)",
+              "right": "26% (10/38)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (6/15)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "0/5",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "24",
+              "right": "13",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "14",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Net points won",
+              "left": "73% (8/11)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (34/52)",
+              "right": "69% (29/42)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (13/42)",
+              "right": "35% (18/52)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (47/94)",
+              "right": "50% (47/94)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "57%",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (9/12)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (5/7)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "3/6",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "62% (8/13)",
+              "right": "25% (3/12)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "70% (7/10)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "0/2",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "4",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "11",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (14/19)",
+              "right": "35% (8/23)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "65% (15/23)",
+              "right": "26% (5/19)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "69% (29/42)",
+              "right": "31% (13/42)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total games won",
+              "left": "100% (6/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Moro Canas A.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

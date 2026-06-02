@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02",
+  "boardTitle": "Luka Pavlovic vs Nikolas Sanchez Izquierdo",
+  "boardPlayerName": "Nikolas Sanchez Izquierdo",
+  "recentOpponentName": "Kuzmanov D.",
+  "recentIndex": 1,
+  "recentEvent": "Istanbul (Turkey)",
+  "recentDate": "May 21, 26",
+  "recentIsoDate": "2026-05-21",
+  "recentResult": "Win 6-0 6-7 6-1",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Kuzmanov D. - Sanchez Izquierdo N.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/istanbul/",
+  "players": [
+    "Kuzmanov D.",
+    "Sanchez Izquierdo N."
+  ],
+  "generatedAt": "2026-06-02T02:39:39.552Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/AXc6CLvK/",
+  "matchId": "AXc6CLvK",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_AXc6CLvK",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_AXc6CLvK"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:32"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 4,
+        "duration": "1:19"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:28"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "57%",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "51% (35/69)",
+              "right": "67% (30/45)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "35% (8/23)",
+              "right": "53% (18/34)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "12/20",
+              "right": "4/7",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (15/45)",
+              "right": "49% (34/69)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (16/34)",
+              "right": "65% (15/23)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "8/20",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "24",
+              "right": "15",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "55",
+              "right": "29",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Net points won",
+              "left": "64% (7/11)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "47% (43/92)",
+              "right": "61% (48/79)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (31/79)",
+              "right": "53% (49/92)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (74/171)",
+              "right": "57% (97/171)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (4/12)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Return games won",
+              "left": "23% (3/13)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Total games won",
+              "left": "28% (7/25)",
+              "right": "72% (18/25)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "83%",
+              "right": "44%",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "45% (9/20)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "0% (0/4)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "2/2",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "13% (1/8)",
+              "right": "55% (11/20)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (4/10)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "3/6",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "6",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "38% (9/24)",
+              "right": "72% (13/18)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (5/18)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "33% (14/42)",
+              "right": "67% (28/42)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "60%",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "54% (20/37)",
+              "right": "52% (11/21)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (7/16)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/9",
+              "right": "1/4",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "48% (10/21)",
+              "right": "46% (17/37)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (8/14)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "3/9",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "8",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "16",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "51% (27/53)",
+              "right": "49% (17/35)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (18/35)",
+              "right": "49% (26/53)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (45/88)",
+              "right": "49% (43/88)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "80%",
+              "right": "62%",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (6/12)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (1/3)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "1/1",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (4/16)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (4/10)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "2/5",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "7",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "47% (7/15)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (8/26)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (15/41)",
+              "right": "63% (26/41)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Kuzmanov D.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

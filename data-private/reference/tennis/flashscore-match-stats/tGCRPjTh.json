@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-galan-vs-rehberg-2026-06-02",
+  "boardTitle": "Daniel Elahi Galan vs Max Hans Rehberg",
+  "boardPlayerName": "Daniel Elahi Galan",
+  "recentOpponentName": "Choinski J.",
+  "recentIndex": 4,
+  "recentEvent": "Zagreb (Croatia)",
+  "recentDate": "May 14, 26",
+  "recentIsoDate": "2026-05-14",
+  "recentResult": "Loss 6-2 6-7 4-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Choinski J. - Galan D. E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/zagreb/",
+  "players": [
+    "Choinski J.",
+    "Galan D. E."
+  ],
+  "generatedAt": "2026-06-02T02:39:17.723Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/tGCRPjTh/",
+  "matchId": "tGCRPjTh",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_tGCRPjTh",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_tGCRPjTh"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 2,
+        "duration": "1:02"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:42"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "5",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "64%",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (45/63)",
+              "right": "67% (39/58)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (17/37)",
+              "right": "63% (20/32)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/11",
+              "right": "3/6",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (19/58)",
+              "right": "29% (18/63)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (12/32)",
+              "right": "54% (20/37)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "4/11",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "31",
+              "right": "18",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "44",
+              "right": "32",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Net points won",
+              "left": "77% (17/22)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (62/100)",
+              "right": "66% (59/90)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (31/90)",
+              "right": "38% (38/100)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (93/190)",
+              "right": "51% (97/190)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "73% (11/15)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (3/15)",
+              "right": "27% (4/15)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Total games won",
+              "left": "47% (14/30)",
+              "right": "53% (16/30)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "54%",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (12/21)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "30% (3/10)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "3/3",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (4/14)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (4/12)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "2/5",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "8",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "9",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (4/4)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (15/31)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (8/26)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (23/57)",
+              "right": "60% (34/57)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "66%",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (17/22)",
+              "right": "57% (13/23)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (8/17)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "0/2",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (10/23)",
+              "right": "23% (5/22)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (3/12)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "2/5",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "4",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "25",
+              "right": "14",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (6/9)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (25/39)",
+              "right": "63% (22/35)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (13/35)",
+              "right": "36% (14/39)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (38/74)",
+              "right": "49% (36/74)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "72%",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (16/20)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (5/21)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "6",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "9",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Net points won",
+              "left": "78% (7/9)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "73% (22/30)",
+              "right": "66% (19/29)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (10/29)",
+              "right": "27% (8/30)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (32/59)",
+              "right": "46% (27/59)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Galan D. E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

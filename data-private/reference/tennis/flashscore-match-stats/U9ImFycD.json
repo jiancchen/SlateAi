@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-molcan-vs-piros-2026-06-02",
+  "boardTitle": "Zsombor Piros vs Alex Molcan",
+  "boardPlayerName": "Zsombor Piros",
+  "recentOpponentName": "Choinski J.",
+  "recentIndex": 1,
+  "recentEvent": "Zagreb (Croatia)",
+  "recentDate": "May 17, 26",
+  "recentIsoDate": "2026-05-17",
+  "recentResult": "Loss 6-7 6-7",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Choinski J. - Piros Z.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/zagreb/",
+  "players": [
+    "Choinski J.",
+    "Piros Z."
+  ],
+  "generatedAt": "2026-06-02T02:39:34.966Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/U9ImFycD/",
+  "matchId": "U9ImFycD",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_U9ImFycD",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_U9ImFycD"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:51"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 2,
+        "duration": "1:10"
+      }
+    ],
+    "totalDuration": "2:01"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "59%",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (40/53)",
+              "right": "69% (35/51)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (18/32)",
+              "right": "54% (19/35)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "8/10",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (16/51)",
+              "right": "25% (13/53)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (16/35)",
+              "right": "44% (14/32)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/10",
+              "right": "2/4",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "20",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "28",
+              "right": "34",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "69% (9/13)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (58/85)",
+              "right": "63% (54/86)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (32/86)",
+              "right": "32% (27/85)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (90/171)",
+              "right": "47% (81/171)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (10/12)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (2/12)",
+              "right": "17% (2/12)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (12/24)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "63%",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (19/24)",
+              "right": "84% (21/25)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "89% (8/9)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/3",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "16% (4/25)",
+              "right": "21% (5/24)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (7/15)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "0/0",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "8",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "7",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "82% (28/34)",
+              "right": "73% (29/40)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (11/40)",
+              "right": "18% (6/34)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (39/74)",
+              "right": "47% (35/74)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "57%",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (21/29)",
+              "right": "54% (14/26)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (10/23)",
+              "right": "55% (11/20)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "5/7",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (12/26)",
+              "right": "28% (8/29)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (9/20)",
+              "right": "57% (13/23)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "2/4",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "12",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "27",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (30/51)",
+              "right": "54% (25/46)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (21/46)",
+              "right": "41% (21/51)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (51/97)",
+              "right": "47% (46/97)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

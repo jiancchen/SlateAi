@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-strombachs-vs-hurrion-2026-06-02",
+  "boardTitle": "Robert Strombachs vs Millen Hurrion",
+  "boardPlayerName": "Robert Strombachs",
+  "recentOpponentName": "Host T.",
+  "recentIndex": 4,
+  "recentEvent": "M15 Gaborone 2 (Botswana)",
+  "recentDate": "May 22, 26",
+  "recentIsoDate": "2026-05-22",
+  "recentResult": "Win 6-3 7-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Strombachs R. - Host T.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m15-gaborone-2/",
+  "players": [
+    "Strombachs R.",
+    "Host T."
+  ],
+  "generatedAt": "2026-06-02T02:39:29.034Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/tpCZJvuC/",
+  "matchId": "tpCZJvuC",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_tpCZJvuC",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_tpCZJvuC"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": ""
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Host T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Host T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Host T."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

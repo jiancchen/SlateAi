@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-butvilas-vs-svajda-2026-06-02",
+  "boardTitle": "Edas Butvilas vs Trevor Svajda",
+  "boardPlayerName": "Trevor Svajda",
+  "recentOpponentName": "Nardi L.",
+  "recentIndex": 2,
+  "recentEvent": "Indian Wells (USA)",
+  "recentDate": "Mar 03, 26",
+  "recentIsoDate": "2026-03-03",
+  "recentResult": "Win 4-6 7-6 6-3",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Nardi L. - Svajda T.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/indian-wells/",
+  "players": [
+    "Nardi L.",
+    "Svajda T."
+  ],
+  "generatedAt": "2026-06-02T02:39:36.894Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/K8hY0LTb/",
+  "matchId": "K8hY0LTb",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_K8hY0LTb",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_K8hY0LTb"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:43"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 7,
+        "duration": "0:51"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:13"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "50%",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (35/57)",
+              "right": "83% (43/52)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (34/53)",
+              "right": "50% (26/52)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/8",
+              "right": "3/5",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (9/52)",
+              "right": "39% (22/57)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (26/52)",
+              "right": "36% (19/53)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "3/8",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "31",
+              "right": "29",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "27",
+              "right": "11",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (8/10)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (69/110)",
+              "right": "66% (69/104)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (35/104)",
+              "right": "37% (41/110)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (104/214)",
+              "right": "51% (110/214)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "81% (13/16)",
+              "right": "87% (13/15)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Return games won",
+              "left": "13% (2/15)",
+              "right": "19% (3/16)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Total games won",
+              "left": "48% (15/31)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "46%",
+              "right": "44%",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (13/16)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (10/19)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "1/2",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (3/16)",
+              "right": "19% (3/16)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (11/20)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/1",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "6",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "5",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (23/35)",
+              "right": "61% (22/36)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (14/36)",
+              "right": "34% (12/35)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (37/71)",
+              "right": "48% (34/71)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "49%",
+              "right": "50%",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (12/19)",
+              "right": "90% (19/21)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "65% (13/20)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "0/1",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "10% (2/21)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (11/21)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "1/3",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "13",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "3",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (25/39)",
+              "right": "69% (29/42)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (13/42)",
+              "right": "36% (14/39)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (38/81)",
+              "right": "53% (43/81)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "58%",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "45% (10/22)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "79% (11/14)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "2/2",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (4/15)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "21% (3/14)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "2/4",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "10",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (21/36)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (8/26)",
+              "right": "42% (15/36)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (29/62)",
+              "right": "53% (33/62)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Nardi L.",
+              "rightPlayer": "Svajda T."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

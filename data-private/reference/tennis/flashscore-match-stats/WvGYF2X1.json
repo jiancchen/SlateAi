@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-reis-da-silva-vs-barrena-2026-06-02",
+  "boardTitle": "Joao Lucas Reis Da Silva vs Alex Barrena",
+  "boardPlayerName": "Alex Barrena",
+  "recentOpponentName": "Brunold M.",
+  "recentIndex": 3,
+  "recentEvent": "Mauthausen (Austria)",
+  "recentDate": "Apr 28, 26",
+  "recentIsoDate": "2026-04-28",
+  "recentResult": "Loss 3-6 6-4 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Brunold M. - Barrena A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/mauthausen/",
+  "players": [
+    "Brunold M.",
+    "Barrena A."
+  ],
+  "generatedAt": "2026-06-02T02:39:20.137Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/WvGYF2X1/",
+  "matchId": "WvGYF2X1",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_WvGYF2X1",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_WvGYF2X1"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:35"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:53"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:11"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "5",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "66%",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (29/50)",
+              "right": "69% (35/51)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "68% (28/41)",
+              "right": "35% (9/26)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/8",
+              "right": "1/6",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (16/51)",
+              "right": "42% (21/50)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "65% (17/26)",
+              "right": "32% (13/41)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/6",
+              "right": "3/8",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "37",
+              "right": "13",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "48",
+              "right": "29",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Net points won",
+              "left": "79% (11/14)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (57/91)",
+              "right": "57% (44/77)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (33/77)",
+              "right": "37% (34/91)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (90/168)",
+              "right": "46% (78/168)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "9",
+              "right": "1",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "79% (11/14)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Return games won",
+              "left": "36% (5/14)",
+              "right": "21% (3/14)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Total games won",
+              "left": "57% (16/28)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "71%",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (11/13)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (10/14)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (3/15)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (4/6)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "3",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "8",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "77% (20/26)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (7/21)",
+              "right": "23% (6/26)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (27/47)",
+              "right": "43% (20/47)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "55%",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "48% (14/29)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "70% (7/10)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "0/1",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (5/16)",
+              "right": "48% (14/29)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (8/13)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/6",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "7",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "13",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (3/6)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (21/38)",
+              "right": "62% (18/29)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (11/29)",
+              "right": "45% (17/38)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (32/67)",
+              "right": "52% (35/67)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "32%",
+              "right": "74%",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (4/8)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "65% (11/17)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/3",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (8/20)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (5/7)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "1/2",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "3",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "8",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (5/5)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (16/27)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "56% (15/27)",
+              "right": "41% (11/27)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (31/54)",
+              "right": "43% (23/54)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Brunold M.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

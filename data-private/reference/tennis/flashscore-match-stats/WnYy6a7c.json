@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-sachko-vs-kumstat-2026-06-02",
+  "boardTitle": "Vitaliy Sachko vs Jan Kumstat",
+  "boardPlayerName": "Jan Kumstat",
+  "recentOpponentName": "Prihodko O.",
+  "recentIndex": 0,
+  "recentEvent": "Prostejov (Czech Republic)",
+  "recentDate": "Jun 01, 26",
+  "recentIsoDate": "2026-06-01",
+  "recentResult": "Win 6-4 6-7 6-2",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Prihodko O. - Kumstat J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/prostejov/",
+  "players": [
+    "Prihodko O.",
+    "Kumstat J."
+  ],
+  "generatedAt": "2026-06-02T02:39:39.321Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/WnYy6a7c/",
+  "matchId": "WnYy6a7c",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_WnYy6a7c",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_WnYy6a7c"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:34"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 12,
+        "rightGames": 10,
+        "duration": "0:59"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:09"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "10",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "78%",
+              "right": "63%",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (51/74)",
+              "right": "82% (53/65)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "62% (13/21)",
+              "right": "51% (20/39)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "4/4",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "18% (12/65)",
+              "right": "31% (23/74)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "49% (19/39)",
+              "right": "38% (8/21)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/4",
+              "right": "3/7",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "29",
+              "right": "38",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "23",
+              "right": "37",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Net points won",
+              "left": "55% (6/11)",
+              "right": "84% (16/19)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (64/95)",
+              "right": "70% (73/104)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (31/104)",
+              "right": "33% (31/95)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (95/199)",
+              "right": "52% (104/199)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (12/15)",
+              "right": "100% (15/15)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/15)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (12/30)",
+              "right": "60% (18/30)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "7",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "66%",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (15/20)",
+              "right": "89% (17/19)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (4/7)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "2/2",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (5/19)",
+              "right": "30% (6/20)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (6/10)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "1/2",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "15",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "8",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (18/26)",
+              "right": "73% (22/30)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (8/30)",
+              "right": "31% (8/26)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (26/56)",
+              "right": "54% (30/56)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "2",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "80%",
+              "right": "60%",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (27/36)",
+              "right": "79% (23/29)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (6/29)",
+              "right": "22% (8/36)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (9/19)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "16",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "21",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (3/6)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (34/46)",
+              "right": "68% (32/47)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (15/47)",
+              "right": "26% (12/46)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (49/93)",
+              "right": "47% (44/93)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "78%",
+              "right": "63%",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (9/18)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "80% (4/5)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "2/2",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "6% (1/17)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (4/10)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "2/4",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "7",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "8",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (12/23)",
+              "right": "70% (19/27)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (8/27)",
+              "right": "48% (11/23)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (20/50)",
+              "right": "60% (30/50)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Prihodko O.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

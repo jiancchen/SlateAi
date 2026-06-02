@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-chidekh-vs-romano-2026-06-02",
+  "boardTitle": "Clement Chidekh vs Filippo Romano",
+  "boardPlayerName": "Clement Chidekh",
+  "recentOpponentName": "Broom C.",
+  "recentIndex": 0,
+  "recentEvent": "Birmingham (United Kingdom)",
+  "recentDate": "Jun 01, 26",
+  "recentIsoDate": "2026-06-01",
+  "recentResult": "Win 6-3 7-6",
+  "recentSurface": "Grass",
+  "flashscoreLabel": "Chidekh C. - Broom C.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/birmingham/",
+  "players": [
+    "Chidekh C.",
+    "Broom C."
+  ],
+  "generatedAt": "2026-06-02T02:39:21.129Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Oh1UyqUj/",
+  "matchId": "Oh1UyqUj",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Oh1UyqUj",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Oh1UyqUj"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 3,
+        "duration": "1:16"
+      }
+    ],
+    "totalDuration": "1:53"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "5",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "63%",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (50/67)",
+              "right": "65% (28/43)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (13/30)",
+              "right": "64% (16/25)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "14/15",
+              "right": "8/10",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (15/43)",
+              "right": "25% (17/67)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (9/25)",
+              "right": "57% (17/30)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/10",
+              "right": "1/15",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "23",
+              "right": "19",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "32",
+              "right": "32",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (63/97)",
+              "right": "65% (44/68)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (24/68)",
+              "right": "35% (34/97)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (87/165)",
+              "right": "47% (78/165)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "91% (10/11)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (2/10)",
+              "right": "9% (1/11)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Total games won",
+              "left": "57% (12/21)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "68%",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (20/26)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (2/7)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "3/4",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (6/17)",
+              "right": "27% (7/26)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "0/4",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "6",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "11",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (22/33)",
+              "right": "64% (16/25)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (9/25)",
+              "right": "33% (11/33)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (31/58)",
+              "right": "47% (27/58)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "60%",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (30/41)",
+              "right": "65% (17/26)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (11/23)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "10/11",
+              "right": "5/6",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (9/26)",
+              "right": "24% (10/41)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "35% (6/17)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/6",
+              "right": "1/11",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "13",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "21",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (41/64)",
+              "right": "65% (28/43)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (15/43)",
+              "right": "36% (23/64)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (56/107)",
+              "right": "48% (51/107)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Broom C."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

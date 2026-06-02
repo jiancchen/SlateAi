@@ -1,0 +1,612 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-lajal-vs-riedi-2026-06-02",
+  "boardTitle": "Leandro Riedi vs Mark Lajal",
+  "boardPlayerName": "Mark Lajal",
+  "recentOpponentName": "Kukushkin M.",
+  "recentIndex": 3,
+  "recentEvent": "Wuxi (China)",
+  "recentDate": "May 06, 26",
+  "recentIsoDate": "2026-05-06",
+  "recentResult": "Win 7-6 6-7 7-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Lajal M. - Kukushkin M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/wuxi/",
+  "players": [
+    "Lajal M.",
+    "Kukushkin M."
+  ],
+  "generatedAt": "2026-06-02T02:39:22.904Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/W0eyUfAd/",
+  "matchId": "W0eyUfAd",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_W0eyUfAd",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_W0eyUfAd"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 10,
+        "rightGames": 8,
+        "duration": "1:09"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 7,
+        "duration": "1:03"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 7,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:49"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "18",
+              "right": "5",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "66%",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (77/103)",
+              "right": "73% (68/93)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (22/55)",
+              "right": "45% (21/47)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "17/18",
+              "right": "6/7",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (25/93)",
+              "right": "25% (26/103)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (26/47)",
+              "right": "60% (33/55)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/7",
+              "right": "1/18",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "64% (100/157)",
+              "right": "64% (90/140)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (50/140)",
+              "right": "36% (57/157)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (150/297)",
+              "right": "49% (147/297)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "94% (17/18)",
+              "right": "94% (17/18)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Return games won",
+              "left": "6% (1/18)",
+              "right": "6% (1/18)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (18/36)",
+              "right": "50% (18/36)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "4",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "72%",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (32/40)",
+              "right": "76% (25/33)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "27% (4/15)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (8/33)",
+              "right": "20% (8/40)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (7/13)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "69% (37/54)",
+              "right": "70% (32/46)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (14/46)",
+              "right": "31% (17/54)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (51/100)",
+              "right": "49% (49/100)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "0",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "60%",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (19/27)",
+              "right": "73% (22/30)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "3/4",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (8/30)",
+              "right": "30% (8/27)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (11/20)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "1/1",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "62% (23/37)",
+              "right": "62% (31/50)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (19/50)",
+              "right": "38% (14/37)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (42/87)",
+              "right": "52% (45/87)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "1",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "68%",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (26/36)",
+              "right": "70% (21/30)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (14/30)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "15/15",
+              "right": "3/3",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (9/30)",
+              "right": "28% (10/36)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (8/14)",
+              "right": "53% (16/30)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "0/15",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "61% (40/66)",
+              "right": "61% (27/44)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (17/44)",
+              "right": "39% (26/66)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (57/110)",
+              "right": "48% (53/110)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kukushkin M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

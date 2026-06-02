@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-lajal-vs-riedi-2026-06-02",
+  "boardTitle": "Leandro Riedi vs Mark Lajal",
+  "boardPlayerName": "Mark Lajal",
+  "recentOpponentName": "Kwon S.",
+  "recentIndex": 1,
+  "recentEvent": "Wuxi (China)",
+  "recentDate": "May 09, 26",
+  "recentIsoDate": "2026-05-09",
+  "recentResult": "Loss 6-7 3-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Lajal M. - Kwon S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/wuxi/",
+  "players": [
+    "Lajal M.",
+    "Kwon S."
+  ],
+  "generatedAt": "2026-06-02T02:39:22.868Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/tIR9xGio/",
+  "matchId": "tIR9xGio",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_tIR9xGio",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_tIR9xGio"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:59"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "1:01"
+      }
+    ],
+    "totalDuration": "2:00"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "11",
+              "right": "6",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "56%",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (35/57)",
+              "right": "78% (32/41)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (15/34)",
+              "right": "44% (14/32)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "11/14",
+              "right": "2/4",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (9/41)",
+              "right": "39% (22/57)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (18/32)",
+              "right": "56% (19/34)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "3/14",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "22",
+              "right": "27",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "33",
+              "right": "32",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Net points won",
+              "left": "42% (5/12)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (50/91)",
+              "right": "63% (46/73)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (27/73)",
+              "right": "45% (41/91)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (77/164)",
+              "right": "53% (87/164)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "70% (7/10)",
+              "right": "82% (9/11)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Return games won",
+              "left": "18% (2/11)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Total games won",
+              "left": "43% (9/21)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "2",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "50%",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (22/34)",
+              "right": "84% (16/19)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (4/14)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "0/2",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "16% (3/19)",
+              "right": "35% (12/34)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (12/19)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "2/6",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "12",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "15",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Net points won",
+              "left": "57% (4/7)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (26/48)",
+              "right": "61% (23/38)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (15/38)",
+              "right": "46% (22/48)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (41/86)",
+              "right": "52% (45/86)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "63%",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (13/23)",
+              "right": "73% (16/22)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (11/20)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/8",
+              "right": "2/2",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (6/22)",
+              "right": "43% (10/23)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (6/13)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "1/8",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "15",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "17",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Net points won",
+              "left": "20% (1/5)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (24/43)",
+              "right": "66% (23/35)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (12/35)",
+              "right": "44% (19/43)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (36/78)",
+              "right": "54% (42/78)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Kwon S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

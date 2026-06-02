@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-legout-vs-andrade-2026-06-02",
+  "boardTitle": "Timo Legout vs Andres Andrade",
+  "boardPlayerName": "Andres Andrade",
+  "recentOpponentName": "Basavareddy N.",
+  "recentIndex": 4,
+  "recentEvent": "Savannah (USA)",
+  "recentDate": "Apr 24, 26",
+  "recentIsoDate": "2026-04-24",
+  "recentResult": "Loss 3-6 2-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Andrade A. - Basavareddy N.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/savannah/",
+  "players": [
+    "Andrade A.",
+    "Basavareddy N."
+  ],
+  "generatedAt": "2026-06-02T02:39:37.155Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/KAuALZ2L/",
+  "matchId": "KAuALZ2L",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_KAuALZ2L",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_KAuALZ2L"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:46"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:38"
+      }
+    ],
+    "totalDuration": "1:24"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "56%",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (15/29)",
+              "right": "68% (19/28)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (7/21)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/7",
+              "right": "1/3",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (9/28)",
+              "right": "48% (14/29)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "41% (9/22)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "5/7",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "15",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "30",
+              "right": "16",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Net points won",
+              "left": "58% (7/12)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "45% (22/49)",
+              "right": "64% (32/50)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (18/50)",
+              "right": "55% (27/49)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (40/99)",
+              "right": "60% (59/99)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "38% (3/8)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return games won",
+              "left": "22% (2/9)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total games won",
+              "left": "29% (5/17)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "57%",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (10/19)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (3/12)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "1/3",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (5/17)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (7/13)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "3/5",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "7",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "12",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "43% (12/28)",
+              "right": "55% (16/29)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (13/29)",
+              "right": "57% (16/28)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (25/57)",
+              "right": "56% (32/57)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "55%",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (5/10)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/0",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (4/11)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "22% (2/9)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/2",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "8",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "4",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Net points won",
+              "left": "57% (4/7)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (10/21)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (5/21)",
+              "right": "52% (11/21)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (15/42)",
+              "right": "64% (27/42)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Andrade A.",
+              "rightPlayer": "Basavareddy N."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

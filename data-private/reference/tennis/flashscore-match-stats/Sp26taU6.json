@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-baez-vs-gueymard-wayenburg-2026-06-02",
+  "boardTitle": "Sebastian Baez vs Sascha Gueymard Wayenburg",
+  "boardPlayerName": "Sascha Gueymard Wayenburg",
+  "recentOpponentName": "Reymond A.",
+  "recentIndex": 3,
+  "recentEvent": "Francavilla (Italy)",
+  "recentDate": "May 03, 26",
+  "recentIsoDate": "2026-05-03",
+  "recentResult": "Win 6-2 6-3",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Gueymard Wayenburg S. - Reymond A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/francavilla/",
+  "players": [
+    "Gueymard Wayenburg S.",
+    "Reymond A."
+  ],
+  "generatedAt": "2026-06-02T02:39:32.371Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Sp26taU6/",
+  "matchId": "Sp26taU6",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Sp26taU6",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Sp26taU6"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:31"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:32"
+      }
+    ],
+    "totalDuration": "1:03"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "45%",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (22/27)",
+              "right": "65% (15/23)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "73% (11/15)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "3/7",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (8/23)",
+              "right": "19% (5/27)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (16/28)",
+              "right": "27% (4/15)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/7",
+              "right": "1/1",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "13",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "22",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (12/17)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "79% (33/42)",
+              "right": "53% (27/51)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (24/51)",
+              "right": "21% (9/42)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (57/93)",
+              "right": "39% (36/93)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "89% (8/9)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (4/8)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "40%",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (8/11)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "27% (4/15)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "3/6",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (4/10)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "73% (11/15)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "1/1",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "7",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "12",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Net points won",
+              "left": "88% (7/8)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (13/20)",
+              "right": "40% (10/25)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "60% (15/25)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "62% (28/45)",
+              "right": "38% (17/45)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "50%",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (14/16)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "100% (6/6)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (4/13)",
+              "right": "13% (2/16)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (5/13)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "10",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Net points won",
+              "left": "56% (5/9)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "91% (20/22)",
+              "right": "65% (17/26)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (9/26)",
+              "right": "9% (2/22)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (29/48)",
+              "right": "40% (19/48)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Gueymard Wayenburg S.",
+              "rightPlayer": "Reymond A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

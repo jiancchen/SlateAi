@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-sun-vs-ilagan-2026-06-02",
+  "boardTitle": "Fajing Sun vs Andre Ilagan",
+  "boardPlayerName": "Fajing Sun",
+  "recentOpponentName": "Sanchez Quilez A.",
+  "recentIndex": 3,
+  "recentEvent": "Valencia (Spain)",
+  "recentDate": "May 11, 26",
+  "recentIsoDate": "2026-05-11",
+  "recentResult": "Loss 7-6 2-6 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Sun F. - Sanchez Quilez A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/valencia/",
+  "players": [
+    "Sun F.",
+    "Sanchez Quilez A."
+  ],
+  "generatedAt": "2026-06-02T02:39:40.012Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/WOZlqZMi/",
+  "matchId": "WOZlqZMi",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_WOZlqZMi",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_WOZlqZMi"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 3,
+        "duration": "1:17"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:42"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "5",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "60%",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (40/68)",
+              "right": "77% (40/52)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (20/43)",
+              "right": "54% (19/35)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/13",
+              "right": "0/1",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (13/52)",
+              "right": "43% (29/68)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (16/35)",
+              "right": "53% (23/43)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "5/13",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "30",
+              "right": "29",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "51",
+              "right": "28",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Net points won",
+              "left": "81% (21/26)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (59/106)",
+              "right": "68% (59/87)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (28/87)",
+              "right": "44% (47/106)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (87/193)",
+              "right": "55% (106/193)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (10/15)",
+              "right": "93% (13/14)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Return games won",
+              "left": "7% (1/14)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Total games won",
+              "left": "38% (11/29)",
+              "right": "62% (18/29)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "58%",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (22/33)",
+              "right": "77% (20/26)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (9/19)",
+              "right": "42% (8/19)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/7",
+              "right": "0/1",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (7/26)",
+              "right": "33% (11/33)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (11/19)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "1/7",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "16",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "15",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (10/12)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (31/52)",
+              "right": "60% (26/43)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (17/43)",
+              "right": "40% (21/52)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (48/95)",
+              "right": "49% (47/95)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "62%",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "43% (6/14)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (4/13)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (2/8)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "6",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "7",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (13/27)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (7/24)",
+              "right": "52% (14/27)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (20/51)",
+              "right": "61% (31/51)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "62%",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (12/21)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (4/11)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/0",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (2/13)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/2",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "7",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "6",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (6/7)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (15/27)",
+              "right": "80% (16/20)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (4/20)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (19/47)",
+              "right": "60% (28/47)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Sun F.",
+              "rightPlayer": "Sanchez Quilez A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

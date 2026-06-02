@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-peliwo-vs-coulibaly-2026-06-02",
+  "boardTitle": "Filip Peliwo vs Eliakim Coulibaly",
+  "boardPlayerName": "Eliakim Coulibaly",
+  "recentOpponentName": "Brown P.",
+  "recentIndex": 3,
+  "recentEvent": "Centurion (South Africa)",
+  "recentDate": "May 26, 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "Win 6-4 6-2",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Brown P. - Coulibaly E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion/",
+  "players": [
+    "Brown P.",
+    "Coulibaly E."
+  ],
+  "generatedAt": "2026-06-02T02:39:28.314Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/E1Qd80VQ/",
+  "matchId": "E1Qd80VQ",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_E1Qd80VQ",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_E1Qd80VQ"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:43"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:36"
+      }
+    ],
+    "totalDuration": "1:19"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "7",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "58%",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (17/29)",
+              "right": "77% (27/35)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (11/20)",
+              "right": "60% (15/25)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "6/6",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (8/35)",
+              "right": "41% (12/29)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (10/25)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/6",
+              "right": "3/4",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "16",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "29",
+              "right": "27",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Net points won",
+              "left": "45% (5/11)",
+              "right": "267% (8/3)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (28/49)",
+              "right": "70% (42/60)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (18/60)",
+              "right": "43% (21/49)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (46/109)",
+              "right": "58% (63/109)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "1",
+              "right": "9",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (6/9)",
+              "right": "100% (9/9)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (6/18)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "56%",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (10/17)",
+              "right": "83% (15/18)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "73% (8/11)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "5/5",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (3/18)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (6/14)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/5",
+              "right": "1/2",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "11",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "17",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (18/28)",
+              "right": "72% (23/32)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (9/32)",
+              "right": "36% (10/28)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (27/60)",
+              "right": "55% (33/60)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "61%",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (7/12)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (3/9)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "1/1",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (5/17)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "2/2",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "5",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "10",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Net points won",
+              "left": "44% (4/9)",
+              "right": "600% (6/1)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (10/21)",
+              "right": "68% (19/28)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (9/28)",
+              "right": "52% (11/21)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (19/49)",
+              "right": "61% (30/49)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Brown P.",
+              "rightPlayer": "Coulibaly E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

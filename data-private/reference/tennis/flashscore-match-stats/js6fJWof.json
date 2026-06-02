@@ -1,0 +1,546 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-carballes-baena-vs-carboni-2026-06-02",
+  "boardTitle": "Lorenzo Carboni vs Roberto Carballes Baena",
+  "boardPlayerName": "Roberto Carballes Baena",
+  "recentOpponentName": "Midon L.",
+  "recentIndex": 2,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 19, 26",
+  "recentIsoDate": "2026-05-19",
+  "recentResult": "Win 6-4 7-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Midon L. - Carballes Baena R.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Midon L.",
+    "Carballes Baena R."
+  ],
+  "generatedAt": "2026-06-02T02:39:30.904Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/js6fJWof/",
+  "matchId": "js6fJWof",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_js6fJWof",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_js6fJWof"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 0,
+        "rightGames": 7,
+        "duration": "1:32"
+      }
+    ],
+    "totalDuration": "2:13"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "63%",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (28/53)",
+              "right": "58% (29/50)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (11/26)",
+              "right": "60% (18/30)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "9/14",
+              "right": "4/8",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "177 km/h",
+              "right": "173 km/h",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "131 km/h",
+              "right": "136 km/h",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (21/50)",
+              "right": "47% (25/53)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (12/30)",
+              "right": "58% (15/26)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/8",
+              "right": "5/14",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "26",
+              "right": "23",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "36",
+              "right": "24",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Net points won",
+              "left": "73% (16/22)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "49% (39/79)",
+              "right": "59% (47/80)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (33/80)",
+              "right": "51% (40/79)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (72/159)",
+              "right": "55% (87/159)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "0",
+              "right": "10",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "55% (6/11)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Return games won",
+              "left": "36% (4/11)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Total games won",
+              "left": "45% (10/22)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "71%",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (11/20)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (3/6)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "2/3",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (10/22)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "11% (1/9)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "2/4",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "8",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "7",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (6/9)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (14/26)",
+              "right": "65% (20/31)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (11/31)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (25/57)",
+              "right": "56% (32/57)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "57%",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (17/33)",
+              "right": "61% (17/28)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (8/20)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/10",
+              "right": "2/5",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (11/28)",
+              "right": "48% (16/33)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (11/21)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "3/10",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "15",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "17",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Net points won",
+              "left": "77% (10/13)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "47% (25/53)",
+              "right": "55% (27/49)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (22/49)",
+              "right": "53% (28/53)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (47/102)",
+              "right": "54% (55/102)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Midon L.",
+              "rightPlayer": "Carballes Baena R."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

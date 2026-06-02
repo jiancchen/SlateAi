@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-mukund-vs-hussey-2026-06-02",
+  "boardTitle": "Giles Hussey vs Sasikumar Mukund",
+  "boardPlayerName": "Sasikumar Mukund",
+  "recentOpponentName": "Stewart H.",
+  "recentIndex": 4,
+  "recentEvent": "Bengaluru 2 (India)",
+  "recentDate": "May 13, 26",
+  "recentIsoDate": "2026-05-13",
+  "recentResult": "Loss 4-6 4-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Sasikumar M. - Stewart H.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/bengaluru-2/",
+  "players": [
+    "Sasikumar M.",
+    "Stewart H."
+  ],
+  "generatedAt": "2026-06-02T02:39:27.284Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/zmsycWck/",
+  "matchId": "zmsycWck",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_zmsycWck",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_zmsycWck"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:51"
+      }
+    ],
+    "totalDuration": "1:33"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "10",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "65%",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (26/41)",
+              "right": "94% (30/32)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (18/34)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "0/0",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "6% (2/32)",
+              "right": "37% (15/41)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "35% (6/17)",
+              "right": "47% (16/34)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/6",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "22",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "29",
+              "right": "18",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (44/75)",
+              "right": "84% (41/49)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "16% (8/49)",
+              "right": "41% (31/75)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (52/124)",
+              "right": "58% (72/124)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (8/10)",
+              "right": "100% (10/10)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/10)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (8/20)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "6",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "67%",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (14/21)",
+              "right": "88% (14/16)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (9/18)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "0/0",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "13% (2/16)",
+              "right": "33% (7/21)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (2/8)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/5",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "12",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "10",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (23/39)",
+              "right": "83% (20/24)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "17% (4/24)",
+              "right": "41% (16/39)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (27/63)",
+              "right": "57% (36/63)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "64%",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (12/20)",
+              "right": "100% (16/16)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (9/16)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "0% (0/16)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (4/9)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "10",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "8",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (21/36)",
+              "right": "84% (21/25)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "16% (4/25)",
+              "right": "42% (15/36)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (25/61)",
+              "right": "59% (36/61)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Stewart H."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

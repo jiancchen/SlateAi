@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-basile-vs-travaglia-2026-06-02",
+  "boardTitle": "Pierluigi Basile vs Stefano Travaglia",
+  "boardPlayerName": "Stefano Travaglia",
+  "recentOpponentName": "Squire H.",
+  "recentIndex": 2,
+  "recentEvent": "Vicenza (Italy)",
+  "recentDate": "May 27, 26",
+  "recentIsoDate": "2026-05-27",
+  "recentResult": "Win 6-4 6-2",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Travaglia S. - Squire H.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/vicenza/",
+  "players": [
+    "Travaglia S.",
+    "Squire H."
+  ],
+  "generatedAt": "2026-06-02T02:39:29.787Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/djaTXf0L/",
+  "matchId": "djaTXf0L",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_djaTXf0L",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_djaTXf0L"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:59"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:40"
+      }
+    ],
+    "totalDuration": "1:39"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "9",
+              "right": "2",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "9",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "71%",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (28/48)",
+              "right": "48% (19/40)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (17/32)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "16/19",
+              "right": "2/8",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "53% (21/40)",
+              "right": "42% (20/48)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "69% (11/16)",
+              "right": "47% (15/32)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/8",
+              "right": "3/19",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "20",
+              "right": "26",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "4",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (45/80)",
+              "right": "43% (25/58)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "57% (33/58)",
+              "right": "44% (35/80)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (78/138)",
+              "right": "43% (60/138)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "9",
+              "right": "1",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (12/18)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "0",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "6",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "68%",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (21/31)",
+              "right": "65% (15/23)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (11/23)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "14/15",
+              "right": "2/4",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (8/23)",
+              "right": "35% (11/31)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (7/11)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/15",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "17",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "4",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (32/56)",
+              "right": "56% (19/34)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (15/34)",
+              "right": "43% (24/56)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (47/90)",
+              "right": "48% (43/90)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "77%",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "41% (7/17)",
+              "right": "24% (4/17)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (6/9)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "0/4",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "76% (13/17)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "80% (4/5)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/4",
+              "right": "2/4",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "9",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/1)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (13/24)",
+              "right": "25% (6/24)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "75% (18/24)",
+              "right": "46% (11/24)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "65% (31/48)",
+              "right": "35% (17/48)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Squire H."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

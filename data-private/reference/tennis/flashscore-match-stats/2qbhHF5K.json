@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-bellucci-vs-bolt-2026-06-02",
+  "boardTitle": "Mattia Bellucci vs Alex Bolt",
+  "boardPlayerName": "Alex Bolt",
+  "recentOpponentName": "Hussey G.",
+  "recentIndex": 4,
+  "recentEvent": "Jiujiang (China)",
+  "recentDate": "Apr 30, 26",
+  "recentIsoDate": "2026-04-30",
+  "recentResult": "Win 6-2 6-3",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Hussey G. - Bolt A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/jiujiang/",
+  "players": [
+    "Hussey G.",
+    "Bolt A."
+  ],
+  "generatedAt": "2026-06-02T02:39:21.463Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/2qbhHF5K/",
+  "matchId": "2qbhHF5K",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_2qbhHF5K",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_2qbhHF5K"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:32"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:35"
+      }
+    ],
+    "totalDuration": "1:07"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "4",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "72%",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (17/29)",
+              "right": "70% (23/33)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (11/22)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/7",
+              "right": "1/2",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (10/33)",
+              "right": "41% (12/29)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "23% (3/13)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "4/7",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "19",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "16",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (28/51)",
+              "right": "72% (33/46)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (13/46)",
+              "right": "45% (23/51)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (41/97)",
+              "right": "58% (56/97)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (4/8)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Return games won",
+              "left": "11% (1/9)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Total games won",
+              "left": "29% (5/17)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "74%",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (8/14)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "1/1",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (5/17)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "17% (1/6)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "2/3",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "11",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "8",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (14/26)",
+              "right": "74% (17/23)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (6/23)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (20/49)",
+              "right": "59% (29/49)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "70%",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (9/15)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "0/1",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (5/16)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (2/7)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/4",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "8",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "8",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (14/25)",
+              "right": "70% (16/23)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (7/23)",
+              "right": "44% (11/25)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (21/48)",
+              "right": "56% (27/48)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Hussey G.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

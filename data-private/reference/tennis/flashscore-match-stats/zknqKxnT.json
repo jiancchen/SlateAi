@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-chidekh-vs-romano-2026-06-02",
+  "boardTitle": "Clement Chidekh vs Filippo Romano",
+  "boardPlayerName": "Clement Chidekh",
+  "recentOpponentName": "Jansen W.",
+  "recentIndex": 1,
+  "recentEvent": "Birmingham (United Kingdom)",
+  "recentDate": "May 31, 26",
+  "recentIsoDate": "2026-05-31",
+  "recentResult": "Win 6-1 6-4",
+  "recentSurface": "Grass",
+  "flashscoreLabel": "Chidekh C. - Jansen W.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/birmingham/",
+  "players": [
+    "Chidekh C.",
+    "Jansen W."
+  ],
+  "generatedAt": "2026-06-02T02:39:21.138Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/zknqKxnT/",
+  "matchId": "zknqKxnT",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_zknqKxnT",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_zknqKxnT"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:24"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:45"
+      }
+    ],
+    "totalDuration": "1:09"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "5",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "51%",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "86% (32/37)",
+              "right": "57% (13/23)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (8/15)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "2/5",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (10/23)",
+              "right": "14% (5/37)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (10/22)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "0/4",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "9",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "18",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "77% (40/52)",
+              "right": "56% (25/45)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (20/45)",
+              "right": "23% (12/52)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "62% (60/97)",
+              "right": "38% (37/97)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (9/9)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Return games won",
+              "left": "38% (3/8)",
+              "right": "0% (0/9)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "54%",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (15/17)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (2/5)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/2",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "57% (4/7)",
+              "right": "18% (3/17)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (4/6)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/1",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "2",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "7",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "78% (18/23)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "62% (8/13)",
+              "right": "22% (5/23)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "72% (26/36)",
+              "right": "28% (10/36)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "50%",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (17/20)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "2/3",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (6/16)",
+              "right": "10% (2/20)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (6/16)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "0/3",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "7",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "11",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (22/29)",
+              "right": "63% (20/32)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (12/32)",
+              "right": "24% (7/29)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (34/61)",
+              "right": "44% (27/61)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Jansen W."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

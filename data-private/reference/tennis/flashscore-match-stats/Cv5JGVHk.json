@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-bautista-agut-vs-barton-2026-06-02",
+  "boardTitle": "Hynek Barton vs Roberto Bautista Agut",
+  "boardPlayerName": "Roberto Bautista Agut",
+  "recentOpponentName": "Maestrelli F.",
+  "recentIndex": 4,
+  "recentEvent": "Rome (Italy)",
+  "recentDate": "May 07, 26",
+  "recentIsoDate": "2026-05-07",
+  "recentResult": "Win 6-3 7-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Bautista-Agut R. - Maestrelli F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/",
+  "players": [
+    "Bautista-Agut R.",
+    "Maestrelli F."
+  ],
+  "generatedAt": "2026-06-02T02:39:32.736Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Cv5JGVHk/",
+  "matchId": "Cv5JGVHk",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Cv5JGVHk",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Cv5JGVHk"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:58"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 2,
+        "duration": "1:03"
+      }
+    ],
+    "totalDuration": "2:01"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "74%",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (44/58)",
+              "right": "68% (38/56)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (11/20)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "7/8",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (18/56)",
+              "right": "24% (14/58)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (10/20)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/8",
+              "right": "0/3",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "26",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "28",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Net points won",
+              "left": "82% (9/11)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (55/78)",
+              "right": "63% (48/76)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (28/76)",
+              "right": "29% (23/78)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (83/154)",
+              "right": "46% (71/154)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (11/11)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Return games won",
+              "left": "10% (1/10)",
+              "right": "0% (0/11)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Total games won",
+              "left": "57% (12/21)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "77%",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (21/31)",
+              "right": "63% (17/27)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "6/7",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (10/27)",
+              "right": "32% (10/31)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/7",
+              "right": "0/3",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "8",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "18",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (27/43)",
+              "right": "57% (20/35)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (15/35)",
+              "right": "37% (16/43)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (42/78)",
+              "right": "46% (36/78)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "71%",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (23/27)",
+              "right": "72% (21/29)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (5/8)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (8/29)",
+              "right": "15% (4/27)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "18",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "3",
+              "right": "10",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "80% (28/35)",
+              "right": "68% (28/41)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (13/41)",
+              "right": "20% (7/35)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (41/76)",
+              "right": "46% (35/76)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Bautista-Agut R.",
+              "rightPlayer": "Maestrelli F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

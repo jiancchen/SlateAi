@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-royer-vs-alvarez-varona-2026-06-02",
+  "boardTitle": "Valentin Royer vs Nicolas Alvarez Varona",
+  "boardPlayerName": "Nicolas Alvarez Varona",
+  "recentOpponentName": "Winter Lopez B.",
+  "recentIndex": 1,
+  "recentEvent": "Perugia (Italy)",
+  "recentDate": "May 31, 26",
+  "recentIsoDate": "2026-05-31",
+  "recentResult": "Win 6-1 6-3",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Winter Lopez B. - Alvarez Varona N.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/perugia/",
+  "players": [
+    "Winter Lopez B.",
+    "Alvarez Varona N."
+  ],
+  "generatedAt": "2026-06-02T02:39:32.473Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/jPb37a2N/",
+  "matchId": "jPb37a2N",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_jPb37a2N",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_jPb37a2N"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:29"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:41"
+      }
+    ],
+    "totalDuration": "1:10"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "51%",
+              "right": "66%",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "46% (12/26)",
+              "right": "74% (23/31)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (9/25)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/9",
+              "right": "5/7",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (8/31)",
+              "right": "54% (14/26)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (10/16)",
+              "right": "64% (16/25)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "6/9",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "12",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "39",
+              "right": "24",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "41% (21/51)",
+              "right": "62% (29/47)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (18/47)",
+              "right": "59% (30/51)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (39/98)",
+              "right": "60% (59/98)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (4/16)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "40%",
+              "right": "75%",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "38% (3/8)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "17% (2/12)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/6",
+              "right": "3/4",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (6/15)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (3/5)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "4/6",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "11",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "24% (5/21)",
+              "right": "55% (11/20)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (9/20)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "34% (14/41)",
+              "right": "66% (27/41)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "59%",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (9/18)",
+              "right": "88% (14/16)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "2/3",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "13% (2/16)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (7/11)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "2/3",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "6",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "13",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (16/30)",
+              "right": "67% (18/27)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (9/27)",
+              "right": "47% (14/30)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (25/57)",
+              "right": "56% (32/57)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Winter Lopez B.",
+              "rightPlayer": "Alvarez Varona N."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

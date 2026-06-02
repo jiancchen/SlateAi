@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-qualification-shick-vs-hohmann-2026-06-02",
+  "boardTitle": "Braden Shick vs Ronald Hohmann",
+  "boardPlayerName": "Ronald Hohmann",
+  "recentOpponentName": "Martin D.",
+  "recentIndex": 4,
+  "recentEvent": "Little Rock (USA)",
+  "recentDate": "May 24, 26",
+  "recentIsoDate": "2026-05-24",
+  "recentResult": "Win 2-6 6-4 7-5",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Hohmann R. - Martin D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/little-rock/",
+  "players": [
+    "Hohmann R.",
+    "Martin D."
+  ],
+  "generatedAt": "2026-06-02T02:39:38.813Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/ABvUbimC/",
+  "matchId": "ABvUbimC",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_ABvUbimC",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_ABvUbimC"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:31"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:49"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:16"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "9",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "53%",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (41/58)",
+              "right": "71% (36/51)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (16/28)",
+              "right": "61% (28/46)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "5/7",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (15/51)",
+              "right": "29% (17/58)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "39% (18/46)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "2/5",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "34",
+              "right": "30",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "41",
+              "right": "35",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Net points won",
+              "left": "47% (7/15)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (57/86)",
+              "right": "66% (64/97)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (33/97)",
+              "right": "34% (29/86)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (90/183)",
+              "right": "51% (93/183)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "87% (13/15)",
+              "right": "87% (13/15)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Return games won",
+              "left": "13% (2/15)",
+              "right": "13% (2/15)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (15/30)",
+              "right": "50% (15/30)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "58%",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (10/19)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (2/5)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "1/1",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (3/14)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "30% (3/10)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "2/4",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "6",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "8",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Net points won",
+              "left": "17% (1/6)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (12/24)",
+              "right": "75% (18/24)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (6/24)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (18/48)",
+              "right": "63% (30/48)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "39%",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (14/17)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (5/13)",
+              "right": "18% (3/17)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (8/20)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "10",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "13",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (20/27)",
+              "right": "61% (20/33)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (13/33)",
+              "right": "26% (7/27)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (33/60)",
+              "right": "45% (27/60)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "7",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "60%",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (17/22)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "62% (8/13)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "4/5",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (7/24)",
+              "right": "23% (5/22)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (7/16)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "0/1",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "14",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "14",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (25/35)",
+              "right": "65% (26/40)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (14/40)",
+              "right": "29% (10/35)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (39/75)",
+              "right": "48% (36/75)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Martin D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

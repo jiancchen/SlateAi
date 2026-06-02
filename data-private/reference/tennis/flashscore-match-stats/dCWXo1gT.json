@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-mikrut-vs-marti-pujolras-2026-06-02",
+  "boardTitle": "Luka Mikrut vs Alex Marti Pujolras",
+  "boardPlayerName": "Alex Marti Pujolras",
+  "recentOpponentName": "Fix D.",
+  "recentIndex": 1,
+  "recentEvent": "Heilbronn (Germany)",
+  "recentDate": "Jun 01, 26",
+  "recentIsoDate": "2026-06-01",
+  "recentResult": "Win 7-6 6-2",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Fix D. - Marti Pujolras A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/heilbronn/",
+  "players": [
+    "Fix D.",
+    "Marti Pujolras A."
+  ],
+  "generatedAt": "2026-06-02T02:39:19.378Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/dCWXo1gT/",
+  "matchId": "dCWXo1gT",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_dCWXo1gT",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_dCWXo1gT"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 7,
+        "duration": "1:10"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:40"
+      }
+    ],
+    "totalDuration": "1:50"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "11",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "46%",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "46% (19/41)",
+              "right": "72% (21/29)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "39% (16/41)",
+              "right": "41% (14/34)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/14",
+              "right": "4/8",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (8/29)",
+              "right": "54% (22/41)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "59% (20/34)",
+              "right": "61% (25/41)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/8",
+              "right": "6/14",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "22",
+              "right": "24",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "42",
+              "right": "26",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "43% (35/82)",
+              "right": "56% (35/63)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (28/63)",
+              "right": "57% (47/82)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (63/145)",
+              "right": "57% (82/145)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (8/20)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "6",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "38%",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "46% (12/26)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (13/29)",
+              "right": "39% (9/23)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/9",
+              "right": "3/6",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (5/14)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (14/23)",
+              "right": "55% (16/29)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "3/9",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "13",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "25",
+              "right": "17",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "45% (25/56)",
+              "right": "51% (19/37)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (18/37)",
+              "right": "55% (31/56)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (43/93)",
+              "right": "54% (50/93)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "58%",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "47% (7/15)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (3/12)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "1/2",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (3/15)",
+              "right": "27% (4/15)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "3/5",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "11",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "9",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "38% (10/26)",
+              "right": "62% (16/26)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (10/26)",
+              "right": "62% (16/26)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (20/52)",
+              "right": "62% (32/52)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Fix D.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-broady-vs-jorda-sanchis-2026-06-02",
+  "boardTitle": "David Jorda Sanchis vs Liam Broady",
+  "boardPlayerName": "Liam Broady",
+  "recentOpponentName": "Cadenasso G.",
+  "recentIndex": 3,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 19, 26",
+  "recentIsoDate": "2026-05-19",
+  "recentResult": "Loss 5-7 4-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Broady L. - Cadenasso G.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Broady L.",
+    "Cadenasso G."
+  ],
+  "generatedAt": "2026-06-02T02:39:30.453Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/pKuSAuYo/",
+  "matchId": "pKuSAuYo",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_pKuSAuYo",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_pKuSAuYo"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:49"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:38"
+      }
+    ],
+    "totalDuration": "1:27"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "0",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "67%",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (26/37)",
+              "right": "63% (29/46)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (10/23)",
+              "right": "65% (15/23)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/7",
+              "right": "4/6",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "37% (17/46)",
+              "right": "30% (11/37)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "35% (8/23)",
+              "right": "57% (13/23)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "4/7",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "17",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "35",
+              "right": "16",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Net points won",
+              "left": "53% (9/17)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (36/60)",
+              "right": "64% (44/69)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (25/69)",
+              "right": "40% (24/60)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (61/129)",
+              "right": "53% (68/129)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "64% (7/11)",
+              "right": "82% (9/11)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Return games won",
+              "left": "18% (2/11)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Total games won",
+              "left": "41% (9/22)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "58%",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "89% (16/18)",
+              "right": "74% (17/23)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (7/16)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "2/2",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (6/23)",
+              "right": "11% (2/18)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "35% (6/17)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "1/3",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "8",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "8",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (4/8)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (23/34)",
+              "right": "70% (28/40)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (12/40)",
+              "right": "32% (11/34)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (35/74)",
+              "right": "53% (39/74)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "79%",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (10/19)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (3/7)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "2/4",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "48% (11/23)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (2/6)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "3/4",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "9",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "8",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Net points won",
+              "left": "56% (5/9)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (13/26)",
+              "right": "55% (16/29)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (13/29)",
+              "right": "50% (13/26)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (26/55)",
+              "right": "53% (29/55)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cadenasso G."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

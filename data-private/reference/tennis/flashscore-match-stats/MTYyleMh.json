@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-weightman-vs-badenhorst-2026-06-02",
+  "boardTitle": "Oscar Weightman vs Devin Badenhorst",
+  "boardPlayerName": "Oscar Weightman",
+  "recentOpponentName": "Chopra K.",
+  "recentIndex": 0,
+  "recentEvent": "Centurion 2 (South Africa)",
+  "recentDate": "Jun 01, 26",
+  "recentIsoDate": "2026-06-01",
+  "recentResult": "Win 6-2 6-0",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Weightman O. - Chopra K.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+  "players": [
+    "Weightman O.",
+    "Chopra K."
+  ],
+  "generatedAt": "2026-06-02T02:39:29.097Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/MTYyleMh/",
+  "matchId": "MTYyleMh",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_MTYyleMh",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_MTYyleMh"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:34"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 0,
+        "duration": "0:32"
+      }
+    ],
+    "totalDuration": "1:06"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "58%",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "66% (19/29)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (11/19)",
+              "right": "7% (1/15)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "5/11",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "52% (11/21)",
+              "right": "34% (10/29)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "93% (14/15)",
+              "right": "42% (8/19)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/11",
+              "right": "1/3",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "10",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "30",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (30/48)",
+              "right": "31% (11/36)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "69% (25/36)",
+              "right": "38% (18/48)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "65% (55/84)",
+              "right": "35% (29/84)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Return games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (12/14)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "59%",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (10/13)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "4/7",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (5/13)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "89% (8/9)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "1/1",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "5",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "12",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (14/22)",
+              "right": "41% (9/22)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "59% (13/22)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (27/44)",
+              "right": "39% (17/44)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "57%",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (9/16)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "70% (7/10)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "1/4",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "75% (6/8)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "100% (6/6)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "0/2",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "5",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "18",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (16/26)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "86% (12/14)",
+              "right": "38% (10/26)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "70% (28/40)",
+              "right": "30% (12/40)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            },
+            {
+              "label": "Total games won",
+              "left": "100% (6/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Weightman O.",
+              "rightPlayer": "Chopra K."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

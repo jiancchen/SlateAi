@@ -1,0 +1,710 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02",
+  "boardTitle": "Luka Pavlovic vs Nikolas Sanchez Izquierdo",
+  "boardPlayerName": "Luka Pavlovic",
+  "recentOpponentName": "Barrios Vera T.",
+  "recentIndex": 2,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 20, 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "Win 6-2 6-7 6-2",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Pavlovic L. - Barrios Vera T.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Pavlovic L.",
+    "Barrios Vera T."
+  ],
+  "generatedAt": "2026-06-02T02:39:39.262Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/AwmTioWP/",
+  "matchId": "AwmTioWP",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_AwmTioWP",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_AwmTioWP"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:48"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:05"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:34"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "0",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "49%",
+              "right": "65%",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (34/46)",
+              "right": "68% (39/57)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (27/48)",
+              "right": "39% (12/31)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "3/9",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "202 km/h",
+              "right": "183 km/h",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "153 km/h",
+              "right": "144 km/h",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (18/57)",
+              "right": "30% (14/46)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (19/31)",
+              "right": "44% (21/48)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/9",
+              "right": "2/5",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "37",
+              "right": "21",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "37",
+              "right": "31",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Net points won",
+              "left": "77% (17/22)",
+              "right": "56% (15/27)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (61/94)",
+              "right": "58% (51/88)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (37/88)",
+              "right": "35% (33/94)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (98/182)",
+              "right": "46% (84/182)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "86% (12/14)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Return games won",
+              "left": "43% (6/14)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Total games won",
+              "left": "64% (18/28)",
+              "right": "36% (10/28)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "42%",
+              "right": "54%",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (9/14)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (12/19)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "3/5",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (3/15)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "77% (10/13)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "0/1",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "8",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "10",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Net points won",
+              "left": "77% (10/13)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (21/33)",
+              "right": "54% (15/28)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (13/28)",
+              "right": "36% (12/33)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (34/61)",
+              "right": "44% (27/61)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "71%",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (18/23)",
+              "right": "76% (19/25)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (9/17)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "0/1",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (6/25)",
+              "right": "30% (7/23)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "30% (3/10)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "1/3",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "9",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "9",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (27/40)",
+              "right": "74% (26/35)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (9/35)",
+              "right": "33% (13/40)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (36/75)",
+              "right": "52% (39/75)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "43%",
+              "right": "68%",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (7/9)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/3",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "53% (9/17)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (6/8)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "1/1",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "4",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "12",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (13/21)",
+              "right": "40% (10/25)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "60% (15/25)",
+              "right": "38% (8/21)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (28/46)",
+              "right": "39% (18/46)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Pavlovic L.",
+              "rightPlayer": "Barrios Vera T."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

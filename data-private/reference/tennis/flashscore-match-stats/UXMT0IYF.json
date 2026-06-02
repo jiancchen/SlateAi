@@ -1,0 +1,668 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-qualification-shick-vs-hohmann-2026-06-02",
+  "boardTitle": "Braden Shick vs Ronald Hohmann",
+  "boardPlayerName": "Ronald Hohmann",
+  "recentOpponentName": "Soriano Barrera A.",
+  "recentIndex": 0,
+  "recentEvent": "Tyler (USA)",
+  "recentDate": "Jun 01, 26",
+  "recentIsoDate": "2026-06-01",
+  "recentResult": "Win 6-2 6-7 6-3",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Hohmann R. - Soriano Barrera A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/tyler/",
+  "players": [
+    "Hohmann R.",
+    "Soriano Barrera A."
+  ],
+  "generatedAt": "2026-06-02T02:39:38.543Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/UXMT0IYF/",
+  "matchId": "UXMT0IYF",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_UXMT0IYF",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_UXMT0IYF"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:39"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 7,
+        "duration": "0:59"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:21"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "13",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "63%",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (49/56)",
+              "right": "75% (44/59)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (14/29)",
+              "right": "41% (14/34)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "3/6",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (15/59)",
+              "right": "13% (7/56)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "59% (20/34)",
+              "right": "52% (15/29)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "0/1",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "29",
+              "right": "24",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "32",
+              "right": "27",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (63/85)",
+              "right": "62% (58/94)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (36/94)",
+              "right": "26% (22/85)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (99/179)",
+              "right": "45% (80/179)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (15/15)",
+              "right": "79% (11/14)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Return games won",
+              "left": "21% (3/14)",
+              "right": "0% (0/15)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Total games won",
+              "left": "62% (18/29)",
+              "right": "38% (11/29)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "6",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "58%",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (11/11)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (5/15)",
+              "right": "0% (0/11)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "82% (9/11)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "7",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "10",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (16/21)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (14/26)",
+              "right": "24% (5/21)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "64% (30/47)",
+              "right": "36% (17/47)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "59%",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (20/24)",
+              "right": "83% (19/23)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (4/23)",
+              "right": "17% (4/24)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (7/16)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "9",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "12",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "73% (27/37)",
+              "right": "72% (28/39)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (11/39)",
+              "right": "27% (10/37)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (38/76)",
+              "right": "50% (38/76)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "78%",
+              "right": "75%",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "86% (18/21)",
+              "right": "71% (15/21)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (2/6)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (6/21)",
+              "right": "14% (3/21)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (4/7)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "8",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "5",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (20/27)",
+              "right": "62% (18/29)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (11/29)",
+              "right": "26% (7/27)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (31/56)",
+              "right": "45% (25/56)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Hohmann R.",
+              "rightPlayer": "Soriano Barrera A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

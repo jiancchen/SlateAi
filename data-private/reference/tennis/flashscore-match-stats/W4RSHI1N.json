@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-walton-vs-wu-2026-06-02",
+  "boardTitle": "Adam Walton vs Tung-Lin Wu",
+  "boardPlayerName": "Adam Walton",
+  "recentOpponentName": "Bu Y.",
+  "recentIndex": 2,
+  "recentEvent": "Wuxi (China)",
+  "recentDate": "May 08, 26",
+  "recentIsoDate": "2026-05-08",
+  "recentResult": "Loss 2-6 0-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Walton A. - Bu Y.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/wuxi/",
+  "players": [
+    "Walton A.",
+    "Bu Y."
+  ],
+  "generatedAt": "2026-06-02T02:39:39.037Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/W4RSHI1N/",
+  "matchId": "W4RSHI1N",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_W4RSHI1N",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_W4RSHI1N"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:54"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:34"
+      }
+    ],
+    "totalDuration": "1:28"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "48%",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "52% (22/42)",
+              "right": "68% (17/25)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "37% (10/27)",
+              "right": "67% (18/27)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "11/16",
+              "right": "3/3",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (8/25)",
+              "right": "48% (20/42)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (9/27)",
+              "right": "63% (17/27)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "5/16",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "31",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "27",
+              "right": "21",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "63% (5/8)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "46% (32/69)",
+              "right": "67% (35/52)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (17/52)",
+              "right": "54% (37/69)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (49/121)",
+              "right": "60% (72/121)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "29% (2/7)",
+              "right": "100% (7/7)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/7)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (2/14)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "51%",
+              "right": "41%",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (11/19)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (8/18)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "3/3",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (5/14)",
+              "right": "42% (8/19)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "35% (7/20)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "2/6",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "16",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "16",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "51% (19/37)",
+              "right": "65% (22/34)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (12/34)",
+              "right": "49% (18/37)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (31/71)",
+              "right": "56% (40/71)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "61%",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "48% (11/23)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "22% (2/9)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/10",
+              "right": "0/0",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (3/11)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (2/7)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/10",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "15",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "5",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/1)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "41% (13/32)",
+              "right": "72% (13/18)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (5/18)",
+              "right": "59% (19/32)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (18/50)",
+              "right": "64% (32/50)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Walton A.",
+              "rightPlayer": "Bu Y."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

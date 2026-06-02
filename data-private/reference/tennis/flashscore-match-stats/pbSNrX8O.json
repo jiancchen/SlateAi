@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-petkovic-vs-moro-canas-2026-06-02",
+  "boardTitle": "Mika Petkovic vs Alejandro Moro Canas",
+  "boardPlayerName": "Mika Petkovic",
+  "recentOpponentName": "Ehrenschneider N.",
+  "recentIndex": 3,
+  "recentEvent": "M25 Troisdorf (Germany)",
+  "recentDate": "May 28, 26",
+  "recentIsoDate": "2026-05-28",
+  "recentResult": "Win 6-3 6-3",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Petkovic M. - Ehrenschneider N.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m25-troisdorf/",
+  "players": [
+    "Petkovic M.",
+    "Ehrenschneider N."
+  ],
+  "generatedAt": "2026-06-02T02:39:19.954Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/pbSNrX8O/",
+  "matchId": "pbSNrX8O",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_pbSNrX8O",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_pbSNrX8O"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:44"
+      }
+    ],
+    "totalDuration": "1:25"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Petkovic M.",
+              "rightPlayer": "Ehrenschneider N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Petkovic M.",
+              "rightPlayer": "Ehrenschneider N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Petkovic M.",
+              "rightPlayer": "Ehrenschneider N."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

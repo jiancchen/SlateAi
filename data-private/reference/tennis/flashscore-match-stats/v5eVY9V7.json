@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-chidekh-vs-romano-2026-06-02",
+  "boardTitle": "Clement Chidekh vs Filippo Romano",
+  "boardPlayerName": "Filippo Romano",
+  "recentOpponentName": "Coppejans K.",
+  "recentIndex": 4,
+  "recentEvent": "Rome (Italy)",
+  "recentDate": "Apr 21, 26",
+  "recentIsoDate": "2026-04-21",
+  "recentResult": "Win 6-1 6-0",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Coppejans K. - Romano F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/rome/",
+  "players": [
+    "Coppejans K.",
+    "Romano F."
+  ],
+  "generatedAt": "2026-06-02T02:39:22.224Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/v5eVY9V7/",
+  "matchId": "v5eVY9V7",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_v5eVY9V7",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_v5eVY9V7"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:39"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:28"
+      }
+    ],
+    "totalDuration": "1:07"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "45%",
+              "right": "62%",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (10/18)",
+              "right": "73% (27/37)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "27% (6/22)",
+              "right": "48% (11/23)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/7",
+              "right": "8/8",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (10/37)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (12/23)",
+              "right": "73% (16/22)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/8",
+              "right": "5/7",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "22",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "21",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "40% (16/40)",
+              "right": "63% (38/60)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (22/60)",
+              "right": "60% (24/40)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (38/100)",
+              "right": "62% (62/100)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "17% (1/6)",
+              "right": "100% (7/7)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/7)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Total games won",
+              "left": "8% (1/13)",
+              "right": "92% (12/13)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "43%",
+              "right": "68%",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (6/10)",
+              "right": "72% (18/25)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (5/13)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "6/6",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (7/25)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (7/12)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/6",
+              "right": "2/3",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "12",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "14",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (11/23)",
+              "right": "62% (23/37)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (14/37)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (25/60)",
+              "right": "58% (35/60)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "52%",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (4/8)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "11% (1/9)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "2/2",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (3/12)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (5/11)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "3/4",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "10",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "7",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "29% (5/17)",
+              "right": "65% (15/23)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (8/23)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "33% (13/40)",
+              "right": "68% (27/40)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Coppejans K.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

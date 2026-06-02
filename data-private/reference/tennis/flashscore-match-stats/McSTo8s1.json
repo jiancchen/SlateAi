@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-cretu-vs-vasami-2026-06-02",
+  "boardTitle": "Cezar Cretu (b. 2001) vs Jacopo Vasami",
+  "boardPlayerName": "Cezar Cretu (b. 2001)",
+  "recentOpponentName": "Broady L.",
+  "recentIndex": 2,
+  "recentEvent": "Chisinau (Moldova)",
+  "recentDate": "May 29, 26",
+  "recentIsoDate": "2026-05-29",
+  "recentResult": "Win 6-3 6-0",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Broady L. - Cretu C.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/chisinau/",
+  "players": [
+    "Broady L.",
+    "Cretu C."
+  ],
+  "generatedAt": "2026-06-02T02:39:30.505Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/McSTo8s1/",
+  "matchId": "McSTo8s1",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_McSTo8s1",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_McSTo8s1"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:41"
+      }
+    ],
+    "totalDuration": "1:18"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "76%",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "42% (13/31)",
+              "right": "65% (24/37)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "37% (7/19)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/6",
+              "right": "1/2",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (13/37)",
+              "right": "58% (18/31)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "6/6",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "40% (20/50)",
+              "right": "63% (31/49)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (18/49)",
+              "right": "60% (30/50)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (38/99)",
+              "right": "62% (61/99)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (2/8)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Return games won",
+              "left": "14% (1/7)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Total games won",
+              "left": "20% (3/15)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "76%",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "47% (8/17)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (3/8)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "0/1",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (9/22)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (3/7)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/3",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "42% (11/26)",
+              "right": "59% (17/29)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (12/29)",
+              "right": "58% (15/26)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (23/55)",
+              "right": "58% (32/55)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "75%",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "36% (5/14)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (4/11)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "1/1",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (4/15)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (2/5)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "3/3",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "38% (9/24)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (6/20)",
+              "right": "63% (15/24)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "34% (15/44)",
+              "right": "66% (29/44)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Broady L.",
+              "rightPlayer": "Cretu C."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

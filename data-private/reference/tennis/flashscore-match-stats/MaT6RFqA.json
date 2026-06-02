@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02",
+  "boardTitle": "Luka Pavlovic vs Nikolas Sanchez Izquierdo",
+  "boardPlayerName": "Nikolas Sanchez Izquierdo",
+  "recentOpponentName": "Diaz Acosta F.",
+  "recentIndex": 3,
+  "recentEvent": "Francavilla (Italy)",
+  "recentDate": "May 07, 26",
+  "recentIsoDate": "2026-05-07",
+  "recentResult": "Loss 4-6 4-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Diaz Acosta F. - Sanchez Izquierdo N.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/francavilla/",
+  "players": [
+    "Diaz Acosta F.",
+    "Sanchez Izquierdo N."
+  ],
+  "generatedAt": "2026-06-02T02:39:39.693Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/MaT6RFqA/",
+  "matchId": "MaT6RFqA",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_MaT6RFqA",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_MaT6RFqA"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:57"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "1:05"
+      }
+    ],
+    "totalDuration": "2:02"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "65%",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (25/43)",
+              "right": "55% (22/40)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (8/17)",
+              "right": "27% (6/22)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/7",
+              "right": "3/9",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "45% (18/40)",
+              "right": "42% (18/43)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "73% (16/22)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/9",
+              "right": "4/7",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "12",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "30",
+              "right": "35",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (33/60)",
+              "right": "45% (28/62)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "55% (34/62)",
+              "right": "45% (27/60)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (67/122)",
+              "right": "45% (55/122)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "67%",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (13/23)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "0/3",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (8/20)",
+              "right": "43% (10/23)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "80% (8/10)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "2/5",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "9",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "18",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (19/35)",
+              "right": "47% (14/30)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (16/30)",
+              "right": "46% (16/35)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (35/65)",
+              "right": "46% (30/65)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "80%",
+              "right": "63%",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (12/20)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (2/5)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "3/6",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (10/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (8/12)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "2/2",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "3",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "17",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (14/25)",
+              "right": "44% (14/32)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "56% (18/32)",
+              "right": "44% (11/25)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (32/57)",
+              "right": "44% (25/57)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Diaz Acosta F.",
+              "rightPlayer": "Sanchez Izquierdo N."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

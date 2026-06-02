@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-walton-vs-wu-2026-06-02",
+  "boardTitle": "Adam Walton vs Tung-Lin Wu",
+  "boardPlayerName": "Tung-Lin Wu",
+  "recentOpponentName": "Milavsky D.",
+  "recentIndex": 0,
+  "recentEvent": "Little Rock (USA)",
+  "recentDate": "May 26, 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "Loss 6-3 6-7 0-1",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Milavsky D. - Wu Tung-Lin",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/little-rock/",
+  "players": [
+    "Milavsky D.",
+    "Wu Tung-Lin"
+  ],
+  "generatedAt": "2026-06-02T02:39:39.699Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/UBZ7T2h3/",
+  "matchId": "UBZ7T2h3",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_UBZ7T2h3",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_UBZ7T2h3"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:57"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 3,
+        "duration": "1:23"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 1,
+        "rightGames": 0,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:29"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "4",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "56%",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (37/60)",
+              "right": "69% (36/52)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (17/27)",
+              "right": "56% (23/41)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "13/14",
+              "right": "11/12",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (16/52)",
+              "right": "38% (23/60)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (18/41)",
+              "right": "37% (10/27)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/12",
+              "right": "1/14",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "33",
+              "right": "25",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Unforced errors",
+              "left": "37",
+              "right": "40",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (54/87)",
+              "right": "63% (59/93)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (34/93)",
+              "right": "38% (33/87)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (88/180)",
+              "right": "51% (92/180)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "9",
+              "right": "1",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "90% (9/10)",
+              "right": "92% (11/12)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Return games won",
+              "left": "8% (1/12)",
+              "right": "10% (1/10)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Total games won",
+              "left": "45% (10/22)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "60%",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (17/30)",
+              "right": "76% (19/25)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/8",
+              "right": "7/7",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (6/25)",
+              "right": "43% (13/30)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (9/17)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/7",
+              "right": "1/8",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "14",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "15",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (21/39)",
+              "right": "64% (27/42)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (15/42)",
+              "right": "46% (18/39)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (36/81)",
+              "right": "56% (45/81)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "53%",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "1st serve points won",
+              "left": "66% (19/29)",
+              "right": "68% (17/25)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "72% (13/18)",
+              "right": "68% (15/22)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/6",
+              "right": "4/4",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (8/25)",
+              "right": "34% (10/29)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "2nd return points won",
+              "left": "32% (7/22)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/4",
+              "right": "0/6",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "11",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "22",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (32/47)",
+              "right": "68% (32/47)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (15/47)",
+              "right": "32% (15/47)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (47/94)",
+              "right": "50% (47/94)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "100%",
+              "right": "50%",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (1/1)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "0% (0/0)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "100% (2/2)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "2nd return points won",
+              "left": "100% (2/2)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Unforced errors",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Service Points Won",
+              "left": "100% (1/1)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Return Points Won",
+              "left": "100% (4/4)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Total Points Won",
+              "left": "100% (5/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/0)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (1/1)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            },
+            {
+              "label": "Total games won",
+              "left": "100% (1/1)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Milavsky D.",
+              "rightPlayer": "Wu Tung-Lin"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

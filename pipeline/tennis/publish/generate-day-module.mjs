@@ -1717,7 +1717,21 @@ const buildGame = (match, rankings, quality, warehouse, date, fanduelIndex, robi
   }
 }
 
-const buildSupplementGame = (match, rankings) => {
+const hasExpectedStats = (qualityPlayer) => Object.keys(qualityPlayer?.expectedStats?.stats || {}).length > 0
+
+const warehouseDepthSummary = (warehousePlayer) => {
+  const stats = warehousePlayer?.expectedStats?.stats || {}
+  const formSummary = warehousePlayer?.recentFormMetrics?.summary || []
+  const formMatches = warehousePlayer?.recentFormMetrics?.matches || []
+  return {
+    expectedRows: Object.keys(stats).length,
+    recentRows: formSummary.filter((row) => Number.isFinite(Number(row.score))).length,
+    recentMatches: formMatches.length,
+    source: warehousePlayer?.expectedStats?.source || warehousePlayer?.recentFormMetrics?.summary?.[0]?.source || ''
+  }
+}
+
+const buildSupplementGame = (match, rankings, warehouse) => {
   const [a, b] = match.players || []
   if (!a?.name || !b?.name) return null
   const marketPlayers = match.predictionMarket?.players || []
@@ -1730,21 +1744,31 @@ const buildSupplementGame = (match, rankings) => {
   }
   const modelPctA = marketPctFor(a.name)
   const modelPctB = marketPctFor(b.name)
-  const pickA = modelPctA >= modelPctB
-  const pickName = pickA ? a.name : b.name
-  const opponentName = pickA ? b.name : a.name
-  const confidence = Number(Math.max(modelPctA, modelPctB).toFixed(1))
   const surface = match.surface || inferSurface(match.tournament, match.category, match.title)
   const rankA = getRanking(rankings, a.name)
   const rankB = getRanking(rankings, b.name)
-  const players = [
-    {
-      name: a.name,
-      ranking: rankA,
-      qualityName: null,
-      profile: `${surface} | ${formatProfile(rankA, null, surface) || 'Robinhood market row; warehouse profile pending'}`,
-      modelPct: Number(modelPctA.toFixed(1)),
-      weakness: {
+  const warehouseA = findWarehousePlayer(warehouse, match.id, a.name)
+  const warehouseB = findWarehousePlayer(warehouse, match.id, b.name)
+  const qualityA = mergeWarehouseExpectedStats(a.name, null, warehouseA)
+  const qualityB = mergeWarehouseExpectedStats(b.name, null, warehouseB)
+  const depthA = warehouseDepthSummary(warehouseA)
+  const depthB = warehouseDepthSummary(warehouseB)
+  const hasWarehouseDepth = hasExpectedStats(qualityA) || hasExpectedStats(qualityB) || depthA.recentRows > 0 || depthB.recentRows > 0
+  const scoreA = hasWarehouseDepth ? playerScore(rankA, qualityA, true, surface) : 0
+  const scoreB = hasWarehouseDepth ? playerScore(rankB, qualityB, true, surface) : 0
+  const basePickA = scoreA >= scoreB
+  const baseConfidence = hasWarehouseDepth ? pctFromDelta(Math.abs(scoreA - scoreB), true) : Math.max(modelPctA, modelPctB)
+  const baseModelPctA = hasWarehouseDepth ? (basePickA ? baseConfidence : 100 - baseConfidence) : modelPctA
+  const baseModelPctB = hasWarehouseDepth ? (basePickA ? 100 - baseConfidence : baseConfidence) : modelPctB
+  const finalPctA = hasWarehouseDepth ? modelPctA * 0.42 + baseModelPctA * 0.58 : modelPctA
+  const finalPctB = hasWarehouseDepth ? modelPctB * 0.42 + baseModelPctB * 0.58 : modelPctB
+  const pickA = finalPctA >= finalPctB
+  const pickName = pickA ? a.name : b.name
+  const opponentName = pickA ? b.name : a.name
+  const confidence = Number(Math.max(finalPctA, finalPctB).toFixed(1))
+  const weaknessA = hasWarehouseDepth
+    ? buildWeaknessProfile(a.name, qualityA)
+    : {
         name: a.name,
         weaknessScore: null,
         liabilities: ['No warehouse weakness data joined yet'],
@@ -1752,14 +1776,9 @@ const buildSupplementGame = (match, rankings) => {
         firstGameComfort: 'Market-only row; wait for serve pressure data',
         gameFlowRead: 'No service/break profile joined yet.'
       }
-    },
-    {
-      name: b.name,
-      ranking: rankB,
-      qualityName: null,
-      profile: `${surface} | ${formatProfile(rankB, null, surface) || 'Robinhood market row; warehouse profile pending'}`,
-      modelPct: Number(modelPctB.toFixed(1)),
-      weakness: {
+  const weaknessB = hasWarehouseDepth
+    ? buildWeaknessProfile(b.name, qualityB)
+    : {
         name: b.name,
         weaknessScore: null,
         liabilities: ['No warehouse weakness data joined yet'],
@@ -1767,23 +1786,55 @@ const buildSupplementGame = (match, rankings) => {
         firstGameComfort: 'Market-only row; wait for serve pressure data',
         gameFlowRead: 'No service/break profile joined yet.'
       }
+  const pickQuality = pickA ? qualityA : qualityB
+  const oppQuality = pickA ? qualityB : qualityA
+  const pickWeakness = pickA ? weaknessA : weaknessB
+  const oppWeakness = pickA ? weaknessB : weaknessA
+  const volatility = hasWarehouseDepth
+    ? Math.max(30, Math.min(78, Math.round(50 - Math.abs(scoreA - scoreB) * 0.45 + (Math.max(pickWeakness.weaknessScore || 0, oppWeakness.weaknessScore || 0) >= 24 ? 8 : 0))))
+    : clamp(Math.round(78 - Math.abs(modelPctA - modelPctB) * 0.45), 38, 78)
+  const weaknessEdge = hasWarehouseDepth
+    ? buildWeaknessEdge({ pickName, opponentName, pickQuality, oppQuality, pickWeakness, oppWeakness, confidence, volatility })
+    : {
+        edgeType: 'Market-only',
+        target: 'No warehouse weakness edge',
+        scoreGap: null,
+        attackingSide: null,
+        vulnerableSide: null,
+        gameFlow: 'Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.',
+        liveTrigger: 'Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.',
+        spreadRead: 'No spread line',
+        totalRead: 'No total line',
+        pick: weaknessA,
+        opponent: weaknessB
+      }
+  const read = hasWarehouseDepth
+    ? buildRead({ pick: pickName, opponent: opponentName, confidence, volatility, pickQuality, oppQuality, isAtp: true, surface })
+    : {
+        reason: `${pickName} is only the current Robinhood market favorite over ${opponentName}; ${surface} surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.`,
+        totals: 'No posted sportsbook total captured for this Challenger market.'
+      }
+  const players = [
+    {
+      name: a.name,
+      ranking: rankA,
+      qualityName: qualityA?.name || null,
+      profile: `${surface} | ${formatProfile(rankA, qualityA, surface) || 'Robinhood market row; warehouse profile pending'}`,
+      modelPct: Number(finalPctA.toFixed(1)),
+      weakness: weaknessA,
+      warehouseDepth: depthA
+    },
+    {
+      name: b.name,
+      ranking: rankB,
+      qualityName: qualityB?.name || null,
+      profile: `${surface} | ${formatProfile(rankB, qualityB, surface) || 'Robinhood market row; warehouse profile pending'}`,
+      modelPct: Number(finalPctB.toFixed(1)),
+      weakness: weaknessB,
+      warehouseDepth: depthB
     }
   ]
   const marketData = buildRobinhoodMarketData({ robinhood: match, players, pickName })
-  const volatility = clamp(Math.round(78 - Math.abs(modelPctA - modelPctB) * 0.45), 38, 78)
-  const weaknessEdge = {
-    edgeType: 'Market-only',
-    target: 'No warehouse weakness edge',
-    scoreGap: null,
-    attackingSide: null,
-    vulnerableSide: null,
-    gameFlow: 'Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.',
-    liveTrigger: 'Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.',
-    spreadRead: 'No spread line',
-    totalRead: 'No total line',
-    pick: players[pickA ? 0 : 1].weakness,
-    opponent: players[pickA ? 1 : 0].weakness
-  }
   const setWinProjections = players.map((player) => ({
     name: player.name,
     confidence: player.name === pickName ? clamp(Math.round(confidence + 8), 58, 88) : clamp(Math.round(100 - confidence + 22), 36, 74),
@@ -1816,14 +1867,21 @@ const buildSupplementGame = (match, rankings) => {
     stage: `${match.tournament || 'ATP Challenger'} | ${match.round || 'Round'}`,
     pickName,
     basePickName: pickName,
-    modelSource: 'Robinhood market watch only',
+    modelSource: hasWarehouseDepth ? 'Flashscore/SofaScore warehouse Challenger model' : 'Robinhood market watch only',
     modelSplit: false,
-    marketOnly: true,
+    marketOnly: !hasWarehouseDepth,
     confidence,
     volatility,
-    tags: ['ATP Challenger', surface, 'Prediction market', 'Market only', 'No model edge', confidence >= 70 ? 'Market favorite' : 'Coinflip price'],
-    reason: `${pickName} is only the current Robinhood market favorite over ${opponentName}; ${surface} surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.`,
-    totals: 'No posted sportsbook total captured for this Challenger market.',
+    tags: [
+      'ATP Challenger',
+      surface,
+      'Prediction market',
+      hasWarehouseDepth ? 'Warehouse joined' : 'Market only',
+      hasWarehouseDepth ? 'Flashscore first' : 'No model edge',
+      confidence >= 70 ? 'Market favorite' : 'Coinflip price'
+    ],
+    reason: read.reason,
+    totals: read.totals,
     weaknessEdge,
     setWinProjections,
     valueBoard,
@@ -1876,7 +1934,7 @@ const main = async () => {
     .map((match) => buildGame(match, rankings, quality, warehouseContext, options.date, fanduelIndex, robinhoodIndex, ensembleValueIndex, ensembleRowsByMatch, derivativeIndex))
   const challengerGames = (robinhoodMarkets.matches || [])
     .filter((match) => match.category === 'atp_challenger_singles')
-    .map((match) => buildSupplementGame(match, rankings))
+    .map((match) => buildSupplementGame(match, rankings, warehouseContext))
     .filter(Boolean)
   const games = [...rolandGarrosGames, ...challengerGames].sort((left, right) => left.startMinutes - right.startMinutes || left.title.localeCompare(right.title))
   const dayLabel = titleDate(options.date)

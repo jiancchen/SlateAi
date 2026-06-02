@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-kimhi-vs-henning-2026-06-02",
+  "boardTitle": "Orel Kimhi vs Philip Henning",
+  "boardPlayerName": "Philip Henning",
+  "recentOpponentName": "Napolitano S.",
+  "recentIndex": 0,
+  "recentEvent": "Centurion (South Africa)",
+  "recentDate": "May 29, 26",
+  "recentIsoDate": "2026-05-29",
+  "recentResult": "Loss 3-6 5-7",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Henning P. - Napolitano S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion/",
+  "players": [
+    "Henning P.",
+    "Napolitano S."
+  ],
+  "generatedAt": "2026-06-02T02:39:26.175Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/4MXYS7Rh/",
+  "matchId": "4MXYS7Rh",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_4MXYS7Rh",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_4MXYS7Rh"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:46"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:58"
+      }
+    ],
+    "totalDuration": "1:44"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "62%",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (22/32)",
+              "right": "69% (29/42)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (12/29)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/11",
+              "right": "6/9",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (13/42)",
+              "right": "31% (10/32)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (14/26)",
+              "right": "59% (17/29)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/9",
+              "right": "5/11",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "24",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "30",
+              "right": "25",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (34/61)",
+              "right": "60% (41/68)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (27/68)",
+              "right": "44% (27/61)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (61/129)",
+              "right": "53% (68/129)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (5/10)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return games won",
+              "left": "27% (3/11)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total games won",
+              "left": "38% (8/21)",
+              "right": "62% (13/21)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "64%",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (10/14)",
+              "right": "71% (15/21)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (6/14)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "2/3",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (6/21)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (7/12)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "2/5",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "6",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "11",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (15/27)",
+              "right": "61% (19/31)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (12/31)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (27/58)",
+              "right": "53% (31/58)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "5",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "60%",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (12/18)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (6/15)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "4/6",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (7/21)",
+              "right": "11% (2/18)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (7/14)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "3/6",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "18",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "14",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (19/34)",
+              "right": "59% (22/37)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (15/37)",
+              "right": "44% (15/34)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (34/71)",
+              "right": "52% (37/71)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

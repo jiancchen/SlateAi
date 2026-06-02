@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-molcan-vs-piros-2026-06-02",
+  "boardTitle": "Zsombor Piros vs Alex Molcan",
+  "boardPlayerName": "Alex Molcan",
+  "recentOpponentName": "Crawford O.",
+  "recentIndex": 1,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 19, 26",
+  "recentIsoDate": "2026-05-19",
+  "recentResult": "Win 1-6 6-4 6-1",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Molcan A. - Crawford O.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Molcan A.",
+    "Crawford O."
+  ],
+  "generatedAt": "2026-06-02T02:39:34.887Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/tYkjSRUO/",
+  "matchId": "tYkjSRUO",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_tYkjSRUO",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_tYkjSRUO"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:27"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "1:52"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "3",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "56%",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (32/45)",
+              "right": "71% (25/35)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "52% (13/25)",
+              "right": "61% (17/28)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "0/3",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (10/35)",
+              "right": "29% (13/45)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "39% (11/28)",
+              "right": "48% (12/25)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "2/4",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "29",
+              "right": "27",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "18",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (6/8)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (45/70)",
+              "right": "67% (42/63)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (21/63)",
+              "right": "36% (25/70)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (66/133)",
+              "right": "50% (67/133)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (10/12)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (3/12)",
+              "right": "17% (2/12)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Total games won",
+              "left": "54% (13/24)",
+              "right": "46% (11/24)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "53%",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (4/8)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (3/9)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/0",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "10% (1/10)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "22% (2/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/2",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "13",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "3",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "41% (7/17)",
+              "right": "84% (16/19)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "16% (3/19)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "28% (10/36)",
+              "right": "72% (26/36)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "0",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "68%",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (18/22)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (3/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (5/17)",
+              "right": "18% (4/22)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (2/8)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "10",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "3",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (21/30)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (8/26)",
+              "right": "30% (9/30)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (29/56)",
+              "right": "48% (27/56)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "42%",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (10/15)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "88% (7/8)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/2",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (4/8)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (7/11)",
+              "right": "13% (1/8)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/1",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "4",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "12",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/1)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (17/23)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "56% (10/18)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "66% (27/41)",
+              "right": "34% (14/41)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Crawford O."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-durasovic-vs-gombos-2026-06-02",
+  "boardTitle": "Viktor Durasovic vs Norbert Gombos",
+  "boardPlayerName": "Viktor Durasovic",
+  "recentOpponentName": "Petkovic M.",
+  "recentIndex": 2,
+  "recentEvent": "M25 Troisdorf (Germany)",
+  "recentDate": "May 30, 26",
+  "recentIsoDate": "2026-05-30",
+  "recentResult": "Loss 1-6 1-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Durasovic V. - Petkovic M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m25-troisdorf/",
+  "players": [
+    "Durasovic V.",
+    "Petkovic M."
+  ],
+  "generatedAt": "2026-06-02T02:39:33.991Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/nP5M30kJ/",
+  "matchId": "nP5M30kJ",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_nP5M30kJ",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_nP5M30kJ"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:27"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:34"
+      }
+    ],
+    "totalDuration": "1:01"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Durasovic V.",
+              "rightPlayer": "Petkovic M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Durasovic V.",
+              "rightPlayer": "Petkovic M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Durasovic V.",
+              "rightPlayer": "Petkovic M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

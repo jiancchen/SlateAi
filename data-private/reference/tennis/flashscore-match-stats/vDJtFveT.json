@@ -1,0 +1,469 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-echargui-vs-tseng-2026-06-02",
+  "boardTitle": "Chun Hsin Tseng vs Moez Echargui",
+  "boardPlayerName": "Moez Echargui",
+  "recentOpponentName": "Clarke J.",
+  "recentIndex": 2,
+  "recentEvent": "Tunis (Tunisia)",
+  "recentDate": "May 12, 26",
+  "recentIsoDate": "2026-05-12",
+  "recentResult": "Loss 0-6 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Clarke J. - Echargui M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/tunis/",
+  "players": [
+    "Clarke J.",
+    "Echargui M."
+  ],
+  "generatedAt": "2026-06-02T02:39:31.587Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/vDJtFveT/",
+  "matchId": "vDJtFveT",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_vDJtFveT",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_vDJtFveT"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 0,
+        "duration": "0:29"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:49"
+      }
+    ],
+    "totalDuration": "1:18"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "46%",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (18/25)",
+              "right": "33% (7/21)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (10/18)",
+              "right": "44% (11/25)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/6",
+              "right": "2/8",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "67% (14/21)",
+              "right": "28% (7/25)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (14/25)",
+              "right": "44% (8/18)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/8",
+              "right": "1/6",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "65% (28/43)",
+              "right": "39% (18/46)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "61% (28/46)",
+              "right": "35% (15/43)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "63% (56/89)",
+              "right": "37% (33/89)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "86% (6/7)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (6/8)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Total games won",
+              "left": "80% (12/15)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "65%",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (9/12)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "1/4",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "73% (8/11)",
+              "right": "25% (3/12)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (4/6)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "0/4",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "64% (14/22)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "71% (12/17)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "67% (26/39)",
+              "right": "33% (13/39)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Total games won",
+              "left": "100% (6/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "34%",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (9/13)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (5/8)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "1/4",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "60% (6/10)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (10/19)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "1/2",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "67% (14/21)",
+              "right": "45% (13/29)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "55% (16/29)",
+              "right": "33% (7/21)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (30/50)",
+              "right": "40% (20/50)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Clarke J.",
+              "rightPlayer": "Echargui M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

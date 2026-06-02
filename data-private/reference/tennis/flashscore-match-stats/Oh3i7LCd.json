@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-duckworth-vs-harris-2026-06-02",
+  "boardTitle": "James Duckworth vs Billy Harris",
+  "boardPlayerName": "Billy Harris",
+  "recentOpponentName": "Comesana F.",
+  "recentIndex": 2,
+  "recentEvent": "Rome (Italy)",
+  "recentDate": "May 04, 26",
+  "recentIsoDate": "2026-05-04",
+  "recentResult": "Loss 3-6 4-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Comesana F. - Harris B.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/",
+  "players": [
+    "Comesana F.",
+    "Harris B."
+  ],
+  "generatedAt": "2026-06-02T02:39:22.679Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Oh3i7LCd/",
+  "matchId": "Oh3i7LCd",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Oh3i7LCd",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Oh3i7LCd"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:55"
+      }
+    ],
+    "totalDuration": "1:37"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "9",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "52%",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (33/44)",
+              "right": "59% (17/29)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (9/21)",
+              "right": "41% (11/27)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "2/6",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (12/29)",
+              "right": "25% (11/44)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "59% (16/27)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/6",
+              "right": "2/4",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "25",
+              "right": "12",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "29",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Net points won",
+              "left": "91% (10/11)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (42/65)",
+              "right": "50% (28/56)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (28/56)",
+              "right": "35% (23/65)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (70/121)",
+              "right": "42% (51/121)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (8/10)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Return games won",
+              "left": "44% (4/9)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Total games won",
+              "left": "63% (12/19)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "59%",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (16/23)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "2/4",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (7/16)",
+              "right": "30% (7/23)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "73% (8/11)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/2",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "5",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "11",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (5/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (21/33)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "56% (15/27)",
+              "right": "36% (12/33)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (36/60)",
+              "right": "40% (24/60)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "45%",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (17/21)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (4/11)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/2",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (5/13)",
+              "right": "19% (4/21)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (8/16)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "1/2",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "7",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "18",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (21/32)",
+              "right": "55% (16/29)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (13/29)",
+              "right": "34% (11/32)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (34/61)",
+              "right": "44% (27/61)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Comesana F.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

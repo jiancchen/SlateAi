@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-kimhi-vs-henning-2026-06-02",
+  "boardTitle": "Orel Kimhi vs Philip Henning",
+  "boardPlayerName": "Philip Henning",
+  "recentOpponentName": "van Schalkwyk C. H.",
+  "recentIndex": 2,
+  "recentEvent": "Centurion (South Africa)",
+  "recentDate": "May 26, 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "Win 6-3 6-3",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Henning P. - van Schalkwyk C. H.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion/",
+  "players": [
+    "Henning P.",
+    "van Schalkwyk C. H."
+  ],
+  "generatedAt": "2026-06-02T02:39:26.467Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/r1r9kfOc/",
+  "matchId": "r1r9kfOc",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_r1r9kfOc",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_r1r9kfOc"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:35"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:40"
+      }
+    ],
+    "totalDuration": "1:15"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "8",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "45%",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (26/33)",
+              "right": "76% (19/25)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "62% (13/21)",
+              "right": "35% (11/31)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "2/6",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (6/25)",
+              "right": "21% (7/33)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "65% (20/31)",
+              "right": "38% (8/21)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/6",
+              "right": "1/5",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "3",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "24",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Net points won",
+              "left": "91% (10/11)",
+              "right": "260% (13/5)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (39/54)",
+              "right": "54% (30/56)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (26/56)",
+              "right": "28% (15/54)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (65/110)",
+              "right": "41% (45/110)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "89% (8/9)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Return games won",
+              "left": "44% (4/9)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (12/18)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "39%",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (11/13)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (5/7)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "14% (2/14)",
+              "right": "15% (2/13)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (14/22)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "19",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (4/4)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "80% (16/20)",
+              "right": "56% (20/36)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (16/36)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (32/56)",
+              "right": "43% (24/56)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "55%",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (15/20)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (8/14)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "0/2",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (4/11)",
+              "right": "25% (5/20)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (6/9)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "1/5",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "0",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "5",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (6/7)",
+              "right": "367% (11/3)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (23/34)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (10/20)",
+              "right": "32% (11/34)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (33/54)",
+              "right": "39% (21/54)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "van Schalkwyk C. H."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,668 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-echargui-vs-tseng-2026-06-02",
+  "boardTitle": "Chun Hsin Tseng vs Moez Echargui",
+  "boardPlayerName": "Chun Hsin Tseng",
+  "recentOpponentName": "Neumayer L.",
+  "recentIndex": 0,
+  "recentEvent": "Vicenza (Italy)",
+  "recentDate": "May 30, 26",
+  "recentIsoDate": "2026-05-30",
+  "recentResult": "Loss 7-5 2-6 6-7",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Tseng C. H. - Neumayer L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/vicenza/",
+  "players": [
+    "Tseng C. H.",
+    "Neumayer L."
+  ],
+  "generatedAt": "2026-06-02T02:39:30.974Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/8ItQsobd/",
+  "matchId": "8ItQsobd",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_8ItQsobd",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_8ItQsobd"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:08"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:54"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:16"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "8",
+              "right": "0",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "71%",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (47/67)",
+              "right": "64% (61/96)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "52% (17/33)",
+              "right": "54% (21/39)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/7",
+              "right": "9/12",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (35/96)",
+              "right": "30% (20/67)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (18/39)",
+              "right": "48% (16/33)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/12",
+              "right": "4/7",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "40",
+              "right": "58",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "28",
+              "right": "55",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (63/99)",
+              "right": "60% (81/134)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (53/134)",
+              "right": "36% (36/99)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (116/233)",
+              "right": "50% (117/233)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (12/16)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Return games won",
+              "left": "19% (3/16)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Total games won",
+              "left": "47% (15/32)",
+              "right": "53% (17/32)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "78%",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (14/20)",
+              "right": "60% (25/42)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "17% (2/12)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "5/8",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "48% (20/42)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "83% (10/12)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/8",
+              "right": "2/4",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "18",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "23",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (20/32)",
+              "right": "50% (27/54)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (27/54)",
+              "right": "38% (12/32)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (47/86)",
+              "right": "45% (39/86)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "74%",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (13/19)",
+              "right": "62% (18/29)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (3/12)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "4/4",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (8/29)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (4/10)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/4",
+              "right": "2/2",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "19",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "11",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (16/31)",
+              "right": "62% (24/39)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (15/39)",
+              "right": "48% (15/31)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (31/70)",
+              "right": "56% (39/70)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "78%",
+              "right": "60%",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (20/28)",
+              "right": "72% (18/25)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "88% (7/8)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (7/25)",
+              "right": "21% (6/28)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "24% (4/17)",
+              "right": "13% (1/8)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "21",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "21",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (27/36)",
+              "right": "73% (30/41)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (11/41)",
+              "right": "25% (9/36)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (38/77)",
+              "right": "51% (39/77)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Tseng C. H.",
+              "rightPlayer": "Neumayer L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

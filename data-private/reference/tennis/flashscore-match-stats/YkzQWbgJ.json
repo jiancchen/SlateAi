@@ -1,0 +1,469 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-wong-vs-tarvet-2026-06-02",
+  "boardTitle": "Coleman Wong vs Oliver Tarvet",
+  "boardPlayerName": "Oliver Tarvet",
+  "recentOpponentName": "Stebe C.",
+  "recentIndex": 0,
+  "recentEvent": "Knoxville (USA)",
+  "recentDate": "Nov 06, 25",
+  "recentIsoDate": "2025-11-06",
+  "recentResult": "Loss 3-6 6-7",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Tarvet O. - Stebe C.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/knoxville/",
+  "players": [
+    "Tarvet O.",
+    "Stebe C."
+  ],
+  "generatedAt": "2026-06-02T02:39:24.795Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/YkzQWbgJ/",
+  "matchId": "YkzQWbgJ",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_YkzQWbgJ",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_YkzQWbgJ"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:59"
+      }
+    ],
+    "totalDuration": "1:37"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "9",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "77%",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (28/42)",
+              "right": "75% (36/48)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (10/19)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "4/5",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (12/48)",
+              "right": "33% (14/42)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (6/14)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "3/4",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "62% (38/61)",
+              "right": "71% (44/62)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (18/62)",
+              "right": "38% (23/61)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (56/123)",
+              "right": "54% (67/123)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "73% (8/11)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "Return games won",
+              "left": "10% (1/10)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "Total games won",
+              "left": "43% (9/21)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "64%",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (8/16)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "2/3",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (4/14)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (4/8)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "3/5",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "44% (12/27)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (8/22)",
+              "right": "56% (15/27)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (20/49)",
+              "right": "59% (29/49)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "85%",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (20/26)",
+              "right": "76% (26/34)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (6/9)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "-1/-1",
+              "right": "2/2",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (8/34)",
+              "right": "19% (5/26)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (2/6)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "0/-1",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "76% (26/34)",
+              "right": "75% (30/40)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (10/40)",
+              "right": "24% (8/34)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (36/74)",
+              "right": "51% (38/74)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Tarvet O.",
+              "rightPlayer": "Stebe C."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

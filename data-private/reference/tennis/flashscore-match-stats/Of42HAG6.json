@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-mikrut-vs-marti-pujolras-2026-06-02",
+  "boardTitle": "Luka Mikrut vs Alex Marti Pujolras",
+  "boardPlayerName": "Luka Mikrut",
+  "recentOpponentName": "Fatic N.",
+  "recentIndex": 0,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 19, 26",
+  "recentIsoDate": "2026-05-19",
+  "recentResult": "Loss 4-6 4-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Fatic N. - Mikrut L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Fatic N.",
+    "Mikrut L."
+  ],
+  "generatedAt": "2026-06-02T02:39:19.161Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Of42HAG6/",
+  "matchId": "Of42HAG6",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Of42HAG6",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Of42HAG6"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:51"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:40"
+      }
+    ],
+    "totalDuration": "1:31"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "69%",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (30/38)",
+              "right": "64% (30/47)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "69% (11/16)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (17/47)",
+              "right": "21% (8/38)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (11/21)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "26",
+              "right": "16",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "19",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Net points won",
+              "left": "77% (17/22)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (41/54)",
+              "right": "59% (40/68)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (28/68)",
+              "right": "24% (13/54)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (69/122)",
+              "right": "43% (53/122)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (10/10)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (2/10)",
+              "right": "0% (0/10)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "58%",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (12/15)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "73% (8/11)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/3",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (9/23)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (8/17)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "0/0",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "7",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "9",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Net points won",
+              "left": "69% (9/13)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "77% (20/26)",
+              "right": "57% (23/40)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (17/40)",
+              "right": "23% (6/26)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (37/66)",
+              "right": "44% (29/66)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "82%",
+              "right": "86%",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (18/23)",
+              "right": "67% (16/24)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (8/24)",
+              "right": "22% (5/23)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "9",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "10",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Net points won",
+              "left": "89% (8/9)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (21/28)",
+              "right": "61% (17/28)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (11/28)",
+              "right": "25% (7/28)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (32/56)",
+              "right": "43% (24/56)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Fatic N.",
+              "rightPlayer": "Mikrut L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

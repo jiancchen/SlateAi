@@ -1,0 +1,546 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-sanchez-izquierdo-vs-pavlovic-2026-06-02",
+  "boardTitle": "Luka Pavlovic vs Nikolas Sanchez Izquierdo",
+  "boardPlayerName": "Luka Pavlovic",
+  "recentOpponentName": "Blanch Dar.",
+  "recentIndex": 1,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 22, 26",
+  "recentIsoDate": "2026-05-22",
+  "recentResult": "Win 6-2 6-4",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Blanch Dar. - Pavlovic L.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Blanch Dar.",
+    "Pavlovic L."
+  ],
+  "generatedAt": "2026-06-02T02:39:39.256Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/YiGDMiAF/",
+  "matchId": "YiGDMiAF",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_YiGDMiAF",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_YiGDMiAF"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:36"
+      }
+    ],
+    "totalDuration": "1:12"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "7",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "52%",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (25/33)",
+              "right": "93% (27/29)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (11/27)",
+              "right": "52% (14/27)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "3/3",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "193 km/h",
+              "right": "204 km/h",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "154 km/h",
+              "right": "155 km/h",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "7% (2/29)",
+              "right": "24% (8/33)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (13/27)",
+              "right": "59% (16/27)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "3/6",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "21",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "17",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Net points won",
+              "left": "40% (8/20)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (36/60)",
+              "right": "73% (41/56)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (15/56)",
+              "right": "40% (24/60)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (51/116)",
+              "right": "56% (65/116)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (6/9)",
+              "right": "100% (9/9)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (6/18)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "46%",
+              "right": "48%",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (11/13)",
+              "right": "93% (14/15)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (5/15)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "3/3",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "7% (1/15)",
+              "right": "15% (2/13)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (9/16)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "2/4",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "10",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Net points won",
+              "left": "56% (5/9)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (16/28)",
+              "right": "68% (21/31)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (10/31)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (26/59)",
+              "right": "56% (33/59)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "56%",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (14/20)",
+              "right": "93% (13/14)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "7% (1/14)",
+              "right": "30% (6/20)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "14",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Net points won",
+              "left": "27% (3/11)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (20/32)",
+              "right": "80% (20/25)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (5/25)",
+              "right": "38% (12/32)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (25/57)",
+              "right": "56% (32/57)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Blanch Dar.",
+              "rightPlayer": "Pavlovic L."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

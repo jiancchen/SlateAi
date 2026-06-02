@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-moeller-vs-onclin-2026-06-02",
+  "boardTitle": "Marvin Moeller vs Gauthier Onclin",
+  "boardPlayerName": "Gauthier Onclin",
+  "recentOpponentName": "Kotov P.",
+  "recentIndex": 0,
+  "recentEvent": "Chisinau (Moldova)",
+  "recentDate": "May 26, 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "Loss 1-6 6-3 4-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Kotov P. - Onclin G.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/chisinau/",
+  "players": [
+    "Kotov P.",
+    "Onclin G."
+  ],
+  "generatedAt": "2026-06-02T02:39:19.460Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/b3RJKUF8/",
+  "matchId": "b3RJKUF8",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_b3RJKUF8",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_b3RJKUF8"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:40"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:46"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:24"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "7",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "58%",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (33/49)",
+              "right": "71% (30/42)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "51% (23/45)",
+              "right": "40% (12/30)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "10/13",
+              "right": "1/6",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (12/42)",
+              "right": "33% (16/49)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (18/30)",
+              "right": "49% (22/45)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/6",
+              "right": "3/13",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "22",
+              "right": "22",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "47",
+              "right": "52",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Net points won",
+              "left": "70% (7/10)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (56/94)",
+              "right": "58% (42/72)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (30/72)",
+              "right": "40% (38/94)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (86/166)",
+              "right": "48% (80/166)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "77% (10/13)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Return games won",
+              "left": "38% (5/13)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (15/26)",
+              "right": "42% (11/26)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "55%",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (12/17)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "62% (8/13)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "0/2",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (4/11)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "78% (7/9)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/3",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "6",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "20",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (20/30)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "55% (11/20)",
+              "right": "33% (10/30)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "62% (31/50)",
+              "right": "38% (19/50)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "62%",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (9/17)",
+              "right": "94% (15/16)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (6/11)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (3/16)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (5/10)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "15",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (15/26)",
+              "right": "77% (20/26)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (6/26)",
+              "right": "42% (11/26)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (21/52)",
+              "right": "60% (31/52)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "42%",
+              "right": "58%",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (12/15)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (9/21)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/7",
+              "right": "1/4",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (5/15)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "2/7",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "8",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "17",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (4/6)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (21/38)",
+              "right": "50% (13/26)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (13/26)",
+              "right": "45% (17/38)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (34/64)",
+              "right": "47% (30/64)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Kotov P.",
+              "rightPlayer": "Onclin G."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

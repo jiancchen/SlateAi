@@ -1,0 +1,546 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-schoolkate-vs-fery-2026-06-02",
+  "boardTitle": "Tristan Schoolkate vs Arthur Fery",
+  "boardPlayerName": "Tristan Schoolkate",
+  "recentOpponentName": "Blanch Dar.",
+  "recentIndex": 0,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 20, 26",
+  "recentIsoDate": "2026-05-20",
+  "recentResult": "Loss 4-6 4-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Schoolkate T. - Blanch Dar.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Schoolkate T.",
+    "Blanch Dar."
+  ],
+  "generatedAt": "2026-06-02T02:39:24.061Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/l6B6RrJD/",
+  "matchId": "l6B6RrJD",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_l6B6RrJD",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_l6B6RrJD"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:35"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:42"
+      }
+    ],
+    "totalDuration": "1:17"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "69%",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (28/44)",
+              "right": "76% (26/34)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (12/22)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "0/1",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "182 km/h",
+              "right": "194 km/h",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "156 km/h",
+              "right": "155 km/h",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (8/34)",
+              "right": "36% (16/44)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "27% (4/15)",
+              "right": "45% (10/22)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/6",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "29",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "17",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (6/12)",
+              "right": "73% (16/22)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (40/66)",
+              "right": "76% (37/49)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (12/49)",
+              "right": "39% (26/66)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (52/115)",
+              "right": "55% (63/115)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "70% (7/10)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Return games won",
+              "left": "10% (1/10)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (8/20)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "68%",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (14/25)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "0/1",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (3/15)",
+              "right": "44% (11/25)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (2/7)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/5",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "12",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "8",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (19/34)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (5/22)",
+              "right": "44% (15/34)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (24/56)",
+              "right": "57% (32/56)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "70%",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (14/19)",
+              "right": "74% (14/19)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (5/19)",
+              "right": "26% (5/19)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (2/8)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "17",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "9",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (4/8)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (21/32)",
+              "right": "74% (20/27)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (7/27)",
+              "right": "34% (11/32)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (28/59)",
+              "right": "53% (31/59)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Schoolkate T.",
+              "rightPlayer": "Blanch Dar."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

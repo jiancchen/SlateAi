@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-duckworth-vs-harris-2026-06-02",
+  "boardTitle": "James Duckworth vs Billy Harris",
+  "boardPlayerName": "Billy Harris",
+  "recentOpponentName": "Dedura D.",
+  "recentIndex": 3,
+  "recentEvent": "Mauthausen (Austria)",
+  "recentDate": "Apr 27, 26",
+  "recentIsoDate": "2026-04-27",
+  "recentResult": "Loss 7-6 2-6 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Dedura D. - Harris B.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/mauthausen/",
+  "players": [
+    "Dedura D.",
+    "Harris B."
+  ],
+  "generatedAt": "2026-06-02T02:39:22.710Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/xC9wbZSH/",
+  "matchId": "xC9wbZSH",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_xC9wbZSH",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_xC9wbZSH"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 0,
+        "rightGames": 7,
+        "duration": "0:51"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:30"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:02"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "49%",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (37/46)",
+              "right": "72% (33/46)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (18/31)",
+              "right": "47% (22/47)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "2/7",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (13/46)",
+              "right": "20% (9/46)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (25/47)",
+              "right": "42% (13/31)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/7",
+              "right": "1/3",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "12",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "34",
+              "right": "66",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (55/77)",
+              "right": "59% (55/93)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (38/93)",
+              "right": "29% (22/77)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (93/170)",
+              "right": "45% (77/170)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "93% (13/14)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (5/15)",
+              "right": "7% (1/14)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Total games won",
+              "left": "62% (18/29)",
+              "right": "38% (11/29)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "49%",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (14/20)",
+              "right": "86% (18/21)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (8/15)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "1/2",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "14% (3/21)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (10/22)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "1/3",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "24",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (21/33)",
+              "right": "69% (29/42)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (13/42)",
+              "right": "36% (12/33)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (34/75)",
+              "right": "55% (41/75)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "48%",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "91% (10/11)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (5/7)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (5/10)",
+              "right": "9% (1/11)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (6/11)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "15",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "80% (16/20)",
+              "right": "55% (11/20)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (9/20)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "63% (25/40)",
+              "right": "38% (15/40)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "52%",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "87% (13/15)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (5/15)",
+              "right": "7% (1/15)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (9/14)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "27",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (18/24)",
+              "right": "48% (15/31)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (16/31)",
+              "right": "25% (6/24)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "62% (34/55)",
+              "right": "38% (21/55)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Harris B."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-duran-vs-napolitano-2026-06-02",
+  "boardTitle": "Tuncay Duran vs Stefano Napolitano",
+  "boardPlayerName": "Tuncay Duran",
+  "recentOpponentName": "Ambarzumjan E.",
+  "recentIndex": 3,
+  "recentEvent": "Centurion (South Africa)",
+  "recentDate": "May 24, 26",
+  "recentIsoDate": "2026-05-24",
+  "recentResult": "Win 6-4 6-4",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Duran T. - Ambarzumjan E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion/",
+  "players": [
+    "Duran T.",
+    "Ambarzumjan E."
+  ],
+  "generatedAt": "2026-06-02T02:39:25.802Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/MNmnBHrC/",
+  "matchId": "MNmnBHrC",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_MNmnBHrC",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_MNmnBHrC"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:34"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:38"
+      }
+    ],
+    "totalDuration": "1:12"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "12",
+              "right": "1",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "52%",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (30/36)",
+              "right": "59% (19/32)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "61% (11/18)",
+              "right": "66% (19/29)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (13/32)",
+              "right": "17% (6/36)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "34% (10/29)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "30",
+              "right": "12",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "29",
+              "right": "18",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (6/12)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (41/54)",
+              "right": "62% (38/61)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (23/61)",
+              "right": "24% (13/54)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (64/115)",
+              "right": "44% (51/115)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (10/10)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (2/10)",
+              "right": "0% (0/10)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "55%",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "93% (14/15)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (6/17)",
+              "right": "7% (1/15)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (6/14)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "5",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "11",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "80% (20/25)",
+              "right": "61% (19/31)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (12/31)",
+              "right": "20% (5/25)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (32/56)",
+              "right": "43% (24/56)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "9",
+              "right": "1",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "50%",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (16/21)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (5/8)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (7/15)",
+              "right": "24% (5/21)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "27% (4/15)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "20",
+              "right": "7",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "7",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (4/8)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (21/29)",
+              "right": "63% (19/30)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (11/30)",
+              "right": "28% (8/29)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (32/59)",
+              "right": "46% (27/59)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Ambarzumjan E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-cretu-vs-vasami-2026-06-02",
+  "boardTitle": "Cezar Cretu (b. 2001) vs Jacopo Vasami",
+  "boardPlayerName": "Jacopo Vasami",
+  "recentOpponentName": "Hsu Y. H.",
+  "recentIndex": 2,
+  "recentEvent": "Vicenza (Italy)",
+  "recentDate": "May 29, 26",
+  "recentIsoDate": "2026-05-29",
+  "recentResult": "Win 6-2 6-3",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Hsu Y. H. - Vasami J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/vicenza/",
+  "players": [
+    "Hsu Y. H.",
+    "Vasami J."
+  ],
+  "generatedAt": "2026-06-02T02:39:31.419Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/QiWYoaOH/",
+  "matchId": "QiWYoaOH",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_QiWYoaOH",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_QiWYoaOH"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:40"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:49"
+      }
+    ],
+    "totalDuration": "1:29"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "62%",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "54% (22/41)",
+              "right": "70% (26/37)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (8/17)",
+              "right": "57% (13/23)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/5",
+              "right": "3/4",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (11/37)",
+              "right": "46% (19/41)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (10/23)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "4/5",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "30",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "25",
+              "right": "22",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (30/58)",
+              "right": "65% (39/60)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (21/60)",
+              "right": "48% (28/58)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (51/118)",
+              "right": "57% (67/118)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (4/8)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Return games won",
+              "left": "11% (1/9)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Total games won",
+              "left": "29% (5/17)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "81%",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (11/22)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "0/1",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (8/22)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (3/5)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/4",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "16",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "11",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "47% (15/32)",
+              "right": "59% (16/27)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (11/27)",
+              "right": "53% (17/32)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (26/59)",
+              "right": "56% (33/59)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "45%",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (11/19)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (4/7)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "3/3",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (3/15)",
+              "right": "42% (8/19)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "39% (7/18)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "1/1",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "14",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "11",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (15/26)",
+              "right": "70% (23/33)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (10/33)",
+              "right": "42% (11/26)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (25/59)",
+              "right": "58% (34/59)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Vasami J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

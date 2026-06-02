@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-duran-vs-napolitano-2026-06-02",
+  "boardTitle": "Tuncay Duran vs Stefano Napolitano",
+  "boardPlayerName": "Tuncay Duran",
+  "recentOpponentName": "Kimhi O.",
+  "recentIndex": 2,
+  "recentEvent": "Centurion (South Africa)",
+  "recentDate": "May 25, 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "Loss 3-6 3-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Duran T. - Kimhi O.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion/",
+  "players": [
+    "Duran T.",
+    "Kimhi O."
+  ],
+  "generatedAt": "2026-06-02T02:39:25.797Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/pSF0GKGd/",
+  "matchId": "pSF0GKGd",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_pSF0GKGd",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_pSF0GKGd"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:45"
+      }
+    ],
+    "totalDuration": "1:26"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "73%",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (20/29)",
+              "right": "83% (33/40)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (11/26)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "1/1",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (8/40)",
+              "right": "31% (9/29)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (8/15)",
+              "right": "58% (15/26)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "3/5",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "6",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "42",
+              "right": "9",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Net points won",
+              "left": "53% (8/15)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (31/55)",
+              "right": "73% (40/55)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (15/55)",
+              "right": "44% (24/55)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (46/110)",
+              "right": "58% (64/110)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (6/9)",
+              "right": "100% (9/9)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (6/18)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "70%",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (14/20)",
+              "right": "100% (14/14)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (6/13)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (4/14)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (4/6)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "3",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "5",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Net points won",
+              "left": "55% (6/11)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (19/33)",
+              "right": "80% (16/20)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (4/20)",
+              "right": "42% (14/33)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (23/53)",
+              "right": "57% (30/53)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "41%",
+              "right": "74%",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (6/9)",
+              "right": "73% (19/26)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (5/13)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/1",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (4/26)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (4/9)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/1",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "3",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "4",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (12/22)",
+              "right": "69% (24/35)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (11/35)",
+              "right": "45% (10/22)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (23/57)",
+              "right": "60% (34/57)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Kimhi O."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

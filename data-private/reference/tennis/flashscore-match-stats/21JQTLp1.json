@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-watt-vs-wendelken-2026-06-02",
+  "boardTitle": "James Watt vs Harry Wendelken",
+  "boardPlayerName": "James Watt",
+  "recentOpponentName": "Agamenone F.",
+  "recentIndex": 3,
+  "recentEvent": "Francavilla (Italy)",
+  "recentDate": "May 03, 26",
+  "recentIsoDate": "2026-05-03",
+  "recentResult": "Loss 3-6 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Agamenone F. - Watt J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/francavilla/",
+  "players": [
+    "Agamenone F.",
+    "Watt J."
+  ],
+  "generatedAt": "2026-06-02T02:39:23.794Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/21JQTLp1/",
+  "matchId": "21JQTLp1",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_21JQTLp1",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_21JQTLp1"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:29"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:38"
+      }
+    ],
+    "totalDuration": "1:07"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "60%",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (27/37)",
+              "right": "59% (16/27)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (10/17)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "1/5",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (11/27)",
+              "right": "27% (10/37)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (9/18)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/5",
+              "right": "1/5",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "17",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "35",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (6/7)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (37/54)",
+              "right": "56% (25/45)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (20/45)",
+              "right": "31% (17/54)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (57/99)",
+              "right": "42% (42/99)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "89% (8/9)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Return games won",
+              "left": "44% (4/9)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (12/18)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "82%",
+              "right": "60%",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (14/18)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (3/4)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (6/15)",
+              "right": "22% (4/18)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (4/10)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "10",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "16",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (5/5)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "77% (17/22)",
+              "right": "60% (15/25)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (10/25)",
+              "right": "23% (5/22)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (27/47)",
+              "right": "43% (20/47)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "60%",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (13/19)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "1/3",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (5/12)",
+              "right": "32% (6/19)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "1/5",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "7",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "19",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (20/32)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (10/20)",
+              "right": "38% (12/32)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (30/52)",
+              "right": "42% (22/52)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Agamenone F.",
+              "rightPlayer": "Watt J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

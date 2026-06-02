@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-martin-vs-kopriva-2026-06-02",
+  "boardTitle": "Vit Kopriva vs Andrej Martin",
+  "boardPlayerName": "Andrej Martin",
+  "recentOpponentName": "Dutra Da Silva D.",
+  "recentIndex": 0,
+  "recentEvent": "Prostejov (Czech Republic)",
+  "recentDate": "Jun 01, 26",
+  "recentIsoDate": "2026-06-01",
+  "recentResult": "Win 6-2 6-4",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Dutra Da Silva D. - Martin A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/prostejov/",
+  "players": [
+    "Dutra Da Silva D.",
+    "Martin A."
+  ],
+  "generatedAt": "2026-06-02T02:39:34.270Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/QBQ7jZP0/",
+  "matchId": "QBQ7jZP0",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_QBQ7jZP0",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_QBQ7jZP0"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:42"
+      }
+    ],
+    "totalDuration": "1:23"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "73%",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (29/42)",
+              "right": "72% (31/43)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "32% (7/22)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "10/13",
+              "right": "3/3",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (12/43)",
+              "right": "31% (13/42)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (7/16)",
+              "right": "68% (15/22)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "3/13",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "24",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "35",
+              "right": "26",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (36/64)",
+              "right": "68% (40/59)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (19/59)",
+              "right": "44% (28/64)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (55/123)",
+              "right": "55% (68/123)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (6/9)",
+              "right": "100% (9/9)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (6/18)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "71%",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (15/22)",
+              "right": "75% (15/20)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "15% (2/13)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "9/11",
+              "right": "0/0",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (5/20)",
+              "right": "41% (9/22)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (4/8)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/11",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "16",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "13",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "49% (17/35)",
+              "right": "68% (19/28)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (9/28)",
+              "right": "51% (18/35)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (26/63)",
+              "right": "59% (37/63)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "74%",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (14/20)",
+              "right": "70% (16/23)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "3/3",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (7/23)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "1/2",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "8",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "13",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (19/29)",
+              "right": "68% (21/31)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (10/31)",
+              "right": "34% (10/29)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (29/60)",
+              "right": "52% (31/60)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Dutra Da Silva D.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,546 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-fearnley-vs-hijikata-2026-06-02",
+  "boardTitle": "Jacob Fearnley vs Rinky Hijikata",
+  "boardPlayerName": "Jacob Fearnley",
+  "recentOpponentName": "Mochizuki S.",
+  "recentIndex": 4,
+  "recentEvent": "Rome (Italy)",
+  "recentDate": "May 04, 26",
+  "recentIsoDate": "2026-05-04",
+  "recentResult": "Win 6-3 6-1",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Mochizuki S. - Fearnley J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/",
+  "players": [
+    "Mochizuki S.",
+    "Fearnley J."
+  ],
+  "generatedAt": "2026-06-02T02:39:22.426Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/2oNWs5qo/",
+  "matchId": "2oNWs5qo",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_2oNWs5qo",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_2oNWs5qo"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:38"
+      }
+    ],
+    "totalDuration": "1:16"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "6",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "57%",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "46% (17/37)",
+              "right": "76% (19/25)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "35% (8/23)",
+              "right": "42% (8/19)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "9/15",
+              "right": "0/2",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "158 km/h",
+              "right": "188 km/h",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "157 km/h",
+              "right": "182 km/h",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (6/25)",
+              "right": "54% (20/37)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (11/19)",
+              "right": "65% (15/23)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "6/15",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "14",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "35",
+              "right": "26",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Net points won",
+              "left": "73% (8/11)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "42% (25/60)",
+              "right": "61% (27/44)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (17/44)",
+              "right": "58% (35/60)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (42/104)",
+              "right": "60% (62/104)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (4/16)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "4",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "59%",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (7/14)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (3/12)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "0/2",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (6/17)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (8/12)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "3/7",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "5",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "16",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "38% (10/26)",
+              "right": "52% (15/29)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (14/29)",
+              "right": "62% (16/26)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (24/55)",
+              "right": "56% (31/55)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "53%",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "43% (10/23)",
+              "right": "100% (8/8)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (5/11)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/8",
+              "right": "0/0",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "0% (0/8)",
+              "right": "57% (13/23)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (3/7)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/8",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "9",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "10",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (6/8)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "44% (15/34)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (3/15)",
+              "right": "56% (19/34)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (18/49)",
+              "right": "63% (31/49)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Mochizuki S.",
+              "rightPlayer": "Fearnley J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

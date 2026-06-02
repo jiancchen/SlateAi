@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-dalmasso-vs-bittoun-kouzmine-2026-06-02",
+  "boardTitle": "Guillaume Dalmasso vs Constantin Bittoun Kouzmine",
+  "boardPlayerName": "Guillaume Dalmasso",
+  "recentOpponentName": "Buldorini P.",
+  "recentIndex": 0,
+  "recentEvent": "Centurion 2 (South Africa)",
+  "recentDate": "Jun 01, 26",
+  "recentIsoDate": "2026-06-01",
+  "recentResult": "Win 7-6 6-4",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Dalmasso G. - Buldorini P.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+  "players": [
+    "Dalmasso G.",
+    "Buldorini P."
+  ],
+  "generatedAt": "2026-06-02T02:39:25.208Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/8Wu0W81s/",
+  "matchId": "8Wu0W81s",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_8Wu0W81s",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_8Wu0W81s"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 3,
+        "duration": "1:03"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:46"
+      }
+    ],
+    "totalDuration": "1:49"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "5",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "60%",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "86% (37/43)",
+              "right": "74% (32/43)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (8/19)",
+              "right": "48% (14/29)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "8/10",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (11/43)",
+              "right": "14% (6/43)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (15/29)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/10",
+              "right": "1/1",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "24",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "30",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "73% (45/62)",
+              "right": "64% (46/72)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (26/72)",
+              "right": "27% (17/62)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (71/134)",
+              "right": "47% (63/134)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "91% (10/11)",
+              "right": "82% (9/11)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Return games won",
+              "left": "18% (2/11)",
+              "right": "9% (1/11)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Total games won",
+              "left": "55% (12/22)",
+              "right": "45% (10/22)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "55%",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (22/27)",
+              "right": "74% (17/23)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (4/11)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "7/8",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (7/23)",
+              "right": "19% (5/27)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (9/19)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/8",
+              "right": "1/1",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "13",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "23",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (25/37)",
+              "right": "63% (27/43)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (16/43)",
+              "right": "32% (12/37)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (41/80)",
+              "right": "49% (39/80)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "67%",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "94% (15/16)",
+              "right": "75% (15/20)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (4/8)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (4/20)",
+              "right": "6% (1/16)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (6/10)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "11",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "80% (20/25)",
+              "right": "66% (19/29)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (10/29)",
+              "right": "20% (5/25)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (30/54)",
+              "right": "44% (24/54)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Dalmasso G.",
+              "rightPlayer": "Buldorini P."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

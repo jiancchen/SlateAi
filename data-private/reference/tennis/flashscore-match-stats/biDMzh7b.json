@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-kimhi-vs-henning-2026-06-02",
+  "boardTitle": "Orel Kimhi vs Philip Henning",
+  "boardPlayerName": "Philip Henning",
+  "recentOpponentName": "Jorda Sanchis D.",
+  "recentIndex": 3,
+  "recentEvent": "Rome (Italy)",
+  "recentDate": "Apr 19, 26",
+  "recentIsoDate": "2026-04-19",
+  "recentResult": "Loss 6-3 4-6 6-7",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Henning P. - Jorda Sanchis D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/rome/",
+  "players": [
+    "Henning P.",
+    "Jorda Sanchis D."
+  ],
+  "generatedAt": "2026-06-02T02:39:26.497Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/biDMzh7b/",
+  "matchId": "biDMzh7b",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_biDMzh7b",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_biDMzh7b"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:32"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:49"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 8,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:33"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "9",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "66%",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (55/84)",
+              "right": "69% (41/59)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (15/33)",
+              "right": "60% (18/30)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/11",
+              "right": "2/5",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (18/59)",
+              "right": "35% (29/84)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (12/30)",
+              "right": "55% (18/33)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "3/11",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "25",
+              "right": "32",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "50",
+              "right": "42",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Net points won",
+              "left": "71% (5/7)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (70/117)",
+              "right": "66% (59/89)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (30/89)",
+              "right": "40% (47/117)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (100/206)",
+              "right": "51% (106/206)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "81% (13/16)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (3/15)",
+              "right": "19% (3/16)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Total games won",
+              "left": "52% (16/31)",
+              "right": "48% (15/31)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "71%",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (13/18)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (8/12)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (4/15)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (3/6)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "5",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "10",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (21/30)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (7/21)",
+              "right": "30% (9/30)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (28/51)",
+              "right": "45% (23/51)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "74%",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "48% (11/23)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (5/11)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "2/4",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (9/23)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "3/6",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "5",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "16",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "47% (16/34)",
+              "right": "55% (17/31)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (14/31)",
+              "right": "53% (18/34)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (30/65)",
+              "right": "54% (35/65)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "81%",
+              "right": "57%",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (31/43)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "20% (2/10)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "0/0",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (5/21)",
+              "right": "28% (12/43)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (4/16)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/4",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "22",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "16",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (33/53)",
+              "right": "76% (28/37)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (9/37)",
+              "right": "38% (20/53)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (42/90)",
+              "right": "53% (48/90)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Henning P.",
+              "rightPlayer": "Jorda Sanchis D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

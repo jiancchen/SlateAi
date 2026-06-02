@@ -1,0 +1,546 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-lajal-vs-riedi-2026-06-02",
+  "boardTitle": "Leandro Riedi vs Mark Lajal",
+  "boardPlayerName": "Mark Lajal",
+  "recentOpponentName": "Safiullin R.",
+  "recentIndex": 0,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 19, 26",
+  "recentIsoDate": "2026-05-19",
+  "recentResult": "Loss 4-6 4-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Lajal M. - Safiullin R.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Lajal M.",
+    "Safiullin R."
+  ],
+  "generatedAt": "2026-06-02T02:39:22.794Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/AuGO6lwS/",
+  "matchId": "AuGO6lwS",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_AuGO6lwS",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_AuGO6lwS"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:49"
+      }
+    ],
+    "totalDuration": "1:30"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "55%",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (24/34)",
+              "right": "76% (26/34)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (16/30)",
+              "right": "68% (19/28)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/8",
+              "right": "1/1",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "191 km/h",
+              "right": "184 km/h",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "155 km/h",
+              "right": "157 km/h",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (8/34)",
+              "right": "29% (10/34)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "32% (9/28)",
+              "right": "47% (14/30)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "2/8",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "29",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "23",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "75% (15/20)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (39/63)",
+              "right": "73% (45/62)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (17/62)",
+              "right": "38% (24/63)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (56/125)",
+              "right": "55% (69/125)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (8/10)",
+              "right": "100% (10/10)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/10)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (8/20)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "59%",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (11/17)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (8/15)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (3/16)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "13",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "12",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/1)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (18/31)",
+              "right": "74% (20/27)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (7/27)",
+              "right": "42% (13/31)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (25/58)",
+              "right": "57% (33/58)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "51%",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (13/17)",
+              "right": "72% (13/18)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (8/15)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "1/1",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (5/18)",
+              "right": "24% (4/17)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (5/17)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/5",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "16",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "11",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (5/5)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (21/32)",
+              "right": "71% (25/35)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (10/35)",
+              "right": "34% (11/32)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (31/67)",
+              "right": "54% (36/67)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Lajal M.",
+              "rightPlayer": "Safiullin R."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

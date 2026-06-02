@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-tyler-walton-vs-wu-2026-06-02",
+  "boardTitle": "Adam Walton vs Tung-Lin Wu",
+  "boardPlayerName": "Tung-Lin Wu",
+  "recentOpponentName": "Te R.",
+  "recentIndex": 3,
+  "recentEvent": "Jiujiang (China)",
+  "recentDate": "Apr 29, 26",
+  "recentIsoDate": "2026-04-29",
+  "recentResult": "Win 6-4 6-1",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Wu Tung-Lin - Te R.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/jiujiang/",
+  "players": [
+    "Wu Tung-Lin",
+    "Te R."
+  ],
+  "generatedAt": "2026-06-02T02:39:39.939Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/WUSAey34/",
+  "matchId": "WUSAey34",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_WUSAey34",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_WUSAey34"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:26"
+      }
+    ],
+    "totalDuration": "1:07"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "51%",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "89% (24/27)",
+              "right": "60% (21/35)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "73% (8/11)",
+              "right": "48% (16/33)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "11/15",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (15/35)",
+              "right": "11% (3/27)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (17/33)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/15",
+              "right": "0/0",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "17",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "33",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "84% (32/38)",
+              "right": "53% (36/68)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (32/68)",
+              "right": "16% (6/38)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (64/106)",
+              "right": "40% (42/106)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (8/8)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Return games won",
+              "left": "44% (4/9)",
+              "right": "0% (0/8)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "53%",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "94% (15/16)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (6/9)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "7/8",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (7/20)",
+              "right": "13% (2/16)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (8/18)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/8",
+              "right": "0/0",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "11",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "17",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "83% (20/24)",
+              "right": "61% (23/38)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (15/38)",
+              "right": "17% (4/24)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (35/62)",
+              "right": "44% (27/62)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "85%",
+              "right": "50%",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (9/11)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "100% (2/2)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "4/7",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "53% (8/15)",
+              "right": "9% (1/11)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (9/15)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "0/0",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "6",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "16",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "86% (12/14)",
+              "right": "43% (13/30)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "57% (17/30)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "66% (29/44)",
+              "right": "34% (15/44)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Wu Tung-Lin",
+              "rightPlayer": "Te R."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

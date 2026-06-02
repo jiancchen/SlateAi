@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-pinnington-jones-vs-vukic-2026-06-02",
+  "boardTitle": "Jack Pinnington Jones vs Aleksandar Vukic",
+  "boardPlayerName": "Jack Pinnington Jones",
+  "recentOpponentName": "Smith C.",
+  "recentIndex": 1,
+  "recentEvent": "Oeiras 6 (Portugal)",
+  "recentDate": "May 13, 26",
+  "recentIsoDate": "2026-05-13",
+  "recentResult": "Loss 4-6 1-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Smith C. - Pinnington Jones J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/oeiras-6/",
+  "players": [
+    "Smith C.",
+    "Pinnington Jones J."
+  ],
+  "generatedAt": "2026-06-02T02:39:23.978Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/ChpEMZG6/",
+  "matchId": "ChpEMZG6",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_ChpEMZG6",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_ChpEMZG6"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:53"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:43"
+      }
+    ],
+    "totalDuration": "1:36"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "0",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "65%",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (27/44)",
+              "right": "53% (19/36)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (15/24)",
+              "right": "42% (8/19)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/8",
+              "right": "6/10",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (17/36)",
+              "right": "39% (17/44)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "58% (11/19)",
+              "right": "38% (9/24)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/10",
+              "right": "1/8",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "22",
+              "right": "8",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "32",
+              "right": "29",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (8/10)",
+              "right": "43% (3/7)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (42/68)",
+              "right": "49% (27/55)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (28/55)",
+              "right": "38% (26/68)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (70/123)",
+              "right": "43% (53/123)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "89% (8/9)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (4/8)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "71%",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (12/22)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (9/12)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "2/4",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (11/22)",
+              "right": "45% (10/22)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (4/9)",
+              "right": "25% (3/12)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/3",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "3",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "15",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (5/6)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (21/34)",
+              "right": "53% (17/32)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (15/32)",
+              "right": "38% (13/34)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (36/66)",
+              "right": "45% (30/66)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "58%",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (15/22)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/5",
+              "right": "4/6",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (6/14)",
+              "right": "32% (7/22)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "70% (7/10)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "0/5",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "5",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "14",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (21/34)",
+              "right": "43% (10/23)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "57% (13/23)",
+              "right": "38% (13/34)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (34/57)",
+              "right": "40% (23/57)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Smith C.",
+              "rightPlayer": "Pinnington Jones J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

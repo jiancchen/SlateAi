@@ -19,63 +19,90 @@ const rawTennisGames = [
     "stage": "ATP Challenger Perugia | Round Of 32",
     "pickName": "Chun Hsin Tseng",
     "basePickName": "Chun Hsin Tseng",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 81,
-    "volatility": 52,
+    "marketOnly": false,
+    "confidence": 64.8,
+    "volatility": 48,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
-      "Market favorite"
+      "Warehouse joined",
+      "Flashscore first",
+      "Coinflip price"
     ],
-    "reason": "Chun Hsin Tseng is only the current Robinhood market favorite over Moez Echargui; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Chun Hsin Tseng has the recent service-hold edge 71% to 57%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
-      "attackingSide": null,
-      "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "edgeType": "Weakness edge",
+      "target": "Moez Echargui",
+      "scoreGap": 17,
+      "attackingSide": "Chun Hsin Tseng",
+      "vulnerableSide": "Moez Echargui",
+      "gameFlow": "Chun Hsin Tseng has a real path if Moez Echargui's first two service games show the same weakness: low recent hold rate (57%); first-serve points won below comfort (55%).",
+      "liveTrigger": "Look for Moez Echargui facing break points or second-serve pressure before 3-3.",
+      "spreadRead": "Chun Hsin Tseng spread only if the handicap is short and Moez Echargui is under pressure early.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Chun Hsin Tseng",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 71,
+        "firstServeWonPct": 65,
+        "secondServeWonPct": 52,
+        "firstServePct": 64,
+        "avgAces": 2.6,
+        "avgDoubleFaults": 1.8,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 61,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Chun Hsin Tseng has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Moez Echargui",
-        "weaknessScore": null,
+        "serviceHoldPct": 57,
+        "firstServeWonPct": 55,
+        "secondServeWonPct": 47,
+        "firstServePct": 63,
+        "avgAces": 2.4,
+        "avgDoubleFaults": 2.4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 53,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 17,
+        "firstGameComfort": "Needs early holds confirmed",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "low recent hold rate (57%)",
+          "first-serve points won below comfort (55%)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Moez Echargui can drop points quickly through low recent hold rate (57%) and first-serve points won below comfort (55%)."
       }
     },
     "setWinProjections": [
       {
         "name": "Chun Hsin Tseng",
-        "confidence": 88,
-        "modelPct": 81,
+        "confidence": 73,
+        "modelPct": 64.8,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Moez Echargui",
-        "confidence": 41,
-        "modelPct": 23,
+        "confidence": 57,
+        "modelPct": 36.9,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -85,7 +112,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Chun Hsin Tseng",
         "americanOdds": null,
-        "modelPct": 81,
+        "modelPct": 64.8,
         "impliedPct": 81,
         "edgePct": null,
         "evPer100": null,
@@ -112,11 +139,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 8.8,
-        "confidence": 48,
-        "tiebreakRisk": 52,
-        "earlyBreakRisk": 48,
-        "modelPct": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -126,8 +153,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Chun Hsin Tseng",
-          "confidence": 88,
-          "modelPct": 81,
+          "confidence": 73,
+          "modelPct": 64.8,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -135,8 +162,8 @@ const rawTennisGames = [
         },
         {
           "name": "Moez Echargui",
-          "confidence": 41,
-          "modelPct": 23,
+          "confidence": 57,
+          "modelPct": 36.9,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -153,7 +180,7 @@ const rawTennisGames = [
         "selection": "Chun Hsin Tseng",
         "line": null,
         "americanOdds": null,
-        "modelPct": 81,
+        "modelPct": 64.8,
         "impliedPct": 81,
         "edgePct": null,
         "evPer100": null,
@@ -182,22 +209,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Chun Hsin Tseng 88% / Moez Echargui 41%",
+        "selection": "Chun Hsin Tseng 73% / Moez Echargui 57%",
         "rows": [
           {
             "name": "Chun Hsin Tseng",
-            "confidence": 88,
-            "modelPct": 81,
+            "confidence": 73,
+            "modelPct": 64.8,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Moez Echargui",
-            "confidence": 41,
-            "modelPct": 23,
+            "confidence": 57,
+            "modelPct": 36.9,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 88,
+        "confidence": 73,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -205,10 +232,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 8.8,
-        "confidence": 48,
-        "tiebreakRisk": 52,
-        "earlyBreakRisk": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -231,7 +258,7 @@ const rawTennisGames = [
           "bidPct": 77,
           "lastTradePct": 81,
           "decimalOdds": null,
-          "modelPct": 81,
+          "modelPct": 64.8,
           "edgePct": null,
           "priceBand": "Low-payout favorite",
           "grossProfitPct": 19,
@@ -249,7 +276,7 @@ const rawTennisGames = [
           "bidPct": 21,
           "lastTradePct": 23,
           "decimalOdds": null,
-          "modelPct": 23,
+          "modelPct": 36.9,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 77,
@@ -268,7 +295,7 @@ const rawTennisGames = [
         "bidPct": 77,
         "lastTradePct": 81,
         "decimalOdds": null,
-        "modelPct": 81,
+        "modelPct": 64.8,
         "edgePct": null,
         "priceBand": "Low-payout favorite",
         "grossProfitPct": 19,
@@ -293,18 +320,36 @@ const rawTennisGames = [
       {
         "name": "Chun Hsin Tseng",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 81,
+        "qualityName": "Chun Hsin Tseng",
+        "profile": "Clay | Rank not joined | hold 71%",
+        "modelPct": 64.8,
         "weakness": {
           "name": "Chun Hsin Tseng",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 71,
+          "firstServeWonPct": 65,
+          "secondServeWonPct": 52,
+          "firstServePct": 64,
+          "avgAces": 2.6,
+          "avgDoubleFaults": 1.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 61,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Chun Hsin Tseng has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
@@ -320,18 +365,39 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3696/moez-echargui",
           "asOf": "2026-06-02"
         },
-        "qualityName": null,
-        "profile": "Clay | Live rank #139 | Tunisia | age 33",
-        "modelPct": 23,
+        "qualityName": "Moez Echargui",
+        "profile": "Clay | Live rank #139 | Tunisia | age 33 | hold 57%",
+        "modelPct": 36.9,
         "weakness": {
           "name": "Moez Echargui",
-          "weaknessScore": null,
+          "serviceHoldPct": 57,
+          "firstServeWonPct": 55,
+          "secondServeWonPct": 47,
+          "firstServePct": 63,
+          "avgAces": 2.4,
+          "avgDoubleFaults": 2.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 53,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 17,
+          "firstGameComfort": "Needs early holds confirmed",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "low recent hold rate (57%)",
+            "first-serve points won below comfort (55%)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Moez Echargui can drop points quickly through low recent hold rate (57%) and first-serve points won below comfort (55%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -351,63 +417,96 @@ const rawTennisGames = [
     "stage": "ATP Challenger Centurion 2 | Round Of 32",
     "pickName": "Eliakim Coulibaly",
     "basePickName": "Eliakim Coulibaly",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 88,
-    "volatility": 46,
+    "marketOnly": false,
+    "confidence": 68.3,
+    "volatility": 47,
     "tags": [
       "ATP Challenger",
       "Hard",
       "Prediction market",
-      "Market only",
-      "No model edge",
-      "Market favorite"
+      "Warehouse joined",
+      "Flashscore first",
+      "Coinflip price"
     ],
-    "reason": "Eliakim Coulibaly is only the current Robinhood market favorite over Filip Peliwo; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Eliakim Coulibaly has the recent service-hold edge 82% to 63%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 4,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Eliakim Coulibaly",
-        "weaknessScore": null,
+        "serviceHoldPct": 82,
+        "firstServeWonPct": 75,
+        "secondServeWonPct": 48,
+        "firstServePct": 57,
+        "avgAces": 8,
+        "avgDoubleFaults": 5,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 63,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 7,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "double-fault pressure (5.0 avg)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "strengths": [
+          "protects serve well (82% hold)",
+          "wins enough first-serve points (75%)"
+        ],
+        "gameFlowRead": "Eliakim Coulibaly can drop points quickly through double-fault pressure (5.0 avg)."
       },
       "opponent": {
         "name": "Filip Peliwo",
-        "weaknessScore": null,
+        "serviceHoldPct": 63,
+        "firstServeWonPct": 61,
+        "secondServeWonPct": 45,
+        "firstServePct": 64,
+        "avgAces": 2,
+        "avgDoubleFaults": 4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 55,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 11,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "first-serve points won below comfort (61%)",
+          "second-serve points won are attackable (45%)",
+          "double-fault pressure (4.0 avg)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Filip Peliwo can drop points quickly through first-serve points won below comfort (61%) and second-serve points won are attackable (45%)."
       }
     },
     "setWinProjections": [
       {
         "name": "Filip Peliwo",
-        "confidence": 36,
-        "modelPct": 16,
+        "confidence": 54,
+        "modelPct": 33.4,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Eliakim Coulibaly",
-        "confidence": 88,
-        "modelPct": 88,
+        "confidence": 76,
+        "modelPct": 68.3,
         "label": "Market favorite to win a set"
       }
     ],
@@ -417,7 +516,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Eliakim Coulibaly",
         "americanOdds": null,
-        "modelPct": 88,
+        "modelPct": 68.3,
         "impliedPct": 88,
         "edgePct": null,
         "evPer100": null,
@@ -444,11 +543,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 8.8,
-        "confidence": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
-        "modelPct": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -458,8 +557,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Filip Peliwo",
-          "confidence": 36,
-          "modelPct": 16,
+          "confidence": 54,
+          "modelPct": 33.4,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -467,8 +566,8 @@ const rawTennisGames = [
         },
         {
           "name": "Eliakim Coulibaly",
-          "confidence": 88,
-          "modelPct": 88,
+          "confidence": 76,
+          "modelPct": 68.3,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -485,7 +584,7 @@ const rawTennisGames = [
         "selection": "Eliakim Coulibaly",
         "line": null,
         "americanOdds": null,
-        "modelPct": 88,
+        "modelPct": 68.3,
         "impliedPct": 88,
         "edgePct": null,
         "evPer100": null,
@@ -514,22 +613,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Filip Peliwo 36% / Eliakim Coulibaly 88%",
+        "selection": "Filip Peliwo 54% / Eliakim Coulibaly 76%",
         "rows": [
           {
             "name": "Filip Peliwo",
-            "confidence": 36,
-            "modelPct": 16,
+            "confidence": 54,
+            "modelPct": 33.4,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Eliakim Coulibaly",
-            "confidence": 88,
-            "modelPct": 88,
+            "confidence": 76,
+            "modelPct": 68.3,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 88,
+        "confidence": 76,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -537,8 +636,8 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 8.8,
-        "confidence": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
@@ -563,7 +662,7 @@ const rawTennisGames = [
           "bidPct": 15,
           "lastTradePct": 16,
           "decimalOdds": null,
-          "modelPct": 16,
+          "modelPct": 33.4,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 84,
@@ -581,7 +680,7 @@ const rawTennisGames = [
           "bidPct": 83,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 88,
+          "modelPct": 68.3,
           "edgePct": null,
           "priceBand": "Very expensive favorite",
           "grossProfitPct": 12,
@@ -600,7 +699,7 @@ const rawTennisGames = [
         "bidPct": 83,
         "lastTradePct": 0,
         "decimalOdds": null,
-        "modelPct": 88,
+        "modelPct": 68.3,
         "edgePct": null,
         "priceBand": "Very expensive favorite",
         "grossProfitPct": 12,
@@ -625,35 +724,80 @@ const rawTennisGames = [
       {
         "name": "Filip Peliwo",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 16,
+        "qualityName": "Filip Peliwo",
+        "profile": "Hard | Rank not joined | hold 63%",
+        "modelPct": 33.4,
         "weakness": {
           "name": "Filip Peliwo",
-          "weaknessScore": null,
+          "serviceHoldPct": 63,
+          "firstServeWonPct": 61,
+          "secondServeWonPct": 45,
+          "firstServePct": 64,
+          "avgAces": 2,
+          "avgDoubleFaults": 4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 55,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 11,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "first-serve points won below comfort (61%)",
+            "second-serve points won are attackable (45%)",
+            "double-fault pressure (4.0 avg)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Filip Peliwo can drop points quickly through first-serve points won below comfort (61%) and second-serve points won are attackable (45%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Eliakim Coulibaly",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 88,
+        "qualityName": "Eliakim Coulibaly",
+        "profile": "Hard | Rank not joined | hold 82%",
+        "modelPct": 68.3,
         "weakness": {
           "name": "Eliakim Coulibaly",
-          "weaknessScore": null,
+          "serviceHoldPct": 82,
+          "firstServeWonPct": 75,
+          "secondServeWonPct": 48,
+          "firstServePct": 57,
+          "avgAces": 8,
+          "avgDoubleFaults": 5,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 63,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 7,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "double-fault pressure (5.0 avg)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "strengths": [
+            "protects serve well (82% hold)",
+            "wins enough first-serve points (75%)"
+          ],
+          "gameFlowRead": "Eliakim Coulibaly can drop points quickly through double-fault pressure (5.0 avg)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -673,63 +817,93 @@ const rawTennisGames = [
     "stage": "ATP Challenger Perugia | Round Of 32",
     "pickName": "Henrique Rocha",
     "basePickName": "Henrique Rocha",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 69,
-    "volatility": 62,
+    "marketOnly": false,
+    "confidence": 56.8,
+    "volatility": 48,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Henrique Rocha is only the current Robinhood market favorite over Enrico Dalla Valle; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Enrico Dalla Valle has the recent service-hold edge 92% to 70%, so Henrique Rocha needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": -6,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Henrique Rocha",
-        "weaknessScore": null,
+        "serviceHoldPct": 70,
+        "firstServeWonPct": 69,
+        "secondServeWonPct": 47,
+        "firstServePct": 59,
+        "avgAces": 1.8,
+        "avgDoubleFaults": 4.6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 60,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 6,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "double-fault pressure (4.6 avg)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Henrique Rocha can drop points quickly through double-fault pressure (4.6 avg)."
       },
       "opponent": {
         "name": "Enrico Dalla Valle",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 92,
+        "firstServeWonPct": 73,
+        "secondServeWonPct": 59,
+        "firstServePct": 70,
+        "avgAces": 4.4,
+        "avgDoubleFaults": 1,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 69,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (92% hold)",
+          "wins enough first-serve points (73%)",
+          "second serve holds up (59%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Enrico Dalla Valle has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Henrique Rocha",
-        "confidence": 77,
-        "modelPct": 69,
+        "confidence": 65,
+        "modelPct": 56.8,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Enrico Dalla Valle",
-        "confidence": 53,
-        "modelPct": 33,
+        "confidence": 65,
+        "modelPct": 44,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -739,7 +913,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Henrique Rocha",
         "americanOdds": null,
-        "modelPct": 69,
+        "modelPct": 56.8,
         "impliedPct": 69,
         "edgePct": null,
         "evPer100": null,
@@ -766,11 +940,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -780,8 +954,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Henrique Rocha",
-          "confidence": 77,
-          "modelPct": 69,
+          "confidence": 65,
+          "modelPct": 56.8,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -789,8 +963,8 @@ const rawTennisGames = [
         },
         {
           "name": "Enrico Dalla Valle",
-          "confidence": 53,
-          "modelPct": 33,
+          "confidence": 65,
+          "modelPct": 44,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -807,7 +981,7 @@ const rawTennisGames = [
         "selection": "Henrique Rocha",
         "line": null,
         "americanOdds": null,
-        "modelPct": 69,
+        "modelPct": 56.8,
         "impliedPct": 69,
         "edgePct": null,
         "evPer100": null,
@@ -836,22 +1010,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Henrique Rocha 77% / Enrico Dalla Valle 53%",
+        "selection": "Henrique Rocha 65% / Enrico Dalla Valle 65%",
         "rows": [
           {
             "name": "Henrique Rocha",
-            "confidence": 77,
-            "modelPct": 69,
+            "confidence": 65,
+            "modelPct": 56.8,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Enrico Dalla Valle",
-            "confidence": 53,
-            "modelPct": 33,
+            "confidence": 65,
+            "modelPct": 44,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 77,
+        "confidence": 65,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -859,10 +1033,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -885,7 +1059,7 @@ const rawTennisGames = [
           "bidPct": 68,
           "lastTradePct": 69,
           "decimalOdds": null,
-          "modelPct": 69,
+          "modelPct": 56.8,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 31,
@@ -903,7 +1077,7 @@ const rawTennisGames = [
           "bidPct": 31,
           "lastTradePct": 33,
           "decimalOdds": null,
-          "modelPct": 33,
+          "modelPct": 44,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 67,
@@ -922,7 +1096,7 @@ const rawTennisGames = [
         "bidPct": 68,
         "lastTradePct": 69,
         "decimalOdds": null,
-        "modelPct": 69,
+        "modelPct": 56.8,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 31,
@@ -957,35 +1131,77 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/10248/henrique-rocha",
           "asOf": "2026-06-02"
         },
-        "qualityName": null,
-        "profile": "Clay | Live rank #119 | Portugal | age 22",
-        "modelPct": 69,
+        "qualityName": "Henrique Rocha",
+        "profile": "Clay | Live rank #119 | Portugal | age 22 | hold 70%",
+        "modelPct": 56.8,
         "weakness": {
           "name": "Henrique Rocha",
-          "weaknessScore": null,
+          "serviceHoldPct": 70,
+          "firstServeWonPct": 69,
+          "secondServeWonPct": 47,
+          "firstServePct": 59,
+          "avgAces": 1.8,
+          "avgDoubleFaults": 4.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 60,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 6,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "double-fault pressure (4.6 avg)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Henrique Rocha can drop points quickly through double-fault pressure (4.6 avg)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Enrico Dalla Valle",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 33,
+        "qualityName": "Enrico Dalla Valle",
+        "profile": "Clay | Rank not joined | hold 92%",
+        "modelPct": 44,
         "weakness": {
           "name": "Enrico Dalla Valle",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 92,
+          "firstServeWonPct": 73,
+          "secondServeWonPct": 59,
+          "firstServePct": 70,
+          "avgAces": 4.4,
+          "avgDoubleFaults": 1,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 69,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (92% hold)",
+            "wins enough first-serve points (73%)",
+            "second serve holds up (59%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Enrico Dalla Valle has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -1005,63 +1221,94 @@ const rawTennisGames = [
     "stage": "ATP Challenger Centurion 2 | Round Of 32",
     "pickName": "Devin Badenhorst",
     "basePickName": "Devin Badenhorst",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 67,
-    "volatility": 64,
+    "marketOnly": false,
+    "confidence": 57.7,
+    "volatility": 49,
     "tags": [
       "ATP Challenger",
       "Hard",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Devin Badenhorst is only the current Robinhood market favorite over Oscar Weightman; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Devin Badenhorst has the recent service-hold edge 88% to 75%. Lean, not a chase.",
+    "totals": "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "Weakness warning",
+      "target": "Devin Badenhorst",
+      "scoreGap": -8,
       "attackingSide": null,
-      "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "vulnerableSide": "Devin Badenhorst",
+      "gameFlow": "Devin Badenhorst is the model side, but the fragile profile is on our pick: double-fault pressure (5.0 avg). Avoid laying a bad price until early holds are confirmed.",
+      "liveTrigger": "Do not upgrade Devin Badenhorst unless they hold cleanly in the first service game and keep double faults down.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Devin Badenhorst",
-        "weaknessScore": null,
+        "serviceHoldPct": 88,
+        "firstServeWonPct": 86,
+        "secondServeWonPct": 52,
+        "firstServePct": 51,
+        "avgAces": 6,
+        "avgDoubleFaults": 5,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 70,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 8,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "double-fault pressure (5.0 avg)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "strengths": [
+          "protects serve well (88% hold)",
+          "wins enough first-serve points (86%)"
+        ],
+        "gameFlowRead": "Devin Badenhorst can drop points quickly through double-fault pressure (5.0 avg)."
       },
       "opponent": {
         "name": "Oscar Weightman",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 75,
+        "firstServeWonPct": 70,
+        "secondServeWonPct": 50,
+        "firstServePct": 59,
+        "avgAces": 4.2,
+        "avgDoubleFaults": 2.4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 61,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "wins enough first-serve points (70%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Oscar Weightman has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Oscar Weightman",
-        "confidence": 55,
-        "modelPct": 35,
+        "confidence": 64,
+        "modelPct": 43.1,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Devin Badenhorst",
-        "confidence": 75,
-        "modelPct": 67,
+        "confidence": 66,
+        "modelPct": 57.7,
         "label": "Market favorite to win a set"
       }
     ],
@@ -1071,7 +1318,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Devin Badenhorst",
         "americanOdds": null,
-        "modelPct": 67,
+        "modelPct": 57.7,
         "impliedPct": 67,
         "edgePct": null,
         "evPer100": null,
@@ -1098,11 +1345,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -1112,8 +1359,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Oscar Weightman",
-          "confidence": 55,
-          "modelPct": 35,
+          "confidence": 64,
+          "modelPct": 43.1,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -1121,8 +1368,8 @@ const rawTennisGames = [
         },
         {
           "name": "Devin Badenhorst",
-          "confidence": 75,
-          "modelPct": 67,
+          "confidence": 66,
+          "modelPct": 57.7,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -1139,7 +1386,7 @@ const rawTennisGames = [
         "selection": "Devin Badenhorst",
         "line": null,
         "americanOdds": null,
-        "modelPct": 67,
+        "modelPct": 57.7,
         "impliedPct": 67,
         "edgePct": null,
         "evPer100": null,
@@ -1168,22 +1415,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Oscar Weightman 55% / Devin Badenhorst 75%",
+        "selection": "Oscar Weightman 64% / Devin Badenhorst 66%",
         "rows": [
           {
             "name": "Oscar Weightman",
-            "confidence": 55,
-            "modelPct": 35,
+            "confidence": 64,
+            "modelPct": 43.1,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Devin Badenhorst",
-            "confidence": 75,
-            "modelPct": 67,
+            "confidence": 66,
+            "modelPct": 57.7,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 75,
+        "confidence": 66,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -1191,10 +1438,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -1217,7 +1464,7 @@ const rawTennisGames = [
           "bidPct": 34,
           "lastTradePct": 35,
           "decimalOdds": null,
-          "modelPct": 35,
+          "modelPct": 43.1,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 65,
@@ -1235,7 +1482,7 @@ const rawTennisGames = [
           "bidPct": 64,
           "lastTradePct": 67,
           "decimalOdds": null,
-          "modelPct": 67,
+          "modelPct": 57.7,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 33,
@@ -1254,7 +1501,7 @@ const rawTennisGames = [
         "bidPct": 64,
         "lastTradePct": 67,
         "decimalOdds": null,
-        "modelPct": 67,
+        "modelPct": 57.7,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 33,
@@ -1279,35 +1526,78 @@ const rawTennisGames = [
       {
         "name": "Oscar Weightman",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 35,
+        "qualityName": "Oscar Weightman",
+        "profile": "Hard | Rank not joined | hold 75%",
+        "modelPct": 43.1,
         "weakness": {
           "name": "Oscar Weightman",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 75,
+          "firstServeWonPct": 70,
+          "secondServeWonPct": 50,
+          "firstServePct": 59,
+          "avgAces": 4.2,
+          "avgDoubleFaults": 2.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 61,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "wins enough first-serve points (70%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Oscar Weightman has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Devin Badenhorst",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 67,
+        "qualityName": "Devin Badenhorst",
+        "profile": "Hard | Rank not joined | hold 88%",
+        "modelPct": 57.7,
         "weakness": {
           "name": "Devin Badenhorst",
-          "weaknessScore": null,
+          "serviceHoldPct": 88,
+          "firstServeWonPct": 86,
+          "secondServeWonPct": 52,
+          "firstServePct": 51,
+          "avgAces": 6,
+          "avgDoubleFaults": 5,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 70,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 8,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "double-fault pressure (5.0 avg)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "strengths": [
+            "protects serve well (88% hold)",
+            "wins enough first-serve points (86%)"
+          ],
+          "gameFlowRead": "Devin Badenhorst can drop points quickly through double-fault pressure (5.0 avg)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -1613,6 +1903,12 @@ const rawTennisGames = [
           "strengths": [],
           "firstGameComfort": "Market-only row; wait for serve pressure data",
           "gameFlowRead": "No service/break profile joined yet."
+        },
+        "warehouseDepth": {
+          "expectedRows": 0,
+          "recentRows": 0,
+          "recentMatches": 0,
+          "source": "Flashscore recent-form metric fallback"
         }
       },
       {
@@ -1630,6 +1926,12 @@ const rawTennisGames = [
           "strengths": [],
           "firstGameComfort": "Market-only row; wait for serve pressure data",
           "gameFlowRead": "No service/break profile joined yet."
+        },
+        "warehouseDepth": {
+          "expectedRows": 0,
+          "recentRows": 0,
+          "recentMatches": 0,
+          "source": "Flashscore recent-form metric fallback"
         }
       }
     ]
@@ -1649,63 +1951,92 @@ const rawTennisGames = [
     "stage": "ATP Challenger Centurion 2 | Round Of 32",
     "pickName": "Edward Winter",
     "basePickName": "Edward Winter",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 80,
-    "volatility": 53,
+    "marketOnly": false,
+    "confidence": 64.9,
+    "volatility": 47,
     "tags": [
       "ATP Challenger",
       "Hard",
       "Prediction market",
-      "Market only",
-      "No model edge",
-      "Market favorite"
+      "Warehouse joined",
+      "Flashscore first",
+      "Coinflip price"
     ],
-    "reason": "Edward Winter is only the current Robinhood market favorite over Sidharth Rawat; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Edward Winter has the recent service-hold edge 79% to 54%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
-      "attackingSide": null,
-      "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "edgeType": "Weakness edge",
+      "target": "Sidharth Rawat",
+      "scoreGap": 19,
+      "attackingSide": "Edward Winter",
+      "vulnerableSide": "Sidharth Rawat",
+      "gameFlow": "Edward Winter has a real path if Sidharth Rawat's first two service games show the same weakness: low recent hold rate (54%); second-serve points won are attackable (39%).",
+      "liveTrigger": "Look for Sidharth Rawat facing break points or second-serve pressure before 3-3.",
+      "spreadRead": "Edward Winter spread only if the handicap is short and Sidharth Rawat is under pressure early.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Edward Winter",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 79,
+        "firstServeWonPct": 69,
+        "secondServeWonPct": 50,
+        "firstServePct": 64,
+        "avgAces": 2,
+        "avgDoubleFaults": 2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 63,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (79% hold)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Edward Winter has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Sidharth Rawat",
-        "weaknessScore": null,
+        "serviceHoldPct": 54,
+        "firstServeWonPct": 68,
+        "secondServeWonPct": 39,
+        "firstServePct": 54,
+        "avgAces": 3.8,
+        "avgDoubleFaults": 1.2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 55,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 19,
+        "firstGameComfort": "Needs early holds confirmed",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "low recent hold rate (54%)",
+          "second-serve points won are attackable (39%)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Sidharth Rawat can drop points quickly through low recent hold rate (54%) and second-serve points won are attackable (39%)."
       }
     },
     "setWinProjections": [
       {
         "name": "Sidharth Rawat",
-        "confidence": 42,
-        "modelPct": 24,
+        "confidence": 57,
+        "modelPct": 36.8,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Edward Winter",
-        "confidence": 88,
-        "modelPct": 80,
+        "confidence": 73,
+        "modelPct": 64.9,
         "label": "Market favorite to win a set"
       }
     ],
@@ -1715,7 +2046,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Edward Winter",
         "americanOdds": null,
-        "modelPct": 80,
+        "modelPct": 64.9,
         "impliedPct": 80,
         "edgePct": null,
         "evPer100": null,
@@ -1742,11 +2073,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 8.8,
-        "confidence": 48,
-        "tiebreakRisk": 52,
-        "earlyBreakRisk": 48,
-        "modelPct": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -1756,8 +2087,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Sidharth Rawat",
-          "confidence": 42,
-          "modelPct": 24,
+          "confidence": 57,
+          "modelPct": 36.8,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -1765,8 +2096,8 @@ const rawTennisGames = [
         },
         {
           "name": "Edward Winter",
-          "confidence": 88,
-          "modelPct": 80,
+          "confidence": 73,
+          "modelPct": 64.9,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -1783,7 +2114,7 @@ const rawTennisGames = [
         "selection": "Edward Winter",
         "line": null,
         "americanOdds": null,
-        "modelPct": 80,
+        "modelPct": 64.9,
         "impliedPct": 80,
         "edgePct": null,
         "evPer100": null,
@@ -1812,22 +2143,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Sidharth Rawat 42% / Edward Winter 88%",
+        "selection": "Sidharth Rawat 57% / Edward Winter 73%",
         "rows": [
           {
             "name": "Sidharth Rawat",
-            "confidence": 42,
-            "modelPct": 24,
+            "confidence": 57,
+            "modelPct": 36.8,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Edward Winter",
-            "confidence": 88,
-            "modelPct": 80,
+            "confidence": 73,
+            "modelPct": 64.9,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 88,
+        "confidence": 73,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -1835,10 +2166,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 8.8,
-        "confidence": 48,
-        "tiebreakRisk": 52,
-        "earlyBreakRisk": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -1861,7 +2192,7 @@ const rawTennisGames = [
           "bidPct": 23,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 24,
+          "modelPct": 36.8,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 76,
@@ -1879,7 +2210,7 @@ const rawTennisGames = [
           "bidPct": 76,
           "lastTradePct": 80,
           "decimalOdds": null,
-          "modelPct": 80,
+          "modelPct": 64.9,
           "edgePct": null,
           "priceBand": "Low-payout favorite",
           "grossProfitPct": 20,
@@ -1898,7 +2229,7 @@ const rawTennisGames = [
         "bidPct": 76,
         "lastTradePct": 80,
         "decimalOdds": null,
-        "modelPct": 80,
+        "modelPct": 64.9,
         "edgePct": null,
         "priceBand": "Low-payout favorite",
         "grossProfitPct": 20,
@@ -1923,35 +2254,76 @@ const rawTennisGames = [
       {
         "name": "Sidharth Rawat",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 24,
+        "qualityName": "Sidharth Rawat",
+        "profile": "Hard | Rank not joined | hold 54%",
+        "modelPct": 36.8,
         "weakness": {
           "name": "Sidharth Rawat",
-          "weaknessScore": null,
+          "serviceHoldPct": 54,
+          "firstServeWonPct": 68,
+          "secondServeWonPct": 39,
+          "firstServePct": 54,
+          "avgAces": 3.8,
+          "avgDoubleFaults": 1.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 55,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 19,
+          "firstGameComfort": "Needs early holds confirmed",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "low recent hold rate (54%)",
+            "second-serve points won are attackable (39%)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Sidharth Rawat can drop points quickly through low recent hold rate (54%) and second-serve points won are attackable (39%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Edward Winter",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 80,
+        "qualityName": "Edward Winter",
+        "profile": "Hard | Rank not joined | hold 79%",
+        "modelPct": 64.9,
         "weakness": {
           "name": "Edward Winter",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 79,
+          "firstServeWonPct": 69,
+          "secondServeWonPct": 50,
+          "firstServePct": 64,
+          "avgAces": 2,
+          "avgDoubleFaults": 2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 63,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (79% hold)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Edward Winter has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -1971,63 +2343,90 @@ const rawTennisGames = [
     "stage": "ATP Challenger Prostejov | Round Of 32",
     "pickName": "Nikolas Sanchez Izquierdo",
     "basePickName": "Nikolas Sanchez Izquierdo",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 55,
-    "volatility": 75,
+    "marketOnly": false,
+    "confidence": 50.9,
+    "volatility": 48,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Nikolas Sanchez Izquierdo is only the current Robinhood market favorite over Luka Pavlovic; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Luka Pavlovic has the recent service-hold edge 79% to 70%, so Nikolas Sanchez Izquierdo needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 1,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Nikolas Sanchez Izquierdo",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 70,
+        "firstServeWonPct": 67,
+        "secondServeWonPct": 53,
+        "firstServePct": 65,
+        "avgAces": 1.2,
+        "avgDoubleFaults": 2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 60,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Nikolas Sanchez Izquierdo has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Luka Pavlovic",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 79,
+        "firstServeWonPct": 75,
+        "secondServeWonPct": 48,
+        "firstServePct": 55,
+        "avgAces": 9,
+        "avgDoubleFaults": 2.6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 63,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 16,
+        "weaknessScore": 1,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (79% hold)",
+          "wins enough first-serve points (75%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Luka Pavlovic has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Luka Pavlovic",
-        "confidence": 67,
-        "modelPct": 48,
+        "confidence": 71,
+        "modelPct": 50.3,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Nikolas Sanchez Izquierdo",
-        "confidence": 63,
-        "modelPct": 55,
+        "confidence": 59,
+        "modelPct": 50.9,
         "label": "Market favorite to win a set"
       }
     ],
@@ -2037,7 +2436,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Nikolas Sanchez Izquierdo",
         "americanOdds": null,
-        "modelPct": 55,
+        "modelPct": 50.9,
         "impliedPct": 55,
         "edgePct": null,
         "evPer100": null,
@@ -2064,11 +2463,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 10.1,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -2078,8 +2477,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Luka Pavlovic",
-          "confidence": 67,
-          "modelPct": 48,
+          "confidence": 71,
+          "modelPct": 50.3,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -2087,8 +2486,8 @@ const rawTennisGames = [
         },
         {
           "name": "Nikolas Sanchez Izquierdo",
-          "confidence": 63,
-          "modelPct": 55,
+          "confidence": 59,
+          "modelPct": 50.9,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -2105,7 +2504,7 @@ const rawTennisGames = [
         "selection": "Nikolas Sanchez Izquierdo",
         "line": null,
         "americanOdds": null,
-        "modelPct": 55,
+        "modelPct": 50.9,
         "impliedPct": 55,
         "edgePct": null,
         "evPer100": null,
@@ -2134,22 +2533,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Luka Pavlovic 67% / Nikolas Sanchez Izquierdo 63%",
+        "selection": "Luka Pavlovic 71% / Nikolas Sanchez Izquierdo 59%",
         "rows": [
           {
             "name": "Luka Pavlovic",
-            "confidence": 67,
-            "modelPct": 48,
+            "confidence": 71,
+            "modelPct": 50.3,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Nikolas Sanchez Izquierdo",
-            "confidence": 63,
-            "modelPct": 55,
+            "confidence": 59,
+            "modelPct": 50.9,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 67,
+        "confidence": 71,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -2157,10 +2556,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 10.1,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -2183,7 +2582,7 @@ const rawTennisGames = [
           "bidPct": 47,
           "lastTradePct": 48,
           "decimalOdds": null,
-          "modelPct": 48,
+          "modelPct": 50.3,
           "edgePct": null,
           "priceBand": "Coinflip",
           "grossProfitPct": 52,
@@ -2201,7 +2600,7 @@ const rawTennisGames = [
           "bidPct": 54,
           "lastTradePct": 55,
           "decimalOdds": null,
-          "modelPct": 55,
+          "modelPct": 50.9,
           "edgePct": null,
           "priceBand": "Coinflip",
           "grossProfitPct": 45,
@@ -2220,7 +2619,7 @@ const rawTennisGames = [
         "bidPct": 54,
         "lastTradePct": 55,
         "decimalOdds": null,
-        "modelPct": 55,
+        "modelPct": 50.9,
         "edgePct": null,
         "priceBand": "Coinflip",
         "grossProfitPct": 45,
@@ -2245,35 +2644,74 @@ const rawTennisGames = [
       {
         "name": "Luka Pavlovic",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 48,
+        "qualityName": "Luka Pavlovic",
+        "profile": "Clay | Rank not joined | hold 79%",
+        "modelPct": 50.3,
         "weakness": {
           "name": "Luka Pavlovic",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 79,
+          "firstServeWonPct": 75,
+          "secondServeWonPct": 48,
+          "firstServePct": 55,
+          "avgAces": 9,
+          "avgDoubleFaults": 2.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 63,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 16,
+          "weaknessScore": 1,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (79% hold)",
+            "wins enough first-serve points (75%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Luka Pavlovic has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 23,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Nikolas Sanchez Izquierdo",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 55,
+        "qualityName": "Nikolas Sanchez Izquierdo",
+        "profile": "Clay | Rank not joined | hold 70%",
+        "modelPct": 50.9,
         "weakness": {
           "name": "Nikolas Sanchez Izquierdo",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 70,
+          "firstServeWonPct": 67,
+          "secondServeWonPct": 53,
+          "firstServePct": 65,
+          "avgAces": 1.2,
+          "avgDoubleFaults": 2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 60,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Nikolas Sanchez Izquierdo has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -2293,63 +2731,92 @@ const rawTennisGames = [
     "stage": "ATP Challenger Prostejov | Round Of 32",
     "pickName": "Damir Dzumhur",
     "basePickName": "Damir Dzumhur",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 75,
-    "volatility": 56,
+    "marketOnly": false,
+    "confidence": 65.1,
+    "volatility": 44,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
-      "Market favorite"
+      "Warehouse joined",
+      "Flashscore first",
+      "Coinflip price"
     ],
-    "reason": "Damir Dzumhur is only the current Robinhood market favorite over Miguel Damas; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Damir Dzumhur has the recent service-hold edge 63% to 54%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
-      "attackingSide": null,
-      "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "edgeType": "Weakness edge",
+      "target": "Miguel Damas",
+      "scoreGap": 15,
+      "attackingSide": "Damir Dzumhur",
+      "vulnerableSide": "Miguel Damas",
+      "gameFlow": "Damir Dzumhur has a real path if Miguel Damas's first two service games show the same weakness: low recent hold rate (54%); first-serve points won below comfort (53%).",
+      "liveTrigger": "Look for Miguel Damas facing break points or second-serve pressure before 3-3.",
+      "spreadRead": "Damir Dzumhur spread only if the handicap is short and Miguel Damas is under pressure early.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Damir Dzumhur",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 63,
+        "firstServeWonPct": 64,
+        "secondServeWonPct": 49,
+        "firstServePct": 68,
+        "avgAces": 1,
+        "avgDoubleFaults": 1.6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 60,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 18,
+        "weaknessScore": 4,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Damir Dzumhur has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Miguel Damas",
-        "weaknessScore": null,
+        "serviceHoldPct": 54,
+        "firstServeWonPct": 53,
+        "secondServeWonPct": 55,
+        "firstServePct": 64,
+        "avgAces": 0.6,
+        "avgDoubleFaults": 2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 54,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 19,
+        "firstGameComfort": "Needs early holds confirmed",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "low recent hold rate (54%)",
+          "first-serve points won below comfort (53%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "strengths": [
+          "second serve holds up (55%)"
+        ],
+        "gameFlowRead": "Miguel Damas can drop points quickly through low recent hold rate (54%) and first-serve points won below comfort (53%)."
       }
     },
     "setWinProjections": [
       {
         "name": "Miguel Damas",
-        "confidence": 47,
-        "modelPct": 26,
+        "confidence": 57,
+        "modelPct": 35.3,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Damir Dzumhur",
-        "confidence": 83,
-        "modelPct": 75,
+        "confidence": 73,
+        "modelPct": 65.1,
         "label": "Market favorite to win a set"
       }
     ],
@@ -2359,7 +2826,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Damir Dzumhur",
         "americanOdds": null,
-        "modelPct": 75,
+        "modelPct": 65.1,
         "impliedPct": 75,
         "edgePct": null,
         "evPer100": null,
@@ -2386,11 +2853,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 8.8,
-        "confidence": 48,
-        "tiebreakRisk": 52,
-        "earlyBreakRisk": 48,
-        "modelPct": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -2400,8 +2867,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Miguel Damas",
-          "confidence": 47,
-          "modelPct": 26,
+          "confidence": 57,
+          "modelPct": 35.3,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -2409,8 +2876,8 @@ const rawTennisGames = [
         },
         {
           "name": "Damir Dzumhur",
-          "confidence": 83,
-          "modelPct": 75,
+          "confidence": 73,
+          "modelPct": 65.1,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -2427,7 +2894,7 @@ const rawTennisGames = [
         "selection": "Damir Dzumhur",
         "line": null,
         "americanOdds": null,
-        "modelPct": 75,
+        "modelPct": 65.1,
         "impliedPct": 75,
         "edgePct": null,
         "evPer100": null,
@@ -2456,22 +2923,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Miguel Damas 47% / Damir Dzumhur 83%",
+        "selection": "Miguel Damas 57% / Damir Dzumhur 73%",
         "rows": [
           {
             "name": "Miguel Damas",
-            "confidence": 47,
-            "modelPct": 26,
+            "confidence": 57,
+            "modelPct": 35.3,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Damir Dzumhur",
-            "confidence": 83,
-            "modelPct": 75,
+            "confidence": 73,
+            "modelPct": 65.1,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 83,
+        "confidence": 73,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -2479,10 +2946,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 8.8,
-        "confidence": 48,
-        "tiebreakRisk": 52,
-        "earlyBreakRisk": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -2505,7 +2972,7 @@ const rawTennisGames = [
           "bidPct": 25,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 26,
+          "modelPct": 35.3,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 74,
@@ -2523,7 +2990,7 @@ const rawTennisGames = [
           "bidPct": 73,
           "lastTradePct": 75,
           "decimalOdds": null,
-          "modelPct": 75,
+          "modelPct": 65.1,
           "edgePct": null,
           "priceBand": "Low-payout favorite",
           "grossProfitPct": 25,
@@ -2542,7 +3009,7 @@ const rawTennisGames = [
         "bidPct": 73,
         "lastTradePct": 75,
         "decimalOdds": null,
-        "modelPct": 75,
+        "modelPct": 65.1,
         "edgePct": null,
         "priceBand": "Low-payout favorite",
         "grossProfitPct": 25,
@@ -2567,18 +3034,41 @@ const rawTennisGames = [
       {
         "name": "Miguel Damas",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 26,
+        "qualityName": "Miguel Damas",
+        "profile": "Clay | Rank not joined | hold 54%",
+        "modelPct": 35.3,
         "weakness": {
           "name": "Miguel Damas",
-          "weaknessScore": null,
+          "serviceHoldPct": 54,
+          "firstServeWonPct": 53,
+          "secondServeWonPct": 55,
+          "firstServePct": 64,
+          "avgAces": 0.6,
+          "avgDoubleFaults": 2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 54,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 19,
+          "firstGameComfort": "Needs early holds confirmed",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "low recent hold rate (54%)",
+            "first-serve points won below comfort (53%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "strengths": [
+            "second serve holds up (55%)"
+          ],
+          "gameFlowRead": "Miguel Damas can drop points quickly through low recent hold rate (54%) and first-serve points won below comfort (53%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
@@ -2594,18 +3084,36 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/1842/damir-dzumhur",
           "asOf": "2026-06-02"
         },
-        "qualityName": null,
-        "profile": "Clay | Live rank #87 | Bosnia and Herzegovina | age 34",
-        "modelPct": 75,
+        "qualityName": "Damir Dzumhur",
+        "profile": "Clay | Live rank #87 | Bosnia and Herzegovina | age 34 | hold 63%",
+        "modelPct": 65.1,
         "weakness": {
           "name": "Damir Dzumhur",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 63,
+          "firstServeWonPct": 64,
+          "secondServeWonPct": 49,
+          "firstServePct": 68,
+          "avgAces": 1,
+          "avgDoubleFaults": 1.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 60,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 18,
+          "weaknessScore": 4,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Damir Dzumhur has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 23,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -2625,63 +3133,93 @@ const rawTennisGames = [
     "stage": "ATP Challenger Prostejov | Round Of 32",
     "pickName": "Sebastian Baez",
     "basePickName": "Sebastian Baez",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 84,
-    "volatility": 48,
+    "marketOnly": false,
+    "confidence": 64.9,
+    "volatility": 49,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
-      "Market favorite"
+      "Warehouse joined",
+      "Flashscore first",
+      "Coinflip price"
     ],
-    "reason": "Sebastian Baez is only the current Robinhood market favorite over Sascha Gueymard Wayenburg; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Sascha Gueymard Wayenburg has the recent service-hold edge 76% to 58%, so Sebastian Baez needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "Weakness warning",
+      "target": "Sebastian Baez",
+      "scoreGap": -12,
       "attackingSide": null,
-      "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "vulnerableSide": "Sebastian Baez",
+      "gameFlow": "Sebastian Baez is the model side, but the fragile profile is on our pick: low recent hold rate (58%); second-serve points won are attackable (43%). Avoid laying a bad price until early holds are confirmed.",
+      "liveTrigger": "Do not upgrade Sebastian Baez unless they hold cleanly in the first service game and keep double faults down.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Sebastian Baez",
-        "weaknessScore": null,
+        "serviceHoldPct": 58,
+        "firstServeWonPct": 63,
+        "secondServeWonPct": 43,
+        "firstServePct": 69,
+        "avgAces": 1.2,
+        "avgDoubleFaults": 3,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 57,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 19,
+        "weaknessScore": 13,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "low recent hold rate (58%)",
+          "second-serve points won are attackable (43%)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Sebastian Baez can drop points quickly through low recent hold rate (58%) and second-serve points won are attackable (43%)."
       },
       "opponent": {
         "name": "Sascha Gueymard Wayenburg",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 76,
+        "firstServeWonPct": 69,
+        "secondServeWonPct": 56,
+        "firstServePct": 61,
+        "avgAces": 2.4,
+        "avgDoubleFaults": 3.4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 64,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 1,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (76% hold)",
+          "second serve holds up (56%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Sascha Gueymard Wayenburg has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Sebastian Baez",
-        "confidence": 88,
-        "modelPct": 84,
+        "confidence": 73,
+        "modelPct": 64.9,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Sascha Gueymard Wayenburg",
-        "confidence": 38,
-        "modelPct": 17,
+        "confidence": 57,
+        "modelPct": 35.6,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -2691,7 +3229,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Sebastian Baez",
         "americanOdds": null,
-        "modelPct": 84,
+        "modelPct": 64.9,
         "impliedPct": 84,
         "edgePct": null,
         "evPer100": null,
@@ -2718,11 +3256,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 8.8,
-        "confidence": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
-        "modelPct": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -2732,8 +3270,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Sebastian Baez",
-          "confidence": 88,
-          "modelPct": 84,
+          "confidence": 73,
+          "modelPct": 64.9,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -2741,8 +3279,8 @@ const rawTennisGames = [
         },
         {
           "name": "Sascha Gueymard Wayenburg",
-          "confidence": 38,
-          "modelPct": 17,
+          "confidence": 57,
+          "modelPct": 35.6,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -2759,7 +3297,7 @@ const rawTennisGames = [
         "selection": "Sebastian Baez",
         "line": null,
         "americanOdds": null,
-        "modelPct": 84,
+        "modelPct": 64.9,
         "impliedPct": 84,
         "edgePct": null,
         "evPer100": null,
@@ -2788,22 +3326,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Sebastian Baez 88% / Sascha Gueymard Wayenburg 38%",
+        "selection": "Sebastian Baez 73% / Sascha Gueymard Wayenburg 57%",
         "rows": [
           {
             "name": "Sebastian Baez",
-            "confidence": 88,
-            "modelPct": 84,
+            "confidence": 73,
+            "modelPct": 64.9,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Sascha Gueymard Wayenburg",
-            "confidence": 38,
-            "modelPct": 17,
+            "confidence": 57,
+            "modelPct": 35.6,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 88,
+        "confidence": 73,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -2811,8 +3349,8 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 8.8,
-        "confidence": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
@@ -2837,7 +3375,7 @@ const rawTennisGames = [
           "bidPct": 82,
           "lastTradePct": 83,
           "decimalOdds": null,
-          "modelPct": 84,
+          "modelPct": 64.9,
           "edgePct": null,
           "priceBand": "Very expensive favorite",
           "grossProfitPct": 16,
@@ -2855,7 +3393,7 @@ const rawTennisGames = [
           "bidPct": 15,
           "lastTradePct": 17,
           "decimalOdds": null,
-          "modelPct": 17,
+          "modelPct": 35.6,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 83,
@@ -2874,7 +3412,7 @@ const rawTennisGames = [
         "bidPct": 82,
         "lastTradePct": 83,
         "decimalOdds": null,
-        "modelPct": 84,
+        "modelPct": 64.9,
         "edgePct": null,
         "priceBand": "Very expensive favorite",
         "grossProfitPct": 16,
@@ -2909,35 +3447,77 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3340/sebastian-baez",
           "asOf": "2026-06-02"
         },
-        "qualityName": null,
-        "profile": "Clay | Live rank #64 | Argentina | age 25",
-        "modelPct": 84,
+        "qualityName": "Sebastian Baez",
+        "profile": "Clay | Live rank #64 | Argentina | age 25 | hold 58%",
+        "modelPct": 64.9,
         "weakness": {
           "name": "Sebastian Baez",
-          "weaknessScore": null,
+          "serviceHoldPct": 58,
+          "firstServeWonPct": 63,
+          "secondServeWonPct": 43,
+          "firstServePct": 69,
+          "avgAces": 1.2,
+          "avgDoubleFaults": 3,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 57,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 19,
+          "weaknessScore": 13,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "low recent hold rate (58%)",
+            "second-serve points won are attackable (43%)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Sebastian Baez can drop points quickly through low recent hold rate (58%) and second-serve points won are attackable (43%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 23,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Sascha Gueymard Wayenburg",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 17,
+        "qualityName": "Sascha Gueymard Wayenburg",
+        "profile": "Clay | Rank not joined | hold 76%",
+        "modelPct": 35.6,
         "weakness": {
           "name": "Sascha Gueymard Wayenburg",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 76,
+          "firstServeWonPct": 69,
+          "secondServeWonPct": 56,
+          "firstServePct": 61,
+          "avgAces": 2.4,
+          "avgDoubleFaults": 3.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 64,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 1,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (76% hold)",
+            "second serve holds up (56%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Sascha Gueymard Wayenburg has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -3137,7 +3717,7 @@ const rawTennisGames = [
           "returnPointsWonPct": 51,
           "returnGamesWonPct": 54.75,
           "breakPointsSavedPct": 0,
-          "breakPointsConvertedPct": 50,
+          "breakPointsConvertedPct": 52.1,
           "aces": 2.3,
           "doubleFaults": 3.1,
           "winners": 22.3,
@@ -3167,7 +3747,7 @@ const rawTennisGames = [
           "returnPointsWonPct": 49,
           "returnGamesWonPct": 53.42857142857143,
           "breakPointsSavedPct": 0,
-          "breakPointsConvertedPct": 48.1,
+          "breakPointsConvertedPct": 50.5,
           "aces": 2.7,
           "doubleFaults": 1.1,
           "winners": 18,
@@ -3196,7 +3776,7 @@ const rawTennisGames = [
       "returnGamesAvg": 54.1,
       "returnPointsAvg": 50,
       "breakPointsSavedAvg": 0,
-      "breakPointsConvertedAvg": 49,
+      "breakPointsConvertedAvg": 51.3,
       "setSamples": 36,
       "firstSetSamples": 16,
       "avgFirstSetGames": 8.5,
@@ -3518,63 +4098,96 @@ const rawTennisGames = [
     "stage": "ATP Challenger Centurion 2 | Round Of 32",
     "pickName": "Akira Santillan",
     "basePickName": "Akira Santillan",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 64,
-    "volatility": 66,
+    "marketOnly": false,
+    "confidence": 54.7,
+    "volatility": 48,
     "tags": [
       "ATP Challenger",
       "Hard",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Akira Santillan is only the current Robinhood market favorite over Alexander Donski; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Alexander Donski has the recent service-hold edge 79% to 60%, so Akira Santillan needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 1,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Akira Santillan",
-        "weaknessScore": null,
+        "serviceHoldPct": 60,
+        "firstServeWonPct": 68,
+        "secondServeWonPct": 41,
+        "firstServePct": 60,
+        "avgAces": 3.7,
+        "avgDoubleFaults": 6.3,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 58,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 21,
+        "firstGameComfort": "Needs early holds confirmed",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "low recent hold rate (60%)",
+          "second-serve points won are attackable (41%)",
+          "double-fault pressure (6.3 avg)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Akira Santillan can drop points quickly through low recent hold rate (60%) and second-serve points won are attackable (41%)."
       },
       "opponent": {
         "name": "Alexander Donski",
-        "weaknessScore": null,
+        "serviceHoldPct": 79,
+        "firstServeWonPct": 76,
+        "secondServeWonPct": 50,
+        "firstServePct": 47,
+        "avgAces": 11.8,
+        "avgDoubleFaults": 9.2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 62,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 22,
+        "firstGameComfort": "Needs early holds confirmed",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "double-fault pressure (9.2 avg)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "strengths": [
+          "protects serve well (79% hold)",
+          "wins enough first-serve points (76%)"
+        ],
+        "gameFlowRead": "Alexander Donski can drop points quickly through double-fault pressure (9.2 avg)."
       }
     },
     "setWinProjections": [
       {
         "name": "Akira Santillan",
-        "confidence": 72,
-        "modelPct": 64,
+        "confidence": 63,
+        "modelPct": 54.7,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Alexander Donski",
-        "confidence": 58,
-        "modelPct": 37,
+        "confidence": 67,
+        "modelPct": 45.7,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -3584,7 +4197,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Akira Santillan",
         "americanOdds": null,
-        "modelPct": 64,
+        "modelPct": 54.7,
         "impliedPct": 64,
         "edgePct": null,
         "evPer100": null,
@@ -3611,11 +4224,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -3625,8 +4238,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Akira Santillan",
-          "confidence": 72,
-          "modelPct": 64,
+          "confidence": 63,
+          "modelPct": 54.7,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -3634,8 +4247,8 @@ const rawTennisGames = [
         },
         {
           "name": "Alexander Donski",
-          "confidence": 58,
-          "modelPct": 37,
+          "confidence": 67,
+          "modelPct": 45.7,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -3652,7 +4265,7 @@ const rawTennisGames = [
         "selection": "Akira Santillan",
         "line": null,
         "americanOdds": null,
-        "modelPct": 64,
+        "modelPct": 54.7,
         "impliedPct": 64,
         "edgePct": null,
         "evPer100": null,
@@ -3681,22 +4294,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Akira Santillan 72% / Alexander Donski 58%",
+        "selection": "Akira Santillan 63% / Alexander Donski 67%",
         "rows": [
           {
             "name": "Akira Santillan",
-            "confidence": 72,
-            "modelPct": 64,
+            "confidence": 63,
+            "modelPct": 54.7,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Alexander Donski",
-            "confidence": 58,
-            "modelPct": 37,
+            "confidence": 67,
+            "modelPct": 45.7,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 72,
+        "confidence": 67,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -3704,10 +4317,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -3730,7 +4343,7 @@ const rawTennisGames = [
           "bidPct": 63,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 64,
+          "modelPct": 54.7,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 36,
@@ -3748,7 +4361,7 @@ const rawTennisGames = [
           "bidPct": 36,
           "lastTradePct": 37,
           "decimalOdds": null,
-          "modelPct": 37,
+          "modelPct": 45.7,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 63,
@@ -3767,7 +4380,7 @@ const rawTennisGames = [
         "bidPct": 63,
         "lastTradePct": 0,
         "decimalOdds": null,
-        "modelPct": 64,
+        "modelPct": 54.7,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 36,
@@ -3792,35 +4405,80 @@ const rawTennisGames = [
       {
         "name": "Akira Santillan",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 64,
+        "qualityName": "Akira Santillan",
+        "profile": "Hard | Rank not joined | hold 60%",
+        "modelPct": 54.7,
         "weakness": {
           "name": "Akira Santillan",
-          "weaknessScore": null,
+          "serviceHoldPct": 60,
+          "firstServeWonPct": 68,
+          "secondServeWonPct": 41,
+          "firstServePct": 60,
+          "avgAces": 3.7,
+          "avgDoubleFaults": 6.3,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 58,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 21,
+          "firstGameComfort": "Needs early holds confirmed",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "low recent hold rate (60%)",
+            "second-serve points won are attackable (41%)",
+            "double-fault pressure (6.3 avg)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Akira Santillan can drop points quickly through low recent hold rate (60%) and second-serve points won are attackable (41%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Alexander Donski",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 37,
+        "qualityName": "Alexander Donski",
+        "profile": "Hard | Rank not joined | hold 79%",
+        "modelPct": 45.7,
         "weakness": {
           "name": "Alexander Donski",
-          "weaknessScore": null,
+          "serviceHoldPct": 79,
+          "firstServeWonPct": 76,
+          "secondServeWonPct": 50,
+          "firstServePct": 47,
+          "avgAces": 11.8,
+          "avgDoubleFaults": 9.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 62,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 22,
+          "firstGameComfort": "Needs early holds confirmed",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "double-fault pressure (9.2 avg)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "strengths": [
+            "protects serve well (79% hold)",
+            "wins enough first-serve points (76%)"
+          ],
+          "gameFlowRead": "Alexander Donski can drop points quickly through double-fault pressure (9.2 avg)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -3840,63 +4498,93 @@ const rawTennisGames = [
     "stage": "ATP Challenger Perugia | Round Of 32",
     "pickName": "David Jorda Sanchis",
     "basePickName": "David Jorda Sanchis",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 53,
-    "volatility": 77,
+    "marketOnly": false,
+    "confidence": 54.7,
+    "volatility": 45,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "David Jorda Sanchis is only the current Robinhood market favorite over Liam Broady; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "David Jorda Sanchis has the recent service-hold edge 96% to 64%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
-      "attackingSide": null,
-      "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "edgeType": "Weakness edge",
+      "target": "Liam Broady",
+      "scoreGap": 9,
+      "attackingSide": "David Jorda Sanchis",
+      "vulnerableSide": "Liam Broady",
+      "gameFlow": "David Jorda Sanchis has a real path if Liam Broady's first two service games show the same weakness: second-serve points won are attackable (43%).",
+      "liveTrigger": "Look for Liam Broady facing break points or second-serve pressure before 3-3.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "David Jorda Sanchis",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 96,
+        "firstServeWonPct": 83,
+        "secondServeWonPct": 66,
+        "firstServePct": 58,
+        "avgAces": 5.2,
+        "avgDoubleFaults": 1.2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 76,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (96% hold)",
+          "wins enough first-serve points (83%)",
+          "second serve holds up (66%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "David Jorda Sanchis has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Liam Broady",
-        "weaknessScore": null,
+        "serviceHoldPct": 64,
+        "firstServeWonPct": 62,
+        "secondServeWonPct": 43,
+        "firstServePct": 66,
+        "avgAces": 0.8,
+        "avgDoubleFaults": 3.4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 56,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 9,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "second-serve points won are attackable (43%)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Liam Broady can drop points quickly through second-serve points won are attackable (43%)."
       }
     },
     "setWinProjections": [
       {
         "name": "David Jorda Sanchis",
-        "confidence": 61,
-        "modelPct": 53,
+        "confidence": 63,
+        "modelPct": 54.7,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Liam Broady",
-        "confidence": 69,
-        "modelPct": 50,
+        "confidence": 67,
+        "modelPct": 46.5,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -3906,7 +4594,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "David Jorda Sanchis",
         "americanOdds": null,
-        "modelPct": 53,
+        "modelPct": 54.7,
         "impliedPct": 53,
         "edgePct": null,
         "evPer100": null,
@@ -3933,11 +4621,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 10.1,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -3947,8 +4635,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "David Jorda Sanchis",
-          "confidence": 61,
-          "modelPct": 53,
+          "confidence": 63,
+          "modelPct": 54.7,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -3956,8 +4644,8 @@ const rawTennisGames = [
         },
         {
           "name": "Liam Broady",
-          "confidence": 69,
-          "modelPct": 50,
+          "confidence": 67,
+          "modelPct": 46.5,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -3974,7 +4662,7 @@ const rawTennisGames = [
         "selection": "David Jorda Sanchis",
         "line": null,
         "americanOdds": null,
-        "modelPct": 53,
+        "modelPct": 54.7,
         "impliedPct": 53,
         "edgePct": null,
         "evPer100": null,
@@ -4003,22 +4691,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "David Jorda Sanchis 61% / Liam Broady 69%",
+        "selection": "David Jorda Sanchis 63% / Liam Broady 67%",
         "rows": [
           {
             "name": "David Jorda Sanchis",
-            "confidence": 61,
-            "modelPct": 53,
+            "confidence": 63,
+            "modelPct": 54.7,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Liam Broady",
-            "confidence": 69,
-            "modelPct": 50,
+            "confidence": 67,
+            "modelPct": 46.5,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 69,
+        "confidence": 67,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -4026,10 +4714,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 10.1,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -4052,7 +4740,7 @@ const rawTennisGames = [
           "bidPct": 50,
           "lastTradePct": 53,
           "decimalOdds": null,
-          "modelPct": 53,
+          "modelPct": 54.7,
           "edgePct": null,
           "priceBand": "Coinflip",
           "grossProfitPct": 47,
@@ -4070,7 +4758,7 @@ const rawTennisGames = [
           "bidPct": 47,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 50,
+          "modelPct": 46.5,
           "edgePct": null,
           "priceBand": "Coinflip",
           "grossProfitPct": 50,
@@ -4089,7 +4777,7 @@ const rawTennisGames = [
         "bidPct": 50,
         "lastTradePct": 53,
         "decimalOdds": null,
-        "modelPct": 53,
+        "modelPct": 54.7,
         "edgePct": null,
         "priceBand": "Coinflip",
         "grossProfitPct": 47,
@@ -4114,35 +4802,77 @@ const rawTennisGames = [
       {
         "name": "David Jorda Sanchis",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 53,
+        "qualityName": "David Jorda Sanchis",
+        "profile": "Clay | Rank not joined | hold 96%",
+        "modelPct": 54.7,
         "weakness": {
           "name": "David Jorda Sanchis",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 96,
+          "firstServeWonPct": 83,
+          "secondServeWonPct": 66,
+          "firstServePct": 58,
+          "avgAces": 5.2,
+          "avgDoubleFaults": 1.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 76,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (96% hold)",
+            "wins enough first-serve points (83%)",
+            "second serve holds up (66%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "David Jorda Sanchis has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Liam Broady",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 50,
+        "qualityName": "Liam Broady",
+        "profile": "Clay | Rank not joined | hold 64%",
+        "modelPct": 46.5,
         "weakness": {
           "name": "Liam Broady",
-          "weaknessScore": null,
+          "serviceHoldPct": 64,
+          "firstServeWonPct": 62,
+          "secondServeWonPct": 43,
+          "firstServePct": 66,
+          "avgAces": 0.8,
+          "avgDoubleFaults": 3.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 56,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 9,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "second-serve points won are attackable (43%)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Liam Broady can drop points quickly through second-serve points won are attackable (43%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -4160,76 +4890,110 @@ const rawTennisGames = [
     "court": "ATP Challenger Centurion 2",
     "round": "Round Of 32",
     "stage": "ATP Challenger Centurion 2 | Round Of 32",
-    "pickName": "Constantin Bittoun Kouzmine",
-    "basePickName": "Constantin Bittoun Kouzmine",
-    "modelSource": "Robinhood market watch only",
+    "pickName": "Guillaume Dalmasso",
+    "basePickName": "Guillaume Dalmasso",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 58,
-    "volatility": 72,
+    "marketOnly": false,
+    "confidence": 51.5,
+    "volatility": 53,
     "tags": [
       "ATP Challenger",
       "Hard",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Constantin Bittoun Kouzmine is only the current Robinhood market favorite over Guillaume Dalmasso; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Guillaume Dalmasso has the recent service-hold edge 80% to 46%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
-      "attackingSide": null,
-      "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "edgeType": "Weakness edge",
+      "target": "Constantin Bittoun Kouzmine",
+      "scoreGap": 10,
+      "attackingSide": "Guillaume Dalmasso",
+      "vulnerableSide": "Constantin Bittoun Kouzmine",
+      "gameFlow": "Guillaume Dalmasso has a real path if Constantin Bittoun Kouzmine's first two service games show the same weakness: low recent hold rate (46%); first-serve points won below comfort (53%).",
+      "liveTrigger": "Look for Constantin Bittoun Kouzmine facing break points or second-serve pressure before 3-3.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "Avoid low unders if Constantin Bittoun Kouzmine faces early break points or second-serve pressure.",
       "pick": {
-        "name": "Constantin Bittoun Kouzmine",
-        "weaknessScore": null,
+        "name": "Guillaume Dalmasso",
+        "serviceHoldPct": 80,
+        "firstServeWonPct": 76,
+        "secondServeWonPct": 40,
+        "firstServePct": 66,
+        "avgAces": 6,
+        "avgDoubleFaults": 8.4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 64,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 20,
+        "firstGameComfort": "Needs early holds confirmed",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "second-serve points won are attackable (40%)",
+          "double-fault pressure (8.4 avg)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "strengths": [
+          "protects serve well (80% hold)",
+          "wins enough first-serve points (76%)"
+        ],
+        "gameFlowRead": "Guillaume Dalmasso can drop points quickly through second-serve points won are attackable (40%) and double-fault pressure (8.4 avg)."
       },
       "opponent": {
-        "name": "Guillaume Dalmasso",
-        "weaknessScore": null,
+        "name": "Constantin Bittoun Kouzmine",
+        "serviceHoldPct": 46,
+        "firstServeWonPct": 53,
+        "secondServeWonPct": 44,
+        "firstServePct": 64,
+        "avgAces": null,
+        "avgDoubleFaults": 2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 50,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 30,
+        "firstGameComfort": "Fragile opening-service profile",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "low recent hold rate (46%)",
+          "first-serve points won below comfort (53%)",
+          "second-serve points won are attackable (44%)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Constantin Bittoun Kouzmine can drop points quickly through low recent hold rate (46%) and first-serve points won below comfort (53%)."
       }
     },
     "setWinProjections": [
       {
         "name": "Guillaume Dalmasso",
-        "confidence": 64,
-        "modelPct": 44,
-        "label": "Underdog set-win path needs early holds"
+        "confidence": 60,
+        "modelPct": 51.5,
+        "label": "Market favorite to win a set"
       },
       {
         "name": "Constantin Bittoun Kouzmine",
-        "confidence": 66,
-        "modelPct": 58,
-        "label": "Market favorite to win a set"
+        "confidence": 71,
+        "modelPct": 49.3,
+        "label": "Underdog set-win path needs early holds"
       }
     ],
     "valueBoard": {
       "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
       "ml": {
         "marketType": "ML",
-        "selection": "Constantin Bittoun Kouzmine",
+        "selection": "Guillaume Dalmasso",
         "americanOdds": null,
-        "modelPct": 58,
-        "impliedPct": 58,
+        "modelPct": 51.5,
+        "impliedPct": 44,
         "edgePct": null,
         "evPer100": null,
         "netEvPer100": null,
@@ -4255,11 +5019,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -4269,18 +5033,18 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Guillaume Dalmasso",
-          "confidence": 64,
-          "modelPct": 44,
-          "label": "Underdog set-win path needs early holds",
+          "confidence": 60,
+          "modelPct": 51.5,
+          "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
           "betGrade": false
         },
         {
           "name": "Constantin Bittoun Kouzmine",
-          "confidence": 66,
-          "modelPct": 58,
-          "label": "Market favorite to win a set",
+          "confidence": 71,
+          "modelPct": 49.3,
+          "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
           "betGrade": false
@@ -4293,11 +5057,11 @@ const rawTennisGames = [
       {
         "marketType": "Moneyline",
         "label": "ML value",
-        "selection": "Constantin Bittoun Kouzmine",
+        "selection": "Guillaume Dalmasso",
         "line": null,
         "americanOdds": null,
-        "modelPct": 58,
-        "impliedPct": 58,
+        "modelPct": 51.5,
+        "impliedPct": 44,
         "edgePct": null,
         "evPer100": null,
         "netEvPer100": null,
@@ -4325,22 +5089,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Guillaume Dalmasso 64% / Constantin Bittoun Kouzmine 66%",
+        "selection": "Guillaume Dalmasso 60% / Constantin Bittoun Kouzmine 71%",
         "rows": [
           {
             "name": "Guillaume Dalmasso",
-            "confidence": 64,
-            "modelPct": 44,
-            "label": "Underdog set-win path needs early holds"
+            "confidence": 60,
+            "modelPct": 51.5,
+            "label": "Market favorite to win a set"
           },
           {
             "name": "Constantin Bittoun Kouzmine",
-            "confidence": 66,
-            "modelPct": 58,
-            "label": "Market favorite to win a set"
+            "confidence": 71,
+            "modelPct": 49.3,
+            "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 66,
+        "confidence": 71,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -4348,10 +5112,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -4374,7 +5138,7 @@ const rawTennisGames = [
           "bidPct": 42,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 44,
+          "modelPct": 51.5,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 56,
@@ -4392,7 +5156,7 @@ const rawTennisGames = [
           "bidPct": 56,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 58,
+          "modelPct": 49.3,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 42,
@@ -4404,22 +5168,22 @@ const rawTennisGames = [
         }
       ],
       "desk": {
-        "name": "Constantin Bittoun Kouzmine",
+        "name": "Guillaume Dalmasso",
         "odds": null,
-        "americanLabel": "58c",
-        "impliedPct": 58,
-        "bidPct": 56,
+        "americanLabel": "44c",
+        "impliedPct": 44,
+        "bidPct": 42,
         "lastTradePct": 0,
         "decimalOdds": null,
-        "modelPct": 58,
+        "modelPct": 51.5,
         "edgePct": null,
-        "priceBand": "Moderate favorite",
-        "grossProfitPct": 42,
-        "grossPayoutMultiple": 1.724,
-        "centsAtRisk": 58,
-        "centsProfitIfWin": 42,
+        "priceBand": "Underdog",
+        "grossProfitPct": 56,
+        "grossPayoutMultiple": 2.273,
+        "centsAtRisk": 44,
+        "centsProfitIfWin": 56,
         "openInterest": 0,
-        "symbol": "KXATPCHALLENGERMATCH-26JUN02DALBIT-BIT"
+        "symbol": "KXATPCHALLENGERMATCH-26JUN02DALBIT-DAL"
       },
       "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row.",
       "spreadValue": "No game spread captured",
@@ -4436,35 +5200,81 @@ const rawTennisGames = [
       {
         "name": "Guillaume Dalmasso",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 44,
+        "qualityName": "Guillaume Dalmasso",
+        "profile": "Hard | Rank not joined | hold 80%",
+        "modelPct": 51.5,
         "weakness": {
           "name": "Guillaume Dalmasso",
-          "weaknessScore": null,
+          "serviceHoldPct": 80,
+          "firstServeWonPct": 76,
+          "secondServeWonPct": 40,
+          "firstServePct": 66,
+          "avgAces": 6,
+          "avgDoubleFaults": 8.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 64,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 20,
+          "firstGameComfort": "Needs early holds confirmed",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "second-serve points won are attackable (40%)",
+            "double-fault pressure (8.4 avg)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "strengths": [
+            "protects serve well (80% hold)",
+            "wins enough first-serve points (76%)"
+          ],
+          "gameFlowRead": "Guillaume Dalmasso can drop points quickly through second-serve points won are attackable (40%) and double-fault pressure (8.4 avg)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Constantin Bittoun Kouzmine",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 58,
+        "qualityName": "Constantin Bittoun Kouzmine",
+        "profile": "Hard | Rank not joined | hold 46%",
+        "modelPct": 49.3,
         "weakness": {
           "name": "Constantin Bittoun Kouzmine",
-          "weaknessScore": null,
+          "serviceHoldPct": 46,
+          "firstServeWonPct": 53,
+          "secondServeWonPct": 44,
+          "firstServePct": 64,
+          "avgAces": null,
+          "avgDoubleFaults": 2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 50,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 30,
+          "firstGameComfort": "Fragile opening-service profile",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "low recent hold rate (46%)",
+            "first-serve points won below comfort (53%)",
+            "second-serve points won are attackable (44%)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Constantin Bittoun Kouzmine can drop points quickly through low recent hold rate (46%) and first-serve points won below comfort (53%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -4484,63 +5294,91 @@ const rawTennisGames = [
     "stage": "ATP Challenger Centurion 2 | Round Of 32",
     "pickName": "Calvin Hemery",
     "basePickName": "Calvin Hemery",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 66,
-    "volatility": 65,
+    "marketOnly": false,
+    "confidence": 60.2,
+    "volatility": 53,
     "tags": [
       "ATP Challenger",
       "Hard",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Calvin Hemery is only the current Robinhood market favorite over Khololwam Montsi; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Calvin Hemery has the recent service-hold edge 74% to 55%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
-      "attackingSide": null,
-      "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "edgeType": "Weakness edge",
+      "target": "Khololwam Montsi",
+      "scoreGap": 27,
+      "attackingSide": "Calvin Hemery",
+      "vulnerableSide": "Khololwam Montsi",
+      "gameFlow": "Calvin Hemery has a real path if Khololwam Montsi's first two service games show the same weakness: low recent hold rate (55%); first-serve points won below comfort (57%).",
+      "liveTrigger": "Look for Khololwam Montsi facing break points or second-serve pressure before 3-3.",
+      "spreadRead": "Calvin Hemery spread only if the handicap is short and Khololwam Montsi is under pressure early.",
+      "totalRead": "Avoid low unders if Khololwam Montsi faces early break points or second-serve pressure.",
       "pick": {
         "name": "Calvin Hemery",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 74,
+        "firstServeWonPct": 70,
+        "secondServeWonPct": 47,
+        "firstServePct": 65,
+        "avgAces": 4.8,
+        "avgDoubleFaults": 2.8,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 62,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Calvin Hemery has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Khololwam Montsi",
-        "weaknessScore": null,
+        "serviceHoldPct": 55,
+        "firstServeWonPct": 57,
+        "secondServeWonPct": 45,
+        "firstServePct": 51,
+        "avgAces": null,
+        "avgDoubleFaults": 5,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 51,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 27,
+        "firstGameComfort": "Fragile opening-service profile",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "low recent hold rate (55%)",
+          "first-serve points won below comfort (57%)",
+          "double-fault pressure (5.0 avg)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Khololwam Montsi can drop points quickly through low recent hold rate (55%) and first-serve points won below comfort (57%)."
       }
     },
     "setWinProjections": [
       {
         "name": "Khololwam Montsi",
-        "confidence": 56,
-        "modelPct": 37,
+        "confidence": 62,
+        "modelPct": 41.1,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Calvin Hemery",
-        "confidence": 74,
-        "modelPct": 66,
+        "confidence": 68,
+        "modelPct": 60.2,
         "label": "Market favorite to win a set"
       }
     ],
@@ -4550,7 +5388,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Calvin Hemery",
         "americanOdds": null,
-        "modelPct": 66,
+        "modelPct": 60.2,
         "impliedPct": 66,
         "edgePct": null,
         "evPer100": null,
@@ -4577,11 +5415,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -4591,8 +5429,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Khololwam Montsi",
-          "confidence": 56,
-          "modelPct": 37,
+          "confidence": 62,
+          "modelPct": 41.1,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -4600,8 +5438,8 @@ const rawTennisGames = [
         },
         {
           "name": "Calvin Hemery",
-          "confidence": 74,
-          "modelPct": 66,
+          "confidence": 68,
+          "modelPct": 60.2,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -4618,7 +5456,7 @@ const rawTennisGames = [
         "selection": "Calvin Hemery",
         "line": null,
         "americanOdds": null,
-        "modelPct": 66,
+        "modelPct": 60.2,
         "impliedPct": 66,
         "edgePct": null,
         "evPer100": null,
@@ -4647,22 +5485,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Khololwam Montsi 56% / Calvin Hemery 74%",
+        "selection": "Khololwam Montsi 62% / Calvin Hemery 68%",
         "rows": [
           {
             "name": "Khololwam Montsi",
-            "confidence": 56,
-            "modelPct": 37,
+            "confidence": 62,
+            "modelPct": 41.1,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Calvin Hemery",
-            "confidence": 74,
-            "modelPct": 66,
+            "confidence": 68,
+            "modelPct": 60.2,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 74,
+        "confidence": 68,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -4670,10 +5508,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -4696,7 +5534,7 @@ const rawTennisGames = [
           "bidPct": 35,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 37,
+          "modelPct": 41.1,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 63,
@@ -4714,7 +5552,7 @@ const rawTennisGames = [
           "bidPct": 59,
           "lastTradePct": 67,
           "decimalOdds": null,
-          "modelPct": 66,
+          "modelPct": 60.2,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 34,
@@ -4733,7 +5571,7 @@ const rawTennisGames = [
         "bidPct": 59,
         "lastTradePct": 67,
         "decimalOdds": null,
-        "modelPct": 66,
+        "modelPct": 60.2,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 34,
@@ -4758,35 +5596,75 @@ const rawTennisGames = [
       {
         "name": "Khololwam Montsi",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 37,
+        "qualityName": "Khololwam Montsi",
+        "profile": "Hard | Rank not joined | hold 55%",
+        "modelPct": 41.1,
         "weakness": {
           "name": "Khololwam Montsi",
-          "weaknessScore": null,
+          "serviceHoldPct": 55,
+          "firstServeWonPct": 57,
+          "secondServeWonPct": 45,
+          "firstServePct": 51,
+          "avgAces": null,
+          "avgDoubleFaults": 5,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 51,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 27,
+          "firstGameComfort": "Fragile opening-service profile",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "low recent hold rate (55%)",
+            "first-serve points won below comfort (57%)",
+            "double-fault pressure (5.0 avg)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Khololwam Montsi can drop points quickly through low recent hold rate (55%) and first-serve points won below comfort (57%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Calvin Hemery",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 66,
+        "qualityName": "Calvin Hemery",
+        "profile": "Hard | Rank not joined | hold 74%",
+        "modelPct": 60.2,
         "weakness": {
           "name": "Calvin Hemery",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 74,
+          "firstServeWonPct": 70,
+          "secondServeWonPct": 47,
+          "firstServePct": 65,
+          "avgAces": 4.8,
+          "avgDoubleFaults": 2.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 62,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Calvin Hemery has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -4806,63 +5684,92 @@ const rawTennisGames = [
     "stage": "ATP Challenger Perugia | Round Of 32",
     "pickName": "Valentin Royer",
     "basePickName": "Valentin Royer",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 79,
-    "volatility": 53,
+    "marketOnly": false,
+    "confidence": 65.7,
+    "volatility": 45,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
-      "Market favorite"
+      "Warehouse joined",
+      "Flashscore first",
+      "Coinflip price"
     ],
-    "reason": "Valentin Royer is only the current Robinhood market favorite over Nicolas Alvarez Varona; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Valentin Royer has the recent service-hold edge 76% to 70%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
-      "attackingSide": null,
-      "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "edgeType": "Weakness edge",
+      "target": "Nicolas Alvarez Varona",
+      "scoreGap": 8,
+      "attackingSide": "Valentin Royer",
+      "vulnerableSide": "Nicolas Alvarez Varona",
+      "gameFlow": "Valentin Royer has a real path if Nicolas Alvarez Varona's first two service games show the same weakness: second-serve points won are attackable (41%); double-fault pressure (4.5 avg).",
+      "liveTrigger": "Look for Nicolas Alvarez Varona facing break points or second-serve pressure before 3-3.",
+      "spreadRead": "Valentin Royer spread only if the handicap is short and Nicolas Alvarez Varona is under pressure early.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Valentin Royer",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 76,
+        "firstServeWonPct": 68,
+        "secondServeWonPct": 52,
+        "firstServePct": 62,
+        "avgAces": 5.4,
+        "avgDoubleFaults": 1.6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 63,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 12,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (76% hold)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Valentin Royer has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Nicolas Alvarez Varona",
-        "weaknessScore": null,
+        "serviceHoldPct": 70,
+        "firstServeWonPct": 69,
+        "secondServeWonPct": 41,
+        "firstServePct": 71,
+        "avgAces": 5,
+        "avgDoubleFaults": 4.5,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 61,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 8,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "second-serve points won are attackable (41%)",
+          "double-fault pressure (4.5 avg)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Nicolas Alvarez Varona can drop points quickly through second-serve points won are attackable (41%) and double-fault pressure (4.5 avg)."
       }
     },
     "setWinProjections": [
       {
         "name": "Valentin Royer",
-        "confidence": 87,
-        "modelPct": 79,
+        "confidence": 74,
+        "modelPct": 65.7,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Nicolas Alvarez Varona",
-        "confidence": 43,
-        "modelPct": 24,
+        "confidence": 56,
+        "modelPct": 35.6,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -4872,7 +5779,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Valentin Royer",
         "americanOdds": null,
-        "modelPct": 79,
+        "modelPct": 65.7,
         "impliedPct": 79,
         "edgePct": null,
         "evPer100": null,
@@ -4899,11 +5806,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 8.8,
-        "confidence": 48,
-        "tiebreakRisk": 52,
-        "earlyBreakRisk": 48,
-        "modelPct": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -4913,8 +5820,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Valentin Royer",
-          "confidence": 87,
-          "modelPct": 79,
+          "confidence": 74,
+          "modelPct": 65.7,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -4922,8 +5829,8 @@ const rawTennisGames = [
         },
         {
           "name": "Nicolas Alvarez Varona",
-          "confidence": 43,
-          "modelPct": 24,
+          "confidence": 56,
+          "modelPct": 35.6,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -4940,7 +5847,7 @@ const rawTennisGames = [
         "selection": "Valentin Royer",
         "line": null,
         "americanOdds": null,
-        "modelPct": 79,
+        "modelPct": 65.7,
         "impliedPct": 79,
         "edgePct": null,
         "evPer100": null,
@@ -4969,22 +5876,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Valentin Royer 87% / Nicolas Alvarez Varona 43%",
+        "selection": "Valentin Royer 74% / Nicolas Alvarez Varona 56%",
         "rows": [
           {
             "name": "Valentin Royer",
-            "confidence": 87,
-            "modelPct": 79,
+            "confidence": 74,
+            "modelPct": 65.7,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Nicolas Alvarez Varona",
-            "confidence": 43,
-            "modelPct": 24,
+            "confidence": 56,
+            "modelPct": 35.6,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 87,
+        "confidence": 74,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -4992,10 +5899,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 8.8,
-        "confidence": 48,
-        "tiebreakRisk": 52,
-        "earlyBreakRisk": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -5018,7 +5925,7 @@ const rawTennisGames = [
           "bidPct": 77,
           "lastTradePct": 79,
           "decimalOdds": null,
-          "modelPct": 79,
+          "modelPct": 65.7,
           "edgePct": null,
           "priceBand": "Low-payout favorite",
           "grossProfitPct": 21,
@@ -5036,7 +5943,7 @@ const rawTennisGames = [
           "bidPct": 23,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 24,
+          "modelPct": 35.6,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 76,
@@ -5055,7 +5962,7 @@ const rawTennisGames = [
         "bidPct": 77,
         "lastTradePct": 79,
         "decimalOdds": null,
-        "modelPct": 79,
+        "modelPct": 65.7,
         "edgePct": null,
         "priceBand": "Low-payout favorite",
         "grossProfitPct": 21,
@@ -5090,35 +5997,76 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/4022/valentin-royer",
           "asOf": "2026-06-02"
         },
-        "qualityName": null,
-        "profile": "Clay | Live rank #74 | France | age 25",
-        "modelPct": 79,
+        "qualityName": "Valentin Royer",
+        "profile": "Clay | Live rank #74 | France | age 25 | hold 76%",
+        "modelPct": 65.7,
         "weakness": {
           "name": "Valentin Royer",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 76,
+          "firstServeWonPct": 68,
+          "secondServeWonPct": 52,
+          "firstServePct": 62,
+          "avgAces": 5.4,
+          "avgDoubleFaults": 1.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 63,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 12,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (76% hold)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Valentin Royer has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 23,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Nicolas Alvarez Varona",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 24,
+        "qualityName": "Nicolas Alvarez Varona",
+        "profile": "Clay | Rank not joined | hold 70%",
+        "modelPct": 35.6,
         "weakness": {
           "name": "Nicolas Alvarez Varona",
-          "weaknessScore": null,
+          "serviceHoldPct": 70,
+          "firstServeWonPct": 69,
+          "secondServeWonPct": 41,
+          "firstServePct": 71,
+          "avgAces": 5,
+          "avgDoubleFaults": 4.5,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 61,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 8,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "second-serve points won are attackable (41%)",
+            "double-fault pressure (4.5 avg)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Nicolas Alvarez Varona can drop points quickly through second-serve points won are attackable (41%) and double-fault pressure (4.5 avg)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -5138,63 +6086,90 @@ const rawTennisGames = [
     "stage": "ATP Challenger Perugia | Round Of 32",
     "pickName": "Jacopo Vasami",
     "basePickName": "Jacopo Vasami",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 57,
-    "volatility": 72,
+    "marketOnly": false,
+    "confidence": 54.7,
+    "volatility": 47,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Jacopo Vasami is only the current Robinhood market favorite over Cezar Cretu (b. 2001); Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Jacopo Vasami has the recent service-hold edge 75% to 61%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
-      "attackingSide": null,
-      "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "edgeType": "Weakness edge",
+      "target": "Cezar Cretu (b. 2001)",
+      "scoreGap": 9,
+      "attackingSide": "Jacopo Vasami",
+      "vulnerableSide": "Cezar Cretu (b. 2001)",
+      "gameFlow": "Jacopo Vasami has a real path if Cezar Cretu (b. 2001)'s first two service games show the same weakness: low recent hold rate (61%); first-serve points won below comfort (58%).",
+      "liveTrigger": "Look for Cezar Cretu (b. 2001) facing break points or second-serve pressure before 3-3.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Jacopo Vasami",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 75,
+        "firstServeWonPct": 69,
+        "secondServeWonPct": 54,
+        "firstServePct": 61,
+        "avgAces": 3,
+        "avgDoubleFaults": 3.8,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 63,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 2,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Jacopo Vasami has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Cezar Cretu (b. 2001)",
-        "weaknessScore": null,
+        "serviceHoldPct": 61,
+        "firstServeWonPct": 58,
+        "secondServeWonPct": 50,
+        "firstServePct": 66,
+        "avgAces": 1.4,
+        "avgDoubleFaults": 3.6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 55,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 11,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "low recent hold rate (61%)",
+          "first-serve points won below comfort (58%)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Cezar Cretu (b. 2001) can drop points quickly through low recent hold rate (61%) and first-serve points won below comfort (58%)."
       }
     },
     "setWinProjections": [
       {
         "name": "Cezar Cretu (b. 2001)",
-        "confidence": 65,
-        "modelPct": 44,
+        "confidence": 67,
+        "modelPct": 45.7,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Jacopo Vasami",
-        "confidence": 65,
-        "modelPct": 57,
+        "confidence": 63,
+        "modelPct": 54.7,
         "label": "Market favorite to win a set"
       }
     ],
@@ -5204,7 +6179,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Jacopo Vasami",
         "americanOdds": null,
-        "modelPct": 57,
+        "modelPct": 54.7,
         "impliedPct": 57,
         "edgePct": null,
         "evPer100": null,
@@ -5231,11 +6206,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -5245,8 +6220,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Cezar Cretu (b. 2001)",
-          "confidence": 65,
-          "modelPct": 44,
+          "confidence": 67,
+          "modelPct": 45.7,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -5254,8 +6229,8 @@ const rawTennisGames = [
         },
         {
           "name": "Jacopo Vasami",
-          "confidence": 65,
-          "modelPct": 57,
+          "confidence": 63,
+          "modelPct": 54.7,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -5272,7 +6247,7 @@ const rawTennisGames = [
         "selection": "Jacopo Vasami",
         "line": null,
         "americanOdds": null,
-        "modelPct": 57,
+        "modelPct": 54.7,
         "impliedPct": 57,
         "edgePct": null,
         "evPer100": null,
@@ -5301,22 +6276,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Cezar Cretu (b. 2001) 65% / Jacopo Vasami 65%",
+        "selection": "Cezar Cretu (b. 2001) 67% / Jacopo Vasami 63%",
         "rows": [
           {
             "name": "Cezar Cretu (b. 2001)",
-            "confidence": 65,
-            "modelPct": 44,
+            "confidence": 67,
+            "modelPct": 45.7,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Jacopo Vasami",
-            "confidence": 65,
-            "modelPct": 57,
+            "confidence": 63,
+            "modelPct": 54.7,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 65,
+        "confidence": 67,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -5324,10 +6299,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -5350,7 +6325,7 @@ const rawTennisGames = [
           "bidPct": 42,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 44,
+          "modelPct": 45.7,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 56,
@@ -5368,7 +6343,7 @@ const rawTennisGames = [
           "bidPct": 56,
           "lastTradePct": 57,
           "decimalOdds": null,
-          "modelPct": 57,
+          "modelPct": 54.7,
           "edgePct": null,
           "priceBand": "Coinflip",
           "grossProfitPct": 43,
@@ -5387,7 +6362,7 @@ const rawTennisGames = [
         "bidPct": 56,
         "lastTradePct": 57,
         "decimalOdds": null,
-        "modelPct": 57,
+        "modelPct": 54.7,
         "edgePct": null,
         "priceBand": "Coinflip",
         "grossProfitPct": 43,
@@ -5412,35 +6387,74 @@ const rawTennisGames = [
       {
         "name": "Cezar Cretu (b. 2001)",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 44,
+        "qualityName": "Cezar Cretu (b. 2001)",
+        "profile": "Clay | Rank not joined | hold 61%",
+        "modelPct": 45.7,
         "weakness": {
           "name": "Cezar Cretu (b. 2001)",
-          "weaknessScore": null,
+          "serviceHoldPct": 61,
+          "firstServeWonPct": 58,
+          "secondServeWonPct": 50,
+          "firstServePct": 66,
+          "avgAces": 1.4,
+          "avgDoubleFaults": 3.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 55,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 11,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "low recent hold rate (61%)",
+            "first-serve points won below comfort (58%)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Cezar Cretu (b. 2001) can drop points quickly through low recent hold rate (61%) and first-serve points won below comfort (58%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Jacopo Vasami",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 57,
+        "qualityName": "Jacopo Vasami",
+        "profile": "Clay | Rank not joined | hold 75%",
+        "modelPct": 54.7,
         "weakness": {
           "name": "Jacopo Vasami",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 75,
+          "firstServeWonPct": 69,
+          "secondServeWonPct": 54,
+          "firstServePct": 61,
+          "avgAces": 3,
+          "avgDoubleFaults": 3.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 63,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 2,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Jacopo Vasami has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -5460,63 +6474,90 @@ const rawTennisGames = [
     "stage": "ATP Challenger Bad Rappenau | Round Of 32",
     "pickName": "Hugo Dellien",
     "basePickName": "Hugo Dellien",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 60,
-    "volatility": 70,
+    "marketOnly": false,
+    "confidence": 56.5,
+    "volatility": 47,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Hugo Dellien is only the current Robinhood market favorite over Max Schoenhaus; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Hugo Dellien has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 0,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Hugo Dellien",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 84,
+        "firstServeWonPct": 73,
+        "secondServeWonPct": 50,
+        "firstServePct": 70,
+        "avgAces": 4,
+        "avgDoubleFaults": 1,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 66,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 35,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (84% hold)",
+          "wins enough first-serve points (73%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Hugo Dellien has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Max Schoenhaus",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": null,
+        "firstServeWonPct": null,
+        "secondServeWonPct": null,
+        "firstServePct": null,
+        "avgAces": null,
+        "avgDoubleFaults": null,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": null,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Max Schoenhaus has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Hugo Dellien",
-        "confidence": 68,
-        "modelPct": 60,
+        "confidence": 65,
+        "modelPct": 56.5,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Max Schoenhaus",
-        "confidence": 62,
-        "modelPct": 42,
+        "confidence": 66,
+        "modelPct": 44.3,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -5526,7 +6567,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Hugo Dellien",
         "americanOdds": null,
-        "modelPct": 60,
+        "modelPct": 56.5,
         "impliedPct": 60,
         "edgePct": null,
         "evPer100": null,
@@ -5553,11 +6594,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -5567,8 +6608,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Hugo Dellien",
-          "confidence": 68,
-          "modelPct": 60,
+          "confidence": 65,
+          "modelPct": 56.5,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -5576,8 +6617,8 @@ const rawTennisGames = [
         },
         {
           "name": "Max Schoenhaus",
-          "confidence": 62,
-          "modelPct": 42,
+          "confidence": 66,
+          "modelPct": 44.3,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -5594,7 +6635,7 @@ const rawTennisGames = [
         "selection": "Hugo Dellien",
         "line": null,
         "americanOdds": null,
-        "modelPct": 60,
+        "modelPct": 56.5,
         "impliedPct": 60,
         "edgePct": null,
         "evPer100": null,
@@ -5623,22 +6664,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Hugo Dellien 68% / Max Schoenhaus 62%",
+        "selection": "Hugo Dellien 65% / Max Schoenhaus 66%",
         "rows": [
           {
             "name": "Hugo Dellien",
-            "confidence": 68,
-            "modelPct": 60,
+            "confidence": 65,
+            "modelPct": 56.5,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Max Schoenhaus",
-            "confidence": 62,
-            "modelPct": 42,
+            "confidence": 66,
+            "modelPct": 44.3,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 68,
+        "confidence": 66,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -5646,10 +6687,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -5672,7 +6713,7 @@ const rawTennisGames = [
           "bidPct": 59,
           "lastTradePct": 61,
           "decimalOdds": null,
-          "modelPct": 60,
+          "modelPct": 56.5,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 40,
@@ -5690,7 +6731,7 @@ const rawTennisGames = [
           "bidPct": 40,
           "lastTradePct": 42,
           "decimalOdds": null,
-          "modelPct": 42,
+          "modelPct": 44.3,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 58,
@@ -5709,7 +6750,7 @@ const rawTennisGames = [
         "bidPct": 59,
         "lastTradePct": 61,
         "decimalOdds": null,
-        "modelPct": 60,
+        "modelPct": 56.5,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 40,
@@ -5744,18 +6785,39 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/1849/hugo-dellien",
           "asOf": "2026-06-02"
         },
-        "qualityName": null,
-        "profile": "Clay | Live rank #144 | Bolivia | age 32",
-        "modelPct": 60,
+        "qualityName": "Hugo Dellien",
+        "profile": "Clay | Live rank #144 | Bolivia | age 32 | hold 84%",
+        "modelPct": 56.5,
         "weakness": {
           "name": "Hugo Dellien",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 84,
+          "firstServeWonPct": 73,
+          "secondServeWonPct": 50,
+          "firstServePct": 70,
+          "avgAces": 4,
+          "avgDoubleFaults": 1,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 66,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 35,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (84% hold)",
+            "wins enough first-serve points (73%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Hugo Dellien has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 23,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
@@ -5763,16 +6825,34 @@ const rawTennisGames = [
         "ranking": null,
         "qualityName": null,
         "profile": "Clay | Rank not joined",
-        "modelPct": 42,
+        "modelPct": 44.3,
         "weakness": {
           "name": "Max Schoenhaus",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": null,
+          "firstServeWonPct": null,
+          "secondServeWonPct": null,
+          "firstServePct": null,
+          "avgAces": null,
+          "avgDoubleFaults": null,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": null,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Max Schoenhaus has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 0,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore recent-form metric fallback"
         }
       }
     ]
@@ -5792,63 +6872,90 @@ const rawTennisGames = [
     "stage": "ATP Challenger Birmingham | Round Of 32",
     "pickName": "James Duckworth",
     "basePickName": "James Duckworth",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 63,
-    "volatility": 67,
+    "marketOnly": false,
+    "confidence": 58.4,
+    "volatility": 46,
     "tags": [
       "ATP Challenger",
       "Grass",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "James Duckworth is only the current Robinhood market favorite over Billy Harris; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "James Duckworth has the recent service-hold edge 80% to 67%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 0,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "James Duckworth",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 80,
+        "firstServeWonPct": 74,
+        "secondServeWonPct": 53,
+        "firstServePct": 57,
+        "avgAces": 6.2,
+        "avgDoubleFaults": 3.8,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 65,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 27,
+        "weaknessScore": 3,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (80% hold)",
+          "wins enough first-serve points (74%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "James Duckworth has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Billy Harris",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 67,
+        "firstServeWonPct": 67,
+        "secondServeWonPct": 47,
+        "firstServePct": 57,
+        "avgAces": 2,
+        "avgDoubleFaults": 2.2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 58,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 3,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Billy Harris has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "James Duckworth",
-        "confidence": 71,
-        "modelPct": 63,
+        "confidence": 66,
+        "modelPct": 58.4,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Billy Harris",
-        "confidence": 59,
-        "modelPct": 39,
+        "confidence": 64,
+        "modelPct": 42.5,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -5858,7 +6965,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "James Duckworth",
         "americanOdds": null,
-        "modelPct": 63,
+        "modelPct": 58.4,
         "impliedPct": 63,
         "edgePct": null,
         "evPer100": null,
@@ -5885,11 +6992,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -5899,8 +7006,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "James Duckworth",
-          "confidence": 71,
-          "modelPct": 63,
+          "confidence": 66,
+          "modelPct": 58.4,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -5908,8 +7015,8 @@ const rawTennisGames = [
         },
         {
           "name": "Billy Harris",
-          "confidence": 59,
-          "modelPct": 39,
+          "confidence": 64,
+          "modelPct": 42.5,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -5926,7 +7033,7 @@ const rawTennisGames = [
         "selection": "James Duckworth",
         "line": null,
         "americanOdds": null,
-        "modelPct": 63,
+        "modelPct": 58.4,
         "impliedPct": 63,
         "edgePct": null,
         "evPer100": null,
@@ -5955,22 +7062,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "James Duckworth 71% / Billy Harris 59%",
+        "selection": "James Duckworth 66% / Billy Harris 64%",
         "rows": [
           {
             "name": "James Duckworth",
-            "confidence": 71,
-            "modelPct": 63,
+            "confidence": 66,
+            "modelPct": 58.4,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Billy Harris",
-            "confidence": 59,
-            "modelPct": 39,
+            "confidence": 64,
+            "modelPct": 42.5,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 71,
+        "confidence": 66,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -5978,10 +7085,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -6004,7 +7111,7 @@ const rawTennisGames = [
           "bidPct": 62,
           "lastTradePct": 63,
           "decimalOdds": null,
-          "modelPct": 63,
+          "modelPct": 58.4,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 37,
@@ -6022,7 +7129,7 @@ const rawTennisGames = [
           "bidPct": 36,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 39,
+          "modelPct": 42.5,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 61,
@@ -6041,7 +7148,7 @@ const rawTennisGames = [
         "bidPct": 62,
         "lastTradePct": 63,
         "decimalOdds": null,
-        "modelPct": 63,
+        "modelPct": 58.4,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 37,
@@ -6076,18 +7183,39 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/1857/james-duckworth",
           "asOf": "2026-06-02"
         },
-        "qualityName": null,
-        "profile": "Grass | Live rank #82 | Australia | age 34",
-        "modelPct": 63,
+        "qualityName": "James Duckworth",
+        "profile": "Grass | Live rank #82 | Australia | age 34 | hold 80%",
+        "modelPct": 58.4,
         "weakness": {
           "name": "James Duckworth",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 80,
+          "firstServeWonPct": 74,
+          "secondServeWonPct": 53,
+          "firstServePct": 57,
+          "avgAces": 6.2,
+          "avgDoubleFaults": 3.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 65,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 27,
+          "weaknessScore": 3,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (80% hold)",
+            "wins enough first-serve points (74%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "James Duckworth has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 23,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
@@ -6103,18 +7231,36 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/2361/billy-harris",
           "asOf": "2026-06-02"
         },
-        "qualityName": null,
-        "profile": "Grass | Live rank #150 | Great Britain | age 31",
-        "modelPct": 39,
+        "qualityName": "Billy Harris",
+        "profile": "Grass | Live rank #150 | Great Britain | age 31 | hold 67%",
+        "modelPct": 42.5,
         "weakness": {
           "name": "Billy Harris",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 67,
+          "firstServeWonPct": 67,
+          "secondServeWonPct": 47,
+          "firstServePct": 57,
+          "avgAces": 2,
+          "avgDoubleFaults": 2.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 58,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 3,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Billy Harris has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -6134,63 +7280,89 @@ const rawTennisGames = [
     "stage": "ATP Challenger Bad Rappenau | Round Of 32",
     "pickName": "Joao Lucas Reis Da Silva",
     "basePickName": "Joao Lucas Reis Da Silva",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 57,
-    "volatility": 72,
+    "marketOnly": false,
+    "confidence": 53.5,
+    "volatility": 49,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Joao Lucas Reis Da Silva is only the current Robinhood market favorite over Alex Barrena; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Recent service hold is close: Joao Lucas Reis Da Silva 68%, Alex Barrena 66%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 6,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Joao Lucas Reis Da Silva",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 68,
+        "firstServeWonPct": 66,
+        "secondServeWonPct": 52,
+        "firstServePct": 66,
+        "avgAces": 1.6,
+        "avgDoubleFaults": 1.8,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 61,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Joao Lucas Reis Da Silva has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Alex Barrena",
-        "weaknessScore": null,
+        "serviceHoldPct": 66,
+        "firstServeWonPct": 63,
+        "secondServeWonPct": 42,
+        "firstServePct": 61,
+        "avgAces": 1.2,
+        "avgDoubleFaults": 2.4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 55,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 6,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "second-serve points won are attackable (42%)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Alex Barrena can drop points quickly through second-serve points won are attackable (42%)."
       }
     },
     "setWinProjections": [
       {
         "name": "Joao Lucas Reis Da Silva",
-        "confidence": 65,
-        "modelPct": 57,
+        "confidence": 62,
+        "modelPct": 53.5,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Alex Barrena",
-        "confidence": 65,
-        "modelPct": 44,
+        "confidence": 69,
+        "modelPct": 46.9,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -6200,7 +7372,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Joao Lucas Reis Da Silva",
         "americanOdds": null,
-        "modelPct": 57,
+        "modelPct": 53.5,
         "impliedPct": 57,
         "edgePct": null,
         "evPer100": null,
@@ -6227,11 +7399,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -6241,8 +7413,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Joao Lucas Reis Da Silva",
-          "confidence": 65,
-          "modelPct": 57,
+          "confidence": 62,
+          "modelPct": 53.5,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -6250,8 +7422,8 @@ const rawTennisGames = [
         },
         {
           "name": "Alex Barrena",
-          "confidence": 65,
-          "modelPct": 44,
+          "confidence": 69,
+          "modelPct": 46.9,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -6268,7 +7440,7 @@ const rawTennisGames = [
         "selection": "Joao Lucas Reis Da Silva",
         "line": null,
         "americanOdds": null,
-        "modelPct": 57,
+        "modelPct": 53.5,
         "impliedPct": 57,
         "edgePct": null,
         "evPer100": null,
@@ -6297,22 +7469,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Joao Lucas Reis Da Silva 65% / Alex Barrena 65%",
+        "selection": "Joao Lucas Reis Da Silva 62% / Alex Barrena 69%",
         "rows": [
           {
             "name": "Joao Lucas Reis Da Silva",
-            "confidence": 65,
-            "modelPct": 57,
+            "confidence": 62,
+            "modelPct": 53.5,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Alex Barrena",
-            "confidence": 65,
-            "modelPct": 44,
+            "confidence": 69,
+            "modelPct": 46.9,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 65,
+        "confidence": 69,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -6320,10 +7492,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -6346,7 +7518,7 @@ const rawTennisGames = [
           "bidPct": 55,
           "lastTradePct": 57,
           "decimalOdds": null,
-          "modelPct": 57,
+          "modelPct": 53.5,
           "edgePct": null,
           "priceBand": "Coinflip",
           "grossProfitPct": 43,
@@ -6364,7 +7536,7 @@ const rawTennisGames = [
           "bidPct": 42,
           "lastTradePct": 45,
           "decimalOdds": null,
-          "modelPct": 44,
+          "modelPct": 46.9,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 56,
@@ -6383,7 +7555,7 @@ const rawTennisGames = [
         "bidPct": 55,
         "lastTradePct": 57,
         "decimalOdds": null,
-        "modelPct": 57,
+        "modelPct": 53.5,
         "edgePct": null,
         "priceBand": "Coinflip",
         "grossProfitPct": 43,
@@ -6408,35 +7580,73 @@ const rawTennisGames = [
       {
         "name": "Joao Lucas Reis Da Silva",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 57,
+        "qualityName": "Joao Lucas Reis Da Silva",
+        "profile": "Clay | Rank not joined | hold 68%",
+        "modelPct": 53.5,
         "weakness": {
           "name": "Joao Lucas Reis Da Silva",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 68,
+          "firstServeWonPct": 66,
+          "secondServeWonPct": 52,
+          "firstServePct": 66,
+          "avgAces": 1.6,
+          "avgDoubleFaults": 1.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 61,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Joao Lucas Reis Da Silva has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Alex Barrena",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 44,
+        "qualityName": "Alex Barrena",
+        "profile": "Clay | Rank not joined | hold 66%",
+        "modelPct": 46.9,
         "weakness": {
           "name": "Alex Barrena",
-          "weaknessScore": null,
+          "serviceHoldPct": 66,
+          "firstServeWonPct": 63,
+          "secondServeWonPct": 42,
+          "firstServePct": 61,
+          "avgAces": 1.2,
+          "avgDoubleFaults": 2.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 55,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 6,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "second-serve points won are attackable (42%)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Alex Barrena can drop points quickly through second-serve points won are attackable (42%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -6456,63 +7666,90 @@ const rawTennisGames = [
     "stage": "ATP Challenger Birmingham | Round Of 32",
     "pickName": "Leandro Riedi",
     "basePickName": "Leandro Riedi",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 64,
-    "volatility": 66,
+    "marketOnly": false,
+    "confidence": 55.9,
+    "volatility": 50,
     "tags": [
       "ATP Challenger",
       "Grass",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Leandro Riedi is only the current Robinhood market favorite over Mark Lajal; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Mark Lajal has the recent service-hold edge 80% to 75%, so Leandro Riedi needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "totals": "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 1,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Leandro Riedi",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 75,
+        "firstServeWonPct": 68,
+        "secondServeWonPct": 53,
+        "firstServePct": 62,
+        "avgAces": 2.6,
+        "avgDoubleFaults": 1.8,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 62,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 29,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Leandro Riedi has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Mark Lajal",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 80,
+        "firstServeWonPct": 71,
+        "secondServeWonPct": 48,
+        "firstServePct": 61,
+        "avgAces": 8.8,
+        "avgDoubleFaults": 3.2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 63,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 1,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (80% hold)",
+          "wins enough first-serve points (71%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Mark Lajal has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Leandro Riedi",
-        "confidence": 72,
-        "modelPct": 64,
+        "confidence": 64,
+        "modelPct": 55.9,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Mark Lajal",
-        "confidence": 58,
-        "modelPct": 38,
+        "confidence": 66,
+        "modelPct": 45,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -6522,7 +7759,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Leandro Riedi",
         "americanOdds": null,
-        "modelPct": 64,
+        "modelPct": 55.9,
         "impliedPct": 64,
         "edgePct": null,
         "evPer100": null,
@@ -6549,11 +7786,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -6563,8 +7800,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Leandro Riedi",
-          "confidence": 72,
-          "modelPct": 64,
+          "confidence": 64,
+          "modelPct": 55.9,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -6572,8 +7809,8 @@ const rawTennisGames = [
         },
         {
           "name": "Mark Lajal",
-          "confidence": 58,
-          "modelPct": 38,
+          "confidence": 66,
+          "modelPct": 45,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -6590,7 +7827,7 @@ const rawTennisGames = [
         "selection": "Leandro Riedi",
         "line": null,
         "americanOdds": null,
-        "modelPct": 64,
+        "modelPct": 55.9,
         "impliedPct": 64,
         "edgePct": null,
         "evPer100": null,
@@ -6619,22 +7856,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Leandro Riedi 72% / Mark Lajal 58%",
+        "selection": "Leandro Riedi 64% / Mark Lajal 66%",
         "rows": [
           {
             "name": "Leandro Riedi",
-            "confidence": 72,
-            "modelPct": 64,
+            "confidence": 64,
+            "modelPct": 55.9,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Mark Lajal",
-            "confidence": 58,
-            "modelPct": 38,
+            "confidence": 66,
+            "modelPct": 45,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 72,
+        "confidence": 66,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -6642,10 +7879,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -6668,7 +7905,7 @@ const rawTennisGames = [
           "bidPct": 62,
           "lastTradePct": 62,
           "decimalOdds": null,
-          "modelPct": 64,
+          "modelPct": 55.9,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 36,
@@ -6686,7 +7923,7 @@ const rawTennisGames = [
           "bidPct": 36,
           "lastTradePct": 36,
           "decimalOdds": null,
-          "modelPct": 38,
+          "modelPct": 45,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 62,
@@ -6705,7 +7942,7 @@ const rawTennisGames = [
         "bidPct": 62,
         "lastTradePct": 62,
         "decimalOdds": null,
-        "modelPct": 64,
+        "modelPct": 55.9,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 36,
@@ -6740,35 +7977,74 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/8243/leandro-riedi",
           "asOf": "2026-06-02"
         },
-        "qualityName": null,
-        "profile": "Grass | Live rank #120 | Switzerland | age 24",
-        "modelPct": 64,
+        "qualityName": "Leandro Riedi",
+        "profile": "Grass | Live rank #120 | Switzerland | age 24 | hold 75%",
+        "modelPct": 55.9,
         "weakness": {
           "name": "Leandro Riedi",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 75,
+          "firstServeWonPct": 68,
+          "secondServeWonPct": 53,
+          "firstServePct": 62,
+          "avgAces": 2.6,
+          "avgDoubleFaults": 1.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 62,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 29,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Leandro Riedi has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 23,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Mark Lajal",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Grass | Rank not joined",
-        "modelPct": 38,
+        "qualityName": "Mark Lajal",
+        "profile": "Grass | Rank not joined | hold 80%",
+        "modelPct": 45,
         "weakness": {
           "name": "Mark Lajal",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 80,
+          "firstServeWonPct": 71,
+          "secondServeWonPct": 48,
+          "firstServePct": 61,
+          "avgAces": 8.8,
+          "avgDoubleFaults": 3.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 63,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 1,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (80% hold)",
+            "wins enough first-serve points (71%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Mark Lajal has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -6788,63 +8064,90 @@ const rawTennisGames = [
     "stage": "ATP Challenger Birmingham | Round Of 32",
     "pickName": "Mattia Bellucci",
     "basePickName": "Mattia Bellucci",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 59,
-    "volatility": 71,
+    "marketOnly": false,
+    "confidence": 56.7,
+    "volatility": 46,
     "tags": [
       "ATP Challenger",
       "Grass",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Mattia Bellucci is only the current Robinhood market favorite over Alex Bolt; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Mattia Bellucci has the recent service-hold edge 72% to 67%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": -6,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Mattia Bellucci",
-        "weaknessScore": null,
+        "serviceHoldPct": 72,
+        "firstServeWonPct": 69,
+        "secondServeWonPct": 44,
+        "firstServePct": 57,
+        "avgAces": 4.2,
+        "avgDoubleFaults": 4.2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 58,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 27,
+        "weaknessScore": 7,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "second-serve points won are attackable (44%)",
+          "double-fault pressure (4.2 avg)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Mattia Bellucci can drop points quickly through second-serve points won are attackable (44%) and double-fault pressure (4.2 avg)."
       },
       "opponent": {
         "name": "Alex Bolt",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 67,
+        "firstServeWonPct": 64,
+        "secondServeWonPct": 54,
+        "firstServePct": 66,
+        "avgAces": 5.6,
+        "avgDoubleFaults": 1.6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 60,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 1,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Alex Bolt has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Mattia Bellucci",
-        "confidence": 67,
-        "modelPct": 59,
+        "confidence": 65,
+        "modelPct": 56.7,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Alex Bolt",
-        "confidence": 63,
-        "modelPct": 43,
+        "confidence": 65,
+        "modelPct": 44.2,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -6854,7 +8157,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Mattia Bellucci",
         "americanOdds": null,
-        "modelPct": 59,
+        "modelPct": 56.7,
         "impliedPct": 59,
         "edgePct": null,
         "evPer100": null,
@@ -6881,11 +8184,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -6895,8 +8198,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Mattia Bellucci",
-          "confidence": 67,
-          "modelPct": 59,
+          "confidence": 65,
+          "modelPct": 56.7,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -6904,8 +8207,8 @@ const rawTennisGames = [
         },
         {
           "name": "Alex Bolt",
-          "confidence": 63,
-          "modelPct": 43,
+          "confidence": 65,
+          "modelPct": 44.2,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -6922,7 +8225,7 @@ const rawTennisGames = [
         "selection": "Mattia Bellucci",
         "line": null,
         "americanOdds": null,
-        "modelPct": 59,
+        "modelPct": 56.7,
         "impliedPct": 59,
         "edgePct": null,
         "evPer100": null,
@@ -6951,22 +8254,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Mattia Bellucci 67% / Alex Bolt 63%",
+        "selection": "Mattia Bellucci 65% / Alex Bolt 65%",
         "rows": [
           {
             "name": "Mattia Bellucci",
-            "confidence": 67,
-            "modelPct": 59,
+            "confidence": 65,
+            "modelPct": 56.7,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Alex Bolt",
-            "confidence": 63,
-            "modelPct": 43,
+            "confidence": 65,
+            "modelPct": 44.2,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 67,
+        "confidence": 65,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -6974,10 +8277,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -7000,7 +8303,7 @@ const rawTennisGames = [
           "bidPct": 57,
           "lastTradePct": 59,
           "decimalOdds": null,
-          "modelPct": 59,
+          "modelPct": 56.7,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 41,
@@ -7018,7 +8321,7 @@ const rawTennisGames = [
           "bidPct": 41,
           "lastTradePct": 44,
           "decimalOdds": null,
-          "modelPct": 43,
+          "modelPct": 44.2,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 57,
@@ -7037,7 +8340,7 @@ const rawTennisGames = [
         "bidPct": 57,
         "lastTradePct": 59,
         "decimalOdds": null,
-        "modelPct": 59,
+        "modelPct": 56.7,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 41,
@@ -7072,35 +8375,74 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/10153/mattia-bellucci",
           "asOf": "2026-06-02"
         },
-        "qualityName": null,
-        "profile": "Grass | Live rank #73 | Italy | age 24",
-        "modelPct": 59,
+        "qualityName": "Mattia Bellucci",
+        "profile": "Grass | Live rank #73 | Italy | age 24 | hold 72%",
+        "modelPct": 56.7,
         "weakness": {
           "name": "Mattia Bellucci",
-          "weaknessScore": null,
+          "serviceHoldPct": 72,
+          "firstServeWonPct": 69,
+          "secondServeWonPct": 44,
+          "firstServePct": 57,
+          "avgAces": 4.2,
+          "avgDoubleFaults": 4.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 58,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 27,
+          "weaknessScore": 7,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "second-serve points won are attackable (44%)",
+            "double-fault pressure (4.2 avg)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Mattia Bellucci can drop points quickly through second-serve points won are attackable (44%) and double-fault pressure (4.2 avg)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 23,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Alex Bolt",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Grass | Rank not joined",
-        "modelPct": 43,
+        "qualityName": "Alex Bolt",
+        "profile": "Grass | Rank not joined | hold 67%",
+        "modelPct": 44.2,
         "weakness": {
           "name": "Alex Bolt",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 67,
+          "firstServeWonPct": 64,
+          "secondServeWonPct": 54,
+          "firstServePct": 66,
+          "avgAces": 5.6,
+          "avgDoubleFaults": 1.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 60,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 1,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Alex Bolt has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -7120,63 +8462,87 @@ const rawTennisGames = [
     "stage": "ATP Challenger Bad Rappenau | Round Of 32",
     "pickName": "Alejandro Moro Canas",
     "basePickName": "Alejandro Moro Canas",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 64,
-    "volatility": 66,
+    "marketOnly": false,
+    "confidence": 55.9,
+    "volatility": 50,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Alejandro Moro Canas is only the current Robinhood market favorite over Mika Petkovic; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Alejandro Moro Canas has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": -2,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Alejandro Moro Canas",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 67,
+        "firstServeWonPct": 62,
+        "secondServeWonPct": 53,
+        "firstServePct": 68,
+        "avgAces": 2.2,
+        "avgDoubleFaults": 2.2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 59,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 2,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Alejandro Moro Canas has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Mika Petkovic",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": null,
+        "firstServeWonPct": null,
+        "secondServeWonPct": null,
+        "firstServePct": null,
+        "avgAces": null,
+        "avgDoubleFaults": null,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": null,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Mika Petkovic has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Mika Petkovic",
-        "confidence": 58,
-        "modelPct": 37,
+        "confidence": 66,
+        "modelPct": 44.5,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Alejandro Moro Canas",
-        "confidence": 72,
-        "modelPct": 64,
+        "confidence": 64,
+        "modelPct": 55.9,
         "label": "Market favorite to win a set"
       }
     ],
@@ -7186,7 +8552,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Alejandro Moro Canas",
         "americanOdds": null,
-        "modelPct": 64,
+        "modelPct": 55.9,
         "impliedPct": 64,
         "edgePct": null,
         "evPer100": null,
@@ -7213,11 +8579,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -7227,8 +8593,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Mika Petkovic",
-          "confidence": 58,
-          "modelPct": 37,
+          "confidence": 66,
+          "modelPct": 44.5,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -7236,8 +8602,8 @@ const rawTennisGames = [
         },
         {
           "name": "Alejandro Moro Canas",
-          "confidence": 72,
-          "modelPct": 64,
+          "confidence": 64,
+          "modelPct": 55.9,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -7254,7 +8620,7 @@ const rawTennisGames = [
         "selection": "Alejandro Moro Canas",
         "line": null,
         "americanOdds": null,
-        "modelPct": 64,
+        "modelPct": 55.9,
         "impliedPct": 64,
         "edgePct": null,
         "evPer100": null,
@@ -7283,22 +8649,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Mika Petkovic 58% / Alejandro Moro Canas 72%",
+        "selection": "Mika Petkovic 66% / Alejandro Moro Canas 64%",
         "rows": [
           {
             "name": "Mika Petkovic",
-            "confidence": 58,
-            "modelPct": 37,
+            "confidence": 66,
+            "modelPct": 44.5,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Alejandro Moro Canas",
-            "confidence": 72,
-            "modelPct": 64,
+            "confidence": 64,
+            "modelPct": 55.9,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 72,
+        "confidence": 66,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -7306,10 +8672,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -7332,7 +8698,7 @@ const rawTennisGames = [
           "bidPct": 34,
           "lastTradePct": 38,
           "decimalOdds": null,
-          "modelPct": 37,
+          "modelPct": 44.5,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 63,
@@ -7350,7 +8716,7 @@ const rawTennisGames = [
           "bidPct": 63,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 64,
+          "modelPct": 55.9,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 36,
@@ -7369,7 +8735,7 @@ const rawTennisGames = [
         "bidPct": 63,
         "lastTradePct": 0,
         "decimalOdds": null,
-        "modelPct": 64,
+        "modelPct": 55.9,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 36,
@@ -7396,33 +8762,69 @@ const rawTennisGames = [
         "ranking": null,
         "qualityName": null,
         "profile": "Clay | Rank not joined",
-        "modelPct": 37,
+        "modelPct": 44.5,
         "weakness": {
           "name": "Mika Petkovic",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": null,
+          "firstServeWonPct": null,
+          "secondServeWonPct": null,
+          "firstServePct": null,
+          "avgAces": null,
+          "avgDoubleFaults": null,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": null,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Mika Petkovic has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 0,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore recent-form metric fallback"
         }
       },
       {
         "name": "Alejandro Moro Canas",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 64,
+        "qualityName": "Alejandro Moro Canas",
+        "profile": "Clay | Rank not joined | hold 67%",
+        "modelPct": 55.9,
         "weakness": {
           "name": "Alejandro Moro Canas",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 67,
+          "firstServeWonPct": 62,
+          "secondServeWonPct": 53,
+          "firstServePct": 68,
+          "avgAces": 2.2,
+          "avgDoubleFaults": 2.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 59,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 2,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Alejandro Moro Canas has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -7442,63 +8844,91 @@ const rawTennisGames = [
     "stage": "ATP Challenger Prostejov | Round Of 32",
     "pickName": "Martin Krumich",
     "basePickName": "Martin Krumich",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 58,
-    "volatility": 71,
+    "marketOnly": false,
+    "confidence": 54.5,
+    "volatility": 49,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Martin Krumich is only the current Robinhood market favorite over Genaro Alberto Olivieri; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Recent service hold is close: Martin Krumich 68%, Genaro Alberto Olivieri 67%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": -1,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Martin Krumich",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 68,
+        "firstServeWonPct": 71,
+        "secondServeWonPct": 46,
+        "firstServePct": 56,
+        "avgAces": 3.2,
+        "avgDoubleFaults": 3.8,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 60,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 5,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "wins enough first-serve points (71%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Martin Krumich has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Genaro Alberto Olivieri",
-        "weaknessScore": null,
+        "serviceHoldPct": 67,
+        "firstServeWonPct": 57,
+        "secondServeWonPct": 53,
+        "firstServePct": 73,
+        "avgAces": 0.2,
+        "avgDoubleFaults": 2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 56,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 4,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "first-serve points won below comfort (57%)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Genaro Alberto Olivieri can drop points quickly through first-serve points won below comfort (57%)."
       }
     },
     "setWinProjections": [
       {
         "name": "Genaro Alberto Olivieri",
-        "confidence": 64,
-        "modelPct": 43,
+        "confidence": 68,
+        "modelPct": 45.9,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Martin Krumich",
-        "confidence": 66,
-        "modelPct": 58,
+        "confidence": 63,
+        "modelPct": 54.5,
         "label": "Market favorite to win a set"
       }
     ],
@@ -7508,7 +8938,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Martin Krumich",
         "americanOdds": null,
-        "modelPct": 58,
+        "modelPct": 54.5,
         "impliedPct": 58,
         "edgePct": null,
         "evPer100": null,
@@ -7535,11 +8965,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -7549,8 +8979,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Genaro Alberto Olivieri",
-          "confidence": 64,
-          "modelPct": 43,
+          "confidence": 68,
+          "modelPct": 45.9,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -7558,8 +8988,8 @@ const rawTennisGames = [
         },
         {
           "name": "Martin Krumich",
-          "confidence": 66,
-          "modelPct": 58,
+          "confidence": 63,
+          "modelPct": 54.5,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -7576,7 +9006,7 @@ const rawTennisGames = [
         "selection": "Martin Krumich",
         "line": null,
         "americanOdds": null,
-        "modelPct": 58,
+        "modelPct": 54.5,
         "impliedPct": 58,
         "edgePct": null,
         "evPer100": null,
@@ -7605,22 +9035,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Genaro Alberto Olivieri 64% / Martin Krumich 66%",
+        "selection": "Genaro Alberto Olivieri 68% / Martin Krumich 63%",
         "rows": [
           {
             "name": "Genaro Alberto Olivieri",
-            "confidence": 64,
-            "modelPct": 43,
+            "confidence": 68,
+            "modelPct": 45.9,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Martin Krumich",
-            "confidence": 66,
-            "modelPct": 58,
+            "confidence": 63,
+            "modelPct": 54.5,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 66,
+        "confidence": 68,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -7628,10 +9058,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -7654,7 +9084,7 @@ const rawTennisGames = [
           "bidPct": 41,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 43,
+          "modelPct": 45.9,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 57,
@@ -7672,7 +9102,7 @@ const rawTennisGames = [
           "bidPct": 57,
           "lastTradePct": 59,
           "decimalOdds": null,
-          "modelPct": 58,
+          "modelPct": 54.5,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 42,
@@ -7691,7 +9121,7 @@ const rawTennisGames = [
         "bidPct": 57,
         "lastTradePct": 59,
         "decimalOdds": null,
-        "modelPct": 58,
+        "modelPct": 54.5,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 42,
@@ -7716,35 +9146,75 @@ const rawTennisGames = [
       {
         "name": "Genaro Alberto Olivieri",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 43,
+        "qualityName": "Genaro Alberto Olivieri",
+        "profile": "Clay | Rank not joined | hold 67%",
+        "modelPct": 45.9,
         "weakness": {
           "name": "Genaro Alberto Olivieri",
-          "weaknessScore": null,
+          "serviceHoldPct": 67,
+          "firstServeWonPct": 57,
+          "secondServeWonPct": 53,
+          "firstServePct": 73,
+          "avgAces": 0.2,
+          "avgDoubleFaults": 2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 56,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 4,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "first-serve points won below comfort (57%)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Genaro Alberto Olivieri can drop points quickly through first-serve points won below comfort (57%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Martin Krumich",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 58,
+        "qualityName": "Martin Krumich",
+        "profile": "Clay | Rank not joined | hold 68%",
+        "modelPct": 54.5,
         "weakness": {
           "name": "Martin Krumich",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 68,
+          "firstServeWonPct": 71,
+          "secondServeWonPct": 46,
+          "firstServePct": 56,
+          "avgAces": 3.2,
+          "avgDoubleFaults": 3.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 60,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 5,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "wins enough first-serve points (71%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Martin Krumich has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -7764,63 +9234,92 @@ const rawTennisGames = [
     "stage": "ATP Challenger Prostejov | Round Of 32",
     "pickName": "Jonas Forejtek",
     "basePickName": "Jonas Forejtek",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 59,
-    "volatility": 71,
+    "marketOnly": false,
+    "confidence": 52,
+    "volatility": 47,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Jonas Forejtek is only the current Robinhood market favorite over Taro Daniel; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Taro Daniel has the recent service-hold edge 89% to 66%, so Jonas Forejtek needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": -5,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Jonas Forejtek",
-        "weaknessScore": null,
+        "serviceHoldPct": 66,
+        "firstServeWonPct": 62,
+        "secondServeWonPct": 45,
+        "firstServePct": 65,
+        "avgAces": 0.6,
+        "avgDoubleFaults": 2.4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 56,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 5,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "first-serve points won below comfort (62%)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Jonas Forejtek can drop points quickly through first-serve points won below comfort (62%)."
       },
       "opponent": {
         "name": "Taro Daniel",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 89,
+        "firstServeWonPct": 68,
+        "secondServeWonPct": 65,
+        "firstServePct": 60,
+        "avgAces": 2.4,
+        "avgDoubleFaults": 0.6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 66,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (89% hold)",
+          "second serve holds up (65%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Taro Daniel has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Taro Daniel",
-        "confidence": 63,
-        "modelPct": 43,
+        "confidence": 70,
+        "modelPct": 48.8,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Jonas Forejtek",
-        "confidence": 67,
-        "modelPct": 59,
+        "confidence": 60,
+        "modelPct": 52,
         "label": "Market favorite to win a set"
       }
     ],
@@ -7830,7 +9329,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Jonas Forejtek",
         "americanOdds": null,
-        "modelPct": 59,
+        "modelPct": 52,
         "impliedPct": 59,
         "edgePct": null,
         "evPer100": null,
@@ -7857,11 +9356,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -7871,8 +9370,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Taro Daniel",
-          "confidence": 63,
-          "modelPct": 43,
+          "confidence": 70,
+          "modelPct": 48.8,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -7880,8 +9379,8 @@ const rawTennisGames = [
         },
         {
           "name": "Jonas Forejtek",
-          "confidence": 67,
-          "modelPct": 59,
+          "confidence": 60,
+          "modelPct": 52,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -7898,7 +9397,7 @@ const rawTennisGames = [
         "selection": "Jonas Forejtek",
         "line": null,
         "americanOdds": null,
-        "modelPct": 59,
+        "modelPct": 52,
         "impliedPct": 59,
         "edgePct": null,
         "evPer100": null,
@@ -7927,22 +9426,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Taro Daniel 63% / Jonas Forejtek 67%",
+        "selection": "Taro Daniel 70% / Jonas Forejtek 60%",
         "rows": [
           {
             "name": "Taro Daniel",
-            "confidence": 63,
-            "modelPct": 43,
+            "confidence": 70,
+            "modelPct": 48.8,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Jonas Forejtek",
-            "confidence": 67,
-            "modelPct": 59,
+            "confidence": 60,
+            "modelPct": 52,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 67,
+        "confidence": 70,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -7950,10 +9449,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -7976,7 +9475,7 @@ const rawTennisGames = [
           "bidPct": 41,
           "lastTradePct": 44,
           "decimalOdds": null,
-          "modelPct": 43,
+          "modelPct": 48.8,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 57,
@@ -7994,7 +9493,7 @@ const rawTennisGames = [
           "bidPct": 56,
           "lastTradePct": 59,
           "decimalOdds": null,
-          "modelPct": 59,
+          "modelPct": 52,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 41,
@@ -8013,7 +9512,7 @@ const rawTennisGames = [
         "bidPct": 56,
         "lastTradePct": 59,
         "decimalOdds": null,
-        "modelPct": 59,
+        "modelPct": 52,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 41,
@@ -8038,35 +9537,76 @@ const rawTennisGames = [
       {
         "name": "Taro Daniel",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 43,
+        "qualityName": "Taro Daniel",
+        "profile": "Clay | Rank not joined | hold 89%",
+        "modelPct": 48.8,
         "weakness": {
           "name": "Taro Daniel",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 89,
+          "firstServeWonPct": 68,
+          "secondServeWonPct": 65,
+          "firstServePct": 60,
+          "avgAces": 2.4,
+          "avgDoubleFaults": 0.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 66,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (89% hold)",
+            "second serve holds up (65%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Taro Daniel has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Jonas Forejtek",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 59,
+        "qualityName": "Jonas Forejtek",
+        "profile": "Clay | Rank not joined | hold 66%",
+        "modelPct": 52,
         "weakness": {
           "name": "Jonas Forejtek",
-          "weaknessScore": null,
+          "serviceHoldPct": 66,
+          "firstServeWonPct": 62,
+          "secondServeWonPct": 45,
+          "firstServePct": 65,
+          "avgAces": 0.6,
+          "avgDoubleFaults": 2.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 56,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 5,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "first-serve points won below comfort (62%)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Jonas Forejtek can drop points quickly through first-serve points won below comfort (62%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -8086,63 +9626,93 @@ const rawTennisGames = [
     "stage": "ATP Challenger Prostejov | Round Of 32",
     "pickName": "Vit Kopriva",
     "basePickName": "Vit Kopriva",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 86,
-    "volatility": 47,
+    "marketOnly": false,
+    "confidence": 66.3,
+    "volatility": 48,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
-      "Market favorite"
+      "Warehouse joined",
+      "Flashscore first",
+      "Coinflip price"
     ],
-    "reason": "Vit Kopriva is only the current Robinhood market favorite over Andrej Martin; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Andrej Martin has the recent service-hold edge 88% to 69%, so Vit Kopriva needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": -3,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Vit Kopriva",
-        "weaknessScore": null,
+        "serviceHoldPct": 69,
+        "firstServeWonPct": 69,
+        "secondServeWonPct": 44,
+        "firstServePct": 64,
+        "avgAces": 3.6,
+        "avgDoubleFaults": 3.2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 60,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 24,
+        "weaknessScore": 3,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "second-serve points won are attackable (44%)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Vit Kopriva can drop points quickly through second-serve points won are attackable (44%)."
       },
       "opponent": {
         "name": "Andrej Martin",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 88,
+        "firstServeWonPct": 73,
+        "secondServeWonPct": 60,
+        "firstServePct": 61,
+        "avgAces": 3.2,
+        "avgDoubleFaults": 2.2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 68,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (88% hold)",
+          "wins enough first-serve points (73%)",
+          "second serve holds up (60%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Andrej Martin has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Vit Kopriva",
-        "confidence": 88,
-        "modelPct": 86,
+        "confidence": 74,
+        "modelPct": 66.3,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Andrej Martin",
-        "confidence": 36,
-        "modelPct": 17,
+        "confidence": 56,
+        "modelPct": 35,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -8152,7 +9722,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Vit Kopriva",
         "americanOdds": null,
-        "modelPct": 86,
+        "modelPct": 66.3,
         "impliedPct": 86,
         "edgePct": null,
         "evPer100": null,
@@ -8179,11 +9749,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 8.8,
-        "confidence": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
-        "modelPct": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -8193,8 +9763,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Vit Kopriva",
-          "confidence": 88,
-          "modelPct": 86,
+          "confidence": 74,
+          "modelPct": 66.3,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -8202,8 +9772,8 @@ const rawTennisGames = [
         },
         {
           "name": "Andrej Martin",
-          "confidence": 36,
-          "modelPct": 17,
+          "confidence": 56,
+          "modelPct": 35,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -8220,7 +9790,7 @@ const rawTennisGames = [
         "selection": "Vit Kopriva",
         "line": null,
         "americanOdds": null,
-        "modelPct": 86,
+        "modelPct": 66.3,
         "impliedPct": 86,
         "edgePct": null,
         "evPer100": null,
@@ -8249,22 +9819,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Vit Kopriva 88% / Andrej Martin 36%",
+        "selection": "Vit Kopriva 74% / Andrej Martin 56%",
         "rows": [
           {
             "name": "Vit Kopriva",
-            "confidence": 88,
-            "modelPct": 86,
+            "confidence": 74,
+            "modelPct": 66.3,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Andrej Martin",
-            "confidence": 36,
-            "modelPct": 17,
+            "confidence": 56,
+            "modelPct": 35,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 88,
+        "confidence": 74,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -8272,8 +9842,8 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 8.8,
-        "confidence": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
@@ -8298,7 +9868,7 @@ const rawTennisGames = [
           "bidPct": 84,
           "lastTradePct": 86,
           "decimalOdds": null,
-          "modelPct": 86,
+          "modelPct": 66.3,
           "edgePct": null,
           "priceBand": "Very expensive favorite",
           "grossProfitPct": 14,
@@ -8316,7 +9886,7 @@ const rawTennisGames = [
           "bidPct": 15,
           "lastTradePct": 17,
           "decimalOdds": null,
-          "modelPct": 17,
+          "modelPct": 35,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 83,
@@ -8335,7 +9905,7 @@ const rawTennisGames = [
         "bidPct": 84,
         "lastTradePct": 86,
         "decimalOdds": null,
-        "modelPct": 86,
+        "modelPct": 66.3,
         "edgePct": null,
         "priceBand": "Very expensive favorite",
         "grossProfitPct": 14,
@@ -8370,35 +9940,77 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3809/vit-kopriva",
           "asOf": "2026-06-02"
         },
-        "qualityName": null,
-        "profile": "Clay | Live rank #66 | Czechia | age 28",
-        "modelPct": 86,
+        "qualityName": "Vit Kopriva",
+        "profile": "Clay | Live rank #66 | Czechia | age 28 | hold 69%",
+        "modelPct": 66.3,
         "weakness": {
           "name": "Vit Kopriva",
-          "weaknessScore": null,
+          "serviceHoldPct": 69,
+          "firstServeWonPct": 69,
+          "secondServeWonPct": 44,
+          "firstServePct": 64,
+          "avgAces": 3.6,
+          "avgDoubleFaults": 3.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 60,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 24,
+          "weaknessScore": 3,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "second-serve points won are attackable (44%)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Vit Kopriva can drop points quickly through second-serve points won are attackable (44%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 23,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Andrej Martin",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 17,
+        "qualityName": "Andrej Martin",
+        "profile": "Clay | Rank not joined | hold 88%",
+        "modelPct": 35,
         "weakness": {
           "name": "Andrej Martin",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 88,
+          "firstServeWonPct": 73,
+          "secondServeWonPct": 60,
+          "firstServePct": 61,
+          "avgAces": 3.2,
+          "avgDoubleFaults": 2.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 68,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (88% hold)",
+            "wins enough first-serve points (73%)",
+            "second serve holds up (60%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Andrej Martin has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -8418,63 +10030,91 @@ const rawTennisGames = [
     "stage": "ATP Challenger Perugia | Round Of 32",
     "pickName": "Roberto Carballes Baena",
     "basePickName": "Roberto Carballes Baena",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 73,
-    "volatility": 59,
+    "marketOnly": false,
+    "confidence": 57.9,
+    "volatility": 48,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
-      "Market favorite"
+      "Warehouse joined",
+      "Flashscore first",
+      "Coinflip price"
     ],
-    "reason": "Roberto Carballes Baena is only the current Robinhood market favorite over Lorenzo Carboni; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Lorenzo Carboni has the recent service-hold edge 81% to 64%, so Roberto Carballes Baena needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": -6,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Roberto Carballes Baena",
-        "weaknessScore": null,
+        "serviceHoldPct": 64,
+        "firstServeWonPct": 59,
+        "secondServeWonPct": 50,
+        "firstServePct": 64,
+        "avgAces": 2,
+        "avgDoubleFaults": 2.6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 56,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 11,
+        "weaknessScore": 6,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "first-serve points won below comfort (59%)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Roberto Carballes Baena can drop points quickly through first-serve points won below comfort (59%)."
       },
       "opponent": {
         "name": "Lorenzo Carboni",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 81,
+        "firstServeWonPct": 69,
+        "secondServeWonPct": 50,
+        "firstServePct": 66,
+        "avgAces": 1.2,
+        "avgDoubleFaults": 2.2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 63,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (81% hold)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Lorenzo Carboni has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Lorenzo Carboni",
-        "confidence": 49,
-        "modelPct": 31,
+        "confidence": 64,
+        "modelPct": 43.8,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Roberto Carballes Baena",
-        "confidence": 81,
-        "modelPct": 73,
+        "confidence": 66,
+        "modelPct": 57.9,
         "label": "Market favorite to win a set"
       }
     ],
@@ -8484,7 +10124,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Roberto Carballes Baena",
         "americanOdds": null,
-        "modelPct": 73,
+        "modelPct": 57.9,
         "impliedPct": 73,
         "edgePct": null,
         "evPer100": null,
@@ -8511,11 +10151,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 8.8,
-        "confidence": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
-        "modelPct": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -8525,8 +10165,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Lorenzo Carboni",
-          "confidence": 49,
-          "modelPct": 31,
+          "confidence": 64,
+          "modelPct": 43.8,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -8534,8 +10174,8 @@ const rawTennisGames = [
         },
         {
           "name": "Roberto Carballes Baena",
-          "confidence": 81,
-          "modelPct": 73,
+          "confidence": 66,
+          "modelPct": 57.9,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -8552,7 +10192,7 @@ const rawTennisGames = [
         "selection": "Roberto Carballes Baena",
         "line": null,
         "americanOdds": null,
-        "modelPct": 73,
+        "modelPct": 57.9,
         "impliedPct": 73,
         "edgePct": null,
         "evPer100": null,
@@ -8581,22 +10221,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Lorenzo Carboni 49% / Roberto Carballes Baena 81%",
+        "selection": "Lorenzo Carboni 64% / Roberto Carballes Baena 66%",
         "rows": [
           {
             "name": "Lorenzo Carboni",
-            "confidence": 49,
-            "modelPct": 31,
+            "confidence": 64,
+            "modelPct": 43.8,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Roberto Carballes Baena",
-            "confidence": 81,
-            "modelPct": 73,
+            "confidence": 66,
+            "modelPct": 57.9,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 81,
+        "confidence": 66,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -8604,8 +10244,8 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 8.8,
-        "confidence": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
@@ -8630,7 +10270,7 @@ const rawTennisGames = [
           "bidPct": 30,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 31,
+          "modelPct": 43.8,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 69,
@@ -8648,7 +10288,7 @@ const rawTennisGames = [
           "bidPct": 70,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 73,
+          "modelPct": 57.9,
           "edgePct": null,
           "priceBand": "Low-payout favorite",
           "grossProfitPct": 27,
@@ -8667,7 +10307,7 @@ const rawTennisGames = [
         "bidPct": 70,
         "lastTradePct": 0,
         "decimalOdds": null,
-        "modelPct": 73,
+        "modelPct": 57.9,
         "edgePct": null,
         "priceBand": "Low-payout favorite",
         "grossProfitPct": 27,
@@ -8692,35 +10332,75 @@ const rawTennisGames = [
       {
         "name": "Lorenzo Carboni",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 31,
+        "qualityName": "Lorenzo Carboni",
+        "profile": "Clay | Rank not joined | hold 81%",
+        "modelPct": 43.8,
         "weakness": {
           "name": "Lorenzo Carboni",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 81,
+          "firstServeWonPct": 69,
+          "secondServeWonPct": 50,
+          "firstServePct": 66,
+          "avgAces": 1.2,
+          "avgDoubleFaults": 2.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 63,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (81% hold)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Lorenzo Carboni has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Roberto Carballes Baena",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 73,
+        "qualityName": "Roberto Carballes Baena",
+        "profile": "Clay | Rank not joined | hold 64%",
+        "modelPct": 57.9,
         "weakness": {
           "name": "Roberto Carballes Baena",
-          "weaknessScore": null,
+          "serviceHoldPct": 64,
+          "firstServeWonPct": 59,
+          "secondServeWonPct": 50,
+          "firstServePct": 64,
+          "avgAces": 2,
+          "avgDoubleFaults": 2.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 56,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 11,
+          "weaknessScore": 6,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "first-serve points won below comfort (59%)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Roberto Carballes Baena can drop points quickly through first-serve points won below comfort (59%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 23,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -8740,63 +10420,90 @@ const rawTennisGames = [
     "stage": "ATP Challenger Centurion 2 | Round Of 32",
     "pickName": "Philip Henning",
     "basePickName": "Philip Henning",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 81,
-    "volatility": 51,
+    "marketOnly": false,
+    "confidence": 64.2,
+    "volatility": 48,
     "tags": [
       "ATP Challenger",
       "Hard",
       "Prediction market",
-      "Market only",
-      "No model edge",
-      "Market favorite"
+      "Warehouse joined",
+      "Flashscore first",
+      "Coinflip price"
     ],
-    "reason": "Philip Henning is only the current Robinhood market favorite over Orel Kimhi; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Philip Henning has the recent service-hold edge 80% to 72%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 0,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Philip Henning",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 80,
+        "firstServeWonPct": 72,
+        "secondServeWonPct": 51,
+        "firstServePct": 64,
+        "avgAces": 3.8,
+        "avgDoubleFaults": 2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 64,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (80% hold)",
+          "wins enough first-serve points (72%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Philip Henning has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Orel Kimhi",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 72,
+        "firstServeWonPct": 64,
+        "secondServeWonPct": 49,
+        "firstServePct": 77,
+        "avgAces": 0.6,
+        "avgDoubleFaults": 1,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 60,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Orel Kimhi has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Orel Kimhi",
-        "confidence": 41,
-        "modelPct": 21,
+        "confidence": 58,
+        "modelPct": 36.7,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Philip Henning",
-        "confidence": 88,
-        "modelPct": 81,
+        "confidence": 72,
+        "modelPct": 64.2,
         "label": "Market favorite to win a set"
       }
     ],
@@ -8806,7 +10513,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Philip Henning",
         "americanOdds": null,
-        "modelPct": 81,
+        "modelPct": 64.2,
         "impliedPct": 81,
         "edgePct": null,
         "evPer100": null,
@@ -8833,11 +10540,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 8.8,
-        "confidence": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
-        "modelPct": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -8847,8 +10554,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Orel Kimhi",
-          "confidence": 41,
-          "modelPct": 21,
+          "confidence": 58,
+          "modelPct": 36.7,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -8856,8 +10563,8 @@ const rawTennisGames = [
         },
         {
           "name": "Philip Henning",
-          "confidence": 88,
-          "modelPct": 81,
+          "confidence": 72,
+          "modelPct": 64.2,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -8874,7 +10581,7 @@ const rawTennisGames = [
         "selection": "Philip Henning",
         "line": null,
         "americanOdds": null,
-        "modelPct": 81,
+        "modelPct": 64.2,
         "impliedPct": 81,
         "edgePct": null,
         "evPer100": null,
@@ -8903,22 +10610,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Orel Kimhi 41% / Philip Henning 88%",
+        "selection": "Orel Kimhi 58% / Philip Henning 72%",
         "rows": [
           {
             "name": "Orel Kimhi",
-            "confidence": 41,
-            "modelPct": 21,
+            "confidence": 58,
+            "modelPct": 36.7,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Philip Henning",
-            "confidence": 88,
-            "modelPct": 81,
+            "confidence": 72,
+            "modelPct": 64.2,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 88,
+        "confidence": 72,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -8926,8 +10633,8 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 8.8,
-        "confidence": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
@@ -8952,7 +10659,7 @@ const rawTennisGames = [
           "bidPct": 20,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 21,
+          "modelPct": 36.7,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 79,
@@ -8970,7 +10677,7 @@ const rawTennisGames = [
           "bidPct": 80,
           "lastTradePct": 81,
           "decimalOdds": null,
-          "modelPct": 81,
+          "modelPct": 64.2,
           "edgePct": null,
           "priceBand": "Low-payout favorite",
           "grossProfitPct": 19,
@@ -8989,7 +10696,7 @@ const rawTennisGames = [
         "bidPct": 80,
         "lastTradePct": 81,
         "decimalOdds": null,
-        "modelPct": 81,
+        "modelPct": 64.2,
         "edgePct": null,
         "priceBand": "Low-payout favorite",
         "grossProfitPct": 19,
@@ -9014,35 +10721,74 @@ const rawTennisGames = [
       {
         "name": "Orel Kimhi",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 21,
+        "qualityName": "Orel Kimhi",
+        "profile": "Hard | Rank not joined | hold 72%",
+        "modelPct": 36.7,
         "weakness": {
           "name": "Orel Kimhi",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 72,
+          "firstServeWonPct": 64,
+          "secondServeWonPct": 49,
+          "firstServePct": 77,
+          "avgAces": 0.6,
+          "avgDoubleFaults": 1,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 60,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Orel Kimhi has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Philip Henning",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 81,
+        "qualityName": "Philip Henning",
+        "profile": "Hard | Rank not joined | hold 80%",
+        "modelPct": 64.2,
         "weakness": {
           "name": "Philip Henning",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 80,
+          "firstServeWonPct": 72,
+          "secondServeWonPct": 51,
+          "firstServePct": 64,
+          "avgAces": 3.8,
+          "avgDoubleFaults": 2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 64,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (80% hold)",
+            "wins enough first-serve points (72%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Philip Henning has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -9062,63 +10808,91 @@ const rawTennisGames = [
     "stage": "ATP Challenger Perugia | Round Of 32",
     "pickName": "Stefano Travaglia",
     "basePickName": "Stefano Travaglia",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 79,
-    "volatility": 53,
+    "marketOnly": false,
+    "confidence": 61.6,
+    "volatility": 49,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
-      "Market favorite"
+      "Warehouse joined",
+      "Flashscore first",
+      "Coinflip price"
     ],
-    "reason": "Stefano Travaglia is only the current Robinhood market favorite over Pierluigi Basile; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Pierluigi Basile has the recent service-hold edge 92% to 71%, so Stefano Travaglia needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": -1,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Stefano Travaglia",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 71,
+        "firstServeWonPct": 68,
+        "secondServeWonPct": 49,
+        "firstServePct": 58,
+        "avgAces": 4.8,
+        "avgDoubleFaults": 1.8,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 59,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 1,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Stefano Travaglia has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Pierluigi Basile",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 92,
+        "firstServeWonPct": 71,
+        "secondServeWonPct": 66,
+        "firstServePct": 62,
+        "avgAces": 5,
+        "avgDoubleFaults": 3,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 69,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (92% hold)",
+          "wins enough first-serve points (71%)",
+          "second serve holds up (66%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Pierluigi Basile has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Pierluigi Basile",
-        "confidence": 43,
-        "modelPct": 24,
+        "confidence": 60,
+        "modelPct": 39.7,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Stefano Travaglia",
-        "confidence": 87,
-        "modelPct": 79,
+        "confidence": 70,
+        "modelPct": 61.6,
         "label": "Market favorite to win a set"
       }
     ],
@@ -9128,7 +10902,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Stefano Travaglia",
         "americanOdds": null,
-        "modelPct": 79,
+        "modelPct": 61.6,
         "impliedPct": 79,
         "edgePct": null,
         "evPer100": null,
@@ -9155,11 +10929,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 8.8,
-        "confidence": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
-        "modelPct": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -9169,8 +10943,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Pierluigi Basile",
-          "confidence": 43,
-          "modelPct": 24,
+          "confidence": 60,
+          "modelPct": 39.7,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -9178,8 +10952,8 @@ const rawTennisGames = [
         },
         {
           "name": "Stefano Travaglia",
-          "confidence": 87,
-          "modelPct": 79,
+          "confidence": 70,
+          "modelPct": 61.6,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -9196,7 +10970,7 @@ const rawTennisGames = [
         "selection": "Stefano Travaglia",
         "line": null,
         "americanOdds": null,
-        "modelPct": 79,
+        "modelPct": 61.6,
         "impliedPct": 79,
         "edgePct": null,
         "evPer100": null,
@@ -9225,22 +10999,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Pierluigi Basile 43% / Stefano Travaglia 87%",
+        "selection": "Pierluigi Basile 60% / Stefano Travaglia 70%",
         "rows": [
           {
             "name": "Pierluigi Basile",
-            "confidence": 43,
-            "modelPct": 24,
+            "confidence": 60,
+            "modelPct": 39.7,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Stefano Travaglia",
-            "confidence": 87,
-            "modelPct": 79,
+            "confidence": 70,
+            "modelPct": 61.6,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 87,
+        "confidence": 70,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -9248,8 +11022,8 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 8.8,
-        "confidence": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
@@ -9274,7 +11048,7 @@ const rawTennisGames = [
           "bidPct": 23,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 24,
+          "modelPct": 39.7,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 76,
@@ -9292,7 +11066,7 @@ const rawTennisGames = [
           "bidPct": 76,
           "lastTradePct": 79,
           "decimalOdds": null,
-          "modelPct": 79,
+          "modelPct": 61.6,
           "edgePct": null,
           "priceBand": "Low-payout favorite",
           "grossProfitPct": 21,
@@ -9311,7 +11085,7 @@ const rawTennisGames = [
         "bidPct": 76,
         "lastTradePct": 79,
         "decimalOdds": null,
-        "modelPct": 79,
+        "modelPct": 61.6,
         "edgePct": null,
         "priceBand": "Low-payout favorite",
         "grossProfitPct": 21,
@@ -9336,18 +11110,40 @@ const rawTennisGames = [
       {
         "name": "Pierluigi Basile",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 24,
+        "qualityName": "Pierluigi Basile",
+        "profile": "Clay | Rank not joined | hold 92%",
+        "modelPct": 39.7,
         "weakness": {
           "name": "Pierluigi Basile",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 92,
+          "firstServeWonPct": 71,
+          "secondServeWonPct": 66,
+          "firstServePct": 62,
+          "avgAces": 5,
+          "avgDoubleFaults": 3,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 69,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (92% hold)",
+            "wins enough first-serve points (71%)",
+            "second serve holds up (66%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Pierluigi Basile has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
@@ -9363,18 +11159,36 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/2682/stefano-travaglia",
           "asOf": "2026-06-02"
         },
-        "qualityName": null,
-        "profile": "Clay | Live rank #138 | Italy | age 34",
-        "modelPct": 79,
+        "qualityName": "Stefano Travaglia",
+        "profile": "Clay | Live rank #138 | Italy | age 34 | hold 71%",
+        "modelPct": 61.6,
         "weakness": {
           "name": "Stefano Travaglia",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 71,
+          "firstServeWonPct": 68,
+          "secondServeWonPct": 49,
+          "firstServePct": 58,
+          "avgAces": 4.8,
+          "avgDoubleFaults": 1.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 59,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 1,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Stefano Travaglia has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -9394,63 +11208,95 @@ const rawTennisGames = [
     "stage": "ATP Challenger Centurion 2 | Round Of 32",
     "pickName": "Robert Strombachs",
     "basePickName": "Robert Strombachs",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 57,
-    "volatility": 73,
+    "marketOnly": false,
+    "confidence": 55.3,
+    "volatility": 47,
     "tags": [
       "ATP Challenger",
       "Hard",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Robert Strombachs is only the current Robinhood market favorite over Millen Hurrion; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Robert Strombachs has the recent service-hold edge 78% to 60%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
-      "attackingSide": null,
-      "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "edgeType": "Weakness edge",
+      "target": "Millen Hurrion",
+      "scoreGap": 11,
+      "attackingSide": "Robert Strombachs",
+      "vulnerableSide": "Millen Hurrion",
+      "gameFlow": "Robert Strombachs has a real path if Millen Hurrion's first two service games show the same weakness: low recent hold rate (60%); double-fault pressure (5.0 avg).",
+      "liveTrigger": "Look for Millen Hurrion facing break points or second-serve pressure before 3-3.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Robert Strombachs",
-        "weaknessScore": null,
+        "serviceHoldPct": 78,
+        "firstServeWonPct": 77,
+        "secondServeWonPct": 47,
+        "firstServePct": 59,
+        "avgAces": 2.3,
+        "avgDoubleFaults": 5,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 64,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 7,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "double-fault pressure (5.0 avg)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "strengths": [
+          "protects serve well (78% hold)",
+          "wins enough first-serve points (77%)"
+        ],
+        "gameFlowRead": "Robert Strombachs can drop points quickly through double-fault pressure (5.0 avg)."
       },
       "opponent": {
         "name": "Millen Hurrion",
-        "weaknessScore": null,
+        "serviceHoldPct": 60,
+        "firstServeWonPct": 62,
+        "secondServeWonPct": 46,
+        "firstServePct": 54,
+        "avgAces": 1.5,
+        "avgDoubleFaults": 5,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 54,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 18,
+        "firstGameComfort": "Needs early holds confirmed",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "low recent hold rate (60%)",
+          "double-fault pressure (5.0 avg)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Millen Hurrion can drop points quickly through low recent hold rate (60%) and double-fault pressure (5.0 avg)."
       }
     },
     "setWinProjections": [
       {
         "name": "Robert Strombachs",
-        "confidence": 65,
-        "modelPct": 57,
+        "confidence": 63,
+        "modelPct": 55.3,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Millen Hurrion",
-        "confidence": 65,
-        "modelPct": 45,
+        "confidence": 67,
+        "modelPct": 45.6,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -9460,7 +11306,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Robert Strombachs",
         "americanOdds": null,
-        "modelPct": 57,
+        "modelPct": 55.3,
         "impliedPct": 57,
         "edgePct": null,
         "evPer100": null,
@@ -9487,11 +11333,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -9501,8 +11347,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Robert Strombachs",
-          "confidence": 65,
-          "modelPct": 57,
+          "confidence": 63,
+          "modelPct": 55.3,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -9510,8 +11356,8 @@ const rawTennisGames = [
         },
         {
           "name": "Millen Hurrion",
-          "confidence": 65,
-          "modelPct": 45,
+          "confidence": 67,
+          "modelPct": 45.6,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -9528,7 +11374,7 @@ const rawTennisGames = [
         "selection": "Robert Strombachs",
         "line": null,
         "americanOdds": null,
-        "modelPct": 57,
+        "modelPct": 55.3,
         "impliedPct": 57,
         "edgePct": null,
         "evPer100": null,
@@ -9557,22 +11403,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Robert Strombachs 65% / Millen Hurrion 65%",
+        "selection": "Robert Strombachs 63% / Millen Hurrion 67%",
         "rows": [
           {
             "name": "Robert Strombachs",
-            "confidence": 65,
-            "modelPct": 57,
+            "confidence": 63,
+            "modelPct": 55.3,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Millen Hurrion",
-            "confidence": 65,
-            "modelPct": 45,
+            "confidence": 67,
+            "modelPct": 45.6,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 65,
+        "confidence": 67,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -9580,10 +11426,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -9606,7 +11452,7 @@ const rawTennisGames = [
           "bidPct": 55,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 57,
+          "modelPct": 55.3,
           "edgePct": null,
           "priceBand": "Coinflip",
           "grossProfitPct": 43,
@@ -9624,7 +11470,7 @@ const rawTennisGames = [
           "bidPct": 42,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 45,
+          "modelPct": 45.6,
           "edgePct": null,
           "priceBand": "Coinflip",
           "grossProfitPct": 55,
@@ -9643,7 +11489,7 @@ const rawTennisGames = [
         "bidPct": 55,
         "lastTradePct": 0,
         "decimalOdds": null,
-        "modelPct": 57,
+        "modelPct": 55.3,
         "edgePct": null,
         "priceBand": "Coinflip",
         "grossProfitPct": 43,
@@ -9668,35 +11514,79 @@ const rawTennisGames = [
       {
         "name": "Robert Strombachs",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 57,
+        "qualityName": "Robert Strombachs",
+        "profile": "Hard | Rank not joined | hold 78%",
+        "modelPct": 55.3,
         "weakness": {
           "name": "Robert Strombachs",
-          "weaknessScore": null,
+          "serviceHoldPct": 78,
+          "firstServeWonPct": 77,
+          "secondServeWonPct": 47,
+          "firstServePct": 59,
+          "avgAces": 2.3,
+          "avgDoubleFaults": 5,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 64,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 7,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "double-fault pressure (5.0 avg)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "strengths": [
+            "protects serve well (78% hold)",
+            "wins enough first-serve points (77%)"
+          ],
+          "gameFlowRead": "Robert Strombachs can drop points quickly through double-fault pressure (5.0 avg)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Millen Hurrion",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 45,
+        "qualityName": "Millen Hurrion",
+        "profile": "Hard | Rank not joined | hold 60%",
+        "modelPct": 45.6,
         "weakness": {
           "name": "Millen Hurrion",
-          "weaknessScore": null,
+          "serviceHoldPct": 60,
+          "firstServeWonPct": 62,
+          "secondServeWonPct": 46,
+          "firstServePct": 54,
+          "avgAces": 1.5,
+          "avgDoubleFaults": 5,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 54,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 18,
+          "firstGameComfort": "Needs early holds confirmed",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "low recent hold rate (60%)",
+            "double-fault pressure (5.0 avg)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Millen Hurrion can drop points quickly through low recent hold rate (60%) and double-fault pressure (5.0 avg)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -9904,7 +11794,7 @@ const rawTennisGames = [
           "returnPointsWonPct": 50,
           "returnGamesWonPct": 51.875,
           "breakPointsSavedPct": 0,
-          "breakPointsConvertedPct": 46.2,
+          "breakPointsConvertedPct": 52.6,
           "aces": 2.5,
           "doubleFaults": 2.8,
           "winners": 30.5,
@@ -9934,7 +11824,7 @@ const rawTennisGames = [
           "returnPointsWonPct": 52,
           "returnGamesWonPct": 59.25,
           "breakPointsSavedPct": 0,
-          "breakPointsConvertedPct": 50.6,
+          "breakPointsConvertedPct": 57.2,
           "aces": 3.4,
           "doubleFaults": 4.6,
           "winners": 35,
@@ -9963,7 +11853,7 @@ const rawTennisGames = [
       "returnGamesAvg": 55.6,
       "returnPointsAvg": 51,
       "breakPointsSavedAvg": 0,
-      "breakPointsConvertedAvg": 48.4,
+      "breakPointsConvertedAvg": 54.9,
       "setSamples": 39,
       "firstSetSamples": 16,
       "avgFirstSetGames": 9.4,
@@ -10287,63 +12177,95 @@ const rawTennisGames = [
     "stage": "ATP Challenger Birmingham | Round Of 32",
     "pickName": "Harry Wendelken",
     "basePickName": "Harry Wendelken",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 61,
-    "volatility": 69,
+    "marketOnly": false,
+    "confidence": 54,
+    "volatility": 49,
     "tags": [
       "ATP Challenger",
       "Grass",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Harry Wendelken is only the current Robinhood market favorite over James Watt; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "James Watt has the recent service-hold edge 77% to 73%, so Harry Wendelken needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": -3,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Harry Wendelken",
-        "weaknessScore": null,
+        "serviceHoldPct": 73,
+        "firstServeWonPct": 73,
+        "secondServeWonPct": 44,
+        "firstServePct": 57,
+        "avgAces": 3.4,
+        "avgDoubleFaults": 2.8,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 60,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 3,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "second-serve points won are attackable (44%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "strengths": [
+          "wins enough first-serve points (73%)"
+        ],
+        "gameFlowRead": "Harry Wendelken can drop points quickly through second-serve points won are attackable (44%)."
       },
       "opponent": {
         "name": "James Watt",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 77,
+        "firstServeWonPct": 72,
+        "secondServeWonPct": 61,
+        "firstServePct": 71,
+        "avgAces": 4.5,
+        "avgDoubleFaults": 2.5,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 69,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (77% hold)",
+          "wins enough first-serve points (72%)",
+          "second serve holds up (61%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "James Watt has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "James Watt",
-        "confidence": 61,
-        "modelPct": 41,
+        "confidence": 68,
+        "modelPct": 46.8,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Harry Wendelken",
-        "confidence": 69,
-        "modelPct": 61,
+        "confidence": 62,
+        "modelPct": 54,
         "label": "Market favorite to win a set"
       }
     ],
@@ -10353,7 +12275,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Harry Wendelken",
         "americanOdds": null,
-        "modelPct": 61,
+        "modelPct": 54,
         "impliedPct": 61,
         "edgePct": null,
         "evPer100": null,
@@ -10380,11 +12302,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -10394,8 +12316,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "James Watt",
-          "confidence": 61,
-          "modelPct": 41,
+          "confidence": 68,
+          "modelPct": 46.8,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -10403,8 +12325,8 @@ const rawTennisGames = [
         },
         {
           "name": "Harry Wendelken",
-          "confidence": 69,
-          "modelPct": 61,
+          "confidence": 62,
+          "modelPct": 54,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -10421,7 +12343,7 @@ const rawTennisGames = [
         "selection": "Harry Wendelken",
         "line": null,
         "americanOdds": null,
-        "modelPct": 61,
+        "modelPct": 54,
         "impliedPct": 61,
         "edgePct": null,
         "evPer100": null,
@@ -10450,22 +12372,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "James Watt 61% / Harry Wendelken 69%",
+        "selection": "James Watt 68% / Harry Wendelken 62%",
         "rows": [
           {
             "name": "James Watt",
-            "confidence": 61,
-            "modelPct": 41,
+            "confidence": 68,
+            "modelPct": 46.8,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Harry Wendelken",
-            "confidence": 69,
-            "modelPct": 61,
+            "confidence": 62,
+            "modelPct": 54,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 69,
+        "confidence": 68,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -10473,10 +12395,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -10499,7 +12421,7 @@ const rawTennisGames = [
           "bidPct": 39,
           "lastTradePct": 39,
           "decimalOdds": null,
-          "modelPct": 41,
+          "modelPct": 46.8,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 59,
@@ -10517,7 +12439,7 @@ const rawTennisGames = [
           "bidPct": 58,
           "lastTradePct": 61,
           "decimalOdds": null,
-          "modelPct": 61,
+          "modelPct": 54,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 39,
@@ -10536,7 +12458,7 @@ const rawTennisGames = [
         "bidPct": 58,
         "lastTradePct": 61,
         "decimalOdds": null,
-        "modelPct": 61,
+        "modelPct": 54,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 39,
@@ -10561,35 +12483,79 @@ const rawTennisGames = [
       {
         "name": "James Watt",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Grass | Rank not joined",
-        "modelPct": 41,
+        "qualityName": "James Watt",
+        "profile": "Grass | Rank not joined | hold 77%",
+        "modelPct": 46.8,
         "weakness": {
           "name": "James Watt",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 77,
+          "firstServeWonPct": 72,
+          "secondServeWonPct": 61,
+          "firstServePct": 71,
+          "avgAces": 4.5,
+          "avgDoubleFaults": 2.5,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 69,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (77% hold)",
+            "wins enough first-serve points (72%)",
+            "second serve holds up (61%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "James Watt has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Harry Wendelken",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Grass | Rank not joined",
-        "modelPct": 61,
+        "qualityName": "Harry Wendelken",
+        "profile": "Grass | Rank not joined | hold 73%",
+        "modelPct": 54,
         "weakness": {
           "name": "Harry Wendelken",
-          "weaknessScore": null,
+          "serviceHoldPct": 73,
+          "firstServeWonPct": 73,
+          "secondServeWonPct": 44,
+          "firstServePct": 57,
+          "avgAces": 3.4,
+          "avgDoubleFaults": 2.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 60,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 3,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "second-serve points won are attackable (44%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "strengths": [
+            "wins enough first-serve points (73%)"
+          ],
+          "gameFlowRead": "Harry Wendelken can drop points quickly through second-serve points won are attackable (44%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -10609,63 +12575,95 @@ const rawTennisGames = [
     "stage": "ATP Challenger Bad Rappenau | Round Of 32",
     "pickName": "Jan Choinski",
     "basePickName": "Jan Choinski",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 59,
-    "volatility": 71,
+    "marketOnly": false,
+    "confidence": 54.4,
+    "volatility": 49,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Jan Choinski is only the current Robinhood market favorite over Tom Gentzsch; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Tom Gentzsch has the recent service-hold edge 83% to 80%, so Jan Choinski needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "totals": "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
-      "attackingSide": null,
-      "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "edgeType": "Weakness edge",
+      "target": "Tom Gentzsch",
+      "scoreGap": 8,
+      "attackingSide": "Jan Choinski",
+      "vulnerableSide": "Tom Gentzsch",
+      "gameFlow": "Jan Choinski has a real path if Tom Gentzsch's first two service games show the same weakness: double-fault pressure (5.4 avg).",
+      "liveTrigger": "Look for Tom Gentzsch facing break points or second-serve pressure before 3-3.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Jan Choinski",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 80,
+        "firstServeWonPct": 70,
+        "secondServeWonPct": 49,
+        "firstServePct": 66,
+        "avgAces": 5.2,
+        "avgDoubleFaults": 2.8,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 64,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (80% hold)",
+          "wins enough first-serve points (70%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Jan Choinski has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Tom Gentzsch",
-        "weaknessScore": null,
+        "serviceHoldPct": 83,
+        "firstServeWonPct": 75,
+        "secondServeWonPct": 47,
+        "firstServePct": 58,
+        "avgAces": 4.8,
+        "avgDoubleFaults": 5.4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 63,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 16,
+        "weaknessScore": 8,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "double-fault pressure (5.4 avg)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "strengths": [
+          "protects serve well (83% hold)",
+          "wins enough first-serve points (75%)"
+        ],
+        "gameFlowRead": "Tom Gentzsch can drop points quickly through double-fault pressure (5.4 avg)."
       }
     },
     "setWinProjections": [
       {
         "name": "Jan Choinski",
-        "confidence": 67,
-        "modelPct": 59,
+        "confidence": 62,
+        "modelPct": 54.4,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Tom Gentzsch",
-        "confidence": 63,
-        "modelPct": 43,
+        "confidence": 68,
+        "modelPct": 46.5,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -10675,7 +12673,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Jan Choinski",
         "americanOdds": null,
-        "modelPct": 59,
+        "modelPct": 54.4,
         "impliedPct": 59,
         "edgePct": null,
         "evPer100": null,
@@ -10702,11 +12700,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -10716,8 +12714,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Jan Choinski",
-          "confidence": 67,
-          "modelPct": 59,
+          "confidence": 62,
+          "modelPct": 54.4,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -10725,8 +12723,8 @@ const rawTennisGames = [
         },
         {
           "name": "Tom Gentzsch",
-          "confidence": 63,
-          "modelPct": 43,
+          "confidence": 68,
+          "modelPct": 46.5,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -10743,7 +12741,7 @@ const rawTennisGames = [
         "selection": "Jan Choinski",
         "line": null,
         "americanOdds": null,
-        "modelPct": 59,
+        "modelPct": 54.4,
         "impliedPct": 59,
         "edgePct": null,
         "evPer100": null,
@@ -10772,22 +12770,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Jan Choinski 67% / Tom Gentzsch 63%",
+        "selection": "Jan Choinski 62% / Tom Gentzsch 68%",
         "rows": [
           {
             "name": "Jan Choinski",
-            "confidence": 67,
-            "modelPct": 59,
+            "confidence": 62,
+            "modelPct": 54.4,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Tom Gentzsch",
-            "confidence": 63,
-            "modelPct": 43,
+            "confidence": 68,
+            "modelPct": 46.5,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 67,
+        "confidence": 68,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -10795,10 +12793,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -10821,7 +12819,7 @@ const rawTennisGames = [
           "bidPct": 56,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 59,
+          "modelPct": 54.4,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 41,
@@ -10839,7 +12837,7 @@ const rawTennisGames = [
           "bidPct": 41,
           "lastTradePct": 43,
           "decimalOdds": null,
-          "modelPct": 43,
+          "modelPct": 46.5,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 57,
@@ -10858,7 +12856,7 @@ const rawTennisGames = [
         "bidPct": 56,
         "lastTradePct": 0,
         "decimalOdds": null,
-        "modelPct": 59,
+        "modelPct": 54.4,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 41,
@@ -10893,35 +12891,79 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/2720/jan-choinski",
           "asOf": "2026-06-02"
         },
-        "qualityName": null,
-        "profile": "Clay | Live rank #101 | Great Britain | age 29",
-        "modelPct": 59,
+        "qualityName": "Jan Choinski",
+        "profile": "Clay | Live rank #101 | Great Britain | age 29 | hold 80%",
+        "modelPct": 54.4,
         "weakness": {
           "name": "Jan Choinski",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 80,
+          "firstServeWonPct": 70,
+          "secondServeWonPct": 49,
+          "firstServePct": 66,
+          "avgAces": 5.2,
+          "avgDoubleFaults": 2.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 64,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (80% hold)",
+            "wins enough first-serve points (70%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Jan Choinski has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Tom Gentzsch",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 43,
+        "qualityName": "Tom Gentzsch",
+        "profile": "Clay | Rank not joined | hold 83%",
+        "modelPct": 46.5,
         "weakness": {
           "name": "Tom Gentzsch",
-          "weaknessScore": null,
+          "serviceHoldPct": 83,
+          "firstServeWonPct": 75,
+          "secondServeWonPct": 47,
+          "firstServePct": 58,
+          "avgAces": 4.8,
+          "avgDoubleFaults": 5.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 63,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 16,
+          "weaknessScore": 8,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "double-fault pressure (5.4 avg)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "strengths": [
+            "protects serve well (83% hold)",
+            "wins enough first-serve points (75%)"
+          ],
+          "gameFlowRead": "Tom Gentzsch can drop points quickly through double-fault pressure (5.4 avg)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 23,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -10941,63 +12983,96 @@ const rawTennisGames = [
     "stage": "ATP Challenger Bad Rappenau | Round Of 32",
     "pickName": "Luka Mikrut",
     "basePickName": "Luka Mikrut",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 67,
-    "volatility": 65,
+    "marketOnly": false,
+    "confidence": 64.7,
+    "volatility": 47,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Luka Mikrut is only the current Robinhood market favorite over Alex Marti Pujolras; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Luka Mikrut has the recent service-hold edge 77% to 30%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
-      "attackingSide": null,
-      "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "edgeType": "Weakness edge",
+      "target": "Alex Marti Pujolras",
+      "scoreGap": 94,
+      "attackingSide": "Luka Mikrut",
+      "vulnerableSide": "Alex Marti Pujolras",
+      "gameFlow": "Luka Mikrut has a real path if Alex Marti Pujolras's first two service games show the same weakness: low recent hold rate (30%); first-serve points won below comfort (36%).",
+      "liveTrigger": "Look for Alex Marti Pujolras facing break points or second-serve pressure before 3-3.",
+      "spreadRead": "Luka Mikrut spread only if the handicap is short and Alex Marti Pujolras is under pressure early.",
+      "totalRead": "Avoid low unders if Alex Marti Pujolras faces early break points or second-serve pressure.",
       "pick": {
         "name": "Luka Mikrut",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 77,
+        "firstServeWonPct": 73,
+        "secondServeWonPct": 55,
+        "firstServePct": 64,
+        "avgAces": 6.2,
+        "avgDoubleFaults": 0.6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 66,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (77% hold)",
+          "wins enough first-serve points (73%)",
+          "second serve holds up (55%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Luka Mikrut has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Alex Marti Pujolras",
-        "weaknessScore": null,
+        "serviceHoldPct": 30,
+        "firstServeWonPct": 36,
+        "secondServeWonPct": 21,
+        "firstServePct": 23,
+        "avgAces": null,
+        "avgDoubleFaults": 5.5,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 28,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 94,
+        "firstGameComfort": "Fragile opening-service profile",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "low recent hold rate (30%)",
+          "first-serve points won below comfort (36%)",
+          "second-serve points won are attackable (21%)",
+          "double-fault pressure (5.5 avg)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Alex Marti Pujolras can drop points quickly through low recent hold rate (30%) and first-serve points won below comfort (36%)."
       }
     },
     "setWinProjections": [
       {
         "name": "Luka Mikrut",
-        "confidence": 75,
-        "modelPct": 67,
+        "confidence": 73,
+        "modelPct": 64.7,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Alex Marti Pujolras",
-        "confidence": 55,
-        "modelPct": 38,
+        "confidence": 57,
+        "modelPct": 37.4,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -11007,7 +13082,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Luka Mikrut",
         "americanOdds": null,
-        "modelPct": 67,
+        "modelPct": 64.7,
         "impliedPct": 67,
         "edgePct": null,
         "evPer100": null,
@@ -11034,11 +13109,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -11048,8 +13123,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Luka Mikrut",
-          "confidence": 75,
-          "modelPct": 67,
+          "confidence": 73,
+          "modelPct": 64.7,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -11057,8 +13132,8 @@ const rawTennisGames = [
         },
         {
           "name": "Alex Marti Pujolras",
-          "confidence": 55,
-          "modelPct": 38,
+          "confidence": 57,
+          "modelPct": 37.4,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -11075,7 +13150,7 @@ const rawTennisGames = [
         "selection": "Luka Mikrut",
         "line": null,
         "americanOdds": null,
-        "modelPct": 67,
+        "modelPct": 64.7,
         "impliedPct": 67,
         "edgePct": null,
         "evPer100": null,
@@ -11104,22 +13179,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Luka Mikrut 75% / Alex Marti Pujolras 55%",
+        "selection": "Luka Mikrut 73% / Alex Marti Pujolras 57%",
         "rows": [
           {
             "name": "Luka Mikrut",
-            "confidence": 75,
-            "modelPct": 67,
+            "confidence": 73,
+            "modelPct": 64.7,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Alex Marti Pujolras",
-            "confidence": 55,
-            "modelPct": 38,
+            "confidence": 57,
+            "modelPct": 37.4,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 75,
+        "confidence": 73,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -11127,10 +13202,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -11153,7 +13228,7 @@ const rawTennisGames = [
           "bidPct": 62,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 67,
+          "modelPct": 64.7,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 33,
@@ -11171,7 +13246,7 @@ const rawTennisGames = [
           "bidPct": 33,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 38,
+          "modelPct": 37.4,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 62,
@@ -11190,7 +13265,7 @@ const rawTennisGames = [
         "bidPct": 62,
         "lastTradePct": 0,
         "decimalOdds": null,
-        "modelPct": 67,
+        "modelPct": 64.7,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 33,
@@ -11215,35 +13290,80 @@ const rawTennisGames = [
       {
         "name": "Luka Mikrut",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 67,
+        "qualityName": "Luka Mikrut",
+        "profile": "Clay | Rank not joined | hold 77%",
+        "modelPct": 64.7,
         "weakness": {
           "name": "Luka Mikrut",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 77,
+          "firstServeWonPct": 73,
+          "secondServeWonPct": 55,
+          "firstServePct": 64,
+          "avgAces": 6.2,
+          "avgDoubleFaults": 0.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 66,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (77% hold)",
+            "wins enough first-serve points (73%)",
+            "second serve holds up (55%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Luka Mikrut has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Alex Marti Pujolras",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 38,
+        "qualityName": "Alex Marti Pujolras",
+        "profile": "Clay | Rank not joined | hold 30%",
+        "modelPct": 37.4,
         "weakness": {
           "name": "Alex Marti Pujolras",
-          "weaknessScore": null,
+          "serviceHoldPct": 30,
+          "firstServeWonPct": 36,
+          "secondServeWonPct": 21,
+          "firstServePct": 23,
+          "avgAces": null,
+          "avgDoubleFaults": 5.5,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 28,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 94,
+          "firstGameComfort": "Fragile opening-service profile",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "low recent hold rate (30%)",
+            "first-serve points won below comfort (36%)",
+            "second-serve points won are attackable (21%)",
+            "double-fault pressure (5.5 avg)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Alex Marti Pujolras can drop points quickly through low recent hold rate (30%) and first-serve points won below comfort (36%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -11263,63 +13383,92 @@ const rawTennisGames = [
     "stage": "ATP Challenger Birmingham | Round Of 32",
     "pickName": "Arthur Fery",
     "basePickName": "Arthur Fery",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 62,
-    "volatility": 68,
+    "marketOnly": false,
+    "confidence": 54.5,
+    "volatility": 49,
     "tags": [
       "ATP Challenger",
       "Grass",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Arthur Fery is only the current Robinhood market favorite over Tristan Schoolkate; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Arthur Fery has the recent service-hold edge 82% to 77%. Lean, not a chase.",
+    "totals": "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 0,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Arthur Fery",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 82,
+        "firstServeWonPct": 67,
+        "secondServeWonPct": 56,
+        "firstServePct": 61,
+        "avgAces": 2.4,
+        "avgDoubleFaults": 2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 64,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (82% hold)",
+          "second serve holds up (56%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Arthur Fery has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Tristan Schoolkate",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 77,
+        "firstServeWonPct": 66,
+        "secondServeWonPct": 54,
+        "firstServePct": 63,
+        "avgAces": 5.4,
+        "avgDoubleFaults": 1.8,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 61,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (77% hold)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Tristan Schoolkate has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Tristan Schoolkate",
-        "confidence": 60,
-        "modelPct": 40,
+        "confidence": 68,
+        "modelPct": 46.4,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Arthur Fery",
-        "confidence": 70,
-        "modelPct": 62,
+        "confidence": 63,
+        "modelPct": 54.5,
         "label": "Market favorite to win a set"
       }
     ],
@@ -11329,7 +13478,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Arthur Fery",
         "americanOdds": null,
-        "modelPct": 62,
+        "modelPct": 54.5,
         "impliedPct": 62,
         "edgePct": null,
         "evPer100": null,
@@ -11356,11 +13505,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -11370,8 +13519,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Tristan Schoolkate",
-          "confidence": 60,
-          "modelPct": 40,
+          "confidence": 68,
+          "modelPct": 46.4,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -11379,8 +13528,8 @@ const rawTennisGames = [
         },
         {
           "name": "Arthur Fery",
-          "confidence": 70,
-          "modelPct": 62,
+          "confidence": 63,
+          "modelPct": 54.5,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -11397,7 +13546,7 @@ const rawTennisGames = [
         "selection": "Arthur Fery",
         "line": null,
         "americanOdds": null,
-        "modelPct": 62,
+        "modelPct": 54.5,
         "impliedPct": 62,
         "edgePct": null,
         "evPer100": null,
@@ -11426,22 +13575,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Tristan Schoolkate 60% / Arthur Fery 70%",
+        "selection": "Tristan Schoolkate 68% / Arthur Fery 63%",
         "rows": [
           {
             "name": "Tristan Schoolkate",
-            "confidence": 60,
-            "modelPct": 40,
+            "confidence": 68,
+            "modelPct": 46.4,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Arthur Fery",
-            "confidence": 70,
-            "modelPct": 62,
+            "confidence": 63,
+            "modelPct": 54.5,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 70,
+        "confidence": 68,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -11449,10 +13598,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -11475,7 +13624,7 @@ const rawTennisGames = [
           "bidPct": 39,
           "lastTradePct": 40,
           "decimalOdds": null,
-          "modelPct": 40,
+          "modelPct": 46.4,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 60,
@@ -11493,7 +13642,7 @@ const rawTennisGames = [
           "bidPct": 60,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 62,
+          "modelPct": 54.5,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 38,
@@ -11512,7 +13661,7 @@ const rawTennisGames = [
         "bidPct": 60,
         "lastTradePct": 0,
         "decimalOdds": null,
-        "modelPct": 62,
+        "modelPct": 54.5,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 38,
@@ -11547,35 +13696,76 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/4029/tristan-schoolkate",
           "asOf": "2026-06-02"
         },
-        "qualityName": null,
-        "profile": "Grass | Live rank #123 | Australia | age 25",
-        "modelPct": 40,
+        "qualityName": "Tristan Schoolkate",
+        "profile": "Grass | Live rank #123 | Australia | age 25 | hold 77%",
+        "modelPct": 46.4,
         "weakness": {
           "name": "Tristan Schoolkate",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 77,
+          "firstServeWonPct": 66,
+          "secondServeWonPct": 54,
+          "firstServePct": 63,
+          "avgAces": 5.4,
+          "avgDoubleFaults": 1.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 61,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (77% hold)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Tristan Schoolkate has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Arthur Fery",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Grass | Rank not joined",
-        "modelPct": 62,
+        "qualityName": "Arthur Fery",
+        "profile": "Grass | Rank not joined | hold 82%",
+        "modelPct": 54.5,
         "weakness": {
           "name": "Arthur Fery",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 82,
+          "firstServeWonPct": 67,
+          "secondServeWonPct": 56,
+          "firstServePct": 61,
+          "avgAces": 2.4,
+          "avgDoubleFaults": 2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 64,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (82% hold)",
+            "second serve holds up (56%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Arthur Fery has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -11595,63 +13785,90 @@ const rawTennisGames = [
     "stage": "ATP Challenger Prostejov | Round Of 32",
     "pickName": "Dalibor Svrcina",
     "basePickName": "Dalibor Svrcina",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 74,
-    "volatility": 59,
+    "marketOnly": false,
+    "confidence": 61.2,
+    "volatility": 48,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
-      "Market favorite"
+      "Warehouse joined",
+      "Flashscore first",
+      "Coinflip price"
     ],
-    "reason": "Dalibor Svrcina is only the current Robinhood market favorite over Maxim Mrva; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Dalibor Svrcina has the recent service-hold edge 68% to 64%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
-      "attackingSide": null,
-      "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "edgeType": "Weakness edge",
+      "target": "Maxim Mrva",
+      "scoreGap": 13,
+      "attackingSide": "Dalibor Svrcina",
+      "vulnerableSide": "Maxim Mrva",
+      "gameFlow": "Dalibor Svrcina has a real path if Maxim Mrva's first two service games show the same weakness: first-serve points won below comfort (60%); double-fault pressure (6.0 avg).",
+      "liveTrigger": "Look for Maxim Mrva facing break points or second-serve pressure before 3-3.",
+      "spreadRead": "Dalibor Svrcina spread only if the handicap is short and Maxim Mrva is under pressure early.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Dalibor Svrcina",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 68,
+        "firstServeWonPct": 62,
+        "secondServeWonPct": 50,
+        "firstServePct": 65,
+        "avgAces": 0.2,
+        "avgDoubleFaults": 3.6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 58,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 16,
+        "weaknessScore": 3,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Dalibor Svrcina has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Maxim Mrva",
-        "weaknessScore": null,
+        "serviceHoldPct": 64,
+        "firstServeWonPct": 60,
+        "secondServeWonPct": 53,
+        "firstServePct": 56,
+        "avgAces": 3,
+        "avgDoubleFaults": 6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 57,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 16,
+        "firstGameComfort": "Needs early holds confirmed",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "first-serve points won below comfort (60%)",
+          "double-fault pressure (6.0 avg)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Maxim Mrva can drop points quickly through first-serve points won below comfort (60%) and double-fault pressure (6.0 avg)."
       }
     },
     "setWinProjections": [
       {
         "name": "Maxim Mrva",
-        "confidence": 48,
-        "modelPct": 31,
+        "confidence": 61,
+        "modelPct": 40.9,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Dalibor Svrcina",
-        "confidence": 82,
-        "modelPct": 74,
+        "confidence": 69,
+        "modelPct": 61.2,
         "label": "Market favorite to win a set"
       }
     ],
@@ -11661,7 +13878,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Dalibor Svrcina",
         "americanOdds": null,
-        "modelPct": 74,
+        "modelPct": 61.2,
         "impliedPct": 74,
         "edgePct": null,
         "evPer100": null,
@@ -11688,11 +13905,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 8.8,
-        "confidence": 48,
-        "tiebreakRisk": 52,
-        "earlyBreakRisk": 48,
-        "modelPct": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -11702,8 +13919,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Maxim Mrva",
-          "confidence": 48,
-          "modelPct": 31,
+          "confidence": 61,
+          "modelPct": 40.9,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -11711,8 +13928,8 @@ const rawTennisGames = [
         },
         {
           "name": "Dalibor Svrcina",
-          "confidence": 82,
-          "modelPct": 74,
+          "confidence": 69,
+          "modelPct": 61.2,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -11729,7 +13946,7 @@ const rawTennisGames = [
         "selection": "Dalibor Svrcina",
         "line": null,
         "americanOdds": null,
-        "modelPct": 74,
+        "modelPct": 61.2,
         "impliedPct": 74,
         "edgePct": null,
         "evPer100": null,
@@ -11758,22 +13975,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Maxim Mrva 48% / Dalibor Svrcina 82%",
+        "selection": "Maxim Mrva 61% / Dalibor Svrcina 69%",
         "rows": [
           {
             "name": "Maxim Mrva",
-            "confidence": 48,
-            "modelPct": 31,
+            "confidence": 61,
+            "modelPct": 40.9,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Dalibor Svrcina",
-            "confidence": 82,
-            "modelPct": 74,
+            "confidence": 69,
+            "modelPct": 61.2,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 82,
+        "confidence": 69,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -11781,10 +13998,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 8.8,
-        "confidence": 48,
-        "tiebreakRisk": 52,
-        "earlyBreakRisk": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -11807,7 +14024,7 @@ const rawTennisGames = [
           "bidPct": 30,
           "lastTradePct": 31,
           "decimalOdds": null,
-          "modelPct": 31,
+          "modelPct": 40.9,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 69,
@@ -11825,7 +14042,7 @@ const rawTennisGames = [
           "bidPct": 71,
           "lastTradePct": 73,
           "decimalOdds": null,
-          "modelPct": 74,
+          "modelPct": 61.2,
           "edgePct": null,
           "priceBand": "Low-payout favorite",
           "grossProfitPct": 26,
@@ -11844,7 +14061,7 @@ const rawTennisGames = [
         "bidPct": 71,
         "lastTradePct": 73,
         "decimalOdds": null,
-        "modelPct": 74,
+        "modelPct": 61.2,
         "edgePct": null,
         "priceBand": "Low-payout favorite",
         "grossProfitPct": 26,
@@ -11869,18 +14086,39 @@ const rawTennisGames = [
       {
         "name": "Maxim Mrva",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 31,
+        "qualityName": "Maxim Mrva",
+        "profile": "Clay | Rank not joined | hold 64%",
+        "modelPct": 40.9,
         "weakness": {
           "name": "Maxim Mrva",
-          "weaknessScore": null,
+          "serviceHoldPct": 64,
+          "firstServeWonPct": 60,
+          "secondServeWonPct": 53,
+          "firstServePct": 56,
+          "avgAces": 3,
+          "avgDoubleFaults": 6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 57,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 16,
+          "firstGameComfort": "Needs early holds confirmed",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "first-serve points won below comfort (60%)",
+            "double-fault pressure (6.0 avg)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Maxim Mrva can drop points quickly through first-serve points won below comfort (60%) and double-fault pressure (6.0 avg)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
@@ -11896,18 +14134,36 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3812/dalibor-svrcina",
           "asOf": "2026-06-02"
         },
-        "qualityName": null,
-        "profile": "Clay | Live rank #108 | Czechia | age 23",
-        "modelPct": 74,
+        "qualityName": "Dalibor Svrcina",
+        "profile": "Clay | Live rank #108 | Czechia | age 23 | hold 68%",
+        "modelPct": 61.2,
         "weakness": {
           "name": "Dalibor Svrcina",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 68,
+          "firstServeWonPct": 62,
+          "secondServeWonPct": 50,
+          "firstServePct": 65,
+          "avgAces": 0.2,
+          "avgDoubleFaults": 3.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 58,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 16,
+          "weaknessScore": 3,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Dalibor Svrcina has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 23,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -11927,63 +14183,90 @@ const rawTennisGames = [
     "stage": "ATP Challenger Prostejov | Round Of 32",
     "pickName": "Norbert Gombos",
     "basePickName": "Norbert Gombos",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 61,
-    "volatility": 69,
+    "marketOnly": false,
+    "confidence": 52.9,
+    "volatility": 48,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Norbert Gombos is only the current Robinhood market favorite over Viktor Durasovic; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Viktor Durasovic has the recent service-hold edge 90% to 71%, so Norbert Gombos needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": -1,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Norbert Gombos",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 71,
+        "firstServeWonPct": 67,
+        "secondServeWonPct": 53,
+        "firstServePct": 54,
+        "avgAces": 1.8,
+        "avgDoubleFaults": 2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 61,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 1,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Norbert Gombos has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Viktor Durasovic",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 90,
+        "firstServeWonPct": 78,
+        "secondServeWonPct": 53,
+        "firstServePct": 66,
+        "avgAces": 7.5,
+        "avgDoubleFaults": 1.5,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 70,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (90% hold)",
+          "wins enough first-serve points (78%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Viktor Durasovic has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Viktor Durasovic",
-        "confidence": 61,
-        "modelPct": 41,
+        "confidence": 69,
+        "modelPct": 48,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Norbert Gombos",
-        "confidence": 69,
-        "modelPct": 61,
+        "confidence": 61,
+        "modelPct": 52.9,
         "label": "Market favorite to win a set"
       }
     ],
@@ -11993,7 +14276,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Norbert Gombos",
         "americanOdds": null,
-        "modelPct": 61,
+        "modelPct": 52.9,
         "impliedPct": 61,
         "edgePct": null,
         "evPer100": null,
@@ -12020,11 +14303,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -12034,8 +14317,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Viktor Durasovic",
-          "confidence": 61,
-          "modelPct": 41,
+          "confidence": 69,
+          "modelPct": 48,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -12043,8 +14326,8 @@ const rawTennisGames = [
         },
         {
           "name": "Norbert Gombos",
-          "confidence": 69,
-          "modelPct": 61,
+          "confidence": 61,
+          "modelPct": 52.9,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -12061,7 +14344,7 @@ const rawTennisGames = [
         "selection": "Norbert Gombos",
         "line": null,
         "americanOdds": null,
-        "modelPct": 61,
+        "modelPct": 52.9,
         "impliedPct": 61,
         "edgePct": null,
         "evPer100": null,
@@ -12090,18 +14373,18 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Viktor Durasovic 61% / Norbert Gombos 69%",
+        "selection": "Viktor Durasovic 69% / Norbert Gombos 61%",
         "rows": [
           {
             "name": "Viktor Durasovic",
-            "confidence": 61,
-            "modelPct": 41,
+            "confidence": 69,
+            "modelPct": 48,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Norbert Gombos",
-            "confidence": 69,
-            "modelPct": 61,
+            "confidence": 61,
+            "modelPct": 52.9,
             "label": "Market favorite to win a set"
           }
         ],
@@ -12113,10 +14396,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -12139,7 +14422,7 @@ const rawTennisGames = [
           "bidPct": 39,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 41,
+          "modelPct": 48,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 59,
@@ -12157,7 +14440,7 @@ const rawTennisGames = [
           "bidPct": 58,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 61,
+          "modelPct": 52.9,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 39,
@@ -12176,7 +14459,7 @@ const rawTennisGames = [
         "bidPct": 58,
         "lastTradePct": 0,
         "decimalOdds": null,
-        "modelPct": 61,
+        "modelPct": 52.9,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 39,
@@ -12201,35 +14484,74 @@ const rawTennisGames = [
       {
         "name": "Viktor Durasovic",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 41,
+        "qualityName": "Viktor Durasovic",
+        "profile": "Clay | Rank not joined | hold 90%",
+        "modelPct": 48,
         "weakness": {
           "name": "Viktor Durasovic",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 90,
+          "firstServeWonPct": 78,
+          "secondServeWonPct": 53,
+          "firstServePct": 66,
+          "avgAces": 7.5,
+          "avgDoubleFaults": 1.5,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 70,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (90% hold)",
+            "wins enough first-serve points (78%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Viktor Durasovic has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Norbert Gombos",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 61,
+        "qualityName": "Norbert Gombos",
+        "profile": "Clay | Rank not joined | hold 71%",
+        "modelPct": 52.9,
         "weakness": {
           "name": "Norbert Gombos",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 71,
+          "firstServeWonPct": 67,
+          "secondServeWonPct": 53,
+          "firstServePct": 54,
+          "avgAces": 1.8,
+          "avgDoubleFaults": 2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 61,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 1,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Norbert Gombos has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -12249,63 +14571,95 @@ const rawTennisGames = [
     "stage": "ATP Challenger Prostejov | Round Of 32",
     "pickName": "Vitaliy Sachko",
     "basePickName": "Vitaliy Sachko",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 67,
-    "volatility": 64,
+    "marketOnly": false,
+    "confidence": 53.7,
+    "volatility": 45,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Vitaliy Sachko is only the current Robinhood market favorite over Jan Kumstat; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Jan Kumstat has the recent service-hold edge 95% to 59%, so Vitaliy Sachko needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "Weakness warning",
+      "target": "Vitaliy Sachko",
+      "scoreGap": -13,
       "attackingSide": null,
-      "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "vulnerableSide": "Vitaliy Sachko",
+      "gameFlow": "Vitaliy Sachko is the model side, but the fragile profile is on our pick: low recent hold rate (59%); first-serve points won below comfort (60%). Avoid laying a bad price until early holds are confirmed.",
+      "liveTrigger": "Do not upgrade Vitaliy Sachko unless they hold cleanly in the first service game and keep double faults down.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Vitaliy Sachko",
-        "weaknessScore": null,
+        "serviceHoldPct": 59,
+        "firstServeWonPct": 60,
+        "secondServeWonPct": 48,
+        "firstServePct": 59,
+        "avgAces": 2.2,
+        "avgDoubleFaults": 4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 55,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 13,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "low recent hold rate (59%)",
+          "first-serve points won below comfort (60%)",
+          "double-fault pressure (4.0 avg)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Vitaliy Sachko can drop points quickly through low recent hold rate (59%) and first-serve points won below comfort (60%)."
       },
       "opponent": {
         "name": "Jan Kumstat",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 95,
+        "firstServeWonPct": 83,
+        "secondServeWonPct": 59,
+        "firstServePct": 61,
+        "avgAces": 8.5,
+        "avgDoubleFaults": 2.5,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 74,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (95% hold)",
+          "wins enough first-serve points (83%)",
+          "second serve holds up (59%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Jan Kumstat has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Vitaliy Sachko",
-        "confidence": 75,
-        "modelPct": 67,
+        "confidence": 62,
+        "modelPct": 53.7,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Jan Kumstat",
-        "confidence": 55,
-        "modelPct": 35,
+        "confidence": 68,
+        "modelPct": 47.2,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -12315,7 +14669,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Vitaliy Sachko",
         "americanOdds": null,
-        "modelPct": 67,
+        "modelPct": 53.7,
         "impliedPct": 67,
         "edgePct": null,
         "evPer100": null,
@@ -12342,11 +14696,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -12356,8 +14710,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Vitaliy Sachko",
-          "confidence": 75,
-          "modelPct": 67,
+          "confidence": 62,
+          "modelPct": 53.7,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -12365,8 +14719,8 @@ const rawTennisGames = [
         },
         {
           "name": "Jan Kumstat",
-          "confidence": 55,
-          "modelPct": 35,
+          "confidence": 68,
+          "modelPct": 47.2,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -12383,7 +14737,7 @@ const rawTennisGames = [
         "selection": "Vitaliy Sachko",
         "line": null,
         "americanOdds": null,
-        "modelPct": 67,
+        "modelPct": 53.7,
         "impliedPct": 67,
         "edgePct": null,
         "evPer100": null,
@@ -12412,22 +14766,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Vitaliy Sachko 75% / Jan Kumstat 55%",
+        "selection": "Vitaliy Sachko 62% / Jan Kumstat 68%",
         "rows": [
           {
             "name": "Vitaliy Sachko",
-            "confidence": 75,
-            "modelPct": 67,
+            "confidence": 62,
+            "modelPct": 53.7,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Jan Kumstat",
-            "confidence": 55,
-            "modelPct": 35,
+            "confidence": 68,
+            "modelPct": 47.2,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 75,
+        "confidence": 68,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -12435,10 +14789,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -12461,7 +14815,7 @@ const rawTennisGames = [
           "bidPct": 65,
           "lastTradePct": 67,
           "decimalOdds": null,
-          "modelPct": 67,
+          "modelPct": 53.7,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 33,
@@ -12479,7 +14833,7 @@ const rawTennisGames = [
           "bidPct": 32,
           "lastTradePct": 45,
           "decimalOdds": null,
-          "modelPct": 35,
+          "modelPct": 47.2,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 65,
@@ -12498,7 +14852,7 @@ const rawTennisGames = [
         "bidPct": 65,
         "lastTradePct": 67,
         "decimalOdds": null,
-        "modelPct": 67,
+        "modelPct": 53.7,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 33,
@@ -12523,35 +14877,79 @@ const rawTennisGames = [
       {
         "name": "Vitaliy Sachko",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 67,
+        "qualityName": "Vitaliy Sachko",
+        "profile": "Clay | Rank not joined | hold 59%",
+        "modelPct": 53.7,
         "weakness": {
           "name": "Vitaliy Sachko",
-          "weaknessScore": null,
+          "serviceHoldPct": 59,
+          "firstServeWonPct": 60,
+          "secondServeWonPct": 48,
+          "firstServePct": 59,
+          "avgAces": 2.2,
+          "avgDoubleFaults": 4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 55,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 13,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "low recent hold rate (59%)",
+            "first-serve points won below comfort (60%)",
+            "double-fault pressure (4.0 avg)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Vitaliy Sachko can drop points quickly through low recent hold rate (59%) and first-serve points won below comfort (60%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Jan Kumstat",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 35,
+        "qualityName": "Jan Kumstat",
+        "profile": "Clay | Rank not joined | hold 95%",
+        "modelPct": 47.2,
         "weakness": {
           "name": "Jan Kumstat",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 95,
+          "firstServeWonPct": 83,
+          "secondServeWonPct": 59,
+          "firstServePct": 61,
+          "avgAces": 8.5,
+          "avgDoubleFaults": 2.5,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 74,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (95% hold)",
+            "wins enough first-serve points (83%)",
+            "second serve holds up (59%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Jan Kumstat has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -12571,63 +14969,97 @@ const rawTennisGames = [
     "stage": "ATP Challenger Bad Rappenau | Round Of 32",
     "pickName": "Henri Squire",
     "basePickName": "Henri Squire",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 85,
-    "volatility": 48,
+    "marketOnly": false,
+    "confidence": 63,
+    "volatility": 47,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
-      "Market favorite"
+      "Warehouse joined",
+      "Flashscore first",
+      "Coinflip price"
     ],
-    "reason": "Henri Squire is only the current Robinhood market favorite over Marc Polmans; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Marc Polmans has the recent service-hold edge 78% to 66%, so Henri Squire needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "Weakness warning",
+      "target": "Henri Squire",
+      "scoreGap": -15,
       "attackingSide": null,
-      "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "vulnerableSide": "Henri Squire",
+      "gameFlow": "Henri Squire is the model side, but the fragile profile is on our pick: first-serve points won below comfort (61%); second-serve points won are attackable (40%). Avoid laying a bad price until early holds are confirmed.",
+      "liveTrigger": "Do not upgrade Henri Squire unless they hold cleanly in the first service game and keep double faults down.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Henri Squire",
-        "weaknessScore": null,
+        "serviceHoldPct": 66,
+        "firstServeWonPct": 61,
+        "secondServeWonPct": 40,
+        "firstServePct": 70,
+        "avgAces": 4.2,
+        "avgDoubleFaults": 7.2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 55,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 20,
+        "firstGameComfort": "Needs early holds confirmed",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "first-serve points won below comfort (61%)",
+          "second-serve points won are attackable (40%)",
+          "double-fault pressure (7.2 avg)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Henri Squire can drop points quickly through first-serve points won below comfort (61%) and second-serve points won are attackable (40%)."
       },
       "opponent": {
         "name": "Marc Polmans",
-        "weaknessScore": null,
+        "serviceHoldPct": 78,
+        "firstServeWonPct": 72,
+        "secondServeWonPct": 45,
+        "firstServePct": 63,
+        "avgAces": 4.6,
+        "avgDoubleFaults": 4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 62,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 5,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "second-serve points won are attackable (45%)",
+          "double-fault pressure (4.0 avg)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "strengths": [
+          "protects serve well (78% hold)",
+          "wins enough first-serve points (72%)"
+        ],
+        "gameFlowRead": "Marc Polmans can drop points quickly through second-serve points won are attackable (45%) and double-fault pressure (4.0 avg)."
       }
     },
     "setWinProjections": [
       {
         "name": "Henri Squire",
-        "confidence": 88,
-        "modelPct": 85,
+        "confidence": 71,
+        "modelPct": 63,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Marc Polmans",
-        "confidence": 37,
-        "modelPct": 18,
+        "confidence": 59,
+        "modelPct": 38.3,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -12637,7 +15069,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Henri Squire",
         "americanOdds": null,
-        "modelPct": 85,
+        "modelPct": 63,
         "impliedPct": 85,
         "edgePct": null,
         "evPer100": null,
@@ -12664,11 +15096,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 8.8,
-        "confidence": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
-        "modelPct": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -12678,8 +15110,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Henri Squire",
-          "confidence": 88,
-          "modelPct": 85,
+          "confidence": 71,
+          "modelPct": 63,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -12687,8 +15119,8 @@ const rawTennisGames = [
         },
         {
           "name": "Marc Polmans",
-          "confidence": 37,
-          "modelPct": 18,
+          "confidence": 59,
+          "modelPct": 38.3,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -12705,7 +15137,7 @@ const rawTennisGames = [
         "selection": "Henri Squire",
         "line": null,
         "americanOdds": null,
-        "modelPct": 85,
+        "modelPct": 63,
         "impliedPct": 85,
         "edgePct": null,
         "evPer100": null,
@@ -12734,22 +15166,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Henri Squire 88% / Marc Polmans 37%",
+        "selection": "Henri Squire 71% / Marc Polmans 59%",
         "rows": [
           {
             "name": "Henri Squire",
-            "confidence": 88,
-            "modelPct": 85,
+            "confidence": 71,
+            "modelPct": 63,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Marc Polmans",
-            "confidence": 37,
-            "modelPct": 18,
+            "confidence": 59,
+            "modelPct": 38.3,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 88,
+        "confidence": 71,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -12757,8 +15189,8 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 8.8,
-        "confidence": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
@@ -12783,7 +15215,7 @@ const rawTennisGames = [
           "bidPct": 81,
           "lastTradePct": 85,
           "decimalOdds": null,
-          "modelPct": 85,
+          "modelPct": 63,
           "edgePct": null,
           "priceBand": "Very expensive favorite",
           "grossProfitPct": 15,
@@ -12801,7 +15233,7 @@ const rawTennisGames = [
           "bidPct": 16,
           "lastTradePct": 19,
           "decimalOdds": null,
-          "modelPct": 18,
+          "modelPct": 38.3,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 82,
@@ -12820,7 +15252,7 @@ const rawTennisGames = [
         "bidPct": 81,
         "lastTradePct": 85,
         "decimalOdds": null,
-        "modelPct": 85,
+        "modelPct": 63,
         "edgePct": null,
         "priceBand": "Very expensive favorite",
         "grossProfitPct": 15,
@@ -12845,35 +15277,81 @@ const rawTennisGames = [
       {
         "name": "Henri Squire",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 85,
+        "qualityName": "Henri Squire",
+        "profile": "Clay | Rank not joined | hold 66%",
+        "modelPct": 63,
         "weakness": {
           "name": "Henri Squire",
-          "weaknessScore": null,
+          "serviceHoldPct": 66,
+          "firstServeWonPct": 61,
+          "secondServeWonPct": 40,
+          "firstServePct": 70,
+          "avgAces": 4.2,
+          "avgDoubleFaults": 7.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 55,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 20,
+          "firstGameComfort": "Needs early holds confirmed",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "first-serve points won below comfort (61%)",
+            "second-serve points won are attackable (40%)",
+            "double-fault pressure (7.2 avg)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Henri Squire can drop points quickly through first-serve points won below comfort (61%) and second-serve points won are attackable (40%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Marc Polmans",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 18,
+        "qualityName": "Marc Polmans",
+        "profile": "Clay | Rank not joined | hold 78%",
+        "modelPct": 38.3,
         "weakness": {
           "name": "Marc Polmans",
-          "weaknessScore": null,
+          "serviceHoldPct": 78,
+          "firstServeWonPct": 72,
+          "secondServeWonPct": 45,
+          "firstServePct": 63,
+          "avgAces": 4.6,
+          "avgDoubleFaults": 4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 62,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 5,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "second-serve points won are attackable (45%)",
+            "double-fault pressure (4.0 avg)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "strengths": [
+            "protects serve well (78% hold)",
+            "wins enough first-serve points (72%)"
+          ],
+          "gameFlowRead": "Marc Polmans can drop points quickly through second-serve points won are attackable (45%) and double-fault pressure (4.0 avg)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -12893,63 +15371,92 @@ const rawTennisGames = [
     "stage": "ATP Challenger Perugia | Round Of 32",
     "pickName": "Dusan Lajovic",
     "basePickName": "Dusan Lajovic",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 67,
-    "volatility": 64,
+    "marketOnly": false,
+    "confidence": 60,
+    "volatility": 46,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Dusan Lajovic is only the current Robinhood market favorite over Gonzalo Bueno; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Dusan Lajovic has the recent service-hold edge 76% to 58%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
-      "attackingSide": null,
-      "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "edgeType": "Weakness edge",
+      "target": "Gonzalo Bueno",
+      "scoreGap": 11,
+      "attackingSide": "Dusan Lajovic",
+      "vulnerableSide": "Gonzalo Bueno",
+      "gameFlow": "Dusan Lajovic has a real path if Gonzalo Bueno's first two service games show the same weakness: low recent hold rate (58%); first-serve points won below comfort (60%).",
+      "liveTrigger": "Look for Gonzalo Bueno facing break points or second-serve pressure before 3-3.",
+      "spreadRead": "Dusan Lajovic spread only if the handicap is short and Gonzalo Bueno is under pressure early.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Dusan Lajovic",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 76,
+        "firstServeWonPct": 67,
+        "secondServeWonPct": 54,
+        "firstServePct": 68,
+        "avgAces": 2.8,
+        "avgDoubleFaults": 1.4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 63,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (76% hold)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Dusan Lajovic has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Gonzalo Bueno",
-        "weaknessScore": null,
+        "serviceHoldPct": 58,
+        "firstServeWonPct": 60,
+        "secondServeWonPct": 50,
+        "firstServePct": 67,
+        "avgAces": 0.6,
+        "avgDoubleFaults": 2.6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 57,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 11,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "low recent hold rate (58%)",
+          "first-serve points won below comfort (60%)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Gonzalo Bueno can drop points quickly through low recent hold rate (58%) and first-serve points won below comfort (60%)."
       }
     },
     "setWinProjections": [
       {
         "name": "Dusan Lajovic",
-        "confidence": 75,
-        "modelPct": 67,
+        "confidence": 68,
+        "modelPct": 60,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Gonzalo Bueno",
-        "confidence": 55,
-        "modelPct": 36,
+        "confidence": 62,
+        "modelPct": 41.2,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -12959,7 +15466,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Dusan Lajovic",
         "americanOdds": null,
-        "modelPct": 67,
+        "modelPct": 60,
         "impliedPct": 67,
         "edgePct": null,
         "evPer100": null,
@@ -12986,11 +15493,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -13000,8 +15507,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Dusan Lajovic",
-          "confidence": 75,
-          "modelPct": 67,
+          "confidence": 68,
+          "modelPct": 60,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -13009,8 +15516,8 @@ const rawTennisGames = [
         },
         {
           "name": "Gonzalo Bueno",
-          "confidence": 55,
-          "modelPct": 36,
+          "confidence": 62,
+          "modelPct": 41.2,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -13027,7 +15534,7 @@ const rawTennisGames = [
         "selection": "Dusan Lajovic",
         "line": null,
         "americanOdds": null,
-        "modelPct": 67,
+        "modelPct": 60,
         "impliedPct": 67,
         "edgePct": null,
         "evPer100": null,
@@ -13056,22 +15563,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Dusan Lajovic 75% / Gonzalo Bueno 55%",
+        "selection": "Dusan Lajovic 68% / Gonzalo Bueno 62%",
         "rows": [
           {
             "name": "Dusan Lajovic",
-            "confidence": 75,
-            "modelPct": 67,
+            "confidence": 68,
+            "modelPct": 60,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Gonzalo Bueno",
-            "confidence": 55,
-            "modelPct": 36,
+            "confidence": 62,
+            "modelPct": 41.2,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 75,
+        "confidence": 68,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -13079,10 +15586,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -13105,7 +15612,7 @@ const rawTennisGames = [
           "bidPct": 65,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 67,
+          "modelPct": 60,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 33,
@@ -13123,7 +15630,7 @@ const rawTennisGames = [
           "bidPct": 33,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 36,
+          "modelPct": 41.2,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 64,
@@ -13142,7 +15649,7 @@ const rawTennisGames = [
         "bidPct": 65,
         "lastTradePct": 0,
         "decimalOdds": null,
-        "modelPct": 67,
+        "modelPct": 60,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 33,
@@ -13177,35 +15684,76 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/1769/dusan-lajovic",
           "asOf": "2026-06-02"
         },
-        "qualityName": null,
-        "profile": "Clay | Live rank #137 | Serbia | age 35",
-        "modelPct": 67,
+        "qualityName": "Dusan Lajovic",
+        "profile": "Clay | Live rank #137 | Serbia | age 35 | hold 76%",
+        "modelPct": 60,
         "weakness": {
           "name": "Dusan Lajovic",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 76,
+          "firstServeWonPct": 67,
+          "secondServeWonPct": 54,
+          "firstServePct": 68,
+          "avgAces": 2.8,
+          "avgDoubleFaults": 1.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 63,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (76% hold)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Dusan Lajovic has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Gonzalo Bueno",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 36,
+        "qualityName": "Gonzalo Bueno",
+        "profile": "Clay | Rank not joined | hold 58%",
+        "modelPct": 41.2,
         "weakness": {
           "name": "Gonzalo Bueno",
-          "weaknessScore": null,
+          "serviceHoldPct": 58,
+          "firstServeWonPct": 60,
+          "secondServeWonPct": 50,
+          "firstServePct": 67,
+          "avgAces": 0.6,
+          "avgDoubleFaults": 2.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 57,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 11,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "low recent hold rate (58%)",
+            "first-serve points won below comfort (60%)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Gonzalo Bueno can drop points quickly through low recent hold rate (58%) and first-serve points won below comfort (60%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -13225,63 +15773,91 @@ const rawTennisGames = [
     "stage": "ATP Challenger Centurion 2 | Round Of 32",
     "pickName": "Giles Hussey",
     "basePickName": "Giles Hussey",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 78,
-    "volatility": 54,
+    "marketOnly": false,
+    "confidence": 62.3,
+    "volatility": 50,
     "tags": [
       "ATP Challenger",
       "Hard",
       "Prediction market",
-      "Market only",
-      "No model edge",
-      "Market favorite"
+      "Warehouse joined",
+      "Flashscore first",
+      "Coinflip price"
     ],
-    "reason": "Giles Hussey is only the current Robinhood market favorite over Sasikumar Mukund; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Giles Hussey has the recent service-hold edge 79% to 73%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 0,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Giles Hussey",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 79,
+        "firstServeWonPct": 72,
+        "secondServeWonPct": 55,
+        "firstServePct": 63,
+        "avgAces": 3.4,
+        "avgDoubleFaults": 2.6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 64,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (79% hold)",
+          "wins enough first-serve points (72%)",
+          "second serve holds up (55%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Giles Hussey has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Sasikumar Mukund",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 73,
+        "firstServeWonPct": 70,
+        "secondServeWonPct": 50,
+        "firstServePct": 60,
+        "avgAces": 6.4,
+        "avgDoubleFaults": 1.4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 62,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Sasikumar Mukund has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Giles Hussey",
-        "confidence": 86,
-        "modelPct": 78,
+        "confidence": 70,
+        "modelPct": 62.3,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Sasikumar Mukund",
-        "confidence": 44,
-        "modelPct": 25,
+        "confidence": 60,
+        "modelPct": 38.9,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -13291,7 +15867,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Giles Hussey",
         "americanOdds": null,
-        "modelPct": 78,
+        "modelPct": 62.3,
         "impliedPct": 78,
         "edgePct": null,
         "evPer100": null,
@@ -13318,11 +15894,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 8.8,
-        "confidence": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
-        "modelPct": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -13332,8 +15908,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Giles Hussey",
-          "confidence": 86,
-          "modelPct": 78,
+          "confidence": 70,
+          "modelPct": 62.3,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -13341,8 +15917,8 @@ const rawTennisGames = [
         },
         {
           "name": "Sasikumar Mukund",
-          "confidence": 44,
-          "modelPct": 25,
+          "confidence": 60,
+          "modelPct": 38.9,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -13359,7 +15935,7 @@ const rawTennisGames = [
         "selection": "Giles Hussey",
         "line": null,
         "americanOdds": null,
-        "modelPct": 78,
+        "modelPct": 62.3,
         "impliedPct": 78,
         "edgePct": null,
         "evPer100": null,
@@ -13388,22 +15964,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Giles Hussey 86% / Sasikumar Mukund 44%",
+        "selection": "Giles Hussey 70% / Sasikumar Mukund 60%",
         "rows": [
           {
             "name": "Giles Hussey",
-            "confidence": 86,
-            "modelPct": 78,
+            "confidence": 70,
+            "modelPct": 62.3,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Sasikumar Mukund",
-            "confidence": 44,
-            "modelPct": 25,
+            "confidence": 60,
+            "modelPct": 38.9,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 86,
+        "confidence": 70,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -13411,8 +15987,8 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 8.8,
-        "confidence": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
@@ -13437,7 +16013,7 @@ const rawTennisGames = [
           "bidPct": 74,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 78,
+          "modelPct": 62.3,
           "edgePct": null,
           "priceBand": "Low-payout favorite",
           "grossProfitPct": 22,
@@ -13455,7 +16031,7 @@ const rawTennisGames = [
           "bidPct": 23,
           "lastTradePct": 25,
           "decimalOdds": null,
-          "modelPct": 25,
+          "modelPct": 38.9,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 75,
@@ -13474,7 +16050,7 @@ const rawTennisGames = [
         "bidPct": 74,
         "lastTradePct": 0,
         "decimalOdds": null,
-        "modelPct": 78,
+        "modelPct": 62.3,
         "edgePct": null,
         "priceBand": "Low-payout favorite",
         "grossProfitPct": 22,
@@ -13499,35 +16075,75 @@ const rawTennisGames = [
       {
         "name": "Giles Hussey",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 78,
+        "qualityName": "Giles Hussey",
+        "profile": "Hard | Rank not joined | hold 79%",
+        "modelPct": 62.3,
         "weakness": {
           "name": "Giles Hussey",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 79,
+          "firstServeWonPct": 72,
+          "secondServeWonPct": 55,
+          "firstServePct": 63,
+          "avgAces": 3.4,
+          "avgDoubleFaults": 2.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 64,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (79% hold)",
+            "wins enough first-serve points (72%)",
+            "second serve holds up (55%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Giles Hussey has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Sasikumar Mukund",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 25,
+        "qualityName": "Sasikumar Mukund",
+        "profile": "Hard | Rank not joined | hold 73%",
+        "modelPct": 38.9,
         "weakness": {
           "name": "Sasikumar Mukund",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 73,
+          "firstServeWonPct": 70,
+          "secondServeWonPct": 50,
+          "firstServePct": 60,
+          "avgAces": 6.4,
+          "avgDoubleFaults": 1.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 62,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Sasikumar Mukund has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -13547,63 +16163,97 @@ const rawTennisGames = [
     "stage": "ATP Challenger Centurion 2 | Round Of 32",
     "pickName": "Robin Bertrand",
     "basePickName": "Robin Bertrand",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 62,
-    "volatility": 69,
+    "marketOnly": false,
+    "confidence": 55,
+    "volatility": 58,
     "tags": [
       "ATP Challenger",
       "Hard",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Robin Bertrand is only the current Robinhood market favorite over Patrick Zahraj; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Patrick Zahraj has the recent service-hold edge 60% to 46%, so Robin Bertrand needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
-      "attackingSide": null,
-      "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "edgeType": "Weakness edge",
+      "target": "Patrick Zahraj",
+      "scoreGap": 38,
+      "attackingSide": "Robin Bertrand",
+      "vulnerableSide": "Patrick Zahraj",
+      "gameFlow": "Robin Bertrand has a real path if Patrick Zahraj's first two service games show the same weakness: low recent hold rate (60%); second-serve points won are attackable (37%).",
+      "liveTrigger": "Look for Patrick Zahraj facing break points or second-serve pressure before 3-3.",
+      "spreadRead": "Pre-match spread is fragile; wait for both players to serve once.",
+      "totalRead": "Avoid low unders if Patrick Zahraj faces early break points or second-serve pressure.",
       "pick": {
         "name": "Robin Bertrand",
-        "weaknessScore": null,
+        "serviceHoldPct": 46,
+        "firstServeWonPct": 54,
+        "secondServeWonPct": 38,
+        "firstServePct": 65,
+        "avgAces": 1.2,
+        "avgDoubleFaults": 3,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 48,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 34,
+        "firstGameComfort": "Fragile opening-service profile",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "low recent hold rate (46%)",
+          "first-serve points won below comfort (54%)",
+          "second-serve points won are attackable (38%)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Robin Bertrand can drop points quickly through low recent hold rate (46%) and first-serve points won below comfort (54%)."
       },
       "opponent": {
         "name": "Patrick Zahraj",
-        "weaknessScore": null,
+        "serviceHoldPct": 60,
+        "firstServeWonPct": 70,
+        "secondServeWonPct": 37,
+        "firstServePct": 44,
+        "avgAces": 1,
+        "avgDoubleFaults": 21,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 53,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 72,
+        "firstGameComfort": "Fragile opening-service profile",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "low recent hold rate (60%)",
+          "second-serve points won are attackable (37%)",
+          "double-fault pressure (21.0 avg)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "strengths": [
+          "wins enough first-serve points (70%)"
+        ],
+        "gameFlowRead": "Patrick Zahraj can drop points quickly through low recent hold rate (60%) and second-serve points won are attackable (37%)."
       }
     },
     "setWinProjections": [
       {
         "name": "Robin Bertrand",
-        "confidence": 70,
-        "modelPct": 62,
+        "confidence": 63,
+        "modelPct": 55,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Patrick Zahraj",
-        "confidence": 60,
-        "modelPct": 41,
+        "confidence": 67,
+        "modelPct": 46.2,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -13613,7 +16263,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Robin Bertrand",
         "americanOdds": null,
-        "modelPct": 62,
+        "modelPct": 55,
         "impliedPct": 62,
         "edgePct": null,
         "evPer100": null,
@@ -13640,11 +16290,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -13654,8 +16304,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Robin Bertrand",
-          "confidence": 70,
-          "modelPct": 62,
+          "confidence": 63,
+          "modelPct": 55,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -13663,8 +16313,8 @@ const rawTennisGames = [
         },
         {
           "name": "Patrick Zahraj",
-          "confidence": 60,
-          "modelPct": 41,
+          "confidence": 67,
+          "modelPct": 46.2,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -13681,7 +16331,7 @@ const rawTennisGames = [
         "selection": "Robin Bertrand",
         "line": null,
         "americanOdds": null,
-        "modelPct": 62,
+        "modelPct": 55,
         "impliedPct": 62,
         "edgePct": null,
         "evPer100": null,
@@ -13710,22 +16360,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Robin Bertrand 70% / Patrick Zahraj 60%",
+        "selection": "Robin Bertrand 63% / Patrick Zahraj 67%",
         "rows": [
           {
             "name": "Robin Bertrand",
-            "confidence": 70,
-            "modelPct": 62,
+            "confidence": 63,
+            "modelPct": 55,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Patrick Zahraj",
-            "confidence": 60,
-            "modelPct": 41,
+            "confidence": 67,
+            "modelPct": 46.2,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 70,
+        "confidence": 67,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -13733,10 +16383,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -13759,7 +16409,7 @@ const rawTennisGames = [
           "bidPct": 60,
           "lastTradePct": 62,
           "decimalOdds": null,
-          "modelPct": 62,
+          "modelPct": 55,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 38,
@@ -13777,7 +16427,7 @@ const rawTennisGames = [
           "bidPct": 38,
           "lastTradePct": 41,
           "decimalOdds": null,
-          "modelPct": 41,
+          "modelPct": 46.2,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 59,
@@ -13796,7 +16446,7 @@ const rawTennisGames = [
         "bidPct": 60,
         "lastTradePct": 62,
         "decimalOdds": null,
-        "modelPct": 62,
+        "modelPct": 55,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 38,
@@ -13821,35 +16471,81 @@ const rawTennisGames = [
       {
         "name": "Robin Bertrand",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 62,
+        "qualityName": "Robin Bertrand",
+        "profile": "Hard | Rank not joined | hold 46%",
+        "modelPct": 55,
         "weakness": {
           "name": "Robin Bertrand",
-          "weaknessScore": null,
+          "serviceHoldPct": 46,
+          "firstServeWonPct": 54,
+          "secondServeWonPct": 38,
+          "firstServePct": 65,
+          "avgAces": 1.2,
+          "avgDoubleFaults": 3,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 48,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 34,
+          "firstGameComfort": "Fragile opening-service profile",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "low recent hold rate (46%)",
+            "first-serve points won below comfort (54%)",
+            "second-serve points won are attackable (38%)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Robin Bertrand can drop points quickly through low recent hold rate (46%) and first-serve points won below comfort (54%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Patrick Zahraj",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 41,
+        "qualityName": "Patrick Zahraj",
+        "profile": "Hard | Rank not joined | hold 60%",
+        "modelPct": 46.2,
         "weakness": {
           "name": "Patrick Zahraj",
-          "weaknessScore": null,
+          "serviceHoldPct": 60,
+          "firstServeWonPct": 70,
+          "secondServeWonPct": 37,
+          "firstServePct": 44,
+          "avgAces": 1,
+          "avgDoubleFaults": 21,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 53,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 72,
+          "firstGameComfort": "Fragile opening-service profile",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "low recent hold rate (60%)",
+            "second-serve points won are attackable (37%)",
+            "double-fault pressure (21.0 avg)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "strengths": [
+            "wins enough first-serve points (70%)"
+          ],
+          "gameFlowRead": "Patrick Zahraj can drop points quickly through low recent hold rate (60%) and second-serve points won are attackable (37%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -13869,63 +16565,94 @@ const rawTennisGames = [
     "stage": "ATP Challenger Birmingham | Round Of 32",
     "pickName": "Clement Chidekh",
     "basePickName": "Clement Chidekh",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 65,
-    "volatility": 65,
+    "marketOnly": false,
+    "confidence": 55.1,
+    "volatility": 49,
     "tags": [
       "ATP Challenger",
       "Grass",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Clement Chidekh is only the current Robinhood market favorite over Filippo Romano; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Filippo Romano has the recent service-hold edge 83% to 73%, so Clement Chidekh needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": -5,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Clement Chidekh",
-        "weaknessScore": null,
+        "serviceHoldPct": 73,
+        "firstServeWonPct": 70,
+        "secondServeWonPct": 40,
+        "firstServePct": 70,
+        "avgAces": 1.8,
+        "avgDoubleFaults": 3.6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 62,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 6,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "second-serve points won are attackable (40%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "strengths": [
+          "wins enough first-serve points (70%)"
+        ],
+        "gameFlowRead": "Clement Chidekh can drop points quickly through second-serve points won are attackable (40%)."
       },
       "opponent": {
         "name": "Filippo Romano",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 83,
+        "firstServeWonPct": 70,
+        "secondServeWonPct": 49,
+        "firstServePct": 63,
+        "avgAces": 3.4,
+        "avgDoubleFaults": 3.2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 63,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 1,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (83% hold)",
+          "wins enough first-serve points (70%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Filippo Romano has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Clement Chidekh",
-        "confidence": 73,
-        "modelPct": 65,
+        "confidence": 63,
+        "modelPct": 55.1,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Filippo Romano",
-        "confidence": 57,
-        "modelPct": 37,
+        "confidence": 67,
+        "modelPct": 45.7,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -13935,7 +16662,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Clement Chidekh",
         "americanOdds": null,
-        "modelPct": 65,
+        "modelPct": 55.1,
         "impliedPct": 65,
         "edgePct": null,
         "evPer100": null,
@@ -13962,11 +16689,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -13976,8 +16703,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Clement Chidekh",
-          "confidence": 73,
-          "modelPct": 65,
+          "confidence": 63,
+          "modelPct": 55.1,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -13985,8 +16712,8 @@ const rawTennisGames = [
         },
         {
           "name": "Filippo Romano",
-          "confidence": 57,
-          "modelPct": 37,
+          "confidence": 67,
+          "modelPct": 45.7,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -14003,7 +16730,7 @@ const rawTennisGames = [
         "selection": "Clement Chidekh",
         "line": null,
         "americanOdds": null,
-        "modelPct": 65,
+        "modelPct": 55.1,
         "impliedPct": 65,
         "edgePct": null,
         "evPer100": null,
@@ -14032,22 +16759,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Clement Chidekh 73% / Filippo Romano 57%",
+        "selection": "Clement Chidekh 63% / Filippo Romano 67%",
         "rows": [
           {
             "name": "Clement Chidekh",
-            "confidence": 73,
-            "modelPct": 65,
+            "confidence": 63,
+            "modelPct": 55.1,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Filippo Romano",
-            "confidence": 57,
-            "modelPct": 37,
+            "confidence": 67,
+            "modelPct": 45.7,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 73,
+        "confidence": 67,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -14055,10 +16782,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -14081,7 +16808,7 @@ const rawTennisGames = [
           "bidPct": 63,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 65,
+          "modelPct": 55.1,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 35,
@@ -14099,7 +16826,7 @@ const rawTennisGames = [
           "bidPct": 34,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 37,
+          "modelPct": 45.7,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 63,
@@ -14118,7 +16845,7 @@ const rawTennisGames = [
         "bidPct": 63,
         "lastTradePct": 0,
         "decimalOdds": null,
-        "modelPct": 65,
+        "modelPct": 55.1,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 35,
@@ -14143,35 +16870,78 @@ const rawTennisGames = [
       {
         "name": "Clement Chidekh",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Grass | Rank not joined",
-        "modelPct": 65,
+        "qualityName": "Clement Chidekh",
+        "profile": "Grass | Rank not joined | hold 73%",
+        "modelPct": 55.1,
         "weakness": {
           "name": "Clement Chidekh",
-          "weaknessScore": null,
+          "serviceHoldPct": 73,
+          "firstServeWonPct": 70,
+          "secondServeWonPct": 40,
+          "firstServePct": 70,
+          "avgAces": 1.8,
+          "avgDoubleFaults": 3.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 62,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 6,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "second-serve points won are attackable (40%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "strengths": [
+            "wins enough first-serve points (70%)"
+          ],
+          "gameFlowRead": "Clement Chidekh can drop points quickly through second-serve points won are attackable (40%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Filippo Romano",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Grass | Rank not joined",
-        "modelPct": 37,
+        "qualityName": "Filippo Romano",
+        "profile": "Grass | Rank not joined | hold 83%",
+        "modelPct": 45.7,
         "weakness": {
           "name": "Filippo Romano",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 83,
+          "firstServeWonPct": 70,
+          "secondServeWonPct": 49,
+          "firstServePct": 63,
+          "avgAces": 3.4,
+          "avgDoubleFaults": 3.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 63,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 1,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (83% hold)",
+            "wins enough first-serve points (70%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Filippo Romano has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -14191,63 +16961,87 @@ const rawTennisGames = [
     "stage": "ATP Challenger Birmingham | Round Of 32",
     "pickName": "Coleman Wong",
     "basePickName": "Coleman Wong",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 59,
-    "volatility": 71,
+    "marketOnly": false,
+    "confidence": 53.8,
+    "volatility": 50,
     "tags": [
       "ATP Challenger",
       "Grass",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Coleman Wong is only the current Robinhood market favorite over Oliver Tarvet; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Coleman Wong has the recent service-hold edge 76% to 70%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 0,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Coleman Wong",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 76,
+        "firstServeWonPct": 65,
+        "secondServeWonPct": 46,
+        "firstServePct": 64,
+        "avgAces": 7.4,
+        "avgDoubleFaults": 2.4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 58,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 29,
+        "weaknessScore": 1,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Coleman Wong has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Oliver Tarvet",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 70,
+        "firstServeWonPct": 65,
+        "secondServeWonPct": 48,
+        "firstServePct": 58,
+        "avgAces": 6.4,
+        "avgDoubleFaults": 3.2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 58,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 1,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Oliver Tarvet has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Coleman Wong",
-        "confidence": 67,
-        "modelPct": 59,
+        "confidence": 62,
+        "modelPct": 53.8,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Oliver Tarvet",
-        "confidence": 63,
-        "modelPct": 43,
+        "confidence": 68,
+        "modelPct": 47.1,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -14257,7 +17051,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Coleman Wong",
         "americanOdds": null,
-        "modelPct": 59,
+        "modelPct": 53.8,
         "impliedPct": 59,
         "edgePct": null,
         "evPer100": null,
@@ -14284,11 +17078,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -14298,8 +17092,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Coleman Wong",
-          "confidence": 67,
-          "modelPct": 59,
+          "confidence": 62,
+          "modelPct": 53.8,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -14307,8 +17101,8 @@ const rawTennisGames = [
         },
         {
           "name": "Oliver Tarvet",
-          "confidence": 63,
-          "modelPct": 43,
+          "confidence": 68,
+          "modelPct": 47.1,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -14325,7 +17119,7 @@ const rawTennisGames = [
         "selection": "Coleman Wong",
         "line": null,
         "americanOdds": null,
-        "modelPct": 59,
+        "modelPct": 53.8,
         "impliedPct": 59,
         "edgePct": null,
         "evPer100": null,
@@ -14354,22 +17148,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Coleman Wong 67% / Oliver Tarvet 63%",
+        "selection": "Coleman Wong 62% / Oliver Tarvet 68%",
         "rows": [
           {
             "name": "Coleman Wong",
-            "confidence": 67,
-            "modelPct": 59,
+            "confidence": 62,
+            "modelPct": 53.8,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Oliver Tarvet",
-            "confidence": 63,
-            "modelPct": 43,
+            "confidence": 68,
+            "modelPct": 47.1,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 67,
+        "confidence": 68,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -14377,10 +17171,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -14403,7 +17197,7 @@ const rawTennisGames = [
           "bidPct": 58,
           "lastTradePct": 59,
           "decimalOdds": null,
-          "modelPct": 59,
+          "modelPct": 53.8,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 41,
@@ -14421,7 +17215,7 @@ const rawTennisGames = [
           "bidPct": 41,
           "lastTradePct": 41,
           "decimalOdds": null,
-          "modelPct": 43,
+          "modelPct": 47.1,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 57,
@@ -14440,7 +17234,7 @@ const rawTennisGames = [
         "bidPct": 58,
         "lastTradePct": 59,
         "decimalOdds": null,
-        "modelPct": 59,
+        "modelPct": 53.8,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 41,
@@ -14465,35 +17259,71 @@ const rawTennisGames = [
       {
         "name": "Coleman Wong",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Grass | Rank not joined",
-        "modelPct": 59,
+        "qualityName": "Coleman Wong",
+        "profile": "Grass | Rank not joined | hold 76%",
+        "modelPct": 53.8,
         "weakness": {
           "name": "Coleman Wong",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 76,
+          "firstServeWonPct": 65,
+          "secondServeWonPct": 46,
+          "firstServePct": 64,
+          "avgAces": 7.4,
+          "avgDoubleFaults": 2.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 58,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 29,
+          "weaknessScore": 1,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Coleman Wong has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 23,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Oliver Tarvet",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Grass | Rank not joined",
-        "modelPct": 43,
+        "qualityName": "Oliver Tarvet",
+        "profile": "Grass | Rank not joined | hold 70%",
+        "modelPct": 47.1,
         "weakness": {
           "name": "Oliver Tarvet",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 70,
+          "firstServeWonPct": 65,
+          "secondServeWonPct": 48,
+          "firstServePct": 58,
+          "avgAces": 6.4,
+          "avgDoubleFaults": 3.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 58,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 1,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Oliver Tarvet has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 12,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -14513,63 +17343,89 @@ const rawTennisGames = [
     "stage": "ATP Challenger Bad Rappenau | Round Of 32",
     "pickName": "Daniel Elahi Galan",
     "basePickName": "Daniel Elahi Galan",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 57,
-    "volatility": 73,
+    "marketOnly": false,
+    "confidence": 53.5,
+    "volatility": 49,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Daniel Elahi Galan is only the current Robinhood market favorite over Max Hans Rehberg; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Daniel Elahi Galan has the recent service-hold edge 76% to 70%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 0,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Daniel Elahi Galan",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 76,
+        "firstServeWonPct": 68,
+        "secondServeWonPct": 50,
+        "firstServePct": 67,
+        "avgAces": 3.4,
+        "avgDoubleFaults": 1.4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 62,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (76% hold)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Daniel Elahi Galan has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Max Hans Rehberg",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 70,
+        "firstServeWonPct": 70,
+        "secondServeWonPct": 52,
+        "firstServePct": 73,
+        "avgAces": 2.4,
+        "avgDoubleFaults": 1.2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 55,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Max Hans Rehberg has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Daniel Elahi Galan",
-        "confidence": 65,
-        "modelPct": 57,
+        "confidence": 62,
+        "modelPct": 53.5,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Max Hans Rehberg",
-        "confidence": 65,
-        "modelPct": 45,
+        "confidence": 69,
+        "modelPct": 47.3,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -14579,7 +17435,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Daniel Elahi Galan",
         "americanOdds": null,
-        "modelPct": 57,
+        "modelPct": 53.5,
         "impliedPct": 57,
         "edgePct": null,
         "evPer100": null,
@@ -14606,11 +17462,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -14620,8 +17476,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Daniel Elahi Galan",
-          "confidence": 65,
-          "modelPct": 57,
+          "confidence": 62,
+          "modelPct": 53.5,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -14629,8 +17485,8 @@ const rawTennisGames = [
         },
         {
           "name": "Max Hans Rehberg",
-          "confidence": 65,
-          "modelPct": 45,
+          "confidence": 69,
+          "modelPct": 47.3,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -14647,7 +17503,7 @@ const rawTennisGames = [
         "selection": "Daniel Elahi Galan",
         "line": null,
         "americanOdds": null,
-        "modelPct": 57,
+        "modelPct": 53.5,
         "impliedPct": 57,
         "edgePct": null,
         "evPer100": null,
@@ -14676,22 +17532,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Daniel Elahi Galan 65% / Max Hans Rehberg 65%",
+        "selection": "Daniel Elahi Galan 62% / Max Hans Rehberg 69%",
         "rows": [
           {
             "name": "Daniel Elahi Galan",
-            "confidence": 65,
-            "modelPct": 57,
+            "confidence": 62,
+            "modelPct": 53.5,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Max Hans Rehberg",
-            "confidence": 65,
-            "modelPct": 45,
+            "confidence": 69,
+            "modelPct": 47.3,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 65,
+        "confidence": 69,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -14699,10 +17555,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -14725,7 +17581,7 @@ const rawTennisGames = [
           "bidPct": 54,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 57,
+          "modelPct": 53.5,
           "edgePct": null,
           "priceBand": "Coinflip",
           "grossProfitPct": 43,
@@ -14743,7 +17599,7 @@ const rawTennisGames = [
           "bidPct": 43,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 45,
+          "modelPct": 47.3,
           "edgePct": null,
           "priceBand": "Coinflip",
           "grossProfitPct": 55,
@@ -14762,7 +17618,7 @@ const rawTennisGames = [
         "bidPct": 54,
         "lastTradePct": 0,
         "decimalOdds": null,
-        "modelPct": 57,
+        "modelPct": 53.5,
         "edgePct": null,
         "priceBand": "Coinflip",
         "grossProfitPct": 43,
@@ -14787,35 +17643,73 @@ const rawTennisGames = [
       {
         "name": "Daniel Elahi Galan",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 57,
+        "qualityName": "Daniel Elahi Galan",
+        "profile": "Clay | Rank not joined | hold 76%",
+        "modelPct": 53.5,
         "weakness": {
           "name": "Daniel Elahi Galan",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 76,
+          "firstServeWonPct": 68,
+          "secondServeWonPct": 50,
+          "firstServePct": 67,
+          "avgAces": 3.4,
+          "avgDoubleFaults": 1.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 62,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (76% hold)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Daniel Elahi Galan has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Max Hans Rehberg",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 45,
+        "qualityName": "Max Hans Rehberg",
+        "profile": "Clay | Rank not joined | hold 70%",
+        "modelPct": 47.3,
         "weakness": {
           "name": "Max Hans Rehberg",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 70,
+          "firstServeWonPct": 70,
+          "secondServeWonPct": 52,
+          "firstServePct": 73,
+          "avgAces": 2.4,
+          "avgDoubleFaults": 1.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 55,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Max Hans Rehberg has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -14835,63 +17729,94 @@ const rawTennisGames = [
     "stage": "ATP Challenger Bad Rappenau | Round Of 32",
     "pickName": "Gauthier Onclin",
     "basePickName": "Gauthier Onclin",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 64,
-    "volatility": 66,
+    "marketOnly": false,
+    "confidence": 54.1,
+    "volatility": 48,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Gauthier Onclin is only the current Robinhood market favorite over Marvin Moeller; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Marvin Moeller has the recent service-hold edge 95% to 83%, so Gauthier Onclin needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "totals": "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": -3,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Gauthier Onclin",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 83,
+        "firstServeWonPct": 75,
+        "secondServeWonPct": 55,
+        "firstServePct": 55,
+        "avgAces": 2,
+        "avgDoubleFaults": 3.8,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 66,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 4,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (83% hold)",
+          "wins enough first-serve points (75%)",
+          "second serve holds up (55%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Gauthier Onclin has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Marvin Moeller",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 95,
+        "firstServeWonPct": 85,
+        "secondServeWonPct": 48,
+        "firstServePct": 58,
+        "avgAces": 4.5,
+        "avgDoubleFaults": 3,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 70,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 1,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (95% hold)",
+          "wins enough first-serve points (85%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Marvin Moeller has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Marvin Moeller",
-        "confidence": 58,
-        "modelPct": 38,
+        "confidence": 68,
+        "modelPct": 46.7,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Gauthier Onclin",
-        "confidence": 72,
-        "modelPct": 64,
+        "confidence": 62,
+        "modelPct": 54.1,
         "label": "Market favorite to win a set"
       }
     ],
@@ -14901,7 +17826,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Gauthier Onclin",
         "americanOdds": null,
-        "modelPct": 64,
+        "modelPct": 54.1,
         "impliedPct": 64,
         "edgePct": null,
         "evPer100": null,
@@ -14928,11 +17853,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -14942,8 +17867,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Marvin Moeller",
-          "confidence": 58,
-          "modelPct": 38,
+          "confidence": 68,
+          "modelPct": 46.7,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -14951,8 +17876,8 @@ const rawTennisGames = [
         },
         {
           "name": "Gauthier Onclin",
-          "confidence": 72,
-          "modelPct": 64,
+          "confidence": 62,
+          "modelPct": 54.1,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -14969,7 +17894,7 @@ const rawTennisGames = [
         "selection": "Gauthier Onclin",
         "line": null,
         "americanOdds": null,
-        "modelPct": 64,
+        "modelPct": 54.1,
         "impliedPct": 64,
         "edgePct": null,
         "evPer100": null,
@@ -14998,22 +17923,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Marvin Moeller 58% / Gauthier Onclin 72%",
+        "selection": "Marvin Moeller 68% / Gauthier Onclin 62%",
         "rows": [
           {
             "name": "Marvin Moeller",
-            "confidence": 58,
-            "modelPct": 38,
+            "confidence": 68,
+            "modelPct": 46.7,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Gauthier Onclin",
-            "confidence": 72,
-            "modelPct": 64,
+            "confidence": 62,
+            "modelPct": 54.1,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 72,
+        "confidence": 68,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -15021,10 +17946,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -15047,7 +17972,7 @@ const rawTennisGames = [
           "bidPct": 36,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 38,
+          "modelPct": 46.7,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 62,
@@ -15065,7 +17990,7 @@ const rawTennisGames = [
           "bidPct": 61,
           "lastTradePct": 62,
           "decimalOdds": null,
-          "modelPct": 64,
+          "modelPct": 54.1,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 36,
@@ -15084,7 +18009,7 @@ const rawTennisGames = [
         "bidPct": 61,
         "lastTradePct": 62,
         "decimalOdds": null,
-        "modelPct": 64,
+        "modelPct": 54.1,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 36,
@@ -15109,35 +18034,78 @@ const rawTennisGames = [
       {
         "name": "Marvin Moeller",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 38,
+        "qualityName": "Marvin Moeller",
+        "profile": "Clay | Rank not joined | hold 95%",
+        "modelPct": 46.7,
         "weakness": {
           "name": "Marvin Moeller",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 95,
+          "firstServeWonPct": 85,
+          "secondServeWonPct": 48,
+          "firstServePct": 58,
+          "avgAces": 4.5,
+          "avgDoubleFaults": 3,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 70,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 1,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (95% hold)",
+            "wins enough first-serve points (85%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Marvin Moeller has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Gauthier Onclin",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 64,
+        "qualityName": "Gauthier Onclin",
+        "profile": "Clay | Rank not joined | hold 83%",
+        "modelPct": 54.1,
         "weakness": {
           "name": "Gauthier Onclin",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 83,
+          "firstServeWonPct": 75,
+          "secondServeWonPct": 55,
+          "firstServePct": 55,
+          "avgAces": 2,
+          "avgDoubleFaults": 3.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 66,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 4,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (83% hold)",
+            "wins enough first-serve points (75%)",
+            "second serve holds up (55%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Gauthier Onclin has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -15157,63 +18125,96 @@ const rawTennisGames = [
     "stage": "ATP Challenger Prostejov | Round Of 32",
     "pickName": "Carlo Alberto Caniato",
     "basePickName": "Carlo Alberto Caniato",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 59,
-    "volatility": 72,
+    "marketOnly": false,
+    "confidence": 53.8,
+    "volatility": 50,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Carlo Alberto Caniato is only the current Robinhood market favorite over Milos Karol; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Milos Karol has the recent service-hold edge 88% to 78%, so Carlo Alberto Caniato needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "totals": "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 6,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Carlo Alberto Caniato",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 78,
+        "firstServeWonPct": 73,
+        "secondServeWonPct": 46,
+        "firstServePct": 60,
+        "avgAces": 4,
+        "avgDoubleFaults": 2.4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 63,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 1,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (78% hold)",
+          "wins enough first-serve points (73%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Carlo Alberto Caniato has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Milos Karol",
-        "weaknessScore": null,
+        "serviceHoldPct": 88,
+        "firstServeWonPct": 72,
+        "secondServeWonPct": 57,
+        "firstServePct": 60,
+        "avgAces": 11,
+        "avgDoubleFaults": 5.4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 66,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 7,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "double-fault pressure (5.4 avg)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "strengths": [
+          "protects serve well (88% hold)",
+          "wins enough first-serve points (72%)",
+          "second serve holds up (57%)"
+        ],
+        "gameFlowRead": "Milos Karol can drop points quickly through double-fault pressure (5.4 avg)."
       }
     },
     "setWinProjections": [
       {
         "name": "Carlo Alberto Caniato",
-        "confidence": 67,
-        "modelPct": 59,
+        "confidence": 62,
+        "modelPct": 53.8,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Milos Karol",
-        "confidence": 63,
-        "modelPct": 45,
+        "confidence": 68,
+        "modelPct": 47.9,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -15223,7 +18224,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Carlo Alberto Caniato",
         "americanOdds": null,
-        "modelPct": 59,
+        "modelPct": 53.8,
         "impliedPct": 59,
         "edgePct": null,
         "evPer100": null,
@@ -15250,11 +18251,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -15264,8 +18265,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Carlo Alberto Caniato",
-          "confidence": 67,
-          "modelPct": 59,
+          "confidence": 62,
+          "modelPct": 53.8,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -15273,8 +18274,8 @@ const rawTennisGames = [
         },
         {
           "name": "Milos Karol",
-          "confidence": 63,
-          "modelPct": 45,
+          "confidence": 68,
+          "modelPct": 47.9,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -15291,7 +18292,7 @@ const rawTennisGames = [
         "selection": "Carlo Alberto Caniato",
         "line": null,
         "americanOdds": null,
-        "modelPct": 59,
+        "modelPct": 53.8,
         "impliedPct": 59,
         "edgePct": null,
         "evPer100": null,
@@ -15320,22 +18321,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Carlo Alberto Caniato 67% / Milos Karol 63%",
+        "selection": "Carlo Alberto Caniato 62% / Milos Karol 68%",
         "rows": [
           {
             "name": "Carlo Alberto Caniato",
-            "confidence": 67,
-            "modelPct": 59,
+            "confidence": 62,
+            "modelPct": 53.8,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Milos Karol",
-            "confidence": 63,
-            "modelPct": 45,
+            "confidence": 68,
+            "modelPct": 47.9,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 67,
+        "confidence": 68,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -15343,10 +18344,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -15369,7 +18370,7 @@ const rawTennisGames = [
           "bidPct": 55,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 59,
+          "modelPct": 53.8,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 41,
@@ -15387,7 +18388,7 @@ const rawTennisGames = [
           "bidPct": 41,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 45,
+          "modelPct": 47.9,
           "edgePct": null,
           "priceBand": "Coinflip",
           "grossProfitPct": 55,
@@ -15406,7 +18407,7 @@ const rawTennisGames = [
         "bidPct": 55,
         "lastTradePct": 0,
         "decimalOdds": null,
-        "modelPct": 59,
+        "modelPct": 53.8,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 41,
@@ -15431,35 +18432,80 @@ const rawTennisGames = [
       {
         "name": "Carlo Alberto Caniato",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 59,
+        "qualityName": "Carlo Alberto Caniato",
+        "profile": "Clay | Rank not joined | hold 78%",
+        "modelPct": 53.8,
         "weakness": {
           "name": "Carlo Alberto Caniato",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 78,
+          "firstServeWonPct": 73,
+          "secondServeWonPct": 46,
+          "firstServePct": 60,
+          "avgAces": 4,
+          "avgDoubleFaults": 2.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 63,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 1,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (78% hold)",
+            "wins enough first-serve points (73%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Carlo Alberto Caniato has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Milos Karol",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 45,
+        "qualityName": "Milos Karol",
+        "profile": "Clay | Rank not joined | hold 88%",
+        "modelPct": 47.9,
         "weakness": {
           "name": "Milos Karol",
-          "weaknessScore": null,
+          "serviceHoldPct": 88,
+          "firstServeWonPct": 72,
+          "secondServeWonPct": 57,
+          "firstServePct": 60,
+          "avgAces": 11,
+          "avgDoubleFaults": 5.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 66,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 7,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "double-fault pressure (5.4 avg)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "strengths": [
+            "protects serve well (88% hold)",
+            "wins enough first-serve points (72%)",
+            "second serve holds up (57%)"
+          ],
+          "gameFlowRead": "Milos Karol can drop points quickly through double-fault pressure (5.4 avg)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -15479,63 +18525,90 @@ const rawTennisGames = [
     "stage": "ATP Challenger Prostejov | Round Of 32",
     "pickName": "Roberto Bautista Agut",
     "basePickName": "Roberto Bautista Agut",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 57,
-    "volatility": 74,
+    "marketOnly": false,
+    "confidence": 52.4,
+    "volatility": 49,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Roberto Bautista Agut is only the current Robinhood market favorite over Hynek Barton; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Hynek Barton has the recent service-hold edge 82% to 71%, so Roberto Bautista Agut needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 0,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Roberto Bautista Agut",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 71,
+        "firstServeWonPct": 63,
+        "secondServeWonPct": 51,
+        "firstServePct": 66,
+        "avgAces": 1.6,
+        "avgDoubleFaults": 2.2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 59,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Roberto Bautista Agut has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Hynek Barton",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 82,
+        "firstServeWonPct": 73,
+        "secondServeWonPct": 52,
+        "firstServePct": 64,
+        "avgAces": 3.8,
+        "avgDoubleFaults": 1.4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 66,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (82% hold)",
+          "wins enough first-serve points (73%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Hynek Barton has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Hynek Barton",
-        "confidence": 65,
-        "modelPct": 47,
+        "confidence": 70,
+        "modelPct": 49.3,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Roberto Bautista Agut",
-        "confidence": 65,
-        "modelPct": 57,
+        "confidence": 60,
+        "modelPct": 52.4,
         "label": "Market favorite to win a set"
       }
     ],
@@ -15545,7 +18618,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Roberto Bautista Agut",
         "americanOdds": null,
-        "modelPct": 57,
+        "modelPct": 52.4,
         "impliedPct": 57,
         "edgePct": null,
         "evPer100": null,
@@ -15572,11 +18645,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -15586,8 +18659,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Hynek Barton",
-          "confidence": 65,
-          "modelPct": 47,
+          "confidence": 70,
+          "modelPct": 49.3,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -15595,8 +18668,8 @@ const rawTennisGames = [
         },
         {
           "name": "Roberto Bautista Agut",
-          "confidence": 65,
-          "modelPct": 57,
+          "confidence": 60,
+          "modelPct": 52.4,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -15613,7 +18686,7 @@ const rawTennisGames = [
         "selection": "Roberto Bautista Agut",
         "line": null,
         "americanOdds": null,
-        "modelPct": 57,
+        "modelPct": 52.4,
         "impliedPct": 57,
         "edgePct": null,
         "evPer100": null,
@@ -15642,22 +18715,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Hynek Barton 65% / Roberto Bautista Agut 65%",
+        "selection": "Hynek Barton 70% / Roberto Bautista Agut 60%",
         "rows": [
           {
             "name": "Hynek Barton",
-            "confidence": 65,
-            "modelPct": 47,
+            "confidence": 70,
+            "modelPct": 49.3,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Roberto Bautista Agut",
-            "confidence": 65,
-            "modelPct": 57,
+            "confidence": 60,
+            "modelPct": 52.4,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 65,
+        "confidence": 70,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -15665,10 +18738,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -15691,7 +18764,7 @@ const rawTennisGames = [
           "bidPct": 46,
           "lastTradePct": 45,
           "decimalOdds": null,
-          "modelPct": 47,
+          "modelPct": 49.3,
           "edgePct": null,
           "priceBand": "Coinflip",
           "grossProfitPct": 53,
@@ -15709,7 +18782,7 @@ const rawTennisGames = [
           "bidPct": 53,
           "lastTradePct": 55,
           "decimalOdds": null,
-          "modelPct": 57,
+          "modelPct": 52.4,
           "edgePct": null,
           "priceBand": "Coinflip",
           "grossProfitPct": 43,
@@ -15728,7 +18801,7 @@ const rawTennisGames = [
         "bidPct": 53,
         "lastTradePct": 55,
         "decimalOdds": null,
-        "modelPct": 57,
+        "modelPct": 52.4,
         "edgePct": null,
         "priceBand": "Coinflip",
         "grossProfitPct": 43,
@@ -15753,18 +18826,39 @@ const rawTennisGames = [
       {
         "name": "Hynek Barton",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 47,
+        "qualityName": "Hynek Barton",
+        "profile": "Clay | Rank not joined | hold 82%",
+        "modelPct": 49.3,
         "weakness": {
           "name": "Hynek Barton",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 82,
+          "firstServeWonPct": 73,
+          "secondServeWonPct": 52,
+          "firstServePct": 64,
+          "avgAces": 3.8,
+          "avgDoubleFaults": 1.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 66,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (82% hold)",
+            "wins enough first-serve points (73%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Hynek Barton has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
@@ -15780,18 +18874,36 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/1733/roberto-bautista-agut",
           "asOf": "2026-06-02"
         },
-        "qualityName": null,
-        "profile": "Clay | Live rank #117 | Spain | age 38",
-        "modelPct": 57,
+        "qualityName": "Roberto Bautista Agut",
+        "profile": "Clay | Live rank #117 | Spain | age 38 | hold 71%",
+        "modelPct": 52.4,
         "weakness": {
           "name": "Roberto Bautista Agut",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 71,
+          "firstServeWonPct": 63,
+          "secondServeWonPct": 51,
+          "firstServePct": 66,
+          "avgAces": 1.6,
+          "avgDoubleFaults": 2.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 59,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Roberto Bautista Agut has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -15809,76 +18921,107 @@ const rawTennisGames = [
     "court": "ATP Challenger Birmingham",
     "round": "Round Of 32",
     "stage": "ATP Challenger Birmingham | Round Of 32",
-    "pickName": "Jacob Fearnley",
-    "basePickName": "Jacob Fearnley",
-    "modelSource": "Robinhood market watch only",
+    "pickName": "Rinky Hijikata",
+    "basePickName": "Rinky Hijikata",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 55,
-    "volatility": 74,
+    "marketOnly": false,
+    "confidence": 51.6,
+    "volatility": 46,
     "tags": [
       "ATP Challenger",
       "Grass",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Jacob Fearnley is only the current Robinhood market favorite over Rinky Hijikata; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Recent service hold is close: Rinky Hijikata 74%, Jacob Fearnley 71%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
-      "attackingSide": null,
-      "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "edgeType": "Weakness edge",
+      "target": "Jacob Fearnley",
+      "scoreGap": 12,
+      "attackingSide": "Rinky Hijikata",
+      "vulnerableSide": "Jacob Fearnley",
+      "gameFlow": "Rinky Hijikata has a real path if Jacob Fearnley's first two service games show the same weakness: second-serve points won are attackable (44%); double-fault pressure (7.2 avg).",
+      "liveTrigger": "Look for Jacob Fearnley facing break points or second-serve pressure before 3-3.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
-        "name": "Jacob Fearnley",
-        "weaknessScore": null,
+        "name": "Rinky Hijikata",
+        "serviceHoldPct": 74,
+        "firstServeWonPct": 70,
+        "secondServeWonPct": 44,
+        "firstServePct": 57,
+        "avgAces": 3,
+        "avgDoubleFaults": 2.2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 59,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 3,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "second-serve points won are attackable (44%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "strengths": [
+          "wins enough first-serve points (70%)"
+        ],
+        "gameFlowRead": "Rinky Hijikata can drop points quickly through second-serve points won are attackable (44%)."
       },
       "opponent": {
-        "name": "Rinky Hijikata",
-        "weaknessScore": null,
+        "name": "Jacob Fearnley",
+        "serviceHoldPct": 71,
+        "firstServeWonPct": 68,
+        "secondServeWonPct": 44,
+        "firstServePct": 62,
+        "avgAces": 4.4,
+        "avgDoubleFaults": 7.2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 59,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 15,
+        "firstGameComfort": "Needs early holds confirmed",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "second-serve points won are attackable (44%)",
+          "double-fault pressure (7.2 avg)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Jacob Fearnley can drop points quickly through second-serve points won are attackable (44%) and double-fault pressure (7.2 avg)."
       }
     },
     "setWinProjections": [
       {
         "name": "Jacob Fearnley",
-        "confidence": 63,
-        "modelPct": 55,
-        "label": "Market favorite to win a set"
+        "confidence": 70,
+        "modelPct": 49.2,
+        "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Rinky Hijikata",
-        "confidence": 67,
-        "modelPct": 47,
-        "label": "Underdog set-win path needs early holds"
+        "confidence": 60,
+        "modelPct": 51.6,
+        "label": "Market favorite to win a set"
       }
     ],
     "valueBoard": {
       "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
       "ml": {
         "marketType": "ML",
-        "selection": "Jacob Fearnley",
+        "selection": "Rinky Hijikata",
         "americanOdds": null,
-        "modelPct": 55,
-        "impliedPct": 55,
+        "modelPct": 51.6,
+        "impliedPct": 47,
         "edgePct": null,
         "evPer100": null,
         "netEvPer100": null,
@@ -15904,11 +19047,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 10.1,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -15918,18 +19061,18 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Jacob Fearnley",
-          "confidence": 63,
-          "modelPct": 55,
-          "label": "Market favorite to win a set",
+          "confidence": 70,
+          "modelPct": 49.2,
+          "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
           "betGrade": false
         },
         {
           "name": "Rinky Hijikata",
-          "confidence": 67,
-          "modelPct": 47,
-          "label": "Underdog set-win path needs early holds",
+          "confidence": 60,
+          "modelPct": 51.6,
+          "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
           "betGrade": false
@@ -15942,11 +19085,11 @@ const rawTennisGames = [
       {
         "marketType": "Moneyline",
         "label": "ML value",
-        "selection": "Jacob Fearnley",
+        "selection": "Rinky Hijikata",
         "line": null,
         "americanOdds": null,
-        "modelPct": 55,
-        "impliedPct": 55,
+        "modelPct": 51.6,
+        "impliedPct": 47,
         "edgePct": null,
         "evPer100": null,
         "netEvPer100": null,
@@ -15974,22 +19117,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Jacob Fearnley 63% / Rinky Hijikata 67%",
+        "selection": "Jacob Fearnley 70% / Rinky Hijikata 60%",
         "rows": [
           {
             "name": "Jacob Fearnley",
-            "confidence": 63,
-            "modelPct": 55,
-            "label": "Market favorite to win a set"
+            "confidence": 70,
+            "modelPct": 49.2,
+            "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Rinky Hijikata",
-            "confidence": 67,
-            "modelPct": 47,
-            "label": "Underdog set-win path needs early holds"
+            "confidence": 60,
+            "modelPct": 51.6,
+            "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 67,
+        "confidence": 70,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -15997,10 +19140,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 10.1,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -16023,7 +19166,7 @@ const rawTennisGames = [
           "bidPct": 53,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 55,
+          "modelPct": 49.2,
           "edgePct": null,
           "priceBand": "Coinflip",
           "grossProfitPct": 45,
@@ -16041,7 +19184,7 @@ const rawTennisGames = [
           "bidPct": 44,
           "lastTradePct": 46,
           "decimalOdds": null,
-          "modelPct": 47,
+          "modelPct": 51.6,
           "edgePct": null,
           "priceBand": "Coinflip",
           "grossProfitPct": 53,
@@ -16053,22 +19196,22 @@ const rawTennisGames = [
         }
       ],
       "desk": {
-        "name": "Jacob Fearnley",
+        "name": "Rinky Hijikata",
         "odds": null,
-        "americanLabel": "55c",
-        "impliedPct": 55,
-        "bidPct": 53,
-        "lastTradePct": 0,
+        "americanLabel": "47c",
+        "impliedPct": 47,
+        "bidPct": 44,
+        "lastTradePct": 46,
         "decimalOdds": null,
-        "modelPct": 55,
+        "modelPct": 51.6,
         "edgePct": null,
         "priceBand": "Coinflip",
-        "grossProfitPct": 45,
-        "grossPayoutMultiple": 1.818,
-        "centsAtRisk": 55,
-        "centsProfitIfWin": 45,
-        "openInterest": 0,
-        "symbol": "KXATPCHALLENGERMATCH-26JUN02FEAHIJ-FEA"
+        "grossProfitPct": 53,
+        "grossPayoutMultiple": 2.128,
+        "centsAtRisk": 47,
+        "centsProfitIfWin": 53,
+        "openInterest": 121,
+        "symbol": "KXATPCHALLENGERMATCH-26JUN02FEAHIJ-HIJ"
       },
       "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row.",
       "spreadValue": "No game spread captured",
@@ -16095,18 +19238,39 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/11685/jacob-fearnley",
           "asOf": "2026-06-02"
         },
-        "qualityName": null,
-        "profile": "Grass | Live rank #125 | Great Britain | age 24",
-        "modelPct": 55,
+        "qualityName": "Jacob Fearnley",
+        "profile": "Grass | Live rank #125 | Great Britain | age 24 | hold 71%",
+        "modelPct": 49.2,
         "weakness": {
           "name": "Jacob Fearnley",
-          "weaknessScore": null,
+          "serviceHoldPct": 71,
+          "firstServeWonPct": 68,
+          "secondServeWonPct": 44,
+          "firstServePct": 62,
+          "avgAces": 4.4,
+          "avgDoubleFaults": 7.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 59,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 15,
+          "firstGameComfort": "Needs early holds confirmed",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "second-serve points won are attackable (44%)",
+            "double-fault pressure (7.2 avg)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Jacob Fearnley can drop points quickly through second-serve points won are attackable (44%) and double-fault pressure (7.2 avg)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
@@ -16122,18 +19286,40 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3716/rinky-hijikata",
           "asOf": "2026-06-02"
         },
-        "qualityName": null,
-        "profile": "Grass | Live rank #98 | Australia | age 25",
-        "modelPct": 47,
+        "qualityName": "Rinky Hijikata",
+        "profile": "Grass | Live rank #98 | Australia | age 25 | hold 74%",
+        "modelPct": 51.6,
         "weakness": {
           "name": "Rinky Hijikata",
-          "weaknessScore": null,
+          "serviceHoldPct": 74,
+          "firstServeWonPct": 70,
+          "secondServeWonPct": 44,
+          "firstServePct": 57,
+          "avgAces": 3,
+          "avgDoubleFaults": 2.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 59,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 3,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "second-serve points won are attackable (44%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "strengths": [
+            "wins enough first-serve points (70%)"
+          ],
+          "gameFlowRead": "Rinky Hijikata can drop points quickly through second-serve points won are attackable (44%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -16153,63 +19339,92 @@ const rawTennisGames = [
     "stage": "ATP Challenger Birmingham | Round Of 32",
     "pickName": "Nicolai Budkov Kjaer",
     "basePickName": "Nicolai Budkov Kjaer",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 52,
-    "volatility": 76,
+    "marketOnly": false,
+    "confidence": 52.6,
+    "volatility": 48,
     "tags": [
       "ATP Challenger",
       "Grass",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Nicolai Budkov Kjaer is only the current Robinhood market favorite over Mackenzie McDonald; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Nicolai Budkov Kjaer has the recent service-hold edge 71% to 62%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
-      "attackingSide": null,
-      "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "edgeType": "Weakness edge",
+      "target": "Mackenzie McDonald",
+      "scoreGap": 9,
+      "attackingSide": "Nicolai Budkov Kjaer",
+      "vulnerableSide": "Mackenzie McDonald",
+      "gameFlow": "Nicolai Budkov Kjaer has a real path if Mackenzie McDonald's first two service games show the same weakness: first-serve points won below comfort (57%); second-serve points won are attackable (45%).",
+      "liveTrigger": "Look for Mackenzie McDonald facing break points or second-serve pressure before 3-3.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Nicolai Budkov Kjaer",
-        "weaknessScore": null,
+        "serviceHoldPct": 71,
+        "firstServeWonPct": 66,
+        "secondServeWonPct": 42,
+        "firstServePct": 69,
+        "avgAces": 2.2,
+        "avgDoubleFaults": 3,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 58,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 3,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "second-serve points won are attackable (42%)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Nicolai Budkov Kjaer can drop points quickly through second-serve points won are attackable (42%)."
       },
       "opponent": {
         "name": "Mackenzie McDonald",
-        "weaknessScore": null,
+        "serviceHoldPct": 62,
+        "firstServeWonPct": 57,
+        "secondServeWonPct": 45,
+        "firstServePct": 67,
+        "avgAces": 1,
+        "avgDoubleFaults": 2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 53,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 12,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "first-serve points won below comfort (57%)",
+          "second-serve points won are attackable (45%)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Mackenzie McDonald can drop points quickly through first-serve points won below comfort (57%) and second-serve points won are attackable (45%)."
       }
     },
     "setWinProjections": [
       {
         "name": "Mackenzie McDonald",
-        "confidence": 70,
-        "modelPct": 48,
+        "confidence": 69,
+        "modelPct": 47.4,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Nicolai Budkov Kjaer",
-        "confidence": 60,
-        "modelPct": 52,
+        "confidence": 61,
+        "modelPct": 52.6,
         "label": "Market favorite to win a set"
       }
     ],
@@ -16219,7 +19434,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Nicolai Budkov Kjaer",
         "americanOdds": null,
-        "modelPct": 52,
+        "modelPct": 52.6,
         "impliedPct": 52,
         "edgePct": null,
         "evPer100": null,
@@ -16246,11 +19461,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 10.1,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -16260,8 +19475,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Mackenzie McDonald",
-          "confidence": 70,
-          "modelPct": 48,
+          "confidence": 69,
+          "modelPct": 47.4,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -16269,8 +19484,8 @@ const rawTennisGames = [
         },
         {
           "name": "Nicolai Budkov Kjaer",
-          "confidence": 60,
-          "modelPct": 52,
+          "confidence": 61,
+          "modelPct": 52.6,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -16287,7 +19502,7 @@ const rawTennisGames = [
         "selection": "Nicolai Budkov Kjaer",
         "line": null,
         "americanOdds": null,
-        "modelPct": 52,
+        "modelPct": 52.6,
         "impliedPct": 52,
         "edgePct": null,
         "evPer100": null,
@@ -16316,22 +19531,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Mackenzie McDonald 70% / Nicolai Budkov Kjaer 60%",
+        "selection": "Mackenzie McDonald 69% / Nicolai Budkov Kjaer 61%",
         "rows": [
           {
             "name": "Mackenzie McDonald",
-            "confidence": 70,
-            "modelPct": 48,
+            "confidence": 69,
+            "modelPct": 47.4,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Nicolai Budkov Kjaer",
-            "confidence": 60,
-            "modelPct": 52,
+            "confidence": 61,
+            "modelPct": 52.6,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 70,
+        "confidence": 69,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -16339,10 +19554,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 10.1,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -16365,7 +19580,7 @@ const rawTennisGames = [
           "bidPct": 47,
           "lastTradePct": 48,
           "decimalOdds": null,
-          "modelPct": 48,
+          "modelPct": 47.4,
           "edgePct": null,
           "priceBand": "Coinflip",
           "grossProfitPct": 52,
@@ -16383,7 +19598,7 @@ const rawTennisGames = [
           "bidPct": 51,
           "lastTradePct": 52,
           "decimalOdds": null,
-          "modelPct": 52,
+          "modelPct": 52.6,
           "edgePct": null,
           "priceBand": "Coinflip",
           "grossProfitPct": 48,
@@ -16402,7 +19617,7 @@ const rawTennisGames = [
         "bidPct": 51,
         "lastTradePct": 52,
         "decimalOdds": null,
-        "modelPct": 52,
+        "modelPct": 52.6,
         "edgePct": null,
         "priceBand": "Coinflip",
         "grossProfitPct": 48,
@@ -16437,18 +19652,39 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/2206/mackenzie-mcdonald",
           "asOf": "2026-06-02"
         },
-        "qualityName": null,
-        "profile": "Grass | Live rank #126 | USA | age 31",
-        "modelPct": 48,
+        "qualityName": "Mackenzie McDonald",
+        "profile": "Grass | Live rank #126 | USA | age 31 | hold 62%",
+        "modelPct": 47.4,
         "weakness": {
           "name": "Mackenzie McDonald",
-          "weaknessScore": null,
+          "serviceHoldPct": 62,
+          "firstServeWonPct": 57,
+          "secondServeWonPct": 45,
+          "firstServePct": 67,
+          "avgAces": 1,
+          "avgDoubleFaults": 2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 53,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 12,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "first-serve points won below comfort (57%)",
+            "second-serve points won are attackable (45%)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Mackenzie McDonald can drop points quickly through first-serve points won below comfort (57%) and second-serve points won are attackable (45%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
@@ -16464,18 +19700,38 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/13829/nicolai-budkov-kjaer",
           "asOf": "2026-06-02"
         },
-        "qualityName": null,
-        "profile": "Grass | Live rank #121 | Norway | age 19",
-        "modelPct": 52,
+        "qualityName": "Nicolai Budkov Kjaer",
+        "profile": "Grass | Live rank #121 | Norway | age 19 | hold 71%",
+        "modelPct": 52.6,
         "weakness": {
           "name": "Nicolai Budkov Kjaer",
-          "weaknessScore": null,
+          "serviceHoldPct": 71,
+          "firstServeWonPct": 66,
+          "secondServeWonPct": 42,
+          "firstServePct": 69,
+          "avgAces": 2.2,
+          "avgDoubleFaults": 3,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 58,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 3,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "second-serve points won are attackable (42%)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Nicolai Budkov Kjaer can drop points quickly through second-serve points won are attackable (42%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -16682,7 +19938,7 @@ const rawTennisGames = [
           "returnPointsWonPct": 45,
           "returnGamesWonPct": 37.625,
           "breakPointsSavedPct": 0,
-          "breakPointsConvertedPct": 45.6,
+          "breakPointsConvertedPct": 48.8,
           "aces": 5.1,
           "doubleFaults": 4,
           "winners": 34.9,
@@ -16712,7 +19968,7 @@ const rawTennisGames = [
           "returnPointsWonPct": 40,
           "returnGamesWonPct": 31.375,
           "breakPointsSavedPct": 0,
-          "breakPointsConvertedPct": 43.8,
+          "breakPointsConvertedPct": 50.2,
           "aces": 5.5,
           "doubleFaults": 2.3,
           "winners": 32,
@@ -16741,7 +19997,7 @@ const rawTennisGames = [
       "returnGamesAvg": 34.5,
       "returnPointsAvg": 42.5,
       "breakPointsSavedAvg": 0,
-      "breakPointsConvertedAvg": 44.7,
+      "breakPointsConvertedAvg": 49.5,
       "setSamples": 49,
       "firstSetSamples": 16,
       "avgFirstSetGames": 9.5,
@@ -17072,63 +20328,92 @@ const rawTennisGames = [
     "stage": "ATP Challenger Prostejov | Round Of 32",
     "pickName": "Alex Molcan",
     "basePickName": "Alex Molcan",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 61,
-    "volatility": 69,
+    "marketOnly": false,
+    "confidence": 55.8,
+    "volatility": 48,
     "tags": [
       "ATP Challenger",
       "Clay",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Alex Molcan is only the current Robinhood market favorite over Zsombor Piros; Clay surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Alex Molcan has the recent service-hold edge 84% to 79%. Lean, not a chase.",
+    "totals": "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 0,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Alex Molcan",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 84,
+        "firstServeWonPct": 76,
+        "secondServeWonPct": 54,
+        "firstServePct": 58,
+        "avgAces": 5,
+        "avgDoubleFaults": 1.8,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 66,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (84% hold)",
+          "wins enough first-serve points (76%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Alex Molcan has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Zsombor Piros",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 79,
+        "firstServeWonPct": 67,
+        "secondServeWonPct": 53,
+        "firstServePct": 62,
+        "avgAces": 2.8,
+        "avgDoubleFaults": 3,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 62,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (79% hold)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Zsombor Piros has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Zsombor Piros",
-        "confidence": 61,
-        "modelPct": 42,
+        "confidence": 66,
+        "modelPct": 45.5,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Alex Molcan",
-        "confidence": 69,
-        "modelPct": 61,
+        "confidence": 64,
+        "modelPct": 55.8,
         "label": "Market favorite to win a set"
       }
     ],
@@ -17138,7 +20423,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Alex Molcan",
         "americanOdds": null,
-        "modelPct": 61,
+        "modelPct": 55.8,
         "impliedPct": 61,
         "edgePct": null,
         "evPer100": null,
@@ -17165,11 +20450,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -17179,8 +20464,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Zsombor Piros",
-          "confidence": 61,
-          "modelPct": 42,
+          "confidence": 66,
+          "modelPct": 45.5,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -17188,8 +20473,8 @@ const rawTennisGames = [
         },
         {
           "name": "Alex Molcan",
-          "confidence": 69,
-          "modelPct": 61,
+          "confidence": 64,
+          "modelPct": 55.8,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -17206,7 +20491,7 @@ const rawTennisGames = [
         "selection": "Alex Molcan",
         "line": null,
         "americanOdds": null,
-        "modelPct": 61,
+        "modelPct": 55.8,
         "impliedPct": 61,
         "edgePct": null,
         "evPer100": null,
@@ -17235,22 +20520,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Zsombor Piros 61% / Alex Molcan 69%",
+        "selection": "Zsombor Piros 66% / Alex Molcan 64%",
         "rows": [
           {
             "name": "Zsombor Piros",
-            "confidence": 61,
-            "modelPct": 42,
+            "confidence": 66,
+            "modelPct": 45.5,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Alex Molcan",
-            "confidence": 69,
-            "modelPct": 61,
+            "confidence": 64,
+            "modelPct": 55.8,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 69,
+        "confidence": 66,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -17258,10 +20543,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -17284,7 +20569,7 @@ const rawTennisGames = [
           "bidPct": 39,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 42,
+          "modelPct": 45.5,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 58,
@@ -17302,7 +20587,7 @@ const rawTennisGames = [
           "bidPct": 57,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 61,
+          "modelPct": 55.8,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 39,
@@ -17321,7 +20606,7 @@ const rawTennisGames = [
         "bidPct": 57,
         "lastTradePct": 0,
         "decimalOdds": null,
-        "modelPct": 61,
+        "modelPct": 55.8,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 39,
@@ -17346,18 +20631,38 @@ const rawTennisGames = [
       {
         "name": "Zsombor Piros",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Clay | Rank not joined",
-        "modelPct": 42,
+        "qualityName": "Zsombor Piros",
+        "profile": "Clay | Rank not joined | hold 79%",
+        "modelPct": 45.5,
         "weakness": {
           "name": "Zsombor Piros",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 79,
+          "firstServeWonPct": 67,
+          "secondServeWonPct": 53,
+          "firstServePct": 62,
+          "avgAces": 2.8,
+          "avgDoubleFaults": 3,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 62,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (79% hold)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Zsombor Piros has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
@@ -17373,18 +20678,39 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/2635/alex-molcan",
           "asOf": "2026-06-02"
         },
-        "qualityName": null,
-        "profile": "Clay | Live rank #110 | Slovakia | age 28",
-        "modelPct": 61,
+        "qualityName": "Alex Molcan",
+        "profile": "Clay | Live rank #110 | Slovakia | age 28 | hold 84%",
+        "modelPct": 55.8,
         "weakness": {
           "name": "Alex Molcan",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 84,
+          "firstServeWonPct": 76,
+          "secondServeWonPct": 54,
+          "firstServePct": 58,
+          "avgAces": 5,
+          "avgDoubleFaults": 1.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 66,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (84% hold)",
+            "wins enough first-serve points (76%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Alex Molcan has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -17404,63 +20730,93 @@ const rawTennisGames = [
     "stage": "ATP Challenger Centurion 2 | Round Of 32",
     "pickName": "Alec Beckley",
     "basePickName": "Alec Beckley",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 64,
-    "volatility": 69,
+    "marketOnly": false,
+    "confidence": 55.3,
+    "volatility": 49,
     "tags": [
       "ATP Challenger",
       "Hard",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Alec Beckley is only the current Robinhood market favorite over Dominik Palan; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Dominik Palan has the recent service-hold edge 87% to 76%, so Alec Beckley needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "totals": "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 5,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Alec Beckley",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 76,
+        "firstServeWonPct": 68,
+        "secondServeWonPct": 46,
+        "firstServePct": 64,
+        "avgAces": 2.2,
+        "avgDoubleFaults": 3.8,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 60,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 3,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Alec Beckley has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Dominik Palan",
-        "weaknessScore": null,
+        "serviceHoldPct": 87,
+        "firstServeWonPct": 74,
+        "secondServeWonPct": 58,
+        "firstServePct": 59,
+        "avgAces": 12.4,
+        "avgDoubleFaults": 5.6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 67,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 8,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "double-fault pressure (5.6 avg)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "strengths": [
+          "protects serve well (87% hold)",
+          "wins enough first-serve points (74%)",
+          "second serve holds up (58%)"
+        ],
+        "gameFlowRead": "Dominik Palan can drop points quickly through double-fault pressure (5.6 avg)."
       }
     },
     "setWinProjections": [
       {
         "name": "Dominik Palan",
-        "confidence": 58,
-        "modelPct": 44,
+        "confidence": 67,
+        "modelPct": 48.1,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Alec Beckley",
-        "confidence": 72,
-        "modelPct": 64,
+        "confidence": 63,
+        "modelPct": 55.3,
         "label": "Market favorite to win a set"
       }
     ],
@@ -17470,7 +20826,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Alec Beckley",
         "americanOdds": null,
-        "modelPct": 64,
+        "modelPct": 55.3,
         "impliedPct": 64,
         "edgePct": null,
         "evPer100": null,
@@ -17497,11 +20853,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -17511,8 +20867,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Dominik Palan",
-          "confidence": 58,
-          "modelPct": 44,
+          "confidence": 67,
+          "modelPct": 48.1,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -17520,8 +20876,8 @@ const rawTennisGames = [
         },
         {
           "name": "Alec Beckley",
-          "confidence": 72,
-          "modelPct": 64,
+          "confidence": 63,
+          "modelPct": 55.3,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -17538,7 +20894,7 @@ const rawTennisGames = [
         "selection": "Alec Beckley",
         "line": null,
         "americanOdds": null,
-        "modelPct": 64,
+        "modelPct": 55.3,
         "impliedPct": 64,
         "edgePct": null,
         "evPer100": null,
@@ -17567,22 +20923,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Dominik Palan 58% / Alec Beckley 72%",
+        "selection": "Dominik Palan 67% / Alec Beckley 63%",
         "rows": [
           {
             "name": "Dominik Palan",
-            "confidence": 58,
-            "modelPct": 44,
+            "confidence": 67,
+            "modelPct": 48.1,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Alec Beckley",
-            "confidence": 72,
-            "modelPct": 64,
+            "confidence": 63,
+            "modelPct": 55.3,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 72,
+        "confidence": 67,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -17590,10 +20946,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -17616,7 +20972,7 @@ const rawTennisGames = [
           "bidPct": 37,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 44,
+          "modelPct": 48.1,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 56,
@@ -17634,7 +20990,7 @@ const rawTennisGames = [
           "bidPct": 56,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 64,
+          "modelPct": 55.3,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 36,
@@ -17653,7 +21009,7 @@ const rawTennisGames = [
         "bidPct": 56,
         "lastTradePct": 0,
         "decimalOdds": null,
-        "modelPct": 64,
+        "modelPct": 55.3,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 36,
@@ -17678,35 +21034,77 @@ const rawTennisGames = [
       {
         "name": "Dominik Palan",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 44,
+        "qualityName": "Dominik Palan",
+        "profile": "Hard | Rank not joined | hold 87%",
+        "modelPct": 48.1,
         "weakness": {
           "name": "Dominik Palan",
-          "weaknessScore": null,
+          "serviceHoldPct": 87,
+          "firstServeWonPct": 74,
+          "secondServeWonPct": 58,
+          "firstServePct": 59,
+          "avgAces": 12.4,
+          "avgDoubleFaults": 5.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 67,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 8,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "double-fault pressure (5.6 avg)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "strengths": [
+            "protects serve well (87% hold)",
+            "wins enough first-serve points (74%)",
+            "second serve holds up (58%)"
+          ],
+          "gameFlowRead": "Dominik Palan can drop points quickly through double-fault pressure (5.6 avg)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Alec Beckley",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 64,
+        "qualityName": "Alec Beckley",
+        "profile": "Hard | Rank not joined | hold 76%",
+        "modelPct": 55.3,
         "weakness": {
           "name": "Alec Beckley",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 76,
+          "firstServeWonPct": 68,
+          "secondServeWonPct": 46,
+          "firstServePct": 64,
+          "avgAces": 2.2,
+          "avgDoubleFaults": 3.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 60,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 3,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Alec Beckley has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -17726,63 +21124,94 @@ const rawTennisGames = [
     "stage": "ATP Challenger Centurion 2 | Round Of 32",
     "pickName": "Stefano Napolitano",
     "basePickName": "Stefano Napolitano",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 78,
-    "volatility": 55,
+    "marketOnly": false,
+    "confidence": 61.8,
+    "volatility": 50,
     "tags": [
       "ATP Challenger",
       "Hard",
       "Prediction market",
-      "Market only",
-      "No model edge",
-      "Market favorite"
+      "Warehouse joined",
+      "Flashscore first",
+      "Coinflip price"
     ],
-    "reason": "Stefano Napolitano is only the current Robinhood market favorite over Tuncay Duran; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Stefano Napolitano has the recent service-hold edge 82% to 77%. Lean, not a chase.",
+    "totals": "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 0,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Stefano Napolitano",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 82,
+        "firstServeWonPct": 70,
+        "secondServeWonPct": 55,
+        "firstServePct": 59,
+        "avgAces": 3.8,
+        "avgDoubleFaults": 1.8,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 64,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (82% hold)",
+          "wins enough first-serve points (70%)",
+          "second serve holds up (55%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Stefano Napolitano has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Tuncay Duran",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 77,
+        "firstServeWonPct": 71,
+        "secondServeWonPct": 54,
+        "firstServePct": 59,
+        "avgAces": 5.6,
+        "avgDoubleFaults": 1.8,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 64,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (77% hold)",
+          "wins enough first-serve points (71%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Tuncay Duran has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Tuncay Duran",
-        "confidence": 44,
-        "modelPct": 27,
+        "confidence": 60,
+        "modelPct": 40.3,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Stefano Napolitano",
-        "confidence": 86,
-        "modelPct": 78,
+        "confidence": 70,
+        "modelPct": 61.8,
         "label": "Market favorite to win a set"
       }
     ],
@@ -17792,7 +21221,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Stefano Napolitano",
         "americanOdds": null,
-        "modelPct": 78,
+        "modelPct": 61.8,
         "impliedPct": 78,
         "edgePct": null,
         "evPer100": null,
@@ -17819,11 +21248,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 8.8,
-        "confidence": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
-        "modelPct": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -17833,8 +21262,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Tuncay Duran",
-          "confidence": 44,
-          "modelPct": 27,
+          "confidence": 60,
+          "modelPct": 40.3,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -17842,8 +21271,8 @@ const rawTennisGames = [
         },
         {
           "name": "Stefano Napolitano",
-          "confidence": 86,
-          "modelPct": 78,
+          "confidence": 70,
+          "modelPct": 61.8,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -17860,7 +21289,7 @@ const rawTennisGames = [
         "selection": "Stefano Napolitano",
         "line": null,
         "americanOdds": null,
-        "modelPct": 78,
+        "modelPct": 61.8,
         "impliedPct": 78,
         "edgePct": null,
         "evPer100": null,
@@ -17889,22 +21318,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Tuncay Duran 44% / Stefano Napolitano 86%",
+        "selection": "Tuncay Duran 60% / Stefano Napolitano 70%",
         "rows": [
           {
             "name": "Tuncay Duran",
-            "confidence": 44,
-            "modelPct": 27,
+            "confidence": 60,
+            "modelPct": 40.3,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Stefano Napolitano",
-            "confidence": 86,
-            "modelPct": 78,
+            "confidence": 70,
+            "modelPct": 61.8,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 86,
+        "confidence": 70,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -17912,8 +21341,8 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 8.8,
-        "confidence": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
@@ -17938,7 +21367,7 @@ const rawTennisGames = [
           "bidPct": 24,
           "lastTradePct": 27,
           "decimalOdds": null,
-          "modelPct": 27,
+          "modelPct": 40.3,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 73,
@@ -17956,7 +21385,7 @@ const rawTennisGames = [
           "bidPct": 73,
           "lastTradePct": 78,
           "decimalOdds": null,
-          "modelPct": 78,
+          "modelPct": 61.8,
           "edgePct": null,
           "priceBand": "Low-payout favorite",
           "grossProfitPct": 22,
@@ -17975,7 +21404,7 @@ const rawTennisGames = [
         "bidPct": 73,
         "lastTradePct": 78,
         "decimalOdds": null,
-        "modelPct": 78,
+        "modelPct": 61.8,
         "edgePct": null,
         "priceBand": "Low-payout favorite",
         "grossProfitPct": 22,
@@ -18000,35 +21429,78 @@ const rawTennisGames = [
       {
         "name": "Tuncay Duran",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 27,
+        "qualityName": "Tuncay Duran",
+        "profile": "Hard | Rank not joined | hold 77%",
+        "modelPct": 40.3,
         "weakness": {
           "name": "Tuncay Duran",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 77,
+          "firstServeWonPct": 71,
+          "secondServeWonPct": 54,
+          "firstServePct": 59,
+          "avgAces": 5.6,
+          "avgDoubleFaults": 1.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 64,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (77% hold)",
+            "wins enough first-serve points (71%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Tuncay Duran has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Stefano Napolitano",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 78,
+        "qualityName": "Stefano Napolitano",
+        "profile": "Hard | Rank not joined | hold 82%",
+        "modelPct": 61.8,
         "weakness": {
           "name": "Stefano Napolitano",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 82,
+          "firstServeWonPct": 70,
+          "secondServeWonPct": 55,
+          "firstServePct": 59,
+          "avgAces": 3.8,
+          "avgDoubleFaults": 1.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 64,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (82% hold)",
+            "wins enough first-serve points (70%)",
+            "second serve holds up (55%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Stefano Napolitano has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -18046,76 +21518,105 @@ const rawTennisGames = [
     "court": "ATP Challenger Birmingham",
     "round": "Round Of 32",
     "stage": "ATP Challenger Birmingham | Round Of 32",
-    "pickName": "Jack Pinnington Jones",
-    "basePickName": "Jack Pinnington Jones",
-    "modelSource": "Robinhood market watch only",
+    "pickName": "Aleksandar Vukic",
+    "basePickName": "Aleksandar Vukic",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 56,
-    "volatility": 74,
+    "marketOnly": false,
+    "confidence": 51.2,
+    "volatility": 46,
     "tags": [
       "ATP Challenger",
       "Grass",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Jack Pinnington Jones is only the current Robinhood market favorite over Aleksandar Vukic; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Recent service hold is close: Aleksandar Vukic 65%, Jack Pinnington Jones 63%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
-      "attackingSide": null,
-      "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "edgeType": "Weakness edge",
+      "target": "Jack Pinnington Jones",
+      "scoreGap": 9,
+      "attackingSide": "Aleksandar Vukic",
+      "vulnerableSide": "Jack Pinnington Jones",
+      "gameFlow": "Aleksandar Vukic has a real path if Jack Pinnington Jones's first two service games show the same weakness: first-serve points won below comfort (60%); double-fault pressure (5.4 avg).",
+      "liveTrigger": "Look for Jack Pinnington Jones facing break points or second-serve pressure before 3-3.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
-        "name": "Jack Pinnington Jones",
-        "weaknessScore": null,
+        "name": "Aleksandar Vukic",
+        "serviceHoldPct": 65,
+        "firstServeWonPct": 66,
+        "secondServeWonPct": 44,
+        "firstServePct": 58,
+        "avgAces": 4.4,
+        "avgDoubleFaults": 2.6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 57,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 25,
+        "weaknessScore": 5,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "second-serve points won are attackable (44%)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Aleksandar Vukic can drop points quickly through second-serve points won are attackable (44%)."
       },
       "opponent": {
-        "name": "Aleksandar Vukic",
-        "weaknessScore": null,
+        "name": "Jack Pinnington Jones",
+        "serviceHoldPct": 63,
+        "firstServeWonPct": 60,
+        "secondServeWonPct": 47,
+        "firstServePct": 63,
+        "avgAces": 2,
+        "avgDoubleFaults": 5.4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 55,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 14,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "first-serve points won below comfort (60%)",
+          "double-fault pressure (5.4 avg)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Jack Pinnington Jones can drop points quickly through first-serve points won below comfort (60%) and double-fault pressure (5.4 avg)."
       }
     },
     "setWinProjections": [
       {
         "name": "Jack Pinnington Jones",
-        "confidence": 64,
-        "modelPct": 56,
-        "label": "Market favorite to win a set"
+        "confidence": 71,
+        "modelPct": 49.6,
+        "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Aleksandar Vukic",
-        "confidence": 66,
-        "modelPct": 46,
-        "label": "Underdog set-win path needs early holds"
+        "confidence": 59,
+        "modelPct": 51.2,
+        "label": "Market favorite to win a set"
       }
     ],
     "valueBoard": {
       "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
       "ml": {
         "marketType": "ML",
-        "selection": "Jack Pinnington Jones",
+        "selection": "Aleksandar Vukic",
         "americanOdds": null,
-        "modelPct": 56,
-        "impliedPct": 56,
+        "modelPct": 51.2,
+        "impliedPct": 46,
         "edgePct": null,
         "evPer100": null,
         "netEvPer100": null,
@@ -18141,11 +21642,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 10.1,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -18155,18 +21656,18 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Jack Pinnington Jones",
-          "confidence": 64,
-          "modelPct": 56,
-          "label": "Market favorite to win a set",
+          "confidence": 71,
+          "modelPct": 49.6,
+          "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
           "betGrade": false
         },
         {
           "name": "Aleksandar Vukic",
-          "confidence": 66,
-          "modelPct": 46,
-          "label": "Underdog set-win path needs early holds",
+          "confidence": 59,
+          "modelPct": 51.2,
+          "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
           "betGrade": false
@@ -18179,11 +21680,11 @@ const rawTennisGames = [
       {
         "marketType": "Moneyline",
         "label": "ML value",
-        "selection": "Jack Pinnington Jones",
+        "selection": "Aleksandar Vukic",
         "line": null,
         "americanOdds": null,
-        "modelPct": 56,
-        "impliedPct": 56,
+        "modelPct": 51.2,
+        "impliedPct": 46,
         "edgePct": null,
         "evPer100": null,
         "netEvPer100": null,
@@ -18211,22 +21712,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Jack Pinnington Jones 64% / Aleksandar Vukic 66%",
+        "selection": "Jack Pinnington Jones 71% / Aleksandar Vukic 59%",
         "rows": [
           {
             "name": "Jack Pinnington Jones",
-            "confidence": 64,
-            "modelPct": 56,
-            "label": "Market favorite to win a set"
+            "confidence": 71,
+            "modelPct": 49.6,
+            "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Aleksandar Vukic",
-            "confidence": 66,
-            "modelPct": 46,
-            "label": "Underdog set-win path needs early holds"
+            "confidence": 59,
+            "modelPct": 51.2,
+            "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 66,
+        "confidence": 71,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -18234,10 +21735,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 10.1,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 38,
+        "earlyBreakRisk": 62,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -18260,7 +21761,7 @@ const rawTennisGames = [
           "bidPct": 54,
           "lastTradePct": 54,
           "decimalOdds": null,
-          "modelPct": 56,
+          "modelPct": 49.6,
           "edgePct": null,
           "priceBand": "Coinflip",
           "grossProfitPct": 44,
@@ -18278,7 +21779,7 @@ const rawTennisGames = [
           "bidPct": 45,
           "lastTradePct": 45,
           "decimalOdds": null,
-          "modelPct": 46,
+          "modelPct": 51.2,
           "edgePct": null,
           "priceBand": "Coinflip",
           "grossProfitPct": 54,
@@ -18290,22 +21791,22 @@ const rawTennisGames = [
         }
       ],
       "desk": {
-        "name": "Jack Pinnington Jones",
+        "name": "Aleksandar Vukic",
         "odds": null,
-        "americanLabel": "56c",
-        "impliedPct": 56,
-        "bidPct": 54,
-        "lastTradePct": 54,
+        "americanLabel": "46c",
+        "impliedPct": 46,
+        "bidPct": 45,
+        "lastTradePct": 45,
         "decimalOdds": null,
-        "modelPct": 56,
+        "modelPct": 51.2,
         "edgePct": null,
         "priceBand": "Coinflip",
-        "grossProfitPct": 44,
-        "grossPayoutMultiple": 1.786,
-        "centsAtRisk": 56,
-        "centsProfitIfWin": 44,
-        "openInterest": 5360,
-        "symbol": "KXATPCHALLENGERMATCH-26JUN01PINVUK-PIN"
+        "grossProfitPct": 54,
+        "grossPayoutMultiple": 2.174,
+        "centsAtRisk": 46,
+        "centsProfitIfWin": 54,
+        "openInterest": 1020,
+        "symbol": "KXATPCHALLENGERMATCH-26JUN01PINVUK-VUK"
       },
       "priceAction": "Prediction-market price captured; no sportsbook EV is inferred from this row.",
       "spreadValue": "No game spread captured",
@@ -18332,18 +21833,39 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/10126/jack-pinnington-jones",
           "asOf": "2026-06-02"
         },
-        "qualityName": null,
-        "profile": "Grass | Live rank #132 | Great Britain | age 23",
-        "modelPct": 56,
+        "qualityName": "Jack Pinnington Jones",
+        "profile": "Grass | Live rank #132 | Great Britain | age 23 | hold 63%",
+        "modelPct": 49.6,
         "weakness": {
           "name": "Jack Pinnington Jones",
-          "weaknessScore": null,
+          "serviceHoldPct": 63,
+          "firstServeWonPct": 60,
+          "secondServeWonPct": 47,
+          "firstServePct": 63,
+          "avgAces": 2,
+          "avgDoubleFaults": 5.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 55,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 14,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "first-serve points won below comfort (60%)",
+            "double-fault pressure (5.4 avg)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Jack Pinnington Jones can drop points quickly through first-serve points won below comfort (60%) and double-fault pressure (5.4 avg)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
@@ -18359,18 +21881,38 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3471/aleksandar-vukic",
           "asOf": "2026-06-02"
         },
-        "qualityName": null,
-        "profile": "Grass | Live rank #96 | Australia | age 30",
-        "modelPct": 46,
+        "qualityName": "Aleksandar Vukic",
+        "profile": "Grass | Live rank #96 | Australia | age 30 | hold 65%",
+        "modelPct": 51.2,
         "weakness": {
           "name": "Aleksandar Vukic",
-          "weaknessScore": null,
+          "serviceHoldPct": 65,
+          "firstServeWonPct": 66,
+          "secondServeWonPct": 44,
+          "firstServePct": 58,
+          "avgAces": 4.4,
+          "avgDoubleFaults": 2.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 57,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 25,
+          "weaknessScore": 5,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "second-serve points won are attackable (44%)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Aleksandar Vukic can drop points quickly through second-serve points won are attackable (44%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 23,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -18390,63 +21932,89 @@ const rawTennisGames = [
     "stage": "ATP Challenger Birmingham | Round Of 32",
     "pickName": "Felix Gill",
     "basePickName": "Felix Gill",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 57,
-    "volatility": 74,
+    "marketOnly": false,
+    "confidence": 52.4,
+    "volatility": 49,
     "tags": [
       "ATP Challenger",
       "Grass",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Felix Gill is only the current Robinhood market favorite over Ugo Blanchet; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Ugo Blanchet has the recent service-hold edge 76% to 71%, so Felix Gill needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 2,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Felix Gill",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 71,
+        "firstServeWonPct": 64,
+        "secondServeWonPct": 53,
+        "firstServePct": 62,
+        "avgAces": 2.8,
+        "avgDoubleFaults": 1.6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 60,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Felix Gill has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Ugo Blanchet",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 76,
+        "firstServeWonPct": 71,
+        "secondServeWonPct": 54,
+        "firstServePct": 51,
+        "avgAces": 5.2,
+        "avgDoubleFaults": 2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 63,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 2,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "wins enough first-serve points (71%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Ugo Blanchet has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Ugo Blanchet",
-        "confidence": 65,
-        "modelPct": 47,
+        "confidence": 70,
+        "modelPct": 49.3,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Felix Gill",
-        "confidence": 65,
-        "modelPct": 57,
+        "confidence": 60,
+        "modelPct": 52.4,
         "label": "Market favorite to win a set"
       }
     ],
@@ -18456,7 +22024,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Felix Gill",
         "americanOdds": null,
-        "modelPct": 57,
+        "modelPct": 52.4,
         "impliedPct": 57,
         "edgePct": null,
         "evPer100": null,
@@ -18483,11 +22051,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -18497,8 +22065,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Ugo Blanchet",
-          "confidence": 65,
-          "modelPct": 47,
+          "confidence": 70,
+          "modelPct": 49.3,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -18506,8 +22074,8 @@ const rawTennisGames = [
         },
         {
           "name": "Felix Gill",
-          "confidence": 65,
-          "modelPct": 57,
+          "confidence": 60,
+          "modelPct": 52.4,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -18524,7 +22092,7 @@ const rawTennisGames = [
         "selection": "Felix Gill",
         "line": null,
         "americanOdds": null,
-        "modelPct": 57,
+        "modelPct": 52.4,
         "impliedPct": 57,
         "edgePct": null,
         "evPer100": null,
@@ -18553,22 +22121,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Ugo Blanchet 65% / Felix Gill 65%",
+        "selection": "Ugo Blanchet 70% / Felix Gill 60%",
         "rows": [
           {
             "name": "Ugo Blanchet",
-            "confidence": 65,
-            "modelPct": 47,
+            "confidence": 70,
+            "modelPct": 49.3,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Felix Gill",
-            "confidence": 65,
-            "modelPct": 57,
+            "confidence": 60,
+            "modelPct": 52.4,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 65,
+        "confidence": 70,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -18576,10 +22144,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -18602,7 +22170,7 @@ const rawTennisGames = [
           "bidPct": 43,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 47,
+          "modelPct": 49.3,
           "edgePct": null,
           "priceBand": "Coinflip",
           "grossProfitPct": 53,
@@ -18620,7 +22188,7 @@ const rawTennisGames = [
           "bidPct": 53,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 57,
+          "modelPct": 52.4,
           "edgePct": null,
           "priceBand": "Coinflip",
           "grossProfitPct": 43,
@@ -18639,7 +22207,7 @@ const rawTennisGames = [
         "bidPct": 53,
         "lastTradePct": 0,
         "decimalOdds": null,
-        "modelPct": 57,
+        "modelPct": 52.4,
         "edgePct": null,
         "priceBand": "Coinflip",
         "grossProfitPct": 43,
@@ -18664,35 +22232,73 @@ const rawTennisGames = [
       {
         "name": "Ugo Blanchet",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Grass | Rank not joined",
-        "modelPct": 47,
+        "qualityName": "Ugo Blanchet",
+        "profile": "Grass | Rank not joined | hold 76%",
+        "modelPct": 49.3,
         "weakness": {
           "name": "Ugo Blanchet",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 76,
+          "firstServeWonPct": 71,
+          "secondServeWonPct": 54,
+          "firstServePct": 51,
+          "avgAces": 5.2,
+          "avgDoubleFaults": 2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 63,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 2,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "wins enough first-serve points (71%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Ugo Blanchet has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Felix Gill",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Grass | Rank not joined",
-        "modelPct": 57,
+        "qualityName": "Felix Gill",
+        "profile": "Grass | Rank not joined | hold 71%",
+        "modelPct": 52.4,
         "weakness": {
           "name": "Felix Gill",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 71,
+          "firstServeWonPct": 64,
+          "secondServeWonPct": 53,
+          "firstServePct": 62,
+          "avgAces": 2.8,
+          "avgDoubleFaults": 1.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 60,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Felix Gill has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -18712,63 +22318,91 @@ const rawTennisGames = [
     "stage": "ATP Challenger Tyler | Round Of 32",
     "pickName": "Adam Walton",
     "basePickName": "Adam Walton",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 76,
-    "volatility": 55,
+    "marketOnly": false,
+    "confidence": 62.1,
+    "volatility": 48,
     "tags": [
       "ATP Challenger",
       "Hard",
       "Prediction market",
-      "Market only",
-      "No model edge",
-      "Market favorite"
+      "Warehouse joined",
+      "Flashscore first",
+      "Coinflip price"
     ],
-    "reason": "Adam Walton is only the current Robinhood market favorite over Tung-Lin Wu; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Tung-Lin Wu has the recent service-hold edge 92% to 69%, so Adam Walton needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 0,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Adam Walton",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 69,
+        "firstServeWonPct": 66,
+        "secondServeWonPct": 49,
+        "firstServePct": 63,
+        "avgAces": 6.8,
+        "avgDoubleFaults": 1.2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 60,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 28,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Adam Walton has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Tung-Lin Wu",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 92,
+        "firstServeWonPct": 78,
+        "secondServeWonPct": 58,
+        "firstServePct": 68,
+        "avgAces": 2.4,
+        "avgDoubleFaults": 2.6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 72,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (92% hold)",
+          "wins enough first-serve points (78%)",
+          "second serve holds up (58%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Tung-Lin Wu has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Adam Walton",
-        "confidence": 84,
-        "modelPct": 76,
+        "confidence": 70,
+        "modelPct": 62.1,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Tung-Lin Wu",
-        "confidence": 46,
-        "modelPct": 25,
+        "confidence": 60,
+        "modelPct": 38.3,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -18778,7 +22412,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Adam Walton",
         "americanOdds": null,
-        "modelPct": 76,
+        "modelPct": 62.1,
         "impliedPct": 76,
         "edgePct": null,
         "evPer100": null,
@@ -18805,11 +22439,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 8.8,
-        "confidence": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
-        "modelPct": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -18819,8 +22453,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Adam Walton",
-          "confidence": 84,
-          "modelPct": 76,
+          "confidence": 70,
+          "modelPct": 62.1,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -18828,8 +22462,8 @@ const rawTennisGames = [
         },
         {
           "name": "Tung-Lin Wu",
-          "confidence": 46,
-          "modelPct": 25,
+          "confidence": 60,
+          "modelPct": 38.3,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -18846,7 +22480,7 @@ const rawTennisGames = [
         "selection": "Adam Walton",
         "line": null,
         "americanOdds": null,
-        "modelPct": 76,
+        "modelPct": 62.1,
         "impliedPct": 76,
         "edgePct": null,
         "evPer100": null,
@@ -18875,22 +22509,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Adam Walton 84% / Tung-Lin Wu 46%",
+        "selection": "Adam Walton 70% / Tung-Lin Wu 60%",
         "rows": [
           {
             "name": "Adam Walton",
-            "confidence": 84,
-            "modelPct": 76,
+            "confidence": 70,
+            "modelPct": 62.1,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Tung-Lin Wu",
-            "confidence": 46,
-            "modelPct": 25,
+            "confidence": 60,
+            "modelPct": 38.3,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 84,
+        "confidence": 70,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -18898,8 +22532,8 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 8.8,
-        "confidence": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
@@ -18924,7 +22558,7 @@ const rawTennisGames = [
           "bidPct": 75,
           "lastTradePct": 77,
           "decimalOdds": null,
-          "modelPct": 76,
+          "modelPct": 62.1,
           "edgePct": null,
           "priceBand": "Low-payout favorite",
           "grossProfitPct": 24,
@@ -18942,7 +22576,7 @@ const rawTennisGames = [
           "bidPct": 24,
           "lastTradePct": 0,
           "decimalOdds": null,
-          "modelPct": 25,
+          "modelPct": 38.3,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 75,
@@ -18961,7 +22595,7 @@ const rawTennisGames = [
         "bidPct": 75,
         "lastTradePct": 77,
         "decimalOdds": null,
-        "modelPct": 76,
+        "modelPct": 62.1,
         "edgePct": null,
         "priceBand": "Low-payout favorite",
         "grossProfitPct": 24,
@@ -18996,35 +22630,75 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/3093/adam-walton",
           "asOf": "2026-06-02"
         },
-        "qualityName": null,
-        "profile": "Hard | Live rank #97 | Australia | age 27",
-        "modelPct": 76,
+        "qualityName": "Adam Walton",
+        "profile": "Hard | Live rank #97 | Australia | age 27 | hold 69%",
+        "modelPct": 62.1,
         "weakness": {
           "name": "Adam Walton",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 69,
+          "firstServeWonPct": 66,
+          "secondServeWonPct": 49,
+          "firstServePct": 63,
+          "avgAces": 6.8,
+          "avgDoubleFaults": 1.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 60,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 28,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Adam Walton has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 23,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Tung-Lin Wu",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 25,
+        "qualityName": "Tung-Lin Wu",
+        "profile": "Hard | Rank not joined | hold 92%",
+        "modelPct": 38.3,
         "weakness": {
           "name": "Tung-Lin Wu",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 92,
+          "firstServeWonPct": 78,
+          "secondServeWonPct": 58,
+          "firstServePct": 68,
+          "avgAces": 2.4,
+          "avgDoubleFaults": 2.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 72,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (92% hold)",
+            "wins enough first-serve points (78%)",
+            "second serve holds up (58%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Tung-Lin Wu has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -19044,63 +22718,92 @@ const rawTennisGames = [
     "stage": "ATP Challenger Tyler | Round Of 32",
     "pickName": "Andres Martin",
     "basePickName": "Andres Martin",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 66,
-    "volatility": 65,
+    "marketOnly": false,
+    "confidence": 55.6,
+    "volatility": 48,
     "tags": [
       "ATP Challenger",
       "Hard",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Andres Martin is only the current Robinhood market favorite over Blake Ellis; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Blake Ellis has the recent service-hold edge 77% to 69%, so Andres Martin needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 4,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Andres Martin",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 69,
+        "firstServeWonPct": 62,
+        "secondServeWonPct": 52,
+        "firstServePct": 62,
+        "avgAces": 1.2,
+        "avgDoubleFaults": 2.8,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 58,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 1,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Andres Martin has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Blake Ellis",
-        "weaknessScore": null,
+        "serviceHoldPct": 77,
+        "firstServeWonPct": 76,
+        "secondServeWonPct": 49,
+        "firstServePct": 54,
+        "avgAces": 9,
+        "avgDoubleFaults": 4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 64,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 5,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "double-fault pressure (4.0 avg)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "strengths": [
+          "protects serve well (77% hold)",
+          "wins enough first-serve points (76%)"
+        ],
+        "gameFlowRead": "Blake Ellis can drop points quickly through double-fault pressure (4.0 avg)."
       }
     },
     "setWinProjections": [
       {
         "name": "Andres Martin",
-        "confidence": 74,
-        "modelPct": 66,
+        "confidence": 64,
+        "modelPct": 55.6,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Blake Ellis",
-        "confidence": 56,
-        "modelPct": 36,
+        "confidence": 66,
+        "modelPct": 45.3,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -19110,7 +22813,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Andres Martin",
         "americanOdds": null,
-        "modelPct": 66,
+        "modelPct": 55.6,
         "impliedPct": 66,
         "edgePct": null,
         "evPer100": null,
@@ -19137,11 +22840,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -19151,8 +22854,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Andres Martin",
-          "confidence": 74,
-          "modelPct": 66,
+          "confidence": 64,
+          "modelPct": 55.6,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -19160,8 +22863,8 @@ const rawTennisGames = [
         },
         {
           "name": "Blake Ellis",
-          "confidence": 56,
-          "modelPct": 36,
+          "confidence": 66,
+          "modelPct": 45.3,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -19178,7 +22881,7 @@ const rawTennisGames = [
         "selection": "Andres Martin",
         "line": null,
         "americanOdds": null,
-        "modelPct": 66,
+        "modelPct": 55.6,
         "impliedPct": 66,
         "edgePct": null,
         "evPer100": null,
@@ -19207,22 +22910,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Andres Martin 74% / Blake Ellis 56%",
+        "selection": "Andres Martin 64% / Blake Ellis 66%",
         "rows": [
           {
             "name": "Andres Martin",
-            "confidence": 74,
-            "modelPct": 66,
+            "confidence": 64,
+            "modelPct": 55.6,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Blake Ellis",
-            "confidence": 56,
-            "modelPct": 36,
+            "confidence": 66,
+            "modelPct": 45.3,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 74,
+        "confidence": 66,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -19230,10 +22933,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -19256,7 +22959,7 @@ const rawTennisGames = [
           "bidPct": 64,
           "lastTradePct": 64,
           "decimalOdds": null,
-          "modelPct": 66,
+          "modelPct": 55.6,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 34,
@@ -19274,7 +22977,7 @@ const rawTennisGames = [
           "bidPct": 34,
           "lastTradePct": 36,
           "decimalOdds": null,
-          "modelPct": 36,
+          "modelPct": 45.3,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 64,
@@ -19293,7 +22996,7 @@ const rawTennisGames = [
         "bidPct": 64,
         "lastTradePct": 64,
         "decimalOdds": null,
-        "modelPct": 66,
+        "modelPct": 55.6,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 34,
@@ -19318,35 +23021,76 @@ const rawTennisGames = [
       {
         "name": "Andres Martin",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 66,
+        "qualityName": "Andres Martin",
+        "profile": "Hard | Rank not joined | hold 69%",
+        "modelPct": 55.6,
         "weakness": {
           "name": "Andres Martin",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 69,
+          "firstServeWonPct": 62,
+          "secondServeWonPct": 52,
+          "firstServePct": 62,
+          "avgAces": 1.2,
+          "avgDoubleFaults": 2.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 58,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 1,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Andres Martin has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Blake Ellis",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 36,
+        "qualityName": "Blake Ellis",
+        "profile": "Hard | Rank not joined | hold 77%",
+        "modelPct": 45.3,
         "weakness": {
           "name": "Blake Ellis",
-          "weaknessScore": null,
+          "serviceHoldPct": 77,
+          "firstServeWonPct": 76,
+          "secondServeWonPct": 49,
+          "firstServePct": 54,
+          "avgAces": 9,
+          "avgDoubleFaults": 4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 64,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 5,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "double-fault pressure (4.0 avg)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "strengths": [
+            "protects serve well (77% hold)",
+            "wins enough first-serve points (76%)"
+          ],
+          "gameFlowRead": "Blake Ellis can drop points quickly through double-fault pressure (4.0 avg)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -19366,63 +23110,94 @@ const rawTennisGames = [
     "stage": "ATP Challenger Tyler Qualification | Final",
     "pickName": "Braden Shick",
     "basePickName": "Braden Shick",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 84,
-    "volatility": 52,
+    "marketOnly": false,
+    "confidence": 63.7,
+    "volatility": 49,
     "tags": [
       "ATP Challenger",
       "Hard",
       "Prediction market",
-      "Market only",
-      "No model edge",
-      "Market favorite"
+      "Warehouse joined",
+      "Flashscore first",
+      "Coinflip price"
     ],
-    "reason": "Braden Shick is only the current Robinhood market favorite over Ronald Hohmann; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Recent service hold is close: Braden Shick 84%, Ronald Hohmann 84%. Lean, not a chase.",
+    "totals": "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": -3,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Braden Shick",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 84,
+        "firstServeWonPct": 71,
+        "secondServeWonPct": 68,
+        "firstServePct": 49,
+        "avgAces": 6.5,
+        "avgDoubleFaults": 1.5,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 69,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 3,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (84% hold)",
+          "wins enough first-serve points (71%)",
+          "second serve holds up (68%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Braden Shick has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Ronald Hohmann",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 84,
+        "firstServeWonPct": 79,
+        "secondServeWonPct": 50,
+        "firstServePct": 64,
+        "avgAces": 5,
+        "avgDoubleFaults": 2.8,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 67,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (84% hold)",
+          "wins enough first-serve points (79%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Ronald Hohmann has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Braden Shick",
-        "confidence": 88,
-        "modelPct": 84,
+        "confidence": 72,
+        "modelPct": 63.7,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Ronald Hohmann",
-        "confidence": 38,
-        "modelPct": 27,
+        "confidence": 58,
+        "modelPct": 40.9,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -19432,7 +23207,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Braden Shick",
         "americanOdds": null,
-        "modelPct": 84,
+        "modelPct": 63.7,
         "impliedPct": 84,
         "edgePct": null,
         "evPer100": null,
@@ -19459,11 +23234,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 8.8,
-        "confidence": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
-        "modelPct": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -19473,8 +23248,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Braden Shick",
-          "confidence": 88,
-          "modelPct": 84,
+          "confidence": 72,
+          "modelPct": 63.7,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -19482,8 +23257,8 @@ const rawTennisGames = [
         },
         {
           "name": "Ronald Hohmann",
-          "confidence": 38,
-          "modelPct": 27,
+          "confidence": 58,
+          "modelPct": 40.9,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -19500,7 +23275,7 @@ const rawTennisGames = [
         "selection": "Braden Shick",
         "line": null,
         "americanOdds": null,
-        "modelPct": 84,
+        "modelPct": 63.7,
         "impliedPct": 84,
         "edgePct": null,
         "evPer100": null,
@@ -19529,22 +23304,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Braden Shick 88% / Ronald Hohmann 38%",
+        "selection": "Braden Shick 72% / Ronald Hohmann 58%",
         "rows": [
           {
             "name": "Braden Shick",
-            "confidence": 88,
-            "modelPct": 84,
+            "confidence": 72,
+            "modelPct": 63.7,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Ronald Hohmann",
-            "confidence": 38,
-            "modelPct": 27,
+            "confidence": 58,
+            "modelPct": 40.9,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 88,
+        "confidence": 72,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -19552,8 +23327,8 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 8.8,
-        "confidence": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
@@ -19578,7 +23353,7 @@ const rawTennisGames = [
           "bidPct": 75,
           "lastTradePct": 82,
           "decimalOdds": null,
-          "modelPct": 84,
+          "modelPct": 63.7,
           "edgePct": null,
           "priceBand": "Very expensive favorite",
           "grossProfitPct": 16,
@@ -19596,7 +23371,7 @@ const rawTennisGames = [
           "bidPct": 18,
           "lastTradePct": 24,
           "decimalOdds": null,
-          "modelPct": 27,
+          "modelPct": 40.9,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 73,
@@ -19615,7 +23390,7 @@ const rawTennisGames = [
         "bidPct": 75,
         "lastTradePct": 82,
         "decimalOdds": null,
-        "modelPct": 84,
+        "modelPct": 63.7,
         "edgePct": null,
         "priceBand": "Very expensive favorite",
         "grossProfitPct": 16,
@@ -19640,35 +23415,78 @@ const rawTennisGames = [
       {
         "name": "Braden Shick",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 84,
+        "qualityName": "Braden Shick",
+        "profile": "Hard | Rank not joined | hold 84%",
+        "modelPct": 63.7,
         "weakness": {
           "name": "Braden Shick",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 84,
+          "firstServeWonPct": 71,
+          "secondServeWonPct": 68,
+          "firstServePct": 49,
+          "avgAces": 6.5,
+          "avgDoubleFaults": 1.5,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 69,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 3,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (84% hold)",
+            "wins enough first-serve points (71%)",
+            "second serve holds up (68%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Braden Shick has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Ronald Hohmann",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 27,
+        "qualityName": "Ronald Hohmann",
+        "profile": "Hard | Rank not joined | hold 84%",
+        "modelPct": 40.9,
         "weakness": {
           "name": "Ronald Hohmann",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 84,
+          "firstServeWonPct": 79,
+          "secondServeWonPct": 50,
+          "firstServePct": 64,
+          "avgAces": 5,
+          "avgDoubleFaults": 2.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 67,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (84% hold)",
+            "wins enough first-serve points (79%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Ronald Hohmann has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -19688,63 +23506,91 @@ const rawTennisGames = [
     "stage": "ATP Challenger Tyler | Round Of 32",
     "pickName": "Edas Butvilas",
     "basePickName": "Edas Butvilas",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 59,
-    "volatility": 70,
+    "marketOnly": false,
+    "confidence": 55.5,
+    "volatility": 47,
     "tags": [
       "ATP Challenger",
       "Hard",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Edas Butvilas is only the current Robinhood market favorite over Trevor Svajda; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Edas Butvilas has the recent service-hold edge 92% to 67%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 2,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Edas Butvilas",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 92,
+        "firstServeWonPct": 74,
+        "secondServeWonPct": 56,
+        "firstServePct": 65,
+        "avgAces": 5.6,
+        "avgDoubleFaults": 1.4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 68,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (92% hold)",
+          "wins enough first-serve points (74%)",
+          "second serve holds up (56%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Edas Butvilas has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Trevor Svajda",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 67,
+        "firstServeWonPct": 64,
+        "secondServeWonPct": 47,
+        "firstServePct": 55,
+        "avgAces": 3.6,
+        "avgDoubleFaults": 2.4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 57,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 2,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Trevor Svajda has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Edas Butvilas",
-        "confidence": 67,
-        "modelPct": 59,
+        "confidence": 64,
+        "modelPct": 55.5,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Trevor Svajda",
-        "confidence": 63,
-        "modelPct": 42,
+        "confidence": 67,
+        "modelPct": 44.9,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -19754,7 +23600,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Edas Butvilas",
         "americanOdds": null,
-        "modelPct": 59,
+        "modelPct": 55.5,
         "impliedPct": 59,
         "edgePct": null,
         "evPer100": null,
@@ -19781,11 +23627,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -19795,8 +23641,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Edas Butvilas",
-          "confidence": 67,
-          "modelPct": 59,
+          "confidence": 64,
+          "modelPct": 55.5,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -19804,8 +23650,8 @@ const rawTennisGames = [
         },
         {
           "name": "Trevor Svajda",
-          "confidence": 63,
-          "modelPct": 42,
+          "confidence": 67,
+          "modelPct": 44.9,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -19822,7 +23668,7 @@ const rawTennisGames = [
         "selection": "Edas Butvilas",
         "line": null,
         "americanOdds": null,
-        "modelPct": 59,
+        "modelPct": 55.5,
         "impliedPct": 59,
         "edgePct": null,
         "evPer100": null,
@@ -19851,18 +23697,18 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Edas Butvilas 67% / Trevor Svajda 63%",
+        "selection": "Edas Butvilas 64% / Trevor Svajda 67%",
         "rows": [
           {
             "name": "Edas Butvilas",
-            "confidence": 67,
-            "modelPct": 59,
+            "confidence": 64,
+            "modelPct": 55.5,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Trevor Svajda",
-            "confidence": 63,
-            "modelPct": 42,
+            "confidence": 67,
+            "modelPct": 44.9,
             "label": "Underdog set-win path needs early holds"
           }
         ],
@@ -19874,10 +23720,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -19900,7 +23746,7 @@ const rawTennisGames = [
           "bidPct": 58,
           "lastTradePct": 58,
           "decimalOdds": null,
-          "modelPct": 59,
+          "modelPct": 55.5,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 41,
@@ -19918,7 +23764,7 @@ const rawTennisGames = [
           "bidPct": 39,
           "lastTradePct": 42,
           "decimalOdds": null,
-          "modelPct": 42,
+          "modelPct": 44.9,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 58,
@@ -19937,7 +23783,7 @@ const rawTennisGames = [
         "bidPct": 58,
         "lastTradePct": 58,
         "decimalOdds": null,
-        "modelPct": 59,
+        "modelPct": 55.5,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 41,
@@ -19962,35 +23808,75 @@ const rawTennisGames = [
       {
         "name": "Edas Butvilas",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 59,
+        "qualityName": "Edas Butvilas",
+        "profile": "Hard | Rank not joined | hold 92%",
+        "modelPct": 55.5,
         "weakness": {
           "name": "Edas Butvilas",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 92,
+          "firstServeWonPct": 74,
+          "secondServeWonPct": 56,
+          "firstServePct": 65,
+          "avgAces": 5.6,
+          "avgDoubleFaults": 1.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 68,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (92% hold)",
+            "wins enough first-serve points (74%)",
+            "second serve holds up (56%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Edas Butvilas has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Trevor Svajda",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 42,
+        "qualityName": "Trevor Svajda",
+        "profile": "Hard | Rank not joined | hold 67%",
+        "modelPct": 44.9,
         "weakness": {
           "name": "Trevor Svajda",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 67,
+          "firstServeWonPct": 64,
+          "secondServeWonPct": 47,
+          "firstServePct": 55,
+          "avgAces": 3.6,
+          "avgDoubleFaults": 2.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 57,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 2,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Trevor Svajda has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -20010,63 +23896,90 @@ const rawTennisGames = [
     "stage": "ATP Challenger Tyler | Round Of 32",
     "pickName": "Andre Ilagan",
     "basePickName": "Andre Ilagan",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 55,
-    "volatility": 74,
+    "marketOnly": false,
+    "confidence": 52.1,
+    "volatility": 50,
     "tags": [
       "ATP Challenger",
       "Hard",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Andre Ilagan is only the current Robinhood market favorite over Fajing Sun; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Recent service hold is close: Andre Ilagan 73%, Fajing Sun 76%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": -2,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Andre Ilagan",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 73,
+        "firstServeWonPct": 68,
+        "secondServeWonPct": 51,
+        "firstServePct": 54,
+        "avgAces": 4.6,
+        "avgDoubleFaults": 3,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 60,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 2,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Andre Ilagan has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Fajing Sun",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 76,
+        "firstServeWonPct": 71,
+        "secondServeWonPct": 48,
+        "firstServePct": 60,
+        "avgAces": 2.2,
+        "avgDoubleFaults": 1.8,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 64,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (76% hold)",
+          "wins enough first-serve points (71%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Fajing Sun has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Fajing Sun",
-        "confidence": 67,
-        "modelPct": 47,
+        "confidence": 70,
+        "modelPct": 48.7,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Andre Ilagan",
-        "confidence": 63,
-        "modelPct": 55,
+        "confidence": 60,
+        "modelPct": 52.1,
         "label": "Market favorite to win a set"
       }
     ],
@@ -20076,7 +23989,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Andre Ilagan",
         "americanOdds": null,
-        "modelPct": 55,
+        "modelPct": 52.1,
         "impliedPct": 55,
         "edgePct": null,
         "evPer100": null,
@@ -20103,11 +24016,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 10.1,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -20117,8 +24030,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Fajing Sun",
-          "confidence": 67,
-          "modelPct": 47,
+          "confidence": 70,
+          "modelPct": 48.7,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -20126,8 +24039,8 @@ const rawTennisGames = [
         },
         {
           "name": "Andre Ilagan",
-          "confidence": 63,
-          "modelPct": 55,
+          "confidence": 60,
+          "modelPct": 52.1,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -20144,7 +24057,7 @@ const rawTennisGames = [
         "selection": "Andre Ilagan",
         "line": null,
         "americanOdds": null,
-        "modelPct": 55,
+        "modelPct": 52.1,
         "impliedPct": 55,
         "edgePct": null,
         "evPer100": null,
@@ -20173,22 +24086,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Fajing Sun 67% / Andre Ilagan 63%",
+        "selection": "Fajing Sun 70% / Andre Ilagan 60%",
         "rows": [
           {
             "name": "Fajing Sun",
-            "confidence": 67,
-            "modelPct": 47,
+            "confidence": 70,
+            "modelPct": 48.7,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Andre Ilagan",
-            "confidence": 63,
-            "modelPct": 55,
+            "confidence": 60,
+            "modelPct": 52.1,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 67,
+        "confidence": 70,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -20196,10 +24109,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 10.1,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -20222,7 +24135,7 @@ const rawTennisGames = [
           "bidPct": 45,
           "lastTradePct": 46,
           "decimalOdds": null,
-          "modelPct": 47,
+          "modelPct": 48.7,
           "edgePct": null,
           "priceBand": "Coinflip",
           "grossProfitPct": 53,
@@ -20240,7 +24153,7 @@ const rawTennisGames = [
           "bidPct": 52,
           "lastTradePct": 54,
           "decimalOdds": null,
-          "modelPct": 55,
+          "modelPct": 52.1,
           "edgePct": null,
           "priceBand": "Coinflip",
           "grossProfitPct": 45,
@@ -20259,7 +24172,7 @@ const rawTennisGames = [
         "bidPct": 52,
         "lastTradePct": 54,
         "decimalOdds": null,
-        "modelPct": 55,
+        "modelPct": 52.1,
         "edgePct": null,
         "priceBand": "Coinflip",
         "grossProfitPct": 45,
@@ -20284,35 +24197,74 @@ const rawTennisGames = [
       {
         "name": "Fajing Sun",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 47,
+        "qualityName": "Fajing Sun",
+        "profile": "Hard | Rank not joined | hold 76%",
+        "modelPct": 48.7,
         "weakness": {
           "name": "Fajing Sun",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 76,
+          "firstServeWonPct": 71,
+          "secondServeWonPct": 48,
+          "firstServePct": 60,
+          "avgAces": 2.2,
+          "avgDoubleFaults": 1.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 64,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (76% hold)",
+            "wins enough first-serve points (71%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Fajing Sun has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Andre Ilagan",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 55,
+        "qualityName": "Andre Ilagan",
+        "profile": "Hard | Rank not joined | hold 73%",
+        "modelPct": 52.1,
         "weakness": {
           "name": "Andre Ilagan",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 73,
+          "firstServeWonPct": 68,
+          "secondServeWonPct": 51,
+          "firstServePct": 54,
+          "avgAces": 4.6,
+          "avgDoubleFaults": 3,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 60,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 2,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Andre Ilagan has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -20332,63 +24284,89 @@ const rawTennisGames = [
     "stage": "ATP Challenger Tyler | Round Of 32",
     "pickName": "Henry Searle",
     "basePickName": "Henry Searle",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 60,
-    "volatility": 70,
+    "marketOnly": false,
+    "confidence": 53.6,
+    "volatility": 49,
     "tags": [
       "ATP Challenger",
       "Hard",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Henry Searle is only the current Robinhood market favorite over Mitchell Krueger; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Mitchell Krueger has the recent service-hold edge 75% to 72%, so Henry Searle needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": -5,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Henry Searle",
-        "weaknessScore": null,
+        "serviceHoldPct": 72,
+        "firstServeWonPct": 69,
+        "secondServeWonPct": 53,
+        "firstServePct": 54,
+        "avgAces": 2.3,
+        "avgDoubleFaults": 4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 61,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 5,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "double-fault pressure (4.0 avg)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Henry Searle can drop points quickly through double-fault pressure (4.0 avg)."
       },
       "opponent": {
         "name": "Mitchell Krueger",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 75,
+        "firstServeWonPct": 65,
+        "secondServeWonPct": 50,
+        "firstServePct": 68,
+        "avgAces": 3.6,
+        "avgDoubleFaults": 1.8,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 61,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Mitchell Krueger has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Henry Searle",
-        "confidence": 68,
-        "modelPct": 60,
+        "confidence": 62,
+        "modelPct": 53.6,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Mitchell Krueger",
-        "confidence": 62,
-        "modelPct": 43,
+        "confidence": 68,
+        "modelPct": 47.6,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -20398,7 +24376,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Henry Searle",
         "americanOdds": null,
-        "modelPct": 60,
+        "modelPct": 53.6,
         "impliedPct": 60,
         "edgePct": null,
         "evPer100": null,
@@ -20425,11 +24403,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -20439,8 +24417,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Henry Searle",
-          "confidence": 68,
-          "modelPct": 60,
+          "confidence": 62,
+          "modelPct": 53.6,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -20448,8 +24426,8 @@ const rawTennisGames = [
         },
         {
           "name": "Mitchell Krueger",
-          "confidence": 62,
-          "modelPct": 43,
+          "confidence": 68,
+          "modelPct": 47.6,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -20466,7 +24444,7 @@ const rawTennisGames = [
         "selection": "Henry Searle",
         "line": null,
         "americanOdds": null,
-        "modelPct": 60,
+        "modelPct": 53.6,
         "impliedPct": 60,
         "edgePct": null,
         "evPer100": null,
@@ -20495,18 +24473,18 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Henry Searle 68% / Mitchell Krueger 62%",
+        "selection": "Henry Searle 62% / Mitchell Krueger 68%",
         "rows": [
           {
             "name": "Henry Searle",
-            "confidence": 68,
-            "modelPct": 60,
+            "confidence": 62,
+            "modelPct": 53.6,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Mitchell Krueger",
-            "confidence": 62,
-            "modelPct": 43,
+            "confidence": 68,
+            "modelPct": 47.6,
             "label": "Underdog set-win path needs early holds"
           }
         ],
@@ -20518,10 +24496,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -20544,7 +24522,7 @@ const rawTennisGames = [
           "bidPct": 57,
           "lastTradePct": 58,
           "decimalOdds": null,
-          "modelPct": 60,
+          "modelPct": 53.6,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 40,
@@ -20562,7 +24540,7 @@ const rawTennisGames = [
           "bidPct": 39,
           "lastTradePct": 42,
           "decimalOdds": null,
-          "modelPct": 43,
+          "modelPct": 47.6,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 57,
@@ -20581,7 +24559,7 @@ const rawTennisGames = [
         "bidPct": 57,
         "lastTradePct": 58,
         "decimalOdds": null,
-        "modelPct": 60,
+        "modelPct": 53.6,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 40,
@@ -20606,35 +24584,73 @@ const rawTennisGames = [
       {
         "name": "Henry Searle",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 60,
+        "qualityName": "Henry Searle",
+        "profile": "Hard | Rank not joined | hold 72%",
+        "modelPct": 53.6,
         "weakness": {
           "name": "Henry Searle",
-          "weaknessScore": null,
+          "serviceHoldPct": 72,
+          "firstServeWonPct": 69,
+          "secondServeWonPct": 53,
+          "firstServePct": 54,
+          "avgAces": 2.3,
+          "avgDoubleFaults": 4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 61,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 5,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "double-fault pressure (4.0 avg)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Henry Searle can drop points quickly through double-fault pressure (4.0 avg)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Mitchell Krueger",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 43,
+        "qualityName": "Mitchell Krueger",
+        "profile": "Hard | Rank not joined | hold 75%",
+        "modelPct": 47.6,
         "weakness": {
           "name": "Mitchell Krueger",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 75,
+          "firstServeWonPct": 65,
+          "secondServeWonPct": 50,
+          "firstServePct": 68,
+          "avgAces": 3.6,
+          "avgDoubleFaults": 1.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 61,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Mitchell Krueger has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -20654,63 +24670,94 @@ const rawTennisGames = [
     "stage": "ATP Challenger Tyler | Round Of 32",
     "pickName": "Johannus Monday",
     "basePickName": "Johannus Monday",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 64,
-    "volatility": 66,
+    "marketOnly": false,
+    "confidence": 56.5,
+    "volatility": 49,
     "tags": [
       "ATP Challenger",
       "Hard",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Johannus Monday is only the current Robinhood market favorite over Blaise Bicknell; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Johannus Monday has the recent service-hold edge 92% to 80%. Lean, not a chase.",
+    "totals": "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 0,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Johannus Monday",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 92,
+        "firstServeWonPct": 71,
+        "secondServeWonPct": 60,
+        "firstServePct": 60,
+        "avgAces": 3.8,
+        "avgDoubleFaults": 2.5,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 66,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (92% hold)",
+          "wins enough first-serve points (71%)",
+          "second serve holds up (60%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Johannus Monday has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Blaise Bicknell",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 80,
+        "firstServeWonPct": 69,
+        "secondServeWonPct": 55,
+        "firstServePct": 66,
+        "avgAces": 3.6,
+        "avgDoubleFaults": 1.6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 64,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (80% hold)",
+          "second serve holds up (55%)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Blaise Bicknell has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Johannus Monday",
-        "confidence": 72,
-        "modelPct": 64,
+        "confidence": 65,
+        "modelPct": 56.5,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Blaise Bicknell",
-        "confidence": 58,
-        "modelPct": 37,
+        "confidence": 66,
+        "modelPct": 44,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -20720,7 +24767,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Johannus Monday",
         "americanOdds": null,
-        "modelPct": 64,
+        "modelPct": 56.5,
         "impliedPct": 64,
         "edgePct": null,
         "evPer100": null,
@@ -20747,11 +24794,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -20761,8 +24808,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Johannus Monday",
-          "confidence": 72,
-          "modelPct": 64,
+          "confidence": 65,
+          "modelPct": 56.5,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -20770,8 +24817,8 @@ const rawTennisGames = [
         },
         {
           "name": "Blaise Bicknell",
-          "confidence": 58,
-          "modelPct": 37,
+          "confidence": 66,
+          "modelPct": 44,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -20788,7 +24835,7 @@ const rawTennisGames = [
         "selection": "Johannus Monday",
         "line": null,
         "americanOdds": null,
-        "modelPct": 64,
+        "modelPct": 56.5,
         "impliedPct": 64,
         "edgePct": null,
         "evPer100": null,
@@ -20817,22 +24864,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Johannus Monday 72% / Blaise Bicknell 58%",
+        "selection": "Johannus Monday 65% / Blaise Bicknell 66%",
         "rows": [
           {
             "name": "Johannus Monday",
-            "confidence": 72,
-            "modelPct": 64,
+            "confidence": 65,
+            "modelPct": 56.5,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Blaise Bicknell",
-            "confidence": 58,
-            "modelPct": 37,
+            "confidence": 66,
+            "modelPct": 44,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 72,
+        "confidence": 66,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -20840,10 +24887,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.2,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -20866,7 +24913,7 @@ const rawTennisGames = [
           "bidPct": 62,
           "lastTradePct": 64,
           "decimalOdds": null,
-          "modelPct": 64,
+          "modelPct": 56.5,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 36,
@@ -20884,7 +24931,7 @@ const rawTennisGames = [
           "bidPct": 35,
           "lastTradePct": 35,
           "decimalOdds": null,
-          "modelPct": 37,
+          "modelPct": 44,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 63,
@@ -20903,7 +24950,7 @@ const rawTennisGames = [
         "bidPct": 62,
         "lastTradePct": 64,
         "decimalOdds": null,
-        "modelPct": 64,
+        "modelPct": 56.5,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 36,
@@ -20928,35 +24975,78 @@ const rawTennisGames = [
       {
         "name": "Johannus Monday",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 64,
+        "qualityName": "Johannus Monday",
+        "profile": "Hard | Rank not joined | hold 92%",
+        "modelPct": 56.5,
         "weakness": {
           "name": "Johannus Monday",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 92,
+          "firstServeWonPct": 71,
+          "secondServeWonPct": 60,
+          "firstServePct": 60,
+          "avgAces": 3.8,
+          "avgDoubleFaults": 2.5,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 66,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (92% hold)",
+            "wins enough first-serve points (71%)",
+            "second serve holds up (60%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Johannus Monday has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Blaise Bicknell",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 37,
+        "qualityName": "Blaise Bicknell",
+        "profile": "Hard | Rank not joined | hold 80%",
+        "modelPct": 44,
         "weakness": {
           "name": "Blaise Bicknell",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 80,
+          "firstServeWonPct": 69,
+          "secondServeWonPct": 55,
+          "firstServePct": 66,
+          "avgAces": 3.6,
+          "avgDoubleFaults": 1.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 64,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (80% hold)",
+            "second serve holds up (55%)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Blaise Bicknell has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -20976,63 +25066,89 @@ const rawTennisGames = [
     "stage": "ATP Challenger Tyler | Round Of 32",
     "pickName": "Tyler Zink",
     "basePickName": "Tyler Zink",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 86,
-    "volatility": 46,
+    "marketOnly": false,
+    "confidence": 66.9,
+    "volatility": 48,
     "tags": [
       "ATP Challenger",
       "Hard",
       "Prediction market",
-      "Market only",
-      "No model edge",
-      "Market favorite"
+      "Warehouse joined",
+      "Flashscore first",
+      "Coinflip price"
     ],
-    "reason": "Tyler Zink is only the current Robinhood market favorite over Landon Ardila; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Tyler Zink has the cleaner composite of rank, recent opponent quality, and joined service data; clay record is context only on Hard. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 0,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Tyler Zink",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
+        "serviceHoldPct": 81,
+        "firstServeWonPct": 70,
+        "secondServeWonPct": 54,
+        "firstServePct": 60,
+        "avgAces": 4.6,
+        "avgDoubleFaults": 1.8,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 64,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (81% hold)"
         ],
-        "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Tyler Zink has no major service weakness in the joined Flashscore sample."
       },
       "opponent": {
         "name": "Landon Ardila",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": null,
+        "firstServeWonPct": null,
+        "secondServeWonPct": null,
+        "firstServePct": null,
+        "avgAces": null,
+        "avgDoubleFaults": null,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": null,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Landon Ardila has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Landon Ardila",
-        "confidence": 36,
-        "modelPct": 15,
+        "confidence": 55,
+        "modelPct": 33.6,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Tyler Zink",
-        "confidence": 88,
-        "modelPct": 86,
+        "confidence": 75,
+        "modelPct": 66.9,
         "label": "Market favorite to win a set"
       }
     ],
@@ -21042,7 +25158,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Tyler Zink",
         "americanOdds": null,
-        "modelPct": 86,
+        "modelPct": 66.9,
         "impliedPct": 86,
         "edgePct": null,
         "evPer100": null,
@@ -21069,11 +25185,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 8.8,
-        "confidence": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
-        "modelPct": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -21083,8 +25199,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Landon Ardila",
-          "confidence": 36,
-          "modelPct": 15,
+          "confidence": 55,
+          "modelPct": 33.6,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -21092,8 +25208,8 @@ const rawTennisGames = [
         },
         {
           "name": "Tyler Zink",
-          "confidence": 88,
-          "modelPct": 86,
+          "confidence": 75,
+          "modelPct": 66.9,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -21110,7 +25226,7 @@ const rawTennisGames = [
         "selection": "Tyler Zink",
         "line": null,
         "americanOdds": null,
-        "modelPct": 86,
+        "modelPct": 66.9,
         "impliedPct": 86,
         "edgePct": null,
         "evPer100": null,
@@ -21139,22 +25255,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Landon Ardila 36% / Tyler Zink 88%",
+        "selection": "Landon Ardila 55% / Tyler Zink 75%",
         "rows": [
           {
             "name": "Landon Ardila",
-            "confidence": 36,
-            "modelPct": 15,
+            "confidence": 55,
+            "modelPct": 33.6,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Tyler Zink",
-            "confidence": 88,
-            "modelPct": 86,
+            "confidence": 75,
+            "modelPct": 66.9,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 88,
+        "confidence": 75,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -21162,8 +25278,8 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 8.8,
-        "confidence": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
@@ -21188,7 +25304,7 @@ const rawTennisGames = [
           "bidPct": 14,
           "lastTradePct": 15,
           "decimalOdds": null,
-          "modelPct": 15,
+          "modelPct": 33.6,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 85,
@@ -21206,7 +25322,7 @@ const rawTennisGames = [
           "bidPct": 84,
           "lastTradePct": 86,
           "decimalOdds": null,
-          "modelPct": 86,
+          "modelPct": 66.9,
           "edgePct": null,
           "priceBand": "Very expensive favorite",
           "grossProfitPct": 14,
@@ -21225,7 +25341,7 @@ const rawTennisGames = [
         "bidPct": 84,
         "lastTradePct": 86,
         "decimalOdds": null,
-        "modelPct": 86,
+        "modelPct": 66.9,
         "edgePct": null,
         "priceBand": "Very expensive favorite",
         "grossProfitPct": 14,
@@ -21252,33 +25368,71 @@ const rawTennisGames = [
         "ranking": null,
         "qualityName": null,
         "profile": "Hard | Rank not joined",
-        "modelPct": 15,
+        "modelPct": 33.6,
         "weakness": {
           "name": "Landon Ardila",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": null,
+          "firstServeWonPct": null,
+          "secondServeWonPct": null,
+          "firstServePct": null,
+          "avgAces": null,
+          "avgDoubleFaults": null,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": null,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Landon Ardila has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 0,
+          "recentRows": 5,
+          "recentMatches": 3,
+          "source": "Flashscore recent-form metric fallback"
         }
       },
       {
         "name": "Tyler Zink",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 86,
+        "qualityName": "Tyler Zink",
+        "profile": "Hard | Rank not joined | hold 81%",
+        "modelPct": 66.9,
         "weakness": {
           "name": "Tyler Zink",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
+          "serviceHoldPct": 81,
+          "firstServeWonPct": 70,
+          "secondServeWonPct": 54,
+          "firstServePct": 60,
+          "avgAces": 4.6,
+          "avgDoubleFaults": 1.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 64,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (81% hold)"
           ],
-          "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Tyler Zink has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -21298,63 +25452,97 @@ const rawTennisGames = [
     "stage": "ATP Challenger Tyler | Round Of 32",
     "pickName": "Andres Andrade",
     "basePickName": "Andres Andrade",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 72,
-    "volatility": 59,
+    "marketOnly": false,
+    "confidence": 59.2,
+    "volatility": 58,
     "tags": [
       "ATP Challenger",
       "Hard",
       "Prediction market",
-      "Market only",
-      "No model edge",
-      "Market favorite"
+      "Warehouse joined",
+      "Flashscore first",
+      "Coinflip price"
     ],
-    "reason": "Andres Andrade is only the current Robinhood market favorite over Timo Legout; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Recent service hold is close: Andres Andrade 59%, Timo Legout 58%. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": -3,
       "attackingSide": null,
       "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "Pre-match spread is fragile; wait for both players to serve once.",
+      "totalRead": "Avoid low unders if either player faces early break points or second-serve pressure.",
       "pick": {
         "name": "Andres Andrade",
-        "weaknessScore": null,
+        "serviceHoldPct": 59,
+        "firstServeWonPct": 62,
+        "secondServeWonPct": 35,
+        "firstServePct": 62,
+        "avgAces": 2.4,
+        "avgDoubleFaults": 5.6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 52,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 25,
+        "firstGameComfort": "Needs early holds confirmed",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "low recent hold rate (59%)",
+          "first-serve points won below comfort (62%)",
+          "second-serve points won are attackable (35%)",
+          "double-fault pressure (5.6 avg)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Andres Andrade can drop points quickly through low recent hold rate (59%) and first-serve points won below comfort (62%)."
       },
       "opponent": {
         "name": "Timo Legout",
-        "weaknessScore": null,
+        "serviceHoldPct": 58,
+        "firstServeWonPct": 61,
+        "secondServeWonPct": 37,
+        "firstServePct": 66,
+        "avgAces": null,
+        "avgDoubleFaults": 4.5,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 53,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 22,
+        "firstGameComfort": "Needs early holds confirmed",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "low recent hold rate (58%)",
+          "first-serve points won below comfort (61%)",
+          "second-serve points won are attackable (37%)",
+          "double-fault pressure (4.5 avg)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Timo Legout can drop points quickly through low recent hold rate (58%) and first-serve points won below comfort (61%)."
       }
     },
     "setWinProjections": [
       {
         "name": "Timo Legout",
-        "confidence": 50,
-        "modelPct": 30,
+        "confidence": 63,
+        "modelPct": 41.6,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Andres Andrade",
-        "confidence": 80,
-        "modelPct": 72,
+        "confidence": 67,
+        "modelPct": 59.2,
         "label": "Market favorite to win a set"
       }
     ],
@@ -21364,7 +25552,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Andres Andrade",
         "americanOdds": null,
-        "modelPct": 72,
+        "modelPct": 59.2,
         "impliedPct": 72,
         "edgePct": null,
         "evPer100": null,
@@ -21391,11 +25579,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 8.8,
-        "confidence": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
-        "modelPct": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -21405,8 +25593,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Timo Legout",
-          "confidence": 50,
-          "modelPct": 30,
+          "confidence": 63,
+          "modelPct": 41.6,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -21414,8 +25602,8 @@ const rawTennisGames = [
         },
         {
           "name": "Andres Andrade",
-          "confidence": 80,
-          "modelPct": 72,
+          "confidence": 67,
+          "modelPct": 59.2,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -21432,7 +25620,7 @@ const rawTennisGames = [
         "selection": "Andres Andrade",
         "line": null,
         "americanOdds": null,
-        "modelPct": 72,
+        "modelPct": 59.2,
         "impliedPct": 72,
         "edgePct": null,
         "evPer100": null,
@@ -21461,22 +25649,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Timo Legout 50% / Andres Andrade 80%",
+        "selection": "Timo Legout 63% / Andres Andrade 67%",
         "rows": [
           {
             "name": "Timo Legout",
-            "confidence": 50,
-            "modelPct": 30,
+            "confidence": 63,
+            "modelPct": 41.6,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Andres Andrade",
-            "confidence": 80,
-            "modelPct": 72,
+            "confidence": 67,
+            "modelPct": 59.2,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 80,
+        "confidence": 67,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -21484,8 +25672,8 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 8.8,
-        "confidence": 48,
+        "expectedGames": 9.2,
+        "confidence": 50,
         "tiebreakRisk": 52,
         "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
@@ -21510,7 +25698,7 @@ const rawTennisGames = [
           "bidPct": 29,
           "lastTradePct": 29,
           "decimalOdds": null,
-          "modelPct": 30,
+          "modelPct": 41.6,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 70,
@@ -21528,7 +25716,7 @@ const rawTennisGames = [
           "bidPct": 70,
           "lastTradePct": 72,
           "decimalOdds": null,
-          "modelPct": 72,
+          "modelPct": 59.2,
           "edgePct": null,
           "priceBand": "Low-payout favorite",
           "grossProfitPct": 28,
@@ -21547,7 +25735,7 @@ const rawTennisGames = [
         "bidPct": 70,
         "lastTradePct": 72,
         "decimalOdds": null,
-        "modelPct": 72,
+        "modelPct": 59.2,
         "edgePct": null,
         "priceBand": "Low-payout favorite",
         "grossProfitPct": 28,
@@ -21572,35 +25760,81 @@ const rawTennisGames = [
       {
         "name": "Timo Legout",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 30,
+        "qualityName": "Timo Legout",
+        "profile": "Hard | Rank not joined | hold 58%",
+        "modelPct": 41.6,
         "weakness": {
           "name": "Timo Legout",
-          "weaknessScore": null,
+          "serviceHoldPct": 58,
+          "firstServeWonPct": 61,
+          "secondServeWonPct": 37,
+          "firstServePct": 66,
+          "avgAces": null,
+          "avgDoubleFaults": 4.5,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 53,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 22,
+          "firstGameComfort": "Needs early holds confirmed",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "low recent hold rate (58%)",
+            "first-serve points won below comfort (61%)",
+            "second-serve points won are attackable (37%)",
+            "double-fault pressure (4.5 avg)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Timo Legout can drop points quickly through low recent hold rate (58%) and first-serve points won below comfort (61%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
         "name": "Andres Andrade",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 72,
+        "qualityName": "Andres Andrade",
+        "profile": "Hard | Rank not joined | hold 59%",
+        "modelPct": 59.2,
         "weakness": {
           "name": "Andres Andrade",
-          "weaknessScore": null,
+          "serviceHoldPct": 59,
+          "firstServeWonPct": 62,
+          "secondServeWonPct": 35,
+          "firstServePct": 62,
+          "avgAces": 2.4,
+          "avgDoubleFaults": 5.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 52,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 25,
+          "firstGameComfort": "Needs early holds confirmed",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "low recent hold rate (59%)",
+            "first-serve points won below comfort (62%)",
+            "second-serve points won are attackable (35%)",
+            "double-fault pressure (5.6 avg)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Andres Andrade can drop points quickly through low recent hold rate (59%) and first-serve points won below comfort (62%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -21620,63 +25854,90 @@ const rawTennisGames = [
     "stage": "ATP Challenger Tyler | Round Of 32",
     "pickName": "Dane Sweeny",
     "basePickName": "Dane Sweeny",
-    "modelSource": "Robinhood market watch only",
+    "modelSource": "Flashscore/SofaScore warehouse Challenger model",
     "modelSplit": false,
-    "marketOnly": true,
-    "confidence": 59,
-    "volatility": 71,
+    "marketOnly": false,
+    "confidence": 52.6,
+    "volatility": 49,
     "tags": [
       "ATP Challenger",
       "Hard",
       "Prediction market",
-      "Market only",
-      "No model edge",
+      "Warehouse joined",
+      "Flashscore first",
       "Coinflip price"
     ],
-    "reason": "Dane Sweeny is only the current Robinhood market favorite over Yuta Shimizu; Hard surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
-    "totals": "No posted sportsbook total captured for this Challenger market.",
+    "reason": "Yuta Shimizu has the recent service-hold edge 69% to 60%, so Dane Sweeny needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Market-only",
-      "target": "No warehouse weakness edge",
-      "scoreGap": null,
+      "edgeType": "Weakness warning",
+      "target": "Dane Sweeny",
+      "scoreGap": -14,
       "attackingSide": null,
-      "vulnerableSide": null,
-      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
-      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
-      "spreadRead": "No spread line",
-      "totalRead": "No total line",
+      "vulnerableSide": "Dane Sweeny",
+      "gameFlow": "Dane Sweeny is the model side, but the fragile profile is on our pick: low recent hold rate (60%); second-serve points won are attackable (41%). Avoid laying a bad price until early holds are confirmed.",
+      "liveTrigger": "Do not upgrade Dane Sweeny unless they hold cleanly in the first service game and keep double faults down.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Dane Sweeny",
-        "weaknessScore": null,
+        "serviceHoldPct": 60,
+        "firstServeWonPct": 62,
+        "secondServeWonPct": 41,
+        "firstServePct": 62,
+        "avgAces": 1,
+        "avgDoubleFaults": 3.4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 53,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 14,
+        "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [
-          "No warehouse weakness data joined yet"
+          "low recent hold rate (60%)",
+          "second-serve points won are attackable (41%)"
         ],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Dane Sweeny can drop points quickly through low recent hold rate (60%) and second-serve points won are attackable (41%)."
       },
       "opponent": {
         "name": "Yuta Shimizu",
-        "weaknessScore": null,
-        "liabilities": [
-          "No warehouse weakness data joined yet"
-        ],
+        "serviceHoldPct": 69,
+        "firstServeWonPct": 64,
+        "secondServeWonPct": 52,
+        "firstServePct": 65,
+        "avgAces": 3.4,
+        "avgDoubleFaults": 2.6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": 60,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
         "strengths": [],
-        "firstGameComfort": "Market-only row; wait for serve pressure data",
-        "gameFlowRead": "No service/break profile joined yet."
+        "gameFlowRead": "Yuta Shimizu has no major service weakness in the joined Flashscore sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Yuta Shimizu",
-        "confidence": 63,
-        "modelPct": 44,
+        "confidence": 69,
+        "modelPct": 48.6,
         "label": "Underdog set-win path needs early holds"
       },
       {
         "name": "Dane Sweeny",
-        "confidence": 67,
-        "modelPct": 59,
+        "confidence": 61,
+        "modelPct": 52.6,
         "label": "Market favorite to win a set"
       }
     ],
@@ -21686,7 +25947,7 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Dane Sweeny",
         "americanOdds": null,
-        "modelPct": 59,
+        "modelPct": 52.6,
         "impliedPct": 59,
         "edgePct": null,
         "evPer100": null,
@@ -21713,11 +25974,11 @@ const rawTennisGames = [
         "selection": "Price required",
         "line": null,
         "americanOdds": null,
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
-        "modelPct": 53,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
         "evPer100": null,
         "netEvPer100": null,
         "valueGrade": "Needs posted first-set total",
@@ -21727,8 +25988,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Yuta Shimizu",
-          "confidence": 63,
-          "modelPct": 44,
+          "confidence": 69,
+          "modelPct": 48.6,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -21736,8 +25997,8 @@ const rawTennisGames = [
         },
         {
           "name": "Dane Sweeny",
-          "confidence": 67,
-          "modelPct": 59,
+          "confidence": 61,
+          "modelPct": 52.6,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -21754,7 +26015,7 @@ const rawTennisGames = [
         "selection": "Dane Sweeny",
         "line": null,
         "americanOdds": null,
-        "modelPct": 59,
+        "modelPct": 52.6,
         "impliedPct": 59,
         "edgePct": null,
         "evPer100": null,
@@ -21783,22 +26044,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Yuta Shimizu 63% / Dane Sweeny 67%",
+        "selection": "Yuta Shimizu 69% / Dane Sweeny 61%",
         "rows": [
           {
             "name": "Yuta Shimizu",
-            "confidence": 63,
-            "modelPct": 44,
+            "confidence": 69,
+            "modelPct": 48.6,
             "label": "Underdog set-win path needs early holds"
           },
           {
             "name": "Dane Sweeny",
-            "confidence": 67,
-            "modelPct": 59,
+            "confidence": 61,
+            "modelPct": 52.6,
             "label": "Market favorite to win a set"
           }
         ],
-        "confidence": 67,
+        "confidence": 69,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -21806,10 +26067,10 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Price required",
-        "expectedGames": 9.8,
-        "confidence": 53,
-        "tiebreakRisk": 42,
-        "earlyBreakRisk": 58,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
         "grade": "Needs posted first-set total",
         "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
       }
@@ -21832,7 +26093,7 @@ const rawTennisGames = [
           "bidPct": 43,
           "lastTradePct": 44,
           "decimalOdds": null,
-          "modelPct": 44,
+          "modelPct": 48.6,
           "edgePct": null,
           "priceBand": "Underdog",
           "grossProfitPct": 56,
@@ -21850,7 +26111,7 @@ const rawTennisGames = [
           "bidPct": 56,
           "lastTradePct": 59,
           "decimalOdds": null,
-          "modelPct": 59,
+          "modelPct": 52.6,
           "edgePct": null,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 41,
@@ -21869,7 +26130,7 @@ const rawTennisGames = [
         "bidPct": 56,
         "lastTradePct": 59,
         "decimalOdds": null,
-        "modelPct": 59,
+        "modelPct": 52.6,
         "edgePct": null,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 41,
@@ -21894,18 +26155,36 @@ const rawTennisGames = [
       {
         "name": "Yuta Shimizu",
         "ranking": null,
-        "qualityName": null,
-        "profile": "Hard | Rank not joined",
-        "modelPct": 44,
+        "qualityName": "Yuta Shimizu",
+        "profile": "Hard | Rank not joined | hold 69%",
+        "modelPct": 48.6,
         "weakness": {
           "name": "Yuta Shimizu",
-          "weaknessScore": null,
-          "liabilities": [
-            "No warehouse weakness data joined yet"
-          ],
+          "serviceHoldPct": 69,
+          "firstServeWonPct": 64,
+          "secondServeWonPct": 52,
+          "firstServePct": 65,
+          "avgAces": 3.4,
+          "avgDoubleFaults": 2.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 60,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Yuta Shimizu has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       },
       {
@@ -21921,18 +26200,39 @@ const rawTennisGames = [
           "profileUrl": "https://www.espn.com/tennis/player/_/id/4030/dane-sweeny",
           "asOf": "2026-06-02"
         },
-        "qualityName": null,
-        "profile": "Hard | Live rank #131 | Australia | age 25",
-        "modelPct": 59,
+        "qualityName": "Dane Sweeny",
+        "profile": "Hard | Live rank #131 | Australia | age 25 | hold 60%",
+        "modelPct": 52.6,
         "weakness": {
           "name": "Dane Sweeny",
-          "weaknessScore": null,
+          "serviceHoldPct": 60,
+          "firstServeWonPct": 62,
+          "secondServeWonPct": 41,
+          "firstServePct": 62,
+          "avgAces": 1,
+          "avgDoubleFaults": 3.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": 53,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 14,
+          "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [
-            "No warehouse weakness data joined yet"
+            "low recent hold rate (60%)",
+            "second-serve points won are attackable (41%)"
           ],
           "strengths": [],
-          "firstGameComfort": "Market-only row; wait for serve pressure data",
-          "gameFlowRead": "No service/break profile joined yet."
+          "gameFlowRead": "Dane Sweeny can drop points quickly through low recent hold rate (60%) and second-serve points won are attackable (41%)."
+        },
+        "warehouseDepth": {
+          "expectedRows": 14,
+          "recentRows": 5,
+          "recentMatches": 5,
+          "source": "Flashscore player-page recent-match stats"
         }
       }
     ]
@@ -22144,7 +26444,7 @@ const rawTennisGames = [
           "returnPointsWonPct": 37,
           "returnGamesWonPct": 20.5,
           "breakPointsSavedPct": 0,
-          "breakPointsConvertedPct": 32.9,
+          "breakPointsConvertedPct": 29.6,
           "aces": 7.1,
           "doubleFaults": 4.8,
           "winners": 35.7,
@@ -22174,7 +26474,7 @@ const rawTennisGames = [
           "returnPointsWonPct": 35,
           "returnGamesWonPct": 20.142857142857142,
           "breakPointsSavedPct": 0,
-          "breakPointsConvertedPct": 45.7,
+          "breakPointsConvertedPct": 49.1,
           "aces": 4.9,
           "doubleFaults": 1,
           "winners": 35.3,
@@ -22203,7 +26503,7 @@ const rawTennisGames = [
       "returnGamesAvg": 20.3,
       "returnPointsAvg": 36,
       "breakPointsSavedAvg": 0,
-      "breakPointsConvertedAvg": 39.3,
+      "breakPointsConvertedAvg": 39.4,
       "setSamples": 53,
       "firstSetSamples": 15,
       "avgFirstSetGames": 9.8,

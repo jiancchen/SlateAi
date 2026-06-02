@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-chidekh-vs-romano-2026-06-02",
+  "boardTitle": "Clement Chidekh vs Filippo Romano",
+  "boardPlayerName": "Clement Chidekh",
+  "recentOpponentName": "Guillen Meza A.",
+  "recentIndex": 4,
+  "recentEvent": "Francavilla (Italy)",
+  "recentDate": "May 04, 26",
+  "recentIsoDate": "2026-05-04",
+  "recentResult": "Win 7-5 6-2",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Guillen Meza A. - Chidekh C.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/francavilla/",
+  "players": [
+    "Guillen Meza A.",
+    "Chidekh C."
+  ],
+  "generatedAt": "2026-06-02T02:39:21.318Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/bmVTtTum/",
+  "matchId": "bmVTtTum",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_bmVTtTum",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_bmVTtTum"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:02"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:34"
+      }
+    ],
+    "totalDuration": "1:36"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "3",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "71%",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "49% (25/51)",
+              "right": "54% (21/39)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "22% (5/23)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/15",
+              "right": "0/5",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (18/39)",
+              "right": "53% (27/51)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (9/16)",
+              "right": "78% (18/23)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/5",
+              "right": "8/15",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "16",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "34",
+              "right": "35",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (2/6)",
+              "right": "82% (9/11)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "41% (30/74)",
+              "right": "51% (28/55)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (27/55)",
+              "right": "59% (44/74)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (57/129)",
+              "right": "56% (72/129)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "20% (2/10)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (5/10)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Total games won",
+              "left": "35% (7/20)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "67%",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "54% (20/37)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "19% (3/16)",
+              "right": "25% (3/12)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/11",
+              "right": "0/4",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (12/24)",
+              "right": "49% (18/37)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (9/12)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/4",
+              "right": "5/11",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "8",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "27",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Net points won",
+              "left": "40% (2/5)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "42% (22/53)",
+              "right": "43% (15/35)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "57% (20/35)",
+              "right": "58% (31/53)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (42/88)",
+              "right": "52% (46/88)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "17% (1/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "79%",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "36% (5/14)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (2/7)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "0/1",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (6/15)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "0% (0/4)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/4",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "8",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "8",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/1)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "38% (8/21)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (7/20)",
+              "right": "62% (13/21)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (15/41)",
+              "right": "63% (26/41)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Guillen Meza A.",
+              "rightPlayer": "Chidekh C."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

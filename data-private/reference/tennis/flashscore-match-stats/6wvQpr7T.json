@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-schoolkate-vs-fery-2026-06-02",
+  "boardTitle": "Tristan Schoolkate vs Arthur Fery",
+  "boardPlayerName": "Arthur Fery",
+  "recentOpponentName": "Alexandrescou Y. T.",
+  "recentIndex": 3,
+  "recentEvent": "Zagreb (Croatia)",
+  "recentDate": "May 14, 26",
+  "recentIsoDate": "2026-05-14",
+  "recentResult": "Win 3-6 7-5 6-3",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Fery A. - Alexandrescou Y. T.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/zagreb/",
+  "players": [
+    "Fery A.",
+    "Alexandrescou Y. T."
+  ],
+  "generatedAt": "2026-06-02T02:39:24.354Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/6wvQpr7T/",
+  "matchId": "6wvQpr7T",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_6wvQpr7T",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_6wvQpr7T"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:20"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:56"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "69%",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "66% (42/64)",
+              "right": "59% (48/81)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (19/35)",
+              "right": "49% (18/37)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "10/14",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (33/81)",
+              "right": "34% (22/64)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "51% (19/37)",
+              "right": "46% (16/35)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/14",
+              "right": "3/7",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "33",
+              "right": "33",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "44",
+              "right": "45",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Net points won",
+              "left": "65% (11/17)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (61/99)",
+              "right": "56% (66/118)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (52/118)",
+              "right": "38% (38/99)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (113/217)",
+              "right": "48% (104/217)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "9",
+              "right": "1",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (12/15)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Return games won",
+              "left": "27% (4/15)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Total games won",
+              "left": "53% (16/30)",
+              "right": "47% (14/30)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "65%",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (11/22)",
+              "right": "75% (15/20)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (6/8)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (5/20)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (5/11)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "14",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "13",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Net points won",
+              "left": "17% (1/6)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (17/30)",
+              "right": "68% (21/31)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (10/31)",
+              "right": "43% (13/30)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (27/61)",
+              "right": "56% (34/61)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "74%",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (21/29)",
+              "right": "57% (21/37)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (7/17)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "6/8",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (16/37)",
+              "right": "28% (8/29)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (7/13)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/8",
+              "right": "1/4",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "10",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "17",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Net points won",
+              "left": "90% (9/10)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (28/46)",
+              "right": "54% (27/50)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (23/50)",
+              "right": "39% (18/46)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (51/96)",
+              "right": "47% (45/96)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "65%",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (10/13)",
+              "right": "50% (12/24)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "4/6",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (12/24)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (7/13)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "1/1",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "9",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "15",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (16/23)",
+              "right": "49% (18/37)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (19/37)",
+              "right": "30% (7/23)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (35/60)",
+              "right": "42% (25/60)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Fery A.",
+              "rightPlayer": "Alexandrescou Y. T."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

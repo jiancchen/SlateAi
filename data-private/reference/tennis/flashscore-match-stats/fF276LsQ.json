@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-mrva-vs-svrcina-2026-06-02",
+  "boardTitle": "Maxim Mrva vs Dalibor Svrcina",
+  "boardPlayerName": "Maxim Mrva",
+  "recentOpponentName": "Poljicak M.",
+  "recentIndex": 0,
+  "recentEvent": "Istanbul (Turkey)",
+  "recentDate": "May 21, 26",
+  "recentIsoDate": "2026-05-21",
+  "recentResult": "Loss 3-6 6-2 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Poljicak M. - Mrva M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/istanbul/",
+  "players": [
+    "Poljicak M.",
+    "Mrva M."
+  ],
+  "generatedAt": "2026-06-02T02:39:35.355Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/fF276LsQ/",
+  "matchId": "fF276LsQ",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_fF276LsQ",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_fF276LsQ"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:35"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:32"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "1:47"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "6",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "51%",
+              "right": "54%",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (31/41)",
+              "right": "58% (25/43)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (17/39)",
+              "right": "53% (19/36)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/4",
+              "right": "2/7",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (18/43)",
+              "right": "24% (10/41)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (17/36)",
+              "right": "56% (22/39)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/7",
+              "right": "4/4",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "26",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "29",
+              "right": "37",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Net points won",
+              "left": "78% (7/9)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (48/80)",
+              "right": "56% (44/79)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (35/79)",
+              "right": "40% (32/80)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (83/159)",
+              "right": "48% (76/159)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "69% (9/13)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Return games won",
+              "left": "38% (5/13)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Total games won",
+              "left": "54% (14/26)",
+              "right": "46% (12/26)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "50%",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (16/20)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (6/11)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (5/12)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "6",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "14",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (22/31)",
+              "right": "58% (14/24)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (10/24)",
+              "right": "29% (9/31)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (32/55)",
+              "right": "42% (23/55)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "41%",
+              "right": "61%",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "45% (5/11)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (6/16)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "0/1",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (3/11)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (3/7)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "3/3",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "11",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "6",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "41% (11/27)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (6/18)",
+              "right": "59% (16/27)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "38% (17/45)",
+              "right": "62% (28/45)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "45%",
+              "right": "54%",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (10/10)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (5/12)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "2/5",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (10/20)",
+              "right": "0% (0/10)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (9/17)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "1/1",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "9",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "17",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (15/22)",
+              "right": "49% (18/37)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "51% (19/37)",
+              "right": "32% (7/22)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (34/59)",
+              "right": "42% (25/59)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Poljicak M.",
+              "rightPlayer": "Mrva M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

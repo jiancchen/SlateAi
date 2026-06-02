@@ -1,0 +1,612 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-birmingham-wong-vs-tarvet-2026-06-02",
+  "boardTitle": "Coleman Wong vs Oliver Tarvet",
+  "boardPlayerName": "Oliver Tarvet",
+  "recentOpponentName": "Montes-De La Torre I.",
+  "recentIndex": 3,
+  "recentEvent": "Charlottesville (USA)",
+  "recentDate": "Oct 29, 25",
+  "recentIsoDate": "2025-10-29",
+  "recentResult": "Win 5-7 6-4 7-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Montes-De La Torre I. - Tarvet O.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/charlottesville/",
+  "players": [
+    "Montes-De La Torre I.",
+    "Tarvet O."
+  ],
+  "generatedAt": "2026-06-02T02:39:24.931Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/IugGtmV8/",
+  "matchId": "IugGtmV8",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_IugGtmV8",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_IugGtmV8"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:53"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "1:09"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:34"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "8",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "58%",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (51/81)",
+              "right": "72% (47/65)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "51% (23/45)",
+              "right": "48% (23/48)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/9",
+              "right": "7/11",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (18/65)",
+              "right": "37% (30/81)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (25/48)",
+              "right": "49% (22/45)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/11",
+              "right": "4/9",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "59% (74/126)",
+              "right": "62% (70/113)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (43/113)",
+              "right": "41% (52/126)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (117/239)",
+              "right": "51% (122/239)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "76% (13/17)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Return games won",
+              "left": "24% (4/17)",
+              "right": "24% (4/17)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (17/34)",
+              "right": "50% (17/34)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "61%",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (14/23)",
+              "right": "68% (13/19)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "69% (9/13)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "3/5",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (6/19)",
+              "right": "39% (9/23)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (6/12)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "1/1",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "64% (23/36)",
+              "right": "61% (19/31)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (12/31)",
+              "right": "36% (13/36)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (35/67)",
+              "right": "48% (32/67)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "58%",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (16/29)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (5/11)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "2/3",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (5/22)",
+              "right": "45% (13/29)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "69% (11/16)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "2/5",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "53% (21/40)",
+              "right": "58% (22/38)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (16/38)",
+              "right": "48% (19/40)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (37/78)",
+              "right": "53% (41/78)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "55%",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (21/29)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (9/21)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "2/3",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (7/24)",
+              "right": "28% (8/29)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (8/20)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "1/3",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "60% (30/50)",
+              "right": "66% (29/44)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (15/44)",
+              "right": "40% (20/50)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (45/94)",
+              "right": "52% (49/94)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Montes-De La Torre I.",
+              "rightPlayer": "Tarvet O."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

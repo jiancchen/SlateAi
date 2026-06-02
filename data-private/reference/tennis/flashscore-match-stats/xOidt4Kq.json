@@ -1,0 +1,668 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-broady-vs-jorda-sanchis-2026-06-02",
+  "boardTitle": "David Jorda Sanchis vs Liam Broady",
+  "boardPlayerName": "David Jorda Sanchis",
+  "recentOpponentName": "Forti F.",
+  "recentIndex": 0,
+  "recentEvent": "Perugia (Italy)",
+  "recentDate": "Jun 01, 26",
+  "recentIsoDate": "2026-06-01",
+  "recentResult": "Loss 6-7 7-6 6-7",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Jorda Sanchis D. - Forti F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/perugia/",
+  "players": [
+    "Jorda Sanchis D.",
+    "Forti F."
+  ],
+  "generatedAt": "2026-06-02T02:39:29.254Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/xOidt4Kq/",
+  "matchId": "xOidt4Kq",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_xOidt4Kq",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_xOidt4Kq"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 10,
+        "rightGames": 12,
+        "duration": "1:03"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:04"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 1,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:17"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "14",
+              "right": "7",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "67%",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (62/78)",
+              "right": "81% (70/86)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "68% (28/41)",
+              "right": "63% (27/43)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "8/8",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (16/86)",
+              "right": "21% (16/78)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "37% (16/43)",
+              "right": "32% (13/41)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/8",
+              "right": "0/1",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "37",
+              "right": "36",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "42",
+              "right": "39",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (90/119)",
+              "right": "75% (97/129)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (32/129)",
+              "right": "24% (29/119)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (122/248)",
+              "right": "51% (126/248)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (18/18)",
+              "right": "100% (18/18)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/18)",
+              "right": "0% (0/18)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (18/36)",
+              "right": "50% (18/36)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "8",
+              "right": "1",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "71%",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (27/33)",
+              "right": "90% (26/29)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (10/15)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "10% (3/29)",
+              "right": "24% (8/33)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (3/12)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "8",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "10",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (35/46)",
+              "right": "85% (34/40)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "15% (6/40)",
+              "right": "24% (11/46)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (41/86)",
+              "right": "52% (45/86)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "64%",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (16/20)",
+              "right": "72% (21/29)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "92% (11/12)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/3",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "28% (8/29)",
+              "right": "10% (2/20)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (6/16)",
+              "right": "8% (1/12)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "0/0",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "17",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "17",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "85% (29/34)",
+              "right": "70% (32/46)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (14/46)",
+              "right": "15% (5/34)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (43/80)",
+              "right": "46% (37/80)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "4",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "65%",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (19/25)",
+              "right": "82% (23/28)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (7/14)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "5/5",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "18% (5/28)",
+              "right": "24% (6/25)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (7/15)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/5",
+              "right": "0/0",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "11",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "12",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (26/39)",
+              "right": "72% (31/43)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (12/43)",
+              "right": "33% (13/39)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (38/82)",
+              "right": "54% (44/82)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Jorda Sanchis D.",
+              "rightPlayer": "Forti F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

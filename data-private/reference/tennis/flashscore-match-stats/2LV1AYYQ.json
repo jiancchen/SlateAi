@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-damas-vs-dzumhur-2026-06-02",
+  "boardTitle": "Miguel Damas vs Damir Dzumhur",
+  "boardPlayerName": "Miguel Damas",
+  "recentOpponentName": "Faria J.",
+  "recentIndex": 3,
+  "recentEvent": "Mauthausen (Austria)",
+  "recentDate": "May 01, 26",
+  "recentIsoDate": "2026-05-01",
+  "recentResult": "Loss 1-6 0-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Damas M. - Faria J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/mauthausen/",
+  "players": [
+    "Damas M.",
+    "Faria J."
+  ],
+  "generatedAt": "2026-06-02T02:39:33.481Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/2LV1AYYQ/",
+  "matchId": "2LV1AYYQ",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_2LV1AYYQ",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_2LV1AYYQ"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:26"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:33"
+      }
+    ],
+    "totalDuration": "0:59"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "48%",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "39% (11/28)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (8/19)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/11",
+              "right": "0/0",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (4/15)",
+              "right": "61% (17/28)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "19% (3/16)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "6/11",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "27",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "17",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/1)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "40% (19/47)",
+              "right": "77% (24/31)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (7/31)",
+              "right": "60% (28/47)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "33% (26/78)",
+              "right": "67% (52/78)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "14% (1/7)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total games won",
+              "left": "8% (1/13)",
+              "right": "92% (12/13)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "60%",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (6/12)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (5/12)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/6",
+              "right": "0/0",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (2/9)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "17% (1/6)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/6",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "1",
+              "right": "15",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "8",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/1)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "46% (11/24)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (3/15)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (14/39)",
+              "right": "64% (25/39)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "38%",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "31% (5/16)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (3/7)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "0/0",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (2/6)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "20% (2/10)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/5",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "2",
+              "right": "12",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "9",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "35% (8/23)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (4/16)",
+              "right": "65% (15/23)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "31% (12/39)",
+              "right": "69% (27/39)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Faria J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

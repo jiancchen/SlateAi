@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-strombachs-vs-hurrion-2026-06-02",
+  "boardTitle": "Robert Strombachs vs Millen Hurrion",
+  "boardPlayerName": "Millen Hurrion",
+  "recentOpponentName": "Mayot H.",
+  "recentIndex": 0,
+  "recentEvent": "Centurion (South Africa)",
+  "recentDate": "May 25, 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "Loss 4-6 4-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Mayot H. - Hurrion M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion/",
+  "players": [
+    "Mayot H.",
+    "Hurrion M."
+  ],
+  "generatedAt": "2026-06-02T02:39:28.587Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/0rtAXL2C/",
+  "matchId": "0rtAXL2C",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_0rtAXL2C",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_0rtAXL2C"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:48"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:51"
+      }
+    ],
+    "totalDuration": "1:39"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "4",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "55%",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (27/38)",
+              "right": "46% (16/35)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (12/29)",
+              "right": "55% (16/29)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "6/11",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "54% (19/35)",
+              "right": "29% (11/38)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (13/29)",
+              "right": "59% (17/29)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/11",
+              "right": "3/7",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "10",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "36",
+              "right": "35",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (5/5)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (38/66)",
+              "right": "50% (32/64)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (32/64)",
+              "right": "42% (28/66)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (70/130)",
+              "right": "46% (60/130)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "70% (7/10)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (5/10)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "54%",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (15/22)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (6/14)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "3/5",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (8/19)",
+              "right": "32% (7/22)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (8/16)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "1/2",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "6",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "17",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (21/36)",
+              "right": "54% (19/35)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (16/35)",
+              "right": "42% (15/36)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (37/71)",
+              "right": "48% (34/71)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "55%",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (12/16)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (6/15)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "3/6",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "69% (11/16)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (5/13)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "2/5",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "4",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "18",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (17/30)",
+              "right": "45% (13/29)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "55% (16/29)",
+              "right": "43% (13/30)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (33/59)",
+              "right": "44% (26/59)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Mayot H.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

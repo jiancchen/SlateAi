@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-karol-vs-caniato-2026-06-02",
+  "boardTitle": "Carlo Alberto Caniato vs Milos Karol",
+  "boardPlayerName": "Carlo Alberto Caniato",
+  "recentOpponentName": "Blanch D.",
+  "recentIndex": 2,
+  "recentEvent": "Kosice (Slovakia)",
+  "recentDate": "May 26, 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "Loss 2-6 6-7",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Blanch D. - Caniato C. A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/kosice/",
+  "players": [
+    "Blanch D.",
+    "Caniato C. A."
+  ],
+  "generatedAt": "2026-06-02T02:39:34.149Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/0CgOOLfL/",
+  "matchId": "0CgOOLfL",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_0CgOOLfL",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_0CgOOLfL"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:12"
+      }
+    ],
+    "totalDuration": "1:48"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "9",
+              "right": "5",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "68%",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (37/49)",
+              "right": "66% (39/59)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (17/31)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "7/9",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "34% (20/59)",
+              "right": "24% (12/49)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (16/28)",
+              "right": "45% (14/31)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/9",
+              "right": "0/4",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "33",
+              "right": "24",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "28",
+              "right": "29",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (6/10)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (54/80)",
+              "right": "59% (51/87)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (36/87)",
+              "right": "33% (26/80)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (90/167)",
+              "right": "46% (77/167)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (10/10)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (2/10)",
+              "right": "0% (0/10)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "69%",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (15/20)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (3/8)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (9/22)",
+              "right": "25% (5/20)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "70% (7/10)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "3",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "12",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (18/28)",
+              "right": "50% (16/32)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (16/32)",
+              "right": "36% (10/28)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (34/60)",
+              "right": "43% (26/60)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "4",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "67%",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (22/29)",
+              "right": "70% (26/37)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "61% (14/23)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "5/5",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (11/37)",
+              "right": "24% (7/29)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (9/18)",
+              "right": "39% (9/23)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/5",
+              "right": "0/4",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "22",
+              "right": "21",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "17",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Net points won",
+              "left": "40% (2/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (36/52)",
+              "right": "64% (35/55)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (20/55)",
+              "right": "31% (16/52)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (56/107)",
+              "right": "48% (51/107)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Blanch D.",
+              "rightPlayer": "Caniato C. A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

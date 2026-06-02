@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-basile-vs-travaglia-2026-06-02",
+  "boardTitle": "Pierluigi Basile vs Stefano Travaglia",
+  "boardPlayerName": "Stefano Travaglia",
+  "recentOpponentName": "Moro Canas A.",
+  "recentIndex": 3,
+  "recentEvent": "Vicenza (Italy)",
+  "recentDate": "May 26, 26",
+  "recentIsoDate": "2026-05-26",
+  "recentResult": "Win 6-3 6-3",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Travaglia S. - Moro Canas A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/vicenza/",
+  "players": [
+    "Travaglia S.",
+    "Moro Canas A."
+  ],
+  "generatedAt": "2026-06-02T02:39:29.816Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/jm7idKc3/",
+  "matchId": "jm7idKc3",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_jm7idKc3",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_jm7idKc3"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:49"
+      }
+    ],
+    "totalDuration": "1:25"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "69%",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (23/30)",
+              "right": "53% (20/38)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "61% (14/23)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "3/7",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (18/38)",
+              "right": "23% (7/30)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (8/17)",
+              "right": "39% (9/23)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/7",
+              "right": "1/3",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "4",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "25",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (3/6)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (37/53)",
+              "right": "53% (29/55)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (26/55)",
+              "right": "30% (16/53)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (63/108)",
+              "right": "42% (45/108)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "89% (8/9)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Return games won",
+              "left": "44% (4/9)",
+              "right": "11% (1/9)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (12/18)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "69%",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (8/10)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "70% (7/10)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "1/4",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (10/20)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (6/9)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "1/2",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "2",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "13",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (1/2)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (15/20)",
+              "right": "45% (13/29)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "55% (16/29)",
+              "right": "25% (5/20)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "63% (31/49)",
+              "right": "37% (18/49)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "69%",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (15/20)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "2/3",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (8/18)",
+              "right": "25% (5/20)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (2/8)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "0/1",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "2",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "12",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (22/33)",
+              "right": "62% (16/26)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (10/26)",
+              "right": "33% (11/33)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (32/59)",
+              "right": "46% (27/59)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Travaglia S.",
+              "rightPlayer": "Moro Canas A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

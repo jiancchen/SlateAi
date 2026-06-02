@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-karol-vs-caniato-2026-06-02",
+  "boardTitle": "Carlo Alberto Caniato vs Milos Karol",
+  "boardPlayerName": "Milos Karol",
+  "recentOpponentName": "Martin A.",
+  "recentIndex": 2,
+  "recentEvent": "Kosice (Slovakia)",
+  "recentDate": "May 27, 26",
+  "recentIsoDate": "2026-05-27",
+  "recentResult": "Loss 6-3 2-6 6-7",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Karol M. - Martin A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/kosice/",
+  "players": [
+    "Karol M.",
+    "Martin A."
+  ],
+  "generatedAt": "2026-06-02T02:39:34.688Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/YqSQkcdm/",
+  "matchId": "YqSQkcdm",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_YqSQkcdm",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_YqSQkcdm"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:14"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "62%",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (46/79)",
+              "right": "84% (41/49)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (24/38)",
+              "right": "63% (19/30)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "12/14",
+              "right": "1/2",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "16% (8/49)",
+              "right": "37% (29/79)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "30% (9/30)",
+              "right": "37% (14/38)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/14",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "35",
+              "right": "27",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "55",
+              "right": "20",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Net points won",
+              "left": "41% (7/17)",
+              "right": "93% (14/15)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (70/117)",
+              "right": "76% (60/79)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (19/79)",
+              "right": "40% (47/117)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (89/196)",
+              "right": "55% (107/196)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "87% (13/15)",
+              "right": "93% (13/14)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Return games won",
+              "left": "7% (1/14)",
+              "right": "13% (2/15)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Total games won",
+              "left": "48% (14/29)",
+              "right": "52% (15/29)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "64%",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (17/23)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (6/9)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "1/2",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (8/18)",
+              "right": "30% (7/23)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "30% (3/10)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/3",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "6",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "5",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Net points won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (23/32)",
+              "right": "61% (17/28)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (11/28)",
+              "right": "28% (9/32)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (34/60)",
+              "right": "43% (26/60)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "95%",
+              "right": "100%",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "43% (9/21)",
+              "right": "84% (16/19)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "700% (7/1)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/8",
+              "right": "0/0",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "16% (3/19)",
+              "right": "86% (18/21)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "0% (0/0)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/8",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Net points won",
+              "left": "0% (0/0)",
+              "right": "0% (0/0)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "47% (16/34)",
+              "right": "84% (16/19)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "16% (3/19)",
+              "right": "53% (18/34)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (19/53)",
+              "right": "64% (34/53)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "38%",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (20/35)",
+              "right": "108% (13/12)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "39% (11/28)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "0/0",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "-25% (-3/12)",
+              "right": "11% (4/35)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "30% (6/20)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/3",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "27",
+              "right": "21",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "46",
+              "right": "15",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Net points won",
+              "left": "42% (5/12)",
+              "right": "100% (11/11)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (31/51)",
+              "right": "84% (27/32)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "16% (5/32)",
+              "right": "39% (20/51)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "43% (36/83)",
+              "right": "57% (47/83)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Karol M.",
+              "rightPlayer": "Martin A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

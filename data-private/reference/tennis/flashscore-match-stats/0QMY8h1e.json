@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-centurion-2-strombachs-vs-hurrion-2026-06-02",
+  "boardTitle": "Robert Strombachs vs Millen Hurrion",
+  "boardPlayerName": "Robert Strombachs",
+  "recentOpponentName": "Winter E.",
+  "recentIndex": 0,
+  "recentEvent": "Centurion (South Africa)",
+  "recentDate": "May 29, 26",
+  "recentIsoDate": "2026-05-29",
+  "recentResult": "Loss 1-6 6-7",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Winter E. - Strombachs R.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion/",
+  "players": [
+    "Winter E.",
+    "Strombachs R."
+  ],
+  "generatedAt": "2026-06-02T02:39:28.956Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/0QMY8h1e/",
+  "matchId": "0QMY8h1e",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_0QMY8h1e",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_0QMY8h1e"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:28"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 4,
+        "duration": "1:17"
+      }
+    ],
+    "totalDuration": "1:45"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "55%",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (36/50)",
+              "right": "69% (27/39)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (11/22)",
+              "right": "31% (10/32)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "5/9",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (12/39)",
+              "right": "28% (14/50)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "69% (22/32)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/9",
+              "right": "2/3",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "22",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "35",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (47/72)",
+              "right": "52% (37/71)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (34/71)",
+              "right": "35% (25/72)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (81/143)",
+              "right": "43% (62/143)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (8/10)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Return games won",
+              "left": "44% (4/9)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Total games won",
+              "left": "63% (12/19)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "33%",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "93% (13/14)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (3/7)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "1/3",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "71% (5/7)",
+              "right": "7% (1/14)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (10/14)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/1",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "6",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "13",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "77% (17/22)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "57% (12/21)",
+              "right": "23% (5/22)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "67% (29/43)",
+              "right": "33% (14/43)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "64%",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (23/36)",
+              "right": "69% (22/32)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (8/15)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "4/6",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (7/32)",
+              "right": "36% (13/36)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (12/18)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "2/2",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "16",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "22",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (30/50)",
+              "right": "56% (28/50)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (22/50)",
+              "right": "40% (20/50)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (52/100)",
+              "right": "48% (48/100)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Winter E.",
+              "rightPlayer": "Strombachs R."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

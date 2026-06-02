@@ -1,0 +1,668 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-perugia-cretu-vs-vasami-2026-06-02",
+  "boardTitle": "Cezar Cretu (b. 2001) vs Jacopo Vasami",
+  "boardPlayerName": "Cezar Cretu (b. 2001)",
+  "recentOpponentName": "Sakellaridis S.",
+  "recentIndex": 0,
+  "recentEvent": "Chisinau (Moldova)",
+  "recentDate": "May 31, 26",
+  "recentIsoDate": "2026-05-31",
+  "recentResult": "Loss 7-6 3-6 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Cretu C. - Sakellaridis S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/chisinau/",
+  "players": [
+    "Cretu C.",
+    "Sakellaridis S."
+  ],
+  "generatedAt": "2026-06-02T02:39:30.679Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/tOWQnOR9/",
+  "matchId": "tOWQnOR9",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_tOWQnOR9",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_tOWQnOR9"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 1,
+        "duration": "1:03"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:52"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:41"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "4",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "56%",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (33/53)",
+              "right": "68% (34/50)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (20/42)",
+              "right": "53% (21/40)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/10",
+              "right": "4/7",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (16/50)",
+              "right": "38% (20/53)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (19/40)",
+              "right": "52% (22/42)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "6/10",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "22",
+              "right": "16",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "54",
+              "right": "43",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (53/95)",
+              "right": "61% (55/90)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (35/90)",
+              "right": "44% (42/95)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (88/185)",
+              "right": "52% (97/185)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (9/15)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (3/15)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (12/30)",
+              "right": "60% (18/30)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "51%",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (22/26)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (9/19)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/1",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (10/20)",
+              "right": "35% (9/26)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (10/19)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "1/2",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "6",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "22",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (29/43)",
+              "right": "58% (21/36)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (15/36)",
+              "right": "33% (14/43)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (44/79)",
+              "right": "44% (35/79)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "61%",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "31% (4/13)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (7/13)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "4/5",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "7% (1/14)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (5/9)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "3/4",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "6",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "12",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "45% (13/29)",
+              "right": "58% (15/26)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (11/26)",
+              "right": "55% (16/29)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (24/55)",
+              "right": "56% (31/55)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "57%",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (7/14)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "0/1",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (5/16)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (4/12)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/4",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "4",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "22",
+              "right": "9",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (11/23)",
+              "right": "68% (19/28)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (9/28)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (20/51)",
+              "right": "61% (31/51)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Cretu C.",
+              "rightPlayer": "Sakellaridis S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

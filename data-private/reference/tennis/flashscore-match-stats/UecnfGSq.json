@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-dellien-vs-schoenhaus-2026-06-02",
+  "boardTitle": "Hugo Dellien vs Max Schoenhaus",
+  "boardPlayerName": "Max Schoenhaus",
+  "recentOpponentName": "Visser M.",
+  "recentIndex": 3,
+  "recentEvent": "M25 Troisdorf (Germany)",
+  "recentDate": "May 28, 26",
+  "recentIsoDate": "2026-05-28",
+  "recentResult": "Win 7-5 6-1",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Visser M. - Schoenhaus M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m25-troisdorf/",
+  "players": [
+    "Visser M.",
+    "Schoenhaus M."
+  ],
+  "generatedAt": "2026-06-02T02:39:18.708Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/UecnfGSq/",
+  "matchId": "UecnfGSq",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_UecnfGSq",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_UecnfGSq"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:05"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:36"
+      }
+    ],
+    "totalDuration": "1:41"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Visser M.",
+              "rightPlayer": "Schoenhaus M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Visser M.",
+              "rightPlayer": "Schoenhaus M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Visser M.",
+              "rightPlayer": "Schoenhaus M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-02",
+  "boardMatchId": "rh-atp-challenger-prostejov-mrva-vs-svrcina-2026-06-02",
+  "boardTitle": "Maxim Mrva vs Dalibor Svrcina",
+  "boardPlayerName": "Dalibor Svrcina",
+  "recentOpponentName": "Bernet H.",
+  "recentIndex": 4,
+  "recentEvent": "Tunis (Tunisia)",
+  "recentDate": "May 11, 26",
+  "recentIsoDate": "2026-05-11",
+  "recentResult": "Win 6-1 6-2",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Svrcina D. - Bernet H.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/tunis/",
+  "players": [
+    "Svrcina D.",
+    "Bernet H."
+  ],
+  "generatedAt": "2026-06-02T02:39:36.185Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/2kcbXLAc/",
+  "matchId": "2kcbXLAc",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_2kcbXLAc",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_2kcbXLAc"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:25"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:49"
+      }
+    ],
+    "totalDuration": "1:14"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "49%",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (25/34)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (8/16)",
+              "right": "41% (9/22)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "1/6",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "57% (12/21)",
+              "right": "26% (9/34)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "59% (13/22)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/6",
+              "right": "0/2",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "8",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "24",
+              "right": "35",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (33/50)",
+              "right": "42% (18/43)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "58% (25/43)",
+              "right": "34% (17/50)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "62% (58/93)",
+              "right": "38% (35/93)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (7/7)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Return games won",
+              "left": "63% (5/8)",
+              "right": "0% (0/7)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Total games won",
+              "left": "80% (12/15)",
+              "right": "20% (3/15)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "59%",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (10/12)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (2/4)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/3",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "62% (8/13)",
+              "right": "17% (2/12)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (6/9)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "0/0",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "15",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (12/16)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "64% (14/22)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "68% (26/38)",
+              "right": "32% (12/38)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "38%",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (15/22)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "1/3",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (4/8)",
+              "right": "32% (7/22)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (7/13)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/2",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "6",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "20",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (21/34)",
+              "right": "48% (10/21)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (11/21)",
+              "right": "38% (13/34)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (32/55)",
+              "right": "42% (23/55)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Svrcina D.",
+              "rightPlayer": "Bernet H."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}
