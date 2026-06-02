@@ -28,3 +28,6 @@ dist-ssr
 # Local warehouse artifacts
 data-private/raw/
 data-private/warehouse/
+
+# Migration preview exports are generated from DB reports/scripts.
+data-migration/export-previews/

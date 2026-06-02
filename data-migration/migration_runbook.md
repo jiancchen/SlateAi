@@ -191,6 +191,20 @@ For each folder or table group:
 
 ## Phase Order
 
+### Phase Number Crosswalk
+
+The original RFP phase names and this ledger's implementation phases diverged after DuckDB was pulled earlier. Use this crosswalk in future updates:
+
+| RFP phase | RFP name | Current ledger track |
+|---|---|---|
+| 4 | DB-first prediction outputs | Ledger Phase 7 |
+| 5 | DB-derived public export | Ledger Phase 8 export track |
+| 6 | DuckDB training layer | Ledger Phase 5, already completed and rebuilt after DB changes |
+| 7 | Frontend/API read path | Ledger Phase 8 read-path promotion |
+| 8 | Archive and ignore generated mirrors | Ledger Phase 9 |
+
+When a user says "Phase 5" during this migration, treat that as the RFP Phase 5 public-export contract unless they explicitly mean the already-completed DuckDB build.
+
 ### Phase 0: Inventory And Freeze
 
 Status: complete.
@@ -340,11 +354,14 @@ Exit criteria:
 Purpose:
 
 - UI/API read selected sport/date/model from sport DB or DB-derived export.
+- Public exports are generated from DB on an explicit date/model target.
 
 Exit criteria:
 
 - Model/date switching does not mutate data.
 - Public export parity checks pass.
+- Export manifests record the DB query/source hash and output hash.
+- Export commands do not prune unrelated dates.
 
 ### Phase 8: Archive Readiness
 

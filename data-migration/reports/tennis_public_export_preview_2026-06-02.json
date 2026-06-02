@@ -1,0 +1,25 @@
+{
+  "contract": "data-migration/contracts/tennis_public_export_contract.md",
+  "date": "2026-06-02",
+  "dry_run": false,
+  "export_manifest_id": "2f94af0b1e3c17de013db4dc0df9dcf9",
+  "games": 66,
+  "generated_at": "2026-06-02T06:46:56.543915+00:00",
+  "model": "latest",
+  "ok": true,
+  "out_dir": "data-migration/export-previews/tennis/2026-06-02",
+  "prediction_rows": 100,
+  "resolved_model": {
+    "model_id": "pandas-ensemble-logit-rf-gb-xgb",
+    "model_run_id": "legacy-tennis-tennis-2026-06-02-d923c04382ac",
+    "model_version": null,
+    "prediction_rows": 100,
+    "run_date": "2026-06-02",
+    "run_type": "legacy_prediction_artifact",
+    "status": "captured"
+  },
+  "script": "data-migration/scripts/export_tennis_public_from_db.py",
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "summary_path": "data-migration/export-previews/tennis/2026-06-02/summary.json",
+  "value_rows": 100
+}
