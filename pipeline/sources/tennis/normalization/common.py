@@ -437,7 +437,24 @@ class TennisIdentityResolver:
             return True
         left_tokens = set(left_norm.split())
         right_tokens = set(right_norm.split())
-        return left_tokens.issubset(right_tokens) or right_tokens.issubset(left_tokens)
+        if left_tokens.issubset(right_tokens) or right_tokens.issubset(left_tokens):
+            return True
+        return TennisIdentityResolver._abbreviated_name_match(left_norm, right_norm)
+
+    @staticmethod
+    def _abbreviated_name_match(left_norm: str, right_norm: str) -> bool:
+        def matches(short_tokens: list[str], long_tokens: list[str]) -> bool:
+            if len(short_tokens) < 2 or len(long_tokens) < 2:
+                return False
+            core_tokens = [token for token in short_tokens if len(token) > 1]
+            initial_tokens = [token for token in short_tokens if len(token) == 1]
+            if not core_tokens or not set(core_tokens).issubset(set(long_tokens)):
+                return False
+            return all(any(token.startswith(initial) for token in long_tokens) for initial in initial_tokens)
+
+        left_tokens = left_norm.split()
+        right_tokens = right_norm.split()
+        return matches(left_tokens, right_tokens) or matches(right_tokens, left_tokens)
 
 
 def append_normalization_event(root: Path, event: dict[str, Any]) -> None:

@@ -1,0 +1,45 @@
+{
+  "after_counts": {
+    "match_stat_rows": 380092,
+    "service_pressure_snapshots": 824,
+    "unresolved_entities": 438
+  },
+  "before_counts": {
+    "match_stat_rows": 380092,
+    "service_pressure_snapshots": 824,
+    "unresolved_entities": 438
+  },
+  "date": "2026-06-02",
+  "dry_run": false,
+  "generated_at": "2026-06-02T20:04:02.094235+00:00",
+  "inserted_match_stat_rows": 141700,
+  "inserted_service_pressure_rows": 130,
+  "ok": true,
+  "parsed_rows": 141700,
+  "parser_module": "pipeline/sources/tennis/normalization/stats.py",
+  "row_count_delta": {
+    "match_stat_rows": 0,
+    "service_pressure_snapshots": 0,
+    "unresolved_entities": 0
+  },
+  "sample_source_snapshots": [
+    "tennis-be8f10fbae85ef9a9cb78bcf1da963dd",
+    "tennis-ab424a739aafde66d2517a7792ee0f99",
+    "tennis-89c2f8b504d30732a39795710414ae30",
+    "tennis-9ccca5168a4c66a18490d56e3e896886",
+    "tennis-e0de7d8fc25a9ab86e3b519b46af3f6a",
+    "tennis-7dae908255e5538a4df371d108490bd8",
+    "tennis-9006e4605bf0045c995851d907edef78",
+    "tennis-079bad206b2b75749536b31b25638292"
+  ],
+  "script": "data-migration/scripts/ingest_tennis_flashscore_raw_to_typed.py",
+  "service_pressure_rows": 130,
+  "skipped_rows": 0,
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "source_dir": "data-private/reference/tennis/flashscore-match-stats",
+  "source_files": 610,
+  "source_rows": 70850,
+  "source_snapshot_rows": 610,
+  "unparsed_rows": 0,
+  "unresolved_rows_added": 0
+}

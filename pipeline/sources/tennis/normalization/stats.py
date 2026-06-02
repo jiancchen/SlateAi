@@ -231,6 +231,137 @@ def parse_stat_rows(
     return parsed, counts
 
 
+def legacy_source_pk(values: dict[str, Any]) -> str:
+    return compact_json(values)
+
+
+def legacy_row_id(source_table: str, source_pk: str) -> str:
+    return stable_id("tennis", source_table, source_pk, length=64)
+
+
+def parse_flashscore_raw_payload(
+    payload: dict[str, Any],
+    resolver: TennisIdentityResolver,
+    *,
+    source_snapshot_id: str | None = None,
+    local_path: str | None = None,
+) -> tuple[list[ParsedStatRow], dict[str, int]]:
+    source_name = "flashscore"
+    source_table_player = "tennis_flashscore_player_stat_rows"
+    source_table_pair = "tennis_flashscore_stat_rows"
+    flashscore_id = payload.get("matchId") or payload.get("flashscore_id")
+    match_id = payload.get("boardMatchId") or payload.get("board_match_id")
+    players = payload.get("players") or []
+    left_name = players[0] if len(players) > 0 else None
+    right_name = players[1] if len(players) > 1 else None
+    parsed: list[ParsedStatRow] = []
+    counts = {
+        "source_rows": 0,
+        "parsed_rows": 0,
+        "unparsed_rows": 0,
+        "skipped_rows": 0,
+    }
+
+    if not flashscore_id or not match_id:
+        resolver.insert_unresolved(
+            "tennis_stat_match",
+            source_name,
+            flashscore_id or local_path,
+            payload.get("boardTitle") or payload.get("flashscoreLabel") or local_path or "unknown",
+            {"local_path": local_path, "payload": payload},
+            "Flashscore raw payload missing matchId or boardMatchId.",
+        )
+        return parsed, {**counts, "unparsed_rows": 1}
+
+    for scope in payload.get("scopes") or []:
+        period = scope.get("label")
+        for section in scope.get("sections") or []:
+            stat_group = section.get("label")
+            for stat in section.get("stats") or []:
+                stat_label = stat.get("label")
+                if not stat_label:
+                    counts["skipped_rows"] += 1
+                    continue
+                pair_source_pk = legacy_source_pk(
+                    {
+                        "flashscore_id": flashscore_id,
+                        "scope_label": period,
+                        "section_label": stat_group,
+                        "stat_label": stat_label,
+                    }
+                )
+                pair_legacy_id = legacy_row_id(source_table_pair, pair_source_pk)
+                side_specs = [
+                    ("left", stat.get("leftPlayer") or left_name, stat.get("left")),
+                    ("right", stat.get("rightPlayer") or right_name, stat.get("right")),
+                ]
+                for side, player_name, raw_value in side_specs:
+                    counts["source_rows"] += 1
+                    if player_name is None or raw_value is None:
+                        counts["skipped_rows"] += 1
+                        continue
+                    player_id = resolver.player_id_for_match(match_id, source_name, player_name, side)
+                    if not player_id:
+                        resolver.insert_unresolved(
+                            "tennis_stat_player",
+                            source_name,
+                            flashscore_id,
+                            player_name,
+                            {
+                                "local_path": local_path,
+                                "source_table": source_table_player,
+                                "match_id": match_id,
+                                "side": side,
+                                "stat_label": stat_label,
+                                "payload": {
+                                    "boardMatchId": match_id,
+                                    "boardPlayerName": payload.get("boardPlayerName"),
+                                    "boardTitle": payload.get("boardTitle"),
+                                    "flashscoreLabel": payload.get("flashscoreLabel"),
+                                    "players": players,
+                                },
+                            },
+                            "Could not confidently map Flashscore raw stat player to canonical board player.",
+                        )
+                        counts["unparsed_rows"] += 1
+                        continue
+                    value, made, attempts = parse_value(raw_value)
+                    player_source_pk = legacy_source_pk(
+                        {
+                            "flashscore_id": flashscore_id,
+                            "player_side": side,
+                            "scope_label": period,
+                            "section_label": stat_group,
+                            "stat_label": stat_label,
+                        }
+                    )
+                    player_legacy_id = legacy_row_id(source_table_player, player_source_pk)
+                    for source_table, row_legacy_id in [
+                        (source_table_player, player_legacy_id),
+                        (source_table_pair, f"{pair_legacy_id}:{side}"),
+                    ]:
+                        parsed.append(
+                            ParsedStatRow(
+                                source_table=source_table,
+                                legacy_row_id=row_legacy_id,
+                                match_id=str(match_id),
+                                player_id=player_id,
+                                player_name=str(player_name),
+                                source_name=source_name,
+                                stat_name=canonical_stat_name(stat_label),
+                                stat_value=value,
+                                stat_made=made,
+                                stat_attempts=attempts,
+                                stat_text=str(raw_value),
+                                period=period,
+                                stat_group=stat_group,
+                                source_snapshot_id=source_snapshot_id,
+                            )
+                        )
+    counts["parsed_rows"] = len(parsed)
+    return parsed, counts
+
+
 def insert_match_stat_rows(con: sqlite3.Connection, rows: list[ParsedStatRow]) -> int:
     inserted = 0
     for row in rows:
