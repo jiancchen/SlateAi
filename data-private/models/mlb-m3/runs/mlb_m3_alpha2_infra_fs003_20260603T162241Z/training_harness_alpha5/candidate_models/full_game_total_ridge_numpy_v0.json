@@ -1,0 +1,133 @@
+{
+  "component_family": "team_run_distribution",
+  "feature_count": 251,
+  "feature_subset_label": "all_features",
+  "intercept": 8.809880239520938,
+  "model_kind": "ridge_linear_regression_numpy_v0",
+  "non_goals": [
+    "no picks",
+    "no selection rows",
+    "no player prop pricing",
+    "no market fair probability claims",
+    "no simulator event logs",
+    "no promotion decisions",
+    "no claim that M3 is better"
+  ],
+  "notes": [
+    "Diagnostic component only; not promoted.",
+    "No row-level predictions, picks, prices, or selection rows are written."
+  ],
+  "ridge_alpha": 10.0,
+  "status": "candidate_diagnostic_not_promoted",
+  "target_column": "target_total_runs_final",
+  "top_coefficients": [
+    {
+      "coefficient": 1.6183311872687538,
+      "feature": "away_hitter_path_starter_phase_matchup_hitter_count"
+    },
+    {
+      "coefficient": -0.9993900688858939,
+      "feature": "home_hitter_path_pitch_type_response_rows"
+    },
+    {
+      "coefficient": 0.9755005796668879,
+      "feature": "away_hitter_path_pitch_type_response_rows"
+    },
+    {
+      "coefficient": 0.9716607854351956,
+      "feature": "home_hitter_path_starter_phase_matchup_hitter_count"
+    },
+    {
+      "coefficient": 0.9279349838083053,
+      "feature": "away_starter_current_bad_start_run_length"
+    },
+    {
+      "coefficient": 0.8460719181125016,
+      "feature": "away_relief_last_game_reliever_count"
+    },
+    {
+      "coefficient": 0.8117275820882668,
+      "feature": "home_hitter_path_pitch_type_damage_rate_avg"
+    },
+    {
+      "coefficient": 0.7872731844704742,
+      "feature": "away_hitter_path_opponent_context_coverage_rate"
+    },
+    {
+      "coefficient": -0.768239622920107,
+      "feature": "home_story_days_since_first5_firefight"
+    },
+    {
+      "coefficient": 0.7501933170800377,
+      "feature": "home_story_last_game_f5_total_runs"
+    },
+    {
+      "coefficient": -0.7419307134629268,
+      "feature": "home_hitter_path_pitch_type_response_sample_pitches"
+    },
+    {
+      "coefficient": -0.7158325691297514,
+      "feature": "away_starter_prior_hr_rate_per_bf"
+    },
+    {
+      "coefficient": -0.7059311526216218,
+      "feature": "home_hitter_path_opponent_weighted_hits_per_pa_avg"
+    },
+    {
+      "coefficient": -0.6667472140861677,
+      "feature": "away_hitter_path_statcast_coverage_rate"
+    },
+    {
+      "coefficient": -0.6575496755404572,
+      "feature": "away_relief_prior_relievers_used_per_game"
+    },
+    {
+      "coefficient": -0.5841757380463808,
+      "feature": "away_lineup_known_slot_count"
+    },
+    {
+      "coefficient": -0.5841757380463174,
+      "feature": "away_hitter_path_lineup_player_count"
+    },
+    {
+      "coefficient": -0.5841757380462974,
+      "feature": "away_lineup_known_flag"
+    },
+    {
+      "coefficient": -0.5841757380462812,
+      "feature": "away_lineup_complete_flag"
+    },
+    {
+      "coefficient": -0.5841757380462392,
+      "feature": "home_starter_pitch_mix_available_flag"
+    },
+    {
+      "coefficient": -0.5791555753625643,
+      "feature": "away_starter_prior_bad_start_count"
+    },
+    {
+      "coefficient": -0.5745401322018592,
+      "feature": "home_starter_prior_strikeout_rate_per_bf"
+    },
+    {
+      "coefficient": -0.5643165458424158,
+      "feature": "home_story_days_since_traffic_no_conversion"
+    },
+    {
+      "coefficient": 0.5467587725309658,
+      "feature": "home_hitter_path_starter_phase_damage_fit_avg"
+    },
+    {
+      "coefficient": -0.5394425510284663,
+      "feature": "away_starter_last_runs_allowed"
+    }
+  ],
+  "train_rows": 668,
+  "validation_metrics": {
+    "mae": 4.718657503841917,
+    "mean_error": -0.18949235885441396,
+    "rmse": 6.108590589761685,
+    "row_count": 218
+  },
+  "validation_rows": 218
+}

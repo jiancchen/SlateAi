@@ -29,8 +29,8 @@ Status: opened
 | A5-W005 | Upgrade harness with walk-forward and family ablations | complete | `training_harness_alpha5/walk_forward.json`, `training_harness_alpha5/family_ablations.json` | Keeps outputs metrics-only and candidate models diagnostic. |
 | A5-W006 | Create FS-003 pruned artifact | complete | `data-private/models/mlb-m3/features/m3_fs_003_game_story_pitching_state_pruned_v0/m3_fs_003_game_story_pitching_state_pruned_v0_20260603T162132Z` | Derived from FS-002 audit recommendations; 886 rows, 271 columns, 256 features, 9 targets. |
 | A5-W007 | Manifest FS-003 | complete | `data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/manifest.json` | Reused alpha-2 manifest infrastructure; validator passed with 0 errors and 0 warnings. |
-| A5-W008 | Run upgraded harness on FS-003 | pending |  | Walk-forward diagnostics and ablations. |
-| A5-W009 | Run improved diagnostic candidate if supported | pending |  | Not promoted unless future gates exist. |
+| A5-W008 | Run upgraded harness on FS-003 | complete | `data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/training_harness_alpha5` | Walk-forward diagnostics and ablations passed validation; candidate remains diagnostic and unpromoted. |
+| A5-W009 | Run improved diagnostic candidate if supported | deferred | `2026-06-03-mlb-m3-alpha-5-fs003-harness-review.md` | FS-003 pruning did not improve ridge diagnostics; next useful work is feature-family redesign, not model tuning. |
 
 ## Stop Log
 
@@ -53,3 +53,7 @@ No stops yet.
 - 2026-06-03: `python3 -m json.tool` passed for the FS-003 report and generated artifact JSON files.
 - 2026-06-03: `PYTHONDONTWRITEBYTECODE=1 python3 -m pipeline.mlb.m3.runs.create_alpha2_manifest --feature-report data-migration/reports/m3_fs_003_game_story_pitching_state_pruned_v0_2026-03-26_to_2026-05-31.json --run-id mlb_m3_alpha2_infra_fs003_20260603T162241Z` generated the FS-003 alpha-2 manifest bundle with no warnings.
 - 2026-06-03: `PYTHONDONTWRITEBYTECODE=1 python3 -m pipeline.mlb.m3.runs.validate_alpha2_manifest --manifest data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/manifest.json --json` passed with 18 checks, 0 errors, and 0 warnings.
+- 2026-06-03: `PYTHONDONTWRITEBYTECODE=1 python3 -m pipeline.mlb.m3.harness.run_alpha3_harness --manifest data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/manifest.json --output-subdir training_harness_alpha5 --candidate-model --walk-forward --family-ablations` generated the FS-003 alpha-5 harness bundle.
+- 2026-06-03: `PYTHONDONTWRITEBYTECODE=1 python3 -m pipeline.mlb.m3.harness.validate_alpha3_harness --harness-dir data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/training_harness_alpha5 --json` passed with 7 checks, 0 errors, and 0 warnings.
+- 2026-06-03: FS-003 walk-forward diagnostic metrics matched FS-002 despite fewer numeric candidate features, meaning the audit pruning cleaned artifact hygiene but did not address the core model underperformance.
+- 2026-06-03: `python3 -m py_compile pipeline/mlb/m3/harness/run_alpha3_harness.py` passed after replacing stale FS-002 dashboard guidance with feature-set-neutral comparison guidance.

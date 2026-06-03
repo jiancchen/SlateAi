@@ -705,7 +705,7 @@ def run_harness(
         "non_goals": NON_GOALS,
         "next_recommended_actions": [
             "Review feature coverage and split health before adding richer models.",
-            "Run the harness on M3-FS-002 once real features are materialized.",
+            "Compare this harness output against prior feature-set diagnostics before adding richer model families.",
             "Keep candidate components diagnostic until walk-forward backtests exist.",
         ],
     }

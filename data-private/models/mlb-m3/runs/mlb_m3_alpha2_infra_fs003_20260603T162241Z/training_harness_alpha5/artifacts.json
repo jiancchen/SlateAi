@@ -1,0 +1,97 @@
+{
+  "artifacts": [
+    {
+      "bytes": 2840,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/training_harness_alpha5/metrics.json",
+      "role": "metrics",
+      "sha256": "a26e38d53026ab2172c2f9990f78b47267f71d3b691ac124ec7b704d66890ec6"
+    },
+    {
+      "bytes": 535,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/training_harness_alpha5/split_summary.json",
+      "role": "split_summary",
+      "sha256": "afff9151d6a83471f7dcb03742a2485ef0527804820822e21c7d5adaf6de80f6"
+    },
+    {
+      "bytes": 1915,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/training_harness_alpha5/target_summary.json",
+      "role": "target_summary",
+      "sha256": "353ca48609c38acd607d69b8e877bea827b066708e4e2fb58a0fbb9f2dd81d12"
+    },
+    {
+      "bytes": 416,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/training_harness_alpha5/calibration_placeholder.json",
+      "role": "calibration_placeholder",
+      "sha256": "fcfcc5e45977cf50eb541e0d61488f9ae59742fe5591565494c9d7941485a70b"
+    },
+    {
+      "bytes": 2356,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/training_harness_alpha5/dashboard_state.json",
+      "role": "dashboard_state",
+      "sha256": "fe6d291e1ad649f52c53179f4c247ccc96b0c522eb3cc77694fc9fbb7b267d00"
+    },
+    {
+      "bytes": 15207,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/training_harness_alpha5/typed_model_registry_preview_alpha3.json",
+      "role": "typed_registry_preview_alpha3",
+      "sha256": "92cd34f2dedc105aba3708cb023b3e66373c895c0f2512d1e826c9987459b5f4"
+    },
+    {
+      "bytes": 572,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/training_harness_alpha5/report.md",
+      "role": "report",
+      "sha256": "6aed8ad8a8b232da9f4ee03c21ab4a9d154b9588c66267839d746c5ead03ff50"
+    },
+    {
+      "bytes": 22330,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/training_harness_alpha5/walk_forward.json",
+      "role": "walk_forward",
+      "sha256": "bf296b512cfdf9d33621b9b3d9bb75448c2c81cbc374427b5c78d2aa563bf702"
+    },
+    {
+      "bytes": 116377,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/training_harness_alpha5/family_ablations.json",
+      "role": "family_ablations",
+      "sha256": "0bc417ca417ced9aa09b0462ef775356fdccde536eb43077a2dce573175ea7e0"
+    },
+    {
+      "bytes": 1684,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/training_harness_alpha5/lane_reports/full_game_total.json",
+      "role": "lane_report_full_game_total",
+      "sha256": "4570e72402603e8d1372e34f220f7fa09abfec84afc7301c8ec12e94c29e6621"
+    },
+    {
+      "bytes": 1594,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/training_harness_alpha5/lane_reports/f5_total.json",
+      "role": "lane_report_f5_total",
+      "sha256": "46e4dff137a9300a583aa5ccc10a9e7399c2c90599766376c12ce4e1a6deecda"
+    },
+    {
+      "bytes": 3762,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/training_harness_alpha5/candidate_models/full_game_total_ridge_numpy_v0.json",
+      "role": "candidate_model_full_game_total",
+      "sha256": "f639f58be72d62306ab115ce0ecffb57b31732cddaf89d4eb31b5e96bdeeccf9"
+    },
+    {
+      "bytes": 3760,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/training_harness_alpha5/candidate_models/f5_total_ridge_numpy_v0.json",
+      "role": "candidate_model_f5_total",
+      "sha256": "c1a8e5239a039bfb2984bfa78df2b8fe462a8214c1b28ba83d569d7a6a41ad78"
+    }
+  ],
+  "run_id": "mlb_m3_alpha2_infra_fs003_20260603T162241Z",
+  "status": "harness_metrics_created"
+}
