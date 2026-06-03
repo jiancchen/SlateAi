@@ -1,0 +1,85 @@
+{
+  "checks": {
+    "contract": {
+      "checks": {
+        "distribution_contracts_declared": true,
+        "no_fixed_memory_policy_aliases": true,
+        "no_forbidden_memory_terms": true,
+        "no_isolated_prop_models": true,
+        "path_and_routing_feature_families_declared": true,
+        "prop_contracts_declared": true,
+        "props_are_distribution_contracts": true,
+        "reliever_distributions_declared": true,
+        "reliever_prop_contract_declared": true,
+        "reliever_sources_declared": true,
+        "required_evidence_policy_keys": true,
+        "required_top_level_keys": true,
+        "side_prefixes": true,
+        "target_prefixes": true
+      },
+      "errors": [],
+      "ok": true,
+      "warnings": []
+    },
+    "reliever_order_data": {
+      "missing_columns": [],
+      "non_null_counts": {
+        "entry_order": 7495,
+        "first_half": 7495,
+        "first_inning": 7495
+      },
+      "ok": true,
+      "row_count": 7498
+    },
+    "source_decisions": {
+      "declared_decision_ids": [
+        "a6-reliever-entry-order-canonicalization-v1"
+      ],
+      "ok": true,
+      "required_decision_id": "a6-reliever-entry-order-canonicalization-v1"
+    },
+    "source_feasibility": {
+      "errors": [],
+      "ok": true,
+      "surface_summary": {
+        "blocked_surfaces": [],
+        "priority_counts": {
+          "P0": 15,
+          "P1": 2,
+          "P2": 2
+        },
+        "source_decision_surfaces": [],
+        "status_counts": {
+          "source_feasible": 17,
+          "source_feasible_with_optional_source_decisions": 2
+        },
+        "surface_count": 19
+      },
+      "table_summary": {
+        "contract_source_table_count": 27,
+        "existing_table_count": 53,
+        "missing_or_empty_contract_source_tables": [],
+        "missing_table_count": 0,
+        "populated_table_count": 53,
+        "table_count": 53
+      }
+    }
+  },
+  "contract_uri": "/Users/jcchen/Documents/New project/pipeline/mlb/features/contracts/m3_fs_004_state_path_redesign_v0.json",
+  "created_at": "2026-06-03T17:37:31Z",
+  "db_uri": "/Users/jcchen/Documents/New project/data-private/warehouse/sports/mlb/sql-mlb.db",
+  "errors": [],
+  "feasibility_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/fs004_source_feasibility_alpha6/fs004_source_feasibility.json",
+  "non_goals": [
+    "no matrix materialization",
+    "no model training",
+    "no picks",
+    "no market pricing",
+    "no simulator event logs",
+    "no promotion decision"
+  ],
+  "ok": true,
+  "run_id": "mlb_m3_alpha6_fs004_builder_readiness",
+  "status": "builder_readiness_clear",
+  "tool_version": "0.1.0"
+}

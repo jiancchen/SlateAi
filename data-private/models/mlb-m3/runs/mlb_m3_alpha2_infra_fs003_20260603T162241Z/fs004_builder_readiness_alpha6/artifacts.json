@@ -1,0 +1,19 @@
+{
+  "artifacts": [
+    {
+      "bytes": 2700,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/fs004_builder_readiness_alpha6/builder_readiness.json",
+      "role": "builder_readiness",
+      "sha256": "59e65f795b66c02e12e6fa8f4335dea7722a015b5cd82a1bf3b58a93e1fec997"
+    },
+    {
+      "bytes": 576,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/fs004_builder_readiness_alpha6/report.md",
+      "role": "report",
+      "sha256": "8260a14ab7e2a545f9adfa95f3839beaf90279b03b267b394876cc67e5ca98af"
+    }
+  ],
+  "status": "builder_readiness_clear"
+}

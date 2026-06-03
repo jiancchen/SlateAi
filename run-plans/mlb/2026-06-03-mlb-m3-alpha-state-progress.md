@@ -21,6 +21,7 @@ Evidence checked:
 - Alpha-6 family redesign audit exists and maps FS-003 to 19 target surfaces.
 - FS-004 contract exists and validates, and source feasibility passed with 0 blocked surfaces.
 - FS-004 reliever `entry_order` source decision is recorded and canonical chain-order fields are backfilled.
+- FS-004 builder readiness passes; matrix materialization is the next gate.
 - No promoted model, picks, simulator events, prop prices, or edge claims exist in the alpha artifacts.
 - This progress file is ASCII-only and should render as normal Markdown plus Mermaid.
 
@@ -69,13 +70,14 @@ flowchart TD
   A6 --> C004["FS-004 state-path redesign contract<br/>status: live"]
   C004 --> S004["FS-004 source feasibility audit<br/>53 typed tables populated, 0 blocked surfaces<br/>status: live"]
   S004 --> D004["Reliever entry-order source decision<br/>normalizer updated, backfill complete<br/>status: live"]
-  D004 --> NEXT["Next phase: FS-004 builder<br/>matrix build gate<br/>status: next"]
+  D004 --> BR004["FS-004 builder readiness<br/>contract + sources + reliever order pass<br/>status: live"]
+  BR004 --> NEXT["Next phase: FS-004 matrix builder<br/>status: next"]
 
   classDef live fill:#dff3df,stroke:#367c39,color:#102b13;
   classDef partial fill:#fff2c2,stroke:#927000,color:#332800;
   classDef next fill:#d7ecff,stroke:#2f6f9f,color:#0d2638;
 
-  class SQL,FS001,FS002,M001,H001,M002,H002,A002,WF002,FS003,M003,H003,R003,A6,C004,S004,D004 live;
+  class SQL,FS001,FS002,M001,H001,M002,H002,A002,WF002,FS003,M003,H003,R003,A6,C004,S004,D004,BR004 live;
   class NEXT next;
 ```
 
@@ -135,7 +137,7 @@ flowchart TD
 | Alpha-3 | complete | `training_harness` | Harness can load a manifest, split rows, write metrics, and avoid picks. | Smoke test was shallow and not a backtest edge claim. |
 | Alpha-4 | complete | `m3_fs_002_game_story_pitching_state_v0_20260603T155454Z` | First real M3 feature artifact with story, starter, reliever, hitter, and market context. | It did not produce a good candidate model. |
 | Alpha-5 | complete | FS-002 audit, FS-003 artifact, FS-003 harness | Walk-forward and ablations can reject weak candidates honestly. | Pruning did not fix the core feature representation problem. |
-| Alpha-6 | opened | `family_redesign_audit_alpha6`, FS-004 contract, `fs004_source_feasibility_alpha6`, reliever source decision/backfill | FS-003 has evidence fragments for 17 surfaces and fully misses 2 surfaces; FS-004 contract validates; typed sources can support first FS-004 builder work; reliever order fields have a canonicalization decision and backfill. | FS-004 matrix is not materialized yet. |
+| Alpha-6 | opened | `family_redesign_audit_alpha6`, FS-004 contract, `fs004_source_feasibility_alpha6`, reliever source decision/backfill, `fs004_builder_readiness_alpha6` | FS-003 has evidence fragments for 17 surfaces and fully misses 2 surfaces; FS-004 contract validates; typed sources can support first FS-004 builder work; reliever order fields have a canonicalization decision and backfill; builder readiness is clear. | FS-004 matrix is not materialized yet. |
 
 ## Feature Artifacts
 
@@ -239,6 +241,19 @@ No surface is blocked by complete data absence. The two P0 surfaces that require
 - `hitter_vs_reliever_chain_phase`
 
 The decision is recorded: `entry_order`, `first_inning`, and `first_half` belong in canonical `pitcher_appearances`. Typed staging `mlb_pitcher_appearances` is only the normalization/backfill source. The parser is updated and the focused backfill populated 7,495 of 7,498 canonical pitcher appearance rows.
+
+## Alpha-6 Builder Readiness
+
+Status: `builder_readiness_clear`
+
+| Check | Result |
+| --- | --- |
+| FS-004 contract validation | pass |
+| Source decision declaration | pass |
+| FS-004 source feasibility | pass |
+| Canonical reliever order data | pass |
+
+The next allowed step is FS-004 matrix materialization. This still does not allow picks, prop prices, simulator event logs, promotion decisions, or claims that M3 is better.
 
 ## What Is Connected
 
