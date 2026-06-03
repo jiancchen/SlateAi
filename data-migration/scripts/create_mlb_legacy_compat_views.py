@@ -15,20 +15,6 @@ DEFAULT_DB = ROOT / "data-private" / "warehouse" / "sports" / "mlb" / "sql-mlb.d
 DEFAULT_REPORT = ROOT / "data-migration" / "reports" / "create_mlb_legacy_compat_views_2026-06-03.json"
 EVENTS_PATH = ROOT / "data-migration" / "normalization_events.jsonl"
 
-LEGACY_JSON_VIEW_TABLES = [
-    "mlb_game_outcomes",
-    "mlb_hitter_career_profiles",
-    "mlb_hitter_opponent_context_snapshots",
-    "mlb_hitter_statcast_trend_snapshots",
-    "mlb_home_run_backtests",
-    "mlb_home_run_predictions",
-    "mlb_prop_backtests",
-    "mlb_prop_predictions",
-    "mlb_side_backtests",
-    "mlb_side_predictions",
-]
-
-
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--db", type=Path, default=DEFAULT_DB)
@@ -67,6 +53,20 @@ def infer_json_columns(conn: sqlite3.Connection, source_table: str) -> list[str]
         payload = json.loads(row_json)
         keys.update(str(key) for key in payload.keys())
     return sorted(keys)
+
+
+def legacy_json_view_tables(conn: sqlite3.Connection) -> list[str]:
+    static_view_names = set(STATIC_VIEW_SQL)
+    rows = conn.execute(
+        """
+        select distinct source_table
+        from legacy_table_rows
+        where sport = 'mlb'
+          and source_table like 'mlb_%'
+        order by source_table
+        """
+    ).fetchall()
+    return [str(row[0]) for row in rows if str(row[0]) not in static_view_names]
 
 
 def legacy_json_view_sql(source_table: str, columns: list[str]) -> str:
@@ -211,7 +211,7 @@ STATIC_VIEW_SQL = {
 
 def create_views(conn: sqlite3.Connection, dry_run: bool) -> list[dict[str, Any]]:
     views: list[dict[str, Any]] = []
-    for source_table in LEGACY_JSON_VIEW_TABLES:
+    for source_table in legacy_json_view_tables(conn):
         columns = infer_json_columns(conn, source_table)
         row_count = conn.execute(
             """

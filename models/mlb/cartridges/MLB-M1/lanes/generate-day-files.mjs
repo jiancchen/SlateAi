@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const rootDir = path.resolve(__dirname, '..', '..', '..', '..', '..')
+const mlbWarehouseDbPath = path.join(rootDir, 'data-private', 'warehouse', 'sports', 'mlb', 'sql-mlb.db')
 
 const season = 2026
 
@@ -418,7 +419,7 @@ const parseMatchupOdds = async (awayDeskTeam, homeDeskTeam) => {
 const runSqliteJson = (sql) => {
   const output = execFileSync(
     'sqlite3',
-    ['-json', path.join(rootDir, 'data-private', 'warehouse', 'sports.db'), sql],
+    ['-json', mlbWarehouseDbPath, sql],
     { encoding: 'utf8', cwd: rootDir }
   )
   return JSON.parse(output || '[]')

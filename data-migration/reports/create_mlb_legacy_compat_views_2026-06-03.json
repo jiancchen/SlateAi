@@ -1,20 +1,74 @@
 {
   "dry_run": false,
-  "generated_at": "2026-06-03T04:12:17.137268+00:00",
+  "generated_at": "2026-06-03T04:17:09.342891+00:00",
   "ok": true,
   "report_path": "data-migration/reports/create_mlb_legacy_compat_views_2026-06-03.json",
   "script": "data-migration/scripts/create_mlb_legacy_compat_views.py",
   "summary": {
-    "views_created": 13,
-    "views_planned": 13
+    "views_created": 68,
+    "views_planned": 68
   },
   "typed_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
   "views": [
+    {
+      "columns": 23,
+      "rows": 18080,
+      "source": "legacy_table_rows",
+      "view": "mlb_batter_game_outcomes"
+    },
+    {
+      "columns": 16,
+      "rows": 3508,
+      "source": "legacy_table_rows",
+      "view": "mlb_bullpen_mistake_shape_daily"
+    },
+    {
+      "columns": 22,
+      "rows": 16542,
+      "source": "legacy_table_rows",
+      "view": "mlb_bullpen_usage"
+    },
+    {
+      "columns": 18,
+      "rows": 1610,
+      "source": "legacy_table_rows",
+      "view": "mlb_featured_market_odds_snapshots"
+    },
     {
       "columns": 24,
       "rows": 886,
       "source": "legacy_table_rows",
       "view": "mlb_game_outcomes"
+    },
+    {
+      "columns": 13,
+      "rows": 886,
+      "source": "legacy_table_rows",
+      "view": "mlb_game_story_labels"
+    },
+    {
+      "columns": 27,
+      "rows": 886,
+      "source": "legacy_table_rows",
+      "view": "mlb_game_story_signals"
+    },
+    {
+      "columns": 20,
+      "rows": 306,
+      "source": "legacy_table_rows",
+      "view": "mlb_game_sun_visibility_snapshots"
+    },
+    {
+      "columns": 32,
+      "rows": 1776,
+      "source": "legacy_table_rows",
+      "view": "mlb_game_team_stats"
+    },
+    {
+      "columns": 12,
+      "rows": 295,
+      "source": "legacy_table_rows",
+      "view": "mlb_game_visibility_outcomes"
     },
     {
       "columns": 36,
@@ -23,10 +77,34 @@
       "view": "mlb_hitter_career_profiles"
     },
     {
+      "columns": 19,
+      "rows": 25167,
+      "source": "legacy_table_rows",
+      "view": "mlb_hitter_classic_trend_snapshots"
+    },
+    {
       "columns": 17,
       "rows": 25167,
       "source": "legacy_table_rows",
       "view": "mlb_hitter_opponent_context_snapshots"
+    },
+    {
+      "columns": 16,
+      "rows": 206697,
+      "source": "legacy_table_rows",
+      "view": "mlb_hitter_pitch_type_response_daily"
+    },
+    {
+      "columns": 44,
+      "rows": 693,
+      "source": "legacy_table_rows",
+      "view": "mlb_hitter_split_snapshots"
+    },
+    {
+      "columns": 35,
+      "rows": 18004,
+      "source": "legacy_table_rows",
+      "view": "mlb_hitter_statcast_game_logs"
     },
     {
       "columns": 35,
@@ -35,16 +113,142 @@
       "view": "mlb_hitter_statcast_trend_snapshots"
     },
     {
+      "columns": 20,
+      "rows": 24396,
+      "source": "legacy_table_rows",
+      "view": "mlb_hitter_state_snapshots"
+    },
+    {
       "columns": 8,
       "rows": 182,
       "source": "legacy_table_rows",
       "view": "mlb_home_run_backtests"
     },
     {
+      "columns": 18,
+      "rows": 1900,
+      "source": "legacy_table_rows",
+      "view": "mlb_home_run_events"
+    },
+    {
       "columns": 10,
       "rows": 194,
       "source": "legacy_table_rows",
       "view": "mlb_home_run_predictions"
+    },
+    {
+      "columns": 25,
+      "rows": 390,
+      "source": "legacy_table_rows",
+      "view": "mlb_kalshi_market_snapshots"
+    },
+    {
+      "columns": 15,
+      "rows": 3508,
+      "source": "legacy_table_rows",
+      "view": "mlb_likely_relief_chains"
+    },
+    {
+      "columns": 19,
+      "rows": 5262,
+      "source": "legacy_table_rows",
+      "view": "mlb_lineup_conversion_shape_daily"
+    },
+    {
+      "columns": 17,
+      "rows": 3092,
+      "source": "legacy_table_rows",
+      "view": "mlb_lineup_dependency_profiles"
+    },
+    {
+      "columns": 22,
+      "rows": 17655,
+      "source": "legacy_table_rows",
+      "view": "mlb_lineup_pitcher_matchup_daily"
+    },
+    {
+      "columns": 31,
+      "rows": 290,
+      "source": "legacy_table_rows",
+      "view": "mlb_market_mispricing_labels"
+    },
+    {
+      "columns": 32,
+      "rows": 1772,
+      "source": "legacy_table_rows",
+      "view": "mlb_phase_outcomes_daily"
+    },
+    {
+      "columns": 23,
+      "rows": 7498,
+      "source": "legacy_table_rows",
+      "view": "mlb_pitcher_appearances"
+    },
+    {
+      "columns": 16,
+      "rows": 3024,
+      "source": "legacy_table_rows",
+      "view": "mlb_pitcher_first_inning_profiles_daily"
+    },
+    {
+      "columns": 19,
+      "rows": 3024,
+      "source": "legacy_table_rows",
+      "view": "mlb_pitcher_mistake_shape_daily"
+    },
+    {
+      "columns": 16,
+      "rows": 135153,
+      "source": "legacy_table_rows",
+      "view": "mlb_pitcher_pitch_mix_daily"
+    },
+    {
+      "columns": 10,
+      "rows": 1527,
+      "source": "legacy_table_rows",
+      "view": "mlb_pitcher_war_by_season"
+    },
+    {
+      "columns": 16,
+      "rows": 184256,
+      "source": "legacy_table_rows",
+      "view": "mlb_player_current_deviation_daily"
+    },
+    {
+      "columns": 30,
+      "rows": 18080,
+      "source": "legacy_table_rows",
+      "view": "mlb_player_game_batting"
+    },
+    {
+      "columns": 18,
+      "rows": 184228,
+      "source": "legacy_table_rows",
+      "view": "mlb_player_game_distribution_daily"
+    },
+    {
+      "columns": 18,
+      "rows": 184256,
+      "source": "legacy_table_rows",
+      "view": "mlb_player_identity_curves_daily"
+    },
+    {
+      "columns": 20,
+      "rows": 12230,
+      "source": "legacy_table_rows",
+      "view": "mlb_player_identity_model_backtests"
+    },
+    {
+      "columns": 22,
+      "rows": 493,
+      "source": "legacy_table_rows",
+      "view": "mlb_player_identity_profiles"
+    },
+    {
+      "columns": 19,
+      "rows": 2409,
+      "source": "legacy_table_rows",
+      "view": "mlb_player_prop_odds_snapshots"
     },
     {
       "columns": 16,
@@ -59,6 +263,30 @@
       "view": "mlb_prop_predictions"
     },
     {
+      "columns": 16,
+      "rows": 4113,
+      "source": "legacy_table_rows",
+      "view": "mlb_reliever_first_batter_command_profiles"
+    },
+    {
+      "columns": 15,
+      "rows": 1,
+      "source": "legacy_table_rows",
+      "view": "mlb_rp36_settlements"
+    },
+    {
+      "columns": 18,
+      "rows": 30,
+      "source": "legacy_table_rows",
+      "view": "mlb_rp36_team_settlements"
+    },
+    {
+      "columns": 9,
+      "rows": 809,
+      "source": "legacy_table_rows",
+      "view": "mlb_series_context_snapshots"
+    },
+    {
       "columns": 28,
       "rows": 389,
       "source": "legacy_table_rows",
@@ -69,6 +297,108 @@
       "rows": 389,
       "source": "legacy_table_rows",
       "view": "mlb_side_predictions"
+    },
+    {
+      "columns": 17,
+      "rows": 4005,
+      "source": "legacy_table_rows",
+      "view": "mlb_starter_leash_profiles"
+    },
+    {
+      "columns": 27,
+      "rows": 232,
+      "source": "legacy_table_rows",
+      "view": "mlb_starter_third_time_penalty_profiles"
+    },
+    {
+      "columns": 20,
+      "rows": 1776,
+      "source": "legacy_table_rows",
+      "view": "mlb_starting_pitcher_game_logs"
+    },
+    {
+      "columns": 22,
+      "rows": 4533,
+      "source": "legacy_table_rows",
+      "view": "mlb_starting_pitcher_rolling_form"
+    },
+    {
+      "columns": 19,
+      "rows": 1061,
+      "source": "legacy_table_rows",
+      "view": "mlb_state_formula_backtests"
+    },
+    {
+      "columns": 24,
+      "rows": 7120,
+      "source": "legacy_table_rows",
+      "view": "mlb_state_formula_training_rows"
+    },
+    {
+      "columns": 29,
+      "rows": 1754,
+      "source": "legacy_table_rows",
+      "view": "mlb_team_bullpen_shape_daily"
+    },
+    {
+      "columns": 20,
+      "rows": 5262,
+      "source": "legacy_table_rows",
+      "view": "mlb_team_first_inning_profiles_daily"
+    },
+    {
+      "columns": 20,
+      "rows": 3448,
+      "source": "legacy_table_rows",
+      "view": "mlb_team_form_carryover_profiles"
+    },
+    {
+      "columns": 19,
+      "rows": 3508,
+      "source": "legacy_table_rows",
+      "view": "mlb_team_lead_surrender_profiles"
+    },
+    {
+      "columns": 26,
+      "rows": 1754,
+      "source": "legacy_table_rows",
+      "view": "mlb_team_market_context_daily"
+    },
+    {
+      "columns": 24,
+      "rows": 5262,
+      "source": "legacy_table_rows",
+      "view": "mlb_team_mistake_shape_daily"
+    },
+    {
+      "columns": 20,
+      "rows": 1754,
+      "source": "legacy_table_rows",
+      "view": "mlb_team_opponent_quality_daily"
+    },
+    {
+      "columns": 23,
+      "rows": 5196,
+      "source": "legacy_table_rows",
+      "view": "mlb_team_rolling_form"
+    },
+    {
+      "columns": 24,
+      "rows": 1754,
+      "source": "legacy_table_rows",
+      "view": "mlb_team_state_snapshots"
+    },
+    {
+      "columns": 20,
+      "rows": 3092,
+      "source": "legacy_table_rows",
+      "view": "mlb_team_story_priors"
+    },
+    {
+      "columns": 18,
+      "rows": 3508,
+      "source": "legacy_table_rows",
+      "view": "mlb_team_whiff_persistence_profiles"
     },
     {
       "columns": null,

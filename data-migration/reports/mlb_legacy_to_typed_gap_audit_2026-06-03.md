@@ -1,10 +1,10 @@
 # MLB Legacy to Typed DB Migration Gap Audit
 
-Generated: 2026-06-03T04:15:26.094Z
+Generated: 2026-06-03T04:19:09.828Z
 
 Legacy DB: `data-private/warehouse/sports.db` (2257.7 MB)
 
-Typed DB: `data-private/warehouse/sports/mlb/sql-mlb.db` (5083.4 MB)
+Typed DB: `data-private/warehouse/sports/mlb/sql-mlb.db` (5083.5 MB)
 
 ## Summary
 
@@ -13,8 +13,8 @@ Typed DB: `data-private/warehouse/sports/mlb/sql-mlb.db` (5083.4 MB)
 - Tables staged in `legacy_table_rows`: 70
 - Staged rows: 1206213
 - Typed target tables inspected: 97
-- Direct `sports.db` code references found: 112
-- Runtime cutover blockers: 22
+- Direct `sports.db` code references found: 97
+- Runtime cutover blockers: 7
 
 ## Status Counts
 
@@ -62,23 +62,8 @@ These code paths still directly reference `data-private/warehouse/sports.db` or 
 | mlb_pipeline_runtime | pipeline/mlb/warehouse/mlb_side_backtest.py:12 | DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db" |
 | mlb_pipeline_runtime | pipeline/mlb/fetchers/fetch_fanduel_research_mlb.py:26 | DB_PATH = WAREHOUSE_DIR / "sports.db" |
 | mlb_pipeline_runtime | pipeline/mlb/fetchers/fetch_historical_mlb_odds.py:25 | DB_PATH = WAREHOUSE_DIR / "sports.db" |
-| mlb_model_runtime | models/mlb/cartridges/MLB-M1/lanes/props.mjs:56 | const warehouseDbPath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db') |
-| mlb_model_runtime | models/mlb/cartridges/MLB-M1/lanes/props.mjs:82 | const output = execFileSync('sqlite3', ['-json', warehouseDbPath, sql], { |
-| mlb_model_runtime | models/mlb/cartridges/MLB-M2/lanes/generate-day-files.mjs:421 | ['-json', path.join(rootDir, 'data-private', 'warehouse', 'sports.db'), sql], |
-| mlb_model_runtime | models/mlb/cartridges/MLB-M1/lanes/generate-day-files.mjs:421 | ['-json', path.join(rootDir, 'data-private', 'warehouse', 'sports.db'), sql], |
-| mlb_model_runtime | models/mlb/cartridges/MLB-M0/lanes/props.mjs:56 | const warehouseDbPath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db') |
-| mlb_model_runtime | models/mlb/cartridges/MLB-M0/lanes/props.mjs:82 | const output = execFileSync('sqlite3', ['-json', warehouseDbPath, sql], { |
-| mlb_model_runtime | models/mlb/cartridges/MLB-M1/lanes/history-journal.mjs:86 | const output = execSync(`sqlite3 -json data-private/warehouse/sports.db "${escaped}"`, { |
-| mlb_model_runtime | models/mlb/cartridges/MLB-M0/lanes/lineups.mjs:11 | const warehousePath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db') |
-| mlb_model_runtime | models/mlb/cartridges/MLB-M0/lanes/lineups.mjs:111 | if (!existsSync(warehousePath)) return [] |
-| mlb_model_runtime | models/mlb/cartridges/MLB-M0/lanes/lineups.mjs:112 | const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { encoding: 'utf8' }).trim() |
-| mlb_model_runtime | models/mlb/cartridges/MLB-M0/lanes/generate-day-files.mjs:421 | ['-json', path.join(rootDir, 'data-private', 'warehouse', 'sports.db'), sql], |
-| mlb_model_runtime | models/mlb/cartridges/MLB-M1/lanes/lineups.mjs:11 | const warehousePath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db') |
-| mlb_model_runtime | models/mlb/cartridges/MLB-M1/lanes/lineups.mjs:111 | if (!existsSync(warehousePath)) return [] |
-| mlb_model_runtime | models/mlb/cartridges/MLB-M1/lanes/lineups.mjs:112 | const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { encoding: 'utf8' }).trim() |
-| mlb_model_runtime | models/mlb/cartridges/MLB-RP36/snapshot_run.py:18 | DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db" |
-| mlb_model_runtime | models/mlb/cartridges/MLB-M0/lanes/history-journal.mjs:86 | const output = execSync(`sqlite3 -json data-private/warehouse/sports.db "${escaped}"`, { |
 | mlb_model_runtime | models/mlb/cartridges/MLB-RP36/exporter.py:41 | DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db" |
+| mlb_model_runtime | models/mlb/cartridges/MLB-RP36/snapshot_run.py:18 | DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db" |
 
 ## Largest Legacy Source Tables
 

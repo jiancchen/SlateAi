@@ -1,10 +1,11 @@
 import fs from 'node:fs'
 import path from 'node:path'
-import { execSync } from 'node:child_process'
+import { execFileSync, execSync } from 'node:child_process'
 import { slateDays } from '../../../../../web/src/lib/slate-days.js'
 import { games as may24Games } from '../../../../../web/src/lib/day-2026-05-24.js'
 
 const ROOT = process.cwd()
+const MLB_WAREHOUSE_DB = path.join(ROOT, 'data-private', 'warehouse', 'sports', 'mlb', 'sql-mlb.db')
 const HISTORY_DIR = path.join(ROOT, 'data-private', 'history')
 const SLATES_DIR = path.join(ROOT, 'published-data', 'slates')
 const DEFAULT_HR_MODEL_NAME = 'statcast-hr-prototype-v3'
@@ -82,8 +83,7 @@ const CUSTOM_DAY_GAMES = {
 }
 
 const readJsonSql = (query) => {
-  const escaped = query.replace(/"/g, '\\"')
-  const output = execSync(`sqlite3 -json data-private/warehouse/sports.db "${escaped}"`, {
+  const output = execFileSync('sqlite3', ['-json', MLB_WAREHOUSE_DB, query], {
     cwd: ROOT,
     encoding: 'utf8'
   }).trim()

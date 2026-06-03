@@ -53,7 +53,7 @@ const propThresholdByType = {
   pitcherStrikeouts: null
 }
 
-const warehouseDbPath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db')
+const mlbWarehouseDbPath = path.join(rootDir, 'data-private', 'warehouse', 'sports', 'mlb', 'sql-mlb.db')
 
 const parseBaseballInnings = (value = 0) => {
   const stringValue = `${value}`.trim()
@@ -79,7 +79,7 @@ const clamp = (value, min, max) => Math.min(max, Math.max(min, value))
 const roundToTenths = (value) => Math.round(Number(value) * 10) / 10
 
 const runSqliteJson = (sql) => {
-  const output = execFileSync('sqlite3', ['-json', warehouseDbPath, sql], {
+  const output = execFileSync('sqlite3', ['-json', mlbWarehouseDbPath, sql], {
     cwd: rootDir,
     encoding: 'utf8'
   })

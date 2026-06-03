@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const rootDir = path.resolve(__dirname, '..', '..', '..', '..', '..')
 const season = 2026
-const warehousePath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db')
+const mlbWarehousePath = path.join(rootDir, 'data-private', 'warehouse', 'sports', 'mlb', 'sql-mlb.db')
 
 const deskToOfficialTeam = {
   Nationals: 'Washington Nationals',
@@ -108,8 +108,8 @@ const formatRate = (value, digits = 3) => {
 const quoteSqlText = (value = '') => `'${String(value).replace(/'/g, "''")}'`
 
 const runSqliteJson = (sql) => {
-  if (!existsSync(warehousePath)) return []
-  const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { encoding: 'utf8' }).trim()
+  if (!existsSync(mlbWarehousePath)) return []
+  const raw = execFileSync('sqlite3', ['-json', mlbWarehousePath, sql], { encoding: 'utf8' }).trim()
   return raw ? JSON.parse(raw) : []
 }
 
