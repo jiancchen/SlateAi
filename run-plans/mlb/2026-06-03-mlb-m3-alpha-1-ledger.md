@@ -6,6 +6,8 @@ Phase ID: `mlb-m3-alpha-1`
 
 Run plan: `run-plans/mlb/2026-06-03-mlb-m3-alpha-1-run-plan.md`
 
+Artifact review: `run-plans/mlb/2026-06-03-mlb-m3-alpha-1-artifact-review.md`
+
 Status: opened
 
 ## Decision Ledger
@@ -45,7 +47,7 @@ Status: opened
 | A1-W017 | Add lineup and PA-volume scaffolding | complete | lineup known/slot/complete fields | No fixed expected AB input was materialized. |
 | A1-W018 | Add market context or defer explicitly | complete | pregame market snapshot counts | Counts only snapshots captured before scheduled start time. |
 | A1-W019 | Run first full alpha-1 dry build | complete | `m3_fs_001_game_shape_starter_v1_20260603T091939Z` | 886 rows, 77 columns, 62 features, 9 targets; Parquet readback passed. |
-| A1-W020 | Review alpha-1 artifacts | pending | accepted/revise/defer notes | Freeze or revise `M3-FS-001` v0.1.0. |
+| A1-W020 | Review alpha-1 artifacts | complete | `2026-06-03-mlb-m3-alpha-1-artifact-review.md` | Accepted as first alpha-1 materialized artifact; not a model-quality or edge claim. |
 
 ## Source Table Ledger
 
@@ -111,7 +113,7 @@ Items to resolve during implementation:
 - exact column mappings for base rows and targets
 - market timestamp semantics for pregame-safe market context
 - freshness and identity coverage for `likely_relief_chains` and `reliever_command_profiles`
-- alpha-1 artifact review and freeze/revise decision
+- future run orchestrator should record dirty-worktree state or post-commit artifact hash lineage
 
 ## Stop Log
 
