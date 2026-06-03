@@ -90,7 +90,7 @@
       "unresolved_count": 0
     }
   },
-  "generated_at": "2026-06-03T19:28:14.205142+00:00",
+  "generated_at": "2026-06-03T19:35:25.009931+00:00",
   "ok": false,
   "raw_slot_count": 266,
   "script": "data-migration/scripts/validate_mlb_lineups_raw_to_typed.py",

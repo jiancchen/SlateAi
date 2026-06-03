@@ -82,7 +82,7 @@
       "unresolved_count": 0
     }
   },
-  "generated_at": "2026-06-03T19:28:14.511109+00:00",
+  "generated_at": "2026-06-03T19:35:25.332615+00:00",
   "ok": false,
   "script": "data-migration/scripts/validate_mlb_player_context_raw_to_typed.py",
   "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db"

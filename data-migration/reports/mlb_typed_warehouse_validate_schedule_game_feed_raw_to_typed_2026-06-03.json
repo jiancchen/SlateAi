@@ -26,7 +26,7 @@
     "updated_at": "2026-06-03T19:14:59.618128+00:00"
   },
   "games": 15,
-  "generated_at": "2026-06-03T19:28:14.103106+00:00",
+  "generated_at": "2026-06-03T19:35:24.957361+00:00",
   "health_check": {
     "actual_count": 15,
     "check_name": "mlb_schedule_game_feed_raw_to_typed:2026-06-03",
