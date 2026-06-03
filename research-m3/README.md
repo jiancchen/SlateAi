@@ -16,6 +16,7 @@ The model should learn states like starter stress, dead bats, traffic without co
 - [Model Architecture Notes](model-architecture-notes.md)
 - [Signal Discovery Notes](signal-discovery-notes.md)
 - [Game Story Labels](game-story-labels.md)
+- [M0-M2 Research Catalog For M3](m0-m2-research-catalog.md)
 - [Run Dashboard Notes](run-dashboard-notes.md)
 - [Tech Debt](tech-debt.md)
 
