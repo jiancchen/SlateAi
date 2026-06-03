@@ -18,8 +18,8 @@ These are candidates to rebuild from the useful ideas currently mixed into legac
 
 - PA volume and lineup-order priors
 - sample-size shrinkage and confidence weights
-- player current-form/deviation features
-- pitcher/batter pitch-mix matchup kernels
+- player current-state residual features
+- pitcher/batter pitch-mix matchup and state-memory features
 - bullpen usage, chain, fatigue, and fragility features
 - mistake-shape and chaos/regime features
 - first-inning and F5 state features
@@ -32,7 +32,7 @@ Every feature job should define:
 
 - feature set ID and version
 - input table list and as-of cutoff
-- lookback window rules
+- evidence policy, baseline definitions, state-memory encoders, and coverage fields
 - output table or artifact contract
 - validator/report path
 - backtest or calibration hook when labels are involved

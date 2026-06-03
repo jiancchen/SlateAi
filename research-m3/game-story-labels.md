@@ -89,7 +89,7 @@ Starter collapse:
 Bullpen debt:
 
 - Prior game used key relievers.
-- Multiple recent appearances or high pitch counts.
+- Multiple compressed-stretch appearances or high pitch counts.
 - Bridge to late innings weakens.
 
 Bullpen collapse:

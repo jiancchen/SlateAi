@@ -70,7 +70,7 @@ Travel and fatigue:
 - long game duration before travel
 - extra-innings prior game
 - first game after travel
-- third city in short window
+- third city in compressed travel stretch
 
 Team state:
 
@@ -94,13 +94,13 @@ Starter state:
 - command trend by count
 - velocity trend
 - pitch-mix change
-- same opponent within recent window
+- prior same-opponent exposure in state memory
 - batter/pitch-type matchup fit
 
 Bullpen state:
 
 - relievers used yesterday
-- relievers used two or three times in recent days
+- relievers used repeatedly in compressed bullpen stretch
 - pitch counts by reliever
 - expected first-up reliever
 - bridge quality

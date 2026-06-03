@@ -31,12 +31,12 @@ Allowed:
 - `home_starter_runs_allowed_residual_vs_opponent_adjusted_baseline`
 - `away_starter_batters_faced_evidence_count`
 - `away_lineup_pitch_type_damage_vs_starter_mix`
-- `home_starter_unforced_walk_rate_recent_kernel`
+- `home_starter_unforced_walk_rate_state_memory`
 - `away_bullpen_scramble_residual_vs_team_baseline`
 - `market_total_latest_pregame`
 - `home_lineup_known_slot_count`
 
-These are example factual columns, not fixed scores. Baseline columns describe expected talent/context behavior; residual columns describe how recent evidence differs from that baseline.
+These are example factual columns, not fixed scores. Baseline columns describe expected talent/context behavior; residual columns describe how state evidence differs from that baseline.
 
 Not allowed:
 
@@ -48,7 +48,7 @@ Not allowed:
 
 The alpha feature extractor should produce facts, baselines, residuals, evidence coverage, flags, and labels. Model training and backtests decide which columns matter.
 
-Important: M3 must preserve trajectory, not just aggregate form. Recent-path feature families should include ordered evidence, baseline-vs-observed residuals, state-change markers, volatility, tail events, and sample coverage. Averages alone flatten the exact sparse/streaky behavior this architecture is meant to expose.
+Important: M3 must preserve trajectory, not just aggregate form. State-path feature families should include ordered evidence, baseline-vs-observed residuals, state-change markers, volatility, tail events, and sample coverage. Averages alone flatten the exact sparse/streaky behavior this architecture is meant to expose.
 
 Also important: raw outcomes are not enough. M3 must encode opponent quality, pitch-matchup quality, evidence reliability, and event attribution. A walk, a clean inning, or a blowup is not one universal thing; the feature layer should preserve enough context for the model to learn the difference.
 
@@ -151,7 +151,7 @@ pipeline/
       sql/
         m3_fs_001_game_base.sql
         m3_fs_001_targets.sql
-        m3_fs_001_team_recent_shape.sql
+        m3_fs_001_team_state_shape.sql
         m3_fs_001_starter_path.sql
         m3_fs_001_bullpen_shape.sql
         m3_fs_001_lineup_context.sql
@@ -243,7 +243,7 @@ Required fields:
     "evidence_policy_id": "m3_alpha_evidence_v1",
     "baseline_layers": ["league", "role_archetype", "career", "season_to_date", "current_roster_context"],
     "evidence_units": ["pitch", "plate_appearance", "batter_faced", "start", "game", "day"],
-    "recency_kernels": ["ordered_recent_events", "exponential_decay_by_event", "exponential_decay_by_day", "change_point_candidate"],
+    "state_memory_encoders": ["ordered_event_sequence", "entity_state_transition_history", "reaction_to_prior_performance", "change_point_candidate", "learned_event_attention"],
     "residual_baselines": ["league_average", "player_talent", "opponent_adjusted", "park_weather_adjusted", "market_prior"],
     "required_coverage_fields": ["sample_count", "event_count", "days_covered", "availability_flag", "uncertainty_flag"]
   }
@@ -256,14 +256,14 @@ The contract should also include:
 - feature names
 - target names
 - null rules
-- evidence horizon policy and baseline/residual definitions
+- state evidence policy and baseline/residual definitions
 - leakage class for every column
 - owner notes
 - validator list
 
 Side-specific features must be emitted with `home_` and `away_` prefixes at game grain. Generic names in this plan are only logical stems; the actual matrix should use columns like `home_team_run_environment_talent_baseline` and `away_team_run_prevention_residual_vs_baseline`.
 
-Fixed lookback windows are not MLB-M3 primitives. The contract must declare an `evidence_policy_id`, baseline layers, evidence units, recency kernels, residual definitions, and required coverage fields. Any numeric horizon or decay parameter is a tested hypothesis, not a baseball truth.
+Hand-picked evidence lengths are not MLB-M3 primitives. The contract must declare an `evidence_policy_id`, baseline layers, evidence units, state-memory encoders, residual definitions, and required coverage fields. A state encoder can learn that one player rebounds after one bad game while another carries damage forward.
 
 ## Source Tables
 
@@ -366,7 +366,7 @@ M3 should ask:
 
 - what does this player/team/pitcher usually do against average MLB context?
 - how different is today's opponent, park, weather, lineup, and game state from that average context?
-- what recent evidence says the current state is above or below the talent baseline?
+- what state evidence says the current state is above or below the talent baseline?
 - how much evidence supports that deviation?
 
 This is the core sparse-data framing. A great hitter has a higher hit and power baseline than an average hitter. A weak-contact pitcher has a different run-prevention baseline than a volatile strikeout/walk pitcher. But today's game is not the baseline; today's game is a context-adjusted draw around that baseline.
@@ -388,13 +388,13 @@ Rules:
 
 - preserve baseline and residual features side by side
 - do not turn a talent baseline into a pick
-- do not treat recent raw outcomes as talent
+- do not treat short-run raw outcomes as talent
 - include uncertainty/coverage fields for every residual family
 - allow different talent dimensions, such as contact, power, plate discipline, pitch-type damage, command, whiff, contact suppression, and volatility
 
-## Evidence Horizon Rule
+## State Evidence Memory Rule
 
-M3 should not be built around fixed `last N games` windows. Recent evidence should be modeled as an event stream with explicit coverage.
+M3 should not be built around fixed game counts, fixed event counts, or hand-picked memory lengths. Evidence should be modeled as an event stream with explicit coverage and entity-specific state memory.
 
 The first contract should declare an evidence policy:
 
@@ -403,7 +403,7 @@ The first contract should declare an evidence policy:
   "evidence_policy_id": "m3_alpha_evidence_v1",
   "baseline_layers": ["league", "role_archetype", "career", "season_to_date", "current_roster_context"],
   "evidence_units": ["pitch", "plate_appearance", "batter_faced", "start", "game", "day"],
-  "recency_kernels": ["ordered_recent_events", "exponential_decay_by_event", "exponential_decay_by_day", "change_point_candidate"],
+  "state_memory_encoders": ["ordered_event_sequence", "entity_state_transition_history", "reaction_to_prior_performance", "change_point_candidate", "learned_event_attention"],
   "residual_baselines": ["league_average", "player_talent", "opponent_adjusted", "park_weather_adjusted", "market_prior"],
   "required_coverage_fields": ["sample_count", "event_count", "days_covered", "availability_flag", "uncertainty_flag"]
 }
@@ -411,21 +411,21 @@ The first contract should declare an evidence policy:
 
 Rules:
 
-- generate evidence from source event streams, not from a magic fixed window
+- generate evidence from source event streams, not from a hand-picked memory length
 - record the evidence unit: pitch, PA, batter faced, start, game, or day
 - include coverage fields for every evidence feature
-- use ordered evidence and recency kernels to preserve trajectory
-- allow numeric horizons or decay parameters only as tested hyperparameters in backtest, not as hard-coded baseball truths
-- do not promote any horizon/kernel family without chronological backtest evidence
+- use ordered evidence and state-memory encoders to preserve trajectory
+- support entity-specific response patterns, such as quick rebound, lingering slump, command spiral, or confidence reset
+- do not promote any memory encoder without chronological backtest evidence
 
 Example columns:
 
 ```text
-home_starter_command_residual_recent_kernel
+home_starter_command_residual_state_memory
 home_starter_command_residual_event_count
 home_starter_command_residual_days_covered
 home_starter_command_residual_uncertainty_flag
-away_lineup_pitch_type_damage_recent_kernel
+away_lineup_pitch_type_damage_state_memory
 away_lineup_pitch_type_damage_event_count
 ```
 
@@ -435,12 +435,12 @@ Any feature family that describes current state must preserve path shape. The bu
 
 For team, starter, bullpen, and later player-prop evidence, include one or more of:
 
-- ordered recent event/state columns
+- ordered event/state columns
 - residuals versus baseline
 - state-change markers
 - change-point candidates
 - volatility and tail-event counts
-- days/rest/recency gaps
+- days/rest/state-transition gaps
 - evidence coverage columns
 
 Example:
@@ -460,7 +460,7 @@ This is still allowed M3 behavior because these are factual feature definitions.
 
 M3 must treat thin history as first-class information, not a missing-data nuisance.
 
-If a pitcher has only one meaningful recent start or a thin MLB record, the builder should not pretend stable form exists. It should emit:
+If a pitcher has only one meaningful MLB start or a thin MLB record, the builder should not pretend stable form exists. It should emit:
 
 - actual sample counts by unit, such as starts, batters faced, plate appearances, pitches, innings, and days covered
 - availability flags for each feature family
@@ -475,7 +475,7 @@ Example columns:
 home_starter_start_evidence_count
 home_starter_batters_faced_evidence_count
 home_starter_pitch_evidence_count
-home_starter_recent_run_prevention_available_flag
+home_starter_state_run_prevention_available_flag
 home_starter_pitch_mix_available_flag
 home_starter_low_mlb_evidence_flag
 home_starter_career_profile_available_flag
@@ -495,7 +495,7 @@ A pitcher start is not independent of the opponent. M3 must represent both raw o
 
 Core matchup facts:
 
-- pitcher pitch mix and recent pitch-mix changes
+- pitcher pitch mix and pitch-mix state changes
 - opposing lineup response by pitch type
 - handedness and lineup composition
 - opponent chase, whiff, contact, hard-contact, walk, and damage profiles
@@ -505,13 +505,13 @@ Core matchup facts:
 Example columns:
 
 ```text
-home_starter_fastball_usage_recent_kernel
-home_starter_slider_usage_recent_kernel
-away_lineup_fastball_damage_recent_pa_kernel
-away_lineup_slider_whiff_recent_pa_kernel
+home_starter_fastball_usage_state_memory
+home_starter_slider_usage_state_memory
+away_lineup_fastball_damage_state_memory
+away_lineup_slider_whiff_state_memory
 away_lineup_pitch_type_damage_vs_home_starter_mix
-home_starter_prior_opponent_quality_recent_kernel
-home_starter_runs_allowed_opponent_adjusted_most_recent_start
+home_starter_prior_opponent_quality_state_memory
+home_starter_runs_allowed_opponent_adjusted_prior_start
 ```
 
 Rules:
@@ -536,14 +536,14 @@ Walks are the clean example. A walk can be:
 Example walk-attribution columns:
 
 ```text
-home_starter_walk_rate_recent_kernel
-home_starter_unforced_walk_rate_recent_kernel
-home_starter_forced_walk_rate_recent_kernel
-home_starter_four_pitch_walk_rate_recent_kernel
-home_starter_deep_count_walk_rate_recent_kernel
-home_starter_noncompetitive_ball_rate_recent_kernel
-away_lineup_forced_walk_draw_rate_recent_kernel
-away_lineup_chase_refusal_rate_recent_kernel
+home_starter_walk_rate_state_memory
+home_starter_unforced_walk_rate_state_memory
+home_starter_forced_walk_rate_state_memory
+home_starter_four_pitch_walk_rate_state_memory
+home_starter_deep_count_walk_rate_state_memory
+home_starter_noncompetitive_ball_rate_state_memory
+away_lineup_forced_walk_draw_rate_state_memory
+away_lineup_chase_refusal_rate_state_memory
 ```
 
 Rules:
@@ -566,18 +566,18 @@ home_team_run_creation_talent_baseline
 away_team_run_creation_talent_baseline
 home_team_run_prevention_talent_baseline
 away_team_run_prevention_talent_baseline
-home_team_run_creation_residual_recent_kernel
-away_team_run_creation_residual_recent_kernel
-home_team_run_prevention_residual_recent_kernel
-away_team_run_prevention_residual_recent_kernel
+home_team_run_creation_residual_state_memory
+away_team_run_creation_residual_state_memory
+home_team_run_prevention_residual_state_memory
+away_team_run_prevention_residual_state_memory
 home_team_power_tail_talent_baseline
 away_team_power_tail_talent_baseline
-home_team_power_tail_residual_recent_kernel
-away_team_power_tail_residual_recent_kernel
-home_team_f5_run_creation_residual_recent_kernel
-away_team_f5_run_creation_residual_recent_kernel
-home_team_late_run_volatility_residual_recent_kernel
-away_team_late_run_volatility_residual_recent_kernel
+home_team_power_tail_residual_state_memory
+away_team_power_tail_residual_state_memory
+home_team_f5_run_creation_residual_state_memory
+away_team_f5_run_creation_residual_state_memory
+home_team_late_run_volatility_residual_state_memory
+away_team_late_run_volatility_residual_state_memory
 home_team_run_state_evidence_count
 away_team_run_state_evidence_count
 home_team_run_state_days_covered
@@ -590,12 +590,12 @@ Rules:
 - separate baseline talent from current residual evidence
 - keep sample/evidence coverage columns
 - do not apply manual shrinkage weights in the feature builder
-- do not reduce current state to a fixed lookback average
+- do not reduce current state to a hand-picked average
 - expose sample size so the model can learn reliability
 
 ### 4. Starter Path
 
-Purpose: describe projected starter recent path, workload, and damage patterns.
+Purpose: describe projected starter state path, workload, and damage patterns.
 
 Inputs:
 
@@ -620,12 +620,12 @@ home_starter_whiff_talent_baseline
 away_starter_whiff_talent_baseline
 home_starter_contact_suppression_talent_baseline
 away_starter_contact_suppression_talent_baseline
-home_starter_command_residual_recent_kernel
-away_starter_command_residual_recent_kernel
-home_starter_walk_attribution_residual_recent_kernel
-away_starter_walk_attribution_residual_recent_kernel
-home_starter_contact_quality_residual_recent_kernel
-away_starter_contact_quality_residual_recent_kernel
+home_starter_command_residual_state_memory
+away_starter_command_residual_state_memory
+home_starter_walk_attribution_residual_state_memory
+away_starter_walk_attribution_residual_state_memory
+home_starter_contact_quality_residual_state_memory
+away_starter_contact_quality_residual_state_memory
 home_starter_pitch_mix_change_point_candidate
 away_starter_pitch_mix_change_point_candidate
 home_starter_short_start_tail_risk_observed
@@ -669,14 +669,14 @@ home_bullpen_snapshot_available_flag
 away_bullpen_snapshot_available_flag
 home_bullpen_usage_talent_baseline
 away_bullpen_usage_talent_baseline
-home_bullpen_usage_residual_recent_kernel
-away_bullpen_usage_residual_recent_kernel
+home_bullpen_usage_residual_state_memory
+away_bullpen_usage_residual_state_memory
 home_bullpen_reliever_chain_depth_baseline
 away_bullpen_reliever_chain_depth_baseline
-home_bullpen_reliever_chain_depth_residual_recent_kernel
-away_bullpen_reliever_chain_depth_residual_recent_kernel
-home_bullpen_relief_damage_residual_recent_kernel
-away_bullpen_relief_damage_residual_recent_kernel
+home_bullpen_reliever_chain_depth_residual_state_memory
+away_bullpen_reliever_chain_depth_residual_state_memory
+home_bullpen_relief_damage_residual_state_memory
+away_bullpen_relief_damage_residual_state_memory
 home_bullpen_scramble_tail_observed
 away_bullpen_scramble_tail_observed
 home_bullpen_likely_first_reliever_count
@@ -696,7 +696,7 @@ Rules:
 - use latest snapshot with `snapshot_date <= game_date`
 - preserve raw typed table values
 - do not produce one composite "bullpen score" in alpha
-- include trajectory features for workload and damage, not only recent averages
+- include trajectory features for workload and damage, not only averages
 - separate bullpen baseline from current bullpen debt/residual evidence
 - include availability and sample-count fields
 
@@ -708,7 +708,7 @@ Inputs:
 
 - `lineups`
 - `lineup_slots`
-- recent `player_game_batting` or team PA aggregates if available
+- typed `player_game_batting` or team PA aggregates if available
 
 Example columns:
 
@@ -723,8 +723,8 @@ home_lineup_top5_known_count
 away_lineup_top5_known_count
 home_team_pa_volume_talent_baseline
 away_team_pa_volume_talent_baseline
-home_team_pa_volume_residual_recent_kernel
-away_team_pa_volume_residual_recent_kernel
+home_team_pa_volume_residual_state_memory
+away_team_pa_volume_residual_state_memory
 home_team_extra_pa_tail_observed
 away_team_extra_pa_tail_observed
 home_team_pa_volume_evidence_count
@@ -780,20 +780,20 @@ Why gated:
 Initial gated columns:
 
 ```text
-home_team_traffic_pa_rate_recent_kernel
-away_team_traffic_pa_rate_recent_kernel
-home_team_two_out_traffic_rate_recent_kernel
-away_team_two_out_traffic_rate_recent_kernel
+home_team_traffic_pa_rate_state_memory
+away_team_traffic_pa_rate_state_memory
+home_team_two_out_traffic_rate_state_memory
+away_team_two_out_traffic_rate_state_memory
 home_team_gidp_escape_tail_observed
 away_team_gidp_escape_tail_observed
 home_team_crooked_inning_tail_observed
 away_team_crooked_inning_tail_observed
-home_starter_pitch_per_pa_residual_recent_kernel
-away_starter_pitch_per_pa_residual_recent_kernel
-home_starter_runners_on_pa_rate_recent_kernel
-away_starter_runners_on_pa_rate_recent_kernel
-home_lineup_walk_cluster_rate_recent_kernel
-away_lineup_walk_cluster_rate_recent_kernel
+home_starter_pitch_per_pa_residual_state_memory
+away_starter_pitch_per_pa_residual_state_memory
+home_starter_runners_on_pa_rate_state_memory
+away_starter_runners_on_pa_rate_state_memory
+home_lineup_walk_cluster_rate_state_memory
+away_lineup_walk_cluster_rate_state_memory
 ```
 
 Deeper pitch/PA features can be introduced as `M3-FS-002` or `M3-FS-001` v0.2.0, but alpha must at least make replay attribution coverage visible.
@@ -885,7 +885,7 @@ Gate:
 Deliverables:
 
 - starter identity join
-- recent starter path features
+- starter state path features
 - sample-count and availability fields
 - low-MLB-evidence flags
 - TBD starter handling
@@ -1092,7 +1092,7 @@ Baseline models to compare later:
 
 - naive mean total by season/month
 - market total only
-- team recent shape only
+- team baseline/state only
 - typed feature matrix without market
 - typed feature matrix with market
 - M2 baseline where comparable
@@ -1105,8 +1105,8 @@ Metrics later:
 - calibration by total bucket
 - tail recall for high and chaos games
 - market line residual by line bucket
-- evidence-kernel ablation by feature family and target
-- stability of selected evidence kernels across chronological folds
+- state-memory encoder ablation by feature family and target
+- stability of selected state-memory encoders across chronological folds
 
 ## M2 Use Policy
 
@@ -1163,7 +1163,7 @@ These block later M3 stages:
 3. Add matrix writer with Parquet and report JSON.
 4. Add validator for primary key, target prefix, feature dictionary, and leakage classes.
 5. Add source coverage audit for opponent matchup, evidence reliability, and replay attribution.
-6. Add team recent shape.
+6. Add team baseline/state shape.
 7. Add starter path with sample/evidence reliability fields.
 8. Add opponent pitch-matchup quality.
 9. Add gated replay-state attribution features if validator is green.
@@ -1205,7 +1205,7 @@ The first M3 feature set is accepted when:
 
 - `M3-FS-001` builds from typed DB only
 - row and target counts are explainable
-- evidence policy and active kernels are declared and recorded in the build report
+- evidence policy and active state-memory encoders are declared and recorded in the build report
 - low-evidence, opponent-matchup, and event-attribution coverage are reported
 - all feature columns have dictionary entries
 - all target columns are isolated

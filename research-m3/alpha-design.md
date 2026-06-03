@@ -200,7 +200,7 @@ Feature families:
 - series state
 - team streak and form
 - starter form and prior stress
-- bullpen recent usage and debt
+- bullpen compressed-stretch usage and debt
 - lineup and handedness context
 - pitch-type matchup context
 - park/weather/umpire context
@@ -251,8 +251,8 @@ Each experiment manifest declares:
 ```text
 target
 feature_set
-training_window
-validation_window
+training_period
+validation_period
 split_strategy
 model_family
 calibrator
