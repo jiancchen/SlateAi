@@ -97,7 +97,7 @@ The first real run must also print a short summary to stdout, but stdout is not 
 
 ## CLI Contract
 
-The user-facing command stays one job:
+The user-facing command stays one job. The Python environment must have `duckdb==1.5.3` installed from `data-migration/requirements.txt`, or use the bundled Codex Python runtime that already provides DuckDB.
 
 ```bash
 python3 -m pipeline.mlb.features.builders.build_game_shape_starter_v1 \
@@ -211,4 +211,3 @@ Commit in stable checkpoints:
 6. bullpen/reliever coverage blocks
 7. lineup/market blocks
 8. first dry-run artifact review
-

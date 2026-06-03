@@ -32,19 +32,19 @@ Status: opened
 | A1-W004 | Run current skeleton builder | complete | `data-migration/reports/m3_fs_001_game_shape_starter_v1_skeleton_2026-03-26_to_2026-05-31.json` | Skeleton report is clean and confirms source DB has 101 typed tables/views. |
 | A1-W005 | Audit typed DB source tables | complete | source table ledger below | All contract source tables are present; some date coverage is thin and must be treated as coverage, not hidden fallback. |
 | A1-W006 | Confirm artifact writer support | complete | DuckDB writer path | System `python3` has Pandas but no Parquet writer; bundled Codex Python has DuckDB 1.5.3, and `data-migration/requirements.txt` declares DuckDB 1.5.3. Builder must fail loudly if no Parquet writer is available. |
-| A1-W007 | Materialize game base rows | pending | matrix base columns | Completed MLB games only. |
-| A1-W008 | Materialize postgame targets | pending | `target_*` columns | Targets isolated from pregame features. |
-| A1-W009 | Add data dictionary writer | pending | `data_dictionary.json` | Every feature and target column documented. |
-| A1-W010 | Add leakage/missingness/lineage reports | pending | `leakage.json`, `missingness.json`, `lineage.json` | Reports must be dashboard-readable. |
-| A1-W011 | Add source coverage report | pending | `coverage.json` | Required contract source tables visible even when deferred. |
-| A1-W012 | Add team state-shape block | pending | matrix columns and dictionary | Facts/residuals/coverage only; no composite score. |
-| A1-W013 | Add starter path block | pending | starter coverage and matrix columns | Include known flag, workload path coverage, low-evidence flags. |
-| A1-W014 | Add opponent matchup coverage | pending | matchup coverage fields | Pitch mix and response availability; no hand-built score. |
-| A1-W015 | Add bullpen shape block | pending | bullpen churn coverage | Team bullpen state is not individual reliever performance. |
-| A1-W016 | Add reliever path coverage block | pending | availability/router/chain/arm coverage | Keep availability, router, chain, and performance separate. |
-| A1-W017 | Add lineup and PA-volume scaffolding | pending | lineup coverage fields | Do not materialize fixed expected AB input. |
-| A1-W018 | Add market context or defer explicitly | pending | market coverage fields | Must be pregame timestamp-clean. |
-| A1-W019 | Run first full alpha-1 dry build | pending | matrix/report artifacts | Default date range: 2026-03-26 through 2026-05-31. |
+| A1-W007 | Materialize game base rows | complete | 886 matrix rows | Completed games with typed `game_outcomes`; includes one `Completed Early` game with outcome. |
+| A1-W008 | Materialize postgame targets | complete | 9 `target_*` columns | Targets are isolated under `target_` and included in leakage report. |
+| A1-W009 | Add data dictionary writer | complete | `data_dictionary.json` | Validation found zero undocumented matrix columns. |
+| A1-W010 | Add leakage/missingness/lineage reports | complete | `leakage.json`, `missingness.json`, `lineage.json` | Reports are emitted in the run artifact directory. |
+| A1-W011 | Add source coverage report | complete | `coverage.json` and report mirror | Required contract source tables are visible in source coverage. |
+| A1-W012 | Add team state-shape block | complete | team prior baseline columns | Uses season-to-date prior-game facts only; no composite team score. |
+| A1-W013 | Add starter path block | complete | starter prior path and low-evidence columns | Uses prior starts before game date; no fixed last-N memory. |
+| A1-W014 | Add opponent matchup coverage | complete | lineup matchup hitter counts | Coverage only in alpha-1; no hand-built matchup score. |
+| A1-W015 | Add bullpen shape block | complete | bullpen snapshot availability coverage | Team bullpen state kept separate from individual reliever performance. |
+| A1-W016 | Add reliever path coverage block | complete | availability/router/chain/arm coverage | Keeps chain known rate, pool size, entropy, top-two mass, and command profile coverage separate. |
+| A1-W017 | Add lineup and PA-volume scaffolding | complete | lineup known/slot/complete fields | No fixed expected AB input was materialized. |
+| A1-W018 | Add market context or defer explicitly | complete | pregame market snapshot counts | Counts only snapshots captured before scheduled start time. |
+| A1-W019 | Run first full alpha-1 dry build | complete | `m3_fs_001_game_shape_starter_v1_20260603T091939Z` | 886 rows, 77 columns, 62 features, 9 targets; Parquet readback passed. |
 | A1-W020 | Review alpha-1 artifacts | pending | accepted/revise/defer notes | Freeze or revise `M3-FS-001` v0.1.0. |
 
 ## Source Table Ledger
@@ -91,15 +91,15 @@ Status: opened
 | --- | --- | --- |
 | Contract | exists | `pipeline/mlb/features/contracts/m3_fs_001_game_shape_starter_v1.json` |
 | Contract validator | exists | `pipeline/mlb/features/validators/validate_game_shape_starter_v1.py` |
-| Feature builder | skeleton | `pipeline/mlb/features/builders/build_game_shape_starter_v1.py` |
-| Matrix | pending | `data-private/models/mlb-m3/features/m3_fs_001_game_shape_starter_v1/<run_id>/matrix.parquet` |
-| Data dictionary | pending | `data-private/models/mlb-m3/features/m3_fs_001_game_shape_starter_v1/<run_id>/data_dictionary.json` |
-| Lineage report | pending | `data-private/models/mlb-m3/features/m3_fs_001_game_shape_starter_v1/<run_id>/lineage.json` |
-| Missingness report | pending | `data-private/models/mlb-m3/features/m3_fs_001_game_shape_starter_v1/<run_id>/missingness.json` |
-| Leakage report | pending | `data-private/models/mlb-m3/features/m3_fs_001_game_shape_starter_v1/<run_id>/leakage.json` |
-| Coverage report | pending | `data-private/models/mlb-m3/features/m3_fs_001_game_shape_starter_v1/<run_id>/coverage.json` |
-| Build report | pending | `data-private/models/mlb-m3/features/m3_fs_001_game_shape_starter_v1/<run_id>/build_report.json` |
-| Report mirror | pending | `data-migration/reports/m3_fs_001_game_shape_starter_v1_2026-03-26_to_2026-05-31.json` |
+| Feature builder | materialized alpha-1 | `pipeline/mlb/features/builders/build_game_shape_starter_v1.py` |
+| Matrix | exists | `data-private/models/mlb-m3/features/m3_fs_001_game_shape_starter_v1/m3_fs_001_game_shape_starter_v1_20260603T091939Z/matrix.parquet` |
+| Data dictionary | exists | `data-private/models/mlb-m3/features/m3_fs_001_game_shape_starter_v1/m3_fs_001_game_shape_starter_v1_20260603T091939Z/data_dictionary.json` |
+| Lineage report | exists | `data-private/models/mlb-m3/features/m3_fs_001_game_shape_starter_v1/m3_fs_001_game_shape_starter_v1_20260603T091939Z/lineage.json` |
+| Missingness report | exists | `data-private/models/mlb-m3/features/m3_fs_001_game_shape_starter_v1/m3_fs_001_game_shape_starter_v1_20260603T091939Z/missingness.json` |
+| Leakage report | exists | `data-private/models/mlb-m3/features/m3_fs_001_game_shape_starter_v1/m3_fs_001_game_shape_starter_v1_20260603T091939Z/leakage.json` |
+| Coverage report | exists | `data-private/models/mlb-m3/features/m3_fs_001_game_shape_starter_v1/m3_fs_001_game_shape_starter_v1_20260603T091939Z/coverage.json` |
+| Build report | exists | `data-private/models/mlb-m3/features/m3_fs_001_game_shape_starter_v1/m3_fs_001_game_shape_starter_v1_20260603T091939Z/build_report.json` |
+| Report mirror | exists | `data-migration/reports/m3_fs_001_game_shape_starter_v1_2026-03-26_to_2026-05-31.json` |
 | Skeleton report | exists | `data-migration/reports/m3_fs_001_game_shape_starter_v1_skeleton_2026-03-26_to_2026-05-31.json` |
 
 ## Open Questions
@@ -111,7 +111,8 @@ Items to resolve during implementation:
 - exact column mappings for base rows and targets
 - market timestamp semantics for pregame-safe market context
 - freshness and identity coverage for `likely_relief_chains` and `reliever_command_profiles`
+- alpha-1 artifact review and freeze/revise decision
 
 ## Stop Log
 
-No stops yet.
+- 2026-06-03: Initial Parquet write failed because DuckDB parameter binding inside `COPY ... read_csv_auto` treated the output path as the input pattern. Fixed by materializing a temp DuckDB table from CSV, then copying that table to Parquet. No data issue found.
