@@ -1,0 +1,139 @@
+{
+  "model_component_runs": [],
+  "model_run_lanes": [
+    {
+      "avg_pnl_per100": null,
+      "details_json": {
+        "bucket_frequency_baseline": {
+          "top_class_baseline": "balanced_total",
+          "top_class_validation_accuracy": 0.3486238532110092,
+          "train_counts": {
+            "balanced_total": 203,
+            "early_loaded": 98,
+            "front_loaded": 93,
+            "late_clustered": 62,
+            "low_total": 175,
+            "swingy_high_total": 37
+          },
+          "train_frequency_baseline": {
+            "balanced_total": 0.30389221556886226,
+            "early_loaded": 0.1467065868263473,
+            "front_loaded": 0.13922155688622753,
+            "late_clustered": 0.09281437125748503,
+            "low_total": 0.2619760479041916,
+            "swingy_high_total": 0.05538922155688623
+          },
+          "validation_counts": {
+            "balanced_total": 76,
+            "early_loaded": 26,
+            "front_loaded": 35,
+            "late_clustered": 19,
+            "low_total": 55,
+            "swingy_high_total": 7
+          }
+        },
+        "bucket_target": "target_total_bucket",
+        "lane": "full_game_total",
+        "non_goals": [
+          "no picks",
+          "no selection rows",
+          "no player prop pricing",
+          "no market fair probability claims",
+          "no simulator event logs",
+          "no promotion decisions",
+          "no claim that M3 is better"
+        ],
+        "numeric_target": "target_total_runs_final",
+        "status": "metrics_only",
+        "train_row_count": 668,
+        "train_target_mean_baseline": 8.809880239520957,
+        "validation_mean_baseline_metrics": {
+          "mae": 3.587801461297588,
+          "mean_error": -0.09378948524968475,
+          "rmse": 4.503258093800432,
+          "row_count": 218
+        },
+        "validation_row_count": 218
+      },
+      "graded_count": 218,
+      "hit_count": null,
+      "hit_pct": null,
+      "lane": "full_game_total",
+      "miss_count": null,
+      "model_run_id": "mlb_m3_alpha2_infra_20260603T093000Z",
+      "model_run_lane_id": "mlb_m3_alpha2_infra_20260603T093000Z:full_game_total:alpha3",
+      "row_count": 218,
+      "status": "metrics_only"
+    },
+    {
+      "avg_pnl_per100": null,
+      "details_json": {
+        "bucket_frequency_baseline": {
+          "top_class_baseline": "quiet_first5",
+          "top_class_validation_accuracy": 0.3348623853211009,
+          "train_counts": {
+            "balanced_first5": 96,
+            "first5_firefight": 58,
+            "first_inning_jolt": 190,
+            "quiet_first5": 226,
+            "starter_crack": 98
+          },
+          "train_frequency_baseline": {
+            "balanced_first5": 0.1437125748502994,
+            "first5_firefight": 0.08682634730538923,
+            "first_inning_jolt": 0.2844311377245509,
+            "quiet_first5": 0.3383233532934132,
+            "starter_crack": 0.1467065868263473
+          },
+          "validation_counts": {
+            "balanced_first5": 28,
+            "first5_firefight": 22,
+            "first_inning_jolt": 64,
+            "quiet_first5": 73,
+            "starter_crack": 31
+          }
+        },
+        "bucket_target": "target_f5_bucket",
+        "lane": "f5_total",
+        "non_goals": [
+          "no picks",
+          "no selection rows",
+          "no player prop pricing",
+          "no market fair probability claims",
+          "no simulator event logs",
+          "no promotion decisions",
+          "no claim that M3 is better"
+        ],
+        "numeric_target": "target_total_runs_f5",
+        "status": "metrics_only",
+        "train_row_count": 668,
+        "train_target_mean_baseline": 4.874251497005988,
+        "validation_mean_baseline_metrics": {
+          "mae": 2.660522990715816,
+          "mean_error": -0.1486842828105262,
+          "rmse": 3.3685707710175223,
+          "row_count": 218
+        },
+        "validation_row_count": 218
+      },
+      "graded_count": 218,
+      "hit_count": null,
+      "hit_pct": null,
+      "lane": "f5_total",
+      "miss_count": null,
+      "model_run_id": "mlb_m3_alpha2_infra_20260603T093000Z",
+      "model_run_lane_id": "mlb_m3_alpha2_infra_20260603T093000Z:f5_total:alpha3",
+      "row_count": 218,
+      "status": "metrics_only"
+    }
+  ],
+  "model_run_update": {
+    "model_run_id": "mlb_m3_alpha2_infra_20260603T093000Z",
+    "notes": "Metrics-only alpha-3 harness; no picks, prices, simulator output, or promotion.",
+    "output_count": 0,
+    "run_type": "diagnostic_harness",
+    "status": "harness_metrics_created"
+  },
+  "source_manifest_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_20260603T093000Z/manifest.json",
+  "status": "preview_only_not_inserted"
+}

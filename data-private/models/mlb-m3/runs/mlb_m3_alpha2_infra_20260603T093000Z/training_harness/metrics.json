@@ -1,0 +1,47 @@
+{
+  "candidate_models": {},
+  "feature_artifact_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_001_game_shape_starter_v1/m3_fs_001_game_shape_starter_v1_20260603T091939Z/matrix.parquet",
+  "finished_at": "2026-06-03T15:45:53Z",
+  "lane_reports": {
+    "f5_total": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_20260603T093000Z/training_harness/lane_reports/f5_total.json",
+    "full_game_total": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_20260603T093000Z/training_harness/lane_reports/full_game_total.json"
+  },
+  "lanes": [
+    "full_game_total",
+    "f5_total"
+  ],
+  "non_goals": [
+    "no picks",
+    "no selection rows",
+    "no player prop pricing",
+    "no market fair probability claims",
+    "no simulator event logs",
+    "no promotion decisions",
+    "no claim that M3 is better"
+  ],
+  "run_id": "mlb_m3_alpha2_infra_20260603T093000Z",
+  "source_manifest_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_20260603T093000Z/manifest.json",
+  "split_summary": {
+    "not_a_backtest": true,
+    "policy": "chronological_alpha_harness",
+    "status": "split_created",
+    "train_candidate_range": {
+      "end": "2026-05-15",
+      "start": "2026-03-26"
+    },
+    "train_max_game_date": "2026-05-15 00:00:00",
+    "train_min_game_date": "2026-03-26 00:00:00",
+    "train_row_count": 668,
+    "validation_candidate_range": {
+      "end": "2026-05-31",
+      "start": "2026-05-16"
+    },
+    "validation_max_game_date": "2026-05-31 00:00:00",
+    "validation_min_game_date": "2026-05-16 00:00:00",
+    "validation_row_count": 218
+  },
+  "started_at": "2026-06-03T15:45:52Z",
+  "status": "harness_metrics_created",
+  "target_summary_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_20260603T093000Z/training_harness/target_summary.json",
+  "warnings": []
+}
