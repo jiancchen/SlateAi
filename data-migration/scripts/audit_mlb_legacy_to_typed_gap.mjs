@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { execFileSync } from 'node:child_process';
-import { existsSync, mkdirSync, statSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -57,13 +57,13 @@ const SOURCE_SPECS = {
     family: 'core_replay_state',
     targets: ['plate_appearances'],
     migration: 'data-migration/scripts/ingest_mlb_schedule_game_feed_raw_to_typed.py',
-    notes: 'Critical replay table. Target exists but is currently missing richer legacy base/out/count/score fields.',
+    notes: 'Critical replay table. Replay base/out/count/score fields are validator-gated after the 2026-06-03 backfill.',
   },
   mlb_pitch_events: {
     family: 'core_replay_state',
     targets: ['pitch_events'],
     migration: 'data-migration/scripts/ingest_mlb_schedule_game_feed_raw_to_typed.py',
-    notes: 'Critical replay table. Target exists but is currently missing richer legacy count/call/pitch-order fields.',
+    notes: 'Critical replay table. Replay count/call/pitch-order fields are validator-gated after the 2026-06-03 backfill.',
   },
   mlb_game_outcomes: { family: 'results', targets: ['game_outcomes'], migration: 'data-migration/scripts/normalize_mlb_results.py' },
   mlb_game_team_stats: { family: 'results', targets: ['team_game_stats'], migration: 'data-migration/scripts/normalize_mlb_results.py' },
@@ -207,6 +207,137 @@ const REPLAY_REQUIRED_FIELDS = {
     'raw_json',
   ],
 };
+
+function readValidationReport(name) {
+  const reportPath = path.join(repoRoot, 'data-migration/reports', `${name}_${reportDate}.json`);
+  if (!existsSync(reportPath)) return null;
+  return {
+    path: path.relative(repoRoot, reportPath),
+    payload: JSON.parse(readFileSync(reportPath, 'utf8')),
+  };
+}
+
+function hasNoPositiveChecks(report, checkNames) {
+  return checkNames.every((checkName) => Number(report?.checks?.[checkName] ?? 0) === 0);
+}
+
+function buildValidationEvidence() {
+  const evidence = {};
+
+  const core = readValidationReport('validate_mlb_core_feed_parity');
+  if (
+    core?.payload?.ok === true &&
+    Array.isArray(core.payload.errors) &&
+    core.payload.errors.length === 0 &&
+    hasNoPositiveChecks(core.payload, [
+      'game_field_mismatches',
+      'legacy_game_scores_without_typed_outcome_match',
+      'legacy_games_without_typed_match',
+      'legacy_starting_pitchers_without_typed_match',
+      'pitch_event_row_count_delta',
+      'plate_appearance_row_count_delta',
+      'typed_games_without_legacy_match',
+      'typed_starting_pitchers_without_legacy_match',
+    ])
+  ) {
+    evidence.mlb_games = {
+      status: 'validated_typed_parity_no_source_lineage',
+      gate: core.path,
+      details: 'Game rows, scores, PA counts, pitch counts, and typed-only extras match the legacy feed.',
+    };
+    evidence.mlb_starting_pitchers = {
+      status: 'validated_typed_parity_no_source_lineage',
+      gate: core.path,
+      details: 'Starting pitcher rows match the legacy feed.',
+    };
+  }
+
+  const replay = readValidationReport('validate_mlb_replay_state_typed');
+  if (
+    replay?.payload?.ok === true &&
+    Array.isArray(replay.payload.errors) &&
+    replay.payload.errors.length === 0 &&
+    hasNoPositiveChecks(replay.payload, [
+      'duplicate_pitch_event_order_keys',
+      'duplicate_plate_appearance_order_keys',
+      'final_score_mismatches',
+      'orphan_pitch_events',
+      'pitch_events_invalid_count_state',
+      'pitch_events_missing_raw_json',
+      'pitch_events_missing_replay_key',
+      'pitch_events_pitch_rows_missing_call',
+      'pitch_events_pitch_rows_missing_count_state',
+      'plate_appearances_invalid_count_state',
+      'plate_appearances_invalid_out_state',
+      'plate_appearances_missing_base_state',
+      'plate_appearances_missing_raw_json',
+      'plate_appearances_missing_replay_key',
+      'plate_appearances_missing_score_state',
+      'score_delta_mismatches',
+    ])
+  ) {
+    evidence.mlb_plate_appearances = {
+      status: 'validated_typed_parity_no_source_lineage',
+      gate: replay.path,
+      details: 'Typed PA replay keys, base/out/count/score state, raw JSON, and score deltas passed validation.',
+    };
+    evidence.mlb_pitch_events = {
+      status: 'validated_typed_parity_no_source_lineage',
+      gate: replay.path,
+      details: 'Typed pitch replay keys, count/call state, raw JSON, and PA linkage passed validation.',
+    };
+  }
+
+  const predictions = readValidationReport('validate_mlb_predictions_lineage');
+  if (
+    predictions?.payload?.ok === true &&
+    Array.isArray(predictions.payload.errors) &&
+    predictions.payload.errors.length === 0 &&
+    Number(predictions.payload.missing_prediction_rows ?? 0) === 0 &&
+    Number(predictions.payload.mismatched_prediction_rows ?? 0) === 0
+  ) {
+    for (const sourceTable of predictions.payload.source_tables || []) {
+      evidence[sourceTable] = {
+        status: 'validated_typed_parity_no_source_lineage',
+        gate: predictions.path,
+        details: `${Number(predictions.payload.expected_by_source_table?.[sourceTable] ?? 0)} prediction rows matched deterministic typed normalizer output.`,
+      };
+    }
+  }
+
+  const markets = readValidationReport('validate_mlb_markets_lineage');
+  if (
+    markets?.payload?.ok === true &&
+    Array.isArray(markets.payload.errors) &&
+    markets.payload.errors.length === 0 &&
+    Number(markets.payload.missing_market_snapshots ?? 0) === 0 &&
+    Number(markets.payload.mismatched_market_snapshots ?? 0) === 0
+  ) {
+    for (const sourceTable of markets.payload.source_tables || []) {
+      evidence[sourceTable] = {
+        status: 'validated_typed_parity_no_source_lineage',
+        gate: markets.path,
+        details: `${Number(markets.payload.expected_by_source_table?.[sourceTable] ?? 0)} market snapshot rows matched deterministic typed normalizer output.`,
+      };
+    }
+  }
+
+  const sourceSnapshots = readValidationReport('validate_mlb_source_snapshot_coverage');
+  if (
+    sourceSnapshots?.payload?.ok === true &&
+    Array.isArray(sourceSnapshots.payload.errors) &&
+    sourceSnapshots.payload.errors.length === 0 &&
+    Number(sourceSnapshots.payload.missing_paths ?? 0) === 0
+  ) {
+    evidence.source_snapshots = {
+      status: 'validated_mlb_path_coverage_no_row_lineage',
+      gate: sourceSnapshots.path,
+      details: `${Number(sourceSnapshots.payload.represented_normalized_paths ?? 0)} distinct MLB legacy raw paths are represented in typed source snapshots.`,
+    };
+  }
+
+  return evidence;
+}
 
 function quoteIdent(name) {
   return `"${String(name).replaceAll('"', '""')}"`;
@@ -439,6 +570,9 @@ function renderMarkdown(report) {
       'target_populated_lineage_unclear',
     ].includes(row.status),
   );
+  const validationRows = report.source_audit
+    .filter((row) => row.validation_evidence)
+    .sort((a, b) => a.source_table.localeCompare(b.source_table));
   const replayRows = Object.entries(report.replay_schema_gaps).map(([table, gap]) => ({
     table,
     missing: gap.fields_missing_from_typed.join(', '),
@@ -503,6 +637,15 @@ ${markdownTable(criticalRows, [
   { label: 'Notes', value: (row) => row.notes },
 ])}
 
+## Validator Gates Applied
+
+${markdownTable(validationRows, [
+  { label: 'Source Table', value: (row) => row.source_table },
+  { label: 'Status', value: (row) => row.status },
+  { label: 'Gate', value: (row) => row.validation_evidence?.gate },
+  { label: 'Evidence', value: (row) => row.validation_evidence?.details },
+])}
+
 ## Runtime Sports DB Read Path Audit
 
 These code paths still directly reference \`data-private/warehouse/sports.db\` or shared warehouse path helpers and should be cut over after typed DB parity is proven.
@@ -525,14 +668,13 @@ ${markdownTable(topRows, [
   { label: 'Targets', value: (row) => row.targets.join(', ') },
 ])}
 
-## Migration Order Recommendation
+## Cutover Recommendation
 
-1. Add typed replay-state columns for \`plate_appearances\` and \`pitch_events\`, then backfill from legacy/raw state.
-2. For \`target_populated_not_staged\` tables, prove parity from typed targets and either backfill provenance or document why raw ingest replaced legacy staging.
-3. For \`target_populated_lineage_unclear\` tables, add source lineage columns or targeted validators so prediction/market parity can be proven without \`sports.db\`.
-4. Run family validators after each migration family and require source-lineage counts where the target supports \`source_table\`.
-5. Move remaining MLB-adjacent environment/source metadata into typed DB or document why it is no longer required.
-6. Update all MLB code paths still reading \`data-private/warehouse/sports.db\` after typed parity is proven.
+1. Treat the typed MLB DB as data-complete for the audited MLB source families: open migration-attention rows should be zero before runtime cutover.
+2. Keep the validator reports in the cutover gate because some high-value typed targets intentionally prove parity without row-level \`source_table\` lineage.
+3. Cut the remaining MLB runtime paths from \`data-private/warehouse/sports.db\` to \`data-private/warehouse/sports/mlb/sql-mlb.db\`.
+4. Re-run this audit after each runtime slice and require \`Runtime cutover blockers\` to move downward.
+5. Leave non-MLB legacy consumers explicit until their own sport-specific typed DB migration is done.
 
 Full machine-readable detail is in \`${path.relative(repoRoot, jsonReportPath)}\`.
 `;
@@ -547,6 +689,11 @@ function main() {
   const typedTables = tableNames(typedDbPath);
   const typedTableSet = new Set(typedTables);
   const stagedCounts = legacyStagingCounts();
+  const validationEvidence = buildValidationEvidence();
+  const validationOverrideStatuses = new Set([
+    'target_populated_not_staged',
+    'target_populated_lineage_unclear',
+  ]);
 
   const relevantTables = relevantLegacyTables(legacyTables);
   const legacyColumnsByTable = {};
@@ -574,6 +721,13 @@ function main() {
       };
     });
     const targetSourceRows = targetDetails.reduce((sum, target) => sum + (target.source_rows ?? 0), 0);
+    const baseStatus = classifySource({
+      legacyRows,
+      stagedRows: Number(staged?.rows ?? 0),
+      spec,
+      targetDetails,
+    });
+    const validation = validationOverrideStatuses.has(baseStatus) ? validationEvidence[sourceTable] ?? null : null;
     return {
       source_table: sourceTable,
       family: spec?.family || 'unmapped',
@@ -587,12 +741,9 @@ function main() {
       targets,
       target_details: targetDetails,
       target_source_rows: targetSourceRows,
-      status: classifySource({
-        legacyRows,
-        stagedRows: Number(staged?.rows ?? 0),
-        spec,
-        targetDetails,
-      }),
+      status: validation?.status ?? baseStatus,
+      base_status: baseStatus,
+      validation_evidence: validation,
       columns: legacyColumns.map((column) => column.name),
     };
   });

@@ -1,8 +1,8 @@
 import { execFileSync } from 'node:child_process'
-import { warehousePath } from './paths.js'
+import { legacyWarehousePath, mlbWarehousePath } from './paths.js'
 
-export const runSqliteJson = <T>(sql: string): T[] => {
-  const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], {
+const runSqliteJsonAt = <T>(dbPath: string, sql: string): T[] => {
+  const raw = execFileSync('sqlite3', ['-json', dbPath, sql], {
     encoding: 'utf8'
   }).trim()
 
@@ -10,3 +10,7 @@ export const runSqliteJson = <T>(sql: string): T[] => {
 
   return JSON.parse(raw) as T[]
 }
+
+export const runLegacySqliteJson = <T>(sql: string): T[] => runSqliteJsonAt<T>(legacyWarehousePath, sql)
+
+export const runMlbSqliteJson = <T>(sql: string): T[] => runSqliteJsonAt<T>(mlbWarehousePath, sql)

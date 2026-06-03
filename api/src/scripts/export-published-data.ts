@@ -10,7 +10,7 @@ import {
   listSlateManifestFromModules,
   loadSlateDayFromModules
 } from '../lib/day-loader.js'
-import { dataPrivateRoot, publishedDataRoot, warehousePath } from '../lib/paths.js'
+import { dataPrivateRoot, legacyWarehousePath, publishedDataRoot } from '../lib/paths.js'
 
 const historyJournalRoot = path.join(dataPrivateRoot, 'history')
 const tennisPredictionsRoot = path.join(dataPrivateRoot, 'predictions', 'tennis')
@@ -43,8 +43,8 @@ const titlePairKey = (title: unknown) => {
 }
 
 const runWarehouseJson = <T,>(sql: string): T[] => {
-  if (!fsSync.existsSync(warehousePath)) return []
-  const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { encoding: 'utf8' }).trim()
+  if (!fsSync.existsSync(legacyWarehousePath)) return []
+  const raw = execFileSync('sqlite3', ['-json', legacyWarehousePath, sql], { encoding: 'utf8' }).trim()
   return raw ? JSON.parse(raw) as T[] : []
 }
 

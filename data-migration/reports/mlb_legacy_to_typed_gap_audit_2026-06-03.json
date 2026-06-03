@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T03:52:04.337Z",
+  "generated_at": "2026-06-03T04:07:55.879Z",
   "report_date": "2026-06-03",
   "legacy_db": {
     "path": "/Users/jcchen/Documents/New project/data-private/warehouse/sports.db",
@@ -27,21 +27,21 @@
         "staged_rows": 1202332,
         "target_source_rows": 1202707
       },
-      "target_populated_lineage_unclear": {
-        "tables": 4,
-        "legacy_rows": 3881,
+      "validated_typed_parity_no_source_lineage": {
+        "tables": 8,
+        "legacy_rows": 377988,
         "staged_rows": 3881,
-        "target_source_rows": 0
-      },
-      "target_populated_not_staged": {
-        "tables": 5,
-        "legacy_rows": 382328,
-        "staged_rows": 0,
         "target_source_rows": 0
       },
       "empty_or_inactive": {
         "tables": 2,
         "legacy_rows": 0,
+        "staged_rows": 0,
+        "target_source_rows": 0
+      },
+      "validated_mlb_path_coverage_no_row_lineage": {
+        "tables": 1,
+        "legacy_rows": 8221,
         "staged_rows": 0,
         "target_source_rows": 0
       }
@@ -174,8 +174,8 @@
         "target_source_rows": 407
       }
     },
-    "sports_db_read_paths": 32,
-    "sports_db_cutover_blockers": 21
+    "sports_db_read_paths": 27,
+    "sports_db_cutover_blockers": 13
   },
   "replay_schema_gaps": {
     "plate_appearances": {
@@ -291,6 +291,8 @@
       ],
       "target_source_rows": 18080,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "game_pk",
         "game_date",
@@ -346,6 +348,8 @@
       ],
       "target_source_rows": 3508,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "team_name",
@@ -394,6 +398,8 @@
       ],
       "target_source_rows": 16542,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "team_name",
@@ -451,7 +457,13 @@
         }
       ],
       "target_source_rows": 0,
-      "status": "target_populated_lineage_unclear",
+      "status": "validated_typed_parity_no_source_lineage",
+      "base_status": "target_populated_lineage_unclear",
+      "validation_evidence": {
+        "status": "validated_typed_parity_no_source_lineage",
+        "gate": "data-migration/reports/validate_mlb_markets_lineage_2026-06-03.json",
+        "details": "1610 market snapshot rows matched deterministic typed normalizer output."
+      },
       "columns": [
         "row_key",
         "snapshot_time",
@@ -502,6 +514,8 @@
       ],
       "target_source_rows": 871,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "game_pk",
         "game_date",
@@ -558,6 +572,8 @@
       ],
       "target_source_rows": 886,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "game_pk",
         "game_date",
@@ -603,6 +619,8 @@
       ],
       "target_source_rows": 886,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "game_pk",
         "game_date",
@@ -662,6 +680,8 @@
       ],
       "target_source_rows": 306,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "game_pk",
         "game_date",
@@ -714,6 +734,8 @@
       ],
       "target_source_rows": 1776,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "game_pk",
         "game_date",
@@ -778,6 +800,8 @@
       ],
       "target_source_rows": 295,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "game_pk",
         "game_date",
@@ -821,7 +845,13 @@
         }
       ],
       "target_source_rows": 0,
-      "status": "target_populated_not_staged",
+      "status": "validated_typed_parity_no_source_lineage",
+      "base_status": "target_populated_not_staged",
+      "validation_evidence": {
+        "status": "validated_typed_parity_no_source_lineage",
+        "gate": "data-migration/reports/validate_mlb_core_feed_parity_2026-06-03.json",
+        "details": "Game rows, scores, PA counts, pitch counts, and typed-only extras match the legacy feed."
+      },
       "columns": [
         "game_pk",
         "game_date",
@@ -859,6 +889,8 @@
       ],
       "target_source_rows": 493,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "player_id",
         "full_name",
@@ -927,6 +959,8 @@
       ],
       "target_source_rows": 25167,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "team_name",
@@ -978,6 +1012,8 @@
       ],
       "target_source_rows": 25167,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "team_name",
@@ -1031,6 +1067,8 @@
       ],
       "target_source_rows": 206697,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "snapshot_date",
         "hitter_id",
@@ -1079,6 +1117,8 @@
       ],
       "target_source_rows": 693,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "snapshot_date",
         "season",
@@ -1155,6 +1195,8 @@
       ],
       "target_source_rows": 18004,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "game_date",
         "game_pk",
@@ -1222,6 +1264,8 @@
       ],
       "target_source_rows": 25797,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "team_name",
@@ -1289,6 +1333,8 @@
       ],
       "target_source_rows": 24396,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "team_name",
@@ -1341,6 +1387,8 @@
       ],
       "target_source_rows": 182,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "prediction_date",
         "model_name",
@@ -1381,6 +1429,8 @@
       ],
       "target_source_rows": 1900,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "event_key",
         "game_pk",
@@ -1430,7 +1480,13 @@
         }
       ],
       "target_source_rows": 0,
-      "status": "target_populated_lineage_unclear",
+      "status": "validated_typed_parity_no_source_lineage",
+      "base_status": "target_populated_lineage_unclear",
+      "validation_evidence": {
+        "status": "validated_typed_parity_no_source_lineage",
+        "gate": "data-migration/reports/validate_mlb_predictions_lineage_2026-06-03.json",
+        "details": "194 prediction rows matched deterministic typed normalizer output."
+      },
       "columns": [
         "prediction_date",
         "model_name",
@@ -1481,6 +1537,8 @@
       ],
       "target_source_rows": 780,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "snapshot_ts",
         "game_date",
@@ -1538,6 +1596,8 @@
       ],
       "target_source_rows": 3508,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "team_name",
@@ -1585,6 +1645,8 @@
       ],
       "target_source_rows": 5262,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "team_name",
@@ -1636,6 +1698,8 @@
       ],
       "target_source_rows": 3092,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "team_name",
@@ -1705,6 +1769,8 @@
       ],
       "target_source_rows": 17655,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "snapshot_date",
         "game_pk",
@@ -1759,6 +1825,8 @@
       ],
       "target_source_rows": 290,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "prediction_date",
         "market_type",
@@ -1822,6 +1890,8 @@
       ],
       "target_source_rows": 1772,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "game_pk",
         "game_date",
@@ -1861,7 +1931,7 @@
       "source_table": "mlb_pitch_events",
       "family": "core_replay_state",
       "migration": "data-migration/scripts/ingest_mlb_schedule_game_feed_raw_to_typed.py",
-      "notes": "Critical replay table. Target exists but is currently missing richer legacy count/call/pitch-order fields.",
+      "notes": "Critical replay table. Replay count/call/pitch-order fields are validator-gated after the 2026-06-03 backfill.",
       "legacy_rows": 304181,
       "staged_rows": 0,
       "staged_min_source_date": null,
@@ -1885,7 +1955,13 @@
         }
       ],
       "target_source_rows": 0,
-      "status": "target_populated_not_staged",
+      "status": "validated_typed_parity_no_source_lineage",
+      "base_status": "target_populated_not_staged",
+      "validation_evidence": {
+        "status": "validated_typed_parity_no_source_lineage",
+        "gate": "data-migration/reports/validate_mlb_replay_state_typed_2026-06-03.json",
+        "details": "Typed pitch replay keys, count/call state, raw JSON, and PA linkage passed validation."
+      },
       "columns": [
         "game_pk",
         "at_bat_index",
@@ -1948,6 +2024,8 @@
       ],
       "target_source_rows": 7498,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "game_pk",
         "game_date",
@@ -2003,6 +2081,8 @@
       ],
       "target_source_rows": 3024,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "pitcher_id",
@@ -2051,6 +2131,8 @@
       ],
       "target_source_rows": 3024,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "pitcher_id",
@@ -2106,6 +2188,8 @@
       ],
       "target_source_rows": 135153,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "snapshot_date",
         "pitcher_id",
@@ -2149,6 +2233,8 @@
       ],
       "target_source_rows": 1527,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "season",
         "pitcher_id",
@@ -2166,7 +2252,7 @@
       "source_table": "mlb_plate_appearances",
       "family": "core_replay_state",
       "migration": "data-migration/scripts/ingest_mlb_schedule_game_feed_raw_to_typed.py",
-      "notes": "Critical replay table. Target exists but is currently missing richer legacy base/out/count/score fields.",
+      "notes": "Critical replay table. Replay base/out/count/score fields are validator-gated after the 2026-06-03 backfill.",
       "legacy_rows": 67251,
       "staged_rows": 0,
       "staged_min_source_date": null,
@@ -2190,7 +2276,13 @@
         }
       ],
       "target_source_rows": 0,
-      "status": "target_populated_not_staged",
+      "status": "validated_typed_parity_no_source_lineage",
+      "base_status": "target_populated_not_staged",
+      "validation_evidence": {
+        "status": "validated_typed_parity_no_source_lineage",
+        "gate": "data-migration/reports/validate_mlb_replay_state_typed_2026-06-03.json",
+        "details": "Typed PA replay keys, base/out/count/score state, raw JSON, and score deltas passed validation."
+      },
       "columns": [
         "game_pk",
         "at_bat_index",
@@ -2264,6 +2356,8 @@
       ],
       "target_source_rows": 184256,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "snapshot_date",
         "player_id",
@@ -2312,6 +2406,8 @@
       ],
       "target_source_rows": 18080,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "game_pk",
         "game_date",
@@ -2378,6 +2474,8 @@
       ],
       "target_source_rows": 184228,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "snapshot_date",
         "player_id",
@@ -2432,6 +2530,8 @@
       ],
       "target_source_rows": 184256,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "snapshot_date",
         "player_id",
@@ -2486,6 +2586,8 @@
       ],
       "target_source_rows": 12230,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "backtest_id",
         "model_id",
@@ -2533,6 +2635,8 @@
       ],
       "target_source_rows": 493,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "player_id",
         "full_name",
@@ -2591,6 +2695,8 @@
       ],
       "target_source_rows": 2409,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "row_key",
         "snapshot_time",
@@ -2642,6 +2748,8 @@
       ],
       "target_source_rows": 1688,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "prediction_date",
         "model_name",
@@ -2689,7 +2797,13 @@
         }
       ],
       "target_source_rows": 0,
-      "status": "target_populated_lineage_unclear",
+      "status": "validated_typed_parity_no_source_lineage",
+      "base_status": "target_populated_lineage_unclear",
+      "validation_evidence": {
+        "status": "validated_typed_parity_no_source_lineage",
+        "gate": "data-migration/reports/validate_mlb_predictions_lineage_2026-06-03.json",
+        "details": "1688 prediction rows matched deterministic typed normalizer output."
+      },
       "columns": [
         "prediction_date",
         "model_name",
@@ -2748,6 +2862,8 @@
       ],
       "target_source_rows": 4113,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "team_name",
@@ -2800,6 +2916,8 @@
       ],
       "target_source_rows": 1,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "prediction_date",
         "model_id",
@@ -2847,6 +2965,8 @@
       ],
       "target_source_rows": 30,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "prediction_date",
         "model_id",
@@ -2897,6 +3017,8 @@
       ],
       "target_source_rows": 809,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "game_pk",
@@ -2938,6 +3060,8 @@
       ],
       "target_source_rows": 389,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "prediction_date",
         "model_name",
@@ -2997,7 +3121,13 @@
         }
       ],
       "target_source_rows": 0,
-      "status": "target_populated_lineage_unclear",
+      "status": "validated_typed_parity_no_source_lineage",
+      "base_status": "target_populated_lineage_unclear",
+      "validation_evidence": {
+        "status": "validated_typed_parity_no_source_lineage",
+        "gate": "data-migration/reports/validate_mlb_predictions_lineage_2026-06-03.json",
+        "details": "389 prediction rows matched deterministic typed normalizer output."
+      },
       "columns": [
         "prediction_date",
         "model_name",
@@ -3056,6 +3186,8 @@
       ],
       "target_source_rows": 4005,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "pitcher_id",
@@ -3105,6 +3237,8 @@
       ],
       "target_source_rows": 232,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "pitcher_id",
@@ -3164,6 +3298,8 @@
       ],
       "target_source_rows": 1776,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "game_pk",
         "game_date",
@@ -3216,6 +3352,8 @@
       ],
       "target_source_rows": 4533,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "pitcher_id",
@@ -3264,7 +3402,13 @@
         }
       ],
       "target_source_rows": 0,
-      "status": "target_populated_not_staged",
+      "status": "validated_typed_parity_no_source_lineage",
+      "base_status": "target_populated_not_staged",
+      "validation_evidence": {
+        "status": "validated_typed_parity_no_source_lineage",
+        "gate": "data-migration/reports/validate_mlb_core_feed_parity_2026-06-03.json",
+        "details": "Starting pitcher rows match the legacy feed."
+      },
       "columns": [
         "game_pk",
         "team_role",
@@ -3314,6 +3458,8 @@
       ],
       "target_source_rows": 1061,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "backtest_id",
         "model_id",
@@ -3373,6 +3519,8 @@
       ],
       "target_source_rows": 7120,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "snapshot_date",
         "game_pk",
@@ -3429,6 +3577,8 @@
       ],
       "target_source_rows": 1754,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "team_name",
@@ -3490,6 +3640,8 @@
       ],
       "target_source_rows": 5262,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "team_name",
@@ -3542,6 +3694,8 @@
       ],
       "target_source_rows": 3448,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "team_name",
@@ -3594,6 +3748,8 @@
       ],
       "target_source_rows": 3508,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "team_name",
@@ -3645,6 +3801,8 @@
       ],
       "target_source_rows": 1754,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "team_name",
@@ -3703,6 +3861,8 @@
       ],
       "target_source_rows": 5262,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "team_name",
@@ -3759,6 +3919,8 @@
       ],
       "target_source_rows": 1754,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "team_name",
@@ -3811,6 +3973,8 @@
       ],
       "target_source_rows": 5196,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "team_name",
@@ -3866,6 +4030,8 @@
       ],
       "target_source_rows": 1754,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "team_name",
@@ -3922,6 +4088,8 @@
       ],
       "target_source_rows": 3092,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "team_name",
@@ -3974,6 +4142,8 @@
       ],
       "target_source_rows": 3508,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "as_of_date",
         "team_name",
@@ -4019,6 +4189,8 @@
       ],
       "target_source_rows": 3,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "parent_run_id",
         "component_model_id",
@@ -4051,6 +4223,8 @@
       ],
       "target_source_rows": 19,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "run_id",
         "role",
@@ -4083,6 +4257,8 @@
       ],
       "target_source_rows": 38,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "run_id",
         "lane",
@@ -4133,6 +4309,8 @@
       ],
       "target_source_rows": 8,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "run_id",
         "sport",
@@ -4178,6 +4356,8 @@
       ],
       "target_source_rows": 0,
       "status": "empty_or_inactive",
+      "base_status": "empty_or_inactive",
+      "validation_evidence": null,
       "columns": [
         "snapshot_date",
         "team_name",
@@ -4205,13 +4385,19 @@
         {
           "table": "source_snapshots",
           "exists": true,
-          "total_rows": 2251,
+          "total_rows": 2252,
           "source_rows": null,
           "has_source_table_column": false
         }
       ],
       "target_source_rows": 0,
-      "status": "target_populated_not_staged",
+      "status": "validated_mlb_path_coverage_no_row_lineage",
+      "base_status": "target_populated_not_staged",
+      "validation_evidence": {
+        "status": "validated_mlb_path_coverage_no_row_lineage",
+        "gate": "data-migration/reports/validate_mlb_source_snapshot_coverage_2026-06-03.json",
+        "details": "992 distinct MLB legacy raw paths are represented in typed source snapshots."
+      },
       "columns": [
         "id",
         "source_key",
@@ -4251,6 +4437,8 @@
       ],
       "target_source_rows": 407,
       "status": "normalized_with_source_lineage",
+      "base_status": "normalized_with_source_lineage",
+      "validation_evidence": null,
       "columns": [
         "snapshot_date",
         "season",
@@ -4292,6 +4480,8 @@
       ],
       "target_source_rows": 0,
       "status": "empty_or_inactive",
+      "base_status": "empty_or_inactive",
+      "validation_evidence": null,
       "columns": [
         "game_pk",
         "observed_at",
@@ -4314,62 +4504,6 @@
       "text": "conn = sqlite3.connect(\"data-private/warehouse/sports.db\")"
     },
     {
-      "file": "api/src/scripts/export-published-data.ts",
-      "line": 13,
-      "group": "api_runtime",
-      "cutover_blocker": true,
-      "text": "import { dataPrivateRoot, publishedDataRoot, warehousePath } from '../lib/paths.js'"
-    },
-    {
-      "file": "api/src/scripts/export-published-data.ts",
-      "line": 46,
-      "group": "api_runtime",
-      "cutover_blocker": true,
-      "text": "if (!fsSync.existsSync(warehousePath)) return []"
-    },
-    {
-      "file": "api/src/scripts/export-published-data.ts",
-      "line": 47,
-      "group": "api_runtime",
-      "cutover_blocker": true,
-      "text": "const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { encoding: 'utf8' }).trim()"
-    },
-    {
-      "file": "api/src/lib/paths.ts",
-      "line": 11,
-      "group": "api_runtime",
-      "cutover_blocker": true,
-      "text": "export const warehousePath = path.join(dataPrivateRoot, 'warehouse', 'sports.db')"
-    },
-    {
-      "file": "api/src/server.ts",
-      "line": 14,
-      "group": "api_runtime",
-      "cutover_blocker": true,
-      "text": "import { warehousePath } from './lib/paths.js'"
-    },
-    {
-      "file": "api/src/server.ts",
-      "line": 39,
-      "group": "api_runtime",
-      "cutover_blocker": true,
-      "text": "warehousePath"
-    },
-    {
-      "file": "api/src/lib/sqlite.ts",
-      "line": 2,
-      "group": "api_runtime",
-      "cutover_blocker": true,
-      "text": "import { warehousePath } from './paths.js'"
-    },
-    {
-      "file": "api/src/lib/sqlite.ts",
-      "line": 5,
-      "group": "api_runtime",
-      "cutover_blocker": true,
-      "text": "const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], {"
-    },
-    {
       "file": "data-migration/scripts/inspect_legacy_dbs.mjs",
       "line": 12,
       "group": "data_migration_utility",
@@ -4377,11 +4511,39 @@
       "text": "const defaultDbPath = path.join(repoRoot, 'data-private/warehouse/sports.db');"
     },
     {
+      "file": "data-migration/scripts/validate_mlb_source_snapshot_coverage.py",
+      "line": 175,
+      "group": "data_migration_utility",
+      "cutover_blocker": false,
+      "text": "\"source\": \"data-private/warehouse/sports.db:source_snapshots\","
+    },
+    {
+      "file": "data-migration/scripts/backfill_mlb_replay_state_to_typed.py",
+      "line": 484,
+      "group": "data_migration_utility",
+      "cutover_blocker": false,
+      "text": "\"source\": \"data-private/warehouse/sports.db:mlb_plate_appearances,mlb_pitch_events\","
+    },
+    {
+      "file": "data-migration/scripts/validate_mlb_core_feed_parity.py",
+      "line": 293,
+      "group": "data_migration_utility",
+      "cutover_blocker": false,
+      "text": "\"source\": \"data-private/warehouse/sports.db:mlb_games,mlb_starting_pitchers,mlb_plate_appearances,mlb_pitch_events\","
+    },
+    {
       "file": "data-migration/scripts/backfill_mlb_output_contract_inventory.mjs",
       "line": 267,
       "group": "data_migration_utility",
       "cutover_blocker": false,
       "text": "path: 'data-private/warehouse/sports.db'"
+    },
+    {
+      "file": "data-migration/scripts/plan_phase2_table_backfill.mjs",
+      "line": 15,
+      "group": "data_migration_utility",
+      "cutover_blocker": false,
+      "text": "sourceDb: path.join(repoRoot, 'data-private/warehouse/sports.db'),"
     },
     {
       "file": "data-migration/scripts/backfill_tennis_from_sports_db.mjs",
@@ -4405,6 +4567,20 @@
       "text": "source: 'data-private/warehouse/sports.db:tennis_core',"
     },
     {
+      "file": "data-migration/scripts/validate_sport_db.mjs",
+      "line": 24,
+      "group": "data_migration_utility",
+      "cutover_blocker": false,
+      "text": "sourceDb: path.join(repoRoot, 'data-private/warehouse/sports.db'),"
+    },
+    {
+      "file": "data-migration/scripts/backfill_mlb_source_snapshots_from_legacy.py",
+      "line": 219,
+      "group": "data_migration_utility",
+      "cutover_blocker": false,
+      "text": "\"source\": \"data-private/warehouse/sports.db:source_snapshots\","
+    },
+    {
       "file": "data-migration/scripts/backfill_mlb_from_sports_db.mjs",
       "line": 15,
       "group": "data_migration_utility",
@@ -4426,27 +4602,6 @@
       "text": "source: 'data-private/warehouse/sports.db:mlb_core',"
     },
     {
-      "file": "data-migration/scripts/plan_phase2_table_backfill.mjs",
-      "line": 15,
-      "group": "data_migration_utility",
-      "cutover_blocker": false,
-      "text": "sourceDb: path.join(repoRoot, 'data-private/warehouse/sports.db'),"
-    },
-    {
-      "file": "data-migration/scripts/backfill_mlb_replay_state_to_typed.py",
-      "line": 484,
-      "group": "data_migration_utility",
-      "cutover_blocker": false,
-      "text": "\"source\": \"data-private/warehouse/sports.db:mlb_plate_appearances,mlb_pitch_events\","
-    },
-    {
-      "file": "data-migration/scripts/validate_sport_db.mjs",
-      "line": 24,
-      "group": "data_migration_utility",
-      "cutover_blocker": false,
-      "text": "sourceDb: path.join(repoRoot, 'data-private/warehouse/sports.db'),"
-    },
-    {
       "file": "models/mlb/cartridges/MLB-M1/lanes/history-journal.mjs",
       "line": 86,
       "group": "mlb_model_runtime",
@@ -4454,6 +4609,13 @@
       "text": "const output = execSync(`sqlite3 -json data-private/warehouse/sports.db \"${escaped}\"`, {"
     },
     {
+      "file": "models/mlb/cartridges/MLB-M2/lanes/history-journal.mjs",
+      "line": 86,
+      "group": "mlb_model_runtime",
+      "cutover_blocker": true,
+      "text": "const output = execSync(`sqlite3 -json data-private/warehouse/sports.db \"${escaped}\"`, {"
+    },
+    {
       "file": "models/mlb/cartridges/MLB-M1/lanes/lineups.mjs",
       "line": 11,
       "group": "mlb_model_runtime",
@@ -4469,6 +4631,48 @@
     },
     {
       "file": "models/mlb/cartridges/MLB-M1/lanes/lineups.mjs",
+      "line": 112,
+      "group": "mlb_model_runtime",
+      "cutover_blocker": true,
+      "text": "const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { encoding: 'utf8' }).trim()"
+    },
+    {
+      "file": "models/mlb/cartridges/MLB-M2/lanes/lineups.mjs",
+      "line": 11,
+      "group": "mlb_model_runtime",
+      "cutover_blocker": true,
+      "text": "const warehousePath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db')"
+    },
+    {
+      "file": "models/mlb/cartridges/MLB-M2/lanes/lineups.mjs",
+      "line": 111,
+      "group": "mlb_model_runtime",
+      "cutover_blocker": true,
+      "text": "if (!existsSync(warehousePath)) return []"
+    },
+    {
+      "file": "models/mlb/cartridges/MLB-M2/lanes/lineups.mjs",
+      "line": 112,
+      "group": "mlb_model_runtime",
+      "cutover_blocker": true,
+      "text": "const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { encoding: 'utf8' }).trim()"
+    },
+    {
+      "file": "models/mlb/cartridges/MLB-M0/lanes/lineups.mjs",
+      "line": 11,
+      "group": "mlb_model_runtime",
+      "cutover_blocker": true,
+      "text": "const warehousePath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db')"
+    },
+    {
+      "file": "models/mlb/cartridges/MLB-M0/lanes/lineups.mjs",
+      "line": 111,
+      "group": "mlb_model_runtime",
+      "cutover_blocker": true,
+      "text": "if (!existsSync(warehousePath)) return []"
+    },
+    {
+      "file": "models/mlb/cartridges/MLB-M0/lanes/lineups.mjs",
       "line": 112,
       "group": "mlb_model_runtime",
       "cutover_blocker": true,
@@ -4476,55 +4680,6 @@
     },
     {
       "file": "models/mlb/cartridges/MLB-M0/lanes/history-journal.mjs",
-      "line": 86,
-      "group": "mlb_model_runtime",
-      "cutover_blocker": true,
-      "text": "const output = execSync(`sqlite3 -json data-private/warehouse/sports.db \"${escaped}\"`, {"
-    },
-    {
-      "file": "models/mlb/cartridges/MLB-M0/lanes/lineups.mjs",
-      "line": 11,
-      "group": "mlb_model_runtime",
-      "cutover_blocker": true,
-      "text": "const warehousePath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db')"
-    },
-    {
-      "file": "models/mlb/cartridges/MLB-M0/lanes/lineups.mjs",
-      "line": 111,
-      "group": "mlb_model_runtime",
-      "cutover_blocker": true,
-      "text": "if (!existsSync(warehousePath)) return []"
-    },
-    {
-      "file": "models/mlb/cartridges/MLB-M0/lanes/lineups.mjs",
-      "line": 112,
-      "group": "mlb_model_runtime",
-      "cutover_blocker": true,
-      "text": "const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { encoding: 'utf8' }).trim()"
-    },
-    {
-      "file": "models/mlb/cartridges/MLB-M2/lanes/lineups.mjs",
-      "line": 11,
-      "group": "mlb_model_runtime",
-      "cutover_blocker": true,
-      "text": "const warehousePath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db')"
-    },
-    {
-      "file": "models/mlb/cartridges/MLB-M2/lanes/lineups.mjs",
-      "line": 111,
-      "group": "mlb_model_runtime",
-      "cutover_blocker": true,
-      "text": "if (!existsSync(warehousePath)) return []"
-    },
-    {
-      "file": "models/mlb/cartridges/MLB-M2/lanes/lineups.mjs",
-      "line": 112,
-      "group": "mlb_model_runtime",
-      "cutover_blocker": true,
-      "text": "const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { encoding: 'utf8' }).trim()"
-    },
-    {
-      "file": "models/mlb/cartridges/MLB-M2/lanes/history-journal.mjs",
       "line": 86,
       "group": "mlb_model_runtime",
       "cutover_blocker": true,

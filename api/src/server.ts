@@ -11,8 +11,8 @@ import {
 } from './lib/archive-loader.js'
 import { listSlateManifest, loadSlateDay, loadSlateGameDetail } from './lib/day-loader.js'
 import { loadMlbHomeRunBoard, loadMlbLineupBoard, loadMlbPlayerProps } from './lib/file-loader.js'
-import { warehousePath } from './lib/paths.js'
-import { runSqliteJson } from './lib/sqlite.js'
+import { legacyWarehousePath, mlbWarehousePath } from './lib/paths.js'
+import { runMlbSqliteJson } from './lib/sqlite.js'
 
 const app = Fastify({
   logger: true
@@ -36,12 +36,13 @@ app.get('/api/meta', async () => {
     slatesAvailable: slates.length,
     earliestSlate: slates[0]?.id ?? null,
     latestSlate: slates.at(-1)?.id ?? null,
-    warehousePath
+    legacyWarehousePath,
+    mlbWarehousePath
   }
 })
 
 app.get('/api/warehouse/status', async () => {
-  const [row] = runSqliteJson<{
+  const [row] = runMlbSqliteJson<{
     games: number
     plate_appearances: number
     pitch_events: number
@@ -51,17 +52,20 @@ app.get('/api/warehouse/status', async () => {
     latest_game_date: string | null
   }>(`
     SELECT
-      (SELECT COUNT(*) FROM mlb_game_outcomes) AS games,
-      (SELECT COUNT(*) FROM mlb_plate_appearances) AS plate_appearances,
-      (SELECT COUNT(*) FROM mlb_pitch_events) AS pitch_events,
-      (SELECT COUNT(*) FROM mlb_player_game_batting) AS batting_rows,
-      (SELECT COUNT(*) FROM mlb_game_story_signals) AS story_rows,
-      (SELECT MIN(game_date) FROM mlb_game_outcomes) AS earliest_game_date,
-      (SELECT MAX(game_date) FROM mlb_game_outcomes) AS latest_game_date
+      (SELECT COUNT(*) FROM game_outcomes) AS games,
+      (SELECT COUNT(*) FROM plate_appearances) AS plate_appearances,
+      (SELECT COUNT(*) FROM pitch_events) AS pitch_events,
+      (SELECT COUNT(*) FROM player_game_batting) AS batting_rows,
+      (SELECT COUNT(*) FROM game_story_signals) AS story_rows,
+      (SELECT MIN(game_date) FROM games) AS earliest_game_date,
+      (SELECT MAX(game_date) FROM games) AS latest_game_date
   `)
 
   return {
-    warehouse: row ?? null
+    warehouse: {
+      dbPath: mlbWarehousePath,
+      ...(row ?? {})
+    }
   }
 })
 
