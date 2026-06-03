@@ -126,6 +126,43 @@ def attach_legacy(con: sqlite3.Connection, legacy_db: Path) -> None:
     con.execute("attach database ? as legacy", (str(legacy_db),))
 
 
+def prepare_replay_key_tables(con: sqlite3.Connection) -> None:
+    con.executescript(
+        """
+        drop table if exists temp.replay_pa_keys;
+        drop table if exists temp.replay_pitch_keys;
+
+        create temp table replay_pa_keys (
+          plate_appearance_id text primary key,
+          game_pk integer not null,
+          at_bat_index integer not null
+        );
+
+        insert into replay_pa_keys (plate_appearance_id, game_pk, at_bat_index)
+        select
+          'mlb-' || game_pk || '-pa-' || at_bat_index,
+          game_pk,
+          at_bat_index
+        from legacy.mlb_plate_appearances;
+
+        create temp table replay_pitch_keys (
+          pitch_event_id text primary key,
+          game_pk integer not null,
+          at_bat_index integer not null,
+          event_index integer not null
+        );
+
+        insert into replay_pitch_keys (pitch_event_id, game_pk, at_bat_index, event_index)
+        select
+          'mlb-' || game_pk || '-pa-' || at_bat_index || '-event-' || event_index,
+          game_pk,
+          at_bat_index,
+          event_index
+        from legacy.mlb_pitch_events;
+        """
+    )
+
+
 def unmatched_counts(con: sqlite3.Connection) -> dict[str, int]:
     return {
         "typed_plate_appearances_without_legacy_match": scalar(
@@ -133,18 +170,16 @@ def unmatched_counts(con: sqlite3.Connection) -> dict[str, int]:
             """
             select count(*)
             from plate_appearances pa
-            left join legacy.mlb_plate_appearances legacy_pa
-              on pa.plate_appearance_id = 'mlb-' || legacy_pa.game_pk || '-pa-' || legacy_pa.at_bat_index
-            where legacy_pa.game_pk is null
+            left join replay_pa_keys replay_pa on replay_pa.plate_appearance_id = pa.plate_appearance_id
+            where replay_pa.plate_appearance_id is null
             """,
         ),
         "legacy_plate_appearances_without_typed_match": scalar(
             con,
             """
             select count(*)
-            from legacy.mlb_plate_appearances legacy_pa
-            left join plate_appearances pa
-              on pa.plate_appearance_id = 'mlb-' || legacy_pa.game_pk || '-pa-' || legacy_pa.at_bat_index
+            from replay_pa_keys replay_pa
+            left join plate_appearances pa on pa.plate_appearance_id = replay_pa.plate_appearance_id
             where pa.plate_appearance_id is null
             """,
         ),
@@ -153,20 +188,16 @@ def unmatched_counts(con: sqlite3.Connection) -> dict[str, int]:
             """
             select count(*)
             from pitch_events pe
-            left join legacy.mlb_pitch_events legacy_pe
-              on pe.pitch_event_id =
-                'mlb-' || legacy_pe.game_pk || '-pa-' || legacy_pe.at_bat_index || '-event-' || legacy_pe.event_index
-            where legacy_pe.game_pk is null
+            left join replay_pitch_keys replay_pe on replay_pe.pitch_event_id = pe.pitch_event_id
+            where replay_pe.pitch_event_id is null
             """,
         ),
         "legacy_pitch_events_without_typed_match": scalar(
             con,
             """
             select count(*)
-            from legacy.mlb_pitch_events legacy_pe
-            left join pitch_events pe
-              on pe.pitch_event_id =
-                'mlb-' || legacy_pe.game_pk || '-pa-' || legacy_pe.at_bat_index || '-event-' || legacy_pe.event_index
+            from replay_pitch_keys replay_pe
+            left join pitch_events pe on pe.pitch_event_id = replay_pe.pitch_event_id
             where pe.pitch_event_id is null
             """,
         ),
@@ -180,8 +211,7 @@ def matching_counts(con: sqlite3.Connection) -> dict[str, int]:
             """
             select count(*)
             from plate_appearances pa
-            join legacy.mlb_plate_appearances legacy_pa
-              on pa.plate_appearance_id = 'mlb-' || legacy_pa.game_pk || '-pa-' || legacy_pa.at_bat_index
+            join replay_pa_keys replay_pa on replay_pa.plate_appearance_id = pa.plate_appearance_id
             """,
         ),
         "pitch_events": scalar(
@@ -189,9 +219,7 @@ def matching_counts(con: sqlite3.Connection) -> dict[str, int]:
             """
             select count(*)
             from pitch_events pe
-            join legacy.mlb_pitch_events legacy_pe
-              on pe.pitch_event_id =
-                'mlb-' || legacy_pe.game_pk || '-pa-' || legacy_pe.at_bat_index || '-event-' || legacy_pe.event_index
+            join replay_pitch_keys replay_pe on replay_pe.pitch_event_id = pe.pitch_event_id
             """,
         ),
     }
@@ -237,14 +265,15 @@ def update_plate_appearances(con: sqlite3.Connection) -> int:
             legacy_pa.is_at_bat,
             legacy_pa.raw_json
           from legacy.mlb_plate_appearances legacy_pa
-          where plate_appearances.plate_appearance_id =
-            'mlb-' || legacy_pa.game_pk || '-pa-' || legacy_pa.at_bat_index
+          join replay_pa_keys replay_pa
+            on replay_pa.game_pk = legacy_pa.game_pk
+           and replay_pa.at_bat_index = legacy_pa.at_bat_index
+          where replay_pa.plate_appearance_id = plate_appearances.plate_appearance_id
         )
         where exists (
           select 1
-          from legacy.mlb_plate_appearances legacy_pa
-          where plate_appearances.plate_appearance_id =
-            'mlb-' || legacy_pa.game_pk || '-pa-' || legacy_pa.at_bat_index
+          from replay_pa_keys replay_pa
+          where replay_pa.plate_appearance_id = plate_appearances.plate_appearance_id
         )
         """
     )
@@ -291,21 +320,32 @@ def update_pitch_events(con: sqlite3.Connection) -> int:
             legacy_pe.play_id,
             legacy_pe.raw_json
           from legacy.mlb_pitch_events legacy_pe
-          where pitch_events.pitch_event_id =
-            'mlb-' || legacy_pe.game_pk || '-pa-' || legacy_pe.at_bat_index || '-event-' || legacy_pe.event_index
+          join replay_pitch_keys replay_pe
+            on replay_pe.game_pk = legacy_pe.game_pk
+           and replay_pe.at_bat_index = legacy_pe.at_bat_index
+           and replay_pe.event_index = legacy_pe.event_index
+          where replay_pe.pitch_event_id = pitch_events.pitch_event_id
         )
         where exists (
           select 1
-          from legacy.mlb_pitch_events legacy_pe
-          where pitch_events.pitch_event_id =
-            'mlb-' || legacy_pe.game_pk || '-pa-' || legacy_pe.at_bat_index || '-event-' || legacy_pe.event_index
+          from replay_pitch_keys replay_pe
+          where replay_pe.pitch_event_id = pitch_events.pitch_event_id
         )
         """
     )
     return int(cursor.rowcount or 0)
 
 
-def mismatch_count(con: sqlite3.Connection, *, table: str, legacy_table: str, columns: list[str], join_sql: str) -> int:
+def mismatch_count(
+    con: sqlite3.Connection,
+    *,
+    table: str,
+    target_id_column: str,
+    legacy_table: str,
+    key_table: str,
+    columns: list[str],
+    join_sql: str,
+) -> int:
     comparisons = " or ".join(
         f"not ((typed.{column} = legacy.{column}) or (typed.{column} is null and legacy.{column} is null))"
         for column in columns
@@ -315,6 +355,7 @@ def mismatch_count(con: sqlite3.Connection, *, table: str, legacy_table: str, co
         f"""
         select count(*)
         from {table} typed
+        join {key_table} replay_key on replay_key.{target_id_column} = typed.{target_id_column}
         join legacy.{legacy_table} legacy on {join_sql}
         where {comparisons}
         """,
@@ -347,6 +388,7 @@ def backfill(args: argparse.Namespace) -> dict[str, Any]:
             }
 
         attach_legacy(con, args.legacy_db)
+        prepare_replay_key_tables(con)
         before = replay_counts(con)
         matches = matching_counts(con)
         unmatched_before = unmatched_counts(con)
@@ -369,18 +411,23 @@ def backfill(args: argparse.Namespace) -> dict[str, Any]:
             "plate_appearances": mismatch_count(
                 con,
                 table="plate_appearances",
+                target_id_column="plate_appearance_id",
                 legacy_table="mlb_plate_appearances",
+                key_table="replay_pa_keys",
                 columns=PA_COLUMNS,
-                join_sql="typed.plate_appearance_id = 'mlb-' || legacy.game_pk || '-pa-' || legacy.at_bat_index",
+                join_sql="legacy.game_pk = replay_key.game_pk and legacy.at_bat_index = replay_key.at_bat_index",
             ),
             "pitch_events": mismatch_count(
                 con,
                 table="pitch_events",
+                target_id_column="pitch_event_id",
                 legacy_table="mlb_pitch_events",
+                key_table="replay_pitch_keys",
                 columns=PITCH_COLUMNS,
                 join_sql=(
-                    "typed.pitch_event_id = "
-                    "'mlb-' || legacy.game_pk || '-pa-' || legacy.at_bat_index || '-event-' || legacy.event_index"
+                    "legacy.game_pk = replay_key.game_pk "
+                    "and legacy.at_bat_index = replay_key.at_bat_index "
+                    "and legacy.event_index = replay_key.event_index"
                 ),
             ),
         }
