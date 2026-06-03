@@ -27,6 +27,8 @@ Status: opened
 | A6-W004 | Generate Alpha-6 redesign audit artifacts | complete | `data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/family_redesign_audit_alpha6` | Gap matrix, column inventory, FS-004 candidate spec, harness pressure, report. |
 | A6-W005 | Review redesign audit | complete | `2026-06-03-mlb-m3-alpha-6-family-redesign-audit-review.md` | First FS-004 candidate is `m3_fs_004_state_path_redesign_v0`. |
 | A6-W006 | Update alpha state tracker | complete | `2026-06-03-mlb-m3-alpha-state-progress.md` | Marks Alpha-6 opened and records audit output. |
+| A6-W007 | Draft FS-004 contract | complete | `pipeline/mlb/features/contracts/m3_fs_004_state_path_redesign_v0.json` | Contract only; builder not materialized yet. |
+| A6-W008 | Review FS-004 contract | complete | `2026-06-03-mlb-m3-alpha-6-fs004-contract-review.md` | Validator passes with zero errors and warnings. |
 
 ## Verification Log
 
@@ -36,6 +38,8 @@ Status: opened
 - 2026-06-03: The audit checked 19 target surfaces: 17 partial, 2 missing.
 - 2026-06-03: Missing surfaces are `hitter_vs_reliever_chain_phase` and `tail_calibration_feedback`.
 - 2026-06-03: Candidate FS-004 spec is `m3_fs_004_state_path_redesign_v0`.
+- 2026-06-03: `python3 -m json.tool pipeline/mlb/features/contracts/m3_fs_004_state_path_redesign_v0.json` passed.
+- 2026-06-03: `PYTHONDONTWRITEBYTECODE=1 python3 -m pipeline.mlb.features.validators.validate_game_shape_starter_v1 --contract pipeline/mlb/features/contracts/m3_fs_004_state_path_redesign_v0.json --json` passed with zero errors and warnings.
 
 ## Stop Log
 

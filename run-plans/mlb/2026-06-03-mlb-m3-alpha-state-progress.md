@@ -19,6 +19,7 @@ Evidence checked:
 - Manifest lane statuses are `contract_only` for `full_game_total` and `f5_total`, and `deferred` for the other five lanes.
 - FS-002 and FS-003 alpha-5 walk-forward metrics match the harness output files.
 - Alpha-6 family redesign audit exists and maps FS-003 to 19 target surfaces.
+- FS-004 contract exists and validates, but no FS-004 matrix exists yet.
 - No promoted model, picks, simulator events, prop prices, or edge claims exist in the alpha artifacts.
 - This progress file is ASCII-only and should render as normal Markdown plus Mermaid.
 
@@ -64,13 +65,14 @@ flowchart TD
   H003 --> R003["FS-003 harness review<br/>cleaner artifact, no metric lift<br/>status: live"]
 
   R003 --> A6["Alpha-6 family redesign audit<br/>19 surfaces: 17 partial, 2 missing<br/>status: live"]
-  A6 --> NEXT["Next phase: FS-004 state-path redesign contract<br/>status: next"]
+  A6 --> C004["FS-004 state-path redesign contract<br/>status: live"]
+  C004 --> NEXT["Next phase: FS-004 builder<br/>status: next"]
 
   classDef live fill:#dff3df,stroke:#367c39,color:#102b13;
   classDef partial fill:#fff2c2,stroke:#927000,color:#332800;
   classDef next fill:#d7ecff,stroke:#2f6f9f,color:#0d2638;
 
-  class SQL,FS001,FS002,M001,H001,M002,H002,A002,WF002,FS003,M003,H003,R003,A6 live;
+  class SQL,FS001,FS002,M001,H001,M002,H002,A002,WF002,FS003,M003,H003,R003,A6,C004 live;
   class NEXT next;
 ```
 
@@ -130,7 +132,7 @@ flowchart TD
 | Alpha-3 | complete | `training_harness` | Harness can load a manifest, split rows, write metrics, and avoid picks. | Smoke test was shallow and not a backtest edge claim. |
 | Alpha-4 | complete | `m3_fs_002_game_story_pitching_state_v0_20260603T155454Z` | First real M3 feature artifact with story, starter, reliever, hitter, and market context. | It did not produce a good candidate model. |
 | Alpha-5 | complete | FS-002 audit, FS-003 artifact, FS-003 harness | Walk-forward and ablations can reject weak candidates honestly. | Pruning did not fix the core feature representation problem. |
-| Alpha-6 | opened | `family_redesign_audit_alpha6` | FS-003 has evidence fragments for 17 surfaces and fully misses 2 surfaces. | FS-004 is not materialized yet. |
+| Alpha-6 | opened | `family_redesign_audit_alpha6`, FS-004 contract | FS-003 has evidence fragments for 17 surfaces and fully misses 2 surfaces; FS-004 contract validates. | FS-004 matrix is not materialized yet. |
 
 ## Feature Artifacts
 
@@ -209,6 +211,10 @@ Candidate next feature set:
 ```text
 m3_fs_004_state_path_redesign_v0
 ```
+
+FS-004 contract status: `live`
+
+FS-004 matrix status: `missing`
 
 FS-004 should target starter path, reliever chain, hitter-path phase split, ordered story memory, game-regime labels, and calibration hooks before model tuning.
 

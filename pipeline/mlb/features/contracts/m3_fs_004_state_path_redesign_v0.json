@@ -1,0 +1,429 @@
+{
+  "alpha6_audit_uri": "data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/family_redesign_audit_alpha6/family_redesign_audit.json",
+  "as_of_policy": "pregame",
+  "description": "MLB-M3 FS-004 contract for redesigned baseball-state feature families after FS-003 showed flat family representation was the bottleneck.",
+  "distribution_bridge_policy": {
+    "game_markets_from_shared_worlds": true,
+    "no_isolated_prop_models": true,
+    "props_are_distribution_contracts": true,
+    "selection_policy_downstream_only": true,
+    "simulator_event_logs_deferred": true
+  },
+  "downstream_distribution_families": [
+    {
+      "distribution_id": "game_shape_distribution",
+      "role": "latent_regime",
+      "status": "contract_required_not_trained"
+    },
+    {
+      "distribution_id": "team_run_distribution",
+      "role": "team_scoring_path",
+      "status": "contract_required_not_trained"
+    },
+    {
+      "distribution_id": "starter_exit_distribution",
+      "role": "starter_workload_and_hook_path",
+      "status": "contract_required_not_trained"
+    },
+    {
+      "distribution_id": "starter_stat_distribution",
+      "role": "starter_damage_and_counting_stats",
+      "status": "contract_required_not_trained"
+    },
+    {
+      "distribution_id": "reliever_availability_distribution",
+      "role": "individual_arm_reset_and_availability",
+      "status": "contract_required_not_trained"
+    },
+    {
+      "distribution_id": "first_up_reliever_router",
+      "role": "first_arm_probability_route",
+      "status": "contract_required_not_trained"
+    },
+    {
+      "distribution_id": "reliever_chain_distribution",
+      "role": "relief_path_and_chain_regime",
+      "status": "contract_required_not_trained"
+    },
+    {
+      "distribution_id": "reliever_stat_distribution",
+      "role": "reliever_damage_and_workload_stats",
+      "status": "contract_required_not_trained"
+    },
+    {
+      "distribution_id": "pa_event_distribution",
+      "role": "plate_appearance_event_path",
+      "status": "contract_required_not_trained"
+    },
+    {
+      "distribution_id": "hitter_stat_distribution",
+      "role": "hitter_game_stat_distribution",
+      "status": "contract_required_not_trained"
+    },
+    {
+      "distribution_id": "calibration_layer",
+      "role": "probability_and_tail_calibration",
+      "status": "contract_required_not_trained"
+    }
+  ],
+  "evidence_policy": {
+    "baseline_layers": [
+      "league",
+      "role_archetype",
+      "player_talent",
+      "season_to_date",
+      "opponent_adjusted",
+      "park_weather_adjusted",
+      "market_prior"
+    ],
+    "evidence_policy_id": "m3_alpha6_state_path_evidence_v1",
+    "evidence_units": [
+      "pitch",
+      "plate_appearance",
+      "batter_faced",
+      "start",
+      "pitcher_appearance",
+      "game",
+      "day",
+      "pregame_snapshot"
+    ],
+    "forbidden": [
+      "sports.db reads",
+      "M2 generated artifacts",
+      "hand-coded betting scores",
+      "expected AB as input truth",
+      "fixed raw windows as form truth",
+      "manual confidence boosts"
+    ],
+    "required_coverage_fields": [
+      "sample_count",
+      "event_count",
+      "availability_flag",
+      "missingness_rate",
+      "snapshot_age_days",
+      "entity_count",
+      "source_table_count"
+    ],
+    "residual_baselines": [
+      "league_average",
+      "player_talent",
+      "opponent_adjusted",
+      "park_weather_adjusted",
+      "market_prior"
+    ],
+    "state_memory_encoders": [
+      "ordered_event_sequence",
+      "entity_state_transition_history",
+      "reaction_to_prior_performance",
+      "change_point_candidate",
+      "days_since_event",
+      "current_run_length",
+      "alternation_rate",
+      "low_data_flag"
+    ]
+  },
+  "feature_families": [
+    "starter_workload_path",
+    "starter_damage_state",
+    "starter_pitch_shape_change",
+    "starter_opponent_pressure_residual",
+    "starter_low_data_uncertainty",
+    "reliever_availability_reset",
+    "first_up_reliever_router",
+    "reliever_chain_state",
+    "reliever_performance_state",
+    "hitter_starter_phase_surface",
+    "hitter_reliever_chain_phase_surface",
+    "hitter_current_state_residual",
+    "lineup_pa_volume_context",
+    "ordered_story_memory",
+    "traffic_conversion_state",
+    "game_regime_labels",
+    "schedule_travel_context",
+    "market_context_lines",
+    "tail_calibration_feedback"
+  ],
+  "feature_prefixes": [
+    "game_",
+    "home_",
+    "away_",
+    "market_"
+  ],
+  "feature_set_id": "m3_fs_004_state_path_redesign_v0",
+  "grain": "game",
+  "leakage_classes": [
+    "pregame_safe",
+    "historical_only",
+    "postgame_target",
+    "excluded"
+  ],
+  "must_remain_false": {
+    "expected_ab_input_materialized": false,
+    "uses_hand_picked_memory_lengths": false,
+    "uses_m2_weights": false,
+    "uses_sports_db": false
+  },
+  "non_goals": [
+    "no picks",
+    "no selection rows",
+    "no player prop pricing",
+    "no market fair probability claims",
+    "no simulator event logs",
+    "no promotion decisions",
+    "no claim that M3 is better"
+  ],
+  "primary_key": "game_id",
+  "prop_contract_families": [
+    {
+      "family_id": "game_markets",
+      "future_outputs": [
+        "full_game_total",
+        "first_five_total",
+        "moneyline",
+        "team_total"
+      ],
+      "resolved_from_distributions": [
+        "game_shape_distribution",
+        "team_run_distribution",
+        "starter_exit_distribution",
+        "reliever_availability_distribution",
+        "reliever_chain_distribution"
+      ],
+      "status": "contract_only"
+    },
+    {
+      "family_id": "starter_props",
+      "future_outputs": [
+        "strikeouts",
+        "outs_recorded",
+        "runs_allowed",
+        "hits_allowed",
+        "walks_allowed"
+      ],
+      "resolved_from_distributions": [
+        "starter_exit_distribution",
+        "starter_stat_distribution",
+        "pa_event_distribution"
+      ],
+      "status": "contract_only"
+    },
+    {
+      "family_id": "reliever_props",
+      "future_outputs": [
+        "outs_recorded",
+        "pitches",
+        "batters_faced",
+        "strikeouts",
+        "inherited_runner_damage"
+      ],
+      "resolved_from_distributions": [
+        "reliever_availability_distribution",
+        "first_up_reliever_router",
+        "reliever_chain_distribution",
+        "reliever_stat_distribution"
+      ],
+      "status": "contract_only"
+    },
+    {
+      "family_id": "hitter_props",
+      "future_outputs": [
+        "hits",
+        "total_bases",
+        "home_runs",
+        "rbi",
+        "runs",
+        "walks",
+        "strikeouts"
+      ],
+      "resolved_from_distributions": [
+        "game_shape_distribution",
+        "team_run_distribution",
+        "starter_exit_distribution",
+        "reliever_chain_distribution",
+        "pa_event_distribution",
+        "hitter_stat_distribution"
+      ],
+      "status": "contract_only"
+    }
+  ],
+  "required_report_fields": [
+    "row_count",
+    "column_count",
+    "feature_count",
+    "target_count",
+    "missingness_uri",
+    "coverage_uri",
+    "lineage_uri",
+    "leakage_uri",
+    "matrix_uri",
+    "surface_gap_uri",
+    "family_coverage_uri"
+  ],
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_feature_set_id": "m3_fs_003_game_story_pitching_state_pruned_v0",
+  "source_tables": [
+    "games",
+    "teams",
+    "venues",
+    "game_outcomes",
+    "team_game_stats",
+    "phase_outcomes",
+    "game_story_labels",
+    "game_story_signals",
+    "starting_pitchers",
+    "starting_pitcher_game_logs",
+    "pitcher_appearances",
+    "pitcher_pitch_mix_snapshots",
+    "pitcher_mistake_shape_snapshots",
+    "bullpen_usage_snapshots",
+    "team_bullpen_shape_snapshots",
+    "bullpen_mistake_shape_snapshots",
+    "likely_relief_chains",
+    "reliever_command_profiles",
+    "lineups",
+    "lineup_slots",
+    "lineup_matchup_snapshots",
+    "player_pitch_type_response_snapshots",
+    "player_statcast_snapshots",
+    "player_opponent_context_snapshots",
+    "market_snapshots",
+    "plate_appearances",
+    "pitch_events"
+  ],
+  "sport": "mlb",
+  "surface_contracts": [
+    {
+      "component_family": "starter_exit_distribution",
+      "family": "starter_path",
+      "priority": "P0",
+      "requirement": "Separate starter workload baseline, last-event deviation, trajectory/change-point evidence, floor distance, and hook/exit target scaffolding.",
+      "surface_id": "starter_workload_trajectory"
+    },
+    {
+      "component_family": "starter_stat_distribution",
+      "family": "starter_path",
+      "priority": "P0",
+      "requirement": "Separate damage baseline, damage volatility, command-break state, walk-burst state, HR damage, and low-data uncertainty.",
+      "surface_id": "starter_damage_distribution"
+    },
+    {
+      "component_family": "starter_stat_distribution",
+      "family": "starter_path",
+      "priority": "P1",
+      "requirement": "Represent pitch-shape state and pitch-shape change separately from aggregate starter quality.",
+      "surface_id": "starter_pitch_shape_change"
+    },
+    {
+      "component_family": "starter_exit_distribution",
+      "family": "starter_path",
+      "priority": "P0",
+      "requirement": "Compare starter outcomes against opponent-adjusted hitter pressure instead of raw starter form alone.",
+      "surface_id": "starter_opponent_pressure_residual"
+    },
+    {
+      "component_family": "calibration_layer",
+      "family": "starter_path",
+      "priority": "P0",
+      "requirement": "Represent low-data status as uncertainty metadata, not as a hidden fallback or fixed sample bucket.",
+      "surface_id": "starter_low_data_uncertainty"
+    },
+    {
+      "component_family": "reliever_availability_distribution",
+      "family": "reliever_chain",
+      "priority": "P0",
+      "requirement": "Separate individual-arm availability, quick-reuse probability, reset state, and bulk exception probability.",
+      "surface_id": "reliever_availability_reset"
+    },
+    {
+      "component_family": "first_up_reliever_router",
+      "family": "reliever_chain",
+      "priority": "P0",
+      "requirement": "Model a probability distribution over first-up reliever candidates, not one hard selected arm.",
+      "surface_id": "first_up_reliever_router"
+    },
+    {
+      "component_family": "reliever_chain_distribution",
+      "family": "reliever_chain",
+      "priority": "P0",
+      "requirement": "Represent normal, compressed, scramble, and churn chain regimes with expected chain length and remaining-pool quality.",
+      "surface_id": "reliever_chain_length_regime"
+    },
+    {
+      "component_family": "reliever_stat_distribution",
+      "family": "reliever_chain",
+      "priority": "P0",
+      "requirement": "Separate reliever availability from reliever performance volatility, traffic creation, and inherited-runner damage.",
+      "surface_id": "reliever_performance_volatility"
+    },
+    {
+      "component_family": "pa_event_distribution",
+      "family": "hitter_path",
+      "priority": "P0",
+      "requirement": "Encode hitter event distributions against the starter phase of the opponent pitching path.",
+      "surface_id": "hitter_vs_starter_phase"
+    },
+    {
+      "component_family": "pa_event_distribution",
+      "family": "hitter_path",
+      "priority": "P0",
+      "requirement": "Encode hitter event distributions against the likely reliever-chain phase of the single opponent pitching path.",
+      "surface_id": "hitter_vs_reliever_chain_phase"
+    },
+    {
+      "component_family": "hitter_stat_distribution",
+      "family": "hitter_path",
+      "priority": "P1",
+      "requirement": "Separate hitter talent baseline from current-state residuals and pitch-type response reliability.",
+      "surface_id": "hitter_current_state_residual"
+    },
+    {
+      "component_family": "team_run_distribution",
+      "family": "hitter_path",
+      "priority": "P0",
+      "requirement": "Represent PA volume as an output of lineup turnover, walks, scoring state, and pitcher damage, not fixed expected AB.",
+      "surface_id": "lineup_pa_volume_context"
+    },
+    {
+      "component_family": "game_shape_distribution",
+      "family": "story_memory",
+      "priority": "P0",
+      "requirement": "Preserve ordered game-story transitions as state context instead of only flat rates and days-since fields.",
+      "surface_id": "ordered_story_memory"
+    },
+    {
+      "component_family": "game_shape_distribution",
+      "family": "story_memory",
+      "priority": "P0",
+      "requirement": "Separate traffic-without-conversion, early pressure, and conversion state so dead-bat games are not averaged into normal unders.",
+      "surface_id": "traffic_conversion_state"
+    },
+    {
+      "component_family": "game_shape_distribution",
+      "family": "story_memory",
+      "priority": "P0",
+      "requirement": "Create explicit low, normal, high-run, chaos, starter-failure, and bullpen-collapse labels for regime training.",
+      "surface_id": "game_regime_labels"
+    },
+    {
+      "component_family": "calibration_layer",
+      "family": "feedback",
+      "priority": "P0",
+      "requirement": "Attach feature-family redesign to tail/regime calibration diagnostics and promotion/rejection gates.",
+      "surface_id": "tail_calibration_feedback"
+    }
+  ],
+  "target_prefix": "target_",
+  "targets": [
+    "target_total_runs_final",
+    "target_total_runs_f5",
+    "target_home_team_runs_final",
+    "target_away_team_runs_final",
+    "target_home_team_runs_f5",
+    "target_away_team_runs_f5",
+    "target_total_bucket",
+    "target_f5_bucket",
+    "target_chaos_game_flag"
+  ],
+  "time_key": "game_date",
+  "version": "0.1.0"
+}
