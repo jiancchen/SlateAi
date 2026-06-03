@@ -1,0 +1,42 @@
+# MLB-M3 Alpha-6 Feature-Family Redesign Ledger
+
+Date: 2026-06-03
+
+Phase ID: `mlb-m3-alpha-6-feature-family-redesign`
+
+Run plan: `run-plans/mlb/2026-06-03-mlb-m3-alpha-6-feature-family-redesign-run-plan.md`
+
+Status: opened
+
+## Decision Ledger
+
+| ID | Decision | Status | Rationale |
+| --- | --- | --- | --- |
+| A6-D001 | Start Alpha-6 with feature-family redesign, not model tuning | locked | FS-003 pruning did not improve walk-forward MAE; the bottleneck is representation. |
+| A6-D002 | Use FS-003 as the clean baseline artifact | locked | FS-003 is the latest audited feature artifact and removes obvious FS-002 hygiene issues. |
+| A6-D003 | Keep all Alpha-6 outputs metrics/design-only until FS-004 exists | locked | No promoted models, picks, prices, simulator logs, or edge claims are allowed. |
+| A6-D004 | Update the alpha state tracker after each status change | locked | The tracker is now the shared state map alongside run plans and ledgers. |
+
+## Work Ledger
+
+| ID | Work Item | Status | Output / Evidence | Notes |
+| --- | --- | --- | --- | --- |
+| A6-W001 | Create Alpha-6 run plan | complete | `2026-06-03-mlb-m3-alpha-6-feature-family-redesign-run-plan.md` | Opens feature-family redesign phase. |
+| A6-W002 | Create Alpha-6 ledger | complete | this file | Opens phase audit trail. |
+| A6-W003 | Implement feature-family redesign audit | complete | `pipeline/mlb/m3/audit/audit_feature_family_redesign.py` | Reads FS-003 manifest/artifact and alpha-5 harness output. |
+| A6-W004 | Generate Alpha-6 redesign audit artifacts | complete | `data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/family_redesign_audit_alpha6` | Gap matrix, column inventory, FS-004 candidate spec, harness pressure, report. |
+| A6-W005 | Review redesign audit | complete | `2026-06-03-mlb-m3-alpha-6-family-redesign-audit-review.md` | First FS-004 candidate is `m3_fs_004_state_path_redesign_v0`. |
+| A6-W006 | Update alpha state tracker | complete | `2026-06-03-mlb-m3-alpha-state-progress.md` | Marks Alpha-6 opened and records audit output. |
+
+## Verification Log
+
+- 2026-06-03: `PYTHONDONTWRITEBYTECODE=1 python3 -m py_compile pipeline/mlb/m3/audit/audit_feature_family_redesign.py` passed with bundled workspace Python.
+- 2026-06-03: `PYTHONDONTWRITEBYTECODE=1 python3 -m pipeline.mlb.m3.audit.audit_feature_family_redesign` generated the Alpha-6 redesign audit for FS-003.
+- 2026-06-03: `python3 -m json.tool` passed for all generated Alpha-6 redesign-audit JSON artifacts.
+- 2026-06-03: The audit checked 19 target surfaces: 17 partial, 2 missing.
+- 2026-06-03: Missing surfaces are `hitter_vs_reliever_chain_phase` and `tail_calibration_feedback`.
+- 2026-06-03: Candidate FS-004 spec is `m3_fs_004_state_path_redesign_v0`.
+
+## Stop Log
+
+No stops yet.

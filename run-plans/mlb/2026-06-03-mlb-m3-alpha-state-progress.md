@@ -2,7 +2,7 @@
 
 Date: 2026-06-03
 
-Status: current through `mlb-m3-alpha-5`
+Status: current through `mlb-m3-alpha-6` planning/audit
 
 Primary question: what exists, what is connected, what is only a placeholder, and what is still missing before M3 becomes a real baseball simulator/model stack?
 
@@ -18,6 +18,7 @@ Evidence checked:
 - FS-001, FS-002, and FS-003 manifests each expose 12 component placeholders and 7 lane placeholders.
 - Manifest lane statuses are `contract_only` for `full_game_total` and `f5_total`, and `deferred` for the other five lanes.
 - FS-002 and FS-003 alpha-5 walk-forward metrics match the harness output files.
+- Alpha-6 family redesign audit exists and maps FS-003 to 19 target surfaces.
 - No promoted model, picks, simulator events, prop prices, or edge claims exist in the alpha artifacts.
 - This progress file is ASCII-only and should render as normal Markdown plus Mermaid.
 
@@ -25,7 +26,7 @@ Tracking rule: update this document whenever a component status, lane status, fe
 
 ## Snapshot
 
-M3 now has a working typed feature-artifact pipeline, manifest infrastructure, metrics-only harness, feature audit, walk-forward diagnostics, and a first diagnostic candidate runner.
+M3 now has a working typed feature-artifact pipeline, manifest infrastructure, metrics-only harness, feature audit, walk-forward diagnostics, a first diagnostic candidate runner, and an Alpha-6 surface-gap audit for feature-family redesign.
 
 M3 does not yet have a promoted model, a simulator, a real backtest edge claim, market pricing, player props, selection rows, calibrated probabilities, or typed prediction/settlement writers.
 
@@ -62,13 +63,14 @@ flowchart TD
   M003 --> H003["Alpha-5 harness for FS-003<br/>walk-forward and ablations<br/>status: live"]
   H003 --> R003["FS-003 harness review<br/>cleaner artifact, no metric lift<br/>status: live"]
 
-  R003 --> NEXT["Next phase: feature-family redesign<br/>starter path, reliever chain, hitter-path interactions<br/>status: next"]
+  R003 --> A6["Alpha-6 family redesign audit<br/>19 surfaces: 17 partial, 2 missing<br/>status: live"]
+  A6 --> NEXT["Next phase: FS-004 state-path redesign contract<br/>status: next"]
 
   classDef live fill:#dff3df,stroke:#367c39,color:#102b13;
   classDef partial fill:#fff2c2,stroke:#927000,color:#332800;
   classDef next fill:#d7ecff,stroke:#2f6f9f,color:#0d2638;
 
-  class SQL,FS001,FS002,M001,H001,M002,H002,A002,WF002,FS003,M003,H003,R003 live;
+  class SQL,FS001,FS002,M001,H001,M002,H002,A002,WF002,FS003,M003,H003,R003,A6 live;
   class NEXT next;
 ```
 
@@ -128,6 +130,7 @@ flowchart TD
 | Alpha-3 | complete | `training_harness` | Harness can load a manifest, split rows, write metrics, and avoid picks. | Smoke test was shallow and not a backtest edge claim. |
 | Alpha-4 | complete | `m3_fs_002_game_story_pitching_state_v0_20260603T155454Z` | First real M3 feature artifact with story, starter, reliever, hitter, and market context. | It did not produce a good candidate model. |
 | Alpha-5 | complete | FS-002 audit, FS-003 artifact, FS-003 harness | Walk-forward and ablations can reject weak candidates honestly. | Pruning did not fix the core feature representation problem. |
+| Alpha-6 | opened | `family_redesign_audit_alpha6` | FS-003 has evidence fragments for 17 surfaces and fully misses 2 surfaces. | FS-004 is not materialized yet. |
 
 ## Feature Artifacts
 
@@ -189,6 +192,26 @@ The manifest registry has 12 component-family slots. They are connected as place
 
 Interpretation: the diagnostic ridge is worse than the train-mean baseline in every tested fold. No model is promoted.
 
+## Alpha-6 Surface Audit
+
+| Status | Count |
+| --- | ---: |
+| `partial` | 17 |
+| `missing` | 2 |
+
+Missing surfaces:
+
+- `hitter_vs_reliever_chain_phase`
+- `tail_calibration_feedback`
+
+Candidate next feature set:
+
+```text
+m3_fs_004_state_path_redesign_v0
+```
+
+FS-004 should target starter path, reliever chain, hitter-path phase split, ordered story memory, game-regime labels, and calibration hooks before model tuning.
+
 ## What Is Connected
 
 ```mermaid
@@ -248,6 +271,8 @@ flowchart LR
 ## What Is Left
 
 ### Alpha-6: Feature-Family Redesign
+
+Status: opened; first redesign audit generated.
 
 Build the next feature pass around baseball state, not wider flat columns.
 

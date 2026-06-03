@@ -1,0 +1,47 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1410,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/family_redesign_audit_alpha6/family_redesign_audit.json",
+      "role": "family_redesign_audit",
+      "sha256": "4b60b81cb16d301c78fd8984598b6e8b35c7a8325f740a30ae906da23dd9a1b4"
+    },
+    {
+      "bytes": 30420,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/family_redesign_audit_alpha6/surface_gap_matrix.json",
+      "role": "surface_gap_matrix",
+      "sha256": "0d896d03307846933f3c373326f242e299b9b624e2a82962bed845ddcbf627af"
+    },
+    {
+      "bytes": 86372,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/family_redesign_audit_alpha6/family_column_inventory.json",
+      "role": "family_column_inventory",
+      "sha256": "7b9de418d33cd8d8edac68fbe6d95dbcf42f3f7277b4f2bbc664753b8007fd7e"
+    },
+    {
+      "bytes": 3954,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/family_redesign_audit_alpha6/harness_pressure_summary.json",
+      "role": "harness_pressure_summary",
+      "sha256": "117f1b88c6922740ff34a4f709219394c7e194db84342b08ac42b8e11f911f48"
+    },
+    {
+      "bytes": 6047,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/family_redesign_audit_alpha6/candidate_fs004_spec.json",
+      "role": "candidate_fs004_spec",
+      "sha256": "2ce34dc2387a86ae06522416d86967592863074c8ca06fbdb10911ddbebceddb"
+    },
+    {
+      "bytes": 3124,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/family_redesign_audit_alpha6/report.md",
+      "role": "report",
+      "sha256": "20ec84702f2989c6a95f809db1e9dfd2885fce834a3cadb0c762222a2f8c2f06"
+    }
+  ],
+  "status": "family_redesign_audit_created"
+}

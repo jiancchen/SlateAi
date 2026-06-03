@@ -1,0 +1,145 @@
+{
+  "as_of_policy": "pregame",
+  "feature_set_id": "m3_fs_004_state_path_redesign_v0",
+  "grain": "game",
+  "must_remain_false": {
+    "expected_ab_input_materialized": false,
+    "uses_hand_picked_memory_lengths": false,
+    "uses_m2_weights": false,
+    "uses_sports_db": false
+  },
+  "non_goals": [
+    "no picks",
+    "no selection rows",
+    "no player prop pricing",
+    "no market fair probability claims",
+    "no simulator event logs",
+    "no promotion decisions",
+    "no claim that M3 is better"
+  ],
+  "purpose": "First redesigned M3 baseball-state feature artifact after FS-003 showed flat family representation was the bottleneck.",
+  "required_surface_count": 17,
+  "required_surfaces": [
+    {
+      "component_family": "starter_exit_distribution",
+      "family": "starter_path",
+      "priority": "P0",
+      "requirement": "Separate starter workload baseline, last-event deviation, trajectory/change-point evidence, floor distance, and hook/exit target scaffolding.",
+      "surface_id": "starter_workload_trajectory"
+    },
+    {
+      "component_family": "starter_stat_distribution",
+      "family": "starter_path",
+      "priority": "P0",
+      "requirement": "Separate damage baseline, damage volatility, command-break state, walk-burst state, HR damage, and low-evidence uncertainty.",
+      "surface_id": "starter_damage_distribution"
+    },
+    {
+      "component_family": "starter_stat_distribution",
+      "family": "starter_path",
+      "priority": "P1",
+      "requirement": "Represent pitch-shape state and recent pitch-shape change separately from aggregate starter quality.",
+      "surface_id": "starter_pitch_shape_change"
+    },
+    {
+      "component_family": "starter_exit_distribution",
+      "family": "starter_path",
+      "priority": "P0",
+      "requirement": "Compare starter outcomes against opponent-adjusted hitter pressure instead of raw starter form alone.",
+      "surface_id": "starter_opponent_pressure_residual"
+    },
+    {
+      "component_family": "calibration_layer",
+      "family": "starter_path",
+      "priority": "P0",
+      "requirement": "Represent low-data status as uncertainty/shrinkage metadata, not as a hidden fallback or fixed sample bucket.",
+      "surface_id": "starter_low_data_uncertainty"
+    },
+    {
+      "component_family": "reliever_availability_distribution",
+      "family": "reliever_chain",
+      "priority": "P0",
+      "requirement": "Separate individual-arm availability, quick-reuse probability, reset state, and bulk exception probability.",
+      "surface_id": "reliever_availability_reset"
+    },
+    {
+      "component_family": "first_up_reliever_router",
+      "family": "reliever_chain",
+      "priority": "P0",
+      "requirement": "Model a probability distribution over first-up reliever candidates, not one hard selected arm.",
+      "surface_id": "first_up_reliever_router"
+    },
+    {
+      "component_family": "reliever_chain_distribution",
+      "family": "reliever_chain",
+      "priority": "P0",
+      "requirement": "Represent normal, compressed, scramble, and churn chain regimes with expected chain length and remaining-pool quality.",
+      "surface_id": "reliever_chain_length_regime"
+    },
+    {
+      "component_family": "reliever_stat_distribution",
+      "family": "reliever_chain",
+      "priority": "P0",
+      "requirement": "Separate reliever availability from reliever performance volatility, traffic creation, and inherited-runner damage.",
+      "surface_id": "reliever_performance_volatility"
+    },
+    {
+      "component_family": "pa_event_distribution",
+      "family": "hitter_path",
+      "priority": "P0",
+      "requirement": "Encode hitter event distributions against the starter phase of the opponent pitching path.",
+      "surface_id": "hitter_vs_starter_phase"
+    },
+    {
+      "component_family": "pa_event_distribution",
+      "family": "hitter_path",
+      "priority": "P0",
+      "requirement": "Encode hitter event distributions against the likely reliever-chain phase of the single opponent pitching path.",
+      "surface_id": "hitter_vs_reliever_chain_phase"
+    },
+    {
+      "component_family": "hitter_stat_distribution",
+      "family": "hitter_path",
+      "priority": "P1",
+      "requirement": "Separate hitter talent baseline from current-state residuals and pitch-type response reliability.",
+      "surface_id": "hitter_current_state_residual"
+    },
+    {
+      "component_family": "team_run_distribution",
+      "family": "hitter_path",
+      "priority": "P0",
+      "requirement": "Represent PA volume as an output of lineup turnover, walks, scoring state, and pitcher damage, not fixed expected AB.",
+      "surface_id": "lineup_pa_volume_context"
+    },
+    {
+      "component_family": "game_shape_distribution",
+      "family": "story_memory",
+      "priority": "P0",
+      "requirement": "Preserve ordered game-story transitions as state context instead of only flat rates and days-since fields.",
+      "surface_id": "ordered_story_memory"
+    },
+    {
+      "component_family": "game_shape_distribution",
+      "family": "story_memory",
+      "priority": "P0",
+      "requirement": "Separate traffic-without-conversion, early pressure, and conversion state so dead-bat games are not averaged into normal unders.",
+      "surface_id": "traffic_conversion_state"
+    },
+    {
+      "component_family": "game_shape_distribution",
+      "family": "story_memory",
+      "priority": "P0",
+      "requirement": "Create explicit low, normal, high-run, chaos, starter-failure, and bullpen-collapse labels for regime training.",
+      "surface_id": "game_regime_labels"
+    },
+    {
+      "component_family": "calibration_layer",
+      "family": "feedback",
+      "priority": "P0",
+      "requirement": "Attach feature-family redesign to tail/regime calibration diagnostics and promotion/rejection gates.",
+      "surface_id": "tail_calibration_feedback"
+    }
+  ],
+  "source_feature_set_id": "m3_fs_003_game_story_pitching_state_pruned_v0",
+  "status": "candidate_spec_not_materialized"
+}

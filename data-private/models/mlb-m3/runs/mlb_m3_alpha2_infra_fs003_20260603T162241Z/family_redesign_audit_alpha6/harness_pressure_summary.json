@@ -1,0 +1,115 @@
+{
+  "family_ablations": {
+    "f5_total": {
+      "all_features_mae": 3.2908800580027684,
+      "without_family": [
+        {
+          "delta_vs_all": -0.12389060697279985,
+          "family": "starter_path",
+          "without_family_mae": 3.1669894510299685
+        },
+        {
+          "delta_vs_all": -0.06270724058410648,
+          "family": "story_memory",
+          "without_family_mae": 3.228172817418662
+        },
+        {
+          "delta_vs_all": -0.018396224825436125,
+          "family": "hitter_path",
+          "without_family_mae": 3.2724838331773323
+        },
+        {
+          "delta_vs_all": -0.012091898654725153,
+          "family": "game_context",
+          "without_family_mae": 3.2787881593480432
+        },
+        {
+          "delta_vs_all": -1.3322676295501878e-15,
+          "family": "market_context",
+          "without_family_mae": 3.290880058002767
+        },
+        {
+          "delta_vs_all": 0.015246790182222636,
+          "family": "reliever_chain",
+          "without_family_mae": 3.306126848184991
+        }
+      ]
+    },
+    "full_game_total": {
+      "all_features_mae": 4.718657503841917,
+      "without_family": [
+        {
+          "delta_vs_all": -0.5139546887494495,
+          "family": "starter_path",
+          "without_family_mae": 4.2047028150924675
+        },
+        {
+          "delta_vs_all": -0.29651836794546416,
+          "family": "reliever_chain",
+          "without_family_mae": 4.422139135896453
+        },
+        {
+          "delta_vs_all": -0.19055392826360773,
+          "family": "hitter_path",
+          "without_family_mae": 4.528103575578309
+        },
+        {
+          "delta_vs_all": -0.17579114951964225,
+          "family": "story_memory",
+          "without_family_mae": 4.542866354322275
+        },
+        {
+          "delta_vs_all": -5.329070518200751e-15,
+          "family": "market_context",
+          "without_family_mae": 4.718657503841912
+        },
+        {
+          "delta_vs_all": 0.040127748008107034,
+          "family": "game_context",
+          "without_family_mae": 4.758785251850024
+        }
+      ]
+    }
+  },
+  "family_ablations_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/training_harness_alpha5/family_ablations.json",
+  "harness_dir": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/training_harness_alpha5",
+  "walk_forward": [
+    {
+      "baseline_mae": 2.416312442072294,
+      "candidate_delta_mae": 0.4907920252608342,
+      "candidate_feature_count": 251,
+      "candidate_mae": 2.907104467333128,
+      "candidate_status": "candidate_diagnostic_not_promoted",
+      "fold_id": "wf_2026_05_01_to_2026_05_15",
+      "lane": "f5_total"
+    },
+    {
+      "baseline_mae": 3.488691446408216,
+      "candidate_delta_mae": 0.9776576347300607,
+      "candidate_feature_count": 251,
+      "candidate_mae": 4.466349081138277,
+      "candidate_status": "candidate_diagnostic_not_promoted",
+      "fold_id": "wf_2026_05_01_to_2026_05_15",
+      "lane": "full_game_total"
+    },
+    {
+      "baseline_mae": 2.660522990715816,
+      "candidate_delta_mae": 0.6303570672869525,
+      "candidate_feature_count": 251,
+      "candidate_mae": 3.2908800580027684,
+      "candidate_status": "candidate_diagnostic_not_promoted",
+      "fold_id": "wf_2026_05_16_to_2026_05_31",
+      "lane": "f5_total"
+    },
+    {
+      "baseline_mae": 3.587801461297588,
+      "candidate_delta_mae": 1.130856042544329,
+      "candidate_feature_count": 251,
+      "candidate_mae": 4.718657503841917,
+      "candidate_status": "candidate_diagnostic_not_promoted",
+      "fold_id": "wf_2026_05_16_to_2026_05_31",
+      "lane": "full_game_total"
+    }
+  ],
+  "walk_forward_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/training_harness_alpha5/walk_forward.json"
+}

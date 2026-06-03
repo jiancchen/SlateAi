@@ -1,0 +1,753 @@
+{
+  "surfaces": [
+    {
+      "component_family": "starter_exit_distribution",
+      "covered_terms": [
+        "prior_outs",
+        "last_outs",
+        "short_start",
+        "days_since_last_start",
+        "pitches"
+      ],
+      "current_status": "partial",
+      "evidence_status": "covered_by_columns",
+      "family": "starter_path",
+      "fs004_requirement": "Separate starter workload baseline, last-event deviation, trajectory/change-point evidence, floor distance, and hook/exit target scaffolding.",
+      "gap": "FS-003 has workload facts but not a true trajectory or exit distribution target.",
+      "matched_column_count": 26,
+      "matched_columns": [
+        "away_starter_current_short_start_run_length",
+        "away_starter_days_since_last_start",
+        "away_starter_days_since_short_start",
+        "away_starter_last_outs_recorded",
+        "away_starter_last_outs_vs_prior_mean",
+        "away_starter_last_pitches_thrown",
+        "away_starter_pitch_mix_sample_pitches",
+        "away_starter_prior_outs_max",
+        "away_starter_prior_outs_mean",
+        "away_starter_prior_outs_min",
+        "away_starter_prior_outs_std",
+        "away_starter_prior_short_start_count",
+        "away_starter_prior_short_start_rate",
+        "home_starter_current_short_start_run_length",
+        "home_starter_days_since_last_start",
+        "home_starter_days_since_short_start",
+        "home_starter_last_outs_recorded",
+        "home_starter_last_outs_vs_prior_mean",
+        "home_starter_last_pitches_thrown",
+        "home_starter_pitch_mix_sample_pitches",
+        "home_starter_prior_outs_max",
+        "home_starter_prior_outs_mean",
+        "home_starter_prior_outs_min",
+        "home_starter_prior_outs_std",
+        "home_starter_prior_short_start_count",
+        "home_starter_prior_short_start_rate"
+      ],
+      "missing_terms": [],
+      "priority": "P0",
+      "search_families": [
+        "starter_path"
+      ],
+      "surface_id": "starter_workload_trajectory"
+    },
+    {
+      "component_family": "starter_stat_distribution",
+      "covered_terms": [
+        "last_runs_allowed",
+        "bad_start",
+        "mistake",
+        "hr_rate",
+        "walk_rate",
+        "strikeout_rate"
+      ],
+      "current_status": "partial",
+      "evidence_status": "covered_by_columns",
+      "family": "starter_path",
+      "fs004_requirement": "Separate damage baseline, damage volatility, command-break state, walk-burst state, HR damage, and low-evidence uncertainty.",
+      "gap": "FS-003 mixes damage hints into flat columns; it does not expose a distributional starter damage head.",
+      "matched_column_count": 32,
+      "matched_columns": [
+        "away_starter_current_bad_start_run_length",
+        "away_starter_days_since_bad_start",
+        "away_starter_last_runs_allowed",
+        "away_starter_mistake_command_break_index",
+        "away_starter_mistake_first_batter_reach_rate",
+        "away_starter_mistake_first_inning_run_allowed_rate",
+        "away_starter_mistake_home_run_start_rate",
+        "away_starter_mistake_meltdown_start_rate",
+        "away_starter_mistake_post_damage_recovery_rate",
+        "away_starter_mistake_shape_available_flag",
+        "away_starter_mistake_starts_sample",
+        "away_starter_mistake_walk_burst_start_rate",
+        "away_starter_prior_bad_start_count",
+        "away_starter_prior_hr_rate_per_bf",
+        "away_starter_prior_strikeout_rate_per_bf",
+        "away_starter_prior_walk_rate_per_bf",
+        "home_starter_current_bad_start_run_length",
+        "home_starter_days_since_bad_start",
+        "home_starter_last_runs_allowed",
+        "home_starter_mistake_command_break_index",
+        "home_starter_mistake_first_batter_reach_rate",
+        "home_starter_mistake_first_inning_run_allowed_rate",
+        "home_starter_mistake_home_run_start_rate",
+        "home_starter_mistake_meltdown_start_rate",
+        "home_starter_mistake_post_damage_recovery_rate",
+        "home_starter_mistake_shape_available_flag",
+        "home_starter_mistake_starts_sample",
+        "home_starter_mistake_walk_burst_start_rate",
+        "home_starter_prior_bad_start_count",
+        "home_starter_prior_hr_rate_per_bf",
+        "home_starter_prior_strikeout_rate_per_bf",
+        "home_starter_prior_walk_rate_per_bf"
+      ],
+      "missing_terms": [],
+      "priority": "P0",
+      "search_families": [
+        "starter_path"
+      ],
+      "surface_id": "starter_damage_distribution"
+    },
+    {
+      "component_family": "starter_stat_distribution",
+      "covered_terms": [
+        "pitch_mix",
+        "weighted_whiff",
+        "weighted_damage",
+        "command_leak",
+        "hard_contact"
+      ],
+      "current_status": "partial",
+      "evidence_status": "covered_by_columns",
+      "family": "starter_path",
+      "fs004_requirement": "Represent pitch-shape state and recent pitch-shape change separately from aggregate starter quality.",
+      "gap": "Current pitch-mix snapshots are useful but not encoded as change or pitch-by-pitch state transitions.",
+      "matched_column_count": 16,
+      "matched_columns": [
+        "away_starter_pitch_mix_available_flag",
+        "away_starter_pitch_mix_pitch_type_count",
+        "away_starter_pitch_mix_sample_pitches",
+        "away_starter_pitch_mix_top_pitch_share",
+        "away_starter_pitch_mix_weighted_command_leak",
+        "away_starter_pitch_mix_weighted_damage_allowed",
+        "away_starter_pitch_mix_weighted_hard_contact_rate",
+        "away_starter_pitch_mix_weighted_whiff_rate",
+        "home_starter_pitch_mix_available_flag",
+        "home_starter_pitch_mix_pitch_type_count",
+        "home_starter_pitch_mix_sample_pitches",
+        "home_starter_pitch_mix_top_pitch_share",
+        "home_starter_pitch_mix_weighted_command_leak",
+        "home_starter_pitch_mix_weighted_damage_allowed",
+        "home_starter_pitch_mix_weighted_hard_contact_rate",
+        "home_starter_pitch_mix_weighted_whiff_rate"
+      ],
+      "missing_terms": [],
+      "priority": "P1",
+      "search_families": [
+        "starter_path"
+      ],
+      "surface_id": "starter_pitch_shape_change"
+    },
+    {
+      "component_family": "starter_exit_distribution",
+      "covered_terms": [
+        "starter_phase",
+        "matchup",
+        "traffic_fit",
+        "damage_fit",
+        "hitter_path"
+      ],
+      "current_status": "partial",
+      "evidence_status": "covered_by_columns",
+      "family": "starter_path",
+      "fs004_requirement": "Compare starter outcomes against opponent-adjusted hitter pressure instead of raw starter form alone.",
+      "gap": "Starter-phase hitter matchup exists, but residuals are not explicitly joined to starter workload/damage state.",
+      "matched_column_count": 36,
+      "matched_columns": [
+        "away_hitter_path_lineup_player_count",
+        "away_hitter_path_opponent_context_coverage_rate",
+        "away_hitter_path_opponent_weighted_hits_per_pa_avg",
+        "away_hitter_path_opponent_weighted_total_bases_per_pa_avg",
+        "away_hitter_path_pitch_type_damage_rate_avg",
+        "away_hitter_path_pitch_type_expected_slugging_avg",
+        "away_hitter_path_pitch_type_response_coverage_rate",
+        "away_hitter_path_pitch_type_response_rows",
+        "away_hitter_path_pitch_type_response_sample_pitches",
+        "away_hitter_path_pitch_type_whiff_rate_avg",
+        "away_hitter_path_starter_phase_damage_fit_avg",
+        "away_hitter_path_starter_phase_matchup_hitter_count",
+        "away_hitter_path_starter_phase_traffic_fit_avg",
+        "away_hitter_path_starter_phase_whiff_fit_avg",
+        "away_hitter_path_statcast_barrel_trend_avg",
+        "away_hitter_path_statcast_coverage_rate",
+        "away_hitter_path_statcast_hard_hit_trend_avg",
+        "away_hitter_path_statcast_xwoba_trend_avg",
+        "home_hitter_path_lineup_player_count",
+        "home_hitter_path_opponent_context_coverage_rate",
+        "home_hitter_path_opponent_weighted_hits_per_pa_avg",
+        "home_hitter_path_opponent_weighted_total_bases_per_pa_avg",
+        "home_hitter_path_pitch_type_damage_rate_avg",
+        "home_hitter_path_pitch_type_expected_slugging_avg",
+        "home_hitter_path_pitch_type_response_coverage_rate",
+        "home_hitter_path_pitch_type_response_rows",
+        "home_hitter_path_pitch_type_response_sample_pitches",
+        "home_hitter_path_pitch_type_whiff_rate_avg",
+        "home_hitter_path_starter_phase_damage_fit_avg",
+        "home_hitter_path_starter_phase_matchup_hitter_count",
+        "home_hitter_path_starter_phase_traffic_fit_avg",
+        "home_hitter_path_starter_phase_whiff_fit_avg",
+        "home_hitter_path_statcast_barrel_trend_avg",
+        "home_hitter_path_statcast_coverage_rate",
+        "home_hitter_path_statcast_hard_hit_trend_avg",
+        "home_hitter_path_statcast_xwoba_trend_avg"
+      ],
+      "missing_terms": [],
+      "priority": "P0",
+      "search_families": [
+        "starter_path",
+        "hitter_path"
+      ],
+      "surface_id": "starter_opponent_pressure_residual"
+    },
+    {
+      "component_family": "calibration_layer",
+      "covered_terms": [
+        "low_evidence",
+        "prior_start_count",
+        "sample"
+      ],
+      "current_status": "partial",
+      "evidence_status": "covered_by_columns",
+      "family": "starter_path",
+      "fs004_requirement": "Represent low-data status as uncertainty/shrinkage metadata, not as a hidden fallback or fixed sample bucket.",
+      "gap": "Evidence flags exist; no uncertainty model or per-surface reliability contract exists.",
+      "matched_column_count": 8,
+      "matched_columns": [
+        "away_starter_low_evidence_flag",
+        "away_starter_mistake_starts_sample",
+        "away_starter_pitch_mix_sample_pitches",
+        "away_starter_prior_start_count",
+        "home_starter_low_evidence_flag",
+        "home_starter_mistake_starts_sample",
+        "home_starter_pitch_mix_sample_pitches",
+        "home_starter_prior_start_count"
+      ],
+      "missing_terms": [],
+      "priority": "P0",
+      "search_families": [
+        "starter_path"
+      ],
+      "surface_id": "starter_low_data_uncertainty"
+    },
+    {
+      "component_family": "reliever_availability_distribution",
+      "covered_terms": [
+        "availability",
+        "fatigue",
+        "days_since_last",
+        "back_to_back",
+        "worked_yesterday"
+      ],
+      "current_status": "partial",
+      "evidence_status": "covered_by_columns",
+      "family": "reliever_chain",
+      "fs004_requirement": "Separate individual-arm availability, quick-reuse probability, reset state, and bulk exception probability.",
+      "gap": "Availability/reset features exist as averages over likely chains, not as calibrated individual-arm distributions.",
+      "matched_column_count": 12,
+      "matched_columns": [
+        "away_reliever_chain_availability_score_avg",
+        "away_reliever_chain_back_to_back_count",
+        "away_reliever_chain_worked_yesterday_count",
+        "away_reliever_usage_availability_score_avg",
+        "away_reliever_usage_days_since_last_avg",
+        "away_reliever_usage_fatigue_score_avg",
+        "home_reliever_chain_availability_score_avg",
+        "home_reliever_chain_back_to_back_count",
+        "home_reliever_chain_worked_yesterday_count",
+        "home_reliever_usage_availability_score_avg",
+        "home_reliever_usage_days_since_last_avg",
+        "home_reliever_usage_fatigue_score_avg"
+      ],
+      "missing_terms": [],
+      "priority": "P0",
+      "search_families": [
+        "reliever_chain"
+      ],
+      "surface_id": "reliever_availability_reset"
+    },
+    {
+      "component_family": "first_up_reliever_router",
+      "covered_terms": [
+        "candidate_pool",
+        "chain_known",
+        "bridge_score",
+        "expected_outs"
+      ],
+      "current_status": "partial",
+      "evidence_status": "covered_by_columns",
+      "family": "reliever_chain",
+      "fs004_requirement": "Model a probability distribution over first-up reliever candidates, not one hard selected arm.",
+      "gap": "Candidate pool shape exists; no first-up identity target, route probability, or role exception target exists.",
+      "matched_column_count": 12,
+      "matched_columns": [
+        "away_reliever_candidate_pool_entropy",
+        "away_reliever_candidate_pool_size",
+        "away_reliever_chain_bridge_score_avg",
+        "away_reliever_chain_expected_outs_avg",
+        "away_reliever_chain_expected_outs_sum",
+        "away_reliever_chain_known_flag",
+        "home_reliever_candidate_pool_entropy",
+        "home_reliever_candidate_pool_size",
+        "home_reliever_chain_bridge_score_avg",
+        "home_reliever_chain_expected_outs_avg",
+        "home_reliever_chain_expected_outs_sum",
+        "home_reliever_chain_known_flag"
+      ],
+      "missing_terms": [],
+      "priority": "P0",
+      "search_families": [
+        "reliever_chain"
+      ],
+      "surface_id": "first_up_reliever_router"
+    },
+    {
+      "component_family": "reliever_chain_distribution",
+      "covered_terms": [
+        "expected_outs",
+        "reliever_count",
+        "5plus_reliever",
+        "prior_relievers"
+      ],
+      "current_status": "partial",
+      "evidence_status": "covered_by_columns",
+      "family": "reliever_chain",
+      "fs004_requirement": "Represent normal, compressed, scramble, and churn chain regimes with expected chain length and remaining-pool quality.",
+      "gap": "FS-003 has chain length hints but no explicit chain-regime labels or distribution target.",
+      "matched_column_count": 12,
+      "matched_columns": [
+        "away_relief_current_5plus_reliever_run_length",
+        "away_relief_days_since_5plus_reliever_game",
+        "away_relief_last_game_reliever_count",
+        "away_relief_prior_relievers_used_per_game",
+        "away_reliever_chain_expected_outs_avg",
+        "away_reliever_chain_expected_outs_sum",
+        "home_relief_current_5plus_reliever_run_length",
+        "home_relief_days_since_5plus_reliever_game",
+        "home_relief_last_game_reliever_count",
+        "home_relief_prior_relievers_used_per_game",
+        "home_reliever_chain_expected_outs_avg",
+        "home_reliever_chain_expected_outs_sum"
+      ],
+      "missing_terms": [],
+      "priority": "P0",
+      "search_families": [
+        "reliever_chain"
+      ],
+      "surface_id": "reliever_chain_length_regime"
+    },
+    {
+      "component_family": "reliever_stat_distribution",
+      "covered_terms": [
+        "command",
+        "free_pass",
+        "reached",
+        "risk_index",
+        "run_delta",
+        "hits_walks_allowed"
+      ],
+      "current_status": "partial",
+      "evidence_status": "covered_by_columns",
+      "family": "reliever_chain",
+      "fs004_requirement": "Separate reliever availability from reliever performance volatility, traffic creation, and inherited-runner damage.",
+      "gap": "Command profile coverage is sparse and averaged; inherited-runner and entry-state context are not first-class.",
+      "matched_column_count": 9,
+      "matched_columns": [
+        "away_relief_last_game_hits_walks_allowed",
+        "away_reliever_command_ball_rate_avg",
+        "away_reliever_command_free_pass_rate_avg",
+        "away_reliever_command_profile_coverage_rate",
+        "away_reliever_command_reached_rate_avg",
+        "away_reliever_command_risk_index_avg",
+        "away_reliever_command_run_delta_per_entry_avg",
+        "home_relief_last_game_hits_walks_allowed",
+        "home_reliever_command_profile_coverage_rate"
+      ],
+      "missing_terms": [],
+      "priority": "P0",
+      "search_families": [
+        "reliever_chain"
+      ],
+      "surface_id": "reliever_performance_volatility"
+    },
+    {
+      "component_family": "pa_event_distribution",
+      "covered_terms": [
+        "pitch_type",
+        "statcast",
+        "opponent_weighted"
+      ],
+      "current_status": "partial",
+      "evidence_status": "partial_column_coverage",
+      "family": "hitter_path",
+      "fs004_requirement": "Encode hitter event distributions against the starter phase of the opponent pitching path.",
+      "gap": "Starter-phase matchup averages exist, but not player-level event distributions or PA-state interactions.",
+      "matched_column_count": 24,
+      "matched_columns": [
+        "away_hitter_path_opponent_weighted_hits_per_pa_avg",
+        "away_hitter_path_opponent_weighted_total_bases_per_pa_avg",
+        "away_hitter_path_pitch_type_damage_rate_avg",
+        "away_hitter_path_pitch_type_expected_slugging_avg",
+        "away_hitter_path_pitch_type_response_coverage_rate",
+        "away_hitter_path_pitch_type_response_rows",
+        "away_hitter_path_pitch_type_response_sample_pitches",
+        "away_hitter_path_pitch_type_whiff_rate_avg",
+        "away_hitter_path_statcast_barrel_trend_avg",
+        "away_hitter_path_statcast_coverage_rate",
+        "away_hitter_path_statcast_hard_hit_trend_avg",
+        "away_hitter_path_statcast_xwoba_trend_avg",
+        "home_hitter_path_opponent_weighted_hits_per_pa_avg",
+        "home_hitter_path_opponent_weighted_total_bases_per_pa_avg",
+        "home_hitter_path_pitch_type_damage_rate_avg",
+        "home_hitter_path_pitch_type_expected_slugging_avg",
+        "home_hitter_path_pitch_type_response_coverage_rate",
+        "home_hitter_path_pitch_type_response_rows",
+        "home_hitter_path_pitch_type_response_sample_pitches",
+        "home_hitter_path_pitch_type_whiff_rate_avg",
+        "home_hitter_path_statcast_barrel_trend_avg",
+        "home_hitter_path_statcast_coverage_rate",
+        "home_hitter_path_statcast_hard_hit_trend_avg",
+        "home_hitter_path_statcast_xwoba_trend_avg"
+      ],
+      "missing_terms": [
+        "starter_phase"
+      ],
+      "priority": "P0",
+      "search_families": [
+        "hitter_path"
+      ],
+      "surface_id": "hitter_vs_starter_phase"
+    },
+    {
+      "component_family": "pa_event_distribution",
+      "covered_terms": [],
+      "current_status": "missing",
+      "evidence_status": "missing",
+      "family": "hitter_path",
+      "fs004_requirement": "Encode hitter event distributions against the likely reliever-chain phase of the single opponent pitching path.",
+      "gap": "No reliever-chain hitter surface is materialized in FS-003.",
+      "matched_column_count": 0,
+      "matched_columns": [],
+      "missing_terms": [
+        "reliever_chain_hitter",
+        "hitter_path_reliever",
+        "vs_reliever",
+        "relief_hitter"
+      ],
+      "priority": "P0",
+      "search_families": [
+        "hitter_path"
+      ],
+      "surface_id": "hitter_vs_reliever_chain_phase"
+    },
+    {
+      "component_family": "hitter_stat_distribution",
+      "covered_terms": [
+        "statcast",
+        "xwoba",
+        "barrel",
+        "hard_hit",
+        "pitch_type_response"
+      ],
+      "current_status": "partial",
+      "evidence_status": "covered_by_columns",
+      "family": "hitter_path",
+      "fs004_requirement": "Separate hitter talent baseline from current-state residuals and pitch-type response reliability.",
+      "gap": "FS-003 has aggregate state hints but does not separate baseline talent, residual, and evidence reliability.",
+      "matched_column_count": 14,
+      "matched_columns": [
+        "away_hitter_path_pitch_type_response_coverage_rate",
+        "away_hitter_path_pitch_type_response_rows",
+        "away_hitter_path_pitch_type_response_sample_pitches",
+        "away_hitter_path_statcast_barrel_trend_avg",
+        "away_hitter_path_statcast_coverage_rate",
+        "away_hitter_path_statcast_hard_hit_trend_avg",
+        "away_hitter_path_statcast_xwoba_trend_avg",
+        "home_hitter_path_pitch_type_response_coverage_rate",
+        "home_hitter_path_pitch_type_response_rows",
+        "home_hitter_path_pitch_type_response_sample_pitches",
+        "home_hitter_path_statcast_barrel_trend_avg",
+        "home_hitter_path_statcast_coverage_rate",
+        "home_hitter_path_statcast_hard_hit_trend_avg",
+        "home_hitter_path_statcast_xwoba_trend_avg"
+      ],
+      "missing_terms": [],
+      "priority": "P1",
+      "search_families": [
+        "hitter_path"
+      ],
+      "surface_id": "hitter_current_state_residual"
+    },
+    {
+      "component_family": "team_run_distribution",
+      "covered_terms": [
+        "lineup",
+        "slot_count",
+        "lineup_player_count",
+        "complete_flag"
+      ],
+      "current_status": "partial",
+      "evidence_status": "covered_by_columns",
+      "family": "hitter_path",
+      "fs004_requirement": "Represent PA volume as an output of lineup turnover, walks, scoring state, and pitcher damage, not fixed expected AB.",
+      "gap": "Lineup coverage exists; PA volume distribution does not.",
+      "matched_column_count": 8,
+      "matched_columns": [
+        "away_hitter_path_lineup_player_count",
+        "away_lineup_complete_flag",
+        "away_lineup_known_flag",
+        "away_lineup_known_slot_count",
+        "home_hitter_path_lineup_player_count",
+        "home_lineup_complete_flag",
+        "home_lineup_known_flag",
+        "home_lineup_known_slot_count"
+      ],
+      "missing_terms": [],
+      "priority": "P0",
+      "search_families": [
+        "hitter_path"
+      ],
+      "surface_id": "lineup_pa_volume_context"
+    },
+    {
+      "component_family": "game_shape_distribution",
+      "covered_terms": [
+        "days_since",
+        "current_",
+        "alternation",
+        "last_game",
+        "prior_"
+      ],
+      "current_status": "partial",
+      "evidence_status": "covered_by_columns",
+      "family": "story_memory",
+      "fs004_requirement": "Preserve ordered game-story transitions as state context instead of only flat rates and days-since fields.",
+      "gap": "FS-003 has days-since and run-length facts but not an ordered event stream or sequence encoding artifact.",
+      "matched_column_count": 58,
+      "matched_columns": [
+        "away_story_current_loss_run_length",
+        "away_story_current_quiet_first5_run_length",
+        "away_story_current_traffic_no_conversion_run_length",
+        "away_story_current_win_run_length",
+        "away_story_days_since_bullpen_flip_game",
+        "away_story_days_since_chaos_game",
+        "away_story_days_since_dead_bat_game",
+        "away_story_days_since_first5_firefight",
+        "away_story_days_since_prior_game",
+        "away_story_days_since_starter_crack_game",
+        "away_story_days_since_traffic_no_conversion",
+        "away_story_last_game_bullpen_flip_flag",
+        "away_story_last_game_f5_total_runs",
+        "away_story_last_game_runs_allowed",
+        "away_story_last_game_runs_scored",
+        "away_story_last_game_total_runs",
+        "away_story_last_game_traffic_no_conversion_flag",
+        "away_story_primary_label_alternation_rate",
+        "away_story_prior_bullpen_flip_rate",
+        "away_story_prior_chaos_rate",
+        "away_story_prior_dead_bat_rate",
+        "away_story_prior_first5_win_rate",
+        "away_story_prior_game_count",
+        "away_story_prior_late_break_rate",
+        "away_story_prior_loss_count",
+        "away_story_prior_scored_first_inning_rate",
+        "away_story_prior_scoreless_first3_rate",
+        "away_story_prior_traffic_no_conversion_rate",
+        "away_story_prior_win_count",
+        "home_story_current_loss_run_length",
+        "home_story_current_quiet_first5_run_length",
+        "home_story_current_traffic_no_conversion_run_length",
+        "home_story_current_win_run_length",
+        "home_story_days_since_bullpen_flip_game",
+        "home_story_days_since_chaos_game",
+        "home_story_days_since_dead_bat_game",
+        "home_story_days_since_first5_firefight",
+        "home_story_days_since_prior_game",
+        "home_story_days_since_starter_crack_game",
+        "home_story_days_since_traffic_no_conversion",
+        "home_story_last_game_bullpen_flip_flag",
+        "home_story_last_game_f5_total_runs",
+        "home_story_last_game_runs_allowed",
+        "home_story_last_game_runs_scored",
+        "home_story_last_game_total_runs",
+        "home_story_last_game_traffic_no_conversion_flag",
+        "home_story_primary_label_alternation_rate",
+        "home_story_prior_bullpen_flip_rate",
+        "home_story_prior_chaos_rate",
+        "home_story_prior_dead_bat_rate",
+        "home_story_prior_first5_win_rate",
+        "home_story_prior_game_count",
+        "home_story_prior_late_break_rate",
+        "home_story_prior_loss_count",
+        "home_story_prior_scored_first_inning_rate",
+        "home_story_prior_scoreless_first3_rate",
+        "home_story_prior_traffic_no_conversion_rate",
+        "home_story_prior_win_count"
+      ],
+      "missing_terms": [],
+      "priority": "P0",
+      "search_families": [
+        "story_memory"
+      ],
+      "surface_id": "ordered_story_memory"
+    },
+    {
+      "component_family": "game_shape_distribution",
+      "covered_terms": [
+        "traffic_no_conversion",
+        "scored_first",
+        "scoreless_first"
+      ],
+      "current_status": "partial",
+      "evidence_status": "covered_by_columns",
+      "family": "story_memory",
+      "fs004_requirement": "Separate traffic-without-conversion, early pressure, and conversion state so dead-bat games are not averaged into normal unders.",
+      "gap": "Traffic story labels exist, but PA/base-out replay state is not feature-materialized as ordered transitions.",
+      "matched_column_count": 12,
+      "matched_columns": [
+        "away_story_current_traffic_no_conversion_run_length",
+        "away_story_days_since_traffic_no_conversion",
+        "away_story_last_game_traffic_no_conversion_flag",
+        "away_story_prior_scored_first_inning_rate",
+        "away_story_prior_scoreless_first3_rate",
+        "away_story_prior_traffic_no_conversion_rate",
+        "home_story_current_traffic_no_conversion_run_length",
+        "home_story_days_since_traffic_no_conversion",
+        "home_story_last_game_traffic_no_conversion_flag",
+        "home_story_prior_scored_first_inning_rate",
+        "home_story_prior_scoreless_first3_rate",
+        "home_story_prior_traffic_no_conversion_rate"
+      ],
+      "missing_terms": [],
+      "priority": "P0",
+      "search_families": [
+        "story_memory"
+      ],
+      "surface_id": "traffic_conversion_state"
+    },
+    {
+      "component_family": "game_shape_distribution",
+      "covered_terms": [
+        "target_chaos",
+        "target_total_bucket",
+        "target_f5_bucket",
+        "chaos",
+        "dead_bat",
+        "first5_firefight"
+      ],
+      "current_status": "partial",
+      "evidence_status": "covered_by_columns",
+      "family": "story_memory",
+      "fs004_requirement": "Create explicit low, normal, high-run, chaos, starter-failure, and bullpen-collapse labels for regime training.",
+      "gap": "Targets and story hints exist, but latent regime label contract is not formalized.",
+      "matched_column_count": 13,
+      "matched_columns": [
+        "away_story_days_since_chaos_game",
+        "away_story_days_since_dead_bat_game",
+        "away_story_days_since_first5_firefight",
+        "away_story_prior_chaos_rate",
+        "away_story_prior_dead_bat_rate",
+        "home_story_days_since_chaos_game",
+        "home_story_days_since_dead_bat_game",
+        "home_story_days_since_first5_firefight",
+        "home_story_prior_chaos_rate",
+        "home_story_prior_dead_bat_rate",
+        "target_chaos_game_flag",
+        "target_f5_bucket",
+        "target_total_bucket"
+      ],
+      "missing_terms": [],
+      "priority": "P0",
+      "search_families": [
+        "story_memory",
+        "target"
+      ],
+      "surface_id": "game_regime_labels"
+    },
+    {
+      "component_family": "game_shape_distribution",
+      "covered_terms": [
+        "day_of_week",
+        "weekend",
+        "days_since_prior_game",
+        "played_yesterday",
+        "start_hour"
+      ],
+      "current_status": "partial",
+      "evidence_status": "covered_by_columns",
+      "family": "game_context",
+      "fs004_requirement": "Add schedule, rest, travel, series, start-time, and time-zone context with coverage flags.",
+      "gap": "Rest/day context exists; travel distance, time-zone shift, and series completeness are missing.",
+      "matched_column_count": 7,
+      "matched_columns": [
+        "away_context_days_since_prior_game",
+        "away_context_played_yesterday_flag",
+        "game_day_of_week",
+        "game_is_weekend_flag",
+        "game_start_hour_utc",
+        "home_context_days_since_prior_game",
+        "home_context_played_yesterday_flag"
+      ],
+      "missing_terms": [],
+      "priority": "P2",
+      "search_families": [
+        "game_context"
+      ],
+      "surface_id": "schedule_travel_context"
+    },
+    {
+      "component_family": "calibration_layer",
+      "covered_terms": [
+        "market_",
+        "pregame_snapshot"
+      ],
+      "current_status": "partial",
+      "evidence_status": "covered_by_columns",
+      "family": "market_context",
+      "fs004_requirement": "Separate market line, price, timestamp, market source, and closing movement from mere snapshot count.",
+      "gap": "FS-003 only retains market snapshot counts after pruning sparse line fields.",
+      "matched_column_count": 3,
+      "matched_columns": [
+        "market_any_pregame_snapshot_count",
+        "market_f5_total_pregame_snapshot_count",
+        "market_total_pregame_snapshot_count"
+      ],
+      "missing_terms": [],
+      "priority": "P2",
+      "search_families": [
+        "market_context"
+      ],
+      "surface_id": "market_context_lines"
+    },
+    {
+      "component_family": "calibration_layer",
+      "covered_terms": [],
+      "current_status": "missing",
+      "evidence_status": "missing",
+      "family": "feedback",
+      "fs004_requirement": "Attach feature-family redesign to tail/regime calibration diagnostics and promotion/rejection gates.",
+      "gap": "Harness has walk-forward and ablations; it does not have calibration, settlement, or promotion gates.",
+      "matched_column_count": 0,
+      "matched_columns": [],
+      "missing_terms": [
+        "calibration",
+        "tail",
+        "promotion",
+        "settlement"
+      ],
+      "priority": "P0",
+      "search_families": [
+        "feedback"
+      ],
+      "surface_id": "tail_calibration_feedback"
+    }
+  ]
+}

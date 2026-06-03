@@ -1,0 +1,29 @@
+{
+  "created_at": "2026-06-03T17:06:58Z",
+  "decision": "feature_family_redesign_required_before_model_tuning",
+  "feature_column_count": 256,
+  "matrix_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_003_game_story_pitching_state_pruned_v0/m3_fs_003_game_story_pitching_state_pruned_v0_20260603T162132Z/matrix.parquet",
+  "next_recommended_artifact": "m3_fs_004_state_path_redesign_v0",
+  "non_goals": [
+    "no picks",
+    "no selection rows",
+    "no player prop pricing",
+    "no market fair probability claims",
+    "no simulator event logs",
+    "no promotion decisions",
+    "no claim that M3 is better"
+  ],
+  "row_count": 886,
+  "run_id": "mlb_m3_alpha2_infra_fs003_20260603T162241Z_alpha6_family_redesign_audit",
+  "source_feature_run_id": "m3_fs_003_game_story_pitching_state_pruned_v0_20260603T162132Z",
+  "source_feature_set_id": "m3_fs_003_game_story_pitching_state_pruned_v0",
+  "source_harness_dir": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/training_harness_alpha5",
+  "source_manifest_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/manifest.json",
+  "status": "family_redesign_audit_created",
+  "surface_count": 19,
+  "surface_status_counts": {
+    "missing": 2,
+    "partial": 17
+  },
+  "tool_version": "0.1.0"
+}
