@@ -23,6 +23,7 @@ Related inventory and architecture docs:
 
 - [Output Contract Inventory](../development-docs/mlb/models/mlb-m3-output-contract-inventory-2026-06-02.md)
 - [Hierarchical Simulator Architecture](../development-docs/mlb/models/mlb-m3-hierarchical-simulator-architecture.md)
+- [Alpha Feature Extraction Run Plan](../run-plans/mlb/2026-06-03-mlb-m3-alpha-feature-extraction-run-plan.md)
 
 ## North Star
 
