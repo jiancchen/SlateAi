@@ -6,7 +6,7 @@ Scope: keep every MLB ingestion and normalization path pointed at `data-private/
 
 Command replacement ledger: `run-plans/mlb/2026-06-03-mlb-warehouse-command-ledger.md`
 
-Typed replacement CLI: `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.2.0
+Typed replacement CLI: `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.3.0
 
 ## Was The Earlier Migration Complete?
 

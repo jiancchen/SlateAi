@@ -16,7 +16,10 @@ DEFAULT_DB_PATH = ROOT / "data-private" / "warehouse" / "sports" / "mlb" / "sql-
 REPORT_DIR = ROOT / "data-migration" / "reports"
 WAREHOUSE_LEDGER_PATH = ROOT / "run-plans" / "mlb" / "2026-06-03-mlb-warehouse-command-ledger.md"
 SCHEDULE_GAME_FEED_INGEST = ROOT / "data-migration" / "scripts" / "ingest_mlb_schedule_game_feed_raw_to_typed.py"
-VERSION = "0.2.0"
+LINEUPS_INGEST = ROOT / "data-migration" / "scripts" / "ingest_mlb_lineups_raw_to_typed.py"
+MARKETS_PROPS_INGEST = ROOT / "data-migration" / "scripts" / "ingest_mlb_markets_props_raw_to_typed.py"
+PLAYER_CONTEXT_INGEST = ROOT / "data-migration" / "scripts" / "ingest_mlb_player_context_raw_to_typed.py"
+VERSION = "0.3.0"
 
 LEGACY_WAREHOUSE_COMMANDS = {
     "init-db",
@@ -117,12 +120,14 @@ def run_python_script(script_path: Path, args: list[str]) -> dict[str, Any]:
     }
 
 
-def run_schedule_game_feed_ingest(
+def run_typed_adapter(
+    script_path: Path,
     db_path: Path,
     date_text: str,
     *,
     dry_run: bool,
     report: Path,
+    family: str,
 ) -> dict[str, Any]:
     args = [
         "--date",
@@ -134,11 +139,29 @@ def run_schedule_game_feed_ingest(
     ]
     if dry_run:
         args.append("--dry-run")
-    result = run_python_script(SCHEDULE_GAME_FEED_INGEST, args)
+    result = run_python_script(script_path, args)
     result["date"] = date_text
+    result["family"] = family
     result["report_path"] = display_path(report)
     result["ok"] = result["returncode"] == 0
     return result
+
+
+def run_schedule_game_feed_ingest(
+    db_path: Path,
+    date_text: str,
+    *,
+    dry_run: bool,
+    report: Path,
+) -> dict[str, Any]:
+    return run_typed_adapter(
+        SCHEDULE_GAME_FEED_INGEST,
+        db_path,
+        date_text,
+        dry_run=dry_run,
+        report=report,
+        family="schedule_game_feed",
+    )
 
 
 def write_json_report(path: Path, payload: dict[str, Any]) -> None:
@@ -395,6 +418,59 @@ def ingest_range_payload(
     return payload
 
 
+def prepare_mlb_day_payload(
+    db_path: Path,
+    *,
+    date_text: str,
+    lookback_days: int,
+    dry_run: bool,
+    include_lineups: bool,
+    include_markets: bool,
+    include_player_context: bool,
+) -> dict[str, Any]:
+    target = parse_date(date_text)
+    start = target - timedelta(days=lookback_days)
+    results: list[dict[str, Any]] = []
+    for feed_date in iter_dates(start.isoformat(), date_text):
+        child_report = report_path("prepare_mlb_day_schedule_game_feed", feed_date)
+        results.append(run_schedule_game_feed_ingest(db_path, feed_date, dry_run=dry_run, report=child_report))
+    target_adapters = [
+        (include_lineups, "lineups", LINEUPS_INGEST),
+        (include_markets, "markets_props", MARKETS_PROPS_INGEST),
+        (include_player_context, "player_context", PLAYER_CONTEXT_INGEST),
+    ]
+    for enabled, family, script_path in target_adapters:
+        if not enabled:
+            continue
+        child_report = report_path(f"prepare_mlb_day_{family}", date_text)
+        results.append(
+            run_typed_adapter(
+                script_path,
+                db_path,
+                date_text,
+                dry_run=dry_run,
+                report=child_report,
+                family=family,
+            )
+        )
+    payload = {
+        "version": VERSION,
+        "mode": "prepare_mlb_day",
+        "db_path": display_path(db_path),
+        "date": date_text,
+        "lookback_days": lookback_days,
+        "lookback_start_date": start.isoformat(),
+        "dry_run": dry_run,
+        "include_lineups": include_lineups,
+        "include_markets": include_markets,
+        "include_player_context": include_player_context,
+        "results": results,
+        "ok": all(result["ok"] for result in results),
+    }
+    write_json_report(report_path("prepare_mlb_day", date_text), payload)
+    return payload
+
+
 def print_ingest_summary(payload: dict[str, Any]) -> None:
     ok_count = sum(1 for result in payload["results"] if result["ok"])
     print(
@@ -403,7 +479,20 @@ def print_ingest_summary(payload: dict[str, Any]) -> None:
     )
     for result in payload["results"]:
         status = "ok" if result["ok"] else f"failed:{result['returncode']}"
-        print(f"- {result['date']}: {status} report={result['report_path']}")
+        family = result.get("family") or "unknown"
+        print(f"- {result['date']} {family}: {status} report={result['report_path']}")
+
+
+def print_prepare_summary(payload: dict[str, Any]) -> None:
+    ok_count = sum(1 for result in payload["results"] if result["ok"])
+    print(
+        f"MLB typed warehouse prepare {payload['date']}: "
+        f"{ok_count}/{len(payload['results'])} steps ok "
+        f"(lookback {payload['lookback_start_date']} to {payload['date']})"
+    )
+    for result in payload["results"]:
+        status = "ok" if result["ok"] else f"failed:{result['returncode']}"
+        print(f"- {result['date']} {result['family']}: {status} report={result['report_path']}")
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -438,6 +527,15 @@ def build_parser() -> argparse.ArgumentParser:
     replay_range_parser.add_argument("--end-date", required=True, help="End date in YYYY-MM-DD format.")
     replay_range_parser.add_argument("--dry-run", action="store_true", help="Parse/report without writing typed DB rows.")
     replay_range_parser.add_argument("--json", action="store_true", help="Emit wrapper JSON instead of text summary.")
+
+    prepare_parser = subparsers.add_parser("prepare-mlb-day", help="Run M3-safe typed day ingestion/preflight adapters.")
+    prepare_parser.add_argument("--date", required=True, help="Target date in YYYY-MM-DD format.")
+    prepare_parser.add_argument("--lookback-days", type=int, default=3, help="Schedule/game-feed lookback window.")
+    prepare_parser.add_argument("--dry-run", action="store_true", help="Parse/report without writing typed DB rows.")
+    prepare_parser.add_argument("--skip-lineups", action="store_true", help="Skip target-day lineups/probables adapter.")
+    prepare_parser.add_argument("--skip-markets", action="store_true", help="Skip target-day markets/props adapter.")
+    prepare_parser.add_argument("--skip-player-context", action="store_true", help="Skip target-day player context adapter.")
+    prepare_parser.add_argument("--json", action="store_true", help="Emit wrapper JSON instead of text summary.")
 
     probables_parser = subparsers.add_parser("list-probable-starters", help="Read probable starters from typed tables.")
     probables_parser.add_argument("--date", required=True, help="Game date in YYYY-MM-DD format.")
@@ -501,6 +599,21 @@ def main() -> int:
             print(json.dumps(payload, indent=2, sort_keys=True))
         else:
             print_ingest_summary(payload)
+        return 0 if payload["ok"] else 1
+    if args.command == "prepare-mlb-day":
+        payload = prepare_mlb_day_payload(
+            db_path,
+            date_text=args.date,
+            lookback_days=args.lookback_days,
+            dry_run=args.dry_run,
+            include_lineups=not args.skip_lineups,
+            include_markets=not args.skip_markets,
+            include_player_context=not args.skip_player_context,
+        )
+        if args.json:
+            print(json.dumps(payload, indent=2, sort_keys=True))
+        else:
+            print_prepare_summary(payload)
         return 0 if payload["ok"] else 1
     if args.command == "status":
         with connect(db_path) as conn:

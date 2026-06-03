@@ -2,7 +2,7 @@
 
 MLB warehouse commands, migrations, table derivations, and warehouse-only helpers live here after migration.
 
-- `mlb_typed_warehouse.py`: typed MLB warehouse CLI v0.2.0 backed by `data-private/warehouse/sports/mlb/sql-mlb.db`.
+- `mlb_typed_warehouse.py`: typed MLB warehouse CLI v0.3.0 backed by `data-private/warehouse/sports/mlb/sql-mlb.db`.
 - `mlb_warehouse.py`: legacy MLB ingest, derive, import, grade, and list CLI backed by `data-private/warehouse/sports.db`.
 - `mlb_side_backtest.py`: side-prediction import, grading, and reporting CLI.
 - `export_story_archive.py`: story-signal web module export.

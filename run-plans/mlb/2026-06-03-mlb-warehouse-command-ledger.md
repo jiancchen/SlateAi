@@ -2,9 +2,9 @@
 
 Date: 2026-06-03
 
-Ledger version: 0.3.0
+Ledger version: 0.4.0
 
-Typed CLI version: `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.2.0
+Typed CLI version: `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.3.0
 
 Scope: first-pass ledger for replacing `pipeline/mlb/warehouse/mlb_warehouse.py` command by command without path-flipping the legacy `sports.db` script into the typed MLB DB.
 
@@ -56,7 +56,7 @@ flowchart TD
 | `ingest-mlb-day` | `data:ingest:mlb-day`, `data:typed:ingest:mlb-day` | raw typed ingestion | P0 | `typed-cli-exists` | `mlb_typed_warehouse.py ingest-mlb-day` wrapping `ingest_mlb_schedule_game_feed_raw_to_typed.py` | Validate typed output against legacy/date reports, then move `data:ingest:mlb-day` to the typed CLI. |
 | `ingest-mlb-range` | `data:ingest:mlb-range`, `data:typed:ingest:mlb-range` | raw typed ingestion | P0 | `typed-cli-exists` | `mlb_typed_warehouse.py ingest-mlb-range` looping the schedule/game-feed typed adapter | Validate multi-day dry-run/write idempotency, then move `data:ingest:mlb-range` to the typed CLI. |
 | `replay-mlb-range-from-raw` | `data:replay:mlb-raw-range`, `data:typed:replay:mlb-raw-range` | raw typed ingestion | P0 | `typed-cli-exists` | `mlb_typed_warehouse.py replay-mlb-range-from-raw` looping the schedule/game-feed typed adapter | Validate range replay idempotency, then move `data:replay:mlb-raw-range` to the typed CLI. |
-| `prepare-mlb-day` | `data:prep:mlb-day` | orchestration | P1 | `wrapper-needed` | typed ingest + source freshness + feature status checks | Replace with M3-safe preflight/orchestrator after P0 ingest wrappers land. |
+| `prepare-mlb-day` | `data:prep:mlb-day`, `data:typed:prep:mlb-day` | orchestration | P1 | `typed-cli-exists` | `mlb_typed_warehouse.py prepare-mlb-day` orchestrating feed lookback, lineups, markets/props, and player context adapters | Add validator bundle/freshness gate, then move `data:prep:mlb-day` to the typed CLI. |
 | `list-probable-starters` | `data:list:probables`, `data:list:probables:typed` | typed read/report | P0 | `typed-cli-exists` | `mlb_typed_warehouse.py list-probable-starters` over typed `starting_pitchers`, `games`, `teams`, `players` | Validate typed output against legacy output, then move `data:list:probables` to the typed CLI. |
 | `derive-mlb-features` | `data:derive:mlb` | feature layer | P1 | `feature-rewrite` | rolling team/starter/bullpen feature jobs | Split into typed feature builders with feature-set IDs and validators. |
 | `derive-story-signals` | `data:derive:stories` | feature layer | P2 | `feature-rewrite` | game-story signal feature job from typed replay state | Rebuild as M3 story-transition feature job. |
