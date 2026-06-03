@@ -1,0 +1,33 @@
+{
+  "date_count": 1,
+  "db_path": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "dry_run": true,
+  "end_date": "2026-05-31",
+  "mode": "ingest_hitter_statcast_range",
+  "ok": true,
+  "results": [
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "data-migration/scripts/ingest_mlb_player_context_raw_to_typed.py",
+        "--date",
+        "2026-05-31",
+        "--source-db",
+        "data-private/warehouse/sports/mlb/sql-mlb.db",
+        "--report",
+        "data-migration/reports/mlb_typed_warehouse_ingest_hitter_statcast_2026-05-31.json",
+        "--skip-player-context",
+        "--dry-run"
+      ],
+      "date": "2026-05-31",
+      "family": "hitter_statcast",
+      "ok": true,
+      "report_path": "data-migration/reports/mlb_typed_warehouse_ingest_hitter_statcast_2026-05-31.json",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"date\": \"2026-05-31\",\n  \"dry_run\": true,\n  \"errors\": [],\n  \"expected_context_items\": 310,\n  \"generated_at\": \"2026-06-03T05:43:01.342298+00:00\",\n  \"ok\": true,\n  \"player_context\": {\n    \"career_profiles\": 0,\n    \"identity_profiles\": 0,\n    \"people\": 0,\n    \"skipped\": true,\n    \"source_files\": 0,\n    \"unresolved\": 0\n  },\n  \"row_count_delta\": {},\n  \"savant\": {\n    \"details_rows\": 4459,\n    \"game_logs\": 0,\n    \"grouped_rows\": 310,\n    \"players\": 0,\n    \"source_files\": 2,\n    \"unresolved\": 0\n  },\n  \"script\": \"data-migration/scripts/ingest_mlb_player_context_raw_to_typed.py\",\n  \"skip_player_context\": true,\n  \"skip_savant\": false,\n  \"source_db\": \"data-private/warehouse/sports/mlb/sql-mlb.db\"\n}\n"
+    }
+  ],
+  "start_date": "2026-05-31",
+  "version": "0.6.0"
+}

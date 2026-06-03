@@ -48,6 +48,8 @@ def parse_args() -> argparse.Namespace:
         default=ROOT / "data-migration" / "reports" / "ingest_mlb_player_context_raw_to_typed_2026-06-02.json",
     )
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--skip-savant", action="store_true", help="Skip Baseball Savant hitter Statcast files.")
+    parser.add_argument("--skip-player-context", action="store_true", help="Skip MLB Stats API player career/profile files.")
     args = parser.parse_args()
     for key in ("source_db", "savant_root", "stats_api_root", "report"):
         value = getattr(args, key)
@@ -113,6 +115,8 @@ def ingest(args: argparse.Namespace) -> dict:
         "source_db": str(args.source_db.relative_to(ROOT)),
         "date": args.date,
         "dry_run": args.dry_run,
+        "skip_savant": args.skip_savant,
+        "skip_player_context": args.skip_player_context,
         "savant": {"source_files": 0, "grouped_rows": 0, "details_rows": 0, "game_logs": 0, "players": 0, "unresolved": 0},
         "player_context": {"source_files": 0, "people": 0, "identity_profiles": 0, "career_profiles": 0, "unresolved": 0},
         "expected_context_items": None,
@@ -122,53 +126,68 @@ def ingest(args: argparse.Namespace) -> dict:
     }
     if args.dry_run:
         savant, context = dry_run_counts(args)
-        report["savant"].update(savant)
-        report["player_context"].update(context)
-        report["expected_context_items"] = savant.get("grouped_rows") or context.get("people")
+        if args.skip_savant:
+            report["savant"]["skipped"] = True
+        else:
+            report["savant"].update(savant)
+        if args.skip_player_context:
+            report["player_context"]["skipped"] = True
+        else:
+            report["player_context"].update(context)
+        report["expected_context_items"] = (
+            (0 if args.skip_savant else int(savant.get("grouped_rows") or 0))
+            + (0 if args.skip_player_context else int(context.get("people") or 0))
+        )
         return report
 
     with sqlite3.connect(args.source_db) as con:
         con.row_factory = sqlite3.Row
         before = table_counts(con)
         try:
-            report["savant"] = upsert_savant_day(con, repo_root=ROOT, savant_root=args.savant_root, date=args.date)
-            report["player_context"] = upsert_player_context_day(con, repo_root=ROOT, stats_api_root=args.stats_api_root, date=args.date)
-            upsert_fetch_status(
-                con,
-                source_name=SOURCE_SAVANT,
-                source_family=FAMILY_SAVANT,
-                date=args.date,
-                expected=None,
-                actual=int(report["savant"].get("game_logs") or 0),
-                report_path=args.report,
-                repo_root=ROOT,
-                ttl_hours=24,
-                notes={
-                    "source_snapshot_id": (report["savant"].get("source_snapshot_ids") or [None])[0],
-                    "source_files": report["savant"].get("source_files"),
-                    "grouped_rows": report["savant"].get("grouped_rows"),
-                    "details_rows": report["savant"].get("details_rows"),
-                    "unresolved_count": report["savant"].get("unresolved"),
-                },
-            )
-            upsert_fetch_status(
-                con,
-                source_name=SOURCE_PLAYER_CONTEXT,
-                source_family=FAMILY_PLAYER_CONTEXT,
-                date=args.date,
-                expected=None,
-                actual=int(report["player_context"].get("identity_profiles") or 0),
-                report_path=args.report,
-                repo_root=ROOT,
-                ttl_hours=24,
-                notes={
-                    "source_snapshot_id": (report["player_context"].get("source_snapshot_ids") or [None])[0],
-                    "source_files": report["player_context"].get("source_files"),
-                    "people": report["player_context"].get("people"),
-                    "career_profiles": report["player_context"].get("career_profiles"),
-                    "unresolved_count": report["player_context"].get("unresolved"),
-                },
-            )
+            if args.skip_savant:
+                report["savant"]["skipped"] = True
+            else:
+                report["savant"] = upsert_savant_day(con, repo_root=ROOT, savant_root=args.savant_root, date=args.date)
+                upsert_fetch_status(
+                    con,
+                    source_name=SOURCE_SAVANT,
+                    source_family=FAMILY_SAVANT,
+                    date=args.date,
+                    expected=None,
+                    actual=int(report["savant"].get("game_logs") or 0),
+                    report_path=args.report,
+                    repo_root=ROOT,
+                    ttl_hours=24,
+                    notes={
+                        "source_snapshot_id": (report["savant"].get("source_snapshot_ids") or [None])[0],
+                        "source_files": report["savant"].get("source_files"),
+                        "grouped_rows": report["savant"].get("grouped_rows"),
+                        "details_rows": report["savant"].get("details_rows"),
+                        "unresolved_count": report["savant"].get("unresolved"),
+                    },
+                )
+            if args.skip_player_context:
+                report["player_context"]["skipped"] = True
+            else:
+                report["player_context"] = upsert_player_context_day(con, repo_root=ROOT, stats_api_root=args.stats_api_root, date=args.date)
+                upsert_fetch_status(
+                    con,
+                    source_name=SOURCE_PLAYER_CONTEXT,
+                    source_family=FAMILY_PLAYER_CONTEXT,
+                    date=args.date,
+                    expected=None,
+                    actual=int(report["player_context"].get("identity_profiles") or 0),
+                    report_path=args.report,
+                    repo_root=ROOT,
+                    ttl_hours=24,
+                    notes={
+                        "source_snapshot_id": (report["player_context"].get("source_snapshot_ids") or [None])[0],
+                        "source_files": report["player_context"].get("source_files"),
+                        "people": report["player_context"].get("people"),
+                        "career_profiles": report["player_context"].get("career_profiles"),
+                        "unresolved_count": report["player_context"].get("unresolved"),
+                    },
+                )
         except Exception as exc:
             con.rollback()
             report["ok"] = False
@@ -177,8 +196,16 @@ def ingest(args: argparse.Namespace) -> dict:
         else:
             after = table_counts(con)
             report["row_count_delta"] = diff_counts(before, after)
-            report["expected_context_items"] = int(report["savant"].get("game_logs") or 0) + int(report["player_context"].get("identity_profiles") or 0)
-            health_status = "ok" if report["savant"].get("game_logs") and report["player_context"].get("identity_profiles") else "warn"
+            report["expected_context_items"] = (
+                (0 if args.skip_savant else int(report["savant"].get("game_logs") or 0))
+                + (0 if args.skip_player_context else int(report["player_context"].get("identity_profiles") or 0))
+            )
+            enabled_counts = []
+            if not args.skip_savant:
+                enabled_counts.append(report["savant"].get("game_logs"))
+            if not args.skip_player_context:
+                enabled_counts.append(report["player_context"].get("identity_profiles"))
+            health_status = "ok" if enabled_counts and all(enabled_counts) else "warn"
             insert_health_check(con, date=args.date, report=report, status=health_status)
             con.commit()
     return report
@@ -207,6 +234,8 @@ def main() -> int:
             "notes": compact_json(
                 {
                     "date": args.date,
+                    "skip_savant": args.skip_savant,
+                    "skip_player_context": args.skip_player_context,
                     "savant_game_logs": report["savant"].get("game_logs"),
                     "identity_profiles": report["player_context"].get("identity_profiles"),
                     "career_profiles": report["player_context"].get("career_profiles"),

@@ -25,7 +25,7 @@ VALIDATE_LINEUPS_RAW = ROOT / "data-migration" / "scripts" / "validate_mlb_lineu
 VALIDATE_MARKETS_PROPS_RAW = ROOT / "data-migration" / "scripts" / "validate_mlb_markets_props_raw_to_typed.py"
 VALIDATE_PLAYER_CONTEXT_RAW = ROOT / "data-migration" / "scripts" / "validate_mlb_player_context_raw_to_typed.py"
 VALIDATE_REPLAY_STATE = ROOT / "data-migration" / "scripts" / "validate_mlb_replay_state_typed.py"
-VERSION = "0.5.0"
+VERSION = "0.6.0"
 
 LEGACY_WAREHOUSE_COMMANDS = {
     "init-db",
@@ -255,6 +255,7 @@ def run_typed_adapter(
     report: Path,
     family: str,
     extra_args: list[str] | None = None,
+    stream_output: bool = True,
 ) -> dict[str, Any]:
     args = [
         "--date",
@@ -268,7 +269,7 @@ def run_typed_adapter(
         args.extend(extra_args)
     if dry_run:
         args.append("--dry-run")
-    result = run_python_script(script_path, args)
+    result = run_python_script(script_path, args, stream_output=stream_output)
     result["date"] = date_text
     result["family"] = family
     result["report_path"] = display_path(report)
@@ -716,6 +717,44 @@ def hitter_career_profiles_payload(
     return payload
 
 
+def hitter_statcast_range_payload(
+    db_path: Path,
+    *,
+    start_date: str,
+    end_date: str,
+    dry_run: bool,
+) -> dict[str, Any]:
+    dates = iter_dates(start_date, end_date)
+    results = []
+    for date_text in dates:
+        child_report = report_path("ingest_hitter_statcast", date_text)
+        results.append(
+            run_typed_adapter(
+                PLAYER_CONTEXT_INGEST,
+                db_path,
+                date_text,
+                dry_run=dry_run,
+                report=child_report,
+                family="hitter_statcast",
+                extra_args=["--skip-player-context"],
+                stream_output=False,
+            )
+        )
+    payload = {
+        "version": VERSION,
+        "mode": "ingest_hitter_statcast_range",
+        "db_path": display_path(db_path),
+        "start_date": start_date,
+        "end_date": end_date,
+        "date_count": len(dates),
+        "dry_run": dry_run,
+        "results": results,
+        "ok": all(result["ok"] for result in results),
+    }
+    write_json_report(report_path("ingest_hitter_statcast_range", f"{start_date}_to_{end_date}"), payload)
+    return payload
+
+
 def hitter_lineup_splits_payload(
     db_path: Path,
     *,
@@ -979,6 +1018,15 @@ def build_parser() -> argparse.ArgumentParser:
     career_parser.add_argument("--dry-run", action="store_true", help="Plan/parse without writing raw receipts or typed DB rows.")
     career_parser.add_argument("--json", action="store_true", help="Emit wrapper JSON instead of text summary.")
 
+    statcast_parser = subparsers.add_parser(
+        "ingest-hitter-statcast-range",
+        help="Ingest local Baseball Savant hitter Statcast game-log files into typed player context tables.",
+    )
+    statcast_parser.add_argument("--start-date", required=True, help="Start date in YYYY-MM-DD format.")
+    statcast_parser.add_argument("--end-date", required=True, help="End date in YYYY-MM-DD format.")
+    statcast_parser.add_argument("--dry-run", action="store_true", help="Parse/report without writing typed DB rows.")
+    statcast_parser.add_argument("--json", action="store_true", help="Emit wrapper JSON instead of text summary.")
+
     lineup_splits_parser = subparsers.add_parser(
         "ingest-hitter-lineup-splits",
         help="Ingest a generated lineup board into typed lineup/matchup tables.",
@@ -1094,6 +1142,18 @@ def main() -> int:
             print(json.dumps(payload, indent=2, sort_keys=True))
         else:
             print_step_summary(payload)
+        return 0 if payload["ok"] else 1
+    if args.command == "ingest-hitter-statcast-range":
+        payload = hitter_statcast_range_payload(
+            db_path,
+            start_date=args.start_date,
+            end_date=args.end_date,
+            dry_run=args.dry_run,
+        )
+        if args.json:
+            print(json.dumps(payload, indent=2, sort_keys=True))
+        else:
+            print_ingest_summary(payload)
         return 0 if payload["ok"] else 1
     if args.command == "ingest-hitter-lineup-splits":
         payload = hitter_lineup_splits_payload(

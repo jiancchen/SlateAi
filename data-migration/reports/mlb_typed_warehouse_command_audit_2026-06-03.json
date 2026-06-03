@@ -1,9 +1,10 @@
 {
   "implemented_extra_commands": [],
-  "implemented_replacement_count": 7,
+  "implemented_replacement_count": 8,
   "implemented_replacements": [
     "ingest-hitter-career-profiles",
     "ingest-hitter-lineup-splits",
+    "ingest-hitter-statcast-range",
     "ingest-mlb-day",
     "ingest-mlb-range",
     "list-probable-starters",
@@ -38,7 +39,6 @@
     "grade-prop-picks",
     "import-predictions",
     "import-prop-predictions",
-    "ingest-hitter-statcast-range",
     "ingest-pitcher-war",
     "ingest-statcast-hr",
     "init-db",
@@ -50,5 +50,5 @@
     "list-story-signals"
   ],
   "ok": true,
-  "version": "0.5.0"
+  "version": "0.6.0"
 }

@@ -27,7 +27,7 @@ Completed:
 - Typed MLB compatibility views exist for staged `mlb_*` legacy table names, plus canonical views for `mlb_games`, `mlb_plate_appearances`, and `mlb_pitch_events`.
 - Writer-owned legacy names for side predictions/backtests and market/prop odds are writable staging tables inside `sql-mlb.db`.
 - Prediction, market, and prop normalizers read historical `legacy_table_rows` plus direct-only typed staging rows, so fresh writer rows normalize forward without a `sports.db` bridge.
-- New typed warehouse CLI exists at `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.5.0; primary package aliases for raw schedule/feed ingestion, day prep, probable starters, hitter career profiles, lineup-board splits, and typed readiness validation now point to typed replacements/utilities.
+- New typed warehouse CLI exists at `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.6.0; primary package aliases for raw schedule/feed ingestion, day prep, probable starters, hitter Statcast ranges, hitter career profiles, lineup-board splits, and typed readiness validation now point to typed replacements/utilities.
 - Current M2 `lineups`, `history-journal`, `generate-day-files`, copied M0/M1 lane scripts, cartridge compare, RP36 read exporters, and story archive export read the typed MLB DB.
 - `generate-day-files` historical market fallback now reads typed `mlb_featured_market_odds_snapshots` instead of `published-data/slates/<date>/games`.
 - Side backtest and MLB odds/FanDuel research fetchers default to `sql-mlb.db` writable staging tables.
@@ -53,8 +53,8 @@ Typed warehouse command audit:
 
 - Ledger commands: 39.
 - Legacy commands found: 39.
-- Typed replacement commands implemented: 7.
-- Implemented replacements: `ingest-hitter-career-profiles`, `ingest-hitter-lineup-splits`, `ingest-mlb-day`, `ingest-mlb-range`, `list-probable-starters`, `prepare-mlb-day`, `replay-mlb-range-from-raw`.
+- Typed replacement commands implemented: 8.
+- Implemented replacements: `ingest-hitter-career-profiles`, `ingest-hitter-lineup-splits`, `ingest-hitter-statcast-range`, `ingest-mlb-day`, `ingest-mlb-range`, `list-probable-starters`, `prepare-mlb-day`, `replay-mlb-range-from-raw`.
 - Ledger drift: zero missing legacy commands and zero extra typed replacement commands.
 
 Active DB-input cutover audit:
