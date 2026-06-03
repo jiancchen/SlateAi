@@ -28,6 +28,7 @@
     "data:prep:mlb-day": "python3 pipeline/mlb/warehouse/mlb_typed_warehouse.py prepare-mlb-day",
     "data:list:probables": "python3 pipeline/mlb/warehouse/mlb_typed_warehouse.py list-probable-starters",
     "data:typed:mlb-warehouse": "python3 pipeline/mlb/warehouse/mlb_typed_warehouse.py",
+    "data:m3:features:game-shape": "python3 -m pipeline.mlb.features.builders.build_game_shape_starter_v1",
     "data:typed:mlb-audit": "python3 pipeline/mlb/warehouse/mlb_typed_warehouse.py audit-command-ledger",
     "data:typed:mlb-validate": "python3 pipeline/mlb/warehouse/mlb_typed_warehouse.py validate-typed-ready --scope contracts",
     "data:typed:mlb-validate-day": "python3 pipeline/mlb/warehouse/mlb_typed_warehouse.py validate-typed-ready --scope daily",

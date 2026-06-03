@@ -1,0 +1,135 @@
+{
+  "feature_set_id": "m3_fs_001_game_shape_starter_v1",
+  "version": "0.1.0",
+  "grain": "game",
+  "sport": "mlb",
+  "description": "MLB-M3 alpha game-shape starter feature-set contract. Step 1 defines the run shape only; no feature matrix is materialized yet.",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "as_of_policy": "pregame",
+  "primary_key": ["game_id"],
+  "time_key": "game_date",
+  "feature_prefixes": [
+    "game_",
+    "home_team_",
+    "away_team_",
+    "home_starter_",
+    "away_starter_",
+    "home_bullpen_",
+    "away_bullpen_",
+    "home_lineup_",
+    "away_lineup_",
+    "market_"
+  ],
+  "target_prefix": "target_",
+  "leakage_classes": [
+    "pregame_safe",
+    "historical_only",
+    "postgame_target",
+    "excluded"
+  ],
+  "evidence_policy": {
+    "evidence_policy_id": "m3_alpha_evidence_v1",
+    "baseline_layers": [
+      "league",
+      "role_archetype",
+      "career",
+      "season_to_date",
+      "current_roster_context"
+    ],
+    "evidence_units": [
+      "pitch",
+      "plate_appearance",
+      "batter_faced",
+      "start",
+      "game",
+      "day"
+    ],
+    "state_memory_encoders": [
+      "ordered_event_sequence",
+      "entity_state_transition_history",
+      "reaction_to_prior_performance",
+      "change_point_candidate",
+      "learned_event_attention"
+    ],
+    "residual_baselines": [
+      "league_average",
+      "player_talent",
+      "opponent_adjusted",
+      "park_weather_adjusted",
+      "market_prior"
+    ],
+    "required_coverage_fields": [
+      "sample_count",
+      "event_count",
+      "days_covered",
+      "availability_flag",
+      "uncertainty_flag"
+    ]
+  },
+  "source_tables": [
+    "games",
+    "teams",
+    "venues",
+    "game_outcomes",
+    "team_game_stats",
+    "phase_outcomes",
+    "starting_pitchers",
+    "starting_pitcher_game_logs",
+    "pitcher_appearances",
+    "pitcher_pitch_mix_snapshots",
+    "player_pitch_type_response_snapshots",
+    "lineup_matchup_snapshots",
+    "team_opponent_quality_snapshots",
+    "player_career_profiles",
+    "player_statcast_snapshots",
+    "player_split_snapshots",
+    "player_opponent_context_snapshots",
+    "plate_appearances",
+    "pitch_events",
+    "game_story_signals",
+    "game_story_labels",
+    "bullpen_usage_snapshots",
+    "likely_relief_chains",
+    "team_bullpen_shape_snapshots",
+    "lineups",
+    "lineup_slots",
+    "market_snapshots",
+    "market_contracts",
+    "market_price_ticks"
+  ],
+  "targets": [
+    "target_total_runs_final",
+    "target_total_runs_f5",
+    "target_home_team_runs_final",
+    "target_away_team_runs_final",
+    "target_home_team_runs_f5",
+    "target_away_team_runs_f5",
+    "target_total_bucket",
+    "target_f5_bucket",
+    "target_chaos_game_flag"
+  ],
+  "feature_families": [
+    "game_base",
+    "team_baseline_state_shape",
+    "starter_path",
+    "opponent_matchup_quality",
+    "replay_attribution",
+    "bullpen_shape",
+    "lineup_context",
+    "market_context"
+  ],
+  "required_report_fields": [
+    "evidence_coverage",
+    "matchup_coverage",
+    "attribution_coverage",
+    "leakage_checks",
+    "lineage",
+    "warnings"
+  ],
+  "notes": [
+    "Baseline columns describe expected talent/context behavior.",
+    "Residual columns describe state evidence versus baseline.",
+    "Evidence coverage is required so sparse data cannot masquerade as stable form.",
+    "No M2 weights, fixed memory lengths, or hand-tuned conclusions are part of this contract."
+  ]
+}
