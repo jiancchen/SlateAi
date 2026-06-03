@@ -29,6 +29,9 @@ Status: opened
 | A6-W006 | Update alpha state tracker | complete | `2026-06-03-mlb-m3-alpha-state-progress.md` | Marks Alpha-6 opened and records audit output. |
 | A6-W007 | Draft FS-004 contract | complete | `pipeline/mlb/features/contracts/m3_fs_004_state_path_redesign_v0.json` | Contract only; builder not materialized yet. |
 | A6-W008 | Review FS-004 contract | complete | `2026-06-03-mlb-m3-alpha-6-fs004-contract-review.md` | Validator passes with zero errors and warnings. |
+| A6-W009 | Implement FS-004 source feasibility audit | complete | `pipeline/mlb/m3/audit/audit_fs004_source_feasibility.py` | Audits typed DB table, column, and surface readiness for FS-004. |
+| A6-W010 | Generate FS-004 source feasibility artifacts | complete | `data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/fs004_source_feasibility_alpha6` | 53 referenced typed tables exist and are populated; 0 blocked surfaces; 2 reliever-chain source decisions. |
+| A6-W011 | Review FS-004 source feasibility | complete | `2026-06-03-mlb-m3-alpha-6-fs004-source-feasibility-review.md` | FS-004 builder can start after recording the reliever `entry_order`/chain-phase source decision. |
 
 ## Verification Log
 
@@ -40,6 +43,10 @@ Status: opened
 - 2026-06-03: Candidate FS-004 spec is `m3_fs_004_state_path_redesign_v0`.
 - 2026-06-03: `python3 -m json.tool pipeline/mlb/features/contracts/m3_fs_004_state_path_redesign_v0.json` passed.
 - 2026-06-03: `PYTHONDONTWRITEBYTECODE=1 python3 -m pipeline.mlb.features.validators.validate_game_shape_starter_v1 --contract pipeline/mlb/features/contracts/m3_fs_004_state_path_redesign_v0.json --json` passed with zero errors and warnings.
+- 2026-06-03: `PYTHONDONTWRITEBYTECODE=1 python3 -m pipeline.mlb.m3.audit.audit_fs004_source_feasibility` generated source feasibility artifacts.
+- 2026-06-03: `python3 -m json.tool` passed for all generated FS-004 source feasibility JSON artifacts.
+- 2026-06-03: FS-004 source feasibility found 0 missing/empty contract source tables and 0 blocked surfaces.
+- 2026-06-03: FS-004 source feasibility found 2 P0 source-contract decisions: `first_up_reliever_router` and `hitter_vs_reliever_chain_phase`.
 
 ## Stop Log
 

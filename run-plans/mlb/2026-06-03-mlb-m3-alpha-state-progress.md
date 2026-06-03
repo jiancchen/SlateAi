@@ -19,7 +19,8 @@ Evidence checked:
 - Manifest lane statuses are `contract_only` for `full_game_total` and `f5_total`, and `deferred` for the other five lanes.
 - FS-002 and FS-003 alpha-5 walk-forward metrics match the harness output files.
 - Alpha-6 family redesign audit exists and maps FS-003 to 19 target surfaces.
-- FS-004 contract exists and validates, but no FS-004 matrix exists yet.
+- FS-004 contract exists and validates, and source feasibility passed with 0 blocked surfaces.
+- FS-004 source feasibility still requires 2 reliever-chain source decisions around `entry_order`/chain phase before the builder treats those surfaces as canonical.
 - No promoted model, picks, simulator events, prop prices, or edge claims exist in the alpha artifacts.
 - This progress file is ASCII-only and should render as normal Markdown plus Mermaid.
 
@@ -27,7 +28,7 @@ Tracking rule: update this document whenever a component status, lane status, fe
 
 ## Snapshot
 
-M3 now has a working typed feature-artifact pipeline, manifest infrastructure, metrics-only harness, feature audit, walk-forward diagnostics, a first diagnostic candidate runner, and an Alpha-6 surface-gap audit for feature-family redesign.
+M3 now has a working typed feature-artifact pipeline, manifest infrastructure, metrics-only harness, feature audit, walk-forward diagnostics, a first diagnostic candidate runner, an Alpha-6 surface-gap audit, an FS-004 redesign contract, and an FS-004 typed-source feasibility audit.
 
 M3 does not yet have a promoted model, a simulator, a real backtest edge claim, market pricing, player props, selection rows, calibrated probabilities, or typed prediction/settlement writers.
 
@@ -66,13 +67,14 @@ flowchart TD
 
   R003 --> A6["Alpha-6 family redesign audit<br/>19 surfaces: 17 partial, 2 missing<br/>status: live"]
   A6 --> C004["FS-004 state-path redesign contract<br/>status: live"]
-  C004 --> NEXT["Next phase: FS-004 builder<br/>status: next"]
+  C004 --> S004["FS-004 source feasibility audit<br/>53 typed tables populated, 0 blocked surfaces<br/>status: live"]
+  S004 --> NEXT["Next phase: FS-004 builder<br/>2 reliever-chain source decisions<br/>status: next"]
 
   classDef live fill:#dff3df,stroke:#367c39,color:#102b13;
   classDef partial fill:#fff2c2,stroke:#927000,color:#332800;
   classDef next fill:#d7ecff,stroke:#2f6f9f,color:#0d2638;
 
-  class SQL,FS001,FS002,M001,H001,M002,H002,A002,WF002,FS003,M003,H003,R003,A6,C004 live;
+  class SQL,FS001,FS002,M001,H001,M002,H002,A002,WF002,FS003,M003,H003,R003,A6,C004,S004 live;
   class NEXT next;
 ```
 
@@ -132,7 +134,7 @@ flowchart TD
 | Alpha-3 | complete | `training_harness` | Harness can load a manifest, split rows, write metrics, and avoid picks. | Smoke test was shallow and not a backtest edge claim. |
 | Alpha-4 | complete | `m3_fs_002_game_story_pitching_state_v0_20260603T155454Z` | First real M3 feature artifact with story, starter, reliever, hitter, and market context. | It did not produce a good candidate model. |
 | Alpha-5 | complete | FS-002 audit, FS-003 artifact, FS-003 harness | Walk-forward and ablations can reject weak candidates honestly. | Pruning did not fix the core feature representation problem. |
-| Alpha-6 | opened | `family_redesign_audit_alpha6`, FS-004 contract | FS-003 has evidence fragments for 17 surfaces and fully misses 2 surfaces; FS-004 contract validates. | FS-004 matrix is not materialized yet. |
+| Alpha-6 | opened | `family_redesign_audit_alpha6`, FS-004 contract, `fs004_source_feasibility_alpha6` | FS-003 has evidence fragments for 17 surfaces and fully misses 2 surfaces; FS-004 contract validates; typed sources can support first FS-004 builder work. | FS-004 matrix is not materialized yet, and reliever-chain source decisions remain. |
 
 ## Feature Artifacts
 
@@ -214,9 +216,28 @@ m3_fs_004_state_path_redesign_v0
 
 FS-004 contract status: `live`
 
+FS-004 source feasibility status: `live`
+
 FS-004 matrix status: `missing`
 
 FS-004 should target starter path, reliever chain, hitter-path phase split, ordered story memory, game-regime labels, and calibration hooks before model tuning.
+
+## Alpha-6 Source Feasibility
+
+| Status | Count |
+| --- | ---: |
+| `source_feasible` | 15 |
+| `partial_source_contract_decision` | 2 |
+| `source_feasible_with_optional_source_decisions` | 2 |
+
+The source feasibility audit checked 53 referenced typed tables. All 53 exist and are populated. All 27 FS-004 contract source tables exist and are populated.
+
+No surface is blocked by complete data absence. The two P0 surfaces requiring a source-contract decision are:
+
+- `first_up_reliever_router`
+- `hitter_vs_reliever_chain_phase`
+
+Both decisions are about reliever `entry_order` / chain phase. Canonical `pitcher_appearances` does not expose `entry_order`; typed staging `mlb_pitcher_appearances` does.
 
 ## What Is Connected
 

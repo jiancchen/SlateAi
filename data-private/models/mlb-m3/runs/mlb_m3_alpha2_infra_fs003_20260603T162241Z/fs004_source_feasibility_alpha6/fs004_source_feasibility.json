@@ -1,0 +1,46 @@
+{
+  "contract_feature_set_id": "m3_fs_004_state_path_redesign_v0",
+  "contract_uri": "/Users/jcchen/Documents/New project/pipeline/mlb/features/contracts/m3_fs_004_state_path_redesign_v0.json",
+  "created_at": "2026-06-03T17:18:52Z",
+  "db_uri": "/Users/jcchen/Documents/New project/data-private/warehouse/sports/mlb/sql-mlb.db",
+  "decision": "fs004_builder_allowed_only_after_source_decisions_are_recorded",
+  "non_goals": [
+    "no feature matrix",
+    "no model training",
+    "no model tuning",
+    "no picks",
+    "no selection rows",
+    "no player prop pricing",
+    "no simulator event logs",
+    "no claim that M3 is better"
+  ],
+  "run_id": "mlb_m3_alpha6_fs004_source_feasibility",
+  "status": "source_feasibility_audit_created",
+  "surface_summary": {
+    "blocked_surfaces": [],
+    "priority_counts": {
+      "P0": 15,
+      "P1": 2,
+      "P2": 2
+    },
+    "source_decision_surfaces": [
+      "first_up_reliever_router",
+      "hitter_vs_reliever_chain_phase"
+    ],
+    "status_counts": {
+      "partial_source_contract_decision": 2,
+      "source_feasible": 15,
+      "source_feasible_with_optional_source_decisions": 2
+    },
+    "surface_count": 19
+  },
+  "table_summary": {
+    "contract_source_table_count": 27,
+    "existing_table_count": 53,
+    "missing_or_empty_contract_source_tables": [],
+    "missing_table_count": 0,
+    "populated_table_count": 53,
+    "table_count": 53
+  },
+  "tool_version": "0.1.0"
+}

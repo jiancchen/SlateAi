@@ -1,0 +1,33 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1436,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/fs004_source_feasibility_alpha6/fs004_source_feasibility.json",
+      "role": "fs004_source_feasibility",
+      "sha256": "58c06b19171585ac3f344cebc24a2f97021bb41d7f33a1e24c95499105be2282"
+    },
+    {
+      "bytes": 49840,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/fs004_source_feasibility_alpha6/source_table_audit.json",
+      "role": "source_table_audit",
+      "sha256": "af17bcb4ce588f5415b98a3af24aa23591dce2ee43d012123a2ce3b6df3f046a"
+    },
+    {
+      "bytes": 267720,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/fs004_source_feasibility_alpha6/surface_feasibility_matrix.json",
+      "role": "surface_feasibility_matrix",
+      "sha256": "d1285843778cafef6404f97b285b05637df7a1f5d4bddc7158089ae61baeb23f"
+    },
+    {
+      "bytes": 3675,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/fs004_source_feasibility_alpha6/report.md",
+      "role": "report",
+      "sha256": "063ec3fba6afd2464558aa627d655b9eef1f3dc9553a8366726ce853c2f2fd00"
+    }
+  ],
+  "status": "source_feasibility_audit_created"
+}
