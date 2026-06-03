@@ -85,9 +85,9 @@ const PATTERNS = [
   },
   {
     key: 'db_ready_reference',
-    description: 'Already references sport-specific SQLite/DuckDB inputs.',
+    description: 'Already references sport-specific SQLite/DuckDB inputs or the DB-first shared day-game loader.',
     severity: 'db_ready',
-    regex: /sql-mlb\.db|duck-mlb\.duckdb|warehouse\/sports\/mlb/g
+    regex: /sql-mlb\.db|duck-mlb\.duckdb|warehouse\/sports\/mlb|loadMlbDayGames/g
   }
 ]
 

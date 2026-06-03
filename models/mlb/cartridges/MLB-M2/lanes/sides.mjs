@@ -4,39 +4,9 @@ import { fileURLToPath } from 'node:url'
 
 import { loadMlbDayGames } from '../../../../../pipeline/lib/load-mlb-day-games.mjs'
 
-import { games as may10 } from '../../../../../web/src/lib/day-2026-05-10.js'
-import { games as may11 } from '../../../../../web/src/lib/day-2026-05-11.js'
-import { games as may12 } from '../../../../../web/src/lib/day-2026-05-12.js'
-import { games as may13 } from '../../../../../web/src/lib/day-2026-05-13.js'
-import { games as may14 } from '../../../../../web/src/lib/day-2026-05-14.js'
-import { games as may15 } from '../../../../../web/src/lib/day-2026-05-15.js'
-import { games as may16 } from '../../../../../web/src/lib/day-2026-05-16.js'
-import { games as may17 } from '../../../../../web/src/lib/day-2026-05-17.js'
-import { games as may18 } from '../../../../../web/src/lib/day-2026-05-18.js'
-import { games as may19 } from '../../../../../web/src/lib/day-2026-05-19.js'
-import { games as may20 } from '../../../../../web/src/lib/day-2026-05-20.js'
-import { games as may21 } from '../../../../../web/src/lib/day-2026-05-21.js'
-import { games as may22 } from '../../../../../web/src/lib/day-2026-05-22.js'
-
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const rootDir = path.resolve(__dirname, '..', '..', '..', '..', '..')
-
-const slates = {
-  '2026-05-10': may10,
-  '2026-05-11': may11,
-  '2026-05-12': may12,
-  '2026-05-13': may13,
-  '2026-05-14': may14,
-  '2026-05-15': may15,
-  '2026-05-16': may16,
-  '2026-05-17': may17,
-  '2026-05-18': may18,
-  '2026-05-19': may19,
-  '2026-05-20': may20,
-  '2026-05-21': may21,
-  '2026-05-22': may22
-}
 
 const teamAliasToOfficial = {
   Nationals: 'Washington Nationals',
@@ -203,9 +173,6 @@ const parseArgs = () => {
 
   return options
 }
-
-const datesInRange = (startDate, endDate) =>
-  Object.keys(slates).filter((date) => date >= startDate && date <= endDate).sort()
 
 const buildDateSequence = (startDate, endDate) => {
   const dates = []
@@ -425,7 +392,7 @@ const exportPredictions = async ({ startDate, endDate, out, modelName }) => {
   const dates = buildDateSequence(startDate, endDate)
 
   for (const date of dates) {
-    const slateGames = slates[date] ?? (await loadMlbDayGames(date))
+    const slateGames = await loadMlbDayGames(date)
     for (const game of slateGames.filter((entry) => entry.league === 'MLB' && entry.analysis?.participant?.name)) {
       const predictedTeam = game.analysis.participant.name
       const predictedSide = predictedTeam === game.participants[0].name ? 'away' : 'home'

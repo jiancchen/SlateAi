@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T00:09:34.272Z",
+  "generated_at": "2026-06-03T00:12:18.947Z",
   "script": "data-migration/scripts/audit_mlb_db_input_cutover.mjs",
   "profile": "active",
   "targets": [
@@ -76,10 +76,10 @@
         "hits": 3
       },
       "db_ready_reference": {
-        "description": "Already references sport-specific SQLite/DuckDB inputs.",
+        "description": "Already references sport-specific SQLite/DuckDB inputs or the DB-first shared day-game loader.",
         "severity": "db_ready",
-        "files": 3,
-        "hits": 4
+        "files": 8,
+        "hits": 19
       }
     },
     "byFile": [
@@ -92,6 +92,15 @@
           "private_prediction_json_input": 1,
           "raw_archive_input": 1,
           "generated_module_input": 4
+        }
+      },
+      {
+        "path": "models/mlb/cartridges/MLB-M2/workflows/verify-refresh.mjs",
+        "total_hits": 9,
+        "counts": {
+          "private_prediction_json_input": 1,
+          "generated_module_input": 6,
+          "db_ready_reference": 2
         }
       },
       {
@@ -123,11 +132,11 @@
         }
       },
       {
-        "path": "models/mlb/cartridges/MLB-M2/workflows/verify-refresh.mjs",
-        "total_hits": 7,
+        "path": "models/mlb/cartridges/MLB-M2/lanes/props.mjs",
+        "total_hits": 5,
         "counts": {
-          "private_prediction_json_input": 1,
-          "generated_module_input": 6
+          "private_prediction_json_output": 2,
+          "db_ready_reference": 3
         }
       },
       {
@@ -136,6 +145,14 @@
         "counts": {
           "warehouse_cli": 3,
           "private_prediction_json_input": 2
+        }
+      },
+      {
+        "path": "pipeline/lib/load-mlb-day-games.mjs",
+        "total_hits": 5,
+        "counts": {
+          "generated_module_input": 1,
+          "db_ready_reference": 4
         }
       },
       {
@@ -148,11 +165,27 @@
         }
       },
       {
-        "path": "models/mlb/cartridges/MLB-M2/lanes/props.mjs",
+        "path": "models/mlb/cartridges/MLB-M2/lanes/home-runs.mjs",
         "total_hits": 3,
         "counts": {
-          "private_prediction_json_output": 2,
-          "db_ready_reference": 1
+          "private_prediction_json_output": 1,
+          "db_ready_reference": 2
+        }
+      },
+      {
+        "path": "models/mlb/cartridges/MLB-M2/lanes/sides.mjs",
+        "total_hits": 3,
+        "counts": {
+          "private_prediction_json_output": 1,
+          "db_ready_reference": 2
+        }
+      },
+      {
+        "path": "models/mlb/cartridges/MLB-M2/lanes/veto.mjs",
+        "total_hits": 3,
+        "counts": {
+          "private_prediction_json_output": 1,
+          "db_ready_reference": 2
         }
       },
       {
@@ -172,38 +205,10 @@
         }
       },
       {
-        "path": "models/mlb/cartridges/MLB-M2/lanes/home-runs.mjs",
-        "total_hits": 1,
-        "counts": {
-          "private_prediction_json_output": 1
-        }
-      },
-      {
-        "path": "models/mlb/cartridges/MLB-M2/lanes/sides.mjs",
-        "total_hits": 1,
-        "counts": {
-          "private_prediction_json_output": 1
-        }
-      },
-      {
-        "path": "models/mlb/cartridges/MLB-M2/lanes/veto.mjs",
-        "total_hits": 1,
-        "counts": {
-          "private_prediction_json_output": 1
-        }
-      },
-      {
         "path": "models/mlb/db/day-games.mjs",
-        "total_hits": 1,
+        "total_hits": 2,
         "counts": {
-          "db_ready_reference": 1
-        }
-      },
-      {
-        "path": "pipeline/lib/load-mlb-day-games.mjs",
-        "total_hits": 1,
-        "counts": {
-          "generated_module_input": 1
+          "db_ready_reference": 2
         }
       }
     ]
@@ -299,6 +304,18 @@
           "severity": "output_surface",
           "line": 78,
           "match": "data-private', 'predictions"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 5,
+          "match": "loadMlbDayGames"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 154,
+          "match": "loadMlbDayGames"
         }
       ]
     },
@@ -367,6 +384,18 @@
         {
           "key": "db_ready_reference",
           "severity": "db_ready",
+          "line": 6,
+          "match": "loadMlbDayGames"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 116,
+          "match": "loadMlbDayGames"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
           "line": 406,
           "match": "sql-mlb.db"
         }
@@ -378,8 +407,20 @@
         {
           "key": "private_prediction_json_output",
           "severity": "output_surface",
-          "line": 192,
+          "line": 162,
           "match": "data-private', 'predictions"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 5,
+          "match": "loadMlbDayGames"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 395,
+          "match": "loadMlbDayGames"
         }
       ]
     },
@@ -391,6 +432,18 @@
           "severity": "output_surface",
           "line": 30,
           "match": "data-private',\n    'predictions"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 5,
+          "match": "loadMlbDayGames"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 97,
+          "match": "loadMlbDayGames"
         }
       ]
     },
@@ -596,6 +649,18 @@
           "severity": "cutover_target",
           "line": 244,
           "match": " generated'"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 5,
+          "match": "loadMlbDayGames"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 96,
+          "match": "loadMlbDayGames"
         }
       ]
     },
@@ -607,6 +672,12 @@
           "severity": "db_ready",
           "line": 822,
           "match": "sql-mlb.db"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 853,
+          "match": "loadMlbDayGames"
         }
       ]
     },
@@ -641,6 +712,30 @@
           "severity": "cutover_target",
           "line": 156,
           "match": " generated "
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 6,
+          "match": "loadMlbDayGames"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 147,
+          "match": "loadMlbDayGames"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 150,
+          "match": "loadMlbDayGames"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 156,
+          "match": "loadMlbDayGames"
         }
       ]
     }
