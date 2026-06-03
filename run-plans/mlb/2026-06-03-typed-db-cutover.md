@@ -39,12 +39,12 @@ Current audit state:
 - Active-profile legacy warehouse CLI callers: zero.
 - Active-profile public/private/generated artifact input callers remain in M2 snapshot and workflow surfaces.
 - Full-profile legacy `sports.db` hits remain broad historical/research surface debt, not all active runtime gates.
-- Remaining warehouse debt is the legacy monolith, M2-only package aliases, and explicit archive-M2 compatibility boundaries, not a safe mechanical path swap:
+- Remaining warehouse debt is the legacy monolith plus explicit archive-M2 compatibility boundaries for commands that are not M3 typed replacements, not a safe mechanical path swap:
 
 | File | Why It Remains |
 |---|---|
 | `pipeline/mlb/warehouse/mlb_warehouse.py` | Legacy monolith owns old `mlb_*` table creation and many inserts/deletes. It needs command-by-command replacement with typed ingestors/normalizers, not a DB-path flip. |
-| `models/mlb/cartridges/MLB-M2/workflows/archive-m2/legacy-warehouse.mjs` | Explicit M2-only boundary for feature/import/grade commands that are not M3 typed ingestion. |
+| `models/mlb/cartridges/MLB-M2/workflows/archive-m2/legacy-warehouse.mjs` | Explicit M2-only boundary for package aliases and workflow calls that still need old feature/import/grade commands. |
 | `models/mlb/cartridges/MLB-M2/snapshot.mjs`, `snapshot-run.mjs`, `history-journal.mjs`, `verify-refresh.mjs` | Still include public/private/generated artifact inputs that should become typed DB or DB-derived export inputs. |
 
 ## Audit Checkpoint: 2026-06-03

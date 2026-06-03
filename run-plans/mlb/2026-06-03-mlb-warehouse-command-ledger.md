@@ -75,7 +75,7 @@ flowchart TD
 
 - Active direct `sports.db` runtime reads: zero.
 - Active legacy warehouse CLI callers: zero.
-- M2-only feature/import/grade commands used by workflows are quarantined behind `models/mlb/cartridges/MLB-M2/workflows/archive-m2/legacy-warehouse.mjs`.
+- M2-only feature/import/grade package aliases and workflow calls are quarantined behind `models/mlb/cartridges/MLB-M2/workflows/archive-m2/legacy-warehouse.mjs`.
 - Active generated/public/private artifact inputs still remain in snapshot, history, verify, follow-up, and day-file surfaces; those are the next DB-input cutover targets.
 
 ## Command Ledger

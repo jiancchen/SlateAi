@@ -13,10 +13,10 @@ Current typed replacement coverage includes typed schema bootstrap, schedule/gam
 
 `mlb_typed_warehouse.py validate-typed-ready` is a non-replacement readiness command. It runs existing typed raw/daily validators and M3 contract validators, writes child JSON reports under `data-migration/reports/`, then writes a compact wrapper report. Use `npm run data:typed:mlb-validate` for broad contract checks and `npm run data:typed:mlb-validate-day -- --date YYYY-MM-DD` for date-bound daily checks.
 
-`mlb_warehouse.py` intentionally remains in place for old M2 workflows, but it is not a canonical M3 ingestion or feature-layer script. Do not path-flip it to `sports/mlb/sql-mlb.db`; replace commands one family at a time with typed ingestors, typed normalizers, or versioned feature-layer jobs.
+`mlb_warehouse.py` intentionally remains in place behind the M2 archive wrapper for old workflows, but it is not a canonical M3 ingestion or feature-layer script. Do not path-flip it to `sports/mlb/sql-mlb.db`; replace commands one family at a time with typed ingestors, typed normalizers, or versioned feature-layer jobs.
 
 The M2 commands `derive-state-formula-rows`, `derive-player-identity-rows`, `derive-pitcher-batter-kernel`, and `backtest-m2-research` are feature materialization/research logic. Useful ideas from those commands should be reimplemented later in the M3 feature layer rather than treated as raw-data sanitation.
 
-When an old warehouse script is no longer actively wired, move it under `archive-m2/` instead of leaving it beside active typed scripts. Do not move `mlb_warehouse.py` there until its active package aliases and model/workflow callers have been cut over or retired.
+When an old warehouse script is no longer actively wired, move it under `archive-m2/` instead of leaving it beside active typed scripts. Do not move `mlb_warehouse.py` there until the archive wrapper and old model/workflow callers have been cut over or retired.
 
 Do not move code here without updating package scripts and import paths in the same change.

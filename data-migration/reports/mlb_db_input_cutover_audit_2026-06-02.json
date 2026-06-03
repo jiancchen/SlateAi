@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T05:55:07.644Z",
+  "generated_at": "2026-06-03T05:57:56.369Z",
   "script": "data-migration/scripts/audit_mlb_db_input_cutover.mjs",
   "profile": "full",
   "targets": [
@@ -2332,7 +2332,7 @@
         {
           "key": "warehouse_cli",
           "severity": "cutover_blocker",
-          "line": 6,
+          "line": 7,
           "match": "mlb_warehouse.py"
         }
       ]
