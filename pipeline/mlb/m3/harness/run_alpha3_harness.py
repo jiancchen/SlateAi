@@ -298,13 +298,38 @@ def numeric_feature_frame(df, feature_columns: list[str]):
     return numeric_columns
 
 
-def fit_ridge(train_df, validation_df, feature_columns: list[str], target_column: str) -> dict[str, Any]:
+def infer_feature_family(column: str) -> str:
+    if "story_" in column:
+        return "story_memory"
+    if "starter_" in column:
+        return "starter_path"
+    if "reliever_" in column or "relief_" in column:
+        return "reliever_chain"
+    if "hitter_path" in column or "lineup" in column:
+        return "hitter_path"
+    if "context_" in column or column.startswith("game_day") or column.startswith("game_is_") or column.startswith("game_start_hour") or column.startswith("game_series"):
+        return "game_context"
+    if column.startswith("market_"):
+        return "market_context"
+    if column.startswith("game_"):
+        return "game_metadata"
+    return "other"
+
+
+def fit_ridge(
+    train_df,
+    validation_df,
+    feature_columns: list[str],
+    target_column: str,
+    feature_subset_label: str = "all_features",
+) -> dict[str, Any]:
     candidate_columns = numeric_feature_frame(train_df, feature_columns)
     if not candidate_columns:
         return {
             "status": "skipped",
             "reason": "no numeric feature columns available",
             "target_column": target_column,
+            "feature_subset_label": feature_subset_label,
         }
 
     train_target = train_df[target_column].map(safe_float)
@@ -320,6 +345,7 @@ def fit_ridge(train_df, validation_df, feature_columns: list[str], target_column
             "status": "skipped",
             "reason": "not enough train or validation target rows",
             "target_column": target_column,
+            "feature_subset_label": feature_subset_label,
             "train_rows": int(len(y_train)),
             "validation_rows": int(len(y_validation)),
         }
@@ -351,6 +377,7 @@ def fit_ridge(train_df, validation_df, feature_columns: list[str], target_column
         "model_kind": "ridge_linear_regression_numpy_v0",
         "target_column": target_column,
         "component_family": "team_run_distribution",
+        "feature_subset_label": feature_subset_label,
         "ridge_alpha": ridge_alpha,
         "train_rows": int(len(y_train)),
         "validation_rows": int(len(y_validation)),
@@ -367,6 +394,157 @@ def fit_ridge(train_df, validation_df, feature_columns: list[str], target_column
             "No row-level predictions, picks, prices, or selection rows are written.",
         ],
     }
+
+
+def month_key(value: Any) -> str:
+    text = str(value)
+    return text[:7]
+
+
+def monthly_lane_metrics(validation_df, lane: str, train_mean: float | None) -> dict[str, Any]:
+    target = LANE_TARGETS[lane]["numeric_target"]
+    payload: dict[str, Any] = {}
+    for month in sorted({month_key(value) for value in validation_df["game_date"].tolist()}):
+        month_df = validation_df[validation_df["game_date"].astype(str).str.startswith(month)]
+        actual = [
+            value
+            for value in (safe_float(value) for value in month_df[target].tolist())
+            if value is not None
+        ]
+        predicted = [train_mean for _ in actual] if train_mean is not None else []
+        payload[month] = numeric_metrics(actual, predicted)
+    return payload
+
+
+def fixed_walk_forward_folds(df) -> list[dict[str, str]]:
+    dates = sorted(str(value)[:10] for value in df["game_date"].dropna().unique())
+    if not dates:
+        return []
+    candidates = [
+        {
+            "fold_id": "wf_2026_05_01_to_2026_05_15",
+            "train_start": dates[0],
+            "train_end": "2026-04-30",
+            "validation_start": "2026-05-01",
+            "validation_end": "2026-05-15",
+        },
+        {
+            "fold_id": "wf_2026_05_16_to_2026_05_31",
+            "train_start": dates[0],
+            "train_end": "2026-05-15",
+            "validation_start": "2026-05-16",
+            "validation_end": "2026-05-31",
+        },
+    ]
+    folds = []
+    for fold in candidates:
+        if fold["train_end"] < dates[0] or fold["validation_start"] > dates[-1]:
+            continue
+        folds.append(fold)
+    return folds
+
+
+def frame_for_dates(df, start: str, end: str):
+    dates = df["game_date"].astype(str)
+    return df[(dates >= start) & (dates <= end)].copy()
+
+
+def run_walk_forward(df, lanes: list[str], feature_columns: list[str], candidate_model: bool) -> dict[str, Any]:
+    folds = fixed_walk_forward_folds(df)
+    payload: dict[str, Any] = {
+        "status": "walk_forward_metrics_created",
+        "fold_count": len(folds),
+        "folds": [],
+        "non_goals": NON_GOALS,
+    }
+    for fold in folds:
+        train_df = frame_for_dates(df, fold["train_start"], fold["train_end"])
+        validation_df = frame_for_dates(df, fold["validation_start"], fold["validation_end"])
+        fold_payload: dict[str, Any] = {
+            **fold,
+            "train_row_count": int(len(train_df)),
+            "validation_row_count": int(len(validation_df)),
+            "lanes": {},
+        }
+        if len(train_df) < 100 or len(validation_df) < 20:
+            fold_payload["status"] = "skipped_low_rows"
+            payload["folds"].append(fold_payload)
+            continue
+        fold_payload["status"] = "metrics_created"
+        for lane in lanes:
+            lane_metrics = lane_report(lane, train_df, validation_df)
+            lane_payload: dict[str, Any] = {
+                "baseline": lane_metrics["validation_mean_baseline_metrics"],
+            }
+            if candidate_model:
+                target_column = LANE_TARGETS[lane]["numeric_target"]
+                lane_payload["candidate"] = fit_ridge(
+                    train_df,
+                    validation_df,
+                    feature_columns,
+                    target_column,
+                    feature_subset_label="walk_forward_all_features",
+                )
+            fold_payload["lanes"][lane] = lane_payload
+        payload["folds"].append(fold_payload)
+    return payload
+
+
+def run_family_ablations(
+    train_df,
+    validation_df,
+    lanes: list[str],
+    feature_columns: list[str],
+) -> dict[str, Any]:
+    families = sorted({infer_feature_family(column) for column in feature_columns})
+    payload: dict[str, Any] = {
+        "status": "family_ablation_metrics_created",
+        "families": families,
+        "lanes": {},
+        "non_goals": NON_GOALS,
+    }
+    for lane in lanes:
+        target_column = LANE_TARGETS[lane]["numeric_target"]
+        lane_payload: dict[str, Any] = {
+            "all_features": fit_ridge(
+                train_df,
+                validation_df,
+                feature_columns,
+                target_column,
+                feature_subset_label="all_features",
+            ),
+            "without_family": {},
+            "only_family": {},
+        }
+        for family in families:
+            if family in {"target", "metadata"}:
+                continue
+            without = [
+                column
+                for column in feature_columns
+                if infer_feature_family(column) != family
+            ]
+            only = [
+                column
+                for column in feature_columns
+                if infer_feature_family(column) == family
+            ]
+            lane_payload["without_family"][family] = fit_ridge(
+                train_df,
+                validation_df,
+                without,
+                target_column,
+                feature_subset_label=f"without_{family}",
+            )
+            lane_payload["only_family"][family] = fit_ridge(
+                train_df,
+                validation_df,
+                only,
+                target_column,
+                feature_subset_label=f"only_{family}",
+            )
+        payload["lanes"][lane] = lane_payload
+    return payload
 
 
 def artifact_entry(role: str, path: Path) -> dict[str, Any]:
@@ -405,6 +583,8 @@ def run_harness(
     output_subdir: str,
     candidate_model: bool,
     lanes: list[str],
+    walk_forward: bool,
+    family_ablations: bool,
 ) -> dict[str, Any]:
     manifest_path = resolve_path(manifest_path)
     validation = validate_manifest(manifest_path)
@@ -441,6 +621,10 @@ def run_harness(
         if lane not in LANE_TARGETS:
             raise ValueError(f"Unsupported alpha-3 lane: {lane}")
         report = lane_report(lane, train_df, validation_df)
+        train_mean = report["train_target_mean_baseline"]
+        report["monthly_validation_mean_baseline_metrics"] = monthly_lane_metrics(
+            validation_df, lane, train_mean
+        )
         lane_reports[lane] = report
         write_json(lane_dir / f"{lane}.json", report)
 
@@ -451,6 +635,21 @@ def run_harness(
             report = fit_ridge(train_df, validation_df, feature_columns, target_column)
             candidate_reports[lane] = report
             write_json(candidate_dir / f"{lane}_ridge_numpy_v0.json", report)
+
+    walk_forward_report: dict[str, Any] | None = None
+    if walk_forward:
+        walk_forward_report = run_walk_forward(df, lanes, feature_columns, candidate_model)
+        write_json(harness_dir / "walk_forward.json", walk_forward_report)
+
+    family_ablation_report: dict[str, Any] | None = None
+    if family_ablations:
+        family_ablation_report = run_family_ablations(
+            train_df,
+            validation_df,
+            lanes,
+            feature_columns,
+        )
+        write_json(harness_dir / "family_ablations.json", family_ablation_report)
 
     calibration_placeholder = {
         "status": "placeholder_not_calibrated",
@@ -477,6 +676,8 @@ def run_harness(
             lane: str(candidate_dir / f"{lane}_ridge_numpy_v0.json")
             for lane in candidate_reports
         },
+        "walk_forward_uri": str(harness_dir / "walk_forward.json") if walk_forward else None,
+        "family_ablations_uri": str(harness_dir / "family_ablations.json") if family_ablations else None,
         "warnings": [],
         "non_goals": NON_GOALS,
     }
@@ -495,6 +696,8 @@ def run_harness(
             for lane in lanes
         },
         "candidate_model_enabled": candidate_model,
+        "walk_forward_enabled": walk_forward,
+        "family_ablations_enabled": family_ablations,
         "candidate_model_status": {
             lane: candidate_reports[lane]["status"] for lane in candidate_reports
         },
@@ -569,6 +772,16 @@ def run_harness(
             artifact_entry("dashboard_state", harness_dir / "dashboard_state.json"),
             artifact_entry("typed_registry_preview_alpha3", harness_dir / "typed_model_registry_preview_alpha3.json"),
             artifact_entry("report", harness_dir / "report.md"),
+            *(
+                [artifact_entry("walk_forward", harness_dir / "walk_forward.json")]
+                if walk_forward
+                else []
+            ),
+            *(
+                [artifact_entry("family_ablations", harness_dir / "family_ablations.json")]
+                if family_ablations
+                else []
+            ),
             *[
                 artifact_entry(f"lane_report_{lane}", lane_dir / f"{lane}.json")
                 for lane in lanes
@@ -593,6 +806,8 @@ def run_harness(
         "validation_rows": split["validation_row_count"],
         "lanes": lanes,
         "candidate_model_enabled": candidate_model,
+        "walk_forward_enabled": walk_forward,
+        "family_ablations_enabled": family_ablations,
         "non_goals": NON_GOALS,
     }
     print(json.dumps(summary, indent=2, sort_keys=True))
@@ -620,6 +835,16 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Fit diagnostic NumPy ridge candidates behind component slots.",
     )
+    parser.add_argument(
+        "--walk-forward",
+        action="store_true",
+        help="Write fixed walk-forward fold diagnostics.",
+    )
+    parser.add_argument(
+        "--family-ablations",
+        action="store_true",
+        help="Write feature-family ablation diagnostics.",
+    )
     return parser.parse_args()
 
 
@@ -627,7 +852,14 @@ def main() -> None:
     args = parse_args()
     lanes = args.lane or ["full_game_total", "f5_total"]
     try:
-        run_harness(args.manifest, args.output_subdir, args.candidate_model, lanes)
+        run_harness(
+            args.manifest,
+            args.output_subdir,
+            args.candidate_model,
+            lanes,
+            args.walk_forward,
+            args.family_ablations,
+        )
     except Exception as exc:
         print(json.dumps({"ok": False, "error": str(exc)}, indent=2), file=sys.stderr)
         sys.exit(1)

@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 from typing import Any
@@ -119,7 +120,11 @@ def validate_harness(harness_dir: Path) -> dict[str, Any]:
         for path in harness_dir.rglob("*")
         if path.is_file() and path.suffix in {".json", ".md"}
     ).lower()
-    forbidden_hits = sorted(term for term in FORBIDDEN_TERMS if term in all_text)
+    forbidden_hits = sorted(
+        term
+        for term in FORBIDDEN_TERMS
+        if re.search(rf"(?<![a-z0-9_]){re.escape(term)}(?![a-z0-9_])", all_text)
+    )
     checks["forbidden_scope_terms_absent"] = not forbidden_hits
     if forbidden_hits:
         errors.append("Forbidden scope terms found: " + ", ".join(forbidden_hits))

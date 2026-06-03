@@ -1,0 +1,58 @@
+{
+  "active_phase": "harness_metrics_created",
+  "candidate_model_enabled": true,
+  "candidate_model_status": {
+    "f5_total": "candidate_diagnostic_not_promoted",
+    "full_game_total": "candidate_diagnostic_not_promoted"
+  },
+  "family_ablations_enabled": true,
+  "harness_dir": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs002_20260603T155600Z/training_harness_alpha5",
+  "lanes": {
+    "f5_total": {
+      "report_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs002_20260603T155600Z/training_harness_alpha5/lane_reports/f5_total.json",
+      "status": "metrics_only"
+    },
+    "full_game_total": {
+      "report_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs002_20260603T155600Z/training_harness_alpha5/lane_reports/full_game_total.json",
+      "status": "metrics_only"
+    }
+  },
+  "next_recommended_actions": [
+    "Review feature coverage and split health before adding richer models.",
+    "Run the harness on M3-FS-002 once real features are materialized.",
+    "Keep candidate components diagnostic until walk-forward backtests exist."
+  ],
+  "non_goals": [
+    "no picks",
+    "no selection rows",
+    "no player prop pricing",
+    "no market fair probability claims",
+    "no simulator event logs",
+    "no promotion decisions",
+    "no claim that M3 is better"
+  ],
+  "run_id": "mlb_m3_alpha2_infra_fs002_20260603T155600Z",
+  "source_manifest_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs002_20260603T155600Z/manifest.json",
+  "split_summary": {
+    "not_a_backtest": true,
+    "policy": "chronological_alpha_harness",
+    "status": "split_created",
+    "train_candidate_range": {
+      "end": "2026-05-15",
+      "start": "2026-03-26"
+    },
+    "train_max_game_date": "2026-05-15 00:00:00",
+    "train_min_game_date": "2026-03-26 00:00:00",
+    "train_row_count": 668,
+    "validation_candidate_range": {
+      "end": "2026-05-31",
+      "start": "2026-05-16"
+    },
+    "validation_max_game_date": "2026-05-31 00:00:00",
+    "validation_min_game_date": "2026-05-16 00:00:00",
+    "validation_row_count": 218
+  },
+  "status": "harness_metrics_created",
+  "walk_forward_enabled": true,
+  "warnings": []
+}
