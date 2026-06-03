@@ -11,6 +11,7 @@ import json
 import math
 import re
 import sqlite3
+import sys
 from collections import defaultdict
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -26,9 +27,32 @@ WAREHOUSE_DIR = DATA_DIR / "warehouse"
 HISTORY_DIR = DATA_DIR / "history"
 PREDICTIONS_DIR = DATA_DIR / "predictions" / "mlb-home-runs"
 DB_PATH = WAREHOUSE_DIR / "sports.db"
+TYPED_MLB_DB_PATH = WAREHOUSE_DIR / "sports" / "mlb" / "sql-mlb.db"
 USER_AGENT = "SportsTradingBoardBot/1.0 (+https://baseballsavant.mlb.com)"
 TIER3_RELIEF_WINDOW = 8
 TIER3_STARTER_WINDOW = 5
+
+M2_FEATURE_MATERIALIZATION_COMMANDS = {
+    "derive-state-formula-rows",
+    "derive-player-identity-rows",
+    "derive-pitcher-batter-kernel",
+    "backtest-m2-research",
+}
+
+
+def warn_legacy_warehouse_boundary(command: str) -> None:
+    note = (
+        "legacy MLB warehouse CLI using data-private/warehouse/sports.db. "
+        "Do not path-flip this script for M3; replace each command with a typed ingestor, "
+        "normalizer, or versioned feature-layer job that targets "
+        f"{TYPED_MLB_DB_PATH.relative_to(ROOT)}."
+    )
+    if command in M2_FEATURE_MATERIALIZATION_COMMANDS:
+        note += (
+            " This command is M2 feature materialization/research logic, not raw ingestion "
+            "or canonical M3 preprocessing."
+        )
+    print(f"[mlb_warehouse legacy] {note}", file=sys.stderr)
 
 MLB_SCHEDULE_URL = "https://statsapi.mlb.com/api/v1/schedule?sportId=1&date={date}&hydrate=probablePitcher,team"
 MLB_FEED_URL = "https://statsapi.mlb.com/api/v1.1/game/{game_pk}/feed/live"
@@ -12772,6 +12796,12 @@ M2_PITCHER_IDENTITY_METRICS = {
 }
 
 
+# Legacy M2 feature materialization boundary.
+#
+# The helpers below turn canonical-ish baseball facts into opinionated M2
+# feature rows and research buckets. Keep them available for old M2 runs, but
+# do not treat them as ingestion or canonical M3 preprocessing. M3 should
+# reimplement useful ideas here as versioned feature-layer jobs.
 def m2_safe_divide(numerator: float | int | None, denominator: float | int | None) -> float | None:
     num = to_float(numerator)
     den = to_float(denominator)
@@ -14131,7 +14161,12 @@ def refresh_m2_research_backtests(conn: sqlite3.Connection, start_date: str, end
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Local MLB warehouse utilities for modeling and backtesting.")
+    parser = argparse.ArgumentParser(
+        description=(
+            "Legacy local MLB warehouse utilities for old M2 modeling and backtesting. "
+            "Do not use this CLI as canonical M3 ingestion or feature materialization."
+        )
+    )
     subparsers = parser.add_subparsers(dest="command", required=True)
 
     subparsers.add_parser("init-db", help="Create or upgrade the local SQLite warehouse schema.")
@@ -14287,7 +14322,7 @@ def parse_args() -> argparse.Namespace:
 
     derive_state_formulas = subparsers.add_parser(
         "derive-state-formula-rows",
-        help="Refresh MLB-M2 phase state formula training rows from warehouse feature tables.",
+        help="Refresh legacy MLB-M2 phase state formula training rows from warehouse feature tables.",
     )
     derive_state_formulas.add_argument(
         "--through-date", help="Optional YYYY-MM-DD cutoff. Defaults to every loaded date."
@@ -14299,7 +14334,7 @@ def parse_args() -> argparse.Namespace:
 
     derive_player_identity = subparsers.add_parser(
         "derive-player-identity-rows",
-        help="Refresh MLB-M2 player identity, current deviation, and game distribution rows.",
+        help="Refresh legacy MLB-M2 player identity, current deviation, and game distribution rows.",
     )
     derive_player_identity.add_argument(
         "--through-date", help="Optional YYYY-MM-DD cutoff. Defaults to every loaded snapshot date."
@@ -14311,7 +14346,7 @@ def parse_args() -> argparse.Namespace:
 
     derive_pitch_kernel = subparsers.add_parser(
         "derive-pitcher-batter-kernel",
-        help="Refresh MLB-M2 pitcher pitch mix, hitter pitch response, and lineup matchup rows.",
+        help="Refresh legacy MLB-M2 pitcher pitch mix, hitter pitch response, and lineup matchup rows.",
     )
     derive_pitch_kernel.add_argument(
         "--through-date", help="Optional YYYY-MM-DD cutoff. Defaults to every loaded game date."
@@ -14329,7 +14364,7 @@ def parse_args() -> argparse.Namespace:
 
     backtest_m2 = subparsers.add_parser(
         "backtest-m2-research",
-        help="Refresh MLB-M2 research backtest rows for state formulas, player identity, and pitcher-batter kernel.",
+        help="Refresh legacy MLB-M2 research backtest rows for state formulas, player identity, and pitcher-batter kernel.",
     )
     backtest_m2.add_argument("--start-date", required=True, help="Backtest start date YYYY-MM-DD.")
     backtest_m2.add_argument("--end-date", required=True, help="Backtest end date YYYY-MM-DD.")
@@ -14467,6 +14502,7 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
+    warn_legacy_warehouse_boundary(args.command)
     with get_connection() as conn:
         if args.command == "init-db":
             init_db(conn)

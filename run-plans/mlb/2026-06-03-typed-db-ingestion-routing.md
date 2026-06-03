@@ -86,6 +86,15 @@ Direct staging source keys:
 
 The migration is not done until `pipeline/mlb/warehouse/mlb_warehouse.py` is decomposed into typed ingestors, typed normalizers, or retired commands.
 
+`mlb_warehouse.py` now emits a legacy-boundary warning when invoked. The M2 feature commands remain available for old runs, but they are explicitly classified as legacy feature materialization, not ingestion:
+
+- `derive-state-formula-rows`
+- `derive-player-identity-rows`
+- `derive-pitcher-batter-kernel`
+- `backtest-m2-research`
+
+M3 should reimplement useful ideas from those commands in a versioned feature layer. Examples include expected PA by lineup order, sample-size shrinkage, hot/cold deviation labels, pitcher/batter pitch mix kernels, bullpen/mistake-shape derivations, and phase/story labels.
+
 The next practical gates:
 
 - inventory each `mlb_warehouse.py` command still referenced by `package.json`
