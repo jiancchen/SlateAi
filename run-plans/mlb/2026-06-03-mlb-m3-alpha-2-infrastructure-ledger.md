@@ -27,8 +27,8 @@ Status: opened
 | A2-W001 | Create alpha-2 infrastructure run plan | complete | `2026-06-03-mlb-m3-alpha-2-infrastructure-run-plan.md` | Captures manifest, dashboard, registry preview, and non-goals. |
 | A2-W002 | Create alpha-2 ledger | complete | this file | Opens decision and implementation audit trail. |
 | A2-W003 | Audit typed model metadata tables | complete | typed table ledger below | Existing normalized tables can host M3 run metadata later. |
-| A2-W004 | Add M3 run package scaffold | pending |  | Expected under `pipeline/mlb/m3/runs`. |
-| A2-W005 | Add alpha-2 manifest generator | pending |  | Should read an alpha-1 feature report and write a complete run directory. |
+| A2-W004 | Add M3 run package scaffold | complete | `pipeline/mlb/m3/__init__.py`, `pipeline/mlb/m3/runs/__init__.py` | New M3 package boundary for run infrastructure. |
+| A2-W005 | Add alpha-2 manifest generator | complete | `pipeline/mlb/m3/runs/create_alpha2_manifest.py` | Reads an alpha-1 feature report and writes manifest/dashboard/lineage/artifact/registry-preview outputs. |
 | A2-W006 | Generate first alpha-2 run manifest | pending |  | Use the committed alpha-1 feature report. |
 | A2-W007 | Validate generated JSON and compile checks | pending |  | No generated predictions should exist. |
 | A2-W008 | Review generated artifact for scope creep | pending |  | Confirm no training/backtest/selection claims. |
@@ -48,7 +48,7 @@ Status: opened
 | --- | --- | --- |
 | Alpha-2 run plan | exists | `run-plans/mlb/2026-06-03-mlb-m3-alpha-2-infrastructure-run-plan.md` |
 | Alpha-2 ledger | exists | `run-plans/mlb/2026-06-03-mlb-m3-alpha-2-infrastructure-ledger.md` |
-| Manifest generator | pending | `pipeline/mlb/m3/runs/create_alpha2_manifest.py` |
+| Manifest generator | exists | `pipeline/mlb/m3/runs/create_alpha2_manifest.py` |
 | First manifest | pending | `data-private/models/mlb-m3/runs/<run_id>/manifest.json` |
 | Dashboard state | pending | `data-private/models/mlb-m3/runs/<run_id>/dashboard_state.json` |
 | Registry preview | pending | `data-private/models/mlb-m3/runs/<run_id>/typed_model_registry_preview.json` |
@@ -74,3 +74,8 @@ Alpha-2 must not create:
 ## Stop Log
 
 No stops yet.
+
+## Verification Log
+
+- 2026-06-03: `python3 -m py_compile pipeline/mlb/m3/runs/create_alpha2_manifest.py` passed.
+- 2026-06-03: `python3 -m pipeline.mlb.m3.runs.create_alpha2_manifest --help` passed.
