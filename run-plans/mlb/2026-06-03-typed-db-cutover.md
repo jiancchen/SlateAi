@@ -10,6 +10,31 @@ Related reports:
 - `data-migration/reports/mlb_typed_db_cutover_completion_plan_2026-06-03.md`
 - `research-m3/tech-debt.md`
 
+## Progress Snapshot
+
+Updated after commit `bc36f5e3`.
+
+Completed:
+
+- Replay-state schema/backfill/validator are complete for typed `plate_appearances` and `pitch_events`.
+- Core feed parity, prediction lineage, market lineage, and MLB source snapshot coverage validators pass.
+- API warehouse status reads typed MLB tables from `data-private/warehouse/sports/mlb/sql-mlb.db`.
+- Typed MLB compatibility views exist for staged `mlb_*` legacy table names, plus canonical views for `mlb_games`, `mlb_plate_appearances`, and `mlb_pitch_events`.
+- Current M2 `lineups`, `history-journal`, `generate-day-files`, copied M0/M1 lane scripts, cartridge compare, RP36 read exporters, and story archive export read the typed MLB DB.
+
+Current audit state:
+
+- Open migration-attention rows: zero.
+- Runtime `sports.db` cutover blockers: four.
+- Remaining blockers are write paths, not safe mechanical path swaps:
+
+| File | Why It Remains |
+|---|---|
+| `pipeline/mlb/warehouse/mlb_warehouse.py` | Legacy monolith owns old `mlb_*` table creation and many inserts/deletes. It needs command-by-command replacement with typed ingestors/normalizers, not a DB-path flip. |
+| `pipeline/mlb/warehouse/mlb_side_backtest.py` | Writes `mlb_side_predictions` and `mlb_side_backtests`; those names are read-only typed compatibility views now. Needs a typed writer into `prediction_rows` and `side_backtest_rows` or a short-lived staging writer. |
+| `pipeline/mlb/fetchers/fetch_historical_mlb_odds.py` | Writes featured and prop market snapshots in legacy table shape. Needs typed market/prop-market writer and source snapshot lineage. |
+| `pipeline/mlb/fetchers/fetch_fanduel_research_mlb.py` | Reuses historical odds legacy schema and writes market rows. Needs the same typed market writer as the historical odds fetcher. |
+
 ## Operating Rules
 
 - Treat `sports.db` as a read-only migration source until the final gate passes.
