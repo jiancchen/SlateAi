@@ -1,0 +1,79 @@
+{
+  "alpha1_feature_lineage": null,
+  "created_at": "2026-06-03T15:56:30Z",
+  "feature_report_uri": "/Users/jcchen/Documents/New project/data-migration/reports/m3_fs_002_game_story_pitching_state_v0_2026-03-26_to_2026-05-31.json",
+  "git": {
+    "branch": "model-m3",
+    "dirty": false,
+    "head": "f02b552ebee5dffc713d8488c56e0ede424bd5dc",
+    "status_short": ""
+  },
+  "input_artifacts": [
+    {
+      "bytes": 41210,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-migration/reports/m3_fs_002_game_story_pitching_state_v0_2026-03-26_to_2026-05-31.json",
+      "role": "feature_report",
+      "sha256": "4e2fa64c1ee8696a8fdc55495ef7a3048560bc57636809de775633615def4d39",
+      "source": "alpha1_report"
+    },
+    {
+      "bytes": 582476,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_002_game_story_pitching_state_v0/m3_fs_002_game_story_pitching_state_v0_20260603T155454Z/matrix.parquet",
+      "role": "feature_matrix",
+      "sha256": "8d039573b3e6d3a13f19f4fc5aef039e20877240b9df62f63d9c9701df65e596",
+      "source": "alpha1_feature_artifact"
+    },
+    {
+      "bytes": 95573,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_002_game_story_pitching_state_v0/m3_fs_002_game_story_pitching_state_v0_20260603T155454Z/data_dictionary.json",
+      "role": "data_dictionary",
+      "sha256": "024faaf62b71910021485b4d05f1810242f4f18f51b68064874ce1f089182d89",
+      "source": "alpha1_feature_artifact"
+    },
+    {
+      "bytes": 754,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_002_game_story_pitching_state_v0/m3_fs_002_game_story_pitching_state_v0_20260603T155454Z/lineage.json",
+      "role": "lineage",
+      "sha256": "b8e38b8f390da4b230c7907bd73cd3d3ade2bd57eca696ae1b54076fa9084024",
+      "source": "alpha1_feature_artifact"
+    },
+    {
+      "bytes": 32206,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_002_game_story_pitching_state_v0/m3_fs_002_game_story_pitching_state_v0_20260603T155454Z/missingness.json",
+      "role": "missingness",
+      "sha256": "6e2ed4e60649ff5af82ac0e27687e704255906a678182dc2537eda88f888284f",
+      "source": "alpha1_feature_artifact"
+    },
+    {
+      "bytes": 13293,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_002_game_story_pitching_state_v0/m3_fs_002_game_story_pitching_state_v0_20260603T155454Z/leakage.json",
+      "role": "leakage",
+      "sha256": "2ecace36ef2b7165a62a803b077d6b15e08cf1ac25ee5f733e66efedee76c38d",
+      "source": "alpha1_feature_artifact"
+    },
+    {
+      "bytes": 10544,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_002_game_story_pitching_state_v0/m3_fs_002_game_story_pitching_state_v0_20260603T155454Z/coverage.json",
+      "role": "coverage",
+      "sha256": "b44e1307b48de756a85a956e197b0ddcfc9f8a282a8550078ab04622f070441c",
+      "source": "alpha1_feature_artifact"
+    }
+  ],
+  "non_goals": [
+    "no trained model",
+    "no backtest edge claim",
+    "no simulator",
+    "no picks",
+    "no player prop pricing",
+    "no claim that M3 is better"
+  ],
+  "run_id": "mlb_m3_alpha2_infra_fs002_20260603T155600Z",
+  "typed_db_registration": "preview_only_not_inserted"
+}

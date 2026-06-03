@@ -1,0 +1,35 @@
+{
+  "checks": {
+    "artifact_hashes_non_empty": true,
+    "components_are_placeholders": true,
+    "dashboard_run_id_matches": true,
+    "dashboard_status_matches": true,
+    "feature_forbidden_flags_false": true,
+    "lane_placeholders_are_contracts": true,
+    "output_scope_clean": true,
+    "referenced_artifacts_exist": true,
+    "referenced_artifacts_have_hashes": true,
+    "registry_component_row_count": true,
+    "registry_lane_row_count": true,
+    "registry_preview_status": true,
+    "required_non_goals": true,
+    "required_top_level_keys": true,
+    "run_family_alpha2": true,
+    "split_plan_not_executed": true,
+    "status_manifest_created": true,
+    "typed_metadata_preview_only": true
+  },
+  "errors": [],
+  "manifest_path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs002_20260603T155600Z/manifest.json",
+  "ok": true,
+  "summary": {
+    "artifact_count": 7,
+    "component_count": 12,
+    "error_count": 0,
+    "feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "lane_count": 7,
+    "run_id": "mlb_m3_alpha2_infra_fs002_20260603T155600Z",
+    "warning_count": 0
+  },
+  "warnings": []
+}

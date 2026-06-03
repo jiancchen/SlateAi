@@ -1,0 +1,33 @@
+{
+  "active_phase": "manifest_created",
+  "column_count": 295,
+  "component_placeholder_count": 12,
+  "created_at": "2026-06-03T15:56:30Z",
+  "feature_count": 280,
+  "feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+  "feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+  "feature_set_version": "0.1.0",
+  "lane_placeholder_count": 7,
+  "manifest_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs002_20260603T155600Z/manifest.json",
+  "next_recommended_actions": [
+    "Add a manifest validator before DB registration writes.",
+    "Build a baseline training harness that consumes this manifest without emitting picks.",
+    "Add walk-forward split definitions and backtest diagnostics as separate artifacts.",
+    "Add a static run dashboard view that reads dashboard_state.json and artifacts.json."
+  ],
+  "non_goals": [
+    "no trained model",
+    "no backtest edge claim",
+    "no simulator",
+    "no picks",
+    "no player prop pricing",
+    "no claim that M3 is better"
+  ],
+  "row_count": 886,
+  "run_dir": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs002_20260603T155600Z",
+  "run_family": "mlb-m3-alpha-2-infrastructure",
+  "run_id": "mlb_m3_alpha2_infra_fs002_20260603T155600Z",
+  "status": "manifest_created",
+  "target_count": 9,
+  "warnings": []
+}
