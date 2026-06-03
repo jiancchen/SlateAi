@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T00:12:18.947Z",
+  "generated_at": "2026-06-03T00:15:07.978Z",
   "script": "data-migration/scripts/audit_mlb_db_input_cutover.mjs",
   "profile": "active",
   "targets": [
@@ -66,8 +66,8 @@
       "generated_module_input": {
         "description": "Uses generated modules/files that should become DB-derived exports.",
         "severity": "cutover_target",
-        "files": 3,
-        "hits": 11
+        "files": 4,
+        "hits": 15
       },
       "legacy_sqlite_shell": {
         "description": "Uses sqlite shell calls, often pointing at legacy DB paths.",
@@ -85,13 +85,13 @@
     "byFile": [
       {
         "path": "models/mlb/cartridges/MLB-M2/lanes/history-journal.mjs",
-        "total_hits": 9,
+        "total_hits": 10,
         "counts": {
           "legacy_sports_db": 1,
           "published_data_input": 2,
           "private_prediction_json_input": 1,
           "raw_archive_input": 1,
-          "generated_module_input": 4
+          "generated_module_input": 5
         }
       },
       {
@@ -132,6 +132,23 @@
         }
       },
       {
+        "path": "pipeline/lib/load-mlb-day-games.mjs",
+        "total_hits": 6,
+        "counts": {
+          "generated_module_input": 2,
+          "db_ready_reference": 4
+        }
+      },
+      {
+        "path": "models/mlb/cartridges/MLB-M2/lanes/home-runs.mjs",
+        "total_hits": 5,
+        "counts": {
+          "private_prediction_json_output": 1,
+          "generated_module_input": 2,
+          "db_ready_reference": 2
+        }
+      },
+      {
         "path": "models/mlb/cartridges/MLB-M2/lanes/props.mjs",
         "total_hits": 5,
         "counts": {
@@ -148,28 +165,12 @@
         }
       },
       {
-        "path": "pipeline/lib/load-mlb-day-games.mjs",
-        "total_hits": 5,
-        "counts": {
-          "generated_module_input": 1,
-          "db_ready_reference": 4
-        }
-      },
-      {
         "path": "models/mlb/cartridges/MLB-M2/lanes/generate-day-files.mjs",
         "total_hits": 3,
         "counts": {
           "legacy_sports_db": 1,
           "published_data_input": 1,
           "legacy_sqlite_shell": 1
-        }
-      },
-      {
-        "path": "models/mlb/cartridges/MLB-M2/lanes/home-runs.mjs",
-        "total_hits": 3,
-        "counts": {
-          "private_prediction_json_output": 1,
-          "db_ready_reference": 2
         }
       },
       {
@@ -273,6 +274,12 @@
         {
           "key": "generated_module_input",
           "severity": "cutover_target",
+          "line": 5,
+          "match": "web/src/lib/day-"
+        },
+        {
+          "key": "generated_module_input",
+          "severity": "cutover_target",
           "line": 737,
           "match": ".generated."
         },
@@ -304,6 +311,18 @@
           "severity": "output_surface",
           "line": 78,
           "match": "data-private', 'predictions"
+        },
+        {
+          "key": "generated_module_input",
+          "severity": "cutover_target",
+          "line": 7,
+          "match": "web/src/lib/day-"
+        },
+        {
+          "key": "generated_module_input",
+          "severity": "cutover_target",
+          "line": 165,
+          "match": "mlb-batting-impact-history.js"
         },
         {
           "key": "db_ready_reference",
@@ -707,6 +726,12 @@
     {
       "path": "pipeline/lib/load-mlb-day-games.mjs",
       "hits": [
+        {
+          "key": "generated_module_input",
+          "severity": "cutover_target",
+          "line": 7,
+          "match": "web/src/lib/day-"
+        },
         {
           "key": "generated_module_input",
           "severity": "cutover_target",

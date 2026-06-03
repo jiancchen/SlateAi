@@ -75,7 +75,7 @@ const PATTERNS = [
     key: 'generated_module_input',
     description: 'Uses generated modules/files that should become DB-derived exports.',
     severity: 'cutover_target',
-    regex: /\.generated\.|\/generated\/|['",\s]+generated['",\s]/g
+    regex: /\.generated\.|\/generated\/|['",\s]+generated['",\s]|web\/src\/lib\/day-|web['",\s]+src['",\s]+lib['",\s]+day-|mlb-batting-impact-history\.js/g
   },
   {
     key: 'legacy_sqlite_shell',

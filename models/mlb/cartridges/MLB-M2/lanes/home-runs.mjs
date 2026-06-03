@@ -153,15 +153,12 @@ const parseCsv = (text) => {
 
 const loadDayGames = async (date) => loadMlbDayGames(date)
 
-const loadLineupBoards = async (date) => {
-  try {
-    const lineupModulePath = path.join(rootDir, 'web', 'src', 'lib', `day-${date}-lineups.js`)
-    const lineupModule = await import(pathToFileURL(lineupModulePath).href)
-    return lineupModule.lineupBoardsByGameId || {}
-  } catch {
-    return {}
-  }
-}
+const buildLineupBoardsFromGames = (games = []) =>
+  Object.fromEntries(
+    games
+      .filter((game) => game?.lineupBoard)
+      .map((game) => [game.lineupBoard.gameId || game.id, game.lineupBoard])
+  )
 
 const loadBattingImpactHistory = async () => {
   try {
@@ -917,7 +914,7 @@ const scoreCandidateDetails = async (candidate, detailRows, season, targetDate, 
 const scoreCandidates = async ({ date, season, top, scanLimit, teamLimit }) => {
   const games = await loadDayGames(date)
   const matchupByAbbr = buildMatchupMap(games)
-  const lineupBoardsByGameId = await loadLineupBoards(date)
+  const lineupBoardsByGameId = buildLineupBoardsFromGames(games)
   const lineupLookup = buildLineupLookup(lineupBoardsByGameId)
   const lineupAvailabilityByTeam = buildLineupAvailabilityByTeam(lineupBoardsByGameId)
   const weatherLookup = buildWeatherLookup(lineupBoardsByGameId)
