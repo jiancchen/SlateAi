@@ -1,0 +1,25 @@
+{
+  "column_count": 295,
+  "created_at": "2026-06-03T16:12:24Z",
+  "feature_column_count": 280,
+  "feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+  "feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+  "matrix_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_002_game_story_pitching_state_v0/m3_fs_002_game_story_pitching_state_v0_20260603T155454Z/matrix.parquet",
+  "non_goals": [
+    "no picks",
+    "no prices",
+    "no promotion decisions",
+    "no edge claims"
+  ],
+  "pruned_feature_count": 24,
+  "row_count": 886,
+  "rules": {
+    "keep_missing_rate_max": 0.75,
+    "min_non_null_rate": 0.1,
+    "min_unique_values": 2
+  },
+  "run_id": "mlb_m3_alpha2_infra_fs002_20260603T155600Z_feature_audit",
+  "selected_column_count": 271,
+  "source_manifest_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs002_20260603T155600Z/manifest.json",
+  "status": "feature_audit_created"
+}

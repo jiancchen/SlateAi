@@ -1,0 +1,47 @@
+{
+  "artifacts": [
+    {
+      "bytes": 999,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs002_20260603T155600Z/feature_audit/feature_audit.json",
+      "role": "feature_audit",
+      "sha256": "00352119fae3e7cea6026533cacc77d2a173a519fae39bd39d5bbbdbf1bfc50b"
+    },
+    {
+      "bytes": 140389,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs002_20260603T155600Z/feature_audit/feature_quality.json",
+      "role": "feature_quality",
+      "sha256": "f01dbe0ec4cd6bffe3ee6109aaf067a66c82ca201c9c24197a7cb76a43140514"
+    },
+    {
+      "bytes": 2087,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs002_20260603T155600Z/feature_audit/family_summary.json",
+      "role": "family_summary",
+      "sha256": "580852502640f763e314f92046d880b91f192b657c93dd47d24d1ed7e2f5b3e4"
+    },
+    {
+      "bytes": 24103,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs002_20260603T155600Z/feature_audit/prune_recommendations.json",
+      "role": "prune_recommendations",
+      "sha256": "b85a6c5b86f44a1f264f71d5b7dc2cb809e01c2b1090633ec0ae67179cb6ea6f"
+    },
+    {
+      "bytes": 12023,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs002_20260603T155600Z/feature_audit/fs003_selected_columns.json",
+      "role": "fs003_selected_columns",
+      "sha256": "ac965f5fc2167e0134595bdc01446f0ce4f7773f617f59117587591f249deca1"
+    },
+    {
+      "bytes": 450,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs002_20260603T155600Z/feature_audit/report.md",
+      "role": "report",
+      "sha256": "0b3321552acdeec6ced180f15360ddfb7336705e6f5af6b737e6c570f877ff1f"
+    }
+  ],
+  "status": "feature_audit_created"
+}
