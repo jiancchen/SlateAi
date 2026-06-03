@@ -4,6 +4,8 @@ Date: 2026-06-03
 
 Status: alpha run plan
 
+Audit status: reviewed 2026-06-03; naming, packaging, market-source, and follow-up corrections applied.
+
 Scope: define the first MLB-M3 feature set and build typed feature extraction from `data-private/warehouse/sports/mlb/sql-mlb.db`.
 
 Related docs:
@@ -23,12 +25,13 @@ M3 may hand-code feature definitions. M3 must not hand-code feature conclusions.
 
 Allowed:
 
-- `team_runs_avg_last5`
-- `team_runs_variance_last10`
-- `starter_outs_avg_last5`
-- `bullpen_scramble_rate_last10`
+- `home_team_runs_avg_last5`
+- `away_team_runs_allowed_avg_last5`
+- `away_team_runs_variance_last10`
+- `home_starter_outs_avg_last5`
+- `away_bullpen_scramble_rate_last10`
 - `market_total_latest_pregame`
-- `lineup_known_slot_count`
+- `home_lineup_known_slot_count`
 
 Not allowed:
 
@@ -57,10 +60,10 @@ First targets:
 
 - `target_total_runs_final`
 - `target_total_runs_f5`
-- `target_home_runs_final`
-- `target_away_runs_final`
-- `target_home_runs_f5`
-- `target_away_runs_f5`
+- `target_home_team_runs_final`
+- `target_away_team_runs_final`
+- `target_home_team_runs_f5`
+- `target_away_team_runs_f5`
 - `target_total_bucket`
 - `target_f5_bucket`
 - `target_chaos_game_flag`
@@ -121,22 +124,29 @@ flowchart TD
 Target structure:
 
 ```text
-pipeline/mlb/features/
-  README.md
-  contracts/
-    m3_fs_001_game_shape_starter_v1.json
-  builders/
-    build_game_shape_starter_v1.py
-  sql/
-    m3_fs_001_game_base.sql
-    m3_fs_001_targets.sql
-    m3_fs_001_team_recent_shape.sql
-    m3_fs_001_starter_path.sql
-    m3_fs_001_bullpen_shape.sql
-    m3_fs_001_lineup_context.sql
-    m3_fs_001_market_context.sql
-  validators/
-    validate_game_shape_starter_v1.py
+pipeline/
+  __init__.py
+  mlb/
+    __init__.py
+    features/
+      __init__.py
+      README.md
+      contracts/
+        m3_fs_001_game_shape_starter_v1.json
+      builders/
+        __init__.py
+        build_game_shape_starter_v1.py
+      sql/
+        m3_fs_001_game_base.sql
+        m3_fs_001_targets.sql
+        m3_fs_001_team_recent_shape.sql
+        m3_fs_001_starter_path.sql
+        m3_fs_001_bullpen_shape.sql
+        m3_fs_001_lineup_context.sql
+        m3_fs_001_market_context.sql
+      validators/
+        __init__.py
+        validate_game_shape_starter_v1.py
 ```
 
 Output structure:
@@ -174,6 +184,8 @@ python3 -m pipeline.mlb.features.builders.build_game_shape_starter_v1 \
 
 The command should be one user-facing job. Internally it can use SQL files, Python modules, Pandas, DuckDB, SQLite, and validators.
 
+Because the command uses `python3 -m`, the implementation must make `pipeline`, `pipeline/mlb`, `pipeline/mlb/features`, `pipeline/mlb/features/builders`, and `pipeline/mlb/features/validators` importable. Add package marker files in the first skeleton pass or change the command to a direct script invocation before committing the builder.
+
 Do not create a user workflow that requires manually running a chain of unrelated scripts.
 
 ## Feature Contract
@@ -204,8 +216,9 @@ Required fields:
     "away_starter_",
     "home_bullpen_",
     "away_bullpen_",
-    "market_",
-    "lineup_"
+    "home_lineup_",
+    "away_lineup_",
+    "market_"
   ],
   "target_prefix": "target_",
   "leakage_classes": [
@@ -228,6 +241,8 @@ The contract should also include:
 - owner notes
 - validator list
 
+Side-specific features must be emitted with `home_` and `away_` prefixes at game grain. Generic names in this plan are only logical stems; the actual matrix should use columns like `home_team_runs_for_avg_last5` and `away_team_runs_for_avg_last5`.
+
 ## Source Tables
 
 Alpha source tables:
@@ -241,6 +256,8 @@ Alpha source tables:
 | Bullpen context | `bullpen_usage_snapshots`, `likely_relief_chains`, `team_bullpen_shape_snapshots` | pregame bullpen debt and chain shape |
 | Lineup context | `lineups`, `lineup_slots` | known lineup state and completeness flags |
 | Market context | `market_snapshots`, `market_contracts`, `market_price_ticks` | latest pregame market state when available |
+
+Market source rule: prefer canonical timestamped `market_*` tables. If they do not cover the alpha totals cleanly, either omit market context for v0.1.0 or make an explicit typed-DB fallback decision for `mlb_featured_market_odds_snapshots`. Do not read generated/public artifacts.
 
 Deferred source tables:
 
@@ -289,10 +306,10 @@ Example columns:
 ```text
 target_total_runs_final
 target_total_runs_f5
-target_home_runs_final
-target_away_runs_final
-target_home_runs_f5
-target_away_runs_f5
+target_home_team_runs_final
+target_away_team_runs_final
+target_home_team_runs_f5
+target_away_team_runs_f5
 target_total_bucket
 target_f5_bucket
 target_chaos_game_flag
@@ -331,18 +348,30 @@ Windows:
 Example columns for each team and window:
 
 ```text
-team_runs_for_avg_last5
-team_runs_for_std_last5
-team_runs_for_min_last5
-team_runs_for_max_last5
-team_runs_for_zero_or_one_count_last5
-team_runs_for_8plus_count_last5
-team_runs_allowed_avg_last5
-team_runs_allowed_std_last5
-team_f5_runs_for_avg_last5
-team_f5_runs_allowed_avg_last5
-team_late_runs_for_avg_last5
-team_total_runs_game_env_avg_last5
+home_team_runs_for_avg_last5
+away_team_runs_for_avg_last5
+home_team_runs_for_std_last5
+away_team_runs_for_std_last5
+home_team_runs_for_min_last5
+away_team_runs_for_min_last5
+home_team_runs_for_max_last5
+away_team_runs_for_max_last5
+home_team_runs_for_zero_or_one_count_last5
+away_team_runs_for_zero_or_one_count_last5
+home_team_runs_for_8plus_count_last5
+away_team_runs_for_8plus_count_last5
+home_team_runs_allowed_avg_last5
+away_team_runs_allowed_avg_last5
+home_team_runs_allowed_std_last5
+away_team_runs_allowed_std_last5
+home_team_f5_runs_for_avg_last5
+away_team_f5_runs_for_avg_last5
+home_team_f5_runs_allowed_avg_last5
+away_team_f5_runs_allowed_avg_last5
+home_team_late_runs_for_avg_last5
+away_team_late_runs_for_avg_last5
+home_team_total_runs_game_env_avg_last5
+away_team_total_runs_game_env_avg_last5
 ```
 
 Rules:
@@ -365,19 +394,32 @@ Inputs:
 Example columns:
 
 ```text
-starter_known_flag
-starter_recent_start_count_last5
-starter_outs_avg_last5
-starter_outs_std_last5
-starter_runs_allowed_avg_last5
-starter_runs_allowed_max_last5
-starter_hits_allowed_avg_last5
-starter_walks_avg_last5
-starter_strikeouts_avg_last5
-starter_home_runs_allowed_avg_last5
-starter_pitcher_appearance_count_last10
-starter_short_start_count_last5
-starter_5plus_ip_count_last5
+home_starter_known_flag
+away_starter_known_flag
+home_starter_recent_start_count_last5
+away_starter_recent_start_count_last5
+home_starter_outs_avg_last5
+away_starter_outs_avg_last5
+home_starter_outs_std_last5
+away_starter_outs_std_last5
+home_starter_runs_allowed_avg_last5
+away_starter_runs_allowed_avg_last5
+home_starter_runs_allowed_max_last5
+away_starter_runs_allowed_max_last5
+home_starter_hits_allowed_avg_last5
+away_starter_hits_allowed_avg_last5
+home_starter_walks_avg_last5
+away_starter_walks_avg_last5
+home_starter_strikeouts_avg_last5
+away_starter_strikeouts_avg_last5
+home_starter_home_runs_allowed_avg_last5
+away_starter_home_runs_allowed_avg_last5
+home_starter_pitcher_appearance_count_last10
+away_starter_pitcher_appearance_count_last10
+home_starter_short_start_count_last5
+away_starter_short_start_count_last5
+home_starter_5plus_ip_count_last5
+away_starter_5plus_ip_count_last5
 ```
 
 Rules:
@@ -385,7 +427,7 @@ Rules:
 - derive from games before the target game
 - no manual "starter stability score"
 - no M2 starter labels unless rebuilt as explicit target labels later
-- TBD starter gets null starter features plus `starter_known_flag = 0`
+- TBD starter gets null side-specific starter features plus `home_starter_known_flag = 0` or `away_starter_known_flag = 0`
 
 ### 5. Bullpen Shape
 
@@ -400,18 +442,30 @@ Inputs:
 Example columns:
 
 ```text
-bullpen_snapshot_available_flag
-bullpen_relievers_used_avg_last5
-bullpen_relievers_used_max_last10
-bullpen_first_reliever_outs_avg_last5
-bullpen_total_relief_outs_avg_last5
-bullpen_total_relief_runs_allowed_avg_last5
-bullpen_four_plus_reliever_rate_last10
-bullpen_six_plus_scramble_rate_last10
-bullpen_likely_first_reliever_count
-bullpen_top2_availability_avg
-bullpen_top2_expected_outs_sum
-bullpen_back_to_back_count
+home_bullpen_snapshot_available_flag
+away_bullpen_snapshot_available_flag
+home_bullpen_relievers_used_avg_last5
+away_bullpen_relievers_used_avg_last5
+home_bullpen_relievers_used_max_last10
+away_bullpen_relievers_used_max_last10
+home_bullpen_first_reliever_outs_avg_last5
+away_bullpen_first_reliever_outs_avg_last5
+home_bullpen_total_relief_outs_avg_last5
+away_bullpen_total_relief_outs_avg_last5
+home_bullpen_total_relief_runs_allowed_avg_last5
+away_bullpen_total_relief_runs_allowed_avg_last5
+home_bullpen_four_plus_reliever_rate_last10
+away_bullpen_four_plus_reliever_rate_last10
+home_bullpen_six_plus_scramble_rate_last10
+away_bullpen_six_plus_scramble_rate_last10
+home_bullpen_likely_first_reliever_count
+away_bullpen_likely_first_reliever_count
+home_bullpen_top2_availability_avg
+away_bullpen_top2_availability_avg
+home_bullpen_top2_expected_outs_sum
+away_bullpen_top2_expected_outs_sum
+home_bullpen_back_to_back_count
+away_bullpen_back_to_back_count
 ```
 
 Rules:
@@ -434,17 +488,20 @@ Inputs:
 Example columns:
 
 ```text
-lineup_home_known_flag
-lineup_away_known_flag
-lineup_home_slot_count
-lineup_away_slot_count
-lineup_home_partial_flag
-lineup_away_partial_flag
-lineup_home_top5_known_count
-lineup_away_top5_known_count
-team_pa_avg_last5
-team_pa_max_last5
-team_extra_pa_game_count_last10
+home_lineup_known_flag
+away_lineup_known_flag
+home_lineup_slot_count
+away_lineup_slot_count
+home_lineup_partial_flag
+away_lineup_partial_flag
+home_lineup_top5_known_count
+away_lineup_top5_known_count
+home_team_pa_avg_last5
+away_team_pa_avg_last5
+home_team_pa_max_last5
+away_team_pa_max_last5
+home_team_extra_pa_game_count_last10
+away_team_extra_pa_game_count_last10
 ```
 
 Rules:
@@ -495,13 +552,20 @@ Why deferred:
 Future columns:
 
 ```text
-team_traffic_pa_rate_last5
-team_two_out_traffic_rate_last5
-team_gidp_escape_count_last10
-team_crooked_inning_count_last10
-starter_pitch_per_pa_avg_last5
-starter_runners_on_pa_rate_last5
-lineup_walk_cluster_rate_last10
+home_team_traffic_pa_rate_last5
+away_team_traffic_pa_rate_last5
+home_team_two_out_traffic_rate_last5
+away_team_two_out_traffic_rate_last5
+home_team_gidp_escape_count_last10
+away_team_gidp_escape_count_last10
+home_team_crooked_inning_count_last10
+away_team_crooked_inning_count_last10
+home_starter_pitch_per_pa_avg_last5
+away_starter_pitch_per_pa_avg_last5
+home_starter_runners_on_pa_rate_last5
+away_starter_runners_on_pa_rate_last5
+home_lineup_walk_cluster_rate_last10
+away_lineup_walk_cluster_rate_last10
 ```
 
 These should be introduced as `M3-FS-002` or `M3-FS-001` v0.2.0, not quietly slipped into v0.1.0.
@@ -836,6 +900,19 @@ These block later M3 stages:
 11. Review missingness and leakage report.
 12. Freeze `M3-FS-001` v0.1.0 and open the backtest run plan.
 
+## Audit Follow-Ups
+
+These are the follow-ups from the run-plan audit before implementation starts:
+
+- Confirm Python package importability before keeping the `python3 -m pipeline.mlb.features...` command.
+- Inspect the alpha source tables and write down exact column mappings before SQL work starts.
+- Confirm market timestamp semantics and choose either canonical `market_*` tables, no-market v0.1.0, or typed `mlb_featured_market_odds_snapshots` fallback.
+- Confirm local Parquet support (`pyarrow`, `fastparquet`, or DuckDB export) in the workspace runtime before choosing the writer implementation.
+- Create the contract JSON first, then make the builder validate against it.
+- Run a skeleton dry-run before adding feature blocks, so CLI/report/output conventions are stable.
+- Keep every side-specific matrix column under `home_` or `away_` prefixes; no generic `team_`, `starter_`, `bullpen_`, or `lineup_` columns at game grain.
+- Keep `M3-FS-001` focused on game shape and totals; replay-state and player-prop feature families need separate version bumps or follow-up feature sets.
+
 ## Stop Conditions
 
 Stop and revisit the plan if:
@@ -859,4 +936,3 @@ The first M3 feature set is accepted when:
 - missingness report is reviewed
 - no M2 weights or hard-coded composite scores are present
 - the output can be consumed by a future training/backtest runner
-
