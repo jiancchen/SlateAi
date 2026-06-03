@@ -12,7 +12,7 @@ Related reports:
 
 ## Progress Snapshot
 
-Updated after commit `bc36f5e3`.
+Updated after the typed writer-staging cutover.
 
 Completed:
 
@@ -20,20 +20,19 @@ Completed:
 - Core feed parity, prediction lineage, market lineage, and MLB source snapshot coverage validators pass.
 - API warehouse status reads typed MLB tables from `data-private/warehouse/sports/mlb/sql-mlb.db`.
 - Typed MLB compatibility views exist for staged `mlb_*` legacy table names, plus canonical views for `mlb_games`, `mlb_plate_appearances`, and `mlb_pitch_events`.
+- Writer-owned legacy names for side predictions/backtests and market/prop odds are writable staging tables inside `sql-mlb.db`.
 - Current M2 `lineups`, `history-journal`, `generate-day-files`, copied M0/M1 lane scripts, cartridge compare, RP36 read exporters, and story archive export read the typed MLB DB.
+- Side backtest and MLB odds/FanDuel research fetchers default to `sql-mlb.db` writable staging tables.
 
 Current audit state:
 
 - Open migration-attention rows: zero.
-- Runtime `sports.db` cutover blockers: four.
-- Remaining blockers are write paths, not safe mechanical path swaps:
+- Runtime `sports.db` cutover blockers: one.
+- Remaining blocker is the legacy monolith, not a safe mechanical path swap:
 
 | File | Why It Remains |
 |---|---|
 | `pipeline/mlb/warehouse/mlb_warehouse.py` | Legacy monolith owns old `mlb_*` table creation and many inserts/deletes. It needs command-by-command replacement with typed ingestors/normalizers, not a DB-path flip. |
-| `pipeline/mlb/warehouse/mlb_side_backtest.py` | Writes `mlb_side_predictions` and `mlb_side_backtests`; those names are read-only typed compatibility views now. Needs a typed writer into `prediction_rows` and `side_backtest_rows` or a short-lived staging writer. |
-| `pipeline/mlb/fetchers/fetch_historical_mlb_odds.py` | Writes featured and prop market snapshots in legacy table shape. Needs typed market/prop-market writer and source snapshot lineage. |
-| `pipeline/mlb/fetchers/fetch_fanduel_research_mlb.py` | Reuses historical odds legacy schema and writes market rows. Needs the same typed market writer as the historical odds fetcher. |
 
 ## Operating Rules
 
@@ -45,13 +44,14 @@ Current audit state:
 
 ## Current Finding
 
-The audit says most normalized feature families already have source lineage:
+The audit says the typed DB is data-complete for the audited MLB source families:
 
 - 66 normalized/source-linked legacy families.
 - 1,202,383 source rows covered by normalized lineage.
-- 5 target-populated-not-staged tables still need provenance/parity decisions.
-- 4 prediction/market source families are target-populated but lineage unclear.
-- 21 runtime code references still point at `sports.db`.
+- 8 high-value source families are validator-gated without row-level source lineage.
+- MLB source snapshot path coverage is validator-gated.
+- 0 open migration-attention rows.
+- 1 runtime code blocker still points at `sports.db`.
 
 The first M3 modeling gate is replay state on:
 

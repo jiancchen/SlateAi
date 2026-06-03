@@ -9,7 +9,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[3]
-DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
+DB_PATH = ROOT / "data-private" / "warehouse" / "sports" / "mlb" / "sql-mlb.db"
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS mlb_side_predictions (
@@ -77,6 +77,7 @@ CREATE TABLE IF NOT EXISTS mlb_side_backtests (
 
 
 def get_connection() -> sqlite3.Connection:
+    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     return conn

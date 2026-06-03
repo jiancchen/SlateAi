@@ -57,6 +57,7 @@ def infer_json_columns(conn: sqlite3.Connection, source_table: str) -> list[str]
 
 def legacy_json_view_tables(conn: sqlite3.Connection) -> list[str]:
     static_view_names = set(STATIC_VIEW_SQL)
+    writable_table_names = set(WRITABLE_LEGACY_TABLE_SQL)
     rows = conn.execute(
         """
         select distinct source_table
@@ -66,7 +67,7 @@ def legacy_json_view_tables(conn: sqlite3.Connection) -> list[str]:
         order by source_table
         """
     ).fetchall()
-    return [str(row[0]) for row in rows if str(row[0]) not in static_view_names]
+    return [str(row[0]) for row in rows if str(row[0]) not in static_view_names and str(row[0]) not in writable_table_names]
 
 
 def legacy_json_view_sql(source_table: str, columns: list[str]) -> str:
@@ -208,9 +209,198 @@ STATIC_VIEW_SQL = {
     """,
 }
 
+WRITABLE_LEGACY_TABLE_SQL = {
+    "mlb_featured_market_odds_snapshots": """
+    create table if not exists "mlb_featured_market_odds_snapshots" (
+      row_key text primary key,
+      snapshot_time text not null,
+      market_date text not null,
+      game_pk integer,
+      source_event_id text not null,
+      commence_time text,
+      home_team text not null,
+      away_team text not null,
+      bookmaker_key text not null,
+      bookmaker_title text,
+      market_key text not null,
+      outcome_name text not null,
+      outcome_description text,
+      price real,
+      point real,
+      last_update text,
+      source_path text,
+      raw_json text
+    );
+    create index if not exists idx_mlb_featured_market_game_date
+      on "mlb_featured_market_odds_snapshots"(market_date, game_pk, market_key);
+    create index if not exists idx_mlb_featured_market_event_snapshot
+      on "mlb_featured_market_odds_snapshots"(source_event_id, snapshot_time);
+    """,
+    "mlb_player_prop_odds_snapshots": """
+    create table if not exists "mlb_player_prop_odds_snapshots" (
+      row_key text primary key,
+      snapshot_time text not null,
+      market_date text not null,
+      game_pk integer,
+      source_event_id text not null,
+      commence_time text,
+      home_team text not null,
+      away_team text not null,
+      bookmaker_key text not null,
+      bookmaker_title text,
+      market_key text not null,
+      player_name text,
+      outcome_name text not null,
+      outcome_description text,
+      price real,
+      point real,
+      last_update text,
+      source_path text,
+      raw_json text
+    );
+    create index if not exists idx_mlb_player_prop_game_date
+      on "mlb_player_prop_odds_snapshots"(market_date, game_pk, market_key);
+    create index if not exists idx_mlb_player_prop_event_snapshot
+      on "mlb_player_prop_odds_snapshots"(source_event_id, snapshot_time);
+    create index if not exists idx_mlb_player_prop_player_market
+      on "mlb_player_prop_odds_snapshots"(player_name, market_key, market_date);
+    """,
+    "mlb_side_predictions": """
+    create table if not exists "mlb_side_predictions" (
+      prediction_date text not null,
+      model_name text not null,
+      game_id text not null,
+      game_pk integer,
+      game_title text not null,
+      away_team text not null,
+      home_team text not null,
+      predicted_team text not null,
+      predicted_side text not null,
+      confidence integer,
+      volatility integer,
+      model_edge real,
+      source_label text,
+      input_labels_json text,
+      projection_json text,
+      starter_leverage_index real,
+      late_inning_stability_index real,
+      relief_pitching_risk real,
+      coinflip_pressure real,
+      pick_bullpen_score real,
+      opp_bullpen_score real,
+      pick_starter_score real,
+      opp_starter_score real,
+      projected_hit_edge_for_pick real,
+      hit_edge_against_pick_flag integer,
+      metadata_json text,
+      primary key (prediction_date, model_name, game_id)
+    );
+    """,
+    "mlb_side_backtests": """
+    create table if not exists "mlb_side_backtests" (
+      prediction_date text not null,
+      model_name text not null,
+      game_id text not null,
+      game_pk integer,
+      game_title text not null,
+      away_team text not null,
+      home_team text not null,
+      predicted_team text not null,
+      predicted_side text not null,
+      actual_winner text,
+      actual_first5_winner text,
+      hit_full_game integer not null,
+      hit_first5 integer not null,
+      bullpen_flip_loss integer not null,
+      starter_rescue_win integer not null,
+      thin_edge_flag integer not null,
+      high_volatility_flag integer not null,
+      hit_edge_against_pick_flag integer not null,
+      predicted_runs_final integer,
+      opponent_runs_final integer,
+      predicted_runs_first5 integer,
+      opponent_runs_first5 integer,
+      predicted_bullpen_runs integer,
+      opponent_bullpen_runs integer,
+      bullpen_net_diff integer,
+      relief_pitching_risk real,
+      coinflip_pressure real,
+      summary_json text,
+      primary key (prediction_date, model_name, game_id)
+    );
+    """,
+}
+
+
+def table_columns(conn: sqlite3.Connection, table_name: str) -> list[str]:
+    return [str(row[1]) for row in conn.execute(f"pragma table_info({quote_ident(table_name)})").fetchall()]
+
+
+def sqlite_object_type(conn: sqlite3.Connection, object_name: str) -> str | None:
+    row = conn.execute(
+        """
+        select type
+        from sqlite_master
+        where name = ?
+        """,
+        (object_name,),
+    ).fetchone()
+    return str(row[0]) if row else None
+
+
+def drop_view_if_present(conn: sqlite3.Connection, view_name: str) -> None:
+    if sqlite_object_type(conn, view_name) == "view":
+        conn.execute(f"drop view {quote_ident(view_name)}")
+
+
+def seed_writable_legacy_table(conn: sqlite3.Connection, source_table: str) -> int:
+    columns = table_columns(conn, source_table)
+    projected = [
+        f"json_extract(row_json, {sql_literal(json_path_for_key(column))})"
+        for column in columns
+    ]
+    conn.execute(
+        f"""
+        insert or ignore into {quote_ident(source_table)}
+          ({", ".join(quote_ident(column) for column in columns)})
+        select
+          {", ".join(projected)}
+        from legacy_table_rows
+        where sport = 'mlb'
+          and source_table = ?
+        """,
+        (source_table,),
+    )
+    return int(conn.execute(f"select count(*) from {quote_ident(source_table)}").fetchone()[0])
+
 
 def create_views(conn: sqlite3.Connection, dry_run: bool) -> list[dict[str, Any]]:
     views: list[dict[str, Any]] = []
+    for table_name, table_sql in WRITABLE_LEGACY_TABLE_SQL.items():
+        row_count = conn.execute(
+            """
+            select count(*)
+            from legacy_table_rows
+            where sport = 'mlb'
+              and source_table = ?
+            """,
+            (table_name,),
+        ).fetchone()[0]
+        views.append(
+            {
+                "view": table_name,
+                "object_type": "writable_legacy_staging_table",
+                "source": "legacy_table_rows",
+                "columns": None,
+                "rows": row_count,
+            }
+        )
+        if dry_run:
+            continue
+        drop_view_if_present(conn, table_name)
+        conn.executescript(table_sql)
+        views[-1]["rows"] = seed_writable_legacy_table(conn, table_name)
+
     for source_table in legacy_json_view_tables(conn):
         columns = infer_json_columns(conn, source_table)
         row_count = conn.execute(
@@ -225,6 +415,7 @@ def create_views(conn: sqlite3.Connection, dry_run: bool) -> list[dict[str, Any]
         views.append(
             {
                 "view": source_table,
+                "object_type": "read_only_legacy_json_view",
                 "source": "legacy_table_rows",
                 "columns": len(columns),
                 "rows": row_count,
@@ -232,13 +423,14 @@ def create_views(conn: sqlite3.Connection, dry_run: bool) -> list[dict[str, Any]
         )
         if dry_run:
             continue
-        conn.execute(f"drop view if exists {quote_ident(source_table)}")
+        drop_view_if_present(conn, source_table)
         conn.execute(legacy_json_view_sql(source_table, columns))
 
     for view_name, view_sql in STATIC_VIEW_SQL.items():
         views.append(
             {
                 "view": view_name,
+                "object_type": "read_only_typed_canonical_view",
                 "source": "typed_canonical_tables",
                 "columns": None,
                 "rows": None,
@@ -246,7 +438,7 @@ def create_views(conn: sqlite3.Connection, dry_run: bool) -> list[dict[str, Any]
         )
         if dry_run:
             continue
-        conn.execute(f"drop view if exists {quote_ident(view_name)}")
+        drop_view_if_present(conn, view_name)
         conn.execute(view_sql)
 
     if not dry_run:
@@ -293,8 +485,10 @@ def main() -> None:
         "report_path": rel(report_path),
         "dry_run": args.dry_run,
         "summary": {
-            "views_created": 0 if args.dry_run else len(views),
-            "views_planned": len(views),
+            "objects_created": 0 if args.dry_run else len(views),
+            "objects_planned": len(views),
+            "views_created": 0 if args.dry_run else sum(1 for view in views if str(view.get("object_type", "")).endswith("_view")),
+            "writable_tables_created": 0 if args.dry_run else sum(1 for view in views if view.get("object_type") == "writable_legacy_staging_table"),
         },
         "views": views,
     }

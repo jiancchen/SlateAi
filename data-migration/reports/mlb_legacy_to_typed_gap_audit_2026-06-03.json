@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T04:20:39.096Z",
+  "generated_at": "2026-06-03T04:24:42.864Z",
   "report_date": "2026-06-03",
   "legacy_db": {
     "path": "/Users/jcchen/Documents/New project/data-private/warehouse/sports.db",
@@ -10,8 +10,8 @@
   "typed_db": {
     "path": "/Users/jcchen/Documents/New project/data-private/warehouse/sports/mlb/sql-mlb.db",
     "relative_path": "data-private/warehouse/sports/mlb/sql-mlb.db",
-    "size_bytes": 5330460672,
-    "size_mb": 5083.5
+    "size_bytes": 5340930048,
+    "size_mb": 5093.5
   },
   "summary": {
     "legacy_tables_total": 121,
@@ -19,7 +19,7 @@
     "legacy_rows_audited": 1588592,
     "staged_source_tables": 70,
     "staged_rows": 1206213,
-    "typed_tables": 97,
+    "typed_tables": 101,
     "by_status": {
       "normalized_with_source_lineage": {
         "tables": 66,
@@ -174,8 +174,8 @@
         "target_source_rows": 407
       }
     },
-    "sports_db_read_paths": 94,
-    "sports_db_cutover_blockers": 4
+    "sports_db_read_paths": 91,
+    "sports_db_cutover_blockers": 1
   },
   "replay_schema_gaps": {
     "plate_appearances": {
@@ -4525,17 +4525,17 @@
       "cutover_blocker": false
     },
     {
-      "file": "api/src/lib/paths.ts",
-      "line": 11,
-      "group": "api_runtime",
-      "text": "export const legacyWarehousePath = path.join(dataPrivateRoot, 'warehouse', 'sports.db')",
-      "cutover_blocker": false
-    },
-    {
       "file": "scripts/restore-hf-warehouse.mjs",
       "line": 59,
       "group": "shared_script",
       "text": "const dbTarget = path.join(root, 'data-private', 'warehouse', 'sports.db')",
+      "cutover_blocker": false
+    },
+    {
+      "file": "api/src/lib/paths.ts",
+      "line": 11,
+      "group": "api_runtime",
+      "text": "export const legacyWarehousePath = path.join(dataPrivateRoot, 'warehouse', 'sports.db')",
       "cutover_blocker": false
     },
     {
@@ -4546,10 +4546,31 @@
       "cutover_blocker": false
     },
     {
+      "file": "pipeline/mlb/research/research_mlb_bullpen_shape_model.py",
+      "line": 29,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
       "file": "data-migration/scripts/inspect_legacy_dbs.mjs",
       "line": 12,
       "group": "data_migration_utility",
       "text": "const defaultDbPath = path.join(repoRoot, 'data-private/warehouse/sports.db');",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_bullpen_prediction_audit.py",
+      "line": 11,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_hits_xba_gates.py",
+      "line": 14,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
       "cutover_blocker": false
     },
     {
@@ -4558,6 +4579,314 @@
       "group": "mlb_pipeline_runtime",
       "text": "DB_PATH = WAREHOUSE_DIR / \"sports.db\"",
       "cutover_blocker": true
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_starter_exit_buckets.py",
+      "line": 21,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_tier3_overlays.py",
+      "line": 14,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_hitter_opponent_strength.py",
+      "line": 12,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_hitter_rolling_signal.py",
+      "line": 11,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_stateful_edges.py",
+      "line": 14,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_tier3_features.py",
+      "line": 11,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_first_up_reliever_lineup_matchup.py",
+      "line": 31,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_mistake_shapes.py",
+      "line": 12,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_hitter_last10_windows.py",
+      "line": 12,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "data-migration/scripts/validate_mlb_source_snapshot_coverage.py",
+      "line": 28,
+      "group": "data_migration_utility",
+      "text": "default=ROOT / \"data-private\" / \"warehouse\" / \"sports.db\",",
+      "cutover_blocker": false
+    },
+    {
+      "file": "data-migration/scripts/validate_mlb_source_snapshot_coverage.py",
+      "line": 175,
+      "group": "data_migration_utility",
+      "text": "\"source\": \"data-private/warehouse/sports.db:source_snapshots\",",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_opponent_quality_side_gates.py",
+      "line": 12,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_batter_outcome_gate_sweeps.py",
+      "line": 12,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_story_phase_labels.py",
+      "line": 12,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_first_up_reliever_model.py",
+      "line": 23,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_reliever_pitch_window_patterns.py",
+      "line": 15,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_first_inning_hits.py",
+      "line": 15,
+      "group": "mlb_research_utility",
+      "text": "WAREHOUSE_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_hr_filter_signal.py",
+      "line": 13,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_batter_outcome_baselines.py",
+      "line": 12,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_first_up_reliever_arsenal.py",
+      "line": 32,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_market_context_phase1.py",
+      "line": 10,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_total_run_residuals.py",
+      "line": 15,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_hits_shadow_bundle.py",
+      "line": 14,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_shadow_bundle_sweeps.py",
+      "line": 14,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_bullpen_shape_usage.py",
+      "line": 9,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_market_divergence.py",
+      "line": 13,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_batter_xops_gates.py",
+      "line": 8,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_hitter_statcast_signal.py",
+      "line": 12,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/train_mlb_market_models.py",
+      "line": 43,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_veto_engine.py",
+      "line": 12,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_bounceback_cohorts.py",
+      "line": 12,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_slate_postmortem.py",
+      "line": 15,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_hidden_edges.py",
+      "line": 14,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_side_bounceback_flags.py",
+      "line": 12,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_live_gate_candidates.py",
+      "line": 13,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_first5_state_model.py",
+      "line": 14,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_tier2_features.py",
+      "line": 14,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_first_up_reliever_quality.py",
+      "line": 31,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_first_up_reliever_depth_reset.py",
+      "line": 15,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "pipeline/mlb/research/research_mlb_side_features.py",
+      "line": 14,
+      "group": "mlb_research_utility",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "data-migration/scripts/plan_phase2_table_backfill.mjs",
+      "line": 15,
+      "group": "data_migration_utility",
+      "text": "sourceDb: path.join(repoRoot, 'data-private/warehouse/sports.db'),",
+      "cutover_blocker": false
+    },
+    {
+      "file": "data-migration/scripts/backfill_mlb_output_contract_inventory.mjs",
+      "line": 267,
+      "group": "data_migration_utility",
+      "text": "path: 'data-private/warehouse/sports.db'",
+      "cutover_blocker": false
+    },
+    {
+      "file": "data-migration/scripts/backfill_mlb_replay_state_to_typed.py",
+      "line": 72,
+      "group": "data_migration_utility",
+      "text": "default=ROOT / \"data-private\" / \"warehouse\" / \"sports.db\",",
+      "cutover_blocker": false
+    },
+    {
+      "file": "data-migration/scripts/backfill_mlb_replay_state_to_typed.py",
+      "line": 484,
+      "group": "data_migration_utility",
+      "text": "\"source\": \"data-private/warehouse/sports.db:mlb_plate_appearances,mlb_pitch_events\",",
+      "cutover_blocker": false
     },
     {
       "file": "data-migration/scripts/validate_mlb_core_feed_parity.py",
@@ -4581,62 +4910,6 @@
       "cutover_blocker": false
     },
     {
-      "file": "pipeline/mlb/warehouse/mlb_side_backtest.py",
-      "line": 12,
-      "group": "mlb_pipeline_runtime",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": true
-    },
-    {
-      "file": "data-migration/scripts/backfill_mlb_output_contract_inventory.mjs",
-      "line": 267,
-      "group": "data_migration_utility",
-      "text": "path: 'data-private/warehouse/sports.db'",
-      "cutover_blocker": false
-    },
-    {
-      "file": "data-migration/scripts/plan_phase2_table_backfill.mjs",
-      "line": 15,
-      "group": "data_migration_utility",
-      "text": "sourceDb: path.join(repoRoot, 'data-private/warehouse/sports.db'),",
-      "cutover_blocker": false
-    },
-    {
-      "file": "data-migration/scripts/backfill_mlb_replay_state_to_typed.py",
-      "line": 72,
-      "group": "data_migration_utility",
-      "text": "default=ROOT / \"data-private\" / \"warehouse\" / \"sports.db\",",
-      "cutover_blocker": false
-    },
-    {
-      "file": "data-migration/scripts/backfill_mlb_replay_state_to_typed.py",
-      "line": 484,
-      "group": "data_migration_utility",
-      "text": "\"source\": \"data-private/warehouse/sports.db:mlb_plate_appearances,mlb_pitch_events\",",
-      "cutover_blocker": false
-    },
-    {
-      "file": "data-migration/scripts/validate_mlb_source_snapshot_coverage.py",
-      "line": 28,
-      "group": "data_migration_utility",
-      "text": "default=ROOT / \"data-private\" / \"warehouse\" / \"sports.db\",",
-      "cutover_blocker": false
-    },
-    {
-      "file": "data-migration/scripts/validate_mlb_source_snapshot_coverage.py",
-      "line": 175,
-      "group": "data_migration_utility",
-      "text": "\"source\": \"data-private/warehouse/sports.db:source_snapshots\",",
-      "cutover_blocker": false
-    },
-    {
-      "file": "data-migration/scripts/validate_legacy_prediction_inputs.py",
-      "line": 19,
-      "group": "data_migration_utility",
-      "text": "return root / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
       "file": "data-migration/scripts/validate_sport_db.mjs",
       "line": 24,
       "group": "data_migration_utility",
@@ -4655,6 +4928,20 @@
       "line": 219,
       "group": "data_migration_utility",
       "text": "\"source\": \"data-private/warehouse/sports.db:source_snapshots\",",
+      "cutover_blocker": false
+    },
+    {
+      "file": "data-migration/scripts/validate_legacy_prediction_inputs.py",
+      "line": 19,
+      "group": "data_migration_utility",
+      "text": "return root / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "cutover_blocker": false
+    },
+    {
+      "file": "data-migration/scripts/legacy_prediction_input_backfill.py",
+      "line": 94,
+      "group": "data_migration_utility",
+      "text": "return root / \"data-private\" / \"warehouse\" / \"sports.db\"",
       "cutover_blocker": false
     },
     {
@@ -4700,13 +4987,6 @@
       "cutover_blocker": false
     },
     {
-      "file": "data-migration/scripts/audit_mlb_db_input_cutover.mjs",
-      "line": 40,
-      "group": "data_migration_utility",
-      "text": "description: 'Reads legacy shared sports.db instead of sport-specific sql-mlb.db/duck-mlb.duckdb.',",
-      "cutover_blocker": false
-    },
-    {
       "file": "data-migration/scripts/backfill_mlb_from_sports_db.mjs",
       "line": 15,
       "group": "data_migration_utility",
@@ -4749,197 +5029,15 @@
       "cutover_blocker": false
     },
     {
-      "file": "data-migration/scripts/legacy_prediction_input_backfill.py",
-      "line": 94,
+      "file": "data-migration/scripts/audit_mlb_db_input_cutover.mjs",
+      "line": 40,
       "group": "data_migration_utility",
-      "text": "return root / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "text": "description: 'Reads legacy shared sports.db instead of sport-specific sql-mlb.db/duck-mlb.duckdb.',",
       "cutover_blocker": false
     },
     {
-      "file": "pipeline/mlb/research/research_mlb_market_divergence.py",
+      "file": "models/mlb/cartridges/MLB-M2/research/pitcher_batter_kernel_report.py",
       "line": 13,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_bullpen_shape_model.py",
-      "line": 29,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_batter_outcome_baselines.py",
-      "line": 12,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_side_features.py",
-      "line": 14,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_shadow_bundle_sweeps.py",
-      "line": 14,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/fetchers/fetch_fanduel_research_mlb.py",
-      "line": 26,
-      "group": "mlb_pipeline_runtime",
-      "text": "DB_PATH = WAREHOUSE_DIR / \"sports.db\"",
-      "cutover_blocker": true
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_hitter_last10_windows.py",
-      "line": 12,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_starter_exit_buckets.py",
-      "line": 21,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_hits_shadow_bundle.py",
-      "line": 14,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_bullpen_prediction_audit.py",
-      "line": 11,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_hitter_rolling_signal.py",
-      "line": 11,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_stateful_edges.py",
-      "line": 14,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_hr_filter_signal.py",
-      "line": 13,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_bounceback_cohorts.py",
-      "line": 12,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_first_inning_hits.py",
-      "line": 15,
-      "group": "mlb_research_utility",
-      "text": "WAREHOUSE_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_hits_xba_gates.py",
-      "line": 14,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_hitter_statcast_signal.py",
-      "line": 12,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_first_up_reliever_depth_reset.py",
-      "line": 15,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_story_phase_labels.py",
-      "line": 12,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/fetchers/fetch_historical_mlb_odds.py",
-      "line": 25,
-      "group": "mlb_pipeline_runtime",
-      "text": "DB_PATH = WAREHOUSE_DIR / \"sports.db\"",
-      "cutover_blocker": true
-    },
-    {
-      "file": "pipeline/mlb/research/train_mlb_market_models.py",
-      "line": 43,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_hidden_edges.py",
-      "line": 14,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_tier3_overlays.py",
-      "line": 14,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_batter_outcome_gate_sweeps.py",
-      "line": 12,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_bullpen_shape_usage.py",
-      "line": 9,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_total_run_residuals.py",
-      "line": 15,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_side_bounceback_flags.py",
-      "line": 12,
       "group": "mlb_research_utility",
       "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
       "cutover_blocker": false
@@ -4952,84 +5050,7 @@
       "cutover_blocker": false
     },
     {
-      "file": "pipeline/mlb/research/research_mlb_market_context_phase1.py",
-      "line": 10,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_batter_xops_gates.py",
-      "line": 8,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_slate_postmortem.py",
-      "line": 15,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_first_up_reliever_model.py",
-      "line": 23,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_live_gate_candidates.py",
-      "line": 13,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_veto_engine.py",
-      "line": 12,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_first_up_reliever_arsenal.py",
-      "line": 32,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_reliever_pitch_window_patterns.py",
-      "line": 15,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_hitter_opponent_strength.py",
-      "line": 12,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_first_up_reliever_quality.py",
-      "line": 31,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "models/mlb/cartridges/MLB-M2/research/pitcher_batter_kernel_report.py",
-      "line": 13,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_first5_state_model.py",
+      "file": "models/mlb/cartridges/MLB-M2/research/player_identity_rows_report.py",
       "line": 14,
       "group": "mlb_research_utility",
       "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
@@ -5043,36 +5064,15 @@
       "cutover_blocker": false
     },
     {
-      "file": "pipeline/mlb/research/research_mlb_first_up_reliever_lineup_matchup.py",
-      "line": 31,
+      "file": "models/mlb/cartridges/MLB-M2/research/game_shape_dimension_search.mjs",
+      "line": 180,
       "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
+      "text": "const dbPath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db')",
       "cutover_blocker": false
     },
     {
-      "file": "pipeline/mlb/research/research_mlb_tier3_features.py",
-      "line": 11,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_mistake_shapes.py",
-      "line": 12,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_tier2_features.py",
-      "line": 14,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "pipeline/mlb/research/research_mlb_opponent_quality_side_gates.py",
-      "line": 12,
+      "file": "models/mlb/cartridges/MLB-M2/research/may31_f5_stress_harness.py",
+      "line": 26,
       "group": "mlb_research_utility",
       "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
       "cutover_blocker": false
@@ -5085,10 +5085,10 @@
       "cutover_blocker": false
     },
     {
-      "file": "models/mlb/cartridges/MLB-M2/research/game_shape_vector_trends.mjs",
-      "line": 81,
+      "file": "models/mlb/cartridges/MLB-M2/research/state_formula_parallel_model.py",
+      "line": 30,
       "group": "mlb_research_utility",
-      "text": "const dbPath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db')",
+      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
       "cutover_blocker": false
     },
     {
@@ -5099,21 +5099,14 @@
       "cutover_blocker": false
     },
     {
+      "file": "models/mlb/cartridges/MLB-M2/research/may31_team_run_truth_audit.mjs",
+      "line": 54,
+      "group": "mlb_research_utility",
+      "text": "execFileSync('sqlite3', ['-json', path.join(rootDir, 'data-private', 'warehouse', 'sports.db'), sql], {",
+      "cutover_blocker": false
+    },
+    {
       "file": "models/mlb/cartridges/MLB-M2/research/state_formula_rows_report.py",
-      "line": 14,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "models/mlb/cartridges/MLB-M2/research/phase_shape_vector_search.mjs",
-      "line": 223,
-      "group": "mlb_research_utility",
-      "text": "const dbPath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db')",
-      "cutover_blocker": false
-    },
-    {
-      "file": "models/mlb/cartridges/MLB-M2/research/player_identity_rows_report.py",
       "line": 14,
       "group": "mlb_research_utility",
       "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
@@ -5127,29 +5120,15 @@
       "cutover_blocker": false
     },
     {
-      "file": "models/mlb/cartridges/MLB-M2/research/may31_team_run_truth_audit.mjs",
-      "line": 54,
+      "file": "models/mlb/cartridges/MLB-M2/research/game_shape_vector_trends.mjs",
+      "line": 81,
       "group": "mlb_research_utility",
-      "text": "execFileSync('sqlite3', ['-json', path.join(rootDir, 'data-private', 'warehouse', 'sports.db'), sql], {",
+      "text": "const dbPath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db')",
       "cutover_blocker": false
     },
     {
-      "file": "models/mlb/cartridges/MLB-M2/research/state_formula_parallel_model.py",
-      "line": 30,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "models/mlb/cartridges/MLB-M2/research/may31_f5_stress_harness.py",
-      "line": 26,
-      "group": "mlb_research_utility",
-      "text": "DB_PATH = ROOT / \"data-private\" / \"warehouse\" / \"sports.db\"",
-      "cutover_blocker": false
-    },
-    {
-      "file": "models/mlb/cartridges/MLB-M2/research/game_shape_dimension_search.mjs",
-      "line": 180,
+      "file": "models/mlb/cartridges/MLB-M2/research/phase_shape_vector_search.mjs",
+      "line": 223,
       "group": "mlb_research_utility",
       "text": "const dbPath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db')",
       "cutover_blocker": false
@@ -5185,6 +5164,10 @@
     "market_price_ticks",
     "market_snapshots",
     "migration_runs",
+    "mlb_featured_market_odds_snapshots",
+    "mlb_player_prop_odds_snapshots",
+    "mlb_side_backtests",
+    "mlb_side_predictions",
     "model_artifacts",
     "model_component_runs",
     "model_run_artifacts",

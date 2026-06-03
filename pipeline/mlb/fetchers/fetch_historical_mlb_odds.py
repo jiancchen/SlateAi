@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = ROOT / "data-private"
 RAW_DIR = DATA_DIR / "raw" / "odds"
 WAREHOUSE_DIR = DATA_DIR / "warehouse"
-DB_PATH = WAREHOUSE_DIR / "sports.db"
+DB_PATH = WAREHOUSE_DIR / "sports" / "mlb" / "sql-mlb.db"
 USER_AGENT = "SportsTradingBoardBot/1.0 historical-odds-loader"
 
 SPORT_KEY = "baseball_mlb"
@@ -144,7 +144,7 @@ def parse_args() -> argparse.Namespace:
 
 
 def get_connection() -> sqlite3.Connection:
-    WAREHOUSE_DIR.mkdir(parents=True, exist_ok=True)
+    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     conn.executescript(SCHEMA)
