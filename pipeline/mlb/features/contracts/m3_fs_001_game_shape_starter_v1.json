@@ -16,6 +16,8 @@
     "away_starter_",
     "home_bullpen_",
     "away_bullpen_",
+    "home_reliever_",
+    "away_reliever_",
     "home_lineup_",
     "away_lineup_",
     "market_"
@@ -77,6 +79,7 @@
     "starting_pitcher_game_logs",
     "pitcher_appearances",
     "pitcher_pitch_mix_snapshots",
+    "reliever_command_profiles",
     "player_pitch_type_response_snapshots",
     "lineup_matchup_snapshots",
     "team_opponent_quality_snapshots",
@@ -115,6 +118,7 @@
     "opponent_matchup_quality",
     "replay_attribution",
     "bullpen_shape",
+    "reliever_performance_state",
     "lineup_context",
     "market_context"
   ],
@@ -126,6 +130,7 @@
         "run_environment",
         "starter_failure",
         "bullpen_exposure",
+        "reliever_chain_break",
         "late_volatility",
         "chaos_game"
       ]
@@ -150,6 +155,33 @@
         "hits_allowed",
         "walks_allowed",
         "home_runs_allowed"
+      ]
+    },
+    {
+      "distribution_id": "reliever_chain_distribution",
+      "grain": "team_game",
+      "examples": [
+        "first_reliever_entry_state",
+        "first_reliever_batters_faced",
+        "first_reliever_pitches",
+        "inherited_runner_damage",
+        "second_reliever_probability",
+        "chain_break_probability",
+        "handedness_pocket_fit"
+      ]
+    },
+    {
+      "distribution_id": "reliever_stat_distribution",
+      "grain": "reliever_game",
+      "examples": [
+        "outs_recorded",
+        "pitches",
+        "batters_faced",
+        "strikeouts",
+        "walks_allowed",
+        "hits_allowed",
+        "runs_allowed",
+        "inherited_runners_scored"
       ]
     },
     {
@@ -184,7 +216,8 @@
       "family_id": "game_markets",
       "resolved_from_distributions": [
         "game_shape_distribution",
-        "team_run_distribution"
+        "team_run_distribution",
+        "reliever_chain_distribution"
       ],
       "examples": [
         "full_game_total",
@@ -197,7 +230,8 @@
       "family_id": "starter_props",
       "resolved_from_distributions": [
         "starter_stat_distribution",
-        "game_shape_distribution"
+        "game_shape_distribution",
+        "reliever_chain_distribution"
       ],
       "examples": [
         "strikeouts",
@@ -212,7 +246,9 @@
       "resolved_from_distributions": [
         "hitter_stat_distribution",
         "pa_event_distribution",
-        "team_run_distribution"
+        "team_run_distribution",
+        "reliever_chain_distribution",
+        "reliever_stat_distribution"
       ],
       "examples": [
         "hits",
@@ -223,6 +259,23 @@
         "walks",
         "strikeouts"
       ]
+    },
+    {
+      "family_id": "reliever_props",
+      "resolved_from_distributions": [
+        "reliever_chain_distribution",
+        "reliever_stat_distribution",
+        "game_shape_distribution"
+      ],
+      "examples": [
+        "outs_recorded",
+        "pitches",
+        "batters_faced",
+        "strikeouts",
+        "walks_allowed",
+        "hits_allowed",
+        "earned_runs"
+      ]
     }
   ],
   "distribution_bridge_policy": {
@@ -231,12 +284,16 @@
     "required_consistency": [
       "hitter props consume player PA/event/stat distributions",
       "starter props consume starter state/stat distributions",
-      "game and team markets consume shared run/game-shape distributions"
+      "reliever props consume relief-chain and reliever stat distributions",
+      "game and team markets consume shared run/game-shape and relief-chain distributions",
+      "hitter props consume likely starter and reliever PA/event mix distributions"
     ]
   },
   "required_report_fields": [
     "evidence_coverage",
     "matchup_coverage",
+    "reliever_chain_coverage",
+    "reliever_arm_coverage",
     "attribution_coverage",
     "distribution_contract_coverage",
     "prop_contract_coverage",
@@ -249,6 +306,8 @@
     "Residual columns describe state evidence versus baseline.",
     "Talent is represented as surfaces and distributions, not a single baseline number.",
     "Player and pitcher props are downstream contracts over shared distributions.",
+    "Reliever performance is a first-class individual-arm state surface, not only a team bullpen aggregate.",
+    "Relief-chain outputs must represent likely entry state, workload, inherited-runner damage, and chain-break risk.",
     "Evidence coverage is required so sparse data cannot masquerade as stable form.",
     "No M2 weights, fixed memory lengths, or hand-tuned conclusions are part of this contract."
   ]

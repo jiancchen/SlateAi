@@ -134,6 +134,8 @@ def build_skeleton_report(args: argparse.Namespace) -> dict[str, Any]:
         "uses_sports_db": False,
         "evidence_coverage": {},
         "matchup_coverage": {},
+        "reliever_chain_coverage": {},
+        "reliever_arm_coverage": {},
         "attribution_coverage": {},
         "distribution_contract_coverage": {},
         "prop_contract_coverage": {},

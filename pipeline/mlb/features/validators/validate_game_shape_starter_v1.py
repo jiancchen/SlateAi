@@ -172,13 +172,96 @@ def validate_contract(contract: dict[str, Any]) -> dict[str, Any]:
             "state_memory_encoders does not include reaction_to_prior_performance."
         )
 
+    source_tables = contract.get("source_tables", [])
+    if not isinstance(source_tables, list) or not source_tables:
+        errors.append("source_tables must be a non-empty list.")
+        source_table_ids: set[str] = set()
+    else:
+        source_table_ids = {table for table in source_tables if isinstance(table, str)}
+
+    required_reliever_sources = {
+        "pitcher_appearances",
+        "pitcher_pitch_mix_snapshots",
+        "reliever_command_profiles",
+        "likely_relief_chains",
+    }
+    missing_reliever_sources = sorted(required_reliever_sources - source_table_ids)
+    if missing_reliever_sources:
+        errors.append(
+            "Reliever state contract is missing source tables: "
+            + ", ".join(missing_reliever_sources)
+        )
+
+    feature_families = contract.get("feature_families", [])
+    if not isinstance(feature_families, list) or not feature_families:
+        errors.append("feature_families must be a non-empty list.")
+        feature_family_ids: set[str] = set()
+    else:
+        feature_family_ids = {
+            family for family in feature_families if isinstance(family, str)
+        }
+
+    if "reliever_performance_state" not in feature_family_ids:
+        errors.append(
+            "feature_families must include reliever_performance_state."
+        )
+
     distribution_families = contract.get("downstream_distribution_families", [])
     if not isinstance(distribution_families, list) or not distribution_families:
         errors.append("downstream_distribution_families must be a non-empty list.")
+        distribution_ids: set[str] = set()
+    else:
+        distribution_ids = {
+            item.get("distribution_id")
+            for item in distribution_families
+            if isinstance(item, dict) and isinstance(item.get("distribution_id"), str)
+        }
+
+    required_reliever_distributions = {
+        "reliever_chain_distribution",
+        "reliever_stat_distribution",
+    }
+    missing_reliever_distributions = sorted(
+        required_reliever_distributions - distribution_ids
+    )
+    if missing_reliever_distributions:
+        errors.append(
+            "downstream_distribution_families must include reliever distributions: "
+            + ", ".join(missing_reliever_distributions)
+        )
 
     prop_families = contract.get("prop_contract_families", [])
     if not isinstance(prop_families, list) or not prop_families:
         errors.append("prop_contract_families must be a non-empty list.")
+        prop_family_ids: set[str] = set()
+        prop_resolutions: dict[str, set[str]] = {}
+    else:
+        prop_family_ids = {
+            item.get("family_id")
+            for item in prop_families
+            if isinstance(item, dict) and isinstance(item.get("family_id"), str)
+        }
+        prop_resolutions = {
+            item["family_id"]: {
+                distribution
+                for distribution in item.get("resolved_from_distributions", [])
+                if isinstance(distribution, str)
+            }
+            for item in prop_families
+            if isinstance(item, dict)
+            and isinstance(item.get("family_id"), str)
+            and isinstance(item.get("resolved_from_distributions"), list)
+        }
+
+    if "reliever_props" not in prop_family_ids:
+        errors.append("prop_contract_families must include reliever_props.")
+
+    for family_id in ("game_markets", "hitter_props"):
+        resolved_from = prop_resolutions.get(family_id, set())
+        if "reliever_chain_distribution" not in resolved_from:
+            errors.append(
+                f"{family_id} must resolve from reliever_chain_distribution."
+            )
 
     bridge_policy = contract.get("distribution_bridge_policy", {})
     if not isinstance(bridge_policy, dict):
@@ -214,6 +297,12 @@ def validate_contract(contract: dict[str, Any]) -> dict[str, Any]:
             and bool(distribution_families),
             "prop_contracts_declared": isinstance(prop_families, list)
             and bool(prop_families),
+            "reliever_sources_declared": not missing_reliever_sources,
+            "reliever_feature_family_declared": (
+                "reliever_performance_state" in feature_family_ids
+            ),
+            "reliever_distributions_declared": not missing_reliever_distributions,
+            "reliever_prop_contract_declared": "reliever_props" in prop_family_ids,
             "props_are_distribution_contracts": isinstance(bridge_policy, dict)
             and bridge_policy.get("props_are_distribution_contracts") is True,
             "no_isolated_prop_models": isinstance(bridge_policy, dict)
