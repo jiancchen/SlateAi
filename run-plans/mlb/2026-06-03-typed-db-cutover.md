@@ -37,6 +37,7 @@ Current audit state:
 - Open migration-attention rows: zero.
 - Active-profile direct `sports.db` runtime hits: zero.
 - Active-profile legacy warehouse CLI callers: zero.
+- Active-profile audit now includes `package.json`, so direct legacy package aliases are covered by the report.
 - Active-profile public/private/generated artifact input callers remain in M2 snapshot and workflow surfaces.
 - Full-profile legacy `sports.db` hits remain broad historical/research surface debt, not all active runtime gates.
 - Remaining warehouse debt is the legacy monolith plus explicit archive-M2 compatibility boundaries for commands that are not M3 typed replacements, not a safe mechanical path swap:

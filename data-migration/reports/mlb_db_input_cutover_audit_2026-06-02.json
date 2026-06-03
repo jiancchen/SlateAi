@@ -1,13 +1,14 @@
 {
-  "generated_at": "2026-06-03T05:59:59.359Z",
+  "generated_at": "2026-06-03T06:01:54.433Z",
   "script": "data-migration/scripts/audit_mlb_db_input_cutover.mjs",
   "profile": "full",
   "targets": [
+    "package.json",
     "models/mlb/cartridges/MLB-M2",
     "models/mlb/cartridges/MLB-M0",
     "pipeline/mlb"
   ],
-  "scanned_file_count": 205,
+  "scanned_file_count": 206,
   "files_with_hits": 108,
   "summary": {
     "byPattern": {

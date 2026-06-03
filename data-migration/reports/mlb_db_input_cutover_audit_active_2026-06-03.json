@@ -1,8 +1,9 @@
 {
-  "generated_at": "2026-06-03T05:59:59.287Z",
+  "generated_at": "2026-06-03T06:01:54.365Z",
   "script": "data-migration/scripts/audit_mlb_db_input_cutover.mjs",
   "profile": "active",
   "targets": [
+    "package.json",
     "pipeline/lib/load-mlb-day-games.mjs",
     "models/mlb/run-cartridge.mjs",
     "models/mlb/db/day-games.mjs",
@@ -23,7 +24,7 @@
     "models/mlb/cartridges/MLB-M2/snapshot.mjs",
     "models/mlb/cartridges/MLB-M2/snapshot-run.mjs"
   ],
-  "scanned_file_count": 19,
+  "scanned_file_count": 20,
   "files_with_hits": 15,
   "summary": {
     "byPattern": {

@@ -7,12 +7,14 @@ const __filename = fileURLToPath(import.meta.url)
 const rootDir = path.resolve(path.dirname(__filename), '..', '..')
 
 const DEFAULT_TARGETS = [
+  'package.json',
   'models/mlb/cartridges/MLB-M2',
   'models/mlb/cartridges/MLB-M0',
   'pipeline/mlb'
 ]
 
 const ACTIVE_TARGETS = [
+  'package.json',
   'pipeline/lib/load-mlb-day-games.mjs',
   'models/mlb/run-cartridge.mjs',
   'models/mlb/db/day-games.mjs',

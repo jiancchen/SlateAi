@@ -75,6 +75,7 @@ flowchart TD
 
 - Active direct `sports.db` runtime reads: zero.
 - Active legacy warehouse CLI callers: zero.
+- Active audit targets include `package.json`, so direct package-script legacy calls are covered.
 - M2-only feature/import/grade package aliases and workflow calls are quarantined behind `models/mlb/cartridges/MLB-M2/workflows/archive-m2/legacy-warehouse.mjs`.
 - Active generated/public/private artifact inputs still remain in snapshot, history, verify, follow-up, and day-file surfaces; those are the next DB-input cutover targets.
 
