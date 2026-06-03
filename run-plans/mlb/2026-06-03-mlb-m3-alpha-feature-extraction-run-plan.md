@@ -35,6 +35,8 @@ Allowed:
 - `market_total_latest_pregame`
 - `home_lineup_known_slot_count`
 
+These are example factual columns, not a claim that `last5` or `last10` is the right window. Window sizes must come from the declared window policy and be tested.
+
 Not allowed:
 
 - `chaos_score = 0.35 * bullpen + 0.25 * starter + 0.40 * bats`
@@ -230,7 +232,17 @@ Required fields:
     "historical_only",
     "postgame_target",
     "excluded"
-  ]
+  ],
+  "window_policy": {
+    "window_set_id": "m3_alpha_windows_v1",
+    "team_game_windows": [1, 2, 3, 5, 7, 10, 14],
+    "starter_start_windows": [1, 2, 3, 5, 7, 10],
+    "bullpen_game_windows": [1, 2, 3, 5, 7, 10, 14],
+    "lineup_pa_windows": [3, 5, 7, 10],
+    "sequence_depths": [3, 5],
+    "slope_windows": [3, 5, 7],
+    "tail_event_windows": [5, 10, 14]
+  }
 }
 ```
 
@@ -240,12 +252,14 @@ The contract should also include:
 - feature names
 - target names
 - null rules
-- lookback windows
+- lookback window policy and candidate window sets
 - leakage class for every column
 - owner notes
 - validator list
 
 Side-specific features must be emitted with `home_` and `away_` prefixes at game grain. Generic names in this plan are only logical stems; the actual matrix should use columns like `home_team_runs_for_avg_last5` and `away_team_runs_for_avg_last5`.
+
+Lookback windows are not fixed baseball truths. The contract must declare a `window_set_id`, candidate windows, and which feature families use each window set. Window choices are hypotheses that must be compared in backtests or ablations.
 
 ## Source Tables
 
@@ -365,19 +379,63 @@ home_starter_runs_allowed_last1_vs_prev4_delta
 
 This is still allowed M3 behavior because these are factual feature definitions. It is not allowed to collapse them into a hand-tuned conclusion such as `starter_regression_score`.
 
+## Window Hypothesis Rule
+
+M3 must not silently pick `last5`, `last10`, or any other window because it feels reasonable. Window size is itself a feature-design hypothesis.
+
+The first contract should declare explicit candidate window sets:
+
+```json
+{
+  "window_set_id": "m3_alpha_windows_v1",
+  "team_game_windows": [1, 2, 3, 5, 7, 10, 14],
+  "starter_start_windows": [1, 2, 3, 5, 7, 10],
+  "bullpen_game_windows": [1, 2, 3, 5, 7, 10, 14],
+  "lineup_pa_windows": [3, 5, 7, 10],
+  "sequence_depths": [3, 5],
+  "slope_windows": [3, 5, 7],
+  "tail_event_windows": [5, 10, 14]
+}
+```
+
+Rules:
+
+- generate each window from the same source fact definition
+- include sample-count columns for every windowed feature
+- keep window suffixes explicit in column names
+- do not promote one window family without a backtest or ablation report
+- allow an `alpha_small` window set for fast development, but record that choice in the report
+- do not interpret a selected window as permanent; it can change by target family, season, market, and model class
+
+Example:
+
+```text
+home_team_runs_for_avg_last3
+home_team_runs_for_avg_last5
+home_team_runs_for_avg_last7
+home_team_runs_for_avg_last10
+home_team_runs_for_sample_count_last10
+```
+
+The point is to let the system test whether `3`, `5`, `7`, or a longer memory actually carries edge, instead of hard-coding the answer before the model sees data.
+
 ### 3. Team Recent Run Shape
 
 Purpose: describe recent team scoring and run prevention shape without reducing it to one average.
 
 Use only games before the target game date.
 
-Windows:
+Initial candidate windows, not final truth:
 
+- last 1 game
+- last 2 games
 - last 3 games
 - last 5 games
+- last 7 games
 - last 10 games
+- last 14 games
 
-Example columns for each team and window:
+Example columns for each team and window. The `last5` examples below are one candidate window, not the canonical window:
 
 ```text
 home_team_runs_for_avg_last5
@@ -426,6 +484,7 @@ Rules:
 - if not enough history, keep sample-count columns
 - do not apply manual shrinkage weights in the feature builder
 - include slope/delta features so streaks and current direction are learnable
+- emit and track multiple candidate windows; window size is tested later, not assumed here
 - expose sample size so model can learn reliability
 
 ### 4. Starter Path
@@ -503,6 +562,7 @@ Rules:
 - preserve ordered starter trajectory; `last1` is the most recent prior start, not an arbitrary row order
 - compute slopes over ordered prior starts using declared windows; slope columns are feature facts, not model conclusions
 - include deltas that separate "blowup just happened" from "blowup five starts ago"
+- build starter windows from `starter_start_windows`; do not treat `last5` as canonical without ablation evidence
 - no manual "starter stability score"
 - no manual "progression" or "regression" label in alpha unless it is a target label in a later supervised task
 - no M2 starter labels unless rebuilt as explicit target labels later
@@ -559,6 +619,7 @@ Rules:
 - preserve raw typed table values
 - do not produce one composite "bullpen score" in alpha
 - include trajectory features for workload and damage, not only recent averages
+- build bullpen windows from `bullpen_game_windows`; do not assume one lookback is best
 - include availability and sample-count fields
 
 ### 6. Lineup And PA Volume Context
@@ -726,6 +787,7 @@ Gate:
 
 Deliverables:
 
+- declared window set loaded from the feature contract
 - rolling team windows
 - sample counts
 - no same-game leakage check
@@ -733,6 +795,7 @@ Deliverables:
 Gate:
 
 - every rolling feature declares window
+- every generated window has a matching sample-count field
 - each game only uses prior games
 - missing sample count is explicit
 
@@ -922,6 +985,8 @@ Metrics later:
 - calibration by total bucket
 - tail recall for high and chaos games
 - market line residual by line bucket
+- window-size ablation by feature family and target
+- stability of selected windows across chronological folds
 
 ## M2 Use Policy
 
@@ -992,6 +1057,7 @@ These are the follow-ups from the run-plan audit before implementation starts:
 
 - Confirm Python package importability before keeping the `python3 -m pipeline.mlb.features...` command.
 - Inspect the alpha source tables and write down exact column mappings before SQL work starts.
+- Declare the first `window_set_id` in the contract and decide whether the initial dry run uses `alpha_small` or the fuller candidate grid.
 - Confirm market timestamp semantics and choose either canonical `market_*` tables, no-market v0.1.0, or typed `mlb_featured_market_odds_snapshots` fallback.
 - Confirm local Parquet support (`pyarrow`, `fastparquet`, or DuckDB export) in the workspace runtime before choosing the writer implementation.
 - Create the contract JSON first, then make the builder validate against it.
@@ -1016,6 +1082,7 @@ The first M3 feature set is accepted when:
 
 - `M3-FS-001` builds from typed DB only
 - row and target counts are explainable
+- candidate window sets are declared and recorded in the build report
 - all feature columns have dictionary entries
 - all target columns are isolated
 - leakage report passes
