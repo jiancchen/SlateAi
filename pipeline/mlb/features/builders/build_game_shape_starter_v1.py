@@ -122,12 +122,21 @@ def build_skeleton_report(args: argparse.Namespace) -> dict[str, Any]:
         "state_memory_encoders": contract.get("evidence_policy", {}).get(
             "state_memory_encoders", []
         ),
+        "downstream_distribution_families": contract.get(
+            "downstream_distribution_families", []
+        ),
+        "prop_contract_families": contract.get("prop_contract_families", []),
+        "distribution_bridge_policy": contract.get(
+            "distribution_bridge_policy", {}
+        ),
         "uses_hand_picked_memory_lengths": False,
         "uses_m2_weights": False,
         "uses_sports_db": False,
         "evidence_coverage": {},
         "matchup_coverage": {},
         "attribution_coverage": {},
+        "distribution_contract_coverage": {},
+        "prop_contract_coverage": {},
         "missingness": {},
         "leakage_checks": {
             "no_feature_extraction_in_skeleton": True,

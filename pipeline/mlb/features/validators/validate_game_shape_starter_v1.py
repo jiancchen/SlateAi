@@ -33,6 +33,9 @@ REQUIRED_TOP_LEVEL_KEYS = {
     "source_tables",
     "targets",
     "feature_families",
+    "downstream_distribution_families",
+    "prop_contract_families",
+    "distribution_bridge_policy",
     "required_report_fields",
 }
 
@@ -169,6 +172,27 @@ def validate_contract(contract: dict[str, Any]) -> dict[str, Any]:
             "state_memory_encoders does not include reaction_to_prior_performance."
         )
 
+    distribution_families = contract.get("downstream_distribution_families", [])
+    if not isinstance(distribution_families, list) or not distribution_families:
+        errors.append("downstream_distribution_families must be a non-empty list.")
+
+    prop_families = contract.get("prop_contract_families", [])
+    if not isinstance(prop_families, list) or not prop_families:
+        errors.append("prop_contract_families must be a non-empty list.")
+
+    bridge_policy = contract.get("distribution_bridge_policy", {})
+    if not isinstance(bridge_policy, dict):
+        errors.append("distribution_bridge_policy must be an object.")
+    else:
+        if bridge_policy.get("props_are_distribution_contracts") is not True:
+            errors.append(
+                "distribution_bridge_policy.props_are_distribution_contracts must be true."
+            )
+        if bridge_policy.get("no_isolated_prop_models") is not True:
+            errors.append(
+                "distribution_bridge_policy.no_isolated_prop_models must be true."
+            )
+
     return {
         "ok": not errors,
         "errors": errors,
@@ -184,6 +208,16 @@ def validate_contract(contract: dict[str, Any]) -> dict[str, Any]:
             )
             if isinstance(targets, list)
             else False,
+            "distribution_contracts_declared": isinstance(
+                distribution_families, list
+            )
+            and bool(distribution_families),
+            "prop_contracts_declared": isinstance(prop_families, list)
+            and bool(prop_families),
+            "props_are_distribution_contracts": isinstance(bridge_policy, dict)
+            and bridge_policy.get("props_are_distribution_contracts") is True,
+            "no_isolated_prop_models": isinstance(bridge_policy, dict)
+            and bridge_policy.get("no_isolated_prop_models") is True,
             "side_prefixes": not errors
             or not any("Side-specific feature prefixes" in error for error in errors),
         },

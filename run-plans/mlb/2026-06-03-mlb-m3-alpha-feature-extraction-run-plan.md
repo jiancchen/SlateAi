@@ -90,6 +90,26 @@ Out of scope for the first matrix:
 - simulator event generation
 - hand-built composite scores
 
+Important: "out of scope" does not mean "bolted on later." Player props, pitcher props, game totals, team totals, and moneyline-style outputs must be declared as downstream contracts over shared distributions. M3-FS-001 should not build those prop features yet, but it must keep the distribution bridge visible so future prop layers consume the same game/team/starter/player event distributions.
+
+Downstream output families to keep declared from Step 1:
+
+- game markets: full-game total, first-five total, team total, moneyline
+- starter props: strikeouts, outs recorded, earned runs, hits allowed, walks allowed
+- hitter props: hits, total bases, home run, RBI, runs, walks, strikeouts
+
+Distribution rule:
+
+```text
+shared state system -> event/stat distributions -> prop contracts -> market pricing/backtest
+```
+
+Not:
+
+```text
+one isolated model per prop market
+```
+
 ## Definition Of Done
 
 The alpha feature extraction work is done when the repo has:
@@ -255,6 +275,8 @@ The contract should also include:
 - source tables
 - feature names
 - target names
+- downstream distribution families
+- downstream prop contract families
 - null rules
 - state evidence policy and baseline/residual definitions
 - leakage class for every column

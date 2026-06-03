@@ -6,8 +6,12 @@
   "contract_uri": "/Users/jcchen/Documents/New project/pipeline/mlb/features/contracts/m3_fs_001_game_shape_starter_v1.json",
   "contract_validation": {
     "checks": {
+      "distribution_contracts_declared": true,
       "no_fixed_memory_policy_aliases": true,
       "no_forbidden_memory_terms": true,
+      "no_isolated_prop_models": true,
+      "prop_contracts_declared": true,
+      "props_are_distribution_contracts": true,
       "required_evidence_policy_keys": true,
       "required_top_level_keys": true,
       "side_prefixes": true,
@@ -17,6 +21,77 @@
     "ok": true,
     "warnings": []
   },
+  "distribution_bridge_policy": {
+    "no_isolated_prop_models": true,
+    "props_are_distribution_contracts": true,
+    "required_consistency": [
+      "hitter props consume player PA/event/stat distributions",
+      "starter props consume starter state/stat distributions",
+      "game and team markets consume shared run/game-shape distributions"
+    ]
+  },
+  "distribution_contract_coverage": {},
+  "downstream_distribution_families": [
+    {
+      "distribution_id": "game_shape_distribution",
+      "examples": [
+        "run_environment",
+        "starter_failure",
+        "bullpen_exposure",
+        "late_volatility",
+        "chaos_game"
+      ],
+      "grain": "game"
+    },
+    {
+      "distribution_id": "team_run_distribution",
+      "examples": [
+        "full_game_runs",
+        "first_five_runs",
+        "late_runs",
+        "team_plate_appearances"
+      ],
+      "grain": "team_game"
+    },
+    {
+      "distribution_id": "starter_stat_distribution",
+      "examples": [
+        "strikeouts",
+        "outs_recorded",
+        "earned_runs",
+        "hits_allowed",
+        "walks_allowed",
+        "home_runs_allowed"
+      ],
+      "grain": "starter_game"
+    },
+    {
+      "distribution_id": "hitter_stat_distribution",
+      "examples": [
+        "hits",
+        "total_bases",
+        "home_runs",
+        "rbi",
+        "runs",
+        "walks",
+        "strikeouts"
+      ],
+      "grain": "player_game"
+    },
+    {
+      "distribution_id": "pa_event_distribution",
+      "examples": [
+        "single",
+        "double",
+        "triple",
+        "home_run",
+        "walk",
+        "strikeout",
+        "ball_in_play_out"
+      ],
+      "grain": "plate_appearance"
+    }
+  ],
   "end_date": "2026-05-31",
   "errors": [],
   "evidence_coverage": {},
@@ -24,8 +99,8 @@
   "feature_count": 0,
   "feature_set_id": "m3_fs_001_game_shape_starter_v1",
   "feature_set_version": "0.1.0",
-  "finished_at": "2026-06-03T07:08:54+00:00",
-  "git_sha": "9d652383c90937a5330cac7057873afa485b0175",
+  "finished_at": "2026-06-03T07:22:01+00:00",
+  "git_sha": "afbd52632cd464347d9e56d6fe6e26aa7b934065",
   "leakage_checks": {
     "as_of_policy_declared": true,
     "no_feature_extraction_in_skeleton": true,
@@ -41,8 +116,55 @@
   "missingness": {},
   "ok": true,
   "output_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_001_game_shape_starter_v1",
+  "prop_contract_coverage": {},
+  "prop_contract_families": [
+    {
+      "examples": [
+        "full_game_total",
+        "first_five_total",
+        "team_total",
+        "moneyline"
+      ],
+      "family_id": "game_markets",
+      "resolved_from_distributions": [
+        "game_shape_distribution",
+        "team_run_distribution"
+      ]
+    },
+    {
+      "examples": [
+        "strikeouts",
+        "outs_recorded",
+        "earned_runs",
+        "hits_allowed",
+        "walks_allowed"
+      ],
+      "family_id": "starter_props",
+      "resolved_from_distributions": [
+        "starter_stat_distribution",
+        "game_shape_distribution"
+      ]
+    },
+    {
+      "examples": [
+        "hits",
+        "total_bases",
+        "home_run",
+        "rbi",
+        "runs",
+        "walks",
+        "strikeouts"
+      ],
+      "family_id": "hitter_props",
+      "resolved_from_distributions": [
+        "hitter_stat_distribution",
+        "pa_event_distribution",
+        "team_run_distribution"
+      ]
+    }
+  ],
   "report_uri": "/Users/jcchen/Documents/New project/data-migration/reports/m3_fs_001_game_shape_starter_v1_2026-03-26_to_2026-05-31.json",
-  "run_id": "m3_fs_001_game_shape_starter_v1_skeleton_2026-06-03T07:08:54+00:00",
+  "run_id": "m3_fs_001_game_shape_starter_v1_skeleton_2026-06-03T07:22:01+00:00",
   "run_type": "feature_build_skeleton",
   "source_db": "/Users/jcchen/Documents/New project/data-private/warehouse/sports/mlb/sql-mlb.db",
   "source_db_exists": true,
@@ -79,7 +201,7 @@
     "market_price_ticks"
   ],
   "start_date": "2026-03-26",
-  "started_at": "2026-06-03T07:08:54+00:00",
+  "started_at": "2026-06-03T07:22:01+00:00",
   "state_memory_encoders": [
     "ordered_event_sequence",
     "entity_state_transition_history",

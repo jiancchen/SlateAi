@@ -118,10 +118,128 @@
     "lineup_context",
     "market_context"
   ],
+  "downstream_distribution_families": [
+    {
+      "distribution_id": "game_shape_distribution",
+      "grain": "game",
+      "examples": [
+        "run_environment",
+        "starter_failure",
+        "bullpen_exposure",
+        "late_volatility",
+        "chaos_game"
+      ]
+    },
+    {
+      "distribution_id": "team_run_distribution",
+      "grain": "team_game",
+      "examples": [
+        "full_game_runs",
+        "first_five_runs",
+        "late_runs",
+        "team_plate_appearances"
+      ]
+    },
+    {
+      "distribution_id": "starter_stat_distribution",
+      "grain": "starter_game",
+      "examples": [
+        "strikeouts",
+        "outs_recorded",
+        "earned_runs",
+        "hits_allowed",
+        "walks_allowed",
+        "home_runs_allowed"
+      ]
+    },
+    {
+      "distribution_id": "hitter_stat_distribution",
+      "grain": "player_game",
+      "examples": [
+        "hits",
+        "total_bases",
+        "home_runs",
+        "rbi",
+        "runs",
+        "walks",
+        "strikeouts"
+      ]
+    },
+    {
+      "distribution_id": "pa_event_distribution",
+      "grain": "plate_appearance",
+      "examples": [
+        "single",
+        "double",
+        "triple",
+        "home_run",
+        "walk",
+        "strikeout",
+        "ball_in_play_out"
+      ]
+    }
+  ],
+  "prop_contract_families": [
+    {
+      "family_id": "game_markets",
+      "resolved_from_distributions": [
+        "game_shape_distribution",
+        "team_run_distribution"
+      ],
+      "examples": [
+        "full_game_total",
+        "first_five_total",
+        "team_total",
+        "moneyline"
+      ]
+    },
+    {
+      "family_id": "starter_props",
+      "resolved_from_distributions": [
+        "starter_stat_distribution",
+        "game_shape_distribution"
+      ],
+      "examples": [
+        "strikeouts",
+        "outs_recorded",
+        "earned_runs",
+        "hits_allowed",
+        "walks_allowed"
+      ]
+    },
+    {
+      "family_id": "hitter_props",
+      "resolved_from_distributions": [
+        "hitter_stat_distribution",
+        "pa_event_distribution",
+        "team_run_distribution"
+      ],
+      "examples": [
+        "hits",
+        "total_bases",
+        "home_run",
+        "rbi",
+        "runs",
+        "walks",
+        "strikeouts"
+      ]
+    }
+  ],
+  "distribution_bridge_policy": {
+    "props_are_distribution_contracts": true,
+    "no_isolated_prop_models": true,
+    "required_consistency": [
+      "hitter props consume player PA/event/stat distributions",
+      "starter props consume starter state/stat distributions",
+      "game and team markets consume shared run/game-shape distributions"
+    ]
+  },
   "required_report_fields": [
     "evidence_coverage",
     "matchup_coverage",
     "attribution_coverage",
+    "distribution_contract_coverage",
+    "prop_contract_coverage",
     "leakage_checks",
     "lineage",
     "warnings"
@@ -129,6 +247,8 @@
   "notes": [
     "Baseline columns describe expected talent/context behavior.",
     "Residual columns describe state evidence versus baseline.",
+    "Talent is represented as surfaces and distributions, not a single baseline number.",
+    "Player and pitcher props are downstream contracts over shared distributions.",
     "Evidence coverage is required so sparse data cannot masquerade as stable form.",
     "No M2 weights, fixed memory lengths, or hand-tuned conclusions are part of this contract."
   ]

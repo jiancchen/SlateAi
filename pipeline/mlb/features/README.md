@@ -12,6 +12,8 @@ Raw ingestion answers: what happened, from what source, as of when?
 
 Feature materialization answers: what reusable, versioned signal can M3 train, backtest, simulate, or price from those facts?
 
+Downstream props should be contracts over shared distributions, not isolated feature piles. Game totals, team totals, starter strikeout/outs props, and hitter hits/total-bases/home-run props should consume common game/team/starter/player event distributions.
+
 ## Initial Feature Families
 
 These are candidates to rebuild from the useful ideas currently mixed into legacy M2 code:
@@ -33,6 +35,7 @@ Every feature job should define:
 - feature set ID and version
 - input table list and as-of cutoff
 - evidence policy, baseline definitions, state-memory encoders, and coverage fields
+- downstream distribution and prop-contract families when the feature set feeds pricing
 - output table or artifact contract
 - validator/report path
 - backtest or calibration hook when labels are involved
