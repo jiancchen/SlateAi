@@ -26,8 +26,8 @@ Status: opened
 | --- | --- | --- | --- | --- |
 | A4-W001 | Capture real feature-engineering plan | complete | `2026-06-03-mlb-m3-alpha-4-real-feature-engineering-run-plan.md` | Documents replay/story, starter, reliever chain, hitter path, and game-shape precursor feature families. |
 | A4-W002 | Create alpha-4 ledger | complete | this file | Opens the audit trail for the first real M3 feature build. |
-| A4-W003 | Define `M3-FS-002` contract | pending |  | Should be done before writing a builder. |
-| A4-W004 | Implement `M3-FS-002` builder | pending |  | Reads only typed `sql-mlb.db`. |
+| A4-W003 | Define `M3-FS-002` contract | complete | `pipeline/mlb/features/contracts/m3_fs_002_game_story_pitching_state_v0.json` | Contract locks typed DB, no M2 artifacts, no expected AB input truth, and no fixed raw window truth. |
+| A4-W004 | Implement `M3-FS-002` builder | complete | `pipeline/mlb/features/builders/build_game_story_pitching_state_v0.py` | Builds replay/story, starter path, reliever-chain, hitter-path, context, and market coverage features from typed DB. |
 | A4-W005 | Generate first `M3-FS-002` artifact | pending |  | Should include matrix, dictionary, lineage, missingness, leakage, coverage, and build report. |
 | A4-W006 | Validate `M3-FS-002` artifact | pending |  | Must reject M2 weights, expected AB input, hidden fixed-window truth, and same-game leakage. |
 | A4-W007 | Create manifest for `M3-FS-002` | pending |  | Reuse alpha-2 manifest infrastructure after the artifact exists. |
@@ -46,3 +46,9 @@ Status: opened
 ## Stop Log
 
 No stops yet.
+
+## Verification Log
+
+- 2026-06-03: `python3 -m json.tool pipeline/mlb/features/contracts/m3_fs_002_game_story_pitching_state_v0.json` passed.
+- 2026-06-03: `python3 -m py_compile pipeline/mlb/features/builders/build_game_story_pitching_state_v0.py` passed with the bundled workspace Python.
+- 2026-06-03: Smoke build for 2026-04-01 through 2026-04-03 wrote 32 rows, 295 columns, 280 features, 9 targets, and zero errors to `/tmp/m3_fs002_smoke`.
