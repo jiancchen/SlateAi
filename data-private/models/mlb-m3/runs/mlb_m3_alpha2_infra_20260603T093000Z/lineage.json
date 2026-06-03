@@ -1,0 +1,93 @@
+{
+  "alpha1_feature_lineage": {
+    "as_of_policy": "pregame",
+    "builder_version": "0.2.0",
+    "contract_uri": "/Users/jcchen/Documents/New project/pipeline/mlb/features/contracts/m3_fs_001_game_shape_starter_v1.json",
+    "end_date": "2026-05-31",
+    "feature_builder": "pipeline.mlb.features.builders.build_game_shape_starter_v1",
+    "git_sha": "51a840b1a6c4ac3254b88a425164f347ebc81977",
+    "pitching_path_grain": "one opponent pitching path per batting side: starter phase then reliever-chain phase",
+    "source_db": "/Users/jcchen/Documents/New project/data-private/warehouse/sports/mlb/sql-mlb.db",
+    "start_date": "2026-03-26",
+    "uses_hand_picked_memory_lengths": false,
+    "uses_m2_weights": false,
+    "uses_sports_db": false,
+    "validator": "pipeline.mlb.features.validators.validate_game_shape_starter_v1"
+  },
+  "created_at": "2026-06-03T09:33:14Z",
+  "feature_report_uri": "/Users/jcchen/Documents/New project/data-migration/reports/m3_fs_001_game_shape_starter_v1_2026-03-26_to_2026-05-31.json",
+  "git": {
+    "branch": "model-m3",
+    "dirty": false,
+    "head": "ea83bbe8d4ab54e1c5590a8b89ccd6eaec947019",
+    "status_short": ""
+  },
+  "input_artifacts": [
+    {
+      "bytes": 42277,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-migration/reports/m3_fs_001_game_shape_starter_v1_2026-03-26_to_2026-05-31.json",
+      "role": "feature_report",
+      "sha256": "78822535603a7c69353fb8fe18cf197a55f469eb82abf7d1445adfe04076bf70",
+      "source": "alpha1_report"
+    },
+    {
+      "bytes": 154920,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_001_game_shape_starter_v1/m3_fs_001_game_shape_starter_v1_20260603T091939Z/matrix.parquet",
+      "role": "feature_matrix",
+      "sha256": "925102450728b88434b1884956de4b2bcf895978cc832633735f01274735b06f",
+      "source": "alpha1_feature_artifact"
+    },
+    {
+      "bytes": 17962,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_001_game_shape_starter_v1/m3_fs_001_game_shape_starter_v1_20260603T091939Z/data_dictionary.json",
+      "role": "data_dictionary",
+      "sha256": "eb00599a3e963a799d8b92f33abbc4a939af4409c1e7b5d4a94b600b175e04b2",
+      "source": "alpha1_feature_artifact"
+    },
+    {
+      "bytes": 779,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_001_game_shape_starter_v1/m3_fs_001_game_shape_starter_v1_20260603T091939Z/lineage.json",
+      "role": "lineage",
+      "sha256": "e69179ef7900812c459d5a036438f7030155b7f4108f0d02d9a8c47e49e89c25",
+      "source": "alpha1_feature_artifact"
+    },
+    {
+      "bytes": 7626,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_001_game_shape_starter_v1/m3_fs_001_game_shape_starter_v1_20260603T091939Z/missingness.json",
+      "role": "missingness",
+      "sha256": "ab1de01694dd2fdc29fa4be7336f1ebd69c2b0b1550de51e5a3e63a9f829cf00",
+      "source": "alpha1_feature_artifact"
+    },
+    {
+      "bytes": 3346,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_001_game_shape_starter_v1/m3_fs_001_game_shape_starter_v1_20260603T091939Z/leakage.json",
+      "role": "leakage",
+      "sha256": "b85a32133aa3945eccf94db27026dfb737f0b08ad1e837db5b334879cb92b0bc",
+      "source": "alpha1_feature_artifact"
+    },
+    {
+      "bytes": 13009,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_001_game_shape_starter_v1/m3_fs_001_game_shape_starter_v1_20260603T091939Z/coverage.json",
+      "role": "coverage",
+      "sha256": "afcb3eb7a8cdcb8a9f0d5be9f91997f1c5577b6ca0ca0bfc237c8de324e9be41",
+      "source": "alpha1_feature_artifact"
+    }
+  ],
+  "non_goals": [
+    "no trained model",
+    "no backtest edge claim",
+    "no simulator",
+    "no picks",
+    "no player prop pricing",
+    "no claim that M3 is better"
+  ],
+  "run_id": "mlb_m3_alpha2_infra_20260603T093000Z",
+  "typed_db_registration": "preview_only_not_inserted"
+}
