@@ -24,6 +24,7 @@ Evidence checked:
 - FS-004 builder readiness passed, matrix materialization completed, and the FS-004 harness ran.
 - FS-004 tail/regime audit exists and blocks promotion.
 - FS-004 row-level prediction/residual artifacts and residual calibration bins exist for the diagnostic harness; probability/distribution outputs remain missing.
+- Alpha-7 distribution-output plan exists and explicitly forbids validation-residual leakage.
 - No promoted model, picks, simulator events, prop prices, or edge claims exist in the alpha artifacts.
 - This progress file is ASCII-only and should render as normal Markdown plus Mermaid.
 
@@ -146,6 +147,7 @@ flowchart TD
 | Alpha-4 | complete | `m3_fs_002_game_story_pitching_state_v0_20260603T155454Z` | First real M3 feature artifact with story, starter, reliever, hitter, and market context. | It did not produce a good candidate model. |
 | Alpha-5 | complete | FS-002 audit, FS-003 artifact, FS-003 harness | Walk-forward and ablations can reject weak candidates honestly. | Pruning did not fix the core feature representation problem. |
 | Alpha-6 | opened | FS-004 contract, source feasibility, builder readiness, FS-004 matrix, FS-004 manifest, FS-004 harness, row-prediction artifacts, residual calibration bins, tail/regime audit | FS-004 materially improves diagnostic candidate error versus FS-003 but still does not beat baseline; row residuals expose where tails still fail. | No promotion, simulator, pricing, picks, probability calibration, or edge claim. |
+| Alpha-7 | planned | Distribution-output run plan and ledger | Defines fold-safe diagnostic distribution output path. | No distribution rows, coverage diagnostics, probabilities, simulator, pricing, or promotion yet. |
 
 ## Feature Artifacts
 
@@ -406,10 +408,15 @@ Exit gate:
 
 ### Alpha-7: Real Component Training Harness
 
-Replace diagnostic ridge as the only candidate path.
+Status: planned as distribution-output scaffolding first.
+
+Replace diagnostic ridge as the only candidate path, but only after distribution diagnostics can be evaluated honestly.
 
 Priority work:
 
+- implement fold-train residual distribution output diagnostics
+- validate distribution fit scope to prevent validation leakage
+- add coverage diagnostics by lane, fold, and regime
 - train component candidates behind registry slots
 - add proper model artifacts with lineage
 - support distributional targets, not only point MAE
