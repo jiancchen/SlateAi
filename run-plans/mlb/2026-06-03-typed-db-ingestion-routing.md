@@ -6,7 +6,7 @@ Scope: keep every MLB ingestion and normalization path pointed at `data-private/
 
 Command replacement ledger: `run-plans/mlb/2026-06-03-mlb-warehouse-command-ledger.md`
 
-Typed replacement CLI: `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.3.0
+Typed replacement CLI: `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.4.0
 
 ## Was The Earlier Migration Complete?
 
@@ -28,7 +28,7 @@ The operational replacement path is a new typed CLI, not modification of the old
 
 - add typed commands to `pipeline/mlb/warehouse/mlb_typed_warehouse.py`
 - keep `pipeline/mlb/warehouse/mlb_warehouse.py` as legacy M2/root-warehouse surface
-- move package aliases only after the typed command has validation coverage
+- move package aliases after the typed command has validation coverage; raw schedule/feed, day prep, probable starters, hitter career profiles, and lineup-board split ingestion now point to typed replacements
 - implement new M3 feature materialization under `pipeline/mlb/features/`
 - move retired M2 warehouse scripts under `pipeline/mlb/warehouse/archive-m2/` only after their callers are gone
 
@@ -71,6 +71,7 @@ flowchart TD
 | Lineup board and probable starters | `data-private/lineups/mlb` | `data-migration/scripts/ingest_mlb_lineups_raw_to_typed.py` | `source_snapshots`, `source_fetch_runs`, `source_fetch_status`, `players`, `starting_pitchers`, `lineups`, `lineup_slots`, `lineup_matchup_snapshots`, `unresolved_entities` | `validate_mlb_lineups_raw_to_typed.py`, source fetch validators | Canonical typed route |
 | Kalshi / Robinhood market raw files | `data-private/odds/{kalshi,robinhood}/mlb` | `data-migration/scripts/ingest_mlb_markets_props_raw_to_typed.py` | `source_snapshots`, source status, market/prop typed targets | `validate_mlb_markets_props_raw_to_typed.py`, market lineage validators | Canonical typed route |
 | Baseball Savant / player context raw files | `data-private/raw` and existing player-context files | `data-migration/scripts/ingest_mlb_player_context_raw_to_typed.py` | player context typed targets and source status | source fetch validators and context normalizers | Canonical typed route |
+| MLB Stats API hitter career profiles | MLB Stats API to `data-private/raw/mlb-stats-api/hitter-career-profiles/<date>` | `pipeline/mlb/fetchers/fetch_mlb_hitter_career_profiles.py`, then `mlb_typed_warehouse.py ingest-hitter-career-profiles` | `player_identity_profiles`, `player_career_profiles`, source status | player context raw-to-typed validators | Canonical typed route |
 | Historical The Odds API odds | external API plus local odds cache | `pipeline/mlb/fetchers/fetch_historical_mlb_odds.py` | `mlb_featured_market_odds_snapshots`, `mlb_player_prop_odds_snapshots` in `sql-mlb.db` | `normalize_mlb_markets.py`, `normalize_mlb_props.py` now read `legacy_table_rows` plus direct typed staging | Typed staging route |
 | FanDuel Research odds | FanDuel research payloads | `pipeline/mlb/fetchers/fetch_fanduel_research_mlb.py` | `mlb_featured_market_odds_snapshots`, `mlb_player_prop_odds_snapshots` in `sql-mlb.db` | `normalize_mlb_markets.py`, `normalize_mlb_props.py` now read `legacy_table_rows` plus direct typed staging | Typed staging route |
 | Side predictions and side backtests | model board output | `pipeline/mlb/warehouse/mlb_side_backtest.py` | `mlb_side_predictions`, `mlb_side_backtests` in `sql-mlb.db` | `normalize_mlb_predictions.py` now reads `legacy_table_rows` plus direct typed staging | Typed staging route |

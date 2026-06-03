@@ -9,6 +9,7 @@ const __dirname = path.dirname(__filename)
 const rootDir = path.resolve(__dirname, '..', '..', '..', '..', '..')
 const season = 2026
 const mlbWarehousePath = path.join(rootDir, 'data-private', 'warehouse', 'sports', 'mlb', 'sql-mlb.db')
+const typedWarehouseCliPath = path.join(rootDir, 'pipeline', 'mlb', 'warehouse', 'mlb_typed_warehouse.py')
 
 const deskToOfficialTeam = {
   Nationals: 'Washington Nationals',
@@ -297,7 +298,7 @@ const ingestHitterCareerProfiles = (date, playerIds = []) => {
   if (!normalizedIds.length) return
 
   const args = [
-    path.join(rootDir, 'pipeline', 'mlb', 'warehouse', 'mlb_warehouse.py'),
+    typedWarehouseCliPath,
     'ingest-hitter-career-profiles',
     '--date',
     date
@@ -319,7 +320,7 @@ const ingestHitterLineupSplits = (date, lineupPath) => {
   execFileSync(
     'python3',
     [
-      path.join(rootDir, 'pipeline', 'mlb', 'warehouse', 'mlb_warehouse.py'),
+      typedWarehouseCliPath,
       'ingest-hitter-lineup-splits',
       '--date',
       date,

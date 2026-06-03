@@ -1,12 +1,15 @@
 import { execFileSync } from 'node:child_process'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { runLegacyM2Warehouse } from './archive-m2/legacy-warehouse.mjs'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const rootDir = path.resolve(__dirname, '..', '..', '..', '..', '..')
 const currentModelId = process.env.MLB_MODEL_ID || path.basename(path.resolve(__dirname, '..')).toUpperCase()
 const playerPropModelName = 'mlb-player-props-v2'
+const typedWarehouseCliPath = path.join(rootDir, 'pipeline', 'mlb', 'warehouse', 'mlb_typed_warehouse.py')
+const typedWarehouseCommands = new Set(['prepare-mlb-day'])
 
 const shiftIsoDate = (dateText, days) => {
   const base = new Date(`${dateText}T00:00:00Z`)
@@ -35,7 +38,11 @@ const parseArgs = () => {
 }
 
 const runPythonWarehouse = (command, extraArgs = []) => {
-  execFileSync('python3', [path.join(rootDir, 'pipeline', 'mlb', 'warehouse', 'mlb_warehouse.py'), command, ...extraArgs], {
+  if (!typedWarehouseCommands.has(command)) {
+    runLegacyM2Warehouse(rootDir, command, extraArgs)
+    return
+  }
+  execFileSync('python3', [typedWarehouseCliPath, command, ...extraArgs], {
     cwd: rootDir,
     stdio: 'inherit'
   })

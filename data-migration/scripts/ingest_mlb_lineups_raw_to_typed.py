@@ -15,10 +15,12 @@ from pipeline.sources.mlb.normalization.common import append_normalization_event
 from pipeline.sources.mlb.normalization.lineup_board import (
     FAMILY_LINEUPS,
     FAMILY_PROBABLES,
+    RawLineupBoardDay,
     SOURCE_LINEUPS,
     SOURCE_PROBABLES,
     insert_health_check,
     load_lineup_board_day,
+    read_json,
     upsert_fetch_status,
     upsert_lineup_board,
 )
@@ -38,6 +40,11 @@ def parse_args() -> argparse.Namespace:
         default=ROOT / "data-private" / "lineups" / "mlb",
     )
     parser.add_argument(
+        "--lineup-file",
+        type=Path,
+        help="Optional explicit lineup-board JSON file. Overrides --lineup-root/<date>-lineup-board.json.",
+    )
+    parser.add_argument(
         "--report",
         type=Path,
         default=ROOT / "data-migration" / "reports" / "ingest_mlb_lineups_raw_to_typed_2026-06-02.json",
@@ -48,6 +55,8 @@ def parse_args() -> argparse.Namespace:
         args.source_db = ROOT / args.source_db
     if not args.lineup_root.is_absolute():
         args.lineup_root = ROOT / args.lineup_root
+    if args.lineup_file is not None and not args.lineup_file.is_absolute():
+        args.lineup_file = ROOT / args.lineup_file
     if not args.report.is_absolute():
         args.report = ROOT / args.report
     return args
@@ -113,7 +122,15 @@ def expected_lineup_slots(raw_day) -> int | None:
 
 
 def ingest(args: argparse.Namespace) -> dict:
-    raw_day = load_lineup_board_day(args.lineup_root, args.date)
+    raw_day = (
+        RawLineupBoardDay(
+            date=args.date,
+            board_path=args.lineup_file if args.lineup_file and args.lineup_file.exists() else None,
+            payload=read_json(args.lineup_file) if args.lineup_file and args.lineup_file.exists() else {},
+        )
+        if args.lineup_file
+        else load_lineup_board_day(args.lineup_root, args.date)
+    )
     expected_games = int(raw_day.meta.get("gameCount") or len(raw_day.boards) or 0) if raw_day.board_path else None
     expected_slots = expected_lineup_slots(raw_day)
     report = {
@@ -121,6 +138,7 @@ def ingest(args: argparse.Namespace) -> dict:
         "script": "data-migration/scripts/ingest_mlb_lineups_raw_to_typed.py",
         "source_db": str(args.source_db.relative_to(ROOT)),
         "lineup_root": str(args.lineup_root.relative_to(ROOT)),
+        "lineup_file": None if args.lineup_file is None else str(args.lineup_file.relative_to(ROOT)),
         "date": args.date,
         "dry_run": args.dry_run,
         "expected_game_count": expected_games,

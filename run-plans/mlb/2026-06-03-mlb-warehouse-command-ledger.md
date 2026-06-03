@@ -2,9 +2,9 @@
 
 Date: 2026-06-03
 
-Ledger version: 0.4.0
+Ledger version: 0.5.0
 
-Typed CLI version: `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.3.0
+Typed CLI version: `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.4.0
 
 Scope: first-pass ledger for replacing `pipeline/mlb/warehouse/mlb_warehouse.py` command by command without path-flipping the legacy `sports.db` script into the typed MLB DB.
 
@@ -56,27 +56,27 @@ flowchart TD
 
 - Ledger commands: 39.
 - Legacy commands found in `mlb_warehouse.py`: 39.
-- Typed replacement commands implemented in `mlb_typed_warehouse.py`: 5.
-- Implemented replacements: `ingest-mlb-day`, `ingest-mlb-range`, `list-probable-starters`, `prepare-mlb-day`, `replay-mlb-range-from-raw`.
+- Typed replacement commands implemented in `mlb_typed_warehouse.py`: 7.
+- Implemented replacements: `ingest-hitter-career-profiles`, `ingest-hitter-lineup-splits`, `ingest-mlb-day`, `ingest-mlb-range`, `list-probable-starters`, `prepare-mlb-day`, `replay-mlb-range-from-raw`.
 - Ledger drift: zero missing legacy commands and zero extra typed replacement commands.
 
 `data-migration/reports/mlb_db_input_cutover_audit_active_2026-06-03.json` confirms:
 
 - Active direct `sports.db` runtime reads: zero.
-- Active legacy warehouse CLI callers: 3 files / 9 hits.
-- Active callers to inspect next: `models/mlb/cartridges/MLB-M2/lanes/lineups.mjs`, `models/mlb/cartridges/MLB-M2/workflows/followup.mjs`, and `models/mlb/cartridges/MLB-M2/workflows/refresh-live-board.mjs`.
-- Active generated/public/private artifact inputs still remain in snapshot, history, verify, follow-up, and day-file surfaces; those are separate DB-input cutover targets after the warehouse CLI callers are gone.
+- Active legacy warehouse CLI callers: zero.
+- M2-only feature/import/grade commands used by workflows are quarantined behind `models/mlb/cartridges/MLB-M2/workflows/archive-m2/legacy-warehouse.mjs`.
+- Active generated/public/private artifact inputs still remain in snapshot, history, verify, follow-up, and day-file surfaces; those are the next DB-input cutover targets.
 
 ## Command Ledger
 
 | Command | Package Script | Class | Priority | Status | Replacement Target | Next Action |
 |---|---|---|---:|---|---|---|
 | `init-db` | `data:init` | retire/schema migration | P0 | `retire` | typed migration scripts and schema validators | Replace package script with explicit typed migration/check command or remove once no callers need it. |
-| `ingest-mlb-day` | `data:ingest:mlb-day`, `data:typed:ingest:mlb-day` | raw typed ingestion | P0 | `typed-cli-exists` | `mlb_typed_warehouse.py ingest-mlb-day` wrapping `ingest_mlb_schedule_game_feed_raw_to_typed.py` | Validate typed output against legacy/date reports, then move `data:ingest:mlb-day` to the typed CLI. |
-| `ingest-mlb-range` | `data:ingest:mlb-range`, `data:typed:ingest:mlb-range` | raw typed ingestion | P0 | `typed-cli-exists` | `mlb_typed_warehouse.py ingest-mlb-range` looping the schedule/game-feed typed adapter | Validate multi-day dry-run/write idempotency, then move `data:ingest:mlb-range` to the typed CLI. |
-| `replay-mlb-range-from-raw` | `data:replay:mlb-raw-range`, `data:typed:replay:mlb-raw-range` | raw typed ingestion | P0 | `typed-cli-exists` | `mlb_typed_warehouse.py replay-mlb-range-from-raw` looping the schedule/game-feed typed adapter | Validate range replay idempotency, then move `data:replay:mlb-raw-range` to the typed CLI. |
-| `prepare-mlb-day` | `data:prep:mlb-day`, `data:typed:prep:mlb-day` | orchestration | P1 | `typed-cli-exists` | `mlb_typed_warehouse.py prepare-mlb-day` orchestrating feed lookback, lineups, markets/props, and player context adapters | Add validator bundle/freshness gate, then move `data:prep:mlb-day` to the typed CLI. |
-| `list-probable-starters` | `data:list:probables`, `data:list:probables:typed` | typed read/report | P0 | `typed-cli-exists` | `mlb_typed_warehouse.py list-probable-starters` over typed `starting_pitchers`, `games`, `teams`, `players` | Validate typed output against legacy output, then move `data:list:probables` to the typed CLI. |
+| `ingest-mlb-day` | `data:ingest:mlb-day`, `data:typed:ingest:mlb-day` | raw typed ingestion | P0 | `typed-cli-exists` | `mlb_typed_warehouse.py ingest-mlb-day` wrapping `ingest_mlb_schedule_game_feed_raw_to_typed.py` | Primary package alias points to typed CLI; next gate is write idempotency validation. |
+| `ingest-mlb-range` | `data:ingest:mlb-range`, `data:typed:ingest:mlb-range` | raw typed ingestion | P0 | `typed-cli-exists` | `mlb_typed_warehouse.py ingest-mlb-range` looping the schedule/game-feed typed adapter | Primary package alias points to typed CLI; next gate is multi-day idempotency validation. |
+| `replay-mlb-range-from-raw` | `data:replay:mlb-raw-range`, `data:typed:replay:mlb-raw-range` | raw typed ingestion | P0 | `typed-cli-exists` | `mlb_typed_warehouse.py replay-mlb-range-from-raw` looping the schedule/game-feed typed adapter | Primary package alias points to typed CLI; next gate is range replay validation. |
+| `prepare-mlb-day` | `data:prep:mlb-day`, `data:typed:prep:mlb-day` | orchestration | P1 | `typed-cli-exists` | `mlb_typed_warehouse.py prepare-mlb-day` orchestrating feed lookback, lineups, markets/props, and player context adapters | Primary package alias points to typed CLI; next gate is validator bundle/freshness gate. |
+| `list-probable-starters` | `data:list:probables`, `data:list:probables:typed` | typed read/report | P0 | `typed-cli-exists` | `mlb_typed_warehouse.py list-probable-starters` over typed `starting_pitchers`, `games`, `teams`, `players` | Primary package alias points to typed CLI; validate typed output against legacy output if historical parity is still needed. |
 | `derive-mlb-features` | `data:derive:mlb` | feature layer | P1 | `feature-rewrite` | rolling team/starter/bullpen feature jobs | Split into typed feature builders with feature-set IDs and validators. |
 | `derive-story-signals` | `data:derive:stories` | feature layer | P2 | `feature-rewrite` | game-story signal feature job from typed replay state | Rebuild as M3 story-transition feature job. |
 | `derive-tier2-features` | `data:derive:tier2-mlb` | feature layer | P2 | `feature-rewrite` | team story priors, lineup dependency, starter leash, series context | Port only after core feature tables and contracts are named. |
@@ -96,8 +96,8 @@ flowchart TD
 | `ingest-pitcher-war` | `data:ingest:pitcher-war` | supplemental raw ingestion | P2 | `wrapper-needed` | player/pitcher context typed ingestor | Decide whether Baseball-Reference WAR remains an approved M3 source; if yes, add typed raw receipt and table target. |
 | `ingest-statcast-hr` | `data:ingest:statcast-hr` | supplemental raw ingestion | P2 | `wrapper-needed` | player context / Statcast typed ingestion | Add typed Statcast leaderboard ingestor or retire if detailed Statcast pitch/batted-ball data supersedes it. |
 | `ingest-hitter-statcast-range` | `data:ingest:hitter-statcast-range` | supplemental raw ingestion | P1 | `adapter-exists` | `ingest_mlb_player_context_raw_to_typed.py` | Confirm coverage for grouped/detail Baseball Savant files and add range wrapper if needed. |
-| `ingest-hitter-career-profiles` | `data:ingest:hitter-career-profiles` | supplemental raw ingestion | P1 | `adapter-exists` | `ingest_mlb_player_context_raw_to_typed.py` | Confirm career-profile source coverage and package replacement. |
-| `ingest-hitter-lineup-splits` | `data:ingest:hitter-lineup-splits` | supplemental raw ingestion | P2 | `wrapper-needed` | lineup/player context typed targets | Decide whether split rows belong in lineups, player context, or feature layer; then write typed adapter. |
+| `ingest-hitter-career-profiles` | `data:ingest:hitter-career-profiles` | supplemental raw ingestion | P1 | `typed-cli-exists` | `mlb_typed_warehouse.py ingest-hitter-career-profiles` wrapping `fetch_mlb_hitter_career_profiles.py` plus `ingest_mlb_player_context_raw_to_typed.py` | Primary package alias points to typed CLI; next gate is live fetch/write validation on a small player batch. |
+| `ingest-hitter-lineup-splits` | `data:ingest:hitter-lineup-splits` | supplemental raw ingestion | P2 | `typed-cli-exists` | `mlb_typed_warehouse.py ingest-hitter-lineup-splits` wrapping `ingest_mlb_lineups_raw_to_typed.py --lineup-file` | Primary package alias points to typed CLI; validate against a generated lineup board before retiring old split writes. |
 | `derive-hitter-statcast-trends` | `data:derive:hitter-statcast-trends` | feature layer | P1 | `feature-rewrite` | hitter Statcast rolling trend feature job | Rebuild from typed Statcast/player context tables. |
 | `derive-batter-outcomes` | `data:derive:batter-outcomes` | typed normalization/label layer | P1 | `adapter-exists` | typed game/player batting outcome normalizers | Confirm typed `game_outcomes`, player batting, and PA aggregates cover this; replace package script with normalizer/validator. |
 | `import-predictions` | `data:import:hr` | prediction write path | P3 | `retire` | typed model run index + `normalize_mlb_predictions.py` where needed | Retire old HR import or replace with typed model-output writer. |

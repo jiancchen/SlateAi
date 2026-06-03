@@ -19,7 +19,8 @@ SCHEDULE_GAME_FEED_INGEST = ROOT / "data-migration" / "scripts" / "ingest_mlb_sc
 LINEUPS_INGEST = ROOT / "data-migration" / "scripts" / "ingest_mlb_lineups_raw_to_typed.py"
 MARKETS_PROPS_INGEST = ROOT / "data-migration" / "scripts" / "ingest_mlb_markets_props_raw_to_typed.py"
 PLAYER_CONTEXT_INGEST = ROOT / "data-migration" / "scripts" / "ingest_mlb_player_context_raw_to_typed.py"
-VERSION = "0.3.0"
+HITTER_CAREER_PROFILE_FETCH = ROOT / "pipeline" / "mlb" / "fetchers" / "fetch_mlb_hitter_career_profiles.py"
+VERSION = "0.4.0"
 
 LEGACY_WAREHOUSE_COMMANDS = {
     "init-db",
@@ -128,6 +129,7 @@ def run_typed_adapter(
     dry_run: bool,
     report: Path,
     family: str,
+    extra_args: list[str] | None = None,
 ) -> dict[str, Any]:
     args = [
         "--date",
@@ -137,6 +139,8 @@ def run_typed_adapter(
         "--report",
         str(report),
     ]
+    if extra_args:
+        args.extend(extra_args)
     if dry_run:
         args.append("--dry-run")
     result = run_python_script(script_path, args)
@@ -471,6 +475,156 @@ def prepare_mlb_day_payload(
     return payload
 
 
+def collect_hitter_profile_player_ids(
+    conn: sqlite3.Connection,
+    *,
+    date_text: str,
+    explicit_ids: list[int] | None = None,
+) -> list[int]:
+    ids = {int(player_id) for player_id in explicit_ids or [] if player_id}
+    if ids:
+        return sorted(ids)
+    queries = [
+        (
+            """
+            select distinct p.mlb_player_id
+            from lineups l
+            join games g on g.game_id = l.game_id
+            join lineup_slots s on s.lineup_id = l.lineup_id
+            join players p on p.player_id = s.player_id
+            where g.game_date = ? and p.mlb_player_id is not null
+            """,
+            (date_text,),
+        ),
+        (
+            """
+            select distinct p.mlb_player_id
+            from player_game_batting b
+            join players p on p.player_id = b.player_id
+            where b.game_date = ? and p.mlb_player_id is not null
+            """,
+            (date_text,),
+        ),
+        (
+            """
+            select distinct p.mlb_player_id
+            from player_statcast_game_logs s
+            join players p on p.player_id = s.player_id
+            where s.game_date = ? and p.mlb_player_id is not null
+            """,
+            (date_text,),
+        ),
+    ]
+    for sql, params in queries:
+        try:
+            for row in conn.execute(sql, params).fetchall():
+                player_id = row[0]
+                if player_id is not None:
+                    ids.add(int(player_id))
+        except sqlite3.OperationalError:
+            continue
+    return sorted(ids)
+
+
+def hitter_career_profiles_payload(
+    db_path: Path,
+    *,
+    date_text: str,
+    player_ids: list[int] | None,
+    batch_size: int,
+    dry_run: bool,
+    skip_fetch: bool,
+) -> dict[str, Any]:
+    with connect(db_path) as conn:
+        resolved_player_ids = collect_hitter_profile_player_ids(conn, date_text=date_text, explicit_ids=player_ids)
+    results: list[dict[str, Any]] = []
+    fetch_report = report_path("fetch_hitter_career_profiles", date_text)
+    if not skip_fetch:
+        fetch_args = [
+            "--date",
+            date_text,
+            "--batch-size",
+            str(batch_size),
+            "--report",
+            str(fetch_report),
+        ]
+        for player_id in resolved_player_ids:
+            fetch_args.extend(["--player-id", str(player_id)])
+        if dry_run:
+            fetch_args.append("--dry-run")
+        fetch_result = run_python_script(HITTER_CAREER_PROFILE_FETCH, fetch_args)
+        fetch_result.update(
+            {
+                "date": date_text,
+                "family": "hitter_career_profile_fetch",
+                "report_path": display_path(fetch_report),
+                "ok": fetch_result["returncode"] == 0,
+                "player_count": len(resolved_player_ids),
+            }
+        )
+        results.append(fetch_result)
+
+    ingest_report = report_path("ingest_hitter_career_profiles", date_text)
+    results.append(
+        run_typed_adapter(
+            PLAYER_CONTEXT_INGEST,
+            db_path,
+            date_text,
+            dry_run=dry_run,
+            report=ingest_report,
+            family="player_context",
+        )
+    )
+    payload = {
+        "version": VERSION,
+        "mode": "ingest_hitter_career_profiles",
+        "db_path": display_path(db_path),
+        "date": date_text,
+        "dry_run": dry_run,
+        "skip_fetch": skip_fetch,
+        "batch_size": batch_size,
+        "player_count": len(resolved_player_ids),
+        "results": results,
+        "ok": all(result["ok"] for result in results),
+    }
+    write_json_report(report_path("ingest_hitter_career_profiles_wrapper", date_text), payload)
+    return payload
+
+
+def hitter_lineup_splits_payload(
+    db_path: Path,
+    *,
+    date_text: str,
+    lineup_file: Path | None,
+    dry_run: bool,
+) -> dict[str, Any]:
+    child_report = report_path("ingest_hitter_lineup_splits", date_text)
+    extra_args: list[str] = []
+    if lineup_file:
+        extra_args.extend(["--lineup-file", str(resolve_path(lineup_file))])
+    result = run_typed_adapter(
+        LINEUPS_INGEST,
+        db_path,
+        date_text,
+        dry_run=dry_run,
+        report=child_report,
+        family="lineups",
+        extra_args=extra_args,
+    )
+    payload = {
+        "version": VERSION,
+        "mode": "ingest_hitter_lineup_splits",
+        "db_path": display_path(db_path),
+        "date": date_text,
+        "dry_run": dry_run,
+        "lineup_file": None if lineup_file is None else display_path(resolve_path(lineup_file)),
+        "results": [result],
+        "ok": result["ok"],
+    }
+    write_json_report(report_path("ingest_hitter_lineup_splits_wrapper", date_text), payload)
+    return payload
+
+
 def print_ingest_summary(payload: dict[str, Any]) -> None:
     ok_count = sum(1 for result in payload["results"] if result["ok"])
     print(
@@ -493,6 +647,15 @@ def print_prepare_summary(payload: dict[str, Any]) -> None:
     for result in payload["results"]:
         status = "ok" if result["ok"] else f"failed:{result['returncode']}"
         print(f"- {result['date']} {result['family']}: {status} report={result['report_path']}")
+
+
+def print_step_summary(payload: dict[str, Any]) -> None:
+    ok_count = sum(1 for result in payload["results"] if result["ok"])
+    print(f"MLB typed warehouse {payload['mode']} {payload['date']}: {ok_count}/{len(payload['results'])} steps ok")
+    for result in payload["results"]:
+        status = "ok" if result["ok"] else f"failed:{result['returncode']}"
+        family = result.get("family") or "unknown"
+        print(f"- {family}: {status} report={result.get('report_path', '-')}")
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -536,6 +699,26 @@ def build_parser() -> argparse.ArgumentParser:
     prepare_parser.add_argument("--skip-markets", action="store_true", help="Skip target-day markets/props adapter.")
     prepare_parser.add_argument("--skip-player-context", action="store_true", help="Skip target-day player context adapter.")
     prepare_parser.add_argument("--json", action="store_true", help="Emit wrapper JSON instead of text summary.")
+
+    career_parser = subparsers.add_parser(
+        "ingest-hitter-career-profiles",
+        help="Fetch MLB Stats API hitter career profile receipts and ingest them into typed player context tables.",
+    )
+    career_parser.add_argument("--date", required=True, help="Snapshot date in YYYY-MM-DD format.")
+    career_parser.add_argument("--player-id", action="append", dest="player_ids", type=int, help="MLB player id. Repeat as needed.")
+    career_parser.add_argument("--batch-size", type=int, default=24, help="Number of player ids per Stats API request.")
+    career_parser.add_argument("--skip-fetch", action="store_true", help="Skip raw fetch and only parse existing raw files.")
+    career_parser.add_argument("--dry-run", action="store_true", help="Plan/parse without writing raw receipts or typed DB rows.")
+    career_parser.add_argument("--json", action="store_true", help="Emit wrapper JSON instead of text summary.")
+
+    lineup_splits_parser = subparsers.add_parser(
+        "ingest-hitter-lineup-splits",
+        help="Ingest a generated lineup board into typed lineup/matchup tables.",
+    )
+    lineup_splits_parser.add_argument("--date", required=True, help="Lineup snapshot date in YYYY-MM-DD format.")
+    lineup_splits_parser.add_argument("--file", type=Path, help="Optional explicit lineup-board JSON path.")
+    lineup_splits_parser.add_argument("--dry-run", action="store_true", help="Parse/report without writing typed DB rows.")
+    lineup_splits_parser.add_argument("--json", action="store_true", help="Emit wrapper JSON instead of text summary.")
 
     probables_parser = subparsers.add_parser("list-probable-starters", help="Read probable starters from typed tables.")
     probables_parser.add_argument("--date", required=True, help="Game date in YYYY-MM-DD format.")
@@ -614,6 +797,32 @@ def main() -> int:
             print(json.dumps(payload, indent=2, sort_keys=True))
         else:
             print_prepare_summary(payload)
+        return 0 if payload["ok"] else 1
+    if args.command == "ingest-hitter-career-profiles":
+        payload = hitter_career_profiles_payload(
+            db_path,
+            date_text=args.date,
+            player_ids=args.player_ids,
+            batch_size=args.batch_size,
+            dry_run=args.dry_run,
+            skip_fetch=args.skip_fetch,
+        )
+        if args.json:
+            print(json.dumps(payload, indent=2, sort_keys=True))
+        else:
+            print_step_summary(payload)
+        return 0 if payload["ok"] else 1
+    if args.command == "ingest-hitter-lineup-splits":
+        payload = hitter_lineup_splits_payload(
+            db_path,
+            date_text=args.date,
+            lineup_file=args.file,
+            dry_run=args.dry_run,
+        )
+        if args.json:
+            print(json.dumps(payload, indent=2, sort_keys=True))
+        else:
+            print_step_summary(payload)
         return 0 if payload["ok"] else 1
     if args.command == "status":
         with connect(db_path) as conn:

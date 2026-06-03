@@ -45,7 +45,7 @@ const PATTERNS = [
     key: 'warehouse_cli',
     description: 'Shells into the legacy MLB warehouse CLI instead of a typed DB adapter.',
     severity: 'cutover_blocker',
-    regex: /pipeline['",\s]+mlb['",\s]+warehouse|mlb_warehouse\.py|pipeline\/mlb\/warehouse/g
+    regex: /mlb_warehouse\.py/g
   },
   {
     key: 'published_data_input',

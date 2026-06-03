@@ -27,7 +27,7 @@ Completed:
 - Typed MLB compatibility views exist for staged `mlb_*` legacy table names, plus canonical views for `mlb_games`, `mlb_plate_appearances`, and `mlb_pitch_events`.
 - Writer-owned legacy names for side predictions/backtests and market/prop odds are writable staging tables inside `sql-mlb.db`.
 - Prediction, market, and prop normalizers read historical `legacy_table_rows` plus direct-only typed staging rows, so fresh writer rows normalize forward without a `sports.db` bridge.
-- New typed warehouse CLI exists at `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.3.0; package aliases are additive while legacy commands remain wired until validated cutover.
+- New typed warehouse CLI exists at `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.4.0; primary package aliases for raw schedule/feed ingestion, day prep, probable starters, hitter career profiles, and lineup-board splits now point to typed replacements.
 - Current M2 `lineups`, `history-journal`, `generate-day-files`, copied M0/M1 lane scripts, cartridge compare, RP36 read exporters, and story archive export read the typed MLB DB.
 - Side backtest and MLB odds/FanDuel research fetchers default to `sql-mlb.db` writable staging tables.
 
@@ -35,17 +35,16 @@ Current audit state:
 
 - Open migration-attention rows: zero.
 - Active-profile direct `sports.db` runtime hits: zero.
-- Active-profile legacy warehouse CLI callers: 3 files / 9 hits.
+- Active-profile legacy warehouse CLI callers: zero.
 - Active-profile public/private/generated artifact input callers remain in M2 snapshot and workflow surfaces.
 - Full-profile legacy `sports.db` hits remain broad historical/research surface debt, not all active runtime gates.
-- Remaining warehouse blocker is the legacy monolith and its active callers, not a safe mechanical path swap:
+- Remaining warehouse debt is the legacy monolith, M2-only package aliases, and explicit archive-M2 compatibility boundaries, not a safe mechanical path swap:
 
 | File | Why It Remains |
 |---|---|
 | `pipeline/mlb/warehouse/mlb_warehouse.py` | Legacy monolith owns old `mlb_*` table creation and many inserts/deletes. It needs command-by-command replacement with typed ingestors/normalizers, not a DB-path flip. |
-| `models/mlb/cartridges/MLB-M2/lanes/lineups.mjs` | Still shells into the legacy warehouse CLI for probable-starter/lineup support paths. |
-| `models/mlb/cartridges/MLB-M2/workflows/followup.mjs` | Still shells into the legacy warehouse CLI and reads generated prediction artifacts. |
-| `models/mlb/cartridges/MLB-M2/workflows/refresh-live-board.mjs` | Still shells into the legacy warehouse CLI and reads generated prediction artifacts. |
+| `models/mlb/cartridges/MLB-M2/workflows/archive-m2/legacy-warehouse.mjs` | Explicit M2-only boundary for feature/import/grade commands that are not M3 typed ingestion. |
+| `models/mlb/cartridges/MLB-M2/snapshot.mjs`, `snapshot-run.mjs`, `history-journal.mjs`, `verify-refresh.mjs` | Still include public/private/generated artifact inputs that should become typed DB or DB-derived export inputs. |
 
 ## Audit Checkpoint: 2026-06-03
 
@@ -53,8 +52,8 @@ Typed warehouse command audit:
 
 - Ledger commands: 39.
 - Legacy commands found: 39.
-- Typed replacement commands implemented: 5.
-- Implemented replacements: `ingest-mlb-day`, `ingest-mlb-range`, `list-probable-starters`, `prepare-mlb-day`, `replay-mlb-range-from-raw`.
+- Typed replacement commands implemented: 7.
+- Implemented replacements: `ingest-hitter-career-profiles`, `ingest-hitter-lineup-splits`, `ingest-mlb-day`, `ingest-mlb-range`, `list-probable-starters`, `prepare-mlb-day`, `replay-mlb-range-from-raw`.
 - Ledger drift: zero missing legacy commands and zero extra typed replacement commands.
 
 Active DB-input cutover audit:
@@ -62,7 +61,7 @@ Active DB-input cutover audit:
 | Pattern | Files | Hits | Meaning |
 |---|---:|---:|---|
 | `legacy_sports_db` | 0 | 0 | No active runtime file is directly reading the shared legacy DB path. |
-| `warehouse_cli` | 3 | 9 | Active M2 lane/workflow scripts still shell into the legacy warehouse CLI. |
+| `warehouse_cli` | 0 | 0 | Active files no longer shell directly into the legacy warehouse CLI. |
 | `published_data_input` | 4 | 8 | Snapshot/day-file surfaces still use public/site mirrors as model inputs. |
 | `private_prediction_json_input` | 6 | 13 | Snapshot/workflow surfaces still read generated prediction artifacts. |
 | `private_prediction_json_output` | 4 | 5 | M2 compatibility outputs still write generated JSON. |
@@ -73,8 +72,8 @@ Active DB-input cutover audit:
 
 Interpretation:
 
-- The typed DB path work removed active direct `sports.db` runtime reads.
-- The next runtime gate is replacing active legacy warehouse CLI calls, then removing M2 artifact reads from the live prediction slate path.
+- The typed DB path work removed active direct `sports.db` runtime reads and direct active legacy warehouse CLI callers.
+- The next runtime gate is removing M2 artifact reads from the live prediction slate path.
 - The full-profile audit remains useful for research/M0/M2 archive debt, but it is intentionally noisier than the active runtime profile.
 
 ## Operating Rules
@@ -368,16 +367,15 @@ Goal: remove MLB runtime reads from `data-private/warehouse/sports.db`.
 Runtime blockers from the active audit:
 
 - No active direct `sports.db` path reads remain.
-- `models/mlb/cartridges/MLB-M2/lanes/lineups.mjs` still shells into the legacy warehouse CLI.
-- `models/mlb/cartridges/MLB-M2/workflows/followup.mjs` still shells into the legacy warehouse CLI.
-- `models/mlb/cartridges/MLB-M2/workflows/refresh-live-board.mjs` still shells into the legacy warehouse CLI.
+- No active direct legacy warehouse CLI callers remain.
+- M2-only feature/import/grade commands are quarantined behind `models/mlb/cartridges/MLB-M2/workflows/archive-m2/legacy-warehouse.mjs`.
 - `snapshot.mjs`, `snapshot-run.mjs`, `history-journal.mjs`, `verify-refresh.mjs`, and day-file surfaces still include public/private/generated artifact inputs that should become typed DB or DB-derived export inputs.
 
 Order:
 
-1. Replace active legacy warehouse CLI calls with typed CLI or typed workflow wrappers.
-2. Separate true M2 compatibility outputs from M3/runtime model inputs.
-3. Update snapshot and follow-up paths to typed DB or DB-derived export inputs.
+1. Separate true M2 compatibility outputs from M3/runtime model inputs.
+2. Update snapshot and follow-up paths to typed DB or DB-derived export inputs.
+3. Replace or retire M2-only feature/import/grade commands behind the archive boundary as M3 feature and settlement layers land.
 4. Archive retired M2-only scripts under their local `archive-m2/` folders after package aliases and callers are gone.
 5. Re-run active and full code scans.
 

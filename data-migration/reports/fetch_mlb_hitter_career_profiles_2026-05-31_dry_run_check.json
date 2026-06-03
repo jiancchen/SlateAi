@@ -1,0 +1,19 @@
+{
+  "batch_count": 1,
+  "batch_size": 24,
+  "date": "2026-05-31",
+  "dry_run": true,
+  "errors": [],
+  "generated_at": "2026-06-03T05:27:43.636514+00:00",
+  "ok": true,
+  "people": 0,
+  "planned_batches": [
+    [
+      592450
+    ]
+  ],
+  "player_count": 1,
+  "raw_root": "data-private/raw/mlb-stats-api/hitter-career-profiles",
+  "script": "pipeline/mlb/fetchers/fetch_mlb_hitter_career_profiles.py",
+  "written_files": []
+}
