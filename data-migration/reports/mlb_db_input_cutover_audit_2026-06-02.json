@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T00:15:08.045Z",
+  "generated_at": "2026-06-03T05:18:11.323Z",
   "script": "data-migration/scripts/audit_mlb_db_input_cutover.mjs",
   "profile": "full",
   "targets": [
@@ -7,21 +7,21 @@
     "models/mlb/cartridges/MLB-M0",
     "pipeline/mlb"
   ],
-  "scanned_file_count": 200,
-  "files_with_hits": 105,
+  "scanned_file_count": 203,
+  "files_with_hits": 107,
   "summary": {
     "byPattern": {
       "legacy_sports_db": {
         "description": "Reads legacy shared sports.db instead of sport-specific sql-mlb.db/duck-mlb.duckdb.",
         "severity": "cutover_blocker",
-        "files": 68,
-        "hits": 68
+        "files": 59,
+        "hits": 60
       },
       "warehouse_cli": {
         "description": "Shells into the legacy MLB warehouse CLI instead of a typed DB adapter.",
         "severity": "cutover_blocker",
-        "files": 9,
-        "hits": 23
+        "files": 11,
+        "hits": 27
       },
       "published_data_input": {
         "description": "Uses public/site mirrors as model inputs.",
@@ -56,14 +56,14 @@
       "legacy_sqlite_shell": {
         "description": "Uses sqlite shell calls, often pointing at legacy DB paths.",
         "severity": "review",
-        "files": 11,
-        "hits": 11
+        "files": 13,
+        "hits": 13
       },
       "db_ready_reference": {
         "description": "Already references sport-specific SQLite/DuckDB inputs or the DB-first shared day-game loader.",
         "severity": "db_ready",
-        "files": 12,
-        "hits": 25
+        "files": 26,
+        "hits": 44
       }
     },
     "byFile": [
@@ -78,24 +78,26 @@
       },
       {
         "path": "models/mlb/cartridges/MLB-M0/lanes/history-journal.mjs",
-        "total_hits": 10,
+        "total_hits": 11,
         "counts": {
-          "legacy_sports_db": 1,
           "published_data_input": 2,
           "private_prediction_json_input": 1,
           "raw_archive_input": 1,
-          "generated_module_input": 5
+          "generated_module_input": 5,
+          "legacy_sqlite_shell": 1,
+          "db_ready_reference": 1
         }
       },
       {
         "path": "models/mlb/cartridges/MLB-M2/lanes/history-journal.mjs",
-        "total_hits": 10,
+        "total_hits": 11,
         "counts": {
-          "legacy_sports_db": 1,
           "published_data_input": 2,
           "private_prediction_json_input": 1,
           "raw_archive_input": 1,
-          "generated_module_input": 5
+          "generated_module_input": 5,
+          "legacy_sqlite_shell": 1,
+          "db_ready_reference": 1
         }
       },
       {
@@ -146,10 +148,10 @@
         "path": "models/mlb/cartridges/MLB-M0/lanes/lineups.mjs",
         "total_hits": 7,
         "counts": {
-          "legacy_sports_db": 1,
           "warehouse_cli": 4,
           "raw_archive_input": 1,
-          "legacy_sqlite_shell": 1
+          "legacy_sqlite_shell": 1,
+          "db_ready_reference": 1
         }
       },
       {
@@ -173,10 +175,10 @@
         "path": "models/mlb/cartridges/MLB-M2/lanes/lineups.mjs",
         "total_hits": 7,
         "counts": {
-          "legacy_sports_db": 1,
           "warehouse_cli": 4,
           "raw_archive_input": 1,
-          "legacy_sqlite_shell": 1
+          "legacy_sqlite_shell": 1,
+          "db_ready_reference": 1
         }
       },
       {
@@ -189,13 +191,21 @@
         }
       },
       {
+        "path": "pipeline/mlb/warehouse/README.md",
+        "total_hits": 7,
+        "counts": {
+          "legacy_sports_db": 1,
+          "warehouse_cli": 3,
+          "db_ready_reference": 3
+        }
+      },
+      {
         "path": "models/mlb/cartridges/MLB-M0/lanes/props.mjs",
         "total_hits": 6,
         "counts": {
-          "legacy_sports_db": 1,
           "private_prediction_json_output": 2,
           "legacy_sqlite_shell": 1,
-          "db_ready_reference": 2
+          "db_ready_reference": 3
         }
       },
       {
@@ -270,12 +280,30 @@
         }
       },
       {
+        "path": "pipeline/mlb/features/README.md",
+        "total_hits": 4,
+        "counts": {
+          "legacy_sports_db": 1,
+          "warehouse_cli": 1,
+          "db_ready_reference": 2
+        }
+      },
+      {
+        "path": "pipeline/mlb/warehouse/mlb_warehouse.py",
+        "total_hits": 4,
+        "counts": {
+          "legacy_sports_db": 2,
+          "raw_archive_input": 1,
+          "db_ready_reference": 1
+        }
+      },
+      {
         "path": "models/mlb/cartridges/MLB-M0/lanes/generate-day-files.mjs",
         "total_hits": 3,
         "counts": {
-          "legacy_sports_db": 1,
           "published_data_input": 1,
-          "legacy_sqlite_shell": 1
+          "legacy_sqlite_shell": 1,
+          "db_ready_reference": 1
         }
       },
       {
@@ -298,9 +326,9 @@
         "path": "models/mlb/cartridges/MLB-M2/lanes/generate-day-files.mjs",
         "total_hits": 3,
         "counts": {
-          "legacy_sports_db": 1,
           "published_data_input": 1,
-          "legacy_sqlite_shell": 1
+          "legacy_sqlite_shell": 1,
+          "db_ready_reference": 1
         }
       },
       {
@@ -371,6 +399,14 @@
         }
       },
       {
+        "path": "pipeline/mlb/warehouse/mlb_typed_warehouse.py",
+        "total_hits": 3,
+        "counts": {
+          "warehouse_cli": 1,
+          "db_ready_reference": 2
+        }
+      },
+      {
         "path": "models/mlb/cartridges/MLB-M0/lanes/batting-impact.mjs",
         "total_hits": 2,
         "counts": {
@@ -437,16 +473,8 @@
         "path": "pipeline/mlb/warehouse/export_story_archive.py",
         "total_hits": 2,
         "counts": {
-          "legacy_sports_db": 1,
-          "generated_module_input": 1
-        }
-      },
-      {
-        "path": "pipeline/mlb/warehouse/mlb_warehouse.py",
-        "total_hits": 2,
-        "counts": {
-          "legacy_sports_db": 1,
-          "raw_archive_input": 1
+          "generated_module_input": 1,
+          "db_ready_reference": 1
         }
       },
       {
@@ -551,14 +579,14 @@
         "path": "pipeline/mlb/fetchers/fetch_fanduel_research_mlb.py",
         "total_hits": 1,
         "counts": {
-          "legacy_sports_db": 1
+          "db_ready_reference": 1
         }
       },
       {
         "path": "pipeline/mlb/fetchers/fetch_historical_mlb_odds.py",
         "total_hits": 1,
         "counts": {
-          "legacy_sports_db": 1
+          "db_ready_reference": 1
         }
       },
       {
@@ -859,14 +887,7 @@
         "path": "pipeline/mlb/warehouse/mlb_side_backtest.py",
         "total_hits": 1,
         "counts": {
-          "legacy_sports_db": 1
-        }
-      },
-      {
-        "path": "pipeline/mlb/warehouse/README.md",
-        "total_hits": 1,
-        "counts": {
-          "warehouse_cli": 1
+          "db_ready_reference": 1
         }
       }
     ]
@@ -962,22 +983,22 @@
       "path": "models/mlb/cartridges/MLB-M0/lanes/generate-day-files.mjs",
       "hits": [
         {
-          "key": "legacy_sports_db",
-          "severity": "cutover_blocker",
-          "line": 421,
-          "match": "sports.db"
-        },
-        {
           "key": "published_data_input",
           "severity": "cutover_blocker",
-          "line": 443,
+          "line": 444,
           "match": "published-data', 'slates"
         },
         {
           "key": "legacy_sqlite_shell",
           "severity": "review",
-          "line": 420,
+          "line": 421,
           "match": "sqlite3',"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 10,
+          "match": "sql-mlb.db"
         }
       ]
     },
@@ -985,15 +1006,9 @@
       "path": "models/mlb/cartridges/MLB-M0/lanes/history-journal.mjs",
       "hits": [
         {
-          "key": "legacy_sports_db",
-          "severity": "cutover_blocker",
-          "line": 86,
-          "match": "sports.db"
-        },
-        {
           "key": "published_data_input",
           "severity": "cutover_blocker",
-          "line": 9,
+          "line": 10,
           "match": "published-data', 'slates"
         },
         {
@@ -1011,7 +1026,7 @@
         {
           "key": "raw_archive_input",
           "severity": "cutover_target",
-          "line": 8,
+          "line": 9,
           "match": "data-private', 'history"
         },
         {
@@ -1043,6 +1058,18 @@
           "severity": "cutover_target",
           "line": 841,
           "match": ".generated."
+        },
+        {
+          "key": "legacy_sqlite_shell",
+          "severity": "review",
+          "line": 86,
+          "match": "execFileSync('sqlite3'"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 8,
+          "match": "sql-mlb.db"
         }
       ]
     },
@@ -1085,12 +1112,6 @@
       "path": "models/mlb/cartridges/MLB-M0/lanes/lineups.mjs",
       "hits": [
         {
-          "key": "legacy_sports_db",
-          "severity": "cutover_blocker",
-          "line": 11,
-          "match": "sports.db"
-        },
-        {
           "key": "warehouse_cli",
           "severity": "cutover_blocker",
           "line": 300,
@@ -1125,18 +1146,18 @@
           "severity": "review",
           "line": 112,
           "match": "execFileSync('sqlite3'"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 11,
+          "match": "sql-mlb.db"
         }
       ]
     },
     {
       "path": "models/mlb/cartridges/MLB-M0/lanes/props.mjs",
       "hits": [
-        {
-          "key": "legacy_sports_db",
-          "severity": "cutover_blocker",
-          "line": 56,
-          "match": "sports.db"
-        },
         {
           "key": "private_prediction_json_output",
           "severity": "output_surface",
@@ -1160,6 +1181,12 @@
           "severity": "db_ready",
           "line": 6,
           "match": "loadMlbDayGames"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 56,
+          "match": "sql-mlb.db"
         },
         {
           "key": "db_ready_reference",
@@ -1674,22 +1701,22 @@
       "path": "models/mlb/cartridges/MLB-M2/lanes/generate-day-files.mjs",
       "hits": [
         {
-          "key": "legacy_sports_db",
-          "severity": "cutover_blocker",
-          "line": 421,
-          "match": "sports.db"
-        },
-        {
           "key": "published_data_input",
           "severity": "cutover_blocker",
-          "line": 443,
+          "line": 444,
           "match": "published-data', 'slates"
         },
         {
           "key": "legacy_sqlite_shell",
           "severity": "review",
-          "line": 420,
+          "line": 421,
           "match": "sqlite3',"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 10,
+          "match": "sql-mlb.db"
         }
       ]
     },
@@ -1697,15 +1724,9 @@
       "path": "models/mlb/cartridges/MLB-M2/lanes/history-journal.mjs",
       "hits": [
         {
-          "key": "legacy_sports_db",
-          "severity": "cutover_blocker",
-          "line": 86,
-          "match": "sports.db"
-        },
-        {
           "key": "published_data_input",
           "severity": "cutover_blocker",
-          "line": 9,
+          "line": 10,
           "match": "published-data', 'slates"
         },
         {
@@ -1723,7 +1744,7 @@
         {
           "key": "raw_archive_input",
           "severity": "cutover_target",
-          "line": 8,
+          "line": 9,
           "match": "data-private', 'history"
         },
         {
@@ -1755,6 +1776,18 @@
           "severity": "cutover_target",
           "line": 841,
           "match": ".generated."
+        },
+        {
+          "key": "legacy_sqlite_shell",
+          "severity": "review",
+          "line": 86,
+          "match": "execFileSync('sqlite3'"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 8,
+          "match": "sql-mlb.db"
         }
       ]
     },
@@ -1797,12 +1830,6 @@
       "path": "models/mlb/cartridges/MLB-M2/lanes/lineups.mjs",
       "hits": [
         {
-          "key": "legacy_sports_db",
-          "severity": "cutover_blocker",
-          "line": 11,
-          "match": "sports.db"
-        },
-        {
           "key": "warehouse_cli",
           "severity": "cutover_blocker",
           "line": 300,
@@ -1837,6 +1864,12 @@
           "severity": "review",
           "line": 112,
           "match": "execFileSync('sqlite3'"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 11,
+          "match": "sql-mlb.db"
         }
       ]
     },
@@ -2479,13 +2512,42 @@
       ]
     },
     {
-      "path": "pipeline/mlb/fetchers/fetch_fanduel_research_mlb.py",
+      "path": "pipeline/mlb/features/README.md",
       "hits": [
         {
           "key": "legacy_sports_db",
           "severity": "cutover_blocker",
-          "line": 26,
+          "line": 44,
           "match": "sports.db"
+        },
+        {
+          "key": "warehouse_cli",
+          "severity": "cutover_blocker",
+          "line": 9,
+          "match": "mlb_warehouse.py"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 9,
+          "match": "warehouse/sports/mlb"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 9,
+          "match": "sql-mlb.db"
+        }
+      ]
+    },
+    {
+      "path": "pipeline/mlb/fetchers/fetch_fanduel_research_mlb.py",
+      "hits": [
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 26,
+          "match": "sql-mlb.db"
         }
       ]
     },
@@ -2493,10 +2555,10 @@
       "path": "pipeline/mlb/fetchers/fetch_historical_mlb_odds.py",
       "hits": [
         {
-          "key": "legacy_sports_db",
-          "severity": "cutover_blocker",
+          "key": "db_ready_reference",
+          "severity": "db_ready",
           "line": 25,
-          "match": "sports.db"
+          "match": "sql-mlb.db"
         }
       ]
     },
@@ -2989,10 +3051,46 @@
       "path": "pipeline/mlb/warehouse/README.md",
       "hits": [
         {
+          "key": "legacy_sports_db",
+          "severity": "cutover_blocker",
+          "line": 6,
+          "match": "sports.db"
+        },
+        {
           "key": "warehouse_cli",
           "severity": "cutover_blocker",
-          "line": 5,
+          "line": 6,
           "match": "mlb_warehouse.py"
+        },
+        {
+          "key": "warehouse_cli",
+          "severity": "cutover_blocker",
+          "line": 12,
+          "match": "mlb_warehouse.py"
+        },
+        {
+          "key": "warehouse_cli",
+          "severity": "cutover_blocker",
+          "line": 16,
+          "match": "mlb_warehouse.py"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 5,
+          "match": "warehouse/sports/mlb"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 5,
+          "match": "sql-mlb.db"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 12,
+          "match": "sql-mlb.db"
         }
       ]
     },
@@ -3000,16 +3098,16 @@
       "path": "pipeline/mlb/warehouse/export_story_archive.py",
       "hits": [
         {
-          "key": "legacy_sports_db",
-          "severity": "cutover_blocker",
-          "line": 13,
-          "match": "sports.db"
-        },
-        {
           "key": "generated_module_input",
           "severity": "cutover_target",
           "line": 14,
           "match": ".generated."
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 13,
+          "match": "sql-mlb.db"
         }
       ]
     },
@@ -3017,10 +3115,33 @@
       "path": "pipeline/mlb/warehouse/mlb_side_backtest.py",
       "hits": [
         {
-          "key": "legacy_sports_db",
-          "severity": "cutover_blocker",
+          "key": "db_ready_reference",
+          "severity": "db_ready",
           "line": 12,
-          "match": "sports.db"
+          "match": "sql-mlb.db"
+        }
+      ]
+    },
+    {
+      "path": "pipeline/mlb/warehouse/mlb_typed_warehouse.py",
+      "hits": [
+        {
+          "key": "warehouse_cli",
+          "severity": "cutover_blocker",
+          "line": 500,
+          "match": "mlb_warehouse.py"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 15,
+          "match": "sql-mlb.db"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 500,
+          "match": "sql-mlb.db"
         }
       ]
     },
@@ -3030,14 +3151,26 @@
         {
           "key": "legacy_sports_db",
           "severity": "cutover_blocker",
-          "line": 28,
+          "line": 29,
+          "match": "sports.db"
+        },
+        {
+          "key": "legacy_sports_db",
+          "severity": "cutover_blocker",
+          "line": 45,
           "match": "sports.db"
         },
         {
           "key": "raw_archive_input",
           "severity": "cutover_target",
-          "line": 14383,
+          "line": 14418,
           "match": "data-private/lineups"
+        },
+        {
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 30,
+          "match": "sql-mlb.db"
         }
       ]
     }

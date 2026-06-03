@@ -50,6 +50,23 @@ flowchart TD
 | `typed-read-needed` | Replace with a read-only typed DB report/list command. |
 | `retire` | Remove or stop exposing after callers are confirmed gone. |
 
+## Audit Checkpoint: 2026-06-03
+
+`data-migration/reports/mlb_typed_warehouse_command_audit_2026-06-03.json` confirms:
+
+- Ledger commands: 39.
+- Legacy commands found in `mlb_warehouse.py`: 39.
+- Typed replacement commands implemented in `mlb_typed_warehouse.py`: 5.
+- Implemented replacements: `ingest-mlb-day`, `ingest-mlb-range`, `list-probable-starters`, `prepare-mlb-day`, `replay-mlb-range-from-raw`.
+- Ledger drift: zero missing legacy commands and zero extra typed replacement commands.
+
+`data-migration/reports/mlb_db_input_cutover_audit_active_2026-06-03.json` confirms:
+
+- Active direct `sports.db` runtime reads: zero.
+- Active legacy warehouse CLI callers: 3 files / 9 hits.
+- Active callers to inspect next: `models/mlb/cartridges/MLB-M2/lanes/lineups.mjs`, `models/mlb/cartridges/MLB-M2/workflows/followup.mjs`, and `models/mlb/cartridges/MLB-M2/workflows/refresh-live-board.mjs`.
+- Active generated/public/private artifact inputs still remain in snapshot, history, verify, follow-up, and day-file surfaces; those are separate DB-input cutover targets after the warehouse CLI callers are gone.
+
 ## Command Ledger
 
 | Command | Package Script | Class | Priority | Status | Replacement Target | Next Action |
