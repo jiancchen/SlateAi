@@ -10,6 +10,8 @@ Scope: define the first MLB-M3 feature set and build typed feature extraction fr
 
 Related docs:
 
+- `run-plans/mlb/2026-06-03-mlb-m3-alpha-1-run-plan.md`
+- `run-plans/mlb/2026-06-03-mlb-m3-alpha-1-ledger.md`
 - `research-m3/alpha-design.md`
 - `research-m3/model-architecture-notes.md`
 - `research-m3/run-dashboard-notes.md`
