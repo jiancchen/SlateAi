@@ -1,10 +1,10 @@
 # MLB Legacy to Typed DB Migration Gap Audit
 
-Generated: 2026-06-03T03:10:10.155Z
+Generated: 2026-06-03T03:52:04.337Z
 
 Legacy DB: `data-private/warehouse/sports.db` (2257.7 MB)
 
-Typed DB: `data-private/warehouse/sports/mlb/sql-mlb.db` (4016.6 MB)
+Typed DB: `data-private/warehouse/sports/mlb/sql-mlb.db` (5083.3 MB)
 
 ## Summary
 
@@ -13,7 +13,7 @@ Typed DB: `data-private/warehouse/sports/mlb/sql-mlb.db` (4016.6 MB)
 - Tables staged in `legacy_table_rows`: 70
 - Staged rows: 1206213
 - Typed target tables inspected: 97
-- Direct `sports.db` code references found: 31
+- Direct `sports.db` code references found: 32
 - Runtime cutover blockers: 21
 
 ## Status Counts
@@ -29,8 +29,8 @@ Typed DB: `data-private/warehouse/sports/mlb/sql-mlb.db` (4016.6 MB)
 
 | Typed Table | Severity | Missing Replay Fields |
 | --- | --- | --- |
-| plate_appearances | critical_for_m3_replay | at_bat_index, outs_before, outs_after, balls_final, strikes_final, base_state_start, base_state_end, away_score_before, home_score_before, away_score_after, home_score_after, men_on_base, is_scoring_play, is_out, is_at_bat, raw_json |
-| pitch_events | critical_for_m3_replay | at_bat_index, event_index, balls, strikes, outs, is_pitch, is_strike, is_ball, call_code, call_description, pitch_type_code, pitch_type_description, start_speed, end_speed, play_id, raw_json |
+| plate_appearances | ok |  |
+| pitch_events | ok |  |
 
 ## Tables Needing Migration Attention
 
@@ -52,27 +52,27 @@ These code paths still directly reference `data-private/warehouse/sports.db` or 
 
 | Group | File | Reference |
 | --- | --- | --- |
-| api_runtime | api/src/server.ts:14 | import { warehousePath } from './lib/paths.js' |
-| api_runtime | api/src/server.ts:39 | warehousePath |
 | mlb_model_runtime | models/mlb/compare-cartridges.mjs:31 | conn = sqlite3.connect("data-private/warehouse/sports.db") |
-| api_runtime | api/src/lib/sqlite.ts:2 | import { warehousePath } from './paths.js' |
-| api_runtime | api/src/lib/sqlite.ts:5 | const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { |
-| api_runtime | api/src/lib/paths.ts:11 | export const warehousePath = path.join(dataPrivateRoot, 'warehouse', 'sports.db') |
 | api_runtime | api/src/scripts/export-published-data.ts:13 | import { dataPrivateRoot, publishedDataRoot, warehousePath } from '../lib/paths.js' |
 | api_runtime | api/src/scripts/export-published-data.ts:46 | if (!fsSync.existsSync(warehousePath)) return [] |
 | api_runtime | api/src/scripts/export-published-data.ts:47 | const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { encoding: 'utf8' }).trim() |
-| mlb_model_runtime | models/mlb/cartridges/MLB-M2/lanes/history-journal.mjs:86 | const output = execSync(`sqlite3 -json data-private/warehouse/sports.db "${escaped}"`, { |
-| mlb_model_runtime | models/mlb/cartridges/MLB-M2/lanes/lineups.mjs:11 | const warehousePath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db') |
-| mlb_model_runtime | models/mlb/cartridges/MLB-M2/lanes/lineups.mjs:111 | if (!existsSync(warehousePath)) return [] |
-| mlb_model_runtime | models/mlb/cartridges/MLB-M2/lanes/lineups.mjs:112 | const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { encoding: 'utf8' }).trim() |
-| mlb_model_runtime | models/mlb/cartridges/MLB-M0/lanes/history-journal.mjs:86 | const output = execSync(`sqlite3 -json data-private/warehouse/sports.db "${escaped}"`, { |
+| api_runtime | api/src/lib/paths.ts:11 | export const warehousePath = path.join(dataPrivateRoot, 'warehouse', 'sports.db') |
+| api_runtime | api/src/server.ts:14 | import { warehousePath } from './lib/paths.js' |
+| api_runtime | api/src/server.ts:39 | warehousePath |
+| api_runtime | api/src/lib/sqlite.ts:2 | import { warehousePath } from './paths.js' |
+| api_runtime | api/src/lib/sqlite.ts:5 | const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { |
 | mlb_model_runtime | models/mlb/cartridges/MLB-M1/lanes/history-journal.mjs:86 | const output = execSync(`sqlite3 -json data-private/warehouse/sports.db "${escaped}"`, { |
-| mlb_model_runtime | models/mlb/cartridges/MLB-M0/lanes/lineups.mjs:11 | const warehousePath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db') |
-| mlb_model_runtime | models/mlb/cartridges/MLB-M0/lanes/lineups.mjs:111 | if (!existsSync(warehousePath)) return [] |
-| mlb_model_runtime | models/mlb/cartridges/MLB-M0/lanes/lineups.mjs:112 | const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { encoding: 'utf8' }).trim() |
 | mlb_model_runtime | models/mlb/cartridges/MLB-M1/lanes/lineups.mjs:11 | const warehousePath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db') |
 | mlb_model_runtime | models/mlb/cartridges/MLB-M1/lanes/lineups.mjs:111 | if (!existsSync(warehousePath)) return [] |
 | mlb_model_runtime | models/mlb/cartridges/MLB-M1/lanes/lineups.mjs:112 | const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { encoding: 'utf8' }).trim() |
+| mlb_model_runtime | models/mlb/cartridges/MLB-M0/lanes/history-journal.mjs:86 | const output = execSync(`sqlite3 -json data-private/warehouse/sports.db "${escaped}"`, { |
+| mlb_model_runtime | models/mlb/cartridges/MLB-M0/lanes/lineups.mjs:11 | const warehousePath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db') |
+| mlb_model_runtime | models/mlb/cartridges/MLB-M0/lanes/lineups.mjs:111 | if (!existsSync(warehousePath)) return [] |
+| mlb_model_runtime | models/mlb/cartridges/MLB-M0/lanes/lineups.mjs:112 | const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { encoding: 'utf8' }).trim() |
+| mlb_model_runtime | models/mlb/cartridges/MLB-M2/lanes/lineups.mjs:11 | const warehousePath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db') |
+| mlb_model_runtime | models/mlb/cartridges/MLB-M2/lanes/lineups.mjs:111 | if (!existsSync(warehousePath)) return [] |
+| mlb_model_runtime | models/mlb/cartridges/MLB-M2/lanes/lineups.mjs:112 | const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { encoding: 'utf8' }).trim() |
+| mlb_model_runtime | models/mlb/cartridges/MLB-M2/lanes/history-journal.mjs:86 | const output = execSync(`sqlite3 -json data-private/warehouse/sports.db "${escaped}"`, { |
 
 ## Largest Legacy Source Tables
 

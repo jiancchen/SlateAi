@@ -1,0 +1,35 @@
+{
+  "checks": {
+    "duplicate_pitch_event_order_keys": 0,
+    "duplicate_plate_appearance_order_keys": 0,
+    "final_score_mismatches": 0,
+    "orphan_pitch_events": 0,
+    "pitch_events_invalid_count_state": 0,
+    "pitch_events_missing_raw_json": 0,
+    "pitch_events_missing_replay_key": 0,
+    "pitch_events_pitch_rows_missing_call": 0,
+    "pitch_events_pitch_rows_missing_count_state": 0,
+    "plate_appearances_invalid_count_state": 0,
+    "plate_appearances_invalid_out_state": 0,
+    "plate_appearances_missing_base_state": 0,
+    "plate_appearances_missing_raw_json": 0,
+    "plate_appearances_missing_replay_key": 0,
+    "plate_appearances_missing_score_state": 0,
+    "score_delta_mismatches": 0
+  },
+  "counts": {
+    "games_with_pitch_events": 886,
+    "games_with_plate_appearances": 886,
+    "pitch_events": 304181,
+    "plate_appearances": 67251
+  },
+  "errors": [],
+  "generated_at": "2026-06-03T03:51:22.472585+00:00",
+  "ok": true,
+  "samples": {
+    "final_score_mismatches": [],
+    "invalid_out_state": []
+  },
+  "script": "data-migration/scripts/validate_mlb_replay_state_typed.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db"
+}

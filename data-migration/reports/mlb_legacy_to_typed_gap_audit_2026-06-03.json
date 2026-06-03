@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T03:10:10.155Z",
+  "generated_at": "2026-06-03T03:52:04.337Z",
   "report_date": "2026-06-03",
   "legacy_db": {
     "path": "/Users/jcchen/Documents/New project/data-private/warehouse/sports.db",
@@ -10,8 +10,8 @@
   "typed_db": {
     "path": "/Users/jcchen/Documents/New project/data-private/warehouse/sports/mlb/sql-mlb.db",
     "relative_path": "data-private/warehouse/sports/mlb/sql-mlb.db",
-    "size_bytes": 4211679232,
-    "size_mb": 4016.6
+    "size_bytes": 5330272256,
+    "size_mb": 5083.3
   },
   "summary": {
     "legacy_tables_total": 121,
@@ -174,7 +174,7 @@
         "target_source_rows": 407
       }
     },
-    "sports_db_read_paths": 31,
+    "sports_db_read_paths": 32,
     "sports_db_cutover_blockers": 21
   },
   "replay_schema_gaps": {
@@ -216,25 +216,8 @@
         "is_at_bat",
         "raw_json"
       ],
-      "fields_missing_from_typed": [
-        "at_bat_index",
-        "outs_before",
-        "outs_after",
-        "balls_final",
-        "strikes_final",
-        "base_state_start",
-        "base_state_end",
-        "away_score_before",
-        "home_score_before",
-        "away_score_after",
-        "home_score_after",
-        "men_on_base",
-        "is_scoring_play",
-        "is_out",
-        "is_at_bat",
-        "raw_json"
-      ],
-      "severity": "critical_for_m3_replay"
+      "fields_missing_from_typed": [],
+      "severity": "ok"
     },
     "pitch_events": {
       "legacy_table": "mlb_pitch_events",
@@ -274,25 +257,8 @@
         "play_id",
         "raw_json"
       ],
-      "fields_missing_from_typed": [
-        "at_bat_index",
-        "event_index",
-        "balls",
-        "strikes",
-        "outs",
-        "is_pitch",
-        "is_strike",
-        "is_ball",
-        "call_code",
-        "call_description",
-        "pitch_type_code",
-        "pitch_type_description",
-        "start_speed",
-        "end_speed",
-        "play_id",
-        "raw_json"
-      ],
-      "severity": "critical_for_m3_replay"
+      "fields_missing_from_typed": [],
+      "severity": "ok"
     }
   },
   "source_audit": [
@@ -4341,53 +4307,11 @@
   "staged_but_no_legacy_table": [],
   "sports_db_read_paths": [
     {
-      "file": "data-migration/scripts/inspect_legacy_dbs.mjs",
-      "line": 12,
-      "group": "data_migration_utility",
-      "cutover_blocker": false,
-      "text": "const defaultDbPath = path.join(repoRoot, 'data-private/warehouse/sports.db');"
-    },
-    {
-      "file": "api/src/server.ts",
-      "line": 14,
-      "group": "api_runtime",
-      "cutover_blocker": true,
-      "text": "import { warehousePath } from './lib/paths.js'"
-    },
-    {
-      "file": "api/src/server.ts",
-      "line": 39,
-      "group": "api_runtime",
-      "cutover_blocker": true,
-      "text": "warehousePath"
-    },
-    {
       "file": "models/mlb/compare-cartridges.mjs",
       "line": 31,
       "group": "mlb_model_runtime",
       "cutover_blocker": true,
       "text": "conn = sqlite3.connect(\"data-private/warehouse/sports.db\")"
-    },
-    {
-      "file": "api/src/lib/sqlite.ts",
-      "line": 2,
-      "group": "api_runtime",
-      "cutover_blocker": true,
-      "text": "import { warehousePath } from './paths.js'"
-    },
-    {
-      "file": "api/src/lib/sqlite.ts",
-      "line": 5,
-      "group": "api_runtime",
-      "cutover_blocker": true,
-      "text": "const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], {"
-    },
-    {
-      "file": "api/src/lib/paths.ts",
-      "line": 11,
-      "group": "api_runtime",
-      "cutover_blocker": true,
-      "text": "export const warehousePath = path.join(dataPrivateRoot, 'warehouse', 'sports.db')"
     },
     {
       "file": "api/src/scripts/export-published-data.ts",
@@ -4409,6 +4333,48 @@
       "group": "api_runtime",
       "cutover_blocker": true,
       "text": "const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { encoding: 'utf8' }).trim()"
+    },
+    {
+      "file": "api/src/lib/paths.ts",
+      "line": 11,
+      "group": "api_runtime",
+      "cutover_blocker": true,
+      "text": "export const warehousePath = path.join(dataPrivateRoot, 'warehouse', 'sports.db')"
+    },
+    {
+      "file": "api/src/server.ts",
+      "line": 14,
+      "group": "api_runtime",
+      "cutover_blocker": true,
+      "text": "import { warehousePath } from './lib/paths.js'"
+    },
+    {
+      "file": "api/src/server.ts",
+      "line": 39,
+      "group": "api_runtime",
+      "cutover_blocker": true,
+      "text": "warehousePath"
+    },
+    {
+      "file": "api/src/lib/sqlite.ts",
+      "line": 2,
+      "group": "api_runtime",
+      "cutover_blocker": true,
+      "text": "import { warehousePath } from './paths.js'"
+    },
+    {
+      "file": "api/src/lib/sqlite.ts",
+      "line": 5,
+      "group": "api_runtime",
+      "cutover_blocker": true,
+      "text": "const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], {"
+    },
+    {
+      "file": "data-migration/scripts/inspect_legacy_dbs.mjs",
+      "line": 12,
+      "group": "data_migration_utility",
+      "cutover_blocker": false,
+      "text": "const defaultDbPath = path.join(repoRoot, 'data-private/warehouse/sports.db');"
     },
     {
       "file": "data-migration/scripts/backfill_mlb_output_contract_inventory.mjs",
@@ -4439,48 +4405,6 @@
       "text": "source: 'data-private/warehouse/sports.db:tennis_core',"
     },
     {
-      "file": "models/mlb/cartridges/MLB-M2/lanes/history-journal.mjs",
-      "line": 86,
-      "group": "mlb_model_runtime",
-      "cutover_blocker": true,
-      "text": "const output = execSync(`sqlite3 -json data-private/warehouse/sports.db \"${escaped}\"`, {"
-    },
-    {
-      "file": "data-migration/scripts/plan_phase2_table_backfill.mjs",
-      "line": 15,
-      "group": "data_migration_utility",
-      "cutover_blocker": false,
-      "text": "sourceDb: path.join(repoRoot, 'data-private/warehouse/sports.db'),"
-    },
-    {
-      "file": "models/mlb/cartridges/MLB-M2/lanes/lineups.mjs",
-      "line": 11,
-      "group": "mlb_model_runtime",
-      "cutover_blocker": true,
-      "text": "const warehousePath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db')"
-    },
-    {
-      "file": "models/mlb/cartridges/MLB-M2/lanes/lineups.mjs",
-      "line": 111,
-      "group": "mlb_model_runtime",
-      "cutover_blocker": true,
-      "text": "if (!existsSync(warehousePath)) return []"
-    },
-    {
-      "file": "models/mlb/cartridges/MLB-M2/lanes/lineups.mjs",
-      "line": 112,
-      "group": "mlb_model_runtime",
-      "cutover_blocker": true,
-      "text": "const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { encoding: 'utf8' }).trim()"
-    },
-    {
-      "file": "data-migration/scripts/validate_sport_db.mjs",
-      "line": 24,
-      "group": "data_migration_utility",
-      "cutover_blocker": false,
-      "text": "sourceDb: path.join(repoRoot, 'data-private/warehouse/sports.db'),"
-    },
-    {
       "file": "data-migration/scripts/backfill_mlb_from_sports_db.mjs",
       "line": 15,
       "group": "data_migration_utility",
@@ -4502,11 +4426,25 @@
       "text": "source: 'data-private/warehouse/sports.db:mlb_core',"
     },
     {
-      "file": "models/mlb/cartridges/MLB-M0/lanes/history-journal.mjs",
-      "line": 86,
-      "group": "mlb_model_runtime",
-      "cutover_blocker": true,
-      "text": "const output = execSync(`sqlite3 -json data-private/warehouse/sports.db \"${escaped}\"`, {"
+      "file": "data-migration/scripts/plan_phase2_table_backfill.mjs",
+      "line": 15,
+      "group": "data_migration_utility",
+      "cutover_blocker": false,
+      "text": "sourceDb: path.join(repoRoot, 'data-private/warehouse/sports.db'),"
+    },
+    {
+      "file": "data-migration/scripts/backfill_mlb_replay_state_to_typed.py",
+      "line": 484,
+      "group": "data_migration_utility",
+      "cutover_blocker": false,
+      "text": "\"source\": \"data-private/warehouse/sports.db:mlb_plate_appearances,mlb_pitch_events\","
+    },
+    {
+      "file": "data-migration/scripts/validate_sport_db.mjs",
+      "line": 24,
+      "group": "data_migration_utility",
+      "cutover_blocker": false,
+      "text": "sourceDb: path.join(repoRoot, 'data-private/warehouse/sports.db'),"
     },
     {
       "file": "models/mlb/cartridges/MLB-M1/lanes/history-journal.mjs",
@@ -4516,6 +4454,34 @@
       "text": "const output = execSync(`sqlite3 -json data-private/warehouse/sports.db \"${escaped}\"`, {"
     },
     {
+      "file": "models/mlb/cartridges/MLB-M1/lanes/lineups.mjs",
+      "line": 11,
+      "group": "mlb_model_runtime",
+      "cutover_blocker": true,
+      "text": "const warehousePath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db')"
+    },
+    {
+      "file": "models/mlb/cartridges/MLB-M1/lanes/lineups.mjs",
+      "line": 111,
+      "group": "mlb_model_runtime",
+      "cutover_blocker": true,
+      "text": "if (!existsSync(warehousePath)) return []"
+    },
+    {
+      "file": "models/mlb/cartridges/MLB-M1/lanes/lineups.mjs",
+      "line": 112,
+      "group": "mlb_model_runtime",
+      "cutover_blocker": true,
+      "text": "const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { encoding: 'utf8' }).trim()"
+    },
+    {
+      "file": "models/mlb/cartridges/MLB-M0/lanes/history-journal.mjs",
+      "line": 86,
+      "group": "mlb_model_runtime",
+      "cutover_blocker": true,
+      "text": "const output = execSync(`sqlite3 -json data-private/warehouse/sports.db \"${escaped}\"`, {"
+    },
+    {
       "file": "models/mlb/cartridges/MLB-M0/lanes/lineups.mjs",
       "line": 11,
       "group": "mlb_model_runtime",
@@ -4537,25 +4503,32 @@
       "text": "const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { encoding: 'utf8' }).trim()"
     },
     {
-      "file": "models/mlb/cartridges/MLB-M1/lanes/lineups.mjs",
+      "file": "models/mlb/cartridges/MLB-M2/lanes/lineups.mjs",
       "line": 11,
       "group": "mlb_model_runtime",
       "cutover_blocker": true,
       "text": "const warehousePath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db')"
     },
     {
-      "file": "models/mlb/cartridges/MLB-M1/lanes/lineups.mjs",
+      "file": "models/mlb/cartridges/MLB-M2/lanes/lineups.mjs",
       "line": 111,
       "group": "mlb_model_runtime",
       "cutover_blocker": true,
       "text": "if (!existsSync(warehousePath)) return []"
     },
     {
-      "file": "models/mlb/cartridges/MLB-M1/lanes/lineups.mjs",
+      "file": "models/mlb/cartridges/MLB-M2/lanes/lineups.mjs",
       "line": 112,
       "group": "mlb_model_runtime",
       "cutover_blocker": true,
       "text": "const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { encoding: 'utf8' }).trim()"
+    },
+    {
+      "file": "models/mlb/cartridges/MLB-M2/lanes/history-journal.mjs",
+      "line": 86,
+      "group": "mlb_model_runtime",
+      "cutover_blocker": true,
+      "text": "const output = execSync(`sqlite3 -json data-private/warehouse/sports.db \"${escaped}\"`, {"
     }
   ],
   "typed_tables": [

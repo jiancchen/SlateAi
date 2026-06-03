@@ -53,6 +53,8 @@ PITCH_REQUIRED_COLUMNS = [
     "raw_json",
 ]
 
+MAX_RAW_STRIKES_IN_PA = 30
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
@@ -205,8 +207,9 @@ def validate(args: argparse.Namespace) -> dict[str, Any]:
                    or balls_final < 0
                    or balls_final > 4
                    or strikes_final < 0
-                   or strikes_final > 3
+                   or strikes_final > ?
                 """,
+                (MAX_RAW_STRIKES_IN_PA,),
             ),
             "plate_appearances_missing_raw_json": scalar(
                 con,
@@ -232,10 +235,11 @@ def validate(args: argparse.Namespace) -> dict[str, Any]:
                    or balls < 0
                    or balls > 4
                    or strikes < 0
-                   or strikes > 3
+                   or strikes > ?
                    or outs < 0
                    or outs > 3
                 """,
+                (MAX_RAW_STRIKES_IN_PA,),
             ),
             "pitch_events_pitch_rows_missing_call": scalar(
                 con,

@@ -1,0 +1,125 @@
+{
+  "after": {
+    "pitch_events": {
+      "field_non_null": {
+        "at_bat_index": 304181,
+        "balls": 304181,
+        "call_code": 266937,
+        "call_description": 304104,
+        "end_speed": 260532,
+        "event_index": 304181,
+        "is_ball": 304181,
+        "is_pitch": 304181,
+        "is_strike": 304181,
+        "outs": 304181,
+        "pitch_type_code": 260532,
+        "pitch_type_description": 260626,
+        "play_id": 266711,
+        "raw_json": 304181,
+        "start_speed": 260532,
+        "strikes": 304181
+      },
+      "total": 304181,
+      "with_replay_key": 304181
+    },
+    "plate_appearances": {
+      "field_non_null": {
+        "at_bat_index": 67251,
+        "away_score_after": 67251,
+        "away_score_before": 67251,
+        "balls_final": 67251,
+        "base_state_end": 67251,
+        "base_state_start": 67251,
+        "home_score_after": 67251,
+        "home_score_before": 67251,
+        "is_at_bat": 67251,
+        "is_out": 67251,
+        "is_scoring_play": 67251,
+        "men_on_base": 67251,
+        "outs_after": 67251,
+        "outs_before": 67251,
+        "raw_json": 67251,
+        "strikes_final": 67251
+      },
+      "total": 67251,
+      "with_replay_key": 67251
+    }
+  },
+  "before": {
+    "pitch_events": {
+      "field_non_null": {
+        "at_bat_index": 0,
+        "balls": 0,
+        "call_code": 0,
+        "call_description": 0,
+        "end_speed": 0,
+        "event_index": 0,
+        "is_ball": 0,
+        "is_pitch": 0,
+        "is_strike": 0,
+        "outs": 0,
+        "pitch_type_code": 0,
+        "pitch_type_description": 0,
+        "play_id": 0,
+        "raw_json": 0,
+        "start_speed": 0,
+        "strikes": 0
+      },
+      "total": 304181,
+      "with_replay_key": 0
+    },
+    "plate_appearances": {
+      "field_non_null": {
+        "at_bat_index": 0,
+        "away_score_after": 0,
+        "away_score_before": 0,
+        "balls_final": 0,
+        "base_state_end": 0,
+        "base_state_start": 0,
+        "home_score_after": 0,
+        "home_score_before": 0,
+        "is_at_bat": 0,
+        "is_out": 0,
+        "is_scoring_play": 0,
+        "men_on_base": 0,
+        "outs_after": 0,
+        "outs_before": 0,
+        "raw_json": 0,
+        "strikes_final": 0
+      },
+      "total": 67251,
+      "with_replay_key": 0
+    }
+  },
+  "dry_run": false,
+  "errors": [],
+  "generated_at": "2026-06-03T03:50:38.195438+00:00",
+  "legacy_db": "data-private/warehouse/sports.db",
+  "matching_rows": {
+    "pitch_events": 304181,
+    "plate_appearances": 67251
+  },
+  "mismatches_after": {
+    "pitch_events": 0,
+    "plate_appearances": 0
+  },
+  "ok": true,
+  "script": "data-migration/scripts/backfill_mlb_replay_state_to_typed.py",
+  "typed_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "unmatched_after": {
+    "legacy_pitch_events_without_typed_match": 0,
+    "legacy_plate_appearances_without_typed_match": 0,
+    "typed_pitch_events_without_legacy_match": 0,
+    "typed_plate_appearances_without_legacy_match": 0
+  },
+  "unmatched_before": {
+    "legacy_pitch_events_without_typed_match": 0,
+    "legacy_plate_appearances_without_typed_match": 0,
+    "typed_pitch_events_without_legacy_match": 0,
+    "typed_plate_appearances_without_legacy_match": 0
+  },
+  "updated_rows": {
+    "pitch_events": 304181,
+    "plate_appearances": 67251
+  }
+}
