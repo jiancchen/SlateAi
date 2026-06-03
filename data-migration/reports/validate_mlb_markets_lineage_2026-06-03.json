@@ -1,0 +1,38 @@
+{
+  "date": null,
+  "errors": [],
+  "expected_by_source_table": {
+    "mlb_featured_market_odds_snapshots": 1610
+  },
+  "expected_market_snapshots": 1610,
+  "generated_at": "2026-06-03T03:58:10.113881+00:00",
+  "matched_market_snapshots": 1610,
+  "mismatch_samples": [],
+  "mismatched_market_snapshots": 0,
+  "missing_market_snapshots": 0,
+  "missing_samples": [],
+  "ok": true,
+  "parse_counts": {
+    "parsed_rows": 4824,
+    "source_rows": 4044,
+    "source_tables": {
+      "mlb_featured_market_odds_snapshots": 1610,
+      "mlb_kalshi_market_snapshots": 390,
+      "mlb_market_mispricing_labels": 290,
+      "mlb_team_market_context_daily": 1754
+    },
+    "targets": {
+      "market_contracts": 390,
+      "market_mispricing_labels": 290,
+      "market_price_ticks": 390,
+      "market_snapshots": 2000,
+      "team_market_context_snapshots": 1754
+    },
+    "unparsed_rows": 0
+  },
+  "script": "data-migration/scripts/validate_mlb_markets_lineage.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_tables": [
+    "mlb_featured_market_odds_snapshots"
+  ]
+}
