@@ -22,12 +22,14 @@ PLAYER_CONTEXT_INGEST = ROOT / "data-migration" / "scripts" / "ingest_mlb_player
 HITTER_CAREER_PROFILE_FETCH = ROOT / "pipeline" / "mlb" / "fetchers" / "fetch_mlb_hitter_career_profiles.py"
 RESULTS_NORMALIZE = ROOT / "data-migration" / "scripts" / "normalize_mlb_results.py"
 RESULTS_VALIDATE = ROOT / "data-migration" / "scripts" / "validate_mlb_results_normalization.py"
+CREATE_SPORT_DBS = ROOT / "data-migration" / "scripts" / "create_sport_dbs.mjs"
+VALIDATE_SPORT_DB = ROOT / "data-migration" / "scripts" / "validate_sport_db.mjs"
 VALIDATE_SCHEDULE_GAME_FEED = ROOT / "data-migration" / "scripts" / "validate_mlb_schedule_game_feed_raw_to_typed.py"
 VALIDATE_LINEUPS_RAW = ROOT / "data-migration" / "scripts" / "validate_mlb_lineups_raw_to_typed.py"
 VALIDATE_MARKETS_PROPS_RAW = ROOT / "data-migration" / "scripts" / "validate_mlb_markets_props_raw_to_typed.py"
 VALIDATE_PLAYER_CONTEXT_RAW = ROOT / "data-migration" / "scripts" / "validate_mlb_player_context_raw_to_typed.py"
 VALIDATE_REPLAY_STATE = ROOT / "data-migration" / "scripts" / "validate_mlb_replay_state_typed.py"
-VERSION = "0.8.0"
+VERSION = "0.9.0"
 
 LEGACY_WAREHOUSE_COMMANDS = {
     "init-db",
@@ -248,6 +250,21 @@ def run_python_script(script_path: Path, args: list[str], *, stream_output: bool
     }
 
 
+def run_node_script(script_path: Path, args: list[str], *, stream_output: bool = True) -> dict[str, Any]:
+    command = ["node", str(script_path), *args]
+    completed = subprocess.run(command, cwd=ROOT, text=True, capture_output=True)
+    if stream_output and completed.stdout:
+        print(completed.stdout, end="")
+    if stream_output and completed.stderr:
+        print(completed.stderr, end="", file=sys.stderr)
+    return {
+        "command": [display_path(Path(part)) if part.startswith(str(ROOT)) else part for part in command],
+        "returncode": completed.returncode,
+        "stdout": completed.stdout,
+        "stderr": completed.stderr,
+    }
+
+
 def run_typed_adapter(
     script_path: Path,
     db_path: Path,
@@ -365,6 +382,104 @@ def print_status(payload: dict[str, Any]) -> None:
                 f"- {row['source_date']} {row['source_name']} "
                 f"{row['last_status']}/{row['last_completeness_status']} rows={count}"
             )
+
+
+def init_db_payload(db_path: Path, *, dry_run: bool, skip_validation: bool) -> dict[str, Any]:
+    create_report = report_path("init_db_create", "mlb")
+    validate_report = report_path("init_db_validate", "mlb")
+    payload: dict[str, Any] = {
+        "version": VERSION,
+        "mode": "init_db",
+        "db_path": display_path(db_path),
+        "dry_run": dry_run,
+        "skip_validation": skip_validation,
+        "steps": [],
+        "ok": True,
+    }
+
+    create_command = [
+        "node",
+        display_path(CREATE_SPORT_DBS),
+        "--sport",
+        "mlb",
+        "--report",
+        display_path(create_report),
+    ]
+    if dry_run:
+        payload["steps"].append(
+            {
+                "label": "create_or_verify_mlb_schema",
+                "planned": True,
+                "command": create_command,
+                "report_path": display_path(create_report),
+                "ok": True,
+            }
+        )
+    else:
+        create_result = run_node_script(
+            CREATE_SPORT_DBS,
+            ["--sport", "mlb", "--report", str(create_report)],
+            stream_output=False,
+        )
+        payload["steps"].append(
+            {
+                "label": "create_or_verify_mlb_schema",
+                "planned": False,
+                "command": create_result["command"],
+                "returncode": create_result["returncode"],
+                "report_path": display_path(create_report),
+                "ok": create_result["returncode"] == 0,
+                "errors": [] if create_result["returncode"] == 0 else [str(create_result.get("stderr") or "").strip()],
+            }
+        )
+
+    if not skip_validation:
+        validate_args = [
+            "--sport",
+            "mlb",
+            "--schema-only",
+            "--phase",
+            "schema-only",
+            "--report",
+            str(validate_report),
+            "--no-write-health",
+        ]
+        if dry_run:
+            payload["steps"].append(
+                {
+                    "label": "validate_mlb_schema",
+                    "planned": True,
+                    "command": ["node", display_path(VALIDATE_SPORT_DB), *validate_args],
+                    "report_path": display_path(validate_report),
+                    "ok": True,
+                }
+            )
+        else:
+            validate_result = run_node_script(VALIDATE_SPORT_DB, validate_args, stream_output=False)
+            validate_payload = load_child_report(validate_report)
+            payload["steps"].append(
+                {
+                    "label": "validate_mlb_schema",
+                    "planned": False,
+                    "command": validate_result["command"],
+                    "returncode": validate_result["returncode"],
+                    "report_path": display_path(validate_report),
+                    "ok": bool(validate_payload.get("ok")) if validate_payload else validate_result["returncode"] == 0,
+                    "errors": validate_payload.get("errors", []) if validate_payload else [],
+                }
+            )
+
+    payload["ok"] = all(step["ok"] for step in payload["steps"])
+    write_json_report(report_path("init_db", "mlb"), payload)
+    return payload
+
+
+def print_init_db_summary(payload: dict[str, Any]) -> None:
+    mode = "dry-run" if payload["dry_run"] else "write"
+    print(f"MLB typed warehouse init-db ({mode}): {'ok' if payload['ok'] else 'failed'}")
+    for step in payload["steps"]:
+        status = "planned" if step.get("planned") else ("ok" if step["ok"] else "failed")
+        print(f"- {step['label']}: {status} report={step['report_path']}")
 
 
 def probable_starter_rows(conn: sqlite3.Connection, date_text: str) -> list[dict[str, Any]]:
@@ -1327,6 +1442,11 @@ def build_parser() -> argparse.ArgumentParser:
     status_parser.add_argument("--date", help="Optional YYYY-MM-DD source status date filter.")
     status_parser.add_argument("--json", action="store_true", help="Emit JSON instead of text.")
 
+    init_parser = subparsers.add_parser("init-db", help="Create or verify the typed MLB sport DB schema.")
+    init_parser.add_argument("--dry-run", action="store_true", help="Write only the wrapper plan report; do not call schema scripts.")
+    init_parser.add_argument("--skip-validation", action="store_true", help="Skip the schema validation step after create/verify.")
+    init_parser.add_argument("--json", action="store_true", help="Emit wrapper JSON instead of text summary.")
+
     audit_parser = subparsers.add_parser("audit-command-ledger", help="Audit typed CLI coverage against the warehouse command ledger.")
     audit_parser.add_argument("--report", type=Path, help="Optional JSON report path.")
     audit_parser.add_argument("--json", action="store_true", help="Emit JSON instead of text.")
@@ -1469,6 +1589,13 @@ def main() -> int:
             print(json.dumps(payload, indent=2, sort_keys=True))
         else:
             print_validation_summary(payload)
+        return 0 if payload["ok"] else 1
+    if args.command == "init-db":
+        payload = init_db_payload(db_path, dry_run=args.dry_run, skip_validation=args.skip_validation)
+        if args.json:
+            print(json.dumps(payload, indent=2, sort_keys=True))
+        else:
+            print_init_db_summary(payload)
         return 0 if payload["ok"] else 1
     if args.command == "ingest-mlb-day":
         payload = ingest_range_payload(

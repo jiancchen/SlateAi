@@ -1,6 +1,6 @@
 {
   "implemented_extra_commands": [],
-  "implemented_replacement_count": 14,
+  "implemented_replacement_count": 15,
   "implemented_replacements": [
     "derive-batter-outcomes",
     "ingest-hitter-career-profiles",
@@ -8,6 +8,7 @@
     "ingest-hitter-statcast-range",
     "ingest-mlb-day",
     "ingest-mlb-range",
+    "init-db",
     "list-bullpen-shape",
     "list-bullpen-usage",
     "list-first5",
@@ -46,9 +47,8 @@
     "import-prop-predictions",
     "ingest-pitcher-war",
     "ingest-statcast-hr",
-    "init-db",
     "list-story-signals"
   ],
   "ok": true,
-  "version": "0.8.0"
+  "version": "0.9.0"
 }

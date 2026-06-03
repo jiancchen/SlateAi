@@ -1,0 +1,42 @@
+{
+  "db_path": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "dry_run": true,
+  "mode": "init_db",
+  "ok": true,
+  "skip_validation": false,
+  "steps": [
+    {
+      "command": [
+        "node",
+        "data-migration/scripts/create_sport_dbs.mjs",
+        "--sport",
+        "mlb",
+        "--report",
+        "data-migration/reports/mlb_typed_warehouse_init_db_create_mlb.json"
+      ],
+      "label": "create_or_verify_mlb_schema",
+      "ok": true,
+      "planned": true,
+      "report_path": "data-migration/reports/mlb_typed_warehouse_init_db_create_mlb.json"
+    },
+    {
+      "command": [
+        "node",
+        "data-migration/scripts/validate_sport_db.mjs",
+        "--sport",
+        "mlb",
+        "--schema-only",
+        "--phase",
+        "schema-only",
+        "--report",
+        "/Users/jcchen/Documents/New project/data-migration/reports/mlb_typed_warehouse_init_db_validate_mlb.json",
+        "--no-write-health"
+      ],
+      "label": "validate_mlb_schema",
+      "ok": true,
+      "planned": true,
+      "report_path": "data-migration/reports/mlb_typed_warehouse_init_db_validate_mlb.json"
+    }
+  ],
+  "version": "0.9.0"
+}

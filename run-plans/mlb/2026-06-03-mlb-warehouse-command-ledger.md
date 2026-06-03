@@ -2,9 +2,9 @@
 
 Date: 2026-06-03
 
-Ledger version: 0.9.0
+Ledger version: 1.0.0
 
-Typed CLI version: `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.8.0
+Typed CLI version: `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.9.0
 
 Scope: first-pass ledger for replacing `pipeline/mlb/warehouse/mlb_warehouse.py` command by command without path-flipping the legacy `sports.db` script into the typed MLB DB.
 
@@ -66,8 +66,8 @@ flowchart TD
 
 - Ledger commands: 39.
 - Legacy commands found in `mlb_warehouse.py`: 39.
-- Typed replacement commands implemented in `mlb_typed_warehouse.py`: 14.
-- Implemented replacements: `derive-batter-outcomes`, `ingest-hitter-career-profiles`, `ingest-hitter-lineup-splits`, `ingest-hitter-statcast-range`, `ingest-mlb-day`, `ingest-mlb-range`, `list-bullpen-shape`, `list-bullpen-usage`, `list-first5`, `list-home-runs`, `list-likely-relievers`, `list-probable-starters`, `prepare-mlb-day`, `replay-mlb-range-from-raw`.
+- Typed replacement commands implemented in `mlb_typed_warehouse.py`: 15.
+- Implemented replacements: `derive-batter-outcomes`, `ingest-hitter-career-profiles`, `ingest-hitter-lineup-splits`, `ingest-hitter-statcast-range`, `ingest-mlb-day`, `ingest-mlb-range`, `init-db`, `list-bullpen-shape`, `list-bullpen-usage`, `list-first5`, `list-home-runs`, `list-likely-relievers`, `list-probable-starters`, `prepare-mlb-day`, `replay-mlb-range-from-raw`.
 - Ledger drift: zero missing legacy commands and zero extra typed replacement commands.
 - Non-replacement typed utilities: `status`, `audit-command-ledger`, `validate-typed-ready`.
 
@@ -82,7 +82,7 @@ flowchart TD
 
 | Command | Package Script | Class | Priority | Status | Replacement Target | Next Action |
 |---|---|---|---:|---|---|---|
-| `init-db` | `data:init` | retire/schema migration | P0 | `retire` | typed migration scripts and schema validators | Replace package script with explicit typed migration/check command or remove once no callers need it. |
+| `init-db` | `data:init` | retire/schema migration | P0 | `typed-cli-exists` | `mlb_typed_warehouse.py init-db` wrapping typed sport-DB schema create/verify plus no-write schema validation | Primary package alias points to typed CLI; `--dry-run` is report-only and wrapper does not expose destructive force reset. |
 | `ingest-mlb-day` | `data:ingest:mlb-day`, `data:typed:ingest:mlb-day` | raw typed ingestion | P0 | `typed-cli-exists` | `mlb_typed_warehouse.py ingest-mlb-day` wrapping `ingest_mlb_schedule_game_feed_raw_to_typed.py` | Primary package alias points to typed CLI; next gate is write idempotency validation. |
 | `ingest-mlb-range` | `data:ingest:mlb-range`, `data:typed:ingest:mlb-range` | raw typed ingestion | P0 | `typed-cli-exists` | `mlb_typed_warehouse.py ingest-mlb-range` looping the schedule/game-feed typed adapter | Primary package alias points to typed CLI; next gate is multi-day idempotency validation. |
 | `replay-mlb-range-from-raw` | `data:replay:mlb-raw-range`, `data:typed:replay:mlb-raw-range` | raw typed ingestion | P0 | `typed-cli-exists` | `mlb_typed_warehouse.py replay-mlb-range-from-raw` looping the schedule/game-feed typed adapter | Primary package alias points to typed CLI; next gate is range replay validation. |
