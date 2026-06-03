@@ -1,0 +1,1628 @@
+{
+  "away_context_days_since_prior_game": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 3
+  },
+  "away_context_played_yesterday_flag": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "away_context_prior_game_dead_bat_flag": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "away_context_prior_game_late_break_flag": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 2
+  },
+  "away_context_prior_game_was_chaos_flag": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "away_hitter_path_lineup_player_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "away_hitter_path_opponent_context_coverage_rate": {
+    "missing_count": 101,
+    "missing_rate": 0.11399548532731377,
+    "non_null_count": 785,
+    "unique_count": 3
+  },
+  "away_hitter_path_opponent_weighted_hits_per_pa_avg": {
+    "missing_count": 101,
+    "missing_rate": 0.11399548532731377,
+    "non_null_count": 785,
+    "unique_count": 785
+  },
+  "away_hitter_path_opponent_weighted_total_bases_per_pa_avg": {
+    "missing_count": 101,
+    "missing_rate": 0.11399548532731377,
+    "non_null_count": 785,
+    "unique_count": 785
+  },
+  "away_hitter_path_pitch_type_damage_rate_avg": {
+    "missing_count": 101,
+    "missing_rate": 0.11399548532731377,
+    "non_null_count": 785,
+    "unique_count": 785
+  },
+  "away_hitter_path_pitch_type_expected_slugging_avg": {
+    "missing_count": 101,
+    "missing_rate": 0.11399548532731377,
+    "non_null_count": 785,
+    "unique_count": 785
+  },
+  "away_hitter_path_pitch_type_response_coverage_rate": {
+    "missing_count": 101,
+    "missing_rate": 0.11399548532731377,
+    "non_null_count": 785,
+    "unique_count": 3
+  },
+  "away_hitter_path_pitch_type_response_rows": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 57
+  },
+  "away_hitter_path_pitch_type_response_sample_pitches": {
+    "missing_count": 101,
+    "missing_rate": 0.11399548532731377,
+    "non_null_count": 785,
+    "unique_count": 716
+  },
+  "away_hitter_path_pitch_type_whiff_rate_avg": {
+    "missing_count": 101,
+    "missing_rate": 0.11399548532731377,
+    "non_null_count": 785,
+    "unique_count": 785
+  },
+  "away_hitter_path_starter_phase_damage_fit_avg": {
+    "missing_count": 101,
+    "missing_rate": 0.11399548532731377,
+    "non_null_count": 785,
+    "unique_count": 785
+  },
+  "away_hitter_path_starter_phase_matchup_hitter_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 6
+  },
+  "away_hitter_path_starter_phase_traffic_fit_avg": {
+    "missing_count": 101,
+    "missing_rate": 0.11399548532731377,
+    "non_null_count": 785,
+    "unique_count": 785
+  },
+  "away_hitter_path_starter_phase_whiff_fit_avg": {
+    "missing_count": 101,
+    "missing_rate": 0.11399548532731377,
+    "non_null_count": 785,
+    "unique_count": 785
+  },
+  "away_hitter_path_statcast_barrel_trend_avg": {
+    "missing_count": 101,
+    "missing_rate": 0.11399548532731377,
+    "non_null_count": 785,
+    "unique_count": 552
+  },
+  "away_hitter_path_statcast_coverage_rate": {
+    "missing_count": 101,
+    "missing_rate": 0.11399548532731377,
+    "non_null_count": 785,
+    "unique_count": 3
+  },
+  "away_hitter_path_statcast_hard_hit_trend_avg": {
+    "missing_count": 101,
+    "missing_rate": 0.11399548532731377,
+    "non_null_count": 785,
+    "unique_count": 662
+  },
+  "away_hitter_path_statcast_xwoba_trend_avg": {
+    "missing_count": 101,
+    "missing_rate": 0.11399548532731377,
+    "non_null_count": 785,
+    "unique_count": 639
+  },
+  "away_lineup_complete_flag": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "away_lineup_known_flag": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "away_lineup_known_slot_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "away_relief_current_5plus_reliever_run_length": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 9
+  },
+  "away_relief_days_since_5plus_reliever_game": {
+    "missing_count": 28,
+    "missing_rate": 0.03160270880361174,
+    "non_null_count": 858,
+    "unique_count": 13
+  },
+  "away_relief_last_game_hits_walks_allowed": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 24
+  },
+  "away_relief_last_game_pitches": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 110
+  },
+  "away_relief_last_game_reliever_count": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 9
+  },
+  "away_relief_last_game_runs_allowed": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 18
+  },
+  "away_relief_prior_pitches_per_game": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 785
+  },
+  "away_relief_prior_relievers_used_per_game": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 448
+  },
+  "away_relief_prior_runs_allowed_per_game": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 588
+  },
+  "away_relief_prior_team_game_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 60
+  },
+  "away_reliever_candidate_pool_entropy": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 796
+  },
+  "away_reliever_candidate_pool_size": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "away_reliever_chain_availability_score_avg": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 609
+  },
+  "away_reliever_chain_back_to_back_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 3
+  },
+  "away_reliever_chain_bridge_score_avg": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 159
+  },
+  "away_reliever_chain_expected_outs_avg": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 199
+  },
+  "away_reliever_chain_expected_outs_sum": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 199
+  },
+  "away_reliever_chain_known_flag": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "away_reliever_chain_worked_yesterday_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 3
+  },
+  "away_reliever_command_ball_rate_avg": {
+    "missing_count": 659,
+    "missing_rate": 0.7437923250564334,
+    "non_null_count": 227,
+    "unique_count": 164
+  },
+  "away_reliever_command_free_pass_rate_avg": {
+    "missing_count": 659,
+    "missing_rate": 0.7437923250564334,
+    "non_null_count": 227,
+    "unique_count": 20
+  },
+  "away_reliever_command_profile_coverage_rate": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 3
+  },
+  "away_reliever_command_reached_rate_avg": {
+    "missing_count": 659,
+    "missing_rate": 0.7437923250564334,
+    "non_null_count": 227,
+    "unique_count": 47
+  },
+  "away_reliever_command_risk_index_avg": {
+    "missing_count": 659,
+    "missing_rate": 0.7437923250564334,
+    "non_null_count": 227,
+    "unique_count": 185
+  },
+  "away_reliever_command_run_delta_per_entry_avg": {
+    "missing_count": 659,
+    "missing_rate": 0.7437923250564334,
+    "non_null_count": 227,
+    "unique_count": 19
+  },
+  "away_reliever_usage_availability_score_avg": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 609
+  },
+  "away_reliever_usage_days_since_last_avg": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 10
+  },
+  "away_reliever_usage_fatigue_score_avg": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 536
+  },
+  "away_starter_current_bad_start_run_length": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 7
+  },
+  "away_starter_current_short_start_run_length": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 7
+  },
+  "away_starter_days_since_bad_start": {
+    "missing_count": 353,
+    "missing_rate": 0.3984198645598194,
+    "non_null_count": 533,
+    "unique_count": 42
+  },
+  "away_starter_days_since_last_start": {
+    "missing_count": 134,
+    "missing_rate": 0.15124153498871332,
+    "non_null_count": 752,
+    "unique_count": 27
+  },
+  "away_starter_days_since_short_start": {
+    "missing_count": 378,
+    "missing_rate": 0.42663656884875845,
+    "non_null_count": 508,
+    "unique_count": 50
+  },
+  "away_starter_last_outs_recorded": {
+    "missing_count": 136,
+    "missing_rate": 0.15349887133182843,
+    "non_null_count": 750,
+    "unique_count": 27
+  },
+  "away_starter_last_outs_vs_prior_mean": {
+    "missing_count": 253,
+    "missing_rate": 0.28555304740406323,
+    "non_null_count": 633,
+    "unique_count": 242
+  },
+  "away_starter_last_pitches_thrown": {
+    "missing_count": 136,
+    "missing_rate": 0.15349887133182843,
+    "non_null_count": 750,
+    "unique_count": 77
+  },
+  "away_starter_last_runs_allowed": {
+    "missing_count": 136,
+    "missing_rate": 0.15349887133182843,
+    "non_null_count": 750,
+    "unique_count": 11
+  },
+  "away_starter_last_strikeouts": {
+    "missing_count": 136,
+    "missing_rate": 0.15349887133182843,
+    "non_null_count": 750,
+    "unique_count": 14
+  },
+  "away_starter_last_walks_allowed": {
+    "missing_count": 136,
+    "missing_rate": 0.15349887133182843,
+    "non_null_count": 750,
+    "unique_count": 8
+  },
+  "away_starter_low_evidence_flag": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "away_starter_mistake_command_break_index": {
+    "missing_count": 134,
+    "missing_rate": 0.15124153498871332,
+    "non_null_count": 752,
+    "unique_count": 420
+  },
+  "away_starter_mistake_first_batter_reach_rate": {
+    "missing_count": 134,
+    "missing_rate": 0.15124153498871332,
+    "non_null_count": 752,
+    "unique_count": 11
+  },
+  "away_starter_mistake_first_inning_run_allowed_rate": {
+    "missing_count": 134,
+    "missing_rate": 0.15124153498871332,
+    "non_null_count": 752,
+    "unique_count": 11
+  },
+  "away_starter_mistake_home_run_start_rate": {
+    "missing_count": 134,
+    "missing_rate": 0.15124153498871332,
+    "non_null_count": 752,
+    "unique_count": 11
+  },
+  "away_starter_mistake_meltdown_start_rate": {
+    "missing_count": 134,
+    "missing_rate": 0.15124153498871332,
+    "non_null_count": 752,
+    "unique_count": 11
+  },
+  "away_starter_mistake_post_damage_recovery_rate": {
+    "missing_count": 172,
+    "missing_rate": 0.19413092550790068,
+    "non_null_count": 714,
+    "unique_count": 11
+  },
+  "away_starter_mistake_shape_available_flag": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "away_starter_mistake_starts_sample": {
+    "missing_count": 134,
+    "missing_rate": 0.15124153498871332,
+    "non_null_count": 752,
+    "unique_count": 5
+  },
+  "away_starter_mistake_walk_burst_start_rate": {
+    "missing_count": 134,
+    "missing_rate": 0.15124153498871332,
+    "non_null_count": 752,
+    "unique_count": 11
+  },
+  "away_starter_pitch_mix_available_flag": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "away_starter_pitch_mix_pitch_type_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 9
+  },
+  "away_starter_pitch_mix_sample_pitches": {
+    "missing_count": 97,
+    "missing_rate": 0.10948081264108352,
+    "non_null_count": 789,
+    "unique_count": 442
+  },
+  "away_starter_pitch_mix_top_pitch_share": {
+    "missing_count": 97,
+    "missing_rate": 0.10948081264108352,
+    "non_null_count": 789,
+    "unique_count": 755
+  },
+  "away_starter_pitch_mix_weighted_command_leak": {
+    "missing_count": 97,
+    "missing_rate": 0.10948081264108352,
+    "non_null_count": 789,
+    "unique_count": 711
+  },
+  "away_starter_pitch_mix_weighted_damage_allowed": {
+    "missing_count": 97,
+    "missing_rate": 0.10948081264108352,
+    "non_null_count": 789,
+    "unique_count": 665
+  },
+  "away_starter_pitch_mix_weighted_hard_contact_rate": {
+    "missing_count": 97,
+    "missing_rate": 0.10948081264108352,
+    "non_null_count": 789,
+    "unique_count": 609
+  },
+  "away_starter_pitch_mix_weighted_whiff_rate": {
+    "missing_count": 97,
+    "missing_rate": 0.10948081264108352,
+    "non_null_count": 789,
+    "unique_count": 701
+  },
+  "away_starter_prior_bad_start_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 8
+  },
+  "away_starter_prior_hr_rate_per_bf": {
+    "missing_count": 134,
+    "missing_rate": 0.15124153498871332,
+    "non_null_count": 752,
+    "unique_count": 368
+  },
+  "away_starter_prior_outs_max": {
+    "missing_count": 134,
+    "missing_rate": 0.15124153498871332,
+    "non_null_count": 752,
+    "unique_count": 25
+  },
+  "away_starter_prior_outs_mean": {
+    "missing_count": 134,
+    "missing_rate": 0.15124153498871332,
+    "non_null_count": 752,
+    "unique_count": 198
+  },
+  "away_starter_prior_outs_min": {
+    "missing_count": 134,
+    "missing_rate": 0.15124153498871332,
+    "non_null_count": 752,
+    "unique_count": 21
+  },
+  "away_starter_prior_outs_std": {
+    "missing_count": 251,
+    "missing_rate": 0.2832957110609481,
+    "non_null_count": 635,
+    "unique_count": 357
+  },
+  "away_starter_prior_quality_start_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 10
+  },
+  "away_starter_prior_quality_start_rate": {
+    "missing_count": 134,
+    "missing_rate": 0.15124153498871332,
+    "non_null_count": 752,
+    "unique_count": 40
+  },
+  "away_starter_prior_short_start_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 7
+  },
+  "away_starter_prior_short_start_rate": {
+    "missing_count": 134,
+    "missing_rate": 0.15124153498871332,
+    "non_null_count": 752,
+    "unique_count": 31
+  },
+  "away_starter_prior_start_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 12
+  },
+  "away_starter_prior_strikeout_rate_per_bf": {
+    "missing_count": 134,
+    "missing_rate": 0.15124153498871332,
+    "non_null_count": 752,
+    "unique_count": 511
+  },
+  "away_starter_prior_walk_rate_per_bf": {
+    "missing_count": 134,
+    "missing_rate": 0.15124153498871332,
+    "non_null_count": 752,
+    "unique_count": 449
+  },
+  "away_story_current_loss_run_length": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 11
+  },
+  "away_story_current_quiet_first5_run_length": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 7
+  },
+  "away_story_current_traffic_no_conversion_run_length": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 3
+  },
+  "away_story_current_win_run_length": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 11
+  },
+  "away_story_days_since_bullpen_flip_game": {
+    "missing_count": 105,
+    "missing_rate": 0.11851015801354402,
+    "non_null_count": 781,
+    "unique_count": 26
+  },
+  "away_story_days_since_chaos_game": {
+    "missing_count": 178,
+    "missing_rate": 0.20090293453724606,
+    "non_null_count": 708,
+    "unique_count": 45
+  },
+  "away_story_days_since_dead_bat_game": {
+    "missing_count": 77,
+    "missing_rate": 0.08690744920993228,
+    "non_null_count": 809,
+    "unique_count": 34
+  },
+  "away_story_days_since_first5_firefight": {
+    "missing_count": 160,
+    "missing_rate": 0.18058690744920994,
+    "non_null_count": 726,
+    "unique_count": 49
+  },
+  "away_story_days_since_prior_game": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 3
+  },
+  "away_story_days_since_starter_crack_game": {
+    "missing_count": 69,
+    "missing_rate": 0.07787810383747178,
+    "non_null_count": 817,
+    "unique_count": 37
+  },
+  "away_story_days_since_traffic_no_conversion": {
+    "missing_count": 280,
+    "missing_rate": 0.3160270880361174,
+    "non_null_count": 606,
+    "unique_count": 50
+  },
+  "away_story_f5_runs_scored_volatility": {
+    "missing_count": 30,
+    "missing_rate": 0.033860045146726865,
+    "non_null_count": 856,
+    "unique_count": 802
+  },
+  "away_story_last_game_bullpen_flip_flag": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 2
+  },
+  "away_story_last_game_f5_total_runs": {
+    "missing_count": 17,
+    "missing_rate": 0.019187358916478554,
+    "non_null_count": 869,
+    "unique_count": 18
+  },
+  "away_story_last_game_runs_allowed": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 18
+  },
+  "away_story_last_game_runs_scored": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 18
+  },
+  "away_story_last_game_total_runs": {
+    "missing_count": 17,
+    "missing_rate": 0.019187358916478554,
+    "non_null_count": 869,
+    "unique_count": 24
+  },
+  "away_story_last_game_traffic_no_conversion_flag": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 2
+  },
+  "away_story_primary_label_alternation_rate": {
+    "missing_count": 30,
+    "missing_rate": 0.033860045146726865,
+    "non_null_count": 856,
+    "unique_count": 259
+  },
+  "away_story_prior_bullpen_flip_rate": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 200
+  },
+  "away_story_prior_chaos_rate": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 155
+  },
+  "away_story_prior_dead_bat_rate": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 233
+  },
+  "away_story_prior_first5_win_rate": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 258
+  },
+  "away_story_prior_game_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 60
+  },
+  "away_story_prior_late_break_rate": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 189
+  },
+  "away_story_prior_loss_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 38
+  },
+  "away_story_prior_scored_first_inning_rate": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 291
+  },
+  "away_story_prior_scoreless_first3_rate": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 283
+  },
+  "away_story_prior_traffic_no_conversion_rate": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 144
+  },
+  "away_story_prior_win_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 40
+  },
+  "away_story_runs_scored_volatility": {
+    "missing_count": 30,
+    "missing_rate": 0.033860045146726865,
+    "non_null_count": 856,
+    "unique_count": 810
+  },
+  "game_away_team_id": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 30
+  },
+  "game_date": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 67
+  },
+  "game_day_of_week": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 7
+  },
+  "game_home_team_id": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 30
+  },
+  "game_id": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 886
+  },
+  "game_is_weekend_flag": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "game_series_game_number_known_flag": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "game_start_hour_utc": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 12
+  },
+  "game_start_time_utc": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 652
+  },
+  "game_status": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "home_context_days_since_prior_game": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 3
+  },
+  "home_context_played_yesterday_flag": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "home_context_prior_game_dead_bat_flag": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "home_context_prior_game_late_break_flag": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 2
+  },
+  "home_context_prior_game_was_chaos_flag": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "home_hitter_path_lineup_player_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 3
+  },
+  "home_hitter_path_opponent_context_coverage_rate": {
+    "missing_count": 97,
+    "missing_rate": 0.10948081264108352,
+    "non_null_count": 789,
+    "unique_count": 3
+  },
+  "home_hitter_path_opponent_weighted_hits_per_pa_avg": {
+    "missing_count": 97,
+    "missing_rate": 0.10948081264108352,
+    "non_null_count": 789,
+    "unique_count": 789
+  },
+  "home_hitter_path_opponent_weighted_total_bases_per_pa_avg": {
+    "missing_count": 97,
+    "missing_rate": 0.10948081264108352,
+    "non_null_count": 789,
+    "unique_count": 789
+  },
+  "home_hitter_path_pitch_type_damage_rate_avg": {
+    "missing_count": 97,
+    "missing_rate": 0.10948081264108352,
+    "non_null_count": 789,
+    "unique_count": 789
+  },
+  "home_hitter_path_pitch_type_expected_slugging_avg": {
+    "missing_count": 97,
+    "missing_rate": 0.10948081264108352,
+    "non_null_count": 789,
+    "unique_count": 789
+  },
+  "home_hitter_path_pitch_type_response_coverage_rate": {
+    "missing_count": 97,
+    "missing_rate": 0.10948081264108352,
+    "non_null_count": 789,
+    "unique_count": 4
+  },
+  "home_hitter_path_pitch_type_response_rows": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 55
+  },
+  "home_hitter_path_pitch_type_response_sample_pitches": {
+    "missing_count": 97,
+    "missing_rate": 0.10948081264108352,
+    "non_null_count": 789,
+    "unique_count": 717
+  },
+  "home_hitter_path_pitch_type_whiff_rate_avg": {
+    "missing_count": 97,
+    "missing_rate": 0.10948081264108352,
+    "non_null_count": 789,
+    "unique_count": 789
+  },
+  "home_hitter_path_starter_phase_damage_fit_avg": {
+    "missing_count": 97,
+    "missing_rate": 0.10948081264108352,
+    "non_null_count": 789,
+    "unique_count": 789
+  },
+  "home_hitter_path_starter_phase_matchup_hitter_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 6
+  },
+  "home_hitter_path_starter_phase_traffic_fit_avg": {
+    "missing_count": 97,
+    "missing_rate": 0.10948081264108352,
+    "non_null_count": 789,
+    "unique_count": 789
+  },
+  "home_hitter_path_starter_phase_whiff_fit_avg": {
+    "missing_count": 97,
+    "missing_rate": 0.10948081264108352,
+    "non_null_count": 789,
+    "unique_count": 789
+  },
+  "home_hitter_path_statcast_barrel_trend_avg": {
+    "missing_count": 97,
+    "missing_rate": 0.10948081264108352,
+    "non_null_count": 789,
+    "unique_count": 567
+  },
+  "home_hitter_path_statcast_coverage_rate": {
+    "missing_count": 97,
+    "missing_rate": 0.10948081264108352,
+    "non_null_count": 789,
+    "unique_count": 3
+  },
+  "home_hitter_path_statcast_hard_hit_trend_avg": {
+    "missing_count": 97,
+    "missing_rate": 0.10948081264108352,
+    "non_null_count": 789,
+    "unique_count": 663
+  },
+  "home_hitter_path_statcast_xwoba_trend_avg": {
+    "missing_count": 97,
+    "missing_rate": 0.10948081264108352,
+    "non_null_count": 789,
+    "unique_count": 659
+  },
+  "home_lineup_complete_flag": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "home_lineup_known_flag": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "home_lineup_known_slot_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 3
+  },
+  "home_relief_current_5plus_reliever_run_length": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 8
+  },
+  "home_relief_days_since_5plus_reliever_game": {
+    "missing_count": 31,
+    "missing_rate": 0.034988713318284424,
+    "non_null_count": 855,
+    "unique_count": 14
+  },
+  "home_relief_last_game_hits_walks_allowed": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 26
+  },
+  "home_relief_last_game_pitches": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 109
+  },
+  "home_relief_last_game_reliever_count": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 9
+  },
+  "home_relief_last_game_runs_allowed": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 18
+  },
+  "home_relief_prior_pitches_per_game": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 777
+  },
+  "home_relief_prior_relievers_used_per_game": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 438
+  },
+  "home_relief_prior_runs_allowed_per_game": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 597
+  },
+  "home_relief_prior_team_game_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 61
+  },
+  "home_reliever_candidate_pool_entropy": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 806
+  },
+  "home_reliever_candidate_pool_size": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "home_reliever_chain_availability_score_avg": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 610
+  },
+  "home_reliever_chain_back_to_back_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 3
+  },
+  "home_reliever_chain_bridge_score_avg": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 174
+  },
+  "home_reliever_chain_expected_outs_avg": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 205
+  },
+  "home_reliever_chain_expected_outs_sum": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 205
+  },
+  "home_reliever_chain_known_flag": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "home_reliever_chain_worked_yesterday_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 3
+  },
+  "home_reliever_command_profile_coverage_rate": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 3
+  },
+  "home_reliever_usage_availability_score_avg": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 610
+  },
+  "home_reliever_usage_days_since_last_avg": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 10
+  },
+  "home_reliever_usage_fatigue_score_avg": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 544
+  },
+  "home_starter_current_bad_start_run_length": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 8
+  },
+  "home_starter_current_short_start_run_length": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 5
+  },
+  "home_starter_days_since_bad_start": {
+    "missing_count": 325,
+    "missing_rate": 0.36681715575620766,
+    "non_null_count": 561,
+    "unique_count": 43
+  },
+  "home_starter_days_since_last_start": {
+    "missing_count": 130,
+    "missing_rate": 0.14672686230248308,
+    "non_null_count": 756,
+    "unique_count": 22
+  },
+  "home_starter_days_since_short_start": {
+    "missing_count": 353,
+    "missing_rate": 0.3984198645598194,
+    "non_null_count": 533,
+    "unique_count": 50
+  },
+  "home_starter_last_outs_recorded": {
+    "missing_count": 132,
+    "missing_rate": 0.1489841986455982,
+    "non_null_count": 754,
+    "unique_count": 24
+  },
+  "home_starter_last_outs_vs_prior_mean": {
+    "missing_count": 233,
+    "missing_rate": 0.26297968397291194,
+    "non_null_count": 653,
+    "unique_count": 262
+  },
+  "home_starter_last_pitches_thrown": {
+    "missing_count": 132,
+    "missing_rate": 0.1489841986455982,
+    "non_null_count": 754,
+    "unique_count": 78
+  },
+  "home_starter_last_runs_allowed": {
+    "missing_count": 132,
+    "missing_rate": 0.1489841986455982,
+    "non_null_count": 754,
+    "unique_count": 12
+  },
+  "home_starter_last_strikeouts": {
+    "missing_count": 132,
+    "missing_rate": 0.1489841986455982,
+    "non_null_count": 754,
+    "unique_count": 14
+  },
+  "home_starter_last_walks_allowed": {
+    "missing_count": 132,
+    "missing_rate": 0.1489841986455982,
+    "non_null_count": 754,
+    "unique_count": 8
+  },
+  "home_starter_low_evidence_flag": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "home_starter_mistake_command_break_index": {
+    "missing_count": 130,
+    "missing_rate": 0.14672686230248308,
+    "non_null_count": 756,
+    "unique_count": 417
+  },
+  "home_starter_mistake_first_batter_reach_rate": {
+    "missing_count": 130,
+    "missing_rate": 0.14672686230248308,
+    "non_null_count": 756,
+    "unique_count": 11
+  },
+  "home_starter_mistake_first_inning_run_allowed_rate": {
+    "missing_count": 130,
+    "missing_rate": 0.14672686230248308,
+    "non_null_count": 756,
+    "unique_count": 11
+  },
+  "home_starter_mistake_home_run_start_rate": {
+    "missing_count": 130,
+    "missing_rate": 0.14672686230248308,
+    "non_null_count": 756,
+    "unique_count": 11
+  },
+  "home_starter_mistake_meltdown_start_rate": {
+    "missing_count": 130,
+    "missing_rate": 0.14672686230248308,
+    "non_null_count": 756,
+    "unique_count": 11
+  },
+  "home_starter_mistake_post_damage_recovery_rate": {
+    "missing_count": 165,
+    "missing_rate": 0.18623024830699775,
+    "non_null_count": 721,
+    "unique_count": 11
+  },
+  "home_starter_mistake_shape_available_flag": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "home_starter_mistake_starts_sample": {
+    "missing_count": 130,
+    "missing_rate": 0.14672686230248308,
+    "non_null_count": 756,
+    "unique_count": 5
+  },
+  "home_starter_mistake_walk_burst_start_rate": {
+    "missing_count": 130,
+    "missing_rate": 0.14672686230248308,
+    "non_null_count": 756,
+    "unique_count": 11
+  },
+  "home_starter_pitch_mix_available_flag": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "home_starter_pitch_mix_pitch_type_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 9
+  },
+  "home_starter_pitch_mix_sample_pitches": {
+    "missing_count": 101,
+    "missing_rate": 0.11399548532731377,
+    "non_null_count": 785,
+    "unique_count": 454
+  },
+  "home_starter_pitch_mix_top_pitch_share": {
+    "missing_count": 101,
+    "missing_rate": 0.11399548532731377,
+    "non_null_count": 785,
+    "unique_count": 735
+  },
+  "home_starter_pitch_mix_weighted_command_leak": {
+    "missing_count": 101,
+    "missing_rate": 0.11399548532731377,
+    "non_null_count": 785,
+    "unique_count": 722
+  },
+  "home_starter_pitch_mix_weighted_damage_allowed": {
+    "missing_count": 101,
+    "missing_rate": 0.11399548532731377,
+    "non_null_count": 785,
+    "unique_count": 660
+  },
+  "home_starter_pitch_mix_weighted_hard_contact_rate": {
+    "missing_count": 101,
+    "missing_rate": 0.11399548532731377,
+    "non_null_count": 785,
+    "unique_count": 609
+  },
+  "home_starter_pitch_mix_weighted_whiff_rate": {
+    "missing_count": 101,
+    "missing_rate": 0.11399548532731377,
+    "non_null_count": 785,
+    "unique_count": 692
+  },
+  "home_starter_prior_bad_start_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 8
+  },
+  "home_starter_prior_hr_rate_per_bf": {
+    "missing_count": 130,
+    "missing_rate": 0.14672686230248308,
+    "non_null_count": 756,
+    "unique_count": 377
+  },
+  "home_starter_prior_outs_max": {
+    "missing_count": 130,
+    "missing_rate": 0.14672686230248308,
+    "non_null_count": 756,
+    "unique_count": 24
+  },
+  "home_starter_prior_outs_mean": {
+    "missing_count": 130,
+    "missing_rate": 0.14672686230248308,
+    "non_null_count": 756,
+    "unique_count": 202
+  },
+  "home_starter_prior_outs_min": {
+    "missing_count": 130,
+    "missing_rate": 0.14672686230248308,
+    "non_null_count": 756,
+    "unique_count": 21
+  },
+  "home_starter_prior_outs_std": {
+    "missing_count": 231,
+    "missing_rate": 0.26072234762979685,
+    "non_null_count": 655,
+    "unique_count": 383
+  },
+  "home_starter_prior_quality_start_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 9
+  },
+  "home_starter_prior_quality_start_rate": {
+    "missing_count": 130,
+    "missing_rate": 0.14672686230248308,
+    "non_null_count": 756,
+    "unique_count": 39
+  },
+  "home_starter_prior_short_start_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 8
+  },
+  "home_starter_prior_short_start_rate": {
+    "missing_count": 130,
+    "missing_rate": 0.14672686230248308,
+    "non_null_count": 756,
+    "unique_count": 32
+  },
+  "home_starter_prior_start_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 13
+  },
+  "home_starter_prior_strikeout_rate_per_bf": {
+    "missing_count": 130,
+    "missing_rate": 0.14672686230248308,
+    "non_null_count": 756,
+    "unique_count": 531
+  },
+  "home_starter_prior_walk_rate_per_bf": {
+    "missing_count": 130,
+    "missing_rate": 0.14672686230248308,
+    "non_null_count": 756,
+    "unique_count": 471
+  },
+  "home_story_current_loss_run_length": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 11
+  },
+  "home_story_current_quiet_first5_run_length": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 9
+  },
+  "home_story_current_traffic_no_conversion_run_length": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 3
+  },
+  "home_story_current_win_run_length": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 9
+  },
+  "home_story_days_since_bullpen_flip_game": {
+    "missing_count": 103,
+    "missing_rate": 0.1162528216704289,
+    "non_null_count": 783,
+    "unique_count": 25
+  },
+  "home_story_days_since_chaos_game": {
+    "missing_count": 182,
+    "missing_rate": 0.2054176072234763,
+    "non_null_count": 704,
+    "unique_count": 46
+  },
+  "home_story_days_since_dead_bat_game": {
+    "missing_count": 74,
+    "missing_rate": 0.0835214446952596,
+    "non_null_count": 812,
+    "unique_count": 35
+  },
+  "home_story_days_since_first5_firefight": {
+    "missing_count": 170,
+    "missing_rate": 0.19187358916478556,
+    "non_null_count": 716,
+    "unique_count": 49
+  },
+  "home_story_days_since_prior_game": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 3
+  },
+  "home_story_days_since_starter_crack_game": {
+    "missing_count": 68,
+    "missing_rate": 0.07674943566591422,
+    "non_null_count": 818,
+    "unique_count": 35
+  },
+  "home_story_days_since_traffic_no_conversion": {
+    "missing_count": 293,
+    "missing_rate": 0.3306997742663657,
+    "non_null_count": 593,
+    "unique_count": 44
+  },
+  "home_story_f5_runs_scored_volatility": {
+    "missing_count": 30,
+    "missing_rate": 0.033860045146726865,
+    "non_null_count": 856,
+    "unique_count": 795
+  },
+  "home_story_last_game_bullpen_flip_flag": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 2
+  },
+  "home_story_last_game_f5_total_runs": {
+    "missing_count": 17,
+    "missing_rate": 0.019187358916478554,
+    "non_null_count": 869,
+    "unique_count": 18
+  },
+  "home_story_last_game_runs_allowed": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 18
+  },
+  "home_story_last_game_runs_scored": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 18
+  },
+  "home_story_last_game_total_runs": {
+    "missing_count": 17,
+    "missing_rate": 0.019187358916478554,
+    "non_null_count": 869,
+    "unique_count": 24
+  },
+  "home_story_last_game_traffic_no_conversion_flag": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 2
+  },
+  "home_story_primary_label_alternation_rate": {
+    "missing_count": 30,
+    "missing_rate": 0.033860045146726865,
+    "non_null_count": 856,
+    "unique_count": 251
+  },
+  "home_story_prior_bullpen_flip_rate": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 205
+  },
+  "home_story_prior_chaos_rate": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 158
+  },
+  "home_story_prior_dead_bat_rate": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 232
+  },
+  "home_story_prior_first5_win_rate": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 273
+  },
+  "home_story_prior_game_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 61
+  },
+  "home_story_prior_late_break_rate": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 186
+  },
+  "home_story_prior_loss_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 36
+  },
+  "home_story_prior_scored_first_inning_rate": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 274
+  },
+  "home_story_prior_scoreless_first3_rate": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 261
+  },
+  "home_story_prior_traffic_no_conversion_rate": {
+    "missing_count": 15,
+    "missing_rate": 0.016930022573363433,
+    "non_null_count": 871,
+    "unique_count": 141
+  },
+  "home_story_prior_win_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 38
+  },
+  "home_story_runs_scored_volatility": {
+    "missing_count": 30,
+    "missing_rate": 0.033860045146726865,
+    "non_null_count": 856,
+    "unique_count": 810
+  },
+  "market_any_pregame_snapshot_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 6
+  },
+  "market_f5_total_pregame_snapshot_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "market_total_pregame_snapshot_count": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 3
+  },
+  "target_away_team_runs_f5": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 13
+  },
+  "target_away_team_runs_final": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 19
+  },
+  "target_chaos_game_flag": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 2
+  },
+  "target_f5_bucket": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 5
+  },
+  "target_home_team_runs_f5": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 15
+  },
+  "target_home_team_runs_final": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 18
+  },
+  "target_total_bucket": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 6
+  },
+  "target_total_runs_f5": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 18
+  },
+  "target_total_runs_final": {
+    "missing_count": 0,
+    "missing_rate": 0.0,
+    "non_null_count": 886,
+    "unique_count": 25
+  }
+}

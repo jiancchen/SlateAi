@@ -1,0 +1,2712 @@
+{
+  "away_context_days_since_prior_game": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_context_days_since_prior_game`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_context_played_yesterday_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_context_played_yesterday_flag`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_context_prior_game_dead_bat_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_context_prior_game_dead_bat_flag`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_context_prior_game_late_break_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_context_prior_game_late_break_flag`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_context_prior_game_was_chaos_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_context_prior_game_was_chaos_flag`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_hitter_path_lineup_player_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_hitter_path_lineup_player_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "away_hitter_path_opponent_context_coverage_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_hitter_path_opponent_context_coverage_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "away_hitter_path_opponent_weighted_hits_per_pa_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_hitter_path_opponent_weighted_hits_per_pa_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "away_hitter_path_opponent_weighted_total_bases_per_pa_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_hitter_path_opponent_weighted_total_bases_per_pa_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "away_hitter_path_pitch_type_damage_rate_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_hitter_path_pitch_type_damage_rate_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "away_hitter_path_pitch_type_expected_slugging_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_hitter_path_pitch_type_expected_slugging_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "away_hitter_path_pitch_type_response_coverage_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_hitter_path_pitch_type_response_coverage_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "away_hitter_path_pitch_type_response_rows": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_hitter_path_pitch_type_response_rows`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "away_hitter_path_pitch_type_response_sample_pitches": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_hitter_path_pitch_type_response_sample_pitches`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "away_hitter_path_pitch_type_whiff_rate_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_hitter_path_pitch_type_whiff_rate_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "away_hitter_path_starter_phase_damage_fit_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_hitter_path_starter_phase_damage_fit_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_hitter_path_starter_phase_matchup_hitter_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_hitter_path_starter_phase_matchup_hitter_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_hitter_path_starter_phase_traffic_fit_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_hitter_path_starter_phase_traffic_fit_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_hitter_path_starter_phase_whiff_fit_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_hitter_path_starter_phase_whiff_fit_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_hitter_path_statcast_barrel_trend_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_hitter_path_statcast_barrel_trend_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "away_hitter_path_statcast_coverage_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_hitter_path_statcast_coverage_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "away_hitter_path_statcast_hard_hit_trend_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_hitter_path_statcast_hard_hit_trend_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "away_hitter_path_statcast_xwoba_trend_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_hitter_path_statcast_xwoba_trend_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "away_lineup_complete_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_lineup_complete_flag`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "away_lineup_known_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_lineup_known_flag`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "away_lineup_known_slot_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_lineup_known_slot_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "away_relief_current_5plus_reliever_run_length": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_relief_current_5plus_reliever_run_length`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_relief_days_since_5plus_reliever_game": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_relief_days_since_5plus_reliever_game`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_relief_last_game_hits_walks_allowed": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_relief_last_game_hits_walks_allowed`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_relief_last_game_pitches": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_relief_last_game_pitches`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_relief_last_game_reliever_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_relief_last_game_reliever_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_relief_last_game_runs_allowed": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_relief_last_game_runs_allowed`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_relief_prior_pitches_per_game": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_relief_prior_pitches_per_game`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_relief_prior_relievers_used_per_game": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_relief_prior_relievers_used_per_game`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_relief_prior_runs_allowed_per_game": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_relief_prior_runs_allowed_per_game`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_relief_prior_team_game_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_relief_prior_team_game_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_reliever_candidate_pool_entropy": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_reliever_candidate_pool_entropy`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_reliever_candidate_pool_size": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_reliever_candidate_pool_size`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_reliever_chain_availability_score_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_reliever_chain_availability_score_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_reliever_chain_back_to_back_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_reliever_chain_back_to_back_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_reliever_chain_bridge_score_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_reliever_chain_bridge_score_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_reliever_chain_expected_outs_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_reliever_chain_expected_outs_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_reliever_chain_expected_outs_sum": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_reliever_chain_expected_outs_sum`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_reliever_chain_known_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_reliever_chain_known_flag`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_reliever_chain_worked_yesterday_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_reliever_chain_worked_yesterday_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_reliever_command_ball_rate_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_reliever_command_ball_rate_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_reliever_command_free_pass_rate_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_reliever_command_free_pass_rate_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_reliever_command_profile_coverage_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_reliever_command_profile_coverage_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_reliever_command_reached_rate_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_reliever_command_reached_rate_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_reliever_command_risk_index_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_reliever_command_risk_index_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_reliever_command_run_delta_per_entry_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_reliever_command_run_delta_per_entry_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_reliever_usage_availability_score_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_reliever_usage_availability_score_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_reliever_usage_days_since_last_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_reliever_usage_days_since_last_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_reliever_usage_fatigue_score_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_reliever_usage_fatigue_score_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "away_starter_current_bad_start_run_length": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_current_bad_start_run_length`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_current_short_start_run_length": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_current_short_start_run_length`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_days_since_bad_start": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_days_since_bad_start`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_days_since_last_start": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_days_since_last_start`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_days_since_short_start": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_days_since_short_start`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_last_outs_recorded": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_last_outs_recorded`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_last_outs_vs_prior_mean": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_last_outs_vs_prior_mean`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_last_pitches_thrown": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_last_pitches_thrown`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_last_runs_allowed": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_last_runs_allowed`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_last_strikeouts": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_last_strikeouts`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_last_walks_allowed": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_last_walks_allowed`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_low_evidence_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_low_evidence_flag`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_mistake_command_break_index": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_mistake_command_break_index`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_mistake_first_batter_reach_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_mistake_first_batter_reach_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_mistake_first_inning_run_allowed_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_mistake_first_inning_run_allowed_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_mistake_home_run_start_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_mistake_home_run_start_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_mistake_meltdown_start_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_mistake_meltdown_start_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_mistake_post_damage_recovery_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_mistake_post_damage_recovery_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_mistake_shape_available_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_mistake_shape_available_flag`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_mistake_starts_sample": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_mistake_starts_sample`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_mistake_walk_burst_start_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_mistake_walk_burst_start_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_pitch_mix_available_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_pitch_mix_available_flag`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_pitch_mix_pitch_type_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_pitch_mix_pitch_type_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_pitch_mix_sample_pitches": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_pitch_mix_sample_pitches`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_pitch_mix_top_pitch_share": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_pitch_mix_top_pitch_share`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_pitch_mix_weighted_command_leak": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_pitch_mix_weighted_command_leak`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_pitch_mix_weighted_damage_allowed": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_pitch_mix_weighted_damage_allowed`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_pitch_mix_weighted_hard_contact_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_pitch_mix_weighted_hard_contact_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_pitch_mix_weighted_whiff_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_pitch_mix_weighted_whiff_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_prior_bad_start_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_prior_bad_start_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_prior_hr_rate_per_bf": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_prior_hr_rate_per_bf`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_prior_outs_max": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_prior_outs_max`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_prior_outs_mean": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_prior_outs_mean`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_prior_outs_min": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_prior_outs_min`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_prior_outs_std": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_prior_outs_std`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_prior_quality_start_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_prior_quality_start_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_prior_quality_start_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_prior_quality_start_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_prior_short_start_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_prior_short_start_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_prior_short_start_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_prior_short_start_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_prior_start_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_prior_start_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_prior_strikeout_rate_per_bf": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_prior_strikeout_rate_per_bf`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_starter_prior_walk_rate_per_bf": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_starter_prior_walk_rate_per_bf`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_story_current_loss_run_length": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_current_loss_run_length`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_current_quiet_first5_run_length": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_current_quiet_first5_run_length`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_current_traffic_no_conversion_run_length": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_current_traffic_no_conversion_run_length`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_current_win_run_length": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_current_win_run_length`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_days_since_bullpen_flip_game": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_days_since_bullpen_flip_game`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_days_since_chaos_game": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_days_since_chaos_game`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_days_since_dead_bat_game": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_days_since_dead_bat_game`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_days_since_first5_firefight": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_days_since_first5_firefight`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_days_since_prior_game": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_days_since_prior_game`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_days_since_starter_crack_game": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_days_since_starter_crack_game`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "away_story_days_since_traffic_no_conversion": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_days_since_traffic_no_conversion`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_f5_runs_scored_volatility": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_f5_runs_scored_volatility`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_last_game_bullpen_flip_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_last_game_bullpen_flip_flag`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_last_game_f5_total_runs": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_last_game_f5_total_runs`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_last_game_runs_allowed": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_last_game_runs_allowed`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_last_game_runs_scored": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_last_game_runs_scored`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_last_game_total_runs": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_last_game_total_runs`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_last_game_traffic_no_conversion_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_last_game_traffic_no_conversion_flag`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_primary_label_alternation_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_primary_label_alternation_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_prior_bullpen_flip_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_prior_bullpen_flip_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_prior_chaos_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_prior_chaos_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_prior_dead_bat_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_prior_dead_bat_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_prior_first5_win_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_prior_first5_win_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_prior_game_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_prior_game_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_prior_late_break_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_prior_late_break_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_prior_loss_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_prior_loss_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_prior_scored_first_inning_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_prior_scored_first_inning_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_prior_scoreless_first3_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_prior_scoreless_first3_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_prior_traffic_no_conversion_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_prior_traffic_no_conversion_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_prior_win_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_prior_win_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "away_story_runs_scored_volatility": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `away_story_runs_scored_volatility`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "game_away_team_id": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "Away team id.",
+    "dtype": "string",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "pregame_safe",
+    "role": "metadata",
+    "source": "games"
+  },
+  "game_date": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "Game date.",
+    "dtype": "date",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "pregame_safe",
+    "role": "time_key",
+    "source": "games"
+  },
+  "game_day_of_week": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `game_day_of_week`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "typed_mlb_db"
+  },
+  "game_home_team_id": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "Home team id.",
+    "dtype": "string",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "pregame_safe",
+    "role": "metadata",
+    "source": "games"
+  },
+  "game_id": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "Stable game id.",
+    "dtype": "string",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "pregame_safe",
+    "role": "primary_key",
+    "source": "games"
+  },
+  "game_is_weekend_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `game_is_weekend_flag`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "typed_mlb_db"
+  },
+  "game_series_game_number_known_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `game_series_game_number_known_flag`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "typed_mlb_db"
+  },
+  "game_start_hour_utc": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `game_start_hour_utc`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "typed_mlb_db"
+  },
+  "game_start_time_utc": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "Scheduled start.",
+    "dtype": "timestamp",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "pregame_safe",
+    "role": "metadata",
+    "source": "games"
+  },
+  "game_status": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "Typed status.",
+    "dtype": "string",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "pregame_safe",
+    "role": "metadata",
+    "source": "games"
+  },
+  "home_context_days_since_prior_game": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_context_days_since_prior_game`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_context_played_yesterday_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_context_played_yesterday_flag`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_context_prior_game_dead_bat_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_context_prior_game_dead_bat_flag`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_context_prior_game_late_break_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_context_prior_game_late_break_flag`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_context_prior_game_was_chaos_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_context_prior_game_was_chaos_flag`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_hitter_path_lineup_player_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_hitter_path_lineup_player_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "home_hitter_path_opponent_context_coverage_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_hitter_path_opponent_context_coverage_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "home_hitter_path_opponent_weighted_hits_per_pa_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_hitter_path_opponent_weighted_hits_per_pa_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "home_hitter_path_opponent_weighted_total_bases_per_pa_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_hitter_path_opponent_weighted_total_bases_per_pa_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "home_hitter_path_pitch_type_damage_rate_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_hitter_path_pitch_type_damage_rate_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "home_hitter_path_pitch_type_expected_slugging_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_hitter_path_pitch_type_expected_slugging_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "home_hitter_path_pitch_type_response_coverage_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_hitter_path_pitch_type_response_coverage_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "home_hitter_path_pitch_type_response_rows": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_hitter_path_pitch_type_response_rows`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "home_hitter_path_pitch_type_response_sample_pitches": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_hitter_path_pitch_type_response_sample_pitches`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "home_hitter_path_pitch_type_whiff_rate_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_hitter_path_pitch_type_whiff_rate_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "home_hitter_path_starter_phase_damage_fit_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_hitter_path_starter_phase_damage_fit_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_hitter_path_starter_phase_matchup_hitter_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_hitter_path_starter_phase_matchup_hitter_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_hitter_path_starter_phase_traffic_fit_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_hitter_path_starter_phase_traffic_fit_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_hitter_path_starter_phase_whiff_fit_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_hitter_path_starter_phase_whiff_fit_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_hitter_path_statcast_barrel_trend_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_hitter_path_statcast_barrel_trend_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "home_hitter_path_statcast_coverage_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_hitter_path_statcast_coverage_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "home_hitter_path_statcast_hard_hit_trend_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_hitter_path_statcast_hard_hit_trend_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "home_hitter_path_statcast_xwoba_trend_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_hitter_path_statcast_xwoba_trend_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "home_lineup_complete_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_lineup_complete_flag`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "home_lineup_known_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_lineup_known_flag`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "home_lineup_known_slot_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_lineup_known_slot_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "lineups,lineup_slots,lineup_matchup_snapshots,player_pitch_type_response_snapshots,player_statcast_snapshots"
+  },
+  "home_relief_current_5plus_reliever_run_length": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_relief_current_5plus_reliever_run_length`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "home_relief_days_since_5plus_reliever_game": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_relief_days_since_5plus_reliever_game`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "home_relief_last_game_hits_walks_allowed": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_relief_last_game_hits_walks_allowed`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "home_relief_last_game_pitches": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_relief_last_game_pitches`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "home_relief_last_game_reliever_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_relief_last_game_reliever_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "home_relief_last_game_runs_allowed": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_relief_last_game_runs_allowed`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "home_relief_prior_pitches_per_game": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_relief_prior_pitches_per_game`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "home_relief_prior_relievers_used_per_game": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_relief_prior_relievers_used_per_game`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "home_relief_prior_runs_allowed_per_game": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_relief_prior_runs_allowed_per_game`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "home_relief_prior_team_game_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_relief_prior_team_game_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "home_reliever_candidate_pool_entropy": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_reliever_candidate_pool_entropy`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "home_reliever_candidate_pool_size": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_reliever_candidate_pool_size`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "home_reliever_chain_availability_score_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_reliever_chain_availability_score_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "home_reliever_chain_back_to_back_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_reliever_chain_back_to_back_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "home_reliever_chain_bridge_score_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_reliever_chain_bridge_score_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "home_reliever_chain_expected_outs_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_reliever_chain_expected_outs_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "home_reliever_chain_expected_outs_sum": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_reliever_chain_expected_outs_sum`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "home_reliever_chain_known_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_reliever_chain_known_flag`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "home_reliever_chain_worked_yesterday_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_reliever_chain_worked_yesterday_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "home_reliever_command_profile_coverage_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_reliever_command_profile_coverage_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "home_reliever_usage_availability_score_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_reliever_usage_availability_score_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "home_reliever_usage_days_since_last_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_reliever_usage_days_since_last_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "home_reliever_usage_fatigue_score_avg": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_reliever_usage_fatigue_score_avg`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "pitcher_appearances,likely_relief_chains,bullpen_usage_snapshots,reliever_command_profiles"
+  },
+  "home_starter_current_bad_start_run_length": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_current_bad_start_run_length`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_current_short_start_run_length": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_current_short_start_run_length`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_days_since_bad_start": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_days_since_bad_start`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_days_since_last_start": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_days_since_last_start`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_days_since_short_start": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_days_since_short_start`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_last_outs_recorded": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_last_outs_recorded`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_last_outs_vs_prior_mean": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_last_outs_vs_prior_mean`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_last_pitches_thrown": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_last_pitches_thrown`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_last_runs_allowed": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_last_runs_allowed`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_last_strikeouts": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_last_strikeouts`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_last_walks_allowed": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_last_walks_allowed`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_low_evidence_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_low_evidence_flag`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_mistake_command_break_index": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_mistake_command_break_index`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_mistake_first_batter_reach_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_mistake_first_batter_reach_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_mistake_first_inning_run_allowed_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_mistake_first_inning_run_allowed_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_mistake_home_run_start_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_mistake_home_run_start_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_mistake_meltdown_start_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_mistake_meltdown_start_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_mistake_post_damage_recovery_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_mistake_post_damage_recovery_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_mistake_shape_available_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_mistake_shape_available_flag`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_mistake_starts_sample": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_mistake_starts_sample`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_mistake_walk_burst_start_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_mistake_walk_burst_start_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_pitch_mix_available_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_pitch_mix_available_flag`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_pitch_mix_pitch_type_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_pitch_mix_pitch_type_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_pitch_mix_sample_pitches": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_pitch_mix_sample_pitches`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_pitch_mix_top_pitch_share": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_pitch_mix_top_pitch_share`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_pitch_mix_weighted_command_leak": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_pitch_mix_weighted_command_leak`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_pitch_mix_weighted_damage_allowed": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_pitch_mix_weighted_damage_allowed`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_pitch_mix_weighted_hard_contact_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_pitch_mix_weighted_hard_contact_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_pitch_mix_weighted_whiff_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_pitch_mix_weighted_whiff_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_prior_bad_start_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_prior_bad_start_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_prior_hr_rate_per_bf": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_prior_hr_rate_per_bf`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_prior_outs_max": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_prior_outs_max`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_prior_outs_mean": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_prior_outs_mean`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_prior_outs_min": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_prior_outs_min`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_prior_outs_std": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_prior_outs_std`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_prior_quality_start_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_prior_quality_start_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_prior_quality_start_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_prior_quality_start_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_prior_short_start_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_prior_short_start_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_prior_short_start_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_prior_short_start_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_prior_start_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_prior_start_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_prior_strikeout_rate_per_bf": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_prior_strikeout_rate_per_bf`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_starter_prior_walk_rate_per_bf": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_starter_prior_walk_rate_per_bf`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_story_current_loss_run_length": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_current_loss_run_length`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_current_quiet_first5_run_length": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_current_quiet_first5_run_length`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_current_traffic_no_conversion_run_length": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_current_traffic_no_conversion_run_length`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_current_win_run_length": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_current_win_run_length`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_days_since_bullpen_flip_game": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_days_since_bullpen_flip_game`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_days_since_chaos_game": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_days_since_chaos_game`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_days_since_dead_bat_game": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_days_since_dead_bat_game`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_days_since_first5_firefight": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_days_since_first5_firefight`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_days_since_prior_game": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_days_since_prior_game`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_days_since_starter_crack_game": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_days_since_starter_crack_game`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs,pitcher_pitch_mix_snapshots,pitcher_mistake_shape_snapshots"
+  },
+  "home_story_days_since_traffic_no_conversion": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_days_since_traffic_no_conversion`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_f5_runs_scored_volatility": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_f5_runs_scored_volatility`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_last_game_bullpen_flip_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_last_game_bullpen_flip_flag`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_last_game_f5_total_runs": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_last_game_f5_total_runs`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_last_game_runs_allowed": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_last_game_runs_allowed`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_last_game_runs_scored": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_last_game_runs_scored`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_last_game_total_runs": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_last_game_total_runs`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_last_game_traffic_no_conversion_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_last_game_traffic_no_conversion_flag`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_primary_label_alternation_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_primary_label_alternation_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_prior_bullpen_flip_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_prior_bullpen_flip_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_prior_chaos_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_prior_chaos_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_prior_dead_bat_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_prior_dead_bat_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_prior_first5_win_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_prior_first5_win_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_prior_game_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_prior_game_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_prior_late_break_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_prior_late_break_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_prior_loss_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_prior_loss_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_prior_scored_first_inning_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_prior_scored_first_inning_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_prior_scoreless_first3_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_prior_scoreless_first3_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_prior_traffic_no_conversion_rate": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_prior_traffic_no_conversion_rate`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_prior_win_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_prior_win_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "home_story_runs_scored_volatility": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `home_story_runs_scored_volatility`.",
+    "dtype": "float",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats,phase_outcomes,game_story_labels,game_story_signals"
+  },
+  "market_any_pregame_snapshot_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `market_any_pregame_snapshot_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_mlb_db"
+  },
+  "market_f5_total_pregame_snapshot_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `market_f5_total_pregame_snapshot_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_mlb_db"
+  },
+  "market_total_pregame_snapshot_count": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "M3-FS-002 generated feature column `market_total_pregame_snapshot_count`.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_mlb_db"
+  },
+  "target_away_team_runs_f5": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "Away first-five runs.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_outcomes"
+  },
+  "target_away_team_runs_final": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "Away final runs.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_outcomes"
+  },
+  "target_chaos_game_flag": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "Chaos/high-tail game flag.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_story_labels,game_outcomes"
+  },
+  "target_f5_bucket": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "First-five bucket.",
+    "dtype": "string",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_story_labels"
+  },
+  "target_home_team_runs_f5": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "Home first-five runs.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_outcomes"
+  },
+  "target_home_team_runs_final": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "Home final runs.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_outcomes"
+  },
+  "target_total_bucket": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "Total bucket.",
+    "dtype": "string",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_story_labels"
+  },
+  "target_total_runs_f5": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "First-five combined runs.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_outcomes"
+  },
+  "target_total_runs_final": {
+    "derived_from_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+    "derived_from_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+    "description": "Final combined runs.",
+    "dtype": "integer",
+    "fs003_selection_policy": "alpha5_feature_audit_selected_columns",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_outcomes"
+  }
+}

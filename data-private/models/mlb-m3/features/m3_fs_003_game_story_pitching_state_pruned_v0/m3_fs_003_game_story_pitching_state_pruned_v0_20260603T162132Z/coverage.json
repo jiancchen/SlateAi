@@ -1,0 +1,32 @@
+{
+  "column_count": 271,
+  "family_counts": {
+    "game_context": 14,
+    "hitter_path": 34,
+    "market_context": 3,
+    "metadata": 4,
+    "primary_key": 1,
+    "reliever_chain": 51,
+    "starter_path": 92,
+    "story_memory": 62,
+    "target": 9,
+    "time_key": 1
+  },
+  "high_missing_selected_columns": [],
+  "pruned_feature_count": 24,
+  "role_counts": {
+    "feature": 256,
+    "metadata": 4,
+    "primary_key": 1,
+    "target": 9,
+    "time_key": 1
+  },
+  "row_count": 886,
+  "selected_column_count": 271,
+  "selected_feature_count": 256,
+  "selection_payload_column_count": 271,
+  "source_column_count": 295,
+  "source_feature_count": 280,
+  "source_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+  "source_feature_set_id": "m3_fs_002_game_story_pitching_state_v0"
+}

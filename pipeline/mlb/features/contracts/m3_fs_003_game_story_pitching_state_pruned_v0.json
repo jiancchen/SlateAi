@@ -1,0 +1,139 @@
+{
+  "as_of_policy": "pregame",
+  "description": "Pruned MLB-M3 game-grain feature set derived from FS-002 using the alpha-5 feature audit selected-column list. This is a cleanup artifact for harness diagnostics, not a new hand-weighted model.",
+  "evidence_policy": {
+    "baseline_layers": [
+      "cumulative_prior_season",
+      "ordered_prior_game_state",
+      "days_since_event",
+      "current_run_length",
+      "coverage_and_low_data_flags"
+    ],
+    "evidence_policy_id": "m3_no_fixed_window_truth_v1",
+    "evidence_units": [
+      "prior_game",
+      "prior_start",
+      "prior_pitcher_appearance",
+      "pregame_snapshot",
+      "lineup_slot",
+      "pitch_type_surface"
+    ],
+    "forbidden": [
+      "sports.db reads",
+      "M2 generated artifacts",
+      "hand-coded betting scores",
+      "expected AB as input truth",
+      "fixed raw windows as form truth"
+    ],
+    "required_coverage_fields": [
+      "sample_count",
+      "event_count",
+      "availability_flag",
+      "missingness_rate",
+      "snapshot_age_days"
+    ],
+    "state_memory_encoders": [
+      "days_since_event",
+      "current_run_length",
+      "ordered_last_event",
+      "cumulative_event_rate",
+      "alternation_rate",
+      "low_data_flag",
+      "reaction_to_prior_performance"
+    ]
+  },
+  "feature_families": [
+    "replay_story_memory",
+    "starter_workload_path",
+    "starter_exit_hazard",
+    "starter_pitch_mix_surface",
+    "starter_mistake_shape_surface",
+    "reliever_availability_reset",
+    "first_up_reliever_router",
+    "reliever_chain_state",
+    "reliever_performance_state",
+    "hitter_path_coverage",
+    "starter_phase_hitter_surface",
+    "reliever_chain_hitter_surface_coverage",
+    "game_shape_precursor_context"
+  ],
+  "feature_prefixes": [
+    "game_",
+    "home_",
+    "away_",
+    "market_"
+  ],
+  "feature_set_id": "m3_fs_003_game_story_pitching_state_pruned_v0",
+  "grain": "game",
+  "primary_key": "game_id",
+  "pruning_policy": {
+    "audit_run_id": "mlb_m3_alpha2_infra_fs002_20260603T155600Z_feature_audit",
+    "derived_from": "m3_fs_002_game_story_pitching_state_v0",
+    "keep_missing_rate_max": 0.75,
+    "min_non_null_rate": 0.1,
+    "min_unique_values": 2,
+    "remove_categories": [
+      "constant_or_near_constant",
+      "id_or_identifier_proxy",
+      "high_missingness",
+      "low_non_null_rate"
+    ],
+    "selected_columns_uri": "data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs002_20260603T155600Z/feature_audit/fs003_selected_columns.json"
+  },
+  "required_report_fields": [
+    "row_count",
+    "column_count",
+    "feature_count",
+    "target_count",
+    "missingness_uri",
+    "coverage_uri",
+    "lineage_uri",
+    "leakage_uri",
+    "matrix_uri"
+  ],
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+  "source_tables": [
+    "games",
+    "teams",
+    "venues",
+    "game_outcomes",
+    "team_game_stats",
+    "phase_outcomes",
+    "game_story_labels",
+    "game_story_signals",
+    "starting_pitchers",
+    "starting_pitcher_game_logs",
+    "pitcher_appearances",
+    "pitcher_pitch_mix_snapshots",
+    "pitcher_mistake_shape_snapshots",
+    "bullpen_usage_snapshots",
+    "team_bullpen_shape_snapshots",
+    "likely_relief_chains",
+    "reliever_command_profiles",
+    "lineups",
+    "lineup_slots",
+    "lineup_matchup_snapshots",
+    "player_pitch_type_response_snapshots",
+    "player_statcast_snapshots",
+    "player_opponent_context_snapshots",
+    "market_snapshots",
+    "plate_appearances",
+    "pitch_events"
+  ],
+  "sport": "mlb",
+  "target_prefix": "target_",
+  "targets": [
+    "target_total_runs_final",
+    "target_total_runs_f5",
+    "target_home_team_runs_final",
+    "target_away_team_runs_final",
+    "target_home_team_runs_f5",
+    "target_away_team_runs_f5",
+    "target_total_bucket",
+    "target_f5_bucket",
+    "target_chaos_game_flag"
+  ],
+  "time_key": "game_date",
+  "version": "0.1.0"
+}

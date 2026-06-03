@@ -1,0 +1,22 @@
+{
+  "as_of_policy": "pregame",
+  "builder_version": "0.1.0",
+  "contract_uri": "/Users/jcchen/Documents/New project/pipeline/mlb/features/contracts/m3_fs_003_game_story_pitching_state_pruned_v0.json",
+  "derivation": "audit_pruned_feature_artifact",
+  "end_date": "2026-05-31",
+  "expected_ab_input_materialized": false,
+  "feature_builder": "pipeline.mlb.features.builders.build_game_story_pitching_state_pruned_v0",
+  "git_sha": "9b431c91da676aa6ad4d78f1e608318b1be726d4",
+  "pitching_path_grain": "one opponent pitching path per batting side: starter phase then reliever-chain phase",
+  "selected_columns_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs002_20260603T155600Z/feature_audit/fs003_selected_columns.json",
+  "source_data_dictionary_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_002_game_story_pitching_state_v0/m3_fs_002_game_story_pitching_state_v0_20260603T155454Z/data_dictionary.json",
+  "source_feature_report_uri": "/Users/jcchen/Documents/New project/data-migration/reports/m3_fs_002_game_story_pitching_state_v0_2026-03-26_to_2026-05-31.json",
+  "source_feature_run_id": "m3_fs_002_game_story_pitching_state_v0_20260603T155454Z",
+  "source_feature_set_id": "m3_fs_002_game_story_pitching_state_v0",
+  "source_feature_set_version": "0.1.0",
+  "source_matrix_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_002_game_story_pitching_state_v0/m3_fs_002_game_story_pitching_state_v0_20260603T155454Z/matrix.parquet",
+  "start_date": "2026-03-26",
+  "uses_hand_picked_memory_lengths": false,
+  "uses_m2_weights": false,
+  "uses_sports_db": false
+}
