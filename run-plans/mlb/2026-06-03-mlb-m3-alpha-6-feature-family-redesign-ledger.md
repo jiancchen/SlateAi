@@ -46,6 +46,10 @@ Status: opened
 | A6-W022 | Implement FS-004 tail/regime calibration audit | complete | `pipeline/mlb/m3/audit/audit_fs004_tail_calibration.py` | Reads the FS-004 manifest, harness output, target regimes, walk-forward metrics, and family ablations. |
 | A6-W023 | Generate FS-004 tail/regime audit artifacts | complete | `tail_calibration_alpha6` | Promotion is blocked: no row predictions, no probability outputs, no calibration bins, and candidate loses every comparable walk-forward fold. |
 | A6-W024 | Review FS-004 tail/regime audit | complete | `2026-06-03-mlb-m3-alpha-6-fs004-tail-calibration-review.md` | Tail audit accepted as feedback-loop infrastructure; next gate is harness row-level prediction/residual output. |
+| A6-W025 | Add row-level prediction output to the harness | complete | `pipeline/mlb/m3/harness/run_alpha3_harness.py` | Adds `--row-predictions` for diagnostic validation predictions and residuals; requires `--candidate-model`. |
+| A6-W026 | Generate FS-004 row-level harness artifacts | complete | `training_harness_alpha6_row_predictions` | Wrote 6 JSONL row-prediction artifacts across manifest validation and two walk-forward folds. |
+| A6-W027 | Regenerate FS-004 tail audit with row residual summaries | complete | `tail_calibration_alpha6_row_predictions` | Row-level predictions now pass the gate; probability outputs, calibration bins, and baseline-beating walk-forward remain blocked. |
+| A6-W028 | Review FS-004 row-prediction harness | complete | `2026-06-03-mlb-m3-alpha-6-fs004-row-prediction-harness-review.md` | Accepted as metrics-only residual infrastructure; no promotion. |
 
 ## Verification Log
 
@@ -74,6 +78,11 @@ Status: opened
 - 2026-06-03: `PYTHONDONTWRITEBYTECODE=1 python3 -m py_compile pipeline/mlb/m3/audit/audit_fs004_tail_calibration.py` passed.
 - 2026-06-03: `PYTHONDONTWRITEBYTECODE=1 /Users/jcchen/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -m pipeline.mlb.m3.audit.audit_fs004_tail_calibration --manifest data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/manifest.json --harness-dir data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6 --output-subdir tail_calibration_alpha6` generated the FS-004 tail/regime audit.
 - 2026-06-03: FS-004 tail audit reports `blocked_for_promotion`: tail targets exist, but row-level predictions, probability outputs, calibration bins, and baseline-beating walk-forward results do not.
+- 2026-06-03: `PYTHONDONTWRITEBYTECODE=1 python3 -m py_compile pipeline/mlb/m3/harness/run_alpha3_harness.py pipeline/mlb/m3/audit/audit_fs004_tail_calibration.py` passed after adding row-output support.
+- 2026-06-03: `PYTHONDONTWRITEBYTECODE=1 /Users/jcchen/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -m pipeline.mlb.m3.harness.run_alpha3_harness --manifest data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/manifest.json --output-subdir training_harness_alpha6_row_predictions --candidate-model --walk-forward --family-ablations --row-predictions` generated 6 row-prediction JSONL artifacts.
+- 2026-06-03: `PYTHONDONTWRITEBYTECODE=1 python3 -m pipeline.mlb.m3.harness.validate_alpha3_harness --harness-dir data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6_row_predictions --json` passed.
+- 2026-06-03: `PYTHONDONTWRITEBYTECODE=1 /Users/jcchen/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -m pipeline.mlb.m3.audit.audit_fs004_tail_calibration --manifest data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/manifest.json --harness-dir data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6_row_predictions --output-subdir tail_calibration_alpha6_row_predictions` generated row-aware tail/regime residual summaries.
+- 2026-06-03: Row-aware FS-004 tail audit reports `blocked_for_promotion`: row-level predictions now exist, but probability outputs, calibration bins, and baseline-beating walk-forward results do not.
 
 ## Stop Log
 

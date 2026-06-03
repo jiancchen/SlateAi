@@ -2,7 +2,7 @@
 
 Date: 2026-06-03
 
-Status: current through `mlb-m3-alpha-6` FS-004 tail/regime audit
+Status: current through `mlb-m3-alpha-6` FS-004 row-prediction harness
 
 Primary question: what exists, what is connected, what is only a placeholder, and what is still missing before M3 becomes a real baseball simulator/model stack?
 
@@ -22,7 +22,8 @@ Evidence checked:
 - FS-004 contract exists and validates, and source feasibility passed with 0 blocked surfaces.
 - FS-004 reliever `entry_order` source decision is recorded and canonical chain-order fields are backfilled.
 - FS-004 builder readiness passed, matrix materialization completed, and the FS-004 harness ran.
-- FS-004 tail/regime audit exists and blocks promotion until row-level prediction/residual and probability artifacts exist.
+- FS-004 tail/regime audit exists and blocks promotion.
+- FS-004 row-level prediction/residual artifacts exist for the diagnostic harness; probability/distribution outputs and calibration bins remain missing.
 - No promoted model, picks, simulator events, prop prices, or edge claims exist in the alpha artifacts.
 - This progress file is ASCII-only and should render as normal Markdown plus Mermaid.
 
@@ -30,9 +31,9 @@ Tracking rule: update this document whenever a component status, lane status, fe
 
 ## Snapshot
 
-M3 now has a working typed feature-artifact pipeline, manifest infrastructure, metrics-only harness, feature audit, walk-forward diagnostics, a first diagnostic candidate runner, an Alpha-6 surface-gap audit, an FS-004 redesign contract, an FS-004 typed-source feasibility audit, a materialized FS-004 matrix/harness run, and an FS-004 tail/regime feedback audit.
+M3 now has a working typed feature-artifact pipeline, manifest infrastructure, metrics-only harness, feature audit, walk-forward diagnostics, a first diagnostic candidate runner, an Alpha-6 surface-gap audit, an FS-004 redesign contract, an FS-004 typed-source feasibility audit, a materialized FS-004 matrix/harness run, an FS-004 tail/regime feedback audit, and row-level diagnostic prediction/residual artifacts.
 
-M3 does not yet have a promoted model, a simulator, a real backtest edge claim, market pricing, player props, selection rows, calibrated probabilities, row-level validation prediction artifacts, or typed prediction/settlement writers.
+M3 does not yet have a promoted model, a simulator, a real backtest edge claim, market pricing, player props, selection rows, calibrated probabilities, probability/distribution outputs, calibration bins, or typed prediction/settlement writers.
 
 The most important alpha-5 finding is negative but useful: FS-003 pruning cleaned artifact hygiene but did not improve walk-forward error. That means the next work is feature-family redesign, not model tuning.
 
@@ -75,14 +76,15 @@ flowchart TD
   BR004 --> FS004["FS-004 state-path redesign artifact<br/>886 rows, 120 features, 14 targets<br/>status: live"]
   FS004 --> M004["Alpha-2 manifest for FS-004<br/>status: live"]
   M004 --> H004["Alpha-6 harness for FS-004<br/>candidate closer, still unpromoted<br/>status: live"]
-  H004 --> TC004["FS-004 tail/regime feedback audit<br/>promotion blocked; row predictions missing<br/>status: live"]
-  TC004 --> NEXT["Next phase: row-level prediction/residual harness output<br/>status: next"]
+  H004 --> RP004["FS-004 row-prediction harness<br/>6 residual JSONL artifacts<br/>status: live"]
+  RP004 --> TC004["FS-004 tail/regime feedback audit<br/>row residual summaries live<br/>status: live"]
+  TC004 --> NEXT["Next phase: probability/distribution outputs and calibration bins<br/>status: next"]
 
   classDef live fill:#dff3df,stroke:#367c39,color:#102b13;
   classDef partial fill:#fff2c2,stroke:#927000,color:#332800;
   classDef next fill:#d7ecff,stroke:#2f6f9f,color:#0d2638;
 
-  class SQL,FS001,FS002,M001,H001,M002,H002,A002,WF002,FS003,M003,H003,R003,A6,C004,S004,D004,BR004,FS004,M004,H004,TC004 live;
+  class SQL,FS001,FS002,M001,H001,M002,H002,A002,WF002,FS003,M003,H003,R003,A6,C004,S004,D004,BR004,FS004,M004,H004,RP004,TC004 live;
   class NEXT next;
 ```
 
@@ -109,7 +111,7 @@ flowchart TD
   L6 --> L7["L7 team/player/pitcher distributions<br/>status: missing"]
   L7 --> L8["L8 market pricing rows<br/>status: missing"]
   L8 --> L9["L9 selection policy rows<br/>status: deferred"]
-  L8 --> L10["L10 backtest, settlement, calibration, ablation feedback<br/>tail audit live; row predictions missing<br/>status: partial"]
+  L8 --> L10["L10 backtest, settlement, calibration, ablation feedback<br/>row residuals live; probability outputs missing<br/>status: partial"]
   L9 --> L10
   L10 --> L2
   L10 --> L3
@@ -143,7 +145,7 @@ flowchart TD
 | Alpha-3 | complete | `training_harness` | Harness can load a manifest, split rows, write metrics, and avoid picks. | Smoke test was shallow and not a backtest edge claim. |
 | Alpha-4 | complete | `m3_fs_002_game_story_pitching_state_v0_20260603T155454Z` | First real M3 feature artifact with story, starter, reliever, hitter, and market context. | It did not produce a good candidate model. |
 | Alpha-5 | complete | FS-002 audit, FS-003 artifact, FS-003 harness | Walk-forward and ablations can reject weak candidates honestly. | Pruning did not fix the core feature representation problem. |
-| Alpha-6 | opened | FS-004 contract, source feasibility, builder readiness, FS-004 matrix, FS-004 manifest, FS-004 harness, tail/regime audit | FS-004 materially improves diagnostic candidate error versus FS-003 but still does not beat baseline; tail audit pinpoints the next harness feedback gap. | No promotion, simulator, pricing, picks, row-level candidate calibration, or edge claim. |
+| Alpha-6 | opened | FS-004 contract, source feasibility, builder readiness, FS-004 matrix, FS-004 manifest, FS-004 harness, row-prediction artifacts, tail/regime audit | FS-004 materially improves diagnostic candidate error versus FS-003 but still does not beat baseline; row residuals expose where tails still fail. | No promotion, simulator, pricing, picks, probability calibration, or edge claim. |
 
 ## Feature Artifacts
 
@@ -177,7 +179,7 @@ The manifest registry has 12 component-family slots. They are connected as place
 | `reliever_stat_distribution` | placeholder | Sparse command profile surfaces exist | Individual-arm performance targets and workload-conditioned distributions. |
 | `pa_event_distribution` | placeholder | Manifest slot only | Batter/pitcher event target matrix, pitch/PA state features, event model. |
 | `hitter_stat_distribution` | placeholder | Hitter-path feature scaffolding exists | Player prop target matrices, starter-phase and reliever-chain interaction surfaces. |
-| `calibration_layer` | partial | Placeholder JSON plus FS-004 tail/regime audit | Row-level validation predictions, residuals, probability outputs, calibration bins, settlement joins, and promotion/rejection rules. |
+| `calibration_layer` | partial | Placeholder JSON, FS-004 tail/regime audit, and row-level residual artifacts | Probability outputs, distribution summaries, calibration bins, settlement joins, and promotion/rejection rules. |
 
 ## Lane State
 
@@ -219,7 +221,7 @@ Promotion gate: `blocked_for_promotion`
 | Gate | Result |
 | --- | --- |
 | Tail/regime targets present | pass |
-| Row-level validation predictions exist | fail |
+| Row-level validation predictions exist | pass |
 | Probability or distribution outputs exist | fail |
 | Calibration bins exist | fail |
 | Candidate beats baseline in all comparable folds | fail |
@@ -232,7 +234,15 @@ Worst mean-baseline validation slices:
 | `full_game_total` | `target_total_bucket:chaos` | 47 | 6.5518 | underpredicts |
 | `full_game_total` | `target_total_bucket:low` | 55 | 5.1917 | overpredicts |
 
-Interpretation: the tail problem is visible, but real calibration cannot start until the harness writes row-level validation predictions/residuals and distribution/probability outputs.
+Worst candidate residual slices from the row-aware audit:
+
+| Lane | Slice | Rows | Candidate MAE | Baseline MAE | Delta |
+| --- | --- | ---: | ---: | ---: | ---: |
+| `full_game_total` | `target_total_bucket:chaos` | 47 | 5.8312 | 6.5518 | -0.7206 |
+| `full_game_total` | `target_chaos_game_flag:1` | 50 | 5.6926 | 6.3101 | -0.6175 |
+| `f5_total` | `target_f5_bucket:chaos` | 43 | 5.5744 | 5.3351 | +0.2394 |
+
+Interpretation: the tail problem is visible at row level now. FS-004 helps some full-game chaos slices versus the mean baseline, but still loses overall and does not solve F5 chaos. Real calibration still needs probability/distribution outputs and calibration bins.
 
 ## Alpha-6 Surface Audit
 
@@ -253,7 +263,7 @@ Current follow-up status:
 | Surface | Current Status | Evidence |
 | --- | --- | --- |
 | `hitter_vs_reliever_chain_phase` | partial | FS-004 has a reliever-chain phase readiness surface, but not a player-level hitter-vs-chain event model. |
-| `tail_calibration_feedback` | partial | `tail_calibration_alpha6` exists and blocks promotion, but real calibration still needs row-level predictions/residuals and probability outputs. |
+| `tail_calibration_feedback` | partial | `tail_calibration_alpha6_row_predictions` exists with row residual summaries, but real calibration still needs probability/distribution outputs and calibration bins. |
 
 Candidate next feature set:
 
@@ -267,7 +277,7 @@ FS-004 source feasibility status: `live`
 
 FS-004 matrix status: `live`
 
-FS-004 targets starter path, reliever chain, hitter-path phase split, ordered story memory, game-regime labels, and calibration hooks before model tuning. The next missing feedback piece is row-level prediction/residual output from the harness.
+FS-004 targets starter path, reliever chain, hitter-path phase split, ordered story memory, game-regime labels, and calibration hooks before model tuning. The next missing feedback pieces are probability/distribution outputs, calibration bins, settlement joins, and promotion gates.
 
 ## Alpha-6 Source Feasibility
 
@@ -297,7 +307,7 @@ Status: `builder_readiness_clear`
 | FS-004 source feasibility | pass |
 | Canonical reliever order data | pass |
 
-FS-004 matrix materialization is complete. This still does not allow picks, prop prices, simulator event logs, promotion decisions, or claims that M3 is better. The current allowed next step is metrics-only row-level prediction/residual output for harness calibration diagnostics.
+FS-004 matrix materialization is complete and row-level residual diagnostics now exist. This still does not allow picks, prop prices, simulator event logs, promotion decisions, or claims that M3 is better. The current allowed next step is metrics-only probability/distribution output design and calibration-bin scaffolding.
 
 ## What Is Connected
 
@@ -308,7 +318,8 @@ flowchart LR
   A1 --> M1["Run manifests"]
   M1 --> V1["Manifest validator"]
   V1 --> H1["Harness runner"]
-  H1 --> TAIL["Tail/regime feedback audit"]
+  H1 --> ROWP["Row prediction/residual artifacts"]
+  ROWP --> TAIL["Tail/regime feedback audit"]
   H1 --> HV["Harness validator"]
   H1 --> D1["Dashboard state JSON"]
   H1 --> R1["Review docs"]
@@ -318,7 +329,7 @@ flowchart LR
   M2 --> H2["FS-003 harness"]
 
   classDef live fill:#dff3df,stroke:#367c39,color:#102b13;
-  class C1,B1,A1,M1,V1,H1,TAIL,HV,D1,R1,AUD,A2,M2,H2 live;
+  class C1,B1,A1,M1,V1,H1,ROWP,TAIL,HV,D1,R1,AUD,A2,M2,H2 live;
 ```
 
 ## What Is Not Connected Yet
@@ -326,8 +337,10 @@ flowchart LR
 ```mermaid
 flowchart LR
   H["Harness metrics"] --> TAIL["Tail/regime audit"]
-  TAIL -. missing row outputs .-> ROW["Row-level predictions and residuals"]
-  ROW -. not yet .-> BT["True backtest engine"]
+  H --> ROW["Row-level predictions and residuals"]
+  ROW --> TAIL
+  TAIL -. missing probabilities .-> DISTOUT["Probability/distribution outputs"]
+  DISTOUT -. not yet .-> BT["True backtest engine"]
   BT -. not yet .-> CAL["Calibration layer"]
   CAL -. not yet .-> PROMO["Promotion gate"]
   PROMO -. not yet .-> REG["Active model registry"]
@@ -341,8 +354,8 @@ flowchart LR
 
   classDef missing fill:#ffd9d9,stroke:#aa3b3b,color:#3b1111;
   classDef live fill:#dff3df,stroke:#367c39,color:#102b13;
-  class TAIL live;
-  class ROW,BT,CAL,PROMO,REG,SIM,DIST,PRICE,SELECT,UI,SETTLE missing;
+  class TAIL,ROW live;
+  class DISTOUT,BT,CAL,PROMO,REG,SIM,DIST,PRICE,SELECT,UI,SETTLE missing;
 ```
 
 ## Gaps By Layer
@@ -352,8 +365,8 @@ flowchart LR
 | Typed DB facts | partial | Good enough for current game-grain feature work; true PA simulator still needs richer replay state and as-of discipline. |
 | Feature layer | live | FS-004 is a better first state-path representation, but it still needs family iteration and componentized outputs before model-quality claims. |
 | Manifest/run infrastructure | live | Direct typed DB registration remains preview-only. |
-| Harness | live | It is metrics-only; it is not a final walk-forward backtest engine. |
-| Backtest feedback | partial | Walk-forward, ablations, and tail/regime audit exist, but row-level predictions/residuals, settlement, true calibration bins, and promotion gates are missing. |
+| Harness | live | It is metrics-only and can now emit diagnostic row residuals; it is not a final walk-forward backtest engine. |
+| Backtest feedback | partial | Walk-forward, ablations, row residuals, and tail/regime audit exist, but probability outputs, settlement, true calibration bins, and promotion gates are missing. |
 | Component models | placeholder | No trained component artifacts have been promoted. |
 | Simulator | missing | No PA/base-out/count event simulator or simulated event logs. |
 | Market pricing | missing | No fair probabilities, prop prices, or market prediction rows. |
@@ -364,7 +377,7 @@ flowchart LR
 
 ### Alpha-6: Feature-Family Redesign
 
-Status: opened; FS-004 matrix, harness, and tail/regime audit generated.
+Status: opened; FS-004 matrix, harness, row residuals, and tail/regime audit generated.
 
 Build the next feature pass around baseball state, not wider flat columns.
 
@@ -403,7 +416,7 @@ Priority work:
 
 - settlement reader and target joiner
 - walk-forward fold planner beyond two fixed folds
-- row-level prediction and residual artifacts
+- generalized row-level prediction and residual artifacts across future components
 - calibration diagnostics by slice, month, regime, and market line
 - tail diagnostics for chaos/high-run/dead-bat games
 - feature ablation reports as first-class artifacts

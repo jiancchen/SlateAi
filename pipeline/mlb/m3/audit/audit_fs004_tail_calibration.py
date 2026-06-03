@@ -313,6 +313,19 @@ def load_optional_json(path: Path) -> dict[str, Any] | None:
     return load_json(path)
 
 
+def load_jsonl(path: Path) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    with path.open("r", encoding="utf-8") as handle:
+        for line in handle:
+            line = line.strip()
+            if not line:
+                continue
+            payload = json.loads(line)
+            if isinstance(payload, dict):
+                rows.append(payload)
+    return rows
+
+
 def walk_forward_gate_summary(walk_forward: dict[str, Any] | None) -> dict[str, Any]:
     if not walk_forward:
         return {
@@ -478,10 +491,180 @@ def find_prediction_artifacts(harness_dir: Path) -> list[str]:
     for path in harness_dir.rglob("*"):
         if not path.is_file():
             continue
-        lower = path.name.lower()
+        lower = str(path.relative_to(harness_dir)).lower()
         if "prediction" in lower or "residual" in lower or "calibration_bin" in lower:
             candidates.append(str(path))
     return sorted(candidates)
+
+
+def rows_for_prediction_slice(rows: list[dict[str, Any]]) -> list[tuple[str, str, list[dict[str, Any]]]]:
+    slices: list[tuple[str, str, list[dict[str, Any]]]] = [("all", "All rows", rows)]
+    for column in BUCKET_COLUMNS:
+        values = sorted({str(row.get(column)) for row in rows if row.get(column) is not None})
+        for value in values:
+            slices.append(
+                (
+                    f"{column}:{value}",
+                    f"{column} == {value}",
+                    [row for row in rows if str(row.get(column)) == value],
+                )
+            )
+    for column in FLAG_COLUMNS:
+        for value in [1.0, 0.0]:
+            slices.append(
+                (
+                    f"{column}:{int(value)}",
+                    f"{column} == {int(value)}",
+                    [row for row in rows if safe_float(row.get(column)) == value],
+                )
+            )
+    if rows and all(
+        column in rows[0]
+        for column in [
+            "target_home_starter_cracked_flag",
+            "target_away_starter_cracked_flag",
+        ]
+    ):
+        slices.append(
+            (
+                "any_starter_cracked:1",
+                "Either starter cracked",
+                [
+                    row
+                    for row in rows
+                    if safe_float(row.get("target_home_starter_cracked_flag")) == 1.0
+                    or safe_float(row.get("target_away_starter_cracked_flag")) == 1.0
+                ],
+            )
+        )
+        slices.append(
+            (
+                "both_starters_clean:1",
+                "Neither starter cracked",
+                [
+                    row
+                    for row in rows
+                    if safe_float(row.get("target_home_starter_cracked_flag")) == 0.0
+                    and safe_float(row.get("target_away_starter_cracked_flag")) == 0.0
+                ],
+            )
+        )
+    return slices
+
+
+def prediction_metrics(rows: list[dict[str, Any]]) -> dict[str, Any]:
+    actual: list[float] = []
+    predicted: list[float] = []
+    baseline: list[float] = []
+    for row in rows:
+        actual_value = safe_float(row.get("actual"))
+        predicted_value = safe_float(row.get("prediction"))
+        baseline_value = safe_float(row.get("baseline_prediction"))
+        if actual_value is None or predicted_value is None:
+            continue
+        actual.append(actual_value)
+        predicted.append(predicted_value)
+        if baseline_value is not None:
+            baseline.append(baseline_value)
+    baseline_metrics = (
+        numeric_metrics(actual, baseline) if len(baseline) == len(actual) else None
+    )
+    candidate_metrics = numeric_metrics(actual, predicted)
+    candidate_mae = safe_float(candidate_metrics.get("mae"))
+    baseline_mae = (
+        None
+        if baseline_metrics is None
+        else safe_float(baseline_metrics.get("mae"))
+    )
+    return {
+        "row_count": len(rows),
+        "candidate_metrics": candidate_metrics,
+        "baseline_metrics": baseline_metrics,
+        "candidate_delta_mae_vs_baseline": None
+        if candidate_mae is None or baseline_mae is None
+        else candidate_mae - baseline_mae,
+    }
+
+
+def row_prediction_slice_summary(prediction_artifacts: list[str]) -> dict[str, Any]:
+    if not prediction_artifacts:
+        return {
+            "status": "missing",
+            "reason": "No row-level prediction artifacts were found.",
+            "artifacts": [],
+        }
+    artifact_summaries: list[dict[str, Any]] = []
+    for artifact in prediction_artifacts:
+        path = Path(artifact)
+        rows = load_jsonl(path)
+        if not rows:
+            artifact_summaries.append(
+                {
+                    "path": artifact,
+                    "status": "empty",
+                    "row_count": 0,
+                    "slices": {},
+                }
+            )
+            continue
+        slices: dict[str, Any] = {}
+        for slice_id, description, slice_rows in rows_for_prediction_slice(rows):
+            slices[slice_id] = {
+                "description": description,
+                **prediction_metrics(slice_rows),
+            }
+        artifact_summaries.append(
+            {
+                "path": artifact,
+                "status": "created",
+                "lane": str(rows[0].get("lane")),
+                "split_kind": str(rows[0].get("split_kind")),
+                "fold_id": str(rows[0].get("fold_id")),
+                "row_count": len(rows),
+                "slices": slices,
+            }
+        )
+    return {
+        "status": "created",
+        "artifact_count": len(prediction_artifacts),
+        "artifacts": artifact_summaries,
+    }
+
+
+def top_candidate_tail_slices(
+    row_prediction_summary: dict[str, Any],
+    limit: int = 10,
+) -> list[dict[str, Any]]:
+    if row_prediction_summary.get("status") != "created":
+        return []
+    rows: list[dict[str, Any]] = []
+    for artifact in row_prediction_summary.get("artifacts", []):
+        for slice_id, payload in artifact.get("slices", {}).items():
+            row_count = int(payload.get("row_count") or 0)
+            candidate_mae = safe_float(
+                payload.get("candidate_metrics", {}).get("mae")
+            )
+            baseline_mae = safe_float(
+                (payload.get("baseline_metrics") or {}).get("mae")
+            )
+            if row_count < 10 or candidate_mae is None:
+                continue
+            rows.append(
+                {
+                    "lane": artifact.get("lane"),
+                    "split_kind": artifact.get("split_kind"),
+                    "fold_id": artifact.get("fold_id"),
+                    "slice_id": slice_id,
+                    "description": payload.get("description"),
+                    "row_count": row_count,
+                    "candidate_mae": candidate_mae,
+                    "baseline_mae": baseline_mae,
+                    "candidate_delta_mae_vs_baseline": payload.get(
+                        "candidate_delta_mae_vs_baseline"
+                    ),
+                }
+            )
+    return sorted(rows, key=lambda item: item["candidate_mae"], reverse=True)[:limit]
 
 
 def promotion_gate_summary(
@@ -521,6 +704,21 @@ def promotion_gate_summary(
 
 
 def report_markdown(audit: dict[str, Any]) -> str:
+    next_actions = [
+        "Add distribution/probability outputs before using the word calibration literally.",
+        "Promote tail/regime labels into rejection gates for any future component candidate.",
+        "Keep this metrics-only; no picks, prices, simulator logs, or edge claims.",
+    ]
+    if not audit["promotion_gate"]["row_level_predictions_exist"]:
+        next_actions.insert(
+            0,
+            "Extend the harness to write row-level validation predictions and residuals.",
+        )
+    else:
+        next_actions.insert(
+            0,
+            "Review candidate residual slice summaries from the row-level prediction artifacts.",
+        )
     lines = [
         "# MLB-M3 FS-004 Tail/Regime Calibration Audit",
         "",
@@ -598,14 +796,42 @@ def report_markdown(audit: dict[str, Any]) -> str:
                 + " |"
             )
         lines.append("")
+    if audit["row_prediction_slice_summary"]["status"] == "created":
+        lines.extend(
+            [
+                "## Worst Candidate Residual Slices",
+                "",
+                "These come from row-level diagnostic prediction artifacts. They are not probability calibration bins.",
+                "",
+                "| Split | Fold | Lane | Slice | Rows | Candidate MAE | Baseline MAE | Delta |",
+                "| --- | --- | --- | --- | ---: | ---: | ---: | ---: |",
+            ]
+        )
+        for row in audit["top_candidate_tail_slices"]:
+            baseline = row["baseline_mae"]
+            delta = row["candidate_delta_mae_vs_baseline"]
+            lines.append(
+                "| "
+                + " | ".join(
+                    [
+                        f"`{row['split_kind']}`",
+                        f"`{row['fold_id']}`",
+                        f"`{row['lane']}`",
+                        f"`{row['slice_id']}`",
+                        str(row["row_count"]),
+                        f"{row['candidate_mae']:.4f}",
+                        "" if baseline is None else f"{baseline:.4f}",
+                        "" if delta is None else f"{safe_float(delta):+.4f}",
+                    ]
+                )
+                + " |"
+            )
+        lines.append("")
     lines.extend(
         [
             "## Next Actions",
             "",
-            "- Extend the harness to write row-level validation predictions and residuals.",
-            "- Add distribution/probability outputs before using the word calibration literally.",
-            "- Promote tail/regime labels into rejection gates for any future component candidate.",
-            "- Keep this metrics-only; no picks, prices, simulator logs, or edge claims.",
+            *[f"- {action}" for action in next_actions],
             "",
         ]
     )
@@ -651,11 +877,13 @@ def audit_tail_calibration(
     walk_forward_gate = walk_forward_gate_summary(walk_forward)
     family_summary = summarize_family_ablations(family_ablations, lane_reports)
     prediction_artifacts = find_prediction_artifacts(harness_dir)
+    row_prediction_summary = row_prediction_slice_summary(prediction_artifacts)
     promotion_gate = promotion_gate_summary(df, walk_forward_gate, prediction_artifacts)
     top_slices = {
         lane: top_baseline_tail_slices(baseline_by_slice, lane)
         for lane in sorted(baseline_by_slice)
     }
+    top_candidate_slices = top_candidate_tail_slices(row_prediction_summary)
 
     finished_at = utc_now()
     audit = {
@@ -675,12 +903,29 @@ def audit_tail_calibration(
         "baseline_slice_metrics_uri": str(output_dir / "baseline_slice_metrics.json"),
         "walk_forward_gate_uri": str(output_dir / "walk_forward_gate.json"),
         "family_ablation_summary_uri": str(output_dir / "family_ablation_summary.json"),
+        "row_prediction_slice_summary_uri": str(output_dir / "row_prediction_slice_summary.json"),
         "prediction_artifacts_found": prediction_artifacts,
         "promotion_gate": promotion_gate,
         "walk_forward_gate": walk_forward_gate,
+        "row_prediction_slice_summary": row_prediction_summary,
         "top_baseline_tail_slices": top_slices,
+        "top_candidate_tail_slices": top_candidate_slices,
         "non_goals": NON_GOALS,
     }
+    next_recommended_actions = [
+        "Add distribution/probability outputs before calibration claims.",
+        "Use tail/regime slices as rejection gates for future candidates.",
+    ]
+    if promotion_gate["row_level_predictions_exist"]:
+        next_recommended_actions.insert(
+            0,
+            "Review candidate residual slice summaries from row-level prediction artifacts.",
+        )
+    else:
+        next_recommended_actions.insert(
+            0,
+            "Write row-level validation predictions and residuals from the harness.",
+        )
     dashboard_state = {
         "run_id": run_id,
         "status": "tail_regime_audit_created",
@@ -692,13 +937,10 @@ def audit_tail_calibration(
         "walk_forward_candidate_worse_count": walk_forward_gate.get("candidate_worse_count"),
         "walk_forward_candidate_better_count": walk_forward_gate.get("candidate_better_count"),
         "row_level_predictions_exist": promotion_gate["row_level_predictions_exist"],
+        "row_prediction_artifact_count": len(prediction_artifacts),
         "probability_outputs_exist": promotion_gate["probability_outputs_exist"],
         "calibration_bins_exist": promotion_gate["calibration_bins_exist"],
-        "next_recommended_actions": [
-            "Write row-level validation predictions and residuals from the harness.",
-            "Add distribution/probability outputs before calibration claims.",
-            "Use tail/regime slices as rejection gates for future candidates.",
-        ],
+        "next_recommended_actions": next_recommended_actions,
         "non_goals": NON_GOALS,
     }
 
@@ -707,6 +949,7 @@ def audit_tail_calibration(
     write_json(output_dir / "baseline_slice_metrics.json", baseline_by_slice)
     write_json(output_dir / "walk_forward_gate.json", walk_forward_gate)
     write_json(output_dir / "family_ablation_summary.json", family_summary)
+    write_json(output_dir / "row_prediction_slice_summary.json", row_prediction_summary)
     write_json(output_dir / "dashboard_state.json", dashboard_state)
     write_json(output_dir / "tail_calibration_audit.json", audit)
     (output_dir / "report.md").write_text(report_markdown(audit), encoding="utf-8")
@@ -720,6 +963,7 @@ def audit_tail_calibration(
             artifact_entry("baseline_slice_metrics", output_dir / "baseline_slice_metrics.json"),
             artifact_entry("walk_forward_gate", output_dir / "walk_forward_gate.json"),
             artifact_entry("family_ablation_summary", output_dir / "family_ablation_summary.json"),
+            artifact_entry("row_prediction_slice_summary", output_dir / "row_prediction_slice_summary.json"),
             artifact_entry("dashboard_state", output_dir / "dashboard_state.json"),
             artifact_entry("report", output_dir / "report.md"),
         ],

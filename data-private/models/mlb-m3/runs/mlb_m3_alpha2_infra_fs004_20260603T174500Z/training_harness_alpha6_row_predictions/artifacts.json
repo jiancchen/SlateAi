@@ -1,0 +1,145 @@
+{
+  "artifacts": [
+    {
+      "bytes": 5883,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6_row_predictions/metrics.json",
+      "role": "metrics",
+      "sha256": "cba1c86e77162570967c1dcd4ac558a5f3e684a24ad6c82c2018d134e9d1eca3"
+    },
+    {
+      "bytes": 535,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6_row_predictions/split_summary.json",
+      "role": "split_summary",
+      "sha256": "afff9151d6a83471f7dcb03742a2485ef0527804820822e21c7d5adaf6de80f6"
+    },
+    {
+      "bytes": 2747,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6_row_predictions/target_summary.json",
+      "role": "target_summary",
+      "sha256": "a66005592a05aa701320420cf63e9b72f0001d3a8ad9bf325293d3774fda2226"
+    },
+    {
+      "bytes": 416,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6_row_predictions/calibration_placeholder.json",
+      "role": "calibration_placeholder",
+      "sha256": "fcfcc5e45977cf50eb541e0d61488f9ae59742fe5591565494c9d7941485a70b"
+    },
+    {
+      "bytes": 5399,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6_row_predictions/dashboard_state.json",
+      "role": "dashboard_state",
+      "sha256": "6b2c2352ab0d7d7c448ee6dda5a7ed5f7e374aef27f231f9741f28ab27295722"
+    },
+    {
+      "bytes": 16631,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6_row_predictions/typed_model_registry_preview_alpha3.json",
+      "role": "typed_registry_preview_alpha3",
+      "sha256": "14e9044904ec23a17494185a0a9455378a420982e87ac78b64f9cab5b32b2faf"
+    },
+    {
+      "bytes": 757,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6_row_predictions/report.md",
+      "role": "report",
+      "sha256": "b96045c15f6f81c044dd350dd483bd139e5880f191577170d988d64734e64af9"
+    },
+    {
+      "bytes": 26706,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6_row_predictions/walk_forward.json",
+      "role": "walk_forward",
+      "sha256": "d7706ec261340172dd0175f63c98135c7a62c6ada8abc29b1054bc42518e9d4a"
+    },
+    {
+      "bytes": 115798,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6_row_predictions/family_ablations.json",
+      "role": "family_ablations",
+      "sha256": "e7e7132cb63a511eb820bf55bbc42663bdea7278fd163458398954380d9dd780"
+    },
+    {
+      "bytes": 1381,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6_row_predictions/lane_reports/full_game_total.json",
+      "role": "lane_report_full_game_total",
+      "sha256": "55e97886e63a1f29dc67e1446eb5990cb4ea01f70f632757e1fc7281cae698aa"
+    },
+    {
+      "bytes": 1354,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6_row_predictions/lane_reports/f5_total.json",
+      "role": "lane_report_f5_total",
+      "sha256": "a99206279849b9affeb917d993b862f0b3dbd44f48368c148cd66abd6e04adf7"
+    },
+    {
+      "bytes": 4160,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6_row_predictions/candidate_models/full_game_total_ridge_numpy_v0.json",
+      "role": "candidate_model_full_game_total",
+      "sha256": "1886302be2e9a5971fbd7d4ee49bb8b90e5c763d7bb43548c5c2a8dc14eb1c00"
+    },
+    {
+      "bytes": 4295,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6_row_predictions/candidate_models/f5_total_ridge_numpy_v0.json",
+      "role": "candidate_model_f5_total",
+      "sha256": "447d4c3d6fcfd3f70350122ef08b57403dfcfd3e626b8b5e1205db462c8940af"
+    },
+    {
+      "bytes": 227854,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6_row_predictions/row_predictions/manifest_validation_full_game_total.jsonl",
+      "role": "row_predictions_manifest_validation_full_game_total",
+      "row_count": 218,
+      "sha256": "b4fe481207af14e5d9ffd507c7d64c7c7f859479359263a63c2766906f5752b4"
+    },
+    {
+      "bytes": 225526,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6_row_predictions/row_predictions/manifest_validation_f5_total.jsonl",
+      "role": "row_predictions_manifest_validation_f5_total",
+      "row_count": 218,
+      "sha256": "0cf051d178b36c5383871e33b350641a3d2db7db3510303a18038e8784e41678"
+    },
+    {
+      "bytes": 212329,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6_row_predictions/row_predictions/walk_forward_wf_2026_05_01_to_2026_05_15_full_game_total.jsonl",
+      "role": "row_predictions_walk_forward_wf_2026_05_01_to_2026_05_15_full_game_total",
+      "row_count": 201,
+      "sha256": "e32cdb0b170db788798358a08006dceb3128080f81a1804403fc261c9ccab928"
+    },
+    {
+      "bytes": 210322,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6_row_predictions/row_predictions/walk_forward_wf_2026_05_01_to_2026_05_15_f5_total.jsonl",
+      "role": "row_predictions_walk_forward_wf_2026_05_01_to_2026_05_15_f5_total",
+      "row_count": 201,
+      "sha256": "32dadbd4d7650dda3767e5bb9c92d02c2ce0cd53391761b00a67c864dc3a450f"
+    },
+    {
+      "bytes": 230470,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6_row_predictions/row_predictions/walk_forward_wf_2026_05_16_to_2026_05_31_full_game_total.jsonl",
+      "role": "row_predictions_walk_forward_wf_2026_05_16_to_2026_05_31_full_game_total",
+      "row_count": 218,
+      "sha256": "408d815455a18588f8f613182339f2adf7308df0aa0e451badc0b4fe84ca2f60"
+    },
+    {
+      "bytes": 228142,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6_row_predictions/row_predictions/walk_forward_wf_2026_05_16_to_2026_05_31_f5_total.jsonl",
+      "role": "row_predictions_walk_forward_wf_2026_05_16_to_2026_05_31_f5_total",
+      "row_count": 218,
+      "sha256": "5967a5913696fff6a75fa1e52fa60deb2a887c509d63f982362b3e3f47ecf11b"
+    }
+  ],
+  "run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+  "status": "harness_metrics_created"
+}
