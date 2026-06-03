@@ -1,0 +1,315 @@
+# MLB-M3 Alpha State Progress
+
+Date: 2026-06-03
+
+Status: current through `mlb-m3-alpha-5`
+
+Primary question: what exists, what is connected, what is only a placeholder, and what is still missing before M3 becomes a real baseball simulator/model stack?
+
+## Snapshot
+
+M3 now has a working typed feature-artifact pipeline, manifest infrastructure, metrics-only harness, feature audit, walk-forward diagnostics, and a first diagnostic candidate runner.
+
+M3 does not yet have a promoted model, a simulator, a real backtest edge claim, market pricing, player props, selection rows, calibrated probabilities, or typed prediction/settlement writers.
+
+The most important alpha-5 finding is negative but useful: FS-003 pruning cleaned artifact hygiene but did not improve walk-forward error. That means the next work is feature-family redesign, not model tuning.
+
+## Status Vocabulary
+
+| Status | Meaning |
+| --- | --- |
+| `live` | Implemented and validated in the current repo. |
+| `partial` | Implemented enough for alpha diagnostics, but not complete enough for model-quality claims. |
+| `placeholder` | Contract or registry slot exists, but no trained/runtime implementation exists. |
+| `missing` | Not built yet. |
+| `deferred` | Intentionally out of current alpha scope. |
+| `blocked` | Cannot be properly built until an upstream data or contract gap is closed. |
+
+## Current Implemented DAG
+
+```mermaid
+flowchart TD
+  SQL["sql-mlb.db typed MLB database<br/>status: live"] --> FS001["FS-001 game_shape_starter_v1<br/>886 rows, 62 features<br/>status: live"]
+  SQL --> FS002["FS-002 game_story_pitching_state_v0<br/>886 rows, 280 features<br/>status: live"]
+
+  FS001 --> M001["Alpha-2 manifest for FS-001<br/>12 component placeholders, 7 lane placeholders<br/>status: live"]
+  M001 --> H001["Alpha-3 harness smoke test<br/>mean-baseline metrics only<br/>status: live"]
+
+  FS002 --> M002["Alpha-2 manifest for FS-002<br/>status: live"]
+  M002 --> H002["Alpha-3 harness for FS-002<br/>diagnostic ridge candidates<br/>status: live"]
+  M002 --> A002["Alpha-5 feature audit<br/>24 pruned feature recommendations<br/>status: live"]
+  H002 --> WF002["Alpha-5 walk-forward and family ablations<br/>candidate worse than baseline<br/>status: live"]
+
+  A002 --> FS003["FS-003 pruned game story artifact<br/>886 rows, 256 features<br/>status: live"]
+  FS003 --> M003["Alpha-2 manifest for FS-003<br/>status: live"]
+  M003 --> H003["Alpha-5 harness for FS-003<br/>walk-forward and ablations<br/>status: live"]
+  H003 --> R003["FS-003 harness review<br/>cleaner artifact, no metric lift<br/>status: live"]
+
+  R003 --> NEXT["Next phase: feature-family redesign<br/>starter path, reliever chain, hitter-path interactions<br/>status: next"]
+
+  classDef live fill:#dff3df,stroke:#367c39,color:#102b13;
+  classDef partial fill:#fff2c2,stroke:#927000,color:#332800;
+  classDef next fill:#d7ecff,stroke:#2f6f9f,color:#0d2638;
+
+  class SQL,FS001,FS002,M001,H001,M002,H002,A002,WF002,FS003,M003,H003,R003 live;
+  class NEXT next;
+```
+
+## Target Architecture With Current Status
+
+```mermaid
+flowchart TD
+  L0["L0 source contracts and typed ingestion<br/>status: partial"] --> L1["L1 canonical slate state<br/>status: partial"]
+  L1 --> L2["L2 versioned feature/state assets<br/>status: live for FS-001 to FS-003"]
+  L2 --> L3["L3 latent game-shape/regime model<br/>status: placeholder"]
+  L3 --> L4A["L4 starter exit/workload component<br/>status: placeholder"]
+  L3 --> L4B["L4 bullpen shape/churn component<br/>status: placeholder"]
+  L4B --> L4C["L4 reliever availability/reset component<br/>status: placeholder"]
+  L4C --> L4D["L4 first-up reliever router<br/>status: placeholder"]
+  L4D --> L4E["L4 reliever chain/performance component<br/>status: placeholder"]
+  L3 --> L4F["L4 batter event-rate component<br/>status: missing"]
+  L3 --> L4G["L4 PA-volume component<br/>status: missing"]
+
+  L4A --> L5["L5 PA/base-out/count simulator<br/>status: missing"]
+  L4E --> L5
+  L4F --> L5
+  L4G --> L5
+  L5 --> L6["L6 simulated event logs<br/>status: missing"]
+  L6 --> L7["L7 team/player/pitcher distributions<br/>status: missing"]
+  L7 --> L8["L8 market pricing rows<br/>status: missing"]
+  L8 --> L9["L9 selection policy rows<br/>status: deferred"]
+  L8 --> L10["L10 backtest, settlement, calibration, ablation feedback<br/>status: partial"]
+  L9 --> L10
+  L10 --> L2
+  L10 --> L3
+  L10 --> L4A
+  L10 --> L4E
+  L10 --> L11["L11 presentation/export dashboard<br/>status: partial"]
+
+  L2 --> H["Metrics-only harness<br/>status: live"]
+  H --> L10
+
+  classDef live fill:#dff3df,stroke:#367c39,color:#102b13;
+  classDef partial fill:#fff2c2,stroke:#927000,color:#332800;
+  classDef placeholder fill:#eeeeee,stroke:#777777,color:#222222;
+  classDef missing fill:#ffd9d9,stroke:#aa3b3b,color:#3b1111;
+  classDef deferred fill:#e6ddff,stroke:#7451a6,color:#24133f;
+
+  class L2,H live;
+  class L0,L1,L10,L11 partial;
+  class L3,L4A,L4B,L4C,L4D,L4E placeholder;
+  class L4F,L4G,L5,L6,L7,L8 missing;
+  class L9 deferred;
+```
+
+## Alpha Timeline
+
+| Phase | Status | Main Artifact | What It Proved | What It Did Not Prove |
+| --- | --- | --- | --- | --- |
+| Alpha-1 | complete | `m3_fs_001_game_shape_starter_v1_20260603T091939Z` | Typed DB can produce a versioned game-grain matrix and reports. | It did not contain enough baseball state for real model claims. |
+| Alpha-2 | complete | `manifest.json`, dashboard state, registry preview | Runs can be contract-first and artifact-hashed. | Registry rows are preview-only; no DB registration yet. |
+| Alpha-3 | complete | `training_harness` | Harness can load a manifest, split rows, write metrics, and avoid picks. | Smoke test was shallow and not a backtest edge claim. |
+| Alpha-4 | complete | `m3_fs_002_game_story_pitching_state_v0_20260603T155454Z` | First real M3 feature artifact with story, starter, reliever, hitter, and market context. | It did not produce a good candidate model. |
+| Alpha-5 | complete | FS-002 audit, FS-003 artifact, FS-003 harness | Walk-forward and ablations can reject weak candidates honestly. | Pruning did not fix the core feature representation problem. |
+
+## Feature Artifacts
+
+| Feature Set | Status | Rows | Columns | Features | Targets | Source | Notes |
+| --- | --- | ---: | ---: | ---: | ---: | --- | --- |
+| `m3_fs_001_game_shape_starter_v1` | live | 886 | 77 | 62 | 9 | typed DB only | Foundation artifact; shallow but accepted. |
+| `m3_fs_002_game_story_pitching_state_v0` | live | 886 | 295 | 280 | 9 | typed DB only | First real feature set; includes story memory, starter path, reliever chain, hitter path. |
+| `m3_fs_003_game_story_pitching_state_pruned_v0` | live | 886 | 271 | 256 | 9 | derived from FS-002 audit | Cleaner baseline; no predictive lift versus FS-002. |
+
+All three feature sets report:
+
+- `uses_sports_db: false`
+- `uses_m2_weights: false`
+- `uses_hand_picked_memory_lengths: false`
+
+## Component Registry State
+
+The manifest registry has 12 component-family slots. They are connected as placeholders, not trained submodels.
+
+| Component Family | Status | Connected Today | Missing Before It Is Real |
+| --- | --- | --- | --- |
+| `game_shape_distribution` | placeholder | Manifest slot only | Latent regime labels, training target, calibration, walk-forward promotion gate. |
+| `team_run_distribution` | partial | Mean baseline and diagnostic ridge harness for totals | Real distribution model, tail calibration, market-line conditioning. |
+| `starter_exit_distribution` | placeholder | Feature columns exist in FS-002/FS-003 | Workload/exit target, hook timing distribution, starter-state model. |
+| `starter_stat_distribution` | placeholder | Some starter-path features exist | Strikeout/walk/run/hit allowed target contracts and model artifacts. |
+| `bullpen_shape_distribution` | placeholder | Reliever-chain and bullpen features exist | Churn regime labels and bullpen state model. |
+| `reliever_availability_distribution` | placeholder | Reset/usage feature surfaces exist | Individual arm availability target, quick-reuse model, uncertainty calibration. |
+| `first_up_reliever_router` | placeholder | Candidate-pool/router coverage features exist | First-up target labels, router training, role exception handling. |
+| `reliever_chain_distribution` | placeholder | Chain length and command coverage features exist | Chain path target, chain performance model, inherited-runner/traffic state. |
+| `reliever_stat_distribution` | placeholder | Sparse command profile surfaces exist | Individual-arm performance targets and workload-conditioned distributions. |
+| `pa_event_distribution` | missing | Contract slot only | Batter/pitcher event target matrix, pitch/PA state features, event model. |
+| `hitter_stat_distribution` | missing | Hitter-path feature scaffolding exists | Player prop target matrices, starter-phase and reliever-chain interaction surfaces. |
+| `calibration_layer` | placeholder | Placeholder JSON only | Calibration datasets, slice diagnostics, promotion/rejection rules. |
+
+## Lane State
+
+| Lane | Status | Current Output | Missing |
+| --- | --- | --- | --- |
+| `full_game_total` | partial | Mean baseline and diagnostic ridge metrics | Distribution model, calibrated totals probabilities, market-line comparison. |
+| `f5_total` | partial | Mean baseline and diagnostic ridge metrics | Distribution model, calibrated F5 probabilities, market-line comparison. |
+| `moneyline` | placeholder | Lane contract only | Win-prob target, run-distribution coupling, market writer. |
+| `team_total` | placeholder | Target columns exist for team runs | Team run distribution model and line-conditioned pricing. |
+| `starter_props` | missing | Component slots exist | Starter stat distributions and prop contracts. |
+| `reliever_props` | missing | Reliever-chain slots exist | Reliever identity/workload/performance distributions. |
+| `hitter_props` | missing | Hitter-path feature scaffolding exists | Player event distributions, PA volume, lineup turnover, prop pricing. |
+
+## Current Harness Result
+
+| Feature Set | Fold | Lane | Baseline MAE | Candidate MAE | Delta | Candidate Features |
+| --- | --- | --- | ---: | ---: | ---: | ---: |
+| FS-002 | `2026-05-01` to `2026-05-15` | `f5_total` | 2.4163 | 2.9071 | +0.4908 | 262 |
+| FS-002 | `2026-05-01` to `2026-05-15` | `full_game_total` | 3.4887 | 4.4663 | +0.9777 | 262 |
+| FS-002 | `2026-05-16` to `2026-05-31` | `f5_total` | 2.6605 | 3.2909 | +0.6304 | 262 |
+| FS-002 | `2026-05-16` to `2026-05-31` | `full_game_total` | 3.5878 | 4.7187 | +1.1309 | 262 |
+| FS-003 | `2026-05-01` to `2026-05-15` | `f5_total` | 2.4163 | 2.9071 | +0.4908 | 251 |
+| FS-003 | `2026-05-01` to `2026-05-15` | `full_game_total` | 3.4887 | 4.4663 | +0.9777 | 251 |
+| FS-003 | `2026-05-16` to `2026-05-31` | `f5_total` | 2.6605 | 3.2909 | +0.6304 | 251 |
+| FS-003 | `2026-05-16` to `2026-05-31` | `full_game_total` | 3.5878 | 4.7187 | +1.1309 | 251 |
+
+Interpretation: the diagnostic ridge is worse than the train-mean baseline in every tested fold. No model is promoted.
+
+## What Is Connected
+
+```mermaid
+flowchart LR
+  C1["Feature contracts"] --> B1["Feature builders"]
+  B1 --> A1["Feature artifacts"]
+  A1 --> M1["Run manifests"]
+  M1 --> V1["Manifest validator"]
+  V1 --> H1["Harness runner"]
+  H1 --> HV["Harness validator"]
+  H1 --> D1["Dashboard state JSON"]
+  H1 --> R1["Review docs"]
+  A1 --> AUD["Feature audit"]
+  AUD --> A2["Pruned FS-003 artifact"]
+  A2 --> M2["FS-003 manifest"]
+  M2 --> H2["FS-003 harness"]
+
+  classDef live fill:#dff3df,stroke:#367c39,color:#102b13;
+  class C1,B1,A1,M1,V1,H1,HV,D1,R1,AUD,A2,M2,H2 live;
+```
+
+## What Is Not Connected Yet
+
+```mermaid
+flowchart LR
+  H["Harness metrics"] -. not yet .-> BT["True backtest engine"]
+  BT -. not yet .-> CAL["Calibration layer"]
+  CAL -. not yet .-> PROMO["Promotion gate"]
+  PROMO -. not yet .-> REG["Active model registry"]
+  REG -. not yet .-> SIM["Simulator"]
+  SIM -. not yet .-> DIST["Team/player distributions"]
+  DIST -. not yet .-> PRICE["Market pricing rows"]
+  PRICE -. not yet .-> SELECT["Selection policy"]
+  SELECT -. not yet .-> UI["Slate UI/export"]
+  PRICE -. not yet .-> SETTLE["Settlement rows"]
+  SETTLE -. not yet .-> BT
+
+  classDef missing fill:#ffd9d9,stroke:#aa3b3b,color:#3b1111;
+  class BT,CAL,PROMO,REG,SIM,DIST,PRICE,SELECT,UI,SETTLE missing;
+```
+
+## Gaps By Layer
+
+| Layer | Status | Gap |
+| --- | --- | --- |
+| Typed DB facts | partial | Good enough for current game-grain feature work; true PA simulator still needs richer replay state and as-of discipline. |
+| Feature layer | live | Current representations are too flat for model quality; next pass must redesign families, not add random windows. |
+| Manifest/run infrastructure | live | Direct typed DB registration remains preview-only. |
+| Harness | live | It is metrics-only; it is not a final walk-forward backtest engine. |
+| Backtest feedback | partial | Walk-forward and ablations exist, but settlement, calibration, tail/regime diagnostics, and promotion gates are missing. |
+| Component models | placeholder | No trained component artifacts have been promoted. |
+| Simulator | missing | No PA/base-out/count event simulator or simulated event logs. |
+| Market pricing | missing | No fair probabilities, prop prices, or market prediction rows. |
+| Selection policy | deferred | No picks, ranking, vetoes, or staking-like outputs. |
+| Dashboard | partial | JSON dashboard state exists; no run dashboard UI yet. |
+
+## What Is Left
+
+### Alpha-6: Feature-Family Redesign
+
+Build the next feature pass around baseball state, not wider flat columns.
+
+Priority work:
+
+- redesign `starter_path` into separate workload trajectory, damage distribution, pitch-shape change, low-data uncertainty, and opponent-pressure surfaces
+- redesign `reliever_chain` into availability, first-up routing, expected chain length, chain regime, recent usage, and arm performance volatility surfaces
+- split hitter matchup representation into starter-phase hitter path and reliever-chain hitter path
+- treat story memory as ordered interaction context, not a large undifferentiated numeric block
+- preserve coverage and uncertainty as first-class inputs
+
+Exit gate:
+
+- a new feature set materially changes representation, not just column count
+- walk-forward diagnostics improve or clearly identify which family is failing
+- candidates remain unpromoted unless gates are satisfied
+
+### Alpha-7: Real Component Training Harness
+
+Replace diagnostic ridge as the only candidate path.
+
+Priority work:
+
+- train component candidates behind registry slots
+- add proper model artifacts with lineage
+- support distributional targets, not only point MAE
+- compare against baselines and FS-003
+- keep all outputs metrics-only until promotion gates exist
+
+### Alpha-8: Backtest And Calibration Feedback Loop
+
+Turn diagnostics into a real experiment loop.
+
+Priority work:
+
+- settlement reader and target joiner
+- walk-forward fold planner beyond two fixed folds
+- calibration diagnostics by slice, month, regime, and market line
+- tail diagnostics for chaos/high-run/dead-bat games
+- feature ablation reports as first-class artifacts
+- promotion/rejection gate documents
+
+### Alpha-9: First Simulator Slice
+
+Build a small coherent simulator before trying player props.
+
+Priority work:
+
+- latent game-shape distribution
+- starter exit/workload distribution
+- bullpen exposure and reliever-chain distribution
+- PA-volume distribution
+- first event-log schema
+- aggregate full-game total and F5 total distributions from shared simulated paths
+
+### Later: Market And Props
+
+Only after shared distributions exist:
+
+- full-game total pricing
+- F5 total pricing
+- moneyline-style win probability
+- team totals
+- starter strikeout/outs props
+- hitter hits, total bases, home runs, RBI, runs, walks, strikeouts
+- reliever workload/damage props
+- selection policy and presentation exports
+
+## Main Risk
+
+The system infrastructure is now ahead of the baseball intelligence.
+
+That is good, because the infrastructure can reject weak ideas honestly. The risk is accidentally treating the current FS-002/FS-003 flat feature matrix as the model architecture. It is not. It is a baseline artifact and a diagnostic substrate.
+
+The next improvement should come from better baseball state representation:
+
+```text
+starter path + reliever chain + hitter interaction + story memory + regime labels
+```
+
+not from tuning the current ridge or adding another model family on the same flat matrix.
+
