@@ -7,8 +7,9 @@ from typing import Any
 
 from .common import (
     MlbIdentityResolver,
+    StagingTableSource,
     detail_json,
-    fetch_legacy_rows,
+    fetch_legacy_and_staging_rows,
     insert_value_rows,
     parse_legacy_json,
     source_pk_for_row,
@@ -29,6 +30,11 @@ PREDICTION_SOURCE_TABLES = [
     "mlb_player_identity_model_backtests",
     "mlb_rp36_settlements",
     "mlb_rp36_team_settlements",
+]
+
+PREDICTION_STAGING_TABLES = [
+    StagingTableSource("mlb_side_predictions", ("game_id", "model_name", "prediction_date"), "prediction_date"),
+    StagingTableSource("mlb_side_backtests", ("game_id", "model_name", "prediction_date"), "prediction_date"),
 ]
 
 
@@ -563,7 +569,7 @@ PARSERS = {
 def parse_prediction_rows(con: sqlite3.Connection, resolver: MlbIdentityResolver, date: str | None = None) -> tuple[list[ParsedRow], dict[str, Any]]:
     parsed: list[ParsedRow] = []
     counts: dict[str, Any] = {"source_rows": 0, "parsed_rows": 0, "unparsed_rows": 0, "source_tables": {}, "targets": {}}
-    for row in fetch_legacy_rows(con, PREDICTION_SOURCE_TABLES, date=date):
+    for row in fetch_legacy_and_staging_rows(con, PREDICTION_SOURCE_TABLES, date=date, staging_tables=PREDICTION_STAGING_TABLES):
         counts["source_rows"] += 1
         counts["source_tables"][row["source_table"]] = counts["source_tables"].get(row["source_table"], 0) + 1
         payload = parse_legacy_json(row)

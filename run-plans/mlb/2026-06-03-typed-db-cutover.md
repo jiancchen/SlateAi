@@ -8,6 +8,7 @@ Related reports:
 
 - `data-migration/reports/mlb_legacy_to_typed_gap_audit_2026-06-03.md`
 - `data-migration/reports/mlb_typed_db_cutover_completion_plan_2026-06-03.md`
+- `run-plans/mlb/2026-06-03-typed-db-ingestion-routing.md`
 - `research-m3/tech-debt.md`
 
 ## Progress Snapshot
@@ -21,6 +22,7 @@ Completed:
 - API warehouse status reads typed MLB tables from `data-private/warehouse/sports/mlb/sql-mlb.db`.
 - Typed MLB compatibility views exist for staged `mlb_*` legacy table names, plus canonical views for `mlb_games`, `mlb_plate_appearances`, and `mlb_pitch_events`.
 - Writer-owned legacy names for side predictions/backtests and market/prop odds are writable staging tables inside `sql-mlb.db`.
+- Prediction, market, and prop normalizers read historical `legacy_table_rows` plus direct-only typed staging rows, so fresh writer rows normalize forward without a `sports.db` bridge.
 - Current M2 `lineups`, `history-journal`, `generate-day-files`, copied M0/M1 lane scripts, cartridge compare, RP36 read exporters, and story archive export read the typed MLB DB.
 - Side backtest and MLB odds/FanDuel research fetchers default to `sql-mlb.db` writable staging tables.
 

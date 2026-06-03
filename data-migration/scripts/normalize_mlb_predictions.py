@@ -52,7 +52,7 @@ def main() -> int:
                 "timestamp": utc_now(),
                 "phase": "N17",
                 "area": "mlb_predictions_normalization",
-                "source": "legacy_table_rows:mlb_*_predictions,mlb_*_backtests,mlb_rp36_*settlements",
+                "source": "legacy_table_rows + direct typed staging:mlb_*_predictions,mlb_*_backtests,mlb_rp36_*settlements",
                 "target": "sql-mlb.db:prediction/backtest/settlement tables",
                 "parser_module": "pipeline/sources/mlb/normalization/predictions.py",
                 "migration_script": "data-migration/scripts/normalize_mlb_predictions.py",

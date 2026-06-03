@@ -6,8 +6,9 @@ from typing import Any
 
 from .common import (
     MlbIdentityResolver,
+    StagingTableSource,
     detail_json,
-    fetch_legacy_rows,
+    fetch_legacy_and_staging_rows,
     insert_value_rows,
     parse_legacy_json,
     source_pk_for_row,
@@ -20,6 +21,9 @@ from .markets import implied_probability
 
 
 PROP_SOURCE_TABLES = ["mlb_player_prop_odds_snapshots"]
+PROP_STAGING_TABLES = [
+    StagingTableSource("mlb_player_prop_odds_snapshots", ("row_key",), "market_date"),
+]
 
 
 @dataclass(frozen=True)
@@ -117,7 +121,7 @@ def parse_prop(row: sqlite3.Row, payload: dict[str, Any], resolver: MlbIdentityR
 def parse_prop_rows(con: sqlite3.Connection, resolver: MlbIdentityResolver, date: str | None = None) -> tuple[list[ParsedRow], dict[str, Any]]:
     parsed: list[ParsedRow] = []
     counts: dict[str, Any] = {"source_rows": 0, "parsed_rows": 0, "unparsed_rows": 0, "source_tables": {}, "targets": {}}
-    for row in fetch_legacy_rows(con, PROP_SOURCE_TABLES, date=date):
+    for row in fetch_legacy_and_staging_rows(con, PROP_SOURCE_TABLES, date=date, staging_tables=PROP_STAGING_TABLES):
         counts["source_rows"] += 1
         counts["source_tables"][row["source_table"]] = counts["source_tables"].get(row["source_table"], 0) + 1
         parsed_row = parse_prop(row, parse_legacy_json(row), resolver)

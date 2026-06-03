@@ -6,12 +6,20 @@ import re
 import sqlite3
 import unicodedata
 from collections.abc import Iterable
+from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[4]
+
+
+@dataclass(frozen=True)
+class StagingTableSource:
+    source_table: str
+    source_pk_fields: tuple[str, ...]
+    date_column: str | None = None
 
 
 def utc_now() -> str:
@@ -88,6 +96,88 @@ def fetch_legacy_rows(
         """,
         params,
     ).fetchall()
+
+
+def quote_identifier(value: str) -> str:
+    return '"' + value.replace('"', '""') + '"'
+
+
+def table_exists(con: sqlite3.Connection, table_name: str) -> bool:
+    row = con.execute(
+        """
+        select 1
+        from sqlite_master
+        where name = ?
+          and type in ('table', 'view')
+        limit 1
+        """,
+        (table_name,),
+    ).fetchone()
+    return row is not None
+
+
+def table_columns(con: sqlite3.Connection, table_name: str) -> list[str]:
+    return [row["name"] for row in con.execute(f"pragma table_info({quote_identifier(table_name)})").fetchall()]
+
+
+def direct_staging_row_to_legacy_shape(
+    source: StagingTableSource,
+    payload: dict[str, Any],
+) -> dict[str, Any]:
+    source_pk = compact_json({field: payload.get(field) for field in source.source_pk_fields})
+    row_json = compact_json(payload)
+    source_date = payload.get(source.date_column) if source.date_column else None
+    return {
+        "legacy_row_id": stable_id("direct-staging", source.source_table, source_pk),
+        "source_table": source.source_table,
+        "source_pk": source_pk,
+        "source_date": str(source_date or ""),
+        "entity_ref": None,
+        "row_json": row_json,
+        "content_hash": hashlib.sha256(row_json.encode("utf-8")).hexdigest(),
+    }
+
+
+def fetch_direct_staging_rows(
+    con: sqlite3.Connection,
+    source: StagingTableSource,
+    date: str | None = None,
+) -> list[dict[str, Any]]:
+    con.row_factory = sqlite3.Row
+    if not table_exists(con, source.source_table):
+        return []
+    columns = table_columns(con, source.source_table)
+    if not columns:
+        return []
+    missing_pk_fields = [field for field in source.source_pk_fields if field not in columns]
+    if missing_pk_fields:
+        return []
+    where = ""
+    params: list[Any] = []
+    if date and source.date_column and source.date_column in columns:
+        where = f" where {quote_identifier(source.date_column)} like ?"
+        params.append(f"{date}%")
+    select_columns = ", ".join(quote_identifier(column) for column in columns)
+    rows = con.execute(f"select {select_columns} from {quote_identifier(source.source_table)}{where}", params).fetchall()
+    return [direct_staging_row_to_legacy_shape(source, dict(row)) for row in rows]
+
+
+def fetch_legacy_and_staging_rows(
+    con: sqlite3.Connection,
+    source_tables: Iterable[str],
+    date: str | None = None,
+    staging_tables: Iterable[StagingTableSource] = (),
+) -> list[sqlite3.Row | dict[str, Any]]:
+    rows: list[sqlite3.Row | dict[str, Any]] = list(fetch_legacy_rows(con, source_tables, date=date))
+    seen = {(row["source_table"], source_pk_for_row(row)) for row in rows}
+    for source in staging_tables:
+        for row in fetch_direct_staging_rows(con, source, date=date):
+            key = (row["source_table"], source_pk_for_row(row))
+            if key in seen:
+                continue
+            rows.append(row)
+            seen.add(key)
+    return rows
 
 
 def detail_json(payload: dict[str, Any]) -> str:

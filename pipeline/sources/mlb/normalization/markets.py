@@ -6,8 +6,9 @@ from typing import Any
 
 from .common import (
     MlbIdentityResolver,
+    StagingTableSource,
     detail_json,
-    fetch_legacy_rows,
+    fetch_legacy_and_staging_rows,
     insert_value_rows,
     parse_legacy_json,
     source_pk_for_row,
@@ -23,6 +24,10 @@ MARKET_SOURCE_TABLES = [
     "mlb_kalshi_market_snapshots",
     "mlb_market_mispricing_labels",
     "mlb_team_market_context_daily",
+]
+
+MARKET_STAGING_TABLES = [
+    StagingTableSource("mlb_featured_market_odds_snapshots", ("row_key",), "market_date"),
 ]
 
 
@@ -409,7 +414,7 @@ PARSERS = {
 def parse_market_rows(con: sqlite3.Connection, resolver: MlbIdentityResolver, date: str | None = None) -> tuple[list[ParsedRow], dict[str, Any]]:
     parsed: list[ParsedRow] = []
     counts: dict[str, Any] = {"source_rows": 0, "parsed_rows": 0, "unparsed_rows": 0, "source_tables": {}, "targets": {}}
-    for row in fetch_legacy_rows(con, MARKET_SOURCE_TABLES, date=date):
+    for row in fetch_legacy_and_staging_rows(con, MARKET_SOURCE_TABLES, date=date, staging_tables=MARKET_STAGING_TABLES):
         counts["source_rows"] += 1
         counts["source_tables"][row["source_table"]] = counts["source_tables"].get(row["source_table"], 0) + 1
         parser = PARSERS.get(row["source_table"])

@@ -37,7 +37,7 @@ def main() -> int:
     report.update({"generated_at": utc_now(), "script": "data-migration/scripts/normalize_mlb_props.py", "parser_module": "pipeline/sources/mlb/normalization/props.py", "source_db": str(args.source_db.relative_to(ROOT)), "ok": True})
     write_report(args.report, report)
     if not args.dry_run:
-        append_normalization_event(ROOT, {"event_id": f"normalize-mlb-props-{utc_now().replace(':', '-').replace('.', '-')}", "timestamp": utc_now(), "phase": "N18", "area": "mlb_props_normalization", "source": "legacy_table_rows:mlb_player_prop_odds_snapshots", "target": "sql-mlb.db:prop_market_snapshots", "parser_module": "pipeline/sources/mlb/normalization/props.py", "migration_script": "data-migration/scripts/normalize_mlb_props.py", "validation": "pending", "status_from": "started", "status_to": "inserted", "report_path": str(args.report.relative_to(ROOT)), "checksum": None, "notes": json.dumps(report, sort_keys=True)})
+        append_normalization_event(ROOT, {"event_id": f"normalize-mlb-props-{utc_now().replace(':', '-').replace('.', '-')}", "timestamp": utc_now(), "phase": "N18", "area": "mlb_props_normalization", "source": "legacy_table_rows + direct typed staging:mlb_player_prop_odds_snapshots", "target": "sql-mlb.db:prop_market_snapshots", "parser_module": "pipeline/sources/mlb/normalization/props.py", "migration_script": "data-migration/scripts/normalize_mlb_props.py", "validation": "pending", "status_from": "started", "status_to": "inserted", "report_path": str(args.report.relative_to(ROOT)), "checksum": None, "notes": json.dumps(report, sort_keys=True)})
     print(json.dumps(report, indent=2, sort_keys=True))
     return 0
 
