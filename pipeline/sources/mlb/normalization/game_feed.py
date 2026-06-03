@@ -542,6 +542,41 @@ def outs_on_play(play: dict[str, Any], outs_before: int) -> tuple[int, int]:
     return max(count_outs - outs_before, 0), count_outs
 
 
+BASE_ORDER = {"1B": 1, "2B": 2, "3B": 3, "score": 4}
+NON_OFFICIAL_AT_BAT_EVENTS = {
+    "hit_by_pitch",
+    "intent_walk",
+    "sac_bunt",
+    "sac_fly",
+    "sac_fly_double_play",
+    "walk",
+}
+
+
+def format_base_state(bases: set[str]) -> str:
+    ordered = sorted((base for base in bases if base in BASE_ORDER), key=lambda base: BASE_ORDER[base])
+    return "-".join(ordered) if ordered else "Empty"
+
+
+def runner_base_states(play: dict[str, Any]) -> tuple[str, str]:
+    start_bases: set[str] = set()
+    end_bases: set[str] = set()
+    for runner in play.get("runners") or []:
+        movement = runner.get("movement") or {}
+        start = movement.get("start") or movement.get("originBase")
+        end = movement.get("end")
+        if start:
+            start_bases.add(str(start))
+        if end and not movement.get("isOut"):
+            end_bases.add(str(end))
+    return format_base_state(start_bases), format_base_state(end_bases)
+
+
+def is_official_at_bat(event_type: Any) -> int:
+    text = str(event_type or "").strip().lower()
+    return 0 if text in NON_OFFICIAL_AT_BAT_EVENTS else 1
+
+
 def upsert_plate_appearances(con: sqlite3.Connection, *, game: dict[str, Any], feed: dict[str, Any], source_snapshot_id: str) -> int:
     game_id = game_id_from_pk(game.get("gamePk"))
     if not game_id:
@@ -581,14 +616,19 @@ def upsert_plate_appearances(con: sqlite3.Connection, *, game: dict[str, Any], f
         if home_score_after is None:
             home_score_after = home_score_before
         run_delta = max(away_score_after - away_score_before, 0) + max(home_score_after - home_score_before, 0)
+        count_state = play.get("count") or {}
+        base_state_start, base_state_end = runner_base_states(play)
         pa_id = f"{game_id}-pa-{at_bat_index}"
         con.execute(
             """
             insert into plate_appearances (
               plate_appearance_id, game_id, inning, inning_half, batter_id, pitcher_id,
-              batting_team_id, pitching_team_id, event_type, rbi, runs_scored,
-              outs_on_play, win_expectancy_delta, source_snapshot_id
-            ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, null, ?)
+              batting_team_id, pitching_team_id, at_bat_index, outs_before, outs_after,
+              balls_final, strikes_final, base_state_start, base_state_end,
+              away_score_before, home_score_before, away_score_after, home_score_after,
+              men_on_base, is_scoring_play, is_out, is_at_bat, event_type, rbi,
+              runs_scored, outs_on_play, win_expectancy_delta, raw_json, source_snapshot_id
+            ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, null, ?, ?)
             on conflict(plate_appearance_id) do update set
               game_id = excluded.game_id,
               inning = excluded.inning,
@@ -597,10 +637,26 @@ def upsert_plate_appearances(con: sqlite3.Connection, *, game: dict[str, Any], f
               pitcher_id = excluded.pitcher_id,
               batting_team_id = excluded.batting_team_id,
               pitching_team_id = excluded.pitching_team_id,
+              at_bat_index = excluded.at_bat_index,
+              outs_before = excluded.outs_before,
+              outs_after = excluded.outs_after,
+              balls_final = excluded.balls_final,
+              strikes_final = excluded.strikes_final,
+              base_state_start = excluded.base_state_start,
+              base_state_end = excluded.base_state_end,
+              away_score_before = excluded.away_score_before,
+              home_score_before = excluded.home_score_before,
+              away_score_after = excluded.away_score_after,
+              home_score_after = excluded.home_score_after,
+              men_on_base = excluded.men_on_base,
+              is_scoring_play = excluded.is_scoring_play,
+              is_out = excluded.is_out,
+              is_at_bat = excluded.is_at_bat,
               event_type = excluded.event_type,
               rbi = excluded.rbi,
               runs_scored = excluded.runs_scored,
               outs_on_play = excluded.outs_on_play,
+              raw_json = excluded.raw_json,
               source_snapshot_id = excluded.source_snapshot_id
             """,
             (
@@ -612,10 +668,26 @@ def upsert_plate_appearances(con: sqlite3.Connection, *, game: dict[str, Any], f
                 pitcher_id,
                 batting_team_id,
                 pitching_team_id,
+                at_bat_index,
+                before,
+                after,
+                to_int(count_state.get("balls")),
+                to_int(count_state.get("strikes")),
+                base_state_start,
+                base_state_end,
+                away_score_before,
+                home_score_before,
+                away_score_after,
+                home_score_after,
+                ((matchup.get("splits") or {}).get("menOnBase")),
+                1 if about.get("isScoringPlay") else 0,
+                1 if result.get("isOut") else 0,
+                is_official_at_bat(result.get("eventType")),
                 result.get("eventType"),
                 to_int(result.get("rbi")) or 0,
                 run_delta,
                 outs_delta,
+                compact_json(play),
                 source_snapshot_id,
             ),
         )
@@ -645,41 +717,77 @@ def upsert_pitch_events(con: sqlite3.Connection, *, game: dict[str, Any], feed: 
             hit_data = event.get("hitData") or {}
             pitch_type = details.get("type") or {}
             call = details.get("call") or {}
+            count_state = event.get("count") or {}
             event_id = f"{pa_id}-event-{event_index}"
             con.execute(
                 """
                 insert into pitch_events (
-                  pitch_event_id, plate_appearance_id, game_id, pitch_number, pitch_type,
-                  pitch_result, release_speed, zone, launch_speed, launch_angle,
-                  hit_location, is_in_play, source_snapshot_id
-                ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                  pitch_event_id, plate_appearance_id, game_id, at_bat_index, event_index,
+                  pitch_number, balls, strikes, outs, is_pitch, is_strike, is_ball,
+                  call_code, call_description, pitch_type_code, pitch_type_description,
+                  pitch_type, pitch_result, release_speed, start_speed, end_speed, zone,
+                  launch_speed, launch_angle, hit_location, is_in_play, play_id,
+                  raw_json, source_snapshot_id
+                ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 on conflict(pitch_event_id) do update set
                   plate_appearance_id = excluded.plate_appearance_id,
                   game_id = excluded.game_id,
+                  at_bat_index = excluded.at_bat_index,
+                  event_index = excluded.event_index,
                   pitch_number = excluded.pitch_number,
+                  balls = excluded.balls,
+                  strikes = excluded.strikes,
+                  outs = excluded.outs,
+                  is_pitch = excluded.is_pitch,
+                  is_strike = excluded.is_strike,
+                  is_ball = excluded.is_ball,
+                  call_code = excluded.call_code,
+                  call_description = excluded.call_description,
+                  pitch_type_code = excluded.pitch_type_code,
+                  pitch_type_description = excluded.pitch_type_description,
                   pitch_type = excluded.pitch_type,
                   pitch_result = excluded.pitch_result,
                   release_speed = excluded.release_speed,
+                  start_speed = excluded.start_speed,
+                  end_speed = excluded.end_speed,
                   zone = excluded.zone,
                   launch_speed = excluded.launch_speed,
                   launch_angle = excluded.launch_angle,
                   hit_location = excluded.hit_location,
                   is_in_play = excluded.is_in_play,
+                  play_id = excluded.play_id,
+                  raw_json = excluded.raw_json,
                   source_snapshot_id = excluded.source_snapshot_id
                 """,
                 (
                     event_id,
                     pa_id,
                     game_id,
+                    at_bat_index,
+                    event_index,
                     to_int(event.get("pitchNumber")),
+                    to_int(count_state.get("balls")),
+                    to_int(count_state.get("strikes")),
+                    to_int(count_state.get("outs")),
+                    1 if event.get("isPitch") else 0,
+                    1 if details.get("isStrike") else 0,
+                    1 if details.get("isBall") else 0,
+                    call.get("code") or details.get("code"),
+                    call.get("description") or details.get("description") or details.get("event"),
+                    pitch_type.get("code"),
+                    pitch_type.get("description"),
                     pitch_type.get("code"),
                     call.get("description") or details.get("description") or details.get("eventType"),
                     to_float(pitch_data.get("startSpeed")),
+                    to_float(pitch_data.get("startSpeed")),
+                    to_float(pitch_data.get("endSpeed")),
                     to_int(pitch_data.get("zone")),
                     to_float(hit_data.get("launchSpeed")),
                     to_float(hit_data.get("launchAngle")),
                     None if hit_data.get("location") is None else str(hit_data.get("location")),
                     1 if details.get("isInPlay") else 0,
+                    event.get("playId"),
+                    compact_json(event),
                     source_snapshot_id,
                 ),
             )
