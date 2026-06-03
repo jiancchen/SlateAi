@@ -2,9 +2,9 @@
 
 Date: 2026-06-03
 
-Ledger version: 0.8.0
+Ledger version: 0.9.0
 
-Typed CLI version: `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.7.0
+Typed CLI version: `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.8.0
 
 Scope: first-pass ledger for replacing `pipeline/mlb/warehouse/mlb_warehouse.py` command by command without path-flipping the legacy `sports.db` script into the typed MLB DB.
 
@@ -66,8 +66,8 @@ flowchart TD
 
 - Ledger commands: 39.
 - Legacy commands found in `mlb_warehouse.py`: 39.
-- Typed replacement commands implemented in `mlb_typed_warehouse.py`: 9.
-- Implemented replacements: `derive-batter-outcomes`, `ingest-hitter-career-profiles`, `ingest-hitter-lineup-splits`, `ingest-hitter-statcast-range`, `ingest-mlb-day`, `ingest-mlb-range`, `list-probable-starters`, `prepare-mlb-day`, `replay-mlb-range-from-raw`.
+- Typed replacement commands implemented in `mlb_typed_warehouse.py`: 14.
+- Implemented replacements: `derive-batter-outcomes`, `ingest-hitter-career-profiles`, `ingest-hitter-lineup-splits`, `ingest-hitter-statcast-range`, `ingest-mlb-day`, `ingest-mlb-range`, `list-bullpen-shape`, `list-bullpen-usage`, `list-first5`, `list-home-runs`, `list-likely-relievers`, `list-probable-starters`, `prepare-mlb-day`, `replay-mlb-range-from-raw`.
 - Ledger drift: zero missing legacy commands and zero extra typed replacement commands.
 - Non-replacement typed utilities: `status`, `audit-command-ledger`, `validate-typed-ready`.
 
@@ -115,11 +115,11 @@ flowchart TD
 | `import-prop-predictions` | `data:import:mlb-props` | prediction write path | P3 | `retire` | typed model run index + `prediction_rows` | Retire old prop import or replace with typed model-output writer. |
 | `grade-home-run-picks` | `data:grade:hr` | settlement/evaluation | P3 | `wrapper-needed` | `settle_mlb_ml_prediction_rows.mjs`, prediction validators | Replace with typed settlement command after prediction writer is canonical. |
 | `grade-prop-picks` | `data:grade:mlb-props` | settlement/evaluation | P3 | `wrapper-needed` | typed settlement/backtest validators | Replace with typed settlement command after prop prediction writer is canonical. |
-| `list-home-runs` | `data:list:hr` | typed read/report | P3 | `typed-read-needed` | typed home-run events or PA outcome views | Add typed read utility or retire. |
-| `list-first5` | `data:list:first5` | typed read/report | P2 | `typed-read-needed` | typed `game_outcomes` first-five fields | Add typed read utility if still useful. |
-| `list-bullpen-usage` | `data:list:bullpen` | typed read/report | P2 | `typed-read-needed` | future bullpen feature tables | Replace after bullpen feature job is rebuilt. |
-| `list-likely-relievers` | `data:list:relievers` | typed read/report | P2 | `typed-read-needed` | future reliever chain feature tables | Replace after reliever feature job is rebuilt. |
-| `list-bullpen-shape` | `data:list:bullpen-shape` | typed read/report | P2 | `typed-read-needed` | future bullpen shape feature tables | Replace after bullpen shape feature job is rebuilt. |
+| `list-home-runs` | `data:list:hr` | typed read/report | P3 | `typed-cli-exists` | `mlb_typed_warehouse.py list-home-runs` over typed `home_run_events`, `games`, and `teams` | Primary package alias points to typed CLI; validate output against legacy only if old report parity matters. |
+| `list-first5` | `data:list:first5` | typed read/report | P2 | `typed-cli-exists` | `mlb_typed_warehouse.py list-first5` over typed `game_outcomes`, `games`, and `teams` | Primary package alias points to typed CLI; output is canonical typed F5 facts. |
+| `list-bullpen-usage` | `data:list:bullpen` | typed read/report | P2 | `typed-cli-exists` | `mlb_typed_warehouse.py list-bullpen-usage` over typed `bullpen_usage_snapshots`, `teams`, and `players` | Primary package alias points to typed CLI; feature math still stays out of ingestion. |
+| `list-likely-relievers` | `data:list:relievers` | typed read/report | P2 | `typed-cli-exists` | `mlb_typed_warehouse.py list-likely-relievers` over typed `likely_relief_chains`, `teams`, and `players` | Primary package alias points to typed CLI; later M3 reliever-chain jobs can replace the upstream table logic. |
+| `list-bullpen-shape` | `data:list:bullpen-shape` | typed read/report | P2 | `typed-cli-exists` | `mlb_typed_warehouse.py list-bullpen-shape` over typed `team_bullpen_shape_snapshots` and `teams` | Primary package alias points to typed CLI; later M3 bullpen-shape jobs can replace the upstream table logic. |
 | `list-story-signals` | none | typed read/report | P3 | `typed-read-needed` | future story-signal feature table | Add typed read utility only if still used. |
 
 ## Suggested Cut Order

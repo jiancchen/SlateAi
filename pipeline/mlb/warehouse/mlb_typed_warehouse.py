@@ -27,7 +27,7 @@ VALIDATE_LINEUPS_RAW = ROOT / "data-migration" / "scripts" / "validate_mlb_lineu
 VALIDATE_MARKETS_PROPS_RAW = ROOT / "data-migration" / "scripts" / "validate_mlb_markets_props_raw_to_typed.py"
 VALIDATE_PLAYER_CONTEXT_RAW = ROOT / "data-migration" / "scripts" / "validate_mlb_player_context_raw_to_typed.py"
 VALIDATE_REPLAY_STATE = ROOT / "data-migration" / "scripts" / "validate_mlb_replay_state_typed.py"
-VERSION = "0.7.0"
+VERSION = "0.8.0"
 
 LEGACY_WAREHOUSE_COMMANDS = {
     "init-db",
@@ -519,6 +519,237 @@ def print_probable_starters(rows: list[dict[str, Any]], date_text: str) -> None:
         print(
             f"- {row['away_team']} @ {row['home_team']} | "
             f"{pitcher_label(row['away_pitcher'])} vs {pitcher_label(row['home_pitcher'])}"
+        )
+
+
+def typed_home_run_rows(conn: sqlite3.Connection, date_text: str) -> list[dict[str, Any]]:
+    rows = conn.execute(
+        """
+        select
+          coalesce(h.game_date, g.game_date) as game_date,
+          coalesce(away.name, g.away_team_id) || ' @ ' || coalesce(home.name, g.home_team_id) as game_title,
+          h.inning,
+          h.half_inning,
+          h.batter_name,
+          h.pitcher_name,
+          h.description
+        from home_run_events h
+        join games g on g.game_id = h.game_id
+        left join teams away on away.team_id = g.away_team_id
+        left join teams home on home.team_id = g.home_team_id
+        where coalesce(h.game_date, g.game_date) = ?
+        order by coalesce(g.start_time_utc, ''), h.inning,
+          case h.half_inning when 'top' then 0 when 'bottom' then 1 else 2 end,
+          h.home_run_event_id
+        """,
+        (date_text,),
+    ).fetchall()
+    return [dict(row) for row in rows]
+
+
+def typed_first5_rows(conn: sqlite3.Connection, date_text: str) -> list[dict[str, Any]]:
+    rows = conn.execute(
+        """
+        select
+          coalesce(away.name, g.away_team_id) || ' @ ' || coalesce(home.name, g.home_team_id) as game_title,
+          o.f5_away_runs as away_runs_first5,
+          o.f5_home_runs as home_runs_first5,
+          o.home_first5_result,
+          o.f5_home_runs - o.f5_away_runs as home_first5_run_diff,
+          o.away_hits_first5,
+          o.home_hits_first5
+        from game_outcomes o
+        join games g on g.game_id = o.game_id
+        left join teams away on away.team_id = g.away_team_id
+        left join teams home on home.team_id = g.home_team_id
+        where g.game_date = ?
+        order by game_title
+        """,
+        (date_text,),
+    ).fetchall()
+    return [dict(row) for row in rows]
+
+
+def team_filter_clause(alias: str, team_name: str | None) -> tuple[str, list[Any]]:
+    if not team_name:
+        return "", []
+    normalized = team_name.casefold()
+    return (
+        f"""
+          and (
+            lower(coalesce({alias}.name, '')) = ?
+            or lower(coalesce({alias}.abbreviation, '')) = ?
+            or lower(coalesce({alias}.team_id, '')) = ?
+          )
+        """,
+        [normalized, normalized, normalized],
+    )
+
+
+def typed_bullpen_usage_rows(
+    conn: sqlite3.Connection, date_text: str, team_name: str | None = None
+) -> list[dict[str, Any]]:
+    team_clause, params = team_filter_clause("team", team_name)
+    rows = conn.execute(
+        f"""
+        select
+          coalesce(team.name, b.team_id) as team_name,
+          coalesce(player.name, b.pitcher_id) as pitcher_name,
+          b.likely_role,
+          b.appearances_last3,
+          b.pitches_last3,
+          b.days_since_last_appearance,
+          b.availability_score,
+          b.bridge_score,
+          b.first_reliever_likelihood,
+          b.innings_last3,
+          b.outs_last3,
+          b.batters_faced_last3,
+          b.avg_entry_order,
+          b.avg_outs_per_appearance,
+          b.avg_pitches_per_appearance,
+          b.last_appearance_date,
+          b.worked_yesterday_flag,
+          b.back_to_back_flag,
+          b.fatigue_score
+        from bullpen_usage_snapshots b
+        left join teams team on team.team_id = b.team_id
+        left join players player on player.player_id = b.pitcher_id
+        where b.snapshot_date = ?
+        {team_clause}
+        order by coalesce(team.name, b.team_id), b.first_reliever_likelihood desc, b.availability_score desc
+        """,
+        [date_text, *params],
+    ).fetchall()
+    return [dict(row) for row in rows]
+
+
+def typed_likely_reliever_rows(
+    conn: sqlite3.Connection, date_text: str, team_name: str | None = None
+) -> list[dict[str, Any]]:
+    team_clause, params = team_filter_clause("team", team_name)
+    rows = conn.execute(
+        f"""
+        select
+          coalesce(team.name, r.team_id) as team_name,
+          coalesce(opponent.name, r.opponent_team_id) as opponent_name,
+          coalesce(player.name, r.pitcher_id) as pitcher_name,
+          r.predicted_rank,
+          r.likely_role,
+          r.first_reliever_likelihood,
+          r.availability_score,
+          r.expected_outs,
+          r.bridge_score,
+          r.last_appearance_date,
+          r.worked_yesterday_flag,
+          r.back_to_back_flag
+        from likely_relief_chains r
+        left join teams team on team.team_id = r.team_id
+        left join teams opponent on opponent.team_id = r.opponent_team_id
+        left join players player on player.player_id = r.pitcher_id
+        where r.snapshot_date = ?
+        {team_clause}
+        order by coalesce(team.name, r.team_id), r.predicted_rank
+        """,
+        [date_text, *params],
+    ).fetchall()
+    return [dict(row) for row in rows]
+
+
+def typed_bullpen_shape_rows(
+    conn: sqlite3.Connection, date_text: str, team_name: str | None = None
+) -> list[dict[str, Any]]:
+    team_clause, params = team_filter_clause("team", team_name)
+    rows = conn.execute(
+        f"""
+        select
+          coalesce(team.name, s.team_id) as team_name,
+          coalesce(opponent.name, s.opponent_team_id) as scheduled_opponent,
+          s.bullpen_shape_index,
+          s.relievers_used_avg_last5,
+          s.first_reliever_outs_avg_last5,
+          s.bulk_first_up_rate_last10,
+          s.two_reliever_containment_rate_last10,
+          s.six_plus_reliever_scramble_rate_last10,
+          s.games_sample_last3,
+          s.games_sample_last5,
+          s.games_sample_last10,
+          s.relievers_used_avg_last3,
+          s.relievers_used_avg_last10,
+          s.relievers_used_max_last10,
+          s.first_reliever_outs_avg_last3,
+          s.first_reliever_outs_avg_last10,
+          s.first_reliever_outs_volatility_last10,
+          s.total_relief_outs_avg_last5,
+          s.total_relief_outs_avg_last10,
+          s.total_relief_runs_allowed_avg_last5,
+          s.total_relief_runs_allowed_avg_last10,
+          s.short_first_up_rate_last5,
+          s.short_first_up_rate_last10,
+          s.bulk_first_up_rate_last5,
+          s.two_reliever_containment_rate_last5,
+          s.four_plus_reliever_rate_last5,
+          s.four_plus_reliever_rate_last10
+        from team_bullpen_shape_snapshots s
+        left join teams team on team.team_id = s.team_id
+        left join teams opponent on opponent.team_id = s.opponent_team_id
+        where s.snapshot_date = ?
+        {team_clause}
+        order by s.bullpen_shape_index desc, coalesce(team.name, s.team_id)
+        """,
+        [date_text, *params],
+    ).fetchall()
+    return [dict(row) for row in rows]
+
+
+def print_home_run_list(rows: list[dict[str, Any]]) -> None:
+    print(f"Home runs tracked: {len(rows)}")
+    for row in rows:
+        print(
+            f"- {row['game_title']} | {row['half_inning']} {row['inning']} | "
+            f"{row['batter_name']} off {row['pitcher_name']} | {row['description']}"
+        )
+
+
+def print_first5_outcomes(rows: list[dict[str, Any]]) -> None:
+    print(f"First 5 outcomes tracked: {len(rows)}")
+    for row in rows:
+        print(
+            f"- {row['game_title']} | F5 {row['away_runs_first5']}-{row['home_runs_first5']} | "
+            f"home result: {row['home_first5_result']} | diff {row['home_first5_run_diff']} | "
+            f"hits {row['away_hits_first5']}-{row['home_hits_first5']}"
+        )
+
+
+def print_bullpen_usage(rows: list[dict[str, Any]]) -> None:
+    print(f"Bullpen usage rows: {len(rows)}")
+    for row in rows:
+        print(
+            f"- {row['team_name']} | {row['pitcher_name']} | role {row['likely_role']} | "
+            f"last3 app {row['appearances_last3']} | pitches {row['pitches_last3']} | "
+            f"days rest {row['days_since_last_appearance']} | availability {row['availability_score']} | "
+            f"bridge {row['bridge_score']} | first-reliever {row['first_reliever_likelihood']}"
+        )
+
+
+def print_likely_relievers(rows: list[dict[str, Any]]) -> None:
+    print(f"Likely reliever rows: {len(rows)}")
+    for row in rows:
+        print(
+            f"- {row['team_name']} vs {row['opponent_name']} | #{row['predicted_rank']} {row['pitcher_name']} "
+            f"({row['likely_role']}) | first-reliever {row['first_reliever_likelihood']} | "
+            f"availability {row['availability_score']} | expected outs {row['expected_outs']}"
+        )
+
+
+def print_bullpen_shape(rows: list[dict[str, Any]]) -> None:
+    print(f"Bullpen shape rows: {len(rows)}")
+    for row in rows:
+        print(
+            f"- {row['team_name']} vs {row['scheduled_opponent']} | shape {row['bullpen_shape_index']} | "
+            f"relievers avg last5 {row['relievers_used_avg_last5']} | first-up outs last5 {row['first_reliever_outs_avg_last5']} | "
+            f"bulk first-up last10 {row['bulk_first_up_rate_last10']} | 2-man containment last10 {row['two_reliever_containment_rate_last10']} | "
+            f"6+ scramble last10 {row['six_plus_reliever_scramble_rate_last10']}"
         )
 
 
@@ -1180,6 +1411,29 @@ def build_parser() -> argparse.ArgumentParser:
     probables_parser = subparsers.add_parser("list-probable-starters", help="Read probable starters from typed tables.")
     probables_parser.add_argument("--date", required=True, help="Game date in YYYY-MM-DD format.")
     probables_parser.add_argument("--json", action="store_true", help="Emit JSON instead of text.")
+
+    home_runs_parser = subparsers.add_parser("list-home-runs", help="Read actual home run events from typed tables.")
+    home_runs_parser.add_argument("--date", required=True, help="Game date in YYYY-MM-DD format.")
+    home_runs_parser.add_argument("--json", action="store_true", help="Emit JSON instead of text.")
+
+    first5_parser = subparsers.add_parser("list-first5", help="Read first-five outcomes from typed tables.")
+    first5_parser.add_argument("--date", required=True, help="Game date in YYYY-MM-DD format.")
+    first5_parser.add_argument("--json", action="store_true", help="Emit JSON instead of text.")
+
+    bullpen_parser = subparsers.add_parser("list-bullpen-usage", help="Read bullpen workload/availability rows from typed tables.")
+    bullpen_parser.add_argument("--date", required=True, help="Snapshot date in YYYY-MM-DD format.")
+    bullpen_parser.add_argument("--team", help="Optional exact team name, abbreviation, or typed team id filter.")
+    bullpen_parser.add_argument("--json", action="store_true", help="Emit JSON instead of text.")
+
+    relievers_parser = subparsers.add_parser("list-likely-relievers", help="Read likely relief chains from typed tables.")
+    relievers_parser.add_argument("--date", required=True, help="Snapshot date in YYYY-MM-DD format.")
+    relievers_parser.add_argument("--team", help="Optional exact team name, abbreviation, or typed team id filter.")
+    relievers_parser.add_argument("--json", action="store_true", help="Emit JSON instead of text.")
+
+    bullpen_shape_parser = subparsers.add_parser("list-bullpen-shape", help="Read bullpen-shape rows from typed tables.")
+    bullpen_shape_parser.add_argument("--date", required=True, help="Snapshot date in YYYY-MM-DD format.")
+    bullpen_shape_parser.add_argument("--team", help="Optional exact team name, abbreviation, or typed team id filter.")
+    bullpen_shape_parser.add_argument("--json", action="store_true", help="Emit JSON instead of text.")
     return parser
 
 
@@ -1340,6 +1594,46 @@ def main() -> int:
             print(json.dumps({"date": args.date, "games": rows}, indent=2, sort_keys=True))
         else:
             print_probable_starters(rows, args.date)
+        return 0
+    if args.command == "list-home-runs":
+        with connect(db_path) as conn:
+            rows = typed_home_run_rows(conn, args.date)
+        if args.json:
+            print(json.dumps({"date": args.date, "home_runs": rows}, indent=2, sort_keys=True))
+        else:
+            print_home_run_list(rows)
+        return 0
+    if args.command == "list-first5":
+        with connect(db_path) as conn:
+            rows = typed_first5_rows(conn, args.date)
+        if args.json:
+            print(json.dumps({"date": args.date, "games": rows}, indent=2, sort_keys=True))
+        else:
+            print_first5_outcomes(rows)
+        return 0
+    if args.command == "list-bullpen-usage":
+        with connect(db_path) as conn:
+            rows = typed_bullpen_usage_rows(conn, args.date, args.team)
+        if args.json:
+            print(json.dumps({"date": args.date, "team": args.team, "rows": rows}, indent=2, sort_keys=True))
+        else:
+            print_bullpen_usage(rows)
+        return 0
+    if args.command == "list-likely-relievers":
+        with connect(db_path) as conn:
+            rows = typed_likely_reliever_rows(conn, args.date, args.team)
+        if args.json:
+            print(json.dumps({"date": args.date, "team": args.team, "rows": rows}, indent=2, sort_keys=True))
+        else:
+            print_likely_relievers(rows)
+        return 0
+    if args.command == "list-bullpen-shape":
+        with connect(db_path) as conn:
+            rows = typed_bullpen_shape_rows(conn, args.date, args.team)
+        if args.json:
+            print(json.dumps({"date": args.date, "team": args.team, "rows": rows}, indent=2, sort_keys=True))
+        else:
+            print_bullpen_shape(rows)
         return 0
     raise ValueError(f"Unhandled command: {args.command}")
 

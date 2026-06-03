@@ -1,6 +1,6 @@
 {
   "implemented_extra_commands": [],
-  "implemented_replacement_count": 9,
+  "implemented_replacement_count": 14,
   "implemented_replacements": [
     "derive-batter-outcomes",
     "ingest-hitter-career-profiles",
@@ -8,6 +8,11 @@
     "ingest-hitter-statcast-range",
     "ingest-mlb-day",
     "ingest-mlb-range",
+    "list-bullpen-shape",
+    "list-bullpen-usage",
+    "list-first5",
+    "list-home-runs",
+    "list-likely-relievers",
     "list-probable-starters",
     "prepare-mlb-day",
     "replay-mlb-range-from-raw"
@@ -42,13 +47,8 @@
     "ingest-pitcher-war",
     "ingest-statcast-hr",
     "init-db",
-    "list-bullpen-shape",
-    "list-bullpen-usage",
-    "list-first5",
-    "list-home-runs",
-    "list-likely-relievers",
     "list-story-signals"
   ],
   "ok": true,
-  "version": "0.7.0"
+  "version": "0.8.0"
 }
