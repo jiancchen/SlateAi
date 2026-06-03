@@ -196,6 +196,9 @@ def ensure_results_schema(con: sqlite3.Connection) -> None:
           team_role text,
           pitcher_role text,
           is_starting_pitcher integer,
+          entry_order integer,
+          first_inning integer,
+          first_half text,
           innings_pitched real,
           outs_recorded integer,
           batters_faced integer,
@@ -329,6 +332,12 @@ def ensure_results_schema(con: sqlite3.Connection) -> None:
         create index if not exists idx_phase_outcomes_date on phase_outcomes (game_date, team_id);
         """
     )
+    for column, ddl in {
+        "entry_order": "integer",
+        "first_inning": "integer",
+        "first_half": "text",
+    }.items():
+        add_column_if_missing(con, "pitcher_appearances", column, ddl)
 
 
 def source_pk(row: sqlite3.Row) -> str:
@@ -581,6 +590,9 @@ def parse_pitcher_row(
     if target_table == "pitcher_appearances":
         values["pitcher_role"] = payload.get("pitcher_role")
         values["is_starting_pitcher"] = to_int(payload.get("is_starting_pitcher"))
+        values["entry_order"] = to_int(payload.get("entry_order"))
+        values["first_inning"] = to_int(payload.get("first_inning"))
+        values["first_half"] = payload.get("first_half")
     return ParsedRow(target_table=target_table, source_table=row["source_table"], legacy_row_id=row["legacy_row_id"], values=values)
 
 

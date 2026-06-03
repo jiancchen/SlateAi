@@ -32,6 +32,7 @@
               "logical_table": "starting_pitchers",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "game_id": 1776,
                 "pitcher_id": 1776,
@@ -98,6 +99,7 @@
               "logical_table": "starting_pitcher_game_logs",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "batters_faced": 1772,
                 "innings_pitched": 1772,
@@ -146,6 +148,7 @@
               "logical_table": "starting_pitcher_game_logs",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "batters_faced": 1772,
                 "innings_pitched": 1772,
@@ -210,6 +213,7 @@
               "missing_columns": [
                 "start_time_utc"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "game_date": 1776
               },
@@ -254,6 +258,7 @@
               "missing_columns": [
                 "start_time_utc"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "game_date": 1776
               },
@@ -284,6 +289,7 @@
               "logical_table": "games",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "game_date": 899,
                 "start_time_utc": 899
@@ -313,6 +319,7 @@
               "logical_table": "games",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "game_date": 899,
                 "start_time_utc": 899
@@ -345,6 +352,9 @@
                 "batters_faced",
                 "created_at",
                 "earned_runs",
+                "entry_order",
+                "first_half",
+                "first_inning",
                 "game_date",
                 "game_id",
                 "hits_allowed",
@@ -369,6 +379,7 @@
                 "walks_allowed"
               ],
               "covered_columns": [
+                "entry_order",
                 "is_starting_pitcher",
                 "pitcher_role"
               ],
@@ -377,10 +388,13 @@
               "is_primary_alias": true,
               "logical_table": "pitcher_appearances",
               "meets_group": true,
-              "missing_columns": [
-                "entry_order"
+              "missing_columns": [],
+              "missing_data_columns": [
+                "entry_order",
+                "is_starting_pitcher"
               ],
               "non_null_counts": {
+                "entry_order": 0,
                 "is_starting_pitcher": 0,
                 "pitcher_role": 7498
               },
@@ -429,6 +443,7 @@
               "missing_columns": [
                 "is_starting_pitcher"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "entry_order": 7495,
                 "pitcher_role": 7498
@@ -518,6 +533,7 @@
               "logical_table": "starting_pitcher_game_logs",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "earned_runs": 1772,
                 "hits_allowed": 1772,
@@ -570,6 +586,7 @@
               "logical_table": "starting_pitcher_game_logs",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "earned_runs": 1772,
                 "hits_allowed": 1772,
@@ -641,6 +658,7 @@
               "logical_table": "pitcher_mistake_shape_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "command_break_index": 3024,
                 "home_run_start_rate": 3024,
@@ -690,6 +708,7 @@
               "logical_table": "pitcher_mistake_shape_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "command_break_index": 3024,
                 "home_run_start_rate": 3024,
@@ -754,6 +773,7 @@
               "logical_table": "pitcher_mistake_shape_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "starts_sample": 3024,
                 "window_starts": 3024
@@ -797,6 +817,7 @@
               "logical_table": "pitcher_mistake_shape_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "starts_sample": 3024,
                 "window_starts": 3024
@@ -876,6 +897,7 @@
               "logical_table": "pitcher_pitch_mix_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "pitch_share": 135153,
                 "pitch_type": 135153,
@@ -920,6 +942,7 @@
               "logical_table": "pitcher_pitch_mix_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "pitch_share": 135153,
                 "pitch_type": 135153,
@@ -985,6 +1008,7 @@
               "logical_table": "pitcher_pitch_mix_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "command_leak": 135153,
                 "damage_allowed": 135153,
@@ -1031,6 +1055,7 @@
               "logical_table": "pitcher_pitch_mix_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "command_leak": 135153,
                 "damage_allowed": 135153,
@@ -1107,6 +1132,7 @@
               "logical_table": "pitch_events",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "call_code": 266937,
                 "is_ball": 304181,
@@ -1164,6 +1190,7 @@
               "missing_columns": [
                 "pitch_type"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "call_code": 266937,
                 "is_ball": 304181,
@@ -1248,6 +1275,7 @@
               "logical_table": "lineup_matchup_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "game_id": 17924,
                 "hitter_id": 17924,
@@ -1297,10 +1325,9 @@
                 "game_id",
                 "opposing_pitcher_id"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
-                "game_id": null,
-                "hitter_id": 17655,
-                "opposing_pitcher_id": null
+                "hitter_id": 17655
               },
               "row_count": 17655,
               "table": "mlb_lineup_pitcher_matchup_daily"
@@ -1368,6 +1395,7 @@
               "logical_table": "lineup_matchup_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "command_stress": 17923,
                 "damage_fit": 17924,
@@ -1422,6 +1450,7 @@
               "logical_table": "lineup_matchup_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "command_stress": 17655,
                 "damage_fit": 17655,
@@ -1466,6 +1495,7 @@
               "logical_table": "lineup_slots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "batting_order": 14435
               },
@@ -1508,6 +1538,7 @@
               "logical_table": "lineup_matchup_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "batting_order": 16350
               },
@@ -1552,6 +1583,7 @@
               "logical_table": "lineup_matchup_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "batting_order": 16081
               },
@@ -1632,6 +1664,7 @@
               "logical_table": "starting_pitcher_game_logs",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "game_date": 1776,
                 "pitcher_id": 1776
@@ -1676,6 +1709,7 @@
               "logical_table": "starting_pitcher_game_logs",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "game_date": 1776,
                 "pitcher_id": 1776
@@ -1740,6 +1774,7 @@
               "missing_columns": [
                 "sample_pitches"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "starts_sample": 3024,
                 "window_starts": 3024
@@ -1785,6 +1820,7 @@
               "missing_columns": [
                 "sample_pitches"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "starts_sample": 3024,
                 "window_starts": 3024
@@ -1826,6 +1862,7 @@
                 "starts_sample",
                 "window_starts"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "sample_pitches": 135153
               },
@@ -1867,6 +1904,7 @@
                 "starts_sample",
                 "window_starts"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "sample_pitches": 135153
               },
@@ -1954,6 +1992,7 @@
               "logical_table": "bullpen_usage_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "back_to_back_flag": 16542,
                 "days_since_last_appearance": 16542,
@@ -2006,6 +2045,7 @@
               "logical_table": "bullpen_usage_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "back_to_back_flag": 16542,
                 "days_since_last_appearance": 16542,
@@ -2051,6 +2091,7 @@
                 "days_since_last_appearance",
                 "pitches_last3"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "back_to_back_flag": 3508,
                 "last_appearance_date": 3508,
@@ -2095,6 +2136,7 @@
                 "days_since_last_appearance",
                 "pitches_last3"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "back_to_back_flag": 3508,
                 "last_appearance_date": 3508,
@@ -2162,6 +2204,7 @@
               "logical_table": "bullpen_usage_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "availability_score": 16542,
                 "bridge_score": 16542,
@@ -2210,6 +2253,7 @@
               "logical_table": "bullpen_usage_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "availability_score": 16542,
                 "bridge_score": 16542,
@@ -2251,6 +2295,7 @@
               "missing_columns": [
                 "fatigue_score"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "availability_score": 3508,
                 "bridge_score": 3508
@@ -2292,6 +2337,7 @@
               "missing_columns": [
                 "fatigue_score"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "availability_score": 3508,
                 "bridge_score": 3508
@@ -2324,6 +2370,9 @@
                 "batters_faced",
                 "created_at",
                 "earned_runs",
+                "entry_order",
+                "first_half",
+                "first_inning",
                 "game_date",
                 "game_id",
                 "hits_allowed",
@@ -2358,6 +2407,7 @@
               "logical_table": "pitcher_appearances",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "batters_faced": 7498,
                 "outs_recorded": 7498,
@@ -2407,6 +2457,7 @@
               "logical_table": "pitcher_appearances",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "batters_faced": 7498,
                 "outs_recorded": 7498,
@@ -2485,6 +2536,7 @@
               "logical_table": "likely_relief_chains",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "pitcher_id": 3508,
                 "predicted_rank": 3508,
@@ -2527,10 +2579,10 @@
               "missing_columns": [
                 "team_id"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "pitcher_id": 3508,
-                "predicted_rank": 3508,
-                "team_id": null
+                "predicted_rank": 3508
               },
               "row_count": 3508,
               "table": "mlb_likely_relief_chains"
@@ -2588,6 +2640,7 @@
               "logical_table": "likely_relief_chains",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "availability_score": 3508,
                 "bridge_score": 3508,
@@ -2631,6 +2684,7 @@
               "logical_table": "likely_relief_chains",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "availability_score": 3508,
                 "bridge_score": 3508,
@@ -2662,6 +2716,9 @@
                 "batters_faced",
                 "created_at",
                 "earned_runs",
+                "entry_order",
+                "first_half",
+                "first_inning",
                 "game_date",
                 "game_id",
                 "hits_allowed",
@@ -2685,16 +2742,21 @@
                 "team_role",
                 "walks_allowed"
               ],
-              "covered_columns": [],
+              "covered_columns": [
+                "entry_order"
+              ],
               "exists": true,
               "is_contract_source": true,
               "is_primary_alias": true,
               "logical_table": "pitcher_appearances",
               "meets_group": false,
-              "missing_columns": [
+              "missing_columns": [],
+              "missing_data_columns": [
                 "entry_order"
               ],
-              "non_null_counts": {},
+              "non_null_counts": {
+                "entry_order": 0
+              },
               "row_count": 7498,
               "table": "pitcher_appearances"
             },
@@ -2737,6 +2799,7 @@
               "logical_table": "pitcher_appearances",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "entry_order": 7495
               },
@@ -2833,6 +2896,7 @@
               "logical_table": "team_bullpen_shape_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "four_plus_reliever_rate_last10": 1754,
                 "relievers_used_avg_last10": 1754,
@@ -2892,6 +2956,7 @@
               "logical_table": "team_bullpen_shape_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "four_plus_reliever_rate_last10": 1754,
                 "relievers_used_avg_last10": 1754,
@@ -2926,6 +2991,9 @@
                 "batters_faced",
                 "created_at",
                 "earned_runs",
+                "entry_order",
+                "first_half",
+                "first_inning",
                 "game_date",
                 "game_id",
                 "hits_allowed",
@@ -2950,6 +3018,7 @@
                 "walks_allowed"
               ],
               "covered_columns": [
+                "entry_order",
                 "is_starting_pitcher",
                 "pitcher_role"
               ],
@@ -2958,10 +3027,13 @@
               "is_primary_alias": true,
               "logical_table": "pitcher_appearances",
               "meets_group": true,
-              "missing_columns": [
-                "entry_order"
+              "missing_columns": [],
+              "missing_data_columns": [
+                "entry_order",
+                "is_starting_pitcher"
               ],
               "non_null_counts": {
+                "entry_order": 0,
                 "is_starting_pitcher": 0,
                 "pitcher_role": 7498
               },
@@ -3010,6 +3082,7 @@
               "missing_columns": [
                 "is_starting_pitcher"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "entry_order": 7495,
                 "pitcher_role": 7498
@@ -3042,6 +3115,9 @@
                 "batters_faced",
                 "created_at",
                 "earned_runs",
+                "entry_order",
+                "first_half",
+                "first_inning",
                 "game_date",
                 "game_id",
                 "hits_allowed",
@@ -3077,6 +3153,7 @@
               "logical_table": "pitcher_appearances",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "batters_faced": 7498,
                 "outs_recorded": 7498,
@@ -3128,6 +3205,7 @@
               "logical_table": "pitcher_appearances",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "batters_faced": 7498,
                 "outs_recorded": 7498,
@@ -3214,6 +3292,7 @@
               "logical_table": "reliever_command_profiles",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "ball_rate": 4113,
                 "command_risk_index": 4113,
@@ -3262,6 +3341,7 @@
               "logical_table": "reliever_command_profiles",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "ball_rate": 4113,
                 "command_risk_index": 4113,
@@ -3331,6 +3411,7 @@
               "logical_table": "bullpen_mistake_shape_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "bullpen_chaos_index": 3508,
                 "bullpen_meltdown_game_rate": 3508,
@@ -3377,6 +3458,7 @@
               "logical_table": "bullpen_mistake_shape_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "bullpen_chaos_index": 3508,
                 "bullpen_meltdown_game_rate": 3508,
@@ -3413,6 +3495,9 @@
                 "batters_faced",
                 "created_at",
                 "earned_runs",
+                "entry_order",
+                "first_half",
+                "first_inning",
                 "game_date",
                 "game_id",
                 "hits_allowed",
@@ -3449,6 +3534,7 @@
               "logical_table": "pitcher_appearances",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "hits_allowed": 7498,
                 "home_runs_allowed": 7498,
@@ -3502,6 +3588,7 @@
               "logical_table": "pitcher_appearances",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "hits_allowed": 7498,
                 "home_runs_allowed": 7498,
@@ -3535,6 +3622,9 @@
                 "batters_faced",
                 "created_at",
                 "earned_runs",
+                "entry_order",
+                "first_half",
+                "first_inning",
                 "game_date",
                 "game_id",
                 "hits_allowed",
@@ -3568,6 +3658,7 @@
                 "base_state_start",
                 "inherited_runners"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {},
               "row_count": 7498,
               "table": "pitcher_appearances"
@@ -3612,6 +3703,7 @@
                 "base_state_start",
                 "inherited_runners"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {},
               "row_count": 7498,
               "table": "mlb_pitcher_appearances"
@@ -3660,6 +3752,7 @@
               "missing_columns": [
                 "inherited_runners"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "base_state_start": 67251
               },
@@ -3717,6 +3810,7 @@
               "missing_columns": [
                 "inherited_runners"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "base_state_start": 67251
               },
@@ -3795,6 +3889,7 @@
               "logical_table": "player_pitch_type_response_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "pitch_type": 206697,
                 "player_id": 206697,
@@ -3838,9 +3933,9 @@
               "missing_columns": [
                 "player_id"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "pitch_type": 206697,
-                "player_id": null,
                 "sample_pitches": 206697
               },
               "row_count": 206697,
@@ -3920,6 +4015,7 @@
               "logical_table": "player_statcast_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "barrel_trend_7_minus_30": 23104,
                 "rolling_14_xwoba": 24359,
@@ -3983,6 +4079,7 @@
               "logical_table": "player_statcast_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "barrel_trend_7_minus_30": 23104,
                 "rolling_14_xwoba": 24359,
@@ -4059,6 +4156,7 @@
               "logical_table": "plate_appearances",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "base_state_end": 67251,
                 "base_state_start": 67251,
@@ -4122,6 +4220,7 @@
               "logical_table": "plate_appearances",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "base_state_end": 67251,
                 "base_state_start": 67251,
@@ -4198,6 +4297,7 @@
               "logical_table": "pitch_events",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "balls": 304181,
                 "call_code": 266937,
@@ -4255,6 +4355,7 @@
               "missing_columns": [
                 "pitch_type"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "balls": 304181,
                 "call_code": 266937,
@@ -4348,6 +4449,7 @@
               "logical_table": "plate_appearances",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "batter_id": 67251,
                 "game_id": 67251,
@@ -4408,9 +4510,9 @@
               "missing_columns": [
                 "game_id"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "batter_id": 67251,
-                "game_id": null,
                 "pitcher_id": 67251
               },
               "row_count": 67251,
@@ -4440,6 +4542,9 @@
                 "batters_faced",
                 "created_at",
                 "earned_runs",
+                "entry_order",
+                "first_half",
+                "first_inning",
                 "game_date",
                 "game_id",
                 "hits_allowed",
@@ -4464,6 +4569,7 @@
                 "walks_allowed"
               ],
               "covered_columns": [
+                "entry_order",
                 "is_starting_pitcher",
                 "pitcher_role"
               ],
@@ -4472,10 +4578,13 @@
               "is_primary_alias": true,
               "logical_table": "pitcher_appearances",
               "meets_group": true,
-              "missing_columns": [
-                "entry_order"
+              "missing_columns": [],
+              "missing_data_columns": [
+                "entry_order",
+                "is_starting_pitcher"
               ],
               "non_null_counts": {
+                "entry_order": 0,
                 "is_starting_pitcher": 0,
                 "pitcher_role": 7498
               },
@@ -4524,6 +4633,7 @@
               "missing_columns": [
                 "is_starting_pitcher"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "entry_order": 7495,
                 "pitcher_role": 7498
@@ -4582,6 +4692,7 @@
               "logical_table": "likely_relief_chains",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "expected_outs": 3508,
                 "first_reliever_likelihood": 3508,
@@ -4623,6 +4734,7 @@
               "logical_table": "likely_relief_chains",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "expected_outs": 3508,
                 "first_reliever_likelihood": 3508,
@@ -4653,6 +4765,9 @@
                 "batters_faced",
                 "created_at",
                 "earned_runs",
+                "entry_order",
+                "first_half",
+                "first_inning",
                 "game_date",
                 "game_id",
                 "hits_allowed",
@@ -4676,16 +4791,21 @@
                 "team_role",
                 "walks_allowed"
               ],
-              "covered_columns": [],
+              "covered_columns": [
+                "entry_order"
+              ],
               "exists": true,
               "is_contract_source": true,
               "is_primary_alias": true,
               "logical_table": "pitcher_appearances",
               "meets_group": false,
-              "missing_columns": [
+              "missing_columns": [],
+              "missing_data_columns": [
                 "entry_order"
               ],
-              "non_null_counts": {},
+              "non_null_counts": {
+                "entry_order": 0
+              },
               "row_count": 7498,
               "table": "pitcher_appearances"
             },
@@ -4728,6 +4848,7 @@
               "logical_table": "pitcher_appearances",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "entry_order": 7495
               },
@@ -4830,6 +4951,7 @@
               "logical_table": "player_statcast_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "hard_hit_trend_7_minus_30": 23104,
                 "rolling_30_xwoba": 25793,
@@ -4893,6 +5015,7 @@
               "logical_table": "player_statcast_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "hard_hit_trend_7_minus_30": 23104,
                 "rolling_30_xwoba": 25793,
@@ -4958,6 +5081,9 @@
               "logical_table": "player_pitch_type_response_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [
+                "chase_rate"
+              ],
               "non_null_counts": {
                 "chase_rate": 0,
                 "damage_rate": 206697,
@@ -5004,6 +5130,9 @@
               "logical_table": "player_pitch_type_response_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [
+                "chase_rate"
+              ],
               "non_null_counts": {
                 "chase_rate": 0,
                 "damage_rate": 206697,
@@ -5066,6 +5195,7 @@
               "logical_table": "player_opponent_context_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "weighted_hits_per_pa_last10": 25119,
                 "weighted_total_bases_per_pa_last10": 25119
@@ -5107,6 +5237,7 @@
               "logical_table": "player_opponent_context_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "weighted_hits_per_pa_last10": 25119,
                 "weighted_total_bases_per_pa_last10": 25119
@@ -5170,6 +5301,7 @@
               "logical_table": "lineups",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "game_id": 1604,
                 "team_id": 1604
@@ -5214,6 +5346,7 @@
               "logical_table": "lineup_slots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "batting_order": 14435,
                 "lineup_id": 14435,
@@ -5292,6 +5425,7 @@
               "missing_columns": [
                 "plate_appearance_id"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "at_bats": 1776,
                 "plate_appearances": 1776
@@ -5350,6 +5484,7 @@
               "missing_columns": [
                 "plate_appearance_id"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "at_bats": 1776,
                 "plate_appearances": 1776
@@ -5402,6 +5537,7 @@
                 "at_bats",
                 "plate_appearances"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "plate_appearance_id": 67251
               },
@@ -5459,6 +5595,7 @@
                 "plate_appearance_id",
                 "plate_appearances"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {},
               "row_count": 67251,
               "table": "mlb_plate_appearances"
@@ -5534,6 +5671,7 @@
                 "balls_final",
                 "men_on_base"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "walks": 1776
               },
@@ -5591,6 +5729,7 @@
                 "balls_final",
                 "men_on_base"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "walks": 1776
               },
@@ -5642,6 +5781,7 @@
               "missing_columns": [
                 "walks"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "balls_final": 67251,
                 "men_on_base": 67251
@@ -5701,6 +5841,7 @@
               "missing_columns": [
                 "walks"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "balls_final": 67251,
                 "men_on_base": 67251
@@ -5771,6 +5912,7 @@
               "logical_table": "games",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "game_date": 899,
                 "game_id": 899
@@ -5801,9 +5943,9 @@
               "missing_columns": [
                 "game_id"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
-                "game_date": 899,
-                "game_id": null
+                "game_date": 899
               },
               "row_count": 899,
               "table": "mlb_games"
@@ -5880,6 +6022,7 @@
               "missing_columns": [
                 "phase_path_label"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "runs_scored": 1776,
                 "team_id": 1776,
@@ -5940,6 +6083,7 @@
                 "phase_path_label",
                 "team_id"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "runs_scored": 1776,
                 "team_role": 1776
@@ -6000,6 +6144,7 @@
               "missing_columns": [
                 "runs_scored"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "phase_path_label": 1772,
                 "team_id": 1772,
@@ -6060,6 +6205,7 @@
                 "runs_scored",
                 "team_id"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "phase_path_label": 1772,
                 "team_role": 1772
@@ -6122,6 +6268,7 @@
               "logical_table": "game_story_labels",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "primary_story_label": 886,
                 "scoring_shape_label": 886,
@@ -6163,6 +6310,7 @@
               "logical_table": "game_story_labels",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "primary_story_label": 886,
                 "scoring_shape_label": 886,
@@ -6217,6 +6365,7 @@
                 "primary_story_label",
                 "scoring_shape_label"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "story_tags_json": 886,
                 "summary_json": 886
@@ -6271,6 +6420,7 @@
                 "primary_story_label",
                 "scoring_shape_label"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "story_tags_json": 886,
                 "summary_json": 886
@@ -6375,6 +6525,7 @@
               "logical_table": "plate_appearances",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "at_bat_index": 67251,
                 "away_score_after": 67251,
@@ -6446,6 +6597,7 @@
               "logical_table": "plate_appearances",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "at_bat_index": 67251,
                 "away_score_after": 67251,
@@ -6528,6 +6680,7 @@
                 "outs",
                 "strikes"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "balls_final": 67251,
                 "strikes_final": 67251
@@ -6589,6 +6742,7 @@
                 "outs",
                 "strikes"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "balls_final": 67251,
                 "strikes_final": 67251
@@ -6642,6 +6796,7 @@
                 "balls_final",
                 "strikes_final"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "balls": 304181,
                 "outs": 304181,
@@ -6697,6 +6852,7 @@
                 "balls_final",
                 "strikes_final"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "balls": 304181,
                 "outs": 304181,
@@ -6777,6 +6933,7 @@
                 "away_traffic_no_conversion_flag",
                 "home_traffic_no_conversion_flag"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "traffic_no_conversion_flag": 1772
               },
@@ -6834,6 +6991,7 @@
                 "away_traffic_no_conversion_flag",
                 "home_traffic_no_conversion_flag"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "traffic_no_conversion_flag": 1772
               },
@@ -6884,6 +7042,7 @@
               "missing_columns": [
                 "traffic_no_conversion_flag"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "away_traffic_no_conversion_flag": 886,
                 "home_traffic_no_conversion_flag": 886
@@ -6937,6 +7096,7 @@
               "missing_columns": [
                 "traffic_no_conversion_flag"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "away_traffic_no_conversion_flag": 886,
                 "home_traffic_no_conversion_flag": 886
@@ -7027,6 +7187,7 @@
                 "total_runs_final",
                 "total_runs_first5"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "f5_total_runs": 886,
                 "total_runs": 886
@@ -7078,6 +7239,7 @@
                 "f5_total_runs",
                 "total_runs"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "total_runs_final": 886,
                 "total_runs_first5": 886
@@ -7130,6 +7292,7 @@
                 "f5_total_runs",
                 "total_runs"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "total_runs_final": 886,
                 "total_runs_first5": 886
@@ -7184,6 +7347,7 @@
                 "f5_total_runs",
                 "total_runs"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "total_runs_final": 886,
                 "total_runs_first5": 886
@@ -7245,6 +7409,7 @@
               "missing_columns": [
                 "phase_path_label"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "primary_story_label": 886,
                 "scoring_shape_label": 886
@@ -7284,6 +7449,7 @@
               "missing_columns": [
                 "phase_path_label"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "primary_story_label": 886,
                 "scoring_shape_label": 886
@@ -7343,6 +7509,7 @@
                 "primary_story_label",
                 "scoring_shape_label"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "phase_path_label": 1772
               },
@@ -7400,6 +7567,7 @@
                 "primary_story_label",
                 "scoring_shape_label"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "phase_path_label": 1772
               },
@@ -7472,6 +7640,7 @@
               "missing_columns": [
                 "starter_cracked_flag"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "bullpen_flip_flag": 886,
                 "lead_changes": 886,
@@ -7527,6 +7696,7 @@
               "missing_columns": [
                 "starter_cracked_flag"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "bullpen_flip_flag": 886,
                 "lead_changes": 886,
@@ -7588,6 +7758,7 @@
                 "lead_changes",
                 "max_comeback_runs"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "starter_cracked_flag": 1772
               },
@@ -7646,6 +7817,7 @@
                 "lead_changes",
                 "max_comeback_runs"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "starter_cracked_flag": 1772
               },
@@ -7717,6 +7889,7 @@
               "logical_table": "games",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "game_date": 899,
                 "series_game_number": 15,
@@ -7748,6 +7921,7 @@
               "logical_table": "games",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "game_date": 899,
                 "series_game_number": 15,
@@ -7806,6 +7980,7 @@
                 "days_since_prior_game",
                 "series_position_label"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "played_yesterday_flag": 809,
                 "series_game_number": 809
@@ -7860,6 +8035,7 @@
                 "travel_distance_miles",
                 "venue_id"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {},
               "row_count": 809,
               "table": "series_context_snapshots"
@@ -7888,6 +8064,7 @@
                 "timezone_offset",
                 "travel_distance_miles"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "venue_id": 31
               },
@@ -7965,6 +8142,7 @@
               "logical_table": "market_snapshots",
               "meets_group": true,
               "missing_columns": [],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "captured_at": 2408,
                 "implied_probability": 1610,
@@ -8036,6 +8214,7 @@
                 "settlement_status",
                 "source_detail_json"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {},
               "row_count": 554,
               "table": "settlement_rows"
@@ -8075,6 +8254,7 @@
               "missing_columns": [
                 "outcome"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "actual_value": 31,
                 "settlement_status": 31,
@@ -8142,6 +8322,7 @@
                 "model_name",
                 "run_id"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "created_at": 224
               },
@@ -8175,6 +8356,7 @@
                 "model_name",
                 "run_id"
               ],
+              "missing_data_columns": [],
               "non_null_counts": {
                 "created_at": 3
               },

@@ -928,17 +928,35 @@ def evaluate_column_group(
             required_columns.update(group.any_of)
         covered_columns = sorted(column for column in required_columns if column in columns)
         missing_columns = sorted(column for column in required_columns if column not in columns)
+        non_null_counts = {
+            column: non_null_count(conn, table, column)
+            for column in covered_columns
+        }
+        all_has_data = all(
+            (non_null_counts.get(column) or 0) > 0
+            for column in group.all_of
+        )
+        any_has_data = (
+            True
+            if not group.any_of
+            else any(
+                column in columns and (non_null_counts.get(column) or 0) > 0
+                for column in group.any_of
+            )
+        )
         check_columns = sorted(set(group.all_of).union(covered_columns))
         evaluations.append(
             {
                 **table_info,
                 "missing_columns": missing_columns,
                 "covered_columns": covered_columns,
-                "meets_group": all_present and any_present,
-                "non_null_counts": {
-                    column: non_null_count(conn, table, column)
+                "missing_data_columns": [
+                    column
                     for column in check_columns
-                },
+                    if column in columns and (non_null_counts.get(column) or 0) == 0
+                ],
+                "meets_group": all_present and any_present and all_has_data and any_has_data,
+                "non_null_counts": non_null_counts,
             }
         )
     covered_contract = next(
@@ -1161,7 +1179,7 @@ def report_markdown(
             "## Important Findings",
             "",
             "- Replay fields for PA/pitch state are present in typed `plate_appearances` and `pitch_events`.",
-            "- The first-up reliever router and hitter-vs-reliever-chain phase need an `entry_order`/chain-phase decision because canonical `pitcher_appearances` does not expose that field while typed staging does.",
+            "- The first-up reliever router and hitter-vs-reliever-chain phase need populated canonical `entry_order`/chain-phase fields. Typed staging has values; canonical `pitcher_appearances` must be backfilled before those surfaces are fully feasible.",
             "- Tail calibration feedback is intentionally not a builder blocker, but promotion and pricing must remain deferred until settlement/calibration gates exist.",
             "- This audit does not create features or train anything; it only maps FS-004 source readiness.",
             "",

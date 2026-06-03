@@ -32,6 +32,9 @@ Status: opened
 | A6-W009 | Implement FS-004 source feasibility audit | complete | `pipeline/mlb/m3/audit/audit_fs004_source_feasibility.py` | Audits typed DB table, column, and surface readiness for FS-004. |
 | A6-W010 | Generate FS-004 source feasibility artifacts | complete | `data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/fs004_source_feasibility_alpha6` | 53 referenced typed tables exist and are populated; 0 blocked surfaces; 2 reliever-chain source decisions. |
 | A6-W011 | Review FS-004 source feasibility | complete | `2026-06-03-mlb-m3-alpha-6-fs004-source-feasibility-review.md` | FS-004 builder can start after recording the reliever `entry_order`/chain-phase source decision. |
+| A6-W012 | Record reliever entry-order source decision | complete | `2026-06-03-mlb-m3-alpha-6-reliever-entry-order-source-decision.md` | FS-004 should consume canonical `pitcher_appearances.entry_order`; staging is only a normalization/backfill source. |
+| A6-W013 | Update results normalization for reliever chain order fields | complete | `pipeline/sources/mlb/normalization/results.py` | Adds canonical `entry_order`, `first_inning`, and `first_half` columns/parse values for future normalization runs. |
+| A6-W014 | Draft FS-004 builder phase plan | complete | `2026-06-03-mlb-m3-alpha-6-fs004-builder-phase-plan.md` | Defines phased builder order and gates before matrix materialization. |
 
 ## Verification Log
 
@@ -47,6 +50,8 @@ Status: opened
 - 2026-06-03: `python3 -m json.tool` passed for all generated FS-004 source feasibility JSON artifacts.
 - 2026-06-03: FS-004 source feasibility found 0 missing/empty contract source tables and 0 blocked surfaces.
 - 2026-06-03: FS-004 source feasibility found 2 P0 source-contract decisions: `first_up_reliever_router` and `hitter_vs_reliever_chain_phase`.
+- 2026-06-03: Reliever `entry_order` source decision recorded: promote order fields into canonical `pitcher_appearances`; do not make FS-004 depend directly on staging.
+- 2026-06-03: Results normalization now carries `entry_order`, `first_inning`, and `first_half` into canonical `pitcher_appearances` on the next normalization/backfill run.
 
 ## Stop Log
 

@@ -56,6 +56,6 @@ flowchart TD
 ## Important Findings
 
 - Replay fields for PA/pitch state are present in typed `plate_appearances` and `pitch_events`.
-- The first-up reliever router and hitter-vs-reliever-chain phase need an `entry_order`/chain-phase decision because canonical `pitcher_appearances` does not expose that field while typed staging does.
+- The first-up reliever router and hitter-vs-reliever-chain phase need populated canonical `entry_order`/chain-phase fields. Typed staging has values; canonical `pitcher_appearances` must be backfilled before those surfaces are fully feasible.
 - Tail calibration feedback is intentionally not a builder blocker, but promotion and pricing must remain deferred until settlement/calibration gates exist.
 - This audit does not create features or train anything; it only maps FS-004 source readiness.

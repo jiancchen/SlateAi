@@ -260,6 +260,24 @@
     "family_coverage_uri"
   ],
   "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_decisions": [
+    {
+      "decision_id": "a6-reliever-entry-order-canonicalization-v1",
+      "decision_uri": "run-plans/mlb/2026-06-03-mlb-m3-alpha-6-reliever-entry-order-source-decision.md",
+      "fields": [
+        "entry_order",
+        "first_inning",
+        "first_half"
+      ],
+      "rule": "FS-004 reliever-chain phase surfaces must consume reliever order fields from canonical pitcher_appearances. Typed staging mlb_pitcher_appearances is approved only as the normalization/backfill source.",
+      "status": "canonical_promotion_required_before_full_reliever_chain_builder",
+      "surfaces": [
+        "first_up_reliever_router",
+        "hitter_vs_reliever_chain_phase"
+      ],
+      "target_table": "pitcher_appearances"
+    }
+  ],
   "source_feature_set_id": "m3_fs_003_game_story_pitching_state_pruned_v0",
   "source_tables": [
     "games",

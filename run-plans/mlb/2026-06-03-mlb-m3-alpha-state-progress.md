@@ -20,7 +20,7 @@ Evidence checked:
 - FS-002 and FS-003 alpha-5 walk-forward metrics match the harness output files.
 - Alpha-6 family redesign audit exists and maps FS-003 to 19 target surfaces.
 - FS-004 contract exists and validates, and source feasibility passed with 0 blocked surfaces.
-- FS-004 source feasibility still requires 2 reliever-chain source decisions around `entry_order`/chain phase before the builder treats those surfaces as canonical.
+- FS-004 reliever `entry_order` source decision is recorded; canonical DB backfill/rerun is still required before the reliever-chain phase surfaces are fully canonical.
 - No promoted model, picks, simulator events, prop prices, or edge claims exist in the alpha artifacts.
 - This progress file is ASCII-only and should render as normal Markdown plus Mermaid.
 
@@ -68,13 +68,14 @@ flowchart TD
   R003 --> A6["Alpha-6 family redesign audit<br/>19 surfaces: 17 partial, 2 missing<br/>status: live"]
   A6 --> C004["FS-004 state-path redesign contract<br/>status: live"]
   C004 --> S004["FS-004 source feasibility audit<br/>53 typed tables populated, 0 blocked surfaces<br/>status: live"]
-  S004 --> NEXT["Next phase: FS-004 builder<br/>2 reliever-chain source decisions<br/>status: next"]
+  S004 --> D004["Reliever entry-order source decision<br/>normalizer updated, DB backfill pending<br/>status: live"]
+  D004 --> NEXT["Next phase: FS-004 builder<br/>entry-order backfill gate + matrix build<br/>status: next"]
 
   classDef live fill:#dff3df,stroke:#367c39,color:#102b13;
   classDef partial fill:#fff2c2,stroke:#927000,color:#332800;
   classDef next fill:#d7ecff,stroke:#2f6f9f,color:#0d2638;
 
-  class SQL,FS001,FS002,M001,H001,M002,H002,A002,WF002,FS003,M003,H003,R003,A6,C004,S004 live;
+  class SQL,FS001,FS002,M001,H001,M002,H002,A002,WF002,FS003,M003,H003,R003,A6,C004,S004,D004 live;
   class NEXT next;
 ```
 
@@ -134,7 +135,7 @@ flowchart TD
 | Alpha-3 | complete | `training_harness` | Harness can load a manifest, split rows, write metrics, and avoid picks. | Smoke test was shallow and not a backtest edge claim. |
 | Alpha-4 | complete | `m3_fs_002_game_story_pitching_state_v0_20260603T155454Z` | First real M3 feature artifact with story, starter, reliever, hitter, and market context. | It did not produce a good candidate model. |
 | Alpha-5 | complete | FS-002 audit, FS-003 artifact, FS-003 harness | Walk-forward and ablations can reject weak candidates honestly. | Pruning did not fix the core feature representation problem. |
-| Alpha-6 | opened | `family_redesign_audit_alpha6`, FS-004 contract, `fs004_source_feasibility_alpha6` | FS-003 has evidence fragments for 17 surfaces and fully misses 2 surfaces; FS-004 contract validates; typed sources can support first FS-004 builder work. | FS-004 matrix is not materialized yet, and reliever-chain source decisions remain. |
+| Alpha-6 | opened | `family_redesign_audit_alpha6`, FS-004 contract, `fs004_source_feasibility_alpha6`, reliever source decision | FS-003 has evidence fragments for 17 surfaces and fully misses 2 surfaces; FS-004 contract validates; typed sources can support first FS-004 builder work; reliever order fields have a canonicalization decision. | FS-004 matrix is not materialized yet, and canonical `entry_order` backfill/rerun remains. |
 
 ## Feature Artifacts
 
@@ -232,12 +233,12 @@ FS-004 should target starter path, reliever chain, hitter-path phase split, orde
 
 The source feasibility audit checked 53 referenced typed tables. All 53 exist and are populated. All 27 FS-004 contract source tables exist and are populated.
 
-No surface is blocked by complete data absence. The two P0 surfaces requiring a source-contract decision are:
+No surface is blocked by complete data absence. The two P0 surfaces that required a reliever order source decision were:
 
 - `first_up_reliever_router`
 - `hitter_vs_reliever_chain_phase`
 
-Both decisions are about reliever `entry_order` / chain phase. Canonical `pitcher_appearances` does not expose `entry_order`; typed staging `mlb_pitcher_appearances` does.
+The decision is now recorded: `entry_order`, `first_inning`, and `first_half` belong in canonical `pitcher_appearances`. Typed staging `mlb_pitcher_appearances` is only the normalization/backfill source. The parser is updated, but the DB still needs the normalization/backfill run before the feasibility audit should clear those two surfaces as fully canonical.
 
 ## What Is Connected
 
