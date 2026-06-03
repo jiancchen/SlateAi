@@ -1,0 +1,11 @@
+{
+  "non_goals": [
+    "no trained model",
+    "no backtest edge claim",
+    "no simulator",
+    "no picks",
+    "no player prop pricing",
+    "no claim that M3 is better"
+  ],
+  "warnings": []
+}

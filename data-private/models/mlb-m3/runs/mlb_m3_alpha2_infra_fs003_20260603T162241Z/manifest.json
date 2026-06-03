@@ -1,0 +1,619 @@
+{
+  "artifact_hashes": [
+    {
+      "bytes": 30615,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-migration/reports/m3_fs_003_game_story_pitching_state_pruned_v0_2026-03-26_to_2026-05-31.json",
+      "role": "feature_report",
+      "sha256": "d34cf517cff22e4bbdb040d4c6638091b5c57cddd875a096f11df760c9c0320e",
+      "source": "alpha1_report"
+    },
+    {
+      "bytes": 562923,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_003_game_story_pitching_state_pruned_v0/m3_fs_003_game_story_pitching_state_pruned_v0_20260603T162132Z/matrix.parquet",
+      "role": "feature_matrix",
+      "sha256": "fb00f6fc6fefe39a71dcfe679e38dd4de22e2cc66d292eaa6f50327596ca8566",
+      "source": "alpha1_feature_artifact"
+    },
+    {
+      "bytes": 153894,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_003_game_story_pitching_state_pruned_v0/m3_fs_003_game_story_pitching_state_pruned_v0_20260603T162132Z/data_dictionary.json",
+      "role": "data_dictionary",
+      "sha256": "ef23523ef400dc63f08bde247d88e56a9f75a8d78df69f76f67195f400bf0a65",
+      "source": "alpha1_feature_artifact"
+    },
+    {
+      "bytes": 1689,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_003_game_story_pitching_state_pruned_v0/m3_fs_003_game_story_pitching_state_pruned_v0_20260603T162132Z/lineage.json",
+      "role": "lineage",
+      "sha256": "eb65242b791664dcab19b7252c93e28c0f7a0063d8d31970e413232648086159",
+      "source": "alpha1_feature_artifact"
+    },
+    {
+      "bytes": 43490,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_003_game_story_pitching_state_pruned_v0/m3_fs_003_game_story_pitching_state_pruned_v0_20260603T162132Z/missingness.json",
+      "role": "missingness",
+      "sha256": "329336acbc36a3b4535f51b900e8ccce0f911a8e26a6d2966f9ded427df956b5",
+      "source": "alpha1_feature_artifact"
+    },
+    {
+      "bytes": 12451,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_003_game_story_pitching_state_pruned_v0/m3_fs_003_game_story_pitching_state_pruned_v0_20260603T162132Z/leakage.json",
+      "role": "leakage",
+      "sha256": "20895ee8b97060d25f7fef63fb35f0899d72bdd81b501cb0f6611af2aea0a92c",
+      "source": "alpha1_feature_artifact"
+    },
+    {
+      "bytes": 805,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_003_game_story_pitching_state_pruned_v0/m3_fs_003_game_story_pitching_state_pruned_v0_20260603T162132Z/coverage.json",
+      "role": "coverage",
+      "sha256": "91aee5364d90c1be7187e7c083ff76be5df902c6d65dc8321c0f52cdfbe1d6e2",
+      "source": "alpha1_feature_artifact"
+    }
+  ],
+  "component_registry": [
+    {
+      "component_family": "game_shape_distribution",
+      "future_outputs": [
+        "run_environment",
+        "chaos_game",
+        "blowout",
+        "late_volatility"
+      ],
+      "role": "latent_game_environment",
+      "status": "placeholder_not_trained"
+    },
+    {
+      "component_family": "team_run_distribution",
+      "future_outputs": [
+        "full_game_runs",
+        "first_five_runs",
+        "late_runs",
+        "team_plate_appearances"
+      ],
+      "role": "team_scoring_path",
+      "status": "placeholder_not_trained"
+    },
+    {
+      "component_family": "starter_exit_distribution",
+      "future_outputs": [
+        "outs_recorded",
+        "hook_timing",
+        "bridge_entry_point",
+        "workload_path"
+      ],
+      "role": "starter_path",
+      "status": "placeholder_not_trained"
+    },
+    {
+      "component_family": "starter_stat_distribution",
+      "future_outputs": [
+        "strikeouts",
+        "runs_allowed",
+        "walks_allowed",
+        "hits_allowed",
+        "home_runs_allowed"
+      ],
+      "role": "starter_performance",
+      "status": "placeholder_not_trained"
+    },
+    {
+      "component_family": "bullpen_shape_distribution",
+      "future_outputs": [
+        "normal_chain",
+        "compressed_chain",
+        "scramble_chain",
+        "churn_regime"
+      ],
+      "role": "team_bullpen_churn",
+      "status": "placeholder_not_trained"
+    },
+    {
+      "component_family": "reliever_availability_distribution",
+      "future_outputs": [
+        "candidate_availability",
+        "quick_reuse_probability",
+        "reset_state",
+        "bulk_exception_probability"
+      ],
+      "role": "individual_reliever_reset",
+      "status": "placeholder_not_trained"
+    },
+    {
+      "component_family": "first_up_reliever_router",
+      "future_outputs": [
+        "first_up_probability_by_arm",
+        "candidate_pool_entropy",
+        "role_exception_probability"
+      ],
+      "role": "first_reliever_identity_route",
+      "status": "placeholder_not_trained"
+    },
+    {
+      "component_family": "reliever_chain_distribution",
+      "future_outputs": [
+        "chain_length",
+        "second_arm_probability",
+        "inherited_runner_state",
+        "chain_break_probability"
+      ],
+      "role": "relief_path",
+      "status": "placeholder_not_trained"
+    },
+    {
+      "component_family": "reliever_stat_distribution",
+      "future_outputs": [
+        "outs_recorded",
+        "pitches",
+        "batters_faced",
+        "strikeouts",
+        "walks_allowed",
+        "runs_allowed"
+      ],
+      "role": "reliever_performance",
+      "status": "placeholder_not_trained"
+    },
+    {
+      "component_family": "pa_event_distribution",
+      "future_outputs": [
+        "single",
+        "double",
+        "triple",
+        "home_run",
+        "walk",
+        "strikeout",
+        "ball_in_play_out"
+      ],
+      "role": "plate_appearance_event_path",
+      "status": "placeholder_not_trained"
+    },
+    {
+      "component_family": "hitter_stat_distribution",
+      "future_outputs": [
+        "hits",
+        "total_bases",
+        "home_runs",
+        "rbi",
+        "runs",
+        "walks",
+        "strikeouts"
+      ],
+      "role": "hitter_game_stats",
+      "status": "placeholder_not_trained"
+    },
+    {
+      "component_family": "calibration_layer",
+      "future_outputs": [
+        "calibrated_probabilities",
+        "slice_calibration_metrics",
+        "promotion_gate_decisions"
+      ],
+      "role": "probability_calibration",
+      "status": "placeholder_not_trained"
+    }
+  ],
+  "created_at": "2026-06-03T16:23:24Z",
+  "dashboard": {
+    "active_phase": "manifest_created",
+    "dashboard_state_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/dashboard_state.json",
+    "report_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/report.md"
+  },
+  "data_split_plan": {
+    "end_date": "2026-05-31",
+    "not_a_backtest": true,
+    "notes": [
+      "This split exists so future training and backtest runners have a manifest contract.",
+      "It is not a validated walk-forward design and does not imply model quality."
+    ],
+    "policy": "chronological_alpha_harness",
+    "start_date": "2026-03-26",
+    "status": "planned_not_executed",
+    "train_candidate_range": {
+      "end": "2026-05-15",
+      "start": "2026-03-26"
+    },
+    "validation_candidate_range": {
+      "end": "2026-05-31",
+      "start": "2026-05-16"
+    }
+  },
+  "feature_artifact": {
+    "column_count": 271,
+    "end_date": "2026-05-31",
+    "feature_count": 256,
+    "feature_report_uri": "/Users/jcchen/Documents/New project/data-migration/reports/m3_fs_003_game_story_pitching_state_pruned_v0_2026-03-26_to_2026-05-31.json",
+    "feature_run_id": "m3_fs_003_game_story_pitching_state_pruned_v0_20260603T162132Z",
+    "feature_set_id": "m3_fs_003_game_story_pitching_state_pruned_v0",
+    "feature_set_version": "0.1.0",
+    "matrix_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_003_game_story_pitching_state_pruned_v0/m3_fs_003_game_story_pitching_state_pruned_v0_20260603T162132Z/matrix.parquet",
+    "row_count": 886,
+    "start_date": "2026-03-26",
+    "target_count": 9,
+    "uses_hand_picked_memory_lengths": false,
+    "uses_m2_weights": false,
+    "uses_sports_db": false
+  },
+  "feature_contract": {
+    "feature_column_count": 256,
+    "feature_columns": [
+      "away_context_days_since_prior_game",
+      "away_context_played_yesterday_flag",
+      "away_context_prior_game_dead_bat_flag",
+      "away_context_prior_game_late_break_flag",
+      "away_context_prior_game_was_chaos_flag",
+      "away_hitter_path_lineup_player_count",
+      "away_hitter_path_opponent_context_coverage_rate",
+      "away_hitter_path_opponent_weighted_hits_per_pa_avg",
+      "away_hitter_path_opponent_weighted_total_bases_per_pa_avg",
+      "away_hitter_path_pitch_type_damage_rate_avg",
+      "away_hitter_path_pitch_type_expected_slugging_avg",
+      "away_hitter_path_pitch_type_response_coverage_rate",
+      "away_hitter_path_pitch_type_response_rows",
+      "away_hitter_path_pitch_type_response_sample_pitches",
+      "away_hitter_path_pitch_type_whiff_rate_avg",
+      "away_hitter_path_starter_phase_damage_fit_avg",
+      "away_hitter_path_starter_phase_matchup_hitter_count",
+      "away_hitter_path_starter_phase_traffic_fit_avg",
+      "away_hitter_path_starter_phase_whiff_fit_avg",
+      "away_hitter_path_statcast_barrel_trend_avg",
+      "away_hitter_path_statcast_coverage_rate",
+      "away_hitter_path_statcast_hard_hit_trend_avg",
+      "away_hitter_path_statcast_xwoba_trend_avg",
+      "away_lineup_complete_flag",
+      "away_lineup_known_flag",
+      "away_lineup_known_slot_count",
+      "away_relief_current_5plus_reliever_run_length",
+      "away_relief_days_since_5plus_reliever_game",
+      "away_relief_last_game_hits_walks_allowed",
+      "away_relief_last_game_pitches",
+      "away_relief_last_game_reliever_count",
+      "away_relief_last_game_runs_allowed",
+      "away_relief_prior_pitches_per_game",
+      "away_relief_prior_relievers_used_per_game",
+      "away_relief_prior_runs_allowed_per_game",
+      "away_relief_prior_team_game_count",
+      "away_reliever_candidate_pool_entropy",
+      "away_reliever_candidate_pool_size",
+      "away_reliever_chain_availability_score_avg",
+      "away_reliever_chain_back_to_back_count",
+      "away_reliever_chain_bridge_score_avg",
+      "away_reliever_chain_expected_outs_avg",
+      "away_reliever_chain_expected_outs_sum",
+      "away_reliever_chain_known_flag",
+      "away_reliever_chain_worked_yesterday_count",
+      "away_reliever_command_ball_rate_avg",
+      "away_reliever_command_free_pass_rate_avg",
+      "away_reliever_command_profile_coverage_rate",
+      "away_reliever_command_reached_rate_avg",
+      "away_reliever_command_risk_index_avg",
+      "away_reliever_command_run_delta_per_entry_avg",
+      "away_reliever_usage_availability_score_avg",
+      "away_reliever_usage_days_since_last_avg",
+      "away_reliever_usage_fatigue_score_avg",
+      "away_starter_current_bad_start_run_length",
+      "away_starter_current_short_start_run_length",
+      "away_starter_days_since_bad_start",
+      "away_starter_days_since_last_start",
+      "away_starter_days_since_short_start",
+      "away_starter_last_outs_recorded",
+      "away_starter_last_outs_vs_prior_mean",
+      "away_starter_last_pitches_thrown",
+      "away_starter_last_runs_allowed",
+      "away_starter_last_strikeouts",
+      "away_starter_last_walks_allowed",
+      "away_starter_low_evidence_flag",
+      "away_starter_mistake_command_break_index",
+      "away_starter_mistake_first_batter_reach_rate",
+      "away_starter_mistake_first_inning_run_allowed_rate",
+      "away_starter_mistake_home_run_start_rate",
+      "away_starter_mistake_meltdown_start_rate",
+      "away_starter_mistake_post_damage_recovery_rate",
+      "away_starter_mistake_shape_available_flag",
+      "away_starter_mistake_starts_sample",
+      "away_starter_mistake_walk_burst_start_rate",
+      "away_starter_pitch_mix_available_flag",
+      "away_starter_pitch_mix_pitch_type_count",
+      "away_starter_pitch_mix_sample_pitches",
+      "away_starter_pitch_mix_top_pitch_share",
+      "away_starter_pitch_mix_weighted_command_leak",
+      "away_starter_pitch_mix_weighted_damage_allowed",
+      "away_starter_pitch_mix_weighted_hard_contact_rate",
+      "away_starter_pitch_mix_weighted_whiff_rate",
+      "away_starter_prior_bad_start_count",
+      "away_starter_prior_hr_rate_per_bf",
+      "away_starter_prior_outs_max",
+      "away_starter_prior_outs_mean",
+      "away_starter_prior_outs_min",
+      "away_starter_prior_outs_std",
+      "away_starter_prior_quality_start_count",
+      "away_starter_prior_quality_start_rate",
+      "away_starter_prior_short_start_count",
+      "away_starter_prior_short_start_rate",
+      "away_starter_prior_start_count",
+      "away_starter_prior_strikeout_rate_per_bf",
+      "away_starter_prior_walk_rate_per_bf",
+      "away_story_current_loss_run_length",
+      "away_story_current_quiet_first5_run_length",
+      "away_story_current_traffic_no_conversion_run_length",
+      "away_story_current_win_run_length",
+      "away_story_days_since_bullpen_flip_game",
+      "away_story_days_since_chaos_game",
+      "away_story_days_since_dead_bat_game",
+      "away_story_days_since_first5_firefight",
+      "away_story_days_since_prior_game",
+      "away_story_days_since_starter_crack_game",
+      "away_story_days_since_traffic_no_conversion",
+      "away_story_f5_runs_scored_volatility",
+      "away_story_last_game_bullpen_flip_flag",
+      "away_story_last_game_f5_total_runs",
+      "away_story_last_game_runs_allowed",
+      "away_story_last_game_runs_scored",
+      "away_story_last_game_total_runs",
+      "away_story_last_game_traffic_no_conversion_flag",
+      "away_story_primary_label_alternation_rate",
+      "away_story_prior_bullpen_flip_rate",
+      "away_story_prior_chaos_rate",
+      "away_story_prior_dead_bat_rate",
+      "away_story_prior_first5_win_rate",
+      "away_story_prior_game_count",
+      "away_story_prior_late_break_rate",
+      "away_story_prior_loss_count",
+      "away_story_prior_scored_first_inning_rate",
+      "away_story_prior_scoreless_first3_rate",
+      "away_story_prior_traffic_no_conversion_rate",
+      "away_story_prior_win_count",
+      "away_story_runs_scored_volatility",
+      "game_day_of_week",
+      "game_is_weekend_flag",
+      "game_series_game_number_known_flag",
+      "game_start_hour_utc",
+      "home_context_days_since_prior_game",
+      "home_context_played_yesterday_flag",
+      "home_context_prior_game_dead_bat_flag",
+      "home_context_prior_game_late_break_flag",
+      "home_context_prior_game_was_chaos_flag",
+      "home_hitter_path_lineup_player_count",
+      "home_hitter_path_opponent_context_coverage_rate",
+      "home_hitter_path_opponent_weighted_hits_per_pa_avg",
+      "home_hitter_path_opponent_weighted_total_bases_per_pa_avg",
+      "home_hitter_path_pitch_type_damage_rate_avg",
+      "home_hitter_path_pitch_type_expected_slugging_avg",
+      "home_hitter_path_pitch_type_response_coverage_rate",
+      "home_hitter_path_pitch_type_response_rows",
+      "home_hitter_path_pitch_type_response_sample_pitches",
+      "home_hitter_path_pitch_type_whiff_rate_avg",
+      "home_hitter_path_starter_phase_damage_fit_avg",
+      "home_hitter_path_starter_phase_matchup_hitter_count",
+      "home_hitter_path_starter_phase_traffic_fit_avg",
+      "home_hitter_path_starter_phase_whiff_fit_avg",
+      "home_hitter_path_statcast_barrel_trend_avg",
+      "home_hitter_path_statcast_coverage_rate",
+      "home_hitter_path_statcast_hard_hit_trend_avg",
+      "home_hitter_path_statcast_xwoba_trend_avg",
+      "home_lineup_complete_flag",
+      "home_lineup_known_flag",
+      "home_lineup_known_slot_count",
+      "home_relief_current_5plus_reliever_run_length",
+      "home_relief_days_since_5plus_reliever_game",
+      "home_relief_last_game_hits_walks_allowed",
+      "home_relief_last_game_pitches",
+      "home_relief_last_game_reliever_count",
+      "home_relief_last_game_runs_allowed",
+      "home_relief_prior_pitches_per_game",
+      "home_relief_prior_relievers_used_per_game",
+      "home_relief_prior_runs_allowed_per_game",
+      "home_relief_prior_team_game_count",
+      "home_reliever_candidate_pool_entropy",
+      "home_reliever_candidate_pool_size",
+      "home_reliever_chain_availability_score_avg",
+      "home_reliever_chain_back_to_back_count",
+      "home_reliever_chain_bridge_score_avg",
+      "home_reliever_chain_expected_outs_avg",
+      "home_reliever_chain_expected_outs_sum",
+      "home_reliever_chain_known_flag",
+      "home_reliever_chain_worked_yesterday_count",
+      "home_reliever_command_profile_coverage_rate",
+      "home_reliever_usage_availability_score_avg",
+      "home_reliever_usage_days_since_last_avg",
+      "home_reliever_usage_fatigue_score_avg",
+      "home_starter_current_bad_start_run_length",
+      "home_starter_current_short_start_run_length",
+      "home_starter_days_since_bad_start",
+      "home_starter_days_since_last_start",
+      "home_starter_days_since_short_start",
+      "home_starter_last_outs_recorded",
+      "home_starter_last_outs_vs_prior_mean",
+      "home_starter_last_pitches_thrown",
+      "home_starter_last_runs_allowed",
+      "home_starter_last_strikeouts",
+      "home_starter_last_walks_allowed",
+      "home_starter_low_evidence_flag",
+      "home_starter_mistake_command_break_index",
+      "home_starter_mistake_first_batter_reach_rate",
+      "home_starter_mistake_first_inning_run_allowed_rate",
+      "home_starter_mistake_home_run_start_rate",
+      "home_starter_mistake_meltdown_start_rate",
+      "home_starter_mistake_post_damage_recovery_rate",
+      "home_starter_mistake_shape_available_flag",
+      "home_starter_mistake_starts_sample",
+      "home_starter_mistake_walk_burst_start_rate",
+      "home_starter_pitch_mix_available_flag",
+      "home_starter_pitch_mix_pitch_type_count",
+      "home_starter_pitch_mix_sample_pitches",
+      "home_starter_pitch_mix_top_pitch_share",
+      "home_starter_pitch_mix_weighted_command_leak",
+      "home_starter_pitch_mix_weighted_damage_allowed",
+      "home_starter_pitch_mix_weighted_hard_contact_rate",
+      "home_starter_pitch_mix_weighted_whiff_rate",
+      "home_starter_prior_bad_start_count",
+      "home_starter_prior_hr_rate_per_bf",
+      "home_starter_prior_outs_max",
+      "home_starter_prior_outs_mean",
+      "home_starter_prior_outs_min",
+      "home_starter_prior_outs_std",
+      "home_starter_prior_quality_start_count",
+      "home_starter_prior_quality_start_rate",
+      "home_starter_prior_short_start_count",
+      "home_starter_prior_short_start_rate",
+      "home_starter_prior_start_count",
+      "home_starter_prior_strikeout_rate_per_bf",
+      "home_starter_prior_walk_rate_per_bf",
+      "home_story_current_loss_run_length",
+      "home_story_current_quiet_first5_run_length",
+      "home_story_current_traffic_no_conversion_run_length",
+      "home_story_current_win_run_length",
+      "home_story_days_since_bullpen_flip_game",
+      "home_story_days_since_chaos_game",
+      "home_story_days_since_dead_bat_game",
+      "home_story_days_since_first5_firefight",
+      "home_story_days_since_prior_game",
+      "home_story_days_since_starter_crack_game",
+      "home_story_days_since_traffic_no_conversion",
+      "home_story_f5_runs_scored_volatility",
+      "home_story_last_game_bullpen_flip_flag",
+      "home_story_last_game_f5_total_runs",
+      "home_story_last_game_runs_allowed",
+      "home_story_last_game_runs_scored",
+      "home_story_last_game_total_runs",
+      "home_story_last_game_traffic_no_conversion_flag",
+      "home_story_primary_label_alternation_rate",
+      "home_story_prior_bullpen_flip_rate",
+      "home_story_prior_chaos_rate",
+      "home_story_prior_dead_bat_rate",
+      "home_story_prior_first5_win_rate",
+      "home_story_prior_game_count",
+      "home_story_prior_late_break_rate",
+      "home_story_prior_loss_count",
+      "home_story_prior_scored_first_inning_rate",
+      "home_story_prior_scoreless_first3_rate",
+      "home_story_prior_traffic_no_conversion_rate",
+      "home_story_prior_win_count",
+      "home_story_runs_scored_volatility",
+      "market_any_pregame_snapshot_count",
+      "market_f5_total_pregame_snapshot_count",
+      "market_total_pregame_snapshot_count"
+    ],
+    "metadata_column_count": 6,
+    "metadata_columns": [
+      "game_away_team_id",
+      "game_date",
+      "game_home_team_id",
+      "game_id",
+      "game_start_time_utc",
+      "game_status"
+    ]
+  },
+  "git": {
+    "branch": "model-m3",
+    "dirty": false,
+    "head": "c4539da08ec16807367594216342aa3483fe2652",
+    "status_short": ""
+  },
+  "manifest_version": "0.1.0",
+  "model_id": "mlb-m3",
+  "model_version": "alpha-2-infrastructure",
+  "non_goals": [
+    "no trained model",
+    "no backtest edge claim",
+    "no simulator",
+    "no picks",
+    "no player prop pricing",
+    "no claim that M3 is better"
+  ],
+  "output_artifacts": {
+    "artifacts_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/artifacts.json",
+    "dashboard_state_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/dashboard_state.json",
+    "lineage_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/lineage.json",
+    "manifest_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/manifest.json",
+    "report_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/report.md",
+    "typed_model_registry_preview_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/typed_model_registry_preview.json",
+    "warnings_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/warnings.json"
+  },
+  "run_family": "mlb-m3-alpha-2-infrastructure",
+  "run_id": "mlb_m3_alpha2_infra_fs003_20260603T162241Z",
+  "sport": "mlb",
+  "status": "manifest_created",
+  "target_contract": {
+    "available_target_columns": [
+      "target_away_team_runs_f5",
+      "target_away_team_runs_final",
+      "target_chaos_game_flag",
+      "target_f5_bucket",
+      "target_home_team_runs_f5",
+      "target_home_team_runs_final",
+      "target_total_bucket",
+      "target_total_runs_f5",
+      "target_total_runs_final"
+    ],
+    "lane_placeholders": [
+      {
+        "claims": [],
+        "lane": "full_game_total",
+        "status": "contract_only",
+        "target_columns": [
+          "target_total_runs_final",
+          "target_total_bucket"
+        ]
+      },
+      {
+        "claims": [],
+        "lane": "f5_total",
+        "status": "contract_only",
+        "target_columns": [
+          "target_total_runs_f5",
+          "target_f5_bucket"
+        ]
+      },
+      {
+        "claims": [],
+        "lane": "moneyline",
+        "status": "deferred",
+        "target_columns": []
+      },
+      {
+        "claims": [],
+        "lane": "team_total",
+        "status": "deferred",
+        "target_columns": [
+          "target_home_team_runs_final",
+          "target_away_team_runs_final"
+        ]
+      },
+      {
+        "claims": [],
+        "lane": "starter_props",
+        "status": "deferred",
+        "target_columns": []
+      },
+      {
+        "claims": [],
+        "lane": "reliever_props",
+        "status": "deferred",
+        "target_columns": []
+      },
+      {
+        "claims": [],
+        "lane": "hitter_props",
+        "status": "deferred",
+        "target_columns": []
+      }
+    ]
+  },
+  "typed_model_metadata_mapping": {
+    "preview_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/typed_model_registry_preview.json",
+    "status": "preview_only_not_inserted",
+    "tables": [
+      "model_runs",
+      "model_run_artifacts",
+      "model_component_runs",
+      "model_run_lanes"
+    ]
+  },
+  "warnings": []
+}

@@ -28,7 +28,7 @@ Status: opened
 | A5-W004 | Run FS-002 feature audit | complete | `data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs002_20260603T155600Z/feature_audit` | Selected 271 columns for FS-003 and pruned 24 feature columns. |
 | A5-W005 | Upgrade harness with walk-forward and family ablations | complete | `training_harness_alpha5/walk_forward.json`, `training_harness_alpha5/family_ablations.json` | Keeps outputs metrics-only and candidate models diagnostic. |
 | A5-W006 | Create FS-003 pruned artifact | complete | `data-private/models/mlb-m3/features/m3_fs_003_game_story_pitching_state_pruned_v0/m3_fs_003_game_story_pitching_state_pruned_v0_20260603T162132Z` | Derived from FS-002 audit recommendations; 886 rows, 271 columns, 256 features, 9 targets. |
-| A5-W007 | Manifest FS-003 | pending |  | Reuse alpha-2 manifest infrastructure. |
+| A5-W007 | Manifest FS-003 | complete | `data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/manifest.json` | Reused alpha-2 manifest infrastructure; validator passed with 0 errors and 0 warnings. |
 | A5-W008 | Run upgraded harness on FS-003 | pending |  | Walk-forward diagnostics and ablations. |
 | A5-W009 | Run improved diagnostic candidate if supported | pending |  | Not promoted unless future gates exist. |
 
@@ -51,3 +51,5 @@ No stops yet.
 - 2026-06-03: `python3 -m json.tool pipeline/mlb/features/contracts/m3_fs_003_game_story_pitching_state_pruned_v0.json` passed.
 - 2026-06-03: `python3 -m pipeline.mlb.features.builders.build_game_story_pitching_state_pruned_v0` generated FS-003 with 886 rows, 271 columns, 256 feature columns, 9 target columns, 24 pruned feature columns, and false forbidden-source flags.
 - 2026-06-03: `python3 -m json.tool` passed for the FS-003 report and generated artifact JSON files.
+- 2026-06-03: `PYTHONDONTWRITEBYTECODE=1 python3 -m pipeline.mlb.m3.runs.create_alpha2_manifest --feature-report data-migration/reports/m3_fs_003_game_story_pitching_state_pruned_v0_2026-03-26_to_2026-05-31.json --run-id mlb_m3_alpha2_infra_fs003_20260603T162241Z` generated the FS-003 alpha-2 manifest bundle with no warnings.
+- 2026-06-03: `PYTHONDONTWRITEBYTECODE=1 python3 -m pipeline.mlb.m3.runs.validate_alpha2_manifest --manifest data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/manifest.json --json` passed with 18 checks, 0 errors, and 0 warnings.
