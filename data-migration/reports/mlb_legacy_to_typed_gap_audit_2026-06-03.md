@@ -1,6 +1,6 @@
 # MLB Legacy to Typed DB Migration Gap Audit
 
-Generated: 2026-06-03T04:24:42.864Z
+Generated: 2026-06-03T04:25:58.825Z
 
 Legacy DB: `data-private/warehouse/sports.db` (2257.7 MB)
 
