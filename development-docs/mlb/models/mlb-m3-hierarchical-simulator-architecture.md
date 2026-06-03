@@ -32,7 +32,8 @@ L3: Latent regime model
   dead game / normal / high-run / chaos / blowout / bullpen-collapse distributions
 
 L4: Component models
-  starter leash, pitcher event rates, batter event rates, bullpen chain, PA volume
+  starter exit/workload path, reliever availability reset, first-up reliever router,
+  reliever event/damage rates, batter event rates, bullpen churn, PA volume
 
 L5: Game simulator
   inning/PA/base-out/score simulation with pitcher changes and lineup turnover
@@ -75,13 +76,18 @@ flowchart TD
   I --> K["Latent game-shape distribution"]
   J --> K
 
-  K --> L["Starter path distribution"]
-  K --> M["Bullpen chain distribution"]
+  K --> L["Starter exit/workload distribution"]
+  K --> M["Bullpen shape/churn distribution"]
+  L --> RA["Reliever availability/reset distribution"]
+  M --> RA
+  RA --> RR["First-up reliever router"]
+  RR --> RC["Reliever chain/performance distribution"]
   K --> N["Batter event-rate distributions"]
   K --> O["PA volume distribution"]
 
   L --> P["PA/base-out/count simulator"]
   M --> P
+  RC --> P
   N --> P
   O --> P
 
@@ -105,12 +111,17 @@ flowchart TD
 ```mermaid
 flowchart TD
   S["Slate state"] --> GS["Sample game shape"]
-  GS --> SP["Sample starter condition/leash"]
-  GS --> BP["Sample bullpen exposure"]
+  GS --> SP["Sample starter exit/workload path"]
+  GS --> BP["Sample bullpen shape/churn"]
+  SP --> RA["Sample reliever availability/reset"]
+  BP --> RA
+  RA --> RR["Sample first-up reliever route"]
+  RR --> RP["Sample reliever performance/damage"]
   GS --> OFF["Sample offense/contact/traffic state"]
 
   SP --> SIM["Simulate PA/base-out/count state"]
   BP --> SIM
+  RP --> SIM
   OFF --> SIM
 
   SIM --> LOG["Simulated event logs"]
@@ -145,6 +156,35 @@ simulated event logs
 ```
 
 This is how player props stay coherent with game flow. Props are not separate from the game. They are views over plate appearances, lineup turnover, pitcher changes, score state, and event sequencing.
+
+## Starter Exit And Reliever Routing
+
+Starter workload is not a single innings projection. It should be represented as an exit/workload path distribution:
+
+```text
+starter context
+  -> outs threshold probabilities
+  -> hook timing distribution
+  -> bridge entry point distribution
+  -> bulk/stretch lane probability
+```
+
+Useful inputs include starter workload path shape, season floor distance, pitch/PA efficiency, command-break state, opponent pressure, bullpen shape behind the starter, and manager/team usage behavior. A slope can be a candidate feature, but it cannot be the whole path model.
+
+Reliever selection is a separate router:
+
+```text
+starter exit/workload path
+  + bullpen shape/churn
+  + reliever availability/reset state
+  -> probability distribution over first-up candidate arms
+  -> remaining-pool quality
+  -> reliever chain distribution
+```
+
+The old RF36/E35/E36 research belongs here as lineage and candidate evidence, not as copied rules. For example, high prior pitch load, quick-reuse history, back-to-back status, and team reuse behavior should inform an adaptive availability/reset distribution. They should not become a universal hard cutoff like "remove at 35 pitches."
+
+Reliever performance is downstream of the router. Once a candidate arm enters, the simulator uses that arm's command, whiff, pitch mix, handedness pocket, inherited-runner, traffic conversion, and workload distributions. This prevents the model from confusing "who is available" with "how good the arm is today."
 
 ## Backtesting Feedback Loop
 

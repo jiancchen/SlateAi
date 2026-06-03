@@ -2,6 +2,7 @@
   "as_of_policy": "pregame",
   "attribution_coverage": {},
   "builder_version": "0.1.0",
+  "bullpen_churn_coverage": {},
   "contract_loaded": true,
   "contract_uri": "/Users/jcchen/Documents/New project/pipeline/mlb/features/contracts/m3_fs_001_game_shape_starter_v1.json",
   "contract_validation": {
@@ -10,10 +11,10 @@
       "no_fixed_memory_policy_aliases": true,
       "no_forbidden_memory_terms": true,
       "no_isolated_prop_models": true,
+      "path_and_routing_feature_families_declared": true,
       "prop_contracts_declared": true,
       "props_are_distribution_contracts": true,
       "reliever_distributions_declared": true,
-      "reliever_feature_family_declared": true,
       "reliever_prop_contract_declared": true,
       "reliever_sources_declared": true,
       "required_evidence_policy_keys": true,
@@ -30,9 +31,10 @@
     "props_are_distribution_contracts": true,
     "required_consistency": [
       "hitter props consume player PA/event/stat distributions",
-      "starter props consume starter state/stat distributions",
+      "starter props consume starter state/stat and starter-exit distributions",
+      "first-up relief routing consumes starter-exit and reliever-availability distributions",
       "reliever props consume relief-chain and reliever stat distributions",
-      "game and team markets consume shared run/game-shape and relief-chain distributions",
+      "game and team markets consume shared run/game-shape, starter-exit, reliever-availability, and relief-chain distributions",
       "hitter props consume likely starter and reliever PA/event mix distributions"
     ]
   },
@@ -73,14 +75,40 @@
       "grain": "starter_game"
     },
     {
+      "distribution_id": "starter_exit_distribution",
+      "examples": [
+        "outs_threshold_probabilities",
+        "hook_timing",
+        "bridge_entry_point",
+        "season_floor_distance",
+        "workload_path_shape",
+        "bulk_lane_probability"
+      ],
+      "grain": "starter_game"
+    },
+    {
+      "distribution_id": "reliever_availability_distribution",
+      "examples": [
+        "candidate_availability",
+        "adaptive_reset_state",
+        "quick_reuse_probability",
+        "first_up_probability",
+        "remaining_pool_quality",
+        "bulk_reuse_exception_probability"
+      ],
+      "grain": "reliever_team_game_candidate"
+    },
+    {
       "distribution_id": "reliever_chain_distribution",
       "examples": [
         "first_reliever_entry_state",
+        "candidate_pool_entropy",
         "first_reliever_batters_faced",
         "first_reliever_pitches",
         "inherited_runner_damage",
         "second_reliever_probability",
         "chain_break_probability",
+        "bullpen_churn_regime",
         "handedness_pocket_fit"
       ],
       "grain": "team_game"
@@ -133,8 +161,9 @@
   "feature_count": 0,
   "feature_set_id": "m3_fs_001_game_shape_starter_v1",
   "feature_set_version": "0.1.0",
-  "finished_at": "2026-06-03T07:33:08+00:00",
-  "git_sha": "0e46ae4bd89d17bd132b268f0beb262f74f97f00",
+  "finished_at": "2026-06-03T07:39:16+00:00",
+  "first_up_reliever_router_coverage": {},
+  "git_sha": "c92bd680a57dd7933018f69789c0dd96c77b6930",
   "leakage_checks": {
     "as_of_policy_declared": true,
     "no_feature_extraction_in_skeleton": true,
@@ -163,6 +192,8 @@
       "resolved_from_distributions": [
         "game_shape_distribution",
         "team_run_distribution",
+        "starter_exit_distribution",
+        "reliever_availability_distribution",
         "reliever_chain_distribution"
       ]
     },
@@ -177,6 +208,7 @@
       "family_id": "starter_props",
       "resolved_from_distributions": [
         "starter_stat_distribution",
+        "starter_exit_distribution",
         "game_shape_distribution",
         "reliever_chain_distribution"
       ]
@@ -195,7 +227,9 @@
       "resolved_from_distributions": [
         "hitter_stat_distribution",
         "pa_event_distribution",
+        "starter_exit_distribution",
         "team_run_distribution",
+        "reliever_availability_distribution",
         "reliever_chain_distribution",
         "reliever_stat_distribution"
       ]
@@ -212,6 +246,7 @@
       ],
       "family_id": "reliever_props",
       "resolved_from_distributions": [
+        "reliever_availability_distribution",
         "reliever_chain_distribution",
         "reliever_stat_distribution",
         "game_shape_distribution"
@@ -219,9 +254,10 @@
     }
   ],
   "reliever_arm_coverage": {},
+  "reliever_availability_coverage": {},
   "reliever_chain_coverage": {},
   "report_uri": "/Users/jcchen/Documents/New project/data-migration/reports/m3_fs_001_game_shape_starter_v1_2026-03-26_to_2026-05-31.json",
-  "run_id": "m3_fs_001_game_shape_starter_v1_skeleton_2026-06-03T07:33:08+00:00",
+  "run_id": "m3_fs_001_game_shape_starter_v1_skeleton_2026-06-03T07:39:16+00:00",
   "run_type": "feature_build_skeleton",
   "source_db": "/Users/jcchen/Documents/New project/data-private/warehouse/sports/mlb/sql-mlb.db",
   "source_db_exists": true,
@@ -235,8 +271,10 @@
     "phase_outcomes",
     "starting_pitchers",
     "starting_pitcher_game_logs",
+    "starting_pitcher_form_snapshots",
     "pitcher_appearances",
     "pitcher_pitch_mix_snapshots",
+    "pitcher_mistake_shape_snapshots",
     "reliever_command_profiles",
     "player_pitch_type_response_snapshots",
     "lineup_matchup_snapshots",
@@ -252,6 +290,7 @@
     "bullpen_usage_snapshots",
     "likely_relief_chains",
     "team_bullpen_shape_snapshots",
+    "bullpen_mistake_shape_snapshots",
     "lineups",
     "lineup_slots",
     "market_snapshots",
@@ -259,7 +298,8 @@
     "market_price_ticks"
   ],
   "start_date": "2026-03-26",
-  "started_at": "2026-06-03T07:33:08+00:00",
+  "started_at": "2026-06-03T07:39:16+00:00",
+  "starter_exit_coverage": {},
   "state_memory_encoders": [
     "ordered_event_sequence",
     "entity_state_transition_history",

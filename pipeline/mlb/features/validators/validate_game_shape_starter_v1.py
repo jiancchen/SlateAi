@@ -180,6 +180,7 @@ def validate_contract(contract: dict[str, Any]) -> dict[str, Any]:
         source_table_ids = {table for table in source_tables if isinstance(table, str)}
 
     required_reliever_sources = {
+        "bullpen_mistake_shape_snapshots",
         "pitcher_appearances",
         "pitcher_pitch_mix_snapshots",
         "reliever_command_profiles",
@@ -201,9 +202,17 @@ def validate_contract(contract: dict[str, Any]) -> dict[str, Any]:
             family for family in feature_families if isinstance(family, str)
         }
 
-    if "reliever_performance_state" not in feature_family_ids:
+    required_feature_families = {
+        "starter_workload_path",
+        "reliever_availability_reset",
+        "first_up_reliever_router",
+        "reliever_performance_state",
+    }
+    missing_feature_families = sorted(required_feature_families - feature_family_ids)
+    if missing_feature_families:
         errors.append(
-            "feature_families must include reliever_performance_state."
+            "feature_families must include M3 path/routing families: "
+            + ", ".join(missing_feature_families)
         )
 
     distribution_families = contract.get("downstream_distribution_families", [])
@@ -218,6 +227,8 @@ def validate_contract(contract: dict[str, Any]) -> dict[str, Any]:
         }
 
     required_reliever_distributions = {
+        "starter_exit_distribution",
+        "reliever_availability_distribution",
         "reliever_chain_distribution",
         "reliever_stat_distribution",
     }
@@ -262,6 +273,26 @@ def validate_contract(contract: dict[str, Any]) -> dict[str, Any]:
             errors.append(
                 f"{family_id} must resolve from reliever_chain_distribution."
             )
+        if "starter_exit_distribution" not in resolved_from:
+            errors.append(
+                f"{family_id} must resolve from starter_exit_distribution."
+            )
+
+    game_market_resolutions = prop_resolutions.get("game_markets", set())
+    if "reliever_availability_distribution" not in game_market_resolutions:
+        errors.append(
+            "game_markets must resolve from reliever_availability_distribution."
+        )
+
+    starter_prop_resolutions = prop_resolutions.get("starter_props", set())
+    if "starter_exit_distribution" not in starter_prop_resolutions:
+        errors.append("starter_props must resolve from starter_exit_distribution.")
+
+    reliever_prop_resolutions = prop_resolutions.get("reliever_props", set())
+    if "reliever_availability_distribution" not in reliever_prop_resolutions:
+        errors.append(
+            "reliever_props must resolve from reliever_availability_distribution."
+        )
 
     bridge_policy = contract.get("distribution_bridge_policy", {})
     if not isinstance(bridge_policy, dict):
@@ -298,9 +329,7 @@ def validate_contract(contract: dict[str, Any]) -> dict[str, Any]:
             "prop_contracts_declared": isinstance(prop_families, list)
             and bool(prop_families),
             "reliever_sources_declared": not missing_reliever_sources,
-            "reliever_feature_family_declared": (
-                "reliever_performance_state" in feature_family_ids
-            ),
+            "path_and_routing_feature_families_declared": not missing_feature_families,
             "reliever_distributions_declared": not missing_reliever_distributions,
             "reliever_prop_contract_declared": "reliever_props" in prop_family_ids,
             "props_are_distribution_contracts": isinstance(bridge_policy, dict)

@@ -42,6 +42,9 @@
       "pitch",
       "plate_appearance",
       "batter_faced",
+      "relief_appearance",
+      "candidate_arm",
+      "hook_event",
       "start",
       "game",
       "day"
@@ -77,8 +80,10 @@
     "phase_outcomes",
     "starting_pitchers",
     "starting_pitcher_game_logs",
+    "starting_pitcher_form_snapshots",
     "pitcher_appearances",
     "pitcher_pitch_mix_snapshots",
+    "pitcher_mistake_shape_snapshots",
     "reliever_command_profiles",
     "player_pitch_type_response_snapshots",
     "lineup_matchup_snapshots",
@@ -94,6 +99,7 @@
     "bullpen_usage_snapshots",
     "likely_relief_chains",
     "team_bullpen_shape_snapshots",
+    "bullpen_mistake_shape_snapshots",
     "lineups",
     "lineup_slots",
     "market_snapshots",
@@ -115,9 +121,12 @@
     "game_base",
     "team_baseline_state_shape",
     "starter_path",
+    "starter_workload_path",
     "opponent_matchup_quality",
     "replay_attribution",
     "bullpen_shape",
+    "reliever_availability_reset",
+    "first_up_reliever_router",
     "reliever_performance_state",
     "lineup_context",
     "market_context"
@@ -158,15 +167,41 @@
       ]
     },
     {
+      "distribution_id": "starter_exit_distribution",
+      "grain": "starter_game",
+      "examples": [
+        "outs_threshold_probabilities",
+        "hook_timing",
+        "bridge_entry_point",
+        "season_floor_distance",
+        "workload_path_shape",
+        "bulk_lane_probability"
+      ]
+    },
+    {
+      "distribution_id": "reliever_availability_distribution",
+      "grain": "reliever_team_game_candidate",
+      "examples": [
+        "candidate_availability",
+        "adaptive_reset_state",
+        "quick_reuse_probability",
+        "first_up_probability",
+        "remaining_pool_quality",
+        "bulk_reuse_exception_probability"
+      ]
+    },
+    {
       "distribution_id": "reliever_chain_distribution",
       "grain": "team_game",
       "examples": [
         "first_reliever_entry_state",
+        "candidate_pool_entropy",
         "first_reliever_batters_faced",
         "first_reliever_pitches",
         "inherited_runner_damage",
         "second_reliever_probability",
         "chain_break_probability",
+        "bullpen_churn_regime",
         "handedness_pocket_fit"
       ]
     },
@@ -217,6 +252,8 @@
       "resolved_from_distributions": [
         "game_shape_distribution",
         "team_run_distribution",
+        "starter_exit_distribution",
+        "reliever_availability_distribution",
         "reliever_chain_distribution"
       ],
       "examples": [
@@ -230,6 +267,7 @@
       "family_id": "starter_props",
       "resolved_from_distributions": [
         "starter_stat_distribution",
+        "starter_exit_distribution",
         "game_shape_distribution",
         "reliever_chain_distribution"
       ],
@@ -246,7 +284,9 @@
       "resolved_from_distributions": [
         "hitter_stat_distribution",
         "pa_event_distribution",
+        "starter_exit_distribution",
         "team_run_distribution",
+        "reliever_availability_distribution",
         "reliever_chain_distribution",
         "reliever_stat_distribution"
       ],
@@ -263,6 +303,7 @@
     {
       "family_id": "reliever_props",
       "resolved_from_distributions": [
+        "reliever_availability_distribution",
         "reliever_chain_distribution",
         "reliever_stat_distribution",
         "game_shape_distribution"
@@ -283,17 +324,22 @@
     "no_isolated_prop_models": true,
     "required_consistency": [
       "hitter props consume player PA/event/stat distributions",
-      "starter props consume starter state/stat distributions",
+      "starter props consume starter state/stat and starter-exit distributions",
+      "first-up relief routing consumes starter-exit and reliever-availability distributions",
       "reliever props consume relief-chain and reliever stat distributions",
-      "game and team markets consume shared run/game-shape and relief-chain distributions",
+      "game and team markets consume shared run/game-shape, starter-exit, reliever-availability, and relief-chain distributions",
       "hitter props consume likely starter and reliever PA/event mix distributions"
     ]
   },
   "required_report_fields": [
     "evidence_coverage",
+    "starter_exit_coverage",
     "matchup_coverage",
+    "reliever_availability_coverage",
+    "first_up_reliever_router_coverage",
     "reliever_chain_coverage",
     "reliever_arm_coverage",
+    "bullpen_churn_coverage",
     "attribution_coverage",
     "distribution_contract_coverage",
     "prop_contract_coverage",
@@ -306,7 +352,9 @@
     "Residual columns describe state evidence versus baseline.",
     "Talent is represented as surfaces and distributions, not a single baseline number.",
     "Player and pitcher props are downstream contracts over shared distributions.",
+    "Starter innings and hook behavior are encoded as an exit/workload path distribution, not a single linear trend.",
     "Reliever performance is a first-class individual-arm state surface, not only a team bullpen aggregate.",
+    "Reliever availability and first-up routing are separate component distributions before reliever damage is modeled.",
     "Relief-chain outputs must represent likely entry state, workload, inherited-runner damage, and chain-break risk.",
     "Evidence coverage is required so sparse data cannot masquerade as stable form.",
     "No M2 weights, fixed memory lengths, or hand-tuned conclusions are part of this contract."

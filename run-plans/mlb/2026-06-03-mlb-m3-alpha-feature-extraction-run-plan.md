@@ -99,6 +99,14 @@ Downstream output families to keep declared from Step 1:
 - reliever props: outs recorded, pitches, batters faced, strikeouts, inherited-runner damage
 - hitter props: hits, total bases, home run, RBI, runs, walks, strikeouts
 
+Component distributions to keep separate:
+
+- starter exit/workload path: starter outs thresholds, hook timing, bridge entry point, workload path, floor-distance context
+- reliever availability/reset: individual-arm availability, quick-reuse tendency, reset state, bulk exception probability
+- first-up reliever router: probability distribution over candidate arms, not one guessed name
+- reliever performance/damage: command, whiff, contact, traffic, inherited-runner, and workload distributions
+- bullpen churn regime: probability the game leaves the normal chain and uses the remaining pool
+
 Distribution rule:
 
 ```text
@@ -300,12 +308,13 @@ Alpha source tables:
 | Game base | `games`, `teams`, `venues` | row identity, teams, venue, start time, series game |
 | Outcomes | `game_outcomes` | postgame targets only |
 | Team results | `team_game_stats`, `game_outcomes`, `phase_outcomes` | historical team baseline and state context only |
-| Starter context | `starting_pitchers`, `starting_pitcher_game_logs`, `pitcher_appearances` | starter form and workload |
+| Starter context | `starting_pitchers`, `starting_pitcher_game_logs`, `starting_pitcher_form_snapshots`, `pitcher_appearances`, `pitcher_mistake_shape_snapshots` | starter form, workload path, hook timing, and exit distribution |
 | Pitch matchup context | `pitcher_pitch_mix_snapshots`, `player_pitch_type_response_snapshots`, `lineup_matchup_snapshots`, `team_opponent_quality_snapshots` | starter arsenal versus opposing lineup strengths/weaknesses |
 | Evidence reliability context | `player_career_profiles`, `player_statcast_snapshots`, `player_split_snapshots`, `player_opponent_context_snapshots` | low-sample and fallback context for thin pitcher/player histories |
 | Replay/story context | `plate_appearances`, `pitch_events`, `game_story_signals`, `game_story_labels` | event attribution, walk classification, traffic, and story-state features |
-| Bullpen context | `bullpen_usage_snapshots`, `likely_relief_chains`, `team_bullpen_shape_snapshots` | pregame bullpen debt and chain shape |
-| Reliever performance context | `pitcher_appearances`, `pitcher_pitch_mix_snapshots`, `reliever_command_profiles`, `player_split_snapshots`, `player_opponent_context_snapshots`, `likely_relief_chains` | individual relief-arm state, matchup fit, entry-state risk, and expected workload |
+| Bullpen context | `bullpen_usage_snapshots`, `likely_relief_chains`, `team_bullpen_shape_snapshots`, `bullpen_mistake_shape_snapshots` | pregame bullpen debt, chain shape, and churn regime |
+| Reliever availability/router context | `pitcher_appearances`, `reliever_command_profiles`, `likely_relief_chains`, `team_bullpen_shape_snapshots` | individual-arm availability, adaptive reset state, quick-reuse tendency, and first-up routing |
+| Reliever performance context | `pitcher_appearances`, `pitcher_pitch_mix_snapshots`, `reliever_command_profiles`, `player_split_snapshots`, `player_opponent_context_snapshots`, `likely_relief_chains` | individual relief-arm state, matchup fit, entry-state risk, inherited-runner damage, and expected workload |
 | Lineup context | `lineups`, `lineup_slots` | known lineup state and completeness flags |
 | Market context | `market_snapshots`, `market_contracts`, `market_price_ticks` | latest pregame market state when available |
 
@@ -639,6 +648,22 @@ home_starter_role_archetype
 away_starter_role_archetype
 home_starter_outs_talent_baseline
 away_starter_outs_talent_baseline
+home_starter_outs_season_floor_baseline
+away_starter_outs_season_floor_baseline
+home_starter_outs_floor_distance_state_memory
+away_starter_outs_floor_distance_state_memory
+home_starter_workload_path_shape_state_memory
+away_starter_workload_path_shape_state_memory
+home_starter_workload_slope_candidate
+away_starter_workload_slope_candidate
+home_starter_workload_change_point_candidate
+away_starter_workload_change_point_candidate
+home_starter_exit_bucket_distribution
+away_starter_exit_bucket_distribution
+home_starter_hook_timing_distribution
+away_starter_hook_timing_distribution
+home_starter_bridge_entry_point_distribution
+away_starter_bridge_entry_point_distribution
 home_starter_run_prevention_talent_baseline
 away_starter_run_prevention_talent_baseline
 home_starter_command_talent_baseline
@@ -671,6 +696,8 @@ Rules:
 
 - derive from games before the target game
 - preserve ordered starter trajectory from starts, batters faced, PAs, and pitches
+- encode workload path as a distribution over exits and bridge points, not one innings projection
+- allow slope, curvature, floor-distance, and change-point candidates as separate features
 - separate talent baseline from current-state residual evidence
 - include evidence coverage so sparse starter data cannot masquerade as stable form
 - encode state-change and change-point candidates without turning them into fixed labels
@@ -728,9 +755,65 @@ Rules:
 - include availability and evidence-count fields
 - do not use team bullpen shape as a proxy for individual reliever performance
 
-### 6. Reliever Performance State
+### 6. Reliever Availability Reset And First-Up Router
 
-Purpose: describe the specific relief arms most likely to affect the game, including expected entry state, matchup fit, sparse-evidence uncertainty, and workload/damage distributions.
+Purpose: describe which relief arms are realistically available, which arms are plausible first-up candidates, and how the remaining pool changes when a high-load arm is effectively unavailable.
+
+Inputs:
+
+- `likely_relief_chains`
+- `pitcher_appearances`
+- `reliever_command_profiles`
+- `team_bullpen_shape_snapshots`
+- `bullpen_mistake_shape_snapshots`
+
+Example columns:
+
+```text
+home_reliever_chain_known_flag
+away_reliever_chain_known_flag
+home_reliever_candidate_pool_size
+away_reliever_candidate_pool_size
+home_reliever_candidate_pool_entropy
+away_reliever_candidate_pool_entropy
+home_reliever_first_arm_known_flag
+away_reliever_first_arm_known_flag
+home_reliever_first_arm_role_archetype
+away_reliever_first_arm_role_archetype
+home_reliever_first_up_probability_distribution
+away_reliever_first_up_probability_distribution
+home_reliever_first_up_top2_probability_mass
+away_reliever_first_up_top2_probability_mass
+home_reliever_adaptive_reset_state_distribution
+away_reliever_adaptive_reset_state_distribution
+home_reliever_arm_prior_appearance_pitch_load_state
+away_reliever_arm_prior_appearance_pitch_load_state
+home_reliever_team_quick_reuse_talent_surface
+away_reliever_team_quick_reuse_talent_surface
+home_reliever_pitcher_quick_reuse_evidence_count
+away_reliever_pitcher_quick_reuse_evidence_count
+home_reliever_remaining_pool_quality_distribution
+away_reliever_remaining_pool_quality_distribution
+home_reliever_bulk_reuse_exception_probability
+away_reliever_bulk_reuse_exception_probability
+home_reliever_bullpen_churn_regime_probability
+away_reliever_bullpen_churn_regime_probability
+```
+
+Rules:
+
+- derive from games before the target game and pregame chain snapshots only
+- treat RF36/E36-style reset logic as research lineage, not copied production logic
+- encode pitch-load reuse as learned availability/reset state, not a hard threshold
+- use pitcher-level quick-reuse evidence when available and team-level quick-reuse behavior as the fallback surface
+- represent first-up as a probability distribution over candidate arms, not a guessed name
+- recompute remaining-pool quality when a likely arm is low-availability
+- preserve bulk/opener exceptions separately so high-load arms are not blindly removed
+- report candidate identity coverage, reset-state coverage, and first-up router coverage
+
+### 7. Reliever Performance State
+
+Purpose: describe the specific relief arms most likely to affect the game after availability/routing, including expected entry state, matchup fit, sparse-evidence uncertainty, and workload/damage distributions.
 
 Inputs:
 
@@ -744,12 +827,6 @@ Inputs:
 Example columns:
 
 ```text
-home_reliever_chain_known_flag
-away_reliever_chain_known_flag
-home_reliever_first_arm_known_flag
-away_reliever_first_arm_known_flag
-home_reliever_first_arm_role_archetype
-away_reliever_first_arm_role_archetype
 home_reliever_first_arm_expected_entry_state_distribution
 away_reliever_first_arm_expected_entry_state_distribution
 home_reliever_first_arm_batters_faced_distribution
@@ -786,8 +863,8 @@ away_reliever_first_arm_uncertainty_flag
 
 Rules:
 
-- derive from games before the target game and pregame chain snapshots only
 - model relievers as individual arms, not as a team bullpen average
+- consume the availability/router distribution instead of assuming the current top-listed arm enters
 - represent first-arm workload as a distribution over batters faced and pitches, not a fixed point estimate
 - preserve entry-state context, including clean inning, traffic, inherited runners, and handedness pocket
 - keep command, whiff, pitch mix, damage, and inherited-runner behavior as separate surfaces
@@ -795,7 +872,7 @@ Rules:
 - do not collapse reliever state into one manual "reliever score"
 - allow the downstream simulator to condition hitter, total, and late-run distributions on the likely relief-chain mix
 
-### 7. Lineup And PA Volume Context
+### 8. Lineup And PA Volume Context
 
 Purpose: describe whether the lineup context is known and whether the projected lineup is complete.
 
@@ -832,7 +909,7 @@ Rules:
 - no player prop features in alpha
 - no manual PA boost score
 
-### 8. Market Context
+### 9. Market Context
 
 Purpose: give the model market priors without letting market data become the answer.
 
@@ -861,7 +938,7 @@ Rules:
 - do not use settled outcome or post-start movement
 - keep market features separable so ablations can compare "with market" vs "without market"
 
-### 9. Replay-State Features
+### 10. Replay-State Features
 
 Status: gated core feature family.
 
@@ -981,7 +1058,9 @@ Deliverables:
 
 - starter identity join
 - starter state path features
-- sample-count and availability fields
+- starter exit/workload path distribution fields
+- floor-distance, path-shape, and hook-timing features
+- evidence-count and availability fields
 - low-MLB-evidence flags
 - TBD starter handling
 
@@ -992,6 +1071,7 @@ Gate:
 - no missing history is filled as zero evidence
 - report includes starter-known rate
 - report includes starter evidence coverage by starts, batters faced, and pitches
+- report includes starter-exit distribution coverage
 
 ### Phase E: Opponent Matchup Quality
 
@@ -1038,11 +1118,29 @@ Gate:
 - report includes bullpen snapshot coverage
 - null-safe rows for missing snapshots
 
-### Phase H: Reliever Performance State
+### Phase H: Reliever Availability Reset And First-Up Router
 
 Deliverables:
 
 - likely first-reliever and relief-chain joins
+- adaptive reset-state distribution fields
+- candidate-arm availability distribution fields
+- first-up probability distribution fields
+- remaining-pool quality fields
+- bullpen churn regime fields
+
+Gate:
+
+- no hard pitch-count removal rule becomes an M3 feature
+- missing likely-chain data produces unknown flags, not invented reliever identities
+- pitcher-level quick-reuse sparsity is represented with evidence coverage
+- team-level quick-reuse behavior is a fallback surface, not a universal rule
+- report includes reliever availability and first-up router coverage
+
+### Phase I: Reliever Performance State
+
+Deliverables:
+
 - individual relief-arm evidence coverage
 - expected entry-state and workload distribution fields
 - inherited-runner and traffic-damage state fields
@@ -1051,11 +1149,11 @@ Deliverables:
 Gate:
 
 - no team bullpen aggregate may fill an individual reliever field
-- missing likely-chain data produces unknown flags, not invented reliever identities
+- reliever performance consumes router outputs instead of assuming the first listed arm enters
 - report includes relief-chain coverage and individual-arm evidence coverage
 - first-reliever pitch count and batters-faced outputs remain distributions
 
-### Phase I: Lineup Context
+### Phase J: Lineup Context
 
 Deliverables:
 
@@ -1068,7 +1166,7 @@ Gate:
 - official lineup absence is represented as unknown, not zero
 - partial lineups are flagged
 
-### Phase J: Market Context
+### Phase K: Market Context
 
 Deliverables:
 
@@ -1081,7 +1179,7 @@ Gate:
 - no post-start snapshots
 - market timestamp age is reported
 
-### Phase J: Matrix Write And Validation
+### Phase L: Matrix Write And Validation
 
 Deliverables:
 
@@ -1127,7 +1225,13 @@ Minimum JSON report:
   "source_tables": [],
   "missingness": {},
   "evidence_coverage": {},
+  "starter_exit_coverage": {},
   "matchup_coverage": {},
+  "reliever_availability_coverage": {},
+  "first_up_reliever_router_coverage": {},
+  "reliever_chain_coverage": {},
+  "reliever_arm_coverage": {},
+  "bullpen_churn_coverage": {},
   "attribution_coverage": {},
   "leakage_checks": {},
   "lineage": {},
@@ -1276,16 +1380,17 @@ These block later M3 stages:
 4. Add validator for primary key, target prefix, feature dictionary, and leakage classes.
 5. Add source coverage audit for opponent matchup, evidence reliability, and replay attribution.
 6. Add team baseline/state shape.
-7. Add starter path with sample/evidence reliability fields.
+7. Add starter path with exit/workload distribution and evidence reliability fields.
 8. Add opponent pitch-matchup quality.
 9. Add gated replay-state attribution features if validator is green.
-10. Add reliever performance state and relief-chain distributions.
-11. Add bullpen shape.
-12. Add lineup context.
-13. Add market context.
-14. Run first matrix build for `2026-03-26` through `2026-05-31`.
-15. Review missingness, matchup coverage, attribution coverage, and leakage report.
-16. Freeze `M3-FS-001` v0.1.0 and open the backtest run plan.
+10. Add bullpen shape and churn-regime fields.
+11. Add reliever availability reset and first-up router distributions.
+12. Add reliever performance state and relief-chain damage distributions.
+13. Add lineup context.
+14. Add market context.
+15. Run first matrix build for `2026-03-26` through `2026-05-31`.
+16. Review missingness, matchup coverage, attribution coverage, reliever routing coverage, and leakage report.
+17. Freeze `M3-FS-001` v0.1.0 and open the backtest run plan.
 
 ## Audit Follow-Ups
 
@@ -1295,7 +1400,9 @@ These are the follow-ups from the run-plan audit before implementation starts:
 - Inspect the alpha source tables and write down exact column mappings before SQL work starts.
 - Declare the first `evidence_policy_id` in the contract and decide whether the initial dry run uses a small evidence set or the fuller baseline/residual grid.
 - Confirm market timestamp semantics and choose either canonical `market_*` tables, no-market v0.1.0, or typed `mlb_featured_market_odds_snapshots` fallback.
+- Confirm starter workload path source coverage before materializing exit/hook distributions.
 - Confirm `likely_relief_chains` identity coverage and `reliever_command_profiles` freshness before materializing individual reliever state.
+- Confirm old RF36/E35/E36 research fields are mapped as lineage/prior candidates, not copied as hard-coded rules.
 - Confirm local Parquet support (`pyarrow`, `fastparquet`, or DuckDB export) in the workspace runtime before choosing the writer implementation.
 - Create the contract JSON first, then make the builder validate against it.
 - Run a skeleton dry-run before adding feature blocks, so CLI/report/output conventions are stable.

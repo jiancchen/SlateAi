@@ -12,7 +12,7 @@ Raw ingestion answers: what happened, from what source, as of when?
 
 Feature materialization answers: what reusable, versioned signal can M3 train, backtest, simulate, or price from those facts?
 
-Downstream props should be contracts over shared distributions, not isolated feature piles. Game totals, team totals, starter strikeout/outs props, reliever workload/damage props, and hitter hits/total-bases/home-run props should consume common game/team/starter/reliever/player event distributions.
+Downstream props should be contracts over shared distributions, not isolated feature piles. Game totals, team totals, starter strikeout/outs props, reliever workload/damage props, and hitter hits/total-bases/home-run props should consume common game/team/starter-exit/reliever-availability/reliever-chain/player event distributions.
 
 ## Initial Feature Families
 
@@ -22,7 +22,9 @@ These are candidates to rebuild from the useful ideas currently mixed into legac
 - sample-size shrinkage and confidence weights
 - player current-state residual features
 - pitcher/batter pitch-mix matchup and state-memory features
+- starter exit, hook timing, and workload-path features
 - bullpen usage, chain, fatigue, and fragility features
+- reliever availability reset and first-up routing features
 - individual reliever performance, entry-state, inherited-runner, and workload features
 - mistake-shape and chaos/regime features
 - first-inning and F5 state features
