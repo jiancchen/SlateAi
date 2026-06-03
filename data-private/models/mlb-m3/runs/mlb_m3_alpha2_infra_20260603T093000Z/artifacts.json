@@ -95,6 +95,14 @@
       "role": "report",
       "sha256": "1e07e33b5a23c2bbe071e51166788cc5916eaddbf25294c6175abec53855eff5",
       "source": "alpha2_generated"
+    },
+    {
+      "bytes": 1169,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_20260603T093000Z/manifest_validation.json",
+      "role": "manifest_validation",
+      "sha256": "e7b5ff885a4f5ae76d482565d8a4bdbfed0f2063820f8b864b3fded7342afe12",
+      "source": "alpha2_generated"
     }
   ],
   "created_at": "2026-06-03T09:33:14Z",

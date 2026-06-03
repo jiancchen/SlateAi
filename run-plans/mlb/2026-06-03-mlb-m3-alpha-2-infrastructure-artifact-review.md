@@ -44,9 +44,11 @@ data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_20260603T093000Z/
 | `artifacts.json` valid JSON | pass |
 | `typed_model_registry_preview.json` valid JSON | pass |
 | `warnings.json` valid JSON | pass |
+| `manifest_validation.json` valid JSON | pass |
+| Alpha-2 manifest validator | pass |
 | Referenced input artifacts | 7 |
-| Artifact index entries | 12 |
-| Registry artifact preview rows | 13 |
+| Artifact index entries | 13 |
+| Registry artifact preview rows | 14 |
 | Missing referenced artifacts | 0 |
 | Present artifacts without hash | 0 |
 | Component placeholders | 12 |
@@ -60,7 +62,7 @@ The generated preview maps the run to existing typed model metadata tables witho
 | Preview Section | Count |
 | --- | ---: |
 | `model_runs` | 1 |
-| `model_run_artifacts` | 13 |
+| `model_run_artifacts` | 14 |
 | `model_component_runs` | 12 |
 | `model_run_lanes` | 7 |
 

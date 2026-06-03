@@ -230,6 +230,10 @@ python3 -m py_compile pipeline/mlb/m3/runs/create_alpha2_manifest.py
 ```
 
 ```bash
+python3 -m py_compile pipeline/mlb/m3/runs/validate_alpha2_manifest.py
+```
+
+```bash
 python3 -m pipeline.mlb.m3.runs.create_alpha2_manifest \
   --feature-report data-migration/reports/m3_fs_001_game_shape_starter_v1_2026-03-26_to_2026-05-31.json \
   --output-dir data-private/models/mlb-m3/runs
@@ -237,6 +241,13 @@ python3 -m pipeline.mlb.m3.runs.create_alpha2_manifest \
 
 ```bash
 python3 -m json.tool data-private/models/mlb-m3/runs/<run_id>/manifest.json >/tmp/m3_alpha_2_manifest_check.json
+```
+
+```bash
+python3 -m pipeline.mlb.m3.runs.validate_alpha2_manifest \
+  --manifest data-private/models/mlb-m3/runs/<run_id>/manifest.json \
+  --report data-private/models/mlb-m3/runs/<run_id>/manifest_validation.json \
+  --json
 ```
 
 ## Commit Cadence

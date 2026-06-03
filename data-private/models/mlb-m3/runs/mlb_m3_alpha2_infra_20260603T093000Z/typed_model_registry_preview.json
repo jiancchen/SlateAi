@@ -557,6 +557,20 @@
       },
       "source_pk": "m3_fs_001_game_shape_starter_v1_20260603T091939Z",
       "source_table": "alpha2_generated"
+    },
+    {
+      "artifact_path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_20260603T093000Z/manifest_validation.json",
+      "artifact_role": "manifest_validation",
+      "created_at": "2026-06-03T09:33:14Z",
+      "exists_flag": 1,
+      "model_run_artifact_id": "mlb_m3_alpha2_infra_20260603T093000Z:manifest_validation",
+      "model_run_id": "mlb_m3_alpha2_infra_20260603T093000Z",
+      "sha256": "e7b5ff885a4f5ae76d482565d8a4bdbfed0f2063820f8b864b3fded7342afe12",
+      "source_detail_json": {
+        "bytes": 1169
+      },
+      "source_pk": "mlb_m3_alpha2_infra_20260603T093000Z",
+      "source_table": "alpha2_generated"
     }
   ],
   "model_run_lanes": [

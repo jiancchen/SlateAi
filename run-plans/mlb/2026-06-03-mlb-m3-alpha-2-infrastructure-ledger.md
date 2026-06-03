@@ -34,6 +34,7 @@ Status: opened
 | A2-W006 | Generate first alpha-2 run manifest | complete | `data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_20260603T093000Z/manifest.json` | Used the committed alpha-1 feature report. |
 | A2-W007 | Validate generated JSON and compile checks | complete | validation log below | JSON validation passed; no missing referenced artifacts or missing hashes. |
 | A2-W008 | Review generated artifact for scope creep | complete | `2026-06-03-mlb-m3-alpha-2-infrastructure-artifact-review.md` | Confirmed no training/backtest/selection claims. |
+| A2-W009 | Add manifest validator | complete | `pipeline/mlb/m3/runs/validate_alpha2_manifest.py` | Checks manifest shape, artifact hashes, placeholder statuses, preview-only typed metadata, and non-goal scope. |
 
 ## Typed Table Ledger
 
@@ -51,6 +52,7 @@ Status: opened
 | Alpha-2 run plan | exists | `run-plans/mlb/2026-06-03-mlb-m3-alpha-2-infrastructure-run-plan.md` |
 | Alpha-2 ledger | exists | `run-plans/mlb/2026-06-03-mlb-m3-alpha-2-infrastructure-ledger.md` |
 | Manifest generator | exists | `pipeline/mlb/m3/runs/create_alpha2_manifest.py` |
+| Manifest validator | exists | `pipeline/mlb/m3/runs/validate_alpha2_manifest.py` |
 | First manifest | exists | `data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_20260603T093000Z/manifest.json` |
 | Dashboard state | exists | `data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_20260603T093000Z/dashboard_state.json` |
 | Registry preview | exists | `data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_20260603T093000Z/typed_model_registry_preview.json` |
@@ -58,6 +60,7 @@ Status: opened
 | Lineage | exists | `data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_20260603T093000Z/lineage.json` |
 | Warnings | exists | `data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_20260603T093000Z/warnings.json` |
 | Run report | exists | `data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_20260603T093000Z/report.md` |
+| Manifest validation report | exists | `data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_20260603T093000Z/manifest_validation.json` |
 | Artifact review | exists | `run-plans/mlb/2026-06-03-mlb-m3-alpha-2-infrastructure-artifact-review.md` |
 
 ## Scope Guard
@@ -85,7 +88,9 @@ No stops yet.
 ## Verification Log
 
 - 2026-06-03: `python3 -m py_compile pipeline/mlb/m3/runs/create_alpha2_manifest.py` passed.
+- 2026-06-03: `python3 -m py_compile pipeline/mlb/m3/runs/validate_alpha2_manifest.py` passed.
 - 2026-06-03: `python3 -m pipeline.mlb.m3.runs.create_alpha2_manifest --help` passed.
 - 2026-06-03: Generated `mlb_m3_alpha2_infra_20260603T093000Z` with zero warnings.
 - 2026-06-03: `python3 -m json.tool` passed for all generated alpha-2 JSON files.
-- 2026-06-03: Artifact hash check found 7 manifest input artifacts, 12 artifact index entries, 13 registry artifact rows, zero missing artifacts, and zero present artifacts without hashes.
+- 2026-06-03: Artifact hash check found 7 manifest input artifacts, 13 artifact index entries, 14 registry artifact rows, zero missing artifacts, and zero present artifacts without hashes.
+- 2026-06-03: `python3 -m pipeline.mlb.m3.runs.validate_alpha2_manifest --manifest data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_20260603T093000Z/manifest.json --report data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_20260603T093000Z/manifest_validation.json --json` passed with 18 checks, zero errors, and zero warnings.
