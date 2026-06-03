@@ -1,0 +1,44 @@
+{
+  "checks": {
+    "game_field_mismatches": 0,
+    "legacy_game_scores_without_typed_outcome_match": 0,
+    "legacy_games_without_typed_match": 0,
+    "legacy_starting_pitchers_without_typed_match": 0,
+    "pitch_event_row_count_delta": 0,
+    "plate_appearance_row_count_delta": 0,
+    "typed_games_without_legacy_match": 0,
+    "typed_starting_pitchers_without_legacy_match": 0
+  },
+  "counts": {
+    "legacy_games": 899,
+    "legacy_pitch_events": 304181,
+    "legacy_plate_appearances": 67251,
+    "legacy_starting_pitchers": 1776,
+    "typed_games": 899,
+    "typed_pitch_events": 304181,
+    "typed_plate_appearances": 67251,
+    "typed_starting_pitchers": 1776
+  },
+  "errors": [],
+  "generated_at": "2026-06-03T03:55:58.138511+00:00",
+  "legacy_db": "data-private/warehouse/sports.db",
+  "ok": true,
+  "samples": {
+    "game_field_mismatches": [],
+    "legacy_starting_pitchers_without_typed_match": []
+  },
+  "script": "data-migration/scripts/validate_mlb_core_feed_parity.py",
+  "source_snapshot_coverage": {
+    "legacy_game_raw_paths": 899,
+    "legacy_game_raw_paths_in_typed_snapshots": 899,
+    "legacy_mlb_source_snapshots": 7560,
+    "typed_games_with_resolving_source_snapshot_id": 15,
+    "typed_games_with_source_snapshot_id": 15,
+    "typed_mlb_source_snapshots": 2251
+  },
+  "typed_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "warnings": [
+    "Not every typed game has a direct source_snapshot_id; source snapshot coverage remains a separate cutover gate.",
+    "Legacy and typed MLB source snapshot counts differ; run source snapshot coverage phase before final sports.db retirement."
+  ]
+}
