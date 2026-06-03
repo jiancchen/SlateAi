@@ -1,0 +1,399 @@
+{
+  "hitter_path": {
+    "away_lineup_known_rate": 0.8860045146726863,
+    "away_pitch_type_response_coverage_avg": 0.986694975230007,
+    "away_statcast_coverage_avg": 0.9932059447983015,
+    "home_lineup_known_rate": 0.8905191873589164,
+    "home_pitch_type_response_coverage_avg": 0.9854950007041262,
+    "home_statcast_coverage_avg": 0.991128010139417
+  },
+  "market_context": {
+    "pregame_snapshot_rate": 0.9424379232505643
+  },
+  "reliever_chain": {
+    "away_candidate_pool_size_avg": 1.9661399548532732,
+    "away_chain_known_rate": 0.9830699774266366,
+    "away_command_coverage_avg": 0.22388059701492538,
+    "home_candidate_pool_size_avg": 1.9661399548532732,
+    "home_chain_known_rate": 0.9830699774266366,
+    "home_command_coverage_avg": 0.21526980482204364
+  },
+  "row_count": 886,
+  "source_tables": {
+    "bullpen_usage_snapshots": {
+      "column_count": 25,
+      "date_ranges": {
+        "created_at": {
+          "max": "2026-06-02T09:34:55.052462+00:00",
+          "min": "2026-06-02T09:34:54.565123+00:00"
+        },
+        "snapshot_date": {
+          "max": "2026-06-01",
+          "min": "2026-03-27"
+        }
+      },
+      "object_type": "table",
+      "present": true,
+      "row_count": 16542
+    },
+    "game_outcomes": {
+      "column_count": 26,
+      "date_ranges": {
+        "completed_at": {
+          "max": "2026-05-31",
+          "min": "2026-03-26"
+        },
+        "updated_at": {
+          "max": "2026-06-02T21:38:46.623439+00:00",
+          "min": "2026-06-02T09:09:29.741631+00:00"
+        }
+      },
+      "object_type": "table",
+      "present": true,
+      "row_count": 886
+    },
+    "game_story_labels": {
+      "column_count": 19,
+      "date_ranges": {
+        "created_at": {
+          "max": "2026-06-02T16:36:06.275362+00:00",
+          "min": "2026-06-02T16:36:06.262622+00:00"
+        },
+        "game_date": {
+          "max": "2026-05-31",
+          "min": "2026-03-26"
+        }
+      },
+      "object_type": "table",
+      "present": true,
+      "row_count": 886
+    },
+    "game_story_signals": {
+      "column_count": 29,
+      "date_ranges": {
+        "created_at": {
+          "max": "2026-06-02T16:36:06.296707+00:00",
+          "min": "2026-06-02T16:36:06.275392+00:00"
+        },
+        "game_date": {
+          "max": "2026-05-31",
+          "min": "2026-03-26"
+        }
+      },
+      "object_type": "table",
+      "present": true,
+      "row_count": 886
+    },
+    "games": {
+      "column_count": 11,
+      "date_ranges": {
+        "game_date": {
+          "max": "2026-06-01",
+          "min": "2026-03-26"
+        },
+        "start_time_utc": {
+          "max": "2026-06-02T01:40:00Z",
+          "min": "2026-03-26T17:15:00Z"
+        }
+      },
+      "object_type": "table",
+      "present": true,
+      "row_count": 899
+    },
+    "likely_relief_chains": {
+      "column_count": 18,
+      "date_ranges": {
+        "created_at": {
+          "max": "2026-06-02T09:34:55.168530+00:00",
+          "min": "2026-06-02T09:34:55.052501+00:00"
+        },
+        "snapshot_date": {
+          "max": "2026-06-01",
+          "min": "2026-03-27"
+        }
+      },
+      "object_type": "table",
+      "present": true,
+      "row_count": 3508
+    },
+    "lineup_matchup_snapshots": {
+      "column_count": 24,
+      "date_ranges": {
+        "created_at": {
+          "max": "2026-06-02T21:47:59.047607+00:00",
+          "min": "2026-06-02T09:16:01.636101+00:00"
+        },
+        "snapshot_date": {
+          "max": "2026-05-31",
+          "min": "2026-03-31"
+        }
+      },
+      "object_type": "table",
+      "present": true,
+      "row_count": 17924
+    },
+    "lineup_slots": {
+      "column_count": 4,
+      "date_ranges": {},
+      "object_type": "table",
+      "present": true,
+      "row_count": 14435
+    },
+    "lineups": {
+      "column_count": 6,
+      "date_ranges": {
+        "captured_at": {
+          "max": "2026-06-01T21:35:49Z",
+          "min": "2026-05-31T18:17:29.710Z"
+        }
+      },
+      "object_type": "table",
+      "present": true,
+      "row_count": 1604
+    },
+    "market_snapshots": {
+      "column_count": 12,
+      "date_ranges": {
+        "captured_at": {
+          "max": "2026-05-31T17:52:48.365Z",
+          "min": "2026-03-26T01:45:09Z"
+        }
+      },
+      "object_type": "table",
+      "present": true,
+      "row_count": 2408
+    },
+    "phase_outcomes": {
+      "column_count": 37,
+      "date_ranges": {
+        "created_at": {
+          "max": "2026-06-02T09:09:30.158337+00:00",
+          "min": "2026-06-02T09:09:30.103558+00:00"
+        },
+        "game_date": {
+          "max": "2026-05-31",
+          "min": "2026-03-26"
+        }
+      },
+      "object_type": "table",
+      "present": true,
+      "row_count": 1772
+    },
+    "pitch_events": {
+      "column_count": 29,
+      "date_ranges": {},
+      "object_type": "table",
+      "present": true,
+      "row_count": 304181
+    },
+    "pitcher_appearances": {
+      "column_count": 25,
+      "date_ranges": {
+        "created_at": {
+          "max": "2026-06-02T09:09:30.737180+00:00",
+          "min": "2026-06-02T09:09:30.158445+00:00"
+        },
+        "game_date": {
+          "max": "2026-05-31",
+          "min": "2026-03-26"
+        }
+      },
+      "object_type": "table",
+      "present": true,
+      "row_count": 7498
+    },
+    "pitcher_mistake_shape_snapshots": {
+      "column_count": 23,
+      "date_ranges": {
+        "created_at": {
+          "max": "2026-06-02T09:29:58.672797+00:00",
+          "min": "2026-06-02T09:29:58.571659+00:00"
+        },
+        "snapshot_date": {
+          "max": "2026-05-31",
+          "min": "2026-03-31"
+        }
+      },
+      "object_type": "table",
+      "present": true,
+      "row_count": 3024
+    },
+    "pitcher_pitch_mix_snapshots": {
+      "column_count": 19,
+      "date_ranges": {
+        "created_at": {
+          "max": "2026-06-02T09:30:02.201011+00:00",
+          "min": "2026-06-02T09:29:58.672839+00:00"
+        },
+        "snapshot_date": {
+          "max": "2026-05-31",
+          "min": "2026-03-27"
+        }
+      },
+      "object_type": "table",
+      "present": true,
+      "row_count": 135153
+    },
+    "plate_appearances": {
+      "column_count": 30,
+      "date_ranges": {},
+      "object_type": "table",
+      "present": true,
+      "row_count": 67251
+    },
+    "player_opponent_context_snapshots": {
+      "column_count": 21,
+      "date_ranges": {
+        "created_at": {
+          "max": "2026-06-02T09:24:23.221714+00:00",
+          "min": "2026-06-02T09:24:22.566686+00:00"
+        },
+        "snapshot_date": {
+          "max": "2026-06-01",
+          "min": "2026-03-27"
+        }
+      },
+      "object_type": "table",
+      "present": true,
+      "row_count": 25167
+    },
+    "player_pitch_type_response_snapshots": {
+      "column_count": 19,
+      "date_ranges": {
+        "created_at": {
+          "max": "2026-06-02T09:24:28.446274+00:00",
+          "min": "2026-06-02T09:24:23.221741+00:00"
+        },
+        "snapshot_date": {
+          "max": "2026-05-31",
+          "min": "2026-03-27"
+        }
+      },
+      "object_type": "table",
+      "present": true,
+      "row_count": 206697
+    },
+    "player_statcast_snapshots": {
+      "column_count": 39,
+      "date_ranges": {
+        "created_at": {
+          "max": "2026-06-02T09:24:30.231042+00:00",
+          "min": "2026-06-02T09:24:29.276475+00:00"
+        },
+        "snapshot_date": {
+          "max": "2026-06-01",
+          "min": "2026-03-27"
+        }
+      },
+      "object_type": "table",
+      "present": true,
+      "row_count": 25797
+    },
+    "reliever_command_profiles": {
+      "column_count": 20,
+      "date_ranges": {
+        "created_at": {
+          "max": "2026-06-02T09:34:55.270167+00:00",
+          "min": "2026-06-02T09:34:55.168560+00:00"
+        },
+        "snapshot_date": {
+          "max": "2026-06-01",
+          "min": "2026-05-13"
+        }
+      },
+      "object_type": "table",
+      "present": true,
+      "row_count": 4113
+    },
+    "starting_pitcher_game_logs": {
+      "column_count": 23,
+      "date_ranges": {
+        "created_at": {
+          "max": "2026-06-02T09:09:31.646698+00:00",
+          "min": "2026-06-02T09:09:31.503330+00:00"
+        },
+        "game_date": {
+          "max": "2026-05-31",
+          "min": "2026-03-26"
+        }
+      },
+      "object_type": "table",
+      "present": true,
+      "row_count": 1776
+    },
+    "starting_pitchers": {
+      "column_count": 6,
+      "date_ranges": {
+        "updated_at": {
+          "max": "2026-06-02T22:45:00.983801+00:00",
+          "min": "2026-06-02T22:45:00.875482+00:00"
+        }
+      },
+      "object_type": "table",
+      "present": true,
+      "row_count": 1776
+    },
+    "team_bullpen_shape_snapshots": {
+      "column_count": 33,
+      "date_ranges": {
+        "created_at": {
+          "max": "2026-06-02T09:34:55.331469+00:00",
+          "min": "2026-06-02T09:34:55.270200+00:00"
+        },
+        "snapshot_date": {
+          "max": "2026-06-01",
+          "min": "2026-03-27"
+        }
+      },
+      "object_type": "table",
+      "present": true,
+      "row_count": 1754
+    },
+    "team_game_stats": {
+      "column_count": 36,
+      "date_ranges": {
+        "created_at": {
+          "max": "2026-06-02T09:09:29.857099+00:00",
+          "min": "2026-06-02T09:09:29.779626+00:00"
+        },
+        "game_date": {
+          "max": "2026-05-31",
+          "min": "2026-03-26"
+        }
+      },
+      "object_type": "table",
+      "present": true,
+      "row_count": 1776
+    },
+    "teams": {
+      "column_count": 7,
+      "date_ranges": {},
+      "object_type": "table",
+      "present": true,
+      "row_count": 30
+    },
+    "venues": {
+      "column_count": 9,
+      "date_ranges": {},
+      "object_type": "table",
+      "present": true,
+      "row_count": 31
+    }
+  },
+  "starter_path": {
+    "away_low_evidence_rate": 0.38487584650112866,
+    "away_mistake_shape_coverage_rate": 0.8487584650112867,
+    "away_pitch_mix_coverage_rate": 0.8905191873589164,
+    "away_starter_known_rate": 1.0,
+    "home_low_evidence_rate": 0.37358916478555304,
+    "home_mistake_shape_coverage_rate": 0.8532731376975169,
+    "home_pitch_mix_coverage_rate": 0.8860045146726863,
+    "home_starter_known_rate": 1.0
+  },
+  "story_memory": {
+    "away_days_since_prior_game_missing_rate": 0.016930022573363433,
+    "away_prior_game_count_avg": 29.085778781038375,
+    "home_days_since_prior_game_missing_rate": 0.016930022573363433,
+    "home_prior_game_count_avg": 29.08352144469526
+  }
+}
