@@ -4,7 +4,7 @@ Date: 2026-06-03
 
 Phase ID: `mlb-m3-alpha-7-distribution-output`
 
-Status: planned
+Status: implemented as metrics-only diagnostics; promotion remains blocked
 
 Ledger: `run-plans/mlb/2026-06-03-mlb-m3-alpha-7-distribution-output-ledger.md`
 
@@ -18,14 +18,14 @@ This phase must not convert validation residuals into fake probabilities. Distri
 
 ## Starting Point
 
-Current live FS-004 artifacts:
+Starting FS-004 artifacts:
 
 - feature matrix: `m3_fs_004_state_path_redesign_v0_20260603T174237Z`
 - row harness: `training_harness_alpha6_row_predictions`
 - row-aware tail audit: `tail_calibration_alpha6_row_predictions`
 - residual calibration bins: `residual_calibration_bins.json`
 
-Current gate status:
+Starting gate status:
 
 | Gate | Status |
 | --- | --- |
@@ -33,6 +33,17 @@ Current gate status:
 | Residual calibration bins | live |
 | Probability/distribution outputs | missing |
 | Probability calibration | missing |
+| Candidate beats baseline | fail |
+| Promotion | blocked |
+
+Current Alpha-7 gate status after implementation:
+
+| Gate | Status |
+| --- | --- |
+| Row-level predictions/residuals | live |
+| Residual calibration bins | live |
+| Probability/distribution outputs | live as diagnostic distributions |
+| Probability calibration | still missing |
 | Candidate beats baseline | fail |
 | Promotion | blocked |
 
@@ -109,32 +120,31 @@ Meaning:
 ```mermaid
 flowchart TD
   FS004["FS-004 matrix<br/>status: live"] --> HROW["Row prediction harness<br/>status: live"]
-  HROW --> TRAINRES["Train-side residual fit<br/>status: missing"]
-  TRAINRES --> DIST["Distribution diagnostic rows<br/>status: missing"]
-  DIST --> COVER["Coverage and interval diagnostics<br/>status: missing"]
+  HROW --> TRAINRES["Train-side residual fit<br/>status: live"]
+  TRAINRES --> DIST["Distribution diagnostic rows<br/>status: live"]
+  DIST --> COVER["Coverage and interval diagnostics<br/>status: live"]
   DIST --> REGIME["Regime probability diagnostics<br/>status: missing"]
-  COVER --> GATE["Promotion rejection gate<br/>status: missing"]
+  COVER --> GATE["Promotion rejection gate<br/>status: live"]
   REGIME --> GATE
-  GATE --> STATE["State tracker update<br/>status: planned"]
+  GATE --> STATE["State tracker update<br/>status: live"]
 
   classDef live fill:#dff3df,stroke:#367c39,color:#102b13;
   classDef missing fill:#ffd9d9,stroke:#aa3b3b,color:#3b1111;
   classDef planned fill:#d7ecff,stroke:#2f6f9f,color:#0d2638;
 
-  class FS004,HROW live;
-  class TRAINRES,DIST,COVER,REGIME,GATE missing;
-  class STATE planned;
+  class FS004,HROW,TRAINRES,DIST,COVER,GATE,STATE live;
+  class REGIME missing;
 ```
 
 ## Work Plan
 
-1. Extend the harness or add a companion audit to write train-side fitted residual distributions per fold/lane.
-2. Generate diagnostic distribution rows for validation rows only.
-3. Add interval coverage diagnostics: 50%, 80%, and 90% coverage by lane, fold, and regime.
-4. Add bucket/regime probability diagnostics only if probabilities are trained from fold-safe data.
-5. Add a validator that rejects distribution artifacts if fit scope includes validation rows.
-6. Regenerate FS-004 row-aware audit with distribution artifact awareness.
-7. Update the state tracker and ledger.
+1. Extend the harness or add a companion audit to write train-side fitted residual distributions per fold/lane. Status: complete.
+2. Generate diagnostic distribution rows for validation rows only. Status: complete.
+3. Add interval coverage diagnostics: 50%, 80%, and 90% coverage by lane, fold, and regime. Status: complete.
+4. Add bucket/regime probability diagnostics only if probabilities are trained from fold-safe data. Status: deferred; no bucket probabilities were produced.
+5. Add a validator that rejects distribution artifacts if fit scope includes validation rows. Status: complete.
+6. Regenerate FS-004 row-aware audit with distribution artifact awareness. Status: complete.
+7. Update the state tracker and ledger. Status: complete.
 
 ## Acceptance Gate
 
@@ -146,6 +156,8 @@ Alpha-7 is accepted only when:
 - tail/regime coverage diagnostics exist
 - validator rejects leakage-prone distribution outputs
 - no picks, prices, promotion, simulator output, or edge claim exists
+
+Acceptance result: accepted as diagnostic feedback infrastructure. It does not clear model promotion because the candidate-beats-baseline gate remains failed.
 
 ## First Implementation Slice
 

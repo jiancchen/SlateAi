@@ -497,6 +497,17 @@ def find_prediction_artifacts(harness_dir: Path) -> list[str]:
     return sorted(candidates)
 
 
+def find_distribution_artifacts(harness_dir: Path) -> list[str]:
+    candidates: list[str] = []
+    for path in harness_dir.rglob("*"):
+        if not path.is_file():
+            continue
+        lower = str(path.relative_to(harness_dir)).lower()
+        if "distribution_outputs" in lower or "distribution" in lower:
+            candidates.append(str(path))
+    return sorted(candidates)
+
+
 def rows_for_prediction_slice(rows: list[dict[str, Any]]) -> list[tuple[str, str, list[dict[str, Any]]]]:
     slices: list[tuple[str, str, list[dict[str, Any]]]] = [("all", "All rows", rows)]
     for column in BUCKET_COLUMNS:
@@ -782,14 +793,135 @@ def report_residual_calibration_rows(
     return rows[:limit]
 
 
+def distribution_interval_metrics(rows: list[dict[str, Any]]) -> dict[str, Any]:
+    payload: dict[str, Any] = {"row_count": len(rows), "intervals": {}}
+    for interval in ["50", "80", "90"]:
+        hit_key = f"prediction_interval_{interval}_hit"
+        lower_key = f"prediction_interval_{interval}_lower"
+        upper_key = f"prediction_interval_{interval}_upper"
+        hit_values = [
+            row.get(hit_key)
+            for row in rows
+            if isinstance(row.get(hit_key), bool)
+        ]
+        widths: list[float] = []
+        for row in rows:
+            lower = safe_float(row.get(lower_key))
+            upper = safe_float(row.get(upper_key))
+            if lower is None or upper is None:
+                continue
+            widths.append(upper - lower)
+        payload["intervals"][f"prediction_interval_{interval}"] = {
+            "row_count": len(hit_values),
+            "hit_count": sum(1 for value in hit_values if value),
+            "coverage_rate": None
+            if not hit_values
+            else sum(1 for value in hit_values if value) / len(hit_values),
+            "average_width": None if not widths else sum(widths) / len(widths),
+        }
+    return payload
+
+
+def distribution_coverage_summary(distribution_artifacts: list[str]) -> dict[str, Any]:
+    if not distribution_artifacts:
+        return {
+            "status": "missing",
+            "reason": "No distribution output artifacts were found.",
+            "artifacts": [],
+        }
+    artifact_summaries: list[dict[str, Any]] = []
+    for artifact in distribution_artifacts:
+        path = Path(artifact)
+        rows = load_jsonl(path)
+        if not rows:
+            artifact_summaries.append(
+                {
+                    "path": artifact,
+                    "status": "empty",
+                    "row_count": 0,
+                    "slices": {},
+                }
+            )
+            continue
+        slices: dict[str, Any] = {}
+        for slice_id, description, slice_rows in rows_for_prediction_slice(rows):
+            slices[slice_id] = {
+                "description": description,
+                **distribution_interval_metrics(slice_rows),
+            }
+        artifact_summaries.append(
+            {
+                "path": artifact,
+                "status": "created",
+                "lane": str(rows[0].get("lane")),
+                "split_kind": str(rows[0].get("split_kind")),
+                "fold_id": str(rows[0].get("fold_id")),
+                "distribution_family": str(rows[0].get("distribution_family")),
+                "distribution_fit_scope": str(rows[0].get("distribution_fit_scope")),
+                "distribution_fit_rows": rows[0].get("distribution_fit_rows"),
+                "row_count": len(rows),
+                "slices": slices,
+            }
+        )
+    return {
+        "status": "created",
+        "artifact_count": len(distribution_artifacts),
+        "coverage_kind": "prediction_interval_hit_rate",
+        "artifacts": artifact_summaries,
+    }
+
+
+def report_distribution_coverage_rows(
+    distribution_summary: dict[str, Any],
+    limit: int = 12,
+) -> list[dict[str, Any]]:
+    if distribution_summary.get("status") != "created":
+        return []
+    rows: list[dict[str, Any]] = []
+    for artifact in distribution_summary.get("artifacts", []):
+        all_slice = artifact.get("slices", {}).get("all", {})
+        intervals = all_slice.get("intervals", {})
+        rows.append(
+            {
+                "lane": artifact.get("lane"),
+                "split_kind": artifact.get("split_kind"),
+                "fold_id": artifact.get("fold_id"),
+                "distribution_family": artifact.get("distribution_family"),
+                "distribution_fit_scope": artifact.get("distribution_fit_scope"),
+                "distribution_fit_rows": artifact.get("distribution_fit_rows"),
+                "row_count": artifact.get("row_count"),
+                "coverage_50": intervals.get("prediction_interval_50", {}).get(
+                    "coverage_rate"
+                ),
+                "coverage_80": intervals.get("prediction_interval_80", {}).get(
+                    "coverage_rate"
+                ),
+                "coverage_90": intervals.get("prediction_interval_90", {}).get(
+                    "coverage_rate"
+                ),
+            }
+        )
+    return rows[:limit]
+
+
 def promotion_gate_summary(
     df,
     walk_forward_summary: dict[str, Any],
     prediction_artifacts: list[str],
+    distribution_artifacts: list[str],
     residual_calibration_bins_exist: bool,
 ) -> dict[str, Any]:
-    missing_tail_targets = [column for column in TAIL_TARGET_COLUMNS if column not in df.columns]
-    probability_outputs_exist = any("probability" in artifact.lower() for artifact in prediction_artifacts)
+    missing_tail_targets = [
+        column for column in TAIL_TARGET_COLUMNS if column not in df.columns
+    ]
+    market_probability_outputs_exist = any(
+        "probability" in artifact.lower()
+        for artifact in [*prediction_artifacts, *distribution_artifacts]
+    )
+    distribution_outputs_exist = bool(distribution_artifacts)
+    probability_outputs_exist = (
+        market_probability_outputs_exist or distribution_outputs_exist
+    )
     calibration_bins_exist = residual_calibration_bins_exist or any(
         "calibration_bin" in artifact.lower() for artifact in prediction_artifacts
     )
@@ -814,6 +946,8 @@ def promotion_gate_summary(
         "missing_tail_targets": missing_tail_targets,
         "row_level_predictions_exist": row_predictions_exist,
         "probability_outputs_exist": probability_outputs_exist,
+        "market_probability_outputs_exist": market_probability_outputs_exist,
+        "distribution_outputs_exist": distribution_outputs_exist,
         "calibration_bins_exist": calibration_bins_exist,
         "candidate_beats_baseline_all_comparable_folds": candidate_all_folds,
         "blocking_reasons": blockers,
@@ -823,7 +957,6 @@ def promotion_gate_summary(
 
 def report_markdown(audit: dict[str, Any]) -> str:
     next_actions = [
-        "Add distribution/probability outputs before using the word calibration literally.",
         "Promote tail/regime labels into rejection gates for any future component candidate.",
         "Keep this metrics-only; no picks, prices, simulator logs, or edge claims.",
     ]
@@ -837,10 +970,15 @@ def report_markdown(audit: dict[str, Any]) -> str:
             0,
             "Create residual calibration bins from row-level prediction artifacts.",
         )
+    elif not audit["promotion_gate"]["probability_outputs_exist"]:
+        next_actions.insert(
+            0,
+            "Add distribution/probability outputs before using the word calibration literally.",
+        )
     else:
         next_actions.insert(
             0,
-            "Review residual calibration bins and candidate residual slice summaries.",
+            "Review distribution coverage, residual bins, and candidate residual slice summaries.",
         )
     lines = [
         "# MLB-M3 FS-004 Tail/Regime Calibration Audit",
@@ -854,7 +992,9 @@ def report_markdown(audit: dict[str, Any]) -> str:
         f"- Promotion gate: `{audit['promotion_gate']['status']}`",
         f"- Tail targets present: `{audit['promotion_gate']['tail_targets_present']}`",
         f"- Row-level predictions exist: `{audit['promotion_gate']['row_level_predictions_exist']}`",
-        f"- Probability outputs exist: `{audit['promotion_gate']['probability_outputs_exist']}`",
+        f"- Probability/distribution outputs exist: `{audit['promotion_gate']['probability_outputs_exist']}`",
+        f"- Market probability outputs exist: `{audit['promotion_gate']['market_probability_outputs_exist']}`",
+        f"- Distribution outputs exist: `{audit['promotion_gate']['distribution_outputs_exist']}`",
         f"- Calibration bins exist: `{audit['promotion_gate']['calibration_bins_exist']}`",
         f"- Candidate beats baseline in all comparable folds: `{audit['promotion_gate']['candidate_beats_baseline_all_comparable_folds']}`",
         "",
@@ -950,6 +1090,38 @@ def report_markdown(audit: dict[str, Any]) -> str:
                 + " |"
             )
         lines.append("")
+    if audit["distribution_coverage_summary"]["status"] == "created":
+        lines.extend(
+            [
+                "## Distribution Output Coverage",
+                "",
+                "These are fold-train residual-quantile diagnostic intervals, not market probabilities or prices.",
+                "",
+                "| Split | Fold | Lane | Rows | 50% Hit | 80% Hit | 90% Hit | Fit Scope |",
+                "| --- | --- | --- | ---: | ---: | ---: | ---: | --- |",
+            ]
+        )
+        for row in audit["report_distribution_coverage"]:
+            coverage_50 = safe_float(row["coverage_50"])
+            coverage_80 = safe_float(row["coverage_80"])
+            coverage_90 = safe_float(row["coverage_90"])
+            lines.append(
+                "| "
+                + " | ".join(
+                    [
+                        f"`{row['split_kind']}`",
+                        f"`{row['fold_id']}`",
+                        f"`{row['lane']}`",
+                        str(row["row_count"]),
+                        "" if coverage_50 is None else f"{coverage_50:.3f}",
+                        "" if coverage_80 is None else f"{coverage_80:.3f}",
+                        "" if coverage_90 is None else f"{coverage_90:.3f}",
+                        f"`{row['distribution_fit_scope']}`",
+                    ]
+                )
+                + " |"
+            )
+        lines.append("")
     if audit["residual_calibration_bins"]["status"] == "created":
         lines.extend(
             [
@@ -1038,12 +1210,15 @@ def audit_tail_calibration(
     walk_forward_gate = walk_forward_gate_summary(walk_forward)
     family_summary = summarize_family_ablations(family_ablations, lane_reports)
     prediction_artifacts = find_prediction_artifacts(harness_dir)
+    distribution_artifacts = find_distribution_artifacts(harness_dir)
     row_prediction_summary = row_prediction_slice_summary(prediction_artifacts)
     residual_bins = residual_calibration_bins(prediction_artifacts)
+    distribution_summary = distribution_coverage_summary(distribution_artifacts)
     promotion_gate = promotion_gate_summary(
         df,
         walk_forward_gate,
         prediction_artifacts,
+        distribution_artifacts,
         residual_bins.get("status") == "created",
     )
     top_slices = {
@@ -1052,6 +1227,7 @@ def audit_tail_calibration(
     }
     top_candidate_slices = top_candidate_tail_slices(row_prediction_summary)
     report_bins = report_residual_calibration_rows(residual_bins)
+    report_distribution_rows = report_distribution_coverage_rows(distribution_summary)
 
     finished_at = utc_now()
     audit = {
@@ -1073,24 +1249,32 @@ def audit_tail_calibration(
         "family_ablation_summary_uri": str(output_dir / "family_ablation_summary.json"),
         "row_prediction_slice_summary_uri": str(output_dir / "row_prediction_slice_summary.json"),
         "residual_calibration_bins_uri": str(output_dir / "residual_calibration_bins.json"),
+        "distribution_coverage_summary_uri": str(output_dir / "distribution_coverage_summary.json"),
         "prediction_artifacts_found": prediction_artifacts,
+        "distribution_artifacts_found": distribution_artifacts,
         "promotion_gate": promotion_gate,
         "walk_forward_gate": walk_forward_gate,
         "row_prediction_slice_summary": row_prediction_summary,
         "residual_calibration_bins": residual_bins,
+        "distribution_coverage_summary": distribution_summary,
         "top_baseline_tail_slices": top_slices,
         "top_candidate_tail_slices": top_candidate_slices,
         "report_residual_calibration_bins": report_bins,
+        "report_distribution_coverage": report_distribution_rows,
         "non_goals": NON_GOALS,
     }
     next_recommended_actions = [
-        "Add distribution/probability outputs before calibration claims.",
         "Use tail/regime slices as rejection gates for future candidates.",
     ]
-    if promotion_gate["calibration_bins_exist"]:
+    if not promotion_gate["probability_outputs_exist"]:
         next_recommended_actions.insert(
             0,
-            "Review residual calibration bins and candidate residual slice summaries.",
+            "Add distribution/probability outputs before calibration claims.",
+        )
+    elif promotion_gate["calibration_bins_exist"]:
+        next_recommended_actions.insert(
+            0,
+            "Review distribution coverage, residual bins, and candidate residual slice summaries.",
         )
     elif promotion_gate["row_level_predictions_exist"]:
         next_recommended_actions.insert(
@@ -1115,6 +1299,11 @@ def audit_tail_calibration(
         "row_level_predictions_exist": promotion_gate["row_level_predictions_exist"],
         "row_prediction_artifact_count": len(prediction_artifacts),
         "probability_outputs_exist": promotion_gate["probability_outputs_exist"],
+        "market_probability_outputs_exist": promotion_gate[
+            "market_probability_outputs_exist"
+        ],
+        "distribution_outputs_exist": promotion_gate["distribution_outputs_exist"],
+        "distribution_output_artifact_count": len(distribution_artifacts),
         "calibration_bins_exist": promotion_gate["calibration_bins_exist"],
         "residual_calibration_bins_exist": residual_bins.get("status") == "created",
         "next_recommended_actions": next_recommended_actions,
@@ -1128,6 +1317,7 @@ def audit_tail_calibration(
     write_json(output_dir / "family_ablation_summary.json", family_summary)
     write_json(output_dir / "row_prediction_slice_summary.json", row_prediction_summary)
     write_json(output_dir / "residual_calibration_bins.json", residual_bins)
+    write_json(output_dir / "distribution_coverage_summary.json", distribution_summary)
     write_json(output_dir / "dashboard_state.json", dashboard_state)
     write_json(output_dir / "tail_calibration_audit.json", audit)
     (output_dir / "report.md").write_text(report_markdown(audit), encoding="utf-8")
@@ -1143,6 +1333,7 @@ def audit_tail_calibration(
             artifact_entry("family_ablation_summary", output_dir / "family_ablation_summary.json"),
             artifact_entry("row_prediction_slice_summary", output_dir / "row_prediction_slice_summary.json"),
             artifact_entry("residual_calibration_bins", output_dir / "residual_calibration_bins.json"),
+            artifact_entry("distribution_coverage_summary", output_dir / "distribution_coverage_summary.json"),
             artifact_entry("dashboard_state", output_dir / "dashboard_state.json"),
             artifact_entry("report", output_dir / "report.md"),
         ],

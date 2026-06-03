@@ -6,7 +6,7 @@ Phase ID: `mlb-m3-alpha-7-distribution-output`
 
 Run plan: `run-plans/mlb/2026-06-03-mlb-m3-alpha-7-distribution-output-run-plan.md`
 
-Status: planned
+Status: complete as metrics-only distribution diagnostics; promotion remains blocked
 
 ## Decision Ledger
 
@@ -23,17 +23,23 @@ Status: planned
 | --- | --- | --- | --- | --- |
 | A7-W001 | Create Alpha-7 run plan | complete | `2026-06-03-mlb-m3-alpha-7-distribution-output-run-plan.md` | Defines fold-safe distribution output scope. |
 | A7-W002 | Create Alpha-7 ledger | complete | this file | Opens distribution-output audit trail. |
-| A7-W003 | Implement fold-train residual distribution fit | pending | pending | Must not fit on validation residuals. |
-| A7-W004 | Generate diagnostic distribution rows | pending | pending | No picks, prices, or promoted probabilities. |
-| A7-W005 | Add distribution validator | pending | pending | Must reject validation-leakage fit scope. |
-| A7-W006 | Generate coverage diagnostics | pending | pending | Lane, fold, and regime coverage required. |
-| A7-W007 | Update state tracker after first distribution artifact | pending | pending | Keep current state map authoritative. |
+| A7-W003 | Implement fold-train residual distribution fit | complete | `pipeline/mlb/m3/harness/run_alpha3_harness.py` | Adds `fold_train_residual_quantile_v0`; residual quantiles are fitted on train rows only. |
+| A7-W004 | Generate diagnostic distribution rows | complete | `training_harness_alpha7_distribution_outputs/distribution_outputs` | 6 JSONL artifacts, 1,274 rows across manifest validation and two walk-forward folds. |
+| A7-W005 | Add distribution validator | complete | `pipeline/mlb/m3/harness/validate_alpha3_harness.py` | Validator parses distribution JSONL, requires train-only fit scope, and rejects promotion/market-probability flags. |
+| A7-W006 | Generate coverage diagnostics | complete | `tail_calibration_alpha7_distribution_outputs/distribution_coverage_summary.json` | Coverage exists by artifact and by tail/regime slices in machine-readable output. |
+| A7-W007 | Update state tracker after first distribution artifact | complete | `2026-06-03-mlb-m3-alpha-state-progress.md` | State tracker now records Alpha-7 outputs and the remaining candidate gate. |
+| A7-W008 | Review Alpha-7 distribution output slice | complete | `2026-06-03-mlb-m3-alpha-7-distribution-output-review.md` | Accepted as diagnostic feedback infrastructure only. |
+| A7-W009 | Probe baseline-beating gate | complete | verification log | Conservative robust variants improved aggregate MAE but did not beat the train-mean baseline in every comparable fold. |
 
 ## Verification Log
 
 - 2026-06-03: Alpha-7 plan and ledger created as documentation only.
-- 2026-06-03: No distribution output artifacts, probability rows, prices, picks, simulator logs, promotion decisions, or edge claims were created.
+- 2026-06-03: `run_alpha3_harness --distribution-outputs` generated 6 diagnostic distribution JSONL artifacts and 1,274 rows.
+- 2026-06-03: `validate_alpha3_harness --json` passed with distribution JSONL validity, train-only fit scope, non-promotion, and non-market-probability checks.
+- 2026-06-03: Negative validator test on a temp copy with `manifest_validation_rows` fit scope failed as expected with `Distribution rows must declare train-only fit scope.`
+- 2026-06-03: `audit_fs004_tail_calibration --output-subdir tail_calibration_alpha7_distribution_outputs` generated distribution coverage diagnostics.
+- 2026-06-03: Alpha-7 produced no picks, prices, betting fair probabilities, prop prices, simulator logs, promotion decisions, or edge claims.
 
 ## Stop Log
 
-No stops yet.
+- Candidate-beats-baseline gate remains blocked. Current FS-004 ridge candidate loses all four comparable walk-forward lane folds; conservative shrink/robust probes improved aggregate MAE but did not honestly clear every fold.

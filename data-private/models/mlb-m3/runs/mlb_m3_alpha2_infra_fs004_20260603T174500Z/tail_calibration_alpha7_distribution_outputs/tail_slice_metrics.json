@@ -1,0 +1,3896 @@
+{
+  "all": {
+    "all": {
+      "description": "All rows",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 13.0,
+          "mean": 2.3227990970654626,
+          "min": 0.0,
+          "non_null_count": 886,
+          "row_count": 886,
+          "stddev": 2.263579402978466
+        },
+        "target_away_team_runs_final": {
+          "max": 19.0,
+          "mean": 4.384875846501129,
+          "min": 0.0,
+          "non_null_count": 886,
+          "row_count": 886,
+          "stddev": 3.2405022421571688
+        },
+        "target_home_team_runs_f5": {
+          "max": 15.0,
+          "mean": 2.5880361173814896,
+          "min": 0.0,
+          "non_null_count": 886,
+          "row_count": 886,
+          "stddev": 2.3374063839353383
+        },
+        "target_home_team_runs_final": {
+          "max": 17.0,
+          "mean": 4.448081264108352,
+          "min": 0.0,
+          "non_null_count": 886,
+          "row_count": 886,
+          "stddev": 3.081128706539693
+        },
+        "target_total_runs_f5": {
+          "max": 19.0,
+          "mean": 4.910835214446952,
+          "min": 0.0,
+          "non_null_count": 886,
+          "row_count": 886,
+          "stddev": 3.157626473438188
+        },
+        "target_total_runs_final": {
+          "max": 25.0,
+          "mean": 8.832957110609481,
+          "min": 1.0,
+          "non_null_count": 886,
+          "row_count": 886,
+          "stddev": 4.457382550479683
+        }
+      },
+      "row_count": 886
+    },
+    "any_starter_cracked:1": {
+      "description": "Either starter cracked",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 13.0,
+          "mean": 3.6844262295081966,
+          "min": 0.0,
+          "non_null_count": 244,
+          "row_count": 244,
+          "stddev": 2.8390578121889942
+        },
+        "target_away_team_runs_final": {
+          "max": 19.0,
+          "mean": 5.569672131147541,
+          "min": 0.0,
+          "non_null_count": 244,
+          "row_count": 244,
+          "stddev": 3.798088158928623
+        },
+        "target_home_team_runs_f5": {
+          "max": 15.0,
+          "mean": 4.217213114754099,
+          "min": 0.0,
+          "non_null_count": 244,
+          "row_count": 244,
+          "stddev": 2.797457646230047
+        },
+        "target_home_team_runs_final": {
+          "max": 17.0,
+          "mean": 6.188524590163935,
+          "min": 0.0,
+          "non_null_count": 244,
+          "row_count": 244,
+          "stddev": 3.5060415472955446
+        },
+        "target_total_runs_f5": {
+          "max": 19.0,
+          "mean": 7.901639344262295,
+          "min": 3.0,
+          "non_null_count": 244,
+          "row_count": 244,
+          "stddev": 2.8483812948892533
+        },
+        "target_total_runs_final": {
+          "max": 25.0,
+          "mean": 11.758196721311476,
+          "min": 3.0,
+          "non_null_count": 244,
+          "row_count": 244,
+          "stddev": 4.3938918139590255
+        }
+      },
+      "row_count": 244
+    },
+    "any_traffic_no_conversion:1": {
+      "description": "Either lineup had traffic without conversion",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 9.0,
+          "mean": 1.696078431372549,
+          "min": 0.0,
+          "non_null_count": 102,
+          "row_count": 102,
+          "stddev": 1.867100172104338
+        },
+        "target_away_team_runs_final": {
+          "max": 14.0,
+          "mean": 3.3137254901960786,
+          "min": 0.0,
+          "non_null_count": 102,
+          "row_count": 102,
+          "stddev": 2.465369527076321
+        },
+        "target_home_team_runs_f5": {
+          "max": 9.0,
+          "mean": 2.676470588235294,
+          "min": 0.0,
+          "non_null_count": 102,
+          "row_count": 102,
+          "stddev": 2.40164063492668
+        },
+        "target_home_team_runs_final": {
+          "max": 14.0,
+          "mean": 4.421568627450981,
+          "min": 0.0,
+          "non_null_count": 102,
+          "row_count": 102,
+          "stddev": 3.203662960259292
+        },
+        "target_total_runs_f5": {
+          "max": 12.0,
+          "mean": 4.372549019607843,
+          "min": 0.0,
+          "non_null_count": 102,
+          "row_count": 102,
+          "stddev": 2.7149606165758393
+        },
+        "target_total_runs_final": {
+          "max": 16.0,
+          "mean": 7.735294117647059,
+          "min": 2.0,
+          "non_null_count": 102,
+          "row_count": 102,
+          "stddev": 3.458228240089661
+        }
+      },
+      "row_count": 102
+    },
+    "both_starters_clean:1": {
+      "description": "Neither starter cracked",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 10.0,
+          "mean": 1.8052959501557633,
+          "min": 0.0,
+          "non_null_count": 642,
+          "row_count": 642,
+          "stddev": 1.7422109676258173
+        },
+        "target_away_team_runs_final": {
+          "max": 17.0,
+          "mean": 3.9345794392523366,
+          "min": 0.0,
+          "non_null_count": 642,
+          "row_count": 642,
+          "stddev": 2.8762786230144073
+        },
+        "target_home_team_runs_f5": {
+          "max": 9.0,
+          "mean": 1.9688473520249221,
+          "min": 0.0,
+          "non_null_count": 642,
+          "row_count": 642,
+          "stddev": 1.7814276132317521
+        },
+        "target_home_team_runs_final": {
+          "max": 15.0,
+          "mean": 3.7866043613707165,
+          "min": 0.0,
+          "non_null_count": 642,
+          "row_count": 642,
+          "stddev": 2.6154837289314123
+        },
+        "target_total_runs_f5": {
+          "max": 14.0,
+          "mean": 3.7741433021806854,
+          "min": 0.0,
+          "non_null_count": 642,
+          "row_count": 642,
+          "stddev": 2.446388010357616
+        },
+        "target_total_runs_final": {
+          "max": 20.0,
+          "mean": 7.721183800623053,
+          "min": 1.0,
+          "non_null_count": 642,
+          "row_count": 642,
+          "stddev": 3.9488733951378996
+        }
+      },
+      "row_count": 642
+    },
+    "target_away_starter_cracked_flag:0": {
+      "description": "target_away_starter_cracked_flag == 0",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 13.0,
+          "mean": 2.361788617886179,
+          "min": 0.0,
+          "non_null_count": 738,
+          "row_count": 738,
+          "stddev": 2.320055846627267
+        },
+        "target_away_team_runs_final": {
+          "max": 19.0,
+          "mean": 4.4986449864498645,
+          "min": 0.0,
+          "non_null_count": 738,
+          "row_count": 738,
+          "stddev": 3.2452798003202226
+        },
+        "target_home_team_runs_f5": {
+          "max": 9.0,
+          "mean": 1.9417344173441735,
+          "min": 0.0,
+          "non_null_count": 738,
+          "row_count": 738,
+          "stddev": 1.7670940501400536
+        },
+        "target_home_team_runs_final": {
+          "max": 15.0,
+          "mean": 3.7642276422764227,
+          "min": 0.0,
+          "non_null_count": 738,
+          "row_count": 738,
+          "stddev": 2.6187192533994157
+        },
+        "target_total_runs_f5": {
+          "max": 16.0,
+          "mean": 4.303523035230352,
+          "min": 0.0,
+          "non_null_count": 738,
+          "row_count": 738,
+          "stddev": 2.870278222283968
+        },
+        "target_total_runs_final": {
+          "max": 25.0,
+          "mean": 8.262872628726287,
+          "min": 1.0,
+          "non_null_count": 738,
+          "row_count": 738,
+          "stddev": 4.232888829814123
+        }
+      },
+      "row_count": 738
+    },
+    "target_away_starter_cracked_flag:1": {
+      "description": "target_away_starter_cracked_flag == 1",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 8.0,
+          "mean": 2.1283783783783785,
+          "min": 0.0,
+          "non_null_count": 148,
+          "row_count": 148,
+          "stddev": 1.9461688123127943
+        },
+        "target_away_team_runs_final": {
+          "max": 16.0,
+          "mean": 3.8175675675675675,
+          "min": 0.0,
+          "non_null_count": 148,
+          "row_count": 148,
+          "stddev": 3.1559406919078863
+        },
+        "target_home_team_runs_f5": {
+          "max": 15.0,
+          "mean": 5.8108108108108105,
+          "min": 3.0,
+          "non_null_count": 148,
+          "row_count": 148,
+          "stddev": 2.1603032549613586
+        },
+        "target_home_team_runs_final": {
+          "max": 17.0,
+          "mean": 7.858108108108108,
+          "min": 3.0,
+          "non_null_count": 148,
+          "row_count": 148,
+          "stddev": 2.94547324499159
+        },
+        "target_total_runs_f5": {
+          "max": 19.0,
+          "mean": 7.9391891891891895,
+          "min": 3.0,
+          "non_null_count": 148,
+          "row_count": 148,
+          "stddev": 2.7563841163088796
+        },
+        "target_total_runs_final": {
+          "max": 24.0,
+          "mean": 11.675675675675675,
+          "min": 4.0,
+          "non_null_count": 148,
+          "row_count": 148,
+          "stddev": 4.460360269378649
+        }
+      },
+      "row_count": 148
+    },
+    "target_away_traffic_no_conversion_flag:0": {
+      "description": "target_away_traffic_no_conversion_flag == 0",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 13.0,
+          "mean": 2.4205378973105134,
+          "min": 0.0,
+          "non_null_count": 818,
+          "row_count": 818,
+          "stddev": 2.3116942429771443
+        },
+        "target_away_team_runs_final": {
+          "max": 19.0,
+          "mean": 4.552567237163815,
+          "min": 0.0,
+          "non_null_count": 818,
+          "row_count": 818,
+          "stddev": 3.310027664589027
+        },
+        "target_home_team_runs_f5": {
+          "max": 15.0,
+          "mean": 2.519559902200489,
+          "min": 0.0,
+          "non_null_count": 818,
+          "row_count": 818,
+          "stddev": 2.302912751555571
+        },
+        "target_home_team_runs_final": {
+          "max": 17.0,
+          "mean": 4.3679706601467,
+          "min": 0.0,
+          "non_null_count": 818,
+          "row_count": 818,
+          "stddev": 3.030456813405642
+        },
+        "target_total_runs_f5": {
+          "max": 19.0,
+          "mean": 4.940097799511002,
+          "min": 0.0,
+          "non_null_count": 818,
+          "row_count": 818,
+          "stddev": 3.18655196691785
+        },
+        "target_total_runs_final": {
+          "max": 25.0,
+          "mean": 8.920537897310513,
+          "min": 1.0,
+          "non_null_count": 818,
+          "row_count": 818,
+          "stddev": 4.519157125920651
+        }
+      },
+      "row_count": 818
+    },
+    "target_away_traffic_no_conversion_flag:1": {
+      "description": "target_away_traffic_no_conversion_flag == 1",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 3.0,
+          "mean": 1.1470588235294117,
+          "min": 0.0,
+          "non_null_count": 68,
+          "row_count": 68,
+          "stddev": 0.9891277482823669
+        },
+        "target_away_team_runs_final": {
+          "max": 3.0,
+          "mean": 2.3676470588235294,
+          "min": 0.0,
+          "non_null_count": 68,
+          "row_count": 68,
+          "stddev": 0.7841145580451929
+        },
+        "target_home_team_runs_f5": {
+          "max": 9.0,
+          "mean": 3.411764705882353,
+          "min": 0.0,
+          "non_null_count": 68,
+          "row_count": 68,
+          "stddev": 2.579530817562435
+        },
+        "target_home_team_runs_final": {
+          "max": 14.0,
+          "mean": 5.411764705882353,
+          "min": 0.0,
+          "non_null_count": 68,
+          "row_count": 68,
+          "stddev": 3.4946820696833196
+        },
+        "target_total_runs_f5": {
+          "max": 12.0,
+          "mean": 4.5588235294117645,
+          "min": 0.0,
+          "non_null_count": 68,
+          "row_count": 68,
+          "stddev": 2.7620450274323938
+        },
+        "target_total_runs_final": {
+          "max": 16.0,
+          "mean": 7.779411764705882,
+          "min": 2.0,
+          "non_null_count": 68,
+          "row_count": 68,
+          "stddev": 3.4634460407964567
+        }
+      },
+      "row_count": 68
+    },
+    "target_bullpen_flip_flag:0": {
+      "description": "target_bullpen_flip_flag == 0",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 13.0,
+          "mean": 2.341755319148936,
+          "min": 0.0,
+          "non_null_count": 752,
+          "row_count": 752,
+          "stddev": 2.357414988815712
+        },
+        "target_away_team_runs_final": {
+          "max": 19.0,
+          "mean": 4.257978723404255,
+          "min": 0.0,
+          "non_null_count": 752,
+          "row_count": 752,
+          "stddev": 3.340187305165664
+        },
+        "target_home_team_runs_f5": {
+          "max": 15.0,
+          "mean": 2.658244680851064,
+          "min": 0.0,
+          "non_null_count": 752,
+          "row_count": 752,
+          "stddev": 2.436198884319806
+        },
+        "target_home_team_runs_final": {
+          "max": 17.0,
+          "mean": 4.39095744680851,
+          "min": 0.0,
+          "non_null_count": 752,
+          "row_count": 752,
+          "stddev": 3.1767645688418273
+        },
+        "target_total_runs_f5": {
+          "max": 19.0,
+          "mean": 5.0,
+          "min": 0.0,
+          "non_null_count": 752,
+          "row_count": 752,
+          "stddev": 3.2424216061981244
+        },
+        "target_total_runs_final": {
+          "max": 25.0,
+          "mean": 8.648936170212766,
+          "min": 1.0,
+          "non_null_count": 752,
+          "row_count": 752,
+          "stddev": 4.463403068665496
+        }
+      },
+      "row_count": 752
+    },
+    "target_bullpen_flip_flag:1": {
+      "description": "target_bullpen_flip_flag == 1",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 7.0,
+          "mean": 2.216417910447761,
+          "min": 0.0,
+          "non_null_count": 134,
+          "row_count": 134,
+          "stddev": 1.6361674379635935
+        },
+        "target_away_team_runs_final": {
+          "max": 11.0,
+          "mean": 5.097014925373134,
+          "min": 1.0,
+          "non_null_count": 134,
+          "row_count": 134,
+          "stddev": 2.494379960598813
+        },
+        "target_home_team_runs_f5": {
+          "max": 7.0,
+          "mean": 2.1940298507462686,
+          "min": 0.0,
+          "non_null_count": 134,
+          "row_count": 134,
+          "stddev": 1.6229584739185896
+        },
+        "target_home_team_runs_final": {
+          "max": 12.0,
+          "mean": 4.768656716417911,
+          "min": 1.0,
+          "non_null_count": 134,
+          "row_count": 134,
+          "stddev": 2.452273325762431
+        },
+        "target_total_runs_f5": {
+          "max": 13.0,
+          "mean": 4.41044776119403,
+          "min": 1.0,
+          "non_null_count": 134,
+          "row_count": 134,
+          "stddev": 2.5748864242947445
+        },
+        "target_total_runs_final": {
+          "max": 20.0,
+          "mean": 9.865671641791044,
+          "min": 3.0,
+          "non_null_count": 134,
+          "row_count": 134,
+          "stddev": 4.27905528138351
+        }
+      },
+      "row_count": 134
+    },
+    "target_chaos_game_flag:0": {
+      "description": "target_chaos_game_flag == 0",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 10.0,
+          "mean": 1.818452380952381,
+          "min": 0.0,
+          "non_null_count": 672,
+          "row_count": 672,
+          "stddev": 1.8603999787856802
+        },
+        "target_away_team_runs_final": {
+          "max": 11.0,
+          "mean": 3.3273809523809526,
+          "min": 0.0,
+          "non_null_count": 672,
+          "row_count": 672,
+          "stddev": 2.4003894123799494
+        },
+        "target_home_team_runs_f5": {
+          "max": 12.0,
+          "mean": 2.162202380952381,
+          "min": 0.0,
+          "non_null_count": 672,
+          "row_count": 672,
+          "stddev": 2.004206862955553
+        },
+        "target_home_team_runs_final": {
+          "max": 12.0,
+          "mean": 3.549107142857143,
+          "min": 0.0,
+          "non_null_count": 672,
+          "row_count": 672,
+          "stddev": 2.390575326837101
+        },
+        "target_total_runs_f5": {
+          "max": 12.0,
+          "mean": 3.980654761904762,
+          "min": 0.0,
+          "non_null_count": 672,
+          "row_count": 672,
+          "stddev": 2.461836238770756
+        },
+        "target_total_runs_final": {
+          "max": 12.0,
+          "mean": 6.876488095238095,
+          "min": 1.0,
+          "non_null_count": 672,
+          "row_count": 672,
+          "stddev": 2.833354826224003
+        }
+      },
+      "row_count": 672
+    },
+    "target_chaos_game_flag:1": {
+      "description": "target_chaos_game_flag == 1",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 13.0,
+          "mean": 3.9065420560747666,
+          "min": 0.0,
+          "non_null_count": 214,
+          "row_count": 214,
+          "stddev": 2.6529218956991336
+        },
+        "target_away_team_runs_final": {
+          "max": 19.0,
+          "mean": 7.705607476635514,
+          "min": 1.0,
+          "non_null_count": 214,
+          "row_count": 214,
+          "stddev": 3.292907466699173
+        },
+        "target_home_team_runs_f5": {
+          "max": 15.0,
+          "mean": 3.925233644859813,
+          "min": 0.0,
+          "non_null_count": 214,
+          "row_count": 214,
+          "stddev": 2.7656130603567246
+        },
+        "target_home_team_runs_final": {
+          "max": 17.0,
+          "mean": 7.271028037383178,
+          "min": 1.0,
+          "non_null_count": 214,
+          "row_count": 214,
+          "stddev": 3.294203613593434
+        },
+        "target_total_runs_f5": {
+          "max": 19.0,
+          "mean": 7.831775700934579,
+          "min": 0.0,
+          "non_null_count": 214,
+          "row_count": 214,
+          "stddev": 3.3165852873673427
+        },
+        "target_total_runs_final": {
+          "max": 25.0,
+          "mean": 14.976635514018692,
+          "min": 10.0,
+          "non_null_count": 214,
+          "row_count": 214,
+          "stddev": 2.698981443020087
+        }
+      },
+      "row_count": 214
+    },
+    "target_f5_bucket:chaos": {
+      "description": "target_f5_bucket == chaos",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 13.0,
+          "mean": 4.761904761904762,
+          "min": 0.0,
+          "non_null_count": 168,
+          "row_count": 168,
+          "stddev": 2.8394292166990165
+        },
+        "target_away_team_runs_final": {
+          "max": 19.0,
+          "mean": 6.8273809523809526,
+          "min": 0.0,
+          "non_null_count": 168,
+          "row_count": 168,
+          "stddev": 3.6302253370462316
+        },
+        "target_home_team_runs_f5": {
+          "max": 15.0,
+          "mean": 5.101190476190476,
+          "min": 0.0,
+          "non_null_count": 168,
+          "row_count": 168,
+          "stddev": 2.8044180300961457
+        },
+        "target_home_team_runs_final": {
+          "max": 17.0,
+          "mean": 6.928571428571429,
+          "min": 0.0,
+          "non_null_count": 168,
+          "row_count": 168,
+          "stddev": 3.499271061118826
+        },
+        "target_total_runs_f5": {
+          "max": 19.0,
+          "mean": 9.863095238095237,
+          "min": 8.0,
+          "non_null_count": 168,
+          "row_count": 168,
+          "stddev": 2.0642235806544083
+        },
+        "target_total_runs_final": {
+          "max": 25.0,
+          "mean": 13.755952380952381,
+          "min": 8.0,
+          "non_null_count": 168,
+          "row_count": 168,
+          "stddev": 3.4425506598090134
+        }
+      },
+      "row_count": 168
+    },
+    "target_f5_bucket:high": {
+      "description": "target_f5_bucket == high",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 7.0,
+          "mean": 2.965909090909091,
+          "min": 0.0,
+          "non_null_count": 176,
+          "row_count": 176,
+          "stddev": 1.959527213596802
+        },
+        "target_away_team_runs_final": {
+          "max": 17.0,
+          "mean": 5.176136363636363,
+          "min": 0.0,
+          "non_null_count": 176,
+          "row_count": 176,
+          "stddev": 3.1166158189971283
+        },
+        "target_home_team_runs_f5": {
+          "max": 7.0,
+          "mean": 3.5,
+          "min": 0.0,
+          "non_null_count": 176,
+          "row_count": 176,
+          "stddev": 1.954016841836789
+        },
+        "target_home_team_runs_final": {
+          "max": 16.0,
+          "mean": 5.534090909090909,
+          "min": 0.0,
+          "non_null_count": 176,
+          "row_count": 176,
+          "stddev": 2.7508216278230715
+        },
+        "target_total_runs_f5": {
+          "max": 7.0,
+          "mean": 6.465909090909091,
+          "min": 6.0,
+          "non_null_count": 176,
+          "row_count": 176,
+          "stddev": 0.4988364560829084
+        },
+        "target_total_runs_final": {
+          "max": 23.0,
+          "mean": 10.710227272727273,
+          "min": 6.0,
+          "non_null_count": 176,
+          "row_count": 176,
+          "stddev": 3.366126036529478
+        }
+      },
+      "row_count": 176
+    },
+    "target_f5_bucket:low": {
+      "description": "target_f5_bucket == low",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 2.0,
+          "mean": 0.6289592760180995,
+          "min": 0.0,
+          "non_null_count": 221,
+          "row_count": 221,
+          "stddev": 0.7041398611376257
+        },
+        "target_away_team_runs_final": {
+          "max": 15.0,
+          "mean": 2.7013574660633486,
+          "min": 0.0,
+          "non_null_count": 221,
+          "row_count": 221,
+          "stddev": 2.261511120119943
+        },
+        "target_home_team_runs_f5": {
+          "max": 2.0,
+          "mean": 0.6561085972850679,
+          "min": 0.0,
+          "non_null_count": 221,
+          "row_count": 221,
+          "stddev": 0.7364592231085523
+        },
+        "target_home_team_runs_final": {
+          "max": 9.0,
+          "mean": 2.429864253393665,
+          "min": 0.0,
+          "non_null_count": 221,
+          "row_count": 221,
+          "stddev": 2.0908796736367106
+        },
+        "target_total_runs_f5": {
+          "max": 2.0,
+          "mean": 1.2850678733031675,
+          "min": 0.0,
+          "non_null_count": 221,
+          "row_count": 221,
+          "stddev": 0.7700288646581953
+        },
+        "target_total_runs_final": {
+          "max": 17.0,
+          "mean": 5.131221719457014,
+          "min": 1.0,
+          "non_null_count": 221,
+          "row_count": 221,
+          "stddev": 3.121371790706429
+        }
+      },
+      "row_count": 221
+    },
+    "target_f5_bucket:normal": {
+      "description": "target_f5_bucket == normal",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 5.0,
+          "mean": 1.8598130841121496,
+          "min": 0.0,
+          "non_null_count": 321,
+          "row_count": 321,
+          "stddev": 1.3950196112747903
+        },
+        "target_away_team_runs_final": {
+          "max": 14.0,
+          "mean": 3.8317757009345796,
+          "min": 0.0,
+          "non_null_count": 321,
+          "row_count": 321,
+          "stddev": 2.741691435002818
+        },
+        "target_home_team_runs_f5": {
+          "max": 5.0,
+          "mean": 2.102803738317757,
+          "min": 0.0,
+          "non_null_count": 321,
+          "row_count": 321,
+          "stddev": 1.3893312636787694
+        },
+        "target_home_team_runs_final": {
+          "max": 15.0,
+          "mean": 3.94392523364486,
+          "min": 0.0,
+          "non_null_count": 321,
+          "row_count": 321,
+          "stddev": 2.3896132028442385
+        },
+        "target_total_runs_f5": {
+          "max": 5.0,
+          "mean": 3.9626168224299065,
+          "min": 3.0,
+          "non_null_count": 321,
+          "row_count": 321,
+          "stddev": 0.7963143328650765
+        },
+        "target_total_runs_final": {
+          "max": 19.0,
+          "mean": 7.775700934579439,
+          "min": 3.0,
+          "non_null_count": 321,
+          "row_count": 321,
+          "stddev": 3.2477408718019602
+        }
+      },
+      "row_count": 321
+    },
+    "target_home_starter_cracked_flag:0": {
+      "description": "target_home_starter_cracked_flag == 0",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 10.0,
+          "mean": 1.7789336801040312,
+          "min": 0.0,
+          "non_null_count": 769,
+          "row_count": 769,
+          "stddev": 1.7159917632734947
+        },
+        "target_away_team_runs_final": {
+          "max": 17.0,
+          "mean": 3.823146944083225,
+          "min": 0.0,
+          "non_null_count": 769,
+          "row_count": 769,
+          "stddev": 2.889816203674763
+        },
+        "target_home_team_runs_f5": {
+          "max": 15.0,
+          "mean": 2.615084525357607,
+          "min": 0.0,
+          "non_null_count": 769,
+          "row_count": 769,
+          "stddev": 2.365240544682056
+        },
+        "target_home_team_runs_final": {
+          "max": 17.0,
+          "mean": 4.477243172951885,
+          "min": 0.0,
+          "non_null_count": 769,
+          "row_count": 769,
+          "stddev": 3.1020467582568414
+        },
+        "target_total_runs_f5": {
+          "max": 19.0,
+          "mean": 4.394018205461639,
+          "min": 0.0,
+          "non_null_count": 769,
+          "row_count": 769,
+          "stddev": 2.845298744658031
+        },
+        "target_total_runs_final": {
+          "max": 24.0,
+          "mean": 8.30039011703511,
+          "min": 1.0,
+          "non_null_count": 769,
+          "row_count": 769,
+          "stddev": 4.235525321643047
+        }
+      },
+      "row_count": 769
+    },
+    "target_home_starter_cracked_flag:1": {
+      "description": "target_home_starter_cracked_flag == 1",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 13.0,
+          "mean": 5.897435897435898,
+          "min": 3.0,
+          "non_null_count": 117,
+          "row_count": 117,
+          "stddev": 2.173596866925409
+        },
+        "target_away_team_runs_final": {
+          "max": 19.0,
+          "mean": 8.076923076923077,
+          "min": 3.0,
+          "non_null_count": 117,
+          "row_count": 117,
+          "stddev": 2.98759213612913
+        },
+        "target_home_team_runs_f5": {
+          "max": 8.0,
+          "mean": 2.41025641025641,
+          "min": 0.0,
+          "non_null_count": 117,
+          "row_count": 117,
+          "stddev": 2.1369914395912444
+        },
+        "target_home_team_runs_final": {
+          "max": 12.0,
+          "mean": 4.256410256410256,
+          "min": 0.0,
+          "non_null_count": 117,
+          "row_count": 117,
+          "stddev": 2.9327325904477366
+        },
+        "target_total_runs_f5": {
+          "max": 16.0,
+          "mean": 8.307692307692308,
+          "min": 3.0,
+          "non_null_count": 117,
+          "row_count": 117,
+          "stddev": 2.9998904209660853
+        },
+        "target_total_runs_final": {
+          "max": 25.0,
+          "mean": 12.333333333333334,
+          "min": 3.0,
+          "non_null_count": 117,
+          "row_count": 117,
+          "stddev": 4.292708984703066
+        }
+      },
+      "row_count": 117
+    },
+    "target_home_traffic_no_conversion_flag:0": {
+      "description": "target_home_traffic_no_conversion_flag == 0",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 13.0,
+          "mean": 2.308235294117647,
+          "min": 0.0,
+          "non_null_count": 850,
+          "row_count": 850,
+          "stddev": 2.2484615270789767
+        },
+        "target_away_team_runs_final": {
+          "max": 19.0,
+          "mean": 4.357647058823529,
+          "min": 0.0,
+          "non_null_count": 850,
+          "row_count": 850,
+          "stddev": 3.2306028019036668
+        },
+        "target_home_team_runs_f5": {
+          "max": 15.0,
+          "mean": 2.644705882352941,
+          "min": 0.0,
+          "non_null_count": 850,
+          "row_count": 850,
+          "stddev": 2.3626259509459056
+        },
+        "target_home_team_runs_final": {
+          "max": 17.0,
+          "mean": 4.534117647058824,
+          "min": 0.0,
+          "non_null_count": 850,
+          "row_count": 850,
+          "stddev": 3.113067446640956
+        },
+        "target_total_runs_f5": {
+          "max": 19.0,
+          "mean": 4.952941176470588,
+          "min": 0.0,
+          "non_null_count": 850,
+          "row_count": 850,
+          "stddev": 3.1738115231965316
+        },
+        "target_total_runs_final": {
+          "max": 25.0,
+          "mean": 8.891764705882354,
+          "min": 1.0,
+          "non_null_count": 850,
+          "row_count": 850,
+          "stddev": 4.485537852586869
+        }
+      },
+      "row_count": 850
+    },
+    "target_home_traffic_no_conversion_flag:1": {
+      "description": "target_home_traffic_no_conversion_flag == 1",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 9.0,
+          "mean": 2.6666666666666665,
+          "min": 0.0,
+          "non_null_count": 36,
+          "row_count": 36,
+          "stddev": 2.5712081034235856
+        },
+        "target_away_team_runs_final": {
+          "max": 14.0,
+          "mean": 5.027777777777778,
+          "min": 1.0,
+          "non_null_count": 36,
+          "row_count": 36,
+          "stddev": 3.4033162839200033
+        },
+        "target_home_team_runs_f5": {
+          "max": 3.0,
+          "mean": 1.25,
+          "min": 0.0,
+          "non_null_count": 36,
+          "row_count": 36,
+          "stddev": 0.8936504412303007
+        },
+        "target_home_team_runs_final": {
+          "max": 3.0,
+          "mean": 2.4166666666666665,
+          "min": 1.0,
+          "non_null_count": 36,
+          "row_count": 36,
+          "stddev": 0.7216878364870323
+        },
+        "target_total_runs_f5": {
+          "max": 11.0,
+          "mean": 3.9166666666666665,
+          "min": 1.0,
+          "non_null_count": 36,
+          "row_count": 36,
+          "stddev": 2.553592241007427
+        },
+        "target_total_runs_final": {
+          "max": 16.0,
+          "mean": 7.444444444444445,
+          "min": 3.0,
+          "non_null_count": 36,
+          "row_count": 36,
+          "stddev": 3.4516054593353482
+        }
+      },
+      "row_count": 36
+    },
+    "target_total_bucket:chaos": {
+      "description": "target_total_bucket == chaos",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 13.0,
+          "mean": 4.061538461538461,
+          "min": 0.0,
+          "non_null_count": 195,
+          "row_count": 195,
+          "stddev": 2.694021432596619
+        },
+        "target_away_team_runs_final": {
+          "max": 19.0,
+          "mean": 7.861538461538461,
+          "min": 1.0,
+          "non_null_count": 195,
+          "row_count": 195,
+          "stddev": 3.3583127162018074
+        },
+        "target_home_team_runs_f5": {
+          "max": 15.0,
+          "mean": 4.0717948717948715,
+          "min": 0.0,
+          "non_null_count": 195,
+          "row_count": 195,
+          "stddev": 2.827515781809884
+        },
+        "target_home_team_runs_final": {
+          "max": 17.0,
+          "mean": 7.507692307692308,
+          "min": 1.0,
+          "non_null_count": 195,
+          "row_count": 195,
+          "stddev": 3.3179685332107547
+        },
+        "target_total_runs_f5": {
+          "max": 19.0,
+          "mean": 8.133333333333333,
+          "min": 0.0,
+          "non_null_count": 195,
+          "row_count": 195,
+          "stddev": 3.3085230521072067
+        },
+        "target_total_runs_final": {
+          "max": 25.0,
+          "mean": 15.36923076923077,
+          "min": 13.0,
+          "non_null_count": 195,
+          "row_count": 195,
+          "stddev": 2.492465965218222
+        }
+      },
+      "row_count": 195
+    },
+    "target_total_bucket:high": {
+      "description": "target_total_bucket == high",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 10.0,
+          "mean": 2.9139072847682117,
+          "min": 0.0,
+          "non_null_count": 151,
+          "row_count": 151,
+          "stddev": 2.3612220355861626
+        },
+        "target_away_team_runs_final": {
+          "max": 11.0,
+          "mean": 5.556291390728477,
+          "min": 0.0,
+          "non_null_count": 151,
+          "row_count": 151,
+          "stddev": 2.7201377097721644
+        },
+        "target_home_team_runs_f5": {
+          "max": 12.0,
+          "mean": 3.165562913907285,
+          "min": 0.0,
+          "non_null_count": 151,
+          "row_count": 151,
+          "stddev": 2.340064140107419
+        },
+        "target_home_team_runs_final": {
+          "max": 12.0,
+          "mean": 5.2781456953642385,
+          "min": 0.0,
+          "non_null_count": 151,
+          "row_count": 151,
+          "stddev": 2.657387404920943
+        },
+        "target_total_runs_f5": {
+          "max": 12.0,
+          "mean": 6.079470198675497,
+          "min": 0.0,
+          "non_null_count": 151,
+          "row_count": 151,
+          "stddev": 2.4670629743301156
+        },
+        "target_total_runs_final": {
+          "max": 12.0,
+          "mean": 10.834437086092715,
+          "min": 10.0,
+          "non_null_count": 151,
+          "row_count": 151,
+          "stddev": 0.7317805878972858
+        }
+      },
+      "row_count": 151
+    },
+    "target_total_bucket:low": {
+      "description": "target_total_bucket == low",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 4.0,
+          "mean": 1.0043478260869565,
+          "min": 0.0,
+          "non_null_count": 230,
+          "row_count": 230,
+          "stddev": 1.0774277987993948
+        },
+        "target_away_team_runs_final": {
+          "max": 5.0,
+          "mean": 1.8391304347826087,
+          "min": 0.0,
+          "non_null_count": 230,
+          "row_count": 230,
+          "stddev": 1.3204871072365953
+        },
+        "target_home_team_runs_f5": {
+          "max": 5.0,
+          "mean": 1.0913043478260869,
+          "min": 0.0,
+          "non_null_count": 230,
+          "row_count": 230,
+          "stddev": 1.1888661179892526
+        },
+        "target_home_team_runs_final": {
+          "max": 5.0,
+          "mean": 1.817391304347826,
+          "min": 0.0,
+          "non_null_count": 230,
+          "row_count": 230,
+          "stddev": 1.2926723832275402
+        },
+        "target_total_runs_f5": {
+          "max": 5.0,
+          "mean": 2.0956521739130434,
+          "min": 0.0,
+          "non_null_count": 230,
+          "row_count": 230,
+          "stddev": 1.367154538152482
+        },
+        "target_total_runs_final": {
+          "max": 5.0,
+          "mean": 3.6565217391304348,
+          "min": 1.0,
+          "non_null_count": 230,
+          "row_count": 230,
+          "stddev": 1.2368705555823296
+        }
+      },
+      "row_count": 230
+    },
+    "target_total_bucket:normal": {
+      "description": "target_total_bucket == normal",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 8.0,
+          "mean": 1.9193548387096775,
+          "min": 0.0,
+          "non_null_count": 310,
+          "row_count": 310,
+          "stddev": 1.7255049480376443
+        },
+        "target_away_team_runs_final": {
+          "max": 9.0,
+          "mean": 3.5161290322580645,
+          "min": 0.0,
+          "non_null_count": 310,
+          "row_count": 310,
+          "stddev": 2.045781934930055
+        },
+        "target_home_team_runs_f5": {
+          "max": 8.0,
+          "mean": 2.4838709677419355,
+          "min": 0.0,
+          "non_null_count": 310,
+          "row_count": 310,
+          "stddev": 1.9104292330045671
+        },
+        "target_home_team_runs_final": {
+          "max": 9.0,
+          "mean": 4.070967741935484,
+          "min": 0.0,
+          "non_null_count": 310,
+          "row_count": 310,
+          "stddev": 2.0067938718564764
+        },
+        "target_total_runs_f5": {
+          "max": 9.0,
+          "mean": 4.403225806451613,
+          "min": 0.0,
+          "non_null_count": 310,
+          "row_count": 310,
+          "stddev": 1.9810365274787325
+        },
+        "target_total_runs_final": {
+          "max": 9.0,
+          "mean": 7.587096774193548,
+          "min": 6.0,
+          "non_null_count": 310,
+          "row_count": 310,
+          "stddev": 1.1059201206305096
+        }
+      },
+      "row_count": 310
+    }
+  },
+  "manifest_train": {
+    "all": {
+      "description": "All rows",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 11.0,
+          "mean": 2.3248502994011977,
+          "min": 0.0,
+          "non_null_count": 668,
+          "row_count": 668,
+          "stddev": 2.2674828050071083
+        },
+        "target_away_team_runs_final": {
+          "max": 17.0,
+          "mean": 4.32185628742515,
+          "min": 0.0,
+          "non_null_count": 668,
+          "row_count": 668,
+          "stddev": 3.2026843387006894
+        },
+        "target_home_team_runs_f5": {
+          "max": 15.0,
+          "mean": 2.5494011976047903,
+          "min": 0.0,
+          "non_null_count": 668,
+          "row_count": 668,
+          "stddev": 2.248542362333462
+        },
+        "target_home_team_runs_final": {
+          "max": 17.0,
+          "mean": 4.4880239520958085,
+          "min": 0.0,
+          "non_null_count": 668,
+          "row_count": 668,
+          "stddev": 3.0290272819628745
+        },
+        "target_total_runs_f5": {
+          "max": 19.0,
+          "mean": 4.874251497005988,
+          "min": 0.0,
+          "non_null_count": 668,
+          "row_count": 668,
+          "stddev": 3.0859535754258176
+        },
+        "target_total_runs_final": {
+          "max": 24.0,
+          "mean": 8.809880239520957,
+          "min": 1.0,
+          "non_null_count": 668,
+          "row_count": 668,
+          "stddev": 4.442388159594761
+        }
+      },
+      "row_count": 668
+    },
+    "any_starter_cracked:1": {
+      "description": "Either starter cracked",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 11.0,
+          "mean": 3.6844919786096257,
+          "min": 0.0,
+          "non_null_count": 187,
+          "row_count": 187,
+          "stddev": 2.786891610534241
+        },
+        "target_away_team_runs_final": {
+          "max": 17.0,
+          "mean": 5.459893048128342,
+          "min": 0.0,
+          "non_null_count": 187,
+          "row_count": 187,
+          "stddev": 3.6317444710496636
+        },
+        "target_home_team_runs_f5": {
+          "max": 15.0,
+          "mean": 4.096256684491979,
+          "min": 0.0,
+          "non_null_count": 187,
+          "row_count": 187,
+          "stddev": 2.7010271166567748
+        },
+        "target_home_team_runs_final": {
+          "max": 17.0,
+          "mean": 6.13903743315508,
+          "min": 0.0,
+          "non_null_count": 187,
+          "row_count": 187,
+          "stddev": 3.4083767732669
+        },
+        "target_total_runs_f5": {
+          "max": 19.0,
+          "mean": 7.780748663101604,
+          "min": 3.0,
+          "non_null_count": 187,
+          "row_count": 187,
+          "stddev": 2.7730663110908056
+        },
+        "target_total_runs_final": {
+          "max": 24.0,
+          "mean": 11.598930481283423,
+          "min": 3.0,
+          "non_null_count": 187,
+          "row_count": 187,
+          "stddev": 4.290843245158863
+        }
+      },
+      "row_count": 187
+    },
+    "any_traffic_no_conversion:1": {
+      "description": "Either lineup had traffic without conversion",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 9.0,
+          "mean": 1.68,
+          "min": 0.0,
+          "non_null_count": 75,
+          "row_count": 75,
+          "stddev": 1.898490628543282
+        },
+        "target_away_team_runs_final": {
+          "max": 14.0,
+          "mean": 3.2933333333333334,
+          "min": 0.0,
+          "non_null_count": 75,
+          "row_count": 75,
+          "stddev": 2.6269035426186136
+        },
+        "target_home_team_runs_f5": {
+          "max": 9.0,
+          "mean": 2.546666666666667,
+          "min": 0.0,
+          "non_null_count": 75,
+          "row_count": 75,
+          "stddev": 2.3283375089440006
+        },
+        "target_home_team_runs_final": {
+          "max": 14.0,
+          "mean": 4.346666666666667,
+          "min": 0.0,
+          "non_null_count": 75,
+          "row_count": 75,
+          "stddev": 3.15169090419025
+        },
+        "target_total_runs_f5": {
+          "max": 11.0,
+          "mean": 4.226666666666667,
+          "min": 0.0,
+          "non_null_count": 75,
+          "row_count": 75,
+          "stddev": 2.651154884615801
+        },
+        "target_total_runs_final": {
+          "max": 16.0,
+          "mean": 7.64,
+          "min": 2.0,
+          "non_null_count": 75,
+          "row_count": 75,
+          "stddev": 3.4933842235478956
+        }
+      },
+      "row_count": 75
+    },
+    "both_starters_clean:1": {
+      "description": "Neither starter cracked",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 10.0,
+          "mean": 1.7962577962577964,
+          "min": 0.0,
+          "non_null_count": 481,
+          "row_count": 481,
+          "stddev": 1.7671248622141658
+        },
+        "target_away_team_runs_final": {
+          "max": 17.0,
+          "mean": 3.8794178794178795,
+          "min": 0.0,
+          "non_null_count": 481,
+          "row_count": 481,
+          "stddev": 2.9013604368689445
+        },
+        "target_home_team_runs_f5": {
+          "max": 9.0,
+          "mean": 1.948024948024948,
+          "min": 0.0,
+          "non_null_count": 481,
+          "row_count": 481,
+          "stddev": 1.7009845648982493
+        },
+        "target_home_team_runs_final": {
+          "max": 15.0,
+          "mean": 3.8461538461538463,
+          "min": 0.0,
+          "non_null_count": 481,
+          "row_count": 481,
+          "stddev": 2.5988224522836343
+        },
+        "target_total_runs_f5": {
+          "max": 11.0,
+          "mean": 3.7442827442827444,
+          "min": 0.0,
+          "non_null_count": 481,
+          "row_count": 481,
+          "stddev": 2.382169898486079
+        },
+        "target_total_runs_final": {
+          "max": 20.0,
+          "mean": 7.725571725571726,
+          "min": 1.0,
+          "non_null_count": 481,
+          "row_count": 481,
+          "stddev": 4.006173891250159
+        }
+      },
+      "row_count": 481
+    },
+    "target_away_starter_cracked_flag:0": {
+      "description": "target_away_starter_cracked_flag == 0",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 11.0,
+          "mean": 2.3555956678700363,
+          "min": 0.0,
+          "non_null_count": 554,
+          "row_count": 554,
+          "stddev": 2.3173134472247847
+        },
+        "target_away_team_runs_final": {
+          "max": 17.0,
+          "mean": 4.4422382671480145,
+          "min": 0.0,
+          "non_null_count": 554,
+          "row_count": 554,
+          "stddev": 3.230230520255
+        },
+        "target_home_team_runs_f5": {
+          "max": 9.0,
+          "mean": 1.907942238267148,
+          "min": 0.0,
+          "non_null_count": 554,
+          "row_count": 554,
+          "stddev": 1.678223797887861
+        },
+        "target_home_team_runs_final": {
+          "max": 15.0,
+          "mean": 3.8194945848375452,
+          "min": 0.0,
+          "non_null_count": 554,
+          "row_count": 554,
+          "stddev": 2.591972284221581
+        },
+        "target_total_runs_f5": {
+          "max": 15.0,
+          "mean": 4.263537906137184,
+          "min": 0.0,
+          "non_null_count": 554,
+          "row_count": 554,
+          "stddev": 2.768936594776349
+        },
+        "target_total_runs_final": {
+          "max": 20.0,
+          "mean": 8.26173285198556,
+          "min": 1.0,
+          "non_null_count": 554,
+          "row_count": 554,
+          "stddev": 4.2317880630084
+        }
+      },
+      "row_count": 554
+    },
+    "target_away_starter_cracked_flag:1": {
+      "description": "target_away_starter_cracked_flag == 1",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 8.0,
+          "mean": 2.175438596491228,
+          "min": 0.0,
+          "non_null_count": 114,
+          "row_count": 114,
+          "stddev": 2.0010769645766837
+        },
+        "target_away_team_runs_final": {
+          "max": 11.0,
+          "mean": 3.736842105263158,
+          "min": 0.0,
+          "non_null_count": 114,
+          "row_count": 114,
+          "stddev": 2.9972286368218626
+        },
+        "target_home_team_runs_f5": {
+          "max": 15.0,
+          "mean": 5.666666666666667,
+          "min": 3.0,
+          "non_null_count": 114,
+          "row_count": 114,
+          "stddev": 2.0548046676563256
+        },
+        "target_home_team_runs_final": {
+          "max": 17.0,
+          "mean": 7.7368421052631575,
+          "min": 3.0,
+          "non_null_count": 114,
+          "row_count": 114,
+          "stddev": 2.896012478100684
+        },
+        "target_total_runs_f5": {
+          "max": 19.0,
+          "mean": 7.842105263157895,
+          "min": 3.0,
+          "non_null_count": 114,
+          "row_count": 114,
+          "stddev": 2.8146825172886185
+        },
+        "target_total_runs_final": {
+          "max": 24.0,
+          "mean": 11.473684210526315,
+          "min": 4.0,
+          "non_null_count": 114,
+          "row_count": 114,
+          "stddev": 4.478428856539313
+        }
+      },
+      "row_count": 114
+    },
+    "target_away_traffic_no_conversion_flag:0": {
+      "description": "target_away_traffic_no_conversion_flag == 0",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 11.0,
+          "mean": 2.4223300970873787,
+          "min": 0.0,
+          "non_null_count": 618,
+          "row_count": 618,
+          "stddev": 2.3131717408541888
+        },
+        "target_away_team_runs_final": {
+          "max": 17.0,
+          "mean": 4.482200647249191,
+          "min": 0.0,
+          "non_null_count": 618,
+          "row_count": 618,
+          "stddev": 3.2700227642685507
+        },
+        "target_home_team_runs_f5": {
+          "max": 15.0,
+          "mean": 2.4919093851132685,
+          "min": 0.0,
+          "non_null_count": 618,
+          "row_count": 618,
+          "stddev": 2.2158810249442626
+        },
+        "target_home_team_runs_final": {
+          "max": 17.0,
+          "mean": 4.4207119741100325,
+          "min": 0.0,
+          "non_null_count": 618,
+          "row_count": 618,
+          "stddev": 2.983941618682871
+        },
+        "target_total_runs_f5": {
+          "max": 19.0,
+          "mean": 4.914239482200648,
+          "min": 0.0,
+          "non_null_count": 618,
+          "row_count": 618,
+          "stddev": 3.11496406410119
+        },
+        "target_total_runs_final": {
+          "max": 24.0,
+          "mean": 8.902912621359222,
+          "min": 1.0,
+          "non_null_count": 618,
+          "row_count": 618,
+          "stddev": 4.507845508476006
+        }
+      },
+      "row_count": 618
+    },
+    "target_away_traffic_no_conversion_flag:1": {
+      "description": "target_away_traffic_no_conversion_flag == 1",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 3.0,
+          "mean": 1.12,
+          "min": 0.0,
+          "non_null_count": 50,
+          "row_count": 50,
+          "stddev": 0.9927738916792685
+        },
+        "target_away_team_runs_final": {
+          "max": 3.0,
+          "mean": 2.34,
+          "min": 0.0,
+          "non_null_count": 50,
+          "row_count": 50,
+          "stddev": 0.7901898506055364
+        },
+        "target_home_team_runs_f5": {
+          "max": 9.0,
+          "mean": 3.26,
+          "min": 0.0,
+          "non_null_count": 50,
+          "row_count": 50,
+          "stddev": 2.512449004457603
+        },
+        "target_home_team_runs_final": {
+          "max": 14.0,
+          "mean": 5.32,
+          "min": 0.0,
+          "non_null_count": 50,
+          "row_count": 50,
+          "stddev": 3.4318508126082636
+        },
+        "target_total_runs_f5": {
+          "max": 11.0,
+          "mean": 4.38,
+          "min": 0.0,
+          "non_null_count": 50,
+          "row_count": 50,
+          "stddev": 2.6524705464905733
+        },
+        "target_total_runs_final": {
+          "max": 15.0,
+          "mean": 7.66,
+          "min": 2.0,
+          "non_null_count": 50,
+          "row_count": 50,
+          "stddev": 3.3263192871400666
+        }
+      },
+      "row_count": 50
+    },
+    "target_bullpen_flip_flag:0": {
+      "description": "target_bullpen_flip_flag == 0",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 11.0,
+          "mean": 2.3433098591549295,
+          "min": 0.0,
+          "non_null_count": 568,
+          "row_count": 568,
+          "stddev": 2.3519749632874425
+        },
+        "target_away_team_runs_final": {
+          "max": 17.0,
+          "mean": 4.172535211267606,
+          "min": 0.0,
+          "non_null_count": 568,
+          "row_count": 568,
+          "stddev": 3.279012311919233
+        },
+        "target_home_team_runs_f5": {
+          "max": 15.0,
+          "mean": 2.630281690140845,
+          "min": 0.0,
+          "non_null_count": 568,
+          "row_count": 568,
+          "stddev": 2.3363173572719313
+        },
+        "target_home_team_runs_final": {
+          "max": 17.0,
+          "mean": 4.429577464788732,
+          "min": 0.0,
+          "non_null_count": 568,
+          "row_count": 568,
+          "stddev": 3.100767481833098
+        },
+        "target_total_runs_f5": {
+          "max": 19.0,
+          "mean": 4.973591549295775,
+          "min": 0.0,
+          "non_null_count": 568,
+          "row_count": 568,
+          "stddev": 3.162445755599878
+        },
+        "target_total_runs_final": {
+          "max": 24.0,
+          "mean": 8.602112676056338,
+          "min": 1.0,
+          "non_null_count": 568,
+          "row_count": 568,
+          "stddev": 4.407914909167262
+        }
+      },
+      "row_count": 568
+    },
+    "target_bullpen_flip_flag:1": {
+      "description": "target_bullpen_flip_flag == 1",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 7.0,
+          "mean": 2.22,
+          "min": 0.0,
+          "non_null_count": 100,
+          "row_count": 100,
+          "stddev": 1.706341114783325
+        },
+        "target_away_team_runs_final": {
+          "max": 11.0,
+          "mean": 5.17,
+          "min": 1.0,
+          "non_null_count": 100,
+          "row_count": 100,
+          "stddev": 2.5692605940231132
+        },
+        "target_home_team_runs_f5": {
+          "max": 7.0,
+          "mean": 2.09,
+          "min": 0.0,
+          "non_null_count": 100,
+          "row_count": 100,
+          "stddev": 1.588049117628293
+        },
+        "target_home_team_runs_final": {
+          "max": 12.0,
+          "mean": 4.82,
+          "min": 1.0,
+          "non_null_count": 100,
+          "row_count": 100,
+          "stddev": 2.5588278566562463
+        },
+        "target_total_runs_f5": {
+          "max": 13.0,
+          "mean": 4.31,
+          "min": 1.0,
+          "non_null_count": 100,
+          "row_count": 100,
+          "stddev": 2.5365133549815977
+        },
+        "target_total_runs_final": {
+          "max": 20.0,
+          "mean": 9.99,
+          "min": 3.0,
+          "non_null_count": 100,
+          "row_count": 100,
+          "stddev": 4.453077587466897
+        }
+      },
+      "row_count": 100
+    },
+    "target_chaos_game_flag:0": {
+      "description": "target_chaos_game_flag == 0",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 10.0,
+          "mean": 1.757936507936508,
+          "min": 0.0,
+          "non_null_count": 504,
+          "row_count": 504,
+          "stddev": 1.8432998866595836
+        },
+        "target_away_team_runs_final": {
+          "max": 11.0,
+          "mean": 3.2043650793650795,
+          "min": 0.0,
+          "non_null_count": 504,
+          "row_count": 504,
+          "stddev": 2.319666778215171
+        },
+        "target_home_team_runs_f5": {
+          "max": 8.0,
+          "mean": 2.1626984126984126,
+          "min": 0.0,
+          "non_null_count": 504,
+          "row_count": 504,
+          "stddev": 1.95010110144846
+        },
+        "target_home_team_runs_final": {
+          "max": 10.0,
+          "mean": 3.613095238095238,
+          "min": 0.0,
+          "non_null_count": 504,
+          "row_count": 504,
+          "stddev": 2.34924572977503
+        },
+        "target_total_runs_f5": {
+          "max": 11.0,
+          "mean": 3.9206349206349205,
+          "min": 0.0,
+          "non_null_count": 504,
+          "row_count": 504,
+          "stddev": 2.4237684635974936
+        },
+        "target_total_runs_final": {
+          "max": 12.0,
+          "mean": 6.817460317460317,
+          "min": 1.0,
+          "non_null_count": 504,
+          "row_count": 504,
+          "stddev": 2.7985279397171787
+        }
+      },
+      "row_count": 504
+    },
+    "target_chaos_game_flag:1": {
+      "description": "target_chaos_game_flag == 1",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 11.0,
+          "mean": 4.067073170731708,
+          "min": 0.0,
+          "non_null_count": 164,
+          "row_count": 164,
+          "stddev": 2.5450360521692352
+        },
+        "target_away_team_runs_final": {
+          "max": 17.0,
+          "mean": 7.7560975609756095,
+          "min": 1.0,
+          "non_null_count": 164,
+          "row_count": 164,
+          "stddev": 3.1002005269909603
+        },
+        "target_home_team_runs_f5": {
+          "max": 15.0,
+          "mean": 3.7378048780487805,
+          "min": 0.0,
+          "non_null_count": 164,
+          "row_count": 164,
+          "stddev": 2.6523409009043974
+        },
+        "target_home_team_runs_final": {
+          "max": 17.0,
+          "mean": 7.176829268292683,
+          "min": 1.0,
+          "non_null_count": 164,
+          "row_count": 164,
+          "stddev": 3.2906667268862173
+        },
+        "target_total_runs_f5": {
+          "max": 19.0,
+          "mean": 7.804878048780488,
+          "min": 1.0,
+          "non_null_count": 164,
+          "row_count": 164,
+          "stddev": 3.0581319995368603
+        },
+        "target_total_runs_final": {
+          "max": 24.0,
+          "mean": 14.932926829268293,
+          "min": 10.0,
+          "non_null_count": 164,
+          "row_count": 164,
+          "stddev": 2.573625841154032
+        }
+      },
+      "row_count": 164
+    },
+    "target_f5_bucket:chaos": {
+      "description": "target_f5_bucket == chaos",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 11.0,
+          "mean": 4.808,
+          "min": 0.0,
+          "non_null_count": 125,
+          "row_count": 125,
+          "stddev": 2.7934093863950555
+        },
+        "target_away_team_runs_final": {
+          "max": 17.0,
+          "mean": 6.776,
+          "min": 0.0,
+          "non_null_count": 125,
+          "row_count": 125,
+          "stddev": 3.4913928452696354
+        },
+        "target_home_team_runs_f5": {
+          "max": 15.0,
+          "mean": 4.936,
+          "min": 0.0,
+          "non_null_count": 125,
+          "row_count": 125,
+          "stddev": 2.697388366550134
+        },
+        "target_home_team_runs_final": {
+          "max": 17.0,
+          "mean": 6.848,
+          "min": 0.0,
+          "non_null_count": 125,
+          "row_count": 125,
+          "stddev": 3.3848036870696063
+        },
+        "target_total_runs_f5": {
+          "max": 19.0,
+          "mean": 9.744,
+          "min": 8.0,
+          "non_null_count": 125,
+          "row_count": 125,
+          "stddev": 1.913756515338354
+        },
+        "target_total_runs_final": {
+          "max": 24.0,
+          "mean": 13.624,
+          "min": 8.0,
+          "non_null_count": 125,
+          "row_count": 125,
+          "stddev": 3.3577706890137686
+        }
+      },
+      "row_count": 125
+    },
+    "target_f5_bucket:high": {
+      "description": "target_f5_bucket == high",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 7.0,
+          "mean": 3.0757575757575757,
+          "min": 0.0,
+          "non_null_count": 132,
+          "row_count": 132,
+          "stddev": 1.9641530371515603
+        },
+        "target_away_team_runs_final": {
+          "max": 17.0,
+          "mean": 5.3106060606060606,
+          "min": 0.0,
+          "non_null_count": 132,
+          "row_count": 132,
+          "stddev": 3.1118847834419925
+        },
+        "target_home_team_runs_f5": {
+          "max": 7.0,
+          "mean": 3.356060606060606,
+          "min": 0.0,
+          "non_null_count": 132,
+          "row_count": 132,
+          "stddev": 1.9661243824427783
+        },
+        "target_home_team_runs_final": {
+          "max": 16.0,
+          "mean": 5.553030303030303,
+          "min": 0.0,
+          "non_null_count": 132,
+          "row_count": 132,
+          "stddev": 2.863866833759204
+        },
+        "target_total_runs_f5": {
+          "max": 7.0,
+          "mean": 6.431818181818182,
+          "min": 6.0,
+          "non_null_count": 132,
+          "row_count": 132,
+          "stddev": 0.4953294254023493
+        },
+        "target_total_runs_final": {
+          "max": 22.0,
+          "mean": 10.863636363636363,
+          "min": 6.0,
+          "non_null_count": 132,
+          "row_count": 132,
+          "stddev": 3.4788815846317345
+        }
+      },
+      "row_count": 132
+    },
+    "target_f5_bucket:low": {
+      "description": "target_f5_bucket == low",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 2.0,
+          "mean": 0.5808383233532934,
+          "min": 0.0,
+          "non_null_count": 167,
+          "row_count": 167,
+          "stddev": 0.6686239450159452
+        },
+        "target_away_team_runs_final": {
+          "max": 10.0,
+          "mean": 2.5149700598802394,
+          "min": 0.0,
+          "non_null_count": 167,
+          "row_count": 167,
+          "stddev": 1.9510669196242583
+        },
+        "target_home_team_runs_f5": {
+          "max": 2.0,
+          "mean": 0.7125748502994012,
+          "min": 0.0,
+          "non_null_count": 167,
+          "row_count": 167,
+          "stddev": 0.7510614955820434
+        },
+        "target_home_team_runs_final": {
+          "max": 9.0,
+          "mean": 2.55688622754491,
+          "min": 0.0,
+          "non_null_count": 167,
+          "row_count": 167,
+          "stddev": 2.115256217883628
+        },
+        "target_total_runs_f5": {
+          "max": 2.0,
+          "mean": 1.2934131736526946,
+          "min": 0.0,
+          "non_null_count": 167,
+          "row_count": 167,
+          "stddev": 0.7527305761728408
+        },
+        "target_total_runs_final": {
+          "max": 16.0,
+          "mean": 5.07185628742515,
+          "min": 1.0,
+          "non_null_count": 167,
+          "row_count": 167,
+          "stddev": 2.904815045129821
+        }
+      },
+      "row_count": 167
+    },
+    "target_f5_bucket:normal": {
+      "description": "target_f5_bucket == normal",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 5.0,
+          "mean": 1.8401639344262295,
+          "min": 0.0,
+          "non_null_count": 244,
+          "row_count": 244,
+          "stddev": 1.3801377833369959
+        },
+        "target_away_team_runs_final": {
+          "max": 14.0,
+          "mean": 3.7663934426229506,
+          "min": 0.0,
+          "non_null_count": 244,
+          "row_count": 244,
+          "stddev": 2.7990663155140725
+        },
+        "target_home_team_runs_f5": {
+          "max": 5.0,
+          "mean": 2.1475409836065573,
+          "min": 0.0,
+          "non_null_count": 244,
+          "row_count": 244,
+          "stddev": 1.3770491803278688
+        },
+        "target_home_team_runs_final": {
+          "max": 15.0,
+          "mean": 4.024590163934426,
+          "min": 0.0,
+          "non_null_count": 244,
+          "row_count": 244,
+          "stddev": 2.348571643884987
+        },
+        "target_total_runs_f5": {
+          "max": 5.0,
+          "mean": 3.987704918032787,
+          "min": 3.0,
+          "non_null_count": 244,
+          "row_count": 244,
+          "stddev": 0.8071481742664816
+        },
+        "target_total_runs_final": {
+          "max": 19.0,
+          "mean": 7.790983606557377,
+          "min": 3.0,
+          "non_null_count": 244,
+          "row_count": 244,
+          "stddev": 3.342682345366717
+        }
+      },
+      "row_count": 244
+    },
+    "target_home_starter_cracked_flag:0": {
+      "description": "target_home_starter_cracked_flag == 0",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 10.0,
+          "mean": 1.7642980935875217,
+          "min": 0.0,
+          "non_null_count": 577,
+          "row_count": 577,
+          "stddev": 1.7315226770555285
+        },
+        "target_away_team_runs_final": {
+          "max": 17.0,
+          "mean": 3.733102253032929,
+          "min": 0.0,
+          "non_null_count": 577,
+          "row_count": 577,
+          "stddev": 2.8549260377551144
+        },
+        "target_home_team_runs_f5": {
+          "max": 15.0,
+          "mean": 2.5753899480069324,
+          "min": 0.0,
+          "non_null_count": 577,
+          "row_count": 577,
+          "stddev": 2.270666893411456
+        },
+        "target_home_team_runs_final": {
+          "max": 17.0,
+          "mean": 4.504332755632582,
+          "min": 0.0,
+          "non_null_count": 577,
+          "row_count": 577,
+          "stddev": 3.0445106917223974
+        },
+        "target_total_runs_f5": {
+          "max": 19.0,
+          "mean": 4.339688041594454,
+          "min": 0.0,
+          "non_null_count": 577,
+          "row_count": 577,
+          "stddev": 2.770049378536005
+        },
+        "target_total_runs_final": {
+          "max": 24.0,
+          "mean": 8.23743500866551,
+          "min": 1.0,
+          "non_null_count": 577,
+          "row_count": 577,
+          "stddev": 4.221031645485331
+        }
+      },
+      "row_count": 577
+    },
+    "target_home_starter_cracked_flag:1": {
+      "description": "target_home_starter_cracked_flag == 1",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 11.0,
+          "mean": 5.8791208791208796,
+          "min": 3.0,
+          "non_null_count": 91,
+          "row_count": 91,
+          "stddev": 2.0263926961511216
+        },
+        "target_away_team_runs_final": {
+          "max": 17.0,
+          "mean": 8.054945054945055,
+          "min": 3.0,
+          "non_null_count": 91,
+          "row_count": 91,
+          "stddev": 2.735049821201356
+        },
+        "target_home_team_runs_f5": {
+          "max": 8.0,
+          "mean": 2.3846153846153846,
+          "min": 0.0,
+          "non_null_count": 91,
+          "row_count": 91,
+          "stddev": 2.0953597649040363
+        },
+        "target_home_team_runs_final": {
+          "max": 12.0,
+          "mean": 4.384615384615385,
+          "min": 0.0,
+          "non_null_count": 91,
+          "row_count": 91,
+          "stddev": 2.926833907177323
+        },
+        "target_total_runs_f5": {
+          "max": 15.0,
+          "mean": 8.263736263736265,
+          "min": 3.0,
+          "non_null_count": 91,
+          "row_count": 91,
+          "stddev": 2.820003759779135
+        },
+        "target_total_runs_final": {
+          "max": 22.0,
+          "mean": 12.43956043956044,
+          "min": 3.0,
+          "non_null_count": 91,
+          "row_count": 91,
+          "stddev": 4.079454798761505
+        }
+      },
+      "row_count": 91
+    },
+    "target_home_traffic_no_conversion_flag:0": {
+      "description": "target_home_traffic_no_conversion_flag == 0",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 11.0,
+          "mean": 2.31201248049922,
+          "min": 0.0,
+          "non_null_count": 641,
+          "row_count": 641,
+          "stddev": 2.2508786649383867
+        },
+        "target_away_team_runs_final": {
+          "max": 17.0,
+          "mean": 4.2948517940717625,
+          "min": 0.0,
+          "non_null_count": 641,
+          "row_count": 641,
+          "stddev": 3.1768647430792067
+        },
+        "target_home_team_runs_f5": {
+          "max": 15.0,
+          "mean": 2.6068642745709827,
+          "min": 0.0,
+          "non_null_count": 641,
+          "row_count": 641,
+          "stddev": 2.271346922927697
+        },
+        "target_home_team_runs_final": {
+          "max": 17.0,
+          "mean": 4.577223088923557,
+          "min": 0.0,
+          "non_null_count": 641,
+          "row_count": 641,
+          "stddev": 3.056010536809284
+        },
+        "target_total_runs_f5": {
+          "max": 19.0,
+          "mean": 4.918876755070203,
+          "min": 0.0,
+          "non_null_count": 641,
+          "row_count": 641,
+          "stddev": 3.0974252281682375
+        },
+        "target_total_runs_final": {
+          "max": 24.0,
+          "mean": 8.872074882995319,
+          "min": 1.0,
+          "non_null_count": 641,
+          "row_count": 641,
+          "stddev": 4.457374849241942
+        }
+      },
+      "row_count": 641
+    },
+    "target_home_traffic_no_conversion_flag:1": {
+      "description": "target_home_traffic_no_conversion_flag == 1",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 9.0,
+          "mean": 2.6296296296296298,
+          "min": 0.0,
+          "non_null_count": 27,
+          "row_count": 27,
+          "stddev": 2.6126210501553184
+        },
+        "target_away_team_runs_final": {
+          "max": 14.0,
+          "mean": 4.962962962962963,
+          "min": 1.0,
+          "non_null_count": 27,
+          "row_count": 27,
+          "stddev": 3.7066654824286824
+        },
+        "target_home_team_runs_f5": {
+          "max": 3.0,
+          "mean": 1.1851851851851851,
+          "min": 0.0,
+          "non_null_count": 27,
+          "row_count": 27,
+          "stddev": 0.8181748901620193
+        },
+        "target_home_team_runs_final": {
+          "max": 3.0,
+          "mean": 2.3703703703703702,
+          "min": 1.0,
+          "non_null_count": 27,
+          "row_count": 27,
+          "stddev": 0.7768954430890012
+        },
+        "target_total_runs_f5": {
+          "max": 11.0,
+          "mean": 3.814814814814815,
+          "min": 1.0,
+          "non_null_count": 27,
+          "row_count": 27,
+          "stddev": 2.582520116260788
+        },
+        "target_total_runs_final": {
+          "max": 16.0,
+          "mean": 7.333333333333333,
+          "min": 3.0,
+          "non_null_count": 27,
+          "row_count": 27,
+          "stddev": 3.781044339371901
+        }
+      },
+      "row_count": 27
+    },
+    "target_total_bucket:chaos": {
+      "description": "target_total_bucket == chaos",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 11.0,
+          "mean": 4.236486486486487,
+          "min": 0.0,
+          "non_null_count": 148,
+          "row_count": 148,
+          "stddev": 2.5820625698619795
+        },
+        "target_away_team_runs_final": {
+          "max": 17.0,
+          "mean": 7.952702702702703,
+          "min": 1.0,
+          "non_null_count": 148,
+          "row_count": 148,
+          "stddev": 3.1480033557527434
+        },
+        "target_home_team_runs_f5": {
+          "max": 15.0,
+          "mean": 3.885135135135135,
+          "min": 0.0,
+          "non_null_count": 148,
+          "row_count": 148,
+          "stddev": 2.7250679353015705
+        },
+        "target_home_team_runs_final": {
+          "max": 17.0,
+          "mean": 7.418918918918919,
+          "min": 1.0,
+          "non_null_count": 148,
+          "row_count": 148,
+          "stddev": 3.332910248289862
+        },
+        "target_total_runs_f5": {
+          "max": 19.0,
+          "mean": 8.121621621621621,
+          "min": 1.0,
+          "non_null_count": 148,
+          "row_count": 148,
+          "stddev": 3.0378366355677144
+        },
+        "target_total_runs_final": {
+          "max": 24.0,
+          "mean": 15.371621621621621,
+          "min": 13.0,
+          "non_null_count": 148,
+          "row_count": 148,
+          "stddev": 2.305341639116862
+        }
+      },
+      "row_count": 148
+    },
+    "target_total_bucket:high": {
+      "description": "target_total_bucket == high",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 10.0,
+          "mean": 2.8055555555555554,
+          "min": 0.0,
+          "non_null_count": 108,
+          "row_count": 108,
+          "stddev": 2.335151408103002
+        },
+        "target_away_team_runs_final": {
+          "max": 11.0,
+          "mean": 5.388888888888889,
+          "min": 0.0,
+          "non_null_count": 108,
+          "row_count": 108,
+          "stddev": 2.6063786901644224
+        },
+        "target_home_team_runs_f5": {
+          "max": 8.0,
+          "mean": 3.1018518518518516,
+          "min": 0.0,
+          "non_null_count": 108,
+          "row_count": 108,
+          "stddev": 2.2275206895776685
+        },
+        "target_home_team_runs_final": {
+          "max": 10.0,
+          "mean": 5.425925925925926,
+          "min": 0.0,
+          "non_null_count": 108,
+          "row_count": 108,
+          "stddev": 2.5063020704989065
+        },
+        "target_total_runs_f5": {
+          "max": 11.0,
+          "mean": 5.907407407407407,
+          "min": 0.0,
+          "non_null_count": 108,
+          "row_count": 108,
+          "stddev": 2.50383793197059
+        },
+        "target_total_runs_final": {
+          "max": 12.0,
+          "mean": 10.814814814814815,
+          "min": 10.0,
+          "non_null_count": 108,
+          "row_count": 108,
+          "stddev": 0.7219847662821455
+        }
+      },
+      "row_count": 108
+    },
+    "target_total_bucket:low": {
+      "description": "target_total_bucket == low",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 4.0,
+          "mean": 0.9942857142857143,
+          "min": 0.0,
+          "non_null_count": 175,
+          "row_count": 175,
+          "stddev": 1.050154507582536
+        },
+        "target_away_team_runs_final": {
+          "max": 5.0,
+          "mean": 1.8057142857142856,
+          "min": 0.0,
+          "non_null_count": 175,
+          "row_count": 175,
+          "stddev": 1.3382169068562535
+        },
+        "target_home_team_runs_f5": {
+          "max": 5.0,
+          "mean": 1.12,
+          "min": 0.0,
+          "non_null_count": 175,
+          "row_count": 175,
+          "stddev": 1.1673657769280616
+        },
+        "target_home_team_runs_final": {
+          "max": 5.0,
+          "mean": 1.8628571428571428,
+          "min": 0.0,
+          "non_null_count": 175,
+          "row_count": 175,
+          "stddev": 1.279974489541706
+        },
+        "target_total_runs_f5": {
+          "max": 5.0,
+          "mean": 2.1142857142857143,
+          "min": 0.0,
+          "non_null_count": 175,
+          "row_count": 175,
+          "stddev": 1.3388999444411407
+        },
+        "target_total_runs_final": {
+          "max": 5.0,
+          "mean": 3.6685714285714286,
+          "min": 1.0,
+          "non_null_count": 175,
+          "row_count": 175,
+          "stddev": 1.2530582995379012
+        }
+      },
+      "row_count": 175
+    },
+    "target_total_bucket:normal": {
+      "description": "target_total_bucket == normal",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 8.0,
+          "mean": 1.8945147679324894,
+          "min": 0.0,
+          "non_null_count": 237,
+          "row_count": 237,
+          "stddev": 1.7746014816172897
+        },
+        "target_away_team_runs_final": {
+          "max": 9.0,
+          "mean": 3.4261603375527425,
+          "min": 0.0,
+          "non_null_count": 237,
+          "row_count": 237,
+          "stddev": 2.0188539652341517
+        },
+        "target_home_team_runs_f5": {
+          "max": 8.0,
+          "mean": 2.518987341772152,
+          "min": 0.0,
+          "non_null_count": 237,
+          "row_count": 237,
+          "stddev": 1.892874220381735
+        },
+        "target_home_team_runs_final": {
+          "max": 9.0,
+          "mean": 4.168776371308017,
+          "min": 0.0,
+          "non_null_count": 237,
+          "row_count": 237,
+          "stddev": 1.9737186145445076
+        },
+        "target_total_runs_f5": {
+          "max": 9.0,
+          "mean": 4.413502109704641,
+          "min": 0.0,
+          "non_null_count": 237,
+          "row_count": 237,
+          "stddev": 1.9973366160996566
+        },
+        "target_total_runs_final": {
+          "max": 9.0,
+          "mean": 7.594936708860759,
+          "min": 6.0,
+          "non_null_count": 237,
+          "row_count": 237,
+          "stddev": 1.0929654702692957
+        }
+      },
+      "row_count": 237
+    }
+  },
+  "manifest_validation": {
+    "all": {
+      "description": "All rows",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 13.0,
+          "mean": 2.31651376146789,
+          "min": 0.0,
+          "non_null_count": 218,
+          "row_count": 218,
+          "stddev": 2.2515647468912925
+        },
+        "target_away_team_runs_final": {
+          "max": 19.0,
+          "mean": 4.577981651376147,
+          "min": 0.0,
+          "non_null_count": 218,
+          "row_count": 218,
+          "stddev": 3.3463483534168437
+        },
+        "target_home_team_runs_f5": {
+          "max": 12.0,
+          "mean": 2.706422018348624,
+          "min": 0.0,
+          "non_null_count": 218,
+          "row_count": 218,
+          "stddev": 2.5872047623740513
+        },
+        "target_home_team_runs_final": {
+          "max": 16.0,
+          "mean": 4.325688073394495,
+          "min": 0.0,
+          "non_null_count": 218,
+          "row_count": 218,
+          "stddev": 3.2324871462092797
+        },
+        "target_total_runs_f5": {
+          "max": 16.0,
+          "mean": 5.022935779816514,
+          "min": 0.0,
+          "non_null_count": 218,
+          "row_count": 218,
+          "stddev": 3.36528780691915
+        },
+        "target_total_runs_final": {
+          "max": 25.0,
+          "mean": 8.903669724770642,
+          "min": 1.0,
+          "non_null_count": 218,
+          "row_count": 218,
+          "stddev": 4.502281309717964
+        }
+      },
+      "row_count": 218
+    },
+    "any_starter_cracked:1": {
+      "description": "Either starter cracked",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 13.0,
+          "mean": 3.6842105263157894,
+          "min": 0.0,
+          "non_null_count": 57,
+          "row_count": 57,
+          "stddev": 3.003844873799929
+        },
+        "target_away_team_runs_final": {
+          "max": 19.0,
+          "mean": 5.9298245614035086,
+          "min": 0.0,
+          "non_null_count": 57,
+          "row_count": 57,
+          "stddev": 4.2791196386058195
+        },
+        "target_home_team_runs_f5": {
+          "max": 12.0,
+          "mean": 4.614035087719298,
+          "min": 0.0,
+          "non_null_count": 57,
+          "row_count": 57,
+          "stddev": 3.059379514920094
+        },
+        "target_home_team_runs_final": {
+          "max": 16.0,
+          "mean": 6.350877192982456,
+          "min": 0.0,
+          "non_null_count": 57,
+          "row_count": 57,
+          "stddev": 3.8043890999101193
+        },
+        "target_total_runs_f5": {
+          "max": 16.0,
+          "mean": 8.298245614035087,
+          "min": 3.0,
+          "non_null_count": 57,
+          "row_count": 57,
+          "stddev": 3.049100599519395
+        },
+        "target_total_runs_final": {
+          "max": 25.0,
+          "mean": 12.280701754385966,
+          "min": 4.0,
+          "non_null_count": 57,
+          "row_count": 57,
+          "stddev": 4.6782602327987695
+        }
+      },
+      "row_count": 57
+    },
+    "any_traffic_no_conversion:1": {
+      "description": "Either lineup had traffic without conversion",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 7.0,
+          "mean": 1.7407407407407407,
+          "min": 0.0,
+          "non_null_count": 27,
+          "row_count": 27,
+          "stddev": 1.7762338975232295
+        },
+        "target_away_team_runs_final": {
+          "max": 8.0,
+          "mean": 3.3703703703703702,
+          "min": 1.0,
+          "non_null_count": 27,
+          "row_count": 27,
+          "stddev": 1.9464716064401353
+        },
+        "target_home_team_runs_f5": {
+          "max": 9.0,
+          "mean": 3.037037037037037,
+          "min": 0.0,
+          "non_null_count": 27,
+          "row_count": 27,
+          "stddev": 2.5601140235237714
+        },
+        "target_home_team_runs_final": {
+          "max": 13.0,
+          "mean": 4.62962962962963,
+          "min": 0.0,
+          "non_null_count": 27,
+          "row_count": 27,
+          "stddev": 3.334979017626794
+        },
+        "target_total_runs_f5": {
+          "max": 12.0,
+          "mean": 4.777777777777778,
+          "min": 0.0,
+          "non_null_count": 27,
+          "row_count": 27,
+          "stddev": 2.8458329944145997
+        },
+        "target_total_runs_final": {
+          "max": 16.0,
+          "mean": 8.0,
+          "min": 2.0,
+          "non_null_count": 27,
+          "row_count": 27,
+          "stddev": 3.3444259873983135
+        }
+      },
+      "row_count": 27
+    },
+    "both_starters_clean:1": {
+      "description": "Neither starter cracked",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 8.0,
+          "mean": 1.8322981366459627,
+          "min": 0.0,
+          "non_null_count": 161,
+          "row_count": 161,
+          "stddev": 1.6652682429724135
+        },
+        "target_away_team_runs_final": {
+          "max": 15.0,
+          "mean": 4.099378881987578,
+          "min": 0.0,
+          "non_null_count": 161,
+          "row_count": 161,
+          "stddev": 2.793526164919203
+        },
+        "target_home_team_runs_f5": {
+          "max": 9.0,
+          "mean": 2.031055900621118,
+          "min": 0.0,
+          "non_null_count": 161,
+          "row_count": 161,
+          "stddev": 2.001311247947414
+        },
+        "target_home_team_runs_final": {
+          "max": 13.0,
+          "mean": 3.608695652173913,
+          "min": 0.0,
+          "non_null_count": 161,
+          "row_count": 161,
+          "stddev": 2.6567011558690607
+        },
+        "target_total_runs_f5": {
+          "max": 14.0,
+          "mean": 3.8633540372670807,
+          "min": 0.0,
+          "non_null_count": 161,
+          "row_count": 161,
+          "stddev": 2.6268959894243786
+        },
+        "target_total_runs_final": {
+          "max": 17.0,
+          "mean": 7.708074534161491,
+          "min": 1.0,
+          "non_null_count": 161,
+          "row_count": 161,
+          "stddev": 3.77247262531226
+        }
+      },
+      "row_count": 161
+    },
+    "target_away_starter_cracked_flag:0": {
+      "description": "target_away_starter_cracked_flag == 0",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 13.0,
+          "mean": 2.380434782608696,
+          "min": 0.0,
+          "non_null_count": 184,
+          "row_count": 184,
+          "stddev": 2.3281938852865802
+        },
+        "target_away_team_runs_final": {
+          "max": 19.0,
+          "mean": 4.668478260869565,
+          "min": 0.0,
+          "non_null_count": 184,
+          "row_count": 184,
+          "stddev": 3.2843313576615123
+        },
+        "target_home_team_runs_f5": {
+          "max": 9.0,
+          "mean": 2.0434782608695654,
+          "min": 0.0,
+          "non_null_count": 184,
+          "row_count": 184,
+          "stddev": 2.0076648964615416
+        },
+        "target_home_team_runs_final": {
+          "max": 13.0,
+          "mean": 3.597826086956522,
+          "min": 0.0,
+          "non_null_count": 184,
+          "row_count": 184,
+          "stddev": 2.690804722886961
+        },
+        "target_total_runs_f5": {
+          "max": 16.0,
+          "mean": 4.423913043478261,
+          "min": 0.0,
+          "non_null_count": 184,
+          "row_count": 184,
+          "stddev": 3.1527548190368853
+        },
+        "target_total_runs_final": {
+          "max": 25.0,
+          "mean": 8.266304347826088,
+          "min": 1.0,
+          "non_null_count": 184,
+          "row_count": 184,
+          "stddev": 4.236199516330057
+        }
+      },
+      "row_count": 184
+    },
+    "target_away_starter_cracked_flag:1": {
+      "description": "target_away_starter_cracked_flag == 1",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 6.0,
+          "mean": 1.9705882352941178,
+          "min": 0.0,
+          "non_null_count": 34,
+          "row_count": 34,
+          "stddev": 1.7402720226455313
+        },
+        "target_away_team_runs_final": {
+          "max": 16.0,
+          "mean": 4.088235294117647,
+          "min": 0.0,
+          "non_null_count": 34,
+          "row_count": 34,
+          "stddev": 3.624813561605808
+        },
+        "target_home_team_runs_f5": {
+          "max": 12.0,
+          "mean": 6.294117647058823,
+          "min": 3.0,
+          "non_null_count": 34,
+          "row_count": 34,
+          "stddev": 2.419642800141545
+        },
+        "target_home_team_runs_final": {
+          "max": 16.0,
+          "mean": 8.264705882352942,
+          "min": 4.0,
+          "non_null_count": 34,
+          "row_count": 34,
+          "stddev": 3.070819238549829
+        },
+        "target_total_runs_f5": {
+          "max": 16.0,
+          "mean": 8.264705882352942,
+          "min": 4.0,
+          "non_null_count": 34,
+          "row_count": 34,
+          "stddev": 2.5241052407607705
+        },
+        "target_total_runs_final": {
+          "max": 23.0,
+          "mean": 12.352941176470589,
+          "min": 6.0,
+          "non_null_count": 34,
+          "row_count": 34,
+          "stddev": 4.331025913929404
+        }
+      },
+      "row_count": 34
+    },
+    "target_away_traffic_no_conversion_flag:0": {
+      "description": "target_away_traffic_no_conversion_flag == 0",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 13.0,
+          "mean": 2.415,
+          "min": 0.0,
+          "non_null_count": 200,
+          "row_count": 200,
+          "stddev": 2.307113998050378
+        },
+        "target_away_team_runs_final": {
+          "max": 19.0,
+          "mean": 4.77,
+          "min": 0.0,
+          "non_null_count": 200,
+          "row_count": 200,
+          "stddev": 3.421563969882779
+        },
+        "target_home_team_runs_f5": {
+          "max": 12.0,
+          "mean": 2.605,
+          "min": 0.0,
+          "non_null_count": 200,
+          "row_count": 200,
+          "stddev": 2.5512692919407782
+        },
+        "target_home_team_runs_final": {
+          "max": 16.0,
+          "mean": 4.205,
+          "min": 0.0,
+          "non_null_count": 200,
+          "row_count": 200,
+          "stddev": 3.164328522767508
+        },
+        "target_total_runs_f5": {
+          "max": 16.0,
+          "mean": 5.02,
+          "min": 0.0,
+          "non_null_count": 200,
+          "row_count": 200,
+          "stddev": 3.3969986753014787
+        },
+        "target_total_runs_final": {
+          "max": 25.0,
+          "mean": 8.975,
+          "min": 1.0,
+          "non_null_count": 200,
+          "row_count": 200,
+          "stddev": 4.553501400021746
+        }
+      },
+      "row_count": 200
+    },
+    "target_away_traffic_no_conversion_flag:1": {
+      "description": "target_away_traffic_no_conversion_flag == 1",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 3.0,
+          "mean": 1.2222222222222223,
+          "min": 0.0,
+          "non_null_count": 18,
+          "row_count": 18,
+          "stddev": 0.9749960430435691
+        },
+        "target_away_team_runs_final": {
+          "max": 3.0,
+          "mean": 2.4444444444444446,
+          "min": 1.0,
+          "non_null_count": 18,
+          "row_count": 18,
+          "stddev": 0.7617394000445604
+        },
+        "target_home_team_runs_f5": {
+          "max": 9.0,
+          "mean": 3.8333333333333335,
+          "min": 0.0,
+          "non_null_count": 18,
+          "row_count": 18,
+          "stddev": 2.7131367660166177
+        },
+        "target_home_team_runs_final": {
+          "max": 13.0,
+          "mean": 5.666666666666667,
+          "min": 0.0,
+          "non_null_count": 18,
+          "row_count": 18,
+          "stddev": 3.6514837167011076
+        },
+        "target_total_runs_f5": {
+          "max": 12.0,
+          "mean": 5.055555555555555,
+          "min": 0.0,
+          "non_null_count": 18,
+          "row_count": 18,
+          "stddev": 2.9902103646217535
+        },
+        "target_total_runs_final": {
+          "max": 16.0,
+          "mean": 8.11111111111111,
+          "min": 2.0,
+          "non_null_count": 18,
+          "row_count": 18,
+          "stddev": 3.798960221617502
+        }
+      },
+      "row_count": 18
+    },
+    "target_bullpen_flip_flag:0": {
+      "description": "target_bullpen_flip_flag == 0",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 13.0,
+          "mean": 2.3369565217391304,
+          "min": 0.0,
+          "non_null_count": 184,
+          "row_count": 184,
+          "stddev": 2.3741230596701315
+        },
+        "target_away_team_runs_final": {
+          "max": 19.0,
+          "mean": 4.521739130434782,
+          "min": 0.0,
+          "non_null_count": 184,
+          "row_count": 184,
+          "stddev": 3.5092370682973657
+        },
+        "target_home_team_runs_f5": {
+          "max": 12.0,
+          "mean": 2.744565217391304,
+          "min": 0.0,
+          "non_null_count": 184,
+          "row_count": 184,
+          "stddev": 2.7196892457729023
+        },
+        "target_home_team_runs_final": {
+          "max": 16.0,
+          "mean": 4.271739130434782,
+          "min": 0.0,
+          "non_null_count": 184,
+          "row_count": 184,
+          "stddev": 3.3978998016983746
+        },
+        "target_total_runs_f5": {
+          "max": 16.0,
+          "mean": 5.081521739130435,
+          "min": 0.0,
+          "non_null_count": 184,
+          "row_count": 184,
+          "stddev": 3.476455883568347
+        },
+        "target_total_runs_final": {
+          "max": 25.0,
+          "mean": 8.793478260869565,
+          "min": 1.0,
+          "non_null_count": 184,
+          "row_count": 184,
+          "stddev": 4.627512345785473
+        }
+      },
+      "row_count": 184
+    },
+    "target_bullpen_flip_flag:1": {
+      "description": "target_bullpen_flip_flag == 1",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 5.0,
+          "mean": 2.2058823529411766,
+          "min": 0.0,
+          "non_null_count": 34,
+          "row_count": 34,
+          "stddev": 1.4096184666260894
+        },
+        "target_away_team_runs_final": {
+          "max": 10.0,
+          "mean": 4.882352941176471,
+          "min": 1.0,
+          "non_null_count": 34,
+          "row_count": 34,
+          "stddev": 2.246103893180798
+        },
+        "target_home_team_runs_f5": {
+          "max": 6.0,
+          "mean": 2.5,
+          "min": 0.0,
+          "non_null_count": 34,
+          "row_count": 34,
+          "stddev": 1.6847062931317278
+        },
+        "target_home_team_runs_final": {
+          "max": 9.0,
+          "mean": 4.617647058823529,
+          "min": 1.0,
+          "non_null_count": 34,
+          "row_count": 34,
+          "stddev": 2.1006260394904817
+        },
+        "target_total_runs_f5": {
+          "max": 9.0,
+          "mean": 4.705882352941177,
+          "min": 1.0,
+          "non_null_count": 34,
+          "row_count": 34,
+          "stddev": 2.662698893589712
+        },
+        "target_total_runs_final": {
+          "max": 16.0,
+          "mean": 9.5,
+          "min": 3.0,
+          "non_null_count": 34,
+          "row_count": 34,
+          "stddev": 3.69618245029684
+        }
+      },
+      "row_count": 34
+    },
+    "target_chaos_game_flag:0": {
+      "description": "target_chaos_game_flag == 0",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 8.0,
+          "mean": 2.0,
+          "min": 0.0,
+          "non_null_count": 168,
+          "row_count": 168,
+          "stddev": 1.8992479714726187
+        },
+        "target_away_team_runs_final": {
+          "max": 10.0,
+          "mean": 3.6964285714285716,
+          "min": 0.0,
+          "non_null_count": 168,
+          "row_count": 168,
+          "stddev": 2.5929366706943098
+        },
+        "target_home_team_runs_f5": {
+          "max": 12.0,
+          "mean": 2.1607142857142856,
+          "min": 0.0,
+          "non_null_count": 168,
+          "row_count": 168,
+          "stddev": 2.1584009655045926
+        },
+        "target_home_team_runs_final": {
+          "max": 12.0,
+          "mean": 3.357142857142857,
+          "min": 0.0,
+          "non_null_count": 168,
+          "row_count": 168,
+          "stddev": 2.5006801795799913
+        },
+        "target_total_runs_f5": {
+          "max": 12.0,
+          "mean": 4.160714285714286,
+          "min": 0.0,
+          "non_null_count": 168,
+          "row_count": 168,
+          "stddev": 2.5642467499360944
+        },
+        "target_total_runs_final": {
+          "max": 12.0,
+          "mean": 7.053571428571429,
+          "min": 1.0,
+          "non_null_count": 168,
+          "row_count": 168,
+          "stddev": 2.9282266057157815
+        }
+      },
+      "row_count": 168
+    },
+    "target_chaos_game_flag:1": {
+      "description": "target_chaos_game_flag == 1",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 13.0,
+          "mean": 3.38,
+          "min": 0.0,
+          "non_null_count": 50,
+          "row_count": 50,
+          "stddev": 2.9181500989496754
+        },
+        "target_away_team_runs_final": {
+          "max": 19.0,
+          "mean": 7.54,
+          "min": 1.0,
+          "non_null_count": 50,
+          "row_count": 50,
+          "stddev": 3.853362168288883
+        },
+        "target_home_team_runs_f5": {
+          "max": 12.0,
+          "mean": 4.54,
+          "min": 0.0,
+          "non_null_count": 50,
+          "row_count": 50,
+          "stddev": 3.027936591145858
+        },
+        "target_home_team_runs_final": {
+          "max": 16.0,
+          "mean": 7.58,
+          "min": 1.0,
+          "non_null_count": 50,
+          "row_count": 50,
+          "stddev": 3.286883021952561
+        },
+        "target_total_runs_f5": {
+          "max": 16.0,
+          "mean": 7.92,
+          "min": 0.0,
+          "non_null_count": 50,
+          "row_count": 50,
+          "stddev": 4.048901085479861
+        },
+        "target_total_runs_final": {
+          "max": 25.0,
+          "mean": 15.12,
+          "min": 11.0,
+          "non_null_count": 50,
+          "row_count": 50,
+          "stddev": 3.0701140043978823
+        }
+      },
+      "row_count": 50
+    },
+    "target_f5_bucket:chaos": {
+      "description": "target_f5_bucket == chaos",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 13.0,
+          "mean": 4.627906976744186,
+          "min": 0.0,
+          "non_null_count": 43,
+          "row_count": 43,
+          "stddev": 2.9650934791645076
+        },
+        "target_away_team_runs_final": {
+          "max": 19.0,
+          "mean": 6.976744186046512,
+          "min": 0.0,
+          "non_null_count": 43,
+          "row_count": 43,
+          "stddev": 4.00283836559395
+        },
+        "target_home_team_runs_f5": {
+          "max": 12.0,
+          "mean": 5.5813953488372094,
+          "min": 0.0,
+          "non_null_count": 43,
+          "row_count": 43,
+          "stddev": 3.044114092990136
+        },
+        "target_home_team_runs_final": {
+          "max": 16.0,
+          "mean": 7.162790697674419,
+          "min": 0.0,
+          "non_null_count": 43,
+          "row_count": 43,
+          "stddev": 3.802876711356014
+        },
+        "target_total_runs_f5": {
+          "max": 16.0,
+          "mean": 10.209302325581396,
+          "min": 8.0,
+          "non_null_count": 43,
+          "row_count": 43,
+          "stddev": 2.416591290793455
+        },
+        "target_total_runs_final": {
+          "max": 25.0,
+          "mean": 14.13953488372093,
+          "min": 9.0,
+          "non_null_count": 43,
+          "row_count": 43,
+          "stddev": 3.650940594631377
+        }
+      },
+      "row_count": 43
+    },
+    "target_f5_bucket:high": {
+      "description": "target_f5_bucket == high",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 7.0,
+          "mean": 2.6363636363636362,
+          "min": 0.0,
+          "non_null_count": 44,
+          "row_count": 44,
+          "stddev": 1.9080083510741235
+        },
+        "target_away_team_runs_final": {
+          "max": 16.0,
+          "mean": 4.7727272727272725,
+          "min": 0.0,
+          "non_null_count": 44,
+          "row_count": 44,
+          "stddev": 3.0959184007014224
+        },
+        "target_home_team_runs_f5": {
+          "max": 7.0,
+          "mean": 3.9318181818181817,
+          "min": 0.0,
+          "non_null_count": 44,
+          "row_count": 44,
+          "stddev": 1.851261575652561
+        },
+        "target_home_team_runs_final": {
+          "max": 10.0,
+          "mean": 5.4772727272727275,
+          "min": 1.0,
+          "non_null_count": 44,
+          "row_count": 44,
+          "stddev": 2.3787758154490493
+        },
+        "target_total_runs_f5": {
+          "max": 7.0,
+          "mean": 6.568181818181818,
+          "min": 6.0,
+          "non_null_count": 44,
+          "row_count": 44,
+          "stddev": 0.49532942540234925
+        },
+        "target_total_runs_final": {
+          "max": 23.0,
+          "mean": 10.25,
+          "min": 6.0,
+          "non_null_count": 44,
+          "row_count": 44,
+          "stddev": 2.955157279309266
+        }
+      },
+      "row_count": 44
+    },
+    "target_f5_bucket:low": {
+      "description": "target_f5_bucket == low",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 2.0,
+          "mean": 0.7777777777777778,
+          "min": 0.0,
+          "non_null_count": 54,
+          "row_count": 54,
+          "stddev": 0.7856742013183862
+        },
+        "target_away_team_runs_final": {
+          "max": 15.0,
+          "mean": 3.2777777777777777,
+          "min": 0.0,
+          "non_null_count": 54,
+          "row_count": 54,
+          "stddev": 2.9528182813151806
+        },
+        "target_home_team_runs_f5": {
+          "max": 2.0,
+          "mean": 0.48148148148148145,
+          "min": 0.0,
+          "non_null_count": 54,
+          "row_count": 54,
+          "stddev": 0.6594256968431428
+        },
+        "target_home_team_runs_final": {
+          "max": 9.0,
+          "mean": 2.037037037037037,
+          "min": 0.0,
+          "non_null_count": 54,
+          "row_count": 54,
+          "stddev": 1.9622640265110525
+        },
+        "target_total_runs_f5": {
+          "max": 2.0,
+          "mean": 1.2592592592592593,
+          "min": 0.0,
+          "non_null_count": 54,
+          "row_count": 54,
+          "stddev": 0.8206859187466793
+        },
+        "target_total_runs_final": {
+          "max": 17.0,
+          "mean": 5.314814814814815,
+          "min": 1.0,
+          "non_null_count": 54,
+          "row_count": 54,
+          "stddev": 3.7059715279136247
+        }
+      },
+      "row_count": 54
+    },
+    "target_f5_bucket:normal": {
+      "description": "target_f5_bucket == normal",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 5.0,
+          "mean": 1.922077922077922,
+          "min": 0.0,
+          "non_null_count": 77,
+          "row_count": 77,
+          "stddev": 1.4393923119477827
+        },
+        "target_away_team_runs_final": {
+          "max": 10.0,
+          "mean": 4.038961038961039,
+          "min": 0.0,
+          "non_null_count": 77,
+          "row_count": 77,
+          "stddev": 2.5402809868179013
+        },
+        "target_home_team_runs_f5": {
+          "max": 5.0,
+          "mean": 1.9610389610389611,
+          "min": 0.0,
+          "non_null_count": 77,
+          "row_count": 77,
+          "stddev": 1.4182626873855524
+        },
+        "target_home_team_runs_final": {
+          "max": 13.0,
+          "mean": 3.688311688311688,
+          "min": 0.0,
+          "non_null_count": 77,
+          "row_count": 77,
+          "stddev": 2.4981018261910837
+        },
+        "target_total_runs_f5": {
+          "max": 5.0,
+          "mean": 3.883116883116883,
+          "min": 3.0,
+          "non_null_count": 77,
+          "row_count": 77,
+          "stddev": 0.7554825751817655
+        },
+        "target_total_runs_final": {
+          "max": 16.0,
+          "mean": 7.7272727272727275,
+          "min": 3.0,
+          "non_null_count": 77,
+          "row_count": 77,
+          "stddev": 2.9260867162601962
+        }
+      },
+      "row_count": 77
+    },
+    "target_home_starter_cracked_flag:0": {
+      "description": "target_home_starter_cracked_flag == 0",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 8.0,
+          "mean": 1.8229166666666667,
+          "min": 0.0,
+          "non_null_count": 192,
+          "row_count": 192,
+          "stddev": 1.6676754759411543
+        },
+        "target_away_team_runs_final": {
+          "max": 16.0,
+          "mean": 4.09375,
+          "min": 0.0,
+          "non_null_count": 192,
+          "row_count": 192,
+          "stddev": 2.975868658196012
+        },
+        "target_home_team_runs_f5": {
+          "max": 12.0,
+          "mean": 2.734375,
+          "min": 0.0,
+          "non_null_count": 192,
+          "row_count": 192,
+          "stddev": 2.625449490285743
+        },
+        "target_home_team_runs_final": {
+          "max": 16.0,
+          "mean": 4.395833333333333,
+          "min": 0.0,
+          "non_null_count": 192,
+          "row_count": 192,
+          "stddev": 3.2675142395337096
+        },
+        "target_total_runs_f5": {
+          "max": 16.0,
+          "mean": 4.557291666666667,
+          "min": 0.0,
+          "non_null_count": 192,
+          "row_count": 192,
+          "stddev": 3.0545132178898635
+        },
+        "target_total_runs_final": {
+          "max": 23.0,
+          "mean": 8.489583333333334,
+          "min": 1.0,
+          "non_null_count": 192,
+          "row_count": 192,
+          "stddev": 4.273208181182169
+        }
+      },
+      "row_count": 192
+    },
+    "target_home_starter_cracked_flag:1": {
+      "description": "target_home_starter_cracked_flag == 1",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 13.0,
+          "mean": 5.961538461538462,
+          "min": 3.0,
+          "non_null_count": 26,
+          "row_count": 26,
+          "stddev": 2.6235731540543243
+        },
+        "target_away_team_runs_final": {
+          "max": 19.0,
+          "mean": 8.153846153846153,
+          "min": 3.0,
+          "non_null_count": 26,
+          "row_count": 26,
+          "stddev": 3.7384931939147283
+        },
+        "target_home_team_runs_f5": {
+          "max": 8.0,
+          "mean": 2.5,
+          "min": 0.0,
+          "non_null_count": 26,
+          "row_count": 26,
+          "stddev": 2.2744399141496183
+        },
+        "target_home_team_runs_final": {
+          "max": 10.0,
+          "mean": 3.8076923076923075,
+          "min": 0.0,
+          "non_null_count": 26,
+          "row_count": 26,
+          "stddev": 2.9091266303616434
+        },
+        "target_total_runs_f5": {
+          "max": 16.0,
+          "mean": 8.461538461538462,
+          "min": 3.0,
+          "non_null_count": 26,
+          "row_count": 26,
+          "stddev": 3.5543123237378222
+        },
+        "target_total_runs_final": {
+          "max": 25.0,
+          "mean": 11.961538461538462,
+          "min": 4.0,
+          "non_null_count": 26,
+          "row_count": 26,
+          "stddev": 4.949598035200351
+        }
+      },
+      "row_count": 26
+    },
+    "target_home_traffic_no_conversion_flag:0": {
+      "description": "target_home_traffic_no_conversion_flag == 0",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 13.0,
+          "mean": 2.2966507177033493,
+          "min": 0.0,
+          "non_null_count": 209,
+          "row_count": 209,
+          "stddev": 2.240992235277945
+        },
+        "target_away_team_runs_final": {
+          "max": 19.0,
+          "mean": 4.55023923444976,
+          "min": 0.0,
+          "non_null_count": 209,
+          "row_count": 209,
+          "stddev": 3.3828461786084407
+        },
+        "target_home_team_runs_f5": {
+          "max": 12.0,
+          "mean": 2.7607655502392343,
+          "min": 0.0,
+          "non_null_count": 209,
+          "row_count": 209,
+          "stddev": 2.61943260366229
+        },
+        "target_home_team_runs_final": {
+          "max": 16.0,
+          "mean": 4.401913875598086,
+          "min": 0.0,
+          "non_null_count": 209,
+          "row_count": 209,
+          "stddev": 3.278346556679546
+        },
+        "target_total_runs_f5": {
+          "max": 16.0,
+          "mean": 5.057416267942584,
+          "min": 0.0,
+          "non_null_count": 209,
+          "row_count": 209,
+          "stddev": 3.3952619708417853
+        },
+        "target_total_runs_final": {
+          "max": 25.0,
+          "mean": 8.952153110047847,
+          "min": 1.0,
+          "non_null_count": 209,
+          "row_count": 209,
+          "stddev": 4.570302268803668
+        }
+      },
+      "row_count": 209
+    },
+    "target_home_traffic_no_conversion_flag:1": {
+      "description": "target_home_traffic_no_conversion_flag == 1",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 7.0,
+          "mean": 2.7777777777777777,
+          "min": 0.0,
+          "non_null_count": 9,
+          "row_count": 9,
+          "stddev": 2.4393887111222385
+        },
+        "target_away_team_runs_final": {
+          "max": 8.0,
+          "mean": 5.222222222222222,
+          "min": 2.0,
+          "non_null_count": 9,
+          "row_count": 9,
+          "stddev": 2.249828525701843
+        },
+        "target_home_team_runs_f5": {
+          "max": 3.0,
+          "mean": 1.4444444444444444,
+          "min": 0.0,
+          "non_null_count": 9,
+          "row_count": 9,
+          "stddev": 1.0657403385139377
+        },
+        "target_home_team_runs_final": {
+          "max": 3.0,
+          "mean": 2.5555555555555554,
+          "min": 2.0,
+          "non_null_count": 9,
+          "row_count": 9,
+          "stddev": 0.4969039949999533
+        },
+        "target_total_runs_f5": {
+          "max": 8.0,
+          "mean": 4.222222222222222,
+          "min": 1.0,
+          "non_null_count": 9,
+          "row_count": 9,
+          "stddev": 2.4393887111222385
+        },
+        "target_total_runs_final": {
+          "max": 11.0,
+          "mean": 7.777777777777778,
+          "min": 5.0,
+          "non_null_count": 9,
+          "row_count": 9,
+          "stddev": 2.1487866228681907
+        }
+      },
+      "row_count": 9
+    },
+    "target_total_bucket:chaos": {
+      "description": "target_total_bucket == chaos",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 13.0,
+          "mean": 3.5106382978723403,
+          "min": 0.0,
+          "non_null_count": 47,
+          "row_count": 47,
+          "stddev": 2.9526211970046816
+        },
+        "target_away_team_runs_final": {
+          "max": 19.0,
+          "mean": 7.574468085106383,
+          "min": 1.0,
+          "non_null_count": 47,
+          "row_count": 47,
+          "stddev": 3.9342721127919047
+        },
+        "target_home_team_runs_f5": {
+          "max": 12.0,
+          "mean": 4.659574468085107,
+          "min": 0.0,
+          "non_null_count": 47,
+          "row_count": 47,
+          "stddev": 3.054655294441381
+        },
+        "target_home_team_runs_final": {
+          "max": 16.0,
+          "mean": 7.787234042553192,
+          "min": 1.0,
+          "non_null_count": 47,
+          "row_count": 47,
+          "stddev": 3.254693306548586
+        },
+        "target_total_runs_f5": {
+          "max": 16.0,
+          "mean": 8.170212765957446,
+          "min": 0.0,
+          "non_null_count": 47,
+          "row_count": 47,
+          "stddev": 4.044008696542253
+        },
+        "target_total_runs_final": {
+          "max": 25.0,
+          "mean": 15.361702127659575,
+          "min": 13.0,
+          "non_null_count": 47,
+          "row_count": 47,
+          "stddev": 3.006556890664799
+        }
+      },
+      "row_count": 47
+    },
+    "target_total_bucket:high": {
+      "description": "target_total_bucket == high",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 8.0,
+          "mean": 3.186046511627907,
+          "min": 0.0,
+          "non_null_count": 43,
+          "row_count": 43,
+          "stddev": 2.4040258284559215
+        },
+        "target_away_team_runs_final": {
+          "max": 10.0,
+          "mean": 5.976744186046512,
+          "min": 0.0,
+          "non_null_count": 43,
+          "row_count": 43,
+          "stddev": 2.9451447794240138
+        },
+        "target_home_team_runs_f5": {
+          "max": 12.0,
+          "mean": 3.3255813953488373,
+          "min": 0.0,
+          "non_null_count": 43,
+          "row_count": 43,
+          "stddev": 2.5944567942689436
+        },
+        "target_home_team_runs_final": {
+          "max": 12.0,
+          "mean": 4.906976744186046,
+          "min": 0.0,
+          "non_null_count": 43,
+          "row_count": 43,
+          "stddev": 2.97128860533664
+        },
+        "target_total_runs_f5": {
+          "max": 12.0,
+          "mean": 6.511627906976744,
+          "min": 2.0,
+          "non_null_count": 43,
+          "row_count": 43,
+          "stddev": 2.316493872546781
+        },
+        "target_total_runs_final": {
+          "max": 12.0,
+          "mean": 10.883720930232558,
+          "min": 10.0,
+          "non_null_count": 43,
+          "row_count": 43,
+          "stddev": 0.7535744998148675
+        }
+      },
+      "row_count": 43
+    },
+    "target_total_bucket:low": {
+      "description": "target_total_bucket == low",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 4.0,
+          "mean": 1.0363636363636364,
+          "min": 0.0,
+          "non_null_count": 55,
+          "row_count": 55,
+          "stddev": 1.15936716850399
+        },
+        "target_away_team_runs_final": {
+          "max": 5.0,
+          "mean": 1.9454545454545455,
+          "min": 0.0,
+          "non_null_count": 55,
+          "row_count": 55,
+          "stddev": 1.2565201849578906
+        },
+        "target_home_team_runs_f5": {
+          "max": 4.0,
+          "mean": 1.0,
+          "min": 0.0,
+          "non_null_count": 55,
+          "row_count": 55,
+          "stddev": 1.2504544628399563
+        },
+        "target_home_team_runs_final": {
+          "max": 5.0,
+          "mean": 1.6727272727272726,
+          "min": 0.0,
+          "non_null_count": 55,
+          "row_count": 55,
+          "stddev": 1.321906962130439
+        },
+        "target_total_runs_f5": {
+          "max": 5.0,
+          "mean": 2.036363636363636,
+          "min": 0.0,
+          "non_null_count": 55,
+          "row_count": 55,
+          "stddev": 1.4518156201947003
+        },
+        "target_total_runs_final": {
+          "max": 5.0,
+          "mean": 3.618181818181818,
+          "min": 1.0,
+          "non_null_count": 55,
+          "row_count": 55,
+          "stddev": 1.1830762534543593
+        }
+      },
+      "row_count": 55
+    },
+    "target_total_bucket:normal": {
+      "description": "target_total_bucket == normal",
+      "numeric_targets": {
+        "target_away_team_runs_f5": {
+          "max": 7.0,
+          "mean": 2.0,
+          "min": 0.0,
+          "non_null_count": 73,
+          "row_count": 73,
+          "stddev": 1.5527262811292881
+        },
+        "target_away_team_runs_final": {
+          "max": 9.0,
+          "mean": 3.808219178082192,
+          "min": 0.0,
+          "non_null_count": 73,
+          "row_count": 73,
+          "stddev": 2.10451266116459
+        },
+        "target_home_team_runs_f5": {
+          "max": 7.0,
+          "mean": 2.3698630136986303,
+          "min": 0.0,
+          "non_null_count": 73,
+          "row_count": 73,
+          "stddev": 1.9620149645098992
+        },
+        "target_home_team_runs_final": {
+          "max": 8.0,
+          "mean": 3.7534246575342465,
+          "min": 0.0,
+          "non_null_count": 73,
+          "row_count": 73,
+          "stddev": 2.079125355605937
+        },
+        "target_total_runs_f5": {
+          "max": 9.0,
+          "mean": 4.36986301369863,
+          "min": 0.0,
+          "non_null_count": 73,
+          "row_count": 73,
+          "stddev": 1.9267891476731223
+        },
+        "target_total_runs_final": {
+          "max": 9.0,
+          "mean": 7.561643835616438,
+          "min": 6.0,
+          "non_null_count": 73,
+          "row_count": 73,
+          "stddev": 1.1466007100187166
+        }
+      },
+      "row_count": 73
+    }
+  }
+}

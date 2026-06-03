@@ -1,0 +1,18 @@
+# MLB-M3 Alpha-3 Harness Report
+
+Source manifest: `/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/manifest.json`
+
+Harness directory: `/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs`
+
+Status: `harness_metrics_created`
+
+This is a metrics-only harness run. It does not produce picks, fair prices, prop prices, simulator events, staking output, promotion decisions, or edge claims.
+
+Optional row-level prediction artifacts, when enabled, are diagnostic validation residual rows only. They are not picks, prices, probabilities, or promotion decisions.
+
+Optional distribution output artifacts, when enabled, are fold-train residual-quantile diagnostics only. They are not market probabilities, prices, or promotion decisions.
+
+Lanes:
+
+- `full_game_total`
+- `f5_total`

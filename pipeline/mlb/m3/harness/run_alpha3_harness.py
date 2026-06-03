@@ -62,6 +62,22 @@ ROW_PREDICTION_CONTEXT_COLUMNS = [
     "target_away_traffic_no_conversion_flag",
 ]
 
+DISTRIBUTION_QUANTILES = {
+    "q05": 0.05,
+    "q10": 0.10,
+    "q25": 0.25,
+    "q50": 0.50,
+    "q75": 0.75,
+    "q90": 0.90,
+    "q95": 0.95,
+}
+
+DISTRIBUTION_INTERVALS = {
+    "prediction_interval_50": ("q25", "q75"),
+    "prediction_interval_80": ("q10", "q90"),
+    "prediction_interval_90": ("q05", "q95"),
+}
+
 FORBIDDEN_OUTPUT_TERMS = {
     "pick",
     "selection",
@@ -221,6 +237,88 @@ def build_row_prediction_records(
             "not_a_price": True,
             "not_a_probability": True,
         }
+        for column in ROW_PREDICTION_CONTEXT_COLUMNS:
+            if column in row.index:
+                record[column] = json_safe(row[column])
+        records.append(record)
+    return records
+
+
+def quantile(values: list[float], probability: float) -> float | None:
+    if not values:
+        return None
+    sorted_values = sorted(values)
+    if len(sorted_values) == 1:
+        return sorted_values[0]
+    position = (len(sorted_values) - 1) * probability
+    lower = math.floor(position)
+    upper = math.ceil(position)
+    if lower == upper:
+        return sorted_values[lower]
+    fraction = position - lower
+    return sorted_values[lower] * (1 - fraction) + sorted_values[upper] * fraction
+
+
+def residual_quantiles(actual: list[float], predicted) -> dict[str, float | None]:
+    predictions = [float(value) for value in predicted.tolist()]
+    residuals = [
+        actual_value - predicted_value
+        for actual_value, predicted_value in zip(actual, predictions)
+    ]
+    return {
+        name: quantile(residuals, probability)
+        for name, probability in DISTRIBUTION_QUANTILES.items()
+    }
+
+
+def build_distribution_records(
+    validation_rows,
+    actual: list[float],
+    predicted,
+    train_residual_quantiles: dict[str, float | None],
+    lane: str,
+    target_column: str,
+    split_kind: str,
+    fold_id: str,
+    distribution_fit_scope: str,
+    distribution_fit_rows: int,
+    distribution_fit_fold_id: str,
+    baseline_prediction: float | None,
+) -> list[dict[str, Any]]:
+    records: list[dict[str, Any]] = []
+    predictions = [float(value) for value in predicted.tolist()]
+    for position, (_, row) in enumerate(validation_rows.iterrows()):
+        actual_value = float(actual[position])
+        predicted_value = predictions[position]
+        record: dict[str, Any] = {
+            "lane": lane,
+            "split_kind": split_kind,
+            "fold_id": fold_id,
+            "target_column": target_column,
+            "actual": actual_value,
+            "point_prediction": predicted_value,
+            "baseline_prediction": baseline_prediction,
+            "distribution_family": "fold_train_residual_quantile_v0",
+            "distribution_fit_scope": distribution_fit_scope,
+            "distribution_fit_rows": distribution_fit_rows,
+            "distribution_fit_fold_id": distribution_fit_fold_id,
+            "status": "diagnostic_distribution_not_promoted",
+            "not_a_pick": True,
+            "not_a_price": True,
+            "not_a_market_probability": True,
+            "not_a_promotion": True,
+        }
+        for name, residual_q in train_residual_quantiles.items():
+            record[name] = None if residual_q is None else predicted_value + residual_q
+        for interval_name, (lower_name, upper_name) in DISTRIBUTION_INTERVALS.items():
+            lower = safe_float(record.get(lower_name))
+            upper = safe_float(record.get(upper_name))
+            hit = None
+            if lower is not None and upper is not None:
+                hit = lower <= actual_value <= upper
+            record[f"{interval_name}_lower"] = lower
+            record[f"{interval_name}_upper"] = upper
+            record[f"{interval_name}_hit"] = hit
         for column in ROW_PREDICTION_CONTEXT_COLUMNS:
             if column in row.index:
                 record[column] = json_safe(row[column])
@@ -403,6 +501,7 @@ def fit_ridge(
     target_column: str,
     feature_subset_label: str = "all_features",
     include_row_predictions: bool = False,
+    include_distribution_outputs: bool = False,
     prediction_context: dict[str, Any] | None = None,
     baseline_prediction: float | None = None,
 ) -> dict[str, Any]:
@@ -450,6 +549,8 @@ def fit_ridge(
     weights = np.linalg.pinv(x_design.T @ x_design + penalty) @ x_design.T @ y_train
     validation_design = np.hstack([np.ones((x_validation.shape[0], 1)), x_validation])
     y_pred = validation_design @ weights
+    train_design = x_design
+    y_train_pred = train_design @ weights
     metrics = numeric_metrics(y_validation.tolist(), y_pred.tolist())
     coef_pairs = sorted(
         zip(candidate_columns, weights[1:].tolist()),
@@ -494,6 +595,38 @@ def fit_ridge(
             str(context.get("fold_id", "validation")),
             baseline_prediction,
         )
+    if include_distribution_outputs:
+        context = prediction_context or {}
+        train_quantiles = residual_quantiles(y_train.tolist(), y_train_pred)
+        result["_distribution_outputs"] = build_distribution_records(
+            validation_rows,
+            y_validation.tolist(),
+            y_pred,
+            train_quantiles,
+            str(context.get("lane", "unknown")),
+            target_column,
+            str(context.get("split_kind", "validation")),
+            str(context.get("fold_id", "validation")),
+            str(context.get("distribution_fit_scope", "train_rows_only")),
+            int(context.get("distribution_fit_rows", len(y_train))),
+            str(context.get("distribution_fit_fold_id", context.get("fold_id", "train"))),
+            baseline_prediction,
+        )
+        result["distribution_output"] = {
+            "distribution_family": "fold_train_residual_quantile_v0",
+            "distribution_fit_scope": str(
+                context.get("distribution_fit_scope", "train_rows_only")
+            ),
+            "distribution_fit_rows": int(
+                context.get("distribution_fit_rows", len(y_train))
+            ),
+            "distribution_fit_fold_id": str(
+                context.get("distribution_fit_fold_id", context.get("fold_id", "train"))
+            ),
+            "residual_quantiles": train_quantiles,
+            "status": "diagnostic_distribution_not_promoted",
+            "non_goals": NON_GOALS,
+        }
     return result
 
 
@@ -556,6 +689,7 @@ def run_walk_forward(
     feature_columns: list[str],
     candidate_model: bool,
     row_prediction_dir: Path | None = None,
+    distribution_output_dir: Path | None = None,
 ) -> dict[str, Any]:
     folds = fixed_walk_forward_folds(df)
     payload: dict[str, Any] = {
@@ -563,6 +697,7 @@ def run_walk_forward(
         "fold_count": len(folds),
         "folds": [],
         "row_prediction_artifacts": [],
+        "distribution_output_artifacts": [],
         "non_goals": NON_GOALS,
     }
     for fold in folds:
@@ -593,10 +728,14 @@ def run_walk_forward(
                     target_column,
                     feature_subset_label="walk_forward_all_features",
                     include_row_predictions=row_prediction_dir is not None,
+                    include_distribution_outputs=distribution_output_dir is not None,
                     prediction_context={
                         "lane": lane,
                         "split_kind": "walk_forward_validation",
                         "fold_id": fold["fold_id"],
+                        "distribution_fit_scope": "walk_forward_train_rows_only",
+                        "distribution_fit_rows": int(len(train_df)),
+                        "distribution_fit_fold_id": fold["fold_id"],
                     },
                     baseline_prediction=lane_metrics["train_target_mean_baseline"],
                 )
@@ -611,6 +750,17 @@ def run_walk_forward(
                     artifact["row_count"] = len(records)
                     candidate["row_prediction_artifact"] = artifact
                     payload["row_prediction_artifacts"].append(artifact)
+                if distribution_output_dir is not None:
+                    records = candidate.pop("_distribution_outputs", [])
+                    path = distribution_output_dir / f"walk_forward_{fold['fold_id']}_{lane}.jsonl"
+                    write_jsonl(path, records)
+                    artifact = artifact_entry(
+                        f"distribution_outputs_walk_forward_{fold['fold_id']}_{lane}",
+                        path,
+                    )
+                    artifact["row_count"] = len(records)
+                    candidate["distribution_output_artifact"] = artifact
+                    payload["distribution_output_artifacts"].append(artifact)
                 lane_payload["candidate"] = candidate
             fold_payload["lanes"][lane] = lane_payload
         payload["folds"].append(fold_payload)
@@ -699,6 +849,8 @@ def report_markdown(run_id: str, manifest_path: Path, harness_dir: Path, lanes: 
             "",
             "Optional row-level prediction artifacts, when enabled, are diagnostic validation residual rows only. They are not picks, prices, probabilities, or promotion decisions.",
             "",
+            "Optional distribution output artifacts, when enabled, are fold-train residual-quantile diagnostics only. They are not market probabilities, prices, or promotion decisions.",
+            "",
             "Lanes:",
             "",
             *[f"- `{lane}`" for lane in lanes],
@@ -715,6 +867,7 @@ def run_harness(
     walk_forward: bool,
     family_ablations: bool,
     row_predictions: bool,
+    distribution_outputs: bool,
 ) -> dict[str, Any]:
     manifest_path = resolve_path(manifest_path)
     validation = validate_manifest(manifest_path)
@@ -727,12 +880,15 @@ def run_harness(
     lane_dir = harness_dir / "lane_reports"
     candidate_dir = harness_dir / "candidate_models"
     row_prediction_dir = harness_dir / "row_predictions" if row_predictions else None
+    distribution_output_dir = harness_dir / "distribution_outputs" if distribution_outputs else None
     harness_dir.mkdir(parents=True, exist_ok=True)
     lane_dir.mkdir(parents=True, exist_ok=True)
     if candidate_model:
         candidate_dir.mkdir(parents=True, exist_ok=True)
     if row_prediction_dir is not None:
         row_prediction_dir.mkdir(parents=True, exist_ok=True)
+    if distribution_output_dir is not None:
+        distribution_output_dir.mkdir(parents=True, exist_ok=True)
 
     started_at = utc_now()
     feature_columns, target_columns, metadata_columns = feature_target_columns(manifest)
@@ -763,24 +919,30 @@ def run_harness(
 
     candidate_reports: dict[str, Any] = {}
     row_prediction_artifacts: list[dict[str, Any]] = []
+    distribution_output_artifacts: list[dict[str, Any]] = []
     if candidate_model:
         for lane in lanes:
             target_column = LANE_TARGETS[lane]["numeric_target"]
             report = fit_ridge(train_df, validation_df, feature_columns, target_column)
-            if row_prediction_dir is not None:
+            if row_prediction_dir is not None or distribution_output_dir is not None:
                 report = fit_ridge(
                     train_df,
                     validation_df,
                     feature_columns,
                     target_column,
-                    include_row_predictions=True,
+                    include_row_predictions=row_prediction_dir is not None,
+                    include_distribution_outputs=distribution_output_dir is not None,
                     prediction_context={
                         "lane": lane,
                         "split_kind": "manifest_validation",
                         "fold_id": "manifest_validation",
+                        "distribution_fit_scope": "manifest_train_rows_only",
+                        "distribution_fit_rows": int(len(train_df)),
+                        "distribution_fit_fold_id": "manifest_validation",
                     },
                     baseline_prediction=lane_reports[lane]["train_target_mean_baseline"],
                 )
+            if row_prediction_dir is not None:
                 records = report.pop("_row_predictions", [])
                 prediction_path = row_prediction_dir / f"manifest_validation_{lane}.jsonl"
                 write_jsonl(prediction_path, records)
@@ -791,6 +953,17 @@ def run_harness(
                 artifact["row_count"] = len(records)
                 report["row_prediction_artifact"] = artifact
                 row_prediction_artifacts.append(artifact)
+            if distribution_output_dir is not None:
+                records = report.pop("_distribution_outputs", [])
+                distribution_path = distribution_output_dir / f"manifest_validation_{lane}.jsonl"
+                write_jsonl(distribution_path, records)
+                artifact = artifact_entry(
+                    f"distribution_outputs_manifest_validation_{lane}",
+                    distribution_path,
+                )
+                artifact["row_count"] = len(records)
+                report["distribution_output_artifact"] = artifact
+                distribution_output_artifacts.append(artifact)
             candidate_reports[lane] = report
             write_json(candidate_dir / f"{lane}_ridge_numpy_v0.json", report)
 
@@ -802,8 +975,10 @@ def run_harness(
             feature_columns,
             candidate_model,
             row_prediction_dir=row_prediction_dir,
+            distribution_output_dir=distribution_output_dir,
         )
         row_prediction_artifacts.extend(walk_forward_report.get("row_prediction_artifacts", []))
+        distribution_output_artifacts.extend(walk_forward_report.get("distribution_output_artifacts", []))
         write_json(harness_dir / "walk_forward.json", walk_forward_report)
 
     family_ablation_report: dict[str, Any] | None = None
@@ -843,6 +1018,8 @@ def run_harness(
         },
         "row_predictions_enabled": row_predictions,
         "row_prediction_artifacts": row_prediction_artifacts,
+        "distribution_outputs_enabled": distribution_outputs,
+        "distribution_output_artifacts": distribution_output_artifacts,
         "walk_forward_uri": str(harness_dir / "walk_forward.json") if walk_forward else None,
         "family_ablations_uri": str(harness_dir / "family_ablations.json") if family_ablations else None,
         "warnings": [],
@@ -866,6 +1043,9 @@ def run_harness(
         "row_predictions_enabled": row_predictions,
         "row_prediction_artifact_count": len(row_prediction_artifacts),
         "row_prediction_artifacts": row_prediction_artifacts,
+        "distribution_outputs_enabled": distribution_outputs,
+        "distribution_output_artifact_count": len(distribution_output_artifacts),
+        "distribution_output_artifacts": distribution_output_artifacts,
         "walk_forward_enabled": walk_forward,
         "family_ablations_enabled": family_ablations,
         "candidate_model_status": {
@@ -917,6 +1097,9 @@ def run_harness(
                 "row_prediction_artifact": candidate_reports[lane].get(
                     "row_prediction_artifact"
                 ),
+                "distribution_output_artifact": candidate_reports[lane].get(
+                    "distribution_output_artifact"
+                ),
                 "details_json": candidate_reports[lane],
             }
             for lane in candidate_reports
@@ -967,6 +1150,7 @@ def run_harness(
                 for lane in candidate_reports
             ],
             *row_prediction_artifacts,
+            *distribution_output_artifacts,
         ],
     }
     write_json(harness_dir / "artifacts.json", artifacts)
@@ -982,6 +1166,8 @@ def run_harness(
         "candidate_model_enabled": candidate_model,
         "row_predictions_enabled": row_predictions,
         "row_prediction_artifact_count": len(row_prediction_artifacts),
+        "distribution_outputs_enabled": distribution_outputs,
+        "distribution_output_artifact_count": len(distribution_output_artifacts),
         "walk_forward_enabled": walk_forward,
         "family_ablations_enabled": family_ablations,
         "non_goals": NON_GOALS,
@@ -1026,18 +1212,23 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Write diagnostic row-level validation predictions and residuals for candidate models.",
     )
+    parser.add_argument(
+        "--distribution-outputs",
+        action="store_true",
+        help="Write fold-train residual-quantile diagnostic distribution rows for candidate models.",
+    )
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
     lanes = args.lane or ["full_game_total", "f5_total"]
-    if args.row_predictions and not args.candidate_model:
+    if (args.row_predictions or args.distribution_outputs) and not args.candidate_model:
         print(
             json.dumps(
                 {
                     "ok": False,
-                    "error": "--row-predictions requires --candidate-model.",
+                    "error": "--row-predictions and --distribution-outputs require --candidate-model.",
                 },
                 indent=2,
             ),
@@ -1053,6 +1244,7 @@ def main() -> None:
             args.walk_forward,
             args.family_ablations,
             args.row_predictions,
+            args.distribution_outputs,
         )
     except Exception as exc:
         print(json.dumps({"ok": False, "error": str(exc)}, indent=2), file=sys.stderr)

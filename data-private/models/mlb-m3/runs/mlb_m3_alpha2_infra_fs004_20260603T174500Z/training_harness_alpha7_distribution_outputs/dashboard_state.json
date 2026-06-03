@@ -1,0 +1,162 @@
+{
+  "active_phase": "harness_metrics_created",
+  "candidate_model_enabled": true,
+  "candidate_model_status": {
+    "f5_total": "candidate_diagnostic_not_promoted",
+    "full_game_total": "candidate_diagnostic_not_promoted"
+  },
+  "distribution_output_artifact_count": 6,
+  "distribution_output_artifacts": [
+    {
+      "bytes": 356617,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs/distribution_outputs/manifest_validation_full_game_total.jsonl",
+      "role": "distribution_outputs_manifest_validation_full_game_total",
+      "row_count": 218,
+      "sha256": "1ebd5dc1da1289941c521e95ce5792445d77cc97eaff1aa5fdbb159c833096be"
+    },
+    {
+      "bytes": 354280,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs/distribution_outputs/manifest_validation_f5_total.jsonl",
+      "role": "distribution_outputs_manifest_validation_f5_total",
+      "row_count": 218,
+      "sha256": "b9cbefd1acc036491391d3433a8122683643e4f985ec87a41a898610095165a6"
+    },
+    {
+      "bytes": 333525,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs/distribution_outputs/walk_forward_wf_2026_05_01_to_2026_05_15_full_game_total.jsonl",
+      "role": "distribution_outputs_walk_forward_wf_2026_05_01_to_2026_05_15_full_game_total",
+      "row_count": 201,
+      "sha256": "72e5715a86e96336cd7b32e6512f2bcb7293e1df917fe5bd988f0c37d02d4eb5"
+    },
+    {
+      "bytes": 331353,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs/distribution_outputs/walk_forward_wf_2026_05_01_to_2026_05_15_f5_total.jsonl",
+      "role": "distribution_outputs_walk_forward_wf_2026_05_01_to_2026_05_15_f5_total",
+      "row_count": 201,
+      "sha256": "315eb1d8eda3d9f861ebb6e3b67a9990b4d53d1b20039df58acdaf94fcf88c45"
+    },
+    {
+      "bytes": 361849,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs/distribution_outputs/walk_forward_wf_2026_05_16_to_2026_05_31_full_game_total.jsonl",
+      "role": "distribution_outputs_walk_forward_wf_2026_05_16_to_2026_05_31_full_game_total",
+      "row_count": 218,
+      "sha256": "897b956702b925eb9068f9895c7bfbbf298549cb351b73f2876d2b7b5e24eec3"
+    },
+    {
+      "bytes": 359512,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs/distribution_outputs/walk_forward_wf_2026_05_16_to_2026_05_31_f5_total.jsonl",
+      "role": "distribution_outputs_walk_forward_wf_2026_05_16_to_2026_05_31_f5_total",
+      "row_count": 218,
+      "sha256": "fd309de60b9d2f0969951260819834bbaef7d91ea83ddcc736f8a2ba5464c84f"
+    }
+  ],
+  "distribution_outputs_enabled": true,
+  "family_ablations_enabled": true,
+  "harness_dir": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs",
+  "lanes": {
+    "f5_total": {
+      "report_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs/lane_reports/f5_total.json",
+      "status": "metrics_only"
+    },
+    "full_game_total": {
+      "report_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs/lane_reports/full_game_total.json",
+      "status": "metrics_only"
+    }
+  },
+  "next_recommended_actions": [
+    "Review feature coverage and split health before adding richer models.",
+    "Compare this harness output against prior feature-set diagnostics before adding richer model families.",
+    "Keep candidate components diagnostic until walk-forward backtests exist."
+  ],
+  "non_goals": [
+    "no picks",
+    "no selection rows",
+    "no player prop pricing",
+    "no market fair probability claims",
+    "no simulator event logs",
+    "no promotion decisions",
+    "no claim that M3 is better"
+  ],
+  "row_prediction_artifact_count": 6,
+  "row_prediction_artifacts": [
+    {
+      "bytes": 227854,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs/row_predictions/manifest_validation_full_game_total.jsonl",
+      "role": "row_predictions_manifest_validation_full_game_total",
+      "row_count": 218,
+      "sha256": "b4fe481207af14e5d9ffd507c7d64c7c7f859479359263a63c2766906f5752b4"
+    },
+    {
+      "bytes": 225526,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs/row_predictions/manifest_validation_f5_total.jsonl",
+      "role": "row_predictions_manifest_validation_f5_total",
+      "row_count": 218,
+      "sha256": "0cf051d178b36c5383871e33b350641a3d2db7db3510303a18038e8784e41678"
+    },
+    {
+      "bytes": 212329,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs/row_predictions/walk_forward_wf_2026_05_01_to_2026_05_15_full_game_total.jsonl",
+      "role": "row_predictions_walk_forward_wf_2026_05_01_to_2026_05_15_full_game_total",
+      "row_count": 201,
+      "sha256": "e32cdb0b170db788798358a08006dceb3128080f81a1804403fc261c9ccab928"
+    },
+    {
+      "bytes": 210322,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs/row_predictions/walk_forward_wf_2026_05_01_to_2026_05_15_f5_total.jsonl",
+      "role": "row_predictions_walk_forward_wf_2026_05_01_to_2026_05_15_f5_total",
+      "row_count": 201,
+      "sha256": "32dadbd4d7650dda3767e5bb9c92d02c2ce0cd53391761b00a67c864dc3a450f"
+    },
+    {
+      "bytes": 230470,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs/row_predictions/walk_forward_wf_2026_05_16_to_2026_05_31_full_game_total.jsonl",
+      "role": "row_predictions_walk_forward_wf_2026_05_16_to_2026_05_31_full_game_total",
+      "row_count": 218,
+      "sha256": "408d815455a18588f8f613182339f2adf7308df0aa0e451badc0b4fe84ca2f60"
+    },
+    {
+      "bytes": 228142,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs/row_predictions/walk_forward_wf_2026_05_16_to_2026_05_31_f5_total.jsonl",
+      "role": "row_predictions_walk_forward_wf_2026_05_16_to_2026_05_31_f5_total",
+      "row_count": 218,
+      "sha256": "5967a5913696fff6a75fa1e52fa60deb2a887c509d63f982362b3e3f47ecf11b"
+    }
+  ],
+  "row_predictions_enabled": true,
+  "run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+  "source_manifest_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/manifest.json",
+  "split_summary": {
+    "not_a_backtest": true,
+    "policy": "chronological_alpha_harness",
+    "status": "split_created",
+    "train_candidate_range": {
+      "end": "2026-05-15",
+      "start": "2026-03-26"
+    },
+    "train_max_game_date": "2026-05-15 00:00:00",
+    "train_min_game_date": "2026-03-26 00:00:00",
+    "train_row_count": 668,
+    "validation_candidate_range": {
+      "end": "2026-05-31",
+      "start": "2026-05-16"
+    },
+    "validation_max_game_date": "2026-05-31 00:00:00",
+    "validation_min_game_date": "2026-05-16 00:00:00",
+    "validation_row_count": 218
+  },
+  "status": "harness_metrics_created",
+  "walk_forward_enabled": true,
+  "warnings": []
+}

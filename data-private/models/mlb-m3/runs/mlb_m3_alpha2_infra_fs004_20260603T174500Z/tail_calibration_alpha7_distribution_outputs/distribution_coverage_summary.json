@@ -1,0 +1,3397 @@
+{
+  "artifact_count": 6,
+  "artifacts": [
+    {
+      "distribution_family": "fold_train_residual_quantile_v0",
+      "distribution_fit_rows": 668,
+      "distribution_fit_scope": "manifest_train_rows_only",
+      "fold_id": "manifest_validation",
+      "lane": "f5_total",
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs/distribution_outputs/manifest_validation_f5_total.jsonl",
+      "row_count": 218,
+      "slices": {
+        "all": {
+          "description": "All rows",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.625918437903224,
+              "coverage_rate": 0.3853211009174312,
+              "hit_count": 84,
+              "row_count": 218
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.7247706422018348,
+              "hit_count": 158,
+              "row_count": 218
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.8165137614678899,
+              "hit_count": 178,
+              "row_count": 218
+            }
+          },
+          "row_count": 218
+        },
+        "any_starter_cracked:1": {
+          "description": "Either starter cracked",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.2807017543859649,
+              "hit_count": 16,
+              "row_count": 57
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.6140350877192983,
+              "hit_count": 35,
+              "row_count": 57
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.7719298245614035,
+              "hit_count": 44,
+              "row_count": 57
+            }
+          },
+          "row_count": 57
+        },
+        "both_starters_clean:1": {
+          "description": "Neither starter cracked",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.422360248447205,
+              "hit_count": 68,
+              "row_count": 161
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935986,
+              "coverage_rate": 0.7639751552795031,
+              "hit_count": 123,
+              "row_count": 161
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218056,
+              "coverage_rate": 0.8322981366459627,
+              "hit_count": 134,
+              "row_count": 161
+            }
+          },
+          "row_count": 161
+        },
+        "target_away_starter_cracked_flag:0": {
+          "description": "target_away_starter_cracked_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.625918437903224,
+              "coverage_rate": 0.41304347826086957,
+              "hit_count": 76,
+              "row_count": 184
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.7391304347826086,
+              "hit_count": 136,
+              "row_count": 184
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.8152173913043478,
+              "hit_count": 150,
+              "row_count": 184
+            }
+          },
+          "row_count": 184
+        },
+        "target_away_starter_cracked_flag:1": {
+          "description": "target_away_starter_cracked_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.23529411764705882,
+              "hit_count": 8,
+              "row_count": 34
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.6470588235294118,
+              "hit_count": 22,
+              "row_count": 34
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.8235294117647058,
+              "hit_count": 28,
+              "row_count": 34
+            }
+          },
+          "row_count": 34
+        },
+        "target_away_traffic_no_conversion_flag:0": {
+          "description": "target_away_traffic_no_conversion_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032248,
+              "coverage_rate": 0.385,
+              "hit_count": 77,
+              "row_count": 200
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.715,
+              "hit_count": 143,
+              "row_count": 200
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.81,
+              "hit_count": 162,
+              "row_count": 200
+            }
+          },
+          "row_count": 200
+        },
+        "target_away_traffic_no_conversion_flag:1": {
+          "description": "target_away_traffic_no_conversion_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.3888888888888889,
+              "hit_count": 7,
+              "row_count": 18
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.8333333333333334,
+              "hit_count": 15,
+              "row_count": 18
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.8888888888888888,
+              "hit_count": 16,
+              "row_count": 18
+            }
+          },
+          "row_count": 18
+        },
+        "target_bullpen_flip_flag:0": {
+          "description": "target_bullpen_flip_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.625918437903224,
+              "coverage_rate": 0.391304347826087,
+              "hit_count": 72,
+              "row_count": 184
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.717391304347826,
+              "hit_count": 132,
+              "row_count": 184
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.8097826086956522,
+              "hit_count": 149,
+              "row_count": 184
+            }
+          },
+          "row_count": 184
+        },
+        "target_bullpen_flip_flag:1": {
+          "description": "target_bullpen_flip_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.35294117647058826,
+              "hit_count": 12,
+              "row_count": 34
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.7647058823529411,
+              "hit_count": 26,
+              "row_count": 34
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218056,
+              "coverage_rate": 0.8529411764705882,
+              "hit_count": 29,
+              "row_count": 34
+            }
+          },
+          "row_count": 34
+        },
+        "target_chaos_game_flag:0": {
+          "description": "target_chaos_game_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.4226190476190476,
+              "hit_count": 71,
+              "row_count": 168
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.7916666666666666,
+              "hit_count": 133,
+              "row_count": 168
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.8571428571428571,
+              "hit_count": 144,
+              "row_count": 168
+            }
+          },
+          "row_count": 168
+        },
+        "target_chaos_game_flag:1": {
+          "description": "target_chaos_game_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032248,
+              "coverage_rate": 0.26,
+              "hit_count": 13,
+              "row_count": 50
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.5,
+              "hit_count": 25,
+              "row_count": 50
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.68,
+              "hit_count": 34,
+              "row_count": 50
+            }
+          },
+          "row_count": 50
+        },
+        "target_f5_bucket:chaos": {
+          "description": "target_f5_bucket == chaos",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.023255813953488372,
+              "hit_count": 1,
+              "row_count": 43
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.32558139534883723,
+              "hit_count": 14,
+              "row_count": 43
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.5581395348837209,
+              "hit_count": 24,
+              "row_count": 43
+            }
+          },
+          "row_count": 43
+        },
+        "target_f5_bucket:high": {
+          "description": "target_f5_bucket == high",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.625918437903224,
+              "coverage_rate": 0.4090909090909091,
+              "hit_count": 18,
+              "row_count": 44
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935988,
+              "coverage_rate": 1.0,
+              "hit_count": 44,
+              "row_count": 44
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218056,
+              "coverage_rate": 1.0,
+              "hit_count": 44,
+              "row_count": 44
+            }
+          },
+          "row_count": 44
+        },
+        "target_f5_bucket:low": {
+          "description": "target_f5_bucket == low",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.14814814814814814,
+              "hit_count": 8,
+              "row_count": 54
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.46296296296296297,
+              "hit_count": 25,
+              "row_count": 54
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218056,
+              "coverage_rate": 0.6111111111111112,
+              "hit_count": 33,
+              "row_count": 54
+            }
+          },
+          "row_count": 54
+        },
+        "target_f5_bucket:normal": {
+          "description": "target_f5_bucket == normal",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.7402597402597403,
+              "hit_count": 57,
+              "row_count": 77
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935988,
+              "coverage_rate": 0.974025974025974,
+              "hit_count": 75,
+              "row_count": 77
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 1.0,
+              "hit_count": 77,
+              "row_count": 77
+            }
+          },
+          "row_count": 77
+        },
+        "target_home_starter_cracked_flag:0": {
+          "description": "target_home_starter_cracked_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.625918437903224,
+              "coverage_rate": 0.3958333333333333,
+              "hit_count": 76,
+              "row_count": 192
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935986,
+              "coverage_rate": 0.7447916666666666,
+              "hit_count": 143,
+              "row_count": 192
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.8333333333333334,
+              "hit_count": 160,
+              "row_count": 192
+            }
+          },
+          "row_count": 192
+        },
+        "target_home_starter_cracked_flag:1": {
+          "description": "target_home_starter_cracked_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.3076923076923077,
+              "hit_count": 8,
+              "row_count": 26
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.5769230769230769,
+              "hit_count": 15,
+              "row_count": 26
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.6923076923076923,
+              "hit_count": 18,
+              "row_count": 26
+            }
+          },
+          "row_count": 26
+        },
+        "target_home_traffic_no_conversion_flag:0": {
+          "description": "target_home_traffic_no_conversion_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.625918437903224,
+              "coverage_rate": 0.3923444976076555,
+              "hit_count": 82,
+              "row_count": 209
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.7177033492822966,
+              "hit_count": 150,
+              "row_count": 209
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.8133971291866029,
+              "hit_count": 170,
+              "row_count": 209
+            }
+          },
+          "row_count": 209
+        },
+        "target_home_traffic_no_conversion_flag:1": {
+          "description": "target_home_traffic_no_conversion_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.2222222222222222,
+              "hit_count": 2,
+              "row_count": 9
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.8888888888888888,
+              "hit_count": 8,
+              "row_count": 9
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.8888888888888888,
+              "hit_count": 8,
+              "row_count": 9
+            }
+          },
+          "row_count": 9
+        },
+        "target_total_bucket:chaos": {
+          "description": "target_total_bucket == chaos",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.2127659574468085,
+              "hit_count": 10,
+              "row_count": 47
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.46808510638297873,
+              "hit_count": 22,
+              "row_count": 47
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.6595744680851063,
+              "hit_count": 31,
+              "row_count": 47
+            }
+          },
+          "row_count": 47
+        },
+        "target_total_bucket:high": {
+          "description": "target_total_bucket == high",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.3488372093023256,
+              "hit_count": 15,
+              "row_count": 43
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.8372093023255814,
+              "hit_count": 36,
+              "row_count": 43
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218056,
+              "coverage_rate": 0.9069767441860465,
+              "hit_count": 39,
+              "row_count": 43
+            }
+          },
+          "row_count": 43
+        },
+        "target_total_bucket:low": {
+          "description": "target_total_bucket == low",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.36363636363636365,
+              "hit_count": 20,
+              "row_count": 55
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935986,
+              "coverage_rate": 0.6,
+              "hit_count": 33,
+              "row_count": 55
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.7090909090909091,
+              "hit_count": 39,
+              "row_count": 55
+            }
+          },
+          "row_count": 55
+        },
+        "target_total_bucket:normal": {
+          "description": "target_total_bucket == normal",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.5342465753424658,
+              "hit_count": 39,
+              "row_count": 73
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.9178082191780822,
+              "hit_count": 67,
+              "row_count": 73
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218056,
+              "coverage_rate": 0.9452054794520548,
+              "hit_count": 69,
+              "row_count": 73
+            }
+          },
+          "row_count": 73
+        }
+      },
+      "split_kind": "manifest_validation",
+      "status": "created"
+    },
+    {
+      "distribution_family": "fold_train_residual_quantile_v0",
+      "distribution_fit_rows": 668,
+      "distribution_fit_scope": "manifest_train_rows_only",
+      "fold_id": "manifest_validation",
+      "lane": "full_game_total",
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs/distribution_outputs/manifest_validation_full_game_total.jsonl",
+      "row_count": 218,
+      "slices": {
+        "all": {
+          "description": "All rows",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.44036697247706424,
+              "hit_count": 96,
+              "row_count": 218
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.7247706422018348,
+              "hit_count": 158,
+              "row_count": 218
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176386,
+              "coverage_rate": 0.8486238532110092,
+              "hit_count": 185,
+              "row_count": 218
+            }
+          },
+          "row_count": 218
+        },
+        "any_starter_cracked:1": {
+          "description": "Either starter cracked",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.3333333333333333,
+              "hit_count": 19,
+              "row_count": 57
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.631578947368421,
+              "hit_count": 36,
+              "row_count": 57
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176386,
+              "coverage_rate": 0.8070175438596491,
+              "hit_count": 46,
+              "row_count": 57
+            }
+          },
+          "row_count": 57
+        },
+        "both_starters_clean:1": {
+          "description": "Neither starter cracked",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.4782608695652174,
+              "hit_count": 77,
+              "row_count": 161
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.7577639751552795,
+              "hit_count": 122,
+              "row_count": 161
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176386,
+              "coverage_rate": 0.8633540372670807,
+              "hit_count": 139,
+              "row_count": 161
+            }
+          },
+          "row_count": 161
+        },
+        "target_away_starter_cracked_flag:0": {
+          "description": "target_away_starter_cracked_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.45108695652173914,
+              "hit_count": 83,
+              "row_count": 184
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.7391304347826086,
+              "hit_count": 136,
+              "row_count": 184
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176384,
+              "coverage_rate": 0.8586956521739131,
+              "hit_count": 158,
+              "row_count": 184
+            }
+          },
+          "row_count": 184
+        },
+        "target_away_starter_cracked_flag:1": {
+          "description": "target_away_starter_cracked_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.38235294117647056,
+              "hit_count": 13,
+              "row_count": 34
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.6470588235294118,
+              "hit_count": 22,
+              "row_count": 34
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176384,
+              "coverage_rate": 0.7941176470588235,
+              "hit_count": 27,
+              "row_count": 34
+            }
+          },
+          "row_count": 34
+        },
+        "target_away_traffic_no_conversion_flag:0": {
+          "description": "target_away_traffic_no_conversion_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.43,
+              "hit_count": 86,
+              "row_count": 200
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477276,
+              "coverage_rate": 0.72,
+              "hit_count": 144,
+              "row_count": 200
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176386,
+              "coverage_rate": 0.845,
+              "hit_count": 169,
+              "row_count": 200
+            }
+          },
+          "row_count": 200
+        },
+        "target_away_traffic_no_conversion_flag:1": {
+          "description": "target_away_traffic_no_conversion_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.5555555555555556,
+              "hit_count": 10,
+              "row_count": 18
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.7777777777777778,
+              "hit_count": 14,
+              "row_count": 18
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176386,
+              "coverage_rate": 0.8888888888888888,
+              "hit_count": 16,
+              "row_count": 18
+            }
+          },
+          "row_count": 18
+        },
+        "target_bullpen_flip_flag:0": {
+          "description": "target_bullpen_flip_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.43478260869565216,
+              "hit_count": 80,
+              "row_count": 184
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.7228260869565217,
+              "hit_count": 133,
+              "row_count": 184
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176384,
+              "coverage_rate": 0.842391304347826,
+              "hit_count": 155,
+              "row_count": 184
+            }
+          },
+          "row_count": 184
+        },
+        "target_bullpen_flip_flag:1": {
+          "description": "target_bullpen_flip_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.47058823529411764,
+              "hit_count": 16,
+              "row_count": 34
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.7352941176470589,
+              "hit_count": 25,
+              "row_count": 34
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176384,
+              "coverage_rate": 0.8823529411764706,
+              "hit_count": 30,
+              "row_count": 34
+            }
+          },
+          "row_count": 34
+        },
+        "target_chaos_game_flag:0": {
+          "description": "target_chaos_game_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.5238095238095238,
+              "hit_count": 88,
+              "row_count": 168
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.7976190476190477,
+              "hit_count": 134,
+              "row_count": 168
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176384,
+              "coverage_rate": 0.875,
+              "hit_count": 147,
+              "row_count": 168
+            }
+          },
+          "row_count": 168
+        },
+        "target_chaos_game_flag:1": {
+          "description": "target_chaos_game_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.16,
+              "hit_count": 8,
+              "row_count": 50
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477276,
+              "coverage_rate": 0.48,
+              "hit_count": 24,
+              "row_count": 50
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176386,
+              "coverage_rate": 0.76,
+              "hit_count": 38,
+              "row_count": 50
+            }
+          },
+          "row_count": 50
+        },
+        "target_f5_bucket:chaos": {
+          "description": "target_f5_bucket == chaos",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.27906976744186046,
+              "hit_count": 12,
+              "row_count": 43
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.5348837209302325,
+              "hit_count": 23,
+              "row_count": 43
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176386,
+              "coverage_rate": 0.7906976744186046,
+              "hit_count": 34,
+              "row_count": 43
+            }
+          },
+          "row_count": 43
+        },
+        "target_f5_bucket:high": {
+          "description": "target_f5_bucket == high",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.4772727272727273,
+              "hit_count": 21,
+              "row_count": 44
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.8636363636363636,
+              "hit_count": 38,
+              "row_count": 44
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176384,
+              "coverage_rate": 0.9318181818181818,
+              "hit_count": 41,
+              "row_count": 44
+            }
+          },
+          "row_count": 44
+        },
+        "target_f5_bucket:low": {
+          "description": "target_f5_bucket == low",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.35185185185185186,
+              "hit_count": 19,
+              "row_count": 54
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477276,
+              "coverage_rate": 0.5740740740740741,
+              "hit_count": 31,
+              "row_count": 54
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176384,
+              "coverage_rate": 0.6851851851851852,
+              "hit_count": 37,
+              "row_count": 54
+            }
+          },
+          "row_count": 54
+        },
+        "target_f5_bucket:normal": {
+          "description": "target_f5_bucket == normal",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.5714285714285714,
+              "hit_count": 44,
+              "row_count": 77
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.8571428571428571,
+              "hit_count": 66,
+              "row_count": 77
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176386,
+              "coverage_rate": 0.948051948051948,
+              "hit_count": 73,
+              "row_count": 77
+            }
+          },
+          "row_count": 77
+        },
+        "target_home_starter_cracked_flag:0": {
+          "description": "target_home_starter_cracked_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.4583333333333333,
+              "hit_count": 88,
+              "row_count": 192
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.734375,
+              "hit_count": 141,
+              "row_count": 192
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176386,
+              "coverage_rate": 0.8489583333333334,
+              "hit_count": 163,
+              "row_count": 192
+            }
+          },
+          "row_count": 192
+        },
+        "target_home_starter_cracked_flag:1": {
+          "description": "target_home_starter_cracked_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.193311130018167,
+              "coverage_rate": 0.3076923076923077,
+              "hit_count": 8,
+              "row_count": 26
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.6538461538461539,
+              "hit_count": 17,
+              "row_count": 26
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176384,
+              "coverage_rate": 0.8461538461538461,
+              "hit_count": 22,
+              "row_count": 26
+            }
+          },
+          "row_count": 26
+        },
+        "target_home_traffic_no_conversion_flag:0": {
+          "description": "target_home_traffic_no_conversion_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.193311130018166,
+              "coverage_rate": 0.4258373205741627,
+              "hit_count": 89,
+              "row_count": 209
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.7177033492822966,
+              "hit_count": 150,
+              "row_count": 209
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176386,
+              "coverage_rate": 0.84688995215311,
+              "hit_count": 177,
+              "row_count": 209
+            }
+          },
+          "row_count": 209
+        },
+        "target_home_traffic_no_conversion_flag:1": {
+          "description": "target_home_traffic_no_conversion_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.7777777777777778,
+              "hit_count": 7,
+              "row_count": 9
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.8888888888888888,
+              "hit_count": 8,
+              "row_count": 9
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176386,
+              "coverage_rate": 0.8888888888888888,
+              "hit_count": 8,
+              "row_count": 9
+            }
+          },
+          "row_count": 9
+        },
+        "target_total_bucket:chaos": {
+          "description": "target_total_bucket == chaos",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.14893617021276595,
+              "hit_count": 7,
+              "row_count": 47
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.46808510638297873,
+              "hit_count": 22,
+              "row_count": 47
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176384,
+              "coverage_rate": 0.7446808510638298,
+              "hit_count": 35,
+              "row_count": 47
+            }
+          },
+          "row_count": 47
+        },
+        "target_total_bucket:high": {
+          "description": "target_total_bucket == high",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.3953488372093023,
+              "hit_count": 17,
+              "row_count": 43
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.8837209302325582,
+              "hit_count": 38,
+              "row_count": 43
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176386,
+              "coverage_rate": 0.9534883720930233,
+              "hit_count": 41,
+              "row_count": 43
+            }
+          },
+          "row_count": 43
+        },
+        "target_total_bucket:low": {
+          "description": "target_total_bucket == low",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.2545454545454545,
+              "hit_count": 14,
+              "row_count": 55
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.5272727272727272,
+              "hit_count": 29,
+              "row_count": 55
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176386,
+              "coverage_rate": 0.6909090909090909,
+              "hit_count": 38,
+              "row_count": 55
+            }
+          },
+          "row_count": 55
+        },
+        "target_total_bucket:normal": {
+          "description": "target_total_bucket == normal",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.7945205479452054,
+              "hit_count": 58,
+              "row_count": 73
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.9452054794520548,
+              "hit_count": 69,
+              "row_count": 73
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176384,
+              "coverage_rate": 0.9726027397260274,
+              "hit_count": 71,
+              "row_count": 73
+            }
+          },
+          "row_count": 73
+        }
+      },
+      "split_kind": "manifest_validation",
+      "status": "created"
+    },
+    {
+      "distribution_family": "fold_train_residual_quantile_v0",
+      "distribution_fit_rows": 467,
+      "distribution_fit_scope": "walk_forward_train_rows_only",
+      "fold_id": "wf_2026_05_01_to_2026_05_15",
+      "lane": "f5_total",
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs/distribution_outputs/walk_forward_wf_2026_05_01_to_2026_05_15_f5_total.jsonl",
+      "row_count": 201,
+      "slices": {
+        "all": {
+          "description": "All rows",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.5554562884715595,
+              "coverage_rate": 0.39303482587064675,
+              "hit_count": 79,
+              "row_count": 201
+            },
+            "prediction_interval_80": {
+              "average_width": 7.112487083232316,
+              "coverage_rate": 0.736318407960199,
+              "hit_count": 148,
+              "row_count": 201
+            },
+            "prediction_interval_90": {
+              "average_width": 9.120638897854926,
+              "coverage_rate": 0.8258706467661692,
+              "hit_count": 166,
+              "row_count": 201
+            }
+          },
+          "row_count": 201
+        },
+        "any_starter_cracked:1": {
+          "description": "Either starter cracked",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.55545628847156,
+              "coverage_rate": 0.3559322033898305,
+              "hit_count": 21,
+              "row_count": 59
+            },
+            "prediction_interval_80": {
+              "average_width": 7.112487083232317,
+              "coverage_rate": 0.711864406779661,
+              "hit_count": 42,
+              "row_count": 59
+            },
+            "prediction_interval_90": {
+              "average_width": 9.120638897854926,
+              "coverage_rate": 0.8305084745762712,
+              "hit_count": 49,
+              "row_count": 59
+            }
+          },
+          "row_count": 59
+        },
+        "both_starters_clean:1": {
+          "description": "Neither starter cracked",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.5554562884715595,
+              "coverage_rate": 0.4084507042253521,
+              "hit_count": 58,
+              "row_count": 142
+            },
+            "prediction_interval_80": {
+              "average_width": 7.112487083232317,
+              "coverage_rate": 0.7464788732394366,
+              "hit_count": 106,
+              "row_count": 142
+            },
+            "prediction_interval_90": {
+              "average_width": 9.120638897854926,
+              "coverage_rate": 0.823943661971831,
+              "hit_count": 117,
+              "row_count": 142
+            }
+          },
+          "row_count": 142
+        },
+        "target_away_starter_cracked_flag:0": {
+          "description": "target_away_starter_cracked_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.5554562884715595,
+              "coverage_rate": 0.39520958083832336,
+              "hit_count": 66,
+              "row_count": 167
+            },
+            "prediction_interval_80": {
+              "average_width": 7.112487083232317,
+              "coverage_rate": 0.7365269461077845,
+              "hit_count": 123,
+              "row_count": 167
+            },
+            "prediction_interval_90": {
+              "average_width": 9.120638897854926,
+              "coverage_rate": 0.8143712574850299,
+              "hit_count": 136,
+              "row_count": 167
+            }
+          },
+          "row_count": 167
+        },
+        "target_away_starter_cracked_flag:1": {
+          "description": "target_away_starter_cracked_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.55545628847156,
+              "coverage_rate": 0.38235294117647056,
+              "hit_count": 13,
+              "row_count": 34
+            },
+            "prediction_interval_80": {
+              "average_width": 7.112487083232317,
+              "coverage_rate": 0.7352941176470589,
+              "hit_count": 25,
+              "row_count": 34
+            },
+            "prediction_interval_90": {
+              "average_width": 9.120638897854926,
+              "coverage_rate": 0.8823529411764706,
+              "hit_count": 30,
+              "row_count": 34
+            }
+          },
+          "row_count": 34
+        },
+        "target_away_traffic_no_conversion_flag:0": {
+          "description": "target_away_traffic_no_conversion_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.55545628847156,
+              "coverage_rate": 0.3901098901098901,
+              "hit_count": 71,
+              "row_count": 182
+            },
+            "prediction_interval_80": {
+              "average_width": 7.112487083232316,
+              "coverage_rate": 0.7252747252747253,
+              "hit_count": 132,
+              "row_count": 182
+            },
+            "prediction_interval_90": {
+              "average_width": 9.120638897854926,
+              "coverage_rate": 0.8241758241758241,
+              "hit_count": 150,
+              "row_count": 182
+            }
+          },
+          "row_count": 182
+        },
+        "target_away_traffic_no_conversion_flag:1": {
+          "description": "target_away_traffic_no_conversion_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.55545628847156,
+              "coverage_rate": 0.42105263157894735,
+              "hit_count": 8,
+              "row_count": 19
+            },
+            "prediction_interval_80": {
+              "average_width": 7.112487083232317,
+              "coverage_rate": 0.8421052631578947,
+              "hit_count": 16,
+              "row_count": 19
+            },
+            "prediction_interval_90": {
+              "average_width": 9.120638897854926,
+              "coverage_rate": 0.8421052631578947,
+              "hit_count": 16,
+              "row_count": 19
+            }
+          },
+          "row_count": 19
+        },
+        "target_bullpen_flip_flag:0": {
+          "description": "target_bullpen_flip_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.55545628847156,
+              "coverage_rate": 0.4011299435028249,
+              "hit_count": 71,
+              "row_count": 177
+            },
+            "prediction_interval_80": {
+              "average_width": 7.112487083232317,
+              "coverage_rate": 0.7401129943502824,
+              "hit_count": 131,
+              "row_count": 177
+            },
+            "prediction_interval_90": {
+              "average_width": 9.120638897854926,
+              "coverage_rate": 0.8248587570621468,
+              "hit_count": 146,
+              "row_count": 177
+            }
+          },
+          "row_count": 177
+        },
+        "target_bullpen_flip_flag:1": {
+          "description": "target_bullpen_flip_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.5554562884715595,
+              "coverage_rate": 0.3333333333333333,
+              "hit_count": 8,
+              "row_count": 24
+            },
+            "prediction_interval_80": {
+              "average_width": 7.112487083232317,
+              "coverage_rate": 0.7083333333333334,
+              "hit_count": 17,
+              "row_count": 24
+            },
+            "prediction_interval_90": {
+              "average_width": 9.120638897854926,
+              "coverage_rate": 0.8333333333333334,
+              "hit_count": 20,
+              "row_count": 24
+            }
+          },
+          "row_count": 24
+        },
+        "target_chaos_game_flag:0": {
+          "description": "target_chaos_game_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.5554562884715595,
+              "coverage_rate": 0.3987730061349693,
+              "hit_count": 65,
+              "row_count": 163
+            },
+            "prediction_interval_80": {
+              "average_width": 7.112487083232316,
+              "coverage_rate": 0.7668711656441718,
+              "hit_count": 125,
+              "row_count": 163
+            },
+            "prediction_interval_90": {
+              "average_width": 9.120638897854926,
+              "coverage_rate": 0.8466257668711656,
+              "hit_count": 138,
+              "row_count": 163
+            }
+          },
+          "row_count": 163
+        },
+        "target_chaos_game_flag:1": {
+          "description": "target_chaos_game_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.55545628847156,
+              "coverage_rate": 0.3684210526315789,
+              "hit_count": 14,
+              "row_count": 38
+            },
+            "prediction_interval_80": {
+              "average_width": 7.112487083232317,
+              "coverage_rate": 0.6052631578947368,
+              "hit_count": 23,
+              "row_count": 38
+            },
+            "prediction_interval_90": {
+              "average_width": 9.120638897854926,
+              "coverage_rate": 0.7368421052631579,
+              "hit_count": 28,
+              "row_count": 38
+            }
+          },
+          "row_count": 38
+        },
+        "target_f5_bucket:chaos": {
+          "description": "target_f5_bucket == chaos",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.55545628847156,
+              "coverage_rate": 0.08108108108108109,
+              "hit_count": 3,
+              "row_count": 37
+            },
+            "prediction_interval_80": {
+              "average_width": 7.112487083232317,
+              "coverage_rate": 0.43243243243243246,
+              "hit_count": 16,
+              "row_count": 37
+            },
+            "prediction_interval_90": {
+              "average_width": 9.120638897854926,
+              "coverage_rate": 0.6756756756756757,
+              "hit_count": 25,
+              "row_count": 37
+            }
+          },
+          "row_count": 37
+        },
+        "target_f5_bucket:high": {
+          "description": "target_f5_bucket == high",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.55545628847156,
+              "coverage_rate": 0.631578947368421,
+              "hit_count": 24,
+              "row_count": 38
+            },
+            "prediction_interval_80": {
+              "average_width": 7.112487083232317,
+              "coverage_rate": 1.0,
+              "hit_count": 38,
+              "row_count": 38
+            },
+            "prediction_interval_90": {
+              "average_width": 9.120638897854926,
+              "coverage_rate": 1.0,
+              "hit_count": 38,
+              "row_count": 38
+            }
+          },
+          "row_count": 38
+        },
+        "target_f5_bucket:low": {
+          "description": "target_f5_bucket == low",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.5554562884715595,
+              "coverage_rate": 0.14,
+              "hit_count": 7,
+              "row_count": 50
+            },
+            "prediction_interval_80": {
+              "average_width": 7.112487083232317,
+              "coverage_rate": 0.48,
+              "hit_count": 24,
+              "row_count": 50
+            },
+            "prediction_interval_90": {
+              "average_width": 9.120638897854926,
+              "coverage_rate": 0.58,
+              "hit_count": 29,
+              "row_count": 50
+            }
+          },
+          "row_count": 50
+        },
+        "target_f5_bucket:normal": {
+          "description": "target_f5_bucket == normal",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.55545628847156,
+              "coverage_rate": 0.5921052631578947,
+              "hit_count": 45,
+              "row_count": 76
+            },
+            "prediction_interval_80": {
+              "average_width": 7.112487083232317,
+              "coverage_rate": 0.9210526315789473,
+              "hit_count": 70,
+              "row_count": 76
+            },
+            "prediction_interval_90": {
+              "average_width": 9.120638897854926,
+              "coverage_rate": 0.9736842105263158,
+              "hit_count": 74,
+              "row_count": 76
+            }
+          },
+          "row_count": 76
+        },
+        "target_home_starter_cracked_flag:0": {
+          "description": "target_home_starter_cracked_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.5554562884715595,
+              "coverage_rate": 0.4152046783625731,
+              "hit_count": 71,
+              "row_count": 171
+            },
+            "prediction_interval_80": {
+              "average_width": 7.112487083232317,
+              "coverage_rate": 0.7602339181286549,
+              "hit_count": 130,
+              "row_count": 171
+            },
+            "prediction_interval_90": {
+              "average_width": 9.120638897854926,
+              "coverage_rate": 0.8362573099415205,
+              "hit_count": 143,
+              "row_count": 171
+            }
+          },
+          "row_count": 171
+        },
+        "target_home_starter_cracked_flag:1": {
+          "description": "target_home_starter_cracked_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.55545628847156,
+              "coverage_rate": 0.26666666666666666,
+              "hit_count": 8,
+              "row_count": 30
+            },
+            "prediction_interval_80": {
+              "average_width": 7.112487083232318,
+              "coverage_rate": 0.6,
+              "hit_count": 18,
+              "row_count": 30
+            },
+            "prediction_interval_90": {
+              "average_width": 9.120638897854926,
+              "coverage_rate": 0.7666666666666667,
+              "hit_count": 23,
+              "row_count": 30
+            }
+          },
+          "row_count": 30
+        },
+        "target_home_traffic_no_conversion_flag:0": {
+          "description": "target_home_traffic_no_conversion_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.55545628847156,
+              "coverage_rate": 0.39473684210526316,
+              "hit_count": 75,
+              "row_count": 190
+            },
+            "prediction_interval_80": {
+              "average_width": 7.112487083232317,
+              "coverage_rate": 0.7368421052631579,
+              "hit_count": 140,
+              "row_count": 190
+            },
+            "prediction_interval_90": {
+              "average_width": 9.120638897854926,
+              "coverage_rate": 0.8263157894736842,
+              "hit_count": 157,
+              "row_count": 190
+            }
+          },
+          "row_count": 190
+        },
+        "target_home_traffic_no_conversion_flag:1": {
+          "description": "target_home_traffic_no_conversion_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.5554562884715595,
+              "coverage_rate": 0.36363636363636365,
+              "hit_count": 4,
+              "row_count": 11
+            },
+            "prediction_interval_80": {
+              "average_width": 7.112487083232318,
+              "coverage_rate": 0.7272727272727273,
+              "hit_count": 8,
+              "row_count": 11
+            },
+            "prediction_interval_90": {
+              "average_width": 9.120638897854926,
+              "coverage_rate": 0.8181818181818182,
+              "hit_count": 9,
+              "row_count": 11
+            }
+          },
+          "row_count": 11
+        },
+        "target_total_bucket:chaos": {
+          "description": "target_total_bucket == chaos",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.55545628847156,
+              "coverage_rate": 0.35135135135135137,
+              "hit_count": 13,
+              "row_count": 37
+            },
+            "prediction_interval_80": {
+              "average_width": 7.112487083232317,
+              "coverage_rate": 0.5945945945945946,
+              "hit_count": 22,
+              "row_count": 37
+            },
+            "prediction_interval_90": {
+              "average_width": 9.120638897854926,
+              "coverage_rate": 0.7297297297297297,
+              "hit_count": 27,
+              "row_count": 37
+            }
+          },
+          "row_count": 37
+        },
+        "target_total_bucket:high": {
+          "description": "target_total_bucket == high",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.55545628847156,
+              "coverage_rate": 0.41935483870967744,
+              "hit_count": 13,
+              "row_count": 31
+            },
+            "prediction_interval_80": {
+              "average_width": 7.112487083232317,
+              "coverage_rate": 0.8709677419354839,
+              "hit_count": 27,
+              "row_count": 31
+            },
+            "prediction_interval_90": {
+              "average_width": 9.120638897854926,
+              "coverage_rate": 0.967741935483871,
+              "hit_count": 30,
+              "row_count": 31
+            }
+          },
+          "row_count": 31
+        },
+        "target_total_bucket:low": {
+          "description": "target_total_bucket == low",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.55545628847156,
+              "coverage_rate": 0.2542372881355932,
+              "hit_count": 15,
+              "row_count": 59
+            },
+            "prediction_interval_80": {
+              "average_width": 7.112487083232317,
+              "coverage_rate": 0.6949152542372882,
+              "hit_count": 41,
+              "row_count": 59
+            },
+            "prediction_interval_90": {
+              "average_width": 9.120638897854926,
+              "coverage_rate": 0.7966101694915254,
+              "hit_count": 47,
+              "row_count": 59
+            }
+          },
+          "row_count": 59
+        },
+        "target_total_bucket:normal": {
+          "description": "target_total_bucket == normal",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.55545628847156,
+              "coverage_rate": 0.5135135135135135,
+              "hit_count": 38,
+              "row_count": 74
+            },
+            "prediction_interval_80": {
+              "average_width": 7.112487083232317,
+              "coverage_rate": 0.7837837837837838,
+              "hit_count": 58,
+              "row_count": 74
+            },
+            "prediction_interval_90": {
+              "average_width": 9.120638897854926,
+              "coverage_rate": 0.8378378378378378,
+              "hit_count": 62,
+              "row_count": 74
+            }
+          },
+          "row_count": 74
+        }
+      },
+      "split_kind": "walk_forward_validation",
+      "status": "created"
+    },
+    {
+      "distribution_family": "fold_train_residual_quantile_v0",
+      "distribution_fit_rows": 467,
+      "distribution_fit_scope": "walk_forward_train_rows_only",
+      "fold_id": "wf_2026_05_01_to_2026_05_15",
+      "lane": "full_game_total",
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs/distribution_outputs/walk_forward_wf_2026_05_01_to_2026_05_15_full_game_total.jsonl",
+      "row_count": 201,
+      "slices": {
+        "all": {
+          "description": "All rows",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.178858242227746,
+              "coverage_rate": 0.417910447761194,
+              "hit_count": 84,
+              "row_count": 201
+            },
+            "prediction_interval_80": {
+              "average_width": 10.494541962376287,
+              "coverage_rate": 0.7014925373134329,
+              "hit_count": 141,
+              "row_count": 201
+            },
+            "prediction_interval_90": {
+              "average_width": 13.53905093652715,
+              "coverage_rate": 0.8407960199004975,
+              "hit_count": 169,
+              "row_count": 201
+            }
+          },
+          "row_count": 201
+        },
+        "any_starter_cracked:1": {
+          "description": "Either starter cracked",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.178858242227747,
+              "coverage_rate": 0.4745762711864407,
+              "hit_count": 28,
+              "row_count": 59
+            },
+            "prediction_interval_80": {
+              "average_width": 10.494541962376287,
+              "coverage_rate": 0.7966101694915254,
+              "hit_count": 47,
+              "row_count": 59
+            },
+            "prediction_interval_90": {
+              "average_width": 13.53905093652715,
+              "coverage_rate": 0.9152542372881356,
+              "hit_count": 54,
+              "row_count": 59
+            }
+          },
+          "row_count": 59
+        },
+        "both_starters_clean:1": {
+          "description": "Neither starter cracked",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.178858242227747,
+              "coverage_rate": 0.39436619718309857,
+              "hit_count": 56,
+              "row_count": 142
+            },
+            "prediction_interval_80": {
+              "average_width": 10.494541962376285,
+              "coverage_rate": 0.6619718309859155,
+              "hit_count": 94,
+              "row_count": 142
+            },
+            "prediction_interval_90": {
+              "average_width": 13.53905093652715,
+              "coverage_rate": 0.8098591549295775,
+              "hit_count": 115,
+              "row_count": 142
+            }
+          },
+          "row_count": 142
+        },
+        "target_away_starter_cracked_flag:0": {
+          "description": "target_away_starter_cracked_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.178858242227747,
+              "coverage_rate": 0.39520958083832336,
+              "hit_count": 66,
+              "row_count": 167
+            },
+            "prediction_interval_80": {
+              "average_width": 10.494541962376287,
+              "coverage_rate": 0.6826347305389222,
+              "hit_count": 114,
+              "row_count": 167
+            },
+            "prediction_interval_90": {
+              "average_width": 13.53905093652715,
+              "coverage_rate": 0.8323353293413174,
+              "hit_count": 139,
+              "row_count": 167
+            }
+          },
+          "row_count": 167
+        },
+        "target_away_starter_cracked_flag:1": {
+          "description": "target_away_starter_cracked_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.178858242227747,
+              "coverage_rate": 0.5294117647058824,
+              "hit_count": 18,
+              "row_count": 34
+            },
+            "prediction_interval_80": {
+              "average_width": 10.494541962376287,
+              "coverage_rate": 0.7941176470588235,
+              "hit_count": 27,
+              "row_count": 34
+            },
+            "prediction_interval_90": {
+              "average_width": 13.53905093652715,
+              "coverage_rate": 0.8823529411764706,
+              "hit_count": 30,
+              "row_count": 34
+            }
+          },
+          "row_count": 34
+        },
+        "target_away_traffic_no_conversion_flag:0": {
+          "description": "target_away_traffic_no_conversion_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.178858242227747,
+              "coverage_rate": 0.4175824175824176,
+              "hit_count": 76,
+              "row_count": 182
+            },
+            "prediction_interval_80": {
+              "average_width": 10.494541962376285,
+              "coverage_rate": 0.7087912087912088,
+              "hit_count": 129,
+              "row_count": 182
+            },
+            "prediction_interval_90": {
+              "average_width": 13.539050936527152,
+              "coverage_rate": 0.8516483516483516,
+              "hit_count": 155,
+              "row_count": 182
+            }
+          },
+          "row_count": 182
+        },
+        "target_away_traffic_no_conversion_flag:1": {
+          "description": "target_away_traffic_no_conversion_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.178858242227747,
+              "coverage_rate": 0.42105263157894735,
+              "hit_count": 8,
+              "row_count": 19
+            },
+            "prediction_interval_80": {
+              "average_width": 10.494541962376287,
+              "coverage_rate": 0.631578947368421,
+              "hit_count": 12,
+              "row_count": 19
+            },
+            "prediction_interval_90": {
+              "average_width": 13.53905093652715,
+              "coverage_rate": 0.7368421052631579,
+              "hit_count": 14,
+              "row_count": 19
+            }
+          },
+          "row_count": 19
+        },
+        "target_bullpen_flip_flag:0": {
+          "description": "target_bullpen_flip_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.178858242227747,
+              "coverage_rate": 0.4519774011299435,
+              "hit_count": 80,
+              "row_count": 177
+            },
+            "prediction_interval_80": {
+              "average_width": 10.494541962376285,
+              "coverage_rate": 0.7175141242937854,
+              "hit_count": 127,
+              "row_count": 177
+            },
+            "prediction_interval_90": {
+              "average_width": 13.53905093652715,
+              "coverage_rate": 0.847457627118644,
+              "hit_count": 150,
+              "row_count": 177
+            }
+          },
+          "row_count": 177
+        },
+        "target_bullpen_flip_flag:1": {
+          "description": "target_bullpen_flip_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.178858242227747,
+              "coverage_rate": 0.16666666666666666,
+              "hit_count": 4,
+              "row_count": 24
+            },
+            "prediction_interval_80": {
+              "average_width": 10.494541962376285,
+              "coverage_rate": 0.5833333333333334,
+              "hit_count": 14,
+              "row_count": 24
+            },
+            "prediction_interval_90": {
+              "average_width": 13.539050936527152,
+              "coverage_rate": 0.7916666666666666,
+              "hit_count": 19,
+              "row_count": 24
+            }
+          },
+          "row_count": 24
+        },
+        "target_chaos_game_flag:0": {
+          "description": "target_chaos_game_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.178858242227747,
+              "coverage_rate": 0.4723926380368098,
+              "hit_count": 77,
+              "row_count": 163
+            },
+            "prediction_interval_80": {
+              "average_width": 10.494541962376285,
+              "coverage_rate": 0.7484662576687117,
+              "hit_count": 122,
+              "row_count": 163
+            },
+            "prediction_interval_90": {
+              "average_width": 13.53905093652715,
+              "coverage_rate": 0.8404907975460123,
+              "hit_count": 137,
+              "row_count": 163
+            }
+          },
+          "row_count": 163
+        },
+        "target_chaos_game_flag:1": {
+          "description": "target_chaos_game_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.178858242227747,
+              "coverage_rate": 0.18421052631578946,
+              "hit_count": 7,
+              "row_count": 38
+            },
+            "prediction_interval_80": {
+              "average_width": 10.494541962376285,
+              "coverage_rate": 0.5,
+              "hit_count": 19,
+              "row_count": 38
+            },
+            "prediction_interval_90": {
+              "average_width": 13.53905093652715,
+              "coverage_rate": 0.8421052631578947,
+              "hit_count": 32,
+              "row_count": 38
+            }
+          },
+          "row_count": 38
+        },
+        "target_f5_bucket:chaos": {
+          "description": "target_f5_bucket == chaos",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.178858242227747,
+              "coverage_rate": 0.2972972972972973,
+              "hit_count": 11,
+              "row_count": 37
+            },
+            "prediction_interval_80": {
+              "average_width": 10.494541962376285,
+              "coverage_rate": 0.6756756756756757,
+              "hit_count": 25,
+              "row_count": 37
+            },
+            "prediction_interval_90": {
+              "average_width": 13.53905093652715,
+              "coverage_rate": 0.8918918918918919,
+              "hit_count": 33,
+              "row_count": 37
+            }
+          },
+          "row_count": 37
+        },
+        "target_f5_bucket:high": {
+          "description": "target_f5_bucket == high",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.178858242227747,
+              "coverage_rate": 0.7105263157894737,
+              "hit_count": 27,
+              "row_count": 38
+            },
+            "prediction_interval_80": {
+              "average_width": 10.494541962376285,
+              "coverage_rate": 0.8947368421052632,
+              "hit_count": 34,
+              "row_count": 38
+            },
+            "prediction_interval_90": {
+              "average_width": 13.53905093652715,
+              "coverage_rate": 0.9736842105263158,
+              "hit_count": 37,
+              "row_count": 38
+            }
+          },
+          "row_count": 38
+        },
+        "target_f5_bucket:low": {
+          "description": "target_f5_bucket == low",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.178858242227746,
+              "coverage_rate": 0.22,
+              "hit_count": 11,
+              "row_count": 50
+            },
+            "prediction_interval_80": {
+              "average_width": 10.494541962376285,
+              "coverage_rate": 0.46,
+              "hit_count": 23,
+              "row_count": 50
+            },
+            "prediction_interval_90": {
+              "average_width": 13.53905093652715,
+              "coverage_rate": 0.6,
+              "hit_count": 30,
+              "row_count": 50
+            }
+          },
+          "row_count": 50
+        },
+        "target_f5_bucket:normal": {
+          "description": "target_f5_bucket == normal",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.178858242227747,
+              "coverage_rate": 0.4605263157894737,
+              "hit_count": 35,
+              "row_count": 76
+            },
+            "prediction_interval_80": {
+              "average_width": 10.494541962376285,
+              "coverage_rate": 0.7763157894736842,
+              "hit_count": 59,
+              "row_count": 76
+            },
+            "prediction_interval_90": {
+              "average_width": 13.53905093652715,
+              "coverage_rate": 0.9078947368421053,
+              "hit_count": 69,
+              "row_count": 76
+            }
+          },
+          "row_count": 76
+        },
+        "target_home_starter_cracked_flag:0": {
+          "description": "target_home_starter_cracked_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.178858242227747,
+              "coverage_rate": 0.4269005847953216,
+              "hit_count": 73,
+              "row_count": 171
+            },
+            "prediction_interval_80": {
+              "average_width": 10.494541962376285,
+              "coverage_rate": 0.6900584795321637,
+              "hit_count": 118,
+              "row_count": 171
+            },
+            "prediction_interval_90": {
+              "average_width": 13.539050936527149,
+              "coverage_rate": 0.8187134502923976,
+              "hit_count": 140,
+              "row_count": 171
+            }
+          },
+          "row_count": 171
+        },
+        "target_home_starter_cracked_flag:1": {
+          "description": "target_home_starter_cracked_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.178858242227747,
+              "coverage_rate": 0.36666666666666664,
+              "hit_count": 11,
+              "row_count": 30
+            },
+            "prediction_interval_80": {
+              "average_width": 10.494541962376285,
+              "coverage_rate": 0.7666666666666667,
+              "hit_count": 23,
+              "row_count": 30
+            },
+            "prediction_interval_90": {
+              "average_width": 13.53905093652715,
+              "coverage_rate": 0.9666666666666667,
+              "hit_count": 29,
+              "row_count": 30
+            }
+          },
+          "row_count": 30
+        },
+        "target_home_traffic_no_conversion_flag:0": {
+          "description": "target_home_traffic_no_conversion_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.178858242227747,
+              "coverage_rate": 0.41578947368421054,
+              "hit_count": 79,
+              "row_count": 190
+            },
+            "prediction_interval_80": {
+              "average_width": 10.494541962376285,
+              "coverage_rate": 0.7052631578947368,
+              "hit_count": 134,
+              "row_count": 190
+            },
+            "prediction_interval_90": {
+              "average_width": 13.53905093652715,
+              "coverage_rate": 0.8473684210526315,
+              "hit_count": 161,
+              "row_count": 190
+            }
+          },
+          "row_count": 190
+        },
+        "target_home_traffic_no_conversion_flag:1": {
+          "description": "target_home_traffic_no_conversion_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.178858242227747,
+              "coverage_rate": 0.45454545454545453,
+              "hit_count": 5,
+              "row_count": 11
+            },
+            "prediction_interval_80": {
+              "average_width": 10.494541962376285,
+              "coverage_rate": 0.6363636363636364,
+              "hit_count": 7,
+              "row_count": 11
+            },
+            "prediction_interval_90": {
+              "average_width": 13.53905093652715,
+              "coverage_rate": 0.7272727272727273,
+              "hit_count": 8,
+              "row_count": 11
+            }
+          },
+          "row_count": 11
+        },
+        "target_total_bucket:chaos": {
+          "description": "target_total_bucket == chaos",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.178858242227747,
+              "coverage_rate": 0.16216216216216217,
+              "hit_count": 6,
+              "row_count": 37
+            },
+            "prediction_interval_80": {
+              "average_width": 10.494541962376285,
+              "coverage_rate": 0.4864864864864865,
+              "hit_count": 18,
+              "row_count": 37
+            },
+            "prediction_interval_90": {
+              "average_width": 13.53905093652715,
+              "coverage_rate": 0.8378378378378378,
+              "hit_count": 31,
+              "row_count": 37
+            }
+          },
+          "row_count": 37
+        },
+        "target_total_bucket:high": {
+          "description": "target_total_bucket == high",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.178858242227746,
+              "coverage_rate": 0.6774193548387096,
+              "hit_count": 21,
+              "row_count": 31
+            },
+            "prediction_interval_80": {
+              "average_width": 10.494541962376285,
+              "coverage_rate": 0.967741935483871,
+              "hit_count": 30,
+              "row_count": 31
+            },
+            "prediction_interval_90": {
+              "average_width": 13.53905093652715,
+              "coverage_rate": 1.0,
+              "hit_count": 31,
+              "row_count": 31
+            }
+          },
+          "row_count": 31
+        },
+        "target_total_bucket:low": {
+          "description": "target_total_bucket == low",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.178858242227747,
+              "coverage_rate": 0.2033898305084746,
+              "hit_count": 12,
+              "row_count": 59
+            },
+            "prediction_interval_80": {
+              "average_width": 10.494541962376287,
+              "coverage_rate": 0.4576271186440678,
+              "hit_count": 27,
+              "row_count": 59
+            },
+            "prediction_interval_90": {
+              "average_width": 13.53905093652715,
+              "coverage_rate": 0.6271186440677966,
+              "hit_count": 37,
+              "row_count": 59
+            }
+          },
+          "row_count": 59
+        },
+        "target_total_bucket:normal": {
+          "description": "target_total_bucket == normal",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.178858242227747,
+              "coverage_rate": 0.6081081081081081,
+              "hit_count": 45,
+              "row_count": 74
+            },
+            "prediction_interval_80": {
+              "average_width": 10.494541962376285,
+              "coverage_rate": 0.8918918918918919,
+              "hit_count": 66,
+              "row_count": 74
+            },
+            "prediction_interval_90": {
+              "average_width": 13.53905093652715,
+              "coverage_rate": 0.9459459459459459,
+              "hit_count": 70,
+              "row_count": 74
+            }
+          },
+          "row_count": 74
+        }
+      },
+      "split_kind": "walk_forward_validation",
+      "status": "created"
+    },
+    {
+      "distribution_family": "fold_train_residual_quantile_v0",
+      "distribution_fit_rows": 668,
+      "distribution_fit_scope": "walk_forward_train_rows_only",
+      "fold_id": "wf_2026_05_16_to_2026_05_31",
+      "lane": "f5_total",
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs/distribution_outputs/walk_forward_wf_2026_05_16_to_2026_05_31_f5_total.jsonl",
+      "row_count": 218,
+      "slices": {
+        "all": {
+          "description": "All rows",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.625918437903224,
+              "coverage_rate": 0.3853211009174312,
+              "hit_count": 84,
+              "row_count": 218
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.7247706422018348,
+              "hit_count": 158,
+              "row_count": 218
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.8165137614678899,
+              "hit_count": 178,
+              "row_count": 218
+            }
+          },
+          "row_count": 218
+        },
+        "any_starter_cracked:1": {
+          "description": "Either starter cracked",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.2807017543859649,
+              "hit_count": 16,
+              "row_count": 57
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.6140350877192983,
+              "hit_count": 35,
+              "row_count": 57
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.7719298245614035,
+              "hit_count": 44,
+              "row_count": 57
+            }
+          },
+          "row_count": 57
+        },
+        "both_starters_clean:1": {
+          "description": "Neither starter cracked",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.422360248447205,
+              "hit_count": 68,
+              "row_count": 161
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935986,
+              "coverage_rate": 0.7639751552795031,
+              "hit_count": 123,
+              "row_count": 161
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218056,
+              "coverage_rate": 0.8322981366459627,
+              "hit_count": 134,
+              "row_count": 161
+            }
+          },
+          "row_count": 161
+        },
+        "target_away_starter_cracked_flag:0": {
+          "description": "target_away_starter_cracked_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.625918437903224,
+              "coverage_rate": 0.41304347826086957,
+              "hit_count": 76,
+              "row_count": 184
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.7391304347826086,
+              "hit_count": 136,
+              "row_count": 184
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.8152173913043478,
+              "hit_count": 150,
+              "row_count": 184
+            }
+          },
+          "row_count": 184
+        },
+        "target_away_starter_cracked_flag:1": {
+          "description": "target_away_starter_cracked_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.23529411764705882,
+              "hit_count": 8,
+              "row_count": 34
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.6470588235294118,
+              "hit_count": 22,
+              "row_count": 34
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.8235294117647058,
+              "hit_count": 28,
+              "row_count": 34
+            }
+          },
+          "row_count": 34
+        },
+        "target_away_traffic_no_conversion_flag:0": {
+          "description": "target_away_traffic_no_conversion_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032248,
+              "coverage_rate": 0.385,
+              "hit_count": 77,
+              "row_count": 200
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.715,
+              "hit_count": 143,
+              "row_count": 200
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.81,
+              "hit_count": 162,
+              "row_count": 200
+            }
+          },
+          "row_count": 200
+        },
+        "target_away_traffic_no_conversion_flag:1": {
+          "description": "target_away_traffic_no_conversion_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.3888888888888889,
+              "hit_count": 7,
+              "row_count": 18
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.8333333333333334,
+              "hit_count": 15,
+              "row_count": 18
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.8888888888888888,
+              "hit_count": 16,
+              "row_count": 18
+            }
+          },
+          "row_count": 18
+        },
+        "target_bullpen_flip_flag:0": {
+          "description": "target_bullpen_flip_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.625918437903224,
+              "coverage_rate": 0.391304347826087,
+              "hit_count": 72,
+              "row_count": 184
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.717391304347826,
+              "hit_count": 132,
+              "row_count": 184
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.8097826086956522,
+              "hit_count": 149,
+              "row_count": 184
+            }
+          },
+          "row_count": 184
+        },
+        "target_bullpen_flip_flag:1": {
+          "description": "target_bullpen_flip_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.35294117647058826,
+              "hit_count": 12,
+              "row_count": 34
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.7647058823529411,
+              "hit_count": 26,
+              "row_count": 34
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218056,
+              "coverage_rate": 0.8529411764705882,
+              "hit_count": 29,
+              "row_count": 34
+            }
+          },
+          "row_count": 34
+        },
+        "target_chaos_game_flag:0": {
+          "description": "target_chaos_game_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.4226190476190476,
+              "hit_count": 71,
+              "row_count": 168
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.7916666666666666,
+              "hit_count": 133,
+              "row_count": 168
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.8571428571428571,
+              "hit_count": 144,
+              "row_count": 168
+            }
+          },
+          "row_count": 168
+        },
+        "target_chaos_game_flag:1": {
+          "description": "target_chaos_game_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032248,
+              "coverage_rate": 0.26,
+              "hit_count": 13,
+              "row_count": 50
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.5,
+              "hit_count": 25,
+              "row_count": 50
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.68,
+              "hit_count": 34,
+              "row_count": 50
+            }
+          },
+          "row_count": 50
+        },
+        "target_f5_bucket:chaos": {
+          "description": "target_f5_bucket == chaos",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.023255813953488372,
+              "hit_count": 1,
+              "row_count": 43
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.32558139534883723,
+              "hit_count": 14,
+              "row_count": 43
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.5581395348837209,
+              "hit_count": 24,
+              "row_count": 43
+            }
+          },
+          "row_count": 43
+        },
+        "target_f5_bucket:high": {
+          "description": "target_f5_bucket == high",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.625918437903224,
+              "coverage_rate": 0.4090909090909091,
+              "hit_count": 18,
+              "row_count": 44
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935988,
+              "coverage_rate": 1.0,
+              "hit_count": 44,
+              "row_count": 44
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218056,
+              "coverage_rate": 1.0,
+              "hit_count": 44,
+              "row_count": 44
+            }
+          },
+          "row_count": 44
+        },
+        "target_f5_bucket:low": {
+          "description": "target_f5_bucket == low",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.14814814814814814,
+              "hit_count": 8,
+              "row_count": 54
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.46296296296296297,
+              "hit_count": 25,
+              "row_count": 54
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218056,
+              "coverage_rate": 0.6111111111111112,
+              "hit_count": 33,
+              "row_count": 54
+            }
+          },
+          "row_count": 54
+        },
+        "target_f5_bucket:normal": {
+          "description": "target_f5_bucket == normal",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.7402597402597403,
+              "hit_count": 57,
+              "row_count": 77
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935988,
+              "coverage_rate": 0.974025974025974,
+              "hit_count": 75,
+              "row_count": 77
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 1.0,
+              "hit_count": 77,
+              "row_count": 77
+            }
+          },
+          "row_count": 77
+        },
+        "target_home_starter_cracked_flag:0": {
+          "description": "target_home_starter_cracked_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.625918437903224,
+              "coverage_rate": 0.3958333333333333,
+              "hit_count": 76,
+              "row_count": 192
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935986,
+              "coverage_rate": 0.7447916666666666,
+              "hit_count": 143,
+              "row_count": 192
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.8333333333333334,
+              "hit_count": 160,
+              "row_count": 192
+            }
+          },
+          "row_count": 192
+        },
+        "target_home_starter_cracked_flag:1": {
+          "description": "target_home_starter_cracked_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.3076923076923077,
+              "hit_count": 8,
+              "row_count": 26
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.5769230769230769,
+              "hit_count": 15,
+              "row_count": 26
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.6923076923076923,
+              "hit_count": 18,
+              "row_count": 26
+            }
+          },
+          "row_count": 26
+        },
+        "target_home_traffic_no_conversion_flag:0": {
+          "description": "target_home_traffic_no_conversion_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.625918437903224,
+              "coverage_rate": 0.3923444976076555,
+              "hit_count": 82,
+              "row_count": 209
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.7177033492822966,
+              "hit_count": 150,
+              "row_count": 209
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.8133971291866029,
+              "hit_count": 170,
+              "row_count": 209
+            }
+          },
+          "row_count": 209
+        },
+        "target_home_traffic_no_conversion_flag:1": {
+          "description": "target_home_traffic_no_conversion_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.2222222222222222,
+              "hit_count": 2,
+              "row_count": 9
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.8888888888888888,
+              "hit_count": 8,
+              "row_count": 9
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.8888888888888888,
+              "hit_count": 8,
+              "row_count": 9
+            }
+          },
+          "row_count": 9
+        },
+        "target_total_bucket:chaos": {
+          "description": "target_total_bucket == chaos",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.2127659574468085,
+              "hit_count": 10,
+              "row_count": 47
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.46808510638297873,
+              "hit_count": 22,
+              "row_count": 47
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.6595744680851063,
+              "hit_count": 31,
+              "row_count": 47
+            }
+          },
+          "row_count": 47
+        },
+        "target_total_bucket:high": {
+          "description": "target_total_bucket == high",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.3488372093023256,
+              "hit_count": 15,
+              "row_count": 43
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.8372093023255814,
+              "hit_count": 36,
+              "row_count": 43
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218056,
+              "coverage_rate": 0.9069767441860465,
+              "hit_count": 39,
+              "row_count": 43
+            }
+          },
+          "row_count": 43
+        },
+        "target_total_bucket:low": {
+          "description": "target_total_bucket == low",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.36363636363636365,
+              "hit_count": 20,
+              "row_count": 55
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935986,
+              "coverage_rate": 0.6,
+              "hit_count": 33,
+              "row_count": 55
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218054,
+              "coverage_rate": 0.7090909090909091,
+              "hit_count": 39,
+              "row_count": 55
+            }
+          },
+          "row_count": 55
+        },
+        "target_total_bucket:normal": {
+          "description": "target_total_bucket == normal",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 3.6259184379032243,
+              "coverage_rate": 0.5342465753424658,
+              "hit_count": 39,
+              "row_count": 73
+            },
+            "prediction_interval_80": {
+              "average_width": 7.210000652935987,
+              "coverage_rate": 0.9178082191780822,
+              "hit_count": 67,
+              "row_count": 73
+            },
+            "prediction_interval_90": {
+              "average_width": 9.332400297218056,
+              "coverage_rate": 0.9452054794520548,
+              "hit_count": 69,
+              "row_count": 73
+            }
+          },
+          "row_count": 73
+        }
+      },
+      "split_kind": "walk_forward_validation",
+      "status": "created"
+    },
+    {
+      "distribution_family": "fold_train_residual_quantile_v0",
+      "distribution_fit_rows": 668,
+      "distribution_fit_scope": "walk_forward_train_rows_only",
+      "fold_id": "wf_2026_05_16_to_2026_05_31",
+      "lane": "full_game_total",
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs/distribution_outputs/walk_forward_wf_2026_05_16_to_2026_05_31_full_game_total.jsonl",
+      "row_count": 218,
+      "slices": {
+        "all": {
+          "description": "All rows",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.44036697247706424,
+              "hit_count": 96,
+              "row_count": 218
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.7247706422018348,
+              "hit_count": 158,
+              "row_count": 218
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176386,
+              "coverage_rate": 0.8486238532110092,
+              "hit_count": 185,
+              "row_count": 218
+            }
+          },
+          "row_count": 218
+        },
+        "any_starter_cracked:1": {
+          "description": "Either starter cracked",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.3333333333333333,
+              "hit_count": 19,
+              "row_count": 57
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.631578947368421,
+              "hit_count": 36,
+              "row_count": 57
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176386,
+              "coverage_rate": 0.8070175438596491,
+              "hit_count": 46,
+              "row_count": 57
+            }
+          },
+          "row_count": 57
+        },
+        "both_starters_clean:1": {
+          "description": "Neither starter cracked",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.4782608695652174,
+              "hit_count": 77,
+              "row_count": 161
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.7577639751552795,
+              "hit_count": 122,
+              "row_count": 161
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176386,
+              "coverage_rate": 0.8633540372670807,
+              "hit_count": 139,
+              "row_count": 161
+            }
+          },
+          "row_count": 161
+        },
+        "target_away_starter_cracked_flag:0": {
+          "description": "target_away_starter_cracked_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.45108695652173914,
+              "hit_count": 83,
+              "row_count": 184
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.7391304347826086,
+              "hit_count": 136,
+              "row_count": 184
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176384,
+              "coverage_rate": 0.8586956521739131,
+              "hit_count": 158,
+              "row_count": 184
+            }
+          },
+          "row_count": 184
+        },
+        "target_away_starter_cracked_flag:1": {
+          "description": "target_away_starter_cracked_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.38235294117647056,
+              "hit_count": 13,
+              "row_count": 34
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.6470588235294118,
+              "hit_count": 22,
+              "row_count": 34
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176384,
+              "coverage_rate": 0.7941176470588235,
+              "hit_count": 27,
+              "row_count": 34
+            }
+          },
+          "row_count": 34
+        },
+        "target_away_traffic_no_conversion_flag:0": {
+          "description": "target_away_traffic_no_conversion_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.43,
+              "hit_count": 86,
+              "row_count": 200
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477276,
+              "coverage_rate": 0.72,
+              "hit_count": 144,
+              "row_count": 200
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176386,
+              "coverage_rate": 0.845,
+              "hit_count": 169,
+              "row_count": 200
+            }
+          },
+          "row_count": 200
+        },
+        "target_away_traffic_no_conversion_flag:1": {
+          "description": "target_away_traffic_no_conversion_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.5555555555555556,
+              "hit_count": 10,
+              "row_count": 18
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.7777777777777778,
+              "hit_count": 14,
+              "row_count": 18
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176386,
+              "coverage_rate": 0.8888888888888888,
+              "hit_count": 16,
+              "row_count": 18
+            }
+          },
+          "row_count": 18
+        },
+        "target_bullpen_flip_flag:0": {
+          "description": "target_bullpen_flip_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.43478260869565216,
+              "hit_count": 80,
+              "row_count": 184
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.7228260869565217,
+              "hit_count": 133,
+              "row_count": 184
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176384,
+              "coverage_rate": 0.842391304347826,
+              "hit_count": 155,
+              "row_count": 184
+            }
+          },
+          "row_count": 184
+        },
+        "target_bullpen_flip_flag:1": {
+          "description": "target_bullpen_flip_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.47058823529411764,
+              "hit_count": 16,
+              "row_count": 34
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.7352941176470589,
+              "hit_count": 25,
+              "row_count": 34
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176384,
+              "coverage_rate": 0.8823529411764706,
+              "hit_count": 30,
+              "row_count": 34
+            }
+          },
+          "row_count": 34
+        },
+        "target_chaos_game_flag:0": {
+          "description": "target_chaos_game_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.5238095238095238,
+              "hit_count": 88,
+              "row_count": 168
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.7976190476190477,
+              "hit_count": 134,
+              "row_count": 168
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176384,
+              "coverage_rate": 0.875,
+              "hit_count": 147,
+              "row_count": 168
+            }
+          },
+          "row_count": 168
+        },
+        "target_chaos_game_flag:1": {
+          "description": "target_chaos_game_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.16,
+              "hit_count": 8,
+              "row_count": 50
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477276,
+              "coverage_rate": 0.48,
+              "hit_count": 24,
+              "row_count": 50
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176386,
+              "coverage_rate": 0.76,
+              "hit_count": 38,
+              "row_count": 50
+            }
+          },
+          "row_count": 50
+        },
+        "target_f5_bucket:chaos": {
+          "description": "target_f5_bucket == chaos",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.27906976744186046,
+              "hit_count": 12,
+              "row_count": 43
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.5348837209302325,
+              "hit_count": 23,
+              "row_count": 43
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176386,
+              "coverage_rate": 0.7906976744186046,
+              "hit_count": 34,
+              "row_count": 43
+            }
+          },
+          "row_count": 43
+        },
+        "target_f5_bucket:high": {
+          "description": "target_f5_bucket == high",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.4772727272727273,
+              "hit_count": 21,
+              "row_count": 44
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.8636363636363636,
+              "hit_count": 38,
+              "row_count": 44
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176384,
+              "coverage_rate": 0.9318181818181818,
+              "hit_count": 41,
+              "row_count": 44
+            }
+          },
+          "row_count": 44
+        },
+        "target_f5_bucket:low": {
+          "description": "target_f5_bucket == low",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.35185185185185186,
+              "hit_count": 19,
+              "row_count": 54
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477276,
+              "coverage_rate": 0.5740740740740741,
+              "hit_count": 31,
+              "row_count": 54
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176384,
+              "coverage_rate": 0.6851851851851852,
+              "hit_count": 37,
+              "row_count": 54
+            }
+          },
+          "row_count": 54
+        },
+        "target_f5_bucket:normal": {
+          "description": "target_f5_bucket == normal",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.5714285714285714,
+              "hit_count": 44,
+              "row_count": 77
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.8571428571428571,
+              "hit_count": 66,
+              "row_count": 77
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176386,
+              "coverage_rate": 0.948051948051948,
+              "hit_count": 73,
+              "row_count": 77
+            }
+          },
+          "row_count": 77
+        },
+        "target_home_starter_cracked_flag:0": {
+          "description": "target_home_starter_cracked_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.4583333333333333,
+              "hit_count": 88,
+              "row_count": 192
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.734375,
+              "hit_count": 141,
+              "row_count": 192
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176386,
+              "coverage_rate": 0.8489583333333334,
+              "hit_count": 163,
+              "row_count": 192
+            }
+          },
+          "row_count": 192
+        },
+        "target_home_starter_cracked_flag:1": {
+          "description": "target_home_starter_cracked_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.193311130018167,
+              "coverage_rate": 0.3076923076923077,
+              "hit_count": 8,
+              "row_count": 26
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.6538461538461539,
+              "hit_count": 17,
+              "row_count": 26
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176384,
+              "coverage_rate": 0.8461538461538461,
+              "hit_count": 22,
+              "row_count": 26
+            }
+          },
+          "row_count": 26
+        },
+        "target_home_traffic_no_conversion_flag:0": {
+          "description": "target_home_traffic_no_conversion_flag == 0",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.193311130018166,
+              "coverage_rate": 0.4258373205741627,
+              "hit_count": 89,
+              "row_count": 209
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.7177033492822966,
+              "hit_count": 150,
+              "row_count": 209
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176386,
+              "coverage_rate": 0.84688995215311,
+              "hit_count": 177,
+              "row_count": 209
+            }
+          },
+          "row_count": 209
+        },
+        "target_home_traffic_no_conversion_flag:1": {
+          "description": "target_home_traffic_no_conversion_flag == 1",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.7777777777777778,
+              "hit_count": 7,
+              "row_count": 9
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.8888888888888888,
+              "hit_count": 8,
+              "row_count": 9
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176386,
+              "coverage_rate": 0.8888888888888888,
+              "hit_count": 8,
+              "row_count": 9
+            }
+          },
+          "row_count": 9
+        },
+        "target_total_bucket:chaos": {
+          "description": "target_total_bucket == chaos",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.14893617021276595,
+              "hit_count": 7,
+              "row_count": 47
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.46808510638297873,
+              "hit_count": 22,
+              "row_count": 47
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176384,
+              "coverage_rate": 0.7446808510638298,
+              "hit_count": 35,
+              "row_count": 47
+            }
+          },
+          "row_count": 47
+        },
+        "target_total_bucket:high": {
+          "description": "target_total_bucket == high",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.3953488372093023,
+              "hit_count": 17,
+              "row_count": 43
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.8837209302325582,
+              "hit_count": 38,
+              "row_count": 43
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176386,
+              "coverage_rate": 0.9534883720930233,
+              "hit_count": 41,
+              "row_count": 43
+            }
+          },
+          "row_count": 43
+        },
+        "target_total_bucket:low": {
+          "description": "target_total_bucket == low",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.2545454545454545,
+              "hit_count": 14,
+              "row_count": 55
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.5272727272727272,
+              "hit_count": 29,
+              "row_count": 55
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176386,
+              "coverage_rate": 0.6909090909090909,
+              "hit_count": 38,
+              "row_count": 55
+            }
+          },
+          "row_count": 55
+        },
+        "target_total_bucket:normal": {
+          "description": "target_total_bucket == normal",
+          "intervals": {
+            "prediction_interval_50": {
+              "average_width": 5.1933111300181665,
+              "coverage_rate": 0.7945205479452054,
+              "hit_count": 58,
+              "row_count": 73
+            },
+            "prediction_interval_80": {
+              "average_width": 10.517575965477278,
+              "coverage_rate": 0.9452054794520548,
+              "hit_count": 69,
+              "row_count": 73
+            },
+            "prediction_interval_90": {
+              "average_width": 13.367824820176384,
+              "coverage_rate": 0.9726027397260274,
+              "hit_count": 71,
+              "row_count": 73
+            }
+          },
+          "row_count": 73
+        }
+      },
+      "split_kind": "walk_forward_validation",
+      "status": "created"
+    }
+  ],
+  "coverage_kind": "prediction_interval_hit_rate",
+  "status": "created"
+}

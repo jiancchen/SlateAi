@@ -1,0 +1,734 @@
+{
+  "artifact_count": 6,
+  "artifacts": [
+    {
+      "bin_count": 5,
+      "bins": [
+        {
+          "actual_mean": 5.0,
+          "baseline_metrics": {
+            "mae": 2.729564127558836,
+            "mean_error": -0.1257485029940124,
+            "rmse": 3.5328358248119884,
+            "row_count": 43
+          },
+          "bin_count": 5,
+          "bin_index": 1,
+          "candidate_delta_mae_vs_baseline": 0.3177084833245418,
+          "candidate_metrics": {
+            "mae": 3.0472726108833776,
+            "mean_error": -1.885175092558498,
+            "rmse": 4.2137799966750435,
+            "row_count": 43
+          },
+          "prediction_max": 3.776217589996472,
+          "prediction_mean": 3.1148249074415024,
+          "prediction_min": 0.695007474037209,
+          "row_count": 43
+        },
+        {
+          "actual_mean": 5.0,
+          "baseline_metrics": {
+            "mae": 2.6818181818181817,
+            "mean_error": -0.1257485029940124,
+            "rmse": 3.373343897328228,
+            "row_count": 44
+          },
+          "bin_count": 5,
+          "bin_index": 2,
+          "candidate_delta_mae_vs_baseline": 0.024663147122856888,
+          "candidate_metrics": {
+            "mae": 2.7064813289410385,
+            "mean_error": -0.8370265006091572,
+            "rmse": 3.4596746134627425,
+            "row_count": 44
+          },
+          "prediction_max": 4.416223549493614,
+          "prediction_mean": 4.162973499390843,
+          "prediction_min": 3.813103351480618,
+          "row_count": 44
+        },
+        {
+          "actual_mean": 5.325581395348837,
+          "baseline_metrics": {
+            "mae": 2.65993594206935,
+            "mean_error": -0.4513298983428496,
+            "rmse": 3.2714441145970334,
+            "row_count": 43
+          },
+          "bin_count": 5,
+          "bin_index": 3,
+          "candidate_delta_mae_vs_baseline": 0.02022140111718329,
+          "candidate_metrics": {
+            "mae": 2.6801573431865333,
+            "mean_error": -0.5980077693089386,
+            "rmse": 3.2945940330508297,
+            "row_count": 43
+          },
+          "prediction_max": 4.992084068113156,
+          "prediction_mean": 4.727573626039899,
+          "prediction_min": 4.417821183495677,
+          "row_count": 43
+        },
+        {
+          "actual_mean": 5.2272727272727275,
+          "baseline_metrics": {
+            "mae": 2.7215568862275448,
+            "mean_error": -0.3530212302667397,
+            "rmse": 3.5394231946748773,
+            "row_count": 44
+          },
+          "bin_count": 5,
+          "bin_index": 4,
+          "candidate_delta_mae_vs_baseline": 0.07022929671403855,
+          "candidate_metrics": {
+            "mae": 2.7917861829415833,
+            "mean_error": 0.03845684323181652,
+            "rmse": 3.514962639426622,
+            "row_count": 44
+          },
+          "prediction_max": 5.604700266677247,
+          "prediction_mean": 5.2657295705045435,
+          "prediction_min": 4.992450669324506,
+          "row_count": 44
+        },
+        {
+          "actual_mean": 4.568181818181818,
+          "baseline_metrics": {
+            "mae": 2.511295590636908,
+            "mean_error": 0.3060696788241694,
+            "rmse": 3.1076054617899564,
+            "row_count": 44
+          },
+          "bin_count": 5,
+          "bin_index": 5,
+          "candidate_delta_mae_vs_baseline": 0.3217837681799942,
+          "candidate_metrics": {
+            "mae": 2.833079358816902,
+            "mean_error": 1.6812245813944189,
+            "rmse": 3.51717581503101,
+            "row_count": 44
+          },
+          "prediction_max": 7.527301736020083,
+          "prediction_mean": 6.249406399576237,
+          "prediction_min": 5.606612866718658,
+          "row_count": 44
+        }
+      ],
+      "fold_id": "manifest_validation",
+      "lane": "f5_total",
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs/row_predictions/manifest_validation_f5_total.jsonl",
+      "row_count": 218,
+      "split_kind": "manifest_validation",
+      "status": "created"
+    },
+    {
+      "bin_count": 5,
+      "bins": [
+        {
+          "actual_mean": 7.72093023255814,
+          "baseline_metrics": {
+            "mae": 3.4895209580838324,
+            "mean_error": 1.088950006962818,
+            "rmse": 3.9989565029888516,
+            "row_count": 43
+          },
+          "bin_count": 5,
+          "bin_index": 1,
+          "candidate_delta_mae_vs_baseline": -0.07384252338669617,
+          "candidate_metrics": {
+            "mae": 3.4156784346971363,
+            "mean_error": -1.7993562993420686,
+            "rmse": 4.275099269940583,
+            "row_count": 43
+          },
+          "prediction_max": 7.163224886429116,
+          "prediction_mean": 5.921573933216071,
+          "prediction_min": 3.059416307134864,
+          "row_count": 43
+        },
+        {
+          "actual_mean": 7.659090909090909,
+          "baseline_metrics": {
+            "mae": 2.888609145345672,
+            "mean_error": 1.1507893304300483,
+            "rmse": 3.4711678388802043,
+            "row_count": 44
+          },
+          "bin_count": 5,
+          "bin_index": 2,
+          "candidate_delta_mae_vs_baseline": -0.19238499212305626,
+          "candidate_metrics": {
+            "mae": 2.696224153222616,
+            "mean_error": 0.08230682090476572,
+            "rmse": 3.271619896498886,
+            "row_count": 44
+          },
+          "prediction_max": 8.20639035424597,
+          "prediction_mean": 7.741397729995675,
+          "prediction_min": 7.196751409388371,
+          "row_count": 44
+        },
+        {
+          "actual_mean": 9.209302325581396,
+          "baseline_metrics": {
+            "mae": 3.431868820498538,
+            "mean_error": -0.3994220860604379,
+            "rmse": 4.534047971124188,
+            "row_count": 43
+          },
+          "bin_count": 5,
+          "bin_index": 3,
+          "candidate_delta_mae_vs_baseline": 0.014224216002326706,
+          "candidate_metrics": {
+            "mae": 3.446093036500865,
+            "mean_error": -0.5625122764430057,
+            "rmse": 4.571838472831165,
+            "row_count": 43
+          },
+          "prediction_max": 8.999134603619783,
+          "prediction_mean": 8.646790049138389,
+          "prediction_min": 8.210158029587426,
+          "row_count": 43
+        },
+        {
+          "actual_mean": 10.090909090909092,
+          "baseline_metrics": {
+            "mae": 4.315936309199782,
+            "mean_error": -1.2810288513881334,
+            "rmse": 5.134203266579111,
+            "row_count": 44
+          },
+          "bin_count": 5,
+          "bin_index": 4,
+          "candidate_delta_mae_vs_baseline": -0.04706361598591169,
+          "candidate_metrics": {
+            "mae": 4.26887269321387,
+            "mean_error": -0.626753466685306,
+            "rmse": 5.072501966787285,
+            "row_count": 44
+          },
+          "prediction_max": 10.069827183199248,
+          "prediction_mean": 9.464155624223785,
+          "prediction_min": 9.018098795834213,
+          "row_count": 44
+        },
+        {
+          "actual_mean": 9.818181818181818,
+          "baseline_metrics": {
+            "mae": 3.8072945019052806,
+            "mean_error": -1.0083015786608607,
+            "rmse": 5.132957294379788,
+            "row_count": 44
+          },
+          "bin_count": 5,
+          "bin_index": 5,
+          "candidate_delta_mae_vs_baseline": 0.6358091048721999,
+          "candidate_metrics": {
+            "mae": 4.4431036067774805,
+            "mean_error": 2.172821804809387,
+            "rmse": 5.558830805979372,
+            "row_count": 44
+          },
+          "prediction_max": 18.405506616346003,
+          "prediction_mean": 11.991003622991206,
+          "prediction_min": 10.073450409681705,
+          "row_count": 44
+        }
+      ],
+      "fold_id": "manifest_validation",
+      "lane": "full_game_total",
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs/row_predictions/manifest_validation_full_game_total.jsonl",
+      "row_count": 218,
+      "split_kind": "manifest_validation",
+      "status": "created"
+    },
+    {
+      "bin_count": 5,
+      "bins": [
+        {
+          "actual_mean": 4.45,
+          "baseline_metrics": {
+            "mae": 2.2339400428265526,
+            "mean_error": 0.44293361884368315,
+            "rmse": 2.7191340884005633,
+            "row_count": 40
+          },
+          "bin_count": 5,
+          "bin_index": 1,
+          "candidate_delta_mae_vs_baseline": 0.016189791980598223,
+          "candidate_metrics": {
+            "mae": 2.250129834807151,
+            "mean_error": -1.2150604622738619,
+            "rmse": 2.8453054291373197,
+            "row_count": 40
+          },
+          "prediction_max": 4.017328148045154,
+          "prediction_mean": 3.234939537726138,
+          "prediction_min": 1.1640115914309708,
+          "row_count": 40
+        },
+        {
+          "actual_mean": 4.825,
+          "baseline_metrics": {
+            "mae": 2.5142933618843686,
+            "mean_error": 0.06793361884368317,
+            "rmse": 3.4855401269486483,
+            "row_count": 40
+          },
+          "bin_count": 5,
+          "bin_index": 2,
+          "candidate_delta_mae_vs_baseline": 0.000545132006793736,
+          "candidate_metrics": {
+            "mae": 2.5148384938911623,
+            "mean_error": -0.44287346382870324,
+            "rmse": 3.5603924097134323,
+            "row_count": 40
+          },
+          "prediction_max": 4.662332756648078,
+          "prediction_mean": 4.382126536171297,
+          "prediction_min": 4.049201413063272,
+          "row_count": 40
+        },
+        {
+          "actual_mean": 4.6,
+          "baseline_metrics": {
+            "mae": 2.444646680942184,
+            "mean_error": 0.2929336188436832,
+            "rmse": 2.9708265020106537,
+            "row_count": 40
+          },
+          "bin_count": 5,
+          "bin_index": 3,
+          "candidate_delta_mae_vs_baseline": 0.038422466200561,
+          "candidate_metrics": {
+            "mae": 2.483069147142745,
+            "mean_error": 0.45670636848035945,
+            "rmse": 3.000106218368032,
+            "row_count": 40
+          },
+          "prediction_max": 5.360993628155944,
+          "prediction_mean": 5.056706368480359,
+          "prediction_min": 4.701943958561576,
+          "row_count": 40
+        },
+        {
+          "actual_mean": 5.35,
+          "baseline_metrics": {
+            "mae": 2.5607066381156316,
+            "mean_error": -0.4570663811563168,
+            "rmse": 3.191615527719987,
+            "row_count": 40
+          },
+          "bin_count": 5,
+          "bin_index": 4,
+          "candidate_delta_mae_vs_baseline": 0.10417751133466169,
+          "candidate_metrics": {
+            "mae": 2.6648841494502933,
+            "mean_error": 0.44850225634583546,
+            "rmse": 3.1982879129517516,
+            "row_count": 40
+          },
+          "prediction_max": 6.127803925967843,
+          "prediction_mean": 5.798502256345836,
+          "prediction_min": 5.4037391932728305,
+          "row_count": 40
+        },
+        {
+          "actual_mean": 4.926829268292683,
+          "baseline_metrics": {
+            "mae": 2.330130046482478,
+            "mean_error": -0.03389564944899976,
+            "rmse": 2.771050665062131,
+            "row_count": 41
+          },
+          "bin_count": 5,
+          "bin_index": 5,
+          "candidate_delta_mae_vs_baseline": 0.5178277422062494,
+          "candidate_metrics": {
+            "mae": 2.8479577886887273,
+            "mean_error": 1.9981321740745328,
+            "rmse": 3.552195171851988,
+            "row_count": 41
+          },
+          "prediction_max": 9.150549503713314,
+          "prediction_mean": 6.924961442367216,
+          "prediction_min": 6.132398546272977,
+          "row_count": 41
+        }
+      ],
+      "fold_id": "wf_2026_05_01_to_2026_05_15",
+      "lane": "f5_total",
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs/row_predictions/walk_forward_wf_2026_05_01_to_2026_05_15_f5_total.jsonl",
+      "row_count": 201,
+      "split_kind": "walk_forward_validation",
+      "status": "created"
+    },
+    {
+      "bin_count": 5,
+      "bins": [
+        {
+          "actual_mean": 7.725,
+          "baseline_metrics": {
+            "mae": 3.29041755888651,
+            "mean_error": 1.3092612419700216,
+            "rmse": 3.8423352274007643,
+            "row_count": 40
+          },
+          "bin_count": 5,
+          "bin_index": 1,
+          "candidate_delta_mae_vs_baseline": -0.32934111128091503,
+          "candidate_metrics": {
+            "mae": 2.961076447605595,
+            "mean_error": -1.7565049820054646,
+            "rmse": 3.8736817764350215,
+            "row_count": 40
+          },
+          "prediction_max": 7.398061528430522,
+          "prediction_mean": 5.9684950179945355,
+          "prediction_min": 1.3625030442541597,
+          "row_count": 40
+        },
+        {
+          "actual_mean": 8.0,
+          "baseline_metrics": {
+            "mae": 3.8137044967880085,
+            "mean_error": 1.0342612419700217,
+            "rmse": 4.771760295388,
+            "row_count": 40
+          },
+          "bin_count": 5,
+          "bin_index": 2,
+          "candidate_delta_mae_vs_baseline": -0.2676170380108145,
+          "candidate_metrics": {
+            "mae": 3.546087458777194,
+            "mean_error": 0.19607607854823755,
+            "rmse": 4.575258595588512,
+            "row_count": 40
+          },
+          "prediction_max": 8.78907193261647,
+          "prediction_mean": 8.196076078548238,
+          "prediction_min": 7.424079809904084,
+          "row_count": 40
+        },
+        {
+          "actual_mean": 8.275,
+          "baseline_metrics": {
+            "mae": 3.9352783725910063,
+            "mean_error": 0.7592612419700216,
+            "rmse": 4.793313325201875,
+            "row_count": 40
+          },
+          "bin_count": 5,
+          "bin_index": 3,
+          "candidate_delta_mae_vs_baseline": 0.064665338846142,
+          "candidate_metrics": {
+            "mae": 3.9999437114371483,
+            "mean_error": 1.1078769673063074,
+            "rmse": 4.846001584638379,
+            "row_count": 40
+          },
+          "prediction_max": 10.01229387514309,
+          "prediction_mean": 9.382876967306307,
+          "prediction_min": 8.815198011789299,
+          "row_count": 40
+        },
+        {
+          "actual_mean": 7.65,
+          "baseline_metrics": {
+            "mae": 3.3637044967880088,
+            "mean_error": 1.3842612419700218,
+            "rmse": 4.024137073463128,
+            "row_count": 40
+          },
+          "bin_count": 5,
+          "bin_index": 4,
+          "candidate_delta_mae_vs_baseline": 0.6766694437775773,
+          "candidate_metrics": {
+            "mae": 4.040373940565586,
+            "mean_error": 2.8386791041442985,
+            "rmse": 4.793883290103602,
+            "row_count": 40
+          },
+          "prediction_max": 10.967283551985572,
+          "prediction_mean": 10.4886791041443,
+          "prediction_min": 10.042210763189445,
+          "row_count": 40
+        },
+        {
+          "actual_mean": 9.75609756097561,
+          "baseline_metrics": {
+            "mae": 3.051287407949026,
+            "mean_error": -0.7218363190055881,
+            "rmse": 3.78998658257041,
+            "row_count": 41
+          },
+          "bin_count": 5,
+          "bin_index": 5,
+          "candidate_delta_mae_vs_baseline": 0.7681957146857044,
+          "candidate_metrics": {
+            "mae": 3.8194831226347303,
+            "mean_error": 2.348865709095584,
+            "rmse": 4.6194600869894895,
+            "row_count": 41
+          },
+          "prediction_max": 14.669253563234024,
+          "prediction_mean": 12.104963270071194,
+          "prediction_min": 10.97504973420342,
+          "row_count": 41
+        }
+      ],
+      "fold_id": "wf_2026_05_01_to_2026_05_15",
+      "lane": "full_game_total",
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs/row_predictions/walk_forward_wf_2026_05_01_to_2026_05_15_full_game_total.jsonl",
+      "row_count": 201,
+      "split_kind": "walk_forward_validation",
+      "status": "created"
+    },
+    {
+      "bin_count": 5,
+      "bins": [
+        {
+          "actual_mean": 5.0,
+          "baseline_metrics": {
+            "mae": 2.729564127558836,
+            "mean_error": -0.1257485029940124,
+            "rmse": 3.5328358248119884,
+            "row_count": 43
+          },
+          "bin_count": 5,
+          "bin_index": 1,
+          "candidate_delta_mae_vs_baseline": 0.3177084833245418,
+          "candidate_metrics": {
+            "mae": 3.0472726108833776,
+            "mean_error": -1.885175092558498,
+            "rmse": 4.2137799966750435,
+            "row_count": 43
+          },
+          "prediction_max": 3.776217589996472,
+          "prediction_mean": 3.1148249074415024,
+          "prediction_min": 0.695007474037209,
+          "row_count": 43
+        },
+        {
+          "actual_mean": 5.0,
+          "baseline_metrics": {
+            "mae": 2.6818181818181817,
+            "mean_error": -0.1257485029940124,
+            "rmse": 3.373343897328228,
+            "row_count": 44
+          },
+          "bin_count": 5,
+          "bin_index": 2,
+          "candidate_delta_mae_vs_baseline": 0.024663147122856888,
+          "candidate_metrics": {
+            "mae": 2.7064813289410385,
+            "mean_error": -0.8370265006091572,
+            "rmse": 3.4596746134627425,
+            "row_count": 44
+          },
+          "prediction_max": 4.416223549493614,
+          "prediction_mean": 4.162973499390843,
+          "prediction_min": 3.813103351480618,
+          "row_count": 44
+        },
+        {
+          "actual_mean": 5.325581395348837,
+          "baseline_metrics": {
+            "mae": 2.65993594206935,
+            "mean_error": -0.4513298983428496,
+            "rmse": 3.2714441145970334,
+            "row_count": 43
+          },
+          "bin_count": 5,
+          "bin_index": 3,
+          "candidate_delta_mae_vs_baseline": 0.02022140111718329,
+          "candidate_metrics": {
+            "mae": 2.6801573431865333,
+            "mean_error": -0.5980077693089386,
+            "rmse": 3.2945940330508297,
+            "row_count": 43
+          },
+          "prediction_max": 4.992084068113156,
+          "prediction_mean": 4.727573626039899,
+          "prediction_min": 4.417821183495677,
+          "row_count": 43
+        },
+        {
+          "actual_mean": 5.2272727272727275,
+          "baseline_metrics": {
+            "mae": 2.7215568862275448,
+            "mean_error": -0.3530212302667397,
+            "rmse": 3.5394231946748773,
+            "row_count": 44
+          },
+          "bin_count": 5,
+          "bin_index": 4,
+          "candidate_delta_mae_vs_baseline": 0.07022929671403855,
+          "candidate_metrics": {
+            "mae": 2.7917861829415833,
+            "mean_error": 0.03845684323181652,
+            "rmse": 3.514962639426622,
+            "row_count": 44
+          },
+          "prediction_max": 5.604700266677247,
+          "prediction_mean": 5.2657295705045435,
+          "prediction_min": 4.992450669324506,
+          "row_count": 44
+        },
+        {
+          "actual_mean": 4.568181818181818,
+          "baseline_metrics": {
+            "mae": 2.511295590636908,
+            "mean_error": 0.3060696788241694,
+            "rmse": 3.1076054617899564,
+            "row_count": 44
+          },
+          "bin_count": 5,
+          "bin_index": 5,
+          "candidate_delta_mae_vs_baseline": 0.3217837681799942,
+          "candidate_metrics": {
+            "mae": 2.833079358816902,
+            "mean_error": 1.6812245813944189,
+            "rmse": 3.51717581503101,
+            "row_count": 44
+          },
+          "prediction_max": 7.527301736020083,
+          "prediction_mean": 6.249406399576237,
+          "prediction_min": 5.606612866718658,
+          "row_count": 44
+        }
+      ],
+      "fold_id": "wf_2026_05_16_to_2026_05_31",
+      "lane": "f5_total",
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs/row_predictions/walk_forward_wf_2026_05_16_to_2026_05_31_f5_total.jsonl",
+      "row_count": 218,
+      "split_kind": "walk_forward_validation",
+      "status": "created"
+    },
+    {
+      "bin_count": 5,
+      "bins": [
+        {
+          "actual_mean": 7.72093023255814,
+          "baseline_metrics": {
+            "mae": 3.4895209580838324,
+            "mean_error": 1.088950006962818,
+            "rmse": 3.9989565029888516,
+            "row_count": 43
+          },
+          "bin_count": 5,
+          "bin_index": 1,
+          "candidate_delta_mae_vs_baseline": -0.07384252338669617,
+          "candidate_metrics": {
+            "mae": 3.4156784346971363,
+            "mean_error": -1.7993562993420686,
+            "rmse": 4.275099269940583,
+            "row_count": 43
+          },
+          "prediction_max": 7.163224886429116,
+          "prediction_mean": 5.921573933216071,
+          "prediction_min": 3.059416307134864,
+          "row_count": 43
+        },
+        {
+          "actual_mean": 7.659090909090909,
+          "baseline_metrics": {
+            "mae": 2.888609145345672,
+            "mean_error": 1.1507893304300483,
+            "rmse": 3.4711678388802043,
+            "row_count": 44
+          },
+          "bin_count": 5,
+          "bin_index": 2,
+          "candidate_delta_mae_vs_baseline": -0.19238499212305626,
+          "candidate_metrics": {
+            "mae": 2.696224153222616,
+            "mean_error": 0.08230682090476572,
+            "rmse": 3.271619896498886,
+            "row_count": 44
+          },
+          "prediction_max": 8.20639035424597,
+          "prediction_mean": 7.741397729995675,
+          "prediction_min": 7.196751409388371,
+          "row_count": 44
+        },
+        {
+          "actual_mean": 9.209302325581396,
+          "baseline_metrics": {
+            "mae": 3.431868820498538,
+            "mean_error": -0.3994220860604379,
+            "rmse": 4.534047971124188,
+            "row_count": 43
+          },
+          "bin_count": 5,
+          "bin_index": 3,
+          "candidate_delta_mae_vs_baseline": 0.014224216002326706,
+          "candidate_metrics": {
+            "mae": 3.446093036500865,
+            "mean_error": -0.5625122764430057,
+            "rmse": 4.571838472831165,
+            "row_count": 43
+          },
+          "prediction_max": 8.999134603619783,
+          "prediction_mean": 8.646790049138389,
+          "prediction_min": 8.210158029587426,
+          "row_count": 43
+        },
+        {
+          "actual_mean": 10.090909090909092,
+          "baseline_metrics": {
+            "mae": 4.315936309199782,
+            "mean_error": -1.2810288513881334,
+            "rmse": 5.134203266579111,
+            "row_count": 44
+          },
+          "bin_count": 5,
+          "bin_index": 4,
+          "candidate_delta_mae_vs_baseline": -0.04706361598591169,
+          "candidate_metrics": {
+            "mae": 4.26887269321387,
+            "mean_error": -0.626753466685306,
+            "rmse": 5.072501966787285,
+            "row_count": 44
+          },
+          "prediction_max": 10.069827183199248,
+          "prediction_mean": 9.464155624223785,
+          "prediction_min": 9.018098795834213,
+          "row_count": 44
+        },
+        {
+          "actual_mean": 9.818181818181818,
+          "baseline_metrics": {
+            "mae": 3.8072945019052806,
+            "mean_error": -1.0083015786608607,
+            "rmse": 5.132957294379788,
+            "row_count": 44
+          },
+          "bin_count": 5,
+          "bin_index": 5,
+          "candidate_delta_mae_vs_baseline": 0.6358091048721999,
+          "candidate_metrics": {
+            "mae": 4.4431036067774805,
+            "mean_error": 2.172821804809387,
+            "rmse": 5.558830805979372,
+            "row_count": 44
+          },
+          "prediction_max": 18.405506616346003,
+          "prediction_mean": 11.991003622991206,
+          "prediction_min": 10.073450409681705,
+          "row_count": 44
+        }
+      ],
+      "fold_id": "wf_2026_05_16_to_2026_05_31",
+      "lane": "full_game_total",
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs/row_predictions/walk_forward_wf_2026_05_16_to_2026_05_31_full_game_total.jsonl",
+      "row_count": 218,
+      "split_kind": "walk_forward_validation",
+      "status": "created"
+    }
+  ],
+  "binning": "prediction_quantile",
+  "requested_bin_count": 5,
+  "status": "created"
+}

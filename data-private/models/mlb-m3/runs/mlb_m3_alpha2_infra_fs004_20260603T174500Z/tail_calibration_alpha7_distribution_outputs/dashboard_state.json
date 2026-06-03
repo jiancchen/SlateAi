@@ -1,0 +1,32 @@
+{
+  "active_phase": "tail_regime_audit",
+  "calibration_bins_exist": true,
+  "distribution_output_artifact_count": 6,
+  "distribution_outputs_exist": true,
+  "market_probability_outputs_exist": false,
+  "next_recommended_actions": [
+    "Review distribution coverage, residual bins, and candidate residual slice summaries.",
+    "Use tail/regime slices as rejection gates for future candidates."
+  ],
+  "non_goals": [
+    "no picks",
+    "no selection rows",
+    "no player prop pricing",
+    "no market fair probability claims",
+    "no simulator event logs",
+    "no promotion decisions",
+    "no claim that M3 is better"
+  ],
+  "output_dir": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/tail_calibration_alpha7_distribution_outputs",
+  "probability_outputs_exist": true,
+  "promotion_gate_status": "blocked_for_promotion",
+  "residual_calibration_bins_exist": true,
+  "row_level_predictions_exist": true,
+  "row_prediction_artifact_count": 6,
+  "run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+  "source_harness_dir": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha7_distribution_outputs",
+  "source_manifest_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/manifest.json",
+  "status": "tail_regime_audit_created",
+  "walk_forward_candidate_better_count": 0,
+  "walk_forward_candidate_worse_count": 4
+}

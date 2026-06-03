@@ -1,0 +1,51 @@
+{
+  "candidate_beats_baseline_all_comparable_folds": false,
+  "candidate_better_count": 0,
+  "candidate_equal_count": 0,
+  "candidate_worse_count": 4,
+  "comparable_count": 4,
+  "fold_lane_count": 4,
+  "rows": [
+    {
+      "baseline_mae": 2.416312442072294,
+      "candidate_mae": 2.553647434566626,
+      "candidate_status": "candidate_diagnostic_not_promoted",
+      "delta_candidate_minus_baseline": 0.13733499249433212,
+      "feature_count": 114,
+      "fold_id": "wf_2026_05_01_to_2026_05_15",
+      "lane": "f5_total",
+      "verdict": "candidate_worse_than_baseline"
+    },
+    {
+      "baseline_mae": 3.488691446408216,
+      "candidate_mae": 3.6741197530519645,
+      "candidate_status": "candidate_diagnostic_not_promoted",
+      "delta_candidate_minus_baseline": 0.18542830664374854,
+      "feature_count": 114,
+      "fold_id": "wf_2026_05_01_to_2026_05_15",
+      "lane": "full_game_total",
+      "verdict": "candidate_worse_than_baseline"
+    },
+    {
+      "baseline_mae": 2.660522990715816,
+      "candidate_mae": 2.81127867126507,
+      "candidate_status": "candidate_diagnostic_not_promoted",
+      "delta_candidate_minus_baseline": 0.15075568054925403,
+      "feature_count": 114,
+      "fold_id": "wf_2026_05_16_to_2026_05_31",
+      "lane": "f5_total",
+      "verdict": "candidate_worse_than_baseline"
+    },
+    {
+      "baseline_mae": 3.587801461297588,
+      "candidate_mae": 3.656041253224443,
+      "candidate_status": "candidate_diagnostic_not_promoted",
+      "delta_candidate_minus_baseline": 0.06823979192685492,
+      "feature_count": 114,
+      "fold_id": "wf_2026_05_16_to_2026_05_31",
+      "lane": "full_game_total",
+      "verdict": "candidate_worse_than_baseline"
+    }
+  ],
+  "status": "created"
+}

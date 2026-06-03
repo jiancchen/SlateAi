@@ -60,6 +60,22 @@ def load_json(path: Path) -> dict[str, Any]:
     return payload
 
 
+def load_jsonl(path: Path) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    with path.open("r", encoding="utf-8") as handle:
+        for line_number, line in enumerate(handle, start=1):
+            line = line.strip()
+            if not line:
+                continue
+            payload = json.loads(line)
+            if not isinstance(payload, dict):
+                raise ValueError(
+                    f"Expected JSON object on line {line_number}: {path}"
+                )
+            rows.append(payload)
+    return rows
+
+
 def validate_harness(harness_dir: Path) -> dict[str, Any]:
     harness_dir = resolve_path(harness_dir)
     errors: list[str] = []
@@ -115,10 +131,59 @@ def validate_harness(harness_dir: Path) -> dict[str, Any]:
         for status in candidate_statuses
     )
 
+    distribution_jsonl_files = sorted(
+        path
+        for path in harness_dir.rglob("*.jsonl")
+        if "distribution_outputs" in str(path.relative_to(harness_dir))
+    )
+    distribution_rows_valid = True
+    distribution_fit_scope_train_only = True
+    distribution_rows_not_promoted = True
+    distribution_rows_not_market_probability = True
+    distribution_row_count = 0
+    for path in distribution_jsonl_files:
+        try:
+            rows = load_jsonl(path)
+        except Exception as exc:
+            distribution_rows_valid = False
+            errors.append(f"Invalid distribution JSONL {path}: {exc}")
+            continue
+        if not rows:
+            warnings.append(f"Distribution JSONL is empty: {path}")
+        for row in rows:
+            distribution_row_count += 1
+            fit_scope = str(row.get("distribution_fit_scope") or "").lower()
+            if "train" not in fit_scope or "validation" in fit_scope:
+                distribution_fit_scope_train_only = False
+            if row.get("not_a_pick") is not True or row.get("not_a_price") is not True:
+                distribution_rows_not_promoted = False
+            if row.get("not_a_promotion") is not True:
+                distribution_rows_not_promoted = False
+            if row.get("not_a_market_probability") is not True:
+                distribution_rows_not_market_probability = False
+    distribution_enabled = bool(metrics.get("distribution_outputs_enabled"))
+    checks["distribution_jsonl_valid"] = distribution_rows_valid
+    checks["distribution_outputs_present_when_enabled"] = (
+        not distribution_enabled or bool(distribution_jsonl_files)
+    )
+    checks["distribution_fit_scope_train_only"] = distribution_fit_scope_train_only
+    checks["distribution_rows_not_promoted"] = distribution_rows_not_promoted
+    checks["distribution_rows_not_market_probability"] = (
+        distribution_rows_not_market_probability
+    )
+    if not checks["distribution_outputs_present_when_enabled"]:
+        errors.append("distribution_outputs_enabled=true but no distribution JSONL files exist.")
+    if not checks["distribution_fit_scope_train_only"]:
+        errors.append("Distribution rows must declare train-only fit scope.")
+    if not checks["distribution_rows_not_promoted"]:
+        errors.append("Distribution rows must declare not_a_pick, not_a_price, and not_a_promotion.")
+    if not checks["distribution_rows_not_market_probability"]:
+        errors.append("Distribution rows must declare not_a_market_probability=true.")
+
     all_text = "\n".join(
         path.read_text(encoding="utf-8", errors="ignore")
         for path in harness_dir.rglob("*")
-        if path.is_file() and path.suffix in {".json", ".md"}
+        if path.is_file() and path.suffix in {".json", ".jsonl", ".md"}
     ).lower()
     forbidden_hits = sorted(
         term
@@ -137,6 +202,8 @@ def validate_harness(harness_dir: Path) -> dict[str, Any]:
         "checks": checks,
         "summary": {
             "json_file_count": len(json_payloads),
+            "distribution_jsonl_file_count": len(distribution_jsonl_files),
+            "distribution_row_count": distribution_row_count,
             "candidate_file_count": len(candidate_files),
             "error_count": len(errors),
             "warning_count": len(warnings),
