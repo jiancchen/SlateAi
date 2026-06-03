@@ -31,6 +31,9 @@ Allowed:
 - `home_starter_outs_avg_last5`
 - `home_starter_runs_allowed_slope_last5`
 - `away_starter_runs_allowed_last1_vs_prev4_delta`
+- `home_starter_batters_faced_sample_count_last5`
+- `away_lineup_pitch_type_damage_vs_starter_mix`
+- `home_starter_unforced_walk_rate_last3`
 - `away_bullpen_scramble_rate_last10`
 - `market_total_latest_pregame`
 - `home_lineup_known_slot_count`
@@ -49,6 +52,8 @@ The alpha feature extractor should produce facts, windows, flags, and labels. Mo
 
 Important: M3 must preserve trajectory, not just aggregate form. Recent-path feature families should include ordered last-N values, last-vs-baseline deltas, simple slopes, volatility, tail counts, and sample counts. Averages alone flatten the exact streak/progression patterns this architecture is meant to expose.
 
+Also important: raw outcomes are not enough. M3 must encode opponent quality, pitch-matchup quality, evidence reliability, and event attribution. A walk, a clean inning, or a blowup is not one universal thing; the feature layer should preserve enough context for the model to learn the difference.
+
 ## Alpha Objective
 
 Build `M3-FS-001: game_shape_starter_v1`.
@@ -60,6 +65,9 @@ Primary questions:
 - Can typed pregame state explain full-game run totals?
 - Can typed pregame state explain F5 run totals?
 - Can typed pregame state identify low, normal, high, and chaos run environments better than simple averages?
+- Can opponent pitch-matchup quality separate real pitcher form from weak-opponent noise?
+- Can evidence-reliability fields prevent thin samples from pretending to be stable form?
+- Can event attribution separate unforced pitcher walks from batter-forced walks?
 - Can we produce the matrix without reading legacy `sports.db` or M2-generated artifacts?
 
 First targets:
@@ -271,6 +279,9 @@ Alpha source tables:
 | Outcomes | `game_outcomes` | postgame targets only |
 | Team results | `team_game_stats`, `game_outcomes`, `phase_outcomes` | historical rolling team shape only |
 | Starter context | `starting_pitchers`, `starting_pitcher_game_logs`, `pitcher_appearances` | starter form and workload |
+| Pitch matchup context | `pitcher_pitch_mix_snapshots`, `player_pitch_type_response_snapshots`, `lineup_matchup_snapshots`, `team_opponent_quality_snapshots` | starter arsenal versus opposing lineup strengths/weaknesses |
+| Evidence reliability context | `player_career_profiles`, `player_statcast_snapshots`, `player_split_snapshots`, `player_opponent_context_snapshots` | low-sample and fallback context for thin pitcher/player histories |
+| Replay/story context | `plate_appearances`, `pitch_events`, `game_story_signals`, `game_story_labels` | event attribution, walk classification, traffic, and story-state features |
 | Bullpen context | `bullpen_usage_snapshots`, `likely_relief_chains`, `team_bullpen_shape_snapshots` | pregame bullpen debt and chain shape |
 | Lineup context | `lineups`, `lineup_slots` | known lineup state and completeness flags |
 | Market context | `market_snapshots`, `market_contracts`, `market_price_ticks` | latest pregame market state when available |
@@ -281,7 +292,7 @@ Deferred source tables:
 
 | Family | Tables | Reason |
 |---|---|---|
-| Replay-state features | `plate_appearances`, `pitch_events` | add after replay-state validator is trusted for feature extraction |
+| Replay-state expansion | `plate_appearances`, `pitch_events` | deeper pitch/PA families beyond the alpha event-attribution slice require validator signoff |
 | Prop market context | `prop_market_snapshots` | player props are not alpha target |
 | Soft signals | TBD | require provenance, expiry, and encoding policy |
 | WAR and Statcast HR active adapters | `pitcher_season_value_snapshots`, `statcast_hr_leaderboard_snapshots` | existing typed rows are usable as context, but live source ingestion needs a separate adapter decision |
@@ -418,6 +429,103 @@ home_team_runs_for_sample_count_last10
 ```
 
 The point is to let the system test whether `3`, `5`, `7`, or a longer memory actually carries edge, instead of hard-coding the answer before the model sees data.
+
+## Evidence Reliability Rule
+
+M3 must treat thin history as first-class information, not a missing-data nuisance.
+
+If a pitcher has only one recent start, the builder should not pretend a `last5` window exists. It should emit:
+
+- actual sample counts by unit, such as starts, batters faced, plate appearances, pitches, innings, and days covered
+- availability flags for each feature family
+- observed sequence values only where they exist
+- nulls where there is no evidence, not zeros
+- broader fallback facts, such as career profile, season profile, pitch arsenal, handedness, role, and Statcast context when available
+- uncertainty facts such as sample count, standard error, or coverage level
+
+Example columns:
+
+```text
+home_starter_start_sample_count_last5
+home_starter_batters_faced_sample_count_last5
+home_starter_pitch_sample_count_last5
+home_starter_runs_allowed_avg_last5_available_flag
+home_starter_pitch_mix_available_flag
+home_starter_low_mlb_evidence_flag
+home_starter_career_profile_available_flag
+home_starter_statcast_profile_available_flag
+```
+
+Rules:
+
+- do not fill a missing five-start window with invented stability
+- do not collapse low evidence into a penalty or bonus score
+- every windowed feature must have a matching sample or availability column
+- model/backtest decides how to handle thin evidence, but the matrix must expose it plainly
+
+## Opponent Matchup Quality Rule
+
+A pitcher start is not independent of the opponent. M3 must represent both raw outcome and opponent-adjusted story.
+
+Core matchup facts:
+
+- pitcher pitch mix and recent pitch-mix changes
+- opposing lineup response by pitch type
+- handedness and lineup composition
+- opponent chase, whiff, contact, hard-contact, walk, and damage profiles
+- opponent quality of the pitcher's prior starts
+- park/weather context for pitch and batted-ball behavior
+
+Example columns:
+
+```text
+home_starter_fastball_usage_rate_last3
+home_starter_slider_usage_rate_last3
+away_lineup_fastball_damage_rate_last30_pa
+away_lineup_slider_whiff_rate_last30_pa
+away_lineup_pitch_type_damage_vs_home_starter_mix
+home_starter_prior_opponent_quality_avg_last5
+home_starter_runs_allowed_opponent_adjusted_last1
+```
+
+Rules:
+
+- preserve raw pitcher outcomes and opponent-adjusted variants side by side
+- do not conclude that a good or bad start is real until opponent quality is visible to the model
+- if the projected lineup is unknown, expose lineup-matchup missingness and use team-level fallback facts
+- keep pitch-matchup facts factual; no hand-tuned matchup score in alpha
+
+## Event Attribution Rule
+
+M3 feature engineering should classify baseball events by how they happened, not only by the box-score result.
+
+Walks are the clean example. A walk can be:
+
+- unforced pitcher wildness, such as noncompetitive misses and four-pitch walks
+- forced batter pressure, such as deep-count discipline against borderline pitches
+- matchup avoidance, such as pitching around a dangerous hitter or open-base context
+- command fatigue, such as late-start misses after workload rises
+- umpire/zone edge if that data is available later
+
+Example walk-attribution columns:
+
+```text
+home_starter_walk_rate_last3
+home_starter_unforced_walk_rate_last3
+home_starter_forced_walk_rate_last3
+home_starter_four_pitch_walk_rate_last3
+home_starter_deep_count_walk_rate_last3
+home_starter_noncompetitive_ball_rate_last3
+away_lineup_forced_walk_draw_rate_last10
+away_lineup_chase_refusal_rate_last10
+```
+
+Rules:
+
+- classify with transparent source facts from count, pitch location/call, base-out-score state, batter, pitcher, and lineup context
+- keep raw walk rate even when attribution columns exist
+- if attribution cannot be trusted for a row, emit availability flags and null attributed rates
+- treat attribution definitions as versioned feature definitions that can be backtested and revised
 
 ### 3. Team Recent Run Shape
 
@@ -688,15 +796,16 @@ Rules:
 
 ### 8. Replay-State Features
 
-Status: deferred from the very first matrix unless replay-state validation is fully green.
+Status: gated core feature family.
 
-Why deferred:
+Why gated:
 
 - replay-state features are the most important M3-native signal family
 - they are also the highest leakage and correctness risk
-- they should enter after the typed replay fields and validator are locked
+- event attribution, walk classification, traffic, and story-state features should enter only when the typed replay validator is green
+- if the validator is not green, the build must emit a replay-attribution blocker instead of silently falling back to box-score features
 
-Future columns:
+Initial gated columns:
 
 ```text
 home_team_traffic_pa_rate_last5
@@ -715,7 +824,7 @@ home_lineup_walk_cluster_rate_last10
 away_lineup_walk_cluster_rate_last10
 ```
 
-These should be introduced as `M3-FS-002` or `M3-FS-001` v0.2.0, not quietly slipped into v0.1.0.
+Deeper pitch/PA features can be introduced as `M3-FS-002` or `M3-FS-001` v0.2.0, but alpha must at least make replay attribution coverage visible.
 
 ## Leakage Guard
 
@@ -805,15 +914,50 @@ Deliverables:
 
 - starter identity join
 - recent starter path features
+- sample-count and availability fields
+- low-MLB-evidence flags
 - TBD starter handling
 
 Gate:
 
 - unknown starters do not drop games
 - starter features are null-safe
+- no missing history is filled as zero evidence
 - report includes starter-known rate
+- report includes starter evidence coverage by starts, batters faced, and pitches
 
-### Phase E: Bullpen Shape
+### Phase E: Opponent Matchup Quality
+
+Deliverables:
+
+- pitcher pitch-mix feature join
+- opposing lineup pitch-type response join
+- opponent-quality context for the pitcher's prior starts
+- matchup availability and fallback flags
+
+Gate:
+
+- no matchup feature uses same-game outcome
+- unknown lineup uses team-level fallback and missingness flags
+- raw starter outcomes and opponent-adjusted variants remain separate
+- report includes matchup coverage by game and side
+
+### Phase F: Replay Attribution
+
+Deliverables:
+
+- replay validator status in the build report
+- initial walk-attribution features if replay validation is green
+- attribution availability flags
+- blocker report if replay validation is not green
+
+Gate:
+
+- no box-score-only walk attribution
+- raw walk features remain available beside attributed walk features
+- untrusted attribution produces nulls and flags, not invented classes
+
+### Phase G: Bullpen Shape
 
 Deliverables:
 
@@ -827,7 +971,7 @@ Gate:
 - report includes bullpen snapshot coverage
 - null-safe rows for missing snapshots
 
-### Phase F: Lineup Context
+### Phase H: Lineup Context
 
 Deliverables:
 
@@ -840,7 +984,7 @@ Gate:
 - official lineup absence is represented as unknown, not zero
 - partial lineups are flagged
 
-### Phase G: Market Context
+### Phase I: Market Context
 
 Deliverables:
 
@@ -853,7 +997,7 @@ Gate:
 - no post-start snapshots
 - market timestamp age is reported
 
-### Phase H: Matrix Write And Validation
+### Phase J: Matrix Write And Validation
 
 Deliverables:
 
@@ -898,6 +1042,9 @@ Minimum JSON report:
   "target_count": 0,
   "source_tables": [],
   "missingness": {},
+  "evidence_coverage": {},
+  "matchup_coverage": {},
+  "attribution_coverage": {},
   "leakage_checks": {},
   "lineage": {},
   "warnings": [],
@@ -915,6 +1062,7 @@ Required checks:
 - no future snapshots
 - feature dictionary covers every feature
 - null rates are reported
+- evidence, matchup, and attribution coverage are reported
 - matrix row count matches completed target rows
 
 ## Run Dashboard Hook
@@ -1031,7 +1179,7 @@ Why:
 
 These block later M3 stages:
 
-- replay-state fields must remain validator-clean before replay features join the matrix
+- replay-state fields must remain validator-clean before walk attribution and deeper pitch/PA features join the matrix
 - model-output writer and settlement tables need M3 contracts
 - active WAR and Statcast HR source adapters need a source decision
 - dashboard storage needs run/artifact schema before long training runs
@@ -1042,14 +1190,17 @@ These block later M3 stages:
 2. Add game base and target extraction.
 3. Add matrix writer with Parquet and report JSON.
 4. Add validator for primary key, target prefix, feature dictionary, and leakage classes.
-5. Add team recent shape.
-6. Add starter path.
-7. Add bullpen shape.
-8. Add lineup context.
-9. Add market context.
-10. Run first matrix build for `2026-03-26` through `2026-05-31`.
-11. Review missingness and leakage report.
-12. Freeze `M3-FS-001` v0.1.0 and open the backtest run plan.
+5. Add source coverage audit for opponent matchup, evidence reliability, and replay attribution.
+6. Add team recent shape.
+7. Add starter path with sample/evidence reliability fields.
+8. Add opponent pitch-matchup quality.
+9. Add gated replay-state attribution features if validator is green.
+10. Add bullpen shape.
+11. Add lineup context.
+12. Add market context.
+13. Run first matrix build for `2026-03-26` through `2026-05-31`.
+14. Review missingness, matchup coverage, attribution coverage, and leakage report.
+15. Freeze `M3-FS-001` v0.1.0 and open the backtest run plan.
 
 ## Audit Follow-Ups
 
@@ -1063,7 +1214,7 @@ These are the follow-ups from the run-plan audit before implementation starts:
 - Create the contract JSON first, then make the builder validate against it.
 - Run a skeleton dry-run before adding feature blocks, so CLI/report/output conventions are stable.
 - Keep every side-specific matrix column under `home_` or `away_` prefixes; no generic `team_`, `starter_`, `bullpen_`, or `lineup_` columns at game grain.
-- Keep `M3-FS-001` focused on game shape and totals; replay-state and player-prop feature families need separate version bumps or follow-up feature sets.
+- Keep `M3-FS-001` focused on game shape and totals; deeper replay-state and player-prop feature families need separate version bumps or follow-up feature sets.
 
 ## Stop Conditions
 
@@ -1072,7 +1223,7 @@ Stop and revisit the plan if:
 - feature extraction needs `sports.db`
 - a feature requires M2 score formulas
 - same-game outcome leakage appears in feature columns
-- replay-state features are needed before replay validation is trusted
+- replay-state attribution is required but replay validation is not trusted
 - market data cannot be timestamp-filtered pregame
 - the first matrix becomes too broad to explain
 
@@ -1083,6 +1234,7 @@ The first M3 feature set is accepted when:
 - `M3-FS-001` builds from typed DB only
 - row and target counts are explainable
 - candidate window sets are declared and recorded in the build report
+- low-evidence, opponent-matchup, and event-attribution coverage are reported
 - all feature columns have dictionary entries
 - all target columns are isolated
 - leakage report passes
