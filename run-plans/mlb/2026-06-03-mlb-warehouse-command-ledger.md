@@ -2,11 +2,16 @@
 
 Date: 2026-06-03
 
+Ledger version: 0.2.0
+
+Typed CLI version: `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.1.0
+
 Scope: first-pass ledger for replacing `pipeline/mlb/warehouse/mlb_warehouse.py` command by command without path-flipping the legacy `sports.db` script into the typed MLB DB.
 
 ## Decision Rules
 
 - `mlb_warehouse.py` remains legacy until every active command is replaced, renamed as legacy M2, or retired.
+- New typed replacement commands live in `pipeline/mlb/warehouse/mlb_typed_warehouse.py`; do not keep modifying the old monolith for typed DB work.
 - New canonical MLB ingestion writes `data-private/warehouse/sports/mlb/sql-mlb.db`.
 - Raw ingestion means source receipts, identifiers, replay state, official facts, and market snapshots only.
 - Expected PA, shrinkage, hot/cold labels, pitch kernels, mistake shapes, and story labels belong in a versioned feature layer, not raw ingestion.
@@ -36,6 +41,7 @@ flowchart TD
 | Status | Meaning |
 |---|---|
 | `adapter-exists` | A typed adapter/script already exists, but package wiring may still need replacement. |
+| `typed-cli-exists` | A command exists in the new typed warehouse CLI, but the legacy package alias has not been fully cut over. |
 | `wrapper-needed` | The typed pieces exist, but a CLI/orchestrator replacement is still missing. |
 | `feature-rewrite` | Logic should move into a versioned feature-layer job. |
 | `legacy-m2` | Keep only for old M2 workflows. Do not use for M3. |
@@ -51,7 +57,7 @@ flowchart TD
 | `ingest-mlb-range` | `data:ingest:mlb-range` | raw typed ingestion | P0 | `wrapper-needed` | date-loop wrapper around typed raw ingestors | Add idempotent typed range runner with per-day reports. |
 | `replay-mlb-range-from-raw` | `data:replay:mlb-raw-range` | raw typed ingestion | P0 | `wrapper-needed` | `ingest_mlb_schedule_game_feed_raw_to_typed.py` range mode | Add replay wrapper that rebuilds typed games, PA, pitch, and outcome rows from local raw archive. |
 | `prepare-mlb-day` | `data:prep:mlb-day` | orchestration | P1 | `wrapper-needed` | typed ingest + source freshness + feature status checks | Replace with M3-safe preflight/orchestrator after P0 ingest wrappers land. |
-| `list-probable-starters` | `data:list:probables` | typed read/report | P0 | `typed-read-needed` | typed `starting_pitchers`, `games`, `lineups`, `source_fetch_status` | Add small typed report command; update package script. |
+| `list-probable-starters` | `data:list:probables`, `data:list:probables:typed` | typed read/report | P0 | `typed-cli-exists` | `mlb_typed_warehouse.py list-probable-starters` over typed `starting_pitchers`, `games`, `teams`, `players` | Validate typed output against legacy output, then move `data:list:probables` to the typed CLI. |
 | `derive-mlb-features` | `data:derive:mlb` | feature layer | P1 | `feature-rewrite` | rolling team/starter/bullpen feature jobs | Split into typed feature builders with feature-set IDs and validators. |
 | `derive-story-signals` | `data:derive:stories` | feature layer | P2 | `feature-rewrite` | game-story signal feature job from typed replay state | Rebuild as M3 story-transition feature job. |
 | `derive-tier2-features` | `data:derive:tier2-mlb` | feature layer | P2 | `feature-rewrite` | team story priors, lineup dependency, starter leash, series context | Port only after core feature tables and contracts are named. |

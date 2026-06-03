@@ -27,6 +27,8 @@
     "data:replay:mlb-raw-range": "python3 pipeline/mlb/warehouse/mlb_warehouse.py replay-mlb-range-from-raw",
     "data:prep:mlb-day": "python3 pipeline/mlb/warehouse/mlb_warehouse.py prepare-mlb-day",
     "data:list:probables": "python3 pipeline/mlb/warehouse/mlb_warehouse.py list-probable-starters",
+    "data:typed:mlb-warehouse": "python3 pipeline/mlb/warehouse/mlb_typed_warehouse.py",
+    "data:list:probables:typed": "python3 pipeline/mlb/warehouse/mlb_typed_warehouse.py list-probable-starters",
     "data:derive:mlb": "python3 pipeline/mlb/warehouse/mlb_warehouse.py derive-mlb-features",
     "data:derive:tier2-mlb": "python3 pipeline/mlb/warehouse/mlb_warehouse.py derive-tier2-features",
     "data:derive:tier3-mlb": "python3 pipeline/mlb/warehouse/mlb_warehouse.py derive-tier3-features",

@@ -6,6 +6,8 @@ Scope: keep every MLB ingestion and normalization path pointed at `data-private/
 
 Command replacement ledger: `run-plans/mlb/2026-06-03-mlb-warehouse-command-ledger.md`
 
+Typed replacement CLI: `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.1.0
+
 ## Was The Earlier Migration Complete?
 
 Yes for historical parity and most runtime reads:
@@ -21,6 +23,12 @@ No for full ongoing ingestion ownership:
 - Those live writers now write legacy-shaped staging tables inside `sql-mlb.db`; they are not the final M3 canonical model contract.
 
 The corrected rule is: `sports.db` is only a read-only migration source. New MLB ingestion writes either canonical typed tables in `sql-mlb.db` or a documented typed staging table that is immediately normalized forward.
+
+The operational replacement path is a new typed CLI, not modification of the old monolith:
+
+- add typed commands to `pipeline/mlb/warehouse/mlb_typed_warehouse.py`
+- keep `pipeline/mlb/warehouse/mlb_warehouse.py` as legacy M2/root-warehouse surface
+- move package aliases only after the typed command has validation coverage
 
 ## Routing DAG
 
