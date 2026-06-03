@@ -44,7 +44,7 @@ It should learn how a game can unfold through starter path, traffic, count/base/
 
 7. Separate component families.
 
-   Game-shape, starter path, reliever availability, first-up reliever routing, reliever performance, PA/event distributions, hitter stat distributions, calibration, market pricing, and selection policy are separate components with typed contracts.
+   Game-shape, starter path, reliever availability, first-up reliever routing, reliever performance, PA/event distributions, hitter stat distributions, state evidence, calibration, market pricing, and selection policy are separate components with typed contracts.
 
 8. Player props are downstream, not bolted on.
 
@@ -58,6 +58,10 @@ It should learn how a game can unfold through starter path, traffic, count/base/
 
    No picks, prices, market fair probabilities, simulator claims, edge claims, or active-model promotion until contract-level backtests, calibration checks, settlement joins, and rejection gates are satisfied.
 
+11. Justification is a model output, not generated prose.
+
+   M3 must emit structured state evidence that explains probability movement from baseline to final contract probability. A later text explanation may summarize that bundle, but it must not invent reasons that are not present in the model evidence.
+
 ## Metric Hierarchy
 
 Average-run MAE is allowed only as a point-head smoke diagnostic.
@@ -70,9 +74,10 @@ Preferred evaluation layers:
 2. Regime target quality: low-run, normal, high-run, chaos, blowout, starter-crack, bullpen-flip, traffic-no-conversion.
 3. Distribution quality: interval coverage, pinball loss, CRPS-style scoring, tail coverage, regime-conditioned coverage.
 4. Line-conditioned probability quality: F5 O/U at known line, full-game O/U at known line, team totals, moneyline-style contracts.
-5. Prop-distribution quality: player PA/event/stat distributions, starter outs/Ks, reliever workload/performance.
-6. Market and settlement quality: calibration, closing-line movement, known price comparison, settlement, drift monitoring.
-7. Selection policy, only after probability and market layers are valid.
+5. State evidence quality: component contribution stability, evidence completeness, counter-case coverage, uncertainty flags.
+6. Prop-distribution quality: player PA/event/stat distributions, starter outs/Ks, reliever workload/performance.
+7. Market and settlement quality: calibration, closing-line movement, known price comparison, settlement, drift monitoring.
+8. Selection policy, only after probability, evidence, and market layers are valid.
 
 If a run optimizes average-run MAE, it must be labeled point-head diagnostic only.
 
@@ -127,6 +132,24 @@ The model layer should prefer:
 - fold-safe calibration
 - modular replacement of component families
 
+### State Evidence Layer
+
+The state evidence layer explains why a contract probability moved away from its baseline.
+
+It should produce structured evidence, not pick prose:
+
+- baseline probability
+- final probability
+- probability delta
+- component contribution deltas
+- top evidence atoms
+- counter-case risks
+- missing data flags
+- uncertainty penalties
+- calibration context
+
+The evidence layer must trace back to feature views, component outputs, and contract probabilities. It should explain probability movement like "starter path moved F5 over probability +8%" rather than claim a pick is right.
+
 ### Market Layer
 
 The market layer compares contract distributions to known lines and prices.
@@ -135,6 +158,7 @@ It must stay separate from:
 
 - feature extraction
 - model probability generation
+- state evidence generation
 - simulator event generation
 - selection policy
 
@@ -194,6 +218,7 @@ Every MLB-M3 run plan should answer:
 - Are pitch/PA/base-out-count-score sequences preserved?
 - Are starter path and reliever chain represented separately?
 - Are market/prop contracts visible downstream?
+- Does the output include a state evidence bundle or a clear reason why evidence is deferred?
 - Does the run include a fold-safe rejection test?
 - Are picks, prices, simulator claims, and promotion decisions explicitly out of scope unless proven?
 
@@ -209,6 +234,8 @@ Stop and reframe if a run starts to center on:
 - expected AB as a fixed input rather than game-path output
 - residual shells treated as real probability models
 - regime labels used only after the fact
+- prose explanations that are not backed by structured state evidence
+- final probabilities without baseline probability and component deltas
 - market lines ignored in evaluation
 - player props modeled independently from game path
 

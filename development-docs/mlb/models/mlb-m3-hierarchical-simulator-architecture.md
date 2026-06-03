@@ -47,13 +47,16 @@ L7: Distribution aggregators
 L8: Market pricing
   compare fair probability to known lines/prices
 
-L9: Selection policy
+L9: State evidence / justification
+  explain probability movement with component deltas, evidence atoms, uncertainty, counter-case
+
+L10: Selection policy
   choose what to show, pass, veto, or mark live-only
 
-L10: Backtest feedback loop
+L11: Backtest feedback loop
   settlement, calibration diagnostics, ablations, promotion/rejection gates
 
-L11: Presentation/export
+L12: Presentation/export
   board JSON/UI/reporting only
 ```
 
@@ -94,9 +97,13 @@ flowchart TD
   P --> Q["Simulated event logs"]
   Q --> R["Team/player/pitcher distributions"]
   R --> S["Market prediction rows"]
-  S --> T["Selection policy rows"]
+  S --> SE["State evidence bundles"]
+  R --> SE
+  SE --> T["Selection policy rows"]
+  S --> T
   T --> U["Slate export/UI"]
   S --> V["Backtest + settlement engine"]
+  SE --> V
   T --> V
   V --> W["Calibration diagnostics"]
   V --> X["Feature / signal ablations"]
@@ -132,7 +139,11 @@ flowchart TD
   TR --> MK["Price ML / totals / F5"]
   PR --> PK["Price props"]
   GF --> CK["Coherence checks"]
-  MK --> SEL["Selection"]
+  MK --> EV["Build state evidence"]
+  PK --> EV
+  GF --> EV
+  EV --> SEL["Selection"]
+  MK --> SEL
   PK --> SEL
   CK --> SEL
   SEL --> BT["Backtest + settlement"]
@@ -153,6 +164,7 @@ simulated event logs
   -> player hits / total bases / RBI / walks
   -> pitcher strikeouts / outs
   -> home run probability
+  -> state evidence bundle
 ```
 
 This is how player props stay coherent with game flow. Props are not separate from the game. They are views over plate appearances, lineup turnover, pitcher changes, score state, and event sequencing.
@@ -194,6 +206,7 @@ The backtest engine should consume:
 
 ```text
 market prediction rows
+state evidence bundles
 selection policy rows
 settled outcomes
 M2 baseline rows
@@ -209,6 +222,7 @@ tail/regime diagnostics
 feature ablation reports
 signal durability reports
 simulator path diagnostics
+state evidence diagnostics
 component comparison reports
 promotion/rejection decisions
 ```
@@ -220,6 +234,7 @@ calibration diagnostics -> calibrator candidates
 feature ablations -> feature set promotion/rejection
 component comparisons -> submodel registry promotion gate
 simulator path diagnostics -> replay/labeler/simulator audits
+state evidence diagnostics -> evidence component audits
 ```
 
 No signal, calibrator, submodel artifact, or market aggregator should become active because it looked good once. Promotion requires lineage, backtest slices, calibration checks, and baseline comparison.
@@ -280,6 +295,7 @@ market_prediction.first5_total
 market_prediction.first_inning
 market_prediction.player_prop
 market_prediction.home_run
+state_evidence_bundle
 selection_policy_result
 experiment_artifact
 presentation_export
@@ -331,16 +347,70 @@ backtest lineage
 calibration status
 ```
 
+## State Evidence And Justification
+
+M3 needs a structured evidence layer before it has pick explanations.
+
+The state evidence bundle explains why a probability moved from baseline to final contract probability:
+
+```text
+baseline probability
++ starter path contribution
++ lineup pressure contribution
++ reliever/bullpen contribution
++ traffic/regime contribution
++ market line context contribution
+- uncertainty and missing-data penalties
+= final contract probability
+```
+
+This is not generated prose. It is a typed artifact that can later be summarized for humans.
+
+Required evidence bundle fields:
+
+```text
+model_run_id
+game_id
+contract
+line
+baseline_probability
+final_probability
+probability_delta
+component_contributions
+top_evidence_atoms
+counter_case_risks
+missing_data_flags
+uncertainty_adjustments
+calibration_context
+not_a_pick
+not_a_price
+not_promoted
+```
+
+The justification model should explain probability movement, not merely defend a pick. For example:
+
+```text
+starter_path_delta: +8%
+lineup_pressure_delta: +5%
+early_traffic_delta: +3%
+market_line_context_delta: +4%
+uncertainty_delta: -2%
+final_net_delta: +18%
+```
+
+If later selection policy chooses to show a play, a pick explanation must consume the state evidence bundle plus market comparison and calibration confidence. It must not invent reasons outside the evidence.
+
 ## Design Rules
 
 1. Market heads price contracts from shared simulated worlds.
 2. Player props are downstream of game flow, not isolated from it.
-3. Every prediction row should trace to feature snapshot, model artifacts, calibration, and selection policy.
-4. Selection policy should never be fused with probability generation.
-5. Presentation should never be the source of truth.
-6. Soft inputs should alter latent distributions with shrinkage and provenance.
-7. Backtests must evaluate tail calibration, not only mean accuracy.
-8. The system should test whether a feature improves market pricing before promoting it.
+3. Every prediction row should trace to feature snapshot, model artifacts, state evidence, calibration, and selection policy.
+4. State evidence should explain probability movement before any pick explanation exists.
+5. Selection policy should never be fused with probability generation.
+6. Presentation should never be the source of truth.
+7. Soft inputs should alter latent distributions with shrinkage and provenance.
+8. Backtests must evaluate tail calibration, not only mean accuracy.
+9. The system should test whether a feature improves market pricing and evidence quality before promoting it.
 
 Smooth final-score probability is not enough. M3 must preserve regime and tail behavior:
 

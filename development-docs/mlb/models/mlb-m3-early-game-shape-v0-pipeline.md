@@ -6,7 +6,7 @@ Last updated: 2026-06-03
 
 Constitution: `development-docs/mlb/models/mlb-m3-constitution.md`
 
-Purpose: define the first real MLB-M3 data pipeline, target map, and output contract after resetting away from generic run-total regression.
+Purpose: define the first real MLB-M3 data pipeline, target map, state evidence bundle, and output contract after resetting away from generic run-total regression.
 
 ## Scope
 
@@ -31,6 +31,7 @@ P(F5 total runs > known line)
 P(F5 total runs < known line)
 P(push), when line can push
 uncertainty and calibration metadata
+state evidence bundle explaining probability movement
 ```
 
 Primary structural targets:
@@ -73,7 +74,9 @@ flowchart TD
   LABELS --> COMPONENTS
 
   COMPONENTS --> DIST["Early game-shape distribution<br/>not a point total"]
+  DIST --> EVIDENCE["State evidence bundle<br/>baseline, deltas, evidence atoms, counter-case, uncertainty"]
   DIST --> CONTRACT["F5 O/U contract output<br/>probability + uncertainty + provenance"]
+  EVIDENCE --> CONTRACT
   CONTRACT --> EVAL["Backtest and calibration<br/>Brier/log loss, reliability, tail calibration, settlement, drift"]
   EVAL --> GATES["Promotion/rejection gates<br/>no picks or pricing until passed"]
 
@@ -85,7 +88,7 @@ flowchart TD
 
   class SRC,RAW source;
   class CANON,SPINE,ASOF,HIST,PIT,TARGETS,LABELS data;
-  class VIEWS,COMPONENTS,DIST model;
+  class VIEWS,COMPONENTS,DIST,EVIDENCE model;
   class CONTRACT,EVAL output;
   class GATES gate;
 ```
@@ -101,6 +104,7 @@ flowchart TD
 | Feature views | point-in-time game row | Represent hypotheses about starter path, traffic, lineup pressure, and early game shape. | Hard-code arbitrary windows as truth. |
 | Structural labels | settled game state | Train/evaluate starter crack, exit, traffic, and F5 regime. | Use labels as features. |
 | Contract labels | game plus known line | Train/evaluate F5 O/U probabilities. | Evaluate only average-run MAE. |
+| State evidence | contract probability plus component state | Explain probability movement and uncertainty. | Invent prose reasons after the fact. |
 | Contract output | game plus known line | Produce probabilities, uncertainty, and provenance. | Produce picks, stakes, or promotion claims. |
 
 ## Required Inputs
@@ -267,6 +271,91 @@ Bad encodings:
 - using final closing line as a feature when the prediction time was earlier
 - turning market disagreement directly into a pick
 
+## State Evidence Bundle
+
+State evidence is a required output family for Early Game Shape v0.
+
+It explains why the contract probability moved from baseline to final probability. It is not a pick justification yet, because selection policy is out of scope.
+
+Required fields:
+
+- `game_id`
+- `decision_time`
+- `contract`
+- `line`
+- `baseline_probability`
+- `final_probability`
+- `probability_delta`
+- `component_contributions`
+- `top_evidence_atoms`
+- `counter_case_risks`
+- `missing_data_flags`
+- `uncertainty_adjustments`
+- `calibration_context`
+- `not_a_pick`
+- `not_a_price`
+- `not_promoted`
+
+Component contribution examples:
+
+```text
+starter_path_delta: +0.08
+lineup_pressure_delta: +0.05
+early_traffic_delta: +0.03
+market_line_context_delta: +0.04
+uncertainty_delta: -0.02
+final_net_delta: +0.18
+```
+
+Evidence atoms should be structured and traceable:
+
+```text
+atom_id
+component
+direction
+magnitude
+source_feature_or_component
+supporting_value
+baseline_value
+reliability
+```
+
+Counter-case risks should explain why the model can be wrong:
+
+- starter command holds despite stress indicators
+- lineup is incomplete or materially changed
+- low-data pitcher role change
+- market line source missing or stale
+- weather/park context unavailable
+- traffic indicators historically fail to convert
+
+The state evidence bundle should make it possible to audit whether M3 is seeing baseball state or just a hidden proxy.
+
+## Evidence DAG
+
+```mermaid
+flowchart TD
+  BASE["Baseline contract probability<br/>neutral/as-of market and historical prior"] --> DELTA["Probability movement ledger"]
+  SP["Starter path component<br/>crack/exit/workload"] --> DELTA
+  LP["Lineup pressure component<br/>patience/contact/traffic"] --> DELTA
+  ET["Early traffic component<br/>conversion/erasure/inning extension"] --> DELTA
+  REG["F5 regime component<br/>low/normal/high/chaos"] --> DELTA
+  MKT["Market line context<br/>known line/snapshot quality"] --> DELTA
+  UNC["Uncertainty layer<br/>missing data/sparse sample/role change"] --> DELTA
+
+  DELTA --> EVID["State evidence bundle"]
+  EVID --> OUT["F5 O/U probability output"]
+  EVID --> AUDIT["Evidence audit<br/>component stability, missing reasons, counter-case coverage"]
+
+  classDef input fill:#e8eef7,stroke:#5b6f92,color:#111827;
+  classDef evidence fill:#fff2c2,stroke:#927000,color:#332800;
+  classDef output fill:#d7ecff,stroke:#2f6f9f,color:#0d2638;
+
+  class BASE,SP,LP,ET,REG,MKT,UNC input;
+  class DELTA,EVID evidence;
+  class OUT,AUDIT output;
+```
+
 ## Structural Targets
 
 These are not necessarily final products. They are intermediate baseball-state targets that force the system to learn the right game path.
@@ -380,6 +469,7 @@ Output fields:
 - `regime_distribution`
 - `starter_crack_probability`
 - `starter_exit_distribution`
+- `state_evidence_bundle`
 - `calibration_scope`
 - `not_a_pick`
 - `not_a_price`
@@ -398,6 +488,7 @@ Required gates:
 | F5 line-conditioned probability | Does the model grade the known F5 line? | Brier, log loss, reliability bins, calibration slope |
 | Tail/regime calibration | Does it understand low-run and chaos games? | regime-conditioned reliability, tail recall/precision |
 | Distribution quality | Are uncertainty bands honest? | interval coverage, pinball loss, CRPS-style diagnostics |
+| State evidence quality | Does the model explain probability movement from component state? | contribution stability, evidence completeness, counter-case coverage |
 | Market sanity | Does it compare to known market snapshots cleanly? | line availability, settlement joins, CLV later |
 | Promotion guard | Is it safe to claim anything? | no picks/prices/promotion until all above pass |
 
@@ -438,8 +529,9 @@ Recommended order:
 4. Build a point-in-time training row at `game_id + decision_time + known F5 line`.
 5. Train/evaluate structural targets.
 6. Train/evaluate line-conditioned F5 O/U probabilities.
-7. Add calibration and regime-conditioned rejection gates.
-8. Only then consider model registry promotion.
+7. Add state evidence bundles with baseline probability, component deltas, evidence atoms, counter-case risks, and uncertainty flags.
+8. Add calibration and regime-conditioned rejection gates.
+9. Only then consider model registry promotion.
 
 ## Open Questions
 
@@ -448,3 +540,4 @@ Recommended order:
 3. Should starter crack be labeled from explicit hook/workload deviation, early damage, traffic stress, or a multi-label combination?
 4. Should F5 regime buckets be fixed by run count first, or learned from game-state clusters later?
 5. Which pitch/PA replay fields are missing from the typed DB today and need migration/backfill before v0 can be built honestly?
+6. Should component contribution deltas be learned natively by model decomposition, approximated by ablation/SHAP-like diagnostics, or represented first as transparent additive evidence ledgers?
