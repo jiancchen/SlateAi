@@ -12,9 +12,11 @@ The model should learn states like starter stress, dead bats, traffic without co
 
 ## Notes
 
+- [Alpha Design](alpha-design.md)
 - [Model Architecture Notes](model-architecture-notes.md)
 - [Signal Discovery Notes](signal-discovery-notes.md)
 - [Game Story Labels](game-story-labels.md)
+- [Run Dashboard Notes](run-dashboard-notes.md)
 - [Tech Debt](tech-debt.md)
 
 Related inventory and architecture docs:

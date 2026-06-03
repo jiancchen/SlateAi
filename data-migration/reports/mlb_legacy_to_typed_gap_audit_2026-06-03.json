@@ -1,0 +1,4660 @@
+{
+  "generated_at": "2026-06-03T03:10:10.155Z",
+  "report_date": "2026-06-03",
+  "legacy_db": {
+    "path": "/Users/jcchen/Documents/New project/data-private/warehouse/sports.db",
+    "relative_path": "data-private/warehouse/sports.db",
+    "size_bytes": 2367373312,
+    "size_mb": 2257.7
+  },
+  "typed_db": {
+    "path": "/Users/jcchen/Documents/New project/data-private/warehouse/sports/mlb/sql-mlb.db",
+    "relative_path": "data-private/warehouse/sports/mlb/sql-mlb.db",
+    "size_bytes": 4211679232,
+    "size_mb": 4016.6
+  },
+  "summary": {
+    "legacy_tables_total": 121,
+    "legacy_tables_audited": 77,
+    "legacy_rows_audited": 1588592,
+    "staged_source_tables": 70,
+    "staged_rows": 1206213,
+    "typed_tables": 97,
+    "by_status": {
+      "normalized_with_source_lineage": {
+        "tables": 66,
+        "legacy_rows": 1202383,
+        "staged_rows": 1202332,
+        "target_source_rows": 1202707
+      },
+      "target_populated_lineage_unclear": {
+        "tables": 4,
+        "legacy_rows": 3881,
+        "staged_rows": 3881,
+        "target_source_rows": 0
+      },
+      "target_populated_not_staged": {
+        "tables": 5,
+        "legacy_rows": 382328,
+        "staged_rows": 0,
+        "target_source_rows": 0
+      },
+      "empty_or_inactive": {
+        "tables": 2,
+        "legacy_rows": 0,
+        "staged_rows": 0,
+        "target_source_rows": 0
+      }
+    },
+    "by_family": {
+      "results": {
+        "tables": 8,
+        "legacy_rows": 51768,
+        "staged_rows": 51768,
+        "target_source_rows": 51753
+      },
+      "bullpen_features": {
+        "tables": 5,
+        "legacy_rows": 29425,
+        "staged_rows": 29425,
+        "target_source_rows": 29425
+      },
+      "markets": {
+        "tables": 4,
+        "legacy_rows": 4699,
+        "staged_rows": 4699,
+        "target_source_rows": 3479
+      },
+      "game_story": {
+        "tables": 2,
+        "legacy_rows": 1772,
+        "staged_rows": 1772,
+        "target_source_rows": 1772
+      },
+      "environment": {
+        "tables": 2,
+        "legacy_rows": 601,
+        "staged_rows": 601,
+        "target_source_rows": 601
+      },
+      "core_game_feed": {
+        "tables": 2,
+        "legacy_rows": 2675,
+        "staged_rows": 0,
+        "target_source_rows": 0
+      },
+      "player_context": {
+        "tables": 4,
+        "legacy_rows": 3206,
+        "staged_rows": 3206,
+        "target_source_rows": 3206
+      },
+      "hitter_features": {
+        "tables": 8,
+        "legacy_rows": 693712,
+        "staged_rows": 693712,
+        "target_source_rows": 693712
+      },
+      "predictions_backtests": {
+        "tables": 9,
+        "legacy_rows": 16791,
+        "staged_rows": 16791,
+        "target_source_rows": 14520
+      },
+      "lineup_features": {
+        "tables": 3,
+        "legacy_rows": 26009,
+        "staged_rows": 26009,
+        "target_source_rows": 26009
+      },
+      "core_replay_state": {
+        "tables": 2,
+        "legacy_rows": 371432,
+        "staged_rows": 0,
+        "target_source_rows": 0
+      },
+      "pitcher_features": {
+        "tables": 6,
+        "legacy_rows": 149971,
+        "staged_rows": 149971,
+        "target_source_rows": 149971
+      },
+      "player_identity": {
+        "tables": 1,
+        "legacy_rows": 184256,
+        "staged_rows": 184256,
+        "target_source_rows": 184256
+      },
+      "team_context": {
+        "tables": 1,
+        "legacy_rows": 809,
+        "staged_rows": 809,
+        "target_source_rows": 809
+      },
+      "game_shape_research": {
+        "tables": 2,
+        "legacy_rows": 8181,
+        "staged_rows": 8181,
+        "target_source_rows": 8181
+      },
+      "team_features": {
+        "tables": 9,
+        "legacy_rows": 32784,
+        "staged_rows": 32784,
+        "target_source_rows": 32784
+      },
+      "market_context": {
+        "tables": 1,
+        "legacy_rows": 1754,
+        "staged_rows": 1754,
+        "target_source_rows": 1754
+      },
+      "model_metadata": {
+        "tables": 4,
+        "legacy_rows": 119,
+        "staged_rows": 68,
+        "target_source_rows": 68
+      },
+      "adjacent_environment": {
+        "tables": 2,
+        "legacy_rows": 0,
+        "staged_rows": 0,
+        "target_source_rows": 0
+      },
+      "shared_source_metadata": {
+        "tables": 1,
+        "legacy_rows": 8221,
+        "staged_rows": 0,
+        "target_source_rows": 0
+      },
+      "adjacent_mlb_raw_context": {
+        "tables": 1,
+        "legacy_rows": 407,
+        "staged_rows": 407,
+        "target_source_rows": 407
+      }
+    },
+    "sports_db_read_paths": 31,
+    "sports_db_cutover_blockers": 21
+  },
+  "replay_schema_gaps": {
+    "plate_appearances": {
+      "legacy_table": "mlb_plate_appearances",
+      "required_fields": [
+        "at_bat_index",
+        "outs_before",
+        "outs_after",
+        "balls_final",
+        "strikes_final",
+        "base_state_start",
+        "base_state_end",
+        "away_score_before",
+        "home_score_before",
+        "away_score_after",
+        "home_score_after",
+        "men_on_base",
+        "is_scoring_play",
+        "is_out",
+        "is_at_bat",
+        "raw_json"
+      ],
+      "fields_present_in_legacy": [
+        "at_bat_index",
+        "outs_before",
+        "outs_after",
+        "balls_final",
+        "strikes_final",
+        "base_state_start",
+        "base_state_end",
+        "away_score_before",
+        "home_score_before",
+        "away_score_after",
+        "home_score_after",
+        "men_on_base",
+        "is_scoring_play",
+        "is_out",
+        "is_at_bat",
+        "raw_json"
+      ],
+      "fields_missing_from_typed": [
+        "at_bat_index",
+        "outs_before",
+        "outs_after",
+        "balls_final",
+        "strikes_final",
+        "base_state_start",
+        "base_state_end",
+        "away_score_before",
+        "home_score_before",
+        "away_score_after",
+        "home_score_after",
+        "men_on_base",
+        "is_scoring_play",
+        "is_out",
+        "is_at_bat",
+        "raw_json"
+      ],
+      "severity": "critical_for_m3_replay"
+    },
+    "pitch_events": {
+      "legacy_table": "mlb_pitch_events",
+      "required_fields": [
+        "at_bat_index",
+        "event_index",
+        "balls",
+        "strikes",
+        "outs",
+        "is_pitch",
+        "is_strike",
+        "is_ball",
+        "call_code",
+        "call_description",
+        "pitch_type_code",
+        "pitch_type_description",
+        "start_speed",
+        "end_speed",
+        "play_id",
+        "raw_json"
+      ],
+      "fields_present_in_legacy": [
+        "at_bat_index",
+        "event_index",
+        "balls",
+        "strikes",
+        "outs",
+        "is_pitch",
+        "is_strike",
+        "is_ball",
+        "call_code",
+        "call_description",
+        "pitch_type_code",
+        "pitch_type_description",
+        "start_speed",
+        "end_speed",
+        "play_id",
+        "raw_json"
+      ],
+      "fields_missing_from_typed": [
+        "at_bat_index",
+        "event_index",
+        "balls",
+        "strikes",
+        "outs",
+        "is_pitch",
+        "is_strike",
+        "is_ball",
+        "call_code",
+        "call_description",
+        "pitch_type_code",
+        "pitch_type_description",
+        "start_speed",
+        "end_speed",
+        "play_id",
+        "raw_json"
+      ],
+      "severity": "critical_for_m3_replay"
+    }
+  },
+  "source_audit": [
+    {
+      "source_table": "mlb_batter_game_outcomes",
+      "family": "results",
+      "migration": "data-migration/scripts/normalize_mlb_results.py",
+      "notes": "",
+      "legacy_rows": 18080,
+      "staged_rows": 18080,
+      "staged_min_source_date": "2026-03-26",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "game_date": {
+          "min": "2026-03-26",
+          "max": "2026-05-31"
+        }
+      },
+      "targets": [
+        "batter_game_outcomes"
+      ],
+      "target_details": [
+        {
+          "table": "batter_game_outcomes",
+          "exists": true,
+          "total_rows": 18080,
+          "source_rows": 18080,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 18080,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "game_pk",
+        "game_date",
+        "team_role",
+        "team_name",
+        "opponent_name",
+        "player_id",
+        "player_name",
+        "batting_order",
+        "plate_appearances",
+        "at_bats",
+        "runs",
+        "hits",
+        "rbi",
+        "hit_run_rbi_total",
+        "singles",
+        "doubles",
+        "triples",
+        "home_runs",
+        "total_bases",
+        "walks",
+        "strikeouts",
+        "summary",
+        "raw_json"
+      ]
+    },
+    {
+      "source_table": "mlb_bullpen_mistake_shape_daily",
+      "family": "bullpen_features",
+      "migration": "data-migration/scripts/normalize_mlb_bullpen_features.py",
+      "notes": "",
+      "legacy_rows": 3508,
+      "staged_rows": 3508,
+      "staged_min_source_date": "2026-03-27",
+      "staged_max_source_date": "2026-06-01",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-03-27",
+          "max": "2026-06-01"
+        }
+      },
+      "targets": [
+        "bullpen_mistake_shape_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "bullpen_mistake_shape_snapshots",
+          "exists": true,
+          "total_rows": 3508,
+          "source_rows": 3508,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 3508,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "team_name",
+        "scheduled_opponent",
+        "window_days",
+        "appearances_sample",
+        "games_sample",
+        "first_batter_reach_rate",
+        "first_batter_walk_rate",
+        "meltdown_appearance_rate",
+        "home_run_appearance_rate",
+        "inherited_traffic_entry_rate",
+        "inherited_traffic_score_rate",
+        "bullpen_meltdown_game_rate",
+        "lead_loss_after_entry_rate",
+        "bridge_clean_game_rate",
+        "bullpen_chaos_index"
+      ]
+    },
+    {
+      "source_table": "mlb_bullpen_usage",
+      "family": "bullpen_features",
+      "migration": "data-migration/scripts/normalize_mlb_bullpen_features.py",
+      "notes": "",
+      "legacy_rows": 16542,
+      "staged_rows": 16542,
+      "staged_min_source_date": "2026-03-27",
+      "staged_max_source_date": "2026-06-01",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-03-27",
+          "max": "2026-06-01"
+        }
+      },
+      "targets": [
+        "bullpen_usage_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "bullpen_usage_snapshots",
+          "exists": true,
+          "total_rows": 16542,
+          "source_rows": 16542,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 16542,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "team_name",
+        "pitcher_id",
+        "pitcher_name",
+        "likely_role",
+        "appearances_last3",
+        "innings_last3",
+        "outs_last3",
+        "pitches_last3",
+        "batters_faced_last3",
+        "last_appearance_date",
+        "days_since_last_appearance",
+        "worked_yesterday_flag",
+        "back_to_back_flag",
+        "avg_entry_order",
+        "avg_outs_per_appearance",
+        "avg_pitches_per_appearance",
+        "bridge_score",
+        "availability_score",
+        "fatigue_score",
+        "first_reliever_likelihood",
+        "raw_json"
+      ]
+    },
+    {
+      "source_table": "mlb_featured_market_odds_snapshots",
+      "family": "markets",
+      "migration": "data-migration/scripts/normalize_mlb_markets.py",
+      "notes": "",
+      "legacy_rows": 1610,
+      "staged_rows": 1610,
+      "staged_min_source_date": "2026-03-26",
+      "staged_max_source_date": "2026-05-25",
+      "legacy_date_ranges": {
+        "market_date": {
+          "min": "2026-03-26",
+          "max": "2026-05-25"
+        },
+        "commence_time": {
+          "min": "2026-03-26T17:15:00Z",
+          "max": "2026-05-26T01:40:00Z"
+        }
+      },
+      "targets": [
+        "market_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "market_snapshots",
+          "exists": true,
+          "total_rows": 2408,
+          "source_rows": null,
+          "has_source_table_column": false
+        }
+      ],
+      "target_source_rows": 0,
+      "status": "target_populated_lineage_unclear",
+      "columns": [
+        "row_key",
+        "snapshot_time",
+        "market_date",
+        "game_pk",
+        "source_event_id",
+        "commence_time",
+        "home_team",
+        "away_team",
+        "bookmaker_key",
+        "bookmaker_title",
+        "market_key",
+        "outcome_name",
+        "outcome_description",
+        "price",
+        "point",
+        "last_update",
+        "source_path",
+        "raw_json"
+      ]
+    },
+    {
+      "source_table": "mlb_game_outcomes",
+      "family": "results",
+      "migration": "data-migration/scripts/normalize_mlb_results.py",
+      "notes": "",
+      "legacy_rows": 886,
+      "staged_rows": 886,
+      "staged_min_source_date": "2026-03-26",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "game_date": {
+          "min": "2026-03-26",
+          "max": "2026-05-31"
+        }
+      },
+      "targets": [
+        "game_outcomes"
+      ],
+      "target_details": [
+        {
+          "table": "game_outcomes",
+          "exists": true,
+          "total_rows": 886,
+          "source_rows": 871,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 871,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "game_pk",
+        "game_date",
+        "away_team",
+        "home_team",
+        "away_runs_final",
+        "home_runs_final",
+        "away_hits_final",
+        "home_hits_final",
+        "away_home_runs_final",
+        "home_home_runs_final",
+        "away_runs_first5",
+        "home_runs_first5",
+        "away_hits_first5",
+        "home_hits_first5",
+        "away_home_runs_first5",
+        "home_home_runs_first5",
+        "home_full_game_result",
+        "home_first5_result",
+        "home_full_game_run_diff",
+        "home_first5_run_diff",
+        "home_bullpen_run_diff",
+        "total_runs_final",
+        "total_runs_first5",
+        "raw_json"
+      ]
+    },
+    {
+      "source_table": "mlb_game_story_labels",
+      "family": "game_story",
+      "migration": "data-migration/scripts/normalize_mlb_team_context.py",
+      "notes": "",
+      "legacy_rows": 886,
+      "staged_rows": 886,
+      "staged_min_source_date": "2026-03-26",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "game_date": {
+          "min": "2026-03-26",
+          "max": "2026-05-31"
+        }
+      },
+      "targets": [
+        "game_story_labels"
+      ],
+      "target_details": [
+        {
+          "table": "game_story_labels",
+          "exists": true,
+          "total_rows": 886,
+          "source_rows": 886,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 886,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "game_pk",
+        "game_date",
+        "away_team",
+        "home_team",
+        "winner_team",
+        "primary_story_label",
+        "early_phase_label",
+        "late_phase_label",
+        "scoring_shape_label",
+        "winner_path_label",
+        "story_tags_json",
+        "label_flags_json",
+        "summary_json"
+      ]
+    },
+    {
+      "source_table": "mlb_game_story_signals",
+      "family": "game_story",
+      "migration": "data-migration/scripts/normalize_mlb_team_context.py",
+      "notes": "",
+      "legacy_rows": 886,
+      "staged_rows": 886,
+      "staged_min_source_date": "2026-03-26",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "game_date": {
+          "min": "2026-03-26",
+          "max": "2026-05-31"
+        }
+      },
+      "targets": [
+        "game_story_signals"
+      ],
+      "target_details": [
+        {
+          "table": "game_story_signals",
+          "exists": true,
+          "total_rows": 886,
+          "source_rows": 886,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 886,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "game_pk",
+        "game_date",
+        "away_team",
+        "home_team",
+        "winner_team",
+        "loser_team",
+        "lead_after5_team",
+        "comeback_win_flag",
+        "bullpen_flip_flag",
+        "first_inning_jolt_flag",
+        "quiet_first5_flag",
+        "late_break_flag",
+        "first_scoring_inning",
+        "lead_changes",
+        "max_comeback_runs",
+        "hr_off_starters",
+        "hr_off_relievers",
+        "away_starter_cracked_flag",
+        "home_starter_cracked_flag",
+        "away_traffic_no_conversion_flag",
+        "home_traffic_no_conversion_flag",
+        "away_plate_appearances",
+        "home_plate_appearances",
+        "total_runs_first5",
+        "total_runs_final",
+        "story_tags_json",
+        "summary_json"
+      ]
+    },
+    {
+      "source_table": "mlb_game_sun_visibility_snapshots",
+      "family": "environment",
+      "migration": "data-migration/scripts/normalize_mlb_environment.py",
+      "notes": "",
+      "legacy_rows": 306,
+      "staged_rows": 306,
+      "staged_min_source_date": "2026-05-10",
+      "staged_max_source_date": "2026-06-01",
+      "legacy_date_ranges": {
+        "game_date": {
+          "min": "2026-05-10",
+          "max": "2026-06-01"
+        }
+      },
+      "targets": [
+        "game_sun_visibility_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "game_sun_visibility_snapshots",
+          "exists": true,
+          "total_rows": 306,
+          "source_rows": 306,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 306,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "game_pk",
+        "game_date",
+        "game_datetime",
+        "venue_name",
+        "latitude",
+        "longitude",
+        "field_azimuth_deg",
+        "timezone_offset_hours",
+        "roof_type",
+        "sun_azimuth_first_pitch",
+        "sun_elevation_first_pitch",
+        "sun_azimuth_midgame",
+        "sun_elevation_midgame",
+        "outfield_sun_angle_deg",
+        "outfield_glare_risk",
+        "shadow_transition_risk",
+        "visibility_risk_score",
+        "risk_label",
+        "visibility_notes_json",
+        "raw_json"
+      ]
+    },
+    {
+      "source_table": "mlb_game_team_stats",
+      "family": "results",
+      "migration": "data-migration/scripts/normalize_mlb_results.py",
+      "notes": "",
+      "legacy_rows": 1776,
+      "staged_rows": 1776,
+      "staged_min_source_date": "2026-03-26",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "game_date": {
+          "min": "2026-03-26",
+          "max": "2026-05-31"
+        }
+      },
+      "targets": [
+        "team_game_stats"
+      ],
+      "target_details": [
+        {
+          "table": "team_game_stats",
+          "exists": true,
+          "total_rows": 1776,
+          "source_rows": 1776,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 1776,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "game_pk",
+        "game_date",
+        "team_role",
+        "team_name",
+        "opponent_name",
+        "at_bats",
+        "plate_appearances",
+        "total_bases",
+        "runs_scored",
+        "hits",
+        "home_runs",
+        "walks",
+        "strikeouts",
+        "left_on_base",
+        "runs_allowed",
+        "hits_allowed",
+        "home_runs_allowed",
+        "walks_allowed",
+        "strikeouts_recorded",
+        "runs_scored_first5",
+        "hits_first5",
+        "home_runs_first5",
+        "runs_allowed_first5",
+        "hits_allowed_first5",
+        "home_runs_allowed_first5",
+        "bullpen_runs_scored",
+        "bullpen_runs_allowed",
+        "full_game_result",
+        "first5_result",
+        "raw_json",
+        "at_bats_first5",
+        "plate_appearances_first5"
+      ]
+    },
+    {
+      "source_table": "mlb_game_visibility_outcomes",
+      "family": "environment",
+      "migration": "data-migration/scripts/normalize_mlb_environment.py",
+      "notes": "",
+      "legacy_rows": 295,
+      "staged_rows": 295,
+      "staged_min_source_date": "2026-05-10",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "game_date": {
+          "min": "2026-05-10",
+          "max": "2026-05-31"
+        }
+      },
+      "targets": [
+        "game_visibility_outcomes"
+      ],
+      "target_details": [
+        {
+          "table": "game_visibility_outcomes",
+          "exists": true,
+          "total_rows": 295,
+          "source_rows": 295,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 295,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "game_pk",
+        "game_date",
+        "away_team",
+        "home_team",
+        "fielding_errors",
+        "outfield_errors",
+        "outfield_hits",
+        "outfield_air_hits",
+        "outfield_extra_base_hits",
+        "outfield_home_runs",
+        "visibility_pressure_events",
+        "raw_json"
+      ]
+    },
+    {
+      "source_table": "mlb_games",
+      "family": "core_game_feed",
+      "migration": "data-migration/scripts/ingest_mlb_schedule_game_feed_raw_to_typed.py",
+      "notes": "Canonical game row. Target populated from raw ingest, not legacy_table_rows.",
+      "legacy_rows": 899,
+      "staged_rows": 0,
+      "staged_min_source_date": null,
+      "staged_max_source_date": null,
+      "legacy_date_ranges": {
+        "game_date": {
+          "min": "2026-03-26",
+          "max": "2026-06-01"
+        }
+      },
+      "targets": [
+        "games"
+      ],
+      "target_details": [
+        {
+          "table": "games",
+          "exists": true,
+          "total_rows": 899,
+          "source_rows": null,
+          "has_source_table_column": false
+        }
+      ],
+      "target_source_rows": 0,
+      "status": "target_populated_not_staged",
+      "columns": [
+        "game_pk",
+        "game_date",
+        "game_datetime",
+        "status",
+        "away_team",
+        "home_team",
+        "venue_name",
+        "away_score",
+        "home_score",
+        "raw_path"
+      ]
+    },
+    {
+      "source_table": "mlb_hitter_career_profiles",
+      "family": "player_context",
+      "migration": "data-migration/scripts/normalize_mlb_player_context.py",
+      "notes": "",
+      "legacy_rows": 493,
+      "staged_rows": 493,
+      "staged_min_source_date": "2026-05-31T16:55:04Z",
+      "staged_max_source_date": "2026-06-01T22:44:40Z",
+      "legacy_date_ranges": {},
+      "targets": [
+        "player_career_profiles"
+      ],
+      "target_details": [
+        {
+          "table": "player_career_profiles",
+          "exists": true,
+          "total_rows": 980,
+          "source_rows": 493,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 493,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "player_id",
+        "full_name",
+        "seasons_sample",
+        "debut_year",
+        "latest_mlb_year",
+        "career_games",
+        "career_plate_appearances",
+        "career_at_bats",
+        "career_hits",
+        "career_home_runs",
+        "career_total_bases",
+        "career_walks",
+        "career_strikeouts",
+        "career_avg",
+        "career_obp",
+        "career_slg",
+        "career_ops",
+        "career_tb_per_pa",
+        "career_hr_per_pa",
+        "career_k_rate",
+        "career_bb_rate",
+        "best_power_year",
+        "best_power_home_runs",
+        "best_power_slg",
+        "recent_mlb_year",
+        "recent_mlb_plate_appearances",
+        "recent_mlb_home_runs",
+        "recent_mlb_tb_per_pa",
+        "career_power_index",
+        "contact_risk_index",
+        "role_stability_index",
+        "repeatability_label",
+        "volatility_label",
+        "source_url",
+        "fetched_at",
+        "source_json"
+      ]
+    },
+    {
+      "source_table": "mlb_hitter_classic_trend_snapshots",
+      "family": "hitter_features",
+      "migration": "data-migration/scripts/normalize_mlb_hitter_features.py",
+      "notes": "",
+      "legacy_rows": 25167,
+      "staged_rows": 25167,
+      "staged_min_source_date": "2026-03-27",
+      "staged_max_source_date": "2026-06-01",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-03-27",
+          "max": "2026-06-01"
+        }
+      },
+      "targets": [
+        "player_classic_stat_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "player_classic_stat_snapshots",
+          "exists": true,
+          "total_rows": 25167,
+          "source_rows": 25167,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 25167,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "team_name",
+        "player_id",
+        "player_name",
+        "days_since_last_game",
+        "games_sample_last10",
+        "pa_sample_last10",
+        "batting_order_avg_last10",
+        "multi_hit_games_last10",
+        "multi_tb_games_last10",
+        "home_run_games_last10",
+        "hits_per_pa_last10",
+        "total_bases_per_pa_last10",
+        "strikeout_rate_last10",
+        "walk_rate_last10",
+        "whiff_rate_last10",
+        "hits_per_pa_last5_minus_last10",
+        "total_bases_per_pa_last5_minus_last10",
+        "strikeout_rate_last5_minus_last10"
+      ]
+    },
+    {
+      "source_table": "mlb_hitter_opponent_context_snapshots",
+      "family": "hitter_features",
+      "migration": "data-migration/scripts/normalize_mlb_hitter_features.py",
+      "notes": "",
+      "legacy_rows": 25167,
+      "staged_rows": 25167,
+      "staged_min_source_date": "2026-03-27",
+      "staged_max_source_date": "2026-06-01",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-03-27",
+          "max": "2026-06-01"
+        }
+      },
+      "targets": [
+        "player_opponent_context_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "player_opponent_context_snapshots",
+          "exists": true,
+          "total_rows": 25167,
+          "source_rows": 25167,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 25167,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "team_name",
+        "player_id",
+        "player_name",
+        "games_sample_last10",
+        "avg_opponent_win_pct_last5_last10",
+        "avg_opponent_run_diff_last5_last10",
+        "avg_opponent_run_diff_per_game_last10",
+        "games_vs_winning_last10",
+        "games_vs_positive_run_diff_last10",
+        "pa_vs_winning_last10",
+        "hits_per_pa_vs_winning_last10",
+        "total_bases_per_pa_vs_winning_last10",
+        "weighted_hits_per_pa_last10",
+        "weighted_total_bases_per_pa_last10",
+        "hits_per_pa_weight_delta_last10",
+        "total_bases_per_pa_weight_delta_last10"
+      ]
+    },
+    {
+      "source_table": "mlb_hitter_pitch_type_response_daily",
+      "family": "hitter_features",
+      "migration": "data-migration/scripts/normalize_mlb_hitter_features.py",
+      "notes": "",
+      "legacy_rows": 206697,
+      "staged_rows": 206697,
+      "staged_min_source_date": "2026-03-27",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "snapshot_date": {
+          "min": "2026-03-27",
+          "max": "2026-05-31"
+        },
+        "created_at": {
+          "min": "2026-06-01T21:35:49Z",
+          "max": "2026-06-01T21:35:49Z"
+        }
+      },
+      "targets": [
+        "player_pitch_type_response_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "player_pitch_type_response_snapshots",
+          "exists": true,
+          "total_rows": 206697,
+          "source_rows": 206697,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 206697,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "snapshot_date",
+        "hitter_id",
+        "hitter_name",
+        "team_name",
+        "pitch_type",
+        "sample_pitches",
+        "swing_rate",
+        "chase_rate",
+        "whiff_rate",
+        "take_pressure",
+        "damage_rate",
+        "hard_contact_rate",
+        "expected_slugging",
+        "platoon_split_json",
+        "source_json",
+        "created_at"
+      ]
+    },
+    {
+      "source_table": "mlb_hitter_split_snapshots",
+      "family": "player_context",
+      "migration": "data-migration/scripts/normalize_mlb_player_context.py",
+      "notes": "",
+      "legacy_rows": 693,
+      "staged_rows": 693,
+      "staged_min_source_date": "2026-05-30",
+      "staged_max_source_date": "2026-06-01",
+      "legacy_date_ranges": {
+        "snapshot_date": {
+          "min": "2026-05-30",
+          "max": "2026-06-01"
+        }
+      },
+      "targets": [
+        "player_split_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "player_split_snapshots",
+          "exists": true,
+          "total_rows": 693,
+          "source_rows": 693,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 693,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "snapshot_date",
+        "season",
+        "game_id",
+        "game_title",
+        "team_role",
+        "team_name",
+        "opponent_name",
+        "player_id",
+        "player_name",
+        "batting_order",
+        "opposing_pitcher_id",
+        "opposing_pitcher_name",
+        "opposing_pitcher_hand",
+        "split_source",
+        "split_type",
+        "split_key",
+        "plate_appearances",
+        "at_bats",
+        "runs",
+        "hits",
+        "singles",
+        "doubles",
+        "triples",
+        "home_runs",
+        "rbi",
+        "walks",
+        "strikeouts",
+        "total_bases",
+        "batting_average",
+        "on_base_percentage",
+        "slugging_percentage",
+        "ops",
+        "hit_rate",
+        "singles_rate",
+        "home_run_rate",
+        "walk_rate",
+        "strikeout_rate",
+        "total_bases_rate",
+        "split_score",
+        "matchup_grade",
+        "source_url",
+        "fetched_at",
+        "source_hash",
+        "raw_json"
+      ]
+    },
+    {
+      "source_table": "mlb_hitter_statcast_game_logs",
+      "family": "hitter_features",
+      "migration": "data-migration/scripts/normalize_mlb_hitter_features.py",
+      "notes": "",
+      "legacy_rows": 18004,
+      "staged_rows": 18004,
+      "staged_min_source_date": "2026-03-26",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "game_date": {
+          "min": "2026-03-26",
+          "max": "2026-05-31"
+        }
+      },
+      "targets": [
+        "player_statcast_game_logs"
+      ],
+      "target_details": [
+        {
+          "table": "player_statcast_game_logs",
+          "exists": true,
+          "total_rows": 18314,
+          "source_rows": 18004,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 18004,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "game_date",
+        "game_pk",
+        "player_id",
+        "player_name",
+        "team_name",
+        "opponent_name",
+        "plate_appearances",
+        "at_bats",
+        "hits",
+        "singles",
+        "doubles",
+        "triples",
+        "home_runs",
+        "strikeouts",
+        "walks",
+        "batted_ball_events",
+        "hard_hit_events",
+        "sweet_spot_events",
+        "barrels_total",
+        "batting_average",
+        "slugging",
+        "woba",
+        "xwoba",
+        "xba",
+        "xobp",
+        "xslg",
+        "avg_launch_speed",
+        "avg_launch_angle",
+        "avg_bat_speed",
+        "avg_swing_length",
+        "hard_hit_percent",
+        "sweet_spot_percent",
+        "barrel_bbe_percent",
+        "barrel_pa_percent",
+        "source_json"
+      ]
+    },
+    {
+      "source_table": "mlb_hitter_statcast_trend_snapshots",
+      "family": "hitter_features",
+      "migration": "data-migration/scripts/normalize_mlb_hitter_features.py",
+      "notes": "",
+      "legacy_rows": 25797,
+      "staged_rows": 25797,
+      "staged_min_source_date": "2026-03-27",
+      "staged_max_source_date": "2026-06-01",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-03-27",
+          "max": "2026-06-01"
+        }
+      },
+      "targets": [
+        "player_statcast_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "player_statcast_snapshots",
+          "exists": true,
+          "total_rows": 25797,
+          "source_rows": 25797,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 25797,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "team_name",
+        "player_id",
+        "player_name",
+        "games_sample_7",
+        "games_sample_14",
+        "games_sample_30",
+        "pa_sample_7",
+        "pa_sample_14",
+        "pa_sample_30",
+        "bbe_sample_7",
+        "bbe_sample_14",
+        "bbe_sample_30",
+        "rolling_7_xwoba",
+        "rolling_14_xwoba",
+        "rolling_30_xwoba",
+        "rolling_7_xba",
+        "rolling_14_xba",
+        "rolling_30_xba",
+        "rolling_7_xslg",
+        "rolling_14_xslg",
+        "rolling_30_xslg",
+        "rolling_7_barrel_pct",
+        "rolling_14_barrel_pct",
+        "rolling_30_barrel_pct",
+        "rolling_7_hard_hit_pct",
+        "rolling_14_hard_hit_pct",
+        "rolling_30_hard_hit_pct",
+        "rolling_7_sweet_spot_pct",
+        "rolling_14_sweet_spot_pct",
+        "rolling_30_sweet_spot_pct",
+        "xwoba_trend_7_minus_30",
+        "barrel_trend_7_minus_30",
+        "hard_hit_trend_7_minus_30",
+        "sweet_spot_trend_7_minus_30"
+      ]
+    },
+    {
+      "source_table": "mlb_hitter_state_snapshots",
+      "family": "hitter_features",
+      "migration": "data-migration/scripts/normalize_mlb_hitter_features.py",
+      "notes": "",
+      "legacy_rows": 24396,
+      "staged_rows": 24396,
+      "staged_min_source_date": "2026-03-27",
+      "staged_max_source_date": "2026-06-01",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-03-27",
+          "max": "2026-06-01"
+        }
+      },
+      "targets": [
+        "player_state_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "player_state_snapshots",
+          "exists": true,
+          "total_rows": 24396,
+          "source_rows": 24396,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 24396,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "team_name",
+        "player_id",
+        "player_name",
+        "games_sample",
+        "days_since_last_game",
+        "batting_order_avg_last5",
+        "hit_streak_games",
+        "hitless_streak_games",
+        "multi_hit_games_last5",
+        "multi_tb_games_last5",
+        "home_run_streak_games",
+        "hits_per_pa_last5",
+        "total_bases_per_pa_last5",
+        "strikeout_rate_last5",
+        "walk_rate_last5",
+        "whiff_rate_last5",
+        "pressure_plate_index",
+        "cold_streak_index",
+        "heat_regression_index"
+      ]
+    },
+    {
+      "source_table": "mlb_home_run_backtests",
+      "family": "predictions_backtests",
+      "migration": "data-migration/scripts/normalize_mlb_predictions.py",
+      "notes": "",
+      "legacy_rows": 182,
+      "staged_rows": 182,
+      "staged_min_source_date": "2026-05-15",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "prediction_date": {
+          "min": "2026-05-15",
+          "max": "2026-05-31"
+        }
+      },
+      "targets": [
+        "home_run_backtest_rows"
+      ],
+      "target_details": [
+        {
+          "table": "home_run_backtest_rows",
+          "exists": true,
+          "total_rows": 182,
+          "source_rows": 182,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 182,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "prediction_date",
+        "model_name",
+        "player_id",
+        "player_name",
+        "team_abbrev",
+        "actual_home_runs",
+        "hit_flag",
+        "matched_event_keys"
+      ]
+    },
+    {
+      "source_table": "mlb_home_run_events",
+      "family": "results",
+      "migration": "data-migration/scripts/normalize_mlb_results.py",
+      "notes": "",
+      "legacy_rows": 1900,
+      "staged_rows": 1900,
+      "staged_min_source_date": "2026-03-26",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "game_date": {
+          "min": "2026-03-26",
+          "max": "2026-05-31"
+        }
+      },
+      "targets": [
+        "home_run_events"
+      ],
+      "target_details": [
+        {
+          "table": "home_run_events",
+          "exists": true,
+          "total_rows": 1900,
+          "source_rows": 1900,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 1900,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "event_key",
+        "game_pk",
+        "game_date",
+        "game_datetime",
+        "inning",
+        "half_inning",
+        "batter_id",
+        "batter_name",
+        "pitcher_id",
+        "pitcher_name",
+        "batting_team",
+        "fielding_team",
+        "description",
+        "rbi",
+        "away_score",
+        "home_score",
+        "statcast_play_id",
+        "raw_json"
+      ]
+    },
+    {
+      "source_table": "mlb_home_run_predictions",
+      "family": "predictions_backtests",
+      "migration": "data-migration/scripts/normalize_mlb_predictions.py",
+      "notes": "",
+      "legacy_rows": 194,
+      "staged_rows": 194,
+      "staged_min_source_date": "2026-05-15",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "prediction_date": {
+          "min": "2026-05-15",
+          "max": "2026-05-31"
+        }
+      },
+      "targets": [
+        "prediction_rows"
+      ],
+      "target_details": [
+        {
+          "table": "prediction_rows",
+          "exists": true,
+          "total_rows": 8020,
+          "source_rows": null,
+          "has_source_table_column": false
+        }
+      ],
+      "target_source_rows": 0,
+      "status": "target_populated_lineage_unclear",
+      "columns": [
+        "prediction_date",
+        "model_name",
+        "rank",
+        "player_id",
+        "player_name",
+        "team_abbrev",
+        "game_title",
+        "opposing_pitcher",
+        "score",
+        "metadata_json"
+      ]
+    },
+    {
+      "source_table": "mlb_kalshi_market_snapshots",
+      "family": "markets",
+      "migration": "data-migration/scripts/normalize_mlb_markets.py",
+      "notes": "",
+      "legacy_rows": 390,
+      "staged_rows": 390,
+      "staged_min_source_date": "2026-05-29",
+      "staged_max_source_date": "2026-05-29",
+      "legacy_date_ranges": {
+        "game_date": {
+          "min": "2026-05-29",
+          "max": "2026-05-29"
+        }
+      },
+      "targets": [
+        "market_contracts",
+        "market_price_ticks"
+      ],
+      "target_details": [
+        {
+          "table": "market_contracts",
+          "exists": true,
+          "total_rows": 798,
+          "source_rows": 390,
+          "has_source_table_column": true
+        },
+        {
+          "table": "market_price_ticks",
+          "exists": true,
+          "total_rows": 798,
+          "source_rows": 390,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 780,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "snapshot_ts",
+        "game_date",
+        "game_pk",
+        "game_id",
+        "game_title",
+        "away_team",
+        "home_team",
+        "game_status",
+        "game_status_detail",
+        "capture_window",
+        "market_family",
+        "series_ticker",
+        "event_ticker",
+        "market_ticker",
+        "selection_code",
+        "market_title",
+        "line",
+        "yes_bid_cents",
+        "yes_ask_cents",
+        "no_bid_cents",
+        "no_ask_cents",
+        "last_price_cents",
+        "open_interest_fp",
+        "volume_fp",
+        "raw_json"
+      ]
+    },
+    {
+      "source_table": "mlb_likely_relief_chains",
+      "family": "bullpen_features",
+      "migration": "data-migration/scripts/normalize_mlb_bullpen_features.py",
+      "notes": "",
+      "legacy_rows": 3508,
+      "staged_rows": 3508,
+      "staged_min_source_date": "2026-03-27",
+      "staged_max_source_date": "2026-06-01",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-03-27",
+          "max": "2026-06-01"
+        }
+      },
+      "targets": [
+        "likely_relief_chains"
+      ],
+      "target_details": [
+        {
+          "table": "likely_relief_chains",
+          "exists": true,
+          "total_rows": 3508,
+          "source_rows": 3508,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 3508,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "team_name",
+        "opponent_name",
+        "predicted_rank",
+        "pitcher_id",
+        "pitcher_name",
+        "likely_role",
+        "first_reliever_likelihood",
+        "availability_score",
+        "bridge_score",
+        "expected_outs",
+        "worked_yesterday_flag",
+        "back_to_back_flag",
+        "last_appearance_date",
+        "raw_json"
+      ]
+    },
+    {
+      "source_table": "mlb_lineup_conversion_shape_daily",
+      "family": "lineup_features",
+      "migration": "data-migration/scripts/normalize_mlb_lineups.py",
+      "notes": "",
+      "legacy_rows": 5262,
+      "staged_rows": 5262,
+      "staged_min_source_date": "2026-03-27",
+      "staged_max_source_date": "2026-06-01",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-03-27",
+          "max": "2026-06-01"
+        }
+      },
+      "targets": [
+        "lineup_shape_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "lineup_shape_snapshots",
+          "exists": true,
+          "total_rows": 8354,
+          "source_rows": 5262,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 5262,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "team_name",
+        "scheduled_opponent",
+        "scheduled_series_game_number",
+        "division_matchup_flag",
+        "window_games",
+        "games_sample",
+        "baserunners_per_game",
+        "runs_per_baserunner",
+        "stranded_traffic_rate",
+        "early_baserunners_per_game",
+        "early_conversion_rate",
+        "top_order_baserunners_first3_per_game",
+        "top_order_conversion_share",
+        "traffic_no_conversion_rate",
+        "dead_bat_traffic_rate",
+        "quiet_first5_rate",
+        "conversion_volatility",
+        "lineup_conversion_index"
+      ]
+    },
+    {
+      "source_table": "mlb_lineup_dependency_profiles",
+      "family": "lineup_features",
+      "migration": "data-migration/scripts/normalize_mlb_lineups.py",
+      "notes": "",
+      "legacy_rows": 3092,
+      "staged_rows": 3092,
+      "staged_min_source_date": "2026-03-27",
+      "staged_max_source_date": "2026-05-25",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-03-27",
+          "max": "2026-05-25"
+        }
+      },
+      "targets": [
+        "lineup_shape_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "lineup_shape_snapshots",
+          "exists": true,
+          "total_rows": 8354,
+          "source_rows": 3092,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 3092,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "team_name",
+        "window_games",
+        "games_sample",
+        "avg_players_with_hit",
+        "avg_players_with_multi_hit",
+        "avg_players_with_two_plus_tb",
+        "top2_hit_share",
+        "top3_hit_share",
+        "top2_total_bases_share",
+        "top3_total_bases_share",
+        "top2_rbi_share",
+        "top3_rbi_share",
+        "hit_concentration_index",
+        "total_bases_concentration_index",
+        "rbi_concentration_index",
+        "dependency_score"
+      ]
+    },
+    {
+      "source_table": "mlb_lineup_pitcher_matchup_daily",
+      "family": "lineup_features",
+      "migration": "data-migration/scripts/normalize_mlb_lineups.py",
+      "notes": "",
+      "legacy_rows": 17655,
+      "staged_rows": 17655,
+      "staged_min_source_date": "2026-03-31",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "snapshot_date": {
+          "min": "2026-03-31",
+          "max": "2026-05-31"
+        },
+        "created_at": {
+          "min": "2026-06-01T21:35:49Z",
+          "max": "2026-06-01T21:35:49Z"
+        }
+      },
+      "targets": [
+        "lineups",
+        "lineup_slots",
+        "lineup_matchup_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "lineups",
+          "exists": true,
+          "total_rows": 1604,
+          "source_rows": null,
+          "has_source_table_column": false
+        },
+        {
+          "table": "lineup_slots",
+          "exists": true,
+          "total_rows": 14435,
+          "source_rows": null,
+          "has_source_table_column": false
+        },
+        {
+          "table": "lineup_matchup_snapshots",
+          "exists": true,
+          "total_rows": 17924,
+          "source_rows": 17655,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 17655,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "snapshot_date",
+        "game_pk",
+        "team_name",
+        "opponent_team",
+        "pitcher_id",
+        "pitcher_name",
+        "hitter_id",
+        "hitter_name",
+        "batting_order",
+        "pitch_fit_damage",
+        "pitch_fit_whiff",
+        "zone_punish",
+        "command_stress",
+        "platoon_pressure",
+        "first_cycle_read",
+        "second_cycle_read",
+        "traffic_fit",
+        "damage_fit",
+        "collapse_trigger_score",
+        "strand_fork_risk",
+        "details_json",
+        "created_at"
+      ]
+    },
+    {
+      "source_table": "mlb_market_mispricing_labels",
+      "family": "markets",
+      "migration": "data-migration/scripts/normalize_mlb_markets.py",
+      "notes": "",
+      "legacy_rows": 290,
+      "staged_rows": 290,
+      "staged_min_source_date": "2026-05-10",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "prediction_date": {
+          "min": "2026-05-10",
+          "max": "2026-05-31"
+        }
+      },
+      "targets": [
+        "market_mispricing_labels"
+      ],
+      "target_details": [
+        {
+          "table": "market_mispricing_labels",
+          "exists": true,
+          "total_rows": 290,
+          "source_rows": 290,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 290,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "prediction_date",
+        "market_type",
+        "model_name",
+        "matchup",
+        "predicted_pick",
+        "opponent_team",
+        "confidence",
+        "volatility",
+        "point_edge",
+        "market_american_odds",
+        "market_probability",
+        "opponent_market_american_odds",
+        "opponent_market_probability",
+        "market_favorite_team",
+        "market_favorite_probability",
+        "market_price_gap",
+        "pick_is_market_favorite",
+        "pick_is_market_underdog",
+        "hit_full_game",
+        "hit_first5",
+        "first5_push_flag",
+        "price_bucket_label",
+        "market_side_label",
+        "market_disagreement_win_flag",
+        "expensive_favorite_failure_flag",
+        "underdog_value_win_flag",
+        "first5_cleaner_than_full_flag",
+        "full_game_cleaner_than_first5_flag",
+        "market_mispricing_label",
+        "market_phase_preference_label",
+        "summary_json"
+      ]
+    },
+    {
+      "source_table": "mlb_phase_outcomes_daily",
+      "family": "results",
+      "migration": "data-migration/scripts/normalize_mlb_results.py",
+      "notes": "",
+      "legacy_rows": 1772,
+      "staged_rows": 1772,
+      "staged_min_source_date": "2026-03-26",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "game_date": {
+          "min": "2026-03-26",
+          "max": "2026-05-31"
+        }
+      },
+      "targets": [
+        "phase_outcomes"
+      ],
+      "target_details": [
+        {
+          "table": "phase_outcomes",
+          "exists": true,
+          "total_rows": 1772,
+          "source_rows": 1772,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 1772,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "game_pk",
+        "game_date",
+        "team_name",
+        "opponent_team",
+        "team_role",
+        "result",
+        "runs_first1",
+        "runs_first3",
+        "runs_first5",
+        "runs_late",
+        "hits_first5",
+        "hits_late",
+        "scoreless_first3_flag",
+        "scored_first_inning_flag",
+        "allowed_first_inning_flag",
+        "led_after3_flag",
+        "trailed_after3_flag",
+        "tied_after3_flag",
+        "led_after5_flag",
+        "trailed_after5_flag",
+        "tied_after5_flag",
+        "won_full_game_flag",
+        "won_first5_flag",
+        "first5_push_flag",
+        "starter_survived5_flag",
+        "starter_cracked_flag",
+        "traffic_no_conversion_flag",
+        "comeback_win_flag",
+        "blew_lead_after5_flag",
+        "bullpen_flip_game_flag",
+        "phase_path_label",
+        "phase_flags_json"
+      ]
+    },
+    {
+      "source_table": "mlb_pitch_events",
+      "family": "core_replay_state",
+      "migration": "data-migration/scripts/ingest_mlb_schedule_game_feed_raw_to_typed.py",
+      "notes": "Critical replay table. Target exists but is currently missing richer legacy count/call/pitch-order fields.",
+      "legacy_rows": 304181,
+      "staged_rows": 0,
+      "staged_min_source_date": null,
+      "staged_max_source_date": null,
+      "legacy_date_ranges": {
+        "game_date": {
+          "min": "2026-03-26",
+          "max": "2026-05-31"
+        }
+      },
+      "targets": [
+        "pitch_events"
+      ],
+      "target_details": [
+        {
+          "table": "pitch_events",
+          "exists": true,
+          "total_rows": 304181,
+          "source_rows": null,
+          "has_source_table_column": false
+        }
+      ],
+      "target_source_rows": 0,
+      "status": "target_populated_not_staged",
+      "columns": [
+        "game_pk",
+        "at_bat_index",
+        "event_index",
+        "game_date",
+        "inning",
+        "half_inning",
+        "batting_team",
+        "fielding_team",
+        "batter_id",
+        "pitcher_id",
+        "pitch_number",
+        "balls",
+        "strikes",
+        "outs",
+        "is_pitch",
+        "event_type",
+        "call_code",
+        "call_description",
+        "pitch_type_code",
+        "pitch_type_description",
+        "is_in_play",
+        "is_strike",
+        "is_ball",
+        "start_speed",
+        "end_speed",
+        "zone",
+        "play_id",
+        "start_time",
+        "end_time",
+        "raw_json"
+      ]
+    },
+    {
+      "source_table": "mlb_pitcher_appearances",
+      "family": "results",
+      "migration": "data-migration/scripts/normalize_mlb_results.py",
+      "notes": "",
+      "legacy_rows": 7498,
+      "staged_rows": 7498,
+      "staged_min_source_date": "2026-03-26",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "game_date": {
+          "min": "2026-03-26",
+          "max": "2026-05-31"
+        }
+      },
+      "targets": [
+        "pitcher_appearances"
+      ],
+      "target_details": [
+        {
+          "table": "pitcher_appearances",
+          "exists": true,
+          "total_rows": 7498,
+          "source_rows": 7498,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 7498,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "game_pk",
+        "game_date",
+        "team_role",
+        "team_name",
+        "opponent_name",
+        "pitcher_id",
+        "pitcher_name",
+        "pitcher_role",
+        "entry_order",
+        "first_inning",
+        "first_half",
+        "innings_pitched",
+        "outs_recorded",
+        "runs_allowed",
+        "earned_runs",
+        "hits_allowed",
+        "home_runs_allowed",
+        "walks_allowed",
+        "strikeouts",
+        "pitches_thrown",
+        "strikes_thrown",
+        "batters_faced",
+        "raw_json"
+      ]
+    },
+    {
+      "source_table": "mlb_pitcher_first_inning_profiles_daily",
+      "family": "pitcher_features",
+      "migration": "data-migration/scripts/normalize_mlb_pitcher_features.py",
+      "notes": "",
+      "legacy_rows": 3024,
+      "staged_rows": 3024,
+      "staged_min_source_date": "2026-03-31",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-03-31",
+          "max": "2026-05-31"
+        }
+      },
+      "targets": [
+        "pitcher_first_inning_profiles"
+      ],
+      "target_details": [
+        {
+          "table": "pitcher_first_inning_profiles",
+          "exists": true,
+          "total_rows": 3024,
+          "source_rows": 3024,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 3024,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "pitcher_id",
+        "pitcher_name",
+        "team_name",
+        "scheduled_opponent",
+        "window_starts",
+        "starts_sample",
+        "first_batter_reach_rate",
+        "first_inning_run_allowed_rate",
+        "first_inning_runs_allowed_per_start",
+        "first_inning_multi_run_allowed_rate",
+        "first_inning_baserunners_per_start",
+        "first_inning_walk_rate",
+        "first_inning_home_run_rate",
+        "first_inning_clean_rate",
+        "first_inning_pressure_index"
+      ]
+    },
+    {
+      "source_table": "mlb_pitcher_mistake_shape_daily",
+      "family": "pitcher_features",
+      "migration": "data-migration/scripts/normalize_mlb_pitcher_features.py",
+      "notes": "",
+      "legacy_rows": 3024,
+      "staged_rows": 3024,
+      "staged_min_source_date": "2026-03-31",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-03-31",
+          "max": "2026-05-31"
+        }
+      },
+      "targets": [
+        "pitcher_mistake_shape_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "pitcher_mistake_shape_snapshots",
+          "exists": true,
+          "total_rows": 3024,
+          "source_rows": 3024,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 3024,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "pitcher_id",
+        "pitcher_name",
+        "team_name",
+        "scheduled_opponent",
+        "window_starts",
+        "starts_sample",
+        "starts_reaching_sixth",
+        "starts_with_damage",
+        "first_batter_reach_rate",
+        "first_inning_run_allowed_rate",
+        "first_three_runs_allowed_per_start",
+        "early_clean_start_rate",
+        "meltdown_start_rate",
+        "walk_burst_start_rate",
+        "home_run_start_rate",
+        "sixth_inning_damage_rate",
+        "post_damage_recovery_rate",
+        "command_break_index"
+      ]
+    },
+    {
+      "source_table": "mlb_pitcher_pitch_mix_daily",
+      "family": "pitcher_features",
+      "migration": "data-migration/scripts/normalize_mlb_pitcher_features.py",
+      "notes": "",
+      "legacy_rows": 135153,
+      "staged_rows": 135153,
+      "staged_min_source_date": "2026-03-27",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "snapshot_date": {
+          "min": "2026-03-27",
+          "max": "2026-05-31"
+        },
+        "created_at": {
+          "min": "2026-06-01T21:35:49Z",
+          "max": "2026-06-01T21:35:49Z"
+        }
+      },
+      "targets": [
+        "pitcher_pitch_mix_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "pitcher_pitch_mix_snapshots",
+          "exists": true,
+          "total_rows": 135153,
+          "source_rows": 135153,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 135153,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "snapshot_date",
+        "pitcher_id",
+        "pitcher_name",
+        "team_name",
+        "pitch_type",
+        "sample_pitches",
+        "pitch_share",
+        "zone_rate",
+        "whiff_rate",
+        "called_strike_rate",
+        "hard_contact_rate",
+        "damage_allowed",
+        "command_leak",
+        "platoon_split_json",
+        "source_json",
+        "created_at"
+      ]
+    },
+    {
+      "source_table": "mlb_pitcher_war_by_season",
+      "family": "player_context",
+      "migration": "data-migration/scripts/normalize_mlb_player_context.py",
+      "notes": "",
+      "legacy_rows": 1527,
+      "staged_rows": 1527,
+      "staged_min_source_date": "2026-06-01T22:42:54Z",
+      "staged_max_source_date": "2026-06-01T22:42:54Z",
+      "legacy_date_ranges": {},
+      "targets": [
+        "pitcher_season_value_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "pitcher_season_value_snapshots",
+          "exists": true,
+          "total_rows": 1527,
+          "source_rows": 1527,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 1527,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "season",
+        "pitcher_id",
+        "pitcher_name",
+        "bref_player_id",
+        "team_ids",
+        "games",
+        "games_started",
+        "war",
+        "fetched_at",
+        "source"
+      ]
+    },
+    {
+      "source_table": "mlb_plate_appearances",
+      "family": "core_replay_state",
+      "migration": "data-migration/scripts/ingest_mlb_schedule_game_feed_raw_to_typed.py",
+      "notes": "Critical replay table. Target exists but is currently missing richer legacy base/out/count/score fields.",
+      "legacy_rows": 67251,
+      "staged_rows": 0,
+      "staged_min_source_date": null,
+      "staged_max_source_date": null,
+      "legacy_date_ranges": {
+        "game_date": {
+          "min": "2026-03-26",
+          "max": "2026-05-31"
+        }
+      },
+      "targets": [
+        "plate_appearances"
+      ],
+      "target_details": [
+        {
+          "table": "plate_appearances",
+          "exists": true,
+          "total_rows": 67251,
+          "source_rows": null,
+          "has_source_table_column": false
+        }
+      ],
+      "target_source_rows": 0,
+      "status": "target_populated_not_staged",
+      "columns": [
+        "game_pk",
+        "at_bat_index",
+        "game_date",
+        "inning",
+        "half_inning",
+        "batting_team",
+        "fielding_team",
+        "batting_team_role",
+        "fielding_team_role",
+        "outs_before",
+        "outs_after",
+        "balls_final",
+        "strikes_final",
+        "batter_id",
+        "batter_name",
+        "pitcher_id",
+        "pitcher_name",
+        "batter_side",
+        "pitch_hand",
+        "men_on_base",
+        "base_state_start",
+        "base_state_end",
+        "event",
+        "event_type",
+        "description",
+        "rbi",
+        "is_scoring_play",
+        "is_out",
+        "is_at_bat",
+        "away_score_before",
+        "home_score_before",
+        "away_score_after",
+        "home_score_after",
+        "run_delta",
+        "start_time",
+        "end_time",
+        "raw_json"
+      ]
+    },
+    {
+      "source_table": "mlb_player_current_deviation_daily",
+      "family": "hitter_features",
+      "migration": "data-migration/scripts/normalize_mlb_hitter_features.py",
+      "notes": "",
+      "legacy_rows": 184256,
+      "staged_rows": 184256,
+      "staged_min_source_date": "2026-03-27",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "snapshot_date": {
+          "min": "2026-03-27",
+          "max": "2026-05-31"
+        },
+        "created_at": {
+          "min": "2026-06-01T21:35:41Z",
+          "max": "2026-06-01T21:35:41Z"
+        }
+      },
+      "targets": [
+        "player_current_deviation_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "player_current_deviation_snapshots",
+          "exists": true,
+          "total_rows": 184256,
+          "source_rows": 184256,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 184256,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "snapshot_date",
+        "player_id",
+        "player_name",
+        "player_type",
+        "team_name",
+        "metric",
+        "identity_value",
+        "current_value",
+        "current_deviation",
+        "deviation_label",
+        "confidence_weight",
+        "sample_size",
+        "role_pressure",
+        "approach_label",
+        "details_json",
+        "created_at"
+      ]
+    },
+    {
+      "source_table": "mlb_player_game_batting",
+      "family": "results",
+      "migration": "data-migration/scripts/normalize_mlb_results.py",
+      "notes": "",
+      "legacy_rows": 18080,
+      "staged_rows": 18080,
+      "staged_min_source_date": "2026-03-26",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "game_date": {
+          "min": "2026-03-26",
+          "max": "2026-05-31"
+        }
+      },
+      "targets": [
+        "player_game_batting"
+      ],
+      "target_details": [
+        {
+          "table": "player_game_batting",
+          "exists": true,
+          "total_rows": 18080,
+          "source_rows": 18080,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 18080,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "game_pk",
+        "game_date",
+        "team_role",
+        "team_name",
+        "opponent_name",
+        "player_id",
+        "player_name",
+        "batting_order",
+        "position_abbrev",
+        "at_bats",
+        "plate_appearances",
+        "runs",
+        "hits",
+        "singles",
+        "doubles",
+        "triples",
+        "home_runs",
+        "total_bases",
+        "rbi",
+        "walks",
+        "strikeouts",
+        "left_on_base",
+        "hit_by_pitch",
+        "sac_bunts",
+        "sac_flies",
+        "stolen_bases",
+        "caught_stealing",
+        "ground_into_double_play",
+        "summary",
+        "raw_json"
+      ]
+    },
+    {
+      "source_table": "mlb_player_game_distribution_daily",
+      "family": "hitter_features",
+      "migration": "data-migration/scripts/normalize_mlb_hitter_features.py",
+      "notes": "",
+      "legacy_rows": 184228,
+      "staged_rows": 184228,
+      "staged_min_source_date": "2026-03-27",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "snapshot_date": {
+          "min": "2026-03-27",
+          "max": "2026-05-31"
+        },
+        "created_at": {
+          "min": "2026-06-01T21:35:41Z",
+          "max": "2026-06-01T21:35:41Z"
+        }
+      },
+      "targets": [
+        "player_game_distribution_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "player_game_distribution_snapshots",
+          "exists": true,
+          "total_rows": 184228,
+          "source_rows": 184228,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 184228,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "snapshot_date",
+        "player_id",
+        "player_name",
+        "player_type",
+        "game_pk",
+        "team_name",
+        "opponent_team",
+        "metric",
+        "distribution_mean",
+        "distribution_p50",
+        "distribution_p75",
+        "distribution_p90",
+        "matchup_adjustment",
+        "park_weather_sun_adjustment",
+        "lineup_role_adjustment",
+        "volatility_score",
+        "details_json",
+        "created_at"
+      ]
+    },
+    {
+      "source_table": "mlb_player_identity_curves_daily",
+      "family": "player_identity",
+      "migration": "data-migration/scripts/normalize_mlb_player_context.py",
+      "notes": "",
+      "legacy_rows": 184256,
+      "staged_rows": 184256,
+      "staged_min_source_date": "2026-03-27",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "snapshot_date": {
+          "min": "2026-03-27",
+          "max": "2026-05-31"
+        },
+        "created_at": {
+          "min": "2026-06-01T21:35:41Z",
+          "max": "2026-06-01T21:35:41Z"
+        }
+      },
+      "targets": [
+        "player_identity_curves"
+      ],
+      "target_details": [
+        {
+          "table": "player_identity_curves",
+          "exists": true,
+          "total_rows": 184256,
+          "source_rows": 184256,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 184256,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "snapshot_date",
+        "player_id",
+        "player_name",
+        "player_type",
+        "metric",
+        "career_baseline",
+        "season_baseline",
+        "recent_process",
+        "opponent_adjusted_recent",
+        "identity_value",
+        "current_deviation",
+        "sample_size",
+        "shrinkage_weight",
+        "volatility_score",
+        "model_family",
+        "backtest_bucket",
+        "feature_json",
+        "created_at"
+      ]
+    },
+    {
+      "source_table": "mlb_player_identity_model_backtests",
+      "family": "predictions_backtests",
+      "migration": "data-migration/scripts/normalize_mlb_predictions.py",
+      "notes": "",
+      "legacy_rows": 12230,
+      "staged_rows": 12230,
+      "staged_min_source_date": "2026-05-23",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "prediction_date": {
+          "min": "2026-05-23",
+          "max": "2026-05-31"
+        },
+        "created_at": {
+          "min": "2026-06-01T21:37:42Z",
+          "max": "2026-06-01T21:37:42Z"
+        }
+      },
+      "targets": [
+        "player_identity_backtest_rows"
+      ],
+      "target_details": [
+        {
+          "table": "player_identity_backtest_rows",
+          "exists": true,
+          "total_rows": 12230,
+          "source_rows": 12230,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 12230,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "backtest_id",
+        "model_id",
+        "prediction_date",
+        "player_id",
+        "player_name",
+        "player_type",
+        "metric",
+        "game_pk",
+        "predicted_value",
+        "actual_value",
+        "line_value",
+        "market_price",
+        "hit_flag",
+        "pnl_per100",
+        "sample_size_bucket",
+        "role_bucket",
+        "deviation_bucket",
+        "matchup_bucket",
+        "details_json",
+        "created_at"
+      ]
+    },
+    {
+      "source_table": "mlb_player_identity_profiles",
+      "family": "player_context",
+      "migration": "data-migration/scripts/normalize_mlb_player_context.py",
+      "notes": "",
+      "legacy_rows": 493,
+      "staged_rows": 493,
+      "staged_min_source_date": "2026-05-31T16:55:04Z",
+      "staged_max_source_date": "2026-06-01T22:44:40Z",
+      "legacy_date_ranges": {},
+      "targets": [
+        "player_identity_profiles"
+      ],
+      "target_details": [
+        {
+          "table": "player_identity_profiles",
+          "exists": true,
+          "total_rows": 980,
+          "source_rows": 493,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 493,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "player_id",
+        "full_name",
+        "first_name",
+        "last_name",
+        "birth_date",
+        "current_age",
+        "birth_city",
+        "birth_country",
+        "height",
+        "weight",
+        "active",
+        "primary_position_code",
+        "primary_position_name",
+        "bat_side",
+        "throw_hand",
+        "draft_year",
+        "current_team_id",
+        "current_team_name",
+        "mlb_debut_date",
+        "source_url",
+        "fetched_at",
+        "source_json"
+      ]
+    },
+    {
+      "source_table": "mlb_player_prop_odds_snapshots",
+      "family": "markets",
+      "migration": "data-migration/scripts/normalize_mlb_props.py",
+      "notes": "",
+      "legacy_rows": 2409,
+      "staged_rows": 2409,
+      "staged_min_source_date": "2026-03-26",
+      "staged_max_source_date": "2026-06-01",
+      "legacy_date_ranges": {
+        "market_date": {
+          "min": "2026-03-26",
+          "max": "2026-06-01"
+        },
+        "commence_time": {
+          "min": "2026-03-26T17:15:00Z",
+          "max": "2026-06-02T01:40:00Z"
+        }
+      },
+      "targets": [
+        "prop_market_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "prop_market_snapshots",
+          "exists": true,
+          "total_rows": 2409,
+          "source_rows": 2409,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 2409,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "row_key",
+        "snapshot_time",
+        "market_date",
+        "game_pk",
+        "source_event_id",
+        "commence_time",
+        "home_team",
+        "away_team",
+        "bookmaker_key",
+        "bookmaker_title",
+        "market_key",
+        "player_name",
+        "outcome_name",
+        "outcome_description",
+        "price",
+        "point",
+        "last_update",
+        "source_path",
+        "raw_json"
+      ]
+    },
+    {
+      "source_table": "mlb_prop_backtests",
+      "family": "predictions_backtests",
+      "migration": "data-migration/scripts/normalize_mlb_predictions.py",
+      "notes": "",
+      "legacy_rows": 1688,
+      "staged_rows": 1688,
+      "staged_min_source_date": "2026-05-16",
+      "staged_max_source_date": "2026-06-01",
+      "legacy_date_ranges": {
+        "prediction_date": {
+          "min": "2026-05-16",
+          "max": "2026-06-01"
+        }
+      },
+      "targets": [
+        "prop_backtest_rows"
+      ],
+      "target_details": [
+        {
+          "table": "prop_backtest_rows",
+          "exists": true,
+          "total_rows": 1688,
+          "source_rows": 1688,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 1688,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "prediction_date",
+        "model_name",
+        "game_id",
+        "player_id",
+        "player_name",
+        "team_name",
+        "team_name_full",
+        "opponent_name",
+        "opponent_name_full",
+        "prop_type",
+        "market_label",
+        "line_threshold",
+        "actual_value",
+        "hit_flag",
+        "result_label",
+        "metadata_json"
+      ]
+    },
+    {
+      "source_table": "mlb_prop_predictions",
+      "family": "predictions_backtests",
+      "migration": "data-migration/scripts/normalize_mlb_predictions.py",
+      "notes": "",
+      "legacy_rows": 1688,
+      "staged_rows": 1688,
+      "staged_min_source_date": "2026-05-16",
+      "staged_max_source_date": "2026-06-01",
+      "legacy_date_ranges": {
+        "prediction_date": {
+          "min": "2026-05-16",
+          "max": "2026-06-01"
+        }
+      },
+      "targets": [
+        "prediction_rows"
+      ],
+      "target_details": [
+        {
+          "table": "prediction_rows",
+          "exists": true,
+          "total_rows": 8020,
+          "source_rows": null,
+          "has_source_table_column": false
+        }
+      ],
+      "target_source_rows": 0,
+      "status": "target_populated_lineage_unclear",
+      "columns": [
+        "prediction_date",
+        "model_name",
+        "rank",
+        "game_id",
+        "game_title",
+        "away_team",
+        "home_team",
+        "away_team_full",
+        "home_team_full",
+        "player_id",
+        "player_name",
+        "team_name",
+        "team_name_full",
+        "opponent_name",
+        "opponent_name_full",
+        "slot",
+        "prop_type",
+        "prop_label",
+        "market_label",
+        "line_threshold",
+        "confidence",
+        "probability",
+        "expected_value",
+        "recommendation_tier",
+        "metadata_json",
+        "raw_json"
+      ]
+    },
+    {
+      "source_table": "mlb_reliever_first_batter_command_profiles",
+      "family": "bullpen_features",
+      "migration": "data-migration/scripts/normalize_mlb_bullpen_features.py",
+      "notes": "",
+      "legacy_rows": 4113,
+      "staged_rows": 4113,
+      "staged_min_source_date": "2026-05-13",
+      "staged_max_source_date": "2026-06-01",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-05-13",
+          "max": "2026-06-01"
+        }
+      },
+      "targets": [
+        "reliever_command_profiles"
+      ],
+      "target_details": [
+        {
+          "table": "reliever_command_profiles",
+          "exists": true,
+          "total_rows": 4113,
+          "source_rows": 4113,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 4113,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "team_name",
+        "pitcher_id",
+        "pitcher_name",
+        "appearance_window",
+        "entries_sample",
+        "avg_entry_order",
+        "first_pitch_ball_rate",
+        "first_pitch_strike_rate",
+        "ball_rate",
+        "reached_rate",
+        "free_pass_rate",
+        "scoring_play_rate",
+        "run_delta_per_entry",
+        "strikeout_rate",
+        "command_risk_index"
+      ]
+    },
+    {
+      "source_table": "mlb_rp36_settlements",
+      "family": "predictions_backtests",
+      "migration": "data-migration/scripts/normalize_mlb_predictions.py",
+      "notes": "",
+      "legacy_rows": 1,
+      "staged_rows": 1,
+      "staged_min_source_date": "2026-05-31",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "prediction_date": {
+          "min": "2026-05-31",
+          "max": "2026-05-31"
+        },
+        "indexed_at": {
+          "min": "2026-06-02T03:15:58.778970Z",
+          "max": "2026-06-02T03:15:58.778970Z"
+        }
+      },
+      "targets": [
+        "component_settlement_rows"
+      ],
+      "target_details": [
+        {
+          "table": "component_settlement_rows",
+          "exists": true,
+          "total_rows": 31,
+          "source_rows": 1,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 1,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "prediction_date",
+        "model_id",
+        "run_id",
+        "status",
+        "team_count",
+        "candidate_count",
+        "graded_team_count",
+        "exact_hits",
+        "top2_hits",
+        "top3_hits",
+        "exact_hit_pct",
+        "top2_hit_pct",
+        "top3_hit_pct",
+        "details_json",
+        "indexed_at"
+      ]
+    },
+    {
+      "source_table": "mlb_rp36_team_settlements",
+      "family": "predictions_backtests",
+      "migration": "data-migration/scripts/normalize_mlb_predictions.py",
+      "notes": "",
+      "legacy_rows": 30,
+      "staged_rows": 30,
+      "staged_min_source_date": "2026-05-31",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "prediction_date": {
+          "min": "2026-05-31",
+          "max": "2026-05-31"
+        }
+      },
+      "targets": [
+        "component_settlement_rows"
+      ],
+      "target_details": [
+        {
+          "table": "component_settlement_rows",
+          "exists": true,
+          "total_rows": 31,
+          "source_rows": 30,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 30,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "prediction_date",
+        "model_id",
+        "run_id",
+        "team_name",
+        "official_team_name",
+        "opponent_name",
+        "actual_pitcher_id",
+        "actual_pitcher_name",
+        "actual_outs_recorded",
+        "predicted_top1_pitcher_id",
+        "predicted_top1_pitcher_name",
+        "predicted_top2_pitcher_ids",
+        "predicted_top3_pitcher_ids",
+        "exact_hit",
+        "top2_hit",
+        "top3_hit",
+        "status",
+        "details_json"
+      ]
+    },
+    {
+      "source_table": "mlb_series_context_snapshots",
+      "family": "team_context",
+      "migration": "data-migration/scripts/normalize_mlb_team_context.py",
+      "notes": "",
+      "legacy_rows": 809,
+      "staged_rows": 809,
+      "staged_min_source_date": "2026-03-26",
+      "staged_max_source_date": "2026-05-25",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-03-26",
+          "max": "2026-05-25"
+        }
+      },
+      "targets": [
+        "series_context_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "series_context_snapshots",
+          "exists": true,
+          "total_rows": 809,
+          "source_rows": 809,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 809,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "game_pk",
+        "away_team",
+        "home_team",
+        "same_division_flag",
+        "previous_matchups_14d",
+        "previous_matchups_30d",
+        "series_game_number",
+        "played_yesterday_flag"
+      ]
+    },
+    {
+      "source_table": "mlb_side_backtests",
+      "family": "predictions_backtests",
+      "migration": "data-migration/scripts/normalize_mlb_predictions.py",
+      "notes": "",
+      "legacy_rows": 389,
+      "staged_rows": 389,
+      "staged_min_source_date": "2026-05-10",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "prediction_date": {
+          "min": "2026-05-10",
+          "max": "2026-05-31"
+        }
+      },
+      "targets": [
+        "side_backtest_rows"
+      ],
+      "target_details": [
+        {
+          "table": "side_backtest_rows",
+          "exists": true,
+          "total_rows": 389,
+          "source_rows": 389,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 389,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "prediction_date",
+        "model_name",
+        "game_id",
+        "game_title",
+        "away_team",
+        "home_team",
+        "predicted_team",
+        "predicted_side",
+        "actual_winner",
+        "actual_first5_winner",
+        "hit_full_game",
+        "hit_first5",
+        "bullpen_flip_loss",
+        "starter_rescue_win",
+        "thin_edge_flag",
+        "high_volatility_flag",
+        "hit_edge_against_pick_flag",
+        "predicted_runs_final",
+        "opponent_runs_final",
+        "predicted_runs_first5",
+        "opponent_runs_first5",
+        "predicted_bullpen_runs",
+        "opponent_bullpen_runs",
+        "bullpen_net_diff",
+        "relief_pitching_risk",
+        "coinflip_pressure",
+        "summary_json",
+        "game_pk"
+      ]
+    },
+    {
+      "source_table": "mlb_side_predictions",
+      "family": "predictions_backtests",
+      "migration": "data-migration/scripts/normalize_mlb_predictions.py",
+      "notes": "",
+      "legacy_rows": 389,
+      "staged_rows": 389,
+      "staged_min_source_date": "2026-05-10",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "prediction_date": {
+          "min": "2026-05-10",
+          "max": "2026-05-31"
+        }
+      },
+      "targets": [
+        "prediction_rows"
+      ],
+      "target_details": [
+        {
+          "table": "prediction_rows",
+          "exists": true,
+          "total_rows": 8020,
+          "source_rows": null,
+          "has_source_table_column": false
+        }
+      ],
+      "target_source_rows": 0,
+      "status": "target_populated_lineage_unclear",
+      "columns": [
+        "prediction_date",
+        "model_name",
+        "game_id",
+        "game_title",
+        "away_team",
+        "home_team",
+        "predicted_team",
+        "predicted_side",
+        "confidence",
+        "volatility",
+        "model_edge",
+        "source_label",
+        "input_labels_json",
+        "projection_json",
+        "starter_leverage_index",
+        "late_inning_stability_index",
+        "relief_pitching_risk",
+        "coinflip_pressure",
+        "pick_bullpen_score",
+        "opp_bullpen_score",
+        "pick_starter_score",
+        "opp_starter_score",
+        "projected_hit_edge_for_pick",
+        "hit_edge_against_pick_flag",
+        "metadata_json",
+        "game_pk"
+      ]
+    },
+    {
+      "source_table": "mlb_starter_leash_profiles",
+      "family": "pitcher_features",
+      "migration": "data-migration/scripts/normalize_mlb_pitcher_features.py",
+      "notes": "",
+      "legacy_rows": 4005,
+      "staged_rows": 4005,
+      "staged_min_source_date": "2026-03-31",
+      "staged_max_source_date": "2026-05-25",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-03-31",
+          "max": "2026-05-25"
+        }
+      },
+      "targets": [
+        "starter_leash_profiles"
+      ],
+      "target_details": [
+        {
+          "table": "starter_leash_profiles",
+          "exists": true,
+          "total_rows": 4005,
+          "source_rows": 4005,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 4005,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "pitcher_id",
+        "pitcher_name",
+        "window_starts",
+        "starts_sample",
+        "innings_per_start",
+        "outs_per_start",
+        "pitches_per_start",
+        "batters_faced_per_start",
+        "short_start_rate",
+        "five_plus_inning_rate",
+        "six_plus_inning_rate",
+        "ninety_pitch_rate",
+        "leash_volatility",
+        "recent_3_outs_delta",
+        "recent_3_pitches_delta",
+        "leash_score"
+      ]
+    },
+    {
+      "source_table": "mlb_starter_third_time_penalty_profiles",
+      "family": "pitcher_features",
+      "migration": "data-migration/scripts/normalize_mlb_pitcher_features.py",
+      "notes": "",
+      "legacy_rows": 232,
+      "staged_rows": 232,
+      "staged_min_source_date": "2026-05-14",
+      "staged_max_source_date": "2026-05-30",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-05-14",
+          "max": "2026-05-30"
+        }
+      },
+      "targets": [
+        "starter_third_time_penalty_profiles"
+      ],
+      "target_details": [
+        {
+          "table": "starter_third_time_penalty_profiles",
+          "exists": true,
+          "total_rows": 232,
+          "source_rows": 232,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 232,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "pitcher_id",
+        "pitcher_name",
+        "window_starts",
+        "starts_sample",
+        "starts_with_third_trip",
+        "third_trip_exposure_rate",
+        "first_trip_pa",
+        "second_trip_pa",
+        "third_trip_pa",
+        "first_trip_reached_rate",
+        "second_trip_reached_rate",
+        "third_trip_reached_rate",
+        "first_trip_scoring_play_rate",
+        "second_trip_scoring_play_rate",
+        "third_trip_scoring_play_rate",
+        "first_trip_run_delta",
+        "second_trip_run_delta",
+        "third_trip_run_delta",
+        "first_trip_hr_rate",
+        "second_trip_hr_rate",
+        "third_trip_hr_rate",
+        "third_trip_reached_delta",
+        "third_trip_scoring_delta",
+        "third_trip_run_delta_delta",
+        "third_trip_hr_delta",
+        "third_time_penalty_index"
+      ]
+    },
+    {
+      "source_table": "mlb_starting_pitcher_game_logs",
+      "family": "results",
+      "migration": "data-migration/scripts/normalize_mlb_results.py",
+      "notes": "",
+      "legacy_rows": 1776,
+      "staged_rows": 1776,
+      "staged_min_source_date": "2026-03-26",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "game_date": {
+          "min": "2026-03-26",
+          "max": "2026-05-31"
+        }
+      },
+      "targets": [
+        "starting_pitcher_game_logs"
+      ],
+      "target_details": [
+        {
+          "table": "starting_pitcher_game_logs",
+          "exists": true,
+          "total_rows": 1776,
+          "source_rows": 1776,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 1776,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "game_pk",
+        "game_date",
+        "team_role",
+        "team_name",
+        "opponent_name",
+        "pitcher_id",
+        "pitcher_name",
+        "pitch_hand",
+        "innings_pitched",
+        "outs_recorded",
+        "runs_allowed",
+        "earned_runs",
+        "hits_allowed",
+        "home_runs_allowed",
+        "walks_allowed",
+        "strikeouts",
+        "pitches_thrown",
+        "strikes_thrown",
+        "batters_faced",
+        "raw_json"
+      ]
+    },
+    {
+      "source_table": "mlb_starting_pitcher_rolling_form",
+      "family": "pitcher_features",
+      "migration": "data-migration/scripts/normalize_mlb_pitcher_features.py",
+      "notes": "",
+      "legacy_rows": 4533,
+      "staged_rows": 4533,
+      "staged_min_source_date": "2026-03-31",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-03-31",
+          "max": "2026-05-31"
+        }
+      },
+      "targets": [
+        "starting_pitcher_form_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "starting_pitcher_form_snapshots",
+          "exists": true,
+          "total_rows": 4533,
+          "source_rows": 4533,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 4533,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "pitcher_id",
+        "pitcher_name",
+        "window_starts",
+        "starts_sample",
+        "innings_per_start",
+        "outs_recorded_per_start",
+        "runs_allowed_per_start",
+        "earned_runs_per_start",
+        "hits_allowed_per_start",
+        "home_runs_allowed_per_start",
+        "walks_allowed_per_start",
+        "strikeouts_per_start",
+        "pitches_per_start",
+        "batters_faced_per_start",
+        "whip_like",
+        "strikeout_to_walk_ratio",
+        "short_start_rate",
+        "quality_start_rate",
+        "run_volatility",
+        "home_run_burstiness",
+        "recent_3_earned_runs_delta"
+      ]
+    },
+    {
+      "source_table": "mlb_starting_pitchers",
+      "family": "core_game_feed",
+      "migration": "data-migration/scripts/ingest_mlb_schedule_game_feed_raw_to_typed.py",
+      "notes": "Probable/actual starter state. Target populated from raw ingest and lineups.",
+      "legacy_rows": 1776,
+      "staged_rows": 0,
+      "staged_min_source_date": null,
+      "staged_max_source_date": null,
+      "legacy_date_ranges": {},
+      "targets": [
+        "starting_pitchers"
+      ],
+      "target_details": [
+        {
+          "table": "starting_pitchers",
+          "exists": true,
+          "total_rows": 1776,
+          "source_rows": null,
+          "has_source_table_column": false
+        }
+      ],
+      "target_source_rows": 0,
+      "status": "target_populated_not_staged",
+      "columns": [
+        "game_pk",
+        "team_role",
+        "pitcher_id",
+        "pitcher_name",
+        "pitch_hand",
+        "wins",
+        "losses",
+        "era",
+        "strikeouts",
+        "innings_pitched",
+        "home_runs_allowed",
+        "whip",
+        "raw_json"
+      ]
+    },
+    {
+      "source_table": "mlb_state_formula_backtests",
+      "family": "game_shape_research",
+      "migration": "data-migration/scripts/normalize_mlb_game_shape.py",
+      "notes": "",
+      "legacy_rows": 1061,
+      "staged_rows": 1061,
+      "staged_min_source_date": "2026-05-23",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "prediction_date": {
+          "min": "2026-05-23",
+          "max": "2026-05-31"
+        },
+        "created_at": {
+          "min": "2026-06-01T21:37:42Z",
+          "max": "2026-06-01T21:37:42Z"
+        }
+      },
+      "targets": [
+        "state_formula_backtests"
+      ],
+      "target_details": [
+        {
+          "table": "state_formula_backtests",
+          "exists": true,
+          "total_rows": 1061,
+          "source_rows": 1061,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 1061,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "backtest_id",
+        "model_id",
+        "prediction_date",
+        "game_pk",
+        "lane",
+        "phase",
+        "side",
+        "predicted_story_bucket",
+        "actual_story_bucket",
+        "predicted_market_expression",
+        "actual_market_result",
+        "line_value",
+        "market_price",
+        "confidence",
+        "hit_flag",
+        "pnl_per100",
+        "bucket_key",
+        "details_json",
+        "created_at"
+      ]
+    },
+    {
+      "source_table": "mlb_state_formula_training_rows",
+      "family": "game_shape_research",
+      "migration": "data-migration/scripts/normalize_mlb_game_shape.py",
+      "notes": "",
+      "legacy_rows": 7120,
+      "staged_rows": 7120,
+      "staged_min_source_date": "2026-03-26",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "game_date": {
+          "min": "2026-03-26",
+          "max": "2026-05-31"
+        },
+        "snapshot_date": {
+          "min": "2026-03-26",
+          "max": "2026-05-31"
+        },
+        "created_at": {
+          "min": "2026-06-01T21:37:38Z",
+          "max": "2026-06-01T21:37:38Z"
+        }
+      },
+      "targets": [
+        "state_formula_training_rows"
+      ],
+      "target_details": [
+        {
+          "table": "state_formula_training_rows",
+          "exists": true,
+          "total_rows": 7120,
+          "source_rows": 7120,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 7120,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "snapshot_date",
+        "game_pk",
+        "game_date",
+        "away_team",
+        "home_team",
+        "phase",
+        "side",
+        "traffic_pressure",
+        "damage_pressure",
+        "conversion_pressure",
+        "collapse_hazard",
+        "suppression_state",
+        "fork_probability",
+        "bridge_leak",
+        "fielding_tail",
+        "sun_visibility_risk",
+        "weather_carry",
+        "story_bucket",
+        "market_expression",
+        "formula_drivers_json",
+        "feature_json",
+        "target_json",
+        "source_model_id",
+        "created_at"
+      ]
+    },
+    {
+      "source_table": "mlb_team_bullpen_shape_daily",
+      "family": "bullpen_features",
+      "migration": "data-migration/scripts/normalize_mlb_bullpen_features.py",
+      "notes": "",
+      "legacy_rows": 1754,
+      "staged_rows": 1754,
+      "staged_min_source_date": "2026-03-27",
+      "staged_max_source_date": "2026-06-01",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-03-27",
+          "max": "2026-06-01"
+        }
+      },
+      "targets": [
+        "team_bullpen_shape_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "team_bullpen_shape_snapshots",
+          "exists": true,
+          "total_rows": 1754,
+          "source_rows": 1754,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 1754,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "team_name",
+        "scheduled_opponent",
+        "games_sample_last3",
+        "games_sample_last5",
+        "games_sample_last10",
+        "relievers_used_avg_last3",
+        "relievers_used_avg_last5",
+        "relievers_used_avg_last10",
+        "relievers_used_max_last10",
+        "first_reliever_outs_avg_last3",
+        "first_reliever_outs_avg_last5",
+        "first_reliever_outs_avg_last10",
+        "first_reliever_outs_volatility_last10",
+        "total_relief_outs_avg_last5",
+        "total_relief_outs_avg_last10",
+        "total_relief_runs_allowed_avg_last5",
+        "total_relief_runs_allowed_avg_last10",
+        "short_first_up_rate_last5",
+        "short_first_up_rate_last10",
+        "bulk_first_up_rate_last5",
+        "bulk_first_up_rate_last10",
+        "two_reliever_containment_rate_last5",
+        "two_reliever_containment_rate_last10",
+        "four_plus_reliever_rate_last5",
+        "four_plus_reliever_rate_last10",
+        "six_plus_reliever_scramble_rate_last10",
+        "bullpen_shape_index",
+        "raw_json"
+      ]
+    },
+    {
+      "source_table": "mlb_team_first_inning_profiles_daily",
+      "family": "team_features",
+      "migration": "data-migration/scripts/normalize_mlb_team_features.py",
+      "notes": "",
+      "legacy_rows": 5262,
+      "staged_rows": 5262,
+      "staged_min_source_date": "2026-03-27",
+      "staged_max_source_date": "2026-06-01",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-03-27",
+          "max": "2026-06-01"
+        }
+      },
+      "targets": [
+        "team_first_inning_profiles"
+      ],
+      "target_details": [
+        {
+          "table": "team_first_inning_profiles",
+          "exists": true,
+          "total_rows": 5262,
+          "source_rows": 5262,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 5262,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "team_name",
+        "scheduled_opponent",
+        "scheduled_series_game_number",
+        "division_matchup_flag",
+        "window_games",
+        "games_sample",
+        "road_games_sample",
+        "first_inning_runs_per_game",
+        "first_inning_runs_allowed_per_game",
+        "scored_first_inning_rate",
+        "scoreless_first_inning_rate",
+        "allowed_first_inning_rate",
+        "first_inning_multi_run_rate",
+        "first_inning_multi_run_allowed_rate",
+        "nrfi_game_rate",
+        "yrfi_game_rate",
+        "first_inning_net_edge",
+        "first_inning_scoring_index",
+        "first_inning_allow_risk_index"
+      ]
+    },
+    {
+      "source_table": "mlb_team_form_carryover_profiles",
+      "family": "team_features",
+      "migration": "data-migration/scripts/normalize_mlb_team_features.py",
+      "notes": "",
+      "legacy_rows": 3448,
+      "staged_rows": 3448,
+      "staged_min_source_date": "2026-03-28",
+      "staged_max_source_date": "2026-06-01",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-03-28",
+          "max": "2026-06-01"
+        }
+      },
+      "targets": [
+        "team_form_carryover_profiles"
+      ],
+      "target_details": [
+        {
+          "table": "team_form_carryover_profiles",
+          "exists": true,
+          "total_rows": 3448,
+          "source_rows": 3448,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 3448,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "team_name",
+        "window_games",
+        "transitions_sample",
+        "after_win_next_win_rate",
+        "after_loss_bounce_rate",
+        "after_blowout_win_next_win_rate",
+        "after_blowout_loss_bounce_rate",
+        "after_comeback_win_next_win_rate",
+        "after_bullpen_flip_loss_bounce_rate",
+        "series_game2_win_rate",
+        "series_game3plus_win_rate",
+        "hot_streak_hold_rate",
+        "hot_streak_break_rate",
+        "cold_streak_continue_rate",
+        "cold_streak_bounce_rate",
+        "avg_next_game_run_diff_after_win",
+        "avg_next_game_run_diff_after_loss",
+        "carryover_instability_index",
+        "bounceback_index"
+      ]
+    },
+    {
+      "source_table": "mlb_team_lead_surrender_profiles",
+      "family": "team_features",
+      "migration": "data-migration/scripts/normalize_mlb_team_features.py",
+      "notes": "",
+      "legacy_rows": 3508,
+      "staged_rows": 3508,
+      "staged_min_source_date": "2026-03-27",
+      "staged_max_source_date": "2026-06-01",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-03-27",
+          "max": "2026-06-01"
+        }
+      },
+      "targets": [
+        "team_lead_surrender_profiles"
+      ],
+      "target_details": [
+        {
+          "table": "team_lead_surrender_profiles",
+          "exists": true,
+          "total_rows": 3508,
+          "source_rows": 3508,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 3508,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "team_name",
+        "window_games",
+        "games_sample",
+        "led_after5_rate",
+        "led_after7_rate",
+        "trailed_after5_rate",
+        "trailed_after7_rate",
+        "lead_after5_conversion_rate",
+        "lead_after7_conversion_rate",
+        "blew_lead_after5_rate",
+        "blew_lead_after7_rate",
+        "comeback_after5_rate",
+        "comeback_after7_rate",
+        "one_run_lead_hold_rate",
+        "avg_runs_allowed_after_leading5",
+        "avg_runs_scored_when_trailing5",
+        "lead_surrender_index",
+        "comeback_resilience_index"
+      ]
+    },
+    {
+      "source_table": "mlb_team_market_context_daily",
+      "family": "market_context",
+      "migration": "data-migration/scripts/normalize_mlb_markets.py",
+      "notes": "",
+      "legacy_rows": 1754,
+      "staged_rows": 1754,
+      "staged_min_source_date": "2026-03-27",
+      "staged_max_source_date": "2026-06-01",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-03-27",
+          "max": "2026-06-01"
+        }
+      },
+      "targets": [
+        "team_market_context_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "team_market_context_snapshots",
+          "exists": true,
+          "total_rows": 1754,
+          "source_rows": 1754,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 1754,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "team_name",
+        "scheduled_opponent",
+        "games_sample_last5",
+        "games_sample_last10",
+        "moneyline_games_with_odds_last5",
+        "moneyline_games_with_odds_last10",
+        "favorite_rate_last5",
+        "favorite_rate_last10",
+        "underdog_rate_last5",
+        "underdog_rate_last10",
+        "favorite_hold_rate_last5",
+        "favorite_hold_rate_last10",
+        "underdog_upset_rate_last5",
+        "underdog_upset_rate_last10",
+        "totals_games_with_lines_last5",
+        "totals_games_with_lines_last10",
+        "over_rate_last5",
+        "over_rate_last10",
+        "under_rate_last5",
+        "under_rate_last10",
+        "push_rate_last5",
+        "push_rate_last10",
+        "avg_total_runs_minus_line_last5",
+        "avg_total_runs_minus_line_last10",
+        "market_volatility_index"
+      ]
+    },
+    {
+      "source_table": "mlb_team_mistake_shape_daily",
+      "family": "team_features",
+      "migration": "data-migration/scripts/normalize_mlb_team_features.py",
+      "notes": "",
+      "legacy_rows": 5262,
+      "staged_rows": 5262,
+      "staged_min_source_date": "2026-03-27",
+      "staged_max_source_date": "2026-06-01",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-03-27",
+          "max": "2026-06-01"
+        }
+      },
+      "targets": [
+        "team_mistake_shape_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "team_mistake_shape_snapshots",
+          "exists": true,
+          "total_rows": 5262,
+          "source_rows": 5262,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 5262,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "team_name",
+        "scheduled_opponent",
+        "scheduled_series_game_number",
+        "division_matchup_flag",
+        "window_games",
+        "games_sample",
+        "road_games_sample",
+        "low_scoring_game_rate",
+        "high_scoring_game_rate",
+        "scoreless_first3_rate",
+        "first_inning_run_allowed_rate",
+        "early_multi_run_allowed_rate",
+        "one_big_inning_rate",
+        "one_bad_inning_allowed_rate",
+        "traffic_game_rate",
+        "dead_bat_traffic_rate",
+        "traffic_no_conversion_rate",
+        "base_runner_conversion_rate",
+        "stranded_traffic_rate",
+        "top_order_pressure_no_conversion_rate",
+        "bullpen_meltdown_rate",
+        "run_clustering_index",
+        "mistake_chaos_index"
+      ]
+    },
+    {
+      "source_table": "mlb_team_opponent_quality_daily",
+      "family": "team_features",
+      "migration": "data-migration/scripts/normalize_mlb_team_features.py",
+      "notes": "",
+      "legacy_rows": 1754,
+      "staged_rows": 1754,
+      "staged_min_source_date": "2026-03-27",
+      "staged_max_source_date": "2026-06-01",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-03-27",
+          "max": "2026-06-01"
+        }
+      },
+      "targets": [
+        "team_opponent_quality_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "team_opponent_quality_snapshots",
+          "exists": true,
+          "total_rows": 1754,
+          "source_rows": 1754,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 1754,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "team_name",
+        "scheduled_opponent",
+        "games_sample_last5",
+        "games_sample_last10",
+        "avg_opponent_season_win_pct_last5",
+        "avg_opponent_season_win_pct_last10",
+        "avg_opponent_recent10_win_pct_last5",
+        "avg_opponent_recent10_win_pct_last10",
+        "avg_opponent_recent10_run_diff_last5",
+        "avg_opponent_recent10_run_diff_last10",
+        "games_vs_winning_record_last5",
+        "games_vs_winning_record_last10",
+        "games_vs_550_last5",
+        "games_vs_550_last10",
+        "win_rate_vs_winning_record_last10",
+        "win_rate_vs_550_last10",
+        "close_losses_vs_winning_record_last10",
+        "schedule_toughness_index_last5",
+        "schedule_toughness_index_last10"
+      ]
+    },
+    {
+      "source_table": "mlb_team_rolling_form",
+      "family": "team_features",
+      "migration": "data-migration/scripts/normalize_mlb_team_features.py",
+      "notes": "",
+      "legacy_rows": 5196,
+      "staged_rows": 5196,
+      "staged_min_source_date": "2026-03-27",
+      "staged_max_source_date": "2026-05-31",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-03-27",
+          "max": "2026-05-31"
+        }
+      },
+      "targets": [
+        "team_rolling_form_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "team_rolling_form_snapshots",
+          "exists": true,
+          "total_rows": 5196,
+          "source_rows": 5196,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 5196,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "team_name",
+        "window_games",
+        "games_sample",
+        "wins",
+        "losses",
+        "runs_scored_per_game",
+        "hits_per_game",
+        "home_runs_per_game",
+        "hit_efficiency",
+        "runs_allowed_per_game",
+        "hits_allowed_per_game",
+        "home_runs_allowed_per_game",
+        "first5_runs_scored_per_game",
+        "first5_runs_allowed_per_game",
+        "bullpen_runs_scored_per_game",
+        "bullpen_runs_allowed_per_game",
+        "run_diff_per_game",
+        "first5_run_diff_per_game",
+        "scoring_volatility",
+        "home_run_burstiness",
+        "recent_3_runs_delta",
+        "recent_3_home_runs_delta"
+      ]
+    },
+    {
+      "source_table": "mlb_team_state_snapshots",
+      "family": "team_features",
+      "migration": "data-migration/scripts/normalize_mlb_team_features.py",
+      "notes": "",
+      "legacy_rows": 1754,
+      "staged_rows": 1754,
+      "staged_min_source_date": "2026-03-27",
+      "staged_max_source_date": "2026-06-01",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-03-27",
+          "max": "2026-06-01"
+        }
+      },
+      "targets": [
+        "team_state_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "team_state_snapshots",
+          "exists": true,
+          "total_rows": 1754,
+          "source_rows": 1754,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 1754,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "team_name",
+        "scheduled_opponent",
+        "scheduled_series_game_number",
+        "division_matchup_flag",
+        "games_sample",
+        "previous_result",
+        "streak_direction",
+        "streak_length",
+        "win_pct_last3",
+        "win_pct_last5",
+        "run_diff_last3",
+        "run_diff_last5",
+        "close_loss_count_last5",
+        "blowout_win_count_last5",
+        "blowout_loss_count_last5",
+        "comeback_win_count_last5",
+        "bullpen_flip_loss_count_last5",
+        "quiet_first5_count_last5",
+        "first_inning_jolt_count_last5",
+        "opponent_win_pct_last5",
+        "snapback_pressure_index",
+        "heat_regression_index",
+        "form_pressure_index"
+      ]
+    },
+    {
+      "source_table": "mlb_team_story_priors",
+      "family": "team_features",
+      "migration": "data-migration/scripts/normalize_mlb_team_context.py",
+      "notes": "",
+      "legacy_rows": 3092,
+      "staged_rows": 3092,
+      "staged_min_source_date": "2026-03-27",
+      "staged_max_source_date": "2026-05-25",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-03-27",
+          "max": "2026-05-25"
+        }
+      },
+      "targets": [
+        "team_story_priors"
+      ],
+      "target_details": [
+        {
+          "table": "team_story_priors",
+          "exists": true,
+          "total_rows": 3092,
+          "source_rows": 3092,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 3092,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "team_name",
+        "window_games",
+        "games_sample",
+        "win_rate",
+        "quiet_first5_rate",
+        "first_inning_jolt_rate",
+        "comeback_win_rate",
+        "blew_lead_loss_rate",
+        "bullpen_flip_win_rate",
+        "bullpen_flip_loss_rate",
+        "late_break_rate",
+        "starter_cracked_rate",
+        "traffic_no_conversion_rate",
+        "low_total_game_rate",
+        "high_total_game_rate",
+        "avg_first_scoring_inning",
+        "avg_total_runs_first5",
+        "avg_total_runs_final",
+        "story_instability_index"
+      ]
+    },
+    {
+      "source_table": "mlb_team_whiff_persistence_profiles",
+      "family": "team_features",
+      "migration": "data-migration/scripts/normalize_mlb_team_features.py",
+      "notes": "",
+      "legacy_rows": 3508,
+      "staged_rows": 3508,
+      "staged_min_source_date": "2026-03-27",
+      "staged_max_source_date": "2026-06-01",
+      "legacy_date_ranges": {
+        "as_of_date": {
+          "min": "2026-03-27",
+          "max": "2026-06-01"
+        }
+      },
+      "targets": [
+        "team_whiff_persistence_profiles"
+      ],
+      "target_details": [
+        {
+          "table": "team_whiff_persistence_profiles",
+          "exists": true,
+          "total_rows": 3508,
+          "source_rows": 3508,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 3508,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "as_of_date",
+        "team_name",
+        "window_games",
+        "games_sample",
+        "early_two_inning_pa_per_game",
+        "early_two_inning_strikeout_rate",
+        "early_two_inning_whiff_rate",
+        "games_with_early_whiff_flag",
+        "early_whiff_flag_rate",
+        "early_whiff_persist_rate",
+        "early_whiff_rebound_rate",
+        "avg_rest_of_game_runs_after_whiff",
+        "avg_rest_of_game_hits_after_whiff",
+        "avg_rest_of_game_strikeout_rate_after_whiff",
+        "avg_rest_of_game_runs_without_whiff",
+        "avg_rest_of_game_hits_without_whiff",
+        "whiff_persistence_index",
+        "whiff_rebound_index"
+      ]
+    },
+    {
+      "source_table": "model_component_runs",
+      "family": "model_metadata",
+      "migration": "data-migration/scripts/normalize_mlb_model_metadata.py",
+      "notes": "",
+      "legacy_rows": 3,
+      "staged_rows": 3,
+      "staged_min_source_date": null,
+      "staged_max_source_date": null,
+      "legacy_date_ranges": {},
+      "targets": [
+        "model_component_runs"
+      ],
+      "target_details": [
+        {
+          "table": "model_component_runs",
+          "exists": true,
+          "total_rows": 3,
+          "source_rows": 3,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 3,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "parent_run_id",
+        "component_model_id",
+        "component_run_id",
+        "component_role",
+        "details_json"
+      ]
+    },
+    {
+      "source_table": "model_run_artifacts",
+      "family": "model_metadata",
+      "migration": "data-migration/scripts/normalize_mlb_model_metadata.py",
+      "notes": "",
+      "legacy_rows": 69,
+      "staged_rows": 19,
+      "staged_min_source_date": null,
+      "staged_max_source_date": null,
+      "legacy_date_ranges": {},
+      "targets": [
+        "model_run_artifacts"
+      ],
+      "target_details": [
+        {
+          "table": "model_run_artifacts",
+          "exists": true,
+          "total_rows": 19,
+          "source_rows": 19,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 19,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "run_id",
+        "role",
+        "path",
+        "exists_flag",
+        "sha256"
+      ]
+    },
+    {
+      "source_table": "model_run_lanes",
+      "family": "model_metadata",
+      "migration": "data-migration/scripts/normalize_mlb_model_metadata.py",
+      "notes": "",
+      "legacy_rows": 38,
+      "staged_rows": 38,
+      "staged_min_source_date": null,
+      "staged_max_source_date": null,
+      "legacy_date_ranges": {},
+      "targets": [
+        "model_run_lanes"
+      ],
+      "target_details": [
+        {
+          "table": "model_run_lanes",
+          "exists": true,
+          "total_rows": 38,
+          "source_rows": 38,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 38,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "run_id",
+        "lane",
+        "status",
+        "row_count",
+        "graded_count",
+        "hit_count",
+        "miss_count",
+        "hit_pct",
+        "avg_pnl_per100",
+        "details_json"
+      ]
+    },
+    {
+      "source_table": "model_runs",
+      "family": "model_metadata",
+      "migration": "data-migration/scripts/normalize_mlb_model_metadata.py",
+      "notes": "",
+      "legacy_rows": 9,
+      "staged_rows": 8,
+      "staged_min_source_date": "2026-05-30",
+      "staged_max_source_date": "2026-06-01",
+      "legacy_date_ranges": {
+        "slate_date": {
+          "min": "2026-05-30",
+          "max": "2026-06-01"
+        },
+        "indexed_at": {
+          "min": "2026-05-31T23:29:31.068635Z",
+          "max": "2026-06-02T03:15:59.020562Z"
+        },
+        "locked_at": {
+          "min": "2026-05-31T23:29:09.632Z",
+          "max": "2026-06-01T21:56:18.666Z"
+        }
+      },
+      "targets": [
+        "model_runs"
+      ],
+      "target_details": [
+        {
+          "table": "model_runs",
+          "exists": true,
+          "total_rows": 224,
+          "source_rows": 8,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 8,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "run_id",
+        "sport",
+        "model_id",
+        "slate_date",
+        "mode",
+        "status",
+        "locked_at",
+        "source_hash",
+        "input_hash",
+        "output_hash",
+        "snapshot_hash",
+        "artifact_hash",
+        "source_files",
+        "input_count",
+        "output_count",
+        "artifact_summary_json",
+        "run_json",
+        "indexed_at"
+      ]
+    },
+    {
+      "source_table": "park_factor_snapshots",
+      "family": "adjacent_environment",
+      "migration": "needs migration design",
+      "notes": "Legacy adjacent table is not in legacy_table_rows. Decide whether to normalize into game_environment_snapshots or a park_factor_snapshots typed table.",
+      "legacy_rows": 0,
+      "staged_rows": 0,
+      "staged_min_source_date": null,
+      "staged_max_source_date": null,
+      "legacy_date_ranges": {},
+      "targets": [
+        "game_environment_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "game_environment_snapshots",
+          "exists": true,
+          "total_rows": 0,
+          "source_rows": null,
+          "has_source_table_column": false
+        }
+      ],
+      "target_source_rows": 0,
+      "status": "empty_or_inactive",
+      "columns": [
+        "snapshot_date",
+        "team_name",
+        "venue_name",
+        "hr_index",
+        "runs_index",
+        "woba_index",
+        "source_url"
+      ]
+    },
+    {
+      "source_table": "source_snapshots",
+      "family": "shared_source_metadata",
+      "migration": "needs partitioned migration or re-ingest",
+      "notes": "Shared legacy source metadata includes multiple sports; only MLB-relevant rows should be moved or re-ingested.",
+      "legacy_rows": 8221,
+      "staged_rows": 0,
+      "staged_min_source_date": null,
+      "staged_max_source_date": null,
+      "legacy_date_ranges": {},
+      "targets": [
+        "source_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "source_snapshots",
+          "exists": true,
+          "total_rows": 2251,
+          "source_rows": null,
+          "has_source_table_column": false
+        }
+      ],
+      "target_source_rows": 0,
+      "status": "target_populated_not_staged",
+      "columns": [
+        "id",
+        "source_key",
+        "url",
+        "fetched_at",
+        "content_path",
+        "content_hash",
+        "meta_json"
+      ]
+    },
+    {
+      "source_table": "statcast_hr_leaderboard_snapshots",
+      "family": "adjacent_mlb_raw_context",
+      "migration": "data-migration/scripts/ingest_mlb_player_context_raw_to_typed.py",
+      "notes": "MLB adjacent source; typed target exists.",
+      "legacy_rows": 407,
+      "staged_rows": 407,
+      "staged_min_source_date": "2026-05-15",
+      "staged_max_source_date": "2026-05-15",
+      "legacy_date_ranges": {
+        "snapshot_date": {
+          "min": "2026-05-15",
+          "max": "2026-05-15"
+        }
+      },
+      "targets": [
+        "statcast_hr_leaderboard_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "statcast_hr_leaderboard_snapshots",
+          "exists": true,
+          "total_rows": 407,
+          "source_rows": 407,
+          "has_source_table_column": true
+        }
+      ],
+      "target_source_rows": 407,
+      "status": "normalized_with_source_lineage",
+      "columns": [
+        "snapshot_date",
+        "season",
+        "player_id",
+        "player_name",
+        "team_abbrev",
+        "hr_total",
+        "xhr",
+        "xhr_diff",
+        "no_doubters",
+        "mostly_gone",
+        "doubters",
+        "no_doubter_per",
+        "avg_hr_trot",
+        "source_url"
+      ]
+    },
+    {
+      "source_table": "weather_observations",
+      "family": "adjacent_environment",
+      "migration": "needs migration design",
+      "notes": "Shared weather table in sports.db. Needs MLB partitioning and typed weather/environment normalization.",
+      "legacy_rows": 0,
+      "staged_rows": 0,
+      "staged_min_source_date": null,
+      "staged_max_source_date": null,
+      "legacy_date_ranges": {},
+      "targets": [
+        "game_environment_snapshots"
+      ],
+      "target_details": [
+        {
+          "table": "game_environment_snapshots",
+          "exists": true,
+          "total_rows": 0,
+          "source_rows": null,
+          "has_source_table_column": false
+        }
+      ],
+      "target_source_rows": 0,
+      "status": "empty_or_inactive",
+      "columns": [
+        "game_pk",
+        "observed_at",
+        "source_url",
+        "temperature_f",
+        "wind_speed_mph",
+        "wind_direction",
+        "roof_status",
+        "raw_json"
+      ]
+    }
+  ],
+  "staged_but_no_legacy_table": [],
+  "sports_db_read_paths": [
+    {
+      "file": "data-migration/scripts/inspect_legacy_dbs.mjs",
+      "line": 12,
+      "group": "data_migration_utility",
+      "cutover_blocker": false,
+      "text": "const defaultDbPath = path.join(repoRoot, 'data-private/warehouse/sports.db');"
+    },
+    {
+      "file": "api/src/server.ts",
+      "line": 14,
+      "group": "api_runtime",
+      "cutover_blocker": true,
+      "text": "import { warehousePath } from './lib/paths.js'"
+    },
+    {
+      "file": "api/src/server.ts",
+      "line": 39,
+      "group": "api_runtime",
+      "cutover_blocker": true,
+      "text": "warehousePath"
+    },
+    {
+      "file": "models/mlb/compare-cartridges.mjs",
+      "line": 31,
+      "group": "mlb_model_runtime",
+      "cutover_blocker": true,
+      "text": "conn = sqlite3.connect(\"data-private/warehouse/sports.db\")"
+    },
+    {
+      "file": "api/src/lib/sqlite.ts",
+      "line": 2,
+      "group": "api_runtime",
+      "cutover_blocker": true,
+      "text": "import { warehousePath } from './paths.js'"
+    },
+    {
+      "file": "api/src/lib/sqlite.ts",
+      "line": 5,
+      "group": "api_runtime",
+      "cutover_blocker": true,
+      "text": "const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], {"
+    },
+    {
+      "file": "api/src/lib/paths.ts",
+      "line": 11,
+      "group": "api_runtime",
+      "cutover_blocker": true,
+      "text": "export const warehousePath = path.join(dataPrivateRoot, 'warehouse', 'sports.db')"
+    },
+    {
+      "file": "api/src/scripts/export-published-data.ts",
+      "line": 13,
+      "group": "api_runtime",
+      "cutover_blocker": true,
+      "text": "import { dataPrivateRoot, publishedDataRoot, warehousePath } from '../lib/paths.js'"
+    },
+    {
+      "file": "api/src/scripts/export-published-data.ts",
+      "line": 46,
+      "group": "api_runtime",
+      "cutover_blocker": true,
+      "text": "if (!fsSync.existsSync(warehousePath)) return []"
+    },
+    {
+      "file": "api/src/scripts/export-published-data.ts",
+      "line": 47,
+      "group": "api_runtime",
+      "cutover_blocker": true,
+      "text": "const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { encoding: 'utf8' }).trim()"
+    },
+    {
+      "file": "data-migration/scripts/backfill_mlb_output_contract_inventory.mjs",
+      "line": 267,
+      "group": "data_migration_utility",
+      "cutover_blocker": false,
+      "text": "path: 'data-private/warehouse/sports.db'"
+    },
+    {
+      "file": "data-migration/scripts/backfill_tennis_from_sports_db.mjs",
+      "line": 15,
+      "group": "data_migration_utility",
+      "cutover_blocker": false,
+      "text": "sourceDb: path.join(repoRoot, 'data-private/warehouse/sports.db'),"
+    },
+    {
+      "file": "data-migration/scripts/backfill_tennis_from_sports_db.mjs",
+      "line": 240,
+      "group": "data_migration_utility",
+      "cutover_blocker": false,
+      "text": "'data-private/warehouse/sports.db:tennis_core',"
+    },
+    {
+      "file": "data-migration/scripts/backfill_tennis_from_sports_db.mjs",
+      "line": 297,
+      "group": "data_migration_utility",
+      "cutover_blocker": false,
+      "text": "source: 'data-private/warehouse/sports.db:tennis_core',"
+    },
+    {
+      "file": "models/mlb/cartridges/MLB-M2/lanes/history-journal.mjs",
+      "line": 86,
+      "group": "mlb_model_runtime",
+      "cutover_blocker": true,
+      "text": "const output = execSync(`sqlite3 -json data-private/warehouse/sports.db \"${escaped}\"`, {"
+    },
+    {
+      "file": "data-migration/scripts/plan_phase2_table_backfill.mjs",
+      "line": 15,
+      "group": "data_migration_utility",
+      "cutover_blocker": false,
+      "text": "sourceDb: path.join(repoRoot, 'data-private/warehouse/sports.db'),"
+    },
+    {
+      "file": "models/mlb/cartridges/MLB-M2/lanes/lineups.mjs",
+      "line": 11,
+      "group": "mlb_model_runtime",
+      "cutover_blocker": true,
+      "text": "const warehousePath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db')"
+    },
+    {
+      "file": "models/mlb/cartridges/MLB-M2/lanes/lineups.mjs",
+      "line": 111,
+      "group": "mlb_model_runtime",
+      "cutover_blocker": true,
+      "text": "if (!existsSync(warehousePath)) return []"
+    },
+    {
+      "file": "models/mlb/cartridges/MLB-M2/lanes/lineups.mjs",
+      "line": 112,
+      "group": "mlb_model_runtime",
+      "cutover_blocker": true,
+      "text": "const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { encoding: 'utf8' }).trim()"
+    },
+    {
+      "file": "data-migration/scripts/validate_sport_db.mjs",
+      "line": 24,
+      "group": "data_migration_utility",
+      "cutover_blocker": false,
+      "text": "sourceDb: path.join(repoRoot, 'data-private/warehouse/sports.db'),"
+    },
+    {
+      "file": "data-migration/scripts/backfill_mlb_from_sports_db.mjs",
+      "line": 15,
+      "group": "data_migration_utility",
+      "cutover_blocker": false,
+      "text": "sourceDb: path.join(repoRoot, 'data-private/warehouse/sports.db'),"
+    },
+    {
+      "file": "data-migration/scripts/backfill_mlb_from_sports_db.mjs",
+      "line": 237,
+      "group": "data_migration_utility",
+      "cutover_blocker": false,
+      "text": "'data-private/warehouse/sports.db:mlb_core',"
+    },
+    {
+      "file": "data-migration/scripts/backfill_mlb_from_sports_db.mjs",
+      "line": 294,
+      "group": "data_migration_utility",
+      "cutover_blocker": false,
+      "text": "source: 'data-private/warehouse/sports.db:mlb_core',"
+    },
+    {
+      "file": "models/mlb/cartridges/MLB-M0/lanes/history-journal.mjs",
+      "line": 86,
+      "group": "mlb_model_runtime",
+      "cutover_blocker": true,
+      "text": "const output = execSync(`sqlite3 -json data-private/warehouse/sports.db \"${escaped}\"`, {"
+    },
+    {
+      "file": "models/mlb/cartridges/MLB-M1/lanes/history-journal.mjs",
+      "line": 86,
+      "group": "mlb_model_runtime",
+      "cutover_blocker": true,
+      "text": "const output = execSync(`sqlite3 -json data-private/warehouse/sports.db \"${escaped}\"`, {"
+    },
+    {
+      "file": "models/mlb/cartridges/MLB-M0/lanes/lineups.mjs",
+      "line": 11,
+      "group": "mlb_model_runtime",
+      "cutover_blocker": true,
+      "text": "const warehousePath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db')"
+    },
+    {
+      "file": "models/mlb/cartridges/MLB-M0/lanes/lineups.mjs",
+      "line": 111,
+      "group": "mlb_model_runtime",
+      "cutover_blocker": true,
+      "text": "if (!existsSync(warehousePath)) return []"
+    },
+    {
+      "file": "models/mlb/cartridges/MLB-M0/lanes/lineups.mjs",
+      "line": 112,
+      "group": "mlb_model_runtime",
+      "cutover_blocker": true,
+      "text": "const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { encoding: 'utf8' }).trim()"
+    },
+    {
+      "file": "models/mlb/cartridges/MLB-M1/lanes/lineups.mjs",
+      "line": 11,
+      "group": "mlb_model_runtime",
+      "cutover_blocker": true,
+      "text": "const warehousePath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db')"
+    },
+    {
+      "file": "models/mlb/cartridges/MLB-M1/lanes/lineups.mjs",
+      "line": 111,
+      "group": "mlb_model_runtime",
+      "cutover_blocker": true,
+      "text": "if (!existsSync(warehousePath)) return []"
+    },
+    {
+      "file": "models/mlb/cartridges/MLB-M1/lanes/lineups.mjs",
+      "line": 112,
+      "group": "mlb_model_runtime",
+      "cutover_blocker": true,
+      "text": "const raw = execFileSync('sqlite3', ['-json', warehousePath, sql], { encoding: 'utf8' }).trim()"
+    }
+  ],
+  "typed_tables": [
+    "batter_game_outcomes",
+    "bullpen_mistake_shape_snapshots",
+    "bullpen_usage_snapshots",
+    "component_settlement_rows",
+    "entity_alias_governance",
+    "entity_alias_review_candidates",
+    "entity_aliases",
+    "export_manifests",
+    "game_environment_snapshots",
+    "game_outcomes",
+    "game_story_labels",
+    "game_story_signals",
+    "game_sun_visibility_snapshots",
+    "game_visibility_outcomes",
+    "games",
+    "health_checks",
+    "home_run_backtest_rows",
+    "home_run_events",
+    "legacy_table_rows",
+    "likely_relief_chains",
+    "lineup_matchup_snapshots",
+    "lineup_shape_snapshots",
+    "lineup_slots",
+    "lineups",
+    "market_contracts",
+    "market_mispricing_labels",
+    "market_price_ticks",
+    "market_snapshots",
+    "migration_runs",
+    "model_artifacts",
+    "model_component_runs",
+    "model_run_artifacts",
+    "model_run_lanes",
+    "model_runs",
+    "phase_outcomes",
+    "pitch_events",
+    "pitcher_appearances",
+    "pitcher_first_inning_profiles",
+    "pitcher_mistake_shape_snapshots",
+    "pitcher_pitch_mix_snapshots",
+    "pitcher_season_value_snapshots",
+    "plate_appearances",
+    "player_career_profiles",
+    "player_classic_stat_snapshots",
+    "player_current_deviation_snapshots",
+    "player_feature_snapshots",
+    "player_game_batting",
+    "player_game_distribution_snapshots",
+    "player_identity_backtest_rows",
+    "player_identity_curves",
+    "player_identity_profiles",
+    "player_identity_redirect_candidates",
+    "player_identity_redirects",
+    "player_identity_registry",
+    "player_opponent_context_snapshots",
+    "player_pitch_type_response_snapshots",
+    "player_split_snapshots",
+    "player_statcast_game_logs",
+    "player_statcast_snapshots",
+    "player_state_snapshots",
+    "players",
+    "prediction_rows",
+    "prop_backtest_rows",
+    "prop_market_snapshots",
+    "reliever_command_profiles",
+    "schema_migrations",
+    "series_context_snapshots",
+    "settlement_rows",
+    "side_backtest_rows",
+    "source_fetch_policies",
+    "source_fetch_runs",
+    "source_fetch_status",
+    "source_snapshots",
+    "starter_leash_profiles",
+    "starter_third_time_penalty_profiles",
+    "starting_pitcher_form_snapshots",
+    "starting_pitcher_game_logs",
+    "starting_pitchers",
+    "statcast_hr_leaderboard_snapshots",
+    "state_formula_backtests",
+    "state_formula_training_rows",
+    "team_bullpen_shape_snapshots",
+    "team_feature_snapshots",
+    "team_first_inning_profiles",
+    "team_form_carryover_profiles",
+    "team_game_stats",
+    "team_lead_surrender_profiles",
+    "team_market_context_snapshots",
+    "team_mistake_shape_snapshots",
+    "team_opponent_quality_snapshots",
+    "team_rolling_form_snapshots",
+    "team_state_snapshots",
+    "team_story_priors",
+    "team_whiff_persistence_profiles",
+    "teams",
+    "unresolved_entities",
+    "venues"
+  ]
+}

@@ -13,6 +13,7 @@ Current working research notes live in:
 - `research-m3/model-architecture-notes.md`
 - `research-m3/signal-discovery-notes.md`
 - `research-m3/game-story-labels.md`
+- `research-m3/alpha-design.md`
 - `research-m3/tech-debt.md`
 
 ## Layer Stack
@@ -48,7 +49,10 @@ L8: Market pricing
 L9: Selection policy
   choose what to show, pass, veto, or mark live-only
 
-L10: Presentation/export
+L10: Backtest feedback loop
+  settlement, calibration diagnostics, ablations, promotion/rejection gates
+
+L11: Presentation/export
   board JSON/UI/reporting only
 ```
 
@@ -86,6 +90,14 @@ flowchart TD
   R --> S["Market prediction rows"]
   S --> T["Selection policy rows"]
   T --> U["Slate export/UI"]
+  S --> V["Backtest + settlement engine"]
+  T --> V
+  V --> W["Calibration diagnostics"]
+  V --> X["Feature / signal ablations"]
+  V --> Y["Promotion / rejection gate"]
+  W --> H
+  X --> G
+  Y --> I
 ```
 
 ## Runtime Simulation DAG
@@ -112,6 +124,8 @@ flowchart TD
   MK --> SEL["Selection"]
   PK --> SEL
   CK --> SEL
+  SEL --> BT["Backtest + settlement"]
+  BT --> FB["Calibration / ablation / promotion feedback"]
 ```
 
 ## Important Correction: Heads Are Aggregators
@@ -131,6 +145,44 @@ simulated event logs
 ```
 
 This is how player props stay coherent with game flow. Props are not separate from the game. They are views over plate appearances, lineup turnover, pitcher changes, score state, and event sequencing.
+
+## Backtesting Feedback Loop
+
+Backtesting is part of the architecture, not an after-the-fact report.
+
+The backtest engine should consume:
+
+```text
+market prediction rows
+selection policy rows
+settled outcomes
+M2 baseline rows
+active submodel registry
+feature snapshot lineage
+```
+
+It should produce:
+
+```text
+calibration diagnostics
+tail/regime diagnostics
+feature ablation reports
+signal durability reports
+simulator path diagnostics
+component comparison reports
+promotion/rejection decisions
+```
+
+Those outputs feed the next experiment cycle:
+
+```text
+calibration diagnostics -> calibrator candidates
+feature ablations -> feature set promotion/rejection
+component comparisons -> submodel registry promotion gate
+simulator path diagnostics -> replay/labeler/simulator audits
+```
+
+No signal, calibrator, submodel artifact, or market aggregator should become active because it looked good once. Promotion requires lineage, backtest slices, calibration checks, and baseline comparison.
 
 ## Why Latent Game Shape Comes First
 

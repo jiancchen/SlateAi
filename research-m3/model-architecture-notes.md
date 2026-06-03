@@ -16,6 +16,7 @@ typed replayable DB
 -> distribution aggregators
 -> market pricing
 -> selection policy
+-> backtest feedback loop
 -> presentation
 ```
 
@@ -80,6 +81,10 @@ flowchart TD
 
   T --> U["Selection policy"]
   U --> V["Slate outputs/UI"]
+  T --> W["Backtest + settlement"]
+  U --> W
+  W --> X["Calibration / ablation / promotion gates"]
+  X --> G
 ```
 
 ## Runtime Shape
@@ -113,7 +118,49 @@ flowchart TD
   FLOW --> CHECK["Coherence checks"]
   PRICE --> SELECT["Selection / veto / pass"]
   CHECK --> SELECT
+  SELECT --> BACK["Backtest + settlement feedback"]
+  BACK --> CAL["Calibration updates"]
+  BACK --> ABL["Signal ablations"]
+  BACK --> PROMO["Submodel promotion gate"]
 ```
+
+## Backtesting Feedback Loop
+
+Backtesting should be a closed loop, not a terminal scorecard.
+
+```mermaid
+flowchart TD
+  A["Predicted market rows"] --> B["Backtest + settlement"]
+  C["Selection / veto rows"] --> B
+  D["Final outcomes"] --> B
+  E["M2 baseline"] --> B
+
+  B --> F["Calibration diagnostics"]
+  B --> G["Tail / regime diagnostics"]
+  B --> H["Feature ablations"]
+  B --> I["Simulator path diagnostics"]
+  B --> J["Component comparison"]
+
+  F --> K["Calibrator candidates"]
+  G --> K
+  H --> L["Feature promotion / rejection"]
+  I --> M["Replay / label / simulator audit"]
+  J --> N["Submodel promotion gate"]
+
+  K --> O["Submodel registry"]
+  L --> P["Feature set registry"]
+  N --> O
+```
+
+The loop should decide what changes next:
+
+- calibrators when probabilities are miscalibrated
+- feature sets when ablations show durable value
+- submodel artifacts when a candidate beats the active baseline
+- labeler/simulator logic when simulated paths do not resemble real game stories
+- data migration when replay or as-of checks fail
+
+No submodel, signal, calibrator, or market aggregator should become active without a backtest-backed promotion decision.
 
 ## Determinism
 
@@ -230,7 +277,8 @@ Recommended v0:
 4. Train or prototype game-shape, starter-path, bullpen-chain, and PA-volume forecasts.
 5. Build a small state-machine simulator.
 6. Aggregate full-game total, F5 total, moneyline, and a small prop subset from the same event logs.
-7. Compare against M2 outputs and market contracts.
+7. Backtest against market contracts, M2 outputs, and settled outcomes.
+8. Feed calibration, ablation, simulator-path, and promotion decisions back into the next experiment.
 
 Player props should enter as aggregations over simulated plate appearances, not as an isolated prop-only model.
 
