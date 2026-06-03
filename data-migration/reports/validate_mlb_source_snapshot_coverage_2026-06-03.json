@@ -1,0 +1,27 @@
+{
+  "errors": [],
+  "existing_local_files": 992,
+  "games_with_resolving_source_snapshot_id": 15,
+  "games_with_source_snapshot_id": 15,
+  "generated_at": "2026-06-03T04:01:35.566312+00:00",
+  "hash_represented_paths": 66,
+  "legacy_db": "data-private/warehouse/sports.db",
+  "legacy_distinct_normalized_paths": 992,
+  "legacy_duplicate_rows_by_normalized_path": 6568,
+  "legacy_rows": 7560,
+  "legacy_source_key_counts": {
+    "kalshi.mlb.live": 1,
+    "mlb.feed_live": 7034,
+    "mlb.schedule": 525
+  },
+  "missing_path_samples": [],
+  "missing_paths": 0,
+  "ok": true,
+  "represented_normalized_paths": 992,
+  "script": "data-migration/scripts/validate_mlb_source_snapshot_coverage.py",
+  "typed_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "typed_mlb_source_snapshots": 2252,
+  "warnings": [
+    "Not every typed game row carries a direct source_snapshot_id; path-level source coverage is complete but row-level game linkage remains sparse."
+  ]
+}

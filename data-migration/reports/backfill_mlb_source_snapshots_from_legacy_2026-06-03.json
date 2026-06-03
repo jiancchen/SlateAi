@@ -1,0 +1,23 @@
+{
+  "already_present_paths": 991,
+  "dry_run": false,
+  "errors": [],
+  "generated_at": "2026-06-03T04:01:27.011896+00:00",
+  "inserted_paths": 1,
+  "inserted_samples": [
+    {
+      "legacy_id": 6981,
+      "local_path": "data-private/raw/kalshi/mlb/2026-05-29/20260529T204209Z.json",
+      "source_name": "kalshi_mlb_live",
+      "source_snapshot_id": "mlb-744a6f65918e23c80f76dc16f0090810"
+    }
+  ],
+  "legacy_db": "data-private/warehouse/sports.db",
+  "legacy_distinct_normalized_paths": 992,
+  "legacy_rows": 7560,
+  "missing_file_samples": [],
+  "missing_files": 0,
+  "ok": true,
+  "script": "data-migration/scripts/backfill_mlb_source_snapshots_from_legacy.py",
+  "typed_db": "data-private/warehouse/sports/mlb/sql-mlb.db"
+}
