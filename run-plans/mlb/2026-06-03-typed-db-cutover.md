@@ -24,7 +24,7 @@ Completed:
 - Typed MLB compatibility views exist for staged `mlb_*` legacy table names, plus canonical views for `mlb_games`, `mlb_plate_appearances`, and `mlb_pitch_events`.
 - Writer-owned legacy names for side predictions/backtests and market/prop odds are writable staging tables inside `sql-mlb.db`.
 - Prediction, market, and prop normalizers read historical `legacy_table_rows` plus direct-only typed staging rows, so fresh writer rows normalize forward without a `sports.db` bridge.
-- New typed warehouse CLI exists at `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.1.0; package aliases are additive while legacy commands remain wired until validated cutover.
+- New typed warehouse CLI exists at `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.2.0; package aliases are additive while legacy commands remain wired until validated cutover.
 - Current M2 `lineups`, `history-journal`, `generate-day-files`, copied M0/M1 lane scripts, cartridge compare, RP36 read exporters, and story archive export read the typed MLB DB.
 - Side backtest and MLB odds/FanDuel research fetchers default to `sql-mlb.db` writable staging tables.
 
