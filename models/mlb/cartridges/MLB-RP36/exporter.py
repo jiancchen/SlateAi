@@ -38,7 +38,7 @@ from research_mlb_first_up_reliever_quality import (
 from research_mlb_starter_exit_buckets import load_rows as load_starter_rows
 
 
-DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
+DB_PATH = ROOT / "data-private" / "warehouse" / "sports" / "mlb" / "sql-mlb.db"
 OUT_ROOT = ROOT / "data-private" / "predictions" / "mlb-reliever-shadow"
 MODULE_ROOT = ROOT / "web" / "src" / "lib"
 REPORT_PATH = ROOT / "development-docs" / "mlb" / "research" / "mlb-first-up-reliever-shadow-board-053026.md"

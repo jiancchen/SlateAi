@@ -1,6 +1,6 @@
 # MLB Legacy to Typed DB Migration Gap Audit
 
-Generated: 2026-06-03T04:19:09.828Z
+Generated: 2026-06-03T04:20:39.096Z
 
 Legacy DB: `data-private/warehouse/sports.db` (2257.7 MB)
 
@@ -13,8 +13,8 @@ Typed DB: `data-private/warehouse/sports/mlb/sql-mlb.db` (5083.5 MB)
 - Tables staged in `legacy_table_rows`: 70
 - Staged rows: 1206213
 - Typed target tables inspected: 97
-- Direct `sports.db` code references found: 97
-- Runtime cutover blockers: 7
+- Direct `sports.db` code references found: 94
+- Runtime cutover blockers: 4
 
 ## Status Counts
 
@@ -57,13 +57,10 @@ These code paths still directly reference `data-private/warehouse/sports.db` or 
 
 | Group | File | Reference |
 | --- | --- | --- |
-| mlb_pipeline_runtime | pipeline/mlb/warehouse/export_story_archive.py:13 | DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db" |
 | mlb_pipeline_runtime | pipeline/mlb/warehouse/mlb_warehouse.py:28 | DB_PATH = WAREHOUSE_DIR / "sports.db" |
 | mlb_pipeline_runtime | pipeline/mlb/warehouse/mlb_side_backtest.py:12 | DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db" |
 | mlb_pipeline_runtime | pipeline/mlb/fetchers/fetch_fanduel_research_mlb.py:26 | DB_PATH = WAREHOUSE_DIR / "sports.db" |
 | mlb_pipeline_runtime | pipeline/mlb/fetchers/fetch_historical_mlb_odds.py:25 | DB_PATH = WAREHOUSE_DIR / "sports.db" |
-| mlb_model_runtime | models/mlb/cartridges/MLB-RP36/exporter.py:41 | DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db" |
-| mlb_model_runtime | models/mlb/cartridges/MLB-RP36/snapshot_run.py:18 | DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db" |
 
 ## Largest Legacy Source Tables
 

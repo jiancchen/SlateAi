@@ -10,7 +10,7 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[3]
-DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
+DB_PATH = ROOT / "data-private" / "warehouse" / "sports" / "mlb" / "sql-mlb.db"
 DEFAULT_OUTPUT = ROOT / "web" / "src" / "lib" / "story-archive.generated.ts"
 
 

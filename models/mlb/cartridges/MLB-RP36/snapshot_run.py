@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[4]
 MODEL_ID = "MLB-RP36"
 MODEL_DIR = ROOT / "models" / "mlb" / "cartridges" / MODEL_ID
 RUN_ROOT = ROOT / "data-private" / "model-runs" / "mlb" / MODEL_ID
-DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
+DB_PATH = ROOT / "data-private" / "warehouse" / "sports" / "mlb" / "sql-mlb.db"
 
 
 def parse_args() -> argparse.Namespace:
