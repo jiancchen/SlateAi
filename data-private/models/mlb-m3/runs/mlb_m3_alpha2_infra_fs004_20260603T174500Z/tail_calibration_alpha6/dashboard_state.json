@@ -1,0 +1,28 @@
+{
+  "active_phase": "tail_regime_audit",
+  "calibration_bins_exist": false,
+  "next_recommended_actions": [
+    "Write row-level validation predictions and residuals from the harness.",
+    "Add distribution/probability outputs before calibration claims.",
+    "Use tail/regime slices as rejection gates for future candidates."
+  ],
+  "non_goals": [
+    "no picks",
+    "no selection rows",
+    "no player prop pricing",
+    "no market fair probability claims",
+    "no simulator event logs",
+    "no promotion decisions",
+    "no claim that M3 is better"
+  ],
+  "output_dir": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/tail_calibration_alpha6",
+  "probability_outputs_exist": false,
+  "promotion_gate_status": "blocked_for_promotion",
+  "row_level_predictions_exist": false,
+  "run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+  "source_harness_dir": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6",
+  "source_manifest_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/manifest.json",
+  "status": "tail_regime_audit_created",
+  "walk_forward_candidate_better_count": 0,
+  "walk_forward_candidate_worse_count": 4
+}

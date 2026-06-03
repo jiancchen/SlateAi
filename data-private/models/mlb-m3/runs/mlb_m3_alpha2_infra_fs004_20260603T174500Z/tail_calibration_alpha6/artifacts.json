@@ -1,0 +1,62 @@
+{
+  "artifacts": [
+    {
+      "bytes": 8343,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/tail_calibration_alpha6/tail_calibration_audit.json",
+      "role": "tail_calibration_audit",
+      "sha256": "04746abe32a77b0ff99ff85c68f32e8eb94270ac4ad7414da03a582a86041113"
+    },
+    {
+      "bytes": 9043,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/tail_calibration_alpha6/split_target_summary.json",
+      "role": "split_target_summary",
+      "sha256": "daecb7e008dc0fe3fe03dd89c2fd47fbedc067a0df2a0c354b1dd0f3d60b08c7"
+    },
+    {
+      "bytes": 110248,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/tail_calibration_alpha6/tail_slice_metrics.json",
+      "role": "tail_slice_metrics",
+      "sha256": "6e5203527f749db24b1b6b9432b867fe0c206fc03e2644140c9fe5d0b5b2036e"
+    },
+    {
+      "bytes": 25422,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/tail_calibration_alpha6/baseline_slice_metrics.json",
+      "role": "baseline_slice_metrics",
+      "sha256": "c409335259af56663311ad9597583b1b398f65c7022fcc0cb8bb0b22566390d4"
+    },
+    {
+      "bytes": 1738,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/tail_calibration_alpha6/walk_forward_gate.json",
+      "role": "walk_forward_gate",
+      "sha256": "d13046d7c86833dc69baf7f35307f146e36a36b3eb7d33d7870af0e1c741949a"
+    },
+    {
+      "bytes": 7838,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/tail_calibration_alpha6/family_ablation_summary.json",
+      "role": "family_ablation_summary",
+      "sha256": "c3cef15769a07b78b04d64a5713052613338c7456c573717ed113af473e37b8b"
+    },
+    {
+      "bytes": 1347,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/tail_calibration_alpha6/dashboard_state.json",
+      "role": "dashboard_state",
+      "sha256": "6e226451b49b5443e9ea1b96ddac2578b75b63002c4e6d3bc089426db9cde85f"
+    },
+    {
+      "bytes": 2756,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/tail_calibration_alpha6/report.md",
+      "role": "report",
+      "sha256": "c13b29cbde8b17cc0f6c812db126992a6133633a2f97cc6a7193e11981b498f5"
+    }
+  ],
+  "run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+  "status": "tail_regime_audit_created"
+}

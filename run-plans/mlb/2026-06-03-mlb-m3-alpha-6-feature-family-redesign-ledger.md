@@ -16,6 +16,7 @@ Status: opened
 | A6-D002 | Use FS-003 as the clean baseline artifact | locked | FS-003 is the latest audited feature artifact and removes obvious FS-002 hygiene issues. |
 | A6-D003 | Keep all Alpha-6 outputs metrics/design-only until FS-004 exists | locked | No promoted models, picks, prices, simulator logs, or edge claims are allowed. |
 | A6-D004 | Update the alpha state tracker after each status change | locked | The tracker is now the shared state map alongside run plans and ledgers. |
+| A6-D005 | Treat calibration as blocked until row-level prediction/residual artifacts exist | locked | Aggregate candidate metrics cannot support regime calibration, promotion gates, or simulator-quality claims. |
 
 ## Work Ledger
 
@@ -42,6 +43,9 @@ Status: opened
 | A6-W019 | Review FS-004 artifact | complete | `2026-06-03-mlb-m3-alpha-6-fs004-artifact-review.md` | Accepted as first materialized FS-004 alpha artifact. |
 | A6-W020 | Create and validate FS-004 manifest | complete | `mlb_m3_alpha2_infra_fs004_20260603T174500Z` | Manifest validator passes with 7 artifacts, 12 component placeholders, and 7 lane placeholders. |
 | A6-W021 | Run FS-004 harness diagnostics | complete | `training_harness_alpha6` | Harness validator passes; candidate is closer than FS-003 but still worse than baseline. |
+| A6-W022 | Implement FS-004 tail/regime calibration audit | complete | `pipeline/mlb/m3/audit/audit_fs004_tail_calibration.py` | Reads the FS-004 manifest, harness output, target regimes, walk-forward metrics, and family ablations. |
+| A6-W023 | Generate FS-004 tail/regime audit artifacts | complete | `tail_calibration_alpha6` | Promotion is blocked: no row predictions, no probability outputs, no calibration bins, and candidate loses every comparable walk-forward fold. |
+| A6-W024 | Review FS-004 tail/regime audit | complete | `2026-06-03-mlb-m3-alpha-6-fs004-tail-calibration-review.md` | Tail audit accepted as feedback-loop infrastructure; next gate is harness row-level prediction/residual output. |
 
 ## Verification Log
 
@@ -67,6 +71,9 @@ Status: opened
 - 2026-06-03: FS-004 manifest validation passed for `mlb_m3_alpha2_infra_fs004_20260603T174500Z`.
 - 2026-06-03: FS-004 harness validation passed for `training_harness_alpha6`.
 - 2026-06-03: FS-004 diagnostic candidate remains unpromoted because it is still worse than baseline in every walk-forward fold.
+- 2026-06-03: `PYTHONDONTWRITEBYTECODE=1 python3 -m py_compile pipeline/mlb/m3/audit/audit_fs004_tail_calibration.py` passed.
+- 2026-06-03: `PYTHONDONTWRITEBYTECODE=1 /Users/jcchen/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -m pipeline.mlb.m3.audit.audit_fs004_tail_calibration --manifest data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/manifest.json --harness-dir data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6 --output-subdir tail_calibration_alpha6` generated the FS-004 tail/regime audit.
+- 2026-06-03: FS-004 tail audit reports `blocked_for_promotion`: tail targets exist, but row-level predictions, probability outputs, calibration bins, and baseline-beating walk-forward results do not.
 
 ## Stop Log
 

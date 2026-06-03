@@ -1,0 +1,242 @@
+{
+  "families": [
+    "game_context",
+    "game_metadata",
+    "hitter_path",
+    "market_context",
+    "reliever_chain",
+    "starter_path",
+    "story_memory"
+  ],
+  "lanes": {
+    "f5_total": {
+      "all_features_delta_vs_baseline": 0.15075568054925403,
+      "all_features_mae": 2.81127867126507,
+      "baseline_mae": 2.660522990715816,
+      "only_family": [
+        {
+          "delta_vs_all_features": -0.20718915595485976,
+          "delta_vs_baseline": -0.056433475405605726,
+          "family": "reliever_chain",
+          "feature_count": 36,
+          "mae": 2.60408951531021,
+          "status": "candidate_diagnostic_not_promoted"
+        },
+        {
+          "delta_vs_all_features": -0.15075568054925403,
+          "delta_vs_baseline": 0.0,
+          "family": "game_metadata",
+          "feature_count": 1,
+          "mae": 2.660522990715816,
+          "status": "candidate_diagnostic_not_promoted"
+        },
+        {
+          "delta_vs_all_features": -0.15075568054925403,
+          "delta_vs_baseline": 0.0,
+          "family": "market_context",
+          "feature_count": 1,
+          "mae": 2.660522990715816,
+          "status": "candidate_diagnostic_not_promoted"
+        },
+        {
+          "delta_vs_all_features": -0.14742931554380023,
+          "delta_vs_baseline": 0.003326365005453802,
+          "family": "hitter_path",
+          "feature_count": 6,
+          "mae": 2.6638493557212697,
+          "status": "candidate_diagnostic_not_promoted"
+        },
+        {
+          "delta_vs_all_features": -0.11107909420221107,
+          "delta_vs_baseline": 0.039676586347042964,
+          "family": "story_memory",
+          "feature_count": 26,
+          "mae": 2.700199577062859,
+          "status": "candidate_diagnostic_not_promoted"
+        },
+        {
+          "delta_vs_all_features": -0.06819830888212941,
+          "delta_vs_baseline": 0.08255737166712462,
+          "family": "starter_path",
+          "feature_count": 44,
+          "mae": 2.7430803623829405,
+          "status": "candidate_diagnostic_not_promoted"
+        },
+        {
+          "delta_vs_all_features": null,
+          "delta_vs_baseline": null,
+          "family": "game_context",
+          "feature_count": null,
+          "mae": null,
+          "status": "skipped"
+        }
+      ],
+      "without_family": [
+        {
+          "delta_vs_all_features": -0.14455474444326288,
+          "family": "starter_path",
+          "feature_count": 70,
+          "mae": 2.666723926821807,
+          "status": "candidate_diagnostic_not_promoted"
+        },
+        {
+          "delta_vs_all_features": -0.09724244095848089,
+          "family": "story_memory",
+          "feature_count": 88,
+          "mae": 2.714036230306589,
+          "status": "candidate_diagnostic_not_promoted"
+        },
+        {
+          "delta_vs_all_features": -0.001003595116273459,
+          "family": "hitter_path",
+          "feature_count": 108,
+          "mae": 2.8102750761487965,
+          "status": "candidate_diagnostic_not_promoted"
+        },
+        {
+          "delta_vs_all_features": -4.440892098500626e-15,
+          "family": "market_context",
+          "feature_count": 113,
+          "mae": 2.8112786712650655,
+          "status": "candidate_diagnostic_not_promoted"
+        },
+        {
+          "delta_vs_all_features": 0.0,
+          "family": "game_context",
+          "feature_count": 114,
+          "mae": 2.81127867126507,
+          "status": "candidate_diagnostic_not_promoted"
+        },
+        {
+          "delta_vs_all_features": 4.440892098500626e-16,
+          "family": "game_metadata",
+          "feature_count": 113,
+          "mae": 2.8112786712650704,
+          "status": "candidate_diagnostic_not_promoted"
+        },
+        {
+          "delta_vs_all_features": 0.032323239682797045,
+          "family": "reliever_chain",
+          "feature_count": 78,
+          "mae": 2.843601910947867,
+          "status": "candidate_diagnostic_not_promoted"
+        }
+      ]
+    },
+    "full_game_total": {
+      "all_features_delta_vs_baseline": 0.06823979192685492,
+      "all_features_mae": 3.656041253224443,
+      "baseline_mae": 3.587801461297588,
+      "only_family": [
+        {
+          "delta_vs_all_features": -0.08019310151653336,
+          "delta_vs_baseline": -0.01195330958967844,
+          "family": "story_memory",
+          "feature_count": 26,
+          "mae": 3.5758481517079095,
+          "status": "candidate_diagnostic_not_promoted"
+        },
+        {
+          "delta_vs_all_features": -0.07819353305888077,
+          "delta_vs_baseline": -0.00995374113202585,
+          "family": "reliever_chain",
+          "feature_count": 36,
+          "mae": 3.577847720165562,
+          "status": "candidate_diagnostic_not_promoted"
+        },
+        {
+          "delta_vs_all_features": -0.06886914730781246,
+          "delta_vs_baseline": -0.0006293553809575414,
+          "family": "hitter_path",
+          "feature_count": 6,
+          "mae": 3.5871721059166304,
+          "status": "candidate_diagnostic_not_promoted"
+        },
+        {
+          "delta_vs_all_features": -0.06823979192685492,
+          "delta_vs_baseline": 0.0,
+          "family": "game_metadata",
+          "feature_count": 1,
+          "mae": 3.587801461297588,
+          "status": "candidate_diagnostic_not_promoted"
+        },
+        {
+          "delta_vs_all_features": -0.06823979192685492,
+          "delta_vs_baseline": 0.0,
+          "family": "market_context",
+          "feature_count": 1,
+          "mae": 3.587801461297588,
+          "status": "candidate_diagnostic_not_promoted"
+        },
+        {
+          "delta_vs_all_features": 0.3304271899692943,
+          "delta_vs_baseline": 0.39866698189614924,
+          "family": "starter_path",
+          "feature_count": 44,
+          "mae": 3.986468443193737,
+          "status": "candidate_diagnostic_not_promoted"
+        },
+        {
+          "delta_vs_all_features": null,
+          "delta_vs_baseline": null,
+          "family": "game_context",
+          "feature_count": null,
+          "mae": null,
+          "status": "skipped"
+        }
+      ],
+      "without_family": [
+        {
+          "delta_vs_all_features": -0.06899105950363538,
+          "family": "starter_path",
+          "feature_count": 70,
+          "mae": 3.5870501937208075,
+          "status": "candidate_diagnostic_not_promoted"
+        },
+        {
+          "delta_vs_all_features": -0.036136350257113925,
+          "family": "reliever_chain",
+          "feature_count": 78,
+          "mae": 3.619904902967329,
+          "status": "candidate_diagnostic_not_promoted"
+        },
+        {
+          "delta_vs_all_features": -0.007586287471124553,
+          "family": "story_memory",
+          "feature_count": 88,
+          "mae": 3.6484549657533183,
+          "status": "candidate_diagnostic_not_promoted"
+        },
+        {
+          "delta_vs_all_features": -6.217248937900877e-15,
+          "family": "game_metadata",
+          "feature_count": 113,
+          "mae": 3.6560412532244366,
+          "status": "candidate_diagnostic_not_promoted"
+        },
+        {
+          "delta_vs_all_features": 0.0,
+          "family": "game_context",
+          "feature_count": 114,
+          "mae": 3.656041253224443,
+          "status": "candidate_diagnostic_not_promoted"
+        },
+        {
+          "delta_vs_all_features": 0.0,
+          "family": "market_context",
+          "feature_count": 113,
+          "mae": 3.656041253224443,
+          "status": "candidate_diagnostic_not_promoted"
+        },
+        {
+          "delta_vs_all_features": 0.13102870006474232,
+          "family": "hitter_path",
+          "feature_count": 108,
+          "mae": 3.787069953289185,
+          "status": "candidate_diagnostic_not_promoted"
+        }
+      ]
+    }
+  },
+  "status": "created"
+}

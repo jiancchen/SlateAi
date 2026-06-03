@@ -129,7 +129,10 @@ flowchart TD
   MATRIX --> MANIFEST["Alpha-2 style manifest"]
   MANIFEST --> HARNESS["Alpha-5 harness"]
   HARNESS --> REVIEW["FS-004 review"]
+  HARNESS --> TAIL["Tail/regime feedback audit"]
+  TAIL --> ROWS["Next: row-level prediction/residual output"]
   REVIEW --> STATE["Update alpha state tracker"]
+  TAIL --> STATE
 
   classDef live fill:#dff3df,stroke:#367c39,color:#102b13;
   classDef next fill:#d7ecff,stroke:#2f6f9f,color:#0d2638;
@@ -137,7 +140,8 @@ flowchart TD
 
   class FS003,HARN,ARCH live;
   class AUDIT,GAP,INV,SPEC,PLAN next;
-  class CONTRACT,BUILDER,MATRIX,MANIFEST,HARNESS,REVIEW,STATE missing;
+  class CONTRACT,BUILDER,MATRIX,MANIFEST,HARNESS,REVIEW,TAIL,STATE missing;
+  class ROWS next;
 ```
 
 ## Work Plan
@@ -153,6 +157,7 @@ flowchart TD
 9. Create an alpha-2 style manifest for FS-004.
 10. Run the alpha-5 harness on FS-004.
 11. Update the state tracker after each status transition.
+12. Add a tail/regime feedback audit before any promotion or calibration claims.
 
 ## Acceptance Gate
 
@@ -169,6 +174,7 @@ Alpha-6 implementation is accepted later when:
 - FS-004 materializes a matrix with redesigned feature families
 - the harness can run FS-004
 - walk-forward diagnostics improve or clearly identify which redesigned family still fails
+- tail/regime diagnostics identify whether the next blocker is representation, row-level feedback, probability output, or calibration
 - no model is promoted without future calibration/promotion gates
 
 ## Commit Cadence
@@ -180,4 +186,4 @@ Alpha-6 implementation is accepted later when:
 5. FS-004 builder
 6. FS-004 artifact and manifest
 7. FS-004 harness and state tracker update
-
+8. FS-004 tail/regime feedback audit and row-level-output gate

@@ -1,0 +1,221 @@
+{
+  "baseline_slice_metrics_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/tail_calibration_alpha6/baseline_slice_metrics.json",
+  "family_ablation_summary_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/tail_calibration_alpha6/family_ablation_summary.json",
+  "finished_at": "2026-06-03T17:58:19Z",
+  "non_goals": [
+    "no picks",
+    "no selection rows",
+    "no player prop pricing",
+    "no market fair probability claims",
+    "no simulator event logs",
+    "no promotion decisions",
+    "no claim that M3 is better"
+  ],
+  "output_dir": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/tail_calibration_alpha6",
+  "prediction_artifacts_found": [],
+  "promotion_gate": {
+    "blocking_reasons": [
+      "No row-level validation prediction or residual artifact exists.",
+      "No probability/distribution output artifact exists.",
+      "No calibration-bin artifact exists.",
+      "Diagnostic candidate does not beat baseline across comparable walk-forward folds."
+    ],
+    "calibration_bins_exist": false,
+    "candidate_beats_baseline_all_comparable_folds": false,
+    "missing_tail_targets": [],
+    "non_goals": [
+      "no picks",
+      "no selection rows",
+      "no player prop pricing",
+      "no market fair probability claims",
+      "no simulator event logs",
+      "no promotion decisions",
+      "no claim that M3 is better"
+    ],
+    "probability_outputs_exist": false,
+    "row_level_predictions_exist": false,
+    "status": "blocked_for_promotion",
+    "tail_targets_present": true
+  },
+  "row_count": 886,
+  "run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+  "source_harness_dir": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6",
+  "source_manifest_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/manifest.json",
+  "split_target_summary_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/tail_calibration_alpha6/split_target_summary.json",
+  "started_at": "2026-06-03T17:58:19Z",
+  "status": "tail_regime_audit_created",
+  "tail_slice_metrics_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/tail_calibration_alpha6/tail_slice_metrics.json",
+  "top_baseline_tail_slices": {
+    "f5_total": [
+      {
+        "description": "target_f5_bucket == chaos",
+        "mae": 5.335050828575407,
+        "mean_error": -5.335050828575407,
+        "row_count": 43,
+        "slice_id": "target_f5_bucket:chaos"
+      },
+      {
+        "description": "target_total_bucket == chaos",
+        "mae": 4.263727863422092,
+        "mean_error": -3.295961268951459,
+        "row_count": 47,
+        "slice_id": "target_total_bucket:chaos"
+      },
+      {
+        "description": "target_chaos_game_flag == 1",
+        "mae": 4.065389221556886,
+        "mean_error": -3.0457485029940123,
+        "row_count": 50,
+        "slice_id": "target_chaos_game_flag:1"
+      },
+      {
+        "description": "target_home_starter_cracked_flag == 1",
+        "mae": 3.933210502072778,
+        "mean_error": -3.587286964532474,
+        "row_count": 26,
+        "slice_id": "target_home_starter_cracked_flag:1"
+      },
+      {
+        "description": "target_f5_bucket == low",
+        "mae": 3.614992237746728,
+        "mean_error": 3.614992237746728,
+        "row_count": 54,
+        "slice_id": "target_f5_bucket:low"
+      },
+      {
+        "description": "Either starter cracked",
+        "mae": 3.6124592919424314,
+        "mean_error": -3.4239941170290997,
+        "row_count": 57,
+        "slice_id": "any_starter_cracked:1"
+      },
+      {
+        "description": "target_away_starter_cracked_flag == 1",
+        "mae": 3.4418809439943647,
+        "mean_error": -3.3904543853469535,
+        "row_count": 34,
+        "slice_id": "target_away_starter_cracked_flag:1"
+      },
+      {
+        "description": "target_total_bucket == low",
+        "mae": 2.847033206314643,
+        "mean_error": 2.837887860642351,
+        "row_count": 55,
+        "slice_id": "target_total_bucket:low"
+      }
+    ],
+    "full_game_total": [
+      {
+        "description": "target_total_bucket == chaos",
+        "mae": 6.551821888138617,
+        "mean_error": -6.551821888138617,
+        "row_count": 47,
+        "slice_id": "target_total_bucket:chaos"
+      },
+      {
+        "description": "target_chaos_game_flag == 1",
+        "mae": 6.310119760479043,
+        "mean_error": -6.310119760479043,
+        "row_count": 50,
+        "slice_id": "target_chaos_game_flag:1"
+      },
+      {
+        "description": "target_f5_bucket == chaos",
+        "mae": 5.329654644199973,
+        "mean_error": -5.329654644199973,
+        "row_count": 43,
+        "slice_id": "target_f5_bucket:chaos"
+      },
+      {
+        "description": "target_total_bucket == low",
+        "mae": 5.191698421339139,
+        "mean_error": 5.191698421339139,
+        "row_count": 55,
+        "slice_id": "target_total_bucket:low"
+      },
+      {
+        "description": "target_f5_bucket == low",
+        "mae": 4.588434242625858,
+        "mean_error": 3.4950654247061426,
+        "row_count": 54,
+        "slice_id": "target_f5_bucket:low"
+      },
+      {
+        "description": "target_home_starter_cracked_flag == 1",
+        "mae": 4.525449101796408,
+        "mean_error": -3.1516582220175042,
+        "row_count": 26,
+        "slice_id": "target_home_starter_cracked_flag:1"
+      },
+      {
+        "description": "Either starter cracked",
+        "mae": 4.478490387645762,
+        "mean_error": -3.4708215148650075,
+        "row_count": 57,
+        "slice_id": "any_starter_cracked:1"
+      },
+      {
+        "description": "target_away_starter_cracked_flag == 1",
+        "mae": 4.28830574145826,
+        "mean_error": -3.543060936949631,
+        "row_count": 34,
+        "slice_id": "target_away_starter_cracked_flag:1"
+      }
+    ]
+  },
+  "train_row_count": 668,
+  "validation_row_count": 218,
+  "version": "0.1.0",
+  "walk_forward_gate": {
+    "candidate_beats_baseline_all_comparable_folds": false,
+    "candidate_better_count": 0,
+    "candidate_equal_count": 0,
+    "candidate_worse_count": 4,
+    "comparable_count": 4,
+    "fold_lane_count": 4,
+    "rows": [
+      {
+        "baseline_mae": 2.416312442072294,
+        "candidate_mae": 2.553647434566626,
+        "candidate_status": "candidate_diagnostic_not_promoted",
+        "delta_candidate_minus_baseline": 0.13733499249433212,
+        "feature_count": 114,
+        "fold_id": "wf_2026_05_01_to_2026_05_15",
+        "lane": "f5_total",
+        "verdict": "candidate_worse_than_baseline"
+      },
+      {
+        "baseline_mae": 3.488691446408216,
+        "candidate_mae": 3.6741197530519645,
+        "candidate_status": "candidate_diagnostic_not_promoted",
+        "delta_candidate_minus_baseline": 0.18542830664374854,
+        "feature_count": 114,
+        "fold_id": "wf_2026_05_01_to_2026_05_15",
+        "lane": "full_game_total",
+        "verdict": "candidate_worse_than_baseline"
+      },
+      {
+        "baseline_mae": 2.660522990715816,
+        "candidate_mae": 2.81127867126507,
+        "candidate_status": "candidate_diagnostic_not_promoted",
+        "delta_candidate_minus_baseline": 0.15075568054925403,
+        "feature_count": 114,
+        "fold_id": "wf_2026_05_16_to_2026_05_31",
+        "lane": "f5_total",
+        "verdict": "candidate_worse_than_baseline"
+      },
+      {
+        "baseline_mae": 3.587801461297588,
+        "candidate_mae": 3.656041253224443,
+        "candidate_status": "candidate_diagnostic_not_promoted",
+        "delta_candidate_minus_baseline": 0.06823979192685492,
+        "feature_count": 114,
+        "fold_id": "wf_2026_05_16_to_2026_05_31",
+        "lane": "full_game_total",
+        "verdict": "candidate_worse_than_baseline"
+      }
+    ],
+    "status": "created"
+  },
+  "walk_forward_gate_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/tail_calibration_alpha6/walk_forward_gate.json"
+}
