@@ -1,0 +1,104 @@
+{
+  "artifacts": [
+    {
+      "bytes": 33154,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-migration/reports/m3_fs_004_state_path_redesign_v0_2026-03-26_to_2026-05-31.json",
+      "role": "feature_report",
+      "sha256": "abd145894ace5128210fcea34e9d9f137e564b8febcb0b66b2388bc6c3ed6e47",
+      "source": "alpha1_report"
+    },
+    {
+      "bytes": 310462,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_004_state_path_redesign_v0/m3_fs_004_state_path_redesign_v0_20260603T174237Z/matrix.parquet",
+      "role": "feature_matrix",
+      "sha256": "d52bec9760f048ca18bf9a867cbcc9038db53f023f09e8a89c35b9a9d0e635e3",
+      "source": "alpha1_feature_artifact"
+    },
+    {
+      "bytes": 39493,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_004_state_path_redesign_v0/m3_fs_004_state_path_redesign_v0_20260603T174237Z/data_dictionary.json",
+      "role": "data_dictionary",
+      "sha256": "991b9db9053e2f8f80fda2ba15f6dd67db6fa15691fcbf1e734f8ade14141b83",
+      "source": "alpha1_feature_artifact"
+    },
+    {
+      "bytes": 716,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_004_state_path_redesign_v0/m3_fs_004_state_path_redesign_v0_20260603T174237Z/lineage.json",
+      "role": "lineage",
+      "sha256": "63ecadc3133ae29bf0ccaa191957d2f3b6c5fc73dead5911abd8b67982f38f29",
+      "source": "alpha1_feature_artifact"
+    },
+    {
+      "bytes": 18728,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_004_state_path_redesign_v0/m3_fs_004_state_path_redesign_v0_20260603T174237Z/missingness.json",
+      "role": "missingness",
+      "sha256": "34536bff1b37eb66a13459f34b4fd65dad139f0ee4788cea69d759f305614016",
+      "source": "alpha1_feature_artifact"
+    },
+    {
+      "bytes": 6373,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_004_state_path_redesign_v0/m3_fs_004_state_path_redesign_v0_20260603T174237Z/leakage.json",
+      "role": "leakage",
+      "sha256": "3662c7e3b2bb540ffe8ee31b054a6892809951222defc3ee6d258b75e615bea7",
+      "source": "alpha1_feature_artifact"
+    },
+    {
+      "bytes": 10192,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_004_state_path_redesign_v0/m3_fs_004_state_path_redesign_v0_20260603T174237Z/coverage.json",
+      "role": "coverage",
+      "sha256": "a9b410cf3b6926d72eab251f5938701a26890289e24576817d0696b3d3c12313",
+      "source": "alpha1_feature_artifact"
+    },
+    {
+      "bytes": 18315,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/manifest.json",
+      "role": "manifest",
+      "sha256": "7b397bca8b966193af987f02f3890150911011327ba327b114c20e781c4af13b",
+      "source": "alpha2_generated"
+    },
+    {
+      "bytes": 1444,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/dashboard_state.json",
+      "role": "dashboard_state",
+      "sha256": "788d5018aed27306333d5eb9c037257574fdadf9d7acbe7742d704a0d1ccf55c",
+      "source": "alpha2_generated"
+    },
+    {
+      "bytes": 3733,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/lineage.json",
+      "role": "lineage",
+      "sha256": "7e9043631480350af3bdafb5cee1fb80355f1594dfb7e082e8fc653384bb6cfb",
+      "source": "alpha2_generated"
+    },
+    {
+      "bytes": 261,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/warnings.json",
+      "role": "warnings",
+      "sha256": "55a794bcdc646b1bc26b13701f47c2b9600322e2cb1695d7e6d29645f549e23a",
+      "source": "alpha2_generated"
+    },
+    {
+      "bytes": 1047,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/report.md",
+      "role": "report",
+      "sha256": "96f727a0b90d259e9a6eac8d727f9da3e5be5209b464beba222f52b16c4a1f0b",
+      "source": "alpha2_generated"
+    }
+  ],
+  "created_at": "2026-06-03T17:43:29Z",
+  "run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+  "self_hash_note": "artifacts.json and registry preview are generated after this index is assembled; hash them from disk when registering.",
+  "status": "written"
+}

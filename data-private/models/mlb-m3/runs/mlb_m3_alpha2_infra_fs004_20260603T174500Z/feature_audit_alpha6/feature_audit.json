@@ -1,0 +1,25 @@
+{
+  "column_count": 140,
+  "created_at": "2026-06-03T17:43:40Z",
+  "feature_column_count": 120,
+  "feature_run_id": "m3_fs_004_state_path_redesign_v0_20260603T174237Z",
+  "feature_set_id": "m3_fs_004_state_path_redesign_v0",
+  "matrix_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_004_state_path_redesign_v0/m3_fs_004_state_path_redesign_v0_20260603T174237Z/matrix.parquet",
+  "non_goals": [
+    "no picks",
+    "no prices",
+    "no promotion decisions",
+    "no edge claims"
+  ],
+  "pruned_feature_count": 9,
+  "row_count": 886,
+  "rules": {
+    "keep_missing_rate_max": 0.75,
+    "min_non_null_rate": 0.1,
+    "min_unique_values": 2
+  },
+  "run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z_feature_audit",
+  "selected_column_count": 131,
+  "source_manifest_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/manifest.json",
+  "status": "feature_audit_created"
+}

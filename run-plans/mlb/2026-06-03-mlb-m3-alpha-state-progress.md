@@ -29,7 +29,7 @@ Tracking rule: update this document whenever a component status, lane status, fe
 
 ## Snapshot
 
-M3 now has a working typed feature-artifact pipeline, manifest infrastructure, metrics-only harness, feature audit, walk-forward diagnostics, a first diagnostic candidate runner, an Alpha-6 surface-gap audit, an FS-004 redesign contract, and an FS-004 typed-source feasibility audit.
+M3 now has a working typed feature-artifact pipeline, manifest infrastructure, metrics-only harness, feature audit, walk-forward diagnostics, a first diagnostic candidate runner, an Alpha-6 surface-gap audit, an FS-004 redesign contract, an FS-004 typed-source feasibility audit, and a first materialized FS-004 matrix/harness run.
 
 M3 does not yet have a promoted model, a simulator, a real backtest edge claim, market pricing, player props, selection rows, calibrated probabilities, or typed prediction/settlement writers.
 
@@ -71,13 +71,16 @@ flowchart TD
   C004 --> S004["FS-004 source feasibility audit<br/>53 typed tables populated, 0 blocked surfaces<br/>status: live"]
   S004 --> D004["Reliever entry-order source decision<br/>normalizer updated, backfill complete<br/>status: live"]
   D004 --> BR004["FS-004 builder readiness<br/>contract + sources + reliever order pass<br/>status: live"]
-  BR004 --> NEXT["Next phase: FS-004 matrix builder<br/>status: next"]
+  BR004 --> FS004["FS-004 state-path redesign artifact<br/>886 rows, 120 features, 14 targets<br/>status: live"]
+  FS004 --> M004["Alpha-2 manifest for FS-004<br/>status: live"]
+  M004 --> H004["Alpha-6 harness for FS-004<br/>candidate closer, still unpromoted<br/>status: live"]
+  H004 --> NEXT["Next phase: FS-004 family iteration/calibration<br/>status: next"]
 
   classDef live fill:#dff3df,stroke:#367c39,color:#102b13;
   classDef partial fill:#fff2c2,stroke:#927000,color:#332800;
   classDef next fill:#d7ecff,stroke:#2f6f9f,color:#0d2638;
 
-  class SQL,FS001,FS002,M001,H001,M002,H002,A002,WF002,FS003,M003,H003,R003,A6,C004,S004,D004,BR004 live;
+  class SQL,FS001,FS002,M001,H001,M002,H002,A002,WF002,FS003,M003,H003,R003,A6,C004,S004,D004,BR004,FS004,M004,H004 live;
   class NEXT next;
 ```
 
@@ -137,7 +140,7 @@ flowchart TD
 | Alpha-3 | complete | `training_harness` | Harness can load a manifest, split rows, write metrics, and avoid picks. | Smoke test was shallow and not a backtest edge claim. |
 | Alpha-4 | complete | `m3_fs_002_game_story_pitching_state_v0_20260603T155454Z` | First real M3 feature artifact with story, starter, reliever, hitter, and market context. | It did not produce a good candidate model. |
 | Alpha-5 | complete | FS-002 audit, FS-003 artifact, FS-003 harness | Walk-forward and ablations can reject weak candidates honestly. | Pruning did not fix the core feature representation problem. |
-| Alpha-6 | opened | `family_redesign_audit_alpha6`, FS-004 contract, `fs004_source_feasibility_alpha6`, reliever source decision/backfill, `fs004_builder_readiness_alpha6` | FS-003 has evidence fragments for 17 surfaces and fully misses 2 surfaces; FS-004 contract validates; typed sources can support first FS-004 builder work; reliever order fields have a canonicalization decision and backfill; builder readiness is clear. | FS-004 matrix is not materialized yet. |
+| Alpha-6 | opened | FS-004 contract, source feasibility, builder readiness, FS-004 matrix, FS-004 manifest, FS-004 harness | FS-004 materially improves diagnostic candidate error versus FS-003 but still does not beat baseline. | No promotion, simulator, pricing, picks, or edge claim. |
 
 ## Feature Artifacts
 
@@ -146,6 +149,7 @@ flowchart TD
 | `m3_fs_001_game_shape_starter_v1` | live | 886 | 77 | 62 | 9 | typed DB only | Foundation artifact; shallow but accepted. |
 | `m3_fs_002_game_story_pitching_state_v0` | live | 886 | 295 | 280 | 9 | typed DB only | First real feature set; includes story memory, starter path, reliever chain, hitter path. |
 | `m3_fs_003_game_story_pitching_state_pruned_v0` | live | 886 | 271 | 256 | 9 | derived from FS-002 audit | Cleaner baseline; no predictive lift versus FS-002. |
+| `m3_fs_004_state_path_redesign_v0` | live | 886 | 140 | 120 | 14 | typed DB only | First Alpha-6 state-path redesign artifact; diagnostic candidate improved but remains unpromoted. |
 
 All three feature sets report:
 
@@ -196,8 +200,12 @@ The manifest registry has 12 component-family slots. They are connected as place
 | FS-003 | `2026-05-01` to `2026-05-15` | `full_game_total` | 3.4887 | 4.4663 | +0.9777 | 251 |
 | FS-003 | `2026-05-16` to `2026-05-31` | `f5_total` | 2.6605 | 3.2909 | +0.6304 | 251 |
 | FS-003 | `2026-05-16` to `2026-05-31` | `full_game_total` | 3.5878 | 4.7187 | +1.1309 | 251 |
+| FS-004 | `2026-05-01` to `2026-05-15` | `f5_total` | 2.4163 | 2.5536 | +0.1373 | 114 |
+| FS-004 | `2026-05-01` to `2026-05-15` | `full_game_total` | 3.4887 | 3.6741 | +0.1854 | 114 |
+| FS-004 | `2026-05-16` to `2026-05-31` | `f5_total` | 2.6605 | 2.8113 | +0.1508 | 114 |
+| FS-004 | `2026-05-16` to `2026-05-31` | `full_game_total` | 3.5878 | 3.6560 | +0.0682 | 114 |
 
-Interpretation: the diagnostic ridge is worse than the train-mean baseline in every tested fold. No model is promoted.
+Interpretation: FS-004 is still worse than the train-mean baseline in every tested fold, so no model is promoted. It is meaningfully closer than FS-003, so Alpha-6 representation work is directionally useful.
 
 ## Alpha-6 Surface Audit
 

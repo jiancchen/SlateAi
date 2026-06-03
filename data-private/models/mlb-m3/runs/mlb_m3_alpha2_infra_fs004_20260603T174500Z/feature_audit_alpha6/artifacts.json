@@ -1,0 +1,47 @@
+{
+  "artifacts": [
+    {
+      "bytes": 974,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/feature_audit_alpha6/feature_audit.json",
+      "role": "feature_audit",
+      "sha256": "855b77b114f13dea60794ab219e003f0e2ad5b72713c0d37100c015d1ce94627"
+    },
+    {
+      "bytes": 65275,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/feature_audit_alpha6/feature_quality.json",
+      "role": "feature_quality",
+      "sha256": "368b92821bd82e1453fde9d2c9b68662ba1275b40949ecfe0dabc8800537f155"
+    },
+    {
+      "bytes": 2052,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/feature_audit_alpha6/family_summary.json",
+      "role": "family_summary",
+      "sha256": "ba0c54fd391d4edf6955648fab5a89653d7f6003e3e61506c1146cd9a62fe263"
+    },
+    {
+      "bytes": 9991,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/feature_audit_alpha6/prune_recommendations.json",
+      "role": "prune_recommendations",
+      "sha256": "e47578fcfb117615d7d702c220e1f1593a37522f1d8a9535a40d0e888587d982"
+    },
+    {
+      "bytes": 5645,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/feature_audit_alpha6/fs003_selected_columns.json",
+      "role": "fs003_selected_columns",
+      "sha256": "4477a2063d2ff745b505a62f5122162c40b44805343ccdefa9f7c73a6db0649c"
+    },
+    {
+      "bytes": 443,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/feature_audit_alpha6/report.md",
+      "role": "report",
+      "sha256": "72a55383df521dccd46beba5ab4a6d865abd4ecf2cb8bf7647c4fe667146f6bd"
+    }
+  ],
+  "status": "feature_audit_created"
+}

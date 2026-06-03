@@ -1,0 +1,83 @@
+{
+  "game_context": {
+    "avg_missing_rate": 0.9830699774266366,
+    "column_count": 1,
+    "constant_count": 0,
+    "coverage_or_availability_count": 0,
+    "feature_count": 1,
+    "high_missing_count": 1,
+    "selected_count": 0
+  },
+  "game_metadata": {
+    "avg_missing_rate": 0.0,
+    "column_count": 2,
+    "constant_count": 1,
+    "coverage_or_availability_count": 0,
+    "feature_count": 2,
+    "high_missing_count": 0,
+    "selected_count": 0
+  },
+  "hitter_path": {
+    "avg_missing_rate": 0.0,
+    "column_count": 6,
+    "constant_count": 0,
+    "coverage_or_availability_count": 2,
+    "feature_count": 6,
+    "high_missing_count": 0,
+    "selected_count": 6
+  },
+  "market_context": {
+    "avg_missing_rate": 0.0,
+    "column_count": 1,
+    "constant_count": 0,
+    "coverage_or_availability_count": 0,
+    "feature_count": 1,
+    "high_missing_count": 0,
+    "selected_count": 1
+  },
+  "metadata": {
+    "avg_missing_rate": 0.0,
+    "column_count": 6,
+    "constant_count": 0,
+    "coverage_or_availability_count": 0,
+    "feature_count": 0,
+    "high_missing_count": 0,
+    "selected_count": 6
+  },
+  "reliever_chain": {
+    "avg_missing_rate": 0.08481941309255082,
+    "column_count": 40,
+    "constant_count": 4,
+    "coverage_or_availability_count": 0,
+    "feature_count": 40,
+    "high_missing_count": 0,
+    "selected_count": 36
+  },
+  "starter_path": {
+    "avg_missing_rate": 0.12943771803816945,
+    "column_count": 44,
+    "constant_count": 2,
+    "coverage_or_availability_count": 2,
+    "feature_count": 44,
+    "high_missing_count": 0,
+    "selected_count": 42
+  },
+  "story_memory": {
+    "avg_missing_rate": 0.013196735544365346,
+    "column_count": 26,
+    "constant_count": 0,
+    "coverage_or_availability_count": 0,
+    "feature_count": 26,
+    "high_missing_count": 0,
+    "selected_count": 26
+  },
+  "target": {
+    "avg_missing_rate": 0.0,
+    "column_count": 14,
+    "constant_count": 0,
+    "coverage_or_availability_count": 0,
+    "feature_count": 0,
+    "high_missing_count": 0,
+    "selected_count": 14
+  }
+}

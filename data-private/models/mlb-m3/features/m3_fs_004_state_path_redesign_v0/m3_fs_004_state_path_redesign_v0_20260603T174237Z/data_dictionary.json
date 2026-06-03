@@ -1,0 +1,1122 @@
+{
+  "away_hitter_reliever_chain_phase_ready_flag": {
+    "description": "FS-004 state-path feature: away_hitter_reliever_chain_phase_ready_flag.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_hitter_starter_phase_command_stress_mean": {
+    "description": "FS-004 state-path feature: away_hitter_starter_phase_command_stress_mean.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_hitter_starter_phase_damage_fit_mean": {
+    "description": "FS-004 state-path feature: away_hitter_starter_phase_damage_fit_mean.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_hitter_starter_phase_matchup_count": {
+    "description": "FS-004 state-path feature: away_hitter_starter_phase_matchup_count.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_hitter_starter_phase_pitch_fit_damage_mean": {
+    "description": "FS-004 state-path feature: away_hitter_starter_phase_pitch_fit_damage_mean.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_hitter_starter_phase_pitch_fit_whiff_mean": {
+    "description": "FS-004 state-path feature: away_hitter_starter_phase_pitch_fit_whiff_mean.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_hitter_starter_phase_traffic_fit_mean": {
+    "description": "FS-004 state-path feature: away_hitter_starter_phase_traffic_fit_mean.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_lineup_complete_flag": {
+    "description": "FS-004 state-path feature: away_lineup_complete_flag.",
+    "dtype": "number",
+    "feature_family": "hitter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_lineup_known_flag": {
+    "description": "FS-004 state-path feature: away_lineup_known_flag.",
+    "dtype": "number",
+    "feature_family": "hitter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_lineup_player_count": {
+    "description": "FS-004 state-path feature: away_lineup_player_count.",
+    "dtype": "number",
+    "feature_family": "hitter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_reliever_availability_score_mean": {
+    "description": "FS-004 state-path feature: away_reliever_availability_score_mean.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_reliever_chain_candidate_count": {
+    "description": "FS-004 state-path feature: away_reliever_chain_candidate_count.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_reliever_chain_current_run_length_churn": {
+    "description": "FS-004 state-path feature: away_reliever_chain_current_run_length_churn.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_reliever_chain_expected_outs_sum": {
+    "description": "FS-004 state-path feature: away_reliever_chain_expected_outs_sum.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_reliever_chain_first_up_entropy": {
+    "description": "FS-004 state-path feature: away_reliever_chain_first_up_entropy.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_reliever_chain_first_up_top1_probability": {
+    "description": "FS-004 state-path feature: away_reliever_chain_first_up_top1_probability.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_reliever_chain_first_up_top2_probability_mass": {
+    "description": "FS-004 state-path feature: away_reliever_chain_first_up_top2_probability_mass.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_reliever_chain_last_first_up_outs": {
+    "description": "FS-004 state-path feature: away_reliever_chain_last_first_up_outs.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_reliever_chain_last_relief_runs_allowed": {
+    "description": "FS-004 state-path feature: away_reliever_chain_last_relief_runs_allowed.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_reliever_chain_last_reliever_count": {
+    "description": "FS-004 state-path feature: away_reliever_chain_last_reliever_count.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_reliever_chain_prior_churn_rate": {
+    "description": "FS-004 state-path feature: away_reliever_chain_prior_churn_rate.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_reliever_chain_prior_first_up_outs_mean": {
+    "description": "FS-004 state-path feature: away_reliever_chain_prior_first_up_outs_mean.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_reliever_chain_prior_game_count": {
+    "description": "FS-004 state-path feature: away_reliever_chain_prior_game_count.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_reliever_chain_prior_relief_runs_allowed_mean": {
+    "description": "FS-004 state-path feature: away_reliever_chain_prior_relief_runs_allowed_mean.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_reliever_chain_prior_reliever_count_mean": {
+    "description": "FS-004 state-path feature: away_reliever_chain_prior_reliever_count_mean.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_reliever_chain_rank1_expected_outs": {
+    "description": "FS-004 state-path feature: away_reliever_chain_rank1_expected_outs.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_reliever_command_risk_mean": {
+    "description": "FS-004 state-path feature: away_reliever_command_risk_mean.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_reliever_fatigue_score_mean": {
+    "description": "FS-004 state-path feature: away_reliever_fatigue_score_mean.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_reliever_free_pass_rate_mean": {
+    "description": "FS-004 state-path feature: away_reliever_free_pass_rate_mean.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_starter_current_run_length_damage_start": {
+    "description": "FS-004 state-path feature: away_starter_current_run_length_damage_start.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_starter_current_run_length_short_start": {
+    "description": "FS-004 state-path feature: away_starter_current_run_length_short_start.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_starter_known_flag": {
+    "description": "FS-004 state-path feature: away_starter_known_flag.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_starter_last_outs": {
+    "description": "FS-004 state-path feature: away_starter_last_outs.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_starter_last_outs_vs_prior_baseline": {
+    "description": "FS-004 state-path feature: away_starter_last_outs_vs_prior_baseline.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_starter_last_runs_allowed": {
+    "description": "FS-004 state-path feature: away_starter_last_runs_allowed.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_starter_last_runs_allowed_vs_prior_baseline": {
+    "description": "FS-004 state-path feature: away_starter_last_runs_allowed_vs_prior_baseline.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_starter_prior_damage_start_rate": {
+    "description": "FS-004 state-path feature: away_starter_prior_damage_start_rate.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_starter_prior_outs_mean": {
+    "description": "FS-004 state-path feature: away_starter_prior_outs_mean.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_starter_prior_outs_std": {
+    "description": "FS-004 state-path feature: away_starter_prior_outs_std.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_starter_prior_runs_allowed_mean": {
+    "description": "FS-004 state-path feature: away_starter_prior_runs_allowed_mean.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_starter_prior_runs_allowed_std": {
+    "description": "FS-004 state-path feature: away_starter_prior_runs_allowed_std.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_starter_prior_short_start_rate": {
+    "description": "FS-004 state-path feature: away_starter_prior_short_start_rate.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_starter_prior_start_count": {
+    "description": "FS-004 state-path feature: away_starter_prior_start_count.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_starter_prior_strikeout_rate_per_batter": {
+    "description": "FS-004 state-path feature: away_starter_prior_strikeout_rate_per_batter.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_starter_prior_walk_rate_per_batter": {
+    "description": "FS-004 state-path feature: away_starter_prior_walk_rate_per_batter.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_story_current_run_length_starter_cracked": {
+    "description": "FS-004 state-path feature: away_story_current_run_length_starter_cracked.",
+    "dtype": "number",
+    "feature_family": "story_memory",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_story_current_run_length_traffic_no_conversion": {
+    "description": "FS-004 state-path feature: away_story_current_run_length_traffic_no_conversion.",
+    "dtype": "number",
+    "feature_family": "story_memory",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_story_prior_bullpen_flip_rate": {
+    "description": "FS-004 state-path feature: away_story_prior_bullpen_flip_rate.",
+    "dtype": "number",
+    "feature_family": "story_memory",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_story_prior_days_since_game": {
+    "description": "FS-004 state-path feature: away_story_prior_days_since_game.",
+    "dtype": "number",
+    "feature_family": "story_memory",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_story_prior_game_count": {
+    "description": "FS-004 state-path feature: away_story_prior_game_count.",
+    "dtype": "number",
+    "feature_family": "story_memory",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_story_prior_last_runs_allowed": {
+    "description": "FS-004 state-path feature: away_story_prior_last_runs_allowed.",
+    "dtype": "number",
+    "feature_family": "story_memory",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_story_prior_last_runs_scored": {
+    "description": "FS-004 state-path feature: away_story_prior_last_runs_scored.",
+    "dtype": "number",
+    "feature_family": "story_memory",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_story_prior_last_traffic_no_conversion_flag": {
+    "description": "FS-004 state-path feature: away_story_prior_last_traffic_no_conversion_flag.",
+    "dtype": "number",
+    "feature_family": "story_memory",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_story_prior_runs_allowed_mean": {
+    "description": "FS-004 state-path feature: away_story_prior_runs_allowed_mean.",
+    "dtype": "number",
+    "feature_family": "story_memory",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_story_prior_runs_scored_mean": {
+    "description": "FS-004 state-path feature: away_story_prior_runs_scored_mean.",
+    "dtype": "number",
+    "feature_family": "story_memory",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_story_prior_starter_cracked_rate": {
+    "description": "FS-004 state-path feature: away_story_prior_starter_cracked_rate.",
+    "dtype": "number",
+    "feature_family": "story_memory",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_story_prior_total_runs_mean": {
+    "description": "FS-004 state-path feature: away_story_prior_total_runs_mean.",
+    "dtype": "number",
+    "feature_family": "story_memory",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "away_story_prior_traffic_no_conversion_rate": {
+    "description": "FS-004 state-path feature: away_story_prior_traffic_no_conversion_rate.",
+    "dtype": "number",
+    "feature_family": "story_memory",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "game_away_team_id": {
+    "description": "Away team id.",
+    "dtype": "string",
+    "feature_family": "metadata",
+    "leakage_class": "pregame_safe",
+    "role": "metadata",
+    "source": "games"
+  },
+  "game_date": {
+    "description": "Game date.",
+    "dtype": "date",
+    "feature_family": "time_key",
+    "leakage_class": "pregame_safe",
+    "role": "time_key",
+    "source": "games"
+  },
+  "game_home_team_id": {
+    "description": "Home team id.",
+    "dtype": "string",
+    "feature_family": "metadata",
+    "leakage_class": "pregame_safe",
+    "role": "metadata",
+    "source": "games"
+  },
+  "game_id": {
+    "description": "Stable typed game id.",
+    "dtype": "string",
+    "feature_family": "primary_key",
+    "leakage_class": "pregame_safe",
+    "role": "primary_key",
+    "source": "games"
+  },
+  "game_season": {
+    "description": "Season.",
+    "dtype": "integer",
+    "feature_family": "game_context",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "games"
+  },
+  "game_series_game_number": {
+    "description": "Series game number.",
+    "dtype": "integer",
+    "feature_family": "game_context",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "games"
+  },
+  "game_start_time_utc": {
+    "description": "Scheduled start.",
+    "dtype": "timestamp",
+    "feature_family": "metadata",
+    "leakage_class": "pregame_safe",
+    "role": "metadata",
+    "source": "games"
+  },
+  "game_status": {
+    "description": "Typed status.",
+    "dtype": "string",
+    "feature_family": "metadata",
+    "leakage_class": "pregame_safe",
+    "role": "metadata",
+    "source": "games"
+  },
+  "game_venue_id": {
+    "description": "Venue id.",
+    "dtype": "string",
+    "feature_family": "game_context",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "games"
+  },
+  "home_hitter_reliever_chain_phase_ready_flag": {
+    "description": "FS-004 state-path feature: home_hitter_reliever_chain_phase_ready_flag.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_hitter_starter_phase_command_stress_mean": {
+    "description": "FS-004 state-path feature: home_hitter_starter_phase_command_stress_mean.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_hitter_starter_phase_damage_fit_mean": {
+    "description": "FS-004 state-path feature: home_hitter_starter_phase_damage_fit_mean.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_hitter_starter_phase_matchup_count": {
+    "description": "FS-004 state-path feature: home_hitter_starter_phase_matchup_count.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_hitter_starter_phase_pitch_fit_damage_mean": {
+    "description": "FS-004 state-path feature: home_hitter_starter_phase_pitch_fit_damage_mean.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_hitter_starter_phase_pitch_fit_whiff_mean": {
+    "description": "FS-004 state-path feature: home_hitter_starter_phase_pitch_fit_whiff_mean.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_hitter_starter_phase_traffic_fit_mean": {
+    "description": "FS-004 state-path feature: home_hitter_starter_phase_traffic_fit_mean.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_lineup_complete_flag": {
+    "description": "FS-004 state-path feature: home_lineup_complete_flag.",
+    "dtype": "number",
+    "feature_family": "hitter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_lineup_known_flag": {
+    "description": "FS-004 state-path feature: home_lineup_known_flag.",
+    "dtype": "number",
+    "feature_family": "hitter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_lineup_player_count": {
+    "description": "FS-004 state-path feature: home_lineup_player_count.",
+    "dtype": "number",
+    "feature_family": "hitter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_reliever_availability_score_mean": {
+    "description": "FS-004 state-path feature: home_reliever_availability_score_mean.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_reliever_chain_candidate_count": {
+    "description": "FS-004 state-path feature: home_reliever_chain_candidate_count.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_reliever_chain_current_run_length_churn": {
+    "description": "FS-004 state-path feature: home_reliever_chain_current_run_length_churn.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_reliever_chain_expected_outs_sum": {
+    "description": "FS-004 state-path feature: home_reliever_chain_expected_outs_sum.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_reliever_chain_first_up_entropy": {
+    "description": "FS-004 state-path feature: home_reliever_chain_first_up_entropy.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_reliever_chain_first_up_top1_probability": {
+    "description": "FS-004 state-path feature: home_reliever_chain_first_up_top1_probability.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_reliever_chain_first_up_top2_probability_mass": {
+    "description": "FS-004 state-path feature: home_reliever_chain_first_up_top2_probability_mass.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_reliever_chain_last_first_up_outs": {
+    "description": "FS-004 state-path feature: home_reliever_chain_last_first_up_outs.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_reliever_chain_last_relief_runs_allowed": {
+    "description": "FS-004 state-path feature: home_reliever_chain_last_relief_runs_allowed.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_reliever_chain_last_reliever_count": {
+    "description": "FS-004 state-path feature: home_reliever_chain_last_reliever_count.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_reliever_chain_prior_churn_rate": {
+    "description": "FS-004 state-path feature: home_reliever_chain_prior_churn_rate.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_reliever_chain_prior_first_up_outs_mean": {
+    "description": "FS-004 state-path feature: home_reliever_chain_prior_first_up_outs_mean.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_reliever_chain_prior_game_count": {
+    "description": "FS-004 state-path feature: home_reliever_chain_prior_game_count.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_reliever_chain_prior_relief_runs_allowed_mean": {
+    "description": "FS-004 state-path feature: home_reliever_chain_prior_relief_runs_allowed_mean.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_reliever_chain_prior_reliever_count_mean": {
+    "description": "FS-004 state-path feature: home_reliever_chain_prior_reliever_count_mean.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_reliever_chain_rank1_expected_outs": {
+    "description": "FS-004 state-path feature: home_reliever_chain_rank1_expected_outs.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_reliever_command_risk_mean": {
+    "description": "FS-004 state-path feature: home_reliever_command_risk_mean.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_reliever_fatigue_score_mean": {
+    "description": "FS-004 state-path feature: home_reliever_fatigue_score_mean.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_reliever_free_pass_rate_mean": {
+    "description": "FS-004 state-path feature: home_reliever_free_pass_rate_mean.",
+    "dtype": "number",
+    "feature_family": "reliever_chain",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_starter_current_run_length_damage_start": {
+    "description": "FS-004 state-path feature: home_starter_current_run_length_damage_start.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_starter_current_run_length_short_start": {
+    "description": "FS-004 state-path feature: home_starter_current_run_length_short_start.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_starter_known_flag": {
+    "description": "FS-004 state-path feature: home_starter_known_flag.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_starter_last_outs": {
+    "description": "FS-004 state-path feature: home_starter_last_outs.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_starter_last_outs_vs_prior_baseline": {
+    "description": "FS-004 state-path feature: home_starter_last_outs_vs_prior_baseline.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_starter_last_runs_allowed": {
+    "description": "FS-004 state-path feature: home_starter_last_runs_allowed.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_starter_last_runs_allowed_vs_prior_baseline": {
+    "description": "FS-004 state-path feature: home_starter_last_runs_allowed_vs_prior_baseline.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_starter_prior_damage_start_rate": {
+    "description": "FS-004 state-path feature: home_starter_prior_damage_start_rate.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_starter_prior_outs_mean": {
+    "description": "FS-004 state-path feature: home_starter_prior_outs_mean.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_starter_prior_outs_std": {
+    "description": "FS-004 state-path feature: home_starter_prior_outs_std.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_starter_prior_runs_allowed_mean": {
+    "description": "FS-004 state-path feature: home_starter_prior_runs_allowed_mean.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_starter_prior_runs_allowed_std": {
+    "description": "FS-004 state-path feature: home_starter_prior_runs_allowed_std.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_starter_prior_short_start_rate": {
+    "description": "FS-004 state-path feature: home_starter_prior_short_start_rate.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_starter_prior_start_count": {
+    "description": "FS-004 state-path feature: home_starter_prior_start_count.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_starter_prior_strikeout_rate_per_batter": {
+    "description": "FS-004 state-path feature: home_starter_prior_strikeout_rate_per_batter.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_starter_prior_walk_rate_per_batter": {
+    "description": "FS-004 state-path feature: home_starter_prior_walk_rate_per_batter.",
+    "dtype": "number",
+    "feature_family": "starter_path",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_story_current_run_length_starter_cracked": {
+    "description": "FS-004 state-path feature: home_story_current_run_length_starter_cracked.",
+    "dtype": "number",
+    "feature_family": "story_memory",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_story_current_run_length_traffic_no_conversion": {
+    "description": "FS-004 state-path feature: home_story_current_run_length_traffic_no_conversion.",
+    "dtype": "number",
+    "feature_family": "story_memory",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_story_prior_bullpen_flip_rate": {
+    "description": "FS-004 state-path feature: home_story_prior_bullpen_flip_rate.",
+    "dtype": "number",
+    "feature_family": "story_memory",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_story_prior_days_since_game": {
+    "description": "FS-004 state-path feature: home_story_prior_days_since_game.",
+    "dtype": "number",
+    "feature_family": "story_memory",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_story_prior_game_count": {
+    "description": "FS-004 state-path feature: home_story_prior_game_count.",
+    "dtype": "number",
+    "feature_family": "story_memory",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_story_prior_last_runs_allowed": {
+    "description": "FS-004 state-path feature: home_story_prior_last_runs_allowed.",
+    "dtype": "number",
+    "feature_family": "story_memory",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_story_prior_last_runs_scored": {
+    "description": "FS-004 state-path feature: home_story_prior_last_runs_scored.",
+    "dtype": "number",
+    "feature_family": "story_memory",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_story_prior_last_traffic_no_conversion_flag": {
+    "description": "FS-004 state-path feature: home_story_prior_last_traffic_no_conversion_flag.",
+    "dtype": "number",
+    "feature_family": "story_memory",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_story_prior_runs_allowed_mean": {
+    "description": "FS-004 state-path feature: home_story_prior_runs_allowed_mean.",
+    "dtype": "number",
+    "feature_family": "story_memory",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_story_prior_runs_scored_mean": {
+    "description": "FS-004 state-path feature: home_story_prior_runs_scored_mean.",
+    "dtype": "number",
+    "feature_family": "story_memory",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_story_prior_starter_cracked_rate": {
+    "description": "FS-004 state-path feature: home_story_prior_starter_cracked_rate.",
+    "dtype": "number",
+    "feature_family": "story_memory",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_story_prior_total_runs_mean": {
+    "description": "FS-004 state-path feature: home_story_prior_total_runs_mean.",
+    "dtype": "number",
+    "feature_family": "story_memory",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "home_story_prior_traffic_no_conversion_rate": {
+    "description": "FS-004 state-path feature: home_story_prior_traffic_no_conversion_rate.",
+    "dtype": "number",
+    "feature_family": "story_memory",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "market_any_snapshot_count": {
+    "description": "FS-004 state-path feature: market_any_snapshot_count.",
+    "dtype": "number",
+    "feature_family": "market_context",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "typed_sql_mlb_db"
+  },
+  "target_away_starter_cracked_flag": {
+    "description": "Away starter-cracked target.",
+    "dtype": "integer",
+    "feature_family": "target",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_story_signals"
+  },
+  "target_away_team_runs_f5": {
+    "description": "Away first-five runs.",
+    "dtype": "integer",
+    "feature_family": "target",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_outcomes"
+  },
+  "target_away_team_runs_final": {
+    "description": "Away final runs.",
+    "dtype": "integer",
+    "feature_family": "target",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_outcomes"
+  },
+  "target_away_traffic_no_conversion_flag": {
+    "description": "Away traffic no-conversion target.",
+    "dtype": "integer",
+    "feature_family": "target",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_story_signals"
+  },
+  "target_bullpen_flip_flag": {
+    "description": "Bullpen-flip target flag.",
+    "dtype": "integer",
+    "feature_family": "target",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_story_signals"
+  },
+  "target_chaos_game_flag": {
+    "description": "High-tail/chaos game flag.",
+    "dtype": "integer",
+    "feature_family": "target",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_story_labels,game_outcomes"
+  },
+  "target_f5_bucket": {
+    "description": "First-five regime bucket.",
+    "dtype": "string",
+    "feature_family": "target",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_story_labels"
+  },
+  "target_home_starter_cracked_flag": {
+    "description": "Home starter-cracked target.",
+    "dtype": "integer",
+    "feature_family": "target",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_story_signals"
+  },
+  "target_home_team_runs_f5": {
+    "description": "Home first-five runs.",
+    "dtype": "integer",
+    "feature_family": "target",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_outcomes"
+  },
+  "target_home_team_runs_final": {
+    "description": "Home final runs.",
+    "dtype": "integer",
+    "feature_family": "target",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_outcomes"
+  },
+  "target_home_traffic_no_conversion_flag": {
+    "description": "Home traffic no-conversion target.",
+    "dtype": "integer",
+    "feature_family": "target",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_story_signals"
+  },
+  "target_total_bucket": {
+    "description": "Final total regime bucket.",
+    "dtype": "string",
+    "feature_family": "target",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_story_labels"
+  },
+  "target_total_runs_f5": {
+    "description": "First-five combined runs.",
+    "dtype": "integer",
+    "feature_family": "target",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_outcomes"
+  },
+  "target_total_runs_final": {
+    "description": "Final combined runs.",
+    "dtype": "integer",
+    "feature_family": "target",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_outcomes"
+  }
+}

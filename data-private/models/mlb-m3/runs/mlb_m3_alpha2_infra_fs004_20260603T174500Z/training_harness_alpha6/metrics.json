@@ -1,0 +1,52 @@
+{
+  "candidate_models": {
+    "f5_total": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6/candidate_models/f5_total_ridge_numpy_v0.json",
+    "full_game_total": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6/candidate_models/full_game_total_ridge_numpy_v0.json"
+  },
+  "family_ablations_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6/family_ablations.json",
+  "feature_artifact_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_004_state_path_redesign_v0/m3_fs_004_state_path_redesign_v0_20260603T174237Z/matrix.parquet",
+  "finished_at": "2026-06-03T17:43:48Z",
+  "lane_reports": {
+    "f5_total": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6/lane_reports/f5_total.json",
+    "full_game_total": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6/lane_reports/full_game_total.json"
+  },
+  "lanes": [
+    "full_game_total",
+    "f5_total"
+  ],
+  "non_goals": [
+    "no picks",
+    "no selection rows",
+    "no player prop pricing",
+    "no market fair probability claims",
+    "no simulator event logs",
+    "no promotion decisions",
+    "no claim that M3 is better"
+  ],
+  "run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+  "source_manifest_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/manifest.json",
+  "split_summary": {
+    "not_a_backtest": true,
+    "policy": "chronological_alpha_harness",
+    "status": "split_created",
+    "train_candidate_range": {
+      "end": "2026-05-15",
+      "start": "2026-03-26"
+    },
+    "train_max_game_date": "2026-05-15 00:00:00",
+    "train_min_game_date": "2026-03-26 00:00:00",
+    "train_row_count": 668,
+    "validation_candidate_range": {
+      "end": "2026-05-31",
+      "start": "2026-05-16"
+    },
+    "validation_max_game_date": "2026-05-31 00:00:00",
+    "validation_min_game_date": "2026-05-16 00:00:00",
+    "validation_row_count": 218
+  },
+  "started_at": "2026-06-03T17:43:47Z",
+  "status": "harness_metrics_created",
+  "target_summary_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6/target_summary.json",
+  "walk_forward_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6/walk_forward.json",
+  "warnings": []
+}

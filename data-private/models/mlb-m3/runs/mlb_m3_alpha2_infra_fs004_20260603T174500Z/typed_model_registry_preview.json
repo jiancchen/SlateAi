@@ -1,0 +1,800 @@
+{
+  "model_component_runs": [
+    {
+      "component_model_id": "game_shape_distribution",
+      "component_role": "latent_game_environment",
+      "component_run_id": null,
+      "created_at": "2026-06-03T17:43:29Z",
+      "details_json": {
+        "component_family": "game_shape_distribution",
+        "future_outputs": [
+          "run_environment",
+          "chaos_game",
+          "blowout",
+          "late_volatility"
+        ],
+        "role": "latent_game_environment",
+        "status": "placeholder_not_trained"
+      },
+      "model_component_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:game_shape_distribution",
+      "parent_model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "source_detail_json": {
+        "future_outputs": [
+          "run_environment",
+          "chaos_game",
+          "blowout",
+          "late_volatility"
+        ]
+      },
+      "source_pk": "game_shape_distribution",
+      "source_table": "m3_alpha2_component_registry",
+      "status": "placeholder_not_trained"
+    },
+    {
+      "component_model_id": "team_run_distribution",
+      "component_role": "team_scoring_path",
+      "component_run_id": null,
+      "created_at": "2026-06-03T17:43:29Z",
+      "details_json": {
+        "component_family": "team_run_distribution",
+        "future_outputs": [
+          "full_game_runs",
+          "first_five_runs",
+          "late_runs",
+          "team_plate_appearances"
+        ],
+        "role": "team_scoring_path",
+        "status": "placeholder_not_trained"
+      },
+      "model_component_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:team_run_distribution",
+      "parent_model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "source_detail_json": {
+        "future_outputs": [
+          "full_game_runs",
+          "first_five_runs",
+          "late_runs",
+          "team_plate_appearances"
+        ]
+      },
+      "source_pk": "team_run_distribution",
+      "source_table": "m3_alpha2_component_registry",
+      "status": "placeholder_not_trained"
+    },
+    {
+      "component_model_id": "starter_exit_distribution",
+      "component_role": "starter_path",
+      "component_run_id": null,
+      "created_at": "2026-06-03T17:43:29Z",
+      "details_json": {
+        "component_family": "starter_exit_distribution",
+        "future_outputs": [
+          "outs_recorded",
+          "hook_timing",
+          "bridge_entry_point",
+          "workload_path"
+        ],
+        "role": "starter_path",
+        "status": "placeholder_not_trained"
+      },
+      "model_component_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:starter_exit_distribution",
+      "parent_model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "source_detail_json": {
+        "future_outputs": [
+          "outs_recorded",
+          "hook_timing",
+          "bridge_entry_point",
+          "workload_path"
+        ]
+      },
+      "source_pk": "starter_exit_distribution",
+      "source_table": "m3_alpha2_component_registry",
+      "status": "placeholder_not_trained"
+    },
+    {
+      "component_model_id": "starter_stat_distribution",
+      "component_role": "starter_performance",
+      "component_run_id": null,
+      "created_at": "2026-06-03T17:43:29Z",
+      "details_json": {
+        "component_family": "starter_stat_distribution",
+        "future_outputs": [
+          "strikeouts",
+          "runs_allowed",
+          "walks_allowed",
+          "hits_allowed",
+          "home_runs_allowed"
+        ],
+        "role": "starter_performance",
+        "status": "placeholder_not_trained"
+      },
+      "model_component_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:starter_stat_distribution",
+      "parent_model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "source_detail_json": {
+        "future_outputs": [
+          "strikeouts",
+          "runs_allowed",
+          "walks_allowed",
+          "hits_allowed",
+          "home_runs_allowed"
+        ]
+      },
+      "source_pk": "starter_stat_distribution",
+      "source_table": "m3_alpha2_component_registry",
+      "status": "placeholder_not_trained"
+    },
+    {
+      "component_model_id": "bullpen_shape_distribution",
+      "component_role": "team_bullpen_churn",
+      "component_run_id": null,
+      "created_at": "2026-06-03T17:43:29Z",
+      "details_json": {
+        "component_family": "bullpen_shape_distribution",
+        "future_outputs": [
+          "normal_chain",
+          "compressed_chain",
+          "scramble_chain",
+          "churn_regime"
+        ],
+        "role": "team_bullpen_churn",
+        "status": "placeholder_not_trained"
+      },
+      "model_component_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:bullpen_shape_distribution",
+      "parent_model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "source_detail_json": {
+        "future_outputs": [
+          "normal_chain",
+          "compressed_chain",
+          "scramble_chain",
+          "churn_regime"
+        ]
+      },
+      "source_pk": "bullpen_shape_distribution",
+      "source_table": "m3_alpha2_component_registry",
+      "status": "placeholder_not_trained"
+    },
+    {
+      "component_model_id": "reliever_availability_distribution",
+      "component_role": "individual_reliever_reset",
+      "component_run_id": null,
+      "created_at": "2026-06-03T17:43:29Z",
+      "details_json": {
+        "component_family": "reliever_availability_distribution",
+        "future_outputs": [
+          "candidate_availability",
+          "quick_reuse_probability",
+          "reset_state",
+          "bulk_exception_probability"
+        ],
+        "role": "individual_reliever_reset",
+        "status": "placeholder_not_trained"
+      },
+      "model_component_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:reliever_availability_distribution",
+      "parent_model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "source_detail_json": {
+        "future_outputs": [
+          "candidate_availability",
+          "quick_reuse_probability",
+          "reset_state",
+          "bulk_exception_probability"
+        ]
+      },
+      "source_pk": "reliever_availability_distribution",
+      "source_table": "m3_alpha2_component_registry",
+      "status": "placeholder_not_trained"
+    },
+    {
+      "component_model_id": "first_up_reliever_router",
+      "component_role": "first_reliever_identity_route",
+      "component_run_id": null,
+      "created_at": "2026-06-03T17:43:29Z",
+      "details_json": {
+        "component_family": "first_up_reliever_router",
+        "future_outputs": [
+          "first_up_probability_by_arm",
+          "candidate_pool_entropy",
+          "role_exception_probability"
+        ],
+        "role": "first_reliever_identity_route",
+        "status": "placeholder_not_trained"
+      },
+      "model_component_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:first_up_reliever_router",
+      "parent_model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "source_detail_json": {
+        "future_outputs": [
+          "first_up_probability_by_arm",
+          "candidate_pool_entropy",
+          "role_exception_probability"
+        ]
+      },
+      "source_pk": "first_up_reliever_router",
+      "source_table": "m3_alpha2_component_registry",
+      "status": "placeholder_not_trained"
+    },
+    {
+      "component_model_id": "reliever_chain_distribution",
+      "component_role": "relief_path",
+      "component_run_id": null,
+      "created_at": "2026-06-03T17:43:29Z",
+      "details_json": {
+        "component_family": "reliever_chain_distribution",
+        "future_outputs": [
+          "chain_length",
+          "second_arm_probability",
+          "inherited_runner_state",
+          "chain_break_probability"
+        ],
+        "role": "relief_path",
+        "status": "placeholder_not_trained"
+      },
+      "model_component_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:reliever_chain_distribution",
+      "parent_model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "source_detail_json": {
+        "future_outputs": [
+          "chain_length",
+          "second_arm_probability",
+          "inherited_runner_state",
+          "chain_break_probability"
+        ]
+      },
+      "source_pk": "reliever_chain_distribution",
+      "source_table": "m3_alpha2_component_registry",
+      "status": "placeholder_not_trained"
+    },
+    {
+      "component_model_id": "reliever_stat_distribution",
+      "component_role": "reliever_performance",
+      "component_run_id": null,
+      "created_at": "2026-06-03T17:43:29Z",
+      "details_json": {
+        "component_family": "reliever_stat_distribution",
+        "future_outputs": [
+          "outs_recorded",
+          "pitches",
+          "batters_faced",
+          "strikeouts",
+          "walks_allowed",
+          "runs_allowed"
+        ],
+        "role": "reliever_performance",
+        "status": "placeholder_not_trained"
+      },
+      "model_component_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:reliever_stat_distribution",
+      "parent_model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "source_detail_json": {
+        "future_outputs": [
+          "outs_recorded",
+          "pitches",
+          "batters_faced",
+          "strikeouts",
+          "walks_allowed",
+          "runs_allowed"
+        ]
+      },
+      "source_pk": "reliever_stat_distribution",
+      "source_table": "m3_alpha2_component_registry",
+      "status": "placeholder_not_trained"
+    },
+    {
+      "component_model_id": "pa_event_distribution",
+      "component_role": "plate_appearance_event_path",
+      "component_run_id": null,
+      "created_at": "2026-06-03T17:43:29Z",
+      "details_json": {
+        "component_family": "pa_event_distribution",
+        "future_outputs": [
+          "single",
+          "double",
+          "triple",
+          "home_run",
+          "walk",
+          "strikeout",
+          "ball_in_play_out"
+        ],
+        "role": "plate_appearance_event_path",
+        "status": "placeholder_not_trained"
+      },
+      "model_component_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:pa_event_distribution",
+      "parent_model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "source_detail_json": {
+        "future_outputs": [
+          "single",
+          "double",
+          "triple",
+          "home_run",
+          "walk",
+          "strikeout",
+          "ball_in_play_out"
+        ]
+      },
+      "source_pk": "pa_event_distribution",
+      "source_table": "m3_alpha2_component_registry",
+      "status": "placeholder_not_trained"
+    },
+    {
+      "component_model_id": "hitter_stat_distribution",
+      "component_role": "hitter_game_stats",
+      "component_run_id": null,
+      "created_at": "2026-06-03T17:43:29Z",
+      "details_json": {
+        "component_family": "hitter_stat_distribution",
+        "future_outputs": [
+          "hits",
+          "total_bases",
+          "home_runs",
+          "rbi",
+          "runs",
+          "walks",
+          "strikeouts"
+        ],
+        "role": "hitter_game_stats",
+        "status": "placeholder_not_trained"
+      },
+      "model_component_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:hitter_stat_distribution",
+      "parent_model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "source_detail_json": {
+        "future_outputs": [
+          "hits",
+          "total_bases",
+          "home_runs",
+          "rbi",
+          "runs",
+          "walks",
+          "strikeouts"
+        ]
+      },
+      "source_pk": "hitter_stat_distribution",
+      "source_table": "m3_alpha2_component_registry",
+      "status": "placeholder_not_trained"
+    },
+    {
+      "component_model_id": "calibration_layer",
+      "component_role": "probability_calibration",
+      "component_run_id": null,
+      "created_at": "2026-06-03T17:43:29Z",
+      "details_json": {
+        "component_family": "calibration_layer",
+        "future_outputs": [
+          "calibrated_probabilities",
+          "slice_calibration_metrics",
+          "promotion_gate_decisions"
+        ],
+        "role": "probability_calibration",
+        "status": "placeholder_not_trained"
+      },
+      "model_component_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:calibration_layer",
+      "parent_model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "source_detail_json": {
+        "future_outputs": [
+          "calibrated_probabilities",
+          "slice_calibration_metrics",
+          "promotion_gate_decisions"
+        ]
+      },
+      "source_pk": "calibration_layer",
+      "source_table": "m3_alpha2_component_registry",
+      "status": "placeholder_not_trained"
+    }
+  ],
+  "model_run_artifacts": [
+    {
+      "artifact_path": "/Users/jcchen/Documents/New project/data-migration/reports/m3_fs_004_state_path_redesign_v0_2026-03-26_to_2026-05-31.json",
+      "artifact_role": "feature_report",
+      "created_at": "2026-06-03T17:43:29Z",
+      "exists_flag": 1,
+      "model_run_artifact_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:feature_report",
+      "model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "sha256": "abd145894ace5128210fcea34e9d9f137e564b8febcb0b66b2388bc6c3ed6e47",
+      "source_detail_json": {
+        "bytes": 33154
+      },
+      "source_pk": "m3_fs_004_state_path_redesign_v0_20260603T174237Z",
+      "source_table": "alpha1_report"
+    },
+    {
+      "artifact_path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_004_state_path_redesign_v0/m3_fs_004_state_path_redesign_v0_20260603T174237Z/matrix.parquet",
+      "artifact_role": "feature_matrix",
+      "created_at": "2026-06-03T17:43:29Z",
+      "exists_flag": 1,
+      "model_run_artifact_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:feature_matrix",
+      "model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "sha256": "d52bec9760f048ca18bf9a867cbcc9038db53f023f09e8a89c35b9a9d0e635e3",
+      "source_detail_json": {
+        "bytes": 310462
+      },
+      "source_pk": "m3_fs_004_state_path_redesign_v0_20260603T174237Z",
+      "source_table": "alpha1_feature_artifact"
+    },
+    {
+      "artifact_path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_004_state_path_redesign_v0/m3_fs_004_state_path_redesign_v0_20260603T174237Z/data_dictionary.json",
+      "artifact_role": "data_dictionary",
+      "created_at": "2026-06-03T17:43:29Z",
+      "exists_flag": 1,
+      "model_run_artifact_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:data_dictionary",
+      "model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "sha256": "991b9db9053e2f8f80fda2ba15f6dd67db6fa15691fcbf1e734f8ade14141b83",
+      "source_detail_json": {
+        "bytes": 39493
+      },
+      "source_pk": "m3_fs_004_state_path_redesign_v0_20260603T174237Z",
+      "source_table": "alpha1_feature_artifact"
+    },
+    {
+      "artifact_path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_004_state_path_redesign_v0/m3_fs_004_state_path_redesign_v0_20260603T174237Z/lineage.json",
+      "artifact_role": "lineage",
+      "created_at": "2026-06-03T17:43:29Z",
+      "exists_flag": 1,
+      "model_run_artifact_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:lineage",
+      "model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "sha256": "63ecadc3133ae29bf0ccaa191957d2f3b6c5fc73dead5911abd8b67982f38f29",
+      "source_detail_json": {
+        "bytes": 716
+      },
+      "source_pk": "m3_fs_004_state_path_redesign_v0_20260603T174237Z",
+      "source_table": "alpha1_feature_artifact"
+    },
+    {
+      "artifact_path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_004_state_path_redesign_v0/m3_fs_004_state_path_redesign_v0_20260603T174237Z/missingness.json",
+      "artifact_role": "missingness",
+      "created_at": "2026-06-03T17:43:29Z",
+      "exists_flag": 1,
+      "model_run_artifact_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:missingness",
+      "model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "sha256": "34536bff1b37eb66a13459f34b4fd65dad139f0ee4788cea69d759f305614016",
+      "source_detail_json": {
+        "bytes": 18728
+      },
+      "source_pk": "m3_fs_004_state_path_redesign_v0_20260603T174237Z",
+      "source_table": "alpha1_feature_artifact"
+    },
+    {
+      "artifact_path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_004_state_path_redesign_v0/m3_fs_004_state_path_redesign_v0_20260603T174237Z/leakage.json",
+      "artifact_role": "leakage",
+      "created_at": "2026-06-03T17:43:29Z",
+      "exists_flag": 1,
+      "model_run_artifact_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:leakage",
+      "model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "sha256": "3662c7e3b2bb540ffe8ee31b054a6892809951222defc3ee6d258b75e615bea7",
+      "source_detail_json": {
+        "bytes": 6373
+      },
+      "source_pk": "m3_fs_004_state_path_redesign_v0_20260603T174237Z",
+      "source_table": "alpha1_feature_artifact"
+    },
+    {
+      "artifact_path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/features/m3_fs_004_state_path_redesign_v0/m3_fs_004_state_path_redesign_v0_20260603T174237Z/coverage.json",
+      "artifact_role": "coverage",
+      "created_at": "2026-06-03T17:43:29Z",
+      "exists_flag": 1,
+      "model_run_artifact_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:coverage",
+      "model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "sha256": "a9b410cf3b6926d72eab251f5938701a26890289e24576817d0696b3d3c12313",
+      "source_detail_json": {
+        "bytes": 10192
+      },
+      "source_pk": "m3_fs_004_state_path_redesign_v0_20260603T174237Z",
+      "source_table": "alpha1_feature_artifact"
+    },
+    {
+      "artifact_path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/manifest.json",
+      "artifact_role": "manifest",
+      "created_at": "2026-06-03T17:43:29Z",
+      "exists_flag": 1,
+      "model_run_artifact_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:manifest",
+      "model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "sha256": "7b397bca8b966193af987f02f3890150911011327ba327b114c20e781c4af13b",
+      "source_detail_json": {
+        "bytes": 18315
+      },
+      "source_pk": "m3_fs_004_state_path_redesign_v0_20260603T174237Z",
+      "source_table": "alpha2_generated"
+    },
+    {
+      "artifact_path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/dashboard_state.json",
+      "artifact_role": "dashboard_state",
+      "created_at": "2026-06-03T17:43:29Z",
+      "exists_flag": 1,
+      "model_run_artifact_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:dashboard_state",
+      "model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "sha256": "788d5018aed27306333d5eb9c037257574fdadf9d7acbe7742d704a0d1ccf55c",
+      "source_detail_json": {
+        "bytes": 1444
+      },
+      "source_pk": "m3_fs_004_state_path_redesign_v0_20260603T174237Z",
+      "source_table": "alpha2_generated"
+    },
+    {
+      "artifact_path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/lineage.json",
+      "artifact_role": "lineage",
+      "created_at": "2026-06-03T17:43:29Z",
+      "exists_flag": 1,
+      "model_run_artifact_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:lineage",
+      "model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "sha256": "7e9043631480350af3bdafb5cee1fb80355f1594dfb7e082e8fc653384bb6cfb",
+      "source_detail_json": {
+        "bytes": 3733
+      },
+      "source_pk": "m3_fs_004_state_path_redesign_v0_20260603T174237Z",
+      "source_table": "alpha2_generated"
+    },
+    {
+      "artifact_path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/warnings.json",
+      "artifact_role": "warnings",
+      "created_at": "2026-06-03T17:43:29Z",
+      "exists_flag": 1,
+      "model_run_artifact_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:warnings",
+      "model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "sha256": "55a794bcdc646b1bc26b13701f47c2b9600322e2cb1695d7e6d29645f549e23a",
+      "source_detail_json": {
+        "bytes": 261
+      },
+      "source_pk": "m3_fs_004_state_path_redesign_v0_20260603T174237Z",
+      "source_table": "alpha2_generated"
+    },
+    {
+      "artifact_path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/report.md",
+      "artifact_role": "report",
+      "created_at": "2026-06-03T17:43:29Z",
+      "exists_flag": 1,
+      "model_run_artifact_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:report",
+      "model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "sha256": "96f727a0b90d259e9a6eac8d727f9da3e5be5209b464beba222f52b16c4a1f0b",
+      "source_detail_json": {
+        "bytes": 1047
+      },
+      "source_pk": "m3_fs_004_state_path_redesign_v0_20260603T174237Z",
+      "source_table": "alpha2_generated"
+    },
+    {
+      "artifact_path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/artifacts.json",
+      "artifact_role": "artifacts_index",
+      "created_at": "2026-06-03T17:43:29Z",
+      "exists_flag": 1,
+      "model_run_artifact_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:artifacts_index",
+      "model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "sha256": "0cedc16921b56d882ed1660f4aeafdb30e4085ae61c274ad367a42a1e75c723b",
+      "source_detail_json": {
+        "bytes": 4743
+      },
+      "source_pk": "m3_fs_004_state_path_redesign_v0_20260603T174237Z",
+      "source_table": "alpha2_generated"
+    }
+  ],
+  "model_run_lanes": [
+    {
+      "avg_pnl_per100": null,
+      "created_at": "2026-06-03T17:43:29Z",
+      "details_json": {
+        "claims": [],
+        "lane": "full_game_total",
+        "status": "contract_only",
+        "target_columns": [
+          "target_total_runs_final",
+          "target_total_bucket"
+        ]
+      },
+      "graded_count": 0,
+      "hit_count": null,
+      "hit_pct": null,
+      "lane": "full_game_total",
+      "miss_count": null,
+      "model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "model_run_lane_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:full_game_total",
+      "row_count": 0,
+      "source_detail_json": {
+        "target_columns": [
+          "target_total_runs_final",
+          "target_total_bucket"
+        ]
+      },
+      "source_pk": "full_game_total",
+      "source_table": "m3_alpha2_lane_placeholders",
+      "status": "contract_only"
+    },
+    {
+      "avg_pnl_per100": null,
+      "created_at": "2026-06-03T17:43:29Z",
+      "details_json": {
+        "claims": [],
+        "lane": "f5_total",
+        "status": "contract_only",
+        "target_columns": [
+          "target_total_runs_f5",
+          "target_f5_bucket"
+        ]
+      },
+      "graded_count": 0,
+      "hit_count": null,
+      "hit_pct": null,
+      "lane": "f5_total",
+      "miss_count": null,
+      "model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "model_run_lane_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:f5_total",
+      "row_count": 0,
+      "source_detail_json": {
+        "target_columns": [
+          "target_total_runs_f5",
+          "target_f5_bucket"
+        ]
+      },
+      "source_pk": "f5_total",
+      "source_table": "m3_alpha2_lane_placeholders",
+      "status": "contract_only"
+    },
+    {
+      "avg_pnl_per100": null,
+      "created_at": "2026-06-03T17:43:29Z",
+      "details_json": {
+        "claims": [],
+        "lane": "moneyline",
+        "status": "deferred",
+        "target_columns": []
+      },
+      "graded_count": 0,
+      "hit_count": null,
+      "hit_pct": null,
+      "lane": "moneyline",
+      "miss_count": null,
+      "model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "model_run_lane_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:moneyline",
+      "row_count": 0,
+      "source_detail_json": {
+        "target_columns": []
+      },
+      "source_pk": "moneyline",
+      "source_table": "m3_alpha2_lane_placeholders",
+      "status": "deferred"
+    },
+    {
+      "avg_pnl_per100": null,
+      "created_at": "2026-06-03T17:43:29Z",
+      "details_json": {
+        "claims": [],
+        "lane": "team_total",
+        "status": "deferred",
+        "target_columns": [
+          "target_home_team_runs_final",
+          "target_away_team_runs_final"
+        ]
+      },
+      "graded_count": 0,
+      "hit_count": null,
+      "hit_pct": null,
+      "lane": "team_total",
+      "miss_count": null,
+      "model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "model_run_lane_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:team_total",
+      "row_count": 0,
+      "source_detail_json": {
+        "target_columns": [
+          "target_home_team_runs_final",
+          "target_away_team_runs_final"
+        ]
+      },
+      "source_pk": "team_total",
+      "source_table": "m3_alpha2_lane_placeholders",
+      "status": "deferred"
+    },
+    {
+      "avg_pnl_per100": null,
+      "created_at": "2026-06-03T17:43:29Z",
+      "details_json": {
+        "claims": [],
+        "lane": "starter_props",
+        "status": "deferred",
+        "target_columns": []
+      },
+      "graded_count": 0,
+      "hit_count": null,
+      "hit_pct": null,
+      "lane": "starter_props",
+      "miss_count": null,
+      "model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "model_run_lane_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:starter_props",
+      "row_count": 0,
+      "source_detail_json": {
+        "target_columns": []
+      },
+      "source_pk": "starter_props",
+      "source_table": "m3_alpha2_lane_placeholders",
+      "status": "deferred"
+    },
+    {
+      "avg_pnl_per100": null,
+      "created_at": "2026-06-03T17:43:29Z",
+      "details_json": {
+        "claims": [],
+        "lane": "reliever_props",
+        "status": "deferred",
+        "target_columns": []
+      },
+      "graded_count": 0,
+      "hit_count": null,
+      "hit_pct": null,
+      "lane": "reliever_props",
+      "miss_count": null,
+      "model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "model_run_lane_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:reliever_props",
+      "row_count": 0,
+      "source_detail_json": {
+        "target_columns": []
+      },
+      "source_pk": "reliever_props",
+      "source_table": "m3_alpha2_lane_placeholders",
+      "status": "deferred"
+    },
+    {
+      "avg_pnl_per100": null,
+      "created_at": "2026-06-03T17:43:29Z",
+      "details_json": {
+        "claims": [],
+        "lane": "hitter_props",
+        "status": "deferred",
+        "target_columns": []
+      },
+      "graded_count": 0,
+      "hit_count": null,
+      "hit_pct": null,
+      "lane": "hitter_props",
+      "miss_count": null,
+      "model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "model_run_lane_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z:hitter_props",
+      "row_count": 0,
+      "source_detail_json": {
+        "target_columns": []
+      },
+      "source_pk": "hitter_props",
+      "source_table": "m3_alpha2_lane_placeholders",
+      "status": "deferred"
+    }
+  ],
+  "model_runs": [
+    {
+      "artifact_summary_json": {
+        "artifact_count": 13,
+        "missing_artifact_count": 0,
+        "non_goals": [
+          "no trained model",
+          "no backtest edge claim",
+          "no simulator",
+          "no picks",
+          "no player prop pricing",
+          "no claim that M3 is better"
+        ],
+        "present_artifact_count": 13
+      },
+      "cartridge_path": null,
+      "created_at": "2026-06-03T17:43:29Z",
+      "input_count": 886,
+      "input_hash": "02d38dbe4d605b11a678ba01fd1e82b46e8e95264666be6b9549b841cd58372c",
+      "manifest_path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/manifest.json",
+      "model_id": "mlb-m3",
+      "model_run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
+      "model_version": "alpha-2-infrastructure",
+      "notes": "Alpha-2 infrastructure manifest only; no trained model, picks, simulator, prop pricing, or backtest edge claim.",
+      "output_count": 0,
+      "output_hash": null,
+      "run_date": "2026-06-03",
+      "run_type": "infrastructure_manifest",
+      "snapshot_hash": null,
+      "source_detail_json": {
+        "builder_version": "0.1.0",
+        "feature_report": "/Users/jcchen/Documents/New project/data-migration/reports/m3_fs_004_state_path_redesign_v0_2026-03-26_to_2026-05-31.json",
+        "feature_set_id": "m3_fs_004_state_path_redesign_v0",
+        "feature_set_version": "0.1.0"
+      },
+      "source_files": 13,
+      "source_hash": "e46a9a569a46e9c3c74093a554bc26416e3c6c1f91483990a9dbc2e7bb0c05da",
+      "source_pk": "m3_fs_004_state_path_redesign_v0_20260603T174237Z",
+      "source_table": "m3_feature_artifact",
+      "sport": "mlb",
+      "status": "manifest_created"
+    }
+  ],
+  "status": "preview_only_not_inserted",
+  "target_tables": [
+    "model_runs",
+    "model_run_artifacts",
+    "model_component_runs",
+    "model_run_lanes"
+  ]
+}

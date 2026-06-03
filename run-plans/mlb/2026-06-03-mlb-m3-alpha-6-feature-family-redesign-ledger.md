@@ -38,6 +38,10 @@ Status: opened
 | A6-W015 | Backfill canonical reliever chain-order fields | complete | `data-migration/reports/backfill_mlb_pitcher_appearance_chain_order_2026-06-03.json` | Populated `entry_order`, `first_inning`, and `first_half` for 7,495 of 7,498 canonical pitcher appearance rows. |
 | A6-W016 | Refresh FS-004 source feasibility after backfill | complete | `fs004_source_feasibility_alpha6` | Source-decision surfaces cleared: 17 source-feasible, 0 partial source-contract decisions, 2 optional-source decisions. |
 | A6-W017 | Validate FS-004 builder readiness | complete | `data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/fs004_builder_readiness_alpha6` | Contract, source decisions, source feasibility, and reliever order data all pass. |
+| A6-W018 | Build FS-004 state-path matrix | complete | `m3_fs_004_state_path_redesign_v0_20260603T174237Z` | 886 rows, 140 columns, 120 features, 14 targets. |
+| A6-W019 | Review FS-004 artifact | complete | `2026-06-03-mlb-m3-alpha-6-fs004-artifact-review.md` | Accepted as first materialized FS-004 alpha artifact. |
+| A6-W020 | Create and validate FS-004 manifest | complete | `mlb_m3_alpha2_infra_fs004_20260603T174500Z` | Manifest validator passes with 7 artifacts, 12 component placeholders, and 7 lane placeholders. |
+| A6-W021 | Run FS-004 harness diagnostics | complete | `training_harness_alpha6` | Harness validator passes; candidate is closer than FS-003 but still worse than baseline. |
 
 ## Verification Log
 
@@ -59,6 +63,10 @@ Status: opened
 - 2026-06-03: Post-backfill count check: `pitcher_appearances` has 7,498 rows, with 7,495 non-null `entry_order`, `first_inning`, and `first_half` values.
 - 2026-06-03: Post-backfill FS-004 source feasibility reports 17 `source_feasible` surfaces and 0 `partial_source_contract_decision` surfaces.
 - 2026-06-03: `PYTHONDONTWRITEBYTECODE=1 python3 -m pipeline.mlb.m3.audit.validate_fs004_builder_readiness` passed with `builder_readiness_clear`.
+- 2026-06-03: `PYTHONDONTWRITEBYTECODE=1 python3 -m pipeline.mlb.features.builders.build_state_path_redesign_v0` built FS-004 with 886 rows, 120 features, and 14 targets.
+- 2026-06-03: FS-004 manifest validation passed for `mlb_m3_alpha2_infra_fs004_20260603T174500Z`.
+- 2026-06-03: FS-004 harness validation passed for `training_harness_alpha6`.
+- 2026-06-03: FS-004 diagnostic candidate remains unpromoted because it is still worse than baseline in every walk-forward fold.
 
 ## Stop Log
 
