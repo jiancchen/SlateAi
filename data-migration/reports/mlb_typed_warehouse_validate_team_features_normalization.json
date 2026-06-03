@@ -1,0 +1,41 @@
+{
+  "date": null,
+  "errors": [],
+  "generated_at": "2026-06-03T05:38:54.930856+00:00",
+  "ok": true,
+  "orphan_checks": {
+    "team_first_inning_profiles": 0,
+    "team_form_carryover_profiles": 0,
+    "team_lead_surrender_profiles": 0,
+    "team_mistake_shape_snapshots": 0,
+    "team_opponent_quality_snapshots": 0,
+    "team_rolling_form_snapshots": 0,
+    "team_state_snapshots": 0,
+    "team_whiff_persistence_profiles": 0
+  },
+  "parser_module": "pipeline/sources/mlb/normalization/team_features.py",
+  "script": "data-migration/scripts/validate_mlb_team_features_normalization.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_rows": 29692,
+  "source_table_counts": {
+    "mlb_team_first_inning_profiles_daily": 5262,
+    "mlb_team_form_carryover_profiles": 3448,
+    "mlb_team_lead_surrender_profiles": 3508,
+    "mlb_team_mistake_shape_daily": 5262,
+    "mlb_team_opponent_quality_daily": 1754,
+    "mlb_team_rolling_form": 5196,
+    "mlb_team_state_snapshots": 1754,
+    "mlb_team_whiff_persistence_profiles": 3508
+  },
+  "target_counts": {
+    "team_first_inning_profiles": 5262,
+    "team_form_carryover_profiles": 3448,
+    "team_lead_surrender_profiles": 3508,
+    "team_mistake_shape_snapshots": 5262,
+    "team_opponent_quality_snapshots": 1754,
+    "team_rolling_form_snapshots": 5196,
+    "team_state_snapshots": 1754,
+    "team_whiff_persistence_profiles": 3508
+  },
+  "unresolved_team_entities": 0
+}

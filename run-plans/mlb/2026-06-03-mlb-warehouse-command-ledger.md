@@ -2,9 +2,9 @@
 
 Date: 2026-06-03
 
-Ledger version: 0.5.0
+Ledger version: 0.6.0
 
-Typed CLI version: `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.4.0
+Typed CLI version: `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.5.0
 
 Scope: first-pass ledger for replacing `pipeline/mlb/warehouse/mlb_warehouse.py` command by command without path-flipping the legacy `sports.db` script into the typed MLB DB.
 
@@ -19,6 +19,16 @@ Scope: first-pass ledger for replacing `pipeline/mlb/warehouse/mlb_warehouse.py`
 - Expected PA, shrinkage, hot/cold labels, pitch kernels, mistake shapes, and story labels belong in a versioned feature layer, not raw ingestion.
 - M2 research commands stay available for old runs but must not become M3 contracts.
 - Package scripts should move only after a command has a typed replacement plus validation report.
+
+## Non-Replacement Typed Commands
+
+These commands live on the typed CLI but are not counted as legacy warehouse replacements:
+
+| Command | Package Script | Purpose |
+|---|---|---|
+| `status` | `data:typed:mlb-warehouse -- status` | Read typed DB table counts and source freshness. |
+| `audit-command-ledger` | `data:typed:mlb-audit` | Check ledger coverage against legacy command names and implemented typed replacements. |
+| `validate-typed-ready` | `data:typed:mlb-validate`, `data:typed:mlb-validate-day` | Run typed daily/raw and M3 contract validators with compact parent reports. |
 
 ## Replacement DAG
 
@@ -59,6 +69,7 @@ flowchart TD
 - Typed replacement commands implemented in `mlb_typed_warehouse.py`: 7.
 - Implemented replacements: `ingest-hitter-career-profiles`, `ingest-hitter-lineup-splits`, `ingest-mlb-day`, `ingest-mlb-range`, `list-probable-starters`, `prepare-mlb-day`, `replay-mlb-range-from-raw`.
 - Ledger drift: zero missing legacy commands and zero extra typed replacement commands.
+- Non-replacement typed utilities: `status`, `audit-command-ledger`, `validate-typed-ready`.
 
 `data-migration/reports/mlb_db_input_cutover_audit_active_2026-06-03.json` confirms:
 

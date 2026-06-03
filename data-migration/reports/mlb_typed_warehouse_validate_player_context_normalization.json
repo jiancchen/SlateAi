@@ -1,0 +1,43 @@
+{
+  "date": null,
+  "errors": [],
+  "generated_at": "2026-06-03T05:38:48.699146+00:00",
+  "mapped_players": {
+    "pitcher_season_value_snapshots": 1214,
+    "player_career_profiles": 980,
+    "player_identity_curves": 184256,
+    "player_identity_profiles": 980,
+    "player_split_snapshots": 693,
+    "statcast_hr_leaderboard_snapshots": 407
+  },
+  "ok": true,
+  "orphan_checks": {
+    "pitcher_season_value_snapshots_players": 0,
+    "player_career_profiles_players": 0,
+    "player_identity_curves_players": 0,
+    "player_identity_profiles_players": 0,
+    "player_split_games": 0,
+    "player_split_snapshots_players": 0,
+    "statcast_hr_leaderboard_snapshots_players": 0
+  },
+  "parser_module": "pipeline/sources/mlb/normalization/player_context.py",
+  "script": "data-migration/scripts/validate_mlb_player_context_normalization.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_rows": 187869,
+  "source_table_counts": {
+    "mlb_hitter_career_profiles": 493,
+    "mlb_hitter_split_snapshots": 693,
+    "mlb_pitcher_war_by_season": 1527,
+    "mlb_player_identity_curves_daily": 184256,
+    "mlb_player_identity_profiles": 493,
+    "statcast_hr_leaderboard_snapshots": 407
+  },
+  "target_counts": {
+    "pitcher_season_value_snapshots": 1527,
+    "player_career_profiles": 980,
+    "player_identity_curves": 184256,
+    "player_identity_profiles": 980,
+    "player_split_snapshots": 693,
+    "statcast_hr_leaderboard_snapshots": 407
+  }
+}

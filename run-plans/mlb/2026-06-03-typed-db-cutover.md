@@ -27,7 +27,7 @@ Completed:
 - Typed MLB compatibility views exist for staged `mlb_*` legacy table names, plus canonical views for `mlb_games`, `mlb_plate_appearances`, and `mlb_pitch_events`.
 - Writer-owned legacy names for side predictions/backtests and market/prop odds are writable staging tables inside `sql-mlb.db`.
 - Prediction, market, and prop normalizers read historical `legacy_table_rows` plus direct-only typed staging rows, so fresh writer rows normalize forward without a `sports.db` bridge.
-- New typed warehouse CLI exists at `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.4.0; primary package aliases for raw schedule/feed ingestion, day prep, probable starters, hitter career profiles, and lineup-board splits now point to typed replacements.
+- New typed warehouse CLI exists at `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.5.0; primary package aliases for raw schedule/feed ingestion, day prep, probable starters, hitter career profiles, lineup-board splits, and typed readiness validation now point to typed replacements/utilities.
 - Current M2 `lineups`, `history-journal`, `generate-day-files`, copied M0/M1 lane scripts, cartridge compare, RP36 read exporters, and story archive export read the typed MLB DB.
 - `generate-day-files` historical market fallback now reads typed `mlb_featured_market_odds_snapshots` instead of `published-data/slates/<date>/games`.
 - Side backtest and MLB odds/FanDuel research fetchers default to `sql-mlb.db` writable staging tables.
@@ -74,6 +74,7 @@ Active DB-input cutover audit:
 Interpretation:
 
 - The typed DB path work removed active direct `sports.db` runtime reads and direct active legacy warehouse CLI callers.
+- `validate-typed-ready` is now the compact report-first gate for typed daily/raw and M3 contract validators.
 - The next runtime gate is removing M2 artifact reads from the live prediction slate path.
 - The full-profile audit remains useful for research/M0/M2 archive debt, but it is intentionally noisier than the active runtime profile.
 

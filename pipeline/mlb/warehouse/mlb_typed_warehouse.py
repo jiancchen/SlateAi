@@ -20,7 +20,12 @@ LINEUPS_INGEST = ROOT / "data-migration" / "scripts" / "ingest_mlb_lineups_raw_t
 MARKETS_PROPS_INGEST = ROOT / "data-migration" / "scripts" / "ingest_mlb_markets_props_raw_to_typed.py"
 PLAYER_CONTEXT_INGEST = ROOT / "data-migration" / "scripts" / "ingest_mlb_player_context_raw_to_typed.py"
 HITTER_CAREER_PROFILE_FETCH = ROOT / "pipeline" / "mlb" / "fetchers" / "fetch_mlb_hitter_career_profiles.py"
-VERSION = "0.4.0"
+VALIDATE_SCHEDULE_GAME_FEED = ROOT / "data-migration" / "scripts" / "validate_mlb_schedule_game_feed_raw_to_typed.py"
+VALIDATE_LINEUPS_RAW = ROOT / "data-migration" / "scripts" / "validate_mlb_lineups_raw_to_typed.py"
+VALIDATE_MARKETS_PROPS_RAW = ROOT / "data-migration" / "scripts" / "validate_mlb_markets_props_raw_to_typed.py"
+VALIDATE_PLAYER_CONTEXT_RAW = ROOT / "data-migration" / "scripts" / "validate_mlb_player_context_raw_to_typed.py"
+VALIDATE_REPLAY_STATE = ROOT / "data-migration" / "scripts" / "validate_mlb_replay_state_typed.py"
+VERSION = "0.5.0"
 
 LEGACY_WAREHOUSE_COMMANDS = {
     "init-db",
@@ -64,7 +69,127 @@ LEGACY_WAREHOUSE_COMMANDS = {
     "list-story-signals",
 }
 
-NON_REPLACEMENT_COMMANDS = {"status", "audit-command-ledger"}
+NON_REPLACEMENT_COMMANDS = {"status", "audit-command-ledger", "validate-typed-ready"}
+
+DAILY_VALIDATORS = [
+    {
+        "label": "schedule_game_feed_raw_to_typed",
+        "script": VALIDATE_SCHEDULE_GAME_FEED,
+        "requires_date": True,
+        "supports_date": True,
+    },
+    {
+        "label": "lineups_raw_to_typed",
+        "script": VALIDATE_LINEUPS_RAW,
+        "requires_date": True,
+        "supports_date": True,
+    },
+    {
+        "label": "markets_props_raw_to_typed",
+        "script": VALIDATE_MARKETS_PROPS_RAW,
+        "requires_date": True,
+        "supports_date": True,
+    },
+    {
+        "label": "player_context_raw_to_typed",
+        "script": VALIDATE_PLAYER_CONTEXT_RAW,
+        "requires_date": True,
+        "supports_date": True,
+    },
+]
+
+CONTRACT_VALIDATORS = [
+    {
+        "label": "replay_state_typed",
+        "script": VALIDATE_REPLAY_STATE,
+        "requires_date": False,
+        "supports_date": False,
+    },
+    {
+        "label": "results_normalization",
+        "script": ROOT / "data-migration" / "scripts" / "validate_mlb_results_normalization.py",
+        "requires_date": False,
+        "supports_date": True,
+    },
+    {
+        "label": "lineups_normalization",
+        "script": ROOT / "data-migration" / "scripts" / "validate_mlb_lineups_normalization.py",
+        "requires_date": False,
+        "supports_date": True,
+    },
+    {
+        "label": "markets_normalization",
+        "script": ROOT / "data-migration" / "scripts" / "validate_mlb_markets_normalization.py",
+        "requires_date": False,
+        "supports_date": True,
+    },
+    {
+        "label": "props_normalization",
+        "script": ROOT / "data-migration" / "scripts" / "validate_mlb_props_normalization.py",
+        "requires_date": False,
+        "supports_date": True,
+    },
+    {
+        "label": "player_context_normalization",
+        "script": ROOT / "data-migration" / "scripts" / "validate_mlb_player_context_normalization.py",
+        "requires_date": False,
+        "supports_date": True,
+    },
+    {
+        "label": "hitter_features_normalization",
+        "script": ROOT / "data-migration" / "scripts" / "validate_mlb_hitter_features_normalization.py",
+        "requires_date": False,
+        "supports_date": True,
+    },
+    {
+        "label": "pitcher_features_normalization",
+        "script": ROOT / "data-migration" / "scripts" / "validate_mlb_pitcher_features_normalization.py",
+        "requires_date": False,
+        "supports_date": True,
+    },
+    {
+        "label": "bullpen_features_normalization",
+        "script": ROOT / "data-migration" / "scripts" / "validate_mlb_bullpen_features_normalization.py",
+        "requires_date": False,
+        "supports_date": True,
+    },
+    {
+        "label": "team_features_normalization",
+        "script": ROOT / "data-migration" / "scripts" / "validate_mlb_team_features_normalization.py",
+        "requires_date": False,
+        "supports_date": True,
+    },
+    {
+        "label": "team_context_normalization",
+        "script": ROOT / "data-migration" / "scripts" / "validate_mlb_team_context_normalization.py",
+        "requires_date": False,
+        "supports_date": True,
+    },
+    {
+        "label": "environment_normalization",
+        "script": ROOT / "data-migration" / "scripts" / "validate_mlb_environment_normalization.py",
+        "requires_date": False,
+        "supports_date": True,
+    },
+    {
+        "label": "game_shape_normalization",
+        "script": ROOT / "data-migration" / "scripts" / "validate_mlb_game_shape_normalization.py",
+        "requires_date": False,
+        "supports_date": True,
+    },
+    {
+        "label": "predictions_normalization",
+        "script": ROOT / "data-migration" / "scripts" / "validate_mlb_predictions_normalization.py",
+        "requires_date": False,
+        "supports_date": True,
+    },
+    {
+        "label": "model_metadata_normalization",
+        "script": ROOT / "data-migration" / "scripts" / "validate_mlb_model_metadata_normalization.py",
+        "requires_date": False,
+        "supports_date": True,
+    },
+]
 
 
 def resolve_path(path: Path) -> Path:
@@ -106,12 +231,12 @@ def report_path(kind: str, label: str) -> Path:
     return REPORT_DIR / f"mlb_typed_warehouse_{kind}_{safe_label}.json"
 
 
-def run_python_script(script_path: Path, args: list[str]) -> dict[str, Any]:
+def run_python_script(script_path: Path, args: list[str], *, stream_output: bool = True) -> dict[str, Any]:
     command = [sys.executable, str(script_path), *args]
     completed = subprocess.run(command, cwd=ROOT, text=True, capture_output=True)
-    if completed.stdout:
+    if stream_output and completed.stdout:
         print(completed.stdout, end="")
-    if completed.stderr:
+    if stream_output and completed.stderr:
         print(completed.stderr, end="", file=sys.stderr)
     return {
         "command": [display_path(Path(part)) if part.startswith(str(ROOT)) else part for part in command],
@@ -625,6 +750,120 @@ def hitter_lineup_splits_payload(
     return payload
 
 
+def validators_for_scope(scope: str) -> list[dict[str, Any]]:
+    if scope == "daily":
+        return DAILY_VALIDATORS
+    if scope == "contracts":
+        return CONTRACT_VALIDATORS
+    if scope == "all":
+        return [*DAILY_VALIDATORS, *CONTRACT_VALIDATORS]
+    raise ValueError(f"Unknown validation scope: {scope}")
+
+
+def load_child_report(path: Path) -> dict[str, Any] | None:
+    if not path.exists():
+        return None
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return None
+    return payload if isinstance(payload, dict) else None
+
+
+def run_validator(
+    validator: dict[str, Any],
+    db_path: Path,
+    *,
+    date_text: str | None,
+    filter_contracts_by_date: bool,
+) -> dict[str, Any]:
+    label = str(validator["label"])
+    script_path = Path(validator["script"])
+    is_daily_validator = validator in DAILY_VALIDATORS
+    if validator.get("requires_date") and not date_text:
+        return {
+            "label": label,
+            "script": display_path(script_path),
+            "ok": False,
+            "returncode": None,
+            "report_path": None,
+            "errors": ["This validator requires --date."],
+        }
+
+    report_label = f"{label}_{date_text}" if date_text and is_daily_validator else label
+    child_report = report_path("validate", report_label)
+    args = ["--source-db", str(db_path), "--report", str(child_report)]
+    should_pass_date = bool(
+        validator.get("supports_date")
+        and date_text
+        and (is_daily_validator or filter_contracts_by_date)
+    )
+    if should_pass_date:
+        args.extend(["--date", str(date_text)])
+
+    result = run_python_script(script_path, args, stream_output=False)
+    child_payload = load_child_report(child_report)
+    errors = []
+    if child_payload and isinstance(child_payload.get("errors"), list):
+        errors = child_payload["errors"]
+    elif result["returncode"] != 0:
+        stderr = str(result.get("stderr") or "").strip()
+        errors = [stderr] if stderr else [f"Validator exited with {result['returncode']}."]
+
+    return {
+        "label": label,
+        "script": display_path(script_path),
+        "command": result["command"],
+        "returncode": result["returncode"],
+        "report_path": display_path(child_report),
+        "ok": bool(child_payload.get("ok")) if child_payload else result["returncode"] == 0,
+        "errors": errors,
+        "summary": {
+            "source_rows": child_payload.get("source_rows") if child_payload else None,
+            "target_counts": child_payload.get("target_counts") if child_payload else None,
+            "counts": child_payload.get("counts") if child_payload else None,
+            "checks": child_payload.get("checks") if child_payload else None,
+        },
+    }
+
+
+def validate_typed_ready_payload(
+    db_path: Path,
+    *,
+    scope: str,
+    date_text: str | None,
+    filter_contracts_by_date: bool,
+) -> dict[str, Any]:
+    validators = validators_for_scope(scope)
+    results = [
+        run_validator(
+            validator,
+            db_path,
+            date_text=date_text,
+            filter_contracts_by_date=filter_contracts_by_date,
+        )
+        for validator in validators
+    ]
+    ok_count = sum(1 for result in results if result["ok"])
+    failed = [result for result in results if not result["ok"]]
+    payload = {
+        "version": VERSION,
+        "mode": "validate_typed_ready",
+        "scope": scope,
+        "date": date_text,
+        "filter_contracts_by_date": filter_contracts_by_date,
+        "db_path": display_path(db_path),
+        "validator_count": len(results),
+        "ok_count": ok_count,
+        "failed_count": len(failed),
+        "results": results,
+        "ok": not failed,
+    }
+    report_label = f"{scope}_{date_text}" if date_text else scope
+    write_json_report(report_path("validate_typed_ready", report_label), payload)
+    return payload
+
+
 def print_ingest_summary(payload: dict[str, Any]) -> None:
     ok_count = sum(1 for result in payload["results"] if result["ok"])
     print(
@@ -658,6 +897,22 @@ def print_step_summary(payload: dict[str, Any]) -> None:
         print(f"- {family}: {status} report={result.get('report_path', '-')}")
 
 
+def print_validation_summary(payload: dict[str, Any]) -> None:
+    report_label = f"{payload['scope']}_{payload['date']}" if payload.get("date") else payload["scope"]
+    wrapper_report = display_path(report_path("validate_typed_ready", report_label))
+    print(
+        f"MLB typed warehouse validation {payload['scope']}: "
+        f"{payload['ok_count']}/{payload['validator_count']} ok "
+        f"report={wrapper_report}"
+    )
+    for result in payload["results"]:
+        status = "ok" if result["ok"] else "failed"
+        suffix = ""
+        if result["errors"]:
+            suffix = f" errors={len(result['errors'])}"
+        print(f"- {result['label']}: {status}{suffix} report={result['report_path']}")
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="Typed MLB warehouse CLI for sql-mlb.db. This is the replacement surface for legacy mlb_warehouse.py commands."
@@ -673,6 +928,19 @@ def build_parser() -> argparse.ArgumentParser:
     audit_parser = subparsers.add_parser("audit-command-ledger", help="Audit typed CLI coverage against the warehouse command ledger.")
     audit_parser.add_argument("--report", type=Path, help="Optional JSON report path.")
     audit_parser.add_argument("--json", action="store_true", help="Emit JSON instead of text.")
+
+    validate_parser = subparsers.add_parser(
+        "validate-typed-ready",
+        help="Run typed MLB daily/raw and M3 contract validators, writing child reports plus a compact wrapper report.",
+    )
+    validate_parser.add_argument("--scope", choices=["daily", "contracts", "all"], default="contracts")
+    validate_parser.add_argument("--date", help="YYYY-MM-DD date for daily validators.")
+    validate_parser.add_argument(
+        "--filter-contracts-by-date",
+        action="store_true",
+        help="Also pass --date into date-optional contract validators.",
+    )
+    validate_parser.add_argument("--json", action="store_true", help="Emit wrapper JSON instead of text summary.")
 
     ingest_day_parser = subparsers.add_parser("ingest-mlb-day", help="Ingest one local raw MLB schedule/game-feed day into typed tables.")
     ingest_day_parser.add_argument("--date", required=True, help="Game date in YYYY-MM-DD format.")
@@ -743,6 +1011,21 @@ def main() -> int:
             print(json.dumps(payload, indent=2, sort_keys=True))
         else:
             print_audit_command_ledger(payload)
+        return 0 if payload["ok"] else 1
+    if args.command == "validate-typed-ready":
+        if args.scope in {"daily", "all"} and not args.date:
+            print("--date is required for daily typed readiness validators.", file=sys.stderr)
+            return 2
+        payload = validate_typed_ready_payload(
+            db_path,
+            scope=args.scope,
+            date_text=args.date,
+            filter_contracts_by_date=args.filter_contracts_by_date,
+        )
+        if args.json:
+            print(json.dumps(payload, indent=2, sort_keys=True))
+        else:
+            print_validation_summary(payload)
         return 0 if payload["ok"] else 1
     if args.command == "ingest-mlb-day":
         payload = ingest_range_payload(

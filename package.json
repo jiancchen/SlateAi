@@ -29,6 +29,8 @@
     "data:list:probables": "python3 pipeline/mlb/warehouse/mlb_typed_warehouse.py list-probable-starters",
     "data:typed:mlb-warehouse": "python3 pipeline/mlb/warehouse/mlb_typed_warehouse.py",
     "data:typed:mlb-audit": "python3 pipeline/mlb/warehouse/mlb_typed_warehouse.py audit-command-ledger",
+    "data:typed:mlb-validate": "python3 pipeline/mlb/warehouse/mlb_typed_warehouse.py validate-typed-ready --scope contracts",
+    "data:typed:mlb-validate-day": "python3 pipeline/mlb/warehouse/mlb_typed_warehouse.py validate-typed-ready --scope daily",
     "data:typed:ingest:mlb-day": "python3 pipeline/mlb/warehouse/mlb_typed_warehouse.py ingest-mlb-day",
     "data:typed:ingest:mlb-range": "python3 pipeline/mlb/warehouse/mlb_typed_warehouse.py ingest-mlb-range",
     "data:typed:replay:mlb-raw-range": "python3 pipeline/mlb/warehouse/mlb_typed_warehouse.py replay-mlb-range-from-raw",

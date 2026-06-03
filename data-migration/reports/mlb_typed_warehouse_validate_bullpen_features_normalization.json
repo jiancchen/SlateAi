@@ -1,0 +1,33 @@
+{
+  "date": null,
+  "errors": [],
+  "generated_at": "2026-06-03T05:38:54.731549+00:00",
+  "ok": true,
+  "orphan_checks": {
+    "bullpen_mistake_shape_snapshots_team": 0,
+    "bullpen_usage_snapshots": 0,
+    "likely_relief_chains": 0,
+    "likely_relief_chains_team": 0,
+    "reliever_command_profiles": 0,
+    "team_bullpen_shape_snapshots_team": 0
+  },
+  "parser_module": "pipeline/sources/mlb/normalization/bullpen_features.py",
+  "script": "data-migration/scripts/validate_mlb_bullpen_features_normalization.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_rows": 29425,
+  "source_table_counts": {
+    "mlb_bullpen_mistake_shape_daily": 3508,
+    "mlb_bullpen_usage": 16542,
+    "mlb_likely_relief_chains": 3508,
+    "mlb_reliever_first_batter_command_profiles": 4113,
+    "mlb_team_bullpen_shape_daily": 1754
+  },
+  "target_counts": {
+    "bullpen_mistake_shape_snapshots": 3508,
+    "bullpen_usage_snapshots": 16542,
+    "likely_relief_chains": 3508,
+    "reliever_command_profiles": 4113,
+    "team_bullpen_shape_snapshots": 1754
+  },
+  "unresolved_bullpen_entities": 0
+}
