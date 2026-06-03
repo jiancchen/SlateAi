@@ -10,7 +10,7 @@ Run ID: `mlb_m3_alpha6_fs004_source_feasibility`
 - Existing tables: `53`
 - Populated tables: `53`
 - Surfaces audited: `19`
-- Surface statuses: `{'partial_source_contract_decision': 2, 'source_feasible': 15, 'source_feasible_with_optional_source_decisions': 2}`
+- Surface statuses: `{'source_feasible': 17, 'source_feasible_with_optional_source_decisions': 2}`
 
 ## Source DAG
 
@@ -39,11 +39,11 @@ flowchart TD
 | `starter_opponent_pressure_residual` | `P0` | `starter_path` | `source_feasible` | - | - |
 | `starter_low_data_uncertainty` | `P0` | `starter_path` | `source_feasible` | - | - |
 | `reliever_availability_reset` | `P0` | `reliever_chain` | `source_feasible` | - | - |
-| `first_up_reliever_router` | `P0` | `reliever_chain` | `partial_source_contract_decision` | - | `actual_first_reliever_target` |
+| `first_up_reliever_router` | `P0` | `reliever_chain` | `source_feasible` | - | - |
 | `reliever_chain_length_regime` | `P0` | `reliever_chain` | `source_feasible` | - | - |
 | `reliever_performance_volatility` | `P0` | `reliever_chain` | `source_feasible` | - | - |
 | `hitter_vs_starter_phase` | `P0` | `hitter_path` | `source_feasible` | - | - |
-| `hitter_vs_reliever_chain_phase` | `P0` | `hitter_path` | `partial_source_contract_decision` | - | `reliever_phase_order` |
+| `hitter_vs_reliever_chain_phase` | `P0` | `hitter_path` | `source_feasible` | - | - |
 | `hitter_current_state_residual` | `P1` | `hitter_path` | `source_feasible` | - | - |
 | `lineup_pa_volume_context` | `P0` | `hitter_path` | `source_feasible` | - | - |
 | `ordered_story_memory` | `P0` | `story_memory` | `source_feasible` | - | - |
@@ -56,6 +56,6 @@ flowchart TD
 ## Important Findings
 
 - Replay fields for PA/pitch state are present in typed `plate_appearances` and `pitch_events`.
-- The first-up reliever router and hitter-vs-reliever-chain phase need populated canonical `entry_order`/chain-phase fields. Typed staging has values; canonical `pitcher_appearances` must be backfilled before those surfaces are fully feasible.
+- Canonical `pitcher_appearances` has populated reliever order fields, so first-up reliever and hitter-vs-reliever-chain source gates are clear.
 - Tail calibration feedback is intentionally not a builder blocker, but promotion and pricing must remain deferred until settlement/calibration gates exist.
 - This audit does not create features or train anything; it only maps FS-004 source readiness.

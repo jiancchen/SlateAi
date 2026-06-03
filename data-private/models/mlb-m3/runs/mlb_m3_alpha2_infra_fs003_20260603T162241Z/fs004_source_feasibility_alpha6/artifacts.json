@@ -1,11 +1,11 @@
 {
   "artifacts": [
     {
-      "bytes": 1436,
+      "bytes": 1313,
       "exists": true,
       "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/fs004_source_feasibility_alpha6/fs004_source_feasibility.json",
       "role": "fs004_source_feasibility",
-      "sha256": "eabe68eb5a16a7954f32521491803c9dee84e389672bbddeb5b4b45b0d4547cc"
+      "sha256": "2f6684f2ed630ef069cdcae42d797fb40d4321725ef82140b54f1f353b8fb496"
     },
     {
       "bytes": 49909,
@@ -15,18 +15,18 @@
       "sha256": "f23441b78c8491ca8892f20d2e45cc8876e280c0d9e7bdccdf2f25d9ed582618"
     },
     {
-      "bytes": 274811,
+      "bytes": 274513,
       "exists": true,
       "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/fs004_source_feasibility_alpha6/surface_feasibility_matrix.json",
       "role": "surface_feasibility_matrix",
-      "sha256": "9efb14c790345b3098d7b50fd1a37504206d4d9289cf712b5a9be81adfbe9624"
+      "sha256": "75b7d247b4a941926d2a60d4334c1d4a1b979e25536f428240186f3fcfbc36e2"
     },
     {
-      "bytes": 3717,
+      "bytes": 3495,
       "exists": true,
       "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/fs004_source_feasibility_alpha6/report.md",
       "role": "report",
-      "sha256": "a1aecf692f96f1b7bdeef6da36c935b9e665026b261e2b952463b12eef0fcd09"
+      "sha256": "f40ad99d904e9c932064c0ec4d29f266e93a6719e7697dabfff61fdb3073072e"
     }
   ],
   "status": "source_feasibility_audit_created"

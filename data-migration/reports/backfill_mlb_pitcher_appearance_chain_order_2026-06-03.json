@@ -1,0 +1,39 @@
+{
+  "after": {
+    "entry_order": 7495,
+    "first_half": 7495,
+    "first_inning": 7495,
+    "rows": 7498
+  },
+  "before": {
+    "entry_order": 0,
+    "first_half": 0,
+    "first_inning": 0,
+    "rows": 7498
+  },
+  "dry_run": false,
+  "generated_at": "2026-06-03T17:32:37.103794+00:00",
+  "join_key": "pitcher_appearances.source_pk = mlb_pitcher_appearances._legacy_source_pk",
+  "matches": {
+    "exact_source_pk_matches": 7498,
+    "matched_entry_order": 7495,
+    "matched_first_half": 7495,
+    "matched_first_inning": 7495
+  },
+  "notes": [
+    "This backfill promotes reliever chain-order fields into canonical pitcher_appearances for FS-004.",
+    "Rows with null staging entry_order remain null by design."
+  ],
+  "ok": true,
+  "rows_touched": 7498,
+  "script": "data-migration/scripts/backfill_mlb_pitcher_appearance_chain_order.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_table": "mlb_pitcher_appearances",
+  "staging": {
+    "entry_order": 7495,
+    "first_half": 7495,
+    "first_inning": 7495,
+    "rows": 7498
+  },
+  "target_table": "pitcher_appearances"
+}

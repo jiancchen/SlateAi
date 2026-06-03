@@ -4,7 +4,7 @@ Date: 2026-06-03
 
 Decision ID: `a6-reliever-entry-order-canonicalization-v1`
 
-Status: locked for FS-004 builder planning; canonical DB backfill still required.
+Status: locked for FS-004 builder planning; canonical DB backfill completed on 2026-06-03.
 
 ## Decision
 
@@ -45,7 +45,17 @@ The parser update lives in:
 pipeline/sources/mlb/normalization/results.py
 ```
 
-The next actual normalization/backfill run should add and populate the canonical fields in `sql-mlb.db`.
+The focused backfill run added and populated the canonical fields in `sql-mlb.db`.
+
+Backfill result:
+
+| Field | Non-Null Rows |
+| --- | ---: |
+| `entry_order` | 7,495 |
+| `first_inning` | 7,495 |
+| `first_half` | 7,495 |
+
+Total canonical pitcher appearance rows: 7,498.
 
 ## Builder Gate
 
@@ -55,7 +65,7 @@ The FS-004 builder should check for these canonical columns before materializing
 - `pitcher_appearances.first_inning`
 - `pitcher_appearances.first_half`
 
-If they are missing or empty:
+If they are missing or empty in a future environment:
 
 - build starter path, replay-state, story memory, and game-regime surfaces
 - mark first-up reliever router as gated
@@ -71,4 +81,3 @@ This decision does not:
 - create simulator event logs
 - promote a model
 - claim an edge
-

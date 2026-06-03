@@ -1,7 +1,7 @@
 {
   "contract_feature_set_id": "m3_fs_004_state_path_redesign_v0",
   "contract_uri": "/Users/jcchen/Documents/New project/pipeline/mlb/features/contracts/m3_fs_004_state_path_redesign_v0.json",
-  "created_at": "2026-06-03T17:27:58Z",
+  "created_at": "2026-06-03T17:35:15Z",
   "db_uri": "/Users/jcchen/Documents/New project/data-private/warehouse/sports/mlb/sql-mlb.db",
   "decision": "fs004_builder_allowed_only_after_source_decisions_are_recorded",
   "non_goals": [
@@ -23,13 +23,9 @@
       "P1": 2,
       "P2": 2
     },
-    "source_decision_surfaces": [
-      "first_up_reliever_router",
-      "hitter_vs_reliever_chain_phase"
-    ],
+    "source_decision_surfaces": [],
     "status_counts": {
-      "partial_source_contract_decision": 2,
-      "source_feasible": 15,
+      "source_feasible": 17,
       "source_feasible_with_optional_source_decisions": 2
     },
     "surface_count": 19

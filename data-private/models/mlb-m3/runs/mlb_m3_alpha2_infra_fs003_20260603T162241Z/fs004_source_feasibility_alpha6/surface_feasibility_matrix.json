@@ -390,11 +390,10 @@
               "meets_group": true,
               "missing_columns": [],
               "missing_data_columns": [
-                "entry_order",
                 "is_starting_pitcher"
               ],
               "non_null_counts": {
-                "entry_order": 0,
+                "entry_order": 7495,
                 "is_starting_pitcher": 0,
                 "pitcher_role": 7498
               },
@@ -2708,8 +2707,8 @@
           "any_of": [
             "entry_order"
           ],
-          "covered_by_contract_source": false,
-          "covered_by_table": "mlb_pitcher_appearances",
+          "covered_by_contract_source": true,
+          "covered_by_table": "pitcher_appearances",
           "evaluations": [
             {
               "columns": [
@@ -2749,13 +2748,11 @@
               "is_contract_source": true,
               "is_primary_alias": true,
               "logical_table": "pitcher_appearances",
-              "meets_group": false,
+              "meets_group": true,
               "missing_columns": [],
-              "missing_data_columns": [
-                "entry_order"
-              ],
+              "missing_data_columns": [],
               "non_null_counts": {
-                "entry_order": 0
+                "entry_order": 7495
               },
               "row_count": 7498,
               "table": "pitcher_appearances"
@@ -2813,12 +2810,10 @@
           ],
           "note": "Canonical table lacks entry_order today; typed staging has it.",
           "required": true,
-          "status": "covered_fallback_source"
+          "status": "covered_contract_source"
         }
       ],
-      "fallback_required_groups": [
-        "actual_first_reliever_target"
-      ],
+      "fallback_required_groups": [],
       "family": "reliever_chain",
       "listed_in_contract_surface_contracts": true,
       "missing_required_groups": [],
@@ -2830,7 +2825,7 @@
         "likely_relief_chains",
         "pitcher_appearances"
       ],
-      "status": "partial_source_contract_decision",
+      "status": "source_feasible",
       "surface_id": "first_up_reliever_router"
     },
     {
@@ -3029,11 +3024,10 @@
               "meets_group": true,
               "missing_columns": [],
               "missing_data_columns": [
-                "entry_order",
                 "is_starting_pitcher"
               ],
               "non_null_counts": {
-                "entry_order": 0,
+                "entry_order": 7495,
                 "is_starting_pitcher": 0,
                 "pitcher_role": 7498
               },
@@ -4580,11 +4574,10 @@
               "meets_group": true,
               "missing_columns": [],
               "missing_data_columns": [
-                "entry_order",
                 "is_starting_pitcher"
               ],
               "non_null_counts": {
-                "entry_order": 0,
+                "entry_order": 7495,
                 "is_starting_pitcher": 0,
                 "pitcher_role": 7498
               },
@@ -4757,8 +4750,8 @@
           "any_of": [
             "entry_order"
           ],
-          "covered_by_contract_source": false,
-          "covered_by_table": "mlb_pitcher_appearances",
+          "covered_by_contract_source": true,
+          "covered_by_table": "pitcher_appearances",
           "evaluations": [
             {
               "columns": [
@@ -4798,13 +4791,11 @@
               "is_contract_source": true,
               "is_primary_alias": true,
               "logical_table": "pitcher_appearances",
-              "meets_group": false,
+              "meets_group": true,
               "missing_columns": [],
-              "missing_data_columns": [
-                "entry_order"
-              ],
+              "missing_data_columns": [],
               "non_null_counts": {
-                "entry_order": 0
+                "entry_order": 7495
               },
               "row_count": 7498,
               "table": "pitcher_appearances"
@@ -4862,12 +4853,10 @@
           ],
           "note": "Needed to split first-up, bridge, churn, and late-chain hitter paths.",
           "required": true,
-          "status": "covered_fallback_source"
+          "status": "covered_contract_source"
         }
       ],
-      "fallback_required_groups": [
-        "reliever_phase_order"
-      ],
+      "fallback_required_groups": [],
       "family": "hitter_path",
       "listed_in_contract_surface_contracts": true,
       "missing_required_groups": [],
@@ -4881,7 +4870,7 @@
         "pitcher_appearances",
         "likely_relief_chains"
       ],
-      "status": "partial_source_contract_decision",
+      "status": "source_feasible",
       "surface_id": "hitter_vs_reliever_chain_phase"
     },
     {

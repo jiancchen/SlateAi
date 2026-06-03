@@ -35,6 +35,8 @@ Status: opened
 | A6-W012 | Record reliever entry-order source decision | complete | `2026-06-03-mlb-m3-alpha-6-reliever-entry-order-source-decision.md` | FS-004 should consume canonical `pitcher_appearances.entry_order`; staging is only a normalization/backfill source. |
 | A6-W013 | Update results normalization for reliever chain order fields | complete | `pipeline/sources/mlb/normalization/results.py` | Adds canonical `entry_order`, `first_inning`, and `first_half` columns/parse values for future normalization runs. |
 | A6-W014 | Draft FS-004 builder phase plan | complete | `2026-06-03-mlb-m3-alpha-6-fs004-builder-phase-plan.md` | Defines phased builder order and gates before matrix materialization. |
+| A6-W015 | Backfill canonical reliever chain-order fields | complete | `data-migration/reports/backfill_mlb_pitcher_appearance_chain_order_2026-06-03.json` | Populated `entry_order`, `first_inning`, and `first_half` for 7,495 of 7,498 canonical pitcher appearance rows. |
+| A6-W016 | Refresh FS-004 source feasibility after backfill | complete | `fs004_source_feasibility_alpha6` | Source-decision surfaces cleared: 17 source-feasible, 0 partial source-contract decisions, 2 optional-source decisions. |
 
 ## Verification Log
 
@@ -52,6 +54,9 @@ Status: opened
 - 2026-06-03: FS-004 source feasibility found 2 P0 source-contract decisions: `first_up_reliever_router` and `hitter_vs_reliever_chain_phase`.
 - 2026-06-03: Reliever `entry_order` source decision recorded: promote order fields into canonical `pitcher_appearances`; do not make FS-004 depend directly on staging.
 - 2026-06-03: Results normalization now carries `entry_order`, `first_inning`, and `first_half` into canonical `pitcher_appearances` on the next normalization/backfill run.
+- 2026-06-03: `PYTHONDONTWRITEBYTECODE=1 python3 data-migration/scripts/backfill_mlb_pitcher_appearance_chain_order.py --report data-migration/reports/backfill_mlb_pitcher_appearance_chain_order_2026-06-03.json` backfilled canonical reliever chain-order fields.
+- 2026-06-03: Post-backfill count check: `pitcher_appearances` has 7,498 rows, with 7,495 non-null `entry_order`, `first_inning`, and `first_half` values.
+- 2026-06-03: Post-backfill FS-004 source feasibility reports 17 `source_feasible` surfaces and 0 `partial_source_contract_decision` surfaces.
 
 ## Stop Log
 

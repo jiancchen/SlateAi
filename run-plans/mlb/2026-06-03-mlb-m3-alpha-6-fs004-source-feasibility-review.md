@@ -27,24 +27,24 @@ This does not mean FS-004 exists yet. It means the next work can move from contr
 | Populated referenced typed tables | `53` |
 | Surfaces audited | `19` |
 | Blocked surfaces | `0` |
-| Source-feasible surfaces | `15` |
-| Partial source-contract-decision surfaces | `2` |
+| Source-feasible surfaces | `17` |
+| Partial source-contract-decision surfaces | `0` |
 | Optional-source-decision surfaces | `2` |
 
 ## Critical Source Decisions
 
-Two P0 surfaces are not blocked by data absence, but they require populated canonical reliever chain-order fields before the FS-004 builder should treat them as fully feasible:
+The two P0 reliever-chain surfaces that were gated on canonical order fields are now source-feasible after backfill:
 
 | Surface | Decision Needed | Why It Matters |
 | --- | --- | --- |
-| `first_up_reliever_router` | Populate canonical reliever `entry_order`. | The actual first-up reliever target needs chain order. Typed staging has values; canonical `pitcher_appearances` must be backfilled. |
-| `hitter_vs_reliever_chain_phase` | Populate canonical reliever chain-phase/order fields. | Hitter-vs-reliever is not just hitter-vs-any reliever. It needs first-up, bridge, churn, and late-chain phase splits. |
+| `first_up_reliever_router` | Cleared | Canonical `pitcher_appearances.entry_order` is populated for 7,495 of 7,498 rows. |
+| `hitter_vs_reliever_chain_phase` | Cleared | Canonical `entry_order`, `first_inning`, and `first_half` are populated for reliever-chain phase splits. |
 
 ## Important Findings
 
 - Typed replay state is present in `plate_appearances` and `pitch_events`, including PA index, base/out state, score before/after, count state, event fields, and raw JSON.
 - Starter workload, starter damage, starter pitch shape, reliever availability, reliever performance, hitter starter phase, story memory, traffic conversion, and game regime labels are source-feasible.
-- The feasibility audit now requires non-null evidence for source columns, so empty canonical reliever order fields still gate reliever-chain phase features.
+- The feasibility audit now requires non-null evidence for source columns. After the backfill, reliever-chain order no longer gates the first FS-004 builder pass.
 - Tail calibration feedback is not a blocker for building FS-004, but it remains a blocker for model promotion, market pricing, and claims that M3 has an edge.
 - Schedule/travel context has basic typed sources and optional gaps. It should remain lower priority than state path, reliever chain, replay labels, and hitter-path phase splits.
 
@@ -54,7 +54,7 @@ Build the FS-004 builder in phases:
 
 1. Start with replay-state and game-regime labels because the typed DB now has strong PA/pitch state coverage.
 2. Add starter path features with workload, damage, pitch shape, and opponent pressure separated.
-3. Add reliever chain features after canonical `entry_order`/chain-phase fields are populated.
+3. Add reliever chain features from canonical `pitcher_appearances.entry_order`, `first_inning`, and `first_half`.
 4. Add hitter-path splits against starter phase and reliever-chain phase.
 5. Generate an FS-004 matrix and run the existing metrics-only harness without promoting a model.
 

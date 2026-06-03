@@ -1130,6 +1130,18 @@ def report_markdown(
     surface_summary: dict[str, Any],
 ) -> str:
     status_counts = surface_summary["status_counts"]
+    source_decision_surfaces = surface_summary.get("source_decision_surfaces", [])
+    if source_decision_surfaces:
+        reliever_order_finding = (
+            "- The first-up reliever router and hitter-vs-reliever-chain phase need populated canonical "
+            "`entry_order`/chain-phase fields. Typed staging has values; canonical `pitcher_appearances` "
+            "must be backfilled before those surfaces are fully feasible."
+        )
+    else:
+        reliever_order_finding = (
+            "- Canonical `pitcher_appearances` has populated reliever order fields, so first-up reliever "
+            "and hitter-vs-reliever-chain source gates are clear."
+        )
     lines = [
         "# MLB-M3 Alpha-6 FS-004 Source Feasibility Audit",
         "",
@@ -1179,7 +1191,7 @@ def report_markdown(
             "## Important Findings",
             "",
             "- Replay fields for PA/pitch state are present in typed `plate_appearances` and `pitch_events`.",
-            "- The first-up reliever router and hitter-vs-reliever-chain phase need populated canonical `entry_order`/chain-phase fields. Typed staging has values; canonical `pitcher_appearances` must be backfilled before those surfaces are fully feasible.",
+            reliever_order_finding,
             "- Tail calibration feedback is intentionally not a builder blocker, but promotion and pricing must remain deferred until settlement/calibration gates exist.",
             "- This audit does not create features or train anything; it only maps FS-004 source readiness.",
             "",

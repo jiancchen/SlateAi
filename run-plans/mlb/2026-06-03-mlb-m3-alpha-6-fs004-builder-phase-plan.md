@@ -44,8 +44,9 @@ Required before matrix materialization:
 - No `sports.db` path is opened.
 - No M2 generated artifact is read.
 - `pitcher_appearances.entry_order` source decision is recorded.
+- Canonical `pitcher_appearances.entry_order`, `first_inning`, and `first_half` are populated.
 
-Reliever-chain phase features should be gated unless canonical `pitcher_appearances` has populated `entry_order`.
+Reliever-chain phase features should be gated in any environment where canonical `pitcher_appearances` does not have populated `entry_order`.
 
 ## Phase 1: Replay And Regime Spine
 
@@ -95,7 +96,7 @@ Implementation rule:
 
 - availability/reset, first-up route, chain length, and reliever performance are separate feature surfaces
 - `entry_order`/chain phase comes from canonical `pitcher_appearances`
-- if canonical entry order is unavailable, produce a gated report instead of silently using staging rows
+- if canonical entry order is unavailable in a future environment, produce a gated report instead of silently using staging rows
 
 ## Phase 4: Hitter Path
 
@@ -123,4 +124,3 @@ After matrix build:
 5. Review walk-forward and family-ablation diagnostics.
 
 The harness may reject FS-004. That is acceptable. Rejection means the feature representation still is not good enough; it does not justify model tuning on a weak substrate.
-
