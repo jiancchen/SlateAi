@@ -225,6 +225,52 @@ def source_detail(
     )
 
 
+def clear_existing_lineup_day(con: sqlite3.Connection, date: str) -> None:
+    con.execute(
+        """
+        delete from lineup_slots
+        where lineup_id in (
+          select lineups.lineup_id
+          from lineups
+          join games on games.game_id = lineups.game_id
+          where games.game_date = ?
+        )
+        """,
+        (date,),
+    )
+    con.execute(
+        """
+        delete from lineups
+        where game_id in (
+          select game_id
+          from games
+          where game_date = ?
+        )
+        """,
+        (date,),
+    )
+    con.execute(
+        """
+        delete from lineup_matchup_snapshots
+        where source_table = 'data-private/lineups/mlb/lineup-board'
+          and source_pk like ?
+        """,
+        (f"{date}:%",),
+    )
+    con.execute(
+        """
+        delete from starting_pitchers
+        where source_name = ?
+          and game_id in (
+            select game_id
+            from games
+            where game_date = ?
+          )
+        """,
+        (SOURCE_PROBABLES, date),
+    )
+
+
 def upsert_lineup_board(
     con: sqlite3.Connection,
     *,
@@ -271,6 +317,7 @@ def upsert_lineup_board(
     )
 
     resolver = MlbIdentityResolver(con)
+    clear_existing_lineup_day(con, raw_day.date)
     counts: dict[str, Any] = {
         "source_files": 1,
         "source_snapshot_id": source_snapshot_id,

@@ -1,0 +1,57 @@
+{
+  "date": "2026-06-01",
+  "dry_run": false,
+  "errors": [],
+  "expected_context_items": 296,
+  "generated_at": "2026-06-03T19:18:05.372230+00:00",
+  "ok": true,
+  "player_context": {
+    "career_profiles": 296,
+    "identity_profiles": 296,
+    "people": 296,
+    "source_files": 13,
+    "source_snapshot_ids": [
+      "mlb-8d766b7429d3c92f053da1ecfdc95a18",
+      "mlb-b26b976dbcb0cf9919ef0de747047207",
+      "mlb-bf449c92a63cdbd1c91cc3090016f512",
+      "mlb-8ad9b584c2d1eb6419194370e116078b",
+      "mlb-945b3a2fc25a95b9e5eaa34cc770fe8b",
+      "mlb-04a84258862abee48cb56225a72713c1",
+      "mlb-2fcb4546531c828a9db22f2ee795c1b6",
+      "mlb-9f797fe192451653fee803e2a652a8aa",
+      "mlb-ad55b90fa28b5f84a58e79918904b921",
+      "mlb-7afd8460f3c7587991a9a6d08d39e8ab",
+      "mlb-4f39621aee361d3a1c78201c998de674",
+      "mlb-0d2be7a90ca7e74b1d8082d9802f8b53",
+      "mlb-3283d935e569b088de48f094b1c81dfa"
+    ],
+    "unresolved": 0
+  },
+  "row_count_delta": {
+    "health_checks": 0,
+    "player_career_profiles": 296,
+    "player_identity_profiles": 296,
+    "player_statcast_game_logs": 0,
+    "players": 0,
+    "source_fetch_runs": 2,
+    "source_fetch_status": 2,
+    "source_snapshots": 15,
+    "unresolved_entities": 0
+  },
+  "savant": {
+    "details_rows": 0,
+    "game_logs": 0,
+    "grouped_rows": 0,
+    "players": 0,
+    "source_files": 2,
+    "source_snapshot_ids": [
+      "mlb-ef140169eab04ae4d29794dffc3b4f44",
+      "mlb-356dd8dca4915e59747d0d3310033830"
+    ],
+    "unresolved": 0
+  },
+  "script": "data-migration/scripts/ingest_mlb_player_context_raw_to_typed.py",
+  "skip_player_context": false,
+  "skip_savant": false,
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db"
+}

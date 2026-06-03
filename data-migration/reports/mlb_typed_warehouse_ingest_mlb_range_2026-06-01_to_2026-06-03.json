@@ -1,0 +1,69 @@
+{
+  "date_count": 3,
+  "db_path": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "dry_run": false,
+  "end_date": "2026-06-03",
+  "mode": "ingest_mlb_range",
+  "ok": true,
+  "results": [
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "data-migration/scripts/ingest_mlb_schedule_game_feed_raw_to_typed.py",
+        "--date",
+        "2026-06-01",
+        "--source-db",
+        "data-private/warehouse/sports/mlb/sql-mlb.db",
+        "--report",
+        "data-migration/reports/mlb_typed_warehouse_ingest_mlb_range_schedule_game_feed_2026-06-01.json"
+      ],
+      "date": "2026-06-01",
+      "family": "schedule_game_feed",
+      "ok": true,
+      "report_path": "data-migration/reports/mlb_typed_warehouse_ingest_mlb_range_schedule_game_feed_2026-06-01.json",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"date\": \"2026-06-01\",\n  \"dry_run\": false,\n  \"errors\": [],\n  \"expected_game_count\": 9,\n  \"feed\": {\n    \"game_outcomes\": 9,\n    \"games\": 9,\n    \"missing_schedule_games\": 0,\n    \"pitch_events\": 3191,\n    \"plate_appearances\": 697,\n    \"players\": 468,\n    \"source_files\": 9,\n    \"starting_pitchers\": 18\n  },\n  \"feed_file_count\": 9,\n  \"generated_at\": \"2026-06-03T19:14:58.639882+00:00\",\n  \"ok\": true,\n  \"raw_root\": \"data-private/raw/mlb\",\n  \"row_count_delta\": {\n    \"game_outcomes\": 9,\n    \"games\": 0,\n    \"pitch_events\": 3172,\n    \"plate_appearances\": 686,\n    \"players\": 1,\n    \"source_fetch_runs\": 2,\n    \"source_fetch_status\": 0,\n    \"source_snapshots\": 10,\n    \"starting_pitchers\": 0,\n    \"teams\": 0,\n    \"venues\": 0\n  },\n  \"schedule\": {\n    \"games\": 9,\n    \"source_files\": 1,\n    \"source_snapshot_id\": \"mlb-1c3bdeb71be5204735163ed8ab79cc25\",\n    \"starting_pitchers\": 18,\n    \"teams\": 18,\n    \"venues\": 9\n  },\n  \"schedule_path\": \"data-private/raw/mlb/2026-06-01/schedule.json\",\n  \"script\": \"data-migration/scripts/ingest_mlb_schedule_game_feed_raw_to_typed.py\",\n  \"source_db\": \"data-private/warehouse/sports/mlb/sql-mlb.db\"\n}\n"
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "data-migration/scripts/ingest_mlb_schedule_game_feed_raw_to_typed.py",
+        "--date",
+        "2026-06-02",
+        "--source-db",
+        "data-private/warehouse/sports/mlb/sql-mlb.db",
+        "--report",
+        "data-migration/reports/mlb_typed_warehouse_ingest_mlb_range_schedule_game_feed_2026-06-02.json"
+      ],
+      "date": "2026-06-02",
+      "family": "schedule_game_feed",
+      "ok": true,
+      "report_path": "data-migration/reports/mlb_typed_warehouse_ingest_mlb_range_schedule_game_feed_2026-06-02.json",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"date\": \"2026-06-02\",\n  \"dry_run\": false,\n  \"errors\": [],\n  \"expected_game_count\": 15,\n  \"feed\": {\n    \"game_outcomes\": 15,\n    \"games\": 15,\n    \"missing_schedule_games\": 0,\n    \"pitch_events\": 5275,\n    \"plate_appearances\": 1139,\n    \"players\": 780,\n    \"source_files\": 15,\n    \"starting_pitchers\": 30\n  },\n  \"feed_file_count\": 15,\n  \"generated_at\": \"2026-06-03T19:14:59.173118+00:00\",\n  \"ok\": true,\n  \"raw_root\": \"data-private/raw/mlb\",\n  \"row_count_delta\": {\n    \"game_outcomes\": 15,\n    \"games\": 15,\n    \"pitch_events\": 5275,\n    \"plate_appearances\": 1139,\n    \"players\": 5,\n    \"source_fetch_runs\": 2,\n    \"source_fetch_status\": 0,\n    \"source_snapshots\": 16,\n    \"starting_pitchers\": 30,\n    \"teams\": 0,\n    \"venues\": 0\n  },\n  \"schedule\": {\n    \"games\": 15,\n    \"source_files\": 1,\n    \"source_snapshot_id\": \"mlb-b0fc2aeb0e7eb42a5df127779eb6eb8b\",\n    \"starting_pitchers\": 30,\n    \"teams\": 30,\n    \"venues\": 15\n  },\n  \"schedule_path\": \"data-private/raw/mlb/2026-06-02/schedule.json\",\n  \"script\": \"data-migration/scripts/ingest_mlb_schedule_game_feed_raw_to_typed.py\",\n  \"source_db\": \"data-private/warehouse/sports/mlb/sql-mlb.db\"\n}\n"
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "data-migration/scripts/ingest_mlb_schedule_game_feed_raw_to_typed.py",
+        "--date",
+        "2026-06-03",
+        "--source-db",
+        "data-private/warehouse/sports/mlb/sql-mlb.db",
+        "--report",
+        "data-migration/reports/mlb_typed_warehouse_ingest_mlb_range_schedule_game_feed_2026-06-03.json"
+      ],
+      "date": "2026-06-03",
+      "family": "schedule_game_feed",
+      "ok": true,
+      "report_path": "data-migration/reports/mlb_typed_warehouse_ingest_mlb_range_schedule_game_feed_2026-06-03.json",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"date\": \"2026-06-03\",\n  \"dry_run\": false,\n  \"errors\": [],\n  \"expected_game_count\": 15,\n  \"feed\": {\n    \"game_outcomes\": 0,\n    \"games\": 15,\n    \"missing_schedule_games\": 0,\n    \"pitch_events\": 723,\n    \"plate_appearances\": 167,\n    \"players\": 780,\n    \"source_files\": 15,\n    \"starting_pitchers\": 29\n  },\n  \"feed_file_count\": 15,\n  \"generated_at\": \"2026-06-03T19:14:59.542583+00:00\",\n  \"ok\": true,\n  \"raw_root\": \"data-private/raw/mlb\",\n  \"row_count_delta\": {\n    \"game_outcomes\": 0,\n    \"games\": 15,\n    \"pitch_events\": 723,\n    \"plate_appearances\": 167,\n    \"players\": 2,\n    \"source_fetch_runs\": 2,\n    \"source_fetch_status\": 0,\n    \"source_snapshots\": 16,\n    \"starting_pitchers\": 29,\n    \"teams\": 0,\n    \"venues\": 0\n  },\n  \"schedule\": {\n    \"games\": 15,\n    \"source_files\": 1,\n    \"source_snapshot_id\": \"mlb-6d4e01c7677759ca0af5f009611094ab\",\n    \"starting_pitchers\": 29,\n    \"teams\": 30,\n    \"venues\": 15\n  },\n  \"schedule_path\": \"data-private/raw/mlb/2026-06-03/schedule.json\",\n  \"script\": \"data-migration/scripts/ingest_mlb_schedule_game_feed_raw_to_typed.py\",\n  \"source_db\": \"data-private/warehouse/sports/mlb/sql-mlb.db\"\n}\n"
+    }
+  ],
+  "start_date": "2026-06-01",
+  "version": "1.0.0"
+}

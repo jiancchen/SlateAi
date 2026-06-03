@@ -127,7 +127,7 @@ def to_iso(dt: datetime) -> str:
 def load_game_maps(conn: sqlite3.Connection, start_date: str, end_date: str) -> tuple[dict[tuple[str, str, str], list[GameRef]], dict[tuple[str, str], list[StarterLogRef]]]:
     game_rows = conn.execute(
         """
-        SELECT game_pk, game_date, game_datetime, away_team, home_team
+        SELECT game_pk, game_date, start_time_utc AS game_datetime, away_team, home_team
         FROM mlb_games
         WHERE game_date BETWEEN ? AND ?
         ORDER BY game_date, game_datetime, game_pk

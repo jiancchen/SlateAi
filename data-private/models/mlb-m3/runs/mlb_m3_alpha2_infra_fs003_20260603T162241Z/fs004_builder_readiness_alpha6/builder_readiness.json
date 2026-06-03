@@ -66,7 +66,7 @@
     }
   },
   "contract_uri": "/Users/jcchen/Documents/New project/pipeline/mlb/features/contracts/m3_fs_004_state_path_redesign_v0.json",
-  "created_at": "2026-06-03T17:37:31Z",
+  "created_at": "2026-06-03T19:32:44Z",
   "db_uri": "/Users/jcchen/Documents/New project/data-private/warehouse/sports/mlb/sql-mlb.db",
   "errors": [],
   "feasibility_uri": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/fs004_source_feasibility_alpha6/fs004_source_feasibility.json",

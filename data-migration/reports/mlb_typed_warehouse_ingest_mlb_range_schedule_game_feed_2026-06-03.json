@@ -1,0 +1,44 @@
+{
+  "date": "2026-06-03",
+  "dry_run": false,
+  "errors": [],
+  "expected_game_count": 15,
+  "feed": {
+    "game_outcomes": 0,
+    "games": 15,
+    "missing_schedule_games": 0,
+    "pitch_events": 723,
+    "plate_appearances": 167,
+    "players": 780,
+    "source_files": 15,
+    "starting_pitchers": 29
+  },
+  "feed_file_count": 15,
+  "generated_at": "2026-06-03T19:14:59.542583+00:00",
+  "ok": true,
+  "raw_root": "data-private/raw/mlb",
+  "row_count_delta": {
+    "game_outcomes": 0,
+    "games": 15,
+    "pitch_events": 723,
+    "plate_appearances": 167,
+    "players": 2,
+    "source_fetch_runs": 2,
+    "source_fetch_status": 0,
+    "source_snapshots": 16,
+    "starting_pitchers": 29,
+    "teams": 0,
+    "venues": 0
+  },
+  "schedule": {
+    "games": 15,
+    "source_files": 1,
+    "source_snapshot_id": "mlb-6d4e01c7677759ca0af5f009611094ab",
+    "starting_pitchers": 29,
+    "teams": 30,
+    "venues": 15
+  },
+  "schedule_path": "data-private/raw/mlb/2026-06-03/schedule.json",
+  "script": "data-migration/scripts/ingest_mlb_schedule_game_feed_raw_to_typed.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db"
+}

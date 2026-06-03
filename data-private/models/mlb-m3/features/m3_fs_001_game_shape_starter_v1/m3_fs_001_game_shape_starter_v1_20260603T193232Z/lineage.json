@@ -1,0 +1,15 @@
+{
+  "as_of_policy": "pregame",
+  "builder_version": "0.2.0",
+  "contract_uri": "/Users/jcchen/Documents/New project/pipeline/mlb/features/contracts/m3_fs_001_game_shape_starter_v1.json",
+  "end_date": "2026-05-31",
+  "feature_builder": "pipeline.mlb.features.builders.build_game_shape_starter_v1",
+  "git_sha": "5219b4730205c38f36076ec0593b899dd17ca100",
+  "pitching_path_grain": "one opponent pitching path per batting side: starter phase then reliever-chain phase",
+  "source_db": "/Users/jcchen/Documents/New project/data-private/warehouse/sports/mlb/sql-mlb.db",
+  "start_date": "2026-03-26",
+  "uses_hand_picked_memory_lengths": false,
+  "uses_m2_weights": false,
+  "uses_sports_db": false,
+  "validator": "pipeline.mlb.features.validators.validate_game_shape_starter_v1"
+}

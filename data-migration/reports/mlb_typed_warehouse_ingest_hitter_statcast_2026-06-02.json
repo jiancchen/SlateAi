@@ -1,0 +1,43 @@
+{
+  "date": "2026-06-02",
+  "dry_run": false,
+  "errors": [],
+  "expected_context_items": 298,
+  "generated_at": "2026-06-03T19:24:14.496582+00:00",
+  "ok": true,
+  "player_context": {
+    "career_profiles": 0,
+    "identity_profiles": 0,
+    "people": 0,
+    "skipped": true,
+    "source_files": 0,
+    "unresolved": 0
+  },
+  "row_count_delta": {
+    "health_checks": 0,
+    "player_career_profiles": 0,
+    "player_identity_profiles": 0,
+    "player_statcast_game_logs": 298,
+    "players": 0,
+    "source_fetch_runs": 1,
+    "source_fetch_status": 0,
+    "source_snapshots": 2,
+    "unresolved_entities": 0
+  },
+  "savant": {
+    "details_rows": 0,
+    "game_logs": 298,
+    "grouped_rows": 298,
+    "players": 298,
+    "source_files": 2,
+    "source_snapshot_ids": [
+      "mlb-2dc14cf434d900350e73a4e59e85aebb",
+      "mlb-ad319ef0cd6afdc89d5a7d2c2b54917d"
+    ],
+    "unresolved": 0
+  },
+  "script": "data-migration/scripts/ingest_mlb_player_context_raw_to_typed.py",
+  "skip_player_context": true,
+  "skip_savant": false,
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db"
+}

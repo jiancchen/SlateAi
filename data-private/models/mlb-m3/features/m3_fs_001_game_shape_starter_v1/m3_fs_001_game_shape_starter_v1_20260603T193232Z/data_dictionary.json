@@ -1,0 +1,541 @@
+{
+  "away_bullpen_shape_snapshot_available_flag": {
+    "description": "Whether an away bullpen shape snapshot exists as of game date.",
+    "dtype": "integer",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_bullpen_shape_snapshots"
+  },
+  "away_lineup_complete_flag": {
+    "description": "Whether away lineup has nine known slots.",
+    "dtype": "integer",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "lineups,lineup_slots"
+  },
+  "away_lineup_known_flag": {
+    "description": "Whether an away lineup row exists for the game.",
+    "dtype": "integer",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "lineups"
+  },
+  "away_lineup_known_slot_count": {
+    "description": "Known away lineup slots.",
+    "dtype": "integer",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "lineups,lineup_slots"
+  },
+  "away_lineup_matchup_hitter_count": {
+    "description": "Away hitter starter-phase matchup rows available for this game.",
+    "dtype": "integer",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "lineup_matchup_snapshots"
+  },
+  "away_reliever_candidate_pool_entropy": {
+    "description": "Entropy of away first-up likelihood mass across candidate arms.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "likely_relief_chains"
+  },
+  "away_reliever_candidate_pool_size": {
+    "description": "Number of away relief-chain candidates in the latest snapshot.",
+    "dtype": "integer",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "likely_relief_chains"
+  },
+  "away_reliever_chain_known_flag": {
+    "description": "Whether likely relief-chain candidates exist for the away pitching side.",
+    "dtype": "integer",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "likely_relief_chains"
+  },
+  "away_reliever_command_profile_coverage_rate": {
+    "description": "Share of away relief-chain candidates with command profiles.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "reliever_command_profiles"
+  },
+  "away_reliever_first_up_top2_probability_mass": {
+    "description": "Away top-two first-up likelihood mass.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "likely_relief_chains"
+  },
+  "away_starter_known_flag": {
+    "description": "Whether the away starter is known.",
+    "dtype": "integer",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "starting_pitchers"
+  },
+  "away_starter_low_mlb_evidence_flag": {
+    "description": "Away starter has fewer than three prior typed MLB starts.",
+    "dtype": "integer",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs"
+  },
+  "away_starter_pitcher_id": {
+    "description": "Away starting pitcher ID when known.",
+    "dtype": "string",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "starting_pitchers"
+  },
+  "away_starter_prior_outs_per_start": {
+    "description": "Away starter season-to-date outs per prior start.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs"
+  },
+  "away_starter_prior_pitches_per_start": {
+    "description": "Away starter season-to-date pitches per prior start.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs"
+  },
+  "away_starter_prior_runs_allowed_per_start": {
+    "description": "Away starter season-to-date runs allowed per prior start.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs"
+  },
+  "away_starter_prior_short_start_rate": {
+    "description": "Away starter prior share of starts below five innings.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs"
+  },
+  "away_starter_prior_start_count": {
+    "description": "Away starter prior MLB starts in typed data.",
+    "dtype": "integer",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs"
+  },
+  "away_starter_prior_strikeouts_per_start": {
+    "description": "Away starter season-to-date strikeouts per prior start.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs"
+  },
+  "away_starter_prior_walks_per_start": {
+    "description": "Away starter season-to-date walks allowed per prior start.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs"
+  },
+  "away_team_prior_f5_runs_allowed_per_game": {
+    "description": "Away team season-to-date first-five runs allowed per prior game.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats"
+  },
+  "away_team_prior_f5_runs_scored_per_game": {
+    "description": "Away team season-to-date first-five runs scored per prior game.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats"
+  },
+  "away_team_prior_game_count": {
+    "description": "Away team completed games before this game.",
+    "dtype": "integer",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats"
+  },
+  "away_team_prior_plate_appearances_per_game": {
+    "description": "Away team prior plate appearances per game.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats"
+  },
+  "away_team_prior_runs_allowed_per_game": {
+    "description": "Away team season-to-date runs allowed per prior game.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats"
+  },
+  "away_team_prior_runs_scored_per_game": {
+    "description": "Away team season-to-date runs scored per prior game.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats"
+  },
+  "away_team_prior_total_bases_per_pa": {
+    "description": "Away team prior total bases divided by plate appearances.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats"
+  },
+  "away_team_prior_walk_rate_per_pa": {
+    "description": "Away team prior walks divided by plate appearances.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats"
+  },
+  "game_away_team_id": {
+    "description": "Away team ID.",
+    "dtype": "string",
+    "leakage_class": "pregame_safe",
+    "role": "metadata",
+    "source": "games"
+  },
+  "game_date": {
+    "description": "Game date.",
+    "dtype": "date",
+    "leakage_class": "pregame_safe",
+    "role": "time_key",
+    "source": "games"
+  },
+  "game_home_team_id": {
+    "description": "Home team ID.",
+    "dtype": "string",
+    "leakage_class": "pregame_safe",
+    "role": "metadata",
+    "source": "games"
+  },
+  "game_id": {
+    "description": "Stable typed game identifier.",
+    "dtype": "string",
+    "leakage_class": "pregame_safe",
+    "role": "primary_key",
+    "source": "games"
+  },
+  "game_season": {
+    "description": "MLB season.",
+    "dtype": "integer",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "games"
+  },
+  "game_series_game_number": {
+    "description": "Scheduled series game number when available.",
+    "dtype": "integer",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "games"
+  },
+  "game_start_time_utc": {
+    "description": "Scheduled start time.",
+    "dtype": "timestamp",
+    "leakage_class": "pregame_safe",
+    "role": "metadata",
+    "source": "games"
+  },
+  "game_status": {
+    "description": "Typed game status.",
+    "dtype": "string",
+    "leakage_class": "pregame_safe",
+    "role": "metadata",
+    "source": "games"
+  },
+  "game_venue_id": {
+    "description": "Venue ID when available.",
+    "dtype": "string",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "games"
+  },
+  "home_bullpen_shape_snapshot_available_flag": {
+    "description": "Whether a home bullpen shape snapshot exists as of game date.",
+    "dtype": "integer",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_bullpen_shape_snapshots"
+  },
+  "home_lineup_complete_flag": {
+    "description": "Whether home lineup has nine known slots.",
+    "dtype": "integer",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "lineups,lineup_slots"
+  },
+  "home_lineup_known_flag": {
+    "description": "Whether a home lineup row exists for the game.",
+    "dtype": "integer",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "lineups"
+  },
+  "home_lineup_known_slot_count": {
+    "description": "Known home lineup slots.",
+    "dtype": "integer",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "lineups,lineup_slots"
+  },
+  "home_lineup_matchup_hitter_count": {
+    "description": "Home hitter starter-phase matchup rows available for this game.",
+    "dtype": "integer",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "lineup_matchup_snapshots"
+  },
+  "home_reliever_candidate_pool_entropy": {
+    "description": "Entropy of home first-up likelihood mass across candidate arms.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "likely_relief_chains"
+  },
+  "home_reliever_candidate_pool_size": {
+    "description": "Number of home relief-chain candidates in the latest snapshot.",
+    "dtype": "integer",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "likely_relief_chains"
+  },
+  "home_reliever_chain_known_flag": {
+    "description": "Whether likely relief-chain candidates exist for the home pitching side.",
+    "dtype": "integer",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "likely_relief_chains"
+  },
+  "home_reliever_command_profile_coverage_rate": {
+    "description": "Share of home relief-chain candidates with command profiles.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "reliever_command_profiles"
+  },
+  "home_reliever_first_up_top2_probability_mass": {
+    "description": "Home top-two first-up likelihood mass.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "likely_relief_chains"
+  },
+  "home_starter_known_flag": {
+    "description": "Whether the home starter is known.",
+    "dtype": "integer",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "starting_pitchers"
+  },
+  "home_starter_low_mlb_evidence_flag": {
+    "description": "Home starter has fewer than three prior typed MLB starts.",
+    "dtype": "integer",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs"
+  },
+  "home_starter_pitcher_id": {
+    "description": "Home starting pitcher ID when known.",
+    "dtype": "string",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "starting_pitchers"
+  },
+  "home_starter_prior_outs_per_start": {
+    "description": "Home starter season-to-date outs per prior start.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs"
+  },
+  "home_starter_prior_pitches_per_start": {
+    "description": "Home starter season-to-date pitches per prior start.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs"
+  },
+  "home_starter_prior_runs_allowed_per_start": {
+    "description": "Home starter season-to-date runs allowed per prior start.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs"
+  },
+  "home_starter_prior_short_start_rate": {
+    "description": "Home starter prior share of starts below five innings.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs"
+  },
+  "home_starter_prior_start_count": {
+    "description": "Home starter prior MLB starts in typed data.",
+    "dtype": "integer",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs"
+  },
+  "home_starter_prior_strikeouts_per_start": {
+    "description": "Home starter season-to-date strikeouts per prior start.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs"
+  },
+  "home_starter_prior_walks_per_start": {
+    "description": "Home starter season-to-date walks allowed per prior start.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "starting_pitcher_game_logs"
+  },
+  "home_team_prior_f5_runs_allowed_per_game": {
+    "description": "Home team season-to-date first-five runs allowed per prior game.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats"
+  },
+  "home_team_prior_f5_runs_scored_per_game": {
+    "description": "Home team season-to-date first-five runs scored per prior game.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats"
+  },
+  "home_team_prior_game_count": {
+    "description": "Home team completed games before this game.",
+    "dtype": "integer",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats"
+  },
+  "home_team_prior_plate_appearances_per_game": {
+    "description": "Home team prior plate appearances per game.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats"
+  },
+  "home_team_prior_runs_allowed_per_game": {
+    "description": "Home team season-to-date runs allowed per prior game.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats"
+  },
+  "home_team_prior_runs_scored_per_game": {
+    "description": "Home team season-to-date runs scored per prior game.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats"
+  },
+  "home_team_prior_total_bases_per_pa": {
+    "description": "Home team prior total bases divided by plate appearances.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats"
+  },
+  "home_team_prior_walk_rate_per_pa": {
+    "description": "Home team prior walks divided by plate appearances.",
+    "dtype": "float",
+    "leakage_class": "historical_only",
+    "role": "feature",
+    "source": "team_game_stats"
+  },
+  "market_any_pregame_snapshot_count": {
+    "description": "Pregame market snapshots before scheduled first pitch.",
+    "dtype": "integer",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "market_snapshots"
+  },
+  "market_f5_total_pregame_snapshot_count": {
+    "description": "Pregame first-five total market snapshots before scheduled first pitch.",
+    "dtype": "integer",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "market_snapshots"
+  },
+  "market_total_pregame_snapshot_count": {
+    "description": "Pregame full-game total market snapshots before scheduled first pitch.",
+    "dtype": "integer",
+    "leakage_class": "pregame_safe",
+    "role": "feature",
+    "source": "market_snapshots"
+  },
+  "target_away_team_runs_f5": {
+    "description": "Away team first-five runs.",
+    "dtype": "integer",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_outcomes"
+  },
+  "target_away_team_runs_final": {
+    "description": "Away team final runs.",
+    "dtype": "integer",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_outcomes"
+  },
+  "target_chaos_game_flag": {
+    "description": "Postgame chaos label for high-tail or crooked-inning games.",
+    "dtype": "integer",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_outcomes,game_story_labels"
+  },
+  "target_f5_bucket": {
+    "description": "Postgame first-five shape label, falling back to deterministic F5 bucket.",
+    "dtype": "string",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_story_labels"
+  },
+  "target_home_team_runs_f5": {
+    "description": "Home team first-five runs.",
+    "dtype": "integer",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_outcomes"
+  },
+  "target_home_team_runs_final": {
+    "description": "Home team final runs.",
+    "dtype": "integer",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_outcomes"
+  },
+  "target_total_bucket": {
+    "description": "Postgame total-shape label, falling back to deterministic run bucket.",
+    "dtype": "string",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_story_labels"
+  },
+  "target_total_runs_f5": {
+    "description": "First-five combined runs.",
+    "dtype": "integer",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_outcomes"
+  },
+  "target_total_runs_final": {
+    "description": "Final combined runs.",
+    "dtype": "integer",
+    "leakage_class": "postgame_target",
+    "role": "target",
+    "source": "game_outcomes"
+  }
+}

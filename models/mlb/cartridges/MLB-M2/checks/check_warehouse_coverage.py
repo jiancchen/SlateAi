@@ -5,7 +5,7 @@ import sqlite3
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[5]
-DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
+DB_PATH = ROOT / "data-private" / "warehouse" / "sports" / "mlb" / "sql-mlb.db"
 
 TABLES = [
     {
@@ -55,7 +55,8 @@ TABLES = [
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--through-date", required=True)
+    parser.add_argument("--through-date", default="")
+    parser.add_argument("--db", default=str(DB_PATH))
     parser.add_argument("--json-out", default="")
     return parser.parse_args()
 
@@ -69,7 +70,7 @@ def table_exists(conn, table):
     return bool(
         fetch_one(
             conn,
-            "select 1 from sqlite_master where type = 'table' and name = ?",
+            "select 1 from sqlite_master where type in ('table', 'view') and name = ?",
             (table,),
         )
     )
@@ -77,10 +78,22 @@ def table_exists(conn, table):
 
 def main():
     args = parse_args()
-    if not DB_PATH.exists():
-        raise SystemExit(f"warehouse missing: {DB_PATH}")
+    db_path = Path(args.db)
+    if not db_path.is_absolute():
+        db_path = ROOT / db_path
+    if not db_path.exists():
+        raise SystemExit(f"warehouse missing: {db_path}")
 
-    conn = sqlite3.connect(DB_PATH)
+    conn = sqlite3.connect(db_path)
+    if not args.through_date:
+        latest_dates = [
+            fetch_one(conn, f"select max({spec['date_column']}) from {spec['table']}")
+            for spec in TABLES
+            if table_exists(conn, spec["table"])
+        ]
+        args.through_date = min(date for date in latest_dates if date)
+    if not args.through_date:
+        raise SystemExit("No --through-date provided and no coverage table dates found.")
     checks = []
     for spec in TABLES:
         table = spec["table"]

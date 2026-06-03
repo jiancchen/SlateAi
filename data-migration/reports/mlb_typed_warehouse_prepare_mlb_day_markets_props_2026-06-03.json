@@ -1,0 +1,53 @@
+{
+  "after_counts": {
+    "market_contracts": 798,
+    "market_price_ticks": 798,
+    "market_snapshots": 2408,
+    "prop_market_snapshots": 2409,
+    "source_snapshots": 2262,
+    "unresolved_entities": 0
+  },
+  "before_counts": {
+    "market_contracts": 798,
+    "market_price_ticks": 798,
+    "market_snapshots": 2408,
+    "prop_market_snapshots": 2409,
+    "source_snapshots": 2262,
+    "unresolved_entities": 0
+  },
+  "by_file": {},
+  "date": "2026-06-03",
+  "dry_run": false,
+  "generated_at": "2026-06-03T19:08:27.323190+00:00",
+  "inserted": {
+    "market_contracts": 0,
+    "market_price_ticks": 0,
+    "market_snapshots": 0
+  },
+  "odds_completeness": "missing",
+  "odds_status": "missing",
+  "ok": false,
+  "parsed_contracts": 0,
+  "parsed_snapshots": 0,
+  "parsed_ticks": 0,
+  "parser_module": "pipeline/sources/mlb/normalization/market_raw_context.py",
+  "prop_market_snapshots_for_date": 0,
+  "props_completeness": "missing",
+  "props_status": "missing",
+  "row_count_delta": {
+    "market_contracts": 0,
+    "market_price_ticks": 0,
+    "market_snapshots": 0,
+    "prop_market_snapshots": 0,
+    "source_snapshots": 0,
+    "unresolved_entities": 0
+  },
+  "sample_source_snapshots": [],
+  "script": "data-migration/scripts/ingest_mlb_markets_props_raw_to_typed.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_files": 0,
+  "source_games": 0,
+  "source_rows": 0,
+  "source_snapshot_rows": 0,
+  "unmapped_games": 0
+}

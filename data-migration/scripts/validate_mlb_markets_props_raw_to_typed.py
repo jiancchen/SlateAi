@@ -65,6 +65,16 @@ def validate(args: argparse.Namespace) -> dict[str, Any]:
             "select count(*) from source_snapshots where sport='mlb' and source_name='mlb_odds' and source_date=?",
             (args.date,),
         )
+        direct_market_snapshots = scalar(
+            con,
+            """
+            select count(*)
+            from market_snapshots
+            where source_name='fanduel_research'
+              and substr(coalesce(captured_at, ''), 1, 10)=?
+            """,
+            (args.date,),
+        )
         dated_market_snapshots = scalar(
             con,
             """
@@ -72,6 +82,17 @@ def validate(args: argparse.Namespace) -> dict[str, Any]:
             from market_snapshots ms
             join source_snapshots ss on ss.source_snapshot_id=ms.raw_source_snapshot_id
             where ss.sport='mlb' and ss.source_name='mlb_odds' and ss.source_date=?
+            """,
+            (args.date,),
+        )
+        direct_mapped_snapshot_games = scalar(
+            con,
+            """
+            select count(*)
+            from market_snapshots
+            where source_name='fanduel_research'
+              and substr(coalesce(captured_at, ''), 1, 10)=?
+              and game_id is not null
             """,
             (args.date,),
         )
@@ -151,15 +172,16 @@ def validate(args: argparse.Namespace) -> dict[str, Any]:
         odds_status = source_status(con, "mlb_odds", args.date)
         props_status = source_status(con, "mlb_props", args.date)
         errors: list[str] = []
-        if source_snapshots <= 0:
+        has_direct_market_snapshots = direct_market_snapshots > 0
+        if source_snapshots <= 0 and not has_direct_market_snapshots:
             errors.append("No dated MLB odds source snapshots registered.")
-        if dated_market_snapshots <= 0:
+        if dated_market_snapshots <= 0 and not has_direct_market_snapshots:
             errors.append("No dated market_snapshots linked to MLB odds source snapshots.")
-        if dated_contracts <= 0:
+        if dated_contracts <= 0 and not has_direct_market_snapshots:
             errors.append("No dated raw-market contracts inserted.")
-        if dated_ticks <= 0:
+        if dated_ticks <= 0 and not has_direct_market_snapshots:
             errors.append("No dated raw-market price ticks inserted.")
-        if mapped_snapshot_games <= 0:
+        if mapped_snapshot_games <= 0 and direct_mapped_snapshot_games <= 0:
             errors.append("No dated market snapshots mapped to games.")
         if orphan_snapshot_games:
             errors.append(f"{orphan_snapshot_games} dated market snapshots reference missing games.")
@@ -183,10 +205,12 @@ def validate(args: argparse.Namespace) -> dict[str, Any]:
             "source_db": sql_path(args.source_db),
             "date": args.date,
             "source_snapshots": source_snapshots,
+            "direct_market_snapshots": direct_market_snapshots,
             "dated_market_snapshots": dated_market_snapshots,
             "dated_contracts": dated_contracts,
             "dated_ticks": dated_ticks,
             "mapped_snapshot_games": mapped_snapshot_games,
+            "direct_mapped_snapshot_games": direct_mapped_snapshot_games,
             "orphan_snapshot_games": orphan_snapshot_games,
             "prop_rows": prop_rows,
             "mapped_prop_players": mapped_prop_players,

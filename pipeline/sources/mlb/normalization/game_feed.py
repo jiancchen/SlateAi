@@ -248,6 +248,12 @@ def upsert_player(con: sqlite3.Connection, person: dict[str, Any] | None, *, fal
     player_id = player_id_from_mlb_id(mlb_player_id)
     if not player_id or not player_name:
         return None
+    existing = con.execute(
+        "select player_id from players where mlb_player_id = ?",
+        (mlb_player_id,),
+    ).fetchone()
+    if existing:
+        player_id = existing[0]
     con.execute(
         """
         insert into players (player_id, mlb_player_id, name, bats, throws, primary_position, birth_date, active)
@@ -628,7 +634,7 @@ def upsert_plate_appearances(con: sqlite3.Connection, *, game: dict[str, Any], f
               away_score_before, home_score_before, away_score_after, home_score_after,
               men_on_base, is_scoring_play, is_out, is_at_bat, event_type, rbi,
               runs_scored, outs_on_play, win_expectancy_delta, raw_json, source_snapshot_id
-            ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, null, ?, ?)
+            ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, null, ?, ?)
             on conflict(plate_appearance_id) do update set
               game_id = excluded.game_id,
               inning = excluded.inning,

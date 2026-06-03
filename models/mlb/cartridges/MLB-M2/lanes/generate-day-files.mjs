@@ -1217,13 +1217,19 @@ const buildPitcherStartHistoryByPitcherId = ({ date, games, seasonYear = season 
       gl.walks_allowed,
       gl.strikeouts,
       gl.pitches_thrown,
-      g.venue_name,
-      case when gl.team_role = 'away' then g.away_score else g.home_score end as team_runs,
-      case when gl.team_role = 'away' then g.home_score else g.away_score end as opponent_runs,
+      v.name as venue_name,
+      case when gl.team_role = 'away' then go.away_runs else go.home_runs end as team_runs,
+      case when gl.team_role = 'away' then go.home_runs else go.away_runs end as opponent_runs,
       coalesce(fi.first_inning_runs_allowed, 0) as first_inning_runs_allowed
     from mlb_starting_pitcher_game_logs gl
     join mlb_games g
       on g.game_pk = gl.game_pk
+    left join games typed_game
+      on typed_game.mlb_game_pk = g.game_pk
+    left join venues v
+      on v.venue_id = typed_game.venue_id
+    left join game_outcomes go
+      on go.game_id = typed_game.game_id
     left join first_inning fi
       on fi.game_pk = gl.game_pk
      and fi.pitcher_id = gl.pitcher_id
@@ -1853,7 +1859,7 @@ const buildRecentGamesByTeam = ({ date, games, limit = 8 }) => {
       select
         o.game_pk,
         o.game_date,
-        g.game_datetime,
+        g.start_time_utc as game_datetime,
         o.away_team as team_name,
         o.home_team as opponent_name,
         'road' as venue_role,
@@ -1874,7 +1880,7 @@ const buildRecentGamesByTeam = ({ date, games, limit = 8 }) => {
       select
         o.game_pk,
         o.game_date,
-        g.game_datetime,
+        g.start_time_utc as game_datetime,
         o.home_team as team_name,
         o.away_team as opponent_name,
         'home' as venue_role,
@@ -2041,14 +2047,14 @@ const buildMatchupInningHistoryByTeam = ({ date, games, limit = 10, maxInnings =
         mp.pair_key,
         o.game_pk,
         o.game_date,
-        g.game_datetime,
+        g.start_time_utc as game_datetime,
         o.away_team,
         o.home_team,
         o.away_runs_final,
         o.home_runs_final,
         row_number() over (
           partition by mp.pair_key
-          order by coalesce(g.game_datetime, o.game_date) desc, o.game_pk desc
+          order by coalesce(g.start_time_utc, o.game_date) desc, o.game_pk desc
         ) as rn
       from matchup_pairs mp
       join mlb_game_outcomes o
@@ -2220,7 +2226,7 @@ const buildRecentInningHistoryByTeam = ({ date, games, limit = 10, maxInnings = 
       select
         o.game_pk,
         o.game_date,
-        g.game_datetime,
+        g.start_time_utc as game_datetime,
         o.away_team as team_name,
         o.home_team as opponent_name,
         'road' as venue_role,
@@ -2241,7 +2247,7 @@ const buildRecentInningHistoryByTeam = ({ date, games, limit = 10, maxInnings = 
       select
         o.game_pk,
         o.game_date,
-        g.game_datetime,
+        g.start_time_utc as game_datetime,
         o.home_team as team_name,
         o.away_team as opponent_name,
         'home' as venue_role,

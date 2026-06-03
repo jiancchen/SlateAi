@@ -13,14 +13,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 0,
       "losses": 0,
-      "era": "2.38",
-      "strikeOuts": 12,
-      "inningsPitched": "11.1",
-      "hitsAllowed": 7,
-      "walks": 2,
-      "homeRunsAllowed": 1,
-      "whip": "0.79",
-      "gamesStarted": 0,
+      "era": "3.07",
+      "strikeOuts": 16,
+      "inningsPitched": "14.2",
+      "hitsAllowed": 10,
+      "walks": 4,
+      "homeRunsAllowed": 2,
+      "whip": "0.95",
+      "gamesStarted": 1,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 680744,
@@ -38,9 +38,9 @@ export const rawGames = [
       "strikeoutMarket": null,
       "recentForm": null,
       "usageContext": {
-        "status": "debut-window",
-        "label": "Debut / opener watch",
-        "note": "No MLB starts are loaded yet, so this looks like a debut, opener, or fresh call-up lane with very little reliable innings history.",
+        "status": "tiny-sample",
+        "label": "Tiny MLB sample",
+        "note": "Only 1 MLB start are loaded, so the board should assume a shorter leash and higher variance.",
         "expectedInnings": 0,
         "daysSinceLastStart": null,
         "startsLoaded": 0,
@@ -60,14 +60,14 @@ export const rawGames = [
       "fullName": "Griffin Jax",
       "pitchHand": "R",
       "wins": 1,
-      "losses": 3,
-      "era": "3.56",
-      "strikeOuts": 28,
-      "inningsPitched": "30.1",
-      "hitsAllowed": 29,
-      "walks": 15,
-      "homeRunsAllowed": 4,
-      "whip": "1.45",
+      "losses": 4,
+      "era": "4.76",
+      "strikeOuts": 32,
+      "inningsPitched": "34.0",
+      "hitsAllowed": 34,
+      "walks": 16,
+      "homeRunsAllowed": 7,
+      "whip": "1.47",
       "gamesStarted": 7,
       "probableSource": "mlb-api",
       "savant": {
@@ -234,9 +234,9 @@ export const rawGames = [
         "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -175 / -1.5 +160",
-    "total": "o8 -115 / u8.5 -115",
-    "moneyline": "Tigers +115 / Rays -135",
+    "spread": "",
+    "total": "",
+    "moneyline": "",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/tigers-vs-rays",
     "metadata": {
@@ -815,8 +815,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Lost",
-                "tone": "info"
+                "label": "Fav failed",
+                "tone": "negative"
               },
               "hitters": {
                 "label": "Flat",
@@ -898,8 +898,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Lost",
-                "tone": "info"
+                "label": "Exp L",
+                "tone": "warning"
               },
               "hitters": {
                 "label": "Met",
@@ -1147,8 +1147,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Fav failed",
-                "tone": "negative"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -1230,8 +1230,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Fav held",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Met",
@@ -1313,8 +1313,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Quiet",
@@ -1396,8 +1396,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Mixed",
@@ -1651,8 +1651,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Won",
-                "tone": "info"
+                "label": "Coin W",
+                "tone": "positive"
               },
               "hitters": {
                 "label": "Late cash",
@@ -1734,8 +1734,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Won",
-                "tone": "info"
+                "label": "Fav held",
+                "tone": "positive"
               },
               "hitters": {
                 "label": "Late cash",
@@ -1817,8 +1817,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Won",
-                "tone": "info"
+                "label": "Dog upset",
+                "tone": "positive"
               },
               "hitters": {
                 "label": "Late cash",
@@ -1900,7 +1900,7 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin L",
+                "label": "Exp L",
                 "tone": "warning"
               },
               "hitters": {
@@ -2078,8 +2078,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Stranded",
@@ -2161,8 +2161,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Stranded",
@@ -2244,8 +2244,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Fav held",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -2538,16 +2538,16 @@ export const rawGames = [
       "id": 645261,
       "fullName": "Sandy Alcantara",
       "pitchHand": "R",
-      "wins": 3,
+      "wins": 4,
       "losses": 4,
-      "era": "4.66",
-      "strikeOuts": 52,
-      "inningsPitched": "75.1",
-      "hitsAllowed": 79,
+      "era": "4.59",
+      "strikeOuts": 57,
+      "inningsPitched": "82.1",
+      "hitsAllowed": 86,
       "walks": 21,
-      "homeRunsAllowed": 9,
-      "whip": "1.33",
-      "gamesStarted": 12,
+      "homeRunsAllowed": 10,
+      "whip": "1.30",
+      "gamesStarted": 13,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 645261,
@@ -2752,13 +2752,13 @@ export const rawGames = [
       "wins": 3,
       "losses": 3,
       "era": "3.62",
-      "strikeOuts": 68,
-      "inningsPitched": "59.2",
-      "hitsAllowed": 63,
-      "walks": 21,
+      "strikeOuts": 74,
+      "inningsPitched": "64.2",
+      "hitsAllowed": 68,
+      "walks": 24,
       "homeRunsAllowed": 3,
-      "whip": "1.41",
-      "gamesStarted": 12,
+      "whip": "1.42",
+      "gamesStarted": 13,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 676917,
@@ -2951,9 +2951,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -165 / -1.5 +145",
-    "total": "o8 -118 / u8.5 -120",
-    "moneyline": "Marlins +123 / Nationals -138",
+    "spread": "",
+    "total": "",
+    "moneyline": "",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/marlins-vs-nationals",
     "metadata": {
@@ -3559,8 +3559,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Lost",
-                "tone": "info"
+                "label": "Exp L",
+                "tone": "warning"
               },
               "hitters": {
                 "label": "Mixed",
@@ -3642,8 +3642,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Won",
-                "tone": "info"
+                "label": "Coin W",
+                "tone": "positive"
               },
               "hitters": {
                 "label": "Mixed",
@@ -3808,7 +3808,7 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin W",
+                "label": "Fav held",
                 "tone": "positive"
               },
               "hitters": {
@@ -3974,8 +3974,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Exp L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Flat",
@@ -4057,8 +4057,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Stranded",
@@ -4140,8 +4140,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -4395,8 +4395,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Lost",
-                "tone": "info"
+                "label": "Coin L",
+                "tone": "warning"
               },
               "hitters": {
                 "label": "Flat",
@@ -4478,8 +4478,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Lost",
-                "tone": "info"
+                "label": "Exp L",
+                "tone": "warning"
               },
               "hitters": {
                 "label": "Late cash",
@@ -4818,8 +4818,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Dog upset",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -4901,8 +4901,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Mixed",
@@ -4984,8 +4984,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Exp L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -5237,8 +5237,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Lost",
-                "tone": "info"
+                "label": "Fav failed",
+                "tone": "negative"
               },
               "hitters": {
                 "label": "Mixed",
@@ -5320,8 +5320,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Won",
-                "tone": "info"
+                "label": "Fav held",
+                "tone": "positive"
               },
               "hitters": {
                 "label": "Cashed",
@@ -5403,8 +5403,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Won",
-                "tone": "info"
+                "label": "Fav held",
+                "tone": "positive"
               },
               "hitters": {
                 "label": "Late cash",
@@ -5488,8 +5488,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Won",
-                "tone": "info"
+                "label": "Dog upset",
+                "tone": "positive"
               },
               "hitters": {
                 "label": "Mixed",
@@ -5571,8 +5571,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Lost",
-                "tone": "info"
+                "label": "Exp L",
+                "tone": "warning"
               },
               "hitters": {
                 "label": "Cashed",
@@ -5654,8 +5654,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Lost",
-                "tone": "info"
+                "label": "Exp L",
+                "tone": "warning"
               },
               "hitters": {
                 "label": "Flat",
@@ -5778,16 +5778,16 @@ export const rawGames = [
       "id": 679883,
       "fullName": "Luinder Avila",
       "pitchHand": "R",
-      "wins": 0,
+      "wins": 1,
       "losses": 2,
-      "era": "5.06",
-      "strikeOuts": 20,
-      "inningsPitched": "21.1",
-      "hitsAllowed": 27,
-      "walks": 12,
-      "homeRunsAllowed": 1,
-      "whip": "1.83",
-      "gamesStarted": 1,
+      "era": "4.44",
+      "strikeOuts": 25,
+      "inningsPitched": "26.1",
+      "hitsAllowed": 29,
+      "walks": 16,
+      "homeRunsAllowed": 2,
+      "whip": "1.71",
+      "gamesStarted": 2,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 679883,
@@ -5837,10 +5837,10 @@ export const rawGames = [
       },
       "recentForm": null,
       "usageContext": {
-        "status": "warehouse-gap",
-        "label": "Warehouse sample incomplete",
-        "note": "The season line shows 21.1 MLB innings, but only 1 logged start cleared the warehouse on this pass, so trust the starter lane more than the thin rolling sample.",
-        "expectedInnings": 4.6,
+        "status": "tiny-sample",
+        "label": "Tiny MLB sample",
+        "note": "Only 2 MLB starts are loaded, so the board should assume a shorter leash and higher variance.",
+        "expectedInnings": 3,
         "daysSinceLastStart": 58,
         "startsLoaded": 1,
         "shortLeashRisk": 1,
@@ -5859,15 +5859,15 @@ export const rawGames = [
       "fullName": "Lyon Richardson",
       "pitchHand": "R",
       "wins": 0,
-      "losses": 0,
-      "era": "13.50",
-      "strikeOuts": 1,
-      "inningsPitched": "0.2",
-      "hitsAllowed": 1,
-      "walks": 0,
-      "homeRunsAllowed": 1,
-      "whip": "1.50",
-      "gamesStarted": 0,
+      "losses": 1,
+      "era": "27.00",
+      "strikeOuts": 3,
+      "inningsPitched": "1.2",
+      "hitsAllowed": 2,
+      "walks": 2,
+      "homeRunsAllowed": 2,
+      "whip": "2.40",
+      "gamesStarted": 1,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 680689,
@@ -5885,9 +5885,9 @@ export const rawGames = [
       "strikeoutMarket": null,
       "recentForm": null,
       "usageContext": {
-        "status": "debut-window",
-        "label": "Debut / opener watch",
-        "note": "No MLB starts are loaded yet, so this looks like a debut, opener, or fresh call-up lane with very little reliable innings history.",
+        "status": "tiny-sample",
+        "label": "Tiny MLB sample",
+        "note": "Only 1 MLB start are loaded, so the board should assume a shorter leash and higher variance.",
         "expectedInnings": 0,
         "daysSinceLastStart": null,
         "startsLoaded": 0,
@@ -5902,9 +5902,9 @@ export const rawGames = [
         "workloadLabel": "Unknown leash"
       }
     },
-    "spread": "+1.5 -170 / -1.5 +155",
-    "total": "o9 -122 / u9.5 -114",
-    "moneyline": "Royals +112 / Reds -126",
+    "spread": "+1.5 -157 / -1.5 +136",
+    "total": "o8 -110 / u8 -108",
+    "moneyline": "Royals +135 / Reds -155",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/royals-vs-reds",
     "metadata": {
@@ -6488,8 +6488,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Lost",
-                "tone": "info"
+                "label": "Fav failed",
+                "tone": "negative"
               },
               "hitters": {
                 "label": "Met",
@@ -6571,8 +6571,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Lost",
-                "tone": "info"
+                "label": "Exp L",
+                "tone": "warning"
               },
               "hitters": {
                 "label": "Flat",
@@ -6737,7 +6737,7 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin W",
+                "label": "Dog upset",
                 "tone": "positive"
               },
               "hitters": {
@@ -6820,7 +6820,7 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin L",
+                "label": "Exp L",
                 "tone": "warning"
               },
               "hitters": {
@@ -6903,8 +6903,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Exp L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Mixed",
@@ -6986,8 +6986,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Flat",
@@ -7069,8 +7069,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Exp L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Flat",
@@ -7320,8 +7320,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Won",
-                "tone": "info"
+                "label": "Dog upset",
+                "tone": "positive"
               },
               "hitters": {
                 "label": "Met",
@@ -7403,8 +7403,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Won",
-                "tone": "info"
+                "label": "Dog upset",
+                "tone": "positive"
               },
               "hitters": {
                 "label": "Cashed",
@@ -7660,7 +7660,7 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin W",
+                "label": "Dog upset",
                 "tone": "positive"
               },
               "hitters": {
@@ -7743,8 +7743,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Fav held",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -7826,8 +7826,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Met",
@@ -7909,8 +7909,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Exp L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Stranded",
@@ -8204,15 +8204,15 @@ export const rawGames = [
       "fullName": "Landen Roupp",
       "pitchHand": "R",
       "wins": 5,
-      "losses": 5,
-      "era": "3.30",
-      "strikeOuts": 68,
-      "inningsPitched": "60.0",
-      "hitsAllowed": 49,
-      "walks": 22,
+      "losses": 6,
+      "era": "4.22",
+      "strikeOuts": 72,
+      "inningsPitched": "64.0",
+      "hitsAllowed": 57,
+      "walks": 27,
       "homeRunsAllowed": 3,
-      "whip": "1.18",
-      "gamesStarted": 11,
+      "whip": "1.31",
+      "gamesStarted": 12,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 694738,
@@ -8389,14 +8389,14 @@ export const rawGames = [
       "pitchHand": "L",
       "wins": 2,
       "losses": 1,
-      "era": "2.63",
-      "strikeOuts": 28,
-      "inningsPitched": "27.1",
-      "hitsAllowed": 22,
-      "walks": 8,
-      "homeRunsAllowed": 1,
-      "whip": "1.10",
-      "gamesStarted": 1,
+      "era": "2.87",
+      "strikeOuts": 33,
+      "inningsPitched": "31.1",
+      "hitsAllowed": 26,
+      "walks": 10,
+      "homeRunsAllowed": 2,
+      "whip": "1.15",
+      "gamesStarted": 2,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 675660,
@@ -8446,10 +8446,10 @@ export const rawGames = [
       },
       "recentForm": null,
       "usageContext": {
-        "status": "warehouse-gap",
-        "label": "Warehouse sample incomplete",
-        "note": "The season line shows 27.1 MLB innings, but only 1 logged start cleared the warehouse on this pass, so trust the starter lane more than the thin rolling sample.",
-        "expectedInnings": 5.2,
+        "status": "tiny-sample",
+        "label": "Tiny MLB sample",
+        "note": "Only 2 MLB starts are loaded, so the board should assume a shorter leash and higher variance.",
+        "expectedInnings": 2.67,
         "daysSinceLastStart": 54,
         "startsLoaded": 1,
         "shortLeashRisk": 1,
@@ -8460,12 +8460,12 @@ export const rawGames = [
         "fivePlusInningRate": null,
         "sixPlusInningRate": null,
         "ninetyPitchRate": null,
-        "workloadLabel": "5-inning lane"
+        "workloadLabel": "Short leash"
       }
     },
-    "spread": "+1.5 -164 / -1.5 +150",
-    "total": "o7 -125 / u7.5 -120",
-    "moneyline": "Giants +135 / Brewers -150",
+    "spread": "+1.5 -160 / -1.5 +150",
+    "total": "o8 -105 / u8 -110",
+    "moneyline": "Giants +130 / Brewers -148",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/giants-vs-brewers",
     "metadata": {
@@ -9076,8 +9076,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Lost",
-                "tone": "info"
+                "label": "Coin L",
+                "tone": "warning"
               },
               "hitters": {
                 "label": "Met",
@@ -9159,8 +9159,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Lost",
-                "tone": "info"
+                "label": "Coin L",
+                "tone": "warning"
               },
               "hitters": {
                 "label": "Met",
@@ -9491,8 +9491,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -9574,8 +9574,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Mixed",
@@ -9657,8 +9657,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Fav failed",
-                "tone": "negative"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -9908,8 +9908,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Won",
-                "tone": "info"
+                "label": "Dog upset",
+                "tone": "positive"
               },
               "hitters": {
                 "label": "Cashed",
@@ -9991,8 +9991,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Won",
-                "tone": "info"
+                "label": "Coin W",
+                "tone": "positive"
               },
               "hitters": {
                 "label": "Cashed",
@@ -10157,7 +10157,7 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin L",
+                "label": "Exp L",
                 "tone": "warning"
               },
               "hitters": {
@@ -10323,8 +10323,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Fav held",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -10406,8 +10406,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin W",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Flat",
@@ -10489,8 +10489,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Fav held",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Met",
@@ -10788,15 +10788,15 @@ export const rawGames = [
       "fullName": "David Sandlin",
       "pitchHand": "R",
       "wins": 1,
-      "losses": 0,
-      "era": "1.50",
-      "strikeOuts": 4,
-      "inningsPitched": "6.0",
-      "hitsAllowed": 1,
-      "walks": 0,
-      "homeRunsAllowed": 1,
-      "whip": "0.17",
-      "gamesStarted": 1,
+      "losses": 1,
+      "era": "8.10",
+      "strikeOuts": 8,
+      "inningsPitched": "10.0",
+      "hitsAllowed": 9,
+      "walks": 4,
+      "homeRunsAllowed": 2,
+      "whip": "1.30",
+      "gamesStarted": 2,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 689818,
@@ -10870,7 +10870,7 @@ export const rawGames = [
       "usageContext": {
         "status": "tiny-sample",
         "label": "Tiny MLB sample",
-        "note": "Only 1 MLB start are loaded, so the board should assume a shorter leash and higher variance.",
+        "note": "Only 2 MLB starts are loaded, so the board should assume a shorter leash and higher variance.",
         "expectedInnings": 3.8,
         "daysSinceLastStart": 5,
         "startsLoaded": 1,
@@ -10889,16 +10889,16 @@ export const rawGames = [
       "id": 657746,
       "fullName": "Joe Ryan",
       "pitchHand": "R",
-      "wins": 3,
+      "wins": 4,
       "losses": 3,
-      "era": "2.94",
-      "strikeOuts": 70,
-      "inningsPitched": "64.1",
-      "hitsAllowed": 46,
+      "era": "3.20",
+      "strikeOuts": 79,
+      "inningsPitched": "70.1",
+      "hitsAllowed": 54,
       "walks": 14,
-      "homeRunsAllowed": 4,
-      "whip": "0.93",
-      "gamesStarted": 12,
+      "homeRunsAllowed": 6,
+      "whip": "0.97",
+      "gamesStarted": 13,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 657746,
@@ -11091,9 +11091,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "+1.5 -168 / -1.5 +145",
-    "total": "o7.5 -120 / u8 -114",
-    "moneyline": "White Sox +123 / Twins -140",
+    "spread": "",
+    "total": "",
+    "moneyline": "",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/white-sox-vs-twins",
     "metadata": {
@@ -11714,8 +11714,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Won",
-                "tone": "info"
+                "label": "Coin W",
+                "tone": "positive"
               },
               "hitters": {
                 "label": "Cashed",
@@ -12046,8 +12046,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Late cash",
@@ -12137,8 +12137,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin W",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -12220,8 +12220,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin W",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -12303,8 +12303,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin W",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Late cash",
@@ -12558,8 +12558,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Won",
-                "tone": "info"
+                "label": "Dog upset",
+                "tone": "positive"
               },
               "hitters": {
                 "label": "Cashed",
@@ -12724,7 +12724,7 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin W",
+                "label": "Dog upset",
                 "tone": "positive"
               },
               "hitters": {
@@ -12890,8 +12890,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin W",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Late cash",
@@ -12981,8 +12981,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Mixed",
@@ -13064,8 +13064,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Flat",
@@ -13147,8 +13147,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Exp L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -13483,8 +13483,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Late cash",
@@ -13574,8 +13574,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin W",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -13657,8 +13657,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin W",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -13825,8 +13825,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin W",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Late cash",
@@ -13916,8 +13916,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Mixed",
@@ -13999,8 +13999,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Flat",
@@ -14123,16 +14123,16 @@ export const rawGames = [
       "id": 594798,
       "fullName": "Jacob deGrom",
       "pitchHand": "R",
-      "wins": 3,
+      "wins": 4,
       "losses": 4,
-      "era": "3.77",
-      "strikeOuts": 70,
-      "inningsPitched": "59.2",
-      "hitsAllowed": 48,
-      "walks": 12,
+      "era": "3.48",
+      "strikeOuts": 78,
+      "inningsPitched": "64.2",
+      "hitsAllowed": 52,
+      "walks": 13,
       "homeRunsAllowed": 13,
       "whip": "1.01",
-      "gamesStarted": 11,
+      "gamesStarted": 12,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 594798,
@@ -14308,15 +14308,15 @@ export const rawGames = [
       "fullName": "Michael McGreevy",
       "pitchHand": "R",
       "wins": 3,
-      "losses": 4,
+      "losses": 5,
       "era": "2.98",
-      "strikeOuts": 43,
-      "inningsPitched": "60.1",
-      "hitsAllowed": 51,
-      "walks": 15,
+      "strikeOuts": 44,
+      "inningsPitched": "66.1",
+      "hitsAllowed": 56,
+      "walks": 17,
       "homeRunsAllowed": 8,
-      "whip": "1.09",
-      "gamesStarted": 11,
+      "whip": "1.10",
+      "gamesStarted": 12,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 700241,
@@ -14487,9 +14487,9 @@ export const rawGames = [
         "workloadLabel": "5-inning lane"
       }
     },
-    "spread": "-1.5 +142 / +1.5 -155",
-    "total": "o7.5 even / u7.5 -120",
-    "moneyline": "Rangers -125 / Cardinals +110",
+    "spread": "+1.5 -220 / +1.5 -191",
+    "total": "o8 -105 / u8 -112",
+    "moneyline": "Rangers even / Cardinals -112",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rangers-vs-cardinals",
     "metadata": {
@@ -15100,8 +15100,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Lost",
-                "tone": "info"
+                "label": "Fav failed",
+                "tone": "negative"
               },
               "hitters": {
                 "label": "Cashed",
@@ -15266,7 +15266,7 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin L",
+                "label": "Exp L",
                 "tone": "warning"
               },
               "hitters": {
@@ -15432,8 +15432,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Fav held",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -15515,8 +15515,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Fav failed",
-                "tone": "negative"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Mixed",
@@ -15598,8 +15598,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Fav failed",
-                "tone": "negative"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Quiet",
@@ -15681,8 +15681,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Fav held",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -15932,8 +15932,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Lost",
-                "tone": "info"
+                "label": "Coin L",
+                "tone": "warning"
               },
               "hitters": {
                 "label": "Flat",
@@ -16015,8 +16015,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Lost",
-                "tone": "info"
+                "label": "Exp L",
+                "tone": "warning"
               },
               "hitters": {
                 "label": "Met",
@@ -16355,8 +16355,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Exp L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Flat",
@@ -16438,8 +16438,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Flat",
@@ -16521,8 +16521,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Dog upset",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -16817,14 +16817,14 @@ export const rawGames = [
       "pitchHand": "L",
       "wins": 1,
       "losses": 6,
-      "era": "8.08",
-      "strikeOuts": 39,
-      "inningsPitched": "42.1",
-      "hitsAllowed": 60,
-      "walks": 14,
-      "homeRunsAllowed": 12,
-      "whip": "1.75",
-      "gamesStarted": 9,
+      "era": "8.06",
+      "strikeOuts": 43,
+      "inningsPitched": "48.0",
+      "hitsAllowed": 67,
+      "walks": 15,
+      "homeRunsAllowed": 13,
+      "whip": "1.71",
+      "gamesStarted": 10,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 607536,
@@ -17001,14 +17001,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 6,
       "losses": 4,
-      "era": "2.65",
-      "strikeOuts": 78,
-      "inningsPitched": "71.1",
-      "hitsAllowed": 51,
-      "walks": 31,
-      "homeRunsAllowed": 6,
-      "whip": "1.15",
-      "gamesStarted": 12,
+      "era": "2.72",
+      "strikeOuts": 85,
+      "inningsPitched": "76.0",
+      "hitsAllowed": 54,
+      "walks": 38,
+      "homeRunsAllowed": 7,
+      "whip": "1.21",
+      "gamesStarted": 13,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 667755,
@@ -17179,9 +17179,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -120 / -1.5 +112",
-    "total": "o8 -114 / u8 -105",
-    "moneyline": "Rockies +165 / Angels -200",
+    "spread": "+1.5 -165 / -1.5 +140",
+    "total": "o8.5 -113 / u8.5 -104",
+    "moneyline": "Rockies +130 / Angels -145",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/rockies-vs-angels",
     "metadata": {
@@ -17792,8 +17792,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Lost",
-                "tone": "info"
+                "label": "Exp L",
+                "tone": "warning"
               },
               "hitters": {
                 "label": "Flat",
@@ -17875,8 +17875,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Won",
-                "tone": "info"
+                "label": "Dog upset",
+                "tone": "positive"
               },
               "hitters": {
                 "label": "Stranded",
@@ -18207,8 +18207,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Exp L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -18290,8 +18290,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Exp L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Flat",
@@ -18373,8 +18373,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Dog upset",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -18624,8 +18624,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Lost",
-                "tone": "info"
+                "label": "Coin L",
+                "tone": "warning"
               },
               "hitters": {
                 "label": "Mixed",
@@ -18711,8 +18711,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Won",
-                "tone": "info"
+                "label": "Dog upset",
+                "tone": "positive"
               },
               "hitters": {
                 "label": "Cashed",
@@ -18877,7 +18877,7 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin W",
+                "label": "Fav held",
                 "tone": "positive"
               },
               "hitters": {
@@ -18960,8 +18960,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Dog upset",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -19043,8 +19043,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Exp L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Flat",
@@ -19126,8 +19126,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin W",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -19209,8 +19209,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Exp L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -19504,15 +19504,15 @@ export const rawGames = [
       "fullName": "Emmet Sheehan",
       "pitchHand": "R",
       "wins": 3,
-      "losses": 1,
-      "era": "4.70",
-      "strikeOuts": 59,
-      "inningsPitched": "51.2",
-      "hitsAllowed": 50,
+      "losses": 2,
+      "era": "4.50",
+      "strikeOuts": 62,
+      "inningsPitched": "58.0",
+      "hitsAllowed": 53,
       "walks": 14,
-      "homeRunsAllowed": 9,
-      "whip": "1.24",
-      "gamesStarted": 10,
+      "homeRunsAllowed": 11,
+      "whip": "1.16",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 686218,
@@ -19711,14 +19711,14 @@ export const rawGames = [
       "pitchHand": "L",
       "wins": 5,
       "losses": 1,
-      "era": "2.31",
-      "strikeOuts": 49,
-      "inningsPitched": "66.1",
-      "hitsAllowed": 55,
-      "walks": 25,
+      "era": "2.24",
+      "strikeOuts": 52,
+      "inningsPitched": "72.1",
+      "hitsAllowed": 60,
+      "walks": 26,
       "homeRunsAllowed": 5,
-      "whip": "1.21",
-      "gamesStarted": 11,
+      "whip": "1.19",
+      "gamesStarted": 12,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 593958,
@@ -19916,9 +19916,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "-1.5 +104 / +1.5 -118",
-    "total": "o8.5 -115 / u9.5 -150",
-    "moneyline": "Dodgers -162 / Diamondbacks +140",
+    "spread": "-1.5 -120 / +1.5 even",
+    "total": "o8.5 -120 / u9 -114",
+    "moneyline": "Dodgers -190 / Diamondbacks +168",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/dodgers-vs-diamondbacks",
     "metadata": {
@@ -20524,8 +20524,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Won",
-                "tone": "info"
+                "label": "Fav held",
+                "tone": "positive"
               },
               "hitters": {
                 "label": "Met",
@@ -20607,8 +20607,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Lost",
-                "tone": "info"
+                "label": "Coin L",
+                "tone": "warning"
               },
               "hitters": {
                 "label": "Flat",
@@ -20773,7 +20773,7 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin W",
+                "label": "Fav held",
                 "tone": "positive"
               },
               "hitters": {
@@ -20939,8 +20939,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Fav held",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -21022,8 +21022,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Fav held",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Met",
@@ -21105,8 +21105,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Fav held",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Met",
@@ -21356,8 +21356,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Won",
-                "tone": "info"
+                "label": "Fav held",
+                "tone": "positive"
               },
               "hitters": {
                 "label": "Flat",
@@ -21439,8 +21439,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Lost",
-                "tone": "info"
+                "label": "Fav failed",
+                "tone": "negative"
               },
               "hitters": {
                 "label": "Mixed",
@@ -21771,8 +21771,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin W",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -21854,8 +21854,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin W",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Late cash",
@@ -21937,8 +21937,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Exp L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -22198,8 +22198,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Won",
-                "tone": "info"
+                "label": "Fav held",
+                "tone": "positive"
               },
               "hitters": {
                 "label": "Cashed",
@@ -22281,8 +22281,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Won",
-                "tone": "info"
+                "label": "Fav held",
+                "tone": "positive"
               },
               "hitters": {
                 "label": "Met",
@@ -22364,8 +22364,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Won",
-                "tone": "info"
+                "label": "Fav held",
+                "tone": "positive"
               },
               "hitters": {
                 "label": "Late cash",
@@ -22449,8 +22449,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Lost",
-                "tone": "info"
+                "label": "Exp L",
+                "tone": "warning"
               },
               "hitters": {
                 "label": "Flat",
@@ -22532,8 +22532,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Lost",
-                "tone": "info"
+                "label": "Exp L",
+                "tone": "warning"
               },
               "hitters": {
                 "label": "Met",
@@ -22615,8 +22615,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Lost",
-                "tone": "info"
+                "label": "Exp L",
+                "tone": "warning"
               },
               "hitters": {
                 "label": "Mixed",
@@ -22741,14 +22741,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 1,
       "losses": 1,
-      "era": "1.40",
+      "era": "1.33",
       "strikeOuts": 22,
-      "inningsPitched": "19.1",
+      "inningsPitched": "20.1",
       "hitsAllowed": 14,
       "walks": 9,
       "homeRunsAllowed": 1,
-      "whip": "1.19",
-      "gamesStarted": 0,
+      "whip": "1.13",
+      "gamesStarted": 1,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 681810,
@@ -22768,7 +22768,7 @@ export const rawGames = [
       "usageContext": {
         "status": "warehouse-gap",
         "label": "Warehouse sample incomplete",
-        "note": "The season line shows 19.1 MLB innings, but only 0 logged starts cleared the warehouse on this pass, so trust the starter lane more than the thin rolling sample.",
+        "note": "The season line shows 20.1 MLB innings, but only 1 logged start cleared the warehouse on this pass, so trust the starter lane more than the thin rolling sample.",
         "expectedInnings": 4.6,
         "daysSinceLastStart": null,
         "startsLoaded": 0,
@@ -22789,14 +22789,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 4,
       "losses": 2,
-      "era": "2.78",
-      "strikeOuts": 63,
-      "inningsPitched": "64.2",
-      "hitsAllowed": 50,
+      "era": "2.80",
+      "strikeOuts": 70,
+      "inningsPitched": "70.2",
+      "hitsAllowed": 52,
       "walks": 15,
-      "homeRunsAllowed": 8,
-      "whip": "1.01",
-      "gamesStarted": 11,
+      "homeRunsAllowed": 10,
+      "whip": "0.95",
+      "gamesStarted": 12,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 676106,
@@ -22967,9 +22967,9 @@ export const rawGames = [
         "workloadLabel": "Workhorse lane"
       }
     },
-    "spread": "+1.5 -195 / -1.5 +172",
-    "total": "o7 -120 / u7 +105",
-    "moneyline": "Mets +110 / Mariners -130",
+    "spread": "+1.5 -180 / -1.5 +158",
+    "total": "o7 -124 / u7.5 -122",
+    "moneyline": "Mets +125 / Mariners -140",
     "pitcherSourceNote": "",
     "oddsPage": "https://www.scoresandodds.com/mlb/mets-vs-mariners",
     "metadata": {
@@ -23553,8 +23553,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Won",
-                "tone": "info"
+                "label": "Coin W",
+                "tone": "positive"
               },
               "hitters": {
                 "label": "Mixed",
@@ -23636,8 +23636,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Lost",
-                "tone": "info"
+                "label": "Coin L",
+                "tone": "warning"
               },
               "hitters": {
                 "label": "Quiet",
@@ -23802,7 +23802,7 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin L",
+                "label": "Exp L",
                 "tone": "warning"
               },
               "hitters": {
@@ -23885,8 +23885,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin L",
-                "tone": "warning"
+                "label": "Fav failed",
+                "tone": "negative"
               },
               "hitters": {
                 "label": "Stranded",
@@ -23968,8 +23968,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Exp L",
-                "tone": "warning"
+                "label": "Lost",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Flat",
@@ -24051,8 +24051,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin W",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Met",
@@ -24134,8 +24134,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin W",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -24389,8 +24389,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Won",
-                "tone": "info"
+                "label": "Fav held",
+                "tone": "positive"
               },
               "hitters": {
                 "label": "Late cash",
@@ -24472,8 +24472,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Won",
-                "tone": "info"
+                "label": "Fav held",
+                "tone": "positive"
               },
               "hitters": {
                 "label": "Flat",
@@ -24638,8 +24638,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin L",
-                "tone": "warning"
+                "label": "Fav failed",
+                "tone": "negative"
               },
               "hitters": {
                 "label": "Cashed",
@@ -24804,8 +24804,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin W",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Met",
@@ -24887,8 +24887,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Coin W",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",
@@ -24970,8 +24970,8 @@ export const rawGames = [
             },
             "storyAxes": {
               "market": {
-                "label": "Fav held",
-                "tone": "positive"
+                "label": "Won",
+                "tone": "info"
               },
               "hitters": {
                 "label": "Cashed",

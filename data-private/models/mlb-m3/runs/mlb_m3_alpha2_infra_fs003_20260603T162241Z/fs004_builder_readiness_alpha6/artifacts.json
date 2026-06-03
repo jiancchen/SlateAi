@@ -5,7 +5,7 @@
       "exists": true,
       "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs003_20260603T162241Z/fs004_builder_readiness_alpha6/builder_readiness.json",
       "role": "builder_readiness",
-      "sha256": "59e65f795b66c02e12e6fa8f4335dea7722a015b5cd82a1bf3b58a93e1fec997"
+      "sha256": "1de5aaa994e4a48c1c5d0296ffe0bffa37162947d1584f70d822c9ad77d55b08"
     },
     {
       "bytes": 576,

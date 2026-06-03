@@ -140,6 +140,22 @@ def count_prop_rows(con: sqlite3.Connection, date: str) -> int:
     )
 
 
+def count_direct_market_rows(con: sqlite3.Connection, date: str) -> int:
+    return int(
+        con.execute(
+            """
+            select count(*)
+            from market_snapshots
+            where source_name = 'fanduel_research'
+              and substr(coalesce(captured_at, ''), 1, 10) = ?
+              and game_id is not null
+            """,
+            (date,),
+        ).fetchone()[0]
+        or 0
+    )
+
+
 def upsert_fetch_status(
     con: sqlite3.Connection,
     *,
@@ -311,6 +327,7 @@ def ingest(args: argparse.Namespace) -> dict[str, Any]:
             inserted.update(insert_value_rows(con, [("market_price_ticks", row) for row in all_ticks]))
             inserted.update(insert_value_rows(con, [("market_snapshots", row) for row in all_snapshots]))
         prop_count = count_prop_rows(con, args.date)
+        direct_market_count = count_direct_market_rows(con, args.date)
         after = {
             "source_snapshots": con.execute("select count(*) from source_snapshots").fetchone()[0],
             "market_contracts": con.execute("select count(*) from market_contracts").fetchone()[0],
@@ -319,7 +336,7 @@ def ingest(args: argparse.Namespace) -> dict[str, Any]:
             "prop_market_snapshots": con.execute("select count(*) from prop_market_snapshots").fetchone()[0],
             "unresolved_entities": con.execute("select count(*) from unresolved_entities").fetchone()[0],
         }
-        odds_status = "success" if files and all_snapshots else "missing"
+        odds_status = "success" if (files and all_snapshots) or direct_market_count > 0 else "missing"
         odds_completeness = "complete" if odds_status == "success" and counts["unmapped_games"] == 0 else ("partial" if odds_status == "success" else "missing")
         props_status = "success" if prop_count > 0 else "missing"
         props_completeness = "complete" if prop_count > 0 else "missing"
@@ -333,6 +350,7 @@ def ingest(args: argparse.Namespace) -> dict[str, Any]:
             **counts,
             "inserted": inserted,
             "source_snapshot_rows": len(source_snapshot_ids),
+            "direct_market_snapshots_for_date": direct_market_count,
             "prop_market_snapshots_for_date": prop_count,
             "odds_status": odds_status,
             "odds_completeness": odds_completeness,
@@ -357,8 +375,8 @@ def ingest(args: argparse.Namespace) -> dict[str, Any]:
                 completeness=odds_completeness,
                 ttl_hours=1,
                 expected=counts["source_rows"],
-                actual=len(all_snapshots),
-                missing=max(0, counts["source_rows"] - len(all_snapshots)),
+                actual=len(all_snapshots) + direct_market_count,
+                missing=max(0, counts["source_rows"] - len(all_snapshots) - direct_market_count),
                 unresolved=counts["unmapped_games"],
                 run_reason="typed_parse",
                 report_path=args.report,

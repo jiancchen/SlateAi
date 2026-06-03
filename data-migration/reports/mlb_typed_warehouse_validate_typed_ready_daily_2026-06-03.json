@@ -1,0 +1,240 @@
+{
+  "date": "2026-06-03",
+  "db_path": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "failed_count": 3,
+  "filter_contracts_by_date": false,
+  "mode": "validate_typed_ready",
+  "ok": false,
+  "ok_count": 1,
+  "results": [
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "data-migration/scripts/validate_mlb_schedule_game_feed_raw_to_typed.py",
+        "--source-db",
+        "data-private/warehouse/sports/mlb/sql-mlb.db",
+        "--report",
+        "data-migration/reports/mlb_typed_warehouse_validate_schedule_game_feed_raw_to_typed_2026-06-03.json",
+        "--date",
+        "2026-06-03"
+      ],
+      "errors": [
+        "No source-linked game outcomes for date."
+      ],
+      "label": "schedule_game_feed_raw_to_typed",
+      "ok": false,
+      "report_path": "data-migration/reports/mlb_typed_warehouse_validate_schedule_game_feed_raw_to_typed_2026-06-03.json",
+      "returncode": 1,
+      "script": "data-migration/scripts/validate_mlb_schedule_game_feed_raw_to_typed.py",
+      "summary": {
+        "checks": null,
+        "counts": null,
+        "source_rows": null,
+        "target_counts": null
+      }
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "data-migration/scripts/validate_mlb_lineups_raw_to_typed.py",
+        "--source-db",
+        "data-private/warehouse/sports/mlb/sql-mlb.db",
+        "--report",
+        "data-migration/reports/mlb_typed_warehouse_validate_lineups_raw_to_typed_2026-06-03.json",
+        "--date",
+        "2026-06-03"
+      ],
+      "errors": [
+        "Validator exited with 1."
+      ],
+      "label": "lineups_raw_to_typed",
+      "ok": false,
+      "report_path": "data-migration/reports/mlb_typed_warehouse_validate_lineups_raw_to_typed_2026-06-03.json",
+      "returncode": 1,
+      "script": "data-migration/scripts/validate_mlb_lineups_raw_to_typed.py",
+      "summary": {
+        "checks": [
+          {
+            "details": "{'mlb_lineups': 2, 'mlb_probables': 2}",
+            "name": "lineup_source_snapshot_exists",
+            "ok": true
+          },
+          {
+            "details": "{'mlb_lineups': 2, 'mlb_probables': 2}",
+            "name": "probables_source_snapshot_exists",
+            "ok": true
+          },
+          {
+            "details": "{'last_status': 'partial', 'last_completeness_status': 'partial', 'expected_item_count': 270, 'actual_item_count': 266, 'missing_item_count': 4, 'unresolved_count': 0, 'cache_valid_until': '2026-06-04T07:27:38.136687+00:00'}",
+            "name": "lineup_fetch_status_present",
+            "ok": true
+          },
+          {
+            "details": "{'last_status': 'partial', 'last_completeness_status': 'partial', 'expected_item_count': 15, 'actual_item_count': 14, 'missing_item_count': 1, 'unresolved_count': 0, 'cache_valid_until': '2026-06-04T01:27:38.137086+00:00'}",
+            "name": "probables_fetch_status_complete",
+            "ok": false
+          },
+          {
+            "details": "15 / 15",
+            "name": "games_with_lineups_match_expected",
+            "ok": true
+          },
+          {
+            "details": "30 / 30",
+            "name": "lineups_two_per_game",
+            "ok": true
+          },
+          {
+            "details": "266 / 266",
+            "name": "slots_match_raw_board",
+            "ok": true
+          },
+          {
+            "details": "status={'last_status': 'partial', 'last_completeness_status': 'partial', 'expected_item_count': 270, 'actual_item_count': 266, 'missing_item_count': 4, 'unresolved_count': 0, 'cache_valid_until': '2026-06-04T07:27:38.136687+00:00'} raw=266 expected_complete=270",
+            "name": "lineup_fetch_status_reflects_slot_coverage",
+            "ok": true
+          },
+          {
+            "details": "266 / 266",
+            "name": "matchup_rows_cover_slots",
+            "ok": true
+          },
+          {
+            "details": "29 / 30",
+            "name": "probables_two_per_game",
+            "ok": false
+          },
+          {
+            "details": "0",
+            "name": "no_orphan_lineup_slots",
+            "ok": true
+          }
+        ],
+        "counts": {
+          "games_with_lineups": 15,
+          "lineup_matchup_missing_pitcher": 9,
+          "lineup_matchup_snapshots": 266,
+          "lineup_slots": 266,
+          "lineups": 30,
+          "orphan_lineup_slots": 0,
+          "probable_pitchers": 29
+        },
+        "source_rows": null,
+        "target_counts": null
+      }
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "data-migration/scripts/validate_mlb_markets_props_raw_to_typed.py",
+        "--source-db",
+        "data-private/warehouse/sports/mlb/sql-mlb.db",
+        "--report",
+        "data-migration/reports/mlb_typed_warehouse_validate_markets_props_raw_to_typed_2026-06-03.json",
+        "--date",
+        "2026-06-03"
+      ],
+      "errors": [],
+      "label": "markets_props_raw_to_typed",
+      "ok": true,
+      "report_path": "data-migration/reports/mlb_typed_warehouse_validate_markets_props_raw_to_typed_2026-06-03.json",
+      "returncode": 0,
+      "script": "data-migration/scripts/validate_mlb_markets_props_raw_to_typed.py",
+      "summary": {
+        "checks": null,
+        "counts": null,
+        "source_rows": null,
+        "target_counts": null
+      }
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "data-migration/scripts/validate_mlb_player_context_raw_to_typed.py",
+        "--source-db",
+        "data-private/warehouse/sports/mlb/sql-mlb.db",
+        "--report",
+        "data-migration/reports/mlb_typed_warehouse_validate_player_context_raw_to_typed_2026-06-03.json",
+        "--date",
+        "2026-06-03"
+      ],
+      "errors": [
+        "Validator exited with 1."
+      ],
+      "label": "player_context_raw_to_typed",
+      "ok": false,
+      "report_path": "data-migration/reports/mlb_typed_warehouse_validate_player_context_raw_to_typed_2026-06-03.json",
+      "returncode": 1,
+      "script": "data-migration/scripts/validate_mlb_player_context_raw_to_typed.py",
+      "summary": {
+        "checks": [
+          {
+            "details": "{'last_status': 'missing', 'last_completeness_status': 'missing', 'expected_item_count': None, 'actual_item_count': 0, 'missing_item_count': None, 'unresolved_count': 0, 'cache_valid_until': '2026-06-04T19:25:11.607506+00:00'}",
+            "name": "baseballsavant_hitter_statcast_status_present",
+            "ok": false
+          },
+          {
+            "details": "{'last_status': 'success', 'last_completeness_status': 'complete', 'expected_item_count': None, 'actual_item_count': 270, 'missing_item_count': None, 'unresolved_count': 0, 'cache_valid_until': '2026-06-04T19:25:11.807655+00:00'}",
+            "name": "mlb_player_context_status_present",
+            "ok": true
+          },
+          {
+            "details": "2",
+            "name": "savant_snapshots_exist",
+            "ok": true
+          },
+          {
+            "details": "20",
+            "name": "player_context_snapshots_exist",
+            "ok": true
+          },
+          {
+            "details": "0",
+            "name": "statcast_game_logs_inserted",
+            "ok": false
+          },
+          {
+            "details": "444",
+            "name": "identity_profiles_inserted",
+            "ok": true
+          },
+          {
+            "details": "444",
+            "name": "career_profiles_inserted",
+            "ok": true
+          },
+          {
+            "details": "0",
+            "name": "no_duplicate_statcast_ids",
+            "ok": true
+          },
+          {
+            "details": "0",
+            "name": "no_orphan_statcast_players",
+            "ok": true
+          },
+          {
+            "details": "0",
+            "name": "no_orphan_identity_players",
+            "ok": true
+          }
+        ],
+        "counts": {
+          "duplicate_statcast_game_log_ids": 0,
+          "orphan_identity_players": 0,
+          "orphan_statcast_players": 0,
+          "player_context_source_snapshots": 20,
+          "savant_source_snapshots": 2,
+          "source_linked_career_profiles": 444,
+          "source_linked_identity_profiles": 444,
+          "source_linked_statcast_game_logs": 0
+        },
+        "source_rows": null,
+        "target_counts": null
+      }
+    }
+  ],
+  "scope": "daily",
+  "validator_count": 4,
+  "version": "1.0.0"
+}

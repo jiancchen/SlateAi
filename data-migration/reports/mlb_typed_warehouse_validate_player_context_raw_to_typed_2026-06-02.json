@@ -1,0 +1,89 @@
+{
+  "checks": [
+    {
+      "details": "{'last_status': 'success', 'last_completeness_status': 'complete', 'expected_item_count': None, 'actual_item_count': 298, 'missing_item_count': None, 'unresolved_count': 0, 'cache_valid_until': '2026-06-04T19:24:14.530814+00:00'}",
+      "name": "baseballsavant_hitter_statcast_status_present",
+      "ok": true
+    },
+    {
+      "details": "{'last_status': 'success', 'last_completeness_status': 'complete', 'expected_item_count': None, 'actual_item_count': 312, 'missing_item_count': None, 'unresolved_count': 0, 'cache_valid_until': '2026-06-04T19:18:28.221719+00:00'}",
+      "name": "mlb_player_context_status_present",
+      "ok": true
+    },
+    {
+      "details": "2",
+      "name": "savant_snapshots_exist",
+      "ok": true
+    },
+    {
+      "details": "13",
+      "name": "player_context_snapshots_exist",
+      "ok": true
+    },
+    {
+      "details": "298",
+      "name": "statcast_game_logs_inserted",
+      "ok": true
+    },
+    {
+      "details": "312",
+      "name": "identity_profiles_inserted",
+      "ok": true
+    },
+    {
+      "details": "312",
+      "name": "career_profiles_inserted",
+      "ok": true
+    },
+    {
+      "details": "0",
+      "name": "no_duplicate_statcast_ids",
+      "ok": true
+    },
+    {
+      "details": "0",
+      "name": "no_orphan_statcast_players",
+      "ok": true
+    },
+    {
+      "details": "0",
+      "name": "no_orphan_identity_players",
+      "ok": true
+    }
+  ],
+  "counts": {
+    "duplicate_statcast_game_log_ids": 0,
+    "orphan_identity_players": 0,
+    "orphan_statcast_players": 0,
+    "player_context_source_snapshots": 13,
+    "savant_source_snapshots": 2,
+    "source_linked_career_profiles": 312,
+    "source_linked_identity_profiles": 312,
+    "source_linked_statcast_game_logs": 298
+  },
+  "date": "2026-06-02",
+  "fetch_status": {
+    "baseballsavant_hitter_statcast": {
+      "actual_item_count": 298,
+      "cache_valid_until": "2026-06-04T19:24:14.530814+00:00",
+      "expected_item_count": null,
+      "last_completeness_status": "complete",
+      "last_status": "success",
+      "missing_item_count": null,
+      "unresolved_count": 0
+    },
+    "mlb_player_context": {
+      "actual_item_count": 312,
+      "cache_valid_until": "2026-06-04T19:18:28.221719+00:00",
+      "expected_item_count": null,
+      "last_completeness_status": "complete",
+      "last_status": "success",
+      "missing_item_count": null,
+      "unresolved_count": 0
+    }
+  },
+  "generated_at": "2026-06-03T19:28:09.726171+00:00",
+  "ok": true,
+  "script": "data-migration/scripts/validate_mlb_player_context_raw_to_typed.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db"
+}
