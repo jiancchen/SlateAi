@@ -29,7 +29,7 @@ VALIDATE_LINEUPS_RAW = ROOT / "data-migration" / "scripts" / "validate_mlb_lineu
 VALIDATE_MARKETS_PROPS_RAW = ROOT / "data-migration" / "scripts" / "validate_mlb_markets_props_raw_to_typed.py"
 VALIDATE_PLAYER_CONTEXT_RAW = ROOT / "data-migration" / "scripts" / "validate_mlb_player_context_raw_to_typed.py"
 VALIDATE_REPLAY_STATE = ROOT / "data-migration" / "scripts" / "validate_mlb_replay_state_typed.py"
-VERSION = "0.9.0"
+VERSION = "1.0.0"
 
 LEGACY_WAREHOUSE_COMMANDS = {
     "init-db",
@@ -868,6 +868,48 @@ def print_bullpen_shape(rows: list[dict[str, Any]]) -> None:
         )
 
 
+def typed_story_signal_rows(conn: sqlite3.Connection, date_text: str) -> list[dict[str, Any]]:
+    rows = conn.execute(
+        """
+        select
+          s.game_date,
+          coalesce(away.name, s.away_team_id) as away_team,
+          coalesce(home.name, s.home_team_id) as home_team,
+          winner.name as winner_team,
+          lead_after5.name as lead_after5_team,
+          s.total_runs_first5,
+          s.total_runs_final,
+          s.lead_changes,
+          s.max_comeback_runs,
+          s.story_tags_json
+        from game_story_signals s
+        join games g on g.game_id = s.game_id
+        left join teams away on away.team_id = s.away_team_id
+        left join teams home on home.team_id = s.home_team_id
+        left join teams winner on winner.team_id = s.winner_team_id
+        left join phase_outcomes lead_phase
+          on lead_phase.game_id = s.game_id
+         and lead_phase.led_after5_flag = 1
+        left join teams lead_after5 on lead_after5.team_id = lead_phase.team_id
+        where s.game_date = ?
+        order by coalesce(g.start_time_utc, ''), s.game_id
+        """,
+        (date_text,),
+    ).fetchall()
+    return [dict(row) for row in rows]
+
+
+def print_story_signals(rows: list[dict[str, Any]]) -> None:
+    print(f"Story signal rows: {len(rows)}")
+    for row in rows:
+        tags = ", ".join(json.loads(row["story_tags_json"] or "[]"))
+        print(
+            f"- {row['away_team']} @ {row['home_team']} | winner {row['winner_team'] or 'TBD'} | "
+            f"after5 {row['lead_after5_team'] or 'tied'} | F5 {row['total_runs_first5']} | final {row['total_runs_final']} | "
+            f"lead changes {row['lead_changes']} | comeback {row['max_comeback_runs']} | {tags}"
+        )
+
+
 def ingest_range_payload(
     db_path: Path,
     *,
@@ -1554,6 +1596,10 @@ def build_parser() -> argparse.ArgumentParser:
     bullpen_shape_parser.add_argument("--date", required=True, help="Snapshot date in YYYY-MM-DD format.")
     bullpen_shape_parser.add_argument("--team", help="Optional exact team name, abbreviation, or typed team id filter.")
     bullpen_shape_parser.add_argument("--json", action="store_true", help="Emit JSON instead of text.")
+
+    story_signals_parser = subparsers.add_parser("list-story-signals", help="Read game story signals from typed tables.")
+    story_signals_parser.add_argument("--date", required=True, help="Game date in YYYY-MM-DD format.")
+    story_signals_parser.add_argument("--json", action="store_true", help="Emit JSON instead of text.")
     return parser
 
 
@@ -1761,6 +1807,14 @@ def main() -> int:
             print(json.dumps({"date": args.date, "team": args.team, "rows": rows}, indent=2, sort_keys=True))
         else:
             print_bullpen_shape(rows)
+        return 0
+    if args.command == "list-story-signals":
+        with connect(db_path) as conn:
+            rows = typed_story_signal_rows(conn, args.date)
+        if args.json:
+            print(json.dumps({"date": args.date, "rows": rows}, indent=2, sort_keys=True))
+        else:
+            print_story_signals(rows)
         return 0
     raise ValueError(f"Unhandled command: {args.command}")
 

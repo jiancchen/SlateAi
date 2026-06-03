@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T05:57:56.369Z",
+  "generated_at": "2026-06-03T05:59:59.359Z",
   "script": "data-migration/scripts/audit_mlb_db_input_cutover.mjs",
   "profile": "full",
   "targets": [
@@ -3041,13 +3041,13 @@
         {
           "key": "warehouse_cli",
           "severity": "cutover_blocker",
-          "line": 1435,
+          "line": 1477,
           "match": "mlb_warehouse.py"
         },
         {
           "key": "generated_module_input",
           "severity": "cutover_target",
-          "line": 1515,
+          "line": 1557,
           "match": " generated "
         },
         {
@@ -3059,7 +3059,7 @@
         {
           "key": "db_ready_reference",
           "severity": "db_ready",
-          "line": 1435,
+          "line": 1477,
           "match": "sql-mlb.db"
         }
       ]

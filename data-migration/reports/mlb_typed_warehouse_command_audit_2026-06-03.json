@@ -1,6 +1,6 @@
 {
   "implemented_extra_commands": [],
-  "implemented_replacement_count": 15,
+  "implemented_replacement_count": 16,
   "implemented_replacements": [
     "derive-batter-outcomes",
     "ingest-hitter-career-profiles",
@@ -15,6 +15,7 @@
     "list-home-runs",
     "list-likely-relievers",
     "list-probable-starters",
+    "list-story-signals",
     "prepare-mlb-day",
     "replay-mlb-range-from-raw"
   ],
@@ -46,9 +47,8 @@
     "import-predictions",
     "import-prop-predictions",
     "ingest-pitcher-war",
-    "ingest-statcast-hr",
-    "list-story-signals"
+    "ingest-statcast-hr"
   ],
   "ok": true,
-  "version": "0.9.0"
+  "version": "1.0.0"
 }
