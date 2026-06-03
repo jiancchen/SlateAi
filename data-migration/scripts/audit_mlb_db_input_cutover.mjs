@@ -13,7 +13,11 @@ const DEFAULT_TARGETS = [
 ]
 
 const ACTIVE_TARGETS = [
+  'pipeline/lib/load-mlb-day-games.mjs',
   'models/mlb/run-cartridge.mjs',
+  'models/mlb/db/day-games.mjs',
+  'models/mlb/db/queries.mjs',
+  'models/mlb/db/sqlite.mjs',
   'models/mlb/cartridges/MLB-M2/runner.mjs',
   'models/mlb/cartridges/MLB-M2/workflows/pregame.mjs',
   'models/mlb/cartridges/MLB-M2/workflows/refresh-live-board.mjs',
@@ -54,6 +58,12 @@ const PATTERNS = [
     description: 'Uses generated prediction JSON artifacts as model inputs.',
     severity: 'cutover_blocker',
     regex: /data-private\/predictions|data-private['",\s]+predictions/g
+  },
+  {
+    key: 'private_prediction_json_output',
+    description: 'Writes generated prediction JSON artifacts as compatibility outputs.',
+    severity: 'output_surface',
+    regex: null
   },
   {
     key: 'raw_archive_input',
@@ -146,17 +156,39 @@ function lineNumberForOffset(text, offset) {
   return line
 }
 
+function lineContextForOffset(text, offset, radius = 5) {
+  const lineNumber = lineNumberForOffset(text, offset)
+  const lines = text.split('\n')
+  const start = Math.max(0, lineNumber - radius - 1)
+  const end = Math.min(lines.length, lineNumber + radius)
+  return lines.slice(start, end).join('\n')
+}
+
+function normalizeHit(pattern, text, offset) {
+  if (pattern.key !== 'private_prediction_json_input') return pattern
+  const context = lineContextForOffset(text, offset)
+  if (/(?:options\.)?(?:legacyOut|moduleOut|out)\s*(?:\|\|=|:)\s*path\.join/.test(context)) {
+    return {
+      key: 'private_prediction_json_output',
+      severity: 'output_surface'
+    }
+  }
+  return pattern
+}
+
 function auditFile(absolutePath) {
   const relativePath = path.relative(rootDir, absolutePath)
   const text = fs.readFileSync(absolutePath, 'utf8')
   const hits = []
   for (const pattern of PATTERNS) {
+    if (!pattern.regex) continue
     pattern.regex.lastIndex = 0
     let match
     while ((match = pattern.regex.exec(text)) !== null) {
+      const normalized = normalizeHit(pattern, text, match.index)
       hits.push({
-        key: pattern.key,
-        severity: pattern.severity,
+        key: normalized.key,
+        severity: normalized.severity,
         line: lineNumberForOffset(text, match.index),
         match: match[0]
       })

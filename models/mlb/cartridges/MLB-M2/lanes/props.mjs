@@ -1,8 +1,8 @@
-import { execFileSync } from 'node:child_process'
 import { mkdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
+import { querySqlite } from '../../../db/sqlite.mjs'
 import { loadMlbDayGames } from '../../../../../pipeline/lib/load-mlb-day-games.mjs'
 import { formatAmericanOdds, rankMlbPlayerProps, rankMlbPlayerPropCandidatesLegacy } from '../lib/sports-model.js'
 
@@ -53,8 +53,6 @@ const propThresholdByType = {
   pitcherStrikeouts: null
 }
 
-const warehouseDbPath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db')
-
 const parseBaseballInnings = (value = 0) => {
   const stringValue = `${value}`.trim()
   const match = stringValue.match(/^(\d+)(?:\.(\d))?$/)
@@ -77,14 +75,6 @@ const normalizeNameToken = (value = '') =>
 const clamp = (value, min, max) => Math.min(max, Math.max(min, value))
 
 const roundToTenths = (value) => Math.round(Number(value) * 10) / 10
-
-const runSqliteJson = (sql) => {
-  const output = execFileSync('sqlite3', ['-json', warehouseDbPath, sql], {
-    cwd: rootDir,
-    encoding: 'utf8'
-  })
-  return JSON.parse(output || '[]')
-}
 
 const parseArgs = () => {
   const args = process.argv.slice(2)
@@ -203,27 +193,27 @@ const sortAndRankProps = (picks) =>
     .map((pick, index) => ({ ...pick, rank: index + 1 }))
 
 const loadPitcherStrikeoutOddsByGame = (date) => {
-  const rows = runSqliteJson(`
+  const rows = querySqlite(`
     SELECT
-      game_pk,
+      game_id,
       player_name,
-      point,
-      MAX(CASE WHEN outcome_name='Over' THEN price END) AS over_price,
-      MAX(CASE WHEN outcome_name='Under' THEN price END) AS under_price
-    FROM mlb_player_prop_odds_snapshots
-    WHERE market_date='${date}'
+      line_value,
+      MAX(CASE WHEN selection='Over' THEN american_odds END) AS over_price,
+      MAX(CASE WHEN selection='Under' THEN american_odds END) AS under_price
+    FROM prop_market_snapshots
+    WHERE market_date=?
       AND market_key='pitcher_strikeouts'
-    GROUP BY game_pk, player_name, point
-    ORDER BY game_pk, player_name
-  `)
+    GROUP BY game_id, player_name, line_value
+    ORDER BY game_id, player_name
+  `, [date])
 
   return rows.reduce((acc, row) => {
-    const gamePk = Number(row.game_pk)
-    if (!Number.isFinite(gamePk)) return acc
-    if (!acc[gamePk]) acc[gamePk] = {}
-    acc[gamePk][normalizeNameToken(row.player_name)] = {
+    const gameId = String(row.game_id || '').trim()
+    if (!gameId) return acc
+    if (!acc[gameId]) acc[gameId] = {}
+    acc[gameId][normalizeNameToken(row.player_name)] = {
       playerName: row.player_name,
-      line: Number.isFinite(Number(row.point)) ? Number(row.point) : null,
+      line: Number.isFinite(Number(row.line_value)) ? Number(row.line_value) : null,
       overPrice: Number.isFinite(Number(row.over_price)) ? Number(row.over_price) : null,
       underPrice: Number.isFinite(Number(row.under_price)) ? Number(row.under_price) : null
     }
@@ -360,9 +350,9 @@ const buildPitcherStrikeoutProps = (games, date) => {
   const picks = []
 
   games.forEach((game) => {
-    const gamePk = Number(game.gamePk)
-    if (!Number.isFinite(gamePk)) return
-    const gameOdds = oddsByGame[gamePk] || {}
+    const gameId = game.metadata?.canonicalGameId || (Number.isFinite(Number(game.gamePk)) ? `mlb-${game.gamePk}` : '')
+    if (!gameId) return
+    const gameOdds = oddsByGame[gameId] || {}
     const awayStarter = game.starterContext?.away
     const homeStarter = game.starterContext?.home
     const awayMarket = gameOdds[normalizeNameToken(awayStarter?.fullName)]
@@ -413,7 +403,7 @@ const main = async () => {
     modelName: 'mlb-player-props-v2',
     date,
     generatedAt: new Date().toISOString(),
-    sources: ['day-file-live-board', 'models/mlb/app-model.js', 'FanDuel Research strikeout props'],
+    sources: ['typed MLB DB day-game loader', 'models/mlb/app-model.js', 'sql-mlb.db prop_market_snapshots'],
     summary: {
       totalGames: games.length,
       totalPicks: combinedProps.length,

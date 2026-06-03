@@ -3,6 +3,7 @@ import path from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 
 import { activeMlbAppModelId, resolveMlbAppAdapter } from '../../models/mlb/app-model.js'
+import { loadMlbDayGamesFromDb } from '../../models/mlb/db/day-games.mjs'
 import { parkContextByHomeTeam } from '../../web/src/lib/day-2026-05-13-mlb-data.js'
 
 const __filename = fileURLToPath(import.meta.url)
@@ -144,6 +145,18 @@ const buildGenericMlbGame = (
 }
 
 export const loadMlbDayGames = async (date) => {
+  if (process.env.MLB_DAY_GAMES_DISABLE_DB !== '1') {
+    try {
+      const dbGames = await loadMlbDayGamesFromDb(date)
+      if (dbGames.length) return dbGames
+    } catch (error) {
+      if (process.env.MLB_DAY_GAMES_STRICT_DB === '1') {
+        throw error
+      }
+      console.warn(`[loadMlbDayGames] DB input unavailable for ${date}; falling back to legacy generated files: ${error.message}`)
+    }
+  }
+
   const dayWrapperPath = path.join(rootDir, 'web', 'src', 'lib', `day-${date}.js`)
   const wrappedDay = await importMaybeFresh(dayWrapperPath)
   if (wrappedDay?.games) {

@@ -1,0 +1,125 @@
+{
+  "generated_at": "2026-06-03T00:09:42.687Z",
+  "script": "data-migration/scripts/validate_mlb_day_games_db_loader.mjs",
+  "date": "2026-05-31",
+  "counts": {
+    "board_games": 15,
+    "db_loader_games": 15,
+    "active_loader_games": 15,
+    "active_db_sourced_games": 15,
+    "games_with_analysis": 15,
+    "games_with_projection": 15,
+    "lineup_sides": 30,
+    "lineup_slots": 269,
+    "games_with_player_props": 15,
+    "player_prop_featured": 100,
+    "player_prop_targets": 0,
+    "games_with_remaining_gaps": 15
+  },
+  "remaining_gaps": {
+    "parkContext": 15,
+    "relieverShadowContext": 15,
+    "standingsContext": 15,
+    "weatherContext": 15
+  },
+  "sample": [
+    {
+      "id": "blue-jays-orioles",
+      "title": "Blue Jays @ Orioles",
+      "input_source": "sql-mlb.db",
+      "pick": "Orioles",
+      "confidence": 52,
+      "tier": "Pass",
+      "lineup_status": {
+        "away": "posted",
+        "home": "posted"
+      },
+      "featured_props": 8,
+      "target_props": 0,
+      "remaining_gaps": [
+        "parkContext",
+        "weatherContext",
+        "standingsContext",
+        "relieverShadowContext"
+      ]
+    },
+    {
+      "id": "twins-pirates",
+      "title": "Twins @ Pirates",
+      "input_source": "sql-mlb.db",
+      "pick": "Pirates",
+      "confidence": 58,
+      "tier": "Swingy",
+      "lineup_status": {
+        "away": "posted",
+        "home": "posted"
+      },
+      "featured_props": 5,
+      "target_props": 0,
+      "remaining_gaps": [
+        "parkContext",
+        "weatherContext",
+        "standingsContext",
+        "relieverShadowContext"
+      ]
+    },
+    {
+      "id": "padres-nationals",
+      "title": "Padres @ Nationals",
+      "input_source": "sql-mlb.db",
+      "pick": "Nationals",
+      "confidence": 60,
+      "tier": "Swingy",
+      "lineup_status": {
+        "away": "posted",
+        "home": "posted"
+      },
+      "featured_props": 8,
+      "target_props": 0,
+      "remaining_gaps": [
+        "parkContext",
+        "weatherContext",
+        "standingsContext",
+        "relieverShadowContext"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "db_loader_games_match_board",
+      "ok": true,
+      "details": "15/15"
+    },
+    {
+      "name": "active_loader_uses_db",
+      "ok": true,
+      "details": "15/15"
+    },
+    {
+      "name": "analysis_available",
+      "ok": true,
+      "details": "15/15"
+    },
+    {
+      "name": "mlb_projection_available",
+      "ok": true,
+      "details": "15/15"
+    },
+    {
+      "name": "lineup_sides_available",
+      "ok": true,
+      "details": "30/30"
+    },
+    {
+      "name": "lineup_slots_match_active_source",
+      "ok": true,
+      "details": "269/269"
+    },
+    {
+      "name": "player_prop_surface_available",
+      "ok": true,
+      "details": "15/15"
+    }
+  ],
+  "ok": true
+}

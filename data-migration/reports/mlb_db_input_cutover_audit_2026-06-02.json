@@ -1,6 +1,7 @@
 {
-  "generated_at": "2026-06-02T22:39:25.893Z",
+  "generated_at": "2026-06-03T00:09:34.317Z",
   "script": "data-migration/scripts/audit_mlb_db_input_cutover.mjs",
+  "profile": "full",
   "targets": [
     "models/mlb/cartridges/MLB-M2",
     "models/mlb/cartridges/MLB-M0",
@@ -13,8 +14,8 @@
       "legacy_sports_db": {
         "description": "Reads legacy shared sports.db instead of sport-specific sql-mlb.db/duck-mlb.duckdb.",
         "severity": "cutover_blocker",
-        "files": 69,
-        "hits": 69
+        "files": 68,
+        "hits": 68
       },
       "warehouse_cli": {
         "description": "Shells into the legacy MLB warehouse CLI instead of a typed DB adapter.",
@@ -31,8 +32,14 @@
       "private_prediction_json_input": {
         "description": "Uses generated prediction JSON artifacts as model inputs.",
         "severity": "cutover_blocker",
-        "files": 22,
-        "hits": 46
+        "files": 14,
+        "hits": 36
+      },
+      "private_prediction_json_output": {
+        "description": "Writes generated prediction JSON artifacts as compatibility outputs.",
+        "severity": "output_surface",
+        "files": 8,
+        "hits": 10
       },
       "raw_archive_input": {
         "description": "Uses raw/archive files directly instead of typed source tables.",
@@ -49,14 +56,14 @@
       "legacy_sqlite_shell": {
         "description": "Uses sqlite shell calls, often pointing at legacy DB paths.",
         "severity": "review",
-        "files": 12,
-        "hits": 12
+        "files": 11,
+        "hits": 11
       },
       "db_ready_reference": {
         "description": "Already references sport-specific SQLite/DuckDB inputs.",
         "severity": "db_ready",
-        "files": 0,
-        "hits": 0
+        "files": 1,
+        "hits": 1
       }
     },
     "byFile": [
@@ -200,16 +207,7 @@
         "total_hits": 4,
         "counts": {
           "legacy_sports_db": 1,
-          "private_prediction_json_input": 2,
-          "legacy_sqlite_shell": 1
-        }
-      },
-      {
-        "path": "models/mlb/cartridges/MLB-M2/lanes/props.mjs",
-        "total_hits": 4,
-        "counts": {
-          "legacy_sports_db": 1,
-          "private_prediction_json_input": 2,
+          "private_prediction_json_output": 2,
           "legacy_sqlite_shell": 1
         }
       },
@@ -257,6 +255,14 @@
           "legacy_sports_db": 1,
           "published_data_input": 1,
           "legacy_sqlite_shell": 1
+        }
+      },
+      {
+        "path": "models/mlb/cartridges/MLB-M2/lanes/props.mjs",
+        "total_hits": 3,
+        "counts": {
+          "private_prediction_json_output": 2,
+          "db_ready_reference": 1
         }
       },
       {
@@ -372,21 +378,21 @@
         "path": "models/mlb/cartridges/MLB-M0/lanes/home-runs.mjs",
         "total_hits": 1,
         "counts": {
-          "private_prediction_json_input": 1
+          "private_prediction_json_output": 1
         }
       },
       {
         "path": "models/mlb/cartridges/MLB-M0/lanes/sides.mjs",
         "total_hits": 1,
         "counts": {
-          "private_prediction_json_input": 1
+          "private_prediction_json_output": 1
         }
       },
       {
         "path": "models/mlb/cartridges/MLB-M0/lanes/veto.mjs",
         "total_hits": 1,
         "counts": {
-          "private_prediction_json_input": 1
+          "private_prediction_json_output": 1
         }
       },
       {
@@ -414,21 +420,21 @@
         "path": "models/mlb/cartridges/MLB-M2/lanes/home-runs.mjs",
         "total_hits": 1,
         "counts": {
-          "private_prediction_json_input": 1
+          "private_prediction_json_output": 1
         }
       },
       {
         "path": "models/mlb/cartridges/MLB-M2/lanes/sides.mjs",
         "total_hits": 1,
         "counts": {
-          "private_prediction_json_input": 1
+          "private_prediction_json_output": 1
         }
       },
       {
         "path": "models/mlb/cartridges/MLB-M2/lanes/veto.mjs",
         "total_hits": 1,
         "counts": {
-          "private_prediction_json_input": 1
+          "private_prediction_json_output": 1
         }
       },
       {
@@ -981,8 +987,8 @@
       "path": "models/mlb/cartridges/MLB-M0/lanes/home-runs.mjs",
       "hits": [
         {
-          "key": "private_prediction_json_input",
-          "severity": "cutover_blocker",
+          "key": "private_prediction_json_output",
+          "severity": "output_surface",
           "line": 78,
           "match": "data-private', 'predictions"
         }
@@ -1045,14 +1051,14 @@
           "match": "sports.db"
         },
         {
-          "key": "private_prediction_json_input",
-          "severity": "cutover_blocker",
+          "key": "private_prediction_json_output",
+          "severity": "output_surface",
           "line": 110,
           "match": "data-private',\n    'predictions"
         },
         {
-          "key": "private_prediction_json_input",
-          "severity": "cutover_blocker",
+          "key": "private_prediction_json_output",
+          "severity": "output_surface",
           "line": 117,
           "match": "data-private',\n    'predictions"
         },
@@ -1068,8 +1074,8 @@
       "path": "models/mlb/cartridges/MLB-M0/lanes/sides.mjs",
       "hits": [
         {
-          "key": "private_prediction_json_input",
-          "severity": "cutover_blocker",
+          "key": "private_prediction_json_output",
+          "severity": "output_surface",
           "line": 192,
           "match": "data-private', 'predictions"
         }
@@ -1079,8 +1085,8 @@
       "path": "models/mlb/cartridges/MLB-M0/lanes/veto.mjs",
       "hits": [
         {
-          "key": "private_prediction_json_input",
-          "severity": "cutover_blocker",
+          "key": "private_prediction_json_output",
+          "severity": "output_surface",
           "line": 30,
           "match": "data-private',\n    'predictions"
         }
@@ -1503,8 +1509,8 @@
       "path": "models/mlb/cartridges/MLB-M2/lanes/home-runs.mjs",
       "hits": [
         {
-          "key": "private_prediction_json_input",
-          "severity": "cutover_blocker",
+          "key": "private_prediction_json_output",
+          "severity": "output_surface",
           "line": 78,
           "match": "data-private', 'predictions"
         }
@@ -1561,28 +1567,22 @@
       "path": "models/mlb/cartridges/MLB-M2/lanes/props.mjs",
       "hits": [
         {
-          "key": "legacy_sports_db",
-          "severity": "cutover_blocker",
-          "line": 56,
-          "match": "sports.db"
-        },
-        {
-          "key": "private_prediction_json_input",
-          "severity": "cutover_blocker",
-          "line": 110,
+          "key": "private_prediction_json_output",
+          "severity": "output_surface",
+          "line": 100,
           "match": "data-private',\n    'predictions"
         },
         {
-          "key": "private_prediction_json_input",
-          "severity": "cutover_blocker",
-          "line": 117,
+          "key": "private_prediction_json_output",
+          "severity": "output_surface",
+          "line": 107,
           "match": "data-private',\n    'predictions"
         },
         {
-          "key": "legacy_sqlite_shell",
-          "severity": "review",
-          "line": 82,
-          "match": "execFileSync('sqlite3'"
+          "key": "db_ready_reference",
+          "severity": "db_ready",
+          "line": 406,
+          "match": "sql-mlb.db"
         }
       ]
     },
@@ -1590,8 +1590,8 @@
       "path": "models/mlb/cartridges/MLB-M2/lanes/sides.mjs",
       "hits": [
         {
-          "key": "private_prediction_json_input",
-          "severity": "cutover_blocker",
+          "key": "private_prediction_json_output",
+          "severity": "output_surface",
           "line": 192,
           "match": "data-private', 'predictions"
         }
@@ -1601,8 +1601,8 @@
       "path": "models/mlb/cartridges/MLB-M2/lanes/veto.mjs",
       "hits": [
         {
-          "key": "private_prediction_json_input",
-          "severity": "cutover_blocker",
+          "key": "private_prediction_json_output",
+          "severity": "output_surface",
           "line": 30,
           "match": "data-private',\n    'predictions"
         }

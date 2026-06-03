@@ -9,8 +9,10 @@ export const gamesForDate = (date) => {
       g.game_date,
       g.start_time_utc,
       g.status,
+      g.away_team_id,
       away.name as away_team,
       away.abbreviation as away_abbreviation,
+      g.home_team_id,
       home.name as home_team,
       home.abbreviation as home_abbreviation,
       v.name as venue_name
