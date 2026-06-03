@@ -20,12 +20,14 @@ LINEUPS_INGEST = ROOT / "data-migration" / "scripts" / "ingest_mlb_lineups_raw_t
 MARKETS_PROPS_INGEST = ROOT / "data-migration" / "scripts" / "ingest_mlb_markets_props_raw_to_typed.py"
 PLAYER_CONTEXT_INGEST = ROOT / "data-migration" / "scripts" / "ingest_mlb_player_context_raw_to_typed.py"
 HITTER_CAREER_PROFILE_FETCH = ROOT / "pipeline" / "mlb" / "fetchers" / "fetch_mlb_hitter_career_profiles.py"
+RESULTS_NORMALIZE = ROOT / "data-migration" / "scripts" / "normalize_mlb_results.py"
+RESULTS_VALIDATE = ROOT / "data-migration" / "scripts" / "validate_mlb_results_normalization.py"
 VALIDATE_SCHEDULE_GAME_FEED = ROOT / "data-migration" / "scripts" / "validate_mlb_schedule_game_feed_raw_to_typed.py"
 VALIDATE_LINEUPS_RAW = ROOT / "data-migration" / "scripts" / "validate_mlb_lineups_raw_to_typed.py"
 VALIDATE_MARKETS_PROPS_RAW = ROOT / "data-migration" / "scripts" / "validate_mlb_markets_props_raw_to_typed.py"
 VALIDATE_PLAYER_CONTEXT_RAW = ROOT / "data-migration" / "scripts" / "validate_mlb_player_context_raw_to_typed.py"
 VALIDATE_REPLAY_STATE = ROOT / "data-migration" / "scripts" / "validate_mlb_replay_state_typed.py"
-VERSION = "0.6.0"
+VERSION = "0.7.0"
 
 LEGACY_WAREHOUSE_COMMANDS = {
     "init-db",
@@ -789,6 +791,136 @@ def hitter_lineup_splits_payload(
     return payload
 
 
+def result_source_dates(db_path: Path, *, through_date: str) -> list[str]:
+    placeholders = ",".join("?" for _ in [
+        "mlb_batter_game_outcomes",
+        "mlb_game_outcomes",
+        "mlb_game_team_stats",
+        "mlb_home_run_events",
+        "mlb_phase_outcomes_daily",
+        "mlb_pitcher_appearances",
+        "mlb_player_game_batting",
+        "mlb_starting_pitcher_game_logs",
+    ])
+    params: list[Any] = [
+        "mlb",
+        "mlb_batter_game_outcomes",
+        "mlb_game_outcomes",
+        "mlb_game_team_stats",
+        "mlb_home_run_events",
+        "mlb_phase_outcomes_daily",
+        "mlb_pitcher_appearances",
+        "mlb_player_game_batting",
+        "mlb_starting_pitcher_game_logs",
+        through_date,
+    ]
+    with connect(db_path) as conn:
+        rows = conn.execute(
+            f"""
+            select distinct substr(source_date, 1, 10) as source_day
+            from legacy_table_rows
+            where sport = ?
+              and source_table in ({placeholders})
+              and substr(source_date, 1, 10) <= ?
+              and substr(source_date, 1, 10) is not null
+              and substr(source_date, 1, 10) != ''
+            order by source_day
+            """,
+            params,
+        ).fetchall()
+    return [str(row["source_day"]) for row in rows]
+
+
+def run_results_normalizer(
+    db_path: Path,
+    *,
+    date_text: str | None,
+    dry_run: bool,
+) -> dict[str, Any]:
+    label = date_text or "all"
+    normalize_report = report_path("derive_batter_outcomes_normalize", label)
+    normalize_args = ["--source-db", str(db_path), "--report", str(normalize_report)]
+    if date_text:
+        normalize_args.extend(["--date", date_text])
+    if dry_run:
+        normalize_args.append("--dry-run")
+    normalize_result = run_python_script(RESULTS_NORMALIZE, normalize_args, stream_output=False)
+
+    validate_result: dict[str, Any] | None = None
+    if normalize_result["returncode"] == 0 and not dry_run:
+        validate_report = report_path("derive_batter_outcomes_validate", label)
+        validate_args = ["--source-db", str(db_path), "--report", str(validate_report)]
+        if date_text:
+            validate_args.extend(["--date", date_text])
+        validation = run_python_script(RESULTS_VALIDATE, validate_args, stream_output=False)
+        validation_payload = load_child_report(validate_report)
+        validate_result = {
+            "command": validation["command"],
+            "returncode": validation["returncode"],
+            "report_path": display_path(validate_report),
+            "ok": bool(validation_payload.get("ok")) if validation_payload else validation["returncode"] == 0,
+            "errors": validation_payload.get("errors", []) if validation_payload else [],
+        }
+
+    normalize_payload = load_child_report(normalize_report)
+    return {
+        "date": date_text,
+        "family": "results",
+        "command": normalize_result["command"],
+        "returncode": normalize_result["returncode"],
+        "report_path": display_path(normalize_report),
+        "ok": normalize_result["returncode"] == 0 and (validate_result is None or validate_result["ok"]),
+        "errors": [] if normalize_result["returncode"] == 0 else [str(normalize_result.get("stderr") or "").strip()],
+        "summary": {
+            "source_rows": normalize_payload.get("source_rows") if normalize_payload else None,
+            "parsed_rows": normalize_payload.get("parsed_rows") if normalize_payload else None,
+            "inserted": normalize_payload.get("inserted") if normalize_payload else None,
+            "dry_run": dry_run,
+        },
+        "validation": validate_result,
+    }
+
+
+def derive_batter_outcomes_payload(
+    db_path: Path,
+    *,
+    as_of_date: str | None,
+    through_date: str | None,
+    dry_run: bool,
+) -> dict[str, Any]:
+    if as_of_date and through_date:
+        raise ValueError("--as-of-date and --through-date are mutually exclusive")
+    if as_of_date:
+        dates: list[str | None] = [as_of_date]
+        scope = "as_of_date"
+    elif through_date:
+        dates = result_source_dates(db_path, through_date=through_date)
+        scope = "through_date"
+    else:
+        dates = [None]
+        scope = "all"
+
+    results = [
+        run_results_normalizer(db_path, date_text=date_text, dry_run=dry_run)
+        for date_text in dates
+    ]
+    payload = {
+        "version": VERSION,
+        "mode": "derive_batter_outcomes",
+        "db_path": display_path(db_path),
+        "scope": scope,
+        "as_of_date": as_of_date,
+        "through_date": through_date,
+        "dry_run": dry_run,
+        "date_count": len(dates),
+        "results": results,
+        "ok": all(result["ok"] for result in results),
+    }
+    label = as_of_date or (f"through_{through_date}" if through_date else "all")
+    write_json_report(report_path("derive_batter_outcomes", label), payload)
+    return payload
+
+
 def validators_for_scope(scope: str) -> list[dict[str, Any]]:
     if scope == "daily":
         return DAILY_VALIDATORS
@@ -1036,6 +1168,15 @@ def build_parser() -> argparse.ArgumentParser:
     lineup_splits_parser.add_argument("--dry-run", action="store_true", help="Parse/report without writing typed DB rows.")
     lineup_splits_parser.add_argument("--json", action="store_true", help="Emit wrapper JSON instead of text summary.")
 
+    batter_outcomes_parser = subparsers.add_parser(
+        "derive-batter-outcomes",
+        help="Refresh typed MLB result/outcome labels via the results normalizer.",
+    )
+    batter_outcomes_parser.add_argument("--through-date", help="Run each loaded source date through this YYYY-MM-DD cutoff.")
+    batter_outcomes_parser.add_argument("--as-of-date", help="Run one exact YYYY-MM-DD source/game date.")
+    batter_outcomes_parser.add_argument("--dry-run", action="store_true", help="Parse/report without writing typed DB rows.")
+    batter_outcomes_parser.add_argument("--json", action="store_true", help="Emit wrapper JSON instead of text summary.")
+
     probables_parser = subparsers.add_parser("list-probable-starters", help="Read probable starters from typed tables.")
     probables_parser.add_argument("--date", required=True, help="Game date in YYYY-MM-DD format.")
     probables_parser.add_argument("--json", action="store_true", help="Emit JSON instead of text.")
@@ -1166,6 +1307,23 @@ def main() -> int:
             print(json.dumps(payload, indent=2, sort_keys=True))
         else:
             print_step_summary(payload)
+        return 0 if payload["ok"] else 1
+    if args.command == "derive-batter-outcomes":
+        payload = derive_batter_outcomes_payload(
+            db_path,
+            as_of_date=args.as_of_date,
+            through_date=args.through_date,
+            dry_run=args.dry_run,
+        )
+        if args.json:
+            print(json.dumps(payload, indent=2, sort_keys=True))
+        else:
+            ok_count = sum(1 for result in payload["results"] if result["ok"])
+            print(f"MLB typed warehouse derive batter outcomes: {ok_count}/{len(payload['results'])} steps ok")
+            for result in payload["results"]:
+                label = result["date"] or "all"
+                status = "ok" if result["ok"] else "failed"
+                print(f"- {label}: {status} report={result['report_path']}")
         return 0 if payload["ok"] else 1
     if args.command == "status":
         with connect(db_path) as conn:

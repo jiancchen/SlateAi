@@ -2,14 +2,14 @@
 
 MLB warehouse commands, migrations, table derivations, and warehouse-only helpers live here after migration.
 
-- `mlb_typed_warehouse.py`: typed MLB warehouse CLI v0.6.0 backed by `data-private/warehouse/sports/mlb/sql-mlb.db`.
+- `mlb_typed_warehouse.py`: typed MLB warehouse CLI v0.7.0 backed by `data-private/warehouse/sports/mlb/sql-mlb.db`.
 - `mlb_warehouse.py`: legacy MLB ingest, derive, import, grade, and list CLI backed by `data-private/warehouse/sports.db`.
 - `mlb_side_backtest.py`: side-prediction import, grading, and reporting CLI.
 - `export_story_archive.py`: story-signal web module export.
 
 Use `mlb_typed_warehouse.py` for new typed DB replacement commands. Add commands there one ledger row at a time, then move package scripts after the typed command has validation coverage.
 
-Current typed replacement coverage includes schedule/game-feed day/range/replay ingestion, typed day prep, probable-starter reads, hitter Statcast range ingestion, hitter career profile raw fetch plus typed player-context ingestion, and lineup-board split/matchup ingestion.
+Current typed replacement coverage includes schedule/game-feed day/range/replay ingestion, typed day prep, probable-starter reads, hitter Statcast range ingestion, hitter career profile raw fetch plus typed player-context ingestion, lineup-board split/matchup ingestion, and typed results/outcome label refresh.
 
 `mlb_typed_warehouse.py validate-typed-ready` is a non-replacement readiness command. It runs existing typed raw/daily validators and M3 contract validators, writes child JSON reports under `data-migration/reports/`, then writes a compact wrapper report. Use `npm run data:typed:mlb-validate` for broad contract checks and `npm run data:typed:mlb-validate-day -- --date YYYY-MM-DD` for date-bound daily checks.
 

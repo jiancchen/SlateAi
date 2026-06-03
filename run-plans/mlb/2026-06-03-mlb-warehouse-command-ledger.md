@@ -2,9 +2,9 @@
 
 Date: 2026-06-03
 
-Ledger version: 0.7.0
+Ledger version: 0.8.0
 
-Typed CLI version: `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.6.0
+Typed CLI version: `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.7.0
 
 Scope: first-pass ledger for replacing `pipeline/mlb/warehouse/mlb_warehouse.py` command by command without path-flipping the legacy `sports.db` script into the typed MLB DB.
 
@@ -66,8 +66,8 @@ flowchart TD
 
 - Ledger commands: 39.
 - Legacy commands found in `mlb_warehouse.py`: 39.
-- Typed replacement commands implemented in `mlb_typed_warehouse.py`: 8.
-- Implemented replacements: `ingest-hitter-career-profiles`, `ingest-hitter-lineup-splits`, `ingest-hitter-statcast-range`, `ingest-mlb-day`, `ingest-mlb-range`, `list-probable-starters`, `prepare-mlb-day`, `replay-mlb-range-from-raw`.
+- Typed replacement commands implemented in `mlb_typed_warehouse.py`: 9.
+- Implemented replacements: `derive-batter-outcomes`, `ingest-hitter-career-profiles`, `ingest-hitter-lineup-splits`, `ingest-hitter-statcast-range`, `ingest-mlb-day`, `ingest-mlb-range`, `list-probable-starters`, `prepare-mlb-day`, `replay-mlb-range-from-raw`.
 - Ledger drift: zero missing legacy commands and zero extra typed replacement commands.
 - Non-replacement typed utilities: `status`, `audit-command-ledger`, `validate-typed-ready`.
 
@@ -110,7 +110,7 @@ flowchart TD
 | `ingest-hitter-career-profiles` | `data:ingest:hitter-career-profiles` | supplemental raw ingestion | P1 | `typed-cli-exists` | `mlb_typed_warehouse.py ingest-hitter-career-profiles` wrapping `fetch_mlb_hitter_career_profiles.py` plus `ingest_mlb_player_context_raw_to_typed.py` | Primary package alias points to typed CLI; next gate is live fetch/write validation on a small player batch. |
 | `ingest-hitter-lineup-splits` | `data:ingest:hitter-lineup-splits` | supplemental raw ingestion | P2 | `typed-cli-exists` | `mlb_typed_warehouse.py ingest-hitter-lineup-splits` wrapping `ingest_mlb_lineups_raw_to_typed.py --lineup-file` | Primary package alias points to typed CLI; validate against a generated lineup board before retiring old split writes. |
 | `derive-hitter-statcast-trends` | `data:derive:hitter-statcast-trends` | feature layer | P1 | `feature-rewrite` | hitter Statcast rolling trend feature job | Rebuild from typed Statcast/player context tables. |
-| `derive-batter-outcomes` | `data:derive:batter-outcomes` | typed normalization/label layer | P1 | `adapter-exists` | typed game/player batting outcome normalizers | Confirm typed `game_outcomes`, player batting, and PA aggregates cover this; replace package script with normalizer/validator. |
+| `derive-batter-outcomes` | `data:derive:batter-outcomes` | typed normalization/label layer | P1 | `typed-cli-exists` | `mlb_typed_warehouse.py derive-batter-outcomes` wrapping `normalize_mlb_results.py` plus results validation on live writes | Primary package alias points to typed CLI; next gate is live write/validation on a small date. |
 | `import-predictions` | `data:import:hr` | prediction write path | P3 | `retire` | typed model run index + `normalize_mlb_predictions.py` where needed | Retire old HR import or replace with typed model-output writer. |
 | `import-prop-predictions` | `data:import:mlb-props` | prediction write path | P3 | `retire` | typed model run index + `prediction_rows` | Retire old prop import or replace with typed model-output writer. |
 | `grade-home-run-picks` | `data:grade:hr` | settlement/evaluation | P3 | `wrapper-needed` | `settle_mlb_ml_prediction_rows.mjs`, prediction validators | Replace with typed settlement command after prediction writer is canonical. |

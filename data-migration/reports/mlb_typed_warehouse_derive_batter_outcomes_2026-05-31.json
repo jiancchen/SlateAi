@@ -1,0 +1,39 @@
+{
+  "as_of_date": "2026-05-31",
+  "date_count": 1,
+  "db_path": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "dry_run": true,
+  "mode": "derive_batter_outcomes",
+  "ok": true,
+  "results": [
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "data-migration/scripts/normalize_mlb_results.py",
+        "--source-db",
+        "data-private/warehouse/sports/mlb/sql-mlb.db",
+        "--report",
+        "data-migration/reports/mlb_typed_warehouse_derive_batter_outcomes_normalize_2026-05-31.json",
+        "--date",
+        "2026-05-31",
+        "--dry-run"
+      ],
+      "date": "2026-05-31",
+      "errors": [],
+      "family": "results",
+      "ok": true,
+      "report_path": "data-migration/reports/mlb_typed_warehouse_derive_batter_outcomes_normalize_2026-05-31.json",
+      "returncode": 0,
+      "summary": {
+        "dry_run": true,
+        "inserted": {},
+        "parsed_rows": 882,
+        "source_rows": 882
+      },
+      "validation": null
+    }
+  ],
+  "scope": "as_of_date",
+  "through_date": null,
+  "version": "0.7.0"
+}

@@ -1,7 +1,8 @@
 {
   "implemented_extra_commands": [],
-  "implemented_replacement_count": 8,
+  "implemented_replacement_count": 9,
   "implemented_replacements": [
+    "derive-batter-outcomes",
     "ingest-hitter-career-profiles",
     "ingest-hitter-lineup-splits",
     "ingest-hitter-statcast-range",
@@ -18,7 +19,6 @@
   "legacy_command_count": 39,
   "missing_replacements": [
     "backtest-m2-research",
-    "derive-batter-outcomes",
     "derive-first-inning-profiles",
     "derive-hidden-edge-features",
     "derive-hitter-classic-trends",
@@ -50,5 +50,5 @@
     "list-story-signals"
   ],
   "ok": true,
-  "version": "0.6.0"
+  "version": "0.7.0"
 }
