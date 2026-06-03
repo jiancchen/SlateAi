@@ -10,13 +10,12 @@ Status: `tail_regime_audit_created`
 - Tail targets present: `True`
 - Row-level predictions exist: `True`
 - Probability outputs exist: `False`
-- Calibration bins exist: `False`
+- Calibration bins exist: `True`
 - Candidate beats baseline in all comparable folds: `False`
 
 Blocking reasons:
 
 - No probability/distribution output artifact exists.
-- No calibration-bin artifact exists.
 - Diagnostic candidate does not beat baseline across comparable walk-forward folds.
 
 ## Walk-Forward Gate
@@ -75,9 +74,26 @@ These come from row-level diagnostic prediction artifacts. They are not probabil
 | `manifest_validation` | `manifest_validation` | `full_game_total` | `target_f5_bucket:chaos` | 43 | 5.2185 | 5.3297 | -0.1112 |
 | `walk_forward_validation` | `wf_2026_05_16_to_2026_05_31` | `full_game_total` | `target_f5_bucket:chaos` | 43 | 5.2185 | 5.3297 | -0.1112 |
 
+## Residual Calibration Bins
+
+These are prediction-quantile residual bins for point predictions. They are not probability calibration bins.
+
+| Split | Lane | Bin | Rows | Prediction Mean | Actual Mean | Candidate MAE | Baseline MAE | Delta |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| `manifest_validation` | `f5_total` | 1 | 43 | 3.1148 | 5.0000 | 3.0473 | 2.7296 | +0.3177 |
+| `manifest_validation` | `f5_total` | 2 | 44 | 4.1630 | 5.0000 | 2.7065 | 2.6818 | +0.0247 |
+| `manifest_validation` | `f5_total` | 3 | 43 | 4.7276 | 5.3256 | 2.6802 | 2.6599 | +0.0202 |
+| `manifest_validation` | `f5_total` | 4 | 44 | 5.2657 | 5.2273 | 2.7918 | 2.7216 | +0.0702 |
+| `manifest_validation` | `f5_total` | 5 | 44 | 6.2494 | 4.5682 | 2.8331 | 2.5113 | +0.3218 |
+| `manifest_validation` | `full_game_total` | 1 | 43 | 5.9216 | 7.7209 | 3.4157 | 3.4895 | -0.0738 |
+| `manifest_validation` | `full_game_total` | 2 | 44 | 7.7414 | 7.6591 | 2.6962 | 2.8886 | -0.1924 |
+| `manifest_validation` | `full_game_total` | 3 | 43 | 8.6468 | 9.2093 | 3.4461 | 3.4319 | +0.0142 |
+| `manifest_validation` | `full_game_total` | 4 | 44 | 9.4642 | 10.0909 | 4.2689 | 4.3159 | -0.0471 |
+| `manifest_validation` | `full_game_total` | 5 | 44 | 11.9910 | 9.8182 | 4.4431 | 3.8073 | +0.6358 |
+
 ## Next Actions
 
-- Review candidate residual slice summaries from the row-level prediction artifacts.
+- Review residual calibration bins and candidate residual slice summaries.
 - Add distribution/probability outputs before using the word calibration literally.
 - Promote tail/regime labels into rejection gates for any future component candidate.
 - Keep this metrics-only; no picks, prices, simulator logs, or edge claims.

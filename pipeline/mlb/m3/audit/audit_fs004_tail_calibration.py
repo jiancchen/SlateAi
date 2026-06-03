@@ -667,14 +667,132 @@ def top_candidate_tail_slices(
     return sorted(rows, key=lambda item: item["candidate_mae"], reverse=True)[:limit]
 
 
+def residual_calibration_bins(
+    prediction_artifacts: list[str],
+    bin_count: int = 5,
+) -> dict[str, Any]:
+    if not prediction_artifacts:
+        return {
+            "status": "missing",
+            "reason": "No row-level prediction artifacts were found.",
+            "artifacts": [],
+        }
+    artifacts: list[dict[str, Any]] = []
+    for artifact in prediction_artifacts:
+        path = Path(artifact)
+        rows = [
+            row
+            for row in load_jsonl(path)
+            if safe_float(row.get("actual")) is not None
+            and safe_float(row.get("prediction")) is not None
+        ]
+        if not rows:
+            artifacts.append(
+                {
+                    "path": artifact,
+                    "status": "empty",
+                    "row_count": 0,
+                    "bins": [],
+                }
+            )
+            continue
+        rows = sorted(rows, key=lambda row: safe_float(row.get("prediction")) or 0.0)
+        bins: list[dict[str, Any]] = []
+        for index in range(bin_count):
+            start = int(index * len(rows) / bin_count)
+            end = int((index + 1) * len(rows) / bin_count)
+            bin_rows = rows[start:end]
+            if not bin_rows:
+                continue
+            predictions = [safe_float(row.get("prediction")) for row in bin_rows]
+            actuals = [safe_float(row.get("actual")) for row in bin_rows]
+            clean_predictions = [value for value in predictions if value is not None]
+            clean_actuals = [value for value in actuals if value is not None]
+            metrics = prediction_metrics(bin_rows)
+            bins.append(
+                {
+                    "bin_index": index + 1,
+                    "bin_count": bin_count,
+                    "row_count": len(bin_rows),
+                    "prediction_min": min(clean_predictions) if clean_predictions else None,
+                    "prediction_max": max(clean_predictions) if clean_predictions else None,
+                    "prediction_mean": sum(clean_predictions) / len(clean_predictions)
+                    if clean_predictions
+                    else None,
+                    "actual_mean": sum(clean_actuals) / len(clean_actuals)
+                    if clean_actuals
+                    else None,
+                    "candidate_metrics": metrics["candidate_metrics"],
+                    "baseline_metrics": metrics["baseline_metrics"],
+                    "candidate_delta_mae_vs_baseline": metrics[
+                        "candidate_delta_mae_vs_baseline"
+                    ],
+                }
+            )
+        artifacts.append(
+            {
+                "path": artifact,
+                "status": "created",
+                "lane": str(rows[0].get("lane")),
+                "split_kind": str(rows[0].get("split_kind")),
+                "fold_id": str(rows[0].get("fold_id")),
+                "row_count": len(rows),
+                "bin_count": len(bins),
+                "bins": bins,
+            }
+        )
+    return {
+        "status": "created",
+        "artifact_count": len(prediction_artifacts),
+        "binning": "prediction_quantile",
+        "requested_bin_count": bin_count,
+        "artifacts": artifacts,
+    }
+
+
+def report_residual_calibration_rows(
+    residual_bins: dict[str, Any],
+    limit: int = 12,
+) -> list[dict[str, Any]]:
+    if residual_bins.get("status") != "created":
+        return []
+    rows: list[dict[str, Any]] = []
+    for artifact in residual_bins.get("artifacts", []):
+        if artifact.get("split_kind") != "manifest_validation":
+            continue
+        for bin_payload in artifact.get("bins", []):
+            candidate_metrics = bin_payload.get("candidate_metrics", {})
+            baseline_metrics = bin_payload.get("baseline_metrics") or {}
+            rows.append(
+                {
+                    "lane": artifact.get("lane"),
+                    "split_kind": artifact.get("split_kind"),
+                    "fold_id": artifact.get("fold_id"),
+                    "bin_index": bin_payload.get("bin_index"),
+                    "row_count": bin_payload.get("row_count"),
+                    "prediction_mean": bin_payload.get("prediction_mean"),
+                    "actual_mean": bin_payload.get("actual_mean"),
+                    "candidate_mae": candidate_metrics.get("mae"),
+                    "baseline_mae": baseline_metrics.get("mae"),
+                    "candidate_delta_mae_vs_baseline": bin_payload.get(
+                        "candidate_delta_mae_vs_baseline"
+                    ),
+                }
+            )
+    return rows[:limit]
+
+
 def promotion_gate_summary(
     df,
     walk_forward_summary: dict[str, Any],
     prediction_artifacts: list[str],
+    residual_calibration_bins_exist: bool,
 ) -> dict[str, Any]:
     missing_tail_targets = [column for column in TAIL_TARGET_COLUMNS if column not in df.columns]
     probability_outputs_exist = any("probability" in artifact.lower() for artifact in prediction_artifacts)
-    calibration_bins_exist = any("calibration_bin" in artifact.lower() for artifact in prediction_artifacts)
+    calibration_bins_exist = residual_calibration_bins_exist or any(
+        "calibration_bin" in artifact.lower() for artifact in prediction_artifacts
+    )
     row_predictions_exist = any("prediction" in artifact.lower() for artifact in prediction_artifacts)
     candidate_all_folds = walk_forward_summary.get(
         "candidate_beats_baseline_all_comparable_folds"
@@ -714,10 +832,15 @@ def report_markdown(audit: dict[str, Any]) -> str:
             0,
             "Extend the harness to write row-level validation predictions and residuals.",
         )
+    elif not audit["promotion_gate"]["calibration_bins_exist"]:
+        next_actions.insert(
+            0,
+            "Create residual calibration bins from row-level prediction artifacts.",
+        )
     else:
         next_actions.insert(
             0,
-            "Review candidate residual slice summaries from the row-level prediction artifacts.",
+            "Review residual calibration bins and candidate residual slice summaries.",
         )
     lines = [
         "# MLB-M3 FS-004 Tail/Regime Calibration Audit",
@@ -827,6 +950,44 @@ def report_markdown(audit: dict[str, Any]) -> str:
                 + " |"
             )
         lines.append("")
+    if audit["residual_calibration_bins"]["status"] == "created":
+        lines.extend(
+            [
+                "## Residual Calibration Bins",
+                "",
+                "These are prediction-quantile residual bins for point predictions. They are not probability calibration bins.",
+                "",
+                "| Split | Lane | Bin | Rows | Prediction Mean | Actual Mean | Candidate MAE | Baseline MAE | Delta |",
+                "| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |",
+            ]
+        )
+        for row in audit["report_residual_calibration_bins"]:
+            baseline = safe_float(row["baseline_mae"])
+            delta = safe_float(row["candidate_delta_mae_vs_baseline"])
+            lines.append(
+                "| "
+                + " | ".join(
+                    [
+                        f"`{row['split_kind']}`",
+                        f"`{row['lane']}`",
+                        str(row["bin_index"]),
+                        str(row["row_count"]),
+                        ""
+                        if row["prediction_mean"] is None
+                        else f"{safe_float(row['prediction_mean']):.4f}",
+                        ""
+                        if row["actual_mean"] is None
+                        else f"{safe_float(row['actual_mean']):.4f}",
+                        ""
+                        if row["candidate_mae"] is None
+                        else f"{safe_float(row['candidate_mae']):.4f}",
+                        "" if baseline is None else f"{baseline:.4f}",
+                        "" if delta is None else f"{delta:+.4f}",
+                    ]
+                )
+                + " |"
+            )
+        lines.append("")
     lines.extend(
         [
             "## Next Actions",
@@ -878,12 +1039,19 @@ def audit_tail_calibration(
     family_summary = summarize_family_ablations(family_ablations, lane_reports)
     prediction_artifacts = find_prediction_artifacts(harness_dir)
     row_prediction_summary = row_prediction_slice_summary(prediction_artifacts)
-    promotion_gate = promotion_gate_summary(df, walk_forward_gate, prediction_artifacts)
+    residual_bins = residual_calibration_bins(prediction_artifacts)
+    promotion_gate = promotion_gate_summary(
+        df,
+        walk_forward_gate,
+        prediction_artifacts,
+        residual_bins.get("status") == "created",
+    )
     top_slices = {
         lane: top_baseline_tail_slices(baseline_by_slice, lane)
         for lane in sorted(baseline_by_slice)
     }
     top_candidate_slices = top_candidate_tail_slices(row_prediction_summary)
+    report_bins = report_residual_calibration_rows(residual_bins)
 
     finished_at = utc_now()
     audit = {
@@ -904,19 +1072,27 @@ def audit_tail_calibration(
         "walk_forward_gate_uri": str(output_dir / "walk_forward_gate.json"),
         "family_ablation_summary_uri": str(output_dir / "family_ablation_summary.json"),
         "row_prediction_slice_summary_uri": str(output_dir / "row_prediction_slice_summary.json"),
+        "residual_calibration_bins_uri": str(output_dir / "residual_calibration_bins.json"),
         "prediction_artifacts_found": prediction_artifacts,
         "promotion_gate": promotion_gate,
         "walk_forward_gate": walk_forward_gate,
         "row_prediction_slice_summary": row_prediction_summary,
+        "residual_calibration_bins": residual_bins,
         "top_baseline_tail_slices": top_slices,
         "top_candidate_tail_slices": top_candidate_slices,
+        "report_residual_calibration_bins": report_bins,
         "non_goals": NON_GOALS,
     }
     next_recommended_actions = [
         "Add distribution/probability outputs before calibration claims.",
         "Use tail/regime slices as rejection gates for future candidates.",
     ]
-    if promotion_gate["row_level_predictions_exist"]:
+    if promotion_gate["calibration_bins_exist"]:
+        next_recommended_actions.insert(
+            0,
+            "Review residual calibration bins and candidate residual slice summaries.",
+        )
+    elif promotion_gate["row_level_predictions_exist"]:
         next_recommended_actions.insert(
             0,
             "Review candidate residual slice summaries from row-level prediction artifacts.",
@@ -940,6 +1116,7 @@ def audit_tail_calibration(
         "row_prediction_artifact_count": len(prediction_artifacts),
         "probability_outputs_exist": promotion_gate["probability_outputs_exist"],
         "calibration_bins_exist": promotion_gate["calibration_bins_exist"],
+        "residual_calibration_bins_exist": residual_bins.get("status") == "created",
         "next_recommended_actions": next_recommended_actions,
         "non_goals": NON_GOALS,
     }
@@ -950,6 +1127,7 @@ def audit_tail_calibration(
     write_json(output_dir / "walk_forward_gate.json", walk_forward_gate)
     write_json(output_dir / "family_ablation_summary.json", family_summary)
     write_json(output_dir / "row_prediction_slice_summary.json", row_prediction_summary)
+    write_json(output_dir / "residual_calibration_bins.json", residual_bins)
     write_json(output_dir / "dashboard_state.json", dashboard_state)
     write_json(output_dir / "tail_calibration_audit.json", audit)
     (output_dir / "report.md").write_text(report_markdown(audit), encoding="utf-8")
@@ -964,6 +1142,7 @@ def audit_tail_calibration(
             artifact_entry("walk_forward_gate", output_dir / "walk_forward_gate.json"),
             artifact_entry("family_ablation_summary", output_dir / "family_ablation_summary.json"),
             artifact_entry("row_prediction_slice_summary", output_dir / "row_prediction_slice_summary.json"),
+            artifact_entry("residual_calibration_bins", output_dir / "residual_calibration_bins.json"),
             artifact_entry("dashboard_state", output_dir / "dashboard_state.json"),
             artifact_entry("report", output_dir / "report.md"),
         ],

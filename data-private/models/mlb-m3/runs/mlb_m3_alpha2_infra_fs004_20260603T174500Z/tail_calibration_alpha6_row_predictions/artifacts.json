@@ -1,11 +1,11 @@
 {
   "artifacts": [
     {
-      "bytes": 104300,
+      "bytes": 135176,
       "exists": true,
       "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/tail_calibration_alpha6_row_predictions/tail_calibration_audit.json",
       "role": "tail_calibration_audit",
-      "sha256": "a0b037112720fbada69f3c57b27d226f06c149fd70c3ea87117bf0174a1f3938"
+      "sha256": "87f3839fcbe626c49b7aff9165a0bfab7100d502aa3af100f2c9cbefad81d648"
     },
     {
       "bytes": 9043,
@@ -50,18 +50,25 @@
       "sha256": "0301b39479d048f68f62928067e210469a788e5323af1a4bbbff08375d3a9de0"
     },
     {
-      "bytes": 1424,
+      "bytes": 25189,
+      "exists": true,
+      "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/tail_calibration_alpha6_row_predictions/residual_calibration_bins.json",
+      "role": "residual_calibration_bins",
+      "sha256": "3da9a11a53eceadc9475c5f0ebe8a517153ddbafa2bbf8170edd92311728a80e"
+    },
+    {
+      "bytes": 1460,
       "exists": true,
       "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/tail_calibration_alpha6_row_predictions/dashboard_state.json",
       "role": "dashboard_state",
-      "sha256": "2e7590017998f225909c03559a390d77777065e0da6cb5c7bb2fbb56cfa07835"
+      "sha256": "b1cae25d4d3dacc50022bd17597d89d2d6a869b258410fd87ab8cf7c29a69aa5"
     },
     {
-      "bytes": 4341,
+      "bytes": 5575,
       "exists": true,
       "path": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/tail_calibration_alpha6_row_predictions/report.md",
       "role": "report",
-      "sha256": "3362dcca5a556f43e762416db7dde43f2cf59c5947e44d141823bee5726dac04"
+      "sha256": "fd886f9d4371b379700761583d83ef5fddd6e7004d517e75daa0ba96d5ab7f48"
     }
   ],
   "run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",

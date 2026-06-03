@@ -50,6 +50,8 @@ Status: opened
 | A6-W026 | Generate FS-004 row-level harness artifacts | complete | `training_harness_alpha6_row_predictions` | Wrote 6 JSONL row-prediction artifacts across manifest validation and two walk-forward folds. |
 | A6-W027 | Regenerate FS-004 tail audit with row residual summaries | complete | `tail_calibration_alpha6_row_predictions` | Row-level predictions now pass the gate; probability outputs, calibration bins, and baseline-beating walk-forward remain blocked. |
 | A6-W028 | Review FS-004 row-prediction harness | complete | `2026-06-03-mlb-m3-alpha-6-fs004-row-prediction-harness-review.md` | Accepted as metrics-only residual infrastructure; no promotion. |
+| A6-W029 | Add residual calibration-bin scaffolding | complete | `residual_calibration_bins.json` | Prediction-quantile residual bins now exist for row-level diagnostic predictions; these are point-prediction bins, not probability calibration. |
+| A6-W030 | Refresh FS-004 row-aware tail audit | complete | `tail_calibration_alpha6_row_predictions` | Row-level predictions and residual calibration bins pass; probability/distribution output and baseline-beating walk-forward remain blocked. |
 
 ## Verification Log
 
@@ -83,6 +85,8 @@ Status: opened
 - 2026-06-03: `PYTHONDONTWRITEBYTECODE=1 python3 -m pipeline.mlb.m3.harness.validate_alpha3_harness --harness-dir data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6_row_predictions --json` passed.
 - 2026-06-03: `PYTHONDONTWRITEBYTECODE=1 /Users/jcchen/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -m pipeline.mlb.m3.audit.audit_fs004_tail_calibration --manifest data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/manifest.json --harness-dir data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/training_harness_alpha6_row_predictions --output-subdir tail_calibration_alpha6_row_predictions` generated row-aware tail/regime residual summaries.
 - 2026-06-03: Row-aware FS-004 tail audit reports `blocked_for_promotion`: row-level predictions now exist, but probability outputs, calibration bins, and baseline-beating walk-forward results do not.
+- 2026-06-03: `tail_calibration_alpha6_row_predictions/residual_calibration_bins.json` generated prediction-quantile residual bins for all 6 row-prediction artifacts.
+- 2026-06-03: Refreshed row-aware FS-004 tail audit reports `blocked_for_promotion`: row-level predictions and residual calibration bins now exist, but probability/distribution output and baseline-beating walk-forward results do not.
 
 ## Stop Log
 

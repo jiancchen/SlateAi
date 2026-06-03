@@ -130,7 +130,7 @@ flowchart TD
   MANIFEST --> HARNESS["Alpha-5 harness"]
   HARNESS --> REVIEW["FS-004 review"]
   HARNESS --> TAIL["Tail/regime feedback audit"]
-  TAIL --> ROWS["Next: probability/distribution outputs and calibration bins"]
+  TAIL --> ROWS["Next: probability/distribution outputs"]
   REVIEW --> STATE["Update alpha state tracker"]
   TAIL --> STATE
 

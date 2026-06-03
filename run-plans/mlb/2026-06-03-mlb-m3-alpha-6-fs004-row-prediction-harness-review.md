@@ -55,10 +55,10 @@ The row-aware tail audit now reports:
 | Tail/regime targets present | pass |
 | Row-level validation predictions exist | pass |
 | Probability or distribution outputs exist | fail |
-| Calibration bins exist | fail |
+| Residual calibration bins exist | pass |
 | Candidate beats baseline in all comparable folds | fail |
 
-Promotion status remains `blocked_for_promotion`.
+Promotion status remains `blocked_for_promotion` because probability/distribution output is still missing and the diagnostic candidate still loses every comparable walk-forward fold.
 
 ## Candidate Residual Signal
 
@@ -71,6 +71,20 @@ Worst candidate residual slices are still tail-heavy:
 | `manifest_validation` | `f5_total` | `target_f5_bucket:chaos` | 43 | 5.5744 | 5.3351 | +0.2394 |
 
 Interpretation: row residuals show FS-004 helps some full-game chaos slices versus baseline, but it still loses overall and does not solve F5 chaos. That is useful feedback, not a promotion.
+
+## Residual Calibration Bins
+
+The row-aware tail audit now writes `residual_calibration_bins.json`. These are prediction-quantile bins for point predictions, not probability calibration bins.
+
+Manifest validation examples:
+
+| Lane | Bin | Rows | Prediction Mean | Actual Mean | Candidate MAE | Baseline MAE | Delta |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| `f5_total` | 1 | 43 | 3.1148 | 5.0000 | 3.0473 | 2.7296 | +0.3177 |
+| `f5_total` | 5 | 44 | 6.2494 | 4.5682 | 2.8331 | 2.5113 | +0.3218 |
+| `full_game_total` | 5 | 44 | 11.9910 | 9.8182 | 4.4431 | 3.8073 | +0.6358 |
+
+Interpretation: the diagnostic candidate is overconfident at the top end of both lanes and underpredicts some low-prediction F5 bins. That is exactly the kind of calibration feedback M3 needs before any richer model is trusted.
 
 ## Verification
 

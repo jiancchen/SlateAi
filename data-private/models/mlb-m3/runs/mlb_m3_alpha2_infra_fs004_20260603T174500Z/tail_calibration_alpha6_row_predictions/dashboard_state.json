@@ -1,8 +1,8 @@
 {
   "active_phase": "tail_regime_audit",
-  "calibration_bins_exist": false,
+  "calibration_bins_exist": true,
   "next_recommended_actions": [
-    "Review candidate residual slice summaries from row-level prediction artifacts.",
+    "Review residual calibration bins and candidate residual slice summaries.",
     "Add distribution/probability outputs before calibration claims.",
     "Use tail/regime slices as rejection gates for future candidates."
   ],
@@ -18,6 +18,7 @@
   "output_dir": "/Users/jcchen/Documents/New project/data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs004_20260603T174500Z/tail_calibration_alpha6_row_predictions",
   "probability_outputs_exist": false,
   "promotion_gate_status": "blocked_for_promotion",
+  "residual_calibration_bins_exist": true,
   "row_level_predictions_exist": true,
   "row_prediction_artifact_count": 6,
   "run_id": "mlb_m3_alpha2_infra_fs004_20260603T174500Z",
