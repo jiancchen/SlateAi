@@ -143,7 +143,7 @@ The hot-swappable unit in M3 is the component artifact, not the whole MLB model.
 | reliever chain model | first-up route, remaining pool, game shape, score state | chain length, second arm probability, inherited-runner state |
 | reliever performance model | reliever state, workload, opponent pocket, inherited runners | outs, pitches, batters faced, damage and traffic distributions |
 | PA-volume model | game shape, starter exit, lineup order, team run path | team and player PA opportunity distribution |
-| PA event/hitter model | batter, pitcher, pitch mix, handedness, context, reliever path | PA event and hitter stat distributions |
+| PA event/hitter model | batter plus one opponent pitching path: starter phase then reliever-chain phase | PA event and hitter stat distributions |
 | calibrator | raw component outputs, validation slices | calibrated component distributions |
 | market aggregator | simulated event logs and known market contract | fair probability, fair line, market delta |
 | selection policy | priced rows, risk rules, confidence, liquidity | show/pass/veto/watch rows |
@@ -203,6 +203,27 @@ flowchart TD
   RELIEVER --> SELECT
   HITTER --> SELECT
 ```
+
+## Pitching Path Grain
+
+For each batting side, there is one opponent pitching path, not a pile of independent matchup models.
+
+```text
+home offense -> away starter phase -> away reliever-chain phase
+away offense -> home starter phase -> home reliever-chain phase
+```
+
+The starter is a known or unknown single-arm phase. The relief side is a probabilistic chain phase. Hitter props and player stat distributions should allocate expected plate appearances across that one path:
+
+```text
+player PA opportunity
+-> probability PA occurs against starter phase
+-> probability PA occurs against reliever-chain phase
+-> event distribution conditional on the pitcher phase reached
+-> player stat distribution
+```
+
+This means M3 should not build separate standalone "hitter versus starter" and "hitter versus reliever" products. Those are two states inside the same game path. The reliever-chain phase is different from the starter phase because the arm identity, entry state, handedness pocket, workload, inherited-runner state, and chain-break risk are all uncertain. But it is still part of the same opponent pitching path that the hitter is projected to face.
 
 ## Feature Extraction DAG For M3-FS-001
 
@@ -316,7 +337,7 @@ The dashboard should not be where features, models, or picks are defined.
 2. Feature snapshots must be as-of clean. The same table can contain useful historical facts and illegal future facts, so validators need to enforce timing.
 3. Fixed raw windows are not a design primitive. Windowed stats can be candidate evidence, but state memory, event sequences, change-point candidates, residuals, and coverage flags are the real abstraction.
 4. Relievers need their own path. Availability, router, chain, and performance are different questions and should not be one score.
-5. Player props are downstream of shared worlds. Hits, total bases, RBI, walks, strikeouts, and pitcher props must resolve from PA volume, event distributions, starter exit, reliever path, and game shape.
+5. Player props are downstream of shared worlds. Hits, total bases, RBI, walks, strikeouts, and pitcher props must resolve from PA volume, event distributions, starter exit, the single opponent pitching path, and game shape.
 6. Selection policy must stay downstream. It can rank, veto, hide, or flag rows, but it cannot edit fair probabilities.
 7. Backtests must be artifact-driven. If a run cannot trace feature contract, artifact versions, calibration, market source, and settlement, it cannot promote anything.
 8. The first implementation spine should be narrow. Build M3-FS-001, labels, run reports, baseline component outputs, and backtest plumbing before trying to model every prop family.
@@ -338,9 +359,9 @@ The practical build order should be:
 
 - No direct `features -> picks` shortcut.
 - No isolated player prop heads that ignore game shape.
+- No separate hitter-matchup islands outside the single starter-phase plus reliever-chain path.
 - No hand-coded M2 score formulas inside M3 features.
 - No fixed raw window as the only definition of form.
 - No bullpen model that mixes availability, routing, and performance into one opaque number.
 - No presentation files as source of truth.
 - No console-only training jobs that cannot be resumed, audited, or compared.
-

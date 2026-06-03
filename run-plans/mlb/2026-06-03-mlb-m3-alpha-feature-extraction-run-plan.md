@@ -90,7 +90,16 @@ Out of scope for the first matrix:
 - simulator event generation
 - hand-built composite scores
 
-Important: "out of scope" does not mean "bolted on later." Player props, starter props, reliever props, game totals, team totals, and moneyline-style outputs must be declared as downstream contracts over shared distributions. M3-FS-001 should not build those prop features yet, but it must keep the distribution bridge visible so future prop layers consume the same game/team/starter/reliever/player event distributions.
+Important: "out of scope" does not mean "bolted on later." Player props, starter props, reliever props, game totals, team totals, and moneyline-style outputs must be declared as downstream contracts over shared distributions. M3-FS-001 should not build those prop features yet, but it must keep the distribution bridge visible so future prop layers consume the same game/team/player event distributions and the single opponent pitching path for each batting side.
+
+Pitching-path grain:
+
+```text
+home offense -> away starter phase -> away reliever-chain phase
+away offense -> home starter phase -> home reliever-chain phase
+```
+
+Hitter props should allocate player PA opportunity across this one path. Starter matchup and reliever-chain matchup are different phases, not separate standalone product models.
 
 Downstream output families to keep declared from Step 1:
 
@@ -870,7 +879,7 @@ Rules:
 - keep command, whiff, pitch mix, damage, and inherited-runner behavior as separate surfaces
 - include evidence coverage and uncertainty flags because relief samples are thin and state can change quickly
 - do not collapse reliever state into one manual "reliever score"
-- allow the downstream simulator to condition hitter, total, and late-run distributions on the likely relief-chain mix
+- allow the downstream simulator to condition hitter, total, and late-run distributions on the likely relief-chain phase of the single opponent pitching path
 
 ### 8. Lineup And PA Volume Context
 

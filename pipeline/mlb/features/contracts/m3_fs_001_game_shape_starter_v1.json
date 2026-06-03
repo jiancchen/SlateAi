@@ -328,7 +328,7 @@
       "first-up relief routing consumes starter-exit and reliever-availability distributions",
       "reliever props consume relief-chain and reliever stat distributions",
       "game and team markets consume shared run/game-shape, starter-exit, reliever-availability, and relief-chain distributions",
-      "hitter props consume likely starter and reliever PA/event mix distributions"
+      "hitter props consume one opponent pitching path with starter-phase and reliever-chain PA/event mix distributions"
     ]
   },
   "required_report_fields": [
@@ -356,6 +356,7 @@
     "Reliever performance is a first-class individual-arm state surface, not only a team bullpen aggregate.",
     "Reliever availability and first-up routing are separate component distributions before reliever damage is modeled.",
     "Relief-chain outputs must represent likely entry state, workload, inherited-runner damage, and chain-break risk.",
+    "For each batting side there is one opponent pitching path: projected starter phase followed by projected reliever-chain phase.",
     "Evidence coverage is required so sparse data cannot masquerade as stable form.",
     "No M2 weights, fixed memory lengths, or hand-tuned conclusions are part of this contract."
   ]
