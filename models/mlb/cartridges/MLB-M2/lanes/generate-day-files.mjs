@@ -1,5 +1,4 @@
 import { execFileSync, execSync } from 'node:child_process'
-import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { mkdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -434,54 +433,75 @@ const safeJsonParse = (value, fallback = null) => {
   }
 }
 
-const historicalPublishedMarketCacheByDate = new Map()
+const quoteSqlText = (value = '') => `'${String(value).replace(/'/g, "''")}'`
 
-const loadPublishedHistoricalMarketContextByDate = (date) => {
-  if (historicalPublishedMarketCacheByDate.has(date)) {
-    return historicalPublishedMarketCacheByDate.get(date)
+const impliedProbabilityFromAmerican = (price) => {
+  const numeric = Number(price)
+  if (!Number.isFinite(numeric) || numeric === 0) return null
+  return numeric < 0 ? Math.abs(numeric) / (Math.abs(numeric) + 100) : 100 / (numeric + 100)
+}
+
+const typedHistoricalMarketCacheByDate = new Map()
+
+const loadTypedHistoricalMarketContextByDate = (date) => {
+  if (typedHistoricalMarketCacheByDate.has(date)) {
+    return typedHistoricalMarketCacheByDate.get(date)
   }
 
-  const gamesDir = path.join(rootDir, 'published-data', 'slates', date, 'games')
   const marketByGamePk = new Map()
+  const rows = runSqliteJson(
+    `select
+      market_date,
+      game_pk,
+      home_team,
+      away_team,
+      outcome_name,
+      price,
+      snapshot_time
+    from mlb_featured_market_odds_snapshots
+    where market_date = ${quoteSqlText(date)}
+      and game_pk is not null
+      and market_key in ('h2h', 'moneyline')
+    order by game_pk, snapshot_time desc;`
+  )
 
-  if (existsSync(gamesDir)) {
-    for (const fileName of readdirSync(gamesDir)) {
-      if (!fileName.endsWith('.json')) continue
-      const game = safeJsonParse(readFileSync(path.join(gamesDir, fileName), 'utf8'), null)
-      if (!game || game.league !== 'MLB') continue
-      const gamePk = Number(game.gamePk || 0) || 0
-      if (!gamePk || marketByGamePk.has(gamePk)) continue
-
-      const participant = game.analysis?.participant ?? {}
-      const opponent = game.analysis?.opponent ?? {}
-      const participantProbability = Number(participant.impliedProbability)
-      const opponentProbability = Number(opponent.impliedProbability)
-      const participantName = deskToOfficialTeam[participant.name] || participant.name || ''
-      const opponentName = deskToOfficialTeam[opponent.name] || opponent.name || ''
-      const favoriteProbabilityGap =
-        Number.isFinite(participantProbability) && Number.isFinite(opponentProbability)
-          ? Math.abs(participantProbability - opponentProbability)
-          : null
-
-      let marketFavoriteTeam = ''
-      let marketFavoriteProbability = null
-
-      if (Number.isFinite(participantProbability) && Number.isFinite(opponentProbability)) {
-        marketFavoriteTeam = participantProbability >= opponentProbability ? participantName : opponentName
-        marketFavoriteProbability = Math.max(participantProbability, opponentProbability)
-      }
-
-      marketByGamePk.set(gamePk, {
-        marketFavoriteTeam,
-        marketFavoriteProbability,
-        favoriteProbabilityGap,
-        awayTeam: deskToOfficialTeam[game.matchup?.[0]?.name] || game.matchup?.[0]?.name || '',
-        homeTeam: deskToOfficialTeam[game.matchup?.[1]?.name] || game.matchup?.[1]?.name || ''
+  const grouped = new Map()
+  rows.forEach((row) => {
+    const gamePk = Number(row.game_pk || 0) || 0
+    if (!gamePk) return
+    if (!grouped.has(gamePk)) {
+      grouped.set(gamePk, {
+        awayTeam: row.away_team || '',
+        homeTeam: row.home_team || '',
+        outcomes: new Map()
       })
     }
+    const group = grouped.get(gamePk)
+    const outcomeTeam = deskToOfficialTeam[row.outcome_name] || row.outcome_name || ''
+    if (!outcomeTeam || group.outcomes.has(outcomeTeam)) return
+    const probability = impliedProbabilityFromAmerican(row.price)
+    if (!Number.isFinite(probability)) return
+    group.outcomes.set(outcomeTeam, {
+      team: outcomeTeam,
+      probability,
+      price: Number(row.price)
+    })
+  })
+
+  for (const [gamePk, group] of grouped.entries()) {
+    const outcomes = [...group.outcomes.values()].sort((left, right) => right.probability - left.probability)
+    const favorite = outcomes[0]
+    if (!favorite) continue
+    marketByGamePk.set(gamePk, {
+      marketFavoriteTeam: favorite.team,
+      marketFavoriteProbability: favorite.probability,
+      favoriteProbabilityGap: outcomes.length >= 2 ? Math.abs(outcomes[0].probability - outcomes[1].probability) : null,
+      awayTeam: group.awayTeam,
+      homeTeam: group.homeTeam
+    })
   }
 
-  historicalPublishedMarketCacheByDate.set(date, marketByGamePk)
+  typedHistoricalMarketCacheByDate.set(date, marketByGamePk)
   return marketByGamePk
 }
 
@@ -590,10 +610,10 @@ const buildHistoricalExpectationContext = ({ records = [] }) => {
   uniqueRecords.forEach((record) => {
     const key = `${record.date}::${Number(record.gamePk)}`
     if (marketByDateGamePk.has(key)) return
-    const publishedMap = loadPublishedHistoricalMarketContextByDate(record.date)
-    const publishedContext = publishedMap.get(Number(record.gamePk))
-    if (publishedContext) {
-      marketByDateGamePk.set(key, publishedContext)
+    const typedMarketMap = loadTypedHistoricalMarketContextByDate(record.date)
+    const typedMarketContext = typedMarketMap.get(Number(record.gamePk))
+    if (typedMarketContext) {
+      marketByDateGamePk.set(key, typedMarketContext)
     }
   })
 

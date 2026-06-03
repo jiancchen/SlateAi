@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T05:27:43.621Z",
+  "generated_at": "2026-06-03T05:32:14.074Z",
   "script": "data-migration/scripts/audit_mlb_db_input_cutover.mjs",
   "profile": "active",
   "targets": [
@@ -42,8 +42,8 @@
       "published_data_input": {
         "description": "Uses public/site mirrors as model inputs.",
         "severity": "cutover_blocker",
-        "files": 4,
-        "hits": 8
+        "files": 3,
+        "hits": 7
       },
       "private_prediction_json_input": {
         "description": "Uses generated prediction JSON artifacts as model inputs.",
@@ -148,15 +148,6 @@
         }
       },
       {
-        "path": "models/mlb/cartridges/MLB-M2/lanes/generate-day-files.mjs",
-        "total_hits": 3,
-        "counts": {
-          "published_data_input": 1,
-          "legacy_sqlite_shell": 1,
-          "db_ready_reference": 1
-        }
-      },
-      {
         "path": "models/mlb/cartridges/MLB-M2/lanes/lineups.mjs",
         "total_hits": 3,
         "counts": {
@@ -190,6 +181,14 @@
         }
       },
       {
+        "path": "models/mlb/cartridges/MLB-M2/lanes/generate-day-files.mjs",
+        "total_hits": 2,
+        "counts": {
+          "legacy_sqlite_shell": 1,
+          "db_ready_reference": 1
+        }
+      },
+      {
         "path": "models/mlb/cartridges/MLB-M2/workflows/followup.mjs",
         "total_hits": 2,
         "counts": {
@@ -217,21 +216,15 @@
       "path": "models/mlb/cartridges/MLB-M2/lanes/generate-day-files.mjs",
       "hits": [
         {
-          "key": "published_data_input",
-          "severity": "cutover_blocker",
-          "line": 444,
-          "match": "published-data', 'slates"
-        },
-        {
           "key": "legacy_sqlite_shell",
           "severity": "review",
-          "line": 421,
+          "line": 420,
           "match": "sqlite3',"
         },
         {
           "key": "db_ready_reference",
           "severity": "db_ready",
-          "line": 10,
+          "line": 9,
           "match": "sql-mlb.db"
         }
       ]

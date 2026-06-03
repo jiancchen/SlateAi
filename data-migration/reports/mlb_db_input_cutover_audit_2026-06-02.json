@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T05:27:43.681Z",
+  "generated_at": "2026-06-03T05:33:26.543Z",
   "script": "data-migration/scripts/audit_mlb_db_input_cutover.mjs",
   "profile": "full",
   "targets": [
@@ -26,8 +26,8 @@
       "published_data_input": {
         "description": "Uses public/site mirrors as model inputs.",
         "severity": "cutover_blocker",
-        "files": 15,
-        "hits": 25
+        "files": 14,
+        "hits": 24
       },
       "private_prediction_json_input": {
         "description": "Uses generated prediction JSON artifacts as model inputs.",
@@ -306,15 +306,6 @@
         }
       },
       {
-        "path": "models/mlb/cartridges/MLB-M2/lanes/generate-day-files.mjs",
-        "total_hits": 3,
-        "counts": {
-          "published_data_input": 1,
-          "legacy_sqlite_shell": 1,
-          "db_ready_reference": 1
-        }
-      },
-      {
         "path": "models/mlb/cartridges/MLB-M2/lanes/lineups.mjs",
         "total_hits": 3,
         "counts": {
@@ -415,6 +406,14 @@
         "total_hits": 2,
         "counts": {
           "generated_module_input": 2
+        }
+      },
+      {
+        "path": "models/mlb/cartridges/MLB-M2/lanes/generate-day-files.mjs",
+        "total_hits": 2,
+        "counts": {
+          "legacy_sqlite_shell": 1,
+          "db_ready_reference": 1
         }
       },
       {
@@ -1670,21 +1669,15 @@
       "path": "models/mlb/cartridges/MLB-M2/lanes/generate-day-files.mjs",
       "hits": [
         {
-          "key": "published_data_input",
-          "severity": "cutover_blocker",
-          "line": 444,
-          "match": "published-data', 'slates"
-        },
-        {
           "key": "legacy_sqlite_shell",
           "severity": "review",
-          "line": 421,
+          "line": 420,
           "match": "sqlite3',"
         },
         {
           "key": "db_ready_reference",
           "severity": "db_ready",
-          "line": 10,
+          "line": 9,
           "match": "sql-mlb.db"
         }
       ]
@@ -2985,13 +2978,13 @@
         {
           "key": "warehouse_cli",
           "severity": "cutover_blocker",
-          "line": 12,
+          "line": 14,
           "match": "mlb_warehouse.py"
         },
         {
           "key": "warehouse_cli",
           "severity": "cutover_blocker",
-          "line": 16,
+          "line": 18,
           "match": "mlb_warehouse.py"
         },
         {
@@ -3009,7 +3002,7 @@
         {
           "key": "db_ready_reference",
           "severity": "db_ready",
-          "line": 12,
+          "line": 14,
           "match": "sql-mlb.db"
         }
       ]

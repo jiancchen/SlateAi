@@ -29,6 +29,7 @@ Completed:
 - Prediction, market, and prop normalizers read historical `legacy_table_rows` plus direct-only typed staging rows, so fresh writer rows normalize forward without a `sports.db` bridge.
 - New typed warehouse CLI exists at `pipeline/mlb/warehouse/mlb_typed_warehouse.py` v0.4.0; primary package aliases for raw schedule/feed ingestion, day prep, probable starters, hitter career profiles, and lineup-board splits now point to typed replacements.
 - Current M2 `lineups`, `history-journal`, `generate-day-files`, copied M0/M1 lane scripts, cartridge compare, RP36 read exporters, and story archive export read the typed MLB DB.
+- `generate-day-files` historical market fallback now reads typed `mlb_featured_market_odds_snapshots` instead of `published-data/slates/<date>/games`.
 - Side backtest and MLB odds/FanDuel research fetchers default to `sql-mlb.db` writable staging tables.
 
 Current audit state:
@@ -62,7 +63,7 @@ Active DB-input cutover audit:
 |---|---:|---:|---|
 | `legacy_sports_db` | 0 | 0 | No active runtime file is directly reading the shared legacy DB path. |
 | `warehouse_cli` | 0 | 0 | Active files no longer shell directly into the legacy warehouse CLI. |
-| `published_data_input` | 4 | 8 | Snapshot/day-file surfaces still use public/site mirrors as model inputs. |
+| `published_data_input` | 3 | 7 | Snapshot/journal surfaces still use public/site mirrors as model inputs. |
 | `private_prediction_json_input` | 6 | 13 | Snapshot/workflow surfaces still read generated prediction artifacts. |
 | `private_prediction_json_output` | 4 | 5 | M2 compatibility outputs still write generated JSON. |
 | `raw_archive_input` | 4 | 4 | Some surfaces still read raw/archive files directly. |
