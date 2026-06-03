@@ -33,7 +33,7 @@ Status: opened
 | A4-W005 | Generate first `M3-FS-002` artifact | complete | `data-private/models/mlb-m3/features/m3_fs_002_game_story_pitching_state_v0/m3_fs_002_game_story_pitching_state_v0_20260603T155454Z` | Includes matrix, dictionary, lineage, missingness, leakage, coverage, and build report. |
 | A4-W006 | Validate `M3-FS-002` artifact | complete | `2026-06-03-mlb-m3-alpha-4-fs002-artifact-review.md` | Rejects M2 weights, expected AB input, hidden fixed-window truth, and same-game leakage. |
 | A4-W007 | Create manifest for `M3-FS-002` | complete | `data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs002_20260603T155600Z/manifest.json` | Reuses alpha-2 manifest infrastructure over the FS-002 feature report. |
-| A4-W008 | Run alpha-3 harness against `M3-FS-002` | pending |  | Metrics-only, no picks or edge claims. |
+| A4-W008 | Run alpha-3 harness against `M3-FS-002` | complete | `data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs002_20260603T155600Z/training_harness` | Metrics-only with diagnostic ridge candidates; no picks or edge claims. |
 
 ## Feature Family Ledger
 
@@ -60,3 +60,6 @@ No stops yet.
 - 2026-06-03: FS-002 leakage report passed with zero expected-AB columns and zero fixed-window truth terms.
 - 2026-06-03: Created `mlb_m3_alpha2_infra_fs002_20260603T155600Z` manifest bundle for FS-002.
 - 2026-06-03: `python3 -m pipeline.mlb.m3.runs.validate_alpha2_manifest --manifest data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs002_20260603T155600Z/manifest.json --report data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs002_20260603T155600Z/manifest_validation.json --json` passed with 18 checks, zero errors, and zero warnings.
+- 2026-06-03: Ran alpha-3 harness against FS-002 with diagnostic candidate models enabled. Output is `data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs002_20260603T155600Z/training_harness`.
+- 2026-06-03: `python3 -m pipeline.mlb.m3.harness.validate_alpha3_harness --harness-dir data-private/models/mlb-m3/runs/mlb_m3_alpha2_infra_fs002_20260603T155600Z/training_harness --json` passed with 7 checks, zero errors, zero warnings, 11 JSON files, and 2 non-promoted candidate model files.
+- 2026-06-03: First diagnostic ridge candidates underperformed train-mean baselines and are not promoted. See `2026-06-03-mlb-m3-fs002-harness-candidate-review.md`.

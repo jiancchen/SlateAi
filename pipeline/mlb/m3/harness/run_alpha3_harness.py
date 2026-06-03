@@ -324,8 +324,8 @@ def fit_ridge(train_df, validation_df, feature_columns: list[str], target_column
             "validation_rows": int(len(y_validation)),
         }
 
-    x_train_raw = train_use.applymap(safe_float).astype(float)
-    x_validation_raw = validation_use.applymap(safe_float).astype(float)
+    x_train_raw = train_use.map(safe_float).astype(float)
+    x_validation_raw = validation_use.map(safe_float).astype(float)
     means = x_train_raw.mean(skipna=True)
     means = means.fillna(0.0)
     stds = x_train_raw.std(skipna=True, ddof=0).replace(0.0, 1.0).fillna(1.0)
@@ -635,4 +635,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

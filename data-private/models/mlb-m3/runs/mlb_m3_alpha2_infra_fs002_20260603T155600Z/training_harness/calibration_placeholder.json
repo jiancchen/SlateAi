@@ -1,0 +1,17 @@
+{
+  "lanes": [
+    "full_game_total",
+    "f5_total"
+  ],
+  "non_goals": [
+    "no picks",
+    "no selection rows",
+    "no player prop pricing",
+    "no market fair probability claims",
+    "no simulator event logs",
+    "no promotion decisions",
+    "no claim that M3 is better"
+  ],
+  "reason": "Alpha-3 writes metrics-only diagnostics before probability calibration.",
+  "status": "placeholder_not_calibrated"
+}
