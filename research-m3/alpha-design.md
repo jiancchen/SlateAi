@@ -12,7 +12,10 @@ M3 is a different kind of system. The hot-swappable unit is not the whole model 
 
 - game-shape model
 - starter path model
-- bullpen chain model
+- bullpen shape model
+- reliever availability/reset model
+- first-up reliever router
+- reliever chain/performance models
 - PA-volume model
 - batter/pitcher event model
 - soft-signal encoder
@@ -63,10 +66,13 @@ flowchart TD
   I --> J["Submodel registry"]
   J --> K["Game-shape model"]
   J --> L["Starter path model"]
-  J --> M["Bullpen chain model"]
-  J --> N["PA-volume model"]
-  J --> O["Event-rate models"]
-  J --> P["Calibrators"]
+  J --> M["Bullpen shape model"]
+  J --> N["Reliever availability/reset model"]
+  J --> O["First-up reliever router"]
+  J --> P["Reliever chain/performance models"]
+  J --> R0["PA-volume model"]
+  J --> R1["Event-rate models"]
+  J --> R2["Calibrators"]
 
   K --> Q["Seeded baseball state simulator"]
   L --> Q
@@ -74,6 +80,9 @@ flowchart TD
   N --> Q
   O --> Q
   P --> Q
+  R0 --> Q
+  R1 --> Q
+  R2 --> Q
 
   Q --> R["Simulated event logs"]
   R --> S["Distribution aggregators"]

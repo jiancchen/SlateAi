@@ -17,6 +17,7 @@ The model should learn states like starter stress, dead bats, traffic without co
 - [Signal Discovery Notes](signal-discovery-notes.md)
 - [Game Story Labels](game-story-labels.md)
 - [M0-M2 Research Catalog For M3](m0-m2-research-catalog.md)
+- [Current System Design DAG](system-design-dag.md)
 - [Run Dashboard Notes](run-dashboard-notes.md)
 - [Tech Debt](tech-debt.md)
 
@@ -40,4 +41,4 @@ The system should answer questions like:
 
 Contracts should be stable. Components should be disposable.
 
-The architecture can keep tight semantic boundaries without locking us into a single model type. The game-shape model, starter path model, bullpen chain model, batter event model, PA-volume model, soft signal encoders, calibrators, selection policies, and presentation adapters should all be replaceable as long as they honor the contract at their boundary.
+The architecture can keep tight semantic boundaries without locking us into a single model type. The game-shape model, starter path model, bullpen shape model, reliever availability/reset model, first-up reliever router, reliever chain/performance models, batter event model, PA-volume model, soft signal encoders, calibrators, selection policies, and presentation adapters should all be replaceable as long as they honor the contract at their boundary.

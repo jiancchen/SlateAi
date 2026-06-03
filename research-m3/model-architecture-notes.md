@@ -209,7 +209,10 @@ These modules should be swappable:
 
 - game-shape model
 - starter path model
-- bullpen chain model
+- bullpen shape model
+- reliever availability/reset model
+- first-up reliever router
+- reliever chain/performance models
 - batter event model
 - pitcher event model
 - PA-volume model
