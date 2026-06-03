@@ -1,0 +1,92 @@
+{
+  "dry_run": false,
+  "generated_at": "2026-06-03T04:12:17.137268+00:00",
+  "ok": true,
+  "report_path": "data-migration/reports/create_mlb_legacy_compat_views_2026-06-03.json",
+  "script": "data-migration/scripts/create_mlb_legacy_compat_views.py",
+  "summary": {
+    "views_created": 13,
+    "views_planned": 13
+  },
+  "typed_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "views": [
+    {
+      "columns": 24,
+      "rows": 886,
+      "source": "legacy_table_rows",
+      "view": "mlb_game_outcomes"
+    },
+    {
+      "columns": 36,
+      "rows": 493,
+      "source": "legacy_table_rows",
+      "view": "mlb_hitter_career_profiles"
+    },
+    {
+      "columns": 17,
+      "rows": 25167,
+      "source": "legacy_table_rows",
+      "view": "mlb_hitter_opponent_context_snapshots"
+    },
+    {
+      "columns": 35,
+      "rows": 25797,
+      "source": "legacy_table_rows",
+      "view": "mlb_hitter_statcast_trend_snapshots"
+    },
+    {
+      "columns": 8,
+      "rows": 182,
+      "source": "legacy_table_rows",
+      "view": "mlb_home_run_backtests"
+    },
+    {
+      "columns": 10,
+      "rows": 194,
+      "source": "legacy_table_rows",
+      "view": "mlb_home_run_predictions"
+    },
+    {
+      "columns": 16,
+      "rows": 1688,
+      "source": "legacy_table_rows",
+      "view": "mlb_prop_backtests"
+    },
+    {
+      "columns": 26,
+      "rows": 1688,
+      "source": "legacy_table_rows",
+      "view": "mlb_prop_predictions"
+    },
+    {
+      "columns": 28,
+      "rows": 389,
+      "source": "legacy_table_rows",
+      "view": "mlb_side_backtests"
+    },
+    {
+      "columns": 26,
+      "rows": 389,
+      "source": "legacy_table_rows",
+      "view": "mlb_side_predictions"
+    },
+    {
+      "columns": null,
+      "rows": 899,
+      "source": "typed_canonical_tables",
+      "view": "mlb_games"
+    },
+    {
+      "columns": null,
+      "rows": 67251,
+      "source": "typed_canonical_tables",
+      "view": "mlb_plate_appearances"
+    },
+    {
+      "columns": null,
+      "rows": 304181,
+      "source": "typed_canonical_tables",
+      "view": "mlb_pitch_events"
+    }
+  ]
+}

@@ -469,7 +469,10 @@ function summarizeBy(rows, key) {
 }
 
 function codePathGroup(file) {
+  if (file.startsWith('models/mlb/') && file.includes('/research/')) return 'mlb_research_utility';
+  if (file.startsWith('models/mlb/') && file.includes('/checks/')) return 'mlb_check_utility';
   if (file.startsWith('models/mlb/')) return 'mlb_model_runtime';
+  if (file.startsWith('pipeline/mlb/research/')) return 'mlb_research_utility';
   if (file.startsWith('pipeline/mlb/')) return 'mlb_pipeline_runtime';
   if (file.startsWith('api/')) return 'api_runtime';
   if (file.startsWith('tests/')) return 'tests';
@@ -478,15 +481,17 @@ function codePathGroup(file) {
   return 'other';
 }
 
-function isCodePathCutoverBlocker(file) {
-  const group = codePathGroup(file);
+function isCodePathCutoverBlocker(row) {
+  const group = codePathGroup(row.file);
+  if (row.file === 'api/src/lib/paths.ts' && row.text.includes('legacyWarehousePath')) return false;
+  if (row.file === 'api/src/scripts/export-published-data.ts' && row.text.includes('legacyWarehousePath')) return false;
   return ['mlb_model_runtime', 'mlb_pipeline_runtime', 'api_runtime'].includes(group);
 }
 
 function codePathAudit() {
   const args = [
     '-n',
-    'data-private.*/warehouse/sports\\.db|warehouse/sports\\.db|SPORTS_DB_PATH|sportsDbPath|warehousePath',
+    'data-private.*/warehouse/sports\\.db|warehouse/sports\\.db|sports\\.db|SPORTS_DB_PATH|sportsDbPath|warehouseDbPath|warehousePath',
     'models/mlb',
     'pipeline/mlb',
     'data-migration',
@@ -527,10 +532,13 @@ function codePathAudit() {
         file,
         line: lineNumber,
         group: codePathGroup(file),
-        cutover_blocker: isCodePathCutoverBlocker(file),
         text,
       };
     })
+    .map((row) => ({
+      ...row,
+      cutover_blocker: isCodePathCutoverBlocker(row),
+    }))
     .filter((row) => row.file !== 'data-migration/scripts/audit_mlb_legacy_to_typed_gap.mjs');
 }
 

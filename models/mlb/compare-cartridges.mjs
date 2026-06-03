@@ -28,13 +28,13 @@ import sqlite3
 import sys
 
 left, right, date = sys.argv[1], sys.argv[2], sys.argv[3]
-conn = sqlite3.connect("data-private/warehouse/sports.db")
+conn = sqlite3.connect("data-private/warehouse/sports/mlb/sql-mlb.db")
 conn.row_factory = sqlite3.Row
 try:
-    where_date = "and slate_date = ?" if date else ""
+    where_date = "and run_date = ?" if date else ""
     params = [left, right] + ([date] if date else [])
     runs = conn.execute(f"""
-      select run_id, model_id, slate_date, status, source_hash, input_hash, output_hash
+      select model_run_id as run_id, model_id, run_date as slate_date, status, source_hash, input_hash, output_hash
       from model_runs
       where sport = 'mlb'
         and model_id in (?, ?)
@@ -46,10 +46,10 @@ try:
     if run_ids:
         placeholders = ",".join("?" for _ in run_ids)
         lanes = conn.execute(f"""
-          select run_id, lane, status, row_count, graded_count, hit_count, hit_pct, avg_pnl_per100
+          select model_run_id as run_id, lane, status, row_count, graded_count, hit_count, hit_pct, avg_pnl_per100
           from model_run_lanes
-          where run_id in ({placeholders})
-          order by run_id, lane
+          where model_run_id in ({placeholders})
+          order by model_run_id, lane
         """, run_ids).fetchall()
     lane_by_run = {}
     for row in lanes:
