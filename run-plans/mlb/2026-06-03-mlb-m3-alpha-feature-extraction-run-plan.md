@@ -29,6 +29,8 @@ Allowed:
 - `away_team_runs_allowed_avg_last5`
 - `away_team_runs_variance_last10`
 - `home_starter_outs_avg_last5`
+- `home_starter_runs_allowed_slope_last5`
+- `away_starter_runs_allowed_last1_vs_prev4_delta`
 - `away_bullpen_scramble_rate_last10`
 - `market_total_latest_pregame`
 - `home_lineup_known_slot_count`
@@ -42,6 +44,8 @@ Not allowed:
 - copied M2 feature weights, score formulas, or selection rules
 
 The alpha feature extractor should produce facts, windows, flags, and labels. Model training and backtests decide which columns matter.
+
+Important: M3 must preserve trajectory, not just aggregate form. Recent-path feature families should include ordered last-N values, last-vs-baseline deltas, simple slopes, volatility, tail counts, and sample counts. Averages alone flatten the exact streak/progression patterns this architecture is meant to expose.
 
 ## Alpha Objective
 
@@ -333,6 +337,34 @@ Initial bucket proposal:
 
 This is allowed because it defines the supervised target label. It is not a feature weight.
 
+## Trajectory Feature Rule
+
+Any feature family that describes recent form must preserve path shape. The builder should not stop at `avg_last5`, `min_last5`, and `max_last5`.
+
+For team, starter, bullpen, and later player-prop windows, include one or more of:
+
+- ordered sequence columns, where `last1` is the most recent prior game/start
+- last observation versus previous-window deltas
+- short-window versus longer-window deltas
+- simple least-squares slopes over ordered prior observations
+- volatility and tail-event counts
+- days/rest/recency gaps
+- sample-count columns
+
+Example:
+
+```text
+home_starter_runs_allowed_last1
+home_starter_runs_allowed_last2
+home_starter_runs_allowed_last3
+home_starter_runs_allowed_last4
+home_starter_runs_allowed_last5
+home_starter_runs_allowed_slope_last5
+home_starter_runs_allowed_last1_vs_prev4_delta
+```
+
+This is still allowed M3 behavior because these are factual feature definitions. It is not allowed to collapse them into a hand-tuned conclusion such as `starter_regression_score`.
+
 ### 3. Team Recent Run Shape
 
 Purpose: describe recent team scoring and run prevention shape without reducing it to one average.
@@ -350,6 +382,12 @@ Example columns for each team and window:
 ```text
 home_team_runs_for_avg_last5
 away_team_runs_for_avg_last5
+home_team_runs_for_last1
+away_team_runs_for_last1
+home_team_runs_for_slope_last5
+away_team_runs_for_slope_last5
+home_team_runs_for_last1_vs_prev4_delta
+away_team_runs_for_last1_vs_prev4_delta
 home_team_runs_for_std_last5
 away_team_runs_for_std_last5
 home_team_runs_for_min_last5
@@ -362,12 +400,20 @@ home_team_runs_for_8plus_count_last5
 away_team_runs_for_8plus_count_last5
 home_team_runs_allowed_avg_last5
 away_team_runs_allowed_avg_last5
+home_team_runs_allowed_slope_last5
+away_team_runs_allowed_slope_last5
+home_team_runs_allowed_last1_vs_prev4_delta
+away_team_runs_allowed_last1_vs_prev4_delta
 home_team_runs_allowed_std_last5
 away_team_runs_allowed_std_last5
 home_team_f5_runs_for_avg_last5
 away_team_f5_runs_for_avg_last5
+home_team_f5_runs_for_slope_last5
+away_team_f5_runs_for_slope_last5
 home_team_f5_runs_allowed_avg_last5
 away_team_f5_runs_allowed_avg_last5
+home_team_f5_runs_allowed_slope_last5
+away_team_f5_runs_allowed_slope_last5
 home_team_late_runs_for_avg_last5
 away_team_late_runs_for_avg_last5
 home_team_total_runs_game_env_avg_last5
@@ -379,6 +425,7 @@ Rules:
 - no same-day completed outcome leakage
 - if not enough history, keep sample-count columns
 - do not apply manual shrinkage weights in the feature builder
+- include slope/delta features so streaks and current direction are learnable
 - expose sample size so model can learn reliability
 
 ### 4. Starter Path
@@ -404,28 +451,60 @@ home_starter_outs_std_last5
 away_starter_outs_std_last5
 home_starter_runs_allowed_avg_last5
 away_starter_runs_allowed_avg_last5
+home_starter_runs_allowed_last1
+away_starter_runs_allowed_last1
+home_starter_runs_allowed_last2
+away_starter_runs_allowed_last2
+home_starter_runs_allowed_last3
+away_starter_runs_allowed_last3
+home_starter_runs_allowed_last4
+away_starter_runs_allowed_last4
+home_starter_runs_allowed_last5
+away_starter_runs_allowed_last5
+home_starter_runs_allowed_slope_last5
+away_starter_runs_allowed_slope_last5
+home_starter_runs_allowed_last1_vs_prev4_delta
+away_starter_runs_allowed_last1_vs_prev4_delta
+home_starter_runs_allowed_last2_avg_vs_prev3_avg_delta
+away_starter_runs_allowed_last2_avg_vs_prev3_avg_delta
 home_starter_runs_allowed_max_last5
 away_starter_runs_allowed_max_last5
 home_starter_hits_allowed_avg_last5
 away_starter_hits_allowed_avg_last5
+home_starter_hits_allowed_slope_last5
+away_starter_hits_allowed_slope_last5
 home_starter_walks_avg_last5
 away_starter_walks_avg_last5
+home_starter_walks_slope_last5
+away_starter_walks_slope_last5
 home_starter_strikeouts_avg_last5
 away_starter_strikeouts_avg_last5
+home_starter_strikeouts_slope_last5
+away_starter_strikeouts_slope_last5
 home_starter_home_runs_allowed_avg_last5
 away_starter_home_runs_allowed_avg_last5
+home_starter_home_runs_allowed_slope_last5
+away_starter_home_runs_allowed_slope_last5
 home_starter_pitcher_appearance_count_last10
 away_starter_pitcher_appearance_count_last10
 home_starter_short_start_count_last5
 away_starter_short_start_count_last5
 home_starter_5plus_ip_count_last5
 away_starter_5plus_ip_count_last5
+home_starter_days_since_last_start
+away_starter_days_since_last_start
+home_starter_rest_days_delta_vs_avg_last5
+away_starter_rest_days_delta_vs_avg_last5
 ```
 
 Rules:
 
 - derive from games before the target game
+- preserve ordered starter trajectory; `last1` is the most recent prior start, not an arbitrary row order
+- compute slopes over ordered prior starts using declared windows; slope columns are feature facts, not model conclusions
+- include deltas that separate "blowup just happened" from "blowup five starts ago"
 - no manual "starter stability score"
+- no manual "progression" or "regression" label in alpha unless it is a target label in a later supervised task
 - no M2 starter labels unless rebuilt as explicit target labels later
 - TBD starter gets null side-specific starter features plus `home_starter_known_flag = 0` or `away_starter_known_flag = 0`
 
@@ -446,6 +525,8 @@ home_bullpen_snapshot_available_flag
 away_bullpen_snapshot_available_flag
 home_bullpen_relievers_used_avg_last5
 away_bullpen_relievers_used_avg_last5
+home_bullpen_relievers_used_slope_last5
+away_bullpen_relievers_used_slope_last5
 home_bullpen_relievers_used_max_last10
 away_bullpen_relievers_used_max_last10
 home_bullpen_first_reliever_outs_avg_last5
@@ -454,6 +535,10 @@ home_bullpen_total_relief_outs_avg_last5
 away_bullpen_total_relief_outs_avg_last5
 home_bullpen_total_relief_runs_allowed_avg_last5
 away_bullpen_total_relief_runs_allowed_avg_last5
+home_bullpen_total_relief_runs_allowed_slope_last5
+away_bullpen_total_relief_runs_allowed_slope_last5
+home_bullpen_total_relief_runs_allowed_last1_vs_prev4_delta
+away_bullpen_total_relief_runs_allowed_last1_vs_prev4_delta
 home_bullpen_four_plus_reliever_rate_last10
 away_bullpen_four_plus_reliever_rate_last10
 home_bullpen_six_plus_scramble_rate_last10
@@ -473,6 +558,7 @@ Rules:
 - use latest snapshot with `snapshot_date <= game_date`
 - preserve raw typed table values
 - do not produce one composite "bullpen score" in alpha
+- include trajectory features for workload and damage, not only recent averages
 - include availability and sample-count fields
 
 ### 6. Lineup And PA Volume Context
