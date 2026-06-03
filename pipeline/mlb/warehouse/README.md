@@ -13,4 +13,6 @@ Use `mlb_typed_warehouse.py` for new typed DB replacement commands. Add commands
 
 The M2 commands `derive-state-formula-rows`, `derive-player-identity-rows`, `derive-pitcher-batter-kernel`, and `backtest-m2-research` are feature materialization/research logic. Useful ideas from those commands should be reimplemented later in the M3 feature layer rather than treated as raw-data sanitation.
 
+When an old warehouse script is no longer actively wired, move it under `archive-m2/` instead of leaving it beside active typed scripts. Do not move `mlb_warehouse.py` there until its active package aliases and model/workflow callers have been cut over or retired.
+
 Do not move code here without updating package scripts and import paths in the same change.

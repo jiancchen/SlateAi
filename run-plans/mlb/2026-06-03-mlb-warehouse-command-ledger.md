@@ -12,6 +12,8 @@ Scope: first-pass ledger for replacing `pipeline/mlb/warehouse/mlb_warehouse.py`
 
 - `mlb_warehouse.py` remains legacy until every active command is replaced, renamed as legacy M2, or retired.
 - New typed replacement commands live in `pipeline/mlb/warehouse/mlb_typed_warehouse.py`; do not keep modifying the old monolith for typed DB work.
+- New M3 feature materialization lives under `pipeline/mlb/features/`; do not bake feature math into ingestion wrappers.
+- Retired M2 warehouse scripts move under `pipeline/mlb/warehouse/archive-m2/` only after package aliases and runtime callers are gone.
 - New canonical MLB ingestion writes `data-private/warehouse/sports/mlb/sql-mlb.db`.
 - Raw ingestion means source receipts, identifiers, replay state, official facts, and market snapshots only.
 - Expected PA, shrinkage, hot/cold labels, pitch kernels, mistake shapes, and story labels belong in a versioned feature layer, not raw ingestion.

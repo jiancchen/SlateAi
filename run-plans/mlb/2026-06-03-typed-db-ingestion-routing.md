@@ -29,6 +29,8 @@ The operational replacement path is a new typed CLI, not modification of the old
 - add typed commands to `pipeline/mlb/warehouse/mlb_typed_warehouse.py`
 - keep `pipeline/mlb/warehouse/mlb_warehouse.py` as legacy M2/root-warehouse surface
 - move package aliases only after the typed command has validation coverage
+- implement new M3 feature materialization under `pipeline/mlb/features/`
+- move retired M2 warehouse scripts under `pipeline/mlb/warehouse/archive-m2/` only after their callers are gone
 
 ## Routing DAG
 
