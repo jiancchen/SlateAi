@@ -9,6 +9,7 @@ Related reports:
 - `data-migration/reports/mlb_legacy_to_typed_gap_audit_2026-06-03.md`
 - `data-migration/reports/mlb_typed_db_cutover_completion_plan_2026-06-03.md`
 - `run-plans/mlb/2026-06-03-typed-db-ingestion-routing.md`
+- `run-plans/mlb/2026-06-03-mlb-warehouse-command-ledger.md`
 - `research-m3/tech-debt.md`
 
 ## Progress Snapshot

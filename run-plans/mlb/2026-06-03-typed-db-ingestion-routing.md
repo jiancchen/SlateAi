@@ -4,6 +4,8 @@ Date: 2026-06-03
 
 Scope: keep every MLB ingestion and normalization path pointed at `data-private/warehouse/sports/mlb/sql-mlb.db`, and make the temporary writer-staging tables explicit until the old `sports.db` monolith is retired.
 
+Command replacement ledger: `run-plans/mlb/2026-06-03-mlb-warehouse-command-ledger.md`
+
 ## Was The Earlier Migration Complete?
 
 Yes for historical parity and most runtime reads:
