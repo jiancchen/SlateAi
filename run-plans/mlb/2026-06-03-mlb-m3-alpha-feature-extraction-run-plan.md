@@ -25,20 +25,18 @@ M3 may hand-code feature definitions. M3 must not hand-code feature conclusions.
 
 Allowed:
 
-- `home_team_runs_avg_last5`
-- `away_team_runs_allowed_avg_last5`
-- `away_team_runs_variance_last10`
-- `home_starter_outs_avg_last5`
-- `home_starter_runs_allowed_slope_last5`
-- `away_starter_runs_allowed_last1_vs_prev4_delta`
-- `home_starter_batters_faced_sample_count_last5`
+- `home_team_run_environment_talent_baseline`
+- `away_team_run_prevention_talent_baseline`
+- `home_starter_outs_talent_baseline`
+- `home_starter_runs_allowed_residual_vs_opponent_adjusted_baseline`
+- `away_starter_batters_faced_evidence_count`
 - `away_lineup_pitch_type_damage_vs_starter_mix`
-- `home_starter_unforced_walk_rate_last3`
-- `away_bullpen_scramble_rate_last10`
+- `home_starter_unforced_walk_rate_recent_kernel`
+- `away_bullpen_scramble_residual_vs_team_baseline`
 - `market_total_latest_pregame`
 - `home_lineup_known_slot_count`
 
-These are example factual columns, not a claim that `last5` or `last10` is the right window. Window sizes must come from the declared window policy and be tested.
+These are example factual columns, not fixed scores. Baseline columns describe expected talent/context behavior; residual columns describe how recent evidence differs from that baseline.
 
 Not allowed:
 
@@ -48,9 +46,9 @@ Not allowed:
 - manually tuned prop multipliers
 - copied M2 feature weights, score formulas, or selection rules
 
-The alpha feature extractor should produce facts, windows, flags, and labels. Model training and backtests decide which columns matter.
+The alpha feature extractor should produce facts, baselines, residuals, evidence coverage, flags, and labels. Model training and backtests decide which columns matter.
 
-Important: M3 must preserve trajectory, not just aggregate form. Recent-path feature families should include ordered last-N values, last-vs-baseline deltas, simple slopes, volatility, tail counts, and sample counts. Averages alone flatten the exact streak/progression patterns this architecture is meant to expose.
+Important: M3 must preserve trajectory, not just aggregate form. Recent-path feature families should include ordered evidence, baseline-vs-observed residuals, state-change markers, volatility, tail events, and sample coverage. Averages alone flatten the exact sparse/streaky behavior this architecture is meant to expose.
 
 Also important: raw outcomes are not enough. M3 must encode opponent quality, pitch-matchup quality, evidence reliability, and event attribution. A walk, a clean inning, or a blowup is not one universal thing; the feature layer should preserve enough context for the model to learn the difference.
 
@@ -241,15 +239,13 @@ Required fields:
     "postgame_target",
     "excluded"
   ],
-  "window_policy": {
-    "window_set_id": "m3_alpha_windows_v1",
-    "team_game_windows": [1, 2, 3, 5, 7, 10, 14],
-    "starter_start_windows": [1, 2, 3, 5, 7, 10],
-    "bullpen_game_windows": [1, 2, 3, 5, 7, 10, 14],
-    "lineup_pa_windows": [3, 5, 7, 10],
-    "sequence_depths": [3, 5],
-    "slope_windows": [3, 5, 7],
-    "tail_event_windows": [5, 10, 14]
+  "evidence_policy": {
+    "evidence_policy_id": "m3_alpha_evidence_v1",
+    "baseline_layers": ["league", "role_archetype", "career", "season_to_date", "current_roster_context"],
+    "evidence_units": ["pitch", "plate_appearance", "batter_faced", "start", "game", "day"],
+    "recency_kernels": ["ordered_recent_events", "exponential_decay_by_event", "exponential_decay_by_day", "change_point_candidate"],
+    "residual_baselines": ["league_average", "player_talent", "opponent_adjusted", "park_weather_adjusted", "market_prior"],
+    "required_coverage_fields": ["sample_count", "event_count", "days_covered", "availability_flag", "uncertainty_flag"]
   }
 }
 ```
@@ -260,14 +256,14 @@ The contract should also include:
 - feature names
 - target names
 - null rules
-- lookback window policy and candidate window sets
+- evidence horizon policy and baseline/residual definitions
 - leakage class for every column
 - owner notes
 - validator list
 
-Side-specific features must be emitted with `home_` and `away_` prefixes at game grain. Generic names in this plan are only logical stems; the actual matrix should use columns like `home_team_runs_for_avg_last5` and `away_team_runs_for_avg_last5`.
+Side-specific features must be emitted with `home_` and `away_` prefixes at game grain. Generic names in this plan are only logical stems; the actual matrix should use columns like `home_team_run_environment_talent_baseline` and `away_team_run_prevention_residual_vs_baseline`.
 
-Lookback windows are not fixed baseball truths. The contract must declare a `window_set_id`, candidate windows, and which feature families use each window set. Window choices are hypotheses that must be compared in backtests or ablations.
+Fixed lookback windows are not MLB-M3 primitives. The contract must declare an `evidence_policy_id`, baseline layers, evidence units, recency kernels, residual definitions, and required coverage fields. Any numeric horizon or decay parameter is a tested hypothesis, not a baseball truth.
 
 ## Source Tables
 
@@ -277,7 +273,7 @@ Alpha source tables:
 |---|---|---|
 | Game base | `games`, `teams`, `venues` | row identity, teams, venue, start time, series game |
 | Outcomes | `game_outcomes` | postgame targets only |
-| Team results | `team_game_stats`, `game_outcomes`, `phase_outcomes` | historical rolling team shape only |
+| Team results | `team_game_stats`, `game_outcomes`, `phase_outcomes` | historical team baseline and state context only |
 | Starter context | `starting_pitchers`, `starting_pitcher_game_logs`, `pitcher_appearances` | starter form and workload |
 | Pitch matchup context | `pitcher_pitch_mix_snapshots`, `player_pitch_type_response_snapshots`, `lineup_matchup_snapshots`, `team_opponent_quality_snapshots` | starter arsenal versus opposing lineup strengths/weaknesses |
 | Evidence reliability context | `player_career_profiles`, `player_statcast_snapshots`, `player_split_snapshots`, `player_opponent_context_snapshots` | low-sample and fallback context for thin pitcher/player histories |
@@ -362,79 +358,109 @@ Initial bucket proposal:
 
 This is allowed because it defines the supervised target label. It is not a feature weight.
 
-## Trajectory Feature Rule
+## Talent Baseline And Residual Rule
 
-Any feature family that describes recent form must preserve path shape. The builder should not stop at `avg_last5`, `min_last5`, and `max_last5`.
+Baseline stats are allowed and important, but they are priors and anchors, not predictions.
 
-For team, starter, bullpen, and later player-prop windows, include one or more of:
+M3 should ask:
 
-- ordered sequence columns, where `last1` is the most recent prior game/start
-- last observation versus previous-window deltas
-- short-window versus longer-window deltas
-- simple least-squares slopes over ordered prior observations
-- volatility and tail-event counts
-- days/rest/recency gaps
-- sample-count columns
+- what does this player/team/pitcher usually do against average MLB context?
+- how different is today's opponent, park, weather, lineup, and game state from that average context?
+- what recent evidence says the current state is above or below the talent baseline?
+- how much evidence supports that deviation?
 
-Example:
+This is the core sparse-data framing. A great hitter has a higher hit and power baseline than an average hitter. A weak-contact pitcher has a different run-prevention baseline than a volatile strikeout/walk pitcher. But today's game is not the baseline; today's game is a context-adjusted draw around that baseline.
+
+Example columns:
 
 ```text
-home_starter_runs_allowed_last1
-home_starter_runs_allowed_last2
-home_starter_runs_allowed_last3
-home_starter_runs_allowed_last4
-home_starter_runs_allowed_last5
-home_starter_runs_allowed_slope_last5
-home_starter_runs_allowed_last1_vs_prev4_delta
+away_hitter_hit_rate_talent_baseline
+away_hitter_total_bases_talent_baseline
+away_hitter_power_tail_talent_baseline
+away_lineup_pitch_type_damage_vs_home_starter_mix
+away_hitter_expected_bases_residual_vs_talent_baseline
+home_starter_run_prevention_talent_baseline
+home_starter_command_residual_vs_talent_baseline
+home_starter_contact_quality_residual_vs_opponent_adjusted_baseline
 ```
 
-This is still allowed M3 behavior because these are factual feature definitions. It is not allowed to collapse them into a hand-tuned conclusion such as `starter_regression_score`.
+Rules:
 
-## Window Hypothesis Rule
+- preserve baseline and residual features side by side
+- do not turn a talent baseline into a pick
+- do not treat recent raw outcomes as talent
+- include uncertainty/coverage fields for every residual family
+- allow different talent dimensions, such as contact, power, plate discipline, pitch-type damage, command, whiff, contact suppression, and volatility
 
-M3 must not silently pick `last5`, `last10`, or any other window because it feels reasonable. Window size is itself a feature-design hypothesis.
+## Evidence Horizon Rule
 
-The first contract should declare explicit candidate window sets:
+M3 should not be built around fixed `last N games` windows. Recent evidence should be modeled as an event stream with explicit coverage.
+
+The first contract should declare an evidence policy:
 
 ```json
 {
-  "window_set_id": "m3_alpha_windows_v1",
-  "team_game_windows": [1, 2, 3, 5, 7, 10, 14],
-  "starter_start_windows": [1, 2, 3, 5, 7, 10],
-  "bullpen_game_windows": [1, 2, 3, 5, 7, 10, 14],
-  "lineup_pa_windows": [3, 5, 7, 10],
-  "sequence_depths": [3, 5],
-  "slope_windows": [3, 5, 7],
-  "tail_event_windows": [5, 10, 14]
+  "evidence_policy_id": "m3_alpha_evidence_v1",
+  "baseline_layers": ["league", "role_archetype", "career", "season_to_date", "current_roster_context"],
+  "evidence_units": ["pitch", "plate_appearance", "batter_faced", "start", "game", "day"],
+  "recency_kernels": ["ordered_recent_events", "exponential_decay_by_event", "exponential_decay_by_day", "change_point_candidate"],
+  "residual_baselines": ["league_average", "player_talent", "opponent_adjusted", "park_weather_adjusted", "market_prior"],
+  "required_coverage_fields": ["sample_count", "event_count", "days_covered", "availability_flag", "uncertainty_flag"]
 }
 ```
 
 Rules:
 
-- generate each window from the same source fact definition
-- include sample-count columns for every windowed feature
-- keep window suffixes explicit in column names
-- do not promote one window family without a backtest or ablation report
-- allow an `alpha_small` window set for fast development, but record that choice in the report
-- do not interpret a selected window as permanent; it can change by target family, season, market, and model class
+- generate evidence from source event streams, not from a magic fixed window
+- record the evidence unit: pitch, PA, batter faced, start, game, or day
+- include coverage fields for every evidence feature
+- use ordered evidence and recency kernels to preserve trajectory
+- allow numeric horizons or decay parameters only as tested hyperparameters in backtest, not as hard-coded baseball truths
+- do not promote any horizon/kernel family without chronological backtest evidence
+
+Example columns:
+
+```text
+home_starter_command_residual_recent_kernel
+home_starter_command_residual_event_count
+home_starter_command_residual_days_covered
+home_starter_command_residual_uncertainty_flag
+away_lineup_pitch_type_damage_recent_kernel
+away_lineup_pitch_type_damage_event_count
+```
+
+## Trajectory Feature Rule
+
+Any feature family that describes current state must preserve path shape. The builder should not stop at averages, mins, and maxes.
+
+For team, starter, bullpen, and later player-prop evidence, include one or more of:
+
+- ordered recent event/state columns
+- residuals versus baseline
+- state-change markers
+- change-point candidates
+- volatility and tail-event counts
+- days/rest/recency gaps
+- evidence coverage columns
 
 Example:
 
 ```text
-home_team_runs_for_avg_last3
-home_team_runs_for_avg_last5
-home_team_runs_for_avg_last7
-home_team_runs_for_avg_last10
-home_team_runs_for_sample_count_last10
+home_starter_command_state_event_1
+home_starter_command_state_event_2
+home_starter_command_state_event_3
+home_starter_command_change_point_candidate
+home_starter_command_residual_vs_talent_baseline
+home_starter_command_residual_evidence_count
 ```
 
-The point is to let the system test whether `3`, `5`, `7`, or a longer memory actually carries edge, instead of hard-coding the answer before the model sees data.
+This is still allowed M3 behavior because these are factual feature definitions. It is not allowed to collapse them into a hand-tuned conclusion such as `starter_regression_score`.
 
 ## Evidence Reliability Rule
 
 M3 must treat thin history as first-class information, not a missing-data nuisance.
 
-If a pitcher has only one recent start, the builder should not pretend a `last5` window exists. It should emit:
+If a pitcher has only one meaningful recent start or a thin MLB record, the builder should not pretend stable form exists. It should emit:
 
 - actual sample counts by unit, such as starts, batters faced, plate appearances, pitches, innings, and days covered
 - availability flags for each feature family
@@ -446,10 +472,10 @@ If a pitcher has only one recent start, the builder should not pretend a `last5`
 Example columns:
 
 ```text
-home_starter_start_sample_count_last5
-home_starter_batters_faced_sample_count_last5
-home_starter_pitch_sample_count_last5
-home_starter_runs_allowed_avg_last5_available_flag
+home_starter_start_evidence_count
+home_starter_batters_faced_evidence_count
+home_starter_pitch_evidence_count
+home_starter_recent_run_prevention_available_flag
 home_starter_pitch_mix_available_flag
 home_starter_low_mlb_evidence_flag
 home_starter_career_profile_available_flag
@@ -458,9 +484,9 @@ home_starter_statcast_profile_available_flag
 
 Rules:
 
-- do not fill a missing five-start window with invented stability
+- do not fill missing evidence with invented stability
 - do not collapse low evidence into a penalty or bonus score
-- every windowed feature must have a matching sample or availability column
+- every evidence feature must have a matching sample or availability column
 - model/backtest decides how to handle thin evidence, but the matrix must expose it plainly
 
 ## Opponent Matchup Quality Rule
@@ -479,13 +505,13 @@ Core matchup facts:
 Example columns:
 
 ```text
-home_starter_fastball_usage_rate_last3
-home_starter_slider_usage_rate_last3
-away_lineup_fastball_damage_rate_last30_pa
-away_lineup_slider_whiff_rate_last30_pa
+home_starter_fastball_usage_recent_kernel
+home_starter_slider_usage_recent_kernel
+away_lineup_fastball_damage_recent_pa_kernel
+away_lineup_slider_whiff_recent_pa_kernel
 away_lineup_pitch_type_damage_vs_home_starter_mix
-home_starter_prior_opponent_quality_avg_last5
-home_starter_runs_allowed_opponent_adjusted_last1
+home_starter_prior_opponent_quality_recent_kernel
+home_starter_runs_allowed_opponent_adjusted_most_recent_start
 ```
 
 Rules:
@@ -510,14 +536,14 @@ Walks are the clean example. A walk can be:
 Example walk-attribution columns:
 
 ```text
-home_starter_walk_rate_last3
-home_starter_unforced_walk_rate_last3
-home_starter_forced_walk_rate_last3
-home_starter_four_pitch_walk_rate_last3
-home_starter_deep_count_walk_rate_last3
-home_starter_noncompetitive_ball_rate_last3
-away_lineup_forced_walk_draw_rate_last10
-away_lineup_chase_refusal_rate_last10
+home_starter_walk_rate_recent_kernel
+home_starter_unforced_walk_rate_recent_kernel
+home_starter_forced_walk_rate_recent_kernel
+home_starter_four_pitch_walk_rate_recent_kernel
+home_starter_deep_count_walk_rate_recent_kernel
+home_starter_noncompetitive_ball_rate_recent_kernel
+away_lineup_forced_walk_draw_rate_recent_kernel
+away_lineup_chase_refusal_rate_recent_kernel
 ```
 
 Rules:
@@ -527,73 +553,45 @@ Rules:
 - if attribution cannot be trusted for a row, emit availability flags and null attributed rates
 - treat attribution definitions as versioned feature definitions that can be backtested and revised
 
-### 3. Team Recent Run Shape
+### 3. Team Talent And State Shape
 
-Purpose: describe recent team scoring and run prevention shape without reducing it to one average.
+Purpose: describe team run creation/prevention as baseline talent plus current-state evidence.
 
-Use only games before the target game date.
+Use only games and events before the target game.
 
-Initial candidate windows, not final truth:
-
-- last 1 game
-- last 2 games
-- last 3 games
-- last 5 games
-- last 7 games
-- last 10 games
-- last 14 games
-
-Example columns for each team and window. The `last5` examples below are one candidate window, not the canonical window:
+Example columns:
 
 ```text
-home_team_runs_for_avg_last5
-away_team_runs_for_avg_last5
-home_team_runs_for_last1
-away_team_runs_for_last1
-home_team_runs_for_slope_last5
-away_team_runs_for_slope_last5
-home_team_runs_for_last1_vs_prev4_delta
-away_team_runs_for_last1_vs_prev4_delta
-home_team_runs_for_std_last5
-away_team_runs_for_std_last5
-home_team_runs_for_min_last5
-away_team_runs_for_min_last5
-home_team_runs_for_max_last5
-away_team_runs_for_max_last5
-home_team_runs_for_zero_or_one_count_last5
-away_team_runs_for_zero_or_one_count_last5
-home_team_runs_for_8plus_count_last5
-away_team_runs_for_8plus_count_last5
-home_team_runs_allowed_avg_last5
-away_team_runs_allowed_avg_last5
-home_team_runs_allowed_slope_last5
-away_team_runs_allowed_slope_last5
-home_team_runs_allowed_last1_vs_prev4_delta
-away_team_runs_allowed_last1_vs_prev4_delta
-home_team_runs_allowed_std_last5
-away_team_runs_allowed_std_last5
-home_team_f5_runs_for_avg_last5
-away_team_f5_runs_for_avg_last5
-home_team_f5_runs_for_slope_last5
-away_team_f5_runs_for_slope_last5
-home_team_f5_runs_allowed_avg_last5
-away_team_f5_runs_allowed_avg_last5
-home_team_f5_runs_allowed_slope_last5
-away_team_f5_runs_allowed_slope_last5
-home_team_late_runs_for_avg_last5
-away_team_late_runs_for_avg_last5
-home_team_total_runs_game_env_avg_last5
-away_team_total_runs_game_env_avg_last5
+home_team_run_creation_talent_baseline
+away_team_run_creation_talent_baseline
+home_team_run_prevention_talent_baseline
+away_team_run_prevention_talent_baseline
+home_team_run_creation_residual_recent_kernel
+away_team_run_creation_residual_recent_kernel
+home_team_run_prevention_residual_recent_kernel
+away_team_run_prevention_residual_recent_kernel
+home_team_power_tail_talent_baseline
+away_team_power_tail_talent_baseline
+home_team_power_tail_residual_recent_kernel
+away_team_power_tail_residual_recent_kernel
+home_team_f5_run_creation_residual_recent_kernel
+away_team_f5_run_creation_residual_recent_kernel
+home_team_late_run_volatility_residual_recent_kernel
+away_team_late_run_volatility_residual_recent_kernel
+home_team_run_state_evidence_count
+away_team_run_state_evidence_count
+home_team_run_state_days_covered
+away_team_run_state_days_covered
 ```
 
 Rules:
 
 - no same-day completed outcome leakage
-- if not enough history, keep sample-count columns
+- separate baseline talent from current residual evidence
+- keep sample/evidence coverage columns
 - do not apply manual shrinkage weights in the feature builder
-- include slope/delta features so streaks and current direction are learnable
-- emit and track multiple candidate windows; window size is tested later, not assumed here
-- expose sample size so model can learn reliability
+- do not reduce current state to a fixed lookback average
+- expose sample size so the model can learn reliability
 
 ### 4. Starter Path
 
@@ -610,67 +608,45 @@ Example columns:
 ```text
 home_starter_known_flag
 away_starter_known_flag
-home_starter_recent_start_count_last5
-away_starter_recent_start_count_last5
-home_starter_outs_avg_last5
-away_starter_outs_avg_last5
-home_starter_outs_std_last5
-away_starter_outs_std_last5
-home_starter_runs_allowed_avg_last5
-away_starter_runs_allowed_avg_last5
-home_starter_runs_allowed_last1
-away_starter_runs_allowed_last1
-home_starter_runs_allowed_last2
-away_starter_runs_allowed_last2
-home_starter_runs_allowed_last3
-away_starter_runs_allowed_last3
-home_starter_runs_allowed_last4
-away_starter_runs_allowed_last4
-home_starter_runs_allowed_last5
-away_starter_runs_allowed_last5
-home_starter_runs_allowed_slope_last5
-away_starter_runs_allowed_slope_last5
-home_starter_runs_allowed_last1_vs_prev4_delta
-away_starter_runs_allowed_last1_vs_prev4_delta
-home_starter_runs_allowed_last2_avg_vs_prev3_avg_delta
-away_starter_runs_allowed_last2_avg_vs_prev3_avg_delta
-home_starter_runs_allowed_max_last5
-away_starter_runs_allowed_max_last5
-home_starter_hits_allowed_avg_last5
-away_starter_hits_allowed_avg_last5
-home_starter_hits_allowed_slope_last5
-away_starter_hits_allowed_slope_last5
-home_starter_walks_avg_last5
-away_starter_walks_avg_last5
-home_starter_walks_slope_last5
-away_starter_walks_slope_last5
-home_starter_strikeouts_avg_last5
-away_starter_strikeouts_avg_last5
-home_starter_strikeouts_slope_last5
-away_starter_strikeouts_slope_last5
-home_starter_home_runs_allowed_avg_last5
-away_starter_home_runs_allowed_avg_last5
-home_starter_home_runs_allowed_slope_last5
-away_starter_home_runs_allowed_slope_last5
-home_starter_pitcher_appearance_count_last10
-away_starter_pitcher_appearance_count_last10
-home_starter_short_start_count_last5
-away_starter_short_start_count_last5
-home_starter_5plus_ip_count_last5
-away_starter_5plus_ip_count_last5
+home_starter_role_archetype
+away_starter_role_archetype
+home_starter_outs_talent_baseline
+away_starter_outs_talent_baseline
+home_starter_run_prevention_talent_baseline
+away_starter_run_prevention_talent_baseline
+home_starter_command_talent_baseline
+away_starter_command_talent_baseline
+home_starter_whiff_talent_baseline
+away_starter_whiff_talent_baseline
+home_starter_contact_suppression_talent_baseline
+away_starter_contact_suppression_talent_baseline
+home_starter_command_residual_recent_kernel
+away_starter_command_residual_recent_kernel
+home_starter_walk_attribution_residual_recent_kernel
+away_starter_walk_attribution_residual_recent_kernel
+home_starter_contact_quality_residual_recent_kernel
+away_starter_contact_quality_residual_recent_kernel
+home_starter_pitch_mix_change_point_candidate
+away_starter_pitch_mix_change_point_candidate
+home_starter_short_start_tail_risk_observed
+away_starter_short_start_tail_risk_observed
+home_starter_batters_faced_evidence_count
+away_starter_batters_faced_evidence_count
+home_starter_pitch_evidence_count
+away_starter_pitch_evidence_count
 home_starter_days_since_last_start
 away_starter_days_since_last_start
-home_starter_rest_days_delta_vs_avg_last5
-away_starter_rest_days_delta_vs_avg_last5
+home_starter_low_mlb_evidence_flag
+away_starter_low_mlb_evidence_flag
 ```
 
 Rules:
 
 - derive from games before the target game
-- preserve ordered starter trajectory; `last1` is the most recent prior start, not an arbitrary row order
-- compute slopes over ordered prior starts using declared windows; slope columns are feature facts, not model conclusions
-- include deltas that separate "blowup just happened" from "blowup five starts ago"
-- build starter windows from `starter_start_windows`; do not treat `last5` as canonical without ablation evidence
+- preserve ordered starter trajectory from starts, batters faced, PAs, and pitches
+- separate talent baseline from current-state residual evidence
+- include evidence coverage so sparse starter data cannot masquerade as stable form
+- encode state-change and change-point candidates without turning them into fixed labels
 - no manual "starter stability score"
 - no manual "progression" or "regression" label in alpha unless it is a target label in a later supervised task
 - no M2 starter labels unless rebuilt as explicit target labels later
@@ -691,26 +667,18 @@ Example columns:
 ```text
 home_bullpen_snapshot_available_flag
 away_bullpen_snapshot_available_flag
-home_bullpen_relievers_used_avg_last5
-away_bullpen_relievers_used_avg_last5
-home_bullpen_relievers_used_slope_last5
-away_bullpen_relievers_used_slope_last5
-home_bullpen_relievers_used_max_last10
-away_bullpen_relievers_used_max_last10
-home_bullpen_first_reliever_outs_avg_last5
-away_bullpen_first_reliever_outs_avg_last5
-home_bullpen_total_relief_outs_avg_last5
-away_bullpen_total_relief_outs_avg_last5
-home_bullpen_total_relief_runs_allowed_avg_last5
-away_bullpen_total_relief_runs_allowed_avg_last5
-home_bullpen_total_relief_runs_allowed_slope_last5
-away_bullpen_total_relief_runs_allowed_slope_last5
-home_bullpen_total_relief_runs_allowed_last1_vs_prev4_delta
-away_bullpen_total_relief_runs_allowed_last1_vs_prev4_delta
-home_bullpen_four_plus_reliever_rate_last10
-away_bullpen_four_plus_reliever_rate_last10
-home_bullpen_six_plus_scramble_rate_last10
-away_bullpen_six_plus_scramble_rate_last10
+home_bullpen_usage_talent_baseline
+away_bullpen_usage_talent_baseline
+home_bullpen_usage_residual_recent_kernel
+away_bullpen_usage_residual_recent_kernel
+home_bullpen_reliever_chain_depth_baseline
+away_bullpen_reliever_chain_depth_baseline
+home_bullpen_reliever_chain_depth_residual_recent_kernel
+away_bullpen_reliever_chain_depth_residual_recent_kernel
+home_bullpen_relief_damage_residual_recent_kernel
+away_bullpen_relief_damage_residual_recent_kernel
+home_bullpen_scramble_tail_observed
+away_bullpen_scramble_tail_observed
 home_bullpen_likely_first_reliever_count
 away_bullpen_likely_first_reliever_count
 home_bullpen_top2_availability_avg
@@ -719,6 +687,8 @@ home_bullpen_top2_expected_outs_sum
 away_bullpen_top2_expected_outs_sum
 home_bullpen_back_to_back_count
 away_bullpen_back_to_back_count
+home_bullpen_usage_evidence_count
+away_bullpen_usage_evidence_count
 ```
 
 Rules:
@@ -727,7 +697,7 @@ Rules:
 - preserve raw typed table values
 - do not produce one composite "bullpen score" in alpha
 - include trajectory features for workload and damage, not only recent averages
-- build bullpen windows from `bullpen_game_windows`; do not assume one lookback is best
+- separate bullpen baseline from current bullpen debt/residual evidence
 - include availability and sample-count fields
 
 ### 6. Lineup And PA Volume Context
@@ -751,12 +721,14 @@ home_lineup_partial_flag
 away_lineup_partial_flag
 home_lineup_top5_known_count
 away_lineup_top5_known_count
-home_team_pa_avg_last5
-away_team_pa_avg_last5
-home_team_pa_max_last5
-away_team_pa_max_last5
-home_team_extra_pa_game_count_last10
-away_team_extra_pa_game_count_last10
+home_team_pa_volume_talent_baseline
+away_team_pa_volume_talent_baseline
+home_team_pa_volume_residual_recent_kernel
+away_team_pa_volume_residual_recent_kernel
+home_team_extra_pa_tail_observed
+away_team_extra_pa_tail_observed
+home_team_pa_volume_evidence_count
+away_team_pa_volume_evidence_count
 ```
 
 Rules:
@@ -808,20 +780,20 @@ Why gated:
 Initial gated columns:
 
 ```text
-home_team_traffic_pa_rate_last5
-away_team_traffic_pa_rate_last5
-home_team_two_out_traffic_rate_last5
-away_team_two_out_traffic_rate_last5
-home_team_gidp_escape_count_last10
-away_team_gidp_escape_count_last10
-home_team_crooked_inning_count_last10
-away_team_crooked_inning_count_last10
-home_starter_pitch_per_pa_avg_last5
-away_starter_pitch_per_pa_avg_last5
-home_starter_runners_on_pa_rate_last5
-away_starter_runners_on_pa_rate_last5
-home_lineup_walk_cluster_rate_last10
-away_lineup_walk_cluster_rate_last10
+home_team_traffic_pa_rate_recent_kernel
+away_team_traffic_pa_rate_recent_kernel
+home_team_two_out_traffic_rate_recent_kernel
+away_team_two_out_traffic_rate_recent_kernel
+home_team_gidp_escape_tail_observed
+away_team_gidp_escape_tail_observed
+home_team_crooked_inning_tail_observed
+away_team_crooked_inning_tail_observed
+home_starter_pitch_per_pa_residual_recent_kernel
+away_starter_pitch_per_pa_residual_recent_kernel
+home_starter_runners_on_pa_rate_recent_kernel
+away_starter_runners_on_pa_rate_recent_kernel
+home_lineup_walk_cluster_rate_recent_kernel
+away_lineup_walk_cluster_rate_recent_kernel
 ```
 
 Deeper pitch/PA features can be introduced as `M3-FS-002` or `M3-FS-001` v0.2.0, but alpha must at least make replay attribution coverage visible.
@@ -850,7 +822,7 @@ flowchart TD
 Validation rules:
 
 - feature columns cannot come from the same game's `game_outcomes`
-- feature windows must only include prior games
+- feature evidence must only include prior games/events
 - market features must be timestamped before scheduled start
 - target columns must use `target_` prefix
 - postgame labels cannot appear in feature prefixes
@@ -892,21 +864,21 @@ Gate:
 - target totals match `game_outcomes`
 - report includes row count by date
 
-### Phase C: Team Recent Shape
+### Phase C: Team Baseline And State Shape
 
 Deliverables:
 
-- declared window set loaded from the feature contract
-- rolling team windows
-- sample counts
+- declared evidence policy loaded from the feature contract
+- team baseline and residual features
+- evidence coverage fields
 - no same-game leakage check
 
 Gate:
 
-- every rolling feature declares window
-- every generated window has a matching sample-count field
+- every residual feature declares its baseline and evidence unit
+- every generated evidence feature has matching coverage fields
 - each game only uses prior games
-- missing sample count is explicit
+- missing evidence coverage is explicit
 
 ### Phase D: Starter Path
 
@@ -1133,8 +1105,8 @@ Metrics later:
 - calibration by total bucket
 - tail recall for high and chaos games
 - market line residual by line bucket
-- window-size ablation by feature family and target
-- stability of selected windows across chronological folds
+- evidence-kernel ablation by feature family and target
+- stability of selected evidence kernels across chronological folds
 
 ## M2 Use Policy
 
@@ -1208,7 +1180,7 @@ These are the follow-ups from the run-plan audit before implementation starts:
 
 - Confirm Python package importability before keeping the `python3 -m pipeline.mlb.features...` command.
 - Inspect the alpha source tables and write down exact column mappings before SQL work starts.
-- Declare the first `window_set_id` in the contract and decide whether the initial dry run uses `alpha_small` or the fuller candidate grid.
+- Declare the first `evidence_policy_id` in the contract and decide whether the initial dry run uses a small evidence set or the fuller baseline/residual grid.
 - Confirm market timestamp semantics and choose either canonical `market_*` tables, no-market v0.1.0, or typed `mlb_featured_market_odds_snapshots` fallback.
 - Confirm local Parquet support (`pyarrow`, `fastparquet`, or DuckDB export) in the workspace runtime before choosing the writer implementation.
 - Create the contract JSON first, then make the builder validate against it.
@@ -1233,7 +1205,7 @@ The first M3 feature set is accepted when:
 
 - `M3-FS-001` builds from typed DB only
 - row and target counts are explainable
-- candidate window sets are declared and recorded in the build report
+- evidence policy and active kernels are declared and recorded in the build report
 - low-evidence, opponent-matchup, and event-attribution coverage are reported
 - all feature columns have dictionary entries
 - all target columns are isolated
