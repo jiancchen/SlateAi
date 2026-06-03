@@ -6,6 +6,23 @@ Status: current through `mlb-m3-alpha-5`
 
 Primary question: what exists, what is connected, what is only a placeholder, and what is still missing before M3 becomes a real baseball simulator/model stack?
 
+## Audit Status
+
+Last audited: 2026-06-03
+
+Audit result: pass, with status-language clarifications applied.
+
+Evidence checked:
+
+- FS-001, FS-002, and FS-003 report counts match the artifact reports.
+- FS-001, FS-002, and FS-003 manifests each expose 12 component placeholders and 7 lane placeholders.
+- Manifest lane statuses are `contract_only` for `full_game_total` and `f5_total`, and `deferred` for the other five lanes.
+- FS-002 and FS-003 alpha-5 walk-forward metrics match the harness output files.
+- No promoted model, picks, simulator events, prop prices, or edge claims exist in the alpha artifacts.
+- This progress file is ASCII-only and should render as normal Markdown plus Mermaid.
+
+Tracking rule: update this document whenever a component status, lane status, feature-set artifact, harness result, simulator contract, market-pricing contract, or promotion gate changes.
+
 ## Snapshot
 
 M3 now has a working typed feature-artifact pipeline, manifest infrastructure, metrics-only harness, feature audit, walk-forward diagnostics, and a first diagnostic candidate runner.
@@ -67,7 +84,7 @@ flowchart TD
   L4B --> L4C["L4 reliever availability/reset component<br/>status: placeholder"]
   L4C --> L4D["L4 first-up reliever router<br/>status: placeholder"]
   L4D --> L4E["L4 reliever chain/performance component<br/>status: placeholder"]
-  L3 --> L4F["L4 batter event-rate component<br/>status: missing"]
+  L3 --> L4F["L4 PA/batter event components<br/>status: placeholder; implementation missing"]
   L3 --> L4G["L4 PA-volume component<br/>status: missing"]
 
   L4A --> L5["L5 PA/base-out/count simulator<br/>status: missing"]
@@ -97,8 +114,8 @@ flowchart TD
 
   class L2,H live;
   class L0,L1,L10,L11 partial;
-  class L3,L4A,L4B,L4C,L4D,L4E placeholder;
-  class L4F,L4G,L5,L6,L7,L8 missing;
+  class L3,L4A,L4B,L4C,L4D,L4E,L4F placeholder;
+  class L4G,L5,L6,L7,L8 missing;
   class L9 deferred;
 ```
 
@@ -141,21 +158,21 @@ The manifest registry has 12 component-family slots. They are connected as place
 | `first_up_reliever_router` | placeholder | Candidate-pool/router coverage features exist | First-up target labels, router training, role exception handling. |
 | `reliever_chain_distribution` | placeholder | Chain length and command coverage features exist | Chain path target, chain performance model, inherited-runner/traffic state. |
 | `reliever_stat_distribution` | placeholder | Sparse command profile surfaces exist | Individual-arm performance targets and workload-conditioned distributions. |
-| `pa_event_distribution` | missing | Contract slot only | Batter/pitcher event target matrix, pitch/PA state features, event model. |
-| `hitter_stat_distribution` | missing | Hitter-path feature scaffolding exists | Player prop target matrices, starter-phase and reliever-chain interaction surfaces. |
+| `pa_event_distribution` | placeholder | Manifest slot only | Batter/pitcher event target matrix, pitch/PA state features, event model. |
+| `hitter_stat_distribution` | placeholder | Hitter-path feature scaffolding exists | Player prop target matrices, starter-phase and reliever-chain interaction surfaces. |
 | `calibration_layer` | placeholder | Placeholder JSON only | Calibration datasets, slice diagnostics, promotion/rejection rules. |
 
 ## Lane State
 
-| Lane | Status | Current Output | Missing |
-| --- | --- | --- | --- |
-| `full_game_total` | partial | Mean baseline and diagnostic ridge metrics | Distribution model, calibrated totals probabilities, market-line comparison. |
-| `f5_total` | partial | Mean baseline and diagnostic ridge metrics | Distribution model, calibrated F5 probabilities, market-line comparison. |
-| `moneyline` | placeholder | Lane contract only | Win-prob target, run-distribution coupling, market writer. |
-| `team_total` | placeholder | Target columns exist for team runs | Team run distribution model and line-conditioned pricing. |
-| `starter_props` | missing | Component slots exist | Starter stat distributions and prop contracts. |
-| `reliever_props` | missing | Reliever-chain slots exist | Reliever identity/workload/performance distributions. |
-| `hitter_props` | missing | Hitter-path feature scaffolding exists | Player event distributions, PA volume, lineup turnover, prop pricing. |
+| Lane | Status | Manifest Status | Current Output | Missing |
+| --- | --- | --- | --- | --- |
+| `full_game_total` | partial | `contract_only` | Mean baseline and diagnostic ridge metrics | Distribution model, calibrated totals probabilities, market-line comparison. |
+| `f5_total` | partial | `contract_only` | Mean baseline and diagnostic ridge metrics | Distribution model, calibrated F5 probabilities, market-line comparison. |
+| `moneyline` | deferred | `deferred` | Lane placeholder only | Win-prob target, run-distribution coupling, market writer. |
+| `team_total` | deferred | `deferred` | Target columns exist for team runs | Team run distribution model and line-conditioned pricing. |
+| `starter_props` | deferred | `deferred` | Component slots exist | Starter stat distributions and prop contracts. |
+| `reliever_props` | deferred | `deferred` | Reliever-chain slots exist | Reliever identity/workload/performance distributions. |
+| `hitter_props` | deferred | `deferred` | Hitter-path feature scaffolding exists | Player event distributions, PA volume, lineup turnover, prop pricing. |
 
 ## Current Harness Result
 
@@ -312,4 +329,3 @@ starter path + reliever chain + hitter interaction + story memory + regime label
 ```
 
 not from tuning the current ridge or adding another model family on the same flat matrix.
-
