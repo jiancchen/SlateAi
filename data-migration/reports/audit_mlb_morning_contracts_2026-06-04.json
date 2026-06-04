@@ -1,0 +1,360 @@
+{
+  "audit": "mlb-morning-contracts",
+  "date": "2026-06-04",
+  "generatedAt": "2026-06-04T19:57:59.315Z",
+  "gameCount": 9,
+  "propCount": 287,
+  "failures": [
+    {
+      "failure": "draftkings-market-family-missing",
+      "marketType": "moneyline",
+      "expectedGames": 9,
+      "actualGames": 0
+    },
+    {
+      "failure": "draftkings-market-family-missing",
+      "marketType": "game_total",
+      "expectedGames": 9,
+      "actualGames": 0
+    },
+    {
+      "failure": "draftkings-market-family-missing",
+      "marketType": "first5_moneyline",
+      "expectedGames": 9,
+      "actualGames": 0
+    },
+    {
+      "failure": "draftkings-market-family-missing",
+      "marketType": "first5_total",
+      "expectedGames": 9,
+      "actualGames": 0
+    },
+    {
+      "failure": "rotowire-fallback-missing-substitution-audit",
+      "gameId": "blue-jays-braves",
+      "side": "away",
+      "teamName": "Blue Jays"
+    },
+    {
+      "failure": "rotowire-fallback-missing-substitution-audit",
+      "gameId": "blue-jays-braves",
+      "side": "home",
+      "teamName": "Braves"
+    },
+    {
+      "failure": "rotowire-fallback-missing-substitution-audit",
+      "gameId": "royals-twins",
+      "side": "away",
+      "teamName": "Royals"
+    },
+    {
+      "failure": "rotowire-fallback-missing-substitution-audit",
+      "gameId": "royals-twins",
+      "side": "home",
+      "teamName": "Twins"
+    },
+    {
+      "failure": "rotowire-fallback-missing-substitution-audit",
+      "gameId": "athletics-cubs",
+      "side": "away",
+      "teamName": "Athletics"
+    },
+    {
+      "failure": "rotowire-fallback-missing-substitution-audit",
+      "gameId": "athletics-cubs",
+      "side": "home",
+      "teamName": "Cubs"
+    },
+    {
+      "failure": "rotowire-fallback-missing-substitution-audit",
+      "gameId": "pirates-astros",
+      "side": "away",
+      "teamName": "Pirates"
+    },
+    {
+      "failure": "rotowire-fallback-missing-substitution-audit",
+      "gameId": "pirates-astros",
+      "side": "home",
+      "teamName": "Astros"
+    },
+    {
+      "failure": "rotowire-fallback-missing-substitution-audit",
+      "gameId": "dodgers-diamondbacks",
+      "side": "away",
+      "teamName": "Dodgers"
+    },
+    {
+      "failure": "rotowire-fallback-missing-substitution-audit",
+      "gameId": "dodgers-diamondbacks",
+      "side": "home",
+      "teamName": "Diamondbacks"
+    },
+    {
+      "failure": "statmuse-db-row-count-low",
+      "expected": 18,
+      "actual": 0
+    },
+    {
+      "failure": "statmuse-public-missing",
+      "gameId": "padres-phillies",
+      "starter": "Lucas Giolito"
+    },
+    {
+      "failure": "statmuse-public-missing",
+      "gameId": "padres-phillies",
+      "starter": "Zack Wheeler"
+    },
+    {
+      "failure": "statmuse-public-missing",
+      "gameId": "guardians-yankees",
+      "starter": "Slade Cecconi"
+    },
+    {
+      "failure": "statmuse-public-missing",
+      "gameId": "guardians-yankees",
+      "starter": "Carlos Rodón"
+    },
+    {
+      "failure": "statmuse-public-missing",
+      "gameId": "orioles-red-sox",
+      "starter": "Trevor Rogers"
+    },
+    {
+      "failure": "statmuse-public-missing",
+      "gameId": "orioles-red-sox",
+      "starter": "Brayan Bello"
+    },
+    {
+      "failure": "statmuse-public-missing",
+      "gameId": "giants-brewers",
+      "starter": "Adrian Houser"
+    },
+    {
+      "failure": "statmuse-public-missing",
+      "gameId": "giants-brewers",
+      "starter": "Coleman Crow"
+    },
+    {
+      "failure": "statmuse-public-missing",
+      "gameId": "blue-jays-braves",
+      "starter": "Mason Fluharty"
+    },
+    {
+      "failure": "statmuse-public-missing",
+      "gameId": "blue-jays-braves",
+      "starter": "Chris Sale"
+    },
+    {
+      "failure": "statmuse-public-missing",
+      "gameId": "royals-twins",
+      "starter": "Seth Lugo"
+    },
+    {
+      "failure": "statmuse-public-missing",
+      "gameId": "royals-twins",
+      "starter": "Andrew Morris"
+    },
+    {
+      "failure": "statmuse-public-missing",
+      "gameId": "athletics-cubs",
+      "starter": "J.T. Ginn"
+    },
+    {
+      "failure": "statmuse-public-missing",
+      "gameId": "athletics-cubs",
+      "starter": "Shota Imanaga"
+    },
+    {
+      "failure": "statmuse-public-missing",
+      "gameId": "pirates-astros",
+      "starter": "Jared Jones"
+    },
+    {
+      "failure": "statmuse-public-missing",
+      "gameId": "pirates-astros",
+      "starter": "Kai-Wei Teng"
+    },
+    {
+      "failure": "statmuse-public-missing",
+      "gameId": "dodgers-diamondbacks",
+      "starter": "Justin Wrobleski"
+    },
+    {
+      "failure": "statmuse-public-missing",
+      "gameId": "dodgers-diamondbacks",
+      "starter": "Ryne Nelson"
+    },
+    {
+      "failure": "espn-splits-not-fetched",
+      "gameId": "royals-twins",
+      "starter": "Andrew Morris",
+      "status": "missing-espn-athlete"
+    },
+    {
+      "failure": "priced-props-missing-sportsbook-lineage",
+      "samples": [
+        {
+          "id": "giants-brewers:808982:singles",
+          "playerName": "Jung Hoo Lee",
+          "propType": "singles",
+          "marketLabel": "Over 0.5 singles"
+        },
+        {
+          "id": "orioles-red-sox:624413:rbi",
+          "playerName": "Pete Alonso",
+          "propType": "rbi",
+          "marketLabel": "Over 0.5 RBI"
+        },
+        {
+          "id": "orioles-red-sox:694212:rbi",
+          "playerName": "Samuel Basallo",
+          "propType": "rbi",
+          "marketLabel": "Over 0.5 RBI"
+        },
+        {
+          "id": "giants-brewers:642715:rbi",
+          "playerName": "Willy Adames",
+          "propType": "rbi",
+          "marketLabel": "Over 0.5 RBI"
+        },
+        {
+          "id": "dodgers-diamondbacks:571970:rbi",
+          "playerName": "Max Muncy",
+          "propType": "rbi",
+          "marketLabel": "Over 0.5 RBI"
+        },
+        {
+          "id": "guardians-yankees:700250:rbi",
+          "playerName": "Ben Rice",
+          "propType": "rbi",
+          "marketLabel": "Over 0.5 RBI"
+        },
+        {
+          "id": "orioles-red-sox:680776:rbi",
+          "playerName": "Jarren Duran",
+          "propType": "rbi",
+          "marketLabel": "Over 0.5 RBI"
+        },
+        {
+          "id": "giants-brewers:694192:rbi",
+          "playerName": "Jackson Chourio",
+          "propType": "rbi",
+          "marketLabel": "Over 0.5 RBI"
+        },
+        {
+          "id": "dodgers-diamondbacks:518692:rbi",
+          "playerName": "Freddie Freeman",
+          "propType": "rbi",
+          "marketLabel": "Over 0.5 RBI"
+        },
+        {
+          "id": "orioles-red-sox:677800:rbi",
+          "playerName": "Wilyer Abreu",
+          "propType": "rbi",
+          "marketLabel": "Over 0.5 RBI"
+        },
+        {
+          "id": "orioles-red-sox:575929:rbi",
+          "playerName": "Willson Contreras",
+          "propType": "rbi",
+          "marketLabel": "Over 0.5 RBI"
+        },
+        {
+          "id": "giants-brewers:808982:hits",
+          "playerName": "Jung Hoo Lee",
+          "propType": "hits",
+          "marketLabel": "Over 1.5 hits"
+        },
+        {
+          "id": "blue-jays-braves:621566:rbi",
+          "playerName": "Matt Olson",
+          "propType": "rbi",
+          "marketLabel": "Over 0.5 RBI"
+        },
+        {
+          "id": "orioles-red-sox:681297:rbi",
+          "playerName": "Colton Cowser",
+          "propType": "rbi",
+          "marketLabel": "Over 0.5 RBI"
+        },
+        {
+          "id": "giants-brewers:694192:singles",
+          "playerName": "Jackson Chourio",
+          "propType": "singles",
+          "marketLabel": "Over 0.5 singles"
+        },
+        {
+          "id": "orioles-red-sox:624413:totalBases",
+          "playerName": "Pete Alonso",
+          "propType": "totalBases",
+          "marketLabel": "Over 1.5 total bases"
+        },
+        {
+          "id": "orioles-red-sox:694212:totalBases",
+          "playerName": "Samuel Basallo",
+          "propType": "totalBases",
+          "marketLabel": "Over 1.5 total bases"
+        },
+        {
+          "id": "giants-brewers:805811:rbi",
+          "playerName": "Bryce Eldridge",
+          "propType": "rbi",
+          "marketLabel": "Over 0.5 RBI"
+        },
+        {
+          "id": "giants-brewers:694192:totalBases",
+          "playerName": "Jackson Chourio",
+          "propType": "totalBases",
+          "marketLabel": "Over 1.5 total bases"
+        },
+        {
+          "id": "orioles-red-sox:575929:totalBases",
+          "playerName": "Willson Contreras",
+          "propType": "totalBases",
+          "marketLabel": "Over 1.5 total bases"
+        },
+        {
+          "id": "athletics-cubs:701762:rbi",
+          "playerName": "Nick Kurtz",
+          "propType": "rbi",
+          "marketLabel": "Over 0.5 RBI"
+        },
+        {
+          "id": "orioles-red-sox:677800:singles",
+          "playerName": "Wilyer Abreu",
+          "propType": "singles",
+          "marketLabel": "Over 0.5 singles"
+        },
+        {
+          "id": "guardians-yankees:700250:totalBases",
+          "playerName": "Ben Rice",
+          "propType": "totalBases",
+          "marketLabel": "Over 1.5 total bases"
+        },
+        {
+          "id": "giants-brewers:694192:hits",
+          "playerName": "Jackson Chourio",
+          "propType": "hits",
+          "marketLabel": "Over 1.5 hits"
+        },
+        {
+          "id": "orioles-red-sox:677800:totalBases",
+          "playerName": "Wilyer Abreu",
+          "propType": "totalBases",
+          "marketLabel": "Over 1.5 total bases"
+        }
+      ]
+    },
+    {
+      "failure": "source-status-row-mismatch",
+      "sourceName": "mlb_props",
+      "actualRows": 16,
+      "sourceStatus": {
+        "source_name": "mlb_props",
+        "last_status": "missing",
+        "actual_item_count": 0,
+        "cache_valid_until": "2026-06-04T17:00:11.129045+00:00"
+      }
+    }
+  ]
+}

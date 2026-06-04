@@ -155,6 +155,10 @@ const serializePropPick = (target) => {
     propLabel: target.propLabel,
     marketLabel: target.marketLabel,
     lineThreshold,
+    sportsbook: target.sportsbook || null,
+    sourceName: target.sourceName || null,
+    sourcePath: target.sourcePath || null,
+    marketCapturedAt: target.marketCapturedAt || null,
     confidence: target.confidence,
     probability: target.probability,
     expectedValue: target.expectedValue,
@@ -198,7 +202,10 @@ const loadPitcherStrikeoutOddsByGame = (date) => {
       game_id,
       player_name,
       line_value,
+      MAX(source_name) AS source_name,
       MAX(sportsbook) AS sportsbook,
+      MAX(source_path) AS source_path,
+      MAX(captured_at) AS captured_at,
       MAX(CASE WHEN selection='Over' THEN american_odds END) AS over_price,
       MAX(CASE WHEN selection='Under' THEN american_odds END) AS under_price
     FROM prop_market_snapshots
@@ -217,7 +224,10 @@ const loadPitcherStrikeoutOddsByGame = (date) => {
       line: Number.isFinite(Number(row.line_value)) ? Number(row.line_value) : null,
       overPrice: Number.isFinite(Number(row.over_price)) ? Number(row.over_price) : null,
       underPrice: Number.isFinite(Number(row.under_price)) ? Number(row.under_price) : null,
-      sportsbook: row.sportsbook || row.source_name || 'Prop market'
+      sportsbook: row.sportsbook || row.source_name || 'Prop market',
+      sourceName: row.source_name || '',
+      sourcePath: row.source_path || '',
+      capturedAt: row.captured_at || ''
     }
     return acc
   }, {})
@@ -339,6 +349,10 @@ const buildPitcherStrikeoutPick = ({ game, starter, teamName, opponentName, oppo
     slot: null,
     propType: 'pitcherStrikeouts',
     propLabel: 'K',
+    sportsbook: market.sportsbook || 'Prop market',
+    sourceName: market.sourceName || '',
+    sourcePath: market.sourcePath || '',
+    marketCapturedAt: market.capturedAt || '',
     marketLabel: `${lean} ${market.line} strikeouts`,
     lineThreshold: Number(market.line),
     confidence,

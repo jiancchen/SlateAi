@@ -1,0 +1,261 @@
+{
+  "audit": "public-mlb-slate",
+  "date": "2026-06-04",
+  "baseUrl": null,
+  "generatedAt": "2026-06-04T19:31:02.294Z",
+  "summary": {
+    "totalGames": 32,
+    "mlbGames": 9,
+    "nonMlbGames": 23
+  },
+  "games": [
+    {
+      "id": "padres-phillies",
+      "title": "Padres @ Phillies",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": true,
+      "hasRelieverShadow": true,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "failures": []
+    },
+    {
+      "id": "guardians-yankees",
+      "title": "Guardians @ Yankees",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": true,
+      "hasRelieverShadow": true,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "failures": []
+    },
+    {
+      "id": "orioles-red-sox",
+      "title": "Orioles @ Red Sox",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": true,
+      "hasRelieverShadow": true,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "failures": []
+    },
+    {
+      "id": "giants-brewers",
+      "title": "Giants @ Brewers",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": true,
+      "hasRelieverShadow": true,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "failures": []
+    },
+    {
+      "id": "blue-jays-braves",
+      "title": "Blue Jays @ Braves",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": true,
+      "hasRelieverShadow": true,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "failures": []
+    },
+    {
+      "id": "royals-twins",
+      "title": "Royals @ Twins",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "starterSplitStatuses": [
+        "fetched",
+        "missing-espn-athlete"
+      ],
+      "hasBridgeChain": true,
+      "hasRelieverShadow": true,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "failures": []
+    },
+    {
+      "id": "athletics-cubs",
+      "title": "Athletics @ Cubs",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": true,
+      "hasRelieverShadow": true,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "failures": []
+    },
+    {
+      "id": "pirates-astros",
+      "title": "Pirates @ Astros",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": true,
+      "hasRelieverShadow": true,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "failures": []
+    },
+    {
+      "id": "dodgers-diamondbacks",
+      "title": "Dodgers @ Diamondbacks",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": true,
+      "hasRelieverShadow": true,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "failures": []
+    }
+  ],
+  "props": {
+    "total": 287,
+    "byType": {
+      "pitcherStrikeouts": 4,
+      "singles": 57,
+      "rbi": 72,
+      "hits": 53,
+      "totalBases": 61,
+      "walks": 40
+    },
+    "pitcherStrikeoutDraftKings": 4,
+    "sources": [
+      "typed MLB DB day-game loader",
+      "models/mlb/app-model.js",
+      "sql-mlb.db prop_market_snapshots"
+    ],
+    "mergedFrom": [
+      "mlb-player-props",
+      "mlb-player-props-legacy"
+    ]
+  },
+  "valueBoard": {
+    "moneylineRows": 9,
+    "first5MoneylineRows": 7,
+    "first5TotalRows": 9,
+    "firstInningRows": 9,
+    "fullGameTotalRows": 9,
+    "totalBaseRows": 61,
+    "pitcherStrikeoutRows": 4,
+    "gameCount": 9
+  },
+  "hardFailures": []
+}

@@ -16772,6 +16772,17 @@
           "first5Read": "RF first-five history is not deployable; use it as a timing warning, not a pick.",
           "firstInningRead": "RF first-inning history is not deployable; keep it behind explicit early-run features."
         }
+      },
+      "first5Moneyline": {
+        "pickSide": "home",
+        "pickTeam": "Brewers",
+        "awayProjectedRuns": 3.1,
+        "homeProjectedRuns": 3.3,
+        "awayLeadProbability": 38.9,
+        "homeLeadProbability": 45.1,
+        "pushProbability": 16.1,
+        "leadProbability": 45.1,
+        "source": "M2 first-five projected runs; tie is a first-five ML push"
       }
     }
   },

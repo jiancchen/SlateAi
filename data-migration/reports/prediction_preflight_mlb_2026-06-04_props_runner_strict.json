@@ -1,0 +1,216 @@
+{
+  "generated_at": "2026-06-04T19:30:08.889Z",
+  "script": "data-migration/scripts/prediction_preflight.mjs",
+  "sport": "mlb",
+  "source_date": "2026-06-04",
+  "lane": "props",
+  "degraded": false,
+  "db_path": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "required_sources_checked": 8,
+  "passed_sources": 4,
+  "stale_sources": [
+    "mlb_odds",
+    "mlb_pitcher_features",
+    "mlb_props"
+  ],
+  "warnings": [],
+  "blocking_errors": [
+    "baseballsavant_hitter_statcast: Blocking status: missing",
+    "baseballsavant_hitter_statcast: Unexpected status: missing",
+    "baseballsavant_hitter_statcast: No actual source items recorded",
+    "mlb_odds: Blocking status: missing",
+    "mlb_odds: Unexpected status: missing",
+    "mlb_odds: Stale or missing cache_valid_until: 2026-06-04T17:00:11.128527+00:00",
+    "mlb_odds: No actual source items recorded",
+    "mlb_pitcher_features: Missing source_fetch_status for mlb_pitcher_features/2026-06-04",
+    "mlb_props: Blocking status: missing",
+    "mlb_props: Unexpected status: missing",
+    "mlb_props: Stale or missing cache_valid_until: 2026-06-04T17:00:11.129045+00:00",
+    "mlb_props: No actual source items recorded"
+  ],
+  "sources": [
+    {
+      "source_name": "baseballsavant_hitter_statcast",
+      "source_family": "statcast",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-04",
+        "last_status": "missing",
+        "last_completeness_status": "missing",
+        "last_success_at": null,
+        "cache_valid_until": "2026-06-05T17:34:06.283064+00:00",
+        "expected_item_count": null,
+        "actual_item_count": 0,
+        "missing_item_count": null,
+        "unresolved_count": 0,
+        "notes": "{\"adapter\":\"mlb_player_raw_context_to_typed\",\"details_rows\":0,\"grouped_rows\":0,\"report_path\":\"data-migration/reports/mlb_typed_warehouse_ingest_hitter_career_profiles_2026-06-04.json\",\"source_files\":0,\"source_snapshot_id\":null,\"unresolved_count\":0}"
+      },
+      "stale": false,
+      "errors": [
+        "Blocking status: missing",
+        "Unexpected status: missing",
+        "No actual source items recorded"
+      ],
+      "warnings": [],
+      "ok": false
+    },
+    {
+      "source_name": "mlb_game_feed",
+      "source_family": "game-feed",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-04",
+        "last_status": "success",
+        "last_completeness_status": "complete",
+        "last_success_at": "2026-06-04T17:11:37.085260+00:00",
+        "cache_valid_until": "2026-06-04T23:11:37.085260+00:00",
+        "expected_item_count": 9,
+        "actual_item_count": 9,
+        "missing_item_count": 0,
+        "unresolved_count": 0,
+        "notes": "{\"adapter\":\"mlb_schedule_game_feed_raw_to_typed\",\"dry_run\":false,\"feed_file_count\":9,\"missing_schedule_games\":0,\"report_path\":\"data-migration/reports/mlb_typed_warehouse_prepare_mlb_day_schedule_game_feed_2026-06-04.json\"}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    },
+    {
+      "source_name": "mlb_lineups",
+      "source_family": "lineups",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-04",
+        "last_status": "success",
+        "last_completeness_status": "complete",
+        "last_success_at": "2026-06-04T17:34:07.207135+00:00",
+        "cache_valid_until": "2026-06-05T05:34:07.207135+00:00",
+        "expected_item_count": 162,
+        "actual_item_count": 162,
+        "missing_item_count": 0,
+        "unresolved_count": 0,
+        "notes": "{\"adapter\":\"mlb_lineup_board_raw_to_typed\",\"expected_lineup_slots\":162,\"games\":9,\"lineup_matchup_snapshots\":162,\"lineup_slots\":162,\"lineups\":18,\"report_path\":\"data-migration/reports/mlb_typed_warehouse_ingest_hitter_lineup_splits_2026-06-04.json\",\"source_snapshot_id\":\"mlb-4158a42f9032c67a6e335d042ac6f792\",\"unresolved_count\":0}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    },
+    {
+      "source_name": "mlb_odds",
+      "source_family": "markets",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-04",
+        "last_status": "missing",
+        "last_completeness_status": "missing",
+        "last_success_at": null,
+        "cache_valid_until": "2026-06-04T17:00:11.128527+00:00",
+        "expected_item_count": 0,
+        "actual_item_count": 0,
+        "missing_item_count": 0,
+        "unresolved_count": 0,
+        "notes": "{\"adapter\":\"mlb_markets_raw_to_typed\",\"by_file\":{},\"parsed_contracts\":0,\"parsed_snapshots\":0,\"parsed_ticks\":0,\"report_path\":\"data-migration/reports/mlb_typed_warehouse_prepare_mlb_day_markets_props_2026-06-04.json\",\"source_files\":0,\"source_games\":0,\"source_rows\":0,\"unmapped_games\":0}"
+      },
+      "stale": true,
+      "errors": [
+        "Blocking status: missing",
+        "Unexpected status: missing",
+        "Stale or missing cache_valid_until: 2026-06-04T17:00:11.128527+00:00",
+        "No actual source items recorded"
+      ],
+      "warnings": [],
+      "ok": false
+    },
+    {
+      "source_name": "mlb_pitcher_features",
+      "source_family": "pitcher-features",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": null,
+      "stale": true,
+      "errors": [
+        "Missing source_fetch_status for mlb_pitcher_features/2026-06-04"
+      ],
+      "warnings": [],
+      "ok": false
+    },
+    {
+      "source_name": "mlb_player_context",
+      "source_family": "player-context",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-04",
+        "last_status": "success",
+        "last_completeness_status": "complete",
+        "last_success_at": "2026-06-04T17:34:06.476140+00:00",
+        "cache_valid_until": "2026-06-05T17:34:06.476140+00:00",
+        "expected_item_count": null,
+        "actual_item_count": 162,
+        "missing_item_count": null,
+        "unresolved_count": 0,
+        "notes": "{\"adapter\":\"mlb_player_raw_context_to_typed\",\"career_profiles\":162,\"people\":162,\"report_path\":\"data-migration/reports/mlb_typed_warehouse_ingest_hitter_career_profiles_2026-06-04.json\",\"source_files\":7,\"source_snapshot_id\":\"mlb-80f8e5fff8635c580034d2aa193f2b78\",\"unresolved_count\":0}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    },
+    {
+      "source_name": "mlb_props",
+      "source_family": "props",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-04",
+        "last_status": "missing",
+        "last_completeness_status": "missing",
+        "last_success_at": null,
+        "cache_valid_until": "2026-06-04T17:00:11.129045+00:00",
+        "expected_item_count": null,
+        "actual_item_count": 0,
+        "missing_item_count": null,
+        "unresolved_count": 0,
+        "notes": "{\"adapter\":\"mlb_props_typed_status\",\"prop_market_snapshots_for_date\":0,\"report_path\":\"data-migration/reports/mlb_typed_warehouse_prepare_mlb_day_markets_props_2026-06-04.json\"}"
+      },
+      "stale": true,
+      "errors": [
+        "Blocking status: missing",
+        "Unexpected status: missing",
+        "Stale or missing cache_valid_until: 2026-06-04T17:00:11.129045+00:00",
+        "No actual source items recorded"
+      ],
+      "warnings": [],
+      "ok": false
+    },
+    {
+      "source_name": "mlb_schedule",
+      "source_family": "schedule",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-04",
+        "last_status": "success",
+        "last_completeness_status": "complete",
+        "last_success_at": "2026-06-04T17:11:37.085023+00:00",
+        "cache_valid_until": "2026-06-04T23:11:37.085023+00:00",
+        "expected_item_count": 9,
+        "actual_item_count": 9,
+        "missing_item_count": 0,
+        "unresolved_count": 0,
+        "notes": "{\"adapter\":\"mlb_schedule_game_feed_raw_to_typed\",\"dry_run\":false,\"report_path\":\"data-migration/reports/mlb_typed_warehouse_prepare_mlb_day_schedule_game_feed_2026-06-04.json\",\"schedule_path\":\"data-private/raw/mlb/2026-06-04/schedule.json\"}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    }
+  ],
+  "ok": false,
+  "publish_allowed": false
+}

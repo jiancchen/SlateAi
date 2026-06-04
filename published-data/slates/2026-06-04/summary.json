@@ -20433,6 +20433,17 @@
               "first5Read": "RF first-five history is not deployable; use it as a timing warning, not a pick.",
               "firstInningRead": "RF first-inning history is not deployable; keep it behind explicit early-run features."
             }
+          },
+          "first5Moneyline": {
+            "pickSide": "home",
+            "pickTeam": "Phillies",
+            "awayProjectedRuns": 1.2,
+            "homeProjectedRuns": 2.5,
+            "awayLeadProbability": 16.6,
+            "homeLeadProbability": 65.7,
+            "pushProbability": 17.7,
+            "leadProbability": 65.7,
+            "source": "M2 first-five projected runs; tie is a first-five ML push"
           }
         }
       },
@@ -38010,6 +38021,17 @@
               "first5Read": "RF first-five history is not deployable; use it as a timing warning, not a pick.",
               "firstInningRead": "RF first-inning history is not deployable; keep it behind explicit early-run features."
             }
+          },
+          "first5Moneyline": {
+            "pickSide": "home",
+            "pickTeam": "Yankees",
+            "awayProjectedRuns": 1.9,
+            "homeProjectedRuns": 2.4,
+            "awayLeadProbability": 31,
+            "homeLeadProbability": 49.6,
+            "pushProbability": 19.4,
+            "leadProbability": 49.6,
+            "source": "M2 first-five projected runs; tie is a first-five ML push"
           }
         }
       },
@@ -56972,6 +56994,17 @@
               "first5Read": "RF first-five history is not deployable; use it as a timing warning, not a pick.",
               "firstInningRead": "RF first-inning history is not deployable; keep it behind explicit early-run features."
             }
+          },
+          "first5Moneyline": {
+            "pickSide": "home",
+            "pickTeam": "Red Sox",
+            "awayProjectedRuns": 3.3,
+            "homeProjectedRuns": 3.4,
+            "awayLeadProbability": 40.6,
+            "homeLeadProbability": 43.7,
+            "pushProbability": 15.7,
+            "leadProbability": 43.7,
+            "source": "M2 first-five projected runs; tie is a first-five ML push"
           }
         }
       },
@@ -74352,6 +74385,17 @@
               "first5Read": "RF first-five history is not deployable; use it as a timing warning, not a pick.",
               "firstInningRead": "RF first-inning history is not deployable; keep it behind explicit early-run features."
             }
+          },
+          "first5Moneyline": {
+            "pickSide": "home",
+            "pickTeam": "Brewers",
+            "awayProjectedRuns": 3.1,
+            "homeProjectedRuns": 3.3,
+            "awayLeadProbability": 38.9,
+            "homeLeadProbability": 45.1,
+            "pushProbability": 16.1,
+            "leadProbability": 45.1,
+            "source": "M2 first-five projected runs; tie is a first-five ML push"
           }
         }
       },
@@ -93912,6 +93956,17 @@
               "first5Read": "RF first-five history is not deployable; use it as a timing warning, not a pick.",
               "firstInningRead": "RF first-inning history is not deployable; keep it behind explicit early-run features."
             }
+          },
+          "first5Moneyline": {
+            "pickSide": "home",
+            "pickTeam": "Braves",
+            "awayProjectedRuns": 1.7,
+            "homeProjectedRuns": 2.2,
+            "awayLeadProbability": 30.1,
+            "homeLeadProbability": 49.5,
+            "pushProbability": 20.4,
+            "leadProbability": 49.5,
+            "source": "M2 first-five projected runs; tie is a first-five ML push"
           }
         }
       },
@@ -107663,6 +107718,17 @@
               "first5Read": "RF first-five history is not deployable; use it as a timing warning, not a pick.",
               "firstInningRead": "RF first-inning history is not deployable; keep it behind explicit early-run features."
             }
+          },
+          "first5Moneyline": {
+            "pickSide": "away",
+            "pickTeam": "Royals",
+            "awayProjectedRuns": 2.3,
+            "homeProjectedRuns": 2.2,
+            "awayLeadProbability": 42.1,
+            "homeLeadProbability": 38.5,
+            "pushProbability": 19.4,
+            "leadProbability": 42.1,
+            "source": "M2 first-five projected runs; tie is a first-five ML push"
           }
         }
       },
@@ -126473,6 +126539,17 @@
               "first5Read": "RF first-five history is not deployable; use it as a timing warning, not a pick.",
               "firstInningRead": "RF first-inning history is not deployable; keep it behind explicit early-run features."
             }
+          },
+          "first5Moneyline": {
+            "pickSide": "away",
+            "pickTeam": "Athletics",
+            "awayProjectedRuns": 2.5,
+            "homeProjectedRuns": 1.7,
+            "awayLeadProbability": 55.4,
+            "homeLeadProbability": 25.8,
+            "pushProbability": 18.9,
+            "leadProbability": 55.4,
+            "source": "M2 first-five projected runs; tie is a first-five ML push"
           }
         }
       },
@@ -143849,6 +143926,17 @@
               "first5Read": "RF first-five history is not deployable; use it as a timing warning, not a pick.",
               "firstInningRead": "RF first-inning history is not deployable; keep it behind explicit early-run features."
             }
+          },
+          "first5Moneyline": {
+            "pickSide": "home",
+            "pickTeam": "Astros",
+            "awayProjectedRuns": 1.9,
+            "homeProjectedRuns": 2.5,
+            "awayLeadProbability": 29.6,
+            "homeLeadProbability": 51.5,
+            "pushProbability": 19,
+            "leadProbability": 51.5,
+            "source": "M2 first-five projected runs; tie is a first-five ML push"
           }
         }
       },
@@ -163165,6 +163253,17 @@
               "first5Read": "RF first-five history is not deployable; use it as a timing warning, not a pick.",
               "firstInningRead": "RF first-inning history is not deployable; keep it behind explicit early-run features."
             }
+          },
+          "first5Moneyline": {
+            "pickSide": "away",
+            "pickTeam": "Dodgers",
+            "awayProjectedRuns": 2.4,
+            "homeProjectedRuns": 1.7,
+            "awayLeadProbability": 53.5,
+            "homeLeadProbability": 27.2,
+            "pushProbability": 19.4,
+            "leadProbability": 53.5,
+            "source": "M2 first-five projected runs; tie is a first-five ML push"
           }
         }
       },
@@ -163780,6 +163879,30 @@
     {
       "label": "Robinhood tennis prediction markets",
       "url": "https://robinhood.com/us/en/prediction-markets/tennis/"
+    },
+    {
+      "label": "Official MLB schedule, probable pitchers, lineups, and game feeds",
+      "url": "https://www.mlb.com/"
+    },
+    {
+      "label": "Rotowire confirmed MLB daily lineups fallback",
+      "url": "https://www.rotowire.com/baseball/daily-lineups.php"
+    },
+    {
+      "label": "DraftKings MLB player prop board",
+      "url": "https://sportsbook.draftkings.com/leagues/baseball/mlb"
+    },
+    {
+      "label": "Baseball Savant hitter and pitcher pages",
+      "url": "https://baseballsavant.mlb.com/"
+    },
+    {
+      "label": "ESPN pitcher splits pages",
+      "url": "https://www.espn.com/mlb/players"
+    },
+    {
+      "label": "StatMuse starter vs opponent history",
+      "url": "https://www.statmuse.com/mlb"
     }
   ],
   "tennisValueSummary": {
@@ -169528,5 +169651,5 @@
     ],
     "note": "Tennis value books include ML, match O/U, first-set O/U, set-win, spreads, and Kalshi trade-to-sell. A likely winner can still be a bad bet if the payout is too small."
   },
-  "updatedAt": "2026-06-04T19:15:33.305Z"
+  "updatedAt": "2026-06-04T19:30:23.655Z"
 }

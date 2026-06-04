@@ -181,6 +181,22 @@ The model takeaway is process before outcome: huntable pitch zones, confidence/a
 
 ## 5. Publish / Trust Gate
 
+Before exporting or deploying the public board, use the clean public slate runbook:
+
+- [Clean MLB Public Slate Runbook](/Users/jcchen/Documents/New%20project/development-docs/mlb/runbooks/clean-public-slate-runbook.md:1)
+
+Required public publish command:
+
+```bash
+npm run data:publish:mlb-clean -- --date YYYY-MM-DD --refresh --deploy --live-base https://slate-web-static-1.vercel.app
+```
+
+Hard rule for the public board:
+- do not publish MLB through the typed DB loader until the public audit proves field parity
+- do not delete existing non-MLB slate entries while refreshing MLB
+- do not deploy until `npm run data:audit:mlb-public -- --date YYYY-MM-DD` passes
+- if only republishing already-generated MLB, run `npm run data:publish:mlb-clean -- --date YYYY-MM-DD`
+
 Only treat the day as ready when:
 - full refresh completed
 - verifier passed without hard failures
