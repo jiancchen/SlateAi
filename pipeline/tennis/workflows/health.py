@@ -10,7 +10,12 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[3]
-DEFAULT_DB = ROOT / "data-private" / "warehouse" / "sports.db"
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from pipeline.lib.warehouse_paths import tennis_warehouse_path
+
+DEFAULT_DB = tennis_warehouse_path()
 REFERENCE_DIR = ROOT / "data-private" / "reference" / "tennis"
 PUBLISHED_SLATES_DIR = ROOT / "published-data" / "slates"
 KALSHI_SPIKE_MODEL_PATH = ROOT / "web" / "src" / "lib" / "kalshi-tennis-spike-model.generated.json"
@@ -53,7 +58,12 @@ def read_json(path: Path) -> dict[str, Any]:
 
 
 def scalar(conn: sqlite3.Connection, sql: str, params: tuple[Any, ...]) -> int:
-    return int(conn.execute(sql, params).fetchone()[0] or 0)
+    try:
+        return int(conn.execute(sql, params).fetchone()[0] or 0)
+    except sqlite3.OperationalError as exc:
+        if "no such table" in str(exc).lower():
+            return 0
+        raise
 
 
 def core_model_match_count(conn: sqlite3.Connection, date: str) -> int:

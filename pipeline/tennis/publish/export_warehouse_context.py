@@ -5,19 +5,40 @@ import argparse
 import json
 import re
 import sqlite3
+import sys
 import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[3]
-DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
+for candidate in (ROOT, ROOT / "pipeline"):
+    candidate_text = str(candidate)
+    if candidate_text not in sys.path:
+        sys.path.insert(0, candidate_text)
+
+try:
+    from pipeline.lib.warehouse_paths import tennis_warehouse_path
+except ModuleNotFoundError:
+    lib_path = str(ROOT / "pipeline" / "lib")
+    if lib_path not in sys.path:
+        sys.path.insert(0, lib_path)
+    from warehouse_paths import tennis_warehouse_path
+
+DB_PATH = tennis_warehouse_path()
 
 
-def connect() -> sqlite3.Connection:
-    conn = sqlite3.connect(DB_PATH)
+def connect(db_path: Path | None = None) -> sqlite3.Connection:
+    conn = sqlite3.connect(db_path or DB_PATH)
     conn.row_factory = sqlite3.Row
     return conn
+
+
+def table_exists(conn: sqlite3.Connection, table_name: str) -> bool:
+    return conn.execute(
+        "select 1 from sqlite_master where type = 'table' and name = ?",
+        (table_name,),
+    ).fetchone() is not None
 
 
 def as_json(value: str | None) -> Any:
@@ -35,6 +56,8 @@ def normalize_name(value: str | None) -> str:
 
 
 def stat_rows(conn: sqlite3.Connection, event_id: str, period: str = "ALL") -> list[dict[str, Any]]:
+    if not table_exists(conn, "tennis_sofascore_player_stat_rows"):
+        return []
     return [
         dict(row)
         for row in conn.execute(
@@ -131,6 +154,62 @@ def weighted_average(values: list[dict[str, Any]]) -> float | None:
 
 
 def recent_form_metrics(conn: sqlite3.Connection, match_id: str) -> dict[str, dict[str, Any]]:
+    if not table_exists(conn, "tennis_recent_form_metrics"):
+        if not (table_exists(conn, "match_players") and table_exists(conn, "players") and table_exists(conn, "player_form_snapshots")):
+            return {}
+        rows = [
+            dict(row)
+            for row in conn.execute(
+                """
+                select
+                  p.name as player_name,
+                  p.player_id,
+                  fs.surface,
+                  fs.sample_size,
+                  fs.features_json,
+                  fs.created_at
+                from match_players mp
+                join players p on p.player_id = mp.player_id
+                left join player_form_snapshots fs on fs.player_id = p.player_id
+                where mp.match_id = ?
+                  and fs.form_snapshot_id = (
+                    select inner_fs.form_snapshot_id
+                    from player_form_snapshots inner_fs
+                    where inner_fs.player_id = p.player_id
+                    order by inner_fs.snapshot_date desc, inner_fs.created_at desc
+                    limit 1
+                  )
+                order by mp.side
+                """,
+                (match_id,),
+            )
+        ]
+        result: dict[str, dict[str, Any]] = {}
+        for row in rows:
+            features = as_json(row.get("features_json")) or {}
+            summary = []
+            for key, label in (
+                ("opponent_adjusted_form_score", "Opponent-adjusted form"),
+                ("recent_win_pct", "Recent win pct"),
+                ("recent_game_pct", "Recent game pct"),
+                ("scoreline_form_score", "Scoreline form"),
+            ):
+                value = features.get(key)
+                if isinstance(value, (int, float)):
+                    summary.append({"key": key, "label": label, "score": value})
+            result[normalize_name(row.get("player_name"))] = {
+                "playerName": row.get("player_name"),
+                "matches": [],
+                "summary": summary,
+                "coverage": {
+                    "cells": len(summary),
+                    "exactCells": len(summary),
+                    "estimatedCells": 0,
+                    "missingCells": 0,
+                },
+                "source": "sql-tennis.db:player_form_snapshots",
+            }
+        return result
     rows = [
         dict(row)
         for row in conn.execute(
@@ -385,6 +464,56 @@ def expected_stats_from_form_metrics(form_metrics: dict[str, Any] | None) -> dic
 
 
 def h2h_match_rows(conn: sqlite3.Connection, match_id: str) -> list[dict[str, Any]]:
+    if not table_exists(conn, "tennis_h2h_matches"):
+        if not (table_exists(conn, "h2h_matches") and table_exists(conn, "players") and table_exists(conn, "match_players")):
+            return []
+        player_ids = [
+            row["player_id"]
+            for row in conn.execute(
+                "select player_id from match_players where match_id = ? order by side",
+                (match_id,),
+            ).fetchall()
+        ]
+        if len(player_ids) < 2:
+            return []
+        rows = conn.execute(
+            """
+            select
+              h.source_name,
+              pa.name as player_a_name,
+              pb.name as player_b_name,
+              pw.name as winner_name,
+              h.score,
+              h.tournament_name,
+              h.match_date,
+              h.surface
+            from h2h_matches h
+            join players pa on pa.player_id = h.player_a_id
+            join players pb on pb.player_id = h.player_b_id
+            left join players pw on pw.player_id = h.winner_player_id
+            where (h.player_a_id = ? and h.player_b_id = ?)
+               or (h.player_a_id = ? and h.player_b_id = ?)
+            order by h.match_date desc
+            """,
+            (player_ids[0], player_ids[1], player_ids[1], player_ids[0]),
+        ).fetchall()
+        return [
+            {
+                "sourceName": row["source_name"],
+                "playerName": row["player_a_name"],
+                "opponentName": row["player_b_name"],
+                "winnerName": row["winner_name"],
+                "resultText": row["score"],
+                "event": row["tournament_name"],
+                "eventTier": None,
+                "dateLabel": row["match_date"],
+                "isoDate": row["match_date"],
+                "surface": row["surface"],
+                "weight": None,
+                "raw": None,
+            }
+            for row in rows
+        ]
     return [
         {
             "sourceName": row["source_name"],
@@ -413,6 +542,88 @@ def h2h_match_rows(conn: sqlite3.Connection, match_id: str) -> list[dict[str, An
 
 
 def expected_stats(conn: sqlite3.Connection, match_id: str) -> dict[str, dict[str, Any]]:
+    if not table_exists(conn, "tennis_player_match_context"):
+        if not (table_exists(conn, "match_players") and table_exists(conn, "players")):
+            return {}
+        rows = conn.execute(
+            """
+            select mp.side, p.player_id, p.name
+            from match_players mp
+            join players p on p.player_id = mp.player_id
+            where mp.match_id = ?
+            order by mp.side
+            """,
+            (match_id,),
+        ).fetchall()
+        result: dict[str, dict[str, Any]] = {}
+        for row in rows:
+            pressure = conn.execute(
+                """
+                select *
+                from service_pressure_snapshots
+                where player_id = ?
+                  and (match_id = ? or match_id is null)
+                order by
+                  case when match_id = ? then 0 else 1 end,
+                  snapshot_date desc,
+                  created_at desc
+                limit 1
+                """,
+                (row["player_id"], match_id, match_id),
+            ).fetchone() if table_exists(conn, "service_pressure_snapshots") else None
+            form = conn.execute(
+                """
+                select *
+                from player_form_snapshots
+                where player_id = ?
+                order by snapshot_date desc, created_at desc
+                limit 1
+                """,
+                (row["player_id"],),
+            ).fetchone() if table_exists(conn, "player_form_snapshots") else None
+            form_features = as_json(form["features_json"]) if form else {}
+            stats = {}
+            if pressure:
+                stats.update(
+                    {
+                        "holdPct": pressure["hold_pct"],
+                        "returnGamesWonPct": pressure["break_pct"],
+                        "breakPointsSaved": pressure["bp_saved_made"],
+                        "breakPointsFaced": pressure["bp_saved_attempts"],
+                        "breakPointsSavedPct": pressure["bp_saved_pct"],
+                        "breakPointsConverted": pressure["bp_converted_made"],
+                        "breakPointsToConvert": pressure["bp_converted_attempts"],
+                        "breakPointsConvertedPct": pressure["bp_converted_pct"],
+                    }
+                )
+            for target, source in (
+                ("opponentAdjustedFormScore", "opponent_adjusted_form_score"),
+                ("recentWinPct", "recent_win_pct"),
+                ("recentGamePct", "recent_game_pct"),
+                ("clayWinPct", "clay_win_pct"),
+            ):
+                if isinstance(form_features.get(source), (int, float)):
+                    stats[target] = form_features[source]
+            stats = {key: value for key, value in stats.items() if value is not None}
+            result[normalize_name(row["name"])] = {
+                "name": row["name"],
+                "source": "sql-tennis.db typed pressure/form snapshots",
+                "matches": (pressure["sample_size"] if pressure else None) or (form["sample_size"] if form else None),
+                "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+                "stats": stats,
+                "pressureSamples": {
+                    "typed": {
+                        "matches": pressure["sample_size"],
+                        "bpSaved": pressure["bp_saved_made"],
+                        "bpFaced": pressure["bp_saved_attempts"],
+                        "bpSavedPct": pressure["bp_saved_pct"],
+                        "bpConverted": pressure["bp_converted_made"],
+                        "bpChances": pressure["bp_converted_attempts"],
+                        "bpConvertedPct": pressure["bp_converted_pct"],
+                    }
+                } if pressure else {},
+            }
+        return result
     rows = conn.execute(
         """
         select player_name, normalized_name, raw_json
@@ -486,6 +697,8 @@ def hold_pct_from_service_points(first_in: float | None, first_won: float | None
 
 
 def player_page_expected_stats(conn: sqlite3.Connection, date: str) -> dict[str, dict[str, Any]]:
+    if not table_exists(conn, "tennis_sofascore_player_page_stats"):
+        return {}
     try:
         rows = conn.execute(
             """
@@ -574,6 +787,8 @@ def expected_stats_for_surface(page_expected: dict[str, Any] | None, surface: st
 
 
 def match_weather(conn: sqlite3.Connection, match_id: str) -> dict[str, Any] | None:
+    if not table_exists(conn, "tennis_match_weather"):
+        return None
     row = conn.execute(
         """
         select *
@@ -618,6 +833,8 @@ def match_result_for_players(
     player1_name: str | None,
     player2_name: str | None,
 ) -> sqlite3.Row | None:
+    if not table_exists(conn, "tennis_match_results"):
+        return None
     if not player1_name or not player2_name:
         return None
     player1 = normalize_name(player1_name)
@@ -777,214 +994,65 @@ def compact_sofascore_signals(raw_json: str | None, home_name: str | None, away_
     }
 
 
-def export_context(date: str) -> dict[str, Any]:
-    conn = connect()
-    matches: dict[str, Any] = {}
-    player_page_expected = player_page_expected_stats(conn, date)
-    for match in conn.execute(
-        """
-        select *
-        from tennis_sofascore_matches
-        where slate_date = ?
-        order by board_match_id
-        """,
-        (date,),
-    ):
-        row = dict(match)
-        event_id = row["sofascore_event_id"]
-        rows = stat_rows(conn, event_id)
-        players = player_stat_summary(rows)
-        player_expected = expected_stats(conn, row["board_match_id"])
-        sofascore_signals = compact_sofascore_signals(
-            row.get("raw_json"),
-            row.get("home_player_name"),
-            row.get("away_player_name"),
-        )
-        form_metrics_by_player = recent_form_metrics(conn, row["board_match_id"])
-        h2h_rows = h2h_match_rows(conn, row["board_match_id"])
-        weather = match_weather(conn, row["board_match_id"])
-        result_score = parsed_result_score(
-            match_result_for_players(conn, date, row.get("home_player_name"), row.get("away_player_name")),
-            row.get("home_player_name"),
-            row.get("away_player_name"),
-        )
-        season_stats = sofascore_signals.get("seasonStats") or {}
-        home_season_stats = season_stats.get("home") or {}
-        away_season_stats = season_stats.get("away") or {}
-        side_expected = {
-            "home": {
-                "source": "SofaScore tournament-season stats",
-                "matches": home_season_stats.get("matches"),
-                "note": "Fallback expected stats from SofaScore tournament-season aggregate.",
-                "stats": home_season_stats,
-            },
-            "away": {
-                "source": "SofaScore tournament-season stats",
-                "matches": away_season_stats.get("matches"),
-                "note": "Fallback expected stats from SofaScore tournament-season aggregate.",
-                "stats": away_season_stats,
-            },
-        }
-
-        def side_for_player(player_name: str | None) -> str | None:
-            if not player_name:
-                return None
-            if normalize_name(player_name) == normalize_name(row.get("home_player_name")):
-                return "home"
-            if normalize_name(player_name) == normalize_name(row.get("away_player_name")):
-                return "away"
-            return None
-
-        def merged_expected(player_name: str | None, side: str | None) -> dict[str, Any] | None:
-            recent_expected = player_expected.get(normalize_name(player_name)) or {}
-            page_expected = expected_stats_for_surface(
-                player_page_expected.get(normalize_name(player_name)),
-                row.get("surface"),
-            ) or {}
-            season_expected = side_expected.get(side or "") or {}
-            form_expected = expected_stats_from_form_metrics(form_metrics_by_player.get(normalize_name(player_name))) or {}
-            recent_stats = {
-                key: value
-                for key, value in (recent_expected.get("stats") or {}).items()
-                if value is not None
-            }
-            page_stats = {
-                key: value
-                for key, value in (page_expected.get("stats") or {}).items()
-                if value is not None
-            }
-            season_stats = {
-                key: value
-                for key, value in (season_expected.get("stats") or {}).items()
-                if value is not None
-            }
-            form_stats = {
-                key: value
-                for key, value in (form_expected.get("stats") or {}).items()
-                if value is not None
-            }
-            stats = {**season_stats, **page_stats, **recent_stats, **form_stats}
-            if not stats:
-                return None
-            source = (
-                form_expected.get("source")
-                if form_stats
-                else recent_expected.get("source")
-                if recent_stats
-                else page_expected.get("source")
-                if page_stats
-                else season_expected.get("source")
-            )
-            note = (
-                form_expected.get("note")
-                if form_stats
-                else
-                "Pregame expected stats merge recent joined match rows with SofaScore player-page/tournament aggregates where available."
-                if recent_stats
-                else page_expected.get("note")
-                or "Pregame expected stats from SofaScore tournament-season aggregate."
-            )
-            pressure_samples = {}
-            for expected in (season_expected, page_expected, recent_expected, form_expected):
-                pressure_samples.update({key: value for key, value in (expected.get("pressureSamples") or {}).items() if value})
-            return {
-                "source": source,
-                "matches": form_expected.get("matches") or recent_expected.get("matches") or page_expected.get("matches") or season_expected.get("matches"),
-                "note": note,
-                "stats": stats,
-                "pressureSamples": complete_pressure_samples_from_stats(pressure_samples, stats),
-                "sourceUrl": form_expected.get("sourceUrl") or recent_expected.get("sourceUrl") or page_expected.get("sourceUrl"),
-            }
-
-        for player_key, expected in player_expected.items():
-            player_name = expected.get("name") or player_key
-            side = side_for_player(player_name)
-            bucket = players.setdefault(player_key, {"name": player_name, "side": side, "stats": {}})
-            if not bucket.get("side"):
-                bucket["side"] = side
-            bucket["expectedStats"] = merged_expected(player_name, bucket.get("side")) or expected
-        for bucket in players.values():
-            if not bucket.get("expectedStats"):
-                bucket["expectedStats"] = merged_expected(bucket.get("name"), bucket.get("side"))
-            form_metrics = form_metrics_by_player.get(normalize_name(bucket.get("name")))
-            if form_metrics:
-                bucket["recentFormMetrics"] = form_metrics
-        for side, player_name in (("home", row.get("home_player_name")), ("away", row.get("away_player_name"))):
-            player_key = normalize_name(player_name)
-            if player_name and player_key not in players:
-                players[player_key] = {
-                    "name": player_name,
-                    "side": side,
-                    "stats": {},
-                    "expectedStats": merged_expected(player_name, side),
-                }
-            if player_name and form_metrics_by_player.get(normalize_name(player_name)):
-                players[player_key]["recentFormMetrics"] = form_metrics_by_player.get(player_key)
-        expected_stat_rows = sum(
-            len((player.get("expectedStats") or {}).get("stats") or {})
-            for player in players.values()
-        )
-        season_stat_rows = sum(
-            len(stats or {})
-            for stats in (home_season_stats, away_season_stats)
-        )
-        stats_response = ((as_json(row.get("raw_json")) or {}).get("payloads") or {}).get("statistics") or {}
-        live_stats_status = stats_response.get("status")
-        matches[row["board_match_id"]] = {
-            "source": "SofaScore warehouse",
-            "eventId": event_id,
-            "sourceUrl": row["source_url"],
-            "capturedAt": row["captured_at"],
-            "surface": row["surface"],
-            "tournament": row["tournament_name"],
-            "category": row["tournament_category"],
-            "startTimestamp": row["start_timestamp"],
-            "players": list(players.values()),
-            "h2h": {
-                "homeName": row["home_player_name"],
-                "awayName": row["away_player_name"],
-                "homeWins": row["h2h_home_wins"],
-                "awayWins": row["h2h_away_wins"],
-                "draws": row["h2h_draws"],
-                "matches": h2h_rows,
-                "coverage": {
-                    "datedRows": len([item for item in h2h_rows if item.get("dateLabel") or item.get("isoDate")]),
-                    "surfaceRows": len([item for item in h2h_rows if item.get("surface")]),
-                    "weightedRows": len([item for item in h2h_rows if isinstance(item.get("weight"), (int, float))]),
-                },
-            },
-            "score": {
-                "home": (result_score or {}).get("home") or as_json(row["home_score_json"]),
-                "away": (result_score or {}).get("away") or as_json(row["away_score_json"]),
-            },
-            "result": result_score,
-            "sofascoreSignals": sofascore_signals,
-            "weather": weather,
-            "allStatRows": rows,
-            "coverage": {
-                "hasEvent": True,
-                "hasH2h": row["h2h_home_wins"] is not None or row["h2h_away_wins"] is not None,
-                "allStatRows": len(rows),
-                "playerStatRows": len(rows),
-                "liveStatRows": len(rows),
-                "expectedStatRows": expected_stat_rows,
-                "seasonStatRows": season_stat_rows,
-                "liveStatsStatus": live_stats_status,
-                "hasWeather": weather is not None and bool(weather.get("hourlyRows")),
-                "isPregame": len(rows) == 0 and expected_stat_rows > 0,
-            },
-        }
-    if not matches:
+def typed_match_rows(conn: sqlite3.Connection, date: str) -> list[dict[str, Any]]:
+    return [
+        dict(row)
         for row in conn.execute(
             """
-            select *
-            from tennis_matches
-            where slate_date = ?
-            order by start_minutes, match_id
+            select
+              m.match_id,
+              m.match_date as slate_date,
+              coalesce(m.tour, 'Tennis') as league,
+              coalesce(t.name, 'Unknown tournament') || ' | ' || coalesce(m.round, 'Match') as stage,
+              m.surface,
+              m.start_time_utc,
+              m.best_of,
+              m.status,
+              t.name as tournament_name,
+              t.level as tournament_category,
+              p1.name as player1_name,
+              p2.name as player2_name,
+              coalesce(m.start_time_utc, '') as updated_at,
+              0 as start_minutes
+            from matches m
+            left join tournaments t on t.tournament_id = m.tournament_id
+            left join match_players mp1 on mp1.match_id = m.match_id and mp1.side in (0, 1)
+            left join players p1 on p1.player_id = mp1.player_id
+            left join match_players mp2 on mp2.match_id = m.match_id and mp2.side in (2)
+            left join players p2 on p2.player_id = mp2.player_id
+            where m.match_date = ?
+            order by coalesce(m.start_time_utc, ''), m.match_id
             """,
             (date,),
-        ):
-            row = dict(row)
+        )
+    ]
+
+
+def legacy_match_rows(conn: sqlite3.Connection, date: str) -> list[dict[str, Any]]:
+    if table_exists(conn, "tennis_matches"):
+        return [
+            dict(row)
+            for row in conn.execute(
+                """
+                select *
+                from tennis_matches
+                where slate_date = ?
+                order by start_minutes, match_id
+                """,
+                (date,),
+            )
+        ]
+    if table_exists(conn, "matches"):
+        return typed_match_rows(conn, date)
+    return []
+
+
+def export_context(date: str, db_path: Path | None = None) -> dict[str, Any]:
+    conn = connect(db_path)
+    matches: dict[str, Any] = {}
+    player_page_expected = player_page_expected_stats(conn, date)
+    if not matches:
+        for row in legacy_match_rows(conn, date):
             match_id = row["match_id"]
             player_expected = expected_stats(conn, match_id)
             form_metrics_by_player = recent_form_metrics(conn, match_id)
@@ -1158,7 +1226,11 @@ def main() -> None:
         output = ROOT / output
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(export_context(args.date), indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"Wrote tennis warehouse context to {output.relative_to(ROOT)}")
+    try:
+        display_path = output.relative_to(ROOT)
+    except ValueError:
+        display_path = output
+    print(f"Wrote tennis warehouse context to {display_path}")
 
 
 if __name__ == "__main__":

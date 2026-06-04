@@ -6,6 +6,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 WAREHOUSE_DIR = ROOT / "data-private" / "warehouse"
 SPORTS_DB_PATH = WAREHOUSE_DIR / "sports.db"
+SPORT_DB_DEFAULTS = {
+    "tennis": WAREHOUSE_DIR / "sports" / "tennis" / "sql-tennis.db",
+    "mlb": WAREHOUSE_DIR / "sports" / "mlb" / "sql-mlb.db",
+}
 
 
 def _env_path(name: str) -> Path | None:
@@ -20,6 +24,7 @@ def warehouse_path_for_sport(sport: str = "shared") -> Path:
     return (
         _env_path(f"SLATE_{sport_key}_WAREHOUSE_DB")
         or _env_path("SLATE_WAREHOUSE_DB")
+        or SPORT_DB_DEFAULTS.get(str(sport or "").lower())
         or SPORTS_DB_PATH
     )
 

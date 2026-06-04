@@ -1,0 +1,23 @@
+{
+  "contract": "data-migration/contracts/tennis_read_path_readiness_contract.md",
+  "date": "2026-06-02",
+  "db_date_count": 12,
+  "db_match_count": 66,
+  "duckdb_mismatches": [],
+  "duckdb_ok": true,
+  "duckdb_report": "data-migration/reports/phase5_build_tennis_duckdb_after_public_index_2026-06-02.json",
+  "errors": [],
+  "game_file_count": 66,
+  "generated_at": "2026-06-03T23:50:35.233237+00:00",
+  "index_health_checks": 3,
+  "index_manifest_id": "193caba56e38e6cc1fbfbf6420894630",
+  "index_path": "data-migration/export-previews/tennis/index/index.json",
+  "ok": true,
+  "preview_root": "data-migration/export-previews/tennis",
+  "script": "data-migration/scripts/validate_tennis_read_path_readiness.py",
+  "slate_game_count": 66,
+  "slate_health_checks": 4,
+  "slate_manifest_id": "2f94af0b1e3c17de013db4dc0df9dcf9",
+  "slate_path": "data-migration/export-previews/tennis/2026-06-02/summary.json",
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db"
+}

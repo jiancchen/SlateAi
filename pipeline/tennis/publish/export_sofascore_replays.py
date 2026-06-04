@@ -4,12 +4,18 @@ from __future__ import annotations
 import argparse
 import json
 import sqlite3
+import sys
 from collections import defaultdict
 from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[3]
-DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from pipeline.lib.warehouse_paths import tennis_warehouse_path
+
+DB_PATH = tennis_warehouse_path()
 DEFAULT_OUTPUT = ROOT / "data-private" / "models" / "tennis-sofascore-replays.jsonl"
 
 
@@ -193,7 +199,11 @@ def export_replays(output_path: Path, start_date: str | None = None, end_date: s
             counts["games"] += len(games)
             counts["points"] += sum(len(game["points"]) for game in replay_games)
     conn.close()
-    return counts | {"output": str(output_path.relative_to(ROOT))}
+    try:
+        output_label = str(output_path.relative_to(ROOT))
+    except ValueError:
+        output_label = str(output_path)
+    return counts | {"output": output_label}
 
 
 def main() -> None:

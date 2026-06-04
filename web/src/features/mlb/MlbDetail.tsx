@@ -181,6 +181,74 @@ export function MlbDetail(props: MlbDetailProps) {
   const updateMlbHistoryWindow = (sectionKey: string, nextWindow: 5 | 10) => {
     setMlbHistoryWindowByKey((current) => ({ ...current, [sectionKey]: nextWindow }))
   }
+  const renderStatmuseMatchupPanel = (starter: AnyRecord, teamName: string) => {
+    if (!starter.statmuseLine) return null
+    const summary = starter.statmuseSummaryStats ?? {}
+    const summaryStats = [
+      summary.record ? { label: 'REC', value: summary.record } : null,
+      summary.era ? { label: 'ERA', value: summary.era } : null,
+      Number.isFinite(Number(summary.strikeouts)) ? { label: 'SO', value: String(summary.strikeouts) } : null,
+      Number.isFinite(Number(summary.appearances)) ? { label: 'APP', value: String(summary.appearances) } : null,
+      summary.inningsPitched ? { label: 'IP', value: String(summary.inningsPitched) } : null
+    ].filter(Boolean) as Array<{ label: string; value: string }>
+    const seasonMetrics = (row: AnyRecord) => [
+      { label: 'REC', value: row.record },
+      { label: 'GS', value: row.gamesStarted },
+      { label: 'ERA', value: row.era },
+      { label: 'SO', value: row.strikeouts },
+      { label: 'IP', value: row.inningsPitched },
+      { label: 'H', value: row.hitsAllowed },
+      { label: 'ER', value: row.earnedRuns },
+      { label: 'R', value: row.runsAllowed },
+      { label: 'HR', value: row.homeRunsAllowed },
+      { label: 'BB', value: row.walks },
+      { label: 'TBF', value: row.battersFaced }
+    ].filter((entry) => entry.value !== '' && entry.value !== null && entry.value !== undefined)
+
+    return (
+      <div className="statmuse-matchup-panel">
+        <div className="statmuse-matchup-head">
+          <span>
+            {starter.statmuseUrl ? (
+              <a href={starter.statmuseUrl} target="_blank" rel="noreferrer">StatMuse</a>
+            ) : (
+              'StatMuse'
+            )}
+          </span>
+          <strong>Career vs {summary.opponentTeam || 'opponent'}</strong>
+        </div>
+        {summaryStats.length ? (
+          <div className="statmuse-summary-grid">
+            {summaryStats.map((stat) => (
+              <span key={`${teamName}-statmuse-summary-${stat.label}`} className="statmuse-stat-chip">
+                <small>{stat.label}</small>
+                <strong>{stat.value}</strong>
+              </span>
+            ))}
+          </div>
+        ) : (
+          <small className="statmuse-empty-line">{starter.statmuseLine.replace(/^StatMuse\s+/, '')}</small>
+        )}
+        {(starter.statmuseSeasonRows ?? []).length ? (
+          <div className="statmuse-season-list">
+            {starter.statmuseSeasonRows.map((row: AnyRecord) => (
+              <div key={`${teamName}-statmuse-${row.year}`} className="statmuse-season-row">
+                <strong>{row.year}</strong>
+                <div>
+                  {seasonMetrics(row).map((stat) => (
+                    <span key={`${teamName}-statmuse-${row.year}-${stat.label}`} className="statmuse-season-stat">
+                      <small>{stat.label}</small>
+                      <b>{stat.value}</b>
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : null}
+      </div>
+    )
+  }
   const awayRecentHistoryKey = `${historyScopeKey}:away:recent`
   const awayMatchupHistoryKey = `${historyScopeKey}:away:matchup`
   const homeRecentHistoryKey = `${historyScopeKey}:home:recent`
@@ -579,6 +647,7 @@ export function MlbDetail(props: MlbDetailProps) {
               awayStarter.opponentStarts,
               `${awayStarter.headline.replace(/\s*\([LR?]HP\)$/, '')} has not started against ${homeTeam} this season.`
             )}
+            {renderStatmuseMatchupPanel(awayStarter, awayTeam)}
           </div>
           {awayStarter.recent ? <small>{awayStarter.recent}</small> : null}
           {awayStarter.firstInningSeasonLine ? <small>{awayStarter.firstInningSeasonLine}</small> : null}
@@ -691,6 +760,7 @@ export function MlbDetail(props: MlbDetailProps) {
               homeStarter.opponentStarts,
               `${homeStarter.headline.replace(/\s*\([LR?]HP\)$/, '')} has not started against ${awayTeam} this season.`
             )}
+            {renderStatmuseMatchupPanel(homeStarter, homeTeam)}
           </div>
           {homeStarter.recent ? <small>{homeStarter.recent}</small> : null}
           {homeStarter.firstInningSeasonLine ? <small>{homeStarter.firstInningSeasonLine}</small> : null}

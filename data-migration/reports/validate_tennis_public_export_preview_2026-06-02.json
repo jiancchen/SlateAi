@@ -8,7 +8,7 @@
   "export_game_count": 66,
   "export_prediction_count": 100,
   "game_file_count": 66,
-  "generated_at": "2026-06-02T06:46:56.600743+00:00",
+  "generated_at": "2026-06-03T23:48:58.114129+00:00",
   "manifest_id": "2f94af0b1e3c17de013db4dc0df9dcf9",
   "ok": true,
   "script": "data-migration/scripts/validate_tennis_public_export.py",

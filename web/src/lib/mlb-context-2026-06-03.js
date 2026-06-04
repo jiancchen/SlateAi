@@ -68,21 +68,21 @@ export const standingsContextByTeam = {
   "White Sox": {
     "divisionLeader": false,
     "divisionRank": "2",
-    "gamesBack": "2.5",
+    "gamesBack": "2.0",
     "losses": 29,
-    "runDifferential": 3,
-    "streakCode": "L2",
-    "winningPercentage": ".525",
-    "wins": 32
+    "runDifferential": 11,
+    "streakCode": "W1",
+    "winningPercentage": ".532",
+    "wins": 33
   },
   "Twins": {
     "divisionLeader": false,
     "divisionRank": "3",
-    "gamesBack": "6.0",
-    "losses": 33,
-    "runDifferential": -16,
-    "streakCode": "W2",
-    "winningPercentage": ".468",
+    "gamesBack": "6.5",
+    "losses": 34,
+    "runDifferential": -24,
+    "streakCode": "L1",
+    "winningPercentage": ".460",
     "wins": 29
   },
   "Tigers": {
@@ -178,22 +178,22 @@ export const standingsContextByTeam = {
   "Nationals": {
     "divisionLeader": false,
     "divisionRank": "3",
-    "gamesBack": "10.5",
-    "losses": 31,
-    "runDifferential": -7,
-    "streakCode": "L2",
-    "winningPercentage": ".500",
+    "gamesBack": "11.0",
+    "losses": 32,
+    "runDifferential": -10,
+    "streakCode": "L3",
+    "winningPercentage": ".492",
     "wins": 31
   },
   "Marlins": {
     "divisionLeader": false,
     "divisionRank": "4",
-    "gamesBack": "13.5",
+    "gamesBack": "13.0",
     "losses": 34,
-    "runDifferential": -21,
-    "streakCode": "W2",
-    "winningPercentage": ".452",
-    "wins": 28
+    "runDifferential": -18,
+    "streakCode": "W3",
+    "winningPercentage": ".460",
+    "wins": 29
   },
   "Mets": {
     "divisionLeader": false,

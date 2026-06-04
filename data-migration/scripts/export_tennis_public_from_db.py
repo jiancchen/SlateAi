@@ -433,7 +433,7 @@ def build_export(root: Path, args: argparse.Namespace) -> dict[str, Any]:
         "games": sorted(games, key=lambda game: (game.get("startMinutes") or 0, game["title"])),
         "migrationExport": {
             "contract": "data-migration/contracts/tennis_public_export_contract.md",
-            "sourceDb": str(source_db.relative_to(root)),
+            "sourceDb": path_label(source_db, root),
             "selectedModel": args.model,
             "resolvedModel": model,
         },
@@ -465,7 +465,7 @@ def insert_export_manifest(root: Path, args: argparse.Namespace, payload: dict[s
               and model_id = ?
               and output_path = ?
             """,
-            (args.date, model.get("model_id"), str(summary_path.relative_to(root))),
+            (args.date, model.get("model_id"), path_label(summary_path, root)),
         )
         con.execute(
             """
@@ -488,9 +488,9 @@ def insert_export_manifest(root: Path, args: argparse.Namespace, payload: dict[s
                 manifest_id,
                 args.date,
                 model.get("model_id"),
-                str(args.source_db.relative_to(root)),
+                path_label(args.source_db, root),
                 query_hash,
-                str(summary_path.relative_to(root)),
+                path_label(summary_path, root),
                 output_hash,
                 len(payload["games"]),
                 utc_now(),
@@ -505,6 +505,13 @@ def append_event(root: Path, event: dict[str, Any]) -> None:
     event_path = root / "data-migration" / "migration_events.jsonl"
     with event_path.open("a", encoding="utf-8") as handle:
         handle.write(compact_json(event) + "\n")
+
+
+def path_label(path: Path, root: Path) -> str:
+    try:
+        return str(path.relative_to(root))
+    except ValueError:
+        return str(path)
 
 
 def parse_args() -> argparse.Namespace:
@@ -546,9 +553,9 @@ def main() -> int:
         "dry_run": args.dry_run,
         "date": args.date,
         "model": args.model,
-        "source_db": str(args.source_db.relative_to(root)),
-        "out_dir": str(args.out_dir.relative_to(root)),
-        "summary_path": str(summary_path.relative_to(root)),
+        "source_db": path_label(args.source_db, root),
+        "out_dir": path_label(args.out_dir, root),
+        "summary_path": path_label(summary_path, root),
         "games": len(payload["games"]),
         "prediction_rows": payload["summary"]["predictionRows"],
         "value_rows": payload["summary"]["valueRows"],
@@ -572,14 +579,14 @@ def main() -> int:
                 "timestamp": utc_now(),
                 "phase": "8",
                 "area": "tennis_db_derived_public_export_preview",
-                "source": str(args.source_db.relative_to(root)),
-                "target": str(args.out_dir.relative_to(root)),
+                "source": path_label(args.source_db, root),
+                "target": path_label(args.out_dir, root),
                 "parser_module": "none",
                 "migration_script": "data-migration/scripts/export_tennis_public_from_db.py",
                 "validation": "pending tennis public export validation",
                 "status_from": "not_started",
                 "status_to": "backfilled",
-                "report_path": str(args.report.relative_to(root)),
+                "report_path": path_label(args.report, root),
                 "checksum": sha256_text(compact_json(report)),
                 "notes": "Preview export only; published-data and web mirrors unchanged.",
             },

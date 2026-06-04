@@ -5,11 +5,17 @@ import argparse
 import json
 import re
 import sqlite3
+import sys
 from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[3]
-DB_PATH = ROOT / "data-private" / "warehouse" / "sports.db"
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from pipeline.lib.warehouse_paths import tennis_warehouse_path
+
+DB_PATH = tennis_warehouse_path()
 
 
 def normalize_name(value: str | None) -> str:

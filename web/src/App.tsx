@@ -743,6 +743,108 @@ const buildPitcherSummary = (
     strikeoutProp && strikeoutProp.marketLabel
       ? `K prop lean: ${strikeoutProp.marketLabel} · ${strikeoutProp.statValueLabel || ''}`.trim()
       : ''
+  const parseStatmuseInningsToOuts = (value: unknown) => {
+    const text = String(value ?? '').trim()
+    if (!text) return 0
+    const [wholeRaw, partialRaw = '0'] = text.split('.')
+    const whole = Number(wholeRaw)
+    const partial = Number(partialRaw)
+    if (!Number.isFinite(whole)) return 0
+    return whole * 3 + (Number.isFinite(partial) ? Math.max(0, Math.min(2, partial)) : 0)
+  }
+  const formatStatmuseOutsAsInnings = (outs: number) => {
+    if (!Number.isFinite(outs) || outs <= 0) return ''
+    const whole = Math.floor(outs / 3)
+    const partial = outs % 3
+    return `${whole}.${partial}`
+  }
+  const buildStatmuseSeasonRows = (rows: AnyRecord[] = []) => {
+    const byYear = new Map<string, AnyRecord>()
+    rows.forEach((row) => {
+      const year = String(row.DATE || '').match(/\d{4}/)?.[0]
+      if (!year) return
+      const current = byYear.get(year) ?? {
+        year,
+        wins: 0,
+        losses: 0,
+        gs: 0,
+        so: 0,
+        outs: 0,
+        h: 0,
+        er: 0,
+        r: 0,
+        hr: 0,
+        bb: 0,
+        tbf: 0
+      }
+      const dec = String(row.DEC || '').toUpperCase()
+      if (dec === 'W') current.wins += 1
+      if (dec === 'L') current.losses += 1
+      current.gs += Number(row.GS || 0) || 0
+      current.so += Number(row.SO || 0) || 0
+      current.outs += parseStatmuseInningsToOuts(row.IP)
+      current.h += Number(row.H || 0) || 0
+      current.er += Number(row.ER || 0) || 0
+      current.r += Number(row.R || 0) || 0
+      current.hr += Number(row.HR || 0) || 0
+      current.bb += Number(row.BB || 0) || 0
+      current.tbf += Number(row.TBF || 0) || 0
+      byYear.set(year, current)
+    })
+    return [...byYear.values()]
+      .sort((left, right) => Number(left.year) - Number(right.year))
+      .map((row) => {
+        const innings = formatStatmuseOutsAsInnings(row.outs)
+        const era = row.outs > 0 ? (row.er * 27) / row.outs : null
+        return {
+          year: row.year,
+          record: `${row.wins}-${row.losses}`,
+          gamesStarted: row.gs,
+          era: Number.isFinite(Number(era)) ? formatNumber(era, 2) : '',
+          strikeouts: row.so,
+          inningsPitched: innings,
+          hitsAllowed: row.h,
+          earnedRuns: row.er,
+          runsAllowed: row.r,
+          homeRunsAllowed: row.hr,
+          walks: row.bb,
+          battersFaced: row.tbf
+        }
+      })
+  }
+  const statmuseVsOpponent = pitcher?.statmuseVsOpponent ?? null
+  const statmuseOpponent = statmuseVsOpponent?.opponentTeam || 'opponent'
+  const statmuseAppearanceCount = Number(statmuseVsOpponent?.appearances || 0)
+  const statmuseRecord =
+    statmuseAppearanceCount > 0 && Number.isFinite(Number(statmuseVsOpponent?.wins)) && Number.isFinite(Number(statmuseVsOpponent?.losses))
+      ? `${Number(statmuseVsOpponent.wins)}-${Number(statmuseVsOpponent.losses)}`
+      : ''
+  const statmusePieces = [
+    statmuseRecord,
+    statmuseAppearanceCount > 0 && Number.isFinite(Number(statmuseVsOpponent?.era)) ? `${formatNumber(statmuseVsOpponent.era, 2)} ERA` : '',
+    statmuseAppearanceCount > 0 && Number.isFinite(Number(statmuseVsOpponent?.strikeouts)) ? `${Number(statmuseVsOpponent.strikeouts)} SO` : '',
+    statmuseAppearanceCount > 0 ? `${statmuseAppearanceCount} app` : '',
+    statmuseAppearanceCount > 0 && statmuseVsOpponent?.inningsPitched ? `${statmuseVsOpponent.inningsPitched} IP` : ''
+  ].filter(Boolean)
+  const statmuseLine = statmuseVsOpponent
+    ? statmusePieces.length
+      ? `StatMuse career vs ${statmuseOpponent}: ${statmusePieces.join(' | ')}`
+      : statmuseVsOpponent.answerText || `No StatMuse matchup history found vs ${statmuseOpponent}.`
+    : ''
+  const statmuseSummaryStats = statmuseVsOpponent
+    ? {
+        opponentTeam: statmuseOpponent,
+        record: statmuseRecord,
+        era: statmuseAppearanceCount > 0 && Number.isFinite(Number(statmuseVsOpponent?.era)) ? formatNumber(statmuseVsOpponent.era, 2) : '',
+        strikeouts: statmuseAppearanceCount > 0 && Number.isFinite(Number(statmuseVsOpponent?.strikeouts)) ? Number(statmuseVsOpponent.strikeouts) : null,
+        appearances: statmuseAppearanceCount,
+        inningsPitched: statmuseAppearanceCount > 0 ? statmuseVsOpponent?.inningsPitched || '' : ''
+      }
+    : null
+  const statmuseSeasonRows =
+    statmuseAppearanceCount > 0 && Array.isArray(statmuseVsOpponent?.gameRows)
+      ? buildStatmuseSeasonRows(statmuseVsOpponent.gameRows)
+      : []
 
   return {
     headline: pitcherName === 'TBD starter' ? pitcherName : `${pitcherName} (${pitchHand})`,
@@ -755,6 +857,10 @@ const buildPitcherSummary = (
     warLine,
     strikeoutLine,
     strikeoutPickLine,
+    statmuseLine,
+    statmuseSummaryStats,
+    statmuseSeasonRows,
+    statmuseUrl: statmuseVsOpponent?.sourceUrl || '',
     trendStats,
     usageLabel: usageContext.workloadLabel || '',
     usageNote: usageContext.note || '',

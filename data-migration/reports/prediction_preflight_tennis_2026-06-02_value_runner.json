@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T21:05:08.118Z",
+  "generated_at": "2026-06-03T22:56:34.058Z",
   "script": "data-migration/scripts/prediction_preflight.mjs",
   "sport": "tennis",
   "source_date": "2026-06-02",
@@ -7,10 +7,20 @@
   "degraded": false,
   "db_path": "data-private/warehouse/sports/tennis/sql-tennis.db",
   "required_sources_checked": 4,
-  "passed_sources": 4,
-  "stale_sources": [],
+  "passed_sources": 0,
+  "stale_sources": [
+    "tennis_flashscore_stats",
+    "tennis_odds",
+    "tennis_player_context",
+    "tennis_rankings"
+  ],
   "warnings": [],
-  "blocking_errors": [],
+  "blocking_errors": [
+    "tennis_flashscore_stats: Stale or missing cache_valid_until: 2026-06-03 08:24:17",
+    "tennis_odds: Stale or missing cache_valid_until: 2026-06-02 21:35:24",
+    "tennis_player_context: Stale or missing cache_valid_until: 2026-06-03 08:54:08",
+    "tennis_rankings: Stale or missing cache_valid_until: 2026-06-03 20:47:11"
+  ],
   "sources": [
     {
       "source_name": "tennis_flashscore_stats",
@@ -29,10 +39,12 @@
         "unresolved_count": 0,
         "notes": "{\"adapter\":\"tennis_flashscore_raw_to_typed\",\"dry_run\":false,\"note\":\"Typed parse run for Flashscore raw archive. This does not perform network fetch.\",\"parsed_rows\":141700,\"report_path\":\"data-migration/reports/ingest_tennis_flashscore_raw_to_typed_2026-06-02_subsource_idempotency_rerun.json\",\"source_files\":610,\"unresolved_added\":0}"
       },
-      "stale": false,
-      "errors": [],
+      "stale": true,
+      "errors": [
+        "Stale or missing cache_valid_until: 2026-06-03 08:24:17"
+      ],
       "warnings": [],
-      "ok": true
+      "ok": false
     },
     {
       "source_name": "tennis_odds",
@@ -51,10 +63,12 @@
         "unresolved_count": 0,
         "notes": "{\"adapter\":\"tennis_odds_raw_to_typed\",\"dry_run\":false,\"note\":\"Typed parse run for tennis odds raw archive. This does not perform network fetch.\",\"parsed_snapshots\":180,\"report_path\":\"data-migration/reports/ingest_tennis_odds_raw_to_typed_2026-06-02_idempotency_rerun.json\",\"source_files\":2,\"unresolved_added\":0}"
       },
-      "stale": false,
-      "errors": [],
+      "stale": true,
+      "errors": [
+        "Stale or missing cache_valid_until: 2026-06-02 21:35:24"
+      ],
       "warnings": [],
-      "ok": true
+      "ok": false
     },
     {
       "source_name": "tennis_player_context",
@@ -73,10 +87,12 @@
         "unresolved_count": 0,
         "notes": "{\"adapter\":\"tennis_player_context_raw_to_typed\",\"dry_run\":false,\"note\":\"Typed parse run for tennis Flashscore player context raw archive. This does not perform network fetch.\",\"parsed_player_snapshots\":260,\"report_path\":\"data-migration/reports/ingest_tennis_player_context_raw_to_typed_2026-06-02_idempotency_rerun.json\",\"source_files\":2,\"unresolved_added\":0}"
       },
-      "stale": false,
-      "errors": [],
+      "stale": true,
+      "errors": [
+        "Stale or missing cache_valid_until: 2026-06-03 08:54:08"
+      ],
       "warnings": [],
-      "ok": true
+      "ok": false
     },
     {
       "source_name": "tennis_rankings",
@@ -95,12 +111,14 @@
         "unresolved_count": 0,
         "notes": "{\"adapter\":\"tennis_rankings_raw_to_typed\",\"dry_run\":false,\"note\":\"Typed parse run for tennis ranking raw archive. This does not perform network fetch.\",\"parsed_rankings\":300,\"report_path\":\"data-migration/reports/ingest_tennis_rankings_raw_to_typed_2026-06-02_idempotency_rerun.json\",\"source_files\":1,\"unresolved_added\":0}"
       },
-      "stale": false,
-      "errors": [],
+      "stale": true,
+      "errors": [
+        "Stale or missing cache_valid_until: 2026-06-03 20:47:11"
+      ],
       "warnings": [],
-      "ok": true
+      "ok": false
     }
   ],
-  "ok": true,
-  "publish_allowed": true
+  "ok": false,
+  "publish_allowed": false
 }

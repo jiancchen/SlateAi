@@ -13,12 +13,12 @@
     "defaultMode": "pregame"
   },
   "cartridgeRoot": "./cartridges",
-  "migrationStatus": "models_path_active",
+  "migrationStatus": "sport_db_adapter_active",
   "warehouse": {
-    "currentPath": "data-private/warehouse/sports.db",
-    "splitDeferred": true,
+    "currentPath": "data-private/warehouse/sports/tennis/sql-tennis.db",
+    "splitDeferred": false,
     "futurePaths": {
-      "tennis": "data-private/warehouse/tennis.db",
+      "tennis": "data-private/warehouse/sports/tennis/sql-tennis.db",
       "mlb": "data-private/warehouse/mlb.db",
       "shared": "data-private/warehouse/shared.db"
     }

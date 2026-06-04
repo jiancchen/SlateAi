@@ -241,6 +241,9 @@ const main = async () => {
   const frenchOpenSingles = rows
     .filter((row) => row.singles && /^french_open_/.test(row.category))
     .map((row) => toSupplementMatch(row, options.date))
+  const nonItfSingles = rows
+    .filter((row) => row.singles && row.category !== 'itf')
+    .map((row) => toSupplementMatch(row, options.date))
 
   const payload = {
     date: options.date,
@@ -254,7 +257,7 @@ const main = async () => {
     }, {}),
     events: rows
   }
-  const supplementMatches = [...frenchOpenSingles, ...atpChallenger].sort(
+  const supplementMatches = nonItfSingles.sort(
     (left, right) => left.startIso.localeCompare(right.startIso) || left.title.localeCompare(right.title)
   )
   const supplement = {
@@ -265,6 +268,7 @@ const main = async () => {
     totalEvents: rows.length,
     atpChallengerSingles: atpChallenger.length,
     frenchOpenSingles: frenchOpenSingles.length,
+    nonItfSingles: nonItfSingles.length,
     surfaceCounts: supplementMatches.reduce((counts, row) => {
       counts[row.surface || 'Unknown'] = (counts[row.surface || 'Unknown'] || 0) + 1
       return counts
@@ -286,7 +290,8 @@ const main = async () => {
         categoryCounts: payload.categoryCounts,
         supplementMatches: supplement.matches.length,
         atpChallengerSingles: supplement.atpChallengerSingles,
-        frenchOpenSingles: supplement.frenchOpenSingles
+        frenchOpenSingles: supplement.frenchOpenSingles,
+        nonItfSingles: supplement.nonItfSingles
       },
       null,
       2

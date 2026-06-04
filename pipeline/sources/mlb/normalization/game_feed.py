@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Any
 
 from .common import compact_json, stable_id, to_float, to_int, utc_now
+from .results import ensure_results_schema
 
 
 SOURCE_SCHEDULE = "mlb_schedule"
@@ -94,12 +95,64 @@ def game_id_from_pk(game_pk: Any) -> str | None:
     return f"mlb-{numeric_id}"
 
 
+def innings_to_float(value: Any) -> float | None:
+    if value is None:
+        return None
+    text = str(value).strip()
+    if not text:
+        return None
+    if "." not in text:
+        return to_float(text)
+    whole, fraction = text.split(".", 1)
+    innings = to_int(whole) or 0
+    outs = to_int(fraction[:1]) or 0
+    return innings + outs / 3
+
+
 def sql_path(path: Path, root: Path) -> str:
     return str(path.relative_to(root))
 
 
 def source_snapshot_id_for(source_name: str, local_path: str, content_hash: str) -> str:
     return f"mlb-{stable_id(source_name, local_path, content_hash, length=32)}"
+
+
+def insert_legacy_table_row(
+    con: sqlite3.Connection,
+    *,
+    source_table: str,
+    source_pk: str,
+    source_date: str | None,
+    entity_ref: str | None,
+    row_json: dict[str, Any],
+) -> None:
+    row_text = compact_json(row_json)
+    content_hash = hashlib.sha256(row_text.encode("utf-8")).hexdigest()
+    con.execute(
+        """
+        insert into legacy_table_rows (
+          legacy_row_id, sport, source_table, source_pk, source_date,
+          entity_ref, row_json, content_hash, migrated_at
+        ) values (?, 'mlb', ?, ?, ?, ?, ?, ?, ?)
+        on conflict(legacy_row_id) do update set
+          source_pk = excluded.source_pk,
+          source_date = excluded.source_date,
+          entity_ref = excluded.entity_ref,
+          row_json = excluded.row_json,
+          content_hash = excluded.content_hash,
+          migrated_at = excluded.migrated_at
+        """,
+        (
+            stable_id("legacy-row", "mlb", source_table, source_pk),
+            source_table,
+            source_pk,
+            source_date,
+            entity_ref,
+            row_text,
+            content_hash,
+            utc_now(),
+        ),
+    )
 
 
 def ensure_source_snapshot(
@@ -439,6 +492,546 @@ def result_label(runs_for: int | None, runs_against: int | None) -> str | None:
     if runs_for < runs_against:
         return "loss"
     return "push"
+
+
+def team_name_for_role(game: dict[str, Any], role: str) -> str | None:
+    return ((((game.get("teams") or {}).get(role) or {}).get("team") or {}).get("name"))
+
+
+def team_box_batting(feed: dict[str, Any], role: str) -> dict[str, Any]:
+    return (
+        (((feed.get("liveData") or {}).get("boxscore") or {}).get("teams") or {})
+        .get(role, {})
+        .get("teamStats", {})
+        .get("batting", {})
+        or {}
+    )
+
+
+def pitcher_entry_metadata(feed: dict[str, Any]) -> dict[str, dict[int, dict[str, Any]]]:
+    metadata: dict[str, dict[int, dict[str, Any]]] = {"away": {}, "home": {}}
+    counters = {"away": 0, "home": 0}
+    for play in (((feed.get("liveData") or {}).get("plays") or {}).get("allPlays") or []):
+        about = play.get("about") or {}
+        fielding_role = "home" if about.get("isTopInning") else "away"
+        pitcher_id = to_int((((play.get("matchup") or {}).get("pitcher")) or {}).get("id"))
+        if pitcher_id is None or pitcher_id in metadata[fielding_role]:
+            continue
+        counters[fielding_role] += 1
+        metadata[fielding_role][pitcher_id] = {
+            "entry_order": counters[fielding_role],
+            "first_inning": to_int(about.get("inning")),
+            "first_half": about.get("halfInning"),
+        }
+    return metadata
+
+
+def player_pitching_stats(player: dict[str, Any]) -> dict[str, Any]:
+    return ((player.get("stats") or {}).get("pitching") or {})
+
+
+def upsert_pitcher_appearances(con: sqlite3.Connection, *, game: dict[str, Any], feed: dict[str, Any], source_snapshot_id: str) -> int:
+    game_id = game_id_from_pk(game.get("gamePk"))
+    if not game_id:
+        return 0
+    game_date = str(game.get("officialDate") or "")[:10] or None
+    away_name = team_name_for_role(game, "away")
+    home_name = team_name_for_role(game, "home")
+    team_names = {"away": away_name, "home": home_name}
+    opponent_names = {"away": home_name, "home": away_name}
+    team_ids = {"away": team_id_from_name(away_name), "home": team_id_from_name(home_name)}
+    opponent_ids = {"away": team_id_from_name(home_name), "home": team_id_from_name(away_name)}
+    entry_by_role = pitcher_entry_metadata(feed)
+    boxscore_teams = (((feed.get("liveData") or {}).get("boxscore") or {}).get("teams") or {})
+    count = 0
+
+    for role in ("away", "home"):
+        if not team_ids[role]:
+            continue
+        players = ((boxscore_teams.get(role) or {}).get("players") or {}).values()
+        for player in players:
+            person = player.get("person") or {}
+            pitching = player_pitching_stats(player)
+            innings_pitched = innings_to_float(pitching.get("inningsPitched"))
+            outs_recorded = to_int(pitching.get("outs"))
+            batters_faced = to_int(pitching.get("battersFaced"))
+            pitches_thrown = to_int(pitching.get("pitchesThrown") or pitching.get("numberOfPitches"))
+            if not any(value not in (None, 0, 0.0) for value in (innings_pitched, outs_recorded, batters_faced, pitches_thrown)):
+                continue
+            pitcher_id = upsert_player(con, person)
+            mlb_pitcher_id = to_int(person.get("id"))
+            if not pitcher_id or mlb_pitcher_id is None:
+                continue
+            entry = entry_by_role[role].get(mlb_pitcher_id, {})
+            pitcher_role = "starter" if pitching.get("gamesStarted") == 1 or entry.get("entry_order") == 1 else "reliever"
+            source_pk = compact_json({"game_pk": game.get("gamePk"), "team_role": role, "pitcher_id": mlb_pitcher_id})
+            appearance_id = stable_id("pitcher-appearance", game_id, role, pitcher_id, source_snapshot_id)
+            detail = {
+                "source_snapshot_id": source_snapshot_id,
+                "team_name": team_names[role],
+                "opponent_name": opponent_names[role],
+                "player": player,
+            }
+            con.execute(
+                """
+                insert into pitcher_appearances (
+                  pitcher_appearance_id, game_id, team_id, opponent_team_id, pitcher_id,
+                  game_date, team_role, pitcher_role, is_starting_pitcher, innings_pitched,
+                  outs_recorded, batters_faced, pitches_thrown, strikes_thrown,
+                  runs_allowed, earned_runs, hits_allowed, home_runs_allowed,
+                  walks_allowed, strikeouts, pitch_hand, source_table, source_pk,
+                  source_detail_json, created_at, entry_order, first_inning, first_half
+                ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                on conflict(pitcher_appearance_id) do update set
+                  game_id = excluded.game_id,
+                  team_id = excluded.team_id,
+                  opponent_team_id = excluded.opponent_team_id,
+                  pitcher_id = excluded.pitcher_id,
+                  game_date = excluded.game_date,
+                  team_role = excluded.team_role,
+                  pitcher_role = excluded.pitcher_role,
+                  is_starting_pitcher = excluded.is_starting_pitcher,
+                  innings_pitched = excluded.innings_pitched,
+                  outs_recorded = excluded.outs_recorded,
+                  batters_faced = excluded.batters_faced,
+                  pitches_thrown = excluded.pitches_thrown,
+                  strikes_thrown = excluded.strikes_thrown,
+                  runs_allowed = excluded.runs_allowed,
+                  earned_runs = excluded.earned_runs,
+                  hits_allowed = excluded.hits_allowed,
+                  home_runs_allowed = excluded.home_runs_allowed,
+                  walks_allowed = excluded.walks_allowed,
+                  strikeouts = excluded.strikeouts,
+                  pitch_hand = excluded.pitch_hand,
+                  source_table = excluded.source_table,
+                  source_pk = excluded.source_pk,
+                  source_detail_json = excluded.source_detail_json,
+                  created_at = excluded.created_at,
+                  entry_order = excluded.entry_order,
+                  first_inning = excluded.first_inning,
+                  first_half = excluded.first_half
+                """,
+                (
+                    appearance_id,
+                    game_id,
+                    team_ids[role],
+                    opponent_ids[role],
+                    pitcher_id,
+                    game_date,
+                    role,
+                    pitcher_role,
+                    1 if pitcher_role == "starter" else 0,
+                    innings_pitched,
+                    outs_recorded,
+                    batters_faced,
+                    pitches_thrown,
+                    to_int(pitching.get("strikes")),
+                    to_int(pitching.get("runs")),
+                    to_int(pitching.get("earnedRuns")),
+                    to_int(pitching.get("hits")),
+                    to_int(pitching.get("homeRuns")),
+                    to_int(pitching.get("baseOnBalls")),
+                    to_int(pitching.get("strikeOuts")),
+                    ((person.get("pitchHand") or {}).get("code")),
+                    SOURCE_GAME_FEED,
+                    source_pk,
+                    compact_json(detail),
+                    utc_now(),
+                    to_int(entry.get("entry_order")),
+                    to_int(entry.get("first_inning")),
+                    entry.get("first_half"),
+                ),
+            )
+            insert_legacy_table_row(
+                con,
+                source_table="mlb_pitcher_appearances",
+                source_pk=source_pk,
+                source_date=game_date,
+                entity_ref=str(mlb_pitcher_id),
+                row_json={
+                    "game_pk": game.get("gamePk"),
+                    "game_date": game_date,
+                    "team_role": role,
+                    "team_name": team_names[role],
+                    "opponent_name": opponent_names[role],
+                    "pitcher_id": mlb_pitcher_id,
+                    "pitcher_name": person.get("fullName") or "",
+                    "pitcher_role": pitcher_role,
+                    "entry_order": to_int(entry.get("entry_order")),
+                    "first_inning": to_int(entry.get("first_inning")),
+                    "first_half": entry.get("first_half"),
+                    "innings_pitched": innings_pitched,
+                    "outs_recorded": outs_recorded,
+                    "runs_allowed": to_int(pitching.get("runs")),
+                    "earned_runs": to_int(pitching.get("earnedRuns")),
+                    "hits_allowed": to_int(pitching.get("hits")),
+                    "home_runs_allowed": to_int(pitching.get("homeRuns")),
+                    "walks_allowed": to_int(pitching.get("baseOnBalls")),
+                    "strikeouts": to_int(pitching.get("strikeOuts")),
+                    "pitches_thrown": pitches_thrown,
+                    "strikes_thrown": to_int(pitching.get("strikes")),
+                    "batters_faced": batters_faced,
+                    "raw_json": compact_json(player),
+                },
+            )
+            count += 1
+    return count
+
+
+def phase_label_for(
+    *,
+    result: str,
+    led_after5: int,
+    trailed_after5: int,
+    starter_survived5: int,
+    starter_cracked: int,
+    scoreless_first3: int,
+) -> str:
+    if led_after5 and result == "loss":
+        return "blew_lead_after5"
+    if trailed_after5 and result == "win":
+        return "late_comeback"
+    if starter_cracked and result == "loss":
+        return "starter_crack_loss"
+    if scoreless_first3 and result == "loss":
+        return "dead_early_loss"
+    if led_after5 and result == "win":
+        return "jumped_early_hold"
+    if starter_survived5 and result == "win":
+        return "starter_carried"
+    if result == "win":
+        return "late_push"
+    return "balanced_path"
+
+
+def upsert_phase_outcomes(con: sqlite3.Connection, *, game: dict[str, Any], feed: dict[str, Any], source_snapshot_id: str) -> int:
+    status = game_status(game, feed)
+    if not is_final_status(status):
+        return 0
+    game_id = game_id_from_pk(game.get("gamePk"))
+    game_date = str(game.get("officialDate") or "")[:10] or None
+    if not game_id or not game_date:
+        return 0
+    away_name = team_name_for_role(game, "away")
+    home_name = team_name_for_role(game, "home")
+    team_ids = {"away": team_id_from_name(away_name), "home": team_id_from_name(home_name)}
+    opponent_ids = {"away": team_id_from_name(home_name), "home": team_id_from_name(away_name)}
+    team_names = {"away": away_name, "home": home_name}
+    opponent_names = {"away": home_name, "home": away_name}
+    totals = {"away": inning_totals(feed, "away"), "home": inning_totals(feed, "home")}
+    first1 = {"away": inning_totals(feed, "away", max_inning=1), "home": inning_totals(feed, "home", max_inning=1)}
+    first3 = {"away": inning_totals(feed, "away", max_inning=3), "home": inning_totals(feed, "home", max_inning=3)}
+    first5 = {"away": inning_totals(feed, "away", max_inning=5), "home": inning_totals(feed, "home", max_inning=5)}
+    count = 0
+    for role in ("away", "home"):
+        opponent_role = "home" if role == "away" else "away"
+        team_id = team_ids[role]
+        if not team_id:
+            continue
+        result = "win" if totals[role]["runs"] > totals[opponent_role]["runs"] else "loss" if totals[role]["runs"] < totals[opponent_role]["runs"] else "push"
+        runs_first5 = first5[role]["runs"]
+        runs_late = totals[role]["runs"] - runs_first5
+        hits_first5 = first5[role]["hits"]
+        hits_late = totals[role]["hits"] - hits_first5
+        led_after3 = 1 if first3[role]["runs"] > first3[opponent_role]["runs"] else 0
+        tied_after3 = 1 if first3[role]["runs"] == first3[opponent_role]["runs"] else 0
+        trailed_after3 = 1 if first3[role]["runs"] < first3[opponent_role]["runs"] else 0
+        led_after5 = 1 if first5[role]["runs"] > first5[opponent_role]["runs"] else 0
+        tied_after5 = 1 if first5[role]["runs"] == first5[opponent_role]["runs"] else 0
+        trailed_after5 = 1 if first5[role]["runs"] < first5[opponent_role]["runs"] else 0
+        won_full_game = 1 if result == "win" else 0
+        won_first5 = led_after5
+        first5_push = tied_after5
+        starter_row = con.execute(
+            """
+            select outs_recorded, runs_allowed
+            from pitcher_appearances
+            where game_id = ? and team_id = ? and pitcher_role = 'starter'
+            order by outs_recorded desc
+            limit 1
+            """,
+            (game_id, team_id),
+        ).fetchone()
+        starter_outs = to_int(starter_row["outs_recorded"]) if starter_row else 0
+        starter_runs = to_int(starter_row["runs_allowed"]) if starter_row else 0
+        starter_survived5 = 1 if (starter_outs or 0) >= 15 else 0
+        starter_cracked = 1 if (starter_runs or 0) >= 4 or ((starter_outs or 0) < 12 and result == "loss") else 0
+        scoreless_first3 = 1 if first3[role]["runs"] == 0 else 0
+        traffic_no_conversion = 1 if totals[role]["runs"] <= 2 and ((totals[role]["hits"] or 0) >= 7) else 0
+        blew_lead_after5 = 1 if led_after5 and result == "loss" else 0
+        bullpen_flip = 1 if (won_first5 and result == "loss") or (trailed_after5 and result == "win") else 0
+        phase_path_label = phase_label_for(
+            result=result,
+            led_after5=led_after5,
+            trailed_after5=trailed_after5,
+            starter_survived5=starter_survived5,
+            starter_cracked=starter_cracked,
+            scoreless_first3=scoreless_first3,
+        )
+        flags = {
+            "scoredFirstInning": bool(first1[role]["runs"]),
+            "allowedFirstInning": bool(first1[opponent_role]["runs"]),
+            "scorelessFirst3": bool(scoreless_first3),
+            "starterSurvived5": bool(starter_survived5),
+            "starterCracked": bool(starter_cracked),
+            "blewLeadAfter5": bool(blew_lead_after5),
+            "bullpenFlipGame": bool(bullpen_flip),
+            "trafficNoConversion": bool(traffic_no_conversion),
+        }
+        source_pk = compact_json({"game_pk": game.get("gamePk"), "team_role": role})
+        phase_row = {
+            "game_pk": game.get("gamePk"),
+            "game_date": game_date,
+            "team_role": role,
+            "team_name": team_names[role],
+            "opponent_team": opponent_names[role],
+            "result": result,
+            "runs_first1": first1[role]["runs"],
+            "runs_first3": first3[role]["runs"],
+            "runs_first5": runs_first5,
+            "runs_late": runs_late,
+            "hits_first5": hits_first5,
+            "hits_late": hits_late,
+            "scored_first_inning_flag": 1 if first1[role]["runs"] else 0,
+            "allowed_first_inning_flag": 1 if first1[opponent_role]["runs"] else 0,
+            "scoreless_first3_flag": scoreless_first3,
+            "starter_cracked_flag": starter_cracked,
+            "starter_survived5_flag": starter_survived5,
+            "led_after3_flag": led_after3,
+            "tied_after3_flag": tied_after3,
+            "trailed_after3_flag": trailed_after3,
+            "led_after5_flag": led_after5,
+            "tied_after5_flag": tied_after5,
+            "trailed_after5_flag": trailed_after5,
+            "won_first5_flag": won_first5,
+            "first5_push_flag": first5_push,
+            "won_full_game_flag": won_full_game,
+            "comeback_win_flag": 1 if (trailed_after3 or trailed_after5) and won_full_game else 0,
+            "blew_lead_after5_flag": blew_lead_after5,
+            "bullpen_flip_game_flag": bullpen_flip,
+            "traffic_no_conversion_flag": traffic_no_conversion,
+            "phase_path_label": phase_path_label,
+            "phase_flags_json": compact_json(flags),
+        }
+        con.execute(
+            """
+            insert into phase_outcomes (
+              phase_outcome_id, game_id, team_id, opponent_team_id, game_date,
+              team_role, result, runs_first1, runs_first3, runs_first5,
+              runs_late, hits_first5, hits_late, scored_first_inning_flag,
+              allowed_first_inning_flag, scoreless_first3_flag, starter_cracked_flag,
+              starter_survived5_flag, led_after3_flag, tied_after3_flag,
+              trailed_after3_flag, led_after5_flag, tied_after5_flag,
+              trailed_after5_flag, won_first5_flag, first5_push_flag,
+              won_full_game_flag, comeback_win_flag, blew_lead_after5_flag,
+              bullpen_flip_game_flag, traffic_no_conversion_flag, phase_path_label,
+              phase_flags_json, source_table, source_pk, source_detail_json, created_at
+            ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            on conflict(phase_outcome_id) do update set
+              result = excluded.result,
+              runs_first1 = excluded.runs_first1,
+              runs_first3 = excluded.runs_first3,
+              runs_first5 = excluded.runs_first5,
+              runs_late = excluded.runs_late,
+              hits_first5 = excluded.hits_first5,
+              hits_late = excluded.hits_late,
+              scored_first_inning_flag = excluded.scored_first_inning_flag,
+              allowed_first_inning_flag = excluded.allowed_first_inning_flag,
+              scoreless_first3_flag = excluded.scoreless_first3_flag,
+              starter_cracked_flag = excluded.starter_cracked_flag,
+              starter_survived5_flag = excluded.starter_survived5_flag,
+              led_after3_flag = excluded.led_after3_flag,
+              tied_after3_flag = excluded.tied_after3_flag,
+              trailed_after3_flag = excluded.trailed_after3_flag,
+              led_after5_flag = excluded.led_after5_flag,
+              tied_after5_flag = excluded.tied_after5_flag,
+              trailed_after5_flag = excluded.trailed_after5_flag,
+              won_first5_flag = excluded.won_first5_flag,
+              first5_push_flag = excluded.first5_push_flag,
+              won_full_game_flag = excluded.won_full_game_flag,
+              comeback_win_flag = excluded.comeback_win_flag,
+              blew_lead_after5_flag = excluded.blew_lead_after5_flag,
+              bullpen_flip_game_flag = excluded.bullpen_flip_game_flag,
+              traffic_no_conversion_flag = excluded.traffic_no_conversion_flag,
+              phase_path_label = excluded.phase_path_label,
+              phase_flags_json = excluded.phase_flags_json,
+              source_table = excluded.source_table,
+              source_pk = excluded.source_pk,
+              source_detail_json = excluded.source_detail_json,
+              created_at = excluded.created_at
+            """,
+            (
+                stable_id("phase-outcome", game_id, team_id, source_pk),
+                game_id,
+                team_id,
+                opponent_ids[role],
+                game_date,
+                role,
+                result,
+                phase_row["runs_first1"],
+                phase_row["runs_first3"],
+                phase_row["runs_first5"],
+                phase_row["runs_late"],
+                phase_row["hits_first5"],
+                phase_row["hits_late"],
+                phase_row["scored_first_inning_flag"],
+                phase_row["allowed_first_inning_flag"],
+                phase_row["scoreless_first3_flag"],
+                phase_row["starter_cracked_flag"],
+                phase_row["starter_survived5_flag"],
+                phase_row["led_after3_flag"],
+                phase_row["tied_after3_flag"],
+                phase_row["trailed_after3_flag"],
+                phase_row["led_after5_flag"],
+                phase_row["tied_after5_flag"],
+                phase_row["trailed_after5_flag"],
+                phase_row["won_first5_flag"],
+                phase_row["first5_push_flag"],
+                phase_row["won_full_game_flag"],
+                phase_row["comeback_win_flag"],
+                phase_row["blew_lead_after5_flag"],
+                phase_row["bullpen_flip_game_flag"],
+                phase_row["traffic_no_conversion_flag"],
+                phase_path_label,
+                phase_row["phase_flags_json"],
+                SOURCE_GAME_FEED,
+                source_pk,
+                compact_json({"source_snapshot_id": source_snapshot_id, **phase_row}),
+                utc_now(),
+            ),
+        )
+        insert_legacy_table_row(
+            con,
+            source_table="mlb_phase_outcomes_daily",
+            source_pk=source_pk,
+            source_date=game_date,
+            entity_ref=team_names[role],
+            row_json=phase_row,
+        )
+        count += 1
+    return count
+
+
+def upsert_team_game_stats(con: sqlite3.Connection, *, game: dict[str, Any], feed: dict[str, Any], source_snapshot_id: str) -> int:
+    status = game_status(game, feed)
+    if not is_final_status(status):
+        return 0
+    game_id = game_id_from_pk(game.get("gamePk"))
+    if not game_id:
+        return 0
+    away_name = team_name_for_role(game, "away")
+    home_name = team_name_for_role(game, "home")
+    away_team_id = team_id_from_name(away_name)
+    home_team_id = team_id_from_name(home_name)
+    if not away_team_id or not home_team_id:
+        return 0
+
+    totals = {
+        "away": inning_totals(feed, "away"),
+        "home": inning_totals(feed, "home"),
+    }
+    f5_totals = {
+        "away": inning_totals(feed, "away", max_inning=5),
+        "home": inning_totals(feed, "home", max_inning=5),
+    }
+    team_ids = {"away": away_team_id, "home": home_team_id}
+    opponent_ids = {"away": home_team_id, "home": away_team_id}
+    team_names = {"away": away_name, "home": home_name}
+    inserted = 0
+    for role in ("away", "home"):
+        opponent_role = "home" if role == "away" else "away"
+        batting = team_box_batting(feed, role)
+        opponent_batting = team_box_batting(feed, opponent_role)
+        source_pk = compact_json({"game_pk": game.get("gamePk"), "team_role": role})
+        detail = {
+            "source_snapshot_id": source_snapshot_id,
+            "status": status,
+            "team_name": team_names[role],
+            "opponent_team_name": team_names[opponent_role],
+            "team_stats_batting": batting,
+        }
+        con.execute(
+            """
+            insert into team_game_stats (
+              team_game_stat_id, game_id, team_id, opponent_team_id, game_date, team_role,
+              result, first5_result, runs_scored, runs_allowed, runs_scored_first5,
+              runs_allowed_first5, bullpen_runs_scored, bullpen_runs_allowed, hits,
+              hits_first5, hits_allowed, hits_allowed_first5, home_runs, home_runs_first5,
+              home_runs_allowed, home_runs_allowed_first5, at_bats, at_bats_first5,
+              plate_appearances, plate_appearances_first5, walks, walks_allowed,
+              strikeouts, strikeouts_recorded, total_bases, left_on_base, source_table,
+              source_pk, source_detail_json, created_at
+            ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, null, null, ?, ?, ?, ?, ?, ?, ?, ?, ?, null, ?, null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            on conflict(team_game_stat_id) do update set
+              game_id = excluded.game_id,
+              team_id = excluded.team_id,
+              opponent_team_id = excluded.opponent_team_id,
+              game_date = excluded.game_date,
+              team_role = excluded.team_role,
+              result = excluded.result,
+              first5_result = excluded.first5_result,
+              runs_scored = excluded.runs_scored,
+              runs_allowed = excluded.runs_allowed,
+              runs_scored_first5 = excluded.runs_scored_first5,
+              runs_allowed_first5 = excluded.runs_allowed_first5,
+              hits = excluded.hits,
+              hits_first5 = excluded.hits_first5,
+              hits_allowed = excluded.hits_allowed,
+              hits_allowed_first5 = excluded.hits_allowed_first5,
+              home_runs = excluded.home_runs,
+              home_runs_first5 = excluded.home_runs_first5,
+              home_runs_allowed = excluded.home_runs_allowed,
+              home_runs_allowed_first5 = excluded.home_runs_allowed_first5,
+              at_bats = excluded.at_bats,
+              plate_appearances = excluded.plate_appearances,
+              walks = excluded.walks,
+              walks_allowed = excluded.walks_allowed,
+              strikeouts = excluded.strikeouts,
+              strikeouts_recorded = excluded.strikeouts_recorded,
+              total_bases = excluded.total_bases,
+              left_on_base = excluded.left_on_base,
+              source_table = excluded.source_table,
+              source_pk = excluded.source_pk,
+              source_detail_json = excluded.source_detail_json,
+              created_at = excluded.created_at
+            """,
+            (
+                stable_id("team-game-stats", game_id, team_ids[role], source_snapshot_id),
+                game_id,
+                team_ids[role],
+                opponent_ids[role],
+                str(game.get("officialDate") or "")[:10] or None,
+                role,
+                result_label(totals[role]["runs"], totals[opponent_role]["runs"]),
+                result_label(f5_totals[role]["runs"], f5_totals[opponent_role]["runs"]),
+                totals[role]["runs"],
+                totals[opponent_role]["runs"],
+                f5_totals[role]["runs"],
+                f5_totals[opponent_role]["runs"],
+                to_int(batting.get("hits")) or totals[role]["hits"],
+                f5_totals[role]["hits"],
+                to_int(opponent_batting.get("hits")) or totals[opponent_role]["hits"],
+                f5_totals[opponent_role]["hits"],
+                to_int(batting.get("homeRuns")) or totals[role]["home_runs"],
+                f5_totals[role]["home_runs"],
+                to_int(opponent_batting.get("homeRuns")) or totals[opponent_role]["home_runs"],
+                f5_totals[opponent_role]["home_runs"],
+                to_int(batting.get("atBats")),
+                to_int(batting.get("plateAppearances")),
+                to_int(batting.get("baseOnBalls")),
+                to_int(opponent_batting.get("baseOnBalls")),
+                to_int(batting.get("strikeOuts")),
+                to_int(opponent_batting.get("strikeOuts")),
+                to_int(batting.get("totalBases")),
+                to_int(batting.get("leftOnBase")),
+                SOURCE_GAME_FEED,
+                source_pk,
+                compact_json(detail),
+                utc_now(),
+            ),
+        )
+        inserted += 1
+    return inserted
 
 
 def upsert_game_outcome(con: sqlite3.Connection, *, game: dict[str, Any], feed: dict[str, Any], source_snapshot_id: str) -> int:
@@ -831,15 +1424,19 @@ def upsert_schedule(con: sqlite3.Connection, *, raw_day: RawMlbDay, repo_root: P
 
 
 def upsert_game_feeds(con: sqlite3.Connection, *, raw_day: RawMlbDay, repo_root: Path) -> dict[str, int]:
+    ensure_results_schema(con)
     schedule_by_pk = schedule_games_by_pk(raw_day)
     counts = {
         "source_files": 0,
         "games": 0,
         "players": 0,
         "starting_pitchers": 0,
+        "pitcher_appearances": 0,
         "plate_appearances": 0,
         "pitch_events": 0,
         "game_outcomes": 0,
+        "team_game_stats": 0,
+        "phase_outcomes": 0,
         "missing_schedule_games": 0,
     }
     for feed_path in raw_day.feed_files:
@@ -866,9 +1463,14 @@ def upsert_game_feeds(con: sqlite3.Connection, *, raw_day: RawMlbDay, repo_root:
             counts["games"] += 1
         counts["players"] += upsert_players_from_feed(con, feed)
         counts["starting_pitchers"] += upsert_starting_pitchers(con, game=game, feed=feed, source_name=SOURCE_GAME_FEED)
+        counts["pitcher_appearances"] += upsert_pitcher_appearances(
+            con, game=game, feed=feed, source_snapshot_id=source_snapshot_id
+        )
         counts["plate_appearances"] += upsert_plate_appearances(con, game=game, feed=feed, source_snapshot_id=source_snapshot_id)
         counts["pitch_events"] += upsert_pitch_events(con, game=game, feed=feed, source_snapshot_id=source_snapshot_id)
         counts["game_outcomes"] += upsert_game_outcome(con, game=game, feed=feed, source_snapshot_id=source_snapshot_id)
+        counts["team_game_stats"] += upsert_team_game_stats(con, game=game, feed=feed, source_snapshot_id=source_snapshot_id)
+        counts["phase_outcomes"] += upsert_phase_outcomes(con, game=game, feed=feed, source_snapshot_id=source_snapshot_id)
     return counts
 
 

@@ -1,0 +1,1558 @@
+{
+  "date": "2026-06-04",
+  "source": "Robinhood public prediction-markets tennis page",
+  "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+  "capturedAt": "2026-06-03T23:59:02.998Z",
+  "totalEvents": 186,
+  "atpChallengerSingles": 18,
+  "frenchOpenSingles": 2,
+  "nonItfSingles": 23,
+  "surfaceCounts": {
+    "Hard": 4,
+    "Clay": 8,
+    "Grass": 11
+  },
+  "matches": [
+    {
+      "id": "rh-atp-challenger-centurion-2-beckley-vs-duran-2026-06-04",
+      "eventId": "ca93979e-616b-470d-8aad-b23bf7056db4",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Alec Beckley vs Tuncay Duran",
+      "tournament": "ATP Challenger Centurion 2",
+      "category": "atp_challenger_singles",
+      "round": "Round Of 16",
+      "surface": "Hard",
+      "surfaceSource": "ATP Challenger Centurion surface",
+      "startIso": "2026-06-04T08:00:00Z",
+      "eventDay": "June 4, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Alec Beckley",
+          "shortName": "A. Beckley",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04BECDUR-BEC",
+          "yesBid": 0.47,
+          "yesAsk": 0.49,
+          "lastTradePrice": 0,
+          "yesBidCents": 47,
+          "yesAskCents": 49,
+          "lastTradeCents": 0,
+          "openInterest": 0,
+          "volume": 0
+        },
+        {
+          "name": "Tuncay Duran",
+          "shortName": "T. Duran",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04BECDUR-DUR",
+          "yesBid": 0.51,
+          "yesAsk": 0.52,
+          "lastTradePrice": 0.52,
+          "yesBidCents": 51,
+          "yesAskCents": 52,
+          "lastTradeCents": 52,
+          "openInterest": 56,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "ca93979e-616b-470d-8aad-b23bf7056db4",
+        "totalOpenInterest": 56,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Alec Beckley",
+            "probabilityPct": 49,
+            "bidPct": 47,
+            "lastTradePct": 0,
+            "amount": 0,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04BECDUR-BEC"
+          },
+          {
+            "name": "Tuncay Duran",
+            "probabilityPct": 52,
+            "bidPct": 51,
+            "lastTradePct": 52,
+            "amount": 56,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04BECDUR-DUR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rh-atp-challenger-centurion-2-donski-vs-winter-2026-06-04",
+      "eventId": "fb70ec79-e215-4f30-be3e-e417773474c0",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Edward Winter vs Alexander Donski",
+      "tournament": "ATP Challenger Centurion 2",
+      "category": "atp_challenger_singles",
+      "round": "Round Of 16",
+      "surface": "Hard",
+      "surfaceSource": "ATP Challenger Centurion surface",
+      "startIso": "2026-06-04T08:00:00Z",
+      "eventDay": "June 4, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Edward Winter",
+          "shortName": "E. Winter",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04DONWIN-WIN",
+          "yesBid": 0.72,
+          "yesAsk": 0.73,
+          "lastTradePrice": 0.74,
+          "yesBidCents": 72,
+          "yesAskCents": 73,
+          "lastTradeCents": 74,
+          "openInterest": 25,
+          "volume": 0
+        },
+        {
+          "name": "Alexander Donski",
+          "shortName": "A. Donski",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04DONWIN-DON",
+          "yesBid": 0.28,
+          "yesAsk": 0.29,
+          "lastTradePrice": 0.29,
+          "yesBidCents": 28,
+          "yesAskCents": 29,
+          "lastTradeCents": 29,
+          "openInterest": 3,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "fb70ec79-e215-4f30-be3e-e417773474c0",
+        "totalOpenInterest": 28,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Edward Winter",
+            "probabilityPct": 73,
+            "bidPct": 72,
+            "lastTradePct": 74,
+            "amount": 25,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04DONWIN-WIN"
+          },
+          {
+            "name": "Alexander Donski",
+            "probabilityPct": 29,
+            "bidPct": 28,
+            "lastTradePct": 29,
+            "amount": 3,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04DONWIN-DON"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rh-atp-challenger-prostejov-sachko-vs-kopriva-2026-06-04",
+      "eventId": "bda09e48-33a0-463f-a3ac-0ecc1a1c14a1",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Vitaliy Sachko vs Vit Kopriva",
+      "tournament": "ATP Challenger Prostejov",
+      "category": "atp_challenger_singles",
+      "round": "Round Of 16",
+      "surface": "Clay",
+      "surfaceSource": "ATP Challenger Prostejov surface",
+      "startIso": "2026-06-04T09:00:00Z",
+      "eventDay": "June 4, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Vitaliy Sachko",
+          "shortName": "V. Sachko",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04SACKOP-SAC",
+          "yesBid": 0.22,
+          "yesAsk": 0.23,
+          "lastTradePrice": 0.23,
+          "yesBidCents": 22,
+          "yesAskCents": 23,
+          "lastTradeCents": 23,
+          "openInterest": 4,
+          "volume": 0
+        },
+        {
+          "name": "Vit Kopriva",
+          "shortName": "V. Kopriva",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04SACKOP-KOP",
+          "yesBid": 0.77,
+          "yesAsk": 0.78,
+          "lastTradePrice": 0.78,
+          "yesBidCents": 77,
+          "yesAskCents": 78,
+          "lastTradeCents": 78,
+          "openInterest": 56,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "bda09e48-33a0-463f-a3ac-0ecc1a1c14a1",
+        "totalOpenInterest": 60,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Vitaliy Sachko",
+            "probabilityPct": 23,
+            "bidPct": 22,
+            "lastTradePct": 23,
+            "amount": 4,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04SACKOP-SAC"
+          },
+          {
+            "name": "Vit Kopriva",
+            "probabilityPct": 78,
+            "bidPct": 77,
+            "lastTradePct": 78,
+            "amount": 56,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04SACKOP-KOP"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rh-atp-challenger-centurion-2-bertrand-vs-hussey-2026-06-04",
+      "eventId": "368d7bc3-bc0c-4472-9dd7-2a6428d5dbe6",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Giles Hussey vs Robin Bertrand",
+      "tournament": "ATP Challenger Centurion 2",
+      "category": "atp_challenger_singles",
+      "round": "Round Of 16",
+      "surface": "Hard",
+      "surfaceSource": "ATP Challenger Centurion surface",
+      "startIso": "2026-06-04T09:10:00Z",
+      "eventDay": "June 4, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Giles Hussey",
+          "shortName": "G. Hussey",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04BERHUS-HUS",
+          "yesBid": 0.6,
+          "yesAsk": 0.61,
+          "lastTradePrice": 0,
+          "yesBidCents": 60,
+          "yesAskCents": 61,
+          "lastTradeCents": 0,
+          "openInterest": 0,
+          "volume": 0
+        },
+        {
+          "name": "Robin Bertrand",
+          "shortName": "R. Bertrand",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04BERHUS-BER",
+          "yesBid": 0.39,
+          "yesAsk": 0.4,
+          "lastTradePrice": 0.4,
+          "yesBidCents": 39,
+          "yesAskCents": 40,
+          "lastTradeCents": 40,
+          "openInterest": 81,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "368d7bc3-bc0c-4472-9dd7-2a6428d5dbe6",
+        "totalOpenInterest": 81,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Giles Hussey",
+            "probabilityPct": 61,
+            "bidPct": 60,
+            "lastTradePct": 0,
+            "amount": 0,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04BERHUS-HUS"
+          },
+          {
+            "name": "Robin Bertrand",
+            "probabilityPct": 40,
+            "bidPct": 39,
+            "lastTradePct": 40,
+            "amount": 81,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04BERHUS-BER"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rh-atp-challenger-centurion-2-strombachs-vs-henning-2026-06-04",
+      "eventId": "61216d1f-19d3-4897-843e-51cdeab44724",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Philip Henning vs Robert Strombachs",
+      "tournament": "ATP Challenger Centurion 2",
+      "category": "atp_challenger_singles",
+      "round": "Round Of 16",
+      "surface": "Hard",
+      "surfaceSource": "ATP Challenger Centurion surface",
+      "startIso": "2026-06-04T09:10:00Z",
+      "eventDay": "June 4, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Philip Henning",
+          "shortName": "P. Henning",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04STRHEN-HEN",
+          "yesBid": 0.73,
+          "yesAsk": 0.75,
+          "lastTradePrice": 0,
+          "yesBidCents": 73,
+          "yesAskCents": 75,
+          "lastTradeCents": 0,
+          "openInterest": 0,
+          "volume": 0
+        },
+        {
+          "name": "Robert Strombachs",
+          "shortName": "R. Strombachs",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04STRHEN-STR",
+          "yesBid": 0.26,
+          "yesAsk": 0.27,
+          "lastTradePrice": 0,
+          "yesBidCents": 26,
+          "yesAskCents": 27,
+          "lastTradeCents": 0,
+          "openInterest": 0,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "61216d1f-19d3-4897-843e-51cdeab44724",
+        "totalOpenInterest": 0,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Philip Henning",
+            "probabilityPct": 75,
+            "bidPct": 73,
+            "lastTradePct": 0,
+            "amount": 0,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04STRHEN-HEN"
+          },
+          {
+            "name": "Robert Strombachs",
+            "probabilityPct": 27,
+            "bidPct": 26,
+            "lastTradePct": 0,
+            "amount": 0,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04STRHEN-STR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rh-atp-challenger-birmingham-wong-vs-romano-2026-06-04",
+      "eventId": "0578c40c-1506-4613-b51e-2c56b8823062",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Coleman Wong vs Filippo Romano",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "atp_challenger_singles",
+      "round": "Round Of 16",
+      "surface": "Grass",
+      "surfaceSource": "Grass tournament surface",
+      "startIso": "2026-06-04T09:30:00Z",
+      "eventDay": "June 4, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Coleman Wong",
+          "shortName": "C. Wong",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04WONROM-WON",
+          "yesBid": 0.78,
+          "yesAsk": 0.79,
+          "lastTradePrice": 0,
+          "yesBidCents": 78,
+          "yesAskCents": 79,
+          "lastTradeCents": 0,
+          "openInterest": 0,
+          "volume": 0
+        },
+        {
+          "name": "Filippo Romano",
+          "shortName": "F. Romano",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04WONROM-ROM",
+          "yesBid": 0.21,
+          "yesAsk": 0.22,
+          "lastTradePrice": 0.22,
+          "yesBidCents": 21,
+          "yesAskCents": 22,
+          "lastTradeCents": 22,
+          "openInterest": 29,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "0578c40c-1506-4613-b51e-2c56b8823062",
+        "totalOpenInterest": 29,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Coleman Wong",
+            "probabilityPct": 79,
+            "bidPct": 78,
+            "lastTradePct": 0,
+            "amount": 0,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04WONROM-WON"
+          },
+          {
+            "name": "Filippo Romano",
+            "probabilityPct": 22,
+            "bidPct": 21,
+            "lastTradePct": 22,
+            "amount": 29,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04WONROM-ROM"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rh-atp-challenger-birmingham-gill-vs-majchrzak-2026-06-04",
+      "eventId": "337d601a-7ed4-4ec9-871e-dd68a7b9fe93",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Felix Gill vs Kamil Majchrzak",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "atp_challenger_singles",
+      "round": "Round Of 16",
+      "surface": "Grass",
+      "surfaceSource": "Grass tournament surface",
+      "startIso": "2026-06-04T09:30:00Z",
+      "eventDay": "June 4, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Felix Gill",
+          "shortName": "F. Gill",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04GILMAJ-GIL",
+          "yesBid": 0.27,
+          "yesAsk": 0.28,
+          "lastTradePrice": 0.28,
+          "yesBidCents": 27,
+          "yesAskCents": 28,
+          "lastTradeCents": 28,
+          "openInterest": 9,
+          "volume": 0
+        },
+        {
+          "name": "Kamil Majchrzak",
+          "shortName": "K. Majchrzak",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04GILMAJ-MAJ",
+          "yesBid": 0.72,
+          "yesAsk": 0.74,
+          "lastTradePrice": 0.74,
+          "yesBidCents": 72,
+          "yesAskCents": 74,
+          "lastTradeCents": 74,
+          "openInterest": 174,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "337d601a-7ed4-4ec9-871e-dd68a7b9fe93",
+        "totalOpenInterest": 183,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Felix Gill",
+            "probabilityPct": 28,
+            "bidPct": 27,
+            "lastTradePct": 28,
+            "amount": 9,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04GILMAJ-GIL"
+          },
+          {
+            "name": "Kamil Majchrzak",
+            "probabilityPct": 74,
+            "bidPct": 72,
+            "lastTradePct": 74,
+            "amount": 174,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04GILMAJ-MAJ"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rh-atp-challenger-birmingham-shimabukuro-vs-ymer-2026-06-04",
+      "eventId": "e33a3939-dd06-497d-8711-fc423cf4963c",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Sho Shimabukuro vs Elias Ymer",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "atp_challenger_singles",
+      "round": "Round Of 16",
+      "surface": "Grass",
+      "surfaceSource": "Grass tournament surface",
+      "startIso": "2026-06-04T09:30:00Z",
+      "eventDay": "June 4, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Sho Shimabukuro",
+          "shortName": "S. Shimabukuro",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04SHIYME-SHI",
+          "yesBid": 0.51,
+          "yesAsk": 0.52,
+          "lastTradePrice": 0.52,
+          "yesBidCents": 51,
+          "yesAskCents": 52,
+          "lastTradeCents": 52,
+          "openInterest": 50,
+          "volume": 0
+        },
+        {
+          "name": "Elias Ymer",
+          "shortName": "E. Ymer",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04SHIYME-YME",
+          "yesBid": 0.47,
+          "yesAsk": 0.48,
+          "lastTradePrice": 0,
+          "yesBidCents": 47,
+          "yesAskCents": 48,
+          "lastTradeCents": 0,
+          "openInterest": 0,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "e33a3939-dd06-497d-8711-fc423cf4963c",
+        "totalOpenInterest": 50,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Sho Shimabukuro",
+            "probabilityPct": 52,
+            "bidPct": 51,
+            "lastTradePct": 52,
+            "amount": 50,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04SHIYME-SHI"
+          },
+          {
+            "name": "Elias Ymer",
+            "probabilityPct": 48,
+            "bidPct": 47,
+            "lastTradePct": 0,
+            "amount": 0,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04SHIYME-YME"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rh-atp-challenger-bad-rappenau-dedura-palomero-vs-reis-da-silva-2026-06-04",
+      "eventId": "6015f8d2-eb6a-4752-8108-1a20a01830fb",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Diego Dedura-Palomero vs Joao Lucas Reis Da Silva",
+      "tournament": "ATP Challenger Bad Rappenau",
+      "category": "atp_challenger_singles",
+      "round": "Round Of 16",
+      "surface": "Clay",
+      "surfaceSource": "ATP Challenger Bad Rappenau surface",
+      "startIso": "2026-06-04T10:00:00Z",
+      "eventDay": "June 4, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Diego Dedura-Palomero",
+          "shortName": "D. Dedura-Palomero",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04DEDREI-DED",
+          "yesBid": 0.63,
+          "yesAsk": 0.65,
+          "lastTradePrice": 0,
+          "yesBidCents": 63,
+          "yesAskCents": 65,
+          "lastTradeCents": 0,
+          "openInterest": 0,
+          "volume": 0
+        },
+        {
+          "name": "Joao Lucas Reis Da Silva",
+          "shortName": "J. Lucas Reis Da Silva",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04DEDREI-REI",
+          "yesBid": 0.34,
+          "yesAsk": 0.37,
+          "lastTradePrice": 0.37,
+          "yesBidCents": 34,
+          "yesAskCents": 37,
+          "lastTradeCents": 37,
+          "openInterest": 125,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "6015f8d2-eb6a-4752-8108-1a20a01830fb",
+        "totalOpenInterest": 125,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Diego Dedura-Palomero",
+            "probabilityPct": 65,
+            "bidPct": 63,
+            "lastTradePct": 0,
+            "amount": 0,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04DEDREI-DED"
+          },
+          {
+            "name": "Joao Lucas Reis Da Silva",
+            "probabilityPct": 37,
+            "bidPct": 34,
+            "lastTradePct": 37,
+            "amount": 125,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04DEDREI-REI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rh-wta-125k-birmingham-krueger-vs-tjen-2026-06-04",
+      "eventId": "4c671a23-ec94-41c1-8ed0-95a149a2714a",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Janice Tjen vs Ashlyn Krueger",
+      "tournament": "WTA 125K Birmingham",
+      "category": "wta_125k_singles",
+      "round": "Round Of 16",
+      "surface": "Grass",
+      "surfaceSource": "Grass tournament surface",
+      "startIso": "2026-06-04T10:00:00Z",
+      "eventDay": "June 4, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Janice Tjen",
+          "shortName": "J. Tjen",
+          "symbol": "KXWTACHALLENGERMATCH-26JUN04KRUTJE-TJE",
+          "yesBid": 0.43,
+          "yesAsk": 0.44,
+          "lastTradePrice": 0.44,
+          "yesBidCents": 43,
+          "yesAskCents": 44,
+          "lastTradeCents": 44,
+          "openInterest": 10,
+          "volume": 0
+        },
+        {
+          "name": "Ashlyn Krueger",
+          "shortName": "A. Krueger",
+          "symbol": "KXWTACHALLENGERMATCH-26JUN04KRUTJE-KRU",
+          "yesBid": 0.56,
+          "yesAsk": 0.57,
+          "lastTradePrice": 0.57,
+          "yesBidCents": 56,
+          "yesAskCents": 57,
+          "lastTradeCents": 57,
+          "openInterest": 25,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "4c671a23-ec94-41c1-8ed0-95a149a2714a",
+        "totalOpenInterest": 35,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Janice Tjen",
+            "probabilityPct": 44,
+            "bidPct": 43,
+            "lastTradePct": 44,
+            "amount": 10,
+            "symbol": "KXWTACHALLENGERMATCH-26JUN04KRUTJE-TJE"
+          },
+          {
+            "name": "Ashlyn Krueger",
+            "probabilityPct": 57,
+            "bidPct": 56,
+            "lastTradePct": 57,
+            "amount": 25,
+            "symbol": "KXWTACHALLENGERMATCH-26JUN04KRUTJE-KRU"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rh-atp-challenger-bad-rappenau-choinski-vs-mikrut-2026-06-04",
+      "eventId": "0af15356-3f82-4a06-a655-9215700b86d5",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Luka Mikrut vs Jan Choinski",
+      "tournament": "ATP Challenger Bad Rappenau",
+      "category": "atp_challenger_singles",
+      "round": "Round Of 16",
+      "surface": "Clay",
+      "surfaceSource": "ATP Challenger Bad Rappenau surface",
+      "startIso": "2026-06-04T10:00:00Z",
+      "eventDay": "June 4, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Luka Mikrut",
+          "shortName": "L. Mikrut",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04CHOMIK-MIK",
+          "yesBid": 0.37,
+          "yesAsk": 0.38,
+          "lastTradePrice": 0.38,
+          "yesBidCents": 37,
+          "yesAskCents": 38,
+          "lastTradeCents": 38,
+          "openInterest": 230,
+          "volume": 0
+        },
+        {
+          "name": "Jan Choinski",
+          "shortName": "J. Choinski",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04CHOMIK-CHO",
+          "yesBid": 0.62,
+          "yesAsk": 0.63,
+          "lastTradePrice": 0.63,
+          "yesBidCents": 62,
+          "yesAskCents": 63,
+          "lastTradeCents": 63,
+          "openInterest": 640,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "0af15356-3f82-4a06-a655-9215700b86d5",
+        "totalOpenInterest": 870,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Luka Mikrut",
+            "probabilityPct": 38,
+            "bidPct": 37,
+            "lastTradePct": 38,
+            "amount": 230,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04CHOMIK-MIK"
+          },
+          {
+            "name": "Jan Choinski",
+            "probabilityPct": 63,
+            "bidPct": 62,
+            "lastTradePct": 63,
+            "amount": 640,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04CHOMIK-CHO"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rh-atp-challenger-prostejov-molcan-vs-karol-2026-06-04",
+      "eventId": "08c8dc8a-0328-4c43-9eec-d3f9fa529cb7",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Milos Karol vs Alex Molcan",
+      "tournament": "ATP Challenger Prostejov",
+      "category": "atp_challenger_singles",
+      "round": "Round Of 16",
+      "surface": "Clay",
+      "surfaceSource": "ATP Challenger Prostejov surface",
+      "startIso": "2026-06-04T10:10:00Z",
+      "eventDay": "June 4, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Milos Karol",
+          "shortName": "M. Karol",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04MOLKAR-KAR",
+          "yesBid": 0.12,
+          "yesAsk": 0.13,
+          "lastTradePrice": 0.14,
+          "yesBidCents": 12,
+          "yesAskCents": 13,
+          "lastTradeCents": 14,
+          "openInterest": 18,
+          "volume": 0
+        },
+        {
+          "name": "Alex Molcan",
+          "shortName": "A. Molcan",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04MOLKAR-MOL",
+          "yesBid": 0.86,
+          "yesAsk": 0.88,
+          "lastTradePrice": 0.88,
+          "yesBidCents": 86,
+          "yesAskCents": 88,
+          "lastTradeCents": 88,
+          "openInterest": 11,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "08c8dc8a-0328-4c43-9eec-d3f9fa529cb7",
+        "totalOpenInterest": 29,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Milos Karol",
+            "probabilityPct": 13,
+            "bidPct": 12,
+            "lastTradePct": 14,
+            "amount": 18,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04MOLKAR-KAR"
+          },
+          {
+            "name": "Alex Molcan",
+            "probabilityPct": 88,
+            "bidPct": 86,
+            "lastTradePct": 88,
+            "amount": 11,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04MOLKAR-MOL"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rh-wta-125k-birmingham-eala-vs-charaeva-2026-06-04",
+      "eventId": "9101ad50-7f21-462b-9573-57878a44c130",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Alexandra Eala vs Alina Charaeva",
+      "tournament": "WTA 125K Birmingham",
+      "category": "wta_125k_singles",
+      "round": "Round Of 16",
+      "surface": "Grass",
+      "surfaceSource": "Grass tournament surface",
+      "startIso": "2026-06-04T10:40:00Z",
+      "eventDay": "June 4, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Alexandra Eala",
+          "shortName": "A. Eala",
+          "symbol": "KXWTACHALLENGERMATCH-26JUN04EALCHA-EAL",
+          "yesBid": 0.72,
+          "yesAsk": 0.75,
+          "lastTradePrice": 0.75,
+          "yesBidCents": 72,
+          "yesAskCents": 75,
+          "lastTradeCents": 75,
+          "openInterest": 379,
+          "volume": 0
+        },
+        {
+          "name": "Alina Charaeva",
+          "shortName": "A. Charaeva",
+          "symbol": "KXWTACHALLENGERMATCH-26JUN04EALCHA-CHA",
+          "yesBid": 0.25,
+          "yesAsk": 0.28,
+          "lastTradePrice": 0,
+          "yesBidCents": 25,
+          "yesAskCents": 28,
+          "lastTradeCents": 0,
+          "openInterest": 0,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "9101ad50-7f21-462b-9573-57878a44c130",
+        "totalOpenInterest": 379,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Alexandra Eala",
+            "probabilityPct": 75,
+            "bidPct": 72,
+            "lastTradePct": 75,
+            "amount": 379,
+            "symbol": "KXWTACHALLENGERMATCH-26JUN04EALCHA-EAL"
+          },
+          {
+            "name": "Alina Charaeva",
+            "probabilityPct": 28,
+            "bidPct": 25,
+            "lastTradePct": 0,
+            "amount": 0,
+            "symbol": "KXWTACHALLENGERMATCH-26JUN04EALCHA-CHA"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rh-wta-125k-birmingham-sawangkaew-vs-day-2026-06-04",
+      "eventId": "76af511c-32c2-4764-8893-4cde75946a94",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Mananchaya Sawangkaew vs Kayla Day",
+      "tournament": "WTA 125K Birmingham",
+      "category": "wta_125k_singles",
+      "round": "Round Of 16",
+      "surface": "Grass",
+      "surfaceSource": "Grass tournament surface",
+      "startIso": "2026-06-04T10:40:00Z",
+      "eventDay": "June 4, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Mananchaya Sawangkaew",
+          "shortName": "M. Sawangkaew",
+          "symbol": "KXWTACHALLENGERMATCH-26JUN04SAWDAY-SAW",
+          "yesBid": 0.53,
+          "yesAsk": 0.55,
+          "lastTradePrice": 0,
+          "yesBidCents": 53,
+          "yesAskCents": 55,
+          "lastTradeCents": 0,
+          "openInterest": 0,
+          "volume": 0
+        },
+        {
+          "name": "Kayla Day",
+          "shortName": "K. Day",
+          "symbol": "KXWTACHALLENGERMATCH-26JUN04SAWDAY-DAY",
+          "yesBid": 0.45,
+          "yesAsk": 0.47,
+          "lastTradePrice": 0,
+          "yesBidCents": 45,
+          "yesAskCents": 47,
+          "lastTradeCents": 0,
+          "openInterest": 0,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "76af511c-32c2-4764-8893-4cde75946a94",
+        "totalOpenInterest": 0,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Mananchaya Sawangkaew",
+            "probabilityPct": 55,
+            "bidPct": 53,
+            "lastTradePct": 0,
+            "amount": 0,
+            "symbol": "KXWTACHALLENGERMATCH-26JUN04SAWDAY-SAW"
+          },
+          {
+            "name": "Kayla Day",
+            "probabilityPct": 47,
+            "bidPct": 45,
+            "lastTradePct": 0,
+            "amount": 0,
+            "symbol": "KXWTACHALLENGERMATCH-26JUN04SAWDAY-DAY"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rh-atp-challenger-birmingham-harris-vs-bu-2026-06-04",
+      "eventId": "683b1e9a-de04-428c-b9ab-168407d0d965",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Billy Harris vs Yunchaokete Bu",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "atp_challenger_singles",
+      "round": "Round Of 16",
+      "surface": "Grass",
+      "surfaceSource": "Grass tournament surface",
+      "startIso": "2026-06-04T11:00:00Z",
+      "eventDay": "June 4, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Billy Harris",
+          "shortName": "B. Harris",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN03HARYUN-HAR",
+          "yesBid": 0.45,
+          "yesAsk": 0.47,
+          "lastTradePrice": 0.46,
+          "yesBidCents": 45,
+          "yesAskCents": 47,
+          "lastTradeCents": 46,
+          "openInterest": 1367,
+          "volume": 0
+        },
+        {
+          "name": "Yunchaokete Bu",
+          "shortName": "Y. Bu",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN03HARYUN-YUN",
+          "yesBid": 0.53,
+          "yesAsk": 0.54,
+          "lastTradePrice": 0.54,
+          "yesBidCents": 53,
+          "yesAskCents": 54,
+          "lastTradeCents": 54,
+          "openInterest": 4133,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "683b1e9a-de04-428c-b9ab-168407d0d965",
+        "totalOpenInterest": 5500,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Billy Harris",
+            "probabilityPct": 47,
+            "bidPct": 45,
+            "lastTradePct": 46,
+            "amount": 1367,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN03HARYUN-HAR"
+          },
+          {
+            "name": "Yunchaokete Bu",
+            "probabilityPct": 54,
+            "bidPct": 53,
+            "lastTradePct": 54,
+            "amount": 4133,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN03HARYUN-YUN"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rh-atp-challenger-birmingham-mcdonald-vs-hijikata-2026-06-04",
+      "eventId": "75b47723-4065-4f81-a27f-ef01925227b2",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Mackenzie McDonald vs Rinky Hijikata",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "atp_challenger_singles",
+      "round": "Round Of 16",
+      "surface": "Grass",
+      "surfaceSource": "Grass tournament surface",
+      "startIso": "2026-06-04T11:00:00Z",
+      "eventDay": "June 4, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Mackenzie McDonald",
+          "shortName": "M. McDonald",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN03MCDHIJ-MCD",
+          "yesBid": 0.43,
+          "yesAsk": 0.44,
+          "lastTradePrice": 0.44,
+          "yesBidCents": 43,
+          "yesAskCents": 44,
+          "lastTradeCents": 44,
+          "openInterest": 2120,
+          "volume": 0
+        },
+        {
+          "name": "Rinky Hijikata",
+          "shortName": "R. Hijikata",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN03MCDHIJ-HIJ",
+          "yesBid": 0.56,
+          "yesAsk": 0.58,
+          "lastTradePrice": 0.58,
+          "yesBidCents": 56,
+          "yesAskCents": 58,
+          "lastTradeCents": 58,
+          "openInterest": 3521,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "75b47723-4065-4f81-a27f-ef01925227b2",
+        "totalOpenInterest": 5641,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Mackenzie McDonald",
+            "probabilityPct": 44,
+            "bidPct": 43,
+            "lastTradePct": 44,
+            "amount": 2120,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN03MCDHIJ-MCD"
+          },
+          {
+            "name": "Rinky Hijikata",
+            "probabilityPct": 58,
+            "bidPct": 56,
+            "lastTradePct": 58,
+            "amount": 3521,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN03MCDHIJ-HIJ"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rh-atp-challenger-birmingham-virtanen-vs-vukic-2026-06-04",
+      "eventId": "4fc8c761-df82-47e6-98cf-61da8fd4ca09",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Otto Virtanen vs Aleksandar Vukic",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "atp_challenger_singles",
+      "round": "Round Of 16",
+      "surface": "Grass",
+      "surfaceSource": "Grass tournament surface",
+      "startIso": "2026-06-04T11:00:00Z",
+      "eventDay": "June 4, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Otto Virtanen",
+          "shortName": "O. Virtanen",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04VIRVUK-VIR",
+          "yesBid": 0.64,
+          "yesAsk": 0.67,
+          "lastTradePrice": 0.67,
+          "yesBidCents": 64,
+          "yesAskCents": 67,
+          "lastTradeCents": 67,
+          "openInterest": 3,
+          "volume": 0
+        },
+        {
+          "name": "Aleksandar Vukic",
+          "shortName": "A. Vukic",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04VIRVUK-VUK",
+          "yesBid": 0.33,
+          "yesAsk": 0.36,
+          "lastTradePrice": 0.36,
+          "yesBidCents": 33,
+          "yesAskCents": 36,
+          "lastTradeCents": 36,
+          "openInterest": 56,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "4fc8c761-df82-47e6-98cf-61da8fd4ca09",
+        "totalOpenInterest": 59,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Otto Virtanen",
+            "probabilityPct": 67,
+            "bidPct": 64,
+            "lastTradePct": 67,
+            "amount": 3,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04VIRVUK-VIR"
+          },
+          {
+            "name": "Aleksandar Vukic",
+            "probabilityPct": 36,
+            "bidPct": 33,
+            "lastTradePct": 36,
+            "amount": 56,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04VIRVUK-VUK"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rh-atp-challenger-bad-rappenau-trungelliti-vs-hsu-2026-06-04",
+      "eventId": "3ad65e6f-5b88-4351-9009-ba130a9935c4",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Marco Trungelliti vs Yu Hsiou Hsu",
+      "tournament": "ATP Challenger Bad Rappenau",
+      "category": "atp_challenger_singles",
+      "round": "Round Of 16",
+      "surface": "Clay",
+      "surfaceSource": "ATP Challenger Bad Rappenau surface",
+      "startIso": "2026-06-04T11:10:00Z",
+      "eventDay": "June 4, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Marco Trungelliti",
+          "shortName": "M. Trungelliti",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04TRUHSU-TRU",
+          "yesBid": 0.83,
+          "yesAsk": 0.85,
+          "lastTradePrice": 0.84,
+          "yesBidCents": 83,
+          "yesAskCents": 85,
+          "lastTradeCents": 84,
+          "openInterest": 11,
+          "volume": 0
+        },
+        {
+          "name": "Yu Hsiou Hsu",
+          "shortName": "Y. Hsiou Hsu",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04TRUHSU-HSU",
+          "yesBid": 0.15,
+          "yesAsk": 0.17,
+          "lastTradePrice": 0,
+          "yesBidCents": 15,
+          "yesAskCents": 17,
+          "lastTradeCents": 0,
+          "openInterest": 0,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "3ad65e6f-5b88-4351-9009-ba130a9935c4",
+        "totalOpenInterest": 11,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Marco Trungelliti",
+            "probabilityPct": 85,
+            "bidPct": 83,
+            "lastTradePct": 84,
+            "amount": 11,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04TRUHSU-TRU"
+          },
+          {
+            "name": "Yu Hsiou Hsu",
+            "probabilityPct": 17,
+            "bidPct": 15,
+            "lastTradePct": 0,
+            "amount": 0,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04TRUHSU-HSU"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rh-atp-challenger-prostejov-daniel-vs-dzumhur-2026-06-04",
+      "eventId": "d616d79f-b797-4ee1-b3d4-37f484378a5d",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Taro Daniel vs Damir Dzumhur",
+      "tournament": "ATP Challenger Prostejov",
+      "category": "atp_challenger_singles",
+      "round": "Round Of 16",
+      "surface": "Clay",
+      "surfaceSource": "ATP Challenger Prostejov surface",
+      "startIso": "2026-06-04T11:20:00Z",
+      "eventDay": "June 4, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Taro Daniel",
+          "shortName": "T. Daniel",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04DANDZU-DAN",
+          "yesBid": 0.37,
+          "yesAsk": 0.39,
+          "lastTradePrice": 0,
+          "yesBidCents": 37,
+          "yesAskCents": 39,
+          "lastTradeCents": 0,
+          "openInterest": 0,
+          "volume": 0
+        },
+        {
+          "name": "Damir Dzumhur",
+          "shortName": "D. Dzumhur",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN04DANDZU-DZU",
+          "yesBid": 0.61,
+          "yesAsk": 0.63,
+          "lastTradePrice": 0.63,
+          "yesBidCents": 61,
+          "yesAskCents": 63,
+          "lastTradeCents": 63,
+          "openInterest": 53,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "d616d79f-b797-4ee1-b3d4-37f484378a5d",
+        "totalOpenInterest": 53,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Taro Daniel",
+            "probabilityPct": 39,
+            "bidPct": 37,
+            "lastTradePct": 0,
+            "amount": 0,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04DANDZU-DAN"
+          },
+          {
+            "name": "Damir Dzumhur",
+            "probabilityPct": 63,
+            "bidPct": 61,
+            "lastTradePct": 63,
+            "amount": 53,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN04DANDZU-DZU"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rh-atp-challenger-birmingham-bolt-vs-fery-2026-06-04",
+      "eventId": "13fd8adb-b1be-42ad-9a35-52015a9352e7",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Arthur Fery vs Alex Bolt",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "atp_challenger_singles",
+      "round": "Round Of 16",
+      "surface": "Grass",
+      "surfaceSource": "Grass tournament surface",
+      "startIso": "2026-06-04T12:00:00Z",
+      "eventDay": "June 4, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Arthur Fery",
+          "shortName": "A. Fery",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN03BOLFER-FER",
+          "yesBid": 0.48,
+          "yesAsk": 0.51,
+          "lastTradePrice": 0.51,
+          "yesBidCents": 48,
+          "yesAskCents": 51,
+          "lastTradeCents": 51,
+          "openInterest": 2819,
+          "volume": 0
+        },
+        {
+          "name": "Alex Bolt",
+          "shortName": "A. Bolt",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN03BOLFER-BOL",
+          "yesBid": 0.49,
+          "yesAsk": 0.52,
+          "lastTradePrice": 0.52,
+          "yesBidCents": 49,
+          "yesAskCents": 52,
+          "lastTradeCents": 52,
+          "openInterest": 6617,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "13fd8adb-b1be-42ad-9a35-52015a9352e7",
+        "totalOpenInterest": 9436,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Arthur Fery",
+            "probabilityPct": 51,
+            "bidPct": 48,
+            "lastTradePct": 51,
+            "amount": 2819,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN03BOLFER-FER"
+          },
+          {
+            "name": "Alex Bolt",
+            "probabilityPct": 52,
+            "bidPct": 49,
+            "lastTradePct": 52,
+            "amount": 6617,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN03BOLFER-BOL"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rh-french-open-women-singles-kostyuk-vs-andreeva-2026-06-04",
+      "eventId": "9e8856ff-b49c-4bc2-b649-4797bcb3e373",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Marta Kostyuk vs Mirra Andreeva",
+      "tournament": "French Open Women Singles",
+      "category": "french_open_women_singles",
+      "round": "Semifinal",
+      "surface": "Clay",
+      "surfaceSource": "Grand Slam tournament surface",
+      "startIso": "2026-06-04T13:00:00Z",
+      "eventDay": "June 4, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Marta Kostyuk",
+          "shortName": "M. Kostyuk",
+          "symbol": "KXWTAMATCH-26JUN04KOSAND-KOS",
+          "yesBid": 0.55,
+          "yesAsk": 0.56,
+          "lastTradePrice": 0.56,
+          "yesBidCents": 55,
+          "yesAskCents": 56,
+          "lastTradeCents": 56,
+          "openInterest": 87831,
+          "volume": 0
+        },
+        {
+          "name": "Mirra Andreeva",
+          "shortName": "M. Andreeva",
+          "symbol": "KXWTAMATCH-26JUN04KOSAND-AND",
+          "yesBid": 0.45,
+          "yesAsk": 0.46,
+          "lastTradePrice": 0.46,
+          "yesBidCents": 45,
+          "yesAskCents": 46,
+          "lastTradeCents": 46,
+          "openInterest": 27876,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "9e8856ff-b49c-4bc2-b649-4797bcb3e373",
+        "totalOpenInterest": 115707,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Marta Kostyuk",
+            "probabilityPct": 56,
+            "bidPct": 55,
+            "lastTradePct": 56,
+            "amount": 87831,
+            "symbol": "KXWTAMATCH-26JUN04KOSAND-KOS"
+          },
+          {
+            "name": "Mirra Andreeva",
+            "probabilityPct": 46,
+            "bidPct": 45,
+            "lastTradePct": 46,
+            "amount": 27876,
+            "symbol": "KXWTAMATCH-26JUN04KOSAND-AND"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rh-atp-challenger-birmingham-wendelken-vs-lajal-2026-06-04",
+      "eventId": "df0b2709-b39f-4caf-a8f4-4ed3bb6442b4",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Harry Wendelken vs Mark Lajal",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "atp_challenger_singles",
+      "round": "Round Of 16",
+      "surface": "Grass",
+      "surfaceSource": "Grass tournament surface",
+      "startIso": "2026-06-04T13:10:00Z",
+      "eventDay": "June 4, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Harry Wendelken",
+          "shortName": "H. Wendelken",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN03WENLAJ-WEN",
+          "yesBid": 0.31,
+          "yesAsk": 0.34,
+          "lastTradePrice": 0.34,
+          "yesBidCents": 31,
+          "yesAskCents": 34,
+          "lastTradeCents": 34,
+          "openInterest": 900,
+          "volume": 0
+        },
+        {
+          "name": "Mark Lajal",
+          "shortName": "M. Lajal",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN03WENLAJ-LAJ",
+          "yesBid": 0.66,
+          "yesAsk": 0.68,
+          "lastTradePrice": 0.66,
+          "yesBidCents": 66,
+          "yesAskCents": 68,
+          "lastTradeCents": 66,
+          "openInterest": 1722,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "df0b2709-b39f-4caf-a8f4-4ed3bb6442b4",
+        "totalOpenInterest": 2622,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Harry Wendelken",
+            "probabilityPct": 34,
+            "bidPct": 31,
+            "lastTradePct": 34,
+            "amount": 900,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN03WENLAJ-WEN"
+          },
+          {
+            "name": "Mark Lajal",
+            "probabilityPct": 68,
+            "bidPct": 66,
+            "lastTradePct": 66,
+            "amount": 1722,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN03WENLAJ-LAJ"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rh-french-open-women-singles-shnaider-vs-chwalinska-2026-06-04",
+      "eventId": "7a0f01d9-97b9-44ff-8907-043c9567a396",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Diana Shnaider vs Maja Chwalinska",
+      "tournament": "French Open Women Singles",
+      "category": "french_open_women_singles",
+      "round": "Semifinal",
+      "surface": "Clay",
+      "surfaceSource": "Grand Slam tournament surface",
+      "startIso": "2026-06-04T14:10:00Z",
+      "eventDay": "June 4, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Diana Shnaider",
+          "shortName": "D. Shnaider",
+          "symbol": "KXWTAMATCH-26JUN04SHNCHW-SHN",
+          "yesBid": 0.63,
+          "yesAsk": 0.64,
+          "lastTradePrice": 0.64,
+          "yesBidCents": 63,
+          "yesAskCents": 64,
+          "lastTradeCents": 64,
+          "openInterest": 20120,
+          "volume": 0
+        },
+        {
+          "name": "Maja Chwalinska",
+          "shortName": "M. Chwalinska",
+          "symbol": "KXWTAMATCH-26JUN04SHNCHW-CHW",
+          "yesBid": 0.37,
+          "yesAsk": 0.38,
+          "lastTradePrice": 0.38,
+          "yesBidCents": 37,
+          "yesAskCents": 38,
+          "lastTradeCents": 38,
+          "openInterest": 20367,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "7a0f01d9-97b9-44ff-8907-043c9567a396",
+        "totalOpenInterest": 40487,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Diana Shnaider",
+            "probabilityPct": 64,
+            "bidPct": 63,
+            "lastTradePct": 64,
+            "amount": 20120,
+            "symbol": "KXWTAMATCH-26JUN04SHNCHW-SHN"
+          },
+          {
+            "name": "Maja Chwalinska",
+            "probabilityPct": 38,
+            "bidPct": 37,
+            "lastTradePct": 38,
+            "amount": 20367,
+            "symbol": "KXWTAMATCH-26JUN04SHNCHW-CHW"
+          }
+        ]
+      }
+    }
+  ]
+}

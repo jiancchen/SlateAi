@@ -1847,6 +1847,88 @@ const buildPitcherStrikeoutMarketsByGamePk = ({ date, games }) => {
   return resolved
 }
 
+const buildStarterVsTeamStatmuseByGameSide = ({ date, games }) => {
+  const gameIds = [...new Set(games.map((game) => game.id).filter(Boolean))]
+  if (!gameIds.length) return {}
+
+  const quotedGameIds = gameIds.map((gameId) => quoteSqlText(gameId)).join(',')
+  const rows = runSqliteJson(
+    `select
+      game_id,
+      pitcher_name,
+      pitcher_team,
+      opponent_team,
+      statmuse_url,
+      answer_text,
+      appearances,
+      games_started,
+      wins,
+      losses,
+      era,
+      strikeouts,
+      innings_pitched,
+      hits_allowed,
+      earned_runs,
+      runs_allowed,
+      home_runs_allowed,
+      walks,
+      batters_faced,
+      total_row_json,
+      game_rows_json,
+      fetched_at
+    from mlb_starter_vs_team_statmuse
+    where snapshot_date='${date}'
+      and game_id in (${quotedGameIds})
+    order by game_id, pitcher_team;`
+  )
+
+  const byGameId = Object.fromEntries(games.map((game) => [game.id, game]))
+  const byGameSide = {}
+  rows.forEach((row) => {
+    const game = byGameId[row.game_id]
+    if (!game) return
+    const pitcherName = String(row.pitcher_name || '')
+    const side =
+      pitcherName && pitcherName === game.awayPitcher?.fullName
+        ? 'away'
+        : pitcherName && pitcherName === game.homePitcher?.fullName
+          ? 'home'
+          : row.pitcher_team === game.away
+            ? 'away'
+            : row.pitcher_team === game.home
+              ? 'home'
+              : ''
+    if (!side) return
+
+    byGameSide[`${row.game_id}:${side}`] = {
+      source: 'StatMuse',
+      sourceUrl: row.statmuse_url || '',
+      answerText: row.answer_text || '',
+      pitcherName: row.pitcher_name || '',
+      pitcherTeam: row.pitcher_team || '',
+      opponentTeam: row.opponent_team || '',
+      appearances: Number(row.appearances || 0) || 0,
+      gamesStarted: Number(row.games_started || 0) || 0,
+      wins: row.wins !== null && row.wins !== undefined && Number.isFinite(Number(row.wins)) ? Number(row.wins) : null,
+      losses: row.losses !== null && row.losses !== undefined && Number.isFinite(Number(row.losses)) ? Number(row.losses) : null,
+      era: row.era !== null && row.era !== undefined && Number.isFinite(Number(row.era)) ? roundMaybe(row.era) : null,
+      strikeouts: row.strikeouts !== null && row.strikeouts !== undefined && Number.isFinite(Number(row.strikeouts)) ? Number(row.strikeouts) : null,
+      inningsPitched: row.innings_pitched || null,
+      hitsAllowed: row.hits_allowed !== null && row.hits_allowed !== undefined && Number.isFinite(Number(row.hits_allowed)) ? Number(row.hits_allowed) : null,
+      earnedRuns: row.earned_runs !== null && row.earned_runs !== undefined && Number.isFinite(Number(row.earned_runs)) ? Number(row.earned_runs) : null,
+      runsAllowed: row.runs_allowed !== null && row.runs_allowed !== undefined && Number.isFinite(Number(row.runs_allowed)) ? Number(row.runs_allowed) : null,
+      homeRunsAllowed: row.home_runs_allowed !== null && row.home_runs_allowed !== undefined && Number.isFinite(Number(row.home_runs_allowed)) ? Number(row.home_runs_allowed) : null,
+      walks: row.walks !== null && row.walks !== undefined && Number.isFinite(Number(row.walks)) ? Number(row.walks) : null,
+      battersFaced: row.batters_faced !== null && row.batters_faced !== undefined && Number.isFinite(Number(row.batters_faced)) ? Number(row.batters_faced) : null,
+      totalRow: safeJsonParse(row.total_row_json, null),
+      gameRows: safeJsonParse(row.game_rows_json, []),
+      fetchedAt: row.fetched_at || ''
+    }
+  })
+
+  return byGameSide
+}
+
 const buildRecentGamesByTeam = ({ date, games, limit = 8 }) => {
   const teams = [...new Set(games.flatMap((game) => [game.away, game.home]).filter(Boolean))]
 
@@ -1857,44 +1939,25 @@ const buildRecentGamesByTeam = ({ date, games, limit = 8 }) => {
   const rows = runSqliteJson(
     `with recent_team_games as (
       select
-        o.game_pk,
-        o.game_date,
+        g.mlb_game_pk as game_pk,
+        tgs.game_date,
         g.start_time_utc as game_datetime,
-        o.away_team as team_name,
-        o.home_team as opponent_name,
-        'road' as venue_role,
-        o.away_runs_final as runs_for,
-        o.home_runs_final as runs_against,
+        team.name as team_name,
+        opponent.name as opponent_name,
+        case when tgs.team_role = 'away' then 'road' else 'home' end as venue_role,
+        tgs.runs_scored as runs_for,
+        tgs.runs_allowed as runs_against,
         case
-          when o.away_runs_final > o.home_runs_final then 'W'
-          when o.away_runs_final < o.home_runs_final then 'L'
+          when tgs.runs_scored > tgs.runs_allowed then 'W'
+          when tgs.runs_scored < tgs.runs_allowed then 'L'
           else 'T'
         end as result
-      from mlb_game_outcomes o
-      join mlb_games g on g.game_pk = o.game_pk
-      where o.away_team in (${quotedTeams})
-        and o.game_date < '${date}'
-
-      union all
-
-      select
-        o.game_pk,
-        o.game_date,
-        g.start_time_utc as game_datetime,
-        o.home_team as team_name,
-        o.away_team as opponent_name,
-        'home' as venue_role,
-        o.home_runs_final as runs_for,
-        o.away_runs_final as runs_against,
-        case
-          when o.home_runs_final > o.away_runs_final then 'W'
-          when o.home_runs_final < o.away_runs_final then 'L'
-          else 'T'
-        end as result
-      from mlb_game_outcomes o
-      join mlb_games g on g.game_pk = o.game_pk
-      where o.home_team in (${quotedTeams})
-        and o.game_date < '${date}'
+      from team_game_stats tgs
+      join games g on g.game_id = tgs.game_id
+      join teams team on team.team_id = tgs.team_id
+      left join teams opponent on opponent.team_id = tgs.opponent_team_id
+      where team.name in (${quotedTeams})
+        and tgs.game_date < '${date}'
     ),
     ranked as (
       select
@@ -2045,26 +2108,30 @@ const buildMatchupInningHistoryByTeam = ({ date, games, limit = 10, maxInnings =
     ranked_games as (
       select
         mp.pair_key,
-        o.game_pk,
-        o.game_date,
+        g.mlb_game_pk as game_pk,
+        g.game_date,
         g.start_time_utc as game_datetime,
-        o.away_team,
-        o.home_team,
-        o.away_runs_final,
-        o.home_runs_final,
+        away.name as away_team,
+        home.name as home_team,
+        go.away_runs as away_runs_final,
+        go.home_runs as home_runs_final,
         row_number() over (
           partition by mp.pair_key
-          order by coalesce(g.start_time_utc, o.game_date) desc, o.game_pk desc
+          order by coalesce(g.start_time_utc, g.game_date) desc, g.mlb_game_pk desc
         ) as rn
       from matchup_pairs mp
-      join mlb_game_outcomes o
-        on (
-          (o.away_team = mp.team_a and o.home_team = mp.team_b)
+      join games g on 1 = 1
+      join teams away on away.team_id = g.away_team_id
+      join teams home on home.team_id = g.home_team_id
+      join game_outcomes go on go.game_id = g.game_id
+      where
+        g.game_date < '${date}'
+        and
+        (
+          (away.name = mp.team_a and home.name = mp.team_b)
           or
-          (o.away_team = mp.team_b and o.home_team = mp.team_a)
+          (away.name = mp.team_b and home.name = mp.team_a)
         )
-      join mlb_games g on g.game_pk = o.game_pk
-      where o.game_date < '${date}'
     ),
     selected_games as (
       select *
@@ -2224,44 +2291,25 @@ const buildRecentInningHistoryByTeam = ({ date, games, limit = 10, maxInnings = 
   const rows = runSqliteJson(
     `with recent_team_games as (
       select
-        o.game_pk,
-        o.game_date,
+        g.mlb_game_pk as game_pk,
+        tgs.game_date,
         g.start_time_utc as game_datetime,
-        o.away_team as team_name,
-        o.home_team as opponent_name,
-        'road' as venue_role,
-        o.away_runs_final as runs_for,
-        o.home_runs_final as runs_against,
+        team.name as team_name,
+        opponent.name as opponent_name,
+        case when tgs.team_role = 'away' then 'road' else 'home' end as venue_role,
+        tgs.runs_scored as runs_for,
+        tgs.runs_allowed as runs_against,
         case
-          when o.away_runs_final > o.home_runs_final then 'W'
-          when o.away_runs_final < o.home_runs_final then 'L'
+          when tgs.runs_scored > tgs.runs_allowed then 'W'
+          when tgs.runs_scored < tgs.runs_allowed then 'L'
           else 'T'
         end as result
-      from mlb_game_outcomes o
-      join mlb_games g on g.game_pk = o.game_pk
-      where o.away_team in (${quotedTeams})
-        and o.game_date < '${date}'
-
-      union all
-
-      select
-        o.game_pk,
-        o.game_date,
-        g.start_time_utc as game_datetime,
-        o.home_team as team_name,
-        o.away_team as opponent_name,
-        'home' as venue_role,
-        o.home_runs_final as runs_for,
-        o.away_runs_final as runs_against,
-        case
-          when o.home_runs_final > o.away_runs_final then 'W'
-          when o.home_runs_final < o.away_runs_final then 'L'
-          else 'T'
-        end as result
-      from mlb_game_outcomes o
-      join mlb_games g on g.game_pk = o.game_pk
-      where o.home_team in (${quotedTeams})
-        and o.game_date < '${date}'
+      from team_game_stats tgs
+      join games g on g.game_id = tgs.game_id
+      join teams team on team.team_id = tgs.team_id
+      left join teams opponent on opponent.team_id = tgs.opponent_team_id
+      where team.name in (${quotedTeams})
+        and tgs.game_date < '${date}'
     ),
     ranked_games as (
       select
@@ -3073,6 +3121,7 @@ const main = async () => {
   const seasonFirstInningByPitcherId = buildSeasonFirstInningByPitcherId({ date: options.date, games: rawGames })
   const pitcherWarByPitcherId = buildPitcherWarByPitcherId({ date: options.date, games: rawGames })
   const pitcherStrikeoutMarketsByGamePk = buildPitcherStrikeoutMarketsByGamePk({ date: options.date, games: rawGames })
+  const starterVsTeamStatmuseByGameSide = buildStarterVsTeamStatmuseByGameSide({ date: options.date, games: rawGames })
   const seriesEarlyPhaseByTeam = buildSeriesEarlyPhaseByTeam({ date: options.date, games: rawGames })
   const recentGamesByTeam = buildRecentGamesByTeam({ date: options.date, games: rawGames })
   const recentInningHistoryByTeam = buildRecentInningHistoryByTeam({ date: options.date, games: rawGames })
@@ -3095,6 +3144,7 @@ const main = async () => {
           )
         : [],
       strikeoutMarket: Number.isFinite(game.gamePk) ? pitcherStrikeoutMarketsByGamePk[game.gamePk]?.away ?? null : null,
+      statmuseVsOpponent: starterVsTeamStatmuseByGameSide[`${game.id}:away`] ?? null,
       recentForm: Number.isFinite(game.awayPitcher?.id)
         ? recentStarterFormByPitcherId[game.awayPitcher.id] ?? null
         : null,
@@ -3122,6 +3172,7 @@ const main = async () => {
           )
         : [],
       strikeoutMarket: Number.isFinite(game.gamePk) ? pitcherStrikeoutMarketsByGamePk[game.gamePk]?.home ?? null : null,
+      statmuseVsOpponent: starterVsTeamStatmuseByGameSide[`${game.id}:home`] ?? null,
       recentForm: Number.isFinite(game.homePitcher?.id)
         ? recentStarterFormByPitcherId[game.homePitcher.id] ?? null
         : null,

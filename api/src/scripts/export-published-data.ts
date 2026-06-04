@@ -529,6 +529,94 @@ const buildSummaryLineupBoard = (lineupBoard: any) => {
   }
 }
 
+const isUnknownStarterName = (value: unknown) =>
+  !String(value ?? '').trim() || /^unknown$/i.test(String(value ?? '').trim()) || /^starter tbd$/i.test(String(value ?? '').trim())
+
+const starterPitchHand = (starter: any) =>
+  String(starter?.pitchHand ?? starter?.throws ?? starter?.hand ?? '').trim()
+
+const starterTypeLabel = (starter: any) => {
+  const era = Number(starter?.era)
+  const whip = Number(starter?.whip)
+  if (Number.isFinite(era) && era <= 3.25 && Number.isFinite(whip) && whip <= 1.18) return 'Run-suppressor'
+  if (Number.isFinite(era) && era >= 4.75) return 'Traffic-risk'
+  return 'Known sample'
+}
+
+const starterPitchMixSummary = (starter: any) => {
+  const mix = starter?.pitchMixSummary ?? starter?.savant?.pitchMixSummary
+  return typeof mix === 'string' ? mix : ''
+}
+
+const lineupStarterFallback = (starter: any) => {
+  if (!starter?.fullName) return null
+  return {
+    id: starter.id ?? starter.playerId ?? null,
+    name: starter.fullName,
+    hand: starterPitchHand(starter),
+    type: starter.type ?? starter.profileType ?? starterTypeLabel(starter),
+    pitchMixSummary: starterPitchMixSummary(starter)
+  }
+}
+
+const replaceUnknownStarterText = (value: any, starterName: string, starterType: string): any => {
+  if (typeof value === 'string') {
+    return value
+      .replace(/\bagainst Unknown\b/g, `against ${starterName}`)
+      .replace(/\bvs Unknown\b/g, `vs ${starterName}`)
+      .replace(/\ba unknown sample lane\b/gi, `a ${starterType.toLowerCase()} lane`)
+      .replace(/\bunknown sample lane\b/gi, `${starterType.toLowerCase()} lane`)
+  }
+  if (Array.isArray(value)) return value.map((entry) => replaceUnknownStarterText(entry, starterName, starterType))
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(
+      Object.entries(value).map(([key, nested]) => [key, replaceUnknownStarterText(nested, starterName, starterType)])
+    )
+  }
+  return value
+}
+
+const hydrateLineupBoardStarters = (game: any) => {
+  if (!game?.lineupBoard) return game
+  const awayFallback = lineupStarterFallback(game.starterContext?.home)
+  const homeFallback = lineupStarterFallback(game.starterContext?.away)
+  if (!awayFallback && !homeFallback) return game
+
+  const lineupBoard = { ...game.lineupBoard }
+  const repairedFallbacks: Array<{ name: string; type: string }> = []
+  for (const [side, fallback] of [
+    ['away', awayFallback],
+    ['home', homeFallback]
+  ] as const) {
+    if (!fallback) continue
+    const team = lineupBoard[side]
+    if (!team || typeof team !== 'object') continue
+    const currentStarter = team.opposingStarter ?? {}
+    if (!isUnknownStarterName(currentStarter?.name)) continue
+    repairedFallbacks.push({ name: fallback.name, type: fallback.type })
+    lineupBoard[side] = replaceUnknownStarterText(
+      {
+        ...team,
+        opposingStarter: {
+          ...currentStarter,
+          ...fallback
+        }
+      },
+      fallback.name,
+      fallback.type
+    )
+  }
+
+  const hydratedGame = {
+    ...game,
+    lineupBoard
+  }
+  return repairedFallbacks.reduce(
+    (payload, fallback) => replaceUnknownStarterText(payload, fallback.name, fallback.type),
+    hydratedGame
+  )
+}
+
 const buildSlimTeamFeedContext = (context: any) => {
   if (!context) return null
   return {
@@ -825,10 +913,11 @@ const buildSlateGameSummary = (game: any, tennisResult: any = null) => ({
 })
 
 const buildSlateGameDetail = (game: any, tennisResult: any = null) => {
+  const hydratedGame = hydrateLineupBoardStarters(game)
   const detail = {
-    ...applyTennisResult(game, tennisResult),
+    ...applyTennisResult(hydratedGame, tennisResult),
     detailLevel: 'full',
-    stateContext: game.stateContext ?? null
+    stateContext: hydratedGame.stateContext ?? null
   }
   delete detail.playerProps
   return detail

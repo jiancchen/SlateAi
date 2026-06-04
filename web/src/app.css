@@ -6383,6 +6383,112 @@ h3 {
   gap: 8px;
 }
 
+.statmuse-matchup-panel {
+  display: grid;
+  gap: 8px;
+  padding: 9px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.028);
+}
+
+.statmuse-matchup-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.statmuse-matchup-head span,
+.statmuse-matchup-head a {
+  color: var(--accent);
+  font: 700 0.62rem/1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.statmuse-matchup-head strong {
+  color: var(--heading);
+  font-size: 0.78rem;
+}
+
+.statmuse-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(58px, 1fr));
+  gap: 6px;
+}
+
+.statmuse-stat-chip {
+  display: grid;
+  gap: 2px;
+  padding: 7px 8px;
+  border-radius: 7px;
+  border: 1px solid rgba(82, 214, 179, 0.15);
+  background: rgba(82, 214, 179, 0.055);
+}
+
+.statmuse-stat-chip small,
+.statmuse-season-stat small {
+  color: var(--muted);
+  font: 700 0.56rem/1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.statmuse-stat-chip strong {
+  color: var(--heading);
+  font-size: 0.86rem;
+  line-height: 1.1;
+}
+
+.statmuse-season-list {
+  display: grid;
+  gap: 6px;
+}
+
+.statmuse-season-row {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 7px;
+  align-items: start;
+  padding-top: 6px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.statmuse-season-row > strong {
+  color: var(--heading);
+  font: 800 0.72rem/1.4 var(--mono);
+}
+
+.statmuse-season-row > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.statmuse-season-stat {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+  min-height: 24px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.statmuse-season-stat b {
+  color: var(--text);
+  font-size: 0.72rem;
+  line-height: 1;
+}
+
+.statmuse-empty-line {
+  color: var(--text-soft);
+  line-height: 1.35;
+}
+
 .pitcher-history-section {
   display: grid;
   gap: 6px;

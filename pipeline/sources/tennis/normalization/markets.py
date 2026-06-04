@@ -185,6 +185,187 @@ def match_id_for_names(resolver: TennisIdentityResolver, date: str | None, playe
     return candidates[0] if len(candidates) == 1 else None
 
 
+def slug_token(value: Any) -> str:
+    return normalize_name(value).replace(" ", "-") or "unknown"
+
+
+def robinhood_tour(category: str | None, tournament: str | None) -> str:
+    text = f"{category or ''} {tournament or ''}".lower()
+    if "wta" in text or "women" in text:
+        return "WTA"
+    return "ATP"
+
+
+def robinhood_level(category: str | None) -> str:
+    text = str(category or "")
+    if text.startswith("french_open"):
+        return "Grand Slam"
+    if "challenger" in text:
+        return "Challenger"
+    if "wta_125" in text:
+        return "WTA 125K"
+    return "Prediction market"
+
+
+def refresh_resolver_player(resolver: TennisIdentityResolver, player: dict[str, Any]) -> None:
+    resolver.players[player["player_id"]] = player
+    for name in [player.get("name"), player.get("canonical_name"), player.get("source_player_id")]:
+        key = normalize_name(name)
+        if key:
+            bucket = resolver.players_by_name.setdefault(key, [])
+            if not any(existing.get("player_id") == player.get("player_id") for existing in bucket):
+                bucket.append(player)
+
+
+def refresh_resolver_match_player(resolver: TennisIdentityResolver, row: dict[str, Any]) -> None:
+    bucket = resolver.match_players.setdefault(row["match_id"], [])
+    if not any(existing.get("player_id") == row.get("player_id") for existing in bucket):
+        bucket.append(row)
+
+
+def upsert_robinhood_supplement_match(
+    resolver: TennisIdentityResolver,
+    match_payload: dict[str, Any],
+    *,
+    date: str | None,
+    source_snapshot_id: str | None,
+) -> str | None:
+    match_id = match_payload.get("id")
+    players = [player for player in match_payload.get("players") or [] if player.get("name")]
+    if not match_id or len(players) != 2:
+        return None
+    if match_id in resolver.matches:
+        return str(match_id)
+
+    tournament_name = match_payload.get("tournament") or "Robinhood Tennis"
+    category = match_payload.get("category")
+    tour = robinhood_tour(category, tournament_name)
+    surface = match_payload.get("surface") or None
+    tournament_id = f"rh-tournament-{slug_token(tournament_name)}-{date or 'undated'}"
+    con = resolver.con
+    con.execute(
+        """
+        insert into tournaments (tournament_id, name, tour, season, location, surface, level)
+        values (?, ?, ?, ?, ?, ?, ?)
+        on conflict(tournament_id) do update set
+          name = excluded.name,
+          tour = excluded.tour,
+          surface = coalesce(excluded.surface, tournaments.surface),
+          level = excluded.level
+        """,
+        (
+            tournament_id,
+            tournament_name,
+            tour,
+            int(str(date or "0")[:4]) if date else None,
+            None,
+            surface,
+            robinhood_level(category),
+        ),
+    )
+    best_of = 5 if category == "french_open_men_singles" else 3
+    con.execute(
+        """
+        insert into matches (
+          match_id, tournament_id, match_date, start_time_utc, round, tour,
+          surface, best_of, status, source_event_id, source_snapshot_id
+        ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        on conflict(match_id) do update set
+          tournament_id = excluded.tournament_id,
+          match_date = excluded.match_date,
+          start_time_utc = coalesce(excluded.start_time_utc, matches.start_time_utc),
+          round = coalesce(excluded.round, matches.round),
+          tour = coalesce(excluded.tour, matches.tour),
+          surface = coalesce(excluded.surface, matches.surface),
+          best_of = coalesce(excluded.best_of, matches.best_of),
+          status = coalesce(excluded.status, matches.status),
+          source_event_id = coalesce(excluded.source_event_id, matches.source_event_id),
+          source_snapshot_id = coalesce(excluded.source_snapshot_id, matches.source_snapshot_id)
+        """,
+        (
+            match_id,
+            tournament_id,
+            date,
+            ts_to_iso(match_payload.get("startIso")),
+            match_payload.get("round"),
+            tour,
+            surface,
+            best_of,
+            "scheduled",
+            match_payload.get("eventId"),
+            source_snapshot_id,
+        ),
+    )
+    resolver.matches[str(match_id)] = {
+        "match_id": str(match_id),
+        "tournament_id": tournament_id,
+        "match_date": date,
+        "start_time_utc": ts_to_iso(match_payload.get("startIso")),
+        "round": match_payload.get("round"),
+        "tour": tour,
+        "surface": surface,
+        "best_of": best_of,
+        "status": "scheduled",
+        "source_event_id": match_payload.get("eventId"),
+        "source_snapshot_id": source_snapshot_id,
+    }
+    resolver.upsert_alias("match", str(match_id), "robinhood", match_payload.get("eventId"), match_payload.get("title") or match_id, 0.9)
+
+    for index, player_payload in enumerate(players, start=1):
+        name = player_payload.get("name")
+        player_id = resolver.player_id_by_name("robinhood", name) or f"tennis-player-{slug_token(name)}"
+        player = {
+            "player_id": player_id,
+            "source_player_id": player_payload.get("symbol"),
+            "name": name,
+            "canonical_name": name,
+            "tour": tour,
+            "country": None,
+            "birth_date": None,
+            "handedness": None,
+            "active": 1,
+        }
+        con.execute(
+            """
+            insert into players (
+              player_id, source_player_id, name, canonical_name, tour, country,
+              birth_date, handedness, active
+            ) values (?, ?, ?, ?, ?, null, null, null, 1)
+            on conflict(player_id) do update set
+              source_player_id = coalesce(players.source_player_id, excluded.source_player_id),
+              name = excluded.name,
+              canonical_name = excluded.canonical_name,
+              tour = coalesce(players.tour, excluded.tour),
+              active = 1
+            """,
+            (player_id, player_payload.get("symbol"), name, name, tour),
+        )
+        con.execute(
+            """
+            insert into match_players (match_id, player_id, side, seed, pre_match_rank, market_name)
+            values (?, ?, ?, null, null, ?)
+            on conflict(match_id, player_id) do update set
+              side = excluded.side,
+              market_name = excluded.market_name
+            """,
+            (match_id, player_id, index, name),
+        )
+        refresh_resolver_player(resolver, player)
+        refresh_resolver_match_player(
+            resolver,
+            {
+                "match_id": str(match_id),
+                "player_id": player_id,
+                "side": index,
+                "market_name": name,
+                "name": name,
+                "canonical_name": name,
+            },
+        )
+        resolver.upsert_alias("player", player_id, "robinhood", player_payload.get("symbol"), name, 0.9)
+    return str(match_id)
+
+
 def source_name_for_table(table: str, payload: dict[str, Any]) -> str:
     if "kalshi" in table:
         return "kalshi"
@@ -364,6 +545,13 @@ def parse_robinhood_supplement_payload(
         if match_id not in resolver.matches:
             names = [player.get("name") for player in match_payload.get("players") or [] if player.get("name")]
             match_id = match_id_for_names(resolver, date, names)
+        if not match_id:
+            match_id = upsert_robinhood_supplement_match(
+                resolver,
+                match_payload,
+                date=date,
+                source_snapshot_id=source_snapshot_id,
+            )
         if not match_id:
             resolver.insert_unresolved(
                 "tennis_market_match",

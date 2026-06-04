@@ -652,7 +652,16 @@ const buildTeamSavantContext = (teamId, context) => {
   const xwoba = average(statcast.map((row) => row.rolling_7_xwoba ?? row.rolling_14_xwoba ?? row.rolling_30_xwoba))
   const hardHitPct = average(statcast.map((row) => row.rolling_7_hard_hit_pct ?? row.rolling_14_hard_hit_pct))
   const barrelPct = average(statcast.map((row) => row.rolling_7_barrel_pct ?? row.rolling_14_barrel_pct))
-  if (![hitRate, xba, xwoba, hardHitPct, barrelPct].every(Number.isFinite)) return null
+  if (![hitRate, xba, xwoba, hardHitPct, barrelPct].every(Number.isFinite)) {
+    return {
+      ba: 0.245,
+      xba: 0.245,
+      xwoba: 0.315,
+      hardHitPct: 38,
+      barrelPct: 7,
+      staleFeed: true
+    }
+  }
   return {
     ba: round(hitRate, 3),
     xba: round(xba, 3),

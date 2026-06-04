@@ -1,0 +1,8 @@
+{
+  "date": "2026-06-03",
+  "generated_at": "2026-06-03T20:18:08.747250+00:00",
+  "inserted": 30,
+  "ok": true,
+  "script": "data-migration/scripts/derive_mlb_team_state_from_typed.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db"
+}

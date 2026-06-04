@@ -1,6 +1,6 @@
 export const battingImpactMeta = {
   "season": 2026,
-  "generatedAt": "2026-05-18T13:35:58.695Z",
+  "generatedAt": "2026-06-03T20:24:27.281Z",
   "files": [
     "may14batting leaders.rtf",
     "may14_battingleaders.rtf",
