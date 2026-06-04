@@ -1,25 +1,530 @@
 {
-  "slateDate": "2026-06-01",
-  "boardMatchId": "rg-w-maja-chwalinska-diane-parry-2026-06-01",
-  "boardTitle": "Maja Chwalinska vs Diane Parry",
-  "flashscoreLabel": "Parry Diane - Chwalinska Maja",
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-french-open-women-singles-shnaider-vs-chwalinska-2026-06-04",
+  "boardTitle": "Diana Shnaider vs Maja Chwalinska",
+  "boardPlayerName": "Maja Chwalinska",
+  "recentOpponentName": "Parry D.",
+  "recentIndex": 1,
+  "recentEvent": "French Open (France)",
+  "recentDate": "Jun 01, 26",
+  "recentIsoDate": "2026-06-01",
+  "recentResult": "Win 6-3 6-2",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Chwalinska M. - Parry D.",
   "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/wta-singles/french-open/",
-  "generatedAt": "2026-06-01T07:16:20.106Z",
-  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/chwalinska-maja-OIxOD54s/parry-diane-hQQLzcNT/",
-  "matchId": "nVQtBlHc",
   "players": [
-    "Maja Chwalinska",
-    "Diane Parry"
+    "Chwalinska M.",
+    "Parry D."
   ],
+  "generatedAt": "2026-06-04T00:09:27.312Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/nVQtBlHc/",
+  "matchId": "nVQtBlHc",
   "feedUrls": {
     "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_nVQtBlHc",
     "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_nVQtBlHc"
   },
   "scoreSummary": {
-    "sets": [],
-    "totalDuration": ""
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:48"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:47"
+      }
+    ],
+    "totalDuration": "1:35"
   },
-  "scopes": [],
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "69%",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (32/42)",
+              "right": "55% (22/40)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (8/14)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "3/6",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (20/40)",
+              "right": "26% (11/42)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (9/18)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "0/1",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "21",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "38",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Net points won",
+              "left": "78% (7/9)",
+              "right": "58% (14/24)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (40/56)",
+              "right": "53% (31/58)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (27/58)",
+              "right": "29% (16/56)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (67/114)",
+              "right": "41% (47/114)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "9",
+              "right": "1",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (9/9)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Return games won",
+              "left": "38% (3/8)",
+              "right": "0% (0/9)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "64%",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (17/22)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (3/6)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/3",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (9/21)",
+              "right": "23% (5/22)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "0/0",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "12",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "21",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (20/28)",
+              "right": "58% (19/33)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (14/33)",
+              "right": "29% (8/28)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (34/61)",
+              "right": "44% (27/61)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "76%",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (15/20)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (5/8)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "1/3",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "58% (11/19)",
+              "right": "30% (6/20)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (4/6)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/1",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "9",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "17",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (20/28)",
+              "right": "48% (12/25)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (13/25)",
+              "right": "29% (8/28)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "62% (33/53)",
+              "right": "38% (20/53)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Chwalinska M.",
+              "rightPlayer": "Parry D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "notes": [
     "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
     "Service games won and return games won are sourced directly from Flashscore match statistics."

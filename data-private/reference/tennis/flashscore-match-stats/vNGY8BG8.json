@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-birmingham-shimabukuro-vs-ymer-2026-06-04",
+  "boardTitle": "Sho Shimabukuro vs Elias Ymer",
+  "boardPlayerName": "Elias Ymer",
+  "recentOpponentName": "Stewart H.",
+  "recentIndex": 1,
+  "recentEvent": "Birmingham (United Kingdom)",
+  "recentDate": "Jun 01, 26",
+  "recentIsoDate": "2026-06-01",
+  "recentResult": "Win 7-6 6-2",
+  "recentSurface": "Grass",
+  "flashscoreLabel": "Ymer E. - Stewart H.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/birmingham/",
+  "players": [
+    "Ymer E.",
+    "Stewart H."
+  ],
+  "generatedAt": "2026-06-04T00:09:21.446Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/vNGY8BG8/",
+  "matchId": "vNGY8BG8",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_vNGY8BG8",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_vNGY8BG8"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 2,
+        "duration": "0:57"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:32"
+      }
+    ],
+    "totalDuration": "1:29"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "6",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "63%",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (31/38)",
+              "right": "71% (32/45)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (13/23)",
+              "right": "26% (7/27)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "6/9",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (13/45)",
+              "right": "18% (7/38)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "74% (20/27)",
+              "right": "43% (10/23)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/9",
+              "right": "1/1",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "24",
+              "right": "15",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "33",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (44/61)",
+              "right": "55% (39/71)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (32/71)",
+              "right": "28% (17/61)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (76/132)",
+              "right": "42% (56/132)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "90% (9/10)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Return games won",
+              "left": "30% (3/10)",
+              "right": "10% (1/10)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "63%",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (16/21)",
+              "right": "72% (26/36)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (10/14)",
+              "right": "24% (5/21)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "6/7",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (11/36)",
+              "right": "29% (6/21)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "76% (16/21)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/7",
+              "right": "1/1",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "10",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "18",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (26/35)",
+              "right": "57% (31/54)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (23/54)",
+              "right": "26% (9/35)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (49/89)",
+              "right": "45% (40/89)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "60%",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (15/17)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (3/9)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (2/9)",
+              "right": "6% (1/17)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (4/6)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "5",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "15",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (18/26)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (9/17)",
+              "right": "31% (8/26)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "63% (27/43)",
+              "right": "37% (16/43)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Stewart H."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

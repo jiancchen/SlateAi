@@ -648,15 +648,15 @@ def parse_robinhood_supplement_payload(
     return list(contracts.values()), ticks, snapshots, counts
 
 
-def parse_fanduel_lines_payload(
+def parse_sportsbook_lines_payload(
     payload: dict[str, Any],
     resolver: TennisIdentityResolver,
     *,
     source_snapshot_id: str | None = None,
     local_path: str | None = None,
+    source_name: str = "fanduel",
+    source_table: str = "tennis_fanduel_lines",
 ) -> tuple[list[ParsedMarketSnapshot], dict[str, int]]:
-    source_name = "fanduel"
-    source_table = "tennis_fanduel_lines"
     captured_at = ts_to_iso(payload.get("capturedAt")) or utc_now()
     date = payload.get("date")
     snapshots: list[ParsedMarketSnapshot] = []
@@ -694,7 +694,7 @@ def parse_fanduel_lines_payload(
                 match_payload.get("eventId") or local_path,
                 raw_title or "unknown",
                 {"local_path": local_path, "payload": match_payload},
-                "Could not confidently map FanDuel line match to canonical match.",
+                f"Could not confidently map {source_name} line match to canonical match.",
             )
             counts["unparsed_rows"] += 1
             continue
@@ -713,12 +713,66 @@ def parse_fanduel_lines_payload(
         for row in markets.get("firstSetTotalGames") or []:
             counts["source_rows"] += 1
             add_snapshot(match_id, None, "first_set_total_games", str(row.get("side") or "Unknown selection"), to_float(row.get("line")), row.get("odds"))
+        for row in markets.get("firstGameTotalPoints") or []:
+            counts["source_rows"] += 1
+            add_snapshot(match_id, None, "first_game_total_points", str(row.get("side") or "Unknown selection"), to_float(row.get("line")), row.get("odds"))
+        for row in markets.get("firstServiceGameTotalPoints") or []:
+            counts["source_rows"] += 1
+            player = row.get("player")
+            selection = f"{player} {row.get('side')}".strip() if player else str(row.get("side") or "Unknown selection")
+            add_snapshot(
+                match_id,
+                resolver.player_id_for_match(match_id, source_name, player) if player else None,
+                "first_service_game_total_points",
+                selection,
+                to_float(row.get("line")),
+                row.get("odds"),
+            )
+        for row in markets.get("firstGameProps") or []:
+            counts["source_rows"] += 1
+            market_name = str(row.get("market") or "First game props")
+            selection = f"{market_name}: {row.get('selection') or 'Unknown selection'}"
+            add_snapshot(match_id, None, "first_game_props", selection, None, row.get("odds"))
         for row in markets.get("winAtLeastOneSet") or []:
             counts["source_rows"] += 1
             player = row.get("player") or str(row.get("market") or "").replace(" to win at least one set", "")
             add_snapshot(match_id, resolver.player_id_for_match(match_id, source_name, player) if player else None, "set_win", str(row.get("market") or player or "Unknown selection"), None, row.get("odds"))
     counts["parsed_snapshots"] = len(snapshots)
     return snapshots, counts
+
+
+def parse_fanduel_lines_payload(
+    payload: dict[str, Any],
+    resolver: TennisIdentityResolver,
+    *,
+    source_snapshot_id: str | None = None,
+    local_path: str | None = None,
+) -> tuple[list[ParsedMarketSnapshot], dict[str, int]]:
+    return parse_sportsbook_lines_payload(
+        payload,
+        resolver,
+        source_snapshot_id=source_snapshot_id,
+        local_path=local_path,
+        source_name="fanduel",
+        source_table="tennis_fanduel_lines",
+    )
+
+
+def parse_draftkings_lines_payload(
+    payload: dict[str, Any],
+    resolver: TennisIdentityResolver,
+    *,
+    source_snapshot_id: str | None = None,
+    local_path: str | None = None,
+) -> tuple[list[ParsedMarketSnapshot], dict[str, int]]:
+    return parse_sportsbook_lines_payload(
+        payload,
+        resolver,
+        source_snapshot_id=source_snapshot_id,
+        local_path=local_path,
+        source_name="draftkings",
+        source_table="tennis_draftkings_lines",
+    )
 
 
 def parse_market_rows(

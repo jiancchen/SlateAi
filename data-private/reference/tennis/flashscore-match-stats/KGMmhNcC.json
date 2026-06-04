@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-birmingham-bolt-vs-fery-2026-06-04",
+  "boardTitle": "Arthur Fery vs Alex Bolt",
+  "boardPlayerName": "Alex Bolt",
+  "recentOpponentName": "Bellucci M.",
+  "recentIndex": 0,
+  "recentEvent": "Birmingham (United Kingdom)",
+  "recentDate": "Jun 02, 26",
+  "recentIsoDate": "2026-06-02",
+  "recentResult": "Win 6-3 6-0",
+  "recentSurface": "Grass",
+  "flashscoreLabel": "Bellucci M. - Bolt A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/birmingham/",
+  "players": [
+    "Bellucci M.",
+    "Bolt A."
+  ],
+  "generatedAt": "2026-06-04T00:09:26.178Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/KGMmhNcC/",
+  "matchId": "KGMmhNcC",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_KGMmhNcC",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_KGMmhNcC"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:30"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 0,
+        "rightGames": 6,
+        "duration": "0:20"
+      }
+    ],
+    "totalDuration": "0:50"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "11",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "73%",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (19/33)",
+              "right": "100% (27/27)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "31% (4/13)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/7",
+              "right": "0/0",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (5/27)",
+              "right": "42% (14/33)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (5/10)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "4/7",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "28",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "6",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (23/46)",
+              "right": "86% (32/37)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "14% (5/37)",
+              "right": "50% (23/46)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "34% (28/83)",
+              "right": "66% (55/83)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "43% (3/7)",
+              "right": "100% (8/8)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/8)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Total games won",
+              "left": "20% (3/15)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "81%",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (15/21)",
+              "right": "100% (17/17)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (3/8)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "12% (2/17)",
+              "right": "33% (7/21)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (1/4)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "13",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "3",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (18/29)",
+              "right": "91% (20/22)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "9% (2/22)",
+              "right": "38% (11/29)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (20/51)",
+              "right": "61% (31/51)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "63%",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "33% (4/12)",
+              "right": "100% (10/10)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "20% (1/5)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "0/0",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (3/10)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (4/6)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "3/5",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "0",
+              "right": "15",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "29% (5/17)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "20% (3/15)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "25% (8/32)",
+              "right": "75% (24/32)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            },
+            {
+              "label": "Total games won",
+              "left": "0% (0/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Bellucci M.",
+              "rightPlayer": "Bolt A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

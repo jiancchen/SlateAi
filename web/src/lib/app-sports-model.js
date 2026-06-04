@@ -14,6 +14,14 @@ const percentFormatter = new Intl.NumberFormat('en-US', {
 
 const clamp = (value, min, max) => Math.min(max, Math.max(min, value))
 const roundToTenths = (value) => Math.round(value * 10) / 10
+const normalizeName = (value = '') =>
+  String(value)
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/gi, ' ')
+    .trim()
+    .toLowerCase()
+const hasNumericValue = (value) => value !== null && value !== undefined && value !== '' && Number.isFinite(Number(value))
 
 export const formatAmericanOdds = (americanOdds) => {
   if (!Number.isFinite(Number(americanOdds))) return 'N/A'
@@ -28,21 +36,22 @@ export const formatProbability = (value) =>
   Number.isFinite(Number(value)) ? percentFormatter.format(Number(value)) : 'N/A'
 
 export const americanToDecimal = (americanOdds) => {
+  if (!hasNumericValue(americanOdds)) return null
   const odds = Number(americanOdds)
-  if (!Number.isFinite(odds)) return null
   return odds > 0 ? 1 + odds / 100 : 1 + 100 / Math.abs(odds)
 }
 
 export const decimalToAmerican = (decimalOdds) => {
+  if (!hasNumericValue(decimalOdds)) return null
   const decimal = Number(decimalOdds)
-  if (!Number.isFinite(decimal) || decimal <= 1) return null
+  if (decimal <= 1) return null
   if (decimal >= 2) return Math.round((decimal - 1) * 100)
   return Math.round(-100 / (decimal - 1))
 }
 
 export const impliedProbabilityFromAmerican = (americanOdds) => {
+  if (!hasNumericValue(americanOdds)) return null
   const odds = Number(americanOdds)
-  if (!Number.isFinite(odds)) return null
   return odds > 0 ? 100 / (odds + 100) : Math.abs(odds) / (Math.abs(odds) + 100)
 }
 
@@ -61,17 +70,48 @@ const getMoneylineMarket = (odds) =>
   odds?.markets?.[0] ??
   null
 
+const findTennisMarketPlayer = (game, side) => {
+  const sideName = normalizeName(side?.name)
+  if (!sideName || game?.league !== 'Tennis') return null
+  const predictionMarketPlayer = game.tennisContext?.predictionMarket?.players?.find((player) =>
+    normalizeName(player.name) === sideName
+  )
+  if (predictionMarketPlayer) return predictionMarketPlayer
+  const contextPlayer = game.tennisContext?.players?.find((player) => normalizeName(player.name) === sideName)
+  if (!contextPlayer) return null
+  return {
+    name: contextPlayer.name,
+    probabilityPct: contextPlayer.boardPct,
+    marketLabel: contextPlayer.marketLabel
+  }
+}
+
 const buildParticipantModel = (game, side, index, americanOdds) => {
-  const decimalOdds = americanToDecimal(americanOdds)
-  const impliedProbability = impliedProbabilityFromAmerican(americanOdds)
+  const tennisMarketPlayer = findTennisMarketPlayer(game, side)
+  const marketPct = Number(tennisMarketPlayer?.probabilityPct)
+  const marketImpliedProbability = Number.isFinite(marketPct) && marketPct > 0 ? marketPct / 100 : null
+  const decimalOdds = americanToDecimal(americanOdds) ?? (marketImpliedProbability ? 1 / marketImpliedProbability : null)
+  const impliedProbability = impliedProbabilityFromAmerican(americanOdds) ?? marketImpliedProbability
+  const derivedAmericanOdds = hasNumericValue(americanOdds)
+    ? Number(americanOdds)
+    : decimalOdds
+      ? decimalToAmerican(decimalOdds)
+      : null
+  const predictionMarketLabel = Number.isFinite(marketPct)
+    ? `${Math.round(marketPct)}c`
+    : tennisMarketPlayer?.marketLabel || 'N/A'
   return {
     id: `${game.id}:${index}`,
     index,
     role: side.side || side.role || `Side ${index + 1}`,
     name: side.name,
     detail: side.detail,
-    americanOdds,
-    americanLabel: Number.isFinite(Number(americanOdds)) ? formatAmericanOdds(Number(americanOdds)) : 'N/A',
+    americanOdds: derivedAmericanOdds,
+    americanLabel: hasNumericValue(americanOdds)
+      ? formatAmericanOdds(Number(americanOdds))
+      : marketImpliedProbability
+        ? predictionMarketLabel
+        : 'N/A',
     decimalOdds,
     impliedProbability,
     impliedProbabilityLabel: formatProbability(impliedProbability)
@@ -392,4 +432,3 @@ export const rankMlbPlayerProps = (games) =>
       return right.expectedValue - left.expectedValue
     })
     .map((target, index) => ({ ...target, rank: index + 1 }))
-

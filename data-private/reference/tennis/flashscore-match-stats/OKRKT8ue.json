@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-birmingham-virtanen-vs-vukic-2026-06-04",
+  "boardTitle": "Otto Virtanen vs Aleksandar Vukic",
+  "boardPlayerName": "Otto Virtanen",
+  "recentOpponentName": "Mpetshi Perricard G.",
+  "recentIndex": 2,
+  "recentEvent": "Bordeaux (France)",
+  "recentDate": "May 13, 26",
+  "recentIsoDate": "2026-05-13",
+  "recentResult": "Loss 6-2 5-7 4-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Virtanen O. - Mpetshi Perricard G.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/bordeaux/",
+  "players": [
+    "Virtanen O.",
+    "Mpetshi Perricard G."
+  ],
+  "generatedAt": "2026-06-04T00:09:24.053Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/OKRKT8ue/",
+  "matchId": "OKRKT8ue",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_OKRKT8ue",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_OKRKT8ue"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:26"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:45"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "1:51"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "5",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "8",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "67%",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (39/52)",
+              "right": "74% (45/61)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (15/31)",
+              "right": "37% (11/30)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/11",
+              "right": "5/9",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (16/61)",
+              "right": "25% (13/52)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (19/30)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/9",
+              "right": "4/11",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "36",
+              "right": "26",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "26",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Net points won",
+              "left": "73% (8/11)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (54/83)",
+              "right": "62% (56/91)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (35/91)",
+              "right": "35% (29/83)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (89/174)",
+              "right": "49% (85/174)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "73% (11/15)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Return games won",
+              "left": "27% (4/15)",
+              "right": "27% (4/15)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (15/30)",
+              "right": "50% (15/30)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "71%",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (12/16)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (4/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "0/2",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (7/15)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "83% (5/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/2",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "7",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "8",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (17/24)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (9/21)",
+              "right": "29% (7/24)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (26/45)",
+              "right": "42% (19/45)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "69%",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (18/24)",
+              "right": "78% (21/27)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (5/11)",
+              "right": "25% (3/12)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "1/2",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "11% (3/27)",
+              "right": "21% (5/24)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (9/12)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/6",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "9",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "12",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (4/4)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (22/34)",
+              "right": "62% (24/39)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (15/39)",
+              "right": "35% (12/34)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (37/73)",
+              "right": "49% (36/73)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "46%",
+              "right": "61%",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (9/12)",
+              "right": "68% (13/19)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (6/14)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "4/5",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (6/19)",
+              "right": "17% (2/12)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "2/3",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "10",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "6",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (15/25)",
+              "right": "65% (20/31)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (11/31)",
+              "right": "40% (10/25)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (26/56)",
+              "right": "54% (30/56)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Mpetshi Perricard G."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

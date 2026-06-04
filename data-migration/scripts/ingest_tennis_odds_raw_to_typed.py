@@ -26,6 +26,7 @@ from pipeline.sources.tennis.normalization.markets import (
     insert_contracts,
     insert_snapshots,
     insert_ticks,
+    parse_draftkings_lines_payload,
     parse_fanduel_lines_payload,
     parse_robinhood_supplement_payload,
 )
@@ -80,6 +81,7 @@ def source_snapshot_id_for(local_path: str) -> str:
 def candidate_files(date: str) -> list[Path]:
     candidates = [
         ROOT / "data-private" / "reference" / "tennis" / f"robinhood-tennis-supplement-{date}.json",
+        ROOT / "data-private" / "reference" / "tennis" / f"draftkings-lines-{date}.json",
         ROOT / "data-private" / "reference" / "tennis" / f"fanduel-lines-{date}.json",
     ]
     return [path for path in candidates if path.exists()]
@@ -96,7 +98,13 @@ def ensure_source_snapshot(con: sqlite3.Connection, file_path: Path, payload: di
         "payload_date": payload.get("date"),
         "source": payload.get("source"),
         "source_url": payload.get("sourceUrl"),
-        "parse_family": "robinhood_supplement" if "robinhood-tennis-supplement" in file_path.name else "fanduel_lines",
+        "parse_family": (
+            "robinhood_supplement"
+            if "robinhood-tennis-supplement" in file_path.name
+            else "draftkings_lines"
+            if "draftkings-lines" in file_path.name
+            else "fanduel_lines"
+        ),
     }
     con.execute(
         """
@@ -283,6 +291,14 @@ def ingest(args: argparse.Namespace) -> dict[str, Any]:
                 snapshots.extend(parsed_snapshots)
             elif "fanduel-lines" in file_path.name:
                 parsed_snapshots, row_counts = parse_fanduel_lines_payload(
+                    payload,
+                    resolver,
+                    source_snapshot_id=snapshot_id,
+                    local_path=sql_path(file_path),
+                )
+                snapshots.extend(parsed_snapshots)
+            elif "draftkings-lines" in file_path.name:
+                parsed_snapshots, row_counts = parse_draftkings_lines_payload(
                     payload,
                     resolver,
                     source_snapshot_id=snapshot_id,

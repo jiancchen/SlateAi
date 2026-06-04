@@ -1,0 +1,17 @@
+{
+  "contract": "data-migration/contracts/tennis_public_export_contract.md",
+  "date": "2026-06-04",
+  "db_match_count": 23,
+  "db_prediction_count": 23,
+  "errors": [],
+  "export_dir": "data-migration/export-previews/tennis/2026-06-04",
+  "export_game_count": 23,
+  "export_prediction_count": 23,
+  "game_file_count": 23,
+  "generated_at": "2026-06-04T00:27:23.051871+00:00",
+  "manifest_id": "f0f5438e9d8307538604fa52d0100e3c",
+  "ok": true,
+  "script": "data-migration/scripts/validate_tennis_public_export.py",
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "summary_path": "data-migration/export-previews/tennis/2026-06-04/summary.json"
+}

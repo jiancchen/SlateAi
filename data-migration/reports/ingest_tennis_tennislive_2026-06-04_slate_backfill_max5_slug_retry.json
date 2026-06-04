@@ -1,0 +1,63 @@
+{
+  "ok": true,
+  "script": "data-migration/scripts/ingest_tennis_tennislive_to_typed.py",
+  "source_db": "/Users/jcchen/Documents/New project/data-private/warehouse/sports/tennis/sql-tennis.db",
+  "started_at": "2026-06-04T05:31:42.046246+00:00",
+  "finished_at": "2026-06-04T05:32:32.213498+00:00",
+  "player_urls": [
+    "https://www.tennislive.net/atp/bu-yunchaokete/",
+    "https://www.tennislive.net/atp/chak-lam-coleman-wong/",
+    "https://www.tennislive.net/atp/taro-taro/",
+    "https://www.tennislive.net/wta/marta-kostyuk/"
+  ],
+  "match_urls": [],
+  "max_matches": 5,
+  "player_results": [
+    {
+      "status": "ok",
+      "player_id": "tennis-player-bu-yunchaokete",
+      "player": "Bu Yunchaokete",
+      "snapshot_already_seen": false,
+      "surface_records": 84,
+      "match_links": 5,
+      "matches_fetched": 4,
+      "matches_skipped_existing": 1,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-chak-lam-coleman-wong",
+      "player": "Chak Lam Coleman Wong",
+      "snapshot_already_seen": false,
+      "surface_records": 77,
+      "match_links": 5,
+      "matches_fetched": 4,
+      "matches_skipped_existing": 1,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-taro-daniel",
+      "player": "Taro Daniel",
+      "snapshot_already_seen": false,
+      "surface_records": 133,
+      "match_links": 5,
+      "matches_fetched": 4,
+      "matches_skipped_existing": 1,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-marta-kostyuk",
+      "player": "Marta Kostyuk",
+      "snapshot_already_seen": false,
+      "surface_records": 91,
+      "match_links": 5,
+      "matches_fetched": 5,
+      "matches_skipped_existing": 0,
+      "matches_failed": 0
+    }
+  ],
+  "match_results": [],
+  "failures": []
+}

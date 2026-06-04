@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-birmingham-mcdonald-vs-hijikata-2026-06-04",
+  "boardTitle": "Mackenzie McDonald vs Rinky Hijikata",
+  "boardPlayerName": "Rinky Hijikata",
+  "recentOpponentName": "Fearnley J.",
+  "recentIndex": 0,
+  "recentEvent": "Birmingham (United Kingdom)",
+  "recentDate": "Jun 02, 26",
+  "recentIsoDate": "2026-06-02",
+  "recentResult": "Win 6-1 7-6",
+  "recentSurface": "Grass",
+  "flashscoreLabel": "Fearnley J. - Hijikata R.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/birmingham/",
+  "players": [
+    "Fearnley J.",
+    "Hijikata R."
+  ],
+  "generatedAt": "2026-06-04T00:09:24.132Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/EyBYe5bm/",
+  "matchId": "EyBYe5bm",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_EyBYe5bm",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_EyBYe5bm"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:29"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 7,
+        "duration": "1:00"
+      }
+    ],
+    "totalDuration": "1:29"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "9",
+              "right": "5",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "0",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "64%",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (26/36)",
+              "right": "67% (30/45)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (7/24)",
+              "right": "60% (15/25)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "3/4",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (15/45)",
+              "right": "31% (11/36)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (10/25)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "3/7",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "22",
+              "right": "27",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "27",
+              "right": "18",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (33/58)",
+              "right": "64% (45/70)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (25/70)",
+              "right": "43% (25/58)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (58/128)",
+              "right": "55% (70/128)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (6/9)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Return games won",
+              "left": "10% (1/10)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Total games won",
+              "left": "37% (7/19)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "64%",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (8/10)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "20% (2/10)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "0/0",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (3/14)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/5",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "8",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "10",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "45% (9/20)",
+              "right": "73% (16/22)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (6/22)",
+              "right": "55% (11/20)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (15/42)",
+              "right": "64% (27/42)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "65%",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (18/26)",
+              "right": "58% (18/31)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (5/14)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "3/4",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (12/31)",
+              "right": "31% (8/26)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "41% (7/17)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "1/2",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "19",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "8",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (24/38)",
+              "right": "60% (29/48)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (19/48)",
+              "right": "37% (14/38)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (43/86)",
+              "right": "50% (43/86)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Fearnley J.",
+              "rightPlayer": "Hijikata R."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

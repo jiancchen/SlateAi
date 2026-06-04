@@ -1,0 +1,689 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-birmingham-gill-vs-majchrzak-2026-06-04",
+  "boardTitle": "Felix Gill vs Kamil Majchrzak",
+  "boardPlayerName": "Felix Gill",
+  "recentOpponentName": "Blanchet U.",
+  "recentIndex": 0,
+  "recentEvent": "Birmingham (United Kingdom)",
+  "recentDate": "Jun 03, 26",
+  "recentIsoDate": "2026-06-03",
+  "recentResult": "Win 6-7 7-6 6-4",
+  "recentSurface": "Grass",
+  "flashscoreLabel": "Blanchet U. - Gill F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/birmingham/",
+  "players": [
+    "Blanchet U.",
+    "Gill F."
+  ],
+  "generatedAt": "2026-06-04T00:09:21.149Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/SImoNscn/",
+  "matchId": "SImoNscn",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_SImoNscn",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_SImoNscn"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:57"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 7,
+        "duration": "0:55"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:32"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "17",
+              "right": "14",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "1",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "60%",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "84% (53/63)",
+              "right": "77% (56/73)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "52% (23/44)",
+              "right": "60% (29/48)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/7",
+              "right": "4/4",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (17/73)",
+              "right": "14% (9/63)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (19/48)",
+              "right": "48% (21/44)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/4",
+              "right": "1/7",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "42",
+              "right": "41",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "42",
+              "right": "37",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Net points won",
+              "left": "47% (7/15)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (76/106)",
+              "right": "70% (85/121)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (36/121)",
+              "right": "28% (30/106)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (112/227)",
+              "right": "51% (115/227)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "94% (16/17)",
+              "right": "100% (17/17)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/17)",
+              "right": "6% (1/17)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Total games won",
+              "left": "47% (16/34)",
+              "right": "53% (18/34)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "10",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "51%",
+              "right": "57%",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "86% (18/21)",
+              "right": "75% (21/28)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (12/20)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "2/2",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (7/28)",
+              "right": "14% (3/21)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (9/21)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "0/3",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "17",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "19",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "73% (30/41)",
+              "right": "67% (33/49)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (16/49)",
+              "right": "27% (11/41)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (46/90)",
+              "right": "49% (44/90)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "8",
+              "right": "3",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "59%",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (20/25)",
+              "right": "78% (21/27)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (8/12)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "2/2",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (6/27)",
+              "right": "20% (5/25)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (8/19)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "0/3",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "14",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "12",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/0)",
+              "right": "100% (3/0)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (28/37)",
+              "right": "70% (32/46)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (14/46)",
+              "right": "24% (9/37)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (42/83)",
+              "right": "49% (41/83)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "69%",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (15/17)",
+              "right": "78% (14/18)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (3/12)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "22% (4/18)",
+              "right": "6% (1/17)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (2/8)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "10",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "6",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (5/15)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (18/28)",
+              "right": "77% (20/26)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (6/26)",
+              "right": "36% (10/28)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (24/54)",
+              "right": "56% (30/54)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Blanchet U.",
+              "rightPlayer": "Gill F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

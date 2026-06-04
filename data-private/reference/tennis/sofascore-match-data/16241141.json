@@ -1,0 +1,748 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/vit-kopriva-vitaliy-sachko#id:16241141",
+  "eventId": "16241141",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-prostejov-sachko-vs-kopriva-2026-06-04",
+  "boardTitle": "Vitaliy Sachko vs Vit Kopriva",
+  "capturedAt": "2026-06-04T00:25:37.481Z",
+  "compactEvent": {
+    "id": 16241141,
+    "slug": "vit-kopriva-vitaliy-sachko",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1780563600,
+    "tournament": {
+      "name": "Prostejov, Czech Republic",
+      "slug": "prostejov-czech-republic",
+      "category": "Challenger",
+      "uniqueTournament": "Prostejov, Czech Republic"
+    },
+    "roundInfo": {
+      "round": 5,
+      "name": "Round of 16",
+      "slug": "round-of-16",
+      "cupRoundType": 8
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 100069,
+      "name": "Vitaliy Sachko",
+      "shortName": "V. Sachko",
+      "ranking": 210,
+      "currentRanking": 210,
+      "country": {
+        "alpha2": "UA",
+        "alpha3": "UKR",
+        "name": "Ukraine",
+        "slug": "ukraine"
+      },
+      "playerTeamInfo": {
+        "height": 1.88,
+        "weight": 73,
+        "plays": "right-handed",
+        "prizeCurrent": 90768,
+        "prizeTotal": 677293,
+        "birthCity": {
+          "name": "Kremenchuk",
+          "country": {
+            "alpha2": "UA",
+            "alpha3": "UKR",
+            "name": "Ukraine",
+            "slug": "ukraine"
+          },
+          "id": 20416
+        },
+        "residenceCity": {
+          "name": "Prostejov",
+          "country": {
+            "alpha2": "CZ",
+            "alpha3": "CZE",
+            "name": "Czechia",
+            "slug": "czechia"
+          },
+          "id": 19542
+        },
+        "id": 1900,
+        "birthplace": "Kremenchuk, Ukraine",
+        "birthDateTimestamp": 868838400,
+        "residence": "Prostejov, Czechia",
+        "prizeCurrentRaw": {
+          "value": 90768,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 677293,
+          "currency": "EUR"
+        },
+        "currentRanking": 210
+      }
+    },
+    "awayTeam": {
+      "id": 199395,
+      "name": "Vit Kopřiva",
+      "shortName": "V. Kopřiva",
+      "ranking": 66,
+      "currentRanking": 58,
+      "country": {
+        "alpha2": "CZ",
+        "alpha3": "CZE",
+        "name": "Czechia",
+        "slug": "czechia"
+      },
+      "playerTeamInfo": {
+        "height": 1.78,
+        "weight": 69,
+        "plays": "right-handed",
+        "prizeCurrent": 546281,
+        "prizeTotal": 1923138,
+        "birthCity": {
+          "name": "Bilovec",
+          "country": {
+            "alpha2": "CZ",
+            "alpha3": "CZE",
+            "name": "Czechia",
+            "slug": "czechia"
+          },
+          "id": 35455
+        },
+        "residenceCity": {
+          "name": "Fulnek",
+          "country": {
+            "alpha2": "CZ",
+            "alpha3": "CZE",
+            "name": "Czechia",
+            "slug": "czechia"
+          },
+          "id": 36131
+        },
+        "id": 2652,
+        "birthplace": "Bilovec, Czechia",
+        "birthDateTimestamp": 866332800,
+        "residence": "Fulnek, Czechia",
+        "prizeCurrentRaw": {
+          "value": 546281,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 1923138,
+          "currency": "EUR"
+        },
+        "currentRanking": 58
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "awayTeamSeed": "2",
+          "tournament": {
+            "name": "Prostejov, Czech Republic",
+            "slug": "prostejov-czech-republic",
+            "category": {
+              "name": "Challenger",
+              "slug": "challenger",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 5,
+              "country": {},
+              "id": 72,
+              "flag": "challenger",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "চ্যালেঞ্জার",
+                  "ar": "تحدي (تنس)",
+                  "hi": "डेनमार्क",
+                  "ru": "Challenger"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "Prostejov, Czech Republic",
+              "slug": "prostejov-czech-republic",
+              "category": {
+                "name": "Challenger",
+                "slug": "challenger",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 5,
+                "country": {},
+                "id": 72,
+                "flag": "challenger",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "চ্যালেঞ্জার",
+                    "ar": "تحدي (تنس)",
+                    "hi": "डेनमार्क",
+                    "ru": "Challenger"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 268,
+              "groundType": "Red clay",
+              "hasRounds": true,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 3512,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "بروستيجوف، جمهورية التشيك"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 186314,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1780272000
+          },
+          "season": {
+            "name": "ATP Challenger Prostejov, Czech Republic Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 89788
+          },
+          "roundInfo": {
+            "round": 5,
+            "name": "Round of 16",
+            "slug": "round-of-16",
+            "cupRoundType": 8
+          },
+          "customId": "ubPsVMEb",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Prostejov",
+              "country": {
+                "alpha2": "CZ",
+                "alpha3": "CZE",
+                "name": "Czechia",
+                "slug": "czechia"
+              },
+              "id": 19542
+            },
+            "hidden": true,
+            "slug": "prostejov-arena",
+            "name": "Prostejov Arena",
+            "country": {
+              "alpha2": "CZ",
+              "alpha3": "CZE",
+              "name": "Czechia",
+              "slug": "czechia"
+            },
+            "id": 34982,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "بروستيوف أرينا",
+                "hi": "प्रोस्टेजोव एरिना",
+                "bn": "প্রোস্টেজভ এরিনা"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Prostejov Arena"
+            }
+          },
+          "homeTeam": {
+            "name": "Vitaliy Sachko",
+            "slug": "sachko-vitaliy",
+            "shortName": "V. Sachko",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 2284,
+            "playerTeamInfo": {
+              "height": 1.88,
+              "weight": 73,
+              "plays": "right-handed",
+              "prizeCurrent": 90768,
+              "prizeTotal": 677293,
+              "birthCity": {
+                "name": "Kremenchuk",
+                "country": {
+                  "alpha2": "UA",
+                  "alpha3": "UKR",
+                  "name": "Ukraine",
+                  "slug": "ukraine"
+                },
+                "id": 20416
+              },
+              "residenceCity": {
+                "name": "Prostejov",
+                "country": {
+                  "alpha2": "CZ",
+                  "alpha3": "CZE",
+                  "name": "Czechia",
+                  "slug": "czechia"
+                },
+                "id": 19542
+              },
+              "id": 1900,
+              "birthplace": "Kremenchuk, Ukraine",
+              "birthDateTimestamp": 868838400,
+              "residence": "Prostejov, Czechia",
+              "prizeCurrentRaw": {
+                "value": 90768,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 677293,
+                "currency": "EUR"
+              },
+              "currentRanking": 210
+            },
+            "nameCode": "SAC",
+            "ranking": 210,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "UA",
+              "alpha3": "UKR",
+              "name": "Ukraine",
+              "slug": "ukraine"
+            },
+            "id": 100069,
+            "fullName": "Vitaliy Sachko",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "فيتالي ساكهو",
+                "bn": "ভিটালি সাচকো",
+                "hi": "वितालिय साचको"
+              },
+              "shortNameTranslation": {
+                "ar": "ف. ساكهو"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Vit Kopřiva",
+            "slug": "kopriva-vit",
+            "shortName": "V. Kopřiva",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 4547,
+            "playerTeamInfo": {
+              "height": 1.78,
+              "weight": 69,
+              "plays": "right-handed",
+              "prizeCurrent": 546281,
+              "prizeTotal": 1923138,
+              "birthCity": {
+                "name": "Bilovec",
+                "country": {
+                  "alpha2": "CZ",
+                  "alpha3": "CZE",
+                  "name": "Czechia",
+                  "slug": "czechia"
+                },
+                "id": 35455
+              },
+              "residenceCity": {
+                "name": "Fulnek",
+                "country": {
+                  "alpha2": "CZ",
+                  "alpha3": "CZE",
+                  "name": "Czechia",
+                  "slug": "czechia"
+                },
+                "id": 36131
+              },
+              "id": 2652,
+              "birthplace": "Bilovec, Czechia",
+              "birthDateTimestamp": 866332800,
+              "residence": "Fulnek, Czechia",
+              "prizeCurrentRaw": {
+                "value": 546281,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 1923138,
+                "currency": "EUR"
+              },
+              "currentRanking": 58
+            },
+            "nameCode": "KOP",
+            "ranking": 66,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "CZ",
+              "alpha3": "CZE",
+              "name": "Czechia",
+              "slug": "czechia"
+            },
+            "id": 199395,
+            "fullName": "Vit Kopřiva",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "فيت كوبريفا"
+              },
+              "shortNameTranslation": {
+                "ar": "ف. كوبريفا",
+                "bn": "ভি. কোপ্রিভা",
+                "hi": "वी. कोप्रिवा"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16241141,
+          "defaultPeriodCount": 3,
+          "slug": "vit-kopriva-vitaliy-sachko",
+          "startTimestamp": 1780563600,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "??",
+            "AN",
+            "CU",
+            "IR",
+            "KP",
+            "SY",
+            "VE",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "lower"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": {
+          "homeWins": 0,
+          "awayWins": 4,
+          "draws": 0
+        },
+        "managerDuel": null
+      }
+    },
+    "pointByPoint": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "votes": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "vote": {
+          "vote1": 127,
+          "vote2": 1551,
+          "voteX": null
+        },
+        "bothTeamsToScoreVote": {
+          "voteYes": 0,
+          "voteNo": 0
+        },
+        "firstTeamToScoreVote": {
+          "voteHome": 0,
+          "voteNoGoal": 0,
+          "voteAway": 0
+        },
+        "whoShouldHaveWonVote": {
+          "vote1": 0,
+          "vote2": 0
+        }
+      }
+    },
+    "tennisPower": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "tennisPowerRankings": []
+      }
+    },
+    "winningOdds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "home": {
+          "fractionalValue": "5/2",
+          "expected": 29,
+          "actual": 9,
+          "id": 22231307
+        },
+        "away": {
+          "fractionalValue": "7/25",
+          "expected": 78,
+          "actual": 59,
+          "id": 22231308
+        }
+      }
+    },
+    "odds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "featured": {
+          "default": {
+            "sourceId": 195669954,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195669954,
+            "suspended": false,
+            "id": 316550235,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "5/2",
+                "fractionalValue": "5/2",
+                "sourceId": 1423542939,
+                "name": "1",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "7/25",
+                "fractionalValue": "7/25",
+                "sourceId": 1423543151,
+                "name": "2",
+                "change": 0
+              }
+            ]
+          },
+          "asian": {
+            "sourceId": 195669954,
+            "structureType": 2,
+            "marketId": 12,
+            "marketName": "Total games won",
+            "choiceGroup": "20.5",
+            "isLive": false,
+            "fid": 195669954,
+            "suspended": false,
+            "id": 316591315,
+            "marketGroup": "Total sets/games",
+            "marketPeriod": "Extra time",
+            "choices": [
+              {
+                "initialFractionalValue": "4/5",
+                "fractionalValue": "4/5",
+                "sourceId": 1423812485,
+                "name": "Over",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "10/11",
+                "fractionalValue": "10/11",
+                "sourceId": 1423812428,
+                "name": "Under",
+                "change": 0
+              }
+            ]
+          },
+          "fullTime": {
+            "sourceId": 195669954,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195669954,
+            "suspended": false,
+            "id": 316550235,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "5/2",
+                "fractionalValue": "5/2",
+                "sourceId": 1423542939,
+                "name": "1",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "7/25",
+                "fractionalValue": "7/25",
+                "sourceId": 1423543151,
+                "name": "2",
+                "change": 0
+              }
+            ]
+          }
+        },
+        "hasMoreOdds": true
+      }
+    },
+    "homeSeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 134,
+          "tiebreakLosses": 0,
+          "tiebreaksWon": 0,
+          "wins": 1,
+          "aces": 7,
+          "firstServePointsScored": 38,
+          "firstServePointsTotal": 52,
+          "firstServeTotal": 93,
+          "secondServePointsScored": 19,
+          "secondServePointsTotal": 33,
+          "secondServeTotal": 41,
+          "breakPointsScored": 4,
+          "breakPointsTotal": 14,
+          "opponentBreakPointsTotal": 6,
+          "opponentBreakPointsScored": 3,
+          "doubleFaults": 8,
+          "avgDoubleFaults": 8,
+          "firstServePercentage": 55.913978494624,
+          "firstServePointsWonPercentage": 73.076923076923,
+          "secondServePercentage": 80.487804878049,
+          "secondServePointsWonPercentage": 46.341463414634,
+          "avgAces": 7,
+          "breakPointsSavedPercentage": 50,
+          "breakPointsSavedConvertedPercentage": 28.571428571429,
+          "tiebreakWinPercentage": 0,
+          "id": 93781,
+          "matches": 1,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
+        }
+      }
+    },
+    "awaySeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "statistics": {
+          "totalServeAttempts": 61,
+          "tiebreakLosses": 0,
+          "tiebreaksWon": 0,
+          "wins": 1,
+          "aces": 0,
+          "firstServePointsScored": 22,
+          "firstServePointsTotal": 29,
+          "firstServeTotal": 45,
+          "secondServePointsScored": 11,
+          "secondServePointsTotal": 16,
+          "secondServeTotal": 16,
+          "breakPointsScored": 2,
+          "breakPointsTotal": 7,
+          "opponentBreakPointsTotal": 1,
+          "opponentBreakPointsScored": 0,
+          "avgDoubleFaults": 0,
+          "firstServePercentage": 64.444444444444,
+          "firstServePointsWonPercentage": 75.862068965517,
+          "secondServePercentage": 100,
+          "secondServePointsWonPercentage": 68.75,
+          "avgAces": 0,
+          "breakPointsSavedPercentage": 100,
+          "breakPointsSavedConvertedPercentage": 28.571428571429,
+          "tiebreakWinPercentage": 0,
+          "id": 93744,
+          "matches": 1,
+          "awardedMatches": 0,
+          "statisticsType": {
+            "sportSlug": "tennis",
+            "statisticsType": "team"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,525 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-birmingham-gill-vs-majchrzak-2026-06-04",
+  "boardTitle": "Felix Gill vs Kamil Majchrzak",
+  "boardPlayerName": "Kamil Majchrzak",
+  "recentOpponentName": "McCabe J.",
+  "recentIndex": 0,
+  "recentEvent": "Birmingham (United Kingdom)",
+  "recentDate": "Jun 03, 26",
+  "recentIsoDate": "2026-06-03",
+  "recentResult": "Win 7-6 6-3",
+  "recentSurface": "Grass",
+  "flashscoreLabel": "McCabe J. - Majchrzak K.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/birmingham/",
+  "players": [
+    "McCabe J.",
+    "Majchrzak K."
+  ],
+  "generatedAt": "2026-06-04T00:09:20.932Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/IsBgJHBi/",
+  "matchId": "IsBgJHBi",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_IsBgJHBi",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_IsBgJHBi"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 7,
+        "duration": "0:43"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:35"
+      }
+    ],
+    "totalDuration": "1:18"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "5",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "74%",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (33/51)",
+              "right": "73% (37/51)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "29% (5/17)",
+              "right": "50% (9/18)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/6",
+              "right": "5/7",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (14/51)",
+              "right": "35% (18/51)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (9/18)",
+              "right": "71% (12/17)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "4/6",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "21",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "27",
+              "right": "21",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (6/12)",
+              "right": "75% (6/8)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (38/68)",
+              "right": "67% (46/69)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (23/69)",
+              "right": "44% (30/68)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (61/137)",
+              "right": "55% (76/137)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "64% (7/11)",
+              "right": "80% (8/10)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (2/10)",
+              "right": "36% (4/11)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Total games won",
+              "left": "43% (9/21)",
+              "right": "57% (12/21)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "76%",
+              "right": "62%",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (20/31)",
+              "right": "83% (19/23)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "64% (9/14)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "0/1",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (4/23)",
+              "right": "35% (11/31)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (5/14)",
+              "right": "50% (5/10)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "1/3",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "11",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "10",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (25/41)",
+              "right": "76% (28/37)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (9/37)",
+              "right": "39% (16/41)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (34/78)",
+              "right": "56% (44/78)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "4",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "88%",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (13/20)",
+              "right": "64% (18/28)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "0% (0/7)",
+              "right": "0% (0/4)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "5/6",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (10/28)",
+              "right": "35% (7/20)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "100% (4/4)",
+              "right": "100% (7/7)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/6",
+              "right": "3/3",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "10",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "11",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (6/12)",
+              "right": "75% (6/8)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (13/27)",
+              "right": "56% (18/32)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (14/32)",
+              "right": "52% (14/27)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (27/59)",
+              "right": "54% (32/59)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "40% (2/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "McCabe J.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

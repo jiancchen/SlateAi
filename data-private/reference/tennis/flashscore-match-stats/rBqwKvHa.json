@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-centurion-2-strombachs-vs-henning-2026-06-04",
+  "boardTitle": "Philip Henning vs Robert Strombachs",
+  "boardPlayerName": "Philip Henning",
+  "recentOpponentName": "Kimhi O.",
+  "recentIndex": 0,
+  "recentEvent": "Centurion 2 (South Africa)",
+  "recentDate": "Jun 02, 26",
+  "recentIsoDate": "2026-06-02",
+  "recentResult": "Win 6-2 6-2",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Kimhi O. - Henning P.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+  "players": [
+    "Kimhi O.",
+    "Henning P."
+  ],
+  "generatedAt": "2026-06-04T00:09:19.668Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/rBqwKvHa/",
+  "matchId": "rBqwKvHa",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_rBqwKvHa",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_rBqwKvHa"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:35"
+      }
+    ],
+    "totalDuration": "1:12"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "54%",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (17/29)",
+              "right": "88% (23/26)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "30% (7/23)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/9",
+              "right": "5/5",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (5/26)",
+              "right": "41% (12/29)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "41% (9/22)",
+              "right": "70% (16/23)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/5",
+              "right": "4/9",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "24",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "23",
+              "right": "26",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "46% (24/52)",
+              "right": "74% (35/47)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (12/47)",
+              "right": "54% (28/52)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (36/99)",
+              "right": "64% (63/99)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (4/8)",
+              "right": "100% (8/8)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/8)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (4/16)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "52%",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (9/17)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "30% (3/10)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "5/5",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (4/14)",
+              "right": "53% (9/17)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (7/13)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/5",
+              "right": "2/5",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "13",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "13",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "46% (12/26)",
+              "right": "67% (18/27)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (9/27)",
+              "right": "54% (14/26)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (21/53)",
+              "right": "60% (32/53)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "57%",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (8/12)",
+              "right": "92% (11/12)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "31% (4/13)",
+              "right": "78% (7/9)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "8% (1/12)",
+              "right": "25% (3/12)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "22% (2/9)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "1",
+              "right": "11",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "13",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "46% (12/26)",
+              "right": "85% (17/20)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "15% (3/20)",
+              "right": "54% (14/26)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "33% (15/46)",
+              "right": "67% (31/46)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Kimhi O.",
+              "rightPlayer": "Henning P."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

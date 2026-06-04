@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-birmingham-gill-vs-majchrzak-2026-06-04",
+  "boardTitle": "Felix Gill vs Kamil Majchrzak",
+  "boardPlayerName": "Kamil Majchrzak",
+  "recentOpponentName": "Cerundolo J. M.",
+  "recentIndex": 4,
+  "recentEvent": "Marrakech (Morocco)",
+  "recentDate": "Mar 31, 26",
+  "recentIsoDate": "2026-03-31",
+  "recentResult": "Win 7-6 3-6 6-3",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Cerundolo J. M. - Majchrzak K.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/marrakech/",
+  "players": [
+    "Cerundolo J. M.",
+    "Majchrzak K."
+  ],
+  "generatedAt": "2026-06-04T00:09:21.008Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/IaCvrm8T/",
+  "matchId": "IaCvrm8T",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_IaCvrm8T",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_IaCvrm8T"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 7,
+        "duration": "1:09"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:36"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "7",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "11",
+              "right": "4",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "49%",
+              "right": "53%",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (45/56)",
+              "right": "90% (44/49)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (27/58)",
+              "right": "49% (21/43)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/7",
+              "right": "1/2",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "10% (5/49)",
+              "right": "20% (11/56)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "51% (22/43)",
+              "right": "53% (31/58)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "1/7",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "37",
+              "right": "39",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "39",
+              "right": "37",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Net points won",
+              "left": "65% (13/20)",
+              "right": "88% (15/17)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (72/114)",
+              "right": "71% (65/92)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (27/92)",
+              "right": "37% (42/114)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (99/206)",
+              "right": "52% (107/206)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "93% (14/15)",
+              "right": "93% (14/15)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Return games won",
+              "left": "7% (1/15)",
+              "right": "7% (1/15)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (15/30)",
+              "right": "50% (15/30)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "51%",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (19/27)",
+              "right": "83% (19/23)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (12/21)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "1/1",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "17% (4/23)",
+              "right": "11% (3/27)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "41% (9/22)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "0/4",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "20",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "18",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Net points won",
+              "left": "58% (7/12)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (31/47)",
+              "right": "70% (31/44)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (13/44)",
+              "right": "34% (16/47)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (44/91)",
+              "right": "52% (47/91)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "45%",
+              "right": "60%",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (15/15)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (9/18)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/1",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "0% (0/12)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/0",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "6",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "6",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (22/33)",
+              "right": "74% (14/19)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (5/19)",
+              "right": "33% (11/33)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (27/52)",
+              "right": "48% (25/52)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "42%",
+              "right": "52%",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (11/14)",
+              "right": "107% (15/14)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "32% (6/19)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "7% (1/14)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (8/13)",
+              "right": "68% (13/19)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "13",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "13",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (19/34)",
+              "right": "69% (20/29)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (9/29)",
+              "right": "44% (15/34)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (28/63)",
+              "right": "56% (35/63)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Cerundolo J. M.",
+              "rightPlayer": "Majchrzak K."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

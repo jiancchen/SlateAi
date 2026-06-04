@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-centurion-2-beckley-vs-duran-2026-06-04",
+  "boardTitle": "Alec Beckley vs Tuncay Duran",
+  "boardPlayerName": "Alec Beckley",
+  "recentOpponentName": "Palan D.",
+  "recentIndex": 0,
+  "recentEvent": "Centurion 2 (South Africa)",
+  "recentDate": "Jun 02, 26",
+  "recentIsoDate": "2026-06-02",
+  "recentResult": "Win 6-3 6-3",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Palan D. - Beckley A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+  "players": [
+    "Palan D.",
+    "Beckley A."
+  ],
+  "generatedAt": "2026-06-04T00:09:17.999Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/AcoVL0nm/",
+  "matchId": "AcoVL0nm",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_AcoVL0nm",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_AcoVL0nm"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:32"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:49"
+      }
+    ],
+    "totalDuration": "1:21"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "1",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "3",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "75%",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (27/38)",
+              "right": "76% (31/41)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "30% (9/30)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "7/10",
+              "right": "2/2",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (10/41)",
+              "right": "29% (11/38)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (6/14)",
+              "right": "70% (21/30)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "3/10",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "9",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "46",
+              "right": "19",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (36/68)",
+              "right": "71% (39/55)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (16/55)",
+              "right": "47% (32/68)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (52/123)",
+              "right": "58% (71/123)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (6/9)",
+              "right": "100% (9/9)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (6/18)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "68%",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (10/15)",
+              "right": "87% (13/15)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (5/15)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "1/1",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "13% (2/15)",
+              "right": "33% (5/15)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (3/7)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "2/4",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "4",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "8",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (14/29)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (5/22)",
+              "right": "52% (15/29)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "37% (19/51)",
+              "right": "63% (32/51)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "79%",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (17/23)",
+              "right": "69% (18/26)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "27% (4/15)",
+              "right": "57% (4/7)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/6",
+              "right": "1/1",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (8/26)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (3/7)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/6",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "5",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "26",
+              "right": "11",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (22/39)",
+              "right": "67% (22/33)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (11/33)",
+              "right": "44% (17/39)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (33/72)",
+              "right": "54% (39/72)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Palan D.",
+              "rightPlayer": "Beckley A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

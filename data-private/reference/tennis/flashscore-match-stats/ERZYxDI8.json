@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-birmingham-shimabukuro-vs-ymer-2026-06-04",
+  "boardTitle": "Sho Shimabukuro vs Elias Ymer",
+  "boardPlayerName": "Sho Shimabukuro",
+  "recentOpponentName": "Halys Q.",
+  "recentIndex": 2,
+  "recentEvent": "Bordeaux (France)",
+  "recentDate": "May 12, 26",
+  "recentIsoDate": "2026-05-12",
+  "recentResult": "Loss 4-6 2-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Shimabukuro S. - Halys Q.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/bordeaux/",
+  "players": [
+    "Shimabukuro S.",
+    "Halys Q."
+  ],
+  "generatedAt": "2026-06-04T00:09:22.101Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/ERZYxDI8/",
+  "matchId": "ERZYxDI8",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_ERZYxDI8",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_ERZYxDI8"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:33"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:33"
+      }
+    ],
+    "totalDuration": "1:06"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "50%",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (18/29)",
+              "right": "87% (20/23)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (10/21)",
+              "right": "70% (16/23)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/6",
+              "right": "2/3",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "13% (3/23)",
+              "right": "38% (11/29)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "30% (7/23)",
+              "right": "52% (11/21)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "4/6",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "9",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "10",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (28/50)",
+              "right": "78% (36/46)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "22% (10/46)",
+              "right": "44% (22/50)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (38/96)",
+              "right": "60% (58/96)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "56% (5/9)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Return games won",
+              "left": "11% (1/9)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (6/18)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "38%",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (12/17)",
+              "right": "89% (8/9)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "45% (5/11)",
+              "right": "73% (11/15)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "2/3",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "11% (1/9)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "27% (4/15)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "2/3",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "5",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "8",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (2/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (17/28)",
+              "right": "79% (19/24)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "21% (5/24)",
+              "right": "39% (11/28)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (22/52)",
+              "right": "58% (30/52)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "64%",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (6/12)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "0/0",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "14% (2/14)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/3",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (1/1)",
+              "right": "100% (1/0)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (11/22)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "23% (5/22)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "36% (16/44)",
+              "right": "64% (28/44)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Halys Q."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

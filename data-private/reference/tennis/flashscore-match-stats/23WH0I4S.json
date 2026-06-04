@@ -1,0 +1,612 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-trungelliti-vs-hsu-2026-06-04",
+  "boardTitle": "Marco Trungelliti vs Yu Hsiou Hsu",
+  "boardPlayerName": "Yu Hsiou Hsu",
+  "recentOpponentName": "Brunold M.",
+  "recentIndex": 2,
+  "recentEvent": "Vicenza (Italy)",
+  "recentDate": "May 28, 26",
+  "recentIsoDate": "2026-05-28",
+  "recentResult": "Win 6-2 3-6 6-2",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Hsu Y. H. - Brunold M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/vicenza/",
+  "players": [
+    "Hsu Y. H.",
+    "Brunold M."
+  ],
+  "generatedAt": "2026-06-04T00:09:25.322Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/23WH0I4S/",
+  "matchId": "23WH0I4S",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_23WH0I4S",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_23WH0I4S"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:34"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:40"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:01"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "68%",
+              "right": "73%",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (33/51)",
+              "right": "64% (35/55)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (16/24)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "2/6",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (20/55)",
+              "right": "35% (18/51)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (11/20)",
+              "right": "33% (8/24)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/6",
+              "right": "2/3",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "65% (49/75)",
+              "right": "59% (44/75)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (31/75)",
+              "right": "35% (26/75)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (80/150)",
+              "right": "47% (70/150)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "85% (11/13)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (4/12)",
+              "right": "15% (2/13)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (15/25)",
+              "right": "40% (10/25)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "73%",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (10/13)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (6/8)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (5/16)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "83% (5/6)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "76% (16/21)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (10/22)",
+              "right": "24% (5/21)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (26/43)",
+              "right": "40% (17/43)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "90%",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (11/22)",
+              "right": "74% (14/19)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (5/8)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/0",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (5/19)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "0% (0/2)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/2",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "53% (16/30)",
+              "right": "76% (16/21)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (5/21)",
+              "right": "47% (14/30)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (21/51)",
+              "right": "59% (30/51)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "63%",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (12/16)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (5/8)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "2/4",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (10/20)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (6/12)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/1",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Service Points Won",
+              "left": "71% (17/24)",
+              "right": "50% (16/32)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (16/32)",
+              "right": "29% (7/24)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (33/56)",
+              "right": "41% (23/56)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Hsu Y. H.",
+              "rightPlayer": "Brunold M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

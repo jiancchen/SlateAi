@@ -1,0 +1,2119 @@
+{
+  "id": "rh-atp-challenger-birmingham-wendelken-vs-lajal-2026-06-04",
+  "eventId": "df0b2709-b39f-4caf-a8f4-4ed3bb6442b4",
+  "league": "Tennis",
+  "start": "6:10 AM",
+  "startMinutes": 370,
+  "title": "Harry Wendelken vs Mark Lajal",
+  "stage": "ATP Challenger Birmingham | Round Of 16",
+  "spotlight": false,
+  "confidence": 58.7,
+  "volatility": 48,
+  "tags": [
+    "ATP Challenger",
+    "Grass",
+    "Prediction market",
+    "Warehouse joined",
+    "Flashscore first",
+    "Coinflip price"
+  ],
+  "matchup": [
+    {
+      "side": "Player 1",
+      "name": "Harry Wendelken",
+      "displayName": "Harry Wendelken",
+      "detail": "Grass | Live rank #225 | GBR | age 24.4 | hold 75%"
+    },
+    {
+      "side": "Player 2",
+      "name": "Mark Lajal",
+      "displayName": "Mark Lajal",
+      "detail": "Grass | Live rank #154 | EST | age 23 | hold 100%"
+    }
+  ],
+  "summary": "Our model pick: Mark Lajal. Mark Lajal has the recent service-hold edge 100% to 75%. Lean, not a chase.",
+  "factors": [
+    "Mark Lajal has the recent service-hold edge 100% to 75%. Lean, not a chase.",
+    "Model 58.7% vs DraftKings Sportsbook implied 71.6% (-12.9 pts).",
+    "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+    "Wait for a visible service-pressure split before entering.",
+    "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets.",
+    "May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.",
+    "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total."
+  ],
+  "lean": "Lean Mark Lajal; Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+  "swing": "Risk: best-of-five set extension and tiebreak variance.",
+  "swingFactor": "Risk: best-of-five set extension and tiebreak variance.",
+  "odds": {
+    "participantOrder": [
+      0,
+      1
+    ],
+    "markets": [
+      {
+        "label": "Model fair",
+        "book": "Tennis warehouse model",
+        "value": "Harry Wendelken 42.1% / Mark Lajal 58.7%"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "book": "DraftKings Sportsbook",
+        "value": "Harry Wendelken +186 / Mark Lajal -252"
+      },
+      {
+        "label": "1st set total games",
+        "book": "DraftKings Sportsbook",
+        "value": "9.5 1st-set games: Over -140 / Under -105"
+      }
+    ],
+    "note": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+    "provider": "DraftKings Sportsbook"
+  },
+  "tennisContext": {
+    "surface": "Grass",
+    "court": "ATP Challenger Birmingham",
+    "h2hLeader": "",
+    "fatigueFlag": false,
+    "liveDog": false,
+    "weaknessEdge": {
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 0,
+      "attackingSide": null,
+      "vulnerableSide": null,
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+      "pick": {
+        "name": "Mark Lajal",
+        "serviceHoldPct": 100,
+        "firstServeWonPct": null,
+        "secondServeWonPct": null,
+        "firstServePct": null,
+        "avgAces": null,
+        "avgDoubleFaults": null,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": null,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (100% hold)"
+        ],
+        "gameFlowRead": "Mark Lajal has no major service weakness in the joined Flashscore sample."
+      },
+      "opponent": {
+        "name": "Harry Wendelken",
+        "serviceHoldPct": 75,
+        "firstServeWonPct": null,
+        "secondServeWonPct": null,
+        "firstServePct": null,
+        "avgAces": null,
+        "avgDoubleFaults": null,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": null,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [],
+        "gameFlowRead": "Harry Wendelken has no major service weakness in the joined Flashscore sample."
+      }
+    },
+    "warehouseContext": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-birmingham-wendelken-vs-lajal-2026-06-04",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-04T13:10:00Z",
+      "surface": "Grass",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "ATP",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Harry Wendelken",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "Harry Wendelken",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 75,
+              "returnGamesWonPct": 0,
+              "breakPointsSaved": 7,
+              "breakPointsFaced": 8,
+              "breakPointsSavedPct": 87.5,
+              "breakPointsConverted": 0,
+              "breakPointsToConvert": 2,
+              "breakPointsConvertedPct": 0
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 7,
+                "bpFaced": 8,
+                "bpSavedPct": 87.5,
+                "bpConverted": 0,
+                "bpChances": 2,
+                "bpConvertedPct": 0
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Harry Wendelken",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        },
+        {
+          "name": "Mark Lajal",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "name": "Mark Lajal",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 100,
+              "returnGamesWonPct": 25,
+              "breakPointsSaved": 2,
+              "breakPointsFaced": 2,
+              "breakPointsSavedPct": 100,
+              "breakPointsConverted": 1,
+              "breakPointsToConvert": 8,
+              "breakPointsConvertedPct": 12.5
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 2,
+                "bpFaced": 2,
+                "bpSavedPct": 100,
+                "bpConverted": 1,
+                "bpChances": 8,
+                "bpConvertedPct": 12.5
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Mark Lajal",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        }
+      ],
+      "h2h": {
+        "homeName": "Harry Wendelken",
+        "awayName": "Mark Lajal",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Harry Wendelken",
+          "awayName": "Mark Lajal",
+          "homeVotes": 297,
+          "awayVotes": 2089,
+          "homePct": 12.4,
+          "awayPct": 87.6
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Harry Wendelken",
+            "fractionalValue": "7/4",
+            "impliedPct": 36.4,
+            "expected": 36,
+            "actual": 42
+          },
+          "away": {
+            "name": "Mark Lajal",
+            "fractionalValue": "2/5",
+            "impliedPct": 71.4,
+            "expected": 71,
+            "actual": 76
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": null,
+          "away": null
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick.",
+        "eventId": "16240991",
+        "sourceUrl": "https://www.sofascore.com/tennis/match/mark-lajal-harry-wendelken#id:16240991",
+        "capturedAt": "2026-06-04T00:24:41.164Z"
+      },
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 16,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "sofascoreData": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-birmingham-wendelken-vs-lajal-2026-06-04",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-04T13:10:00Z",
+      "surface": "Grass",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "ATP",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Harry Wendelken",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "Harry Wendelken",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 75,
+              "returnGamesWonPct": 0,
+              "breakPointsSaved": 7,
+              "breakPointsFaced": 8,
+              "breakPointsSavedPct": 87.5,
+              "breakPointsConverted": 0,
+              "breakPointsToConvert": 2,
+              "breakPointsConvertedPct": 0
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 7,
+                "bpFaced": 8,
+                "bpSavedPct": 87.5,
+                "bpConverted": 0,
+                "bpChances": 2,
+                "bpConvertedPct": 0
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Harry Wendelken",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        },
+        {
+          "name": "Mark Lajal",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "name": "Mark Lajal",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 100,
+              "returnGamesWonPct": 25,
+              "breakPointsSaved": 2,
+              "breakPointsFaced": 2,
+              "breakPointsSavedPct": 100,
+              "breakPointsConverted": 1,
+              "breakPointsToConvert": 8,
+              "breakPointsConvertedPct": 12.5
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 2,
+                "bpFaced": 2,
+                "bpSavedPct": 100,
+                "bpConverted": 1,
+                "bpChances": 8,
+                "bpConvertedPct": 12.5
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Mark Lajal",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        }
+      ],
+      "h2h": {
+        "homeName": "Harry Wendelken",
+        "awayName": "Mark Lajal",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Harry Wendelken",
+          "awayName": "Mark Lajal",
+          "homeVotes": 297,
+          "awayVotes": 2089,
+          "homePct": 12.4,
+          "awayPct": 87.6
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Harry Wendelken",
+            "fractionalValue": "7/4",
+            "impliedPct": 36.4,
+            "expected": 36,
+            "actual": 42
+          },
+          "away": {
+            "name": "Mark Lajal",
+            "fractionalValue": "2/5",
+            "impliedPct": 71.4,
+            "expected": 71,
+            "actual": 76
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": null,
+          "away": null
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick.",
+        "eventId": "16240991",
+        "sourceUrl": "https://www.sofascore.com/tennis/match/mark-lajal-harry-wendelken#id:16240991",
+        "capturedAt": "2026-06-04T00:24:41.164Z"
+      },
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 16,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "players": [
+      {
+        "name": "Harry Wendelken",
+        "rank": 225,
+        "label": "Harry Wendelken",
+        "form": null,
+        "boardPct": 42.1,
+        "decimalOdds": 2.86,
+        "marketLabel": "+186 / 35% implied",
+        "clayLine": "Grass | Live rank #225 | GBR | age 24.4 | hold 75%",
+        "weakness": {
+          "name": "Harry Wendelken",
+          "serviceHoldPct": 75,
+          "firstServeWonPct": null,
+          "secondServeWonPct": null,
+          "firstServePct": null,
+          "avgAces": null,
+          "avgDoubleFaults": null,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": null,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [],
+          "gameFlowRead": "Harry Wendelken has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseStats": {
+          "name": "Harry Wendelken",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "Harry Wendelken",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 75,
+              "returnGamesWonPct": 0,
+              "breakPointsSaved": 7,
+              "breakPointsFaced": 8,
+              "breakPointsSavedPct": 87.5,
+              "breakPointsConverted": 0,
+              "breakPointsToConvert": 2,
+              "breakPointsConvertedPct": 0
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 7,
+                "bpFaced": 8,
+                "bpSavedPct": 87.5,
+                "bpConverted": 0,
+                "bpChances": 2,
+                "bpConvertedPct": 0
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Harry Wendelken",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        },
+        "record2026": "",
+        "notes": "Opponent case: model 41.3%",
+        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
+      },
+      {
+        "name": "Mark Lajal",
+        "rank": 154,
+        "label": "Mark Lajal",
+        "form": null,
+        "boardPct": 58.7,
+        "decimalOdds": 1.397,
+        "marketLabel": "-252 / 71.6% implied",
+        "clayLine": "Grass | Live rank #154 | EST | age 23 | hold 100%",
+        "weakness": {
+          "name": "Mark Lajal",
+          "serviceHoldPct": 100,
+          "firstServeWonPct": null,
+          "secondServeWonPct": null,
+          "firstServePct": null,
+          "avgAces": null,
+          "avgDoubleFaults": null,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": null,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (100% hold)"
+          ],
+          "gameFlowRead": "Mark Lajal has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseStats": {
+          "name": "Mark Lajal",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "name": "Mark Lajal",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 100,
+              "returnGamesWonPct": 25,
+              "breakPointsSaved": 2,
+              "breakPointsFaced": 2,
+              "breakPointsSavedPct": 100,
+              "breakPointsConverted": 1,
+              "breakPointsToConvert": 8,
+              "breakPointsConvertedPct": 12.5
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 2,
+                "bpFaced": 2,
+                "bpSavedPct": 100,
+                "bpConverted": 1,
+                "bpChances": 8,
+                "bpConvertedPct": 12.5
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Mark Lajal",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        },
+        "record2026": "",
+        "notes": "Pick: model 58.7%",
+        "matchupNote": "Why pick: Mark Lajal has the recent service-hold edge 100% to 75%. Lean, not a chase."
+      }
+    ],
+    "comparisonRows": [
+      {
+        "label": "Model pick",
+        "metric": "Fair win split",
+        "leftScore": 42.1,
+        "rightScore": 58.7,
+        "leftLabel": "Harry Wendelken",
+        "rightLabel": "Mark Lajal",
+        "winner": "Mark Lajal"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "metric": "Implied price",
+        "leftScore": 35,
+        "rightScore": 71.6,
+        "leftLabel": "Harry Wendelken",
+        "rightLabel": "Mark Lajal",
+        "winner": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+      },
+      {
+        "label": "Weakness",
+        "metric": "Lower is cleaner",
+        "leftScore": 0,
+        "rightScore": 0,
+        "leftLabel": "Harry Wendelken",
+        "rightLabel": "Mark Lajal",
+        "winner": "No clear weakness edge"
+      },
+      {
+        "label": "Volatility",
+        "metric": "Lower is cleaner",
+        "leftScore": 48,
+        "rightScore": 52,
+        "leftLabel": "Risk",
+        "rightLabel": "Stability",
+        "winner": "Stable enough"
+      }
+    ],
+    "predictionMarket": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T03:58:50.177Z",
+      "totalVolume": null,
+      "players": [
+        {
+          "name": "Harry Wendelken",
+          "probabilityPct": 35,
+          "amount": null,
+          "americanOdds": 186,
+          "edgePct": 7.1,
+          "priceBand": "Underdog"
+        },
+        {
+          "name": "Mark Lajal",
+          "probabilityPct": 71.6,
+          "amount": null,
+          "americanOdds": -252,
+          "edgePct": -12.9,
+          "priceBand": "Low-payout favorite"
+        }
+      ]
+    },
+    "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Mark Lajal",
+        "line": null,
+        "americanOdds": -252,
+        "modelPct": 58.7,
+        "impliedPct": 71.6,
+        "edgePct": -12.9,
+        "evPer100": -18,
+        "netEvPer100": -20,
+        "grade": "Negative EV",
+        "issue": "Favorite price needs better proof",
+        "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "No bet",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": null,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": null,
+        "grade": "No direction",
+        "reason": "Total games need expected match games vs the posted line."
+      },
+      {
+        "marketType": "Win a set",
+        "label": "Win a set %",
+        "selection": "Harry Wendelken 63% / Mark Lajal 67%",
+        "rows": [
+          {
+            "name": "Harry Wendelken",
+            "confidence": 63,
+            "modelPct": 42.1,
+            "label": "Underdog set-win path needs early holds"
+          },
+          {
+            "name": "Mark Lajal",
+            "confidence": 67,
+            "modelPct": 58.7,
+            "label": "Market favorite to win a set"
+          }
+        ],
+        "confidence": 67,
+        "grade": "Price required",
+        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Under 9.5",
+        "expectedGames": 9.2,
+        "confidence": 52,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "grade": "Near fair",
+        "reason": "Expected first-set games 9.2 vs DraftKings Sportsbook 9.5; Under 9.5."
+      }
+    ],
+    "derivativeMarketCase": null,
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Mark Lajal",
+        "americanOdds": -252,
+        "modelPct": 58.7,
+        "impliedPct": 71.6,
+        "edgePct": -12.9,
+        "evPer100": -18,
+        "netEvPer100": -20,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Negative EV",
+        "betGrade": false
+      },
+      "spread": null,
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Under 9.5",
+        "line": 9.5,
+        "americanOdds": -105,
+        "expectedGames": 9.2,
+        "confidence": 52,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 52,
+        "evPer100": 1.5,
+        "netEvPer100": -0.5,
+        "valueGrade": "Near fair",
+        "reason": "Expected first-set games 9.2 vs DraftKings Sportsbook 9.5; Under 9.5.",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Harry Wendelken",
+          "confidence": 63,
+          "modelPct": 42.1,
+          "label": "Underdog set-win path needs early holds",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Mark Lajal",
+          "confidence": 67,
+          "modelPct": 58.7,
+          "label": "Market favorite to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "ensembleValueCase": null,
+    "projection": {
+      "projectedWinner": "Mark Lajal",
+      "projectedSetLine": "2-0/2-1 range",
+      "setWinProjections": [
+        {
+          "name": "Harry Wendelken",
+          "confidence": 63,
+          "modelPct": 42.1,
+          "label": "Underdog set-win path needs early holds"
+        },
+        {
+          "name": "Mark Lajal",
+          "confidence": 67,
+          "modelPct": 58.7,
+          "label": "Market favorite to win a set"
+        }
+      ],
+      "totalGames": null,
+      "straightSetsProbability": 50.7,
+      "upsetRisk": 41.3,
+      "overview": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "fantasy": []
+    },
+    "tradePlan": {
+      "laneLabel": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+      "summary": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "trigger": "Wait for a visible service-pressure split before entering.",
+      "headline": "No clear weakness edge",
+      "exit": "No spread line",
+      "tone": "warning"
+    },
+    "derivativeMarkets": [
+      {
+        "label": "ML",
+        "value": "Mark Lajal -252; Model 58.7% vs DraftKings Sportsbook implied 71.6% (-12.9 pts).",
+        "lean": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+        "confidence": 58.7,
+        "marketType": "ML",
+        "selection": "Mark Lajal",
+        "americanOdds": -252,
+        "modelPct": 58.7,
+        "impliedPct": 71.6,
+        "edgePct": -12.9,
+        "evPer100": -18,
+        "netEvPer100": -20,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Negative EV",
+        "betGrade": false,
+        "tone": "warning",
+        "reason": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total."
+      },
+      {
+        "label": "Win a set",
+        "value": "No set-win price captured",
+        "lean": "Underdog set-win path needs early holds",
+        "confidence": 67,
+        "setWinRows": [],
+        "valueGrade": "Needs posted price",
+        "tone": "accent",
+        "reason": "Best-of-five gives the non-ML side more room to win a set; use this to separate upset risk from match-winner confidence."
+      },
+      {
+        "label": "Spread",
+        "value": "No primary game spread captured",
+        "lean": "No spread line",
+        "confidence": 52.7,
+        "tone": "neutral",
+        "reason": "Wait for a visible service-pressure split before entering."
+      },
+      {
+        "label": "O/U",
+        "value": "No total captured",
+        "lean": "No bet",
+        "confidence": 50.7,
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st set O/U",
+        "value": "Line 9.5",
+        "lean": "Under 9.5",
+        "confidence": 52,
+        "marketType": "First-set total",
+        "selection": "Under 9.5",
+        "line": 9.5,
+        "americanOdds": -105,
+        "expectedGames": 9.2,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 52,
+        "evPer100": 1.5,
+        "netEvPer100": -0.5,
+        "valueGrade": "Near fair",
+        "reason": "Expected first-set games 9.2 vs DraftKings Sportsbook 9.5; Under 9.5.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st service game",
+        "value": "No first-service-game market captured",
+        "lean": "First-service-game prices",
+        "confidence": 58.7,
+        "firstServiceGameRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-service-game market captured."
+      },
+      {
+        "label": "First games",
+        "value": "No first-game prop market captured",
+        "lean": "First-game prop prices",
+        "confidence": 58.7,
+        "firstGamePropRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-games prop captured."
+      }
+    ],
+    "marketEconomics": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T03:58:50.177Z",
+      "eventUrl": "https://sportsbook.draftkings.com/leagues/tennis/challenger-birmingham?event=34235869",
+      "deskName": "Mark Lajal",
+      "deskPricePct": 71.6,
+      "deskEdgePct": -12.9,
+      "priceAction": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+      "players": [
+        {
+          "name": "Harry Wendelken",
+          "americanOdds": 186,
+          "impliedPct": 35,
+          "modelPct": 42.1,
+          "edgePct": 7.1,
+          "priceBand": "Underdog",
+          "grossProfitPct": 186,
+          "grossPayoutMultiple": 2.86,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 186,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        },
+        {
+          "name": "Mark Lajal",
+          "americanOdds": -252,
+          "impliedPct": 71.6,
+          "modelPct": 58.7,
+          "edgePct": -12.9,
+          "priceBand": "Low-payout favorite",
+          "grossProfitPct": 39.7,
+          "grossPayoutMultiple": 1.397,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 39.7,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        }
+      ]
+    },
+    "clayMatchupData": {
+      "title": "Harry Wendelken vs Mark Lajal",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Harry-Wendelken-Vs-Mark-Lajal/",
+      "h2hText": "0:0",
+      "h2hRecord": "0:0",
+      "prediction": "Lajal in 3",
+      "players": [
+        {
+          "name": "Harry Wendelken",
+          "record2026": {
+            "overall": "29-13",
+            "hard": "16-5",
+            "clay": "0-3",
+            "indoorHard": "12-5",
+            "grass": "1-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Birmingham Challenger\nJames Watt\nNZL  6-4 6-75 7-63 1st\n02 Jun 26",
+              "event": "Birmingham Challenger",
+              "opponent": "James Watt",
+              "result": "NZL  6-4 6-75 7-63 1st",
+              "date": "02 Jun 26"
+            },
+            {
+              "raw": "Paris\nLuka Pavlovic\nFRA   Loss 3-6 7-61 6-2 q1\n19 May 26",
+              "event": "Paris",
+              "opponent": "Luka Pavlovic",
+              "result": "FRA   Loss 3-6 7-61 6-2 q1",
+              "date": "19 May 26"
+            },
+            {
+              "raw": "Zagreb Challenger\nMarco Cecchinato\nITA   Loss 7-5 6-4 1st\n11 May 26",
+              "event": "Zagreb Challenger",
+              "opponent": "Marco Cecchinato",
+              "result": "ITA   Loss 7-5 6-4 1st",
+              "date": "11 May 26"
+            },
+            {
+              "raw": "Francavilla Challenger\nFrederico Ferreira Silva\nPOR   Loss 6-3 6-3 1st\n05 May 26",
+              "event": "Francavilla Challenger",
+              "opponent": "Frederico Ferreira Silva",
+              "result": "POR   Loss 6-3 6-3 1st",
+              "date": "05 May 26"
+            },
+            {
+              "raw": "Wuning 1 Challenger\nPavel Kotov\nRUS   Loss 4-6 6-3 6-4 Fin.\n12 Apr 26",
+              "event": "Wuning 1 Challenger",
+              "opponent": "Pavel Kotov",
+              "result": "RUS   Loss 4-6 6-3 6-4 Fin.",
+              "date": "12 Apr 26"
+            },
+            {
+              "raw": "Li Tu\nAUS  6-2 6-2 1/2\n11 Apr 26",
+              "event": "",
+              "opponent": "Li Tu",
+              "result": "AUS  6-2 6-2 1/2",
+              "date": "11 Apr 26"
+            },
+            {
+              "raw": "Clement Chidekh\nFRA  6-4 6-4 1/4\n10 Apr 26",
+              "event": "",
+              "opponent": "Clement Chidekh",
+              "result": "FRA  6-4 6-4 1/4",
+              "date": "10 Apr 26"
+            },
+            {
+              "raw": "Sergey Fomin\nUZB  7-5 6-2 2nd\n09 Apr 26",
+              "event": "",
+              "opponent": "Sergey Fomin",
+              "result": "UZB  7-5 6-2 2nd",
+              "date": "09 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Mark Lajal",
+          "record2026": {
+            "overall": "11-10",
+            "hard": "6-5",
+            "clay": "0-1",
+            "indoorHard": "4-4",
+            "grass": "1-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Birmingham Challenger\nLeandro Riedi\nSUI  6-2 7-61 1st\n02 Jun 26",
+              "event": "Birmingham Challenger",
+              "opponent": "Leandro Riedi",
+              "result": "SUI  6-2 7-61 1st",
+              "date": "02 Jun 26"
+            },
+            {
+              "raw": "Paris\nRoman Safiullin\nRUS   Loss 6-4 6-4 q1\n19 May 26",
+              "event": "Paris",
+              "opponent": "Roman Safiullin",
+              "result": "RUS   Loss 6-4 6-4 q1",
+              "date": "19 May 26"
+            },
+            {
+              "raw": "Wuxi Challenger\nSoon-Woo Kwon\nKOR   Loss 7-65 6-3 1/2\n09 May 26",
+              "event": "Wuxi Challenger",
+              "opponent": "Soon-Woo Kwon",
+              "result": "KOR   Loss 7-65 6-3 1/2",
+              "date": "09 May 26"
+            },
+            {
+              "raw": "Dane Sweeny\nAUS  7-5 6-3 1/4\n08 May 26",
+              "event": "",
+              "opponent": "Dane Sweeny",
+              "result": "AUS  7-5 6-3 1/4",
+              "date": "08 May 26"
+            },
+            {
+              "raw": "Mikhail Kukushkin\nKAZ  7-68 6-72 7-62 2nd\n06 May 26",
+              "event": "",
+              "opponent": "Mikhail Kukushkin",
+              "result": "KAZ  7-68 6-72 7-62 2nd",
+              "date": "06 May 26"
+            },
+            {
+              "raw": "Renta Tokuda\nJPN  7-62 6-4 1st\n04 May 26",
+              "event": "",
+              "opponent": "Renta Tokuda",
+              "result": "JPN  7-62 6-4 1st",
+              "date": "04 May 26"
+            },
+            {
+              "raw": "Jiujiang Challenger\nFajing Sun\nCHN   Loss 3-6 6-3 6-4 1/4\n01 May 26",
+              "event": "Jiujiang Challenger",
+              "opponent": "Fajing Sun",
+              "result": "CHN   Loss 3-6 6-3 6-4 1/4",
+              "date": "01 May 26"
+            },
+            {
+              "raw": "Marat Sharipov\nRUS  6-4 6-4 2nd\n30 Apr 26",
+              "event": "",
+              "opponent": "Marat Sharipov",
+              "result": "RUS  6-4 6-4 2nd",
+              "date": "30 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": "Mark Lajal is good, but not spotless on clay at 0-1. Harry Wendelken has multiple recent clay matches with a tiebreak or three-set shape, which points toward set-extension or game-spread value if the number is generous. Mark Lajal's recent clay record has enough pressure games that the lower-priced side can re-rate quickly if the first set stays on serve."
+    },
+    "opponentQualityData": {
+      "title": "Harry Wendelken vs Mark Lajal",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Harry-Wendelken-Vs-Mark-Lajal/",
+      "h2hRecord": "0:0",
+      "tennistonicPrediction": "Lajal in 3",
+      "players": [
+        {
+          "name": "Harry Wendelken",
+          "ranking": null,
+          "records": {
+            "overall2026": {
+              "wins": 29,
+              "losses": 13,
+              "total": 42,
+              "winPct": 0.69
+            },
+            "clay2026": {
+              "wins": 0,
+              "losses": 3,
+              "total": 3,
+              "winPct": 0
+            },
+            "raw": {
+              "overall": "29-13",
+              "hard": "16-5",
+              "clay": "0-3",
+              "indoorHard": "12-5",
+              "grass": "1-0",
+              "carpet": "0-0"
+            }
+          },
+          "recentWindow": {
+            "matches": 8,
+            "completed": 8,
+            "wins": 4,
+            "losses": 4,
+            "winPct": 0.5,
+            "setsWon": 10,
+            "setsLost": 9,
+            "setPct": 0.526,
+            "gamesWon": 98,
+            "gamesLost": 93,
+            "gamePct": 0.513,
+            "resistanceMatches": 3,
+            "straightSetWins": 3,
+            "straightSetLosses": 2,
+            "avgKnownOpponentRank": null,
+            "knownOpponentRanks": 0,
+            "missingOpponentRanks": 8,
+            "top10Opponents": 0,
+            "top25Opponents": 0,
+            "top50Opponents": 0,
+            "challengerOrItfMatches": 4,
+            "rankingCoveragePct": 0,
+            "scorelineFormScore": 70.2,
+            "opponentAdjustedFormScore": null
+          },
+          "serviceData": {
+            "source": "not available in Tennistonic scrape",
+            "matchesWithStats": 0,
+            "avgServiceHoldPct": null,
+            "avgAces": null,
+            "avgFirstServeWonPct": null,
+            "note": "Recent scores support set/game resistance only until a Flashscore recent-match stat row is resolved."
+          },
+          "recentMatches": [
+            {
+              "event": "Birmingham Challenger",
+              "eventTier": "challenger",
+              "opponent": "James Watt",
+              "opponentRanking": null,
+              "result": "NZL  6-4 6-75 7-63 1st",
+              "date": "02 Jun 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 2,
+                "setsLost": 1,
+                "gamesWon": 19,
+                "gamesLost": 17,
+                "tiebreakSets": 2,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 7,
+                    "raw": "6-75"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-63"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": 0.532,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Paris",
+              "eventTier": "tour-1000",
+              "opponent": "Luka Pavlovic",
+              "opponentRanking": null,
+              "result": "FRA   Loss 3-6 7-61 6-2 q1",
+              "date": "19 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 1,
+                "setsLost": 2,
+                "gamesWon": 14,
+                "gamesLost": 16,
+                "tiebreakSets": 1,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 3,
+                    "rightGames": 6,
+                    "raw": "3-6"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-61"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  }
+                ]
+              },
+              "opponentWeight": 0.66,
+              "qualityPoints": 0.298,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Zagreb Challenger",
+              "eventTier": "challenger",
+              "opponent": "Marco Cecchinato",
+              "opponentRanking": null,
+              "result": "ITA   Loss 7-5 6-4 1st",
+              "date": "11 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 9,
+                "gamesLost": 13,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 7,
+                    "rightGames": 5,
+                    "raw": "7-5"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": 0.012,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Francavilla Challenger",
+              "eventTier": "challenger",
+              "opponent": "Frederico Ferreira Silva",
+              "opponentRanking": null,
+              "result": "POR   Loss 6-3 6-3 1st",
+              "date": "05 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 6,
+                "gamesLost": 12,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": -0.008,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Wuning 1 Challenger",
+              "eventTier": "challenger",
+              "opponent": "Pavel Kotov",
+              "opponentRanking": null,
+              "result": "RUS   Loss 4-6 6-3 6-4 Fin.",
+              "date": "12 Apr 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 1,
+                "setsLost": 2,
+                "gamesWon": 13,
+                "gamesLost": 16,
+                "tiebreakSets": 0,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 4,
+                    "rightGames": 6,
+                    "raw": "4-6"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": 0.206,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Li Tu",
+              "opponentRanking": null,
+              "result": "AUS  6-2 6-2 1/2",
+              "date": "11 Apr 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 12,
+                "gamesLost": 4,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.59,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Clement Chidekh",
+              "opponentRanking": null,
+              "result": "FRA  6-4 6-4 1/4",
+              "date": "10 Apr 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 12,
+                "gamesLost": 8,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.55,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Sergey Fomin",
+              "opponentRanking": null,
+              "result": "UZB  7-5 6-2 2nd",
+              "date": "09 Apr 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 13,
+                "gamesLost": 7,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 7,
+                    "rightGames": 5,
+                    "raw": "7-5"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.57,
+              "flashscore": null,
+              "serviceStats": null
+            }
+          ]
+        },
+        {
+          "name": "Mark Lajal",
+          "ranking": null,
+          "records": {
+            "overall2026": {
+              "wins": 11,
+              "losses": 10,
+              "total": 21,
+              "winPct": 0.524
+            },
+            "clay2026": {
+              "wins": 0,
+              "losses": 1,
+              "total": 1,
+              "winPct": 0
+            },
+            "raw": {
+              "overall": "11-10",
+              "hard": "6-5",
+              "clay": "0-1",
+              "indoorHard": "4-4",
+              "grass": "1-0",
+              "carpet": "0-0"
+            }
+          },
+          "recentWindow": {
+            "matches": 8,
+            "completed": 8,
+            "wins": 5,
+            "losses": 3,
+            "winPct": 0.625,
+            "setsWon": 11,
+            "setsLost": 7,
+            "setPct": 0.611,
+            "gamesWon": 101,
+            "gamesLost": 93,
+            "gamePct": 0.521,
+            "resistanceMatches": 5,
+            "straightSetWins": 4,
+            "straightSetLosses": 2,
+            "avgKnownOpponentRank": 130.7,
+            "knownOpponentRanks": 3,
+            "missingOpponentRanks": 5,
+            "top10Opponents": 0,
+            "top25Opponents": 0,
+            "top50Opponents": 0,
+            "challengerOrItfMatches": 3,
+            "rankingCoveragePct": 0.375,
+            "scorelineFormScore": 81.9,
+            "opponentAdjustedFormScore": null
+          },
+          "serviceData": {
+            "source": "not available in Tennistonic scrape",
+            "matchesWithStats": 0,
+            "avgServiceHoldPct": null,
+            "avgAces": null,
+            "avgFirstServeWonPct": null,
+            "note": "Recent scores support set/game resistance only until a Flashscore recent-match stat row is resolved."
+          },
+          "recentMatches": [
+            {
+              "event": "Birmingham Challenger",
+              "eventTier": "challenger",
+              "opponent": "Leandro Riedi",
+              "opponentRanking": {
+                "rank": 120,
+                "points": 525,
+                "age": 24,
+                "country": "Switzerland",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/8243/leandro-riedi",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "SUI  6-2 7-61 1st",
+              "date": "02 Jun 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 13,
+                "gamesLost": 8,
+                "tiebreakSets": 1,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-61"
+                  }
+                ]
+              },
+              "opponentWeight": 0.54,
+              "qualityPoints": 0.67,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Paris",
+              "eventTier": "tour-1000",
+              "opponent": "Roman Safiullin",
+              "opponentRanking": {
+                "rank": 141,
+                "points": 430,
+                "age": 28,
+                "country": "Russia",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/2636/roman-safiullin",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "RUS   Loss 6-4 6-4 q1",
+              "date": "19 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 8,
+                "gamesLost": 12,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 0.825,
+              "qualityPoints": 0.059,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Wuxi Challenger",
+              "eventTier": "challenger",
+              "opponent": "Soon-Woo Kwon",
+              "opponentRanking": null,
+              "result": "KOR   Loss 7-65 6-3 1/2",
+              "date": "09 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 9,
+                "gamesLost": 13,
+                "tiebreakSets": 1,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-65"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": 0.196,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Dane Sweeny",
+              "opponentRanking": {
+                "rank": 131,
+                "points": 468,
+                "age": 25,
+                "country": "Australia",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/4030/dane-sweeny",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "AUS  7-5 6-3 1/4",
+              "date": "08 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 13,
+                "gamesLost": 8,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 7,
+                    "rightGames": 5,
+                    "raw": "7-5"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  }
+                ]
+              },
+              "opponentWeight": 0.637,
+              "qualityPoints": 0.688,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Mikhail Kukushkin",
+              "opponentRanking": null,
+              "result": "KAZ  7-68 6-72 7-62 2nd",
+              "date": "06 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 2,
+                "setsLost": 1,
+                "gamesWon": 20,
+                "gamesLost": 19,
+                "tiebreakSets": 3,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-68"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 7,
+                    "raw": "6-72"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-62"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.6,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Renta Tokuda",
+              "opponentRanking": null,
+              "result": "JPN  7-62 6-4 1st",
+              "date": "04 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 13,
+                "gamesLost": 10,
+                "tiebreakSets": 1,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-62"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.62,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Jiujiang Challenger",
+              "eventTier": "challenger",
+              "opponent": "Fajing Sun",
+              "opponentRanking": null,
+              "result": "CHN   Loss 3-6 6-3 6-4 1/4",
+              "date": "01 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 1,
+                "setsLost": 2,
+                "gamesWon": 13,
+                "gamesLost": 15,
+                "tiebreakSets": 0,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 3,
+                    "rightGames": 6,
+                    "raw": "3-6"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": 0.216,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Marat Sharipov",
+              "opponentRanking": null,
+              "result": "RUS  6-4 6-4 2nd",
+              "date": "30 Apr 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 12,
+                "gamesLost": 8,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.55,
+              "flashscore": null,
+              "serviceStats": null
+            }
+          ]
+        }
+      ],
+      "matchupRead": "Harry Wendelken owns the stronger 2026 clay record by 0.0 percentage points. Mark Lajal leads the current scoreline-form score by 11.7 points before opponent rankings are applied. 13 recent-opponent rankings are still missing, so this read should be treated as partially ranked until the ranking warehouse is filled."
+    },
+    "researchLinks": [
+      {
+        "label": "ESPN scoreboard",
+        "url": "https://www.espn.com/tennis/scoreboard/_/date/20260604"
+      },
+      {
+        "label": "Tennistonic H2H",
+        "url": "https://tennistonic.com/head-to-head-compare/Harry-Wendelken-Vs-Mark-Lajal/"
+      },
+      {
+        "label": "DraftKings Sportsbook event",
+        "url": "https://sportsbook.draftkings.com/leagues/tennis/challenger-birmingham?event=34235869"
+      }
+    ],
+    "formEdgeName": "Mark Lajal"
+  },
+  "participants": [
+    {
+      "id": "rh-atp-challenger-birmingham-wendelken-vs-lajal-2026-06-04:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Harry Wendelken",
+      "detail": "Grass | Live rank #225 | GBR | age 24.4 | hold 75%",
+      "americanOdds": 186,
+      "americanLabel": "+186",
+      "decimalOdds": 2.8600000000000003,
+      "impliedProbability": 0.34965034965034963,
+      "impliedProbabilityLabel": "35.0%"
+    },
+    {
+      "id": "rh-atp-challenger-birmingham-wendelken-vs-lajal-2026-06-04:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Mark Lajal",
+      "detail": "Grass | Live rank #154 | EST | age 23 | hold 100%",
+      "americanOdds": -252,
+      "americanLabel": "-252",
+      "decimalOdds": 1.3968253968253967,
+      "impliedProbability": 0.7159090909090909,
+      "impliedProbabilityLabel": "71.6%"
+    }
+  ],
+  "moneyline": {
+    "available": true,
+    "label": "DraftKings Sportsbook moneyline",
+    "provider": "DraftKings Sportsbook",
+    "participants": [
+      {
+        "id": "rh-atp-challenger-birmingham-wendelken-vs-lajal-2026-06-04:0",
+        "index": 0,
+        "role": "Player 1",
+        "name": "Harry Wendelken",
+        "detail": "Grass | Live rank #225 | GBR | age 24.4 | hold 75%",
+        "americanOdds": 186,
+        "americanLabel": "+186",
+        "decimalOdds": 2.8600000000000003,
+        "impliedProbability": 0.34965034965034963,
+        "impliedProbabilityLabel": "35.0%"
+      },
+      {
+        "id": "rh-atp-challenger-birmingham-wendelken-vs-lajal-2026-06-04:1",
+        "index": 1,
+        "role": "Player 2",
+        "name": "Mark Lajal",
+        "detail": "Grass | Live rank #154 | EST | age 23 | hold 100%",
+        "americanOdds": -252,
+        "americanLabel": "-252",
+        "decimalOdds": 1.3968253968253967,
+        "impliedProbability": 0.7159090909090909,
+        "impliedProbabilityLabel": "71.6%"
+      }
+    ]
+  },
+  "analysis": {
+    "available": true,
+    "participantId": "rh-atp-challenger-birmingham-wendelken-vs-lajal-2026-06-04:1",
+    "participant": {
+      "id": "rh-atp-challenger-birmingham-wendelken-vs-lajal-2026-06-04:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Mark Lajal",
+      "detail": "Grass | Live rank #154 | EST | age 23 | hold 100%",
+      "americanOdds": -252,
+      "americanLabel": "-252",
+      "decimalOdds": 1.3968253968253967,
+      "impliedProbability": 0.7159090909090909,
+      "impliedProbabilityLabel": "71.6%"
+    },
+    "opponent": {
+      "id": "rh-atp-challenger-birmingham-wendelken-vs-lajal-2026-06-04:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Harry Wendelken",
+      "detail": "Grass | Live rank #225 | GBR | age 24.4 | hold 75%",
+      "americanOdds": 186,
+      "americanLabel": "+186",
+      "decimalOdds": 2.8600000000000003,
+      "impliedProbability": 0.34965034965034963,
+      "impliedProbabilityLabel": "35.0%"
+    },
+    "lean": "Lean Mark Lajal; Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+    "rationale": "Our model pick: Mark Lajal. Mark Lajal has the recent service-hold edge 100% to 75%. Lean, not a chase.",
+    "confidence": 58.7,
+    "volatility": 48,
+    "recommendationScore": 47,
+    "tier": "Watch",
+    "sourceLabel": "DraftKings Sportsbook",
+    "modelEdge": null,
+    "modelEdgeLabel": "",
+    "marketProbability": 0.7159090909090909,
+    "marketProbabilityLabel": "71.6%",
+    "inputs": [],
+    "inputsUsed": 0,
+    "volatilityNotes": [],
+    "indicators": {}
+  },
+  "metadata": {
+    "participantCount": 2,
+    "participantNames": [
+      "Harry Wendelken",
+      "Mark Lajal"
+    ],
+    "tagCount": 6,
+    "hasSeriesBreakdown": false,
+    "hasMoneyline": true,
+    "hasAnalysisPick": true,
+    "hasStructuredInputs": false,
+    "hasPlayerProps": false,
+    "startMinutes": 370,
+    "spotlight": false,
+    "league": "Tennis",
+    "oddsProvider": "DraftKings Sportsbook"
+  }
+}

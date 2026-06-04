@@ -9,9 +9,12 @@ export const tennistonicPlayerSlugMap = {
   'Catherine McNally': 'Caty-McNally',
   'Pablo Carreno Busta': 'Pablo-Carreno-Busta',
   'Pedro Martinez': 'Pedro-Martinez-Portero',
+  'Diego Dedura-Palomero': 'Diego-Dedura',
   'Wang Xinyu': 'Xinyu-Wang',
   'Wang Xiyu': 'Xiyu-Wang',
+  'Yunchaokete Bu': 'Bu-Yunchaokete',
   'Guiomar Maristany Zuleta De Reales': 'Guiomar-Zuleta-De-Reales',
+  'Coleman Wong': 'Chak-Lam-Coleman-Wong',
   'Pierre-Hugues Herbert': 'Pierre~Hugues-Herbert'
 }
 

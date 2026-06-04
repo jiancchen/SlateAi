@@ -5,8 +5,8 @@
   "modelId": "TEN-T0",
   "slateDate": "2026-05-31",
   "status": "deployed",
-  "deployedAt": "2026-05-31T18:03:12.068Z",
-  "deploymentUrl": "https://slate-web-static-1-rmm9kzu6i-jian-chens-projects-667dcf76.vercel.app",
+  "deployedAt": "2026-06-04T04:01:20.114Z",
+  "deploymentUrl": "https://slate-web-static-1-4hkjoy1z6-jian-chens-projects-667dcf76.vercel.app",
   "webRoot": "web",
   "vercelProject": {
     "projectId": "prj_wKTGUqaCcDzyat6fBENE0ROnBWFL",
@@ -15,23 +15,275 @@
   },
   "staticArtifact": {
     "root": "web/dist",
-    "files": 62,
-    "sha256": "a7bd332d95be849f3d89b747b828a1a7212205b389d9d0a3cedddbade21c4d8f"
+    "files": 857,
+    "sha256": "41d1f03aff536680603e9d037953457706990f7ba768024e6ca12de5fa4105f8"
   },
   "publicData": {
     "currentSlate": {
-      "id": "2026-05-31",
-      "label": "May 31, 2026",
+      "id": "2026-06-03",
+      "label": "June 3, 2026",
       "status": "ready",
       "slateMeta": {
-        "date": "May 31, 2026",
-        "isoDate": "2026-05-31"
+        "date": "June 3, 2026",
+        "isoDate": "2026-06-03"
       },
       "summary": {
-        "totalGames": 23
+        "totalGames": 15
       }
     },
     "slates": [
+      {
+        "id": "2026-05-10",
+        "label": "May 10, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "May 10, 2026",
+          "isoDate": "2026-05-10"
+        },
+        "summary": {
+          "totalGames": 21
+        }
+      },
+      {
+        "id": "2026-05-11",
+        "label": "May 11, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "May 11, 2026",
+          "isoDate": "2026-05-11"
+        },
+        "summary": {
+          "totalGames": 8
+        }
+      },
+      {
+        "id": "2026-05-12",
+        "label": "May 12, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "May 12, 2026",
+          "isoDate": "2026-05-12"
+        },
+        "summary": {
+          "totalGames": 19
+        }
+      },
+      {
+        "id": "2026-05-13",
+        "label": "May 13, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "May 13, 2026",
+          "isoDate": "2026-05-13"
+        },
+        "summary": {
+          "totalGames": 18
+        }
+      },
+      {
+        "id": "2026-05-14",
+        "label": "May 14, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "May 14, 2026",
+          "isoDate": "2026-05-14"
+        },
+        "summary": {
+          "totalGames": 13
+        }
+      },
+      {
+        "id": "2026-05-15",
+        "label": "May 15, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "May 15, 2026",
+          "isoDate": "2026-05-15"
+        },
+        "summary": {
+          "totalGames": 21
+        }
+      },
+      {
+        "id": "2026-05-16",
+        "label": "May 16, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "May 16, 2026",
+          "isoDate": "2026-05-16"
+        },
+        "summary": {
+          "totalGames": 15
+        }
+      },
+      {
+        "id": "2026-05-17",
+        "label": "May 17, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "May 17, 2026",
+          "isoDate": "2026-05-17"
+        },
+        "summary": {
+          "totalGames": 20
+        }
+      },
+      {
+        "id": "2026-05-18",
+        "label": "May 18, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "May 18, 2026",
+          "isoDate": "2026-05-18"
+        },
+        "summary": {
+          "totalGames": 17
+        }
+      },
+      {
+        "id": "2026-05-19",
+        "label": "May 19, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "May 19, 2026",
+          "isoDate": "2026-05-19"
+        },
+        "summary": {
+          "totalGames": 17
+        }
+      },
+      {
+        "id": "2026-05-20",
+        "label": "May 20, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "May 20, 2026",
+          "isoDate": "2026-05-20"
+        },
+        "summary": {
+          "totalGames": 13
+        }
+      },
+      {
+        "id": "2026-05-21",
+        "label": "May 21, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "May 21, 2026",
+          "isoDate": "2026-05-21"
+        },
+        "summary": {
+          "totalGames": 35
+        }
+      },
+      {
+        "id": "2026-05-22",
+        "label": "May 22, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "May 22, 2026",
+          "isoDate": "2026-05-22"
+        },
+        "summary": {
+          "totalGames": 36
+        }
+      },
+      {
+        "id": "2026-05-23",
+        "label": "May 23, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "May 23, 2026",
+          "isoDate": "2026-05-23"
+        },
+        "summary": {
+          "totalGames": 14
+        }
+      },
+      {
+        "id": "2026-05-24",
+        "label": "May 24, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "May 24, 2026",
+          "isoDate": "2026-05-24"
+        },
+        "summary": {
+          "totalGames": 52
+        }
+      },
+      {
+        "id": "2026-05-25",
+        "label": "May 25, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "May 25, 2026",
+          "isoDate": "2026-05-25"
+        },
+        "summary": {
+          "totalGames": 62
+        }
+      },
+      {
+        "id": "2026-05-26",
+        "label": "May 26, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "May 26, 2026",
+          "isoDate": "2026-05-26"
+        },
+        "summary": {
+          "totalGames": 55
+        }
+      },
+      {
+        "id": "2026-05-27",
+        "label": "May 27, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "May 27, 2026",
+          "isoDate": "2026-05-27"
+        },
+        "summary": {
+          "totalGames": 46
+        }
+      },
+      {
+        "id": "2026-05-28",
+        "label": "May 28, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "May 28, 2026",
+          "isoDate": "2026-05-28"
+        },
+        "summary": {
+          "totalGames": 38
+        }
+      },
+      {
+        "id": "2026-05-29",
+        "label": "May 29, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "May 29, 2026",
+          "isoDate": "2026-05-29"
+        },
+        "summary": {
+          "totalGames": 31
+        }
+      },
+      {
+        "id": "2026-05-30",
+        "label": "May 30, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "May 30, 2026",
+          "isoDate": "2026-05-30"
+        },
+        "summary": {
+          "totalGames": 31
+        }
+      },
       {
         "id": "2026-05-31",
         "label": "May 31, 2026",
@@ -43,10 +295,58 @@
         "summary": {
           "totalGames": 23
         }
+      },
+      {
+        "id": "2026-06-01",
+        "label": "June 1, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "June 1, 2026",
+          "isoDate": "2026-06-01"
+        },
+        "summary": {
+          "totalGames": 17
+        }
+      },
+      {
+        "id": "2026-06-02",
+        "label": "June 2, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "June 2, 2026",
+          "isoDate": "2026-06-02"
+        },
+        "summary": {
+          "totalGames": 81
+        }
+      },
+      {
+        "id": "2026-06-03",
+        "label": "June 3, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "June 3, 2026",
+          "isoDate": "2026-06-03"
+        },
+        "summary": {
+          "totalGames": 15
+        }
+      },
+      {
+        "id": "2026-06-04",
+        "label": "June 4, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "June 4, 2026",
+          "isoDate": "2026-06-04"
+        },
+        "summary": {
+          "totalGames": 23
+        }
       }
     ],
     "modelHistory": true,
-    "nextSlateExpected": null
+    "nextSlateExpected": "2026-06-04"
   },
   "checks": {
     "rootIsWeb": true,

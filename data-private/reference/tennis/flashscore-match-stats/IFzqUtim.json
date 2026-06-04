@@ -1,0 +1,668 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-prostejov-daniel-vs-dzumhur-2026-06-04",
+  "boardTitle": "Taro Daniel vs Damir Dzumhur",
+  "boardPlayerName": "Damir Dzumhur",
+  "recentOpponentName": "Damas M.",
+  "recentIndex": 0,
+  "recentEvent": "Prostejov (Czech Republic)",
+  "recentDate": "Jun 02, 26",
+  "recentIsoDate": "2026-06-02",
+  "recentResult": "Win 6-7 6-4 7-5",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Damas M. - Dzumhur D.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/prostejov/",
+  "players": [
+    "Damas M.",
+    "Dzumhur D."
+  ],
+  "generatedAt": "2026-06-04T00:09:25.767Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/IFzqUtim/",
+  "matchId": "IFzqUtim",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_IFzqUtim",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_IFzqUtim"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 2,
+        "duration": "1:05"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "1:05"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:09"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "5",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "67%",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (39/58)",
+              "right": "67% (52/78)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (30/54)",
+              "right": "56% (22/39)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/10",
+              "right": "9/12",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (26/78)",
+              "right": "33% (19/58)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (17/39)",
+              "right": "44% (24/54)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/12",
+              "right": "5/10",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "37",
+              "right": "41",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "48",
+              "right": "47",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (69/112)",
+              "right": "63% (74/117)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (43/117)",
+              "right": "38% (43/112)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (112/229)",
+              "right": "51% (117/229)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "71% (12/17)",
+              "right": "82% (14/17)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Return games won",
+              "left": "18% (3/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Total games won",
+              "left": "44% (15/34)",
+              "right": "56% (19/34)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "68%",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "69% (18/26)",
+              "right": "64% (16/25)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (11/20)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "2/4",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (9/25)",
+              "right": "31% (8/26)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "2/4",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "14",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "17",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (29/46)",
+              "right": "62% (23/37)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (14/37)",
+              "right": "37% (17/46)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (43/83)",
+              "right": "48% (40/83)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "62%",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "75% (12/16)",
+              "right": "66% (19/29)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (8/18)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "6/6",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "34% (10/29)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (8/18)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/6",
+              "right": "1/2",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "15",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "15",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (20/33)",
+              "right": "62% (29/47)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (18/47)",
+              "right": "39% (13/33)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (38/80)",
+              "right": "53% (42/80)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "73%",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (9/16)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "69% (11/16)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "1/2",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (7/24)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (4/9)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/4",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "12",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "15",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (20/33)",
+              "right": "67% (22/33)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (11/33)",
+              "right": "39% (13/33)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (31/66)",
+              "right": "53% (35/66)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Damas M.",
+              "rightPlayer": "Dzumhur D."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

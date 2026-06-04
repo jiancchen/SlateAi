@@ -1,0 +1,560 @@
+{
+  "ok": true,
+  "script": "data-migration/scripts/ingest_tennis_tennislive_to_typed.py",
+  "source_db": "/Users/jcchen/Documents/New project/data-private/warehouse/sports/tennis/sql-tennis.db",
+  "started_at": "2026-06-04T05:35:32.528998+00:00",
+  "finished_at": "2026-06-04T05:36:27.392109+00:00",
+  "player_urls": [
+    "https://www.tennislive.net/atp/luka-mikrut/",
+    "https://www.tennislive.net/atp/jan-choinski/",
+    "https://www.tennislive.net/atp/diego-dedura-palomero/",
+    "https://www.tennislive.net/atp/joao-lucas-reis-da-silva/",
+    "https://www.tennislive.net/atp/marco-trungelliti/",
+    "https://www.tennislive.net/atp/yu-hsiou-hsu/",
+    "https://www.tennislive.net/atp/arthur-fery/",
+    "https://www.tennislive.net/atp/alex-bolt/",
+    "https://www.tennislive.net/atp/felix-gill/",
+    "https://www.tennislive.net/atp/kamil-majchrzak/",
+    "https://www.tennislive.net/atp/billy-harris/",
+    "https://www.tennislive.net/atp/bu-yunchaokete/",
+    "https://www.tennislive.net/atp/mackenzie-mcdonald/",
+    "https://www.tennislive.net/atp/rinky-hijikata/",
+    "https://www.tennislive.net/atp/sho-shimabukuro/",
+    "https://www.tennislive.net/atp/elias-ymer/",
+    "https://www.tennislive.net/atp/otto-virtanen/",
+    "https://www.tennislive.net/atp/aleksandar-vukic/",
+    "https://www.tennislive.net/atp/harry-wendelken/",
+    "https://www.tennislive.net/atp/mark-lajal/",
+    "https://www.tennislive.net/atp/chak-lam-coleman-wong/",
+    "https://www.tennislive.net/atp/filippo-romano/",
+    "https://www.tennislive.net/atp/alec-beckley/",
+    "https://www.tennislive.net/atp/tuncay-duran/",
+    "https://www.tennislive.net/atp/giles-hussey/",
+    "https://www.tennislive.net/atp/robin-bertrand/",
+    "https://www.tennislive.net/atp/edward-winter/",
+    "https://www.tennislive.net/atp/alexander-donski/",
+    "https://www.tennislive.net/atp/philip-henning/",
+    "https://www.tennislive.net/atp/robert-strombachs/",
+    "https://www.tennislive.net/atp/taro-taro/",
+    "https://www.tennislive.net/atp/damir-dzumhur/",
+    "https://www.tennislive.net/atp/milos-karol/",
+    "https://www.tennislive.net/atp/alex-molcan/",
+    "https://www.tennislive.net/atp/vitaliy-sachko/",
+    "https://www.tennislive.net/atp/vit-kopriva/",
+    "https://www.tennislive.net/wta/marta-kostyuk/",
+    "https://www.tennislive.net/wta/mirra-andreeva/",
+    "https://www.tennislive.net/wta/diana-shnaider/",
+    "https://www.tennislive.net/wta/maja-chwalinska/",
+    "https://www.tennislive.net/wta/alexandra-eala/",
+    "https://www.tennislive.net/wta/alina-charaeva/",
+    "https://www.tennislive.net/wta/janice-tjen/",
+    "https://www.tennislive.net/wta/ashlyn-krueger/",
+    "https://www.tennislive.net/wta/mananchaya-sawangkaew/",
+    "https://www.tennislive.net/wta/kayla-day/"
+  ],
+  "match_urls": [],
+  "max_links": 500,
+  "max_matches": 5,
+  "player_results": [
+    {
+      "status": "ok",
+      "player_id": "tennis-player-luka-mikrut",
+      "player": "Luka Mikrut",
+      "snapshot_already_seen": false,
+      "surface_records": 56,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-jan-choinski",
+      "player": "Jan Choinski",
+      "snapshot_already_seen": false,
+      "surface_records": 119,
+      "match_links": 51,
+      "matches_fetched": 1,
+      "matches_skipped_existing": 4,
+      "matches_failed": 0
+    },
+    {
+      "status": "failed",
+      "source_player_url": "https://www.tennislive.net/atp/diego-dedura-palomero/",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-joao-lucas-reis-da-silva",
+      "player": "Joao Lucas Reis Da Silva",
+      "snapshot_already_seen": false,
+      "surface_records": 91,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-marco-trungelliti",
+      "player": "Marco Trungelliti",
+      "snapshot_already_seen": false,
+      "surface_records": 154,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-yu-hsiou-hsu",
+      "player": "Yu Hsiou Hsu",
+      "snapshot_already_seen": false,
+      "surface_records": 98,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-arthur-fery",
+      "player": "Arthur Fery",
+      "snapshot_already_seen": false,
+      "surface_records": 70,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-alex-bolt",
+      "player": "Alex Bolt",
+      "snapshot_already_seen": false,
+      "surface_records": 140,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-felix-gill",
+      "player": "Felix Gill",
+      "snapshot_already_seen": false,
+      "surface_records": 77,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-kamil-majchrzak",
+      "player": "Kamil Majchrzak",
+      "snapshot_already_seen": false,
+      "surface_records": 105,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-billy-harris",
+      "player": "Billy Harris",
+      "snapshot_already_seen": false,
+      "surface_records": 112,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-bu-yunchaokete",
+      "player": "Bu Yunchaokete",
+      "snapshot_already_seen": false,
+      "surface_records": 84,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-mackenzie-mcdonald",
+      "player": "Mackenzie Mcdonald",
+      "snapshot_already_seen": false,
+      "surface_records": 133,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-rinky-hijikata",
+      "player": "Rinky Hijikata",
+      "snapshot_already_seen": false,
+      "surface_records": 91,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-sho-shimabukuro",
+      "player": "Sho Shimabukuro",
+      "snapshot_already_seen": false,
+      "surface_records": 98,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-elias-ymer",
+      "player": "Elias Ymer",
+      "snapshot_already_seen": false,
+      "surface_records": 119,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-otto-virtanen",
+      "player": "Otto Virtanen",
+      "snapshot_already_seen": false,
+      "surface_records": 91,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-aleksandar-vukic",
+      "player": "Aleksandar Vukic",
+      "snapshot_already_seen": false,
+      "surface_records": 112,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "failed",
+      "source_player_url": "https://www.tennislive.net/atp/harry-wendelken/",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-mark-lajal",
+      "player": "Mark Lajal",
+      "snapshot_already_seen": false,
+      "surface_records": 56,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-chak-lam-coleman-wong",
+      "player": "Chak Lam Coleman Wong",
+      "snapshot_already_seen": false,
+      "surface_records": 77,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-filippo-romano",
+      "player": "Filippo Romano",
+      "snapshot_already_seen": false,
+      "surface_records": 56,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-alec-beckley",
+      "player": "Alec Beckley",
+      "snapshot_already_seen": false,
+      "surface_records": 77,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "failed",
+      "source_player_url": "https://www.tennislive.net/atp/tuncay-duran/",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-giles-hussey",
+      "player": "Giles Hussey",
+      "snapshot_already_seen": false,
+      "surface_records": 70,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-robin-bertrand",
+      "player": "Robin Bertrand",
+      "snapshot_already_seen": false,
+      "surface_records": 63,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "failed",
+      "source_player_url": "https://www.tennislive.net/atp/edward-winter/",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "status": "failed",
+      "source_player_url": "https://www.tennislive.net/atp/alexander-donski/",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-philip-henning",
+      "player": "Philip Henning",
+      "snapshot_already_seen": false,
+      "surface_records": 84,
+      "match_links": 51,
+      "matches_fetched": 1,
+      "matches_skipped_existing": 4,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-robert-strombachs",
+      "player": "Robert Strombachs",
+      "snapshot_already_seen": false,
+      "surface_records": 84,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 4,
+      "matches_failed": 1
+    },
+    {
+      "status": "failed",
+      "source_player_url": "https://www.tennislive.net/atp/taro-taro/",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-damir-dzumhur",
+      "player": "Damir Dzumhur",
+      "snapshot_already_seen": false,
+      "surface_records": 147,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-milo-karol",
+      "player": "Milos Karol",
+      "snapshot_already_seen": false,
+      "surface_records": 70,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "failed",
+      "source_player_url": "https://www.tennislive.net/atp/alex-molcan/",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-vitaliy-sachko",
+      "player": "Vitaliy Sachko",
+      "snapshot_already_seen": false,
+      "surface_records": 112,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "failed",
+      "source_player_url": "https://www.tennislive.net/atp/vit-kopriva/",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-marta-kostyuk",
+      "player": "Marta Kostyuk",
+      "snapshot_already_seen": false,
+      "surface_records": 91,
+      "match_links": 50,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "failed",
+      "source_player_url": "https://www.tennislive.net/wta/mirra-andreeva/",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-diana-shnaider",
+      "player": "Diana Shnaider",
+      "snapshot_already_seen": false,
+      "surface_records": 70,
+      "match_links": 51,
+      "matches_fetched": 1,
+      "matches_skipped_existing": 4,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-maja-chwalinska",
+      "player": "Maja Chwalinska",
+      "snapshot_already_seen": false,
+      "surface_records": 98,
+      "match_links": 51,
+      "matches_fetched": 1,
+      "matches_skipped_existing": 4,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-alexandra-eala",
+      "player": "Alexandra Eala",
+      "snapshot_already_seen": false,
+      "surface_records": 70,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-alina-charaeva",
+      "player": "Alina Charaeva",
+      "snapshot_already_seen": false,
+      "surface_records": 84,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-janice-tjen",
+      "player": "Janice Tjen",
+      "snapshot_already_seen": false,
+      "surface_records": 63,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-ashlyn-krueger",
+      "player": "Ashlyn Krueger",
+      "snapshot_already_seen": false,
+      "surface_records": 70,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-mananchaya-sawangkaew",
+      "player": "Mananchaya Sawangkaew",
+      "snapshot_already_seen": false,
+      "surface_records": 91,
+      "match_links": 51,
+      "matches_fetched": 1,
+      "matches_skipped_existing": 4,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-kayla-day",
+      "player": "Kayla Day",
+      "snapshot_already_seen": false,
+      "surface_records": 105,
+      "match_links": 51,
+      "matches_fetched": 1,
+      "matches_skipped_existing": 4,
+      "matches_failed": 0
+    }
+  ],
+  "match_results": [],
+  "failures": [
+    {
+      "status": "failed",
+      "source_player_url": "https://www.tennislive.net/atp/diego-dedura-palomero/",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "status": "failed",
+      "source_player_url": "https://www.tennislive.net/atp/harry-wendelken/",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "status": "failed",
+      "source_player_url": "https://www.tennislive.net/atp/tuncay-duran/",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "status": "failed",
+      "source_player_url": "https://www.tennislive.net/atp/edward-winter/",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "status": "failed",
+      "source_player_url": "https://www.tennislive.net/atp/alexander-donski/",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "status": "failed",
+      "source_player_url": "https://www.tennislive.net/atp/taro-taro/",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "status": "failed",
+      "source_player_url": "https://www.tennislive.net/atp/alex-molcan/",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "status": "failed",
+      "source_player_url": "https://www.tennislive.net/atp/vit-kopriva/",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "status": "failed",
+      "source_player_url": "https://www.tennislive.net/wta/mirra-andreeva/",
+      "error": "HTTP Error 500: Internal Server Error"
+    }
+  ]
+}

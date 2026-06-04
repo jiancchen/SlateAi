@@ -1,0 +1,44 @@
+{
+  "after_counts": {
+    "player_form_snapshots": 3326,
+    "recent_matches": 10910,
+    "service_pressure_snapshots": 1608,
+    "unresolved_entities": 438
+  },
+  "alias_rows": 38,
+  "before_counts": {
+    "player_form_snapshots": 3250,
+    "recent_matches": 9085,
+    "service_pressure_snapshots": 1421,
+    "unresolved_entities": 438
+  },
+  "date": "2026-06-04",
+  "dry_run": false,
+  "generated_at": "2026-06-04T00:09:53.831333+00:00",
+  "inserted_player_form_snapshots": 76,
+  "inserted_recent_matches": 1825,
+  "inserted_service_pressure_rows": 187,
+  "ok": true,
+  "parsed_player_snapshots": 76,
+  "parsed_recent_matches": 1825,
+  "parsed_service_pressure": 187,
+  "parser_module": "pipeline/sources/tennis/normalization/context.py",
+  "row_count_delta": {
+    "player_form_snapshots": 76,
+    "recent_matches": 1825,
+    "service_pressure_snapshots": 187,
+    "unresolved_entities": 0
+  },
+  "sample_source_snapshots": [
+    "tennis-240e9385180bd1cf6d84a686e4a42018",
+    "tennis-6da3753972bd7a67d4ee4629aea61614"
+  ],
+  "script": "data-migration/scripts/ingest_tennis_player_context_raw_to_typed.py",
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "source_files": 2,
+  "source_name": "tennis_player_context",
+  "source_rows": 228,
+  "source_snapshot_rows": 2,
+  "unparsed_rows": 0,
+  "unresolved_rows_added": 0
+}

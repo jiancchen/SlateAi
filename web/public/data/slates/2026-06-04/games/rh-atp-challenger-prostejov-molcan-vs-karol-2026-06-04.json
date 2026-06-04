@@ -1,0 +1,2195 @@
+{
+  "id": "rh-atp-challenger-prostejov-molcan-vs-karol-2026-06-04",
+  "eventId": "08c8dc8a-0328-4c43-9eec-d3f9fa529cb7",
+  "league": "Tennis",
+  "start": "3:10 AM",
+  "startMinutes": 190,
+  "title": "Milos Karol vs Alex Molcan",
+  "stage": "ATP Challenger Prostejov | Round Of 16",
+  "spotlight": false,
+  "confidence": 70,
+  "volatility": 45,
+  "tags": [
+    "ATP Challenger",
+    "Clay",
+    "Prediction market",
+    "Warehouse joined",
+    "Flashscore first",
+    "Market favorite"
+  ],
+  "matchup": [
+    {
+      "side": "Player 1",
+      "name": "Milos Karol",
+      "displayName": "Milos Karol",
+      "detail": "Clay | Live rank #465 | SVK | age 23.4 | hold 67%"
+    },
+    {
+      "side": "Player 2",
+      "name": "Alex Molcan",
+      "displayName": "Alex Molcan",
+      "detail": "Clay | Live rank #110 | Slovakia | age 28 | hold 67%"
+    }
+  ],
+  "summary": "Our model pick: Alex Molcan. Recent service hold is close: Alex Molcan 67%, Milos Karol 67%. Lean, not a chase.",
+  "factors": [
+    "Recent service hold is close: Alex Molcan 67%, Milos Karol 67%. Lean, not a chase.",
+    "Model 70% vs DraftKings Sportsbook implied 91.5% (-21.5 pts).",
+    "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+    "Wait for a visible service-pressure split before entering.",
+    "Best O/U angle: no play without a posted total.",
+    "May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.",
+    "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. ML payout is tiny; use spread/total or pass unless the number moves."
+  ],
+  "lean": "Lean Alex Molcan; ML payout is tiny; use spread/total or pass unless the number moves.",
+  "swing": "Risk: best-of-five set extension and tiebreak variance.",
+  "swingFactor": "Risk: best-of-five set extension and tiebreak variance.",
+  "odds": {
+    "participantOrder": [
+      0,
+      1
+    ],
+    "markets": [
+      {
+        "label": "Model fair",
+        "book": "Tennis warehouse model",
+        "value": "Milos Karol 30.4% / Alex Molcan 70%"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "book": "DraftKings Sportsbook",
+        "value": "Milos Karol +584 / Alex Molcan -1080"
+      },
+      {
+        "label": "1st set total games",
+        "book": "DraftKings Sportsbook",
+        "value": "9.5 1st-set games: Over +105 / Under -165"
+      }
+    ],
+    "note": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. ML payout is tiny; use spread/total or pass unless the number moves.",
+    "provider": "DraftKings Sportsbook"
+  },
+  "tennisContext": {
+    "surface": "Clay",
+    "court": "ATP Challenger Prostejov",
+    "h2hLeader": "",
+    "fatigueFlag": false,
+    "liveDog": false,
+    "weaknessEdge": {
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 0,
+      "attackingSide": null,
+      "vulnerableSide": null,
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+      "pick": {
+        "name": "Alex Molcan",
+        "serviceHoldPct": 67,
+        "firstServeWonPct": null,
+        "secondServeWonPct": null,
+        "firstServePct": null,
+        "avgAces": null,
+        "avgDoubleFaults": null,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": null,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 1,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [],
+        "gameFlowRead": "Alex Molcan has no major service weakness in the joined Flashscore sample."
+      },
+      "opponent": {
+        "name": "Milos Karol",
+        "serviceHoldPct": 67,
+        "firstServeWonPct": null,
+        "secondServeWonPct": null,
+        "firstServePct": null,
+        "avgAces": null,
+        "avgDoubleFaults": null,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": null,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 1,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [],
+        "gameFlowRead": "Milos Karol has no major service weakness in the joined Flashscore sample."
+      }
+    },
+    "warehouseContext": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-prostejov-molcan-vs-karol-2026-06-04",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-04T10:10:00Z",
+      "surface": "Clay",
+      "tournament": "ATP Challenger Prostejov",
+      "category": "ATP",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Milos Karol",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "Milos Karol",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 66.6667,
+              "returnGamesWonPct": 33.3333,
+              "breakPointsSaved": 5,
+              "breakPointsFaced": 7,
+              "breakPointsSavedPct": 71.4286,
+              "breakPointsConverted": 2,
+              "breakPointsToConvert": 4,
+              "breakPointsConvertedPct": 50
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 5,
+                "bpFaced": 7,
+                "bpSavedPct": 71.4286,
+                "bpConverted": 2,
+                "bpChances": 4,
+                "bpConvertedPct": 50
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Milos Karol",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        },
+        {
+          "name": "Alex Molcan",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "name": "Alex Molcan",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 66.6667,
+              "returnGamesWonPct": 33.3333,
+              "breakPointsSaved": 2,
+              "breakPointsFaced": 4,
+              "breakPointsSavedPct": 50,
+              "breakPointsConverted": 2,
+              "breakPointsToConvert": 7,
+              "breakPointsConvertedPct": 28.5714
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 2,
+                "bpFaced": 4,
+                "bpSavedPct": 50,
+                "bpConverted": 2,
+                "bpChances": 7,
+                "bpConvertedPct": 28.5714
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Alex Molcan",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        }
+      ],
+      "h2h": {
+        "homeName": "Milos Karol",
+        "awayName": "Alex Molcan",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Alex Molčan",
+          "awayName": "Miloš Karol",
+          "homeVotes": 750,
+          "awayVotes": 44,
+          "homePct": 94.5,
+          "awayPct": 5.5
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Alex Molčan",
+            "fractionalValue": "7/50",
+            "impliedPct": 87.7,
+            "expected": 88,
+            "actual": 99
+          },
+          "away": {
+            "name": "Miloš Karol",
+            "fractionalValue": null,
+            "impliedPct": null,
+            "expected": null,
+            "actual": null
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 2,
+            "avgAces": 2,
+            "doubleFaults": null,
+            "avgDoubleFaults": 0,
+            "firstServePct": 59.52380952381,
+            "firstServeWonPct": 68,
+            "secondServePct": 100,
+            "secondServeWonPct": 70.588235294118,
+            "breakPointsSavedPct": 100,
+            "breakPointsConvertedPct": 50,
+            "winners": null,
+            "unforcedErrors": null
+          },
+          "away": {
+            "matches": 3,
+            "wins": 3,
+            "aces": 40,
+            "avgAces": 13.333333333333,
+            "doubleFaults": 10,
+            "avgDoubleFaults": 3.3333333333333,
+            "firstServePct": 62.311557788945,
+            "firstServeWonPct": 84.677419354839,
+            "secondServePct": 86.666666666667,
+            "secondServeWonPct": 57.333333333333,
+            "breakPointsSavedPct": 66.666666666667,
+            "breakPointsConvertedPct": 31.25,
+            "winners": null,
+            "unforcedErrors": null
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick.",
+        "eventId": "16241134",
+        "sourceUrl": "https://www.sofascore.com/tennis/match/milos-karol-alex-molcan#id:16241134",
+        "capturedAt": "2026-06-04T00:25:42.337Z"
+      },
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 16,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "sofascoreData": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-prostejov-molcan-vs-karol-2026-06-04",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-04T10:10:00Z",
+      "surface": "Clay",
+      "tournament": "ATP Challenger Prostejov",
+      "category": "ATP",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Milos Karol",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "Milos Karol",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 66.6667,
+              "returnGamesWonPct": 33.3333,
+              "breakPointsSaved": 5,
+              "breakPointsFaced": 7,
+              "breakPointsSavedPct": 71.4286,
+              "breakPointsConverted": 2,
+              "breakPointsToConvert": 4,
+              "breakPointsConvertedPct": 50
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 5,
+                "bpFaced": 7,
+                "bpSavedPct": 71.4286,
+                "bpConverted": 2,
+                "bpChances": 4,
+                "bpConvertedPct": 50
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Milos Karol",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        },
+        {
+          "name": "Alex Molcan",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "name": "Alex Molcan",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 66.6667,
+              "returnGamesWonPct": 33.3333,
+              "breakPointsSaved": 2,
+              "breakPointsFaced": 4,
+              "breakPointsSavedPct": 50,
+              "breakPointsConverted": 2,
+              "breakPointsToConvert": 7,
+              "breakPointsConvertedPct": 28.5714
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 2,
+                "bpFaced": 4,
+                "bpSavedPct": 50,
+                "bpConverted": 2,
+                "bpChances": 7,
+                "bpConvertedPct": 28.5714
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Alex Molcan",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        }
+      ],
+      "h2h": {
+        "homeName": "Milos Karol",
+        "awayName": "Alex Molcan",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Alex Molčan",
+          "awayName": "Miloš Karol",
+          "homeVotes": 750,
+          "awayVotes": 44,
+          "homePct": 94.5,
+          "awayPct": 5.5
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Alex Molčan",
+            "fractionalValue": "7/50",
+            "impliedPct": 87.7,
+            "expected": 88,
+            "actual": 99
+          },
+          "away": {
+            "name": "Miloš Karol",
+            "fractionalValue": null,
+            "impliedPct": null,
+            "expected": null,
+            "actual": null
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": {
+            "matches": 1,
+            "wins": 1,
+            "aces": 2,
+            "avgAces": 2,
+            "doubleFaults": null,
+            "avgDoubleFaults": 0,
+            "firstServePct": 59.52380952381,
+            "firstServeWonPct": 68,
+            "secondServePct": 100,
+            "secondServeWonPct": 70.588235294118,
+            "breakPointsSavedPct": 100,
+            "breakPointsConvertedPct": 50,
+            "winners": null,
+            "unforcedErrors": null
+          },
+          "away": {
+            "matches": 3,
+            "wins": 3,
+            "aces": 40,
+            "avgAces": 13.333333333333,
+            "doubleFaults": 10,
+            "avgDoubleFaults": 3.3333333333333,
+            "firstServePct": 62.311557788945,
+            "firstServeWonPct": 84.677419354839,
+            "secondServePct": 86.666666666667,
+            "secondServeWonPct": 57.333333333333,
+            "breakPointsSavedPct": 66.666666666667,
+            "breakPointsConvertedPct": 31.25,
+            "winners": null,
+            "unforcedErrors": null
+          }
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick.",
+        "eventId": "16241134",
+        "sourceUrl": "https://www.sofascore.com/tennis/match/milos-karol-alex-molcan#id:16241134",
+        "capturedAt": "2026-06-04T00:25:42.337Z"
+      },
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 16,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "players": [
+      {
+        "name": "Milos Karol",
+        "rank": 465,
+        "label": "Milos Karol",
+        "form": null,
+        "boardPct": 30.4,
+        "decimalOdds": 6.84,
+        "marketLabel": "+584 / 14.6% implied",
+        "clayLine": "Clay | Live rank #465 | SVK | age 23.4 | hold 67%",
+        "weakness": {
+          "name": "Milos Karol",
+          "serviceHoldPct": 67,
+          "firstServeWonPct": null,
+          "secondServeWonPct": null,
+          "firstServePct": null,
+          "avgAces": null,
+          "avgDoubleFaults": null,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": null,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 1,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [],
+          "gameFlowRead": "Milos Karol has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseStats": {
+          "name": "Milos Karol",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "Milos Karol",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 66.6667,
+              "returnGamesWonPct": 33.3333,
+              "breakPointsSaved": 5,
+              "breakPointsFaced": 7,
+              "breakPointsSavedPct": 71.4286,
+              "breakPointsConverted": 2,
+              "breakPointsToConvert": 4,
+              "breakPointsConvertedPct": 50
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 5,
+                "bpFaced": 7,
+                "bpSavedPct": 71.4286,
+                "bpConverted": 2,
+                "bpChances": 4,
+                "bpConvertedPct": 50
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Milos Karol",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        },
+        "record2026": "",
+        "notes": "Opponent case: model 30%",
+        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
+      },
+      {
+        "name": "Alex Molcan",
+        "rank": 110,
+        "label": "Alex Molcan",
+        "form": null,
+        "boardPct": 70,
+        "decimalOdds": 1.093,
+        "marketLabel": "-1080 / 91.5% implied",
+        "clayLine": "Clay | Live rank #110 | Slovakia | age 28 | hold 67%",
+        "weakness": {
+          "name": "Alex Molcan",
+          "serviceHoldPct": 67,
+          "firstServeWonPct": null,
+          "secondServeWonPct": null,
+          "firstServePct": null,
+          "avgAces": null,
+          "avgDoubleFaults": null,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": null,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 1,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [],
+          "gameFlowRead": "Alex Molcan has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseStats": {
+          "name": "Alex Molcan",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "name": "Alex Molcan",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 66.6667,
+              "returnGamesWonPct": 33.3333,
+              "breakPointsSaved": 2,
+              "breakPointsFaced": 4,
+              "breakPointsSavedPct": 50,
+              "breakPointsConverted": 2,
+              "breakPointsToConvert": 7,
+              "breakPointsConvertedPct": 28.5714
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 2,
+                "bpFaced": 4,
+                "bpSavedPct": 50,
+                "bpConverted": 2,
+                "bpChances": 7,
+                "bpConvertedPct": 28.5714
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Alex Molcan",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        },
+        "record2026": "",
+        "notes": "Pick: model 70%",
+        "matchupNote": "Why pick: Recent service hold is close: Alex Molcan 67%, Milos Karol 67%. Lean, not a chase."
+      }
+    ],
+    "comparisonRows": [
+      {
+        "label": "Model pick",
+        "metric": "Fair win split",
+        "leftScore": 30.4,
+        "rightScore": 70,
+        "leftLabel": "Milos Karol",
+        "rightLabel": "Alex Molcan",
+        "winner": "Alex Molcan"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "metric": "Implied price",
+        "leftScore": 14.6,
+        "rightScore": 91.5,
+        "leftLabel": "Milos Karol",
+        "rightLabel": "Alex Molcan",
+        "winner": "ML payout is tiny; use spread/total or pass unless the number moves."
+      },
+      {
+        "label": "Weakness",
+        "metric": "Lower is cleaner",
+        "leftScore": 1,
+        "rightScore": 1,
+        "leftLabel": "Milos Karol",
+        "rightLabel": "Alex Molcan",
+        "winner": "No clear weakness edge"
+      },
+      {
+        "label": "Volatility",
+        "metric": "Lower is cleaner",
+        "leftScore": 45,
+        "rightScore": 55,
+        "leftLabel": "Risk",
+        "rightLabel": "Stability",
+        "winner": "Stable enough"
+      }
+    ],
+    "predictionMarket": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T03:58:30.560Z",
+      "totalVolume": null,
+      "players": [
+        {
+          "name": "Milos Karol",
+          "probabilityPct": 14.6,
+          "amount": null,
+          "americanOdds": 584,
+          "edgePct": 15.8,
+          "priceBand": "Underdog"
+        },
+        {
+          "name": "Alex Molcan",
+          "probabilityPct": 91.5,
+          "amount": null,
+          "americanOdds": -1080,
+          "edgePct": -21.5,
+          "priceBand": "Very expensive favorite"
+        }
+      ]
+    },
+    "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Alex Molcan",
+        "line": null,
+        "americanOdds": -1080,
+        "modelPct": 70,
+        "impliedPct": 91.5,
+        "edgePct": -21.5,
+        "evPer100": -23.5,
+        "netEvPer100": -25.5,
+        "grade": "Favorite tax trap",
+        "issue": "Favorite tax trap",
+        "reason": "Likely winner can still be a bad ML bet after payout and fees. Check spread, total, and set-win instead."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "No bet",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": null,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": null,
+        "grade": "No direction",
+        "reason": "Total games need expected match games vs the posted line."
+      },
+      {
+        "marketType": "Win a set",
+        "label": "Win a set %",
+        "selection": "Milos Karol 52% / Alex Molcan 78%",
+        "rows": [
+          {
+            "name": "Milos Karol",
+            "confidence": 52,
+            "modelPct": 30.4,
+            "label": "Underdog set-win path needs early holds"
+          },
+          {
+            "name": "Alex Molcan",
+            "confidence": 78,
+            "modelPct": 70,
+            "label": "Market favorite to win a set"
+          }
+        ],
+        "confidence": 78,
+        "grade": "Price required",
+        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Under 9.5",
+        "expectedGames": 9.2,
+        "confidence": 52,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "grade": "Near fair",
+        "reason": "Expected first-set games 9.2 vs DraftKings Sportsbook 9.5; Under 9.5."
+      }
+    ],
+    "derivativeMarketCase": null,
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Alex Molcan",
+        "americanOdds": -1080,
+        "modelPct": 70,
+        "impliedPct": 91.5,
+        "edgePct": -21.5,
+        "evPer100": -23.5,
+        "netEvPer100": -25.5,
+        "feePer100": 2,
+        "valueIssue": "Favorite tax trap",
+        "valueGrade": "Favorite tax trap",
+        "betGrade": false
+      },
+      "spread": null,
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Under 9.5",
+        "line": 9.5,
+        "americanOdds": -165,
+        "expectedGames": 9.2,
+        "confidence": 52,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 52,
+        "evPer100": -16.5,
+        "netEvPer100": -18.5,
+        "valueGrade": "Near fair",
+        "reason": "Expected first-set games 9.2 vs DraftKings Sportsbook 9.5; Under 9.5.",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Milos Karol",
+          "confidence": 52,
+          "modelPct": 30.4,
+          "label": "Underdog set-win path needs early holds",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Alex Molcan",
+          "confidence": 78,
+          "modelPct": 70,
+          "label": "Market favorite to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "ensembleValueCase": null,
+    "projection": {
+      "projectedWinner": "Alex Molcan",
+      "projectedSetLine": "2-0/2-1 range",
+      "setWinProjections": [
+        {
+          "name": "Milos Karol",
+          "confidence": 52,
+          "modelPct": 30.4,
+          "label": "Underdog set-win path needs early holds"
+        },
+        {
+          "name": "Alex Molcan",
+          "confidence": 78,
+          "modelPct": 70,
+          "label": "Market favorite to win a set"
+        }
+      ],
+      "totalGames": null,
+      "straightSetsProbability": 62,
+      "upsetRisk": 30,
+      "overview": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "fantasy": []
+    },
+    "tradePlan": {
+      "laneLabel": "ML payout is tiny; use spread/total or pass unless the number moves.",
+      "summary": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "trigger": "Wait for a visible service-pressure split before entering.",
+      "headline": "No clear weakness edge",
+      "exit": "No spread line",
+      "tone": "warning"
+    },
+    "derivativeMarkets": [
+      {
+        "label": "ML",
+        "value": "Alex Molcan -1080; Model 70% vs DraftKings Sportsbook implied 91.5% (-21.5 pts).",
+        "lean": "ML payout is tiny; use spread/total or pass unless the number moves.",
+        "confidence": 70,
+        "marketType": "ML",
+        "selection": "Alex Molcan",
+        "americanOdds": -1080,
+        "modelPct": 70,
+        "impliedPct": 91.5,
+        "edgePct": -21.5,
+        "evPer100": -23.5,
+        "netEvPer100": -25.5,
+        "feePer100": 2,
+        "valueIssue": "Favorite tax trap",
+        "valueGrade": "Favorite tax trap",
+        "betGrade": false,
+        "tone": "warning",
+        "reason": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. ML payout is tiny; use spread/total or pass unless the number moves."
+      },
+      {
+        "label": "Win a set",
+        "value": "No set-win price captured",
+        "lean": "Underdog set-win path needs early holds",
+        "confidence": 78,
+        "setWinRows": [],
+        "valueGrade": "Needs posted price",
+        "tone": "accent",
+        "reason": "Best-of-five gives the non-ML side more room to win a set; use this to separate upset risk from match-winner confidence."
+      },
+      {
+        "label": "Spread",
+        "value": "No primary game spread captured",
+        "lean": "No spread line",
+        "confidence": 64,
+        "tone": "neutral",
+        "reason": "Wait for a visible service-pressure split before entering."
+      },
+      {
+        "label": "O/U",
+        "value": "No total captured",
+        "lean": "No bet",
+        "confidence": 62,
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st set O/U",
+        "value": "Line 9.5",
+        "lean": "Under 9.5",
+        "confidence": 52,
+        "marketType": "First-set total",
+        "selection": "Under 9.5",
+        "line": 9.5,
+        "americanOdds": -165,
+        "expectedGames": 9.2,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 52,
+        "evPer100": -16.5,
+        "netEvPer100": -18.5,
+        "valueGrade": "Near fair",
+        "reason": "Expected first-set games 9.2 vs DraftKings Sportsbook 9.5; Under 9.5.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st service game",
+        "value": "No first-service-game market captured",
+        "lean": "First-service-game prices",
+        "confidence": 70,
+        "firstServiceGameRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-service-game market captured."
+      },
+      {
+        "label": "First games",
+        "value": "No first-game prop market captured",
+        "lean": "First-game prop prices",
+        "confidence": 70,
+        "firstGamePropRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-games prop captured."
+      }
+    ],
+    "marketEconomics": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T03:58:30.560Z",
+      "eventUrl": "https://sportsbook.draftkings.com/leagues/tennis/challenger-prostejov?event=34236823",
+      "deskName": "Alex Molcan",
+      "deskPricePct": 91.5,
+      "deskEdgePct": -21.5,
+      "priceAction": "ML payout is tiny; use spread/total or pass unless the number moves.",
+      "players": [
+        {
+          "name": "Milos Karol",
+          "americanOdds": 584,
+          "impliedPct": 14.6,
+          "modelPct": 30.4,
+          "edgePct": 15.8,
+          "priceBand": "Underdog",
+          "grossProfitPct": 584,
+          "grossPayoutMultiple": 6.84,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 584,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        },
+        {
+          "name": "Alex Molcan",
+          "americanOdds": -1080,
+          "impliedPct": 91.5,
+          "modelPct": 70,
+          "edgePct": -21.5,
+          "priceBand": "Very expensive favorite",
+          "grossProfitPct": 9.3,
+          "grossPayoutMultiple": 1.093,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 9.3,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        }
+      ]
+    },
+    "clayMatchupData": {
+      "title": "Milos Karol vs Alex Molcan",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Milos-Karol-Vs-Alex-Molcan/",
+      "h2hText": "1:0",
+      "h2hRecord": "1:0",
+      "prediction": "Molcan in 2",
+      "players": [
+        {
+          "name": "Milos Karol",
+          "record2026": {
+            "overall": "17-11",
+            "hard": "11-2",
+            "clay": "4-6",
+            "indoorHard": "2-3",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Prostejov Challenger\nCarlo Alberto Caniato\nITA  7-63 6-1 1st\n02 Jun 26",
+              "event": "Prostejov Challenger",
+              "opponent": "Carlo Alberto Caniato",
+              "result": "ITA  7-63 6-1 1st",
+              "date": "02 Jun 26"
+            },
+            {
+              "raw": "Marek Gengel\nCZE  4-6 6-3 6-3 Q.\n01 Jun 26",
+              "event": "",
+              "opponent": "Marek Gengel",
+              "result": "CZE  4-6 6-3 6-3 Q.",
+              "date": "01 Jun 26"
+            },
+            {
+              "raw": "Saba Purtseladze\nGEO  6-4 7-5 q1\n31 May 26",
+              "event": "",
+              "opponent": "Saba Purtseladze",
+              "result": "GEO  6-4 7-5 q1",
+              "date": "31 May 26"
+            },
+            {
+              "raw": "Kosice Challenger\nAndrej Martin\nSVK   Loss 3-6 6-2 7-63 2nd\n27 May 26",
+              "event": "Kosice Challenger",
+              "opponent": "Andrej Martin",
+              "result": "SVK   Loss 3-6 6-2 7-63 2nd",
+              "date": "27 May 26"
+            },
+            {
+              "raw": "Jay Clarke\nGBR  4-6 6-4 6-2 1st\n26 May 26",
+              "event": "",
+              "opponent": "Jay Clarke",
+              "result": "GBR  4-6 6-4 6-2 1st",
+              "date": "26 May 26"
+            },
+            {
+              "raw": "Tunis Challenger\nLaurent Lokoli\nFRA   Loss 6-4 7-62 q1\n10 May 26",
+              "event": "Tunis Challenger",
+              "opponent": "Laurent Lokoli",
+              "result": "FRA   Loss 6-4 7-62 q1",
+              "date": "10 May 26"
+            },
+            {
+              "raw": "Oeiras 3 Challenger\nMax Houkes\nNED   Loss 6-4 6-0 q1\n12 Apr 26",
+              "event": "Oeiras 3 Challenger",
+              "opponent": "Max Houkes",
+              "result": "NED   Loss 6-4 6-0 q1",
+              "date": "12 Apr 26"
+            },
+            {
+              "raw": "Madrid Challenger\nAndrej Nedic\nBIH   Loss 7-68 6-4 q1\n05 Apr 26",
+              "event": "Madrid Challenger",
+              "opponent": "Andrej Nedic",
+              "result": "BIH   Loss 7-68 6-4 q1",
+              "date": "05 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Alex Molcan",
+          "record2026": {
+            "overall": "18-10",
+            "hard": "1-2",
+            "clay": "15-5",
+            "indoorHard": "2-3",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Prostejov Challenger\nZsombor Piros\nHUN  6-2 6-3 1st\n02 Jun 26",
+              "event": "Prostejov Challenger",
+              "opponent": "Zsombor Piros",
+              "result": "HUN  6-2 6-3 1st",
+              "date": "02 Jun 26"
+            },
+            {
+              "raw": "Paris\nFelix Gill\nGBR   Loss 2-6 7-5 7-69 q2\n20 May 26",
+              "event": "Paris",
+              "opponent": "Felix Gill",
+              "result": "GBR   Loss 2-6 7-5 7-69 q2",
+              "date": "20 May 26"
+            },
+            {
+              "raw": "Oliver Crawford\nUSA  1-6 6-4 6-1 q1\n19 May 26",
+              "event": "",
+              "opponent": "Oliver Crawford",
+              "result": "USA  1-6 6-4 6-1 q1",
+              "date": "19 May 26"
+            },
+            {
+              "raw": "Bordeaux Challenger\nTallon Griekspoor\nNED   Loss 6-2 6-4 1/4\n15 May 26",
+              "event": "Bordeaux Challenger",
+              "opponent": "Tallon Griekspoor",
+              "result": "NED   Loss 6-2 6-4 1/4",
+              "date": "15 May 26"
+            },
+            {
+              "raw": "Rei Sakamoto\nJPN  6-4 6-0 2nd\n14 May 26",
+              "event": "",
+              "opponent": "Rei Sakamoto",
+              "result": "JPN  6-4 6-0 2nd",
+              "date": "14 May 26"
+            },
+            {
+              "raw": "Jenson Brooksby\nUSA  6-2 7-5 1st\n12 May 26",
+              "event": "",
+              "opponent": "Jenson Brooksby",
+              "result": "USA  6-2 7-5 1st",
+              "date": "12 May 26"
+            },
+            {
+              "raw": "Munich\nBen Shelton\nUSA   Loss 6-3 6-4 1/2\n18 Apr 26",
+              "event": "Munich",
+              "opponent": "Ben Shelton",
+              "result": "USA   Loss 6-3 6-4 1/2",
+              "date": "18 Apr 26"
+            },
+            {
+              "raw": "Denis Shapovalov\nCAN  6-4 6-4 1/4\n17 Apr 26",
+              "event": "",
+              "opponent": "Denis Shapovalov",
+              "result": "CAN  6-4 6-4 1/4",
+              "date": "17 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": "Milos Karol is at least live enough on clay (4-6) to make the favorite work for holds. Alex Molcan is good, but not spotless on clay at 15-5. Milos Karol has multiple recent clay matches with a tiebreak or three-set shape, which points toward set-extension or game-spread value if the number is generous. Alex Molcan's recent clay record has enough pressure games that the lower-priced side can re-rate quickly if the first set stays on serve."
+    },
+    "opponentQualityData": {
+      "title": "Milos Karol vs Alex Molcan",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Milos-Karol-Vs-Alex-Molcan/",
+      "h2hRecord": "1:0",
+      "tennistonicPrediction": "Molcan in 2",
+      "players": [
+        {
+          "name": "Milos Karol",
+          "ranking": null,
+          "records": {
+            "overall2026": {
+              "wins": 17,
+              "losses": 11,
+              "total": 28,
+              "winPct": 0.607
+            },
+            "clay2026": {
+              "wins": 4,
+              "losses": 6,
+              "total": 10,
+              "winPct": 0.4
+            },
+            "raw": {
+              "overall": "17-11",
+              "hard": "11-2",
+              "clay": "4-6",
+              "indoorHard": "2-3",
+              "grass": "0-0",
+              "carpet": "0-0"
+            }
+          },
+          "recentWindow": {
+            "matches": 8,
+            "completed": 8,
+            "wins": 4,
+            "losses": 4,
+            "winPct": 0.5,
+            "setsWon": 9,
+            "setsLost": 10,
+            "setPct": 0.474,
+            "gamesWon": 96,
+            "gamesLost": 94,
+            "gamePct": 0.505,
+            "resistanceMatches": 6,
+            "straightSetWins": 2,
+            "straightSetLosses": 3,
+            "avgKnownOpponentRank": null,
+            "knownOpponentRanks": 0,
+            "missingOpponentRanks": 8,
+            "top10Opponents": 0,
+            "top25Opponents": 0,
+            "top50Opponents": 0,
+            "challengerOrItfMatches": 4,
+            "rankingCoveragePct": 0,
+            "scorelineFormScore": 78.2,
+            "opponentAdjustedFormScore": null
+          },
+          "serviceData": {
+            "source": "not available in Tennistonic scrape",
+            "matchesWithStats": 0,
+            "avgServiceHoldPct": null,
+            "avgAces": null,
+            "avgFirstServeWonPct": null,
+            "note": "Recent scores support set/game resistance only until a Flashscore recent-match stat row is resolved."
+          },
+          "recentMatches": [
+            {
+              "event": "Prostejov Challenger",
+              "eventTier": "challenger",
+              "opponent": "Carlo Alberto Caniato",
+              "opponentRanking": null,
+              "result": "ITA  7-63 6-1 1st",
+              "date": "02 Jun 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 13,
+                "gamesLost": 7,
+                "tiebreakSets": 1,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-63"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 1,
+                    "raw": "6-1"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": 0.572,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Marek Gengel",
+              "opponentRanking": null,
+              "result": "CZE  4-6 6-3 6-3 Q.",
+              "date": "01 Jun 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 2,
+                "setsLost": 1,
+                "gamesWon": 16,
+                "gamesLost": 12,
+                "tiebreakSets": 0,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 4,
+                    "rightGames": 6,
+                    "raw": "4-6"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.63,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Saba Purtseladze",
+              "opponentRanking": null,
+              "result": "GEO  6-4 7-5 q1",
+              "date": "31 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 13,
+                "gamesLost": 9,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 5,
+                    "raw": "7-5"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.55,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Kosice Challenger",
+              "eventTier": "challenger",
+              "opponent": "Andrej Martin",
+              "opponentRanking": null,
+              "result": "SVK   Loss 3-6 6-2 7-63 2nd",
+              "date": "27 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 1,
+                "setsLost": 2,
+                "gamesWon": 14,
+                "gamesLost": 16,
+                "tiebreakSets": 1,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 3,
+                    "rightGames": 6,
+                    "raw": "3-6"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-63"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": 0.216,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Jay Clarke",
+              "opponentRanking": null,
+              "result": "GBR  4-6 6-4 6-2 1st",
+              "date": "26 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 2,
+                "setsLost": 1,
+                "gamesWon": 16,
+                "gamesLost": 12,
+                "tiebreakSets": 0,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 4,
+                    "rightGames": 6,
+                    "raw": "4-6"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.63,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Tunis Challenger",
+              "eventTier": "challenger",
+              "opponent": "Laurent Lokoli",
+              "opponentRanking": null,
+              "result": "FRA   Loss 6-4 7-62 q1",
+              "date": "10 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 10,
+                "gamesLost": 13,
+                "tiebreakSets": 1,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-62"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": 0.206,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Oeiras 3 Challenger",
+              "eventTier": "challenger",
+              "opponent": "Max Houkes",
+              "opponentRanking": null,
+              "result": "NED   Loss 6-4 6-0 q1",
+              "date": "12 Apr 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 4,
+                "gamesLost": 12,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 0,
+                    "raw": "6-0"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": -0.028,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Madrid Challenger",
+              "eventTier": "tour-1000",
+              "opponent": "Andrej Nedic",
+              "opponentRanking": null,
+              "result": "BIH   Loss 7-68 6-4 q1",
+              "date": "05 Apr 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 10,
+                "gamesLost": 13,
+                "tiebreakSets": 1,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-68"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 0.66,
+              "qualityPoints": 0.288,
+              "flashscore": null,
+              "serviceStats": null
+            }
+          ]
+        },
+        {
+          "name": "Alex Molcan",
+          "ranking": {
+            "rank": 110,
+            "points": 571,
+            "age": 28,
+            "country": "Slovakia",
+            "tour": "ATP",
+            "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+            "profileUrl": "https://www.espn.com/tennis/player/_/id/2635/alex-molcan",
+            "liveRankSource": null,
+            "asOf": "2026-06-02"
+          },
+          "records": {
+            "overall2026": {
+              "wins": 18,
+              "losses": 10,
+              "total": 28,
+              "winPct": 0.643
+            },
+            "clay2026": {
+              "wins": 15,
+              "losses": 5,
+              "total": 20,
+              "winPct": 0.75
+            },
+            "raw": {
+              "overall": "18-10",
+              "hard": "1-2",
+              "clay": "15-5",
+              "indoorHard": "2-3",
+              "grass": "0-0",
+              "carpet": "0-0"
+            }
+          },
+          "recentWindow": {
+            "matches": 8,
+            "completed": 8,
+            "wins": 5,
+            "losses": 3,
+            "winPct": 0.625,
+            "setsWon": 11,
+            "setsLost": 7,
+            "setPct": 0.611,
+            "gamesWon": 92,
+            "gamesLost": 75,
+            "gamePct": 0.551,
+            "resistanceMatches": 2,
+            "straightSetWins": 4,
+            "straightSetLosses": 2,
+            "avgKnownOpponentRank": 35,
+            "knownOpponentRanks": 4,
+            "missingOpponentRanks": 4,
+            "top10Opponents": 1,
+            "top25Opponents": 1,
+            "top50Opponents": 3,
+            "challengerOrItfMatches": 2,
+            "rankingCoveragePct": 0.5,
+            "scorelineFormScore": 66.9,
+            "opponentAdjustedFormScore": 66.9
+          },
+          "serviceData": {
+            "source": "not available in Tennistonic scrape",
+            "matchesWithStats": 0,
+            "avgServiceHoldPct": null,
+            "avgAces": null,
+            "avgFirstServeWonPct": null,
+            "note": "Recent scores support set/game resistance only until a Flashscore recent-match stat row is resolved."
+          },
+          "recentMatches": [
+            {
+              "event": "Prostejov Challenger",
+              "eventTier": "challenger",
+              "opponent": "Zsombor Piros",
+              "opponentRanking": null,
+              "result": "HUN  6-2 6-3 1st",
+              "date": "02 Jun 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 12,
+                "gamesLost": 5,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": 0.502,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Paris",
+              "eventTier": "tour-1000",
+              "opponent": "Felix Gill",
+              "opponentRanking": null,
+              "result": "GBR   Loss 2-6 7-5 7-69 q2",
+              "date": "20 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 1,
+                "setsLost": 2,
+                "gamesWon": 17,
+                "gamesLost": 16,
+                "tiebreakSets": 1,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 2,
+                    "rightGames": 6,
+                    "raw": "2-6"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 5,
+                    "raw": "7-5"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-69"
+                  }
+                ]
+              },
+              "opponentWeight": 0.66,
+              "qualityPoints": 0.328,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Oliver Crawford",
+              "opponentRanking": null,
+              "result": "USA  1-6 6-4 6-1 q1",
+              "date": "19 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 2,
+                "setsLost": 1,
+                "gamesWon": 13,
+                "gamesLost": 11,
+                "tiebreakSets": 0,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 1,
+                    "rightGames": 6,
+                    "raw": "1-6"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 1,
+                    "raw": "6-1"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.61,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Bordeaux Challenger",
+              "eventTier": "challenger",
+              "opponent": "Tallon Griekspoor",
+              "opponentRanking": {
+                "rank": 33,
+                "points": 1340,
+                "age": 29,
+                "country": "Netherlands",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/3319/tallon-griekspoor",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "NED   Loss 6-2 6-4 1/4",
+              "date": "15 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 6,
+                "gamesLost": 12,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 0.756,
+              "qualityPoints": 0.031,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Rei Sakamoto",
+              "opponentRanking": null,
+              "result": "JPN  6-4 6-0 2nd",
+              "date": "14 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 12,
+                "gamesLost": 4,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 0,
+                    "raw": "6-0"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.59,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Jenson Brooksby",
+              "opponentRanking": {
+                "rank": 63,
+                "points": 865,
+                "age": 25,
+                "country": "USA",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/3621/jenson-brooksby",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "USA  6-2 7-5 1st",
+              "date": "12 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 13,
+                "gamesLost": 7,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 5,
+                    "raw": "7-5"
+                  }
+                ]
+              },
+              "opponentWeight": 0.765,
+              "qualityPoints": 0.825,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Munich",
+              "eventTier": "tour/other",
+              "opponent": "Ben Shelton",
+              "opponentRanking": {
+                "rank": 5,
+                "points": 4070,
+                "age": 23,
+                "country": "USA",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/9250/ben-shelton",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "USA   Loss 6-3 6-4 1/2",
+              "date": "18 Apr 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 7,
+                "gamesLost": 12,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 1.35,
+              "qualityPoints": 0.112,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Denis Shapovalov",
+              "opponentRanking": {
+                "rank": 39,
+                "points": 1170,
+                "age": 27,
+                "country": "Canada",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/2860/denis-shapovalov",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "CAN  6-4 6-4 1/4",
+              "date": "17 Apr 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 12,
+                "gamesLost": 8,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 0.892,
+              "qualityPoints": 0.932,
+              "flashscore": null,
+              "serviceStats": null
+            }
+          ]
+        }
+      ],
+      "matchupRead": "Alex Molcan owns the stronger 2026 clay record by 35.0 percentage points. Milos Karol leads the current scoreline-form score by 11.3 points before opponent rankings are applied. 12 recent-opponent rankings are still missing, so this read should be treated as partially ranked until the ranking warehouse is filled."
+    },
+    "researchLinks": [
+      {
+        "label": "ESPN scoreboard",
+        "url": "https://www.espn.com/tennis/scoreboard/_/date/20260604"
+      },
+      {
+        "label": "Tennistonic H2H",
+        "url": "https://tennistonic.com/head-to-head-compare/Milos-Karol-Vs-Alex-Molcan/"
+      },
+      {
+        "label": "DraftKings Sportsbook event",
+        "url": "https://sportsbook.draftkings.com/leagues/tennis/challenger-prostejov?event=34236823"
+      }
+    ],
+    "formEdgeName": "Alex Molcan"
+  },
+  "participants": [
+    {
+      "id": "rh-atp-challenger-prostejov-molcan-vs-karol-2026-06-04:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Milos Karol",
+      "detail": "Clay | Live rank #465 | SVK | age 23.4 | hold 67%",
+      "americanOdds": 584,
+      "americanLabel": "+584",
+      "decimalOdds": 6.84,
+      "impliedProbability": 0.14619883040935672,
+      "impliedProbabilityLabel": "14.6%"
+    },
+    {
+      "id": "rh-atp-challenger-prostejov-molcan-vs-karol-2026-06-04:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Alex Molcan",
+      "detail": "Clay | Live rank #110 | Slovakia | age 28 | hold 67%",
+      "americanOdds": -1080,
+      "americanLabel": "-1080",
+      "decimalOdds": 1.0925925925925926,
+      "impliedProbability": 0.9152542372881356,
+      "impliedProbabilityLabel": "91.5%"
+    }
+  ],
+  "moneyline": {
+    "available": true,
+    "label": "DraftKings Sportsbook moneyline",
+    "provider": "DraftKings Sportsbook",
+    "participants": [
+      {
+        "id": "rh-atp-challenger-prostejov-molcan-vs-karol-2026-06-04:0",
+        "index": 0,
+        "role": "Player 1",
+        "name": "Milos Karol",
+        "detail": "Clay | Live rank #465 | SVK | age 23.4 | hold 67%",
+        "americanOdds": 584,
+        "americanLabel": "+584",
+        "decimalOdds": 6.84,
+        "impliedProbability": 0.14619883040935672,
+        "impliedProbabilityLabel": "14.6%"
+      },
+      {
+        "id": "rh-atp-challenger-prostejov-molcan-vs-karol-2026-06-04:1",
+        "index": 1,
+        "role": "Player 2",
+        "name": "Alex Molcan",
+        "detail": "Clay | Live rank #110 | Slovakia | age 28 | hold 67%",
+        "americanOdds": -1080,
+        "americanLabel": "-1080",
+        "decimalOdds": 1.0925925925925926,
+        "impliedProbability": 0.9152542372881356,
+        "impliedProbabilityLabel": "91.5%"
+      }
+    ]
+  },
+  "analysis": {
+    "available": true,
+    "participantId": "rh-atp-challenger-prostejov-molcan-vs-karol-2026-06-04:1",
+    "participant": {
+      "id": "rh-atp-challenger-prostejov-molcan-vs-karol-2026-06-04:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Alex Molcan",
+      "detail": "Clay | Live rank #110 | Slovakia | age 28 | hold 67%",
+      "americanOdds": -1080,
+      "americanLabel": "-1080",
+      "decimalOdds": 1.0925925925925926,
+      "impliedProbability": 0.9152542372881356,
+      "impliedProbabilityLabel": "91.5%"
+    },
+    "opponent": {
+      "id": "rh-atp-challenger-prostejov-molcan-vs-karol-2026-06-04:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Milos Karol",
+      "detail": "Clay | Live rank #465 | SVK | age 23.4 | hold 67%",
+      "americanOdds": 584,
+      "americanLabel": "+584",
+      "decimalOdds": 6.84,
+      "impliedProbability": 0.14619883040935672,
+      "impliedProbabilityLabel": "14.6%"
+    },
+    "lean": "Lean Alex Molcan; ML payout is tiny; use spread/total or pass unless the number moves.",
+    "rationale": "Our model pick: Alex Molcan. Recent service hold is close: Alex Molcan 67%, Milos Karol 67%. Lean, not a chase.",
+    "confidence": 70,
+    "volatility": 45,
+    "recommendationScore": 59,
+    "tier": "Lean",
+    "sourceLabel": "DraftKings Sportsbook",
+    "modelEdge": null,
+    "modelEdgeLabel": "",
+    "marketProbability": 0.9152542372881356,
+    "marketProbabilityLabel": "91.5%",
+    "inputs": [],
+    "inputsUsed": 0,
+    "volatilityNotes": [],
+    "indicators": {}
+  },
+  "metadata": {
+    "participantCount": 2,
+    "participantNames": [
+      "Milos Karol",
+      "Alex Molcan"
+    ],
+    "tagCount": 6,
+    "hasSeriesBreakdown": false,
+    "hasMoneyline": true,
+    "hasAnalysisPick": true,
+    "hasStructuredInputs": false,
+    "hasPlayerProps": false,
+    "startMinutes": 190,
+    "spotlight": false,
+    "league": "Tennis",
+    "oddsProvider": "DraftKings Sportsbook"
+  }
+}

@@ -1,0 +1,667 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/arthur-fery-alex-bolt#id:16240988",
+  "eventId": "16240988",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-birmingham-bolt-vs-fery-2026-06-04",
+  "boardTitle": "Arthur Fery vs Alex Bolt",
+  "capturedAt": "2026-06-04T00:25:13.716Z",
+  "compactEvent": {
+    "id": 16240988,
+    "slug": "arthur-fery-alex-bolt",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1780574400,
+    "tournament": {
+      "name": "Birmingham, Great Britain",
+      "slug": "birmingham-great-britain",
+      "category": "Challenger",
+      "uniqueTournament": "ATP Challenger Birmingham, Great Britain Men Singles"
+    },
+    "roundInfo": {
+      "round": 5,
+      "name": "Round of 16",
+      "slug": "round-of-16",
+      "cupRoundType": 8
+    },
+    "groundType": "Grass",
+    "homeTeam": {
+      "id": 58369,
+      "name": "Alex Bolt",
+      "shortName": "A. Bolt",
+      "ranking": 152,
+      "currentRanking": 152,
+      "country": {
+        "alpha2": "AU",
+        "alpha3": "AUS",
+        "name": "Australia",
+        "slug": "australia"
+      },
+      "playerTeamInfo": {
+        "height": 1.83,
+        "weight": 91,
+        "plays": "left-handed",
+        "turnedPro": "2011",
+        "prizeCurrent": 78952,
+        "prizeTotal": 1864383,
+        "birthCity": {
+          "name": "Murray Bridge",
+          "country": {
+            "alpha2": "AU",
+            "alpha3": "AUS",
+            "name": "Australia",
+            "slug": "australia"
+          },
+          "id": 35679
+        },
+        "residenceCity": {
+          "name": "Murray Bridge",
+          "country": {
+            "alpha2": "AU",
+            "alpha3": "AUS",
+            "name": "Australia",
+            "slug": "australia"
+          },
+          "id": 35679
+        },
+        "id": 164,
+        "birthplace": "Murray Bridge, Australia",
+        "birthDateTimestamp": 726192000,
+        "residence": "Murray Bridge, Australia",
+        "prizeCurrentRaw": {
+          "value": 78952,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 1864383,
+          "currency": "EUR"
+        },
+        "currentRanking": 152
+      }
+    },
+    "awayTeam": {
+      "id": 321789,
+      "name": "Arthur Fery",
+      "shortName": "A. Fery",
+      "ranking": 154,
+      "currentRanking": 143,
+      "country": {
+        "alpha2": "GB",
+        "alpha3": "GBR",
+        "name": "United Kingdom",
+        "slug": "united-kingdom"
+      },
+      "playerTeamInfo": {
+        "height": 1.75,
+        "weight": 76,
+        "plays": "right-handed",
+        "prizeCurrent": 170584,
+        "prizeTotal": 639835,
+        "birthCity": {
+          "name": "Sèvres",
+          "country": {
+            "alpha2": "FR",
+            "alpha3": "FRA",
+            "name": "France",
+            "slug": "france"
+          },
+          "id": 26398
+        },
+        "id": 4454,
+        "birthplace": "Sèvres, France",
+        "birthDateTimestamp": 1026432000,
+        "prizeCurrentRaw": {
+          "value": 170584,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 639835,
+          "currency": "EUR"
+        },
+        "currentRanking": 143
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "tournament": {
+            "name": "Birmingham, Great Britain",
+            "slug": "birmingham-great-britain",
+            "category": {
+              "name": "Challenger",
+              "slug": "challenger",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 5,
+              "country": {},
+              "id": 72,
+              "flag": "challenger",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "চ্যালেঞ্জার",
+                  "ar": "تحدي (تنس)",
+                  "hi": "डेनमार्क",
+                  "ru": "Challenger"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "ATP Challenger Birmingham, Great Britain Men Singles",
+              "slug": "atp-challenger-birmingham-great-britain-men-singles",
+              "category": {
+                "name": "Challenger",
+                "slug": "challenger",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 5,
+                "country": {},
+                "id": 72,
+                "flag": "challenger",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "চ্যালেঞ্জার",
+                    "ar": "تحدي (تنس)",
+                    "hi": "डेनमार्क",
+                    "ru": "Challenger"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 221,
+              "groundType": "Grass",
+              "hasRounds": false,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 26908,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "ATP Challenger برمنغهام، بريطانيا رجال فردي"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 186299,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1780272000
+          },
+          "season": {
+            "name": "ATP Challenger Birmingham, Great Britain Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 89810
+          },
+          "roundInfo": {
+            "round": 5,
+            "name": "Round of 16",
+            "slug": "round-of-16",
+            "cupRoundType": 8
+          },
+          "customId": "urysOKDc",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Birmingham",
+              "country": {
+                "alpha2": "EN",
+                "alpha3": "ENG",
+                "name": "England",
+                "slug": "england"
+              },
+              "id": 19186
+            },
+            "hidden": true,
+            "slug": "centre-court",
+            "name": "CENTRE COURT",
+            "country": {
+              "alpha2": "EN",
+              "alpha3": "ENG",
+              "name": "England",
+              "slug": "england"
+            },
+            "id": 17279,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "الملعب المركزي",
+                "hi": "सेंटर कोर्ट",
+                "bn": "সেন্টার কোর্ট"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "CENTRE COURT"
+            }
+          },
+          "homeTeam": {
+            "name": "Alex Bolt",
+            "slug": "bolt-alex",
+            "shortName": "A. Bolt",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 1957,
+            "playerTeamInfo": {
+              "height": 1.83,
+              "weight": 91,
+              "plays": "left-handed",
+              "turnedPro": "2011",
+              "prizeCurrent": 78952,
+              "prizeTotal": 1864383,
+              "birthCity": {
+                "name": "Murray Bridge",
+                "country": {
+                  "alpha2": "AU",
+                  "alpha3": "AUS",
+                  "name": "Australia",
+                  "slug": "australia"
+                },
+                "id": 35679
+              },
+              "residenceCity": {
+                "name": "Murray Bridge",
+                "country": {
+                  "alpha2": "AU",
+                  "alpha3": "AUS",
+                  "name": "Australia",
+                  "slug": "australia"
+                },
+                "id": 35679
+              },
+              "id": 164,
+              "birthplace": "Murray Bridge, Australia",
+              "birthDateTimestamp": 726192000,
+              "residence": "Murray Bridge, Australia",
+              "prizeCurrentRaw": {
+                "value": 78952,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 1864383,
+                "currency": "EUR"
+              },
+              "currentRanking": 152
+            },
+            "nameCode": "BOL",
+            "ranking": 152,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "AU",
+              "alpha3": "AUS",
+              "name": "Australia",
+              "slug": "australia"
+            },
+            "id": 58369,
+            "fullName": "Alex Bolt",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "أليكس بولت",
+                "bn": "অ্যালেক্স বোল্ট",
+                "hi": "एलेक्स बोल्ट",
+                "ru": "Болт, Алекс"
+              },
+              "shortNameTranslation": {
+                "ar": "أ. بولت"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Arthur Fery",
+            "slug": "fery-arthur",
+            "shortName": "A. Fery",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 2153,
+            "playerTeamInfo": {
+              "height": 1.75,
+              "weight": 76,
+              "plays": "right-handed",
+              "prizeCurrent": 170584,
+              "prizeTotal": 639835,
+              "birthCity": {
+                "name": "Sèvres",
+                "country": {
+                  "alpha2": "FR",
+                  "alpha3": "FRA",
+                  "name": "France",
+                  "slug": "france"
+                },
+                "id": 26398
+              },
+              "id": 4454,
+              "birthplace": "Sèvres, France",
+              "birthDateTimestamp": 1026432000,
+              "prizeCurrentRaw": {
+                "value": 170584,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 639835,
+                "currency": "EUR"
+              },
+              "currentRanking": 143
+            },
+            "nameCode": "FER",
+            "ranking": 154,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "GB",
+              "alpha3": "GBR",
+              "name": "United Kingdom",
+              "slug": "united-kingdom"
+            },
+            "id": 321789,
+            "fullName": "Arthur Fery",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "آرثر فيري",
+                "ru": "Фери, Артур"
+              },
+              "shortNameTranslation": {
+                "ar": "آ. فيري"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16240988,
+          "defaultPeriodCount": 3,
+          "slug": "arthur-fery-alex-bolt",
+          "startTimestamp": 1780574400,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "??",
+            "AN",
+            "CU",
+            "IR",
+            "KP",
+            "SY",
+            "VE",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Grass",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "lower"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": {
+          "homeWins": 0,
+          "awayWins": 1,
+          "draws": 0
+        },
+        "managerDuel": null
+      }
+    },
+    "pointByPoint": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "votes": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "vote": {
+          "vote1": 1302,
+          "vote2": 1252,
+          "voteX": null
+        },
+        "bothTeamsToScoreVote": {
+          "voteYes": 0,
+          "voteNo": 0
+        },
+        "firstTeamToScoreVote": {
+          "voteHome": 0,
+          "voteNoGoal": 0,
+          "voteAway": 0
+        },
+        "whoShouldHaveWonVote": {
+          "vote1": 0,
+          "vote2": 0
+        }
+      }
+    },
+    "tennisPower": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "tennisPowerRankings": []
+      }
+    },
+    "winningOdds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "home": {
+          "fractionalValue": "91/100",
+          "expected": 52,
+          "actual": 44,
+          "id": 22230281
+        },
+        "away": {
+          "fractionalValue": "4/5",
+          "expected": 56,
+          "actual": 69,
+          "id": 22230282
+        }
+      }
+    },
+    "odds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "featured": {
+          "default": {
+            "sourceId": 195662932,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195662932,
+            "suspended": false,
+            "id": 316493456,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "69/50",
+                "fractionalValue": "91/100",
+                "sourceId": 1422574497,
+                "name": "1",
+                "change": -1
+              },
+              {
+                "initialFractionalValue": "53/100",
+                "fractionalValue": "4/5",
+                "sourceId": 1422574591,
+                "name": "2",
+                "change": 1
+              }
+            ]
+          },
+          "asian": {
+            "sourceId": 195662932,
+            "structureType": 1,
+            "marketId": 11,
+            "marketName": "First set winner",
+            "isLive": false,
+            "fid": 195662932,
+            "suspended": false,
+            "id": 316517381,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "1st set",
+            "choices": [
+              {
+                "initialFractionalValue": "5/6",
+                "fractionalValue": "5/6",
+                "sourceId": 1422683776,
+                "name": "1",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "5/6",
+                "fractionalValue": "5/6",
+                "sourceId": 1422683871,
+                "name": "2",
+                "change": 0
+              }
+            ]
+          },
+          "fullTime": {
+            "sourceId": 195662932,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195662932,
+            "suspended": false,
+            "id": 316493456,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "69/50",
+                "fractionalValue": "91/100",
+                "sourceId": 1422574497,
+                "name": "1",
+                "change": -1
+              },
+              {
+                "initialFractionalValue": "53/100",
+                "fractionalValue": "4/5",
+                "sourceId": 1422574591,
+                "name": "2",
+                "change": 1
+              }
+            ]
+          }
+        },
+        "hasMoreOdds": true
+      }
+    },
+    "homeSeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "awaySeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

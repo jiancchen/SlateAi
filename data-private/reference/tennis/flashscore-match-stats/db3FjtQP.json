@@ -1,12 +1,12 @@
 {
   "sourceKind": "recent-match",
   "sourceSubkind": "flashscore-player-page",
-  "slateDate": "2026-06-02",
-  "boardMatchId": "rh-atp-challenger-birmingham-pinnington-jones-vs-vukic-2026-06-02",
-  "boardTitle": "Jack Pinnington Jones vs Aleksandar Vukic",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-birmingham-virtanen-vs-vukic-2026-06-04",
+  "boardTitle": "Otto Virtanen vs Aleksandar Vukic",
   "boardPlayerName": "Aleksandar Vukic",
   "recentOpponentName": "Collignon R.",
-  "recentIndex": 0,
+  "recentIndex": 1,
   "recentEvent": "French Open (France)",
   "recentDate": "May 25, 26",
   "recentIsoDate": "2026-05-25",
@@ -18,7 +18,7 @@
     "Collignon R.",
     "Vukic A."
   ],
-  "generatedAt": "2026-06-02T02:39:23.352Z",
+  "generatedAt": "2026-06-04T00:09:24.505Z",
   "sourceUrl": "https://www.flashscoreusa.com/match/db3FjtQP/",
   "matchId": "db3FjtQP",
   "feedUrls": {
@@ -172,15 +172,15 @@
             },
             {
               "label": "Last 10 balls",
-              "left": "8",
-              "right": "2",
+              "left": "7",
+              "right": "3",
               "leftPlayer": "Collignon R.",
               "rightPlayer": "Vukic A."
             },
             {
               "label": "Match points saved",
               "left": "0",
-              "right": "2",
+              "right": "0",
               "leftPlayer": "Collignon R.",
               "rightPlayer": "Vukic A."
             }
@@ -654,7 +654,7 @@
             {
               "label": "Match points saved",
               "left": "0",
-              "right": "2",
+              "right": "0",
               "leftPlayer": "Collignon R.",
               "rightPlayer": "Vukic A."
             }

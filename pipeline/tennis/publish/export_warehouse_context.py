@@ -153,63 +153,67 @@ def weighted_average(values: list[dict[str, Any]]) -> float | None:
     return round(sum(float(row["score"]) * float(row["weight"]) for row in clean) / total, 1) if total else None
 
 
+def typed_recent_form_metrics(conn: sqlite3.Connection, match_id: str) -> dict[str, dict[str, Any]]:
+    if not (table_exists(conn, "match_players") and table_exists(conn, "players") and table_exists(conn, "player_form_snapshots")):
+        return {}
+    rows = [
+        dict(row)
+        for row in conn.execute(
+            """
+            select
+              p.name as player_name,
+              p.player_id,
+              fs.surface,
+              fs.sample_size,
+              fs.features_json,
+              fs.created_at
+            from match_players mp
+            join players p on p.player_id = mp.player_id
+            left join player_form_snapshots fs on fs.player_id = p.player_id
+            where mp.match_id = ?
+              and fs.form_snapshot_id = (
+                select inner_fs.form_snapshot_id
+                from player_form_snapshots inner_fs
+                where inner_fs.player_id = p.player_id
+                order by inner_fs.snapshot_date desc, inner_fs.created_at desc
+                limit 1
+              )
+            order by mp.side
+            """,
+            (match_id,),
+        )
+    ]
+    result: dict[str, dict[str, Any]] = {}
+    for row in rows:
+        features = as_json(row.get("features_json")) or {}
+        summary = []
+        for key, label in (
+            ("opponent_adjusted_form_score", "Opponent-adjusted form"),
+            ("recent_win_pct", "Recent win pct"),
+            ("recent_game_pct", "Recent game pct"),
+            ("scoreline_form_score", "Scoreline form"),
+        ):
+            value = features.get(key)
+            if isinstance(value, (int, float)):
+                summary.append({"key": key, "label": label, "score": value})
+        result[normalize_name(row.get("player_name"))] = {
+            "playerName": row.get("player_name"),
+            "matches": [],
+            "summary": summary,
+            "coverage": {
+                "cells": len(summary),
+                "exactCells": len(summary),
+                "estimatedCells": 0,
+                "missingCells": 0,
+            },
+            "source": "sql-tennis.db:player_form_snapshots",
+        }
+    return result
+
+
 def recent_form_metrics(conn: sqlite3.Connection, match_id: str) -> dict[str, dict[str, Any]]:
     if not table_exists(conn, "tennis_recent_form_metrics"):
-        if not (table_exists(conn, "match_players") and table_exists(conn, "players") and table_exists(conn, "player_form_snapshots")):
-            return {}
-        rows = [
-            dict(row)
-            for row in conn.execute(
-                """
-                select
-                  p.name as player_name,
-                  p.player_id,
-                  fs.surface,
-                  fs.sample_size,
-                  fs.features_json,
-                  fs.created_at
-                from match_players mp
-                join players p on p.player_id = mp.player_id
-                left join player_form_snapshots fs on fs.player_id = p.player_id
-                where mp.match_id = ?
-                  and fs.form_snapshot_id = (
-                    select inner_fs.form_snapshot_id
-                    from player_form_snapshots inner_fs
-                    where inner_fs.player_id = p.player_id
-                    order by inner_fs.snapshot_date desc, inner_fs.created_at desc
-                    limit 1
-                  )
-                order by mp.side
-                """,
-                (match_id,),
-            )
-        ]
-        result: dict[str, dict[str, Any]] = {}
-        for row in rows:
-            features = as_json(row.get("features_json")) or {}
-            summary = []
-            for key, label in (
-                ("opponent_adjusted_form_score", "Opponent-adjusted form"),
-                ("recent_win_pct", "Recent win pct"),
-                ("recent_game_pct", "Recent game pct"),
-                ("scoreline_form_score", "Scoreline form"),
-            ):
-                value = features.get(key)
-                if isinstance(value, (int, float)):
-                    summary.append({"key": key, "label": label, "score": value})
-            result[normalize_name(row.get("player_name"))] = {
-                "playerName": row.get("player_name"),
-                "matches": [],
-                "summary": summary,
-                "coverage": {
-                    "cells": len(summary),
-                    "exactCells": len(summary),
-                    "estimatedCells": 0,
-                    "missingCells": 0,
-                },
-                "source": "sql-tennis.db:player_form_snapshots",
-            }
-        return result
+        return typed_recent_form_metrics(conn, match_id)
     rows = [
         dict(row)
         for row in conn.execute(
@@ -224,6 +228,8 @@ def recent_form_metrics(conn: sqlite3.Connection, match_id: str) -> dict[str, di
             (match_id,),
         )
     ]
+    if not rows:
+        return typed_recent_form_metrics(conn, match_id)
     by_player: dict[str, dict[str, Any]] = {}
     metric_order = ["hold", "secondServe", "errorControl", "returnPressure", "closeout"]
     for row in rows:
@@ -541,8 +547,7 @@ def h2h_match_rows(conn: sqlite3.Connection, match_id: str) -> list[dict[str, An
     ]
 
 
-def expected_stats(conn: sqlite3.Connection, match_id: str) -> dict[str, dict[str, Any]]:
-    if not table_exists(conn, "tennis_player_match_context"):
+def typed_expected_stats(conn: sqlite3.Connection, match_id: str) -> dict[str, dict[str, Any]]:
         if not (table_exists(conn, "match_players") and table_exists(conn, "players")):
             return {}
         rows = conn.execute(
@@ -624,6 +629,11 @@ def expected_stats(conn: sqlite3.Connection, match_id: str) -> dict[str, dict[st
                 } if pressure else {},
             }
         return result
+
+
+def expected_stats(conn: sqlite3.Connection, match_id: str) -> dict[str, dict[str, Any]]:
+    if not table_exists(conn, "tennis_player_match_context"):
+        return typed_expected_stats(conn, match_id)
     rows = conn.execute(
         """
         select player_name, normalized_name, raw_json
@@ -632,6 +642,8 @@ def expected_stats(conn: sqlite3.Connection, match_id: str) -> dict[str, dict[st
         """,
         (match_id,),
     ).fetchall()
+    if not rows:
+        return typed_expected_stats(conn, match_id)
     result: dict[str, dict[str, Any]] = {}
     for row in rows:
         payload = as_json(row["raw_json"]) or {}
@@ -994,6 +1006,36 @@ def compact_sofascore_signals(raw_json: str | None, home_name: str | None, away_
     }
 
 
+def sofascore_signals_by_match(date: str) -> dict[str, dict[str, Any]]:
+    source_dir = ROOT / "data-private" / "reference" / "tennis" / "sofascore-match-data"
+    if not source_dir.exists():
+        return {}
+    signals: dict[str, dict[str, Any]] = {}
+    for file_path in source_dir.glob("*.json"):
+        if file_path.name.startswith("slate-map-"):
+            continue
+        try:
+            raw_text = file_path.read_text(encoding="utf-8")
+            payload = json.loads(raw_text)
+        except (OSError, json.JSONDecodeError, UnicodeDecodeError):
+            continue
+        if payload.get("slateDate") != date:
+            continue
+        match_id = payload.get("boardMatchId")
+        if not match_id:
+            continue
+        compact = compact_sofascore_signals(
+            raw_text,
+            (payload.get("compactEvent") or {}).get("homeTeam", {}).get("name"),
+            (payload.get("compactEvent") or {}).get("awayTeam", {}).get("name"),
+        )
+        compact["eventId"] = payload.get("eventId")
+        compact["sourceUrl"] = payload.get("sourceUrl")
+        compact["capturedAt"] = payload.get("capturedAt")
+        signals[str(match_id)] = compact
+    return signals
+
+
 def typed_match_rows(conn: sqlite3.Connection, date: str) -> list[dict[str, Any]]:
     return [
         dict(row)
@@ -1029,6 +1071,10 @@ def typed_match_rows(conn: sqlite3.Connection, date: str) -> list[dict[str, Any]
 
 
 def legacy_match_rows(conn: sqlite3.Connection, date: str) -> list[dict[str, Any]]:
+    if table_exists(conn, "matches"):
+        typed_rows = typed_match_rows(conn, date)
+        if typed_rows:
+            return typed_rows
     if table_exists(conn, "tennis_matches"):
         return [
             dict(row)
@@ -1042,8 +1088,6 @@ def legacy_match_rows(conn: sqlite3.Connection, date: str) -> list[dict[str, Any
                 (date,),
             )
         ]
-    if table_exists(conn, "matches"):
-        return typed_match_rows(conn, date)
     return []
 
 
@@ -1051,6 +1095,7 @@ def export_context(date: str, db_path: Path | None = None) -> dict[str, Any]:
     conn = connect(db_path)
     matches: dict[str, Any] = {}
     player_page_expected = player_page_expected_stats(conn, date)
+    sofascore_by_match = sofascore_signals_by_match(date)
     if not matches:
         for row in legacy_match_rows(conn, date):
             match_id = row["match_id"]
@@ -1186,7 +1231,7 @@ def export_context(date: str, db_path: Path | None = None) -> dict[str, Any]:
                     "away": (result_score or {}).get("away"),
                 },
                 "result": result_score,
-                "sofascoreSignals": None,
+                "sofascoreSignals": sofascore_by_match.get(match_id),
                 "weather": weather,
                 "allStatRows": [],
                 "coverage": {

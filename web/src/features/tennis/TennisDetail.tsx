@@ -31,6 +31,9 @@ export function TennisDetail(props: TennisDetailProps) {
       .trim()
       .toLowerCase()
     const aliases: Record<string, string> = {
+      'bu yunchaokete': 'yunchaokete bu',
+      'chak lam coleman wong': 'coleman wong',
+      'diego dedura': 'diego dedura palomero',
       'xinyu wang': 'wang xinyu',
       'xiyu wang': 'wang xiyu',
       'yibing wu': 'wu yibing'
@@ -114,6 +117,68 @@ export function TennisDetail(props: TennisDetailProps) {
     if (value === null || value === undefined || value === '') return null
     return Number.isFinite(Number(value)) ? Number(value) : null
   }
+  const playerRankLabel = (player: AnyRecord) => {
+    const ranking = player?.ranking
+    const rank = ranking?.rank ?? player?.rank
+    if (!Number.isFinite(Number(rank))) return 'Rank pending'
+    const tour = ranking?.tour || (game?.stage?.includes('Women') ? 'WTA' : 'ATP')
+    return `${tour} #${rank}`
+  }
+  const compactRankIdentity = (player: AnyRecord) => {
+    const ranking = player?.ranking || {}
+    const parts = [
+      playerRankLabel(player),
+      ranking.country,
+      Number.isFinite(Number(ranking.points)) ? `${Number(ranking.points).toLocaleString('en-US')} pts` : null
+    ].filter(Boolean)
+    return parts.join(' | ')
+  }
+  const expectationTone = (score: any) => {
+    const numericScore = Number(score)
+    if (!Number.isFinite(numericScore)) return 'missing'
+    if (numericScore >= 64) return 'beat'
+    if (numericScore >= 48) return 'met'
+    return 'miss'
+  }
+  const expectationLabel = (score: any) => {
+    const numericScore = Number(score)
+    if (!Number.isFinite(numericScore)) return 'No row'
+    if (numericScore >= 64) return 'Beat'
+    if (numericScore >= 48) return 'Met'
+    return 'Miss'
+  }
+  const metricScoreFromExpected = (stats: AnyRecord | null | undefined, key: string) => {
+    if (!stats) return null
+    if (key === 'Hold') return expectedNumber(stats, 'holdPct')
+    if (key === 'Return') {
+      const returnGamesWon = expectedNumber(stats, 'returnGamesWonPct')
+      if (returnGamesWon != null) return Math.max(0, Math.min(100, returnGamesWon * 1.9 + 22))
+      return expectedNumber(stats, 'returnPointsWonPct')
+    }
+    if (key === 'BP saved') return expectedNumber(stats, 'breakPointsSavedPct')
+    if (key === 'BP converted') return expectedNumber(stats, 'breakPointsConvertedPct')
+    return null
+  }
+  const expectationBubblesForPlayer = (player: AnyRecord, expectedStats: AnyRecord | null | undefined) => {
+    const warehousePlayer = warehouseContext?.players?.find(
+      (entry: AnyRecord) => normalizeTennisName(entry.name) === normalizeTennisName(player.name)
+    )
+    const summaryRows = warehousePlayer?.recentFormMetrics?.summary || []
+    if (summaryRows.length) {
+      return summaryRows.slice(0, 5).map((row: AnyRecord) => ({
+        label: row.label || row.key || 'Form',
+        score: expectedNumber(row, 'score'),
+        source: 'recent form'
+      }))
+    }
+    const stats = expectedStats?.stats || expectedStatsObjectForPlayer(player.name) || {}
+    return ['Hold', 'Return', 'BP saved', 'BP converted']
+      .map((label) => ({ label, score: metricScoreFromExpected(stats, label), source: 'pressure aggregate' }))
+      .filter((row) => row.score != null)
+      .slice(0, 5)
+  }
+  const nonEmptyStatRows = (rows: Array<{ label: string; value: string }>) =>
+    rows.filter((row) => !/^No expected row$/i.test(row.value) && !/^Pending$/i.test(row.value))
   const derivedHoldPct = (stats: AnyRecord | null | undefined) => {
     const explicitHold = expectedNumber(stats, 'holdPct') ?? expectedNumber(stats, 'serviceHoldPct') ?? expectedNumber(stats, 'avgServiceHoldPct')
     if (explicitHold != null) return explicitHold
@@ -345,8 +410,11 @@ export function TennisDetail(props: TennisDetailProps) {
   const warehouseH2hLabel = () => {
     const h2h = warehouseContext?.h2h
     if (!h2h) return 'No SofaScore H2H row'
-    const homeWins = Number.isFinite(Number(h2h.homeWins)) ? h2h.homeWins : 'N/A'
-    const awayWins = Number.isFinite(Number(h2h.awayWins)) ? h2h.awayWins : 'N/A'
+    const hasHomeWins = Number.isFinite(Number(h2h.homeWins))
+    const hasAwayWins = Number.isFinite(Number(h2h.awayWins))
+    if (!hasHomeWins || !hasAwayWins) return 'No direct H2H record yet'
+    const homeWins = Number(h2h.homeWins)
+    const awayWins = Number(h2h.awayWins)
     return `${h2h.homeName || 'Home'} ${homeWins}-${awayWins} ${h2h.awayName || 'Away'}`
   }
   const renderH2hPanel = () => {
@@ -540,6 +608,8 @@ export function TennisDetail(props: TennisDetailProps) {
   const warehouseFormMetricsForPlayer = (playerName: string) =>
     warehouseContext?.players?.find((entry: AnyRecord) => normalizeTennisName(entry.name) === normalizeTennisName(playerName))
       ?.recentFormMetrics || null
+  const qualityPlayerFor = (playerName: string) =>
+    rawQualityPlayers.find((entry: AnyRecord) => normalizeTennisName(entry.name) === normalizeTennisName(playerName)) || null
   const scoreValue = (score: number | null, estimated = false) => ({ score, estimated })
   const fallbackTennisFormScore = (expectedStats: AnyRecord | null, key: string) => {
     if (!expectedStats) return scoreValue(null)
@@ -779,6 +849,40 @@ export function TennisDetail(props: TennisDetailProps) {
               </div>
             ))}
           </div>
+        </div>
+      </div>
+    )
+  }
+  const renderRecentBubbleStrip = (player: AnyRecord) => {
+    const qualityPlayer = qualityPlayerFor(player.name)
+    const form = buildTennisFormMatrix(qualityPlayer || player)
+    if (!form.sample) return null
+    return (
+      <div className="tennis-last-five-strip" aria-label={`${player.name} last ${form.sample} match expectation bubbles`}>
+        <div className="tennis-last-five-meta">
+          <span>Last {form.sample}</span>
+          <small>{form.persisted ? 'Warehouse form' : form.fallback ? 'Estimated form' : 'TennisTonic recent form'}</small>
+        </div>
+        <div className="tennis-last-five-bubbles">
+          {form.matches.map((entry: AnyRecord, index: number) => {
+            const metricScores = tennisFormRows
+              .map((row) => finiteMetricNumber(entry[row.key]?.score))
+              .filter((score) => score != null) as number[]
+            const score = metricScores.length
+              ? Math.round(metricScores.reduce((sum, value) => sum + value, 0) / metricScores.length)
+              : null
+            const tone = bubbleTone(score)
+            return (
+              <span
+                key={`${game.id}-${player.name}-last-five-${entry.dateLabel}-${index}`}
+                className={`tennis-last-five-bubble ${tone}`}
+                title={`${entry.dateLabel}: ${bubbleLabel(score)}${score == null ? '' : ` (${score})`} vs ${entry.match?.opponent || 'opponent'}`}
+              >
+                <strong>{entry.resultLabel || '?'}</strong>
+                <small>{entry.dateLabel}</small>
+              </span>
+            )
+          })}
         </div>
       </div>
     )
@@ -1286,66 +1390,68 @@ export function TennisDetail(props: TennisDetailProps) {
                 const expectedStats = player.warehouseStats?.expectedStats || warehouseContext?.players
                   ?.find((entry: AnyRecord) => normalizeTennisName(entry.name) === normalizeTennisName(player.name))
                   ?.expectedStats
+                const statRows = nonEmptyStatRows([
+                  { label: 'Hold', value: statWithExpected(stats?.serviceGamesWon, expectedStats, 'holdPct', '%') },
+                  { label: 'Return games', value: statWithExpected(stats?.returnGamesWon, expectedStats, 'returnGamesWonPct', '%') },
+                  { label: 'Aces', value: statWithExpected(stats?.aces, expectedStats, 'aces') },
+                  { label: 'DF', value: statWithExpected(stats?.doubleFaults, expectedStats, 'doubleFaults') },
+                  { label: '1st won', value: statWithExpected(stats?.firstServeWonPct, expectedStats, 'firstServeWonPct', '%') },
+                  { label: '2nd won', value: statWithExpected(stats?.secondServeWonPct, expectedStats, 'secondServeWonPct', '%') },
+                  { label: '1st in', value: statWithExpected(stats?.firstServePct, expectedStats, 'firstServePct', '%') },
+                  { label: 'Service pts', value: statWithExpected(stats?.servicePointsWon, expectedStats, 'servicePointsWonPct', '%') },
+                  { label: 'BP saved', value: bpStatWithExpected(stats?.breakPointsSaved, expectedStats, 'breakPointsSavedPct', 'breakPointsSaved', 'breakPointsFaced') },
+                  { label: 'BP converted', value: bpStatWithExpected(stats?.breakPointsConverted, expectedStats, 'breakPointsConvertedPct', 'breakPointsConverted', 'breakPointsToConvert') },
+                  { label: 'Winners', value: statWithExpected(stats?.winners, expectedStats, 'winners') },
+                  { label: 'Forced errors', value: statWithExpected(stats?.forcedErrors, expectedStats, 'forcedErrors') },
+                  { label: 'Unforced', value: statWithExpected(stats?.unforcedErrors, expectedStats, 'unforcedErrors') },
+                  { label: 'Return pts', value: statWithExpected(stats?.returnPointsWon, expectedStats, 'returnPointsWonPct', '%') }
+                ])
+                const expectationBubbles = expectationBubblesForPlayer(player, expectedStats)
                 return (
                   <article key={`${game.id}-${player.name}-warehouse`} className="tennis-warehouse-card">
                     <div className="tennis-recent-head">
                       <div>
                         <strong>{player.name}</strong>
                         <span>
-                          {stats ? 'SofaScore actual ALL-period stats' : expectedStats ? `Pregame expected from ${expectedStats.matches || 0} recent rows` : 'Stat feed pending'}
+                          {compactRankIdentity(player)}
+                        </span>
+                        <span>
+                          {stats && Object.keys(stats).length ? 'SofaScore actual ALL-period stats' : expectedStats ? `Pregame expected from ${expectedStats.matches || 0} recent rows` : 'Stat feed pending'}
                         </span>
                       </div>
                     </div>
-                    <div className="tennis-recent-stat-grid">
-                      <div>
-                        <span>Aces</span>
-                        <strong>{statWithExpected(stats?.aces, expectedStats, 'aces')}</strong>
+                    {expectationBubbles.length ? (
+                      <div className="tennis-expectation-strip" aria-label={`${player.name} expectation summary`}>
+                        {expectationBubbles.map((bubble: AnyRecord) => {
+                          const tone = expectationTone(bubble.score)
+                          return (
+                            <span
+                              key={`${game.id}-${player.name}-expectation-${bubble.label}`}
+                              className={`tennis-expectation-bubble ${tone}`}
+                              title={`${bubble.label}: ${formatNumber(Number(bubble.score), 1)} from ${bubble.source}`}
+                            >
+                              <strong>{expectationLabel(bubble.score)}</strong>
+                              <small>{bubble.label}</small>
+                            </span>
+                          )
+                        })}
                       </div>
-                      <div>
-                        <span>DF</span>
-                        <strong>{statWithExpected(stats?.doubleFaults, expectedStats, 'doubleFaults')}</strong>
+                    ) : null}
+                    {renderRecentBubbleStrip(player)}
+                    {statRows.length ? (
+                      <div className="tennis-recent-stat-grid compact">
+                        {statRows.slice(0, 6).map((row) => (
+                          <div key={`${game.id}-${player.name}-stat-${row.label}`}>
+                            <span>{row.label}</span>
+                            <strong>{row.value}</strong>
+                          </div>
+                        ))}
                       </div>
-                      <div>
-                        <span>1st won</span>
-                        <strong>{statWithExpected(stats?.firstServeWonPct, expectedStats, 'firstServeWonPct', '%')}</strong>
-                      </div>
-                      <div>
-                        <span>2nd won</span>
-                        <strong>{statWithExpected(stats?.secondServeWonPct, expectedStats, 'secondServeWonPct', '%')}</strong>
-                      </div>
-                      <div>
-                        <span>1st in</span>
-                        <strong>{statWithExpected(stats?.firstServePct, expectedStats, 'firstServePct', '%')}</strong>
-                      </div>
-                      <div>
-                        <span>Service pts</span>
-                        <strong>{statWithExpected(stats?.servicePointsWon, expectedStats, 'servicePointsWonPct', '%')}</strong>
-                      </div>
-                      <div>
-                        <span>BP saved</span>
-                        <strong>{bpStatWithExpected(stats?.breakPointsSaved, expectedStats, 'breakPointsSavedPct', 'breakPointsSaved', 'breakPointsFaced')}</strong>
-                      </div>
-                      <div>
-                        <span>BP converted</span>
-                        <strong>{bpStatWithExpected(stats?.breakPointsConverted, expectedStats, 'breakPointsConvertedPct', 'breakPointsConverted', 'breakPointsToConvert')}</strong>
-                      </div>
-                      <div>
-                        <span>Winners</span>
-                        <strong>{statWithExpected(stats?.winners, expectedStats, 'winners')}</strong>
-                      </div>
-                      <div>
-                        <span>Forced errors</span>
-                        <strong>{statWithExpected(stats?.forcedErrors, expectedStats, 'forcedErrors')}</strong>
-                      </div>
-                      <div>
-                        <span>Unforced</span>
-                        <strong>{statWithExpected(stats?.unforcedErrors, expectedStats, 'unforcedErrors')}</strong>
-                      </div>
-                      <div>
-                        <span>Return pts</span>
-                        <strong>{statWithExpected(stats?.returnPointsWon, expectedStats, 'returnPointsWonPct', '%')}</strong>
-                      </div>
-                    </div>
+                    ) : (
+                      <p className="tennis-data-note">
+                        No serve-event rows are warehoused for this player yet. Current card is using market, rank, and pressure context only.
+                      </p>
+                    )}
                     {expectedStats?.note ? <small className="tennis-data-note">{expectedStats.note}</small> : null}
                   </article>
                 )

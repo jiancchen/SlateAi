@@ -11,6 +11,7 @@ export function BoardView(props: BoardViewProps) {
     activeDayId,
     activeDayIsoDate,
     activeFilter,
+    activeTennisEventFilter,
     activeValueScope,
     addAnalystPick,
     availableValueScopes,
@@ -55,8 +56,11 @@ export function BoardView(props: BoardViewProps) {
     slateMeta,
     swingTextFor,
     tennisDetailProps,
+    tennisEventFilterOptions,
     tennisValueSummary,
+    shouldShowTennisRailFilter,
     visibleGames,
+    setActiveTennisEventFilterByDay,
     setIsMobileDetailOpen: providedSetMobileDetailOpen
   } = props
 
@@ -84,7 +88,11 @@ export function BoardView(props: BoardViewProps) {
       <div className="tennis-value-list">
         <div className="tennis-value-section-label">{sectionLabel}</div>
         {visibleRows.map((row: AnyRecord) => {
-          const ev = Number(row.evPer100)
+          const rawEv = row.evPer100
+          const ev =
+            rawEv !== null && rawEv !== undefined && rawEv !== '' && Number.isFinite(Number(rawEv))
+              ? Number(rawEv)
+              : null
           const confidence = Number(row.modelPct ?? row.confidence)
           const confidenceLabel = Number.isFinite(confidence) ? `${Math.round(confidence)}% conf` : 'conf N/A'
           const expectedGames = Number(row.expectedGames)
@@ -110,13 +118,13 @@ export function BoardView(props: BoardViewProps) {
               </span>
               <span>
                 <strong>
-                  {Number.isFinite(ev)
+                  {ev !== null
                     ? formatSignedNumber(ev, 1)
                     : Number.isFinite(confidence)
                       ? `${Math.round(confidence)}%`
                       : 'Price'}
                 </strong>
-                <small>{Number.isFinite(ev) ? `EV/100 | ${confidenceLabel}` : 'model confidence'}</small>
+                <small>{ev !== null ? `EV/100 | ${confidenceLabel}` : 'model confidence'}</small>
               </span>
             </button>
           )
@@ -418,7 +426,7 @@ export function BoardView(props: BoardViewProps) {
           </div>
         </div>
 
-        <div className="games-rail-filters">
+        <div className={`games-rail-filters ${shouldShowTennisRailFilter && tennisEventFilterOptions?.length ? 'with-tennis-event-select' : ''}`}>
           {filterOptions.map((filter: string) => (
             <button
               key={filter}
@@ -429,6 +437,26 @@ export function BoardView(props: BoardViewProps) {
               {filter}
             </button>
           ))}
+          {shouldShowTennisRailFilter && tennisEventFilterOptions?.length ? (
+            <label className="tennis-event-filter">
+              <span className="eyebrow">Tennis event</span>
+              <select
+                value={activeTennisEventFilter}
+                onChange={(event) =>
+                  setActiveTennisEventFilterByDay((current: AnyRecord) => ({
+                    ...current,
+                    [activeDayId]: event.target.value
+                  }))
+                }
+              >
+                {tennisEventFilterOptions.map((option: AnyRecord) => (
+                  <option key={option.id} value={option.id}>
+                    {option.label} ({option.count})
+                  </option>
+                ))}
+              </select>
+            </label>
+          ) : null}
         </div>
 
         <div className="games-rail-list no-scrollbar">

@@ -1,0 +1,124 @@
+{
+  "ok": true,
+  "script": "data-migration/scripts/ingest_tennis_tennislive_to_typed.py",
+  "source_db": "/Users/jcchen/Documents/New project/data-private/warehouse/sports/tennis/sql-tennis.db",
+  "started_at": "2026-06-04T05:36:40.150273+00:00",
+  "finished_at": "2026-06-04T05:36:44.011399+00:00",
+  "player_urls": [
+    "https://www.tennislive.net/atp/diego-dedura-palomero/",
+    "https://www.tennislive.net/atp/harry-wendelken/",
+    "https://www.tennislive.net/atp/tuncay-duran/",
+    "https://www.tennislive.net/atp/edward-winter/",
+    "https://www.tennislive.net/atp/alexander-donski/",
+    "https://www.tennislive.net/atp/taro-taro/",
+    "https://www.tennislive.net/atp/alex-molcan/",
+    "https://www.tennislive.net/atp/vit-kopriva/",
+    "https://www.tennislive.net/wta/mirra-andreeva/"
+  ],
+  "match_urls": [],
+  "max_links": 500,
+  "max_matches": 5,
+  "player_results": [
+    {
+      "status": "ok",
+      "player_id": "tennis-player-diego-dedura",
+      "player": "Diego Dedura",
+      "snapshot_already_seen": false,
+      "surface_records": 42,
+      "match_links": 51,
+      "matches_fetched": 1,
+      "matches_skipped_existing": 4,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-harry-wendelken",
+      "player": "Harry Wendelken",
+      "snapshot_already_seen": false,
+      "surface_records": 84,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-tuncay-duran",
+      "player": "Tuncay Duran",
+      "snapshot_already_seen": false,
+      "surface_records": 56,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-edward-winter",
+      "player": "Edward Winter",
+      "snapshot_already_seen": false,
+      "surface_records": 63,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-alexander-donski",
+      "player": "Alexander Donski",
+      "snapshot_already_seen": false,
+      "surface_records": 105,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-taro-daniel",
+      "player": "Taro Daniel",
+      "snapshot_already_seen": false,
+      "surface_records": 133,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-alex-molcan",
+      "player": "Alex Molcan",
+      "snapshot_already_seen": false,
+      "surface_records": 105,
+      "match_links": 51,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "failed",
+      "source_player_url": "https://www.tennislive.net/atp/vit-kopriva/",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-mirra-andreeva",
+      "player": "Mirra Andreeva",
+      "snapshot_already_seen": false,
+      "surface_records": 49,
+      "match_links": 50,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    }
+  ],
+  "match_results": [],
+  "failures": [
+    {
+      "status": "failed",
+      "source_player_url": "https://www.tennislive.net/atp/vit-kopriva/",
+      "error": "HTTP Error 500: Internal Server Error"
+    }
+  ]
+}

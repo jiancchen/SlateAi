@@ -1,0 +1,2263 @@
+{
+  "id": "rh-atp-challenger-birmingham-virtanen-vs-vukic-2026-06-04",
+  "eventId": "4fc8c761-df82-47e6-98cf-61da8fd4ca09",
+  "league": "Tennis",
+  "start": "4:00 AM",
+  "startMinutes": 240,
+  "title": "Otto Virtanen vs Aleksandar Vukic",
+  "stage": "ATP Challenger Birmingham | Round Of 16",
+  "spotlight": false,
+  "confidence": 53.7,
+  "volatility": 46,
+  "tags": [
+    "ATP Challenger",
+    "Grass",
+    "Prediction market",
+    "Warehouse joined",
+    "Flashscore first",
+    "Coinflip price"
+  ],
+  "matchup": [
+    {
+      "side": "Player 1",
+      "name": "Otto Virtanen",
+      "displayName": "Otto Virtanen",
+      "detail": "Grass | Live rank #134 | Finland | age 24 | hold 75%"
+    },
+    {
+      "side": "Player 2",
+      "name": "Aleksandar Vukic",
+      "displayName": "Aleksandar Vukic",
+      "detail": "Grass | Live rank #96 | Australia | age 30 | hold 100%"
+    }
+  ],
+  "summary": "Our model pick: Otto Virtanen. Aleksandar Vukic has the recent service-hold edge 100% to 75%, so Otto Virtanen needs the rank/form edge to show up on return games. Lean, not a chase.",
+  "factors": [
+    "Aleksandar Vukic has the recent service-hold edge 100% to 75%, so Otto Virtanen needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "Model 53.7% vs DraftKings Sportsbook implied 72.8% (-19.1 pts).",
+    "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+    "Wait for a visible service-pressure split before entering.",
+    "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets.",
+    "May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.",
+    "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total."
+  ],
+  "lean": "Lean Otto Virtanen; Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+  "swing": "Risk: best-of-five set extension and tiebreak variance.",
+  "swingFactor": "Risk: best-of-five set extension and tiebreak variance.",
+  "odds": {
+    "participantOrder": [
+      0,
+      1
+    ],
+    "markets": [
+      {
+        "label": "Model fair",
+        "book": "Tennis warehouse model",
+        "value": "Otto Virtanen 53.7% / Aleksandar Vukic 47.6%"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "book": "DraftKings Sportsbook",
+        "value": "Otto Virtanen -268 / Aleksandar Vukic +197"
+      },
+      {
+        "label": "1st set total games",
+        "book": "DraftKings Sportsbook",
+        "value": "10.5 1st-set games: Over +135 / Under -200"
+      }
+    ],
+    "note": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+    "provider": "DraftKings Sportsbook"
+  },
+  "tennisContext": {
+    "surface": "Grass",
+    "court": "ATP Challenger Birmingham",
+    "h2hLeader": "",
+    "fatigueFlag": false,
+    "liveDog": false,
+    "weaknessEdge": {
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 0,
+      "attackingSide": null,
+      "vulnerableSide": null,
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+      "pick": {
+        "name": "Otto Virtanen",
+        "serviceHoldPct": 75,
+        "firstServeWonPct": null,
+        "secondServeWonPct": null,
+        "firstServePct": null,
+        "avgAces": null,
+        "avgDoubleFaults": null,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": null,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [],
+        "gameFlowRead": "Otto Virtanen has no major service weakness in the joined Flashscore sample."
+      },
+      "opponent": {
+        "name": "Aleksandar Vukic",
+        "serviceHoldPct": 100,
+        "firstServeWonPct": null,
+        "secondServeWonPct": null,
+        "firstServePct": null,
+        "avgAces": null,
+        "avgDoubleFaults": null,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": null,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (100% hold)"
+        ],
+        "gameFlowRead": "Aleksandar Vukic has no major service weakness in the joined Flashscore sample."
+      }
+    },
+    "warehouseContext": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-birmingham-virtanen-vs-vukic-2026-06-04",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-04T11:00:00Z",
+      "surface": "Grass",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "ATP",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Otto Virtanen",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "Otto Virtanen",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 75,
+              "returnGamesWonPct": 0,
+              "breakPointsSaved": 4,
+              "breakPointsFaced": 5,
+              "breakPointsSavedPct": 80,
+              "breakPointsConverted": 0,
+              "breakPointsToConvert": 0
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 4,
+                "bpFaced": 5,
+                "bpSavedPct": 80,
+                "bpConverted": 0,
+                "bpChances": 0,
+                "bpConvertedPct": null
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Otto Virtanen",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        },
+        {
+          "name": "Aleksandar Vukic",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "name": "Aleksandar Vukic",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 100,
+              "returnGamesWonPct": 25,
+              "breakPointsSaved": 0,
+              "breakPointsFaced": 0,
+              "breakPointsConverted": 1,
+              "breakPointsToConvert": 5,
+              "breakPointsConvertedPct": 20
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpSavedPct": null,
+                "bpConverted": 1,
+                "bpChances": 5,
+                "bpConvertedPct": 20
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Aleksandar Vukic",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        }
+      ],
+      "h2h": {
+        "homeName": "Otto Virtanen",
+        "awayName": "Aleksandar Vukic",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Otto Virtanen",
+          "awayName": "Aleksandar Vukić",
+          "homeVotes": 377,
+          "awayVotes": 179,
+          "homePct": 67.8,
+          "awayPct": 32.2
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Otto Virtanen",
+            "fractionalValue": null,
+            "impliedPct": null,
+            "expected": null,
+            "actual": null
+          },
+          "away": {
+            "name": "Aleksandar Vukić",
+            "fractionalValue": null,
+            "impliedPct": null,
+            "expected": null,
+            "actual": null
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": null,
+          "away": null
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick.",
+        "eventId": "16240990",
+        "sourceUrl": "https://www.sofascore.com/tennis/match/otto-virtanen-aleksandar-vukic#id:16240990",
+        "capturedAt": "2026-06-04T00:25:09.154Z"
+      },
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 14,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "sofascoreData": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-birmingham-virtanen-vs-vukic-2026-06-04",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-04T11:00:00Z",
+      "surface": "Grass",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "ATP",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Otto Virtanen",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "Otto Virtanen",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 75,
+              "returnGamesWonPct": 0,
+              "breakPointsSaved": 4,
+              "breakPointsFaced": 5,
+              "breakPointsSavedPct": 80,
+              "breakPointsConverted": 0,
+              "breakPointsToConvert": 0
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 4,
+                "bpFaced": 5,
+                "bpSavedPct": 80,
+                "bpConverted": 0,
+                "bpChances": 0,
+                "bpConvertedPct": null
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Otto Virtanen",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        },
+        {
+          "name": "Aleksandar Vukic",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "name": "Aleksandar Vukic",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 100,
+              "returnGamesWonPct": 25,
+              "breakPointsSaved": 0,
+              "breakPointsFaced": 0,
+              "breakPointsConverted": 1,
+              "breakPointsToConvert": 5,
+              "breakPointsConvertedPct": 20
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpSavedPct": null,
+                "bpConverted": 1,
+                "bpChances": 5,
+                "bpConvertedPct": 20
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Aleksandar Vukic",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        }
+      ],
+      "h2h": {
+        "homeName": "Otto Virtanen",
+        "awayName": "Aleksandar Vukic",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Otto Virtanen",
+          "awayName": "Aleksandar Vukić",
+          "homeVotes": 377,
+          "awayVotes": 179,
+          "homePct": 67.8,
+          "awayPct": 32.2
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Otto Virtanen",
+            "fractionalValue": null,
+            "impliedPct": null,
+            "expected": null,
+            "actual": null
+          },
+          "away": {
+            "name": "Aleksandar Vukić",
+            "fractionalValue": null,
+            "impliedPct": null,
+            "expected": null,
+            "actual": null
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": null,
+          "away": null
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick.",
+        "eventId": "16240990",
+        "sourceUrl": "https://www.sofascore.com/tennis/match/otto-virtanen-aleksandar-vukic#id:16240990",
+        "capturedAt": "2026-06-04T00:25:09.154Z"
+      },
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 14,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "players": [
+      {
+        "name": "Otto Virtanen",
+        "rank": 134,
+        "label": "Otto Virtanen",
+        "form": null,
+        "boardPct": 53.7,
+        "decimalOdds": 1.373,
+        "marketLabel": "-268 / 72.8% implied",
+        "clayLine": "Grass | Live rank #134 | Finland | age 24 | hold 75%",
+        "weakness": {
+          "name": "Otto Virtanen",
+          "serviceHoldPct": 75,
+          "firstServeWonPct": null,
+          "secondServeWonPct": null,
+          "firstServePct": null,
+          "avgAces": null,
+          "avgDoubleFaults": null,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": null,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [],
+          "gameFlowRead": "Otto Virtanen has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseStats": {
+          "name": "Otto Virtanen",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "Otto Virtanen",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 75,
+              "returnGamesWonPct": 0,
+              "breakPointsSaved": 4,
+              "breakPointsFaced": 5,
+              "breakPointsSavedPct": 80,
+              "breakPointsConverted": 0,
+              "breakPointsToConvert": 0
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 4,
+                "bpFaced": 5,
+                "bpSavedPct": 80,
+                "bpConverted": 0,
+                "bpChances": 0,
+                "bpConvertedPct": null
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Otto Virtanen",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        },
+        "record2026": "",
+        "notes": "Pick: model 53.7%",
+        "matchupNote": "Why pick: Aleksandar Vukic has the recent service-hold edge 100% to 75%, so Otto Virtanen needs the rank/form edge to show up on return games. Lean, not a chase."
+      },
+      {
+        "name": "Aleksandar Vukic",
+        "rank": 96,
+        "label": "Aleksandar Vukic",
+        "form": null,
+        "boardPct": 47.6,
+        "decimalOdds": 2.97,
+        "marketLabel": "+197 / 33.7% implied",
+        "clayLine": "Grass | Live rank #96 | Australia | age 30 | hold 100%",
+        "weakness": {
+          "name": "Aleksandar Vukic",
+          "serviceHoldPct": 100,
+          "firstServeWonPct": null,
+          "secondServeWonPct": null,
+          "firstServePct": null,
+          "avgAces": null,
+          "avgDoubleFaults": null,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": null,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (100% hold)"
+          ],
+          "gameFlowRead": "Aleksandar Vukic has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseStats": {
+          "name": "Aleksandar Vukic",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "name": "Aleksandar Vukic",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 100,
+              "returnGamesWonPct": 25,
+              "breakPointsSaved": 0,
+              "breakPointsFaced": 0,
+              "breakPointsConverted": 1,
+              "breakPointsToConvert": 5,
+              "breakPointsConvertedPct": 20
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpSavedPct": null,
+                "bpConverted": 1,
+                "bpChances": 5,
+                "bpConvertedPct": 20
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Aleksandar Vukic",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        },
+        "record2026": "",
+        "notes": "Opponent case: model 46.3%",
+        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
+      }
+    ],
+    "comparisonRows": [
+      {
+        "label": "Model pick",
+        "metric": "Fair win split",
+        "leftScore": 53.7,
+        "rightScore": 47.6,
+        "leftLabel": "Otto Virtanen",
+        "rightLabel": "Aleksandar Vukic",
+        "winner": "Otto Virtanen"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "metric": "Implied price",
+        "leftScore": 72.8,
+        "rightScore": 33.7,
+        "leftLabel": "Otto Virtanen",
+        "rightLabel": "Aleksandar Vukic",
+        "winner": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+      },
+      {
+        "label": "Weakness",
+        "metric": "Lower is cleaner",
+        "leftScore": 0,
+        "rightScore": 0,
+        "leftLabel": "Otto Virtanen",
+        "rightLabel": "Aleksandar Vukic",
+        "winner": "No clear weakness edge"
+      },
+      {
+        "label": "Volatility",
+        "metric": "Lower is cleaner",
+        "leftScore": 46,
+        "rightScore": 54,
+        "leftLabel": "Risk",
+        "rightLabel": "Stability",
+        "winner": "Stable enough"
+      }
+    ],
+    "predictionMarket": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T03:58:46.616Z",
+      "totalVolume": null,
+      "players": [
+        {
+          "name": "Otto Virtanen",
+          "probabilityPct": 72.8,
+          "amount": null,
+          "americanOdds": -268,
+          "edgePct": -19.1,
+          "priceBand": "Low-payout favorite"
+        },
+        {
+          "name": "Aleksandar Vukic",
+          "probabilityPct": 33.7,
+          "amount": null,
+          "americanOdds": 197,
+          "edgePct": 13.9,
+          "priceBand": "Underdog"
+        }
+      ]
+    },
+    "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Otto Virtanen",
+        "line": null,
+        "americanOdds": -268,
+        "modelPct": 53.7,
+        "impliedPct": 72.8,
+        "edgePct": -19.1,
+        "evPer100": -26.3,
+        "netEvPer100": -28.3,
+        "grade": "Negative EV",
+        "issue": "Favorite price needs better proof",
+        "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "No bet",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": null,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": null,
+        "grade": "No direction",
+        "reason": "Total games need expected match games vs the posted line."
+      },
+      {
+        "marketType": "Win a set",
+        "label": "Win a set %",
+        "selection": "Otto Virtanen 62% / Aleksandar Vukic 68%",
+        "rows": [
+          {
+            "name": "Otto Virtanen",
+            "confidence": 62,
+            "modelPct": 53.7,
+            "label": "Market favorite to win a set"
+          },
+          {
+            "name": "Aleksandar Vukic",
+            "confidence": 68,
+            "modelPct": 47.6,
+            "label": "Underdog set-win path needs early holds"
+          }
+        ],
+        "confidence": 68,
+        "grade": "Price required",
+        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Under 10.5",
+        "expectedGames": 9.5,
+        "confidence": 58,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "grade": "Thin value",
+        "reason": "Expected first-set games 9.5 vs DraftKings Sportsbook 10.5; Under 10.5."
+      }
+    ],
+    "derivativeMarketCase": null,
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Otto Virtanen",
+        "americanOdds": -268,
+        "modelPct": 53.7,
+        "impliedPct": 72.8,
+        "edgePct": -19.1,
+        "evPer100": -26.3,
+        "netEvPer100": -28.3,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Negative EV",
+        "betGrade": false
+      },
+      "spread": null,
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Under 10.5",
+        "line": 10.5,
+        "americanOdds": -200,
+        "expectedGames": 9.5,
+        "confidence": 58,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 58,
+        "evPer100": -13,
+        "netEvPer100": -15,
+        "valueGrade": "Thin value",
+        "reason": "Expected first-set games 9.5 vs DraftKings Sportsbook 10.5; Under 10.5.",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Otto Virtanen",
+          "confidence": 62,
+          "modelPct": 53.7,
+          "label": "Market favorite to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Aleksandar Vukic",
+          "confidence": 68,
+          "modelPct": 47.6,
+          "label": "Underdog set-win path needs early holds",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "ensembleValueCase": null,
+    "projection": {
+      "projectedWinner": "Otto Virtanen",
+      "projectedSetLine": "2-0/2-1 range",
+      "setWinProjections": [
+        {
+          "name": "Otto Virtanen",
+          "confidence": 62,
+          "modelPct": 53.7,
+          "label": "Market favorite to win a set"
+        },
+        {
+          "name": "Aleksandar Vukic",
+          "confidence": 68,
+          "modelPct": 47.6,
+          "label": "Underdog set-win path needs early holds"
+        }
+      ],
+      "totalGames": null,
+      "straightSetsProbability": 48,
+      "upsetRisk": 46.3,
+      "overview": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "fantasy": []
+    },
+    "tradePlan": {
+      "laneLabel": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+      "summary": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "trigger": "Wait for a visible service-pressure split before entering.",
+      "headline": "No clear weakness edge",
+      "exit": "No spread line",
+      "tone": "warning"
+    },
+    "derivativeMarkets": [
+      {
+        "label": "ML",
+        "value": "Otto Virtanen -268; Model 53.7% vs DraftKings Sportsbook implied 72.8% (-19.1 pts).",
+        "lean": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+        "confidence": 53.7,
+        "marketType": "ML",
+        "selection": "Otto Virtanen",
+        "americanOdds": -268,
+        "modelPct": 53.7,
+        "impliedPct": 72.8,
+        "edgePct": -19.1,
+        "evPer100": -26.3,
+        "netEvPer100": -28.3,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Negative EV",
+        "betGrade": false,
+        "tone": "warning",
+        "reason": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total."
+      },
+      {
+        "label": "Win a set",
+        "value": "No set-win price captured",
+        "lean": "Underdog set-win path needs early holds",
+        "confidence": 68,
+        "setWinRows": [],
+        "valueGrade": "Needs posted price",
+        "tone": "accent",
+        "reason": "Best-of-five gives the non-ML side more room to win a set; use this to separate upset risk from match-winner confidence."
+      },
+      {
+        "label": "Spread",
+        "value": "No primary game spread captured",
+        "lean": "No spread line",
+        "confidence": 50,
+        "tone": "neutral",
+        "reason": "Wait for a visible service-pressure split before entering."
+      },
+      {
+        "label": "O/U",
+        "value": "No total captured",
+        "lean": "No bet",
+        "confidence": 50,
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st set O/U",
+        "value": "Line 10.5",
+        "lean": "Under 10.5",
+        "confidence": 58,
+        "marketType": "First-set total",
+        "selection": "Under 10.5",
+        "line": 10.5,
+        "americanOdds": -200,
+        "expectedGames": 9.5,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 58,
+        "evPer100": -13,
+        "netEvPer100": -15,
+        "valueGrade": "Thin value",
+        "reason": "Expected first-set games 9.5 vs DraftKings Sportsbook 10.5; Under 10.5.",
+        "betGrade": false,
+        "tone": "accent"
+      },
+      {
+        "label": "1st service game",
+        "value": "No first-service-game market captured",
+        "lean": "First-service-game prices",
+        "confidence": 53.7,
+        "firstServiceGameRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-service-game market captured."
+      },
+      {
+        "label": "First games",
+        "value": "No first-game prop market captured",
+        "lean": "First-game prop prices",
+        "confidence": 53.7,
+        "firstGamePropRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-games prop captured."
+      }
+    ],
+    "marketEconomics": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T03:58:46.616Z",
+      "eventUrl": "https://sportsbook.draftkings.com/leagues/tennis/challenger-birmingham?event=34240559",
+      "deskName": "Otto Virtanen",
+      "deskPricePct": 72.8,
+      "deskEdgePct": -19.1,
+      "priceAction": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+      "players": [
+        {
+          "name": "Otto Virtanen",
+          "americanOdds": -268,
+          "impliedPct": 72.8,
+          "modelPct": 53.7,
+          "edgePct": -19.1,
+          "priceBand": "Low-payout favorite",
+          "grossProfitPct": 37.3,
+          "grossPayoutMultiple": 1.373,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 37.3,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        },
+        {
+          "name": "Aleksandar Vukic",
+          "americanOdds": 197,
+          "impliedPct": 33.7,
+          "modelPct": 47.6,
+          "edgePct": 13.9,
+          "priceBand": "Underdog",
+          "grossProfitPct": 197,
+          "grossPayoutMultiple": 2.97,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 197,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        }
+      ]
+    },
+    "clayMatchupData": {
+      "title": "Otto Virtanen vs Aleksandar Vukic",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Otto-Virtanen-Vs-Aleksandar-Vukic/",
+      "h2hText": "3:0",
+      "h2hRecord": "3:0",
+      "prediction": "Virtanen in 3",
+      "players": [
+        {
+          "name": "Otto Virtanen",
+          "record2026": {
+            "overall": "13-11",
+            "hard": "5-3",
+            "clay": "2-7",
+            "indoorHard": "5-1",
+            "grass": "1-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Birmingham Challenger\nZhizhen Zhang\nCHN  7-68 6-1 1st\n03 Jun 26",
+              "event": "Birmingham Challenger",
+              "opponent": "Zhizhen Zhang",
+              "result": "CHN  7-68 6-1 1st",
+              "date": "03 Jun 26"
+            },
+            {
+              "raw": "Paris\nAugust Holmgren\nDEN   Loss 7-68 6-2 q1\n18 May 26",
+              "event": "Paris",
+              "opponent": "August Holmgren",
+              "result": "DEN   Loss 7-68 6-2 q1",
+              "date": "18 May 26"
+            },
+            {
+              "raw": "Bordeaux Challenger\nGiovanni Mpetshi Perricard\nFRA   Loss 2-6 7-5 6-4 1st\n13 May 26",
+              "event": "Bordeaux Challenger",
+              "opponent": "Giovanni Mpetshi Perricard",
+              "result": "FRA   Loss 2-6 7-5 6-4 1st",
+              "date": "13 May 26"
+            },
+            {
+              "raw": "Rome\nNicolai Budkov Kjaer\nNOR   Loss 6-75 7-63 6-3 q1\n04 May 26",
+              "event": "Rome",
+              "opponent": "Nicolai Budkov Kjaer",
+              "result": "NOR   Loss 6-75 7-63 6-3 q1",
+              "date": "04 May 26"
+            },
+            {
+              "raw": "Madrid\nTitouan Droguet\nFRA   Loss 2-6 6-3 6-3 q1\n20 Apr 26",
+              "event": "Madrid",
+              "opponent": "Titouan Droguet",
+              "result": "FRA   Loss 2-6 6-3 6-3 q1",
+              "date": "20 Apr 26"
+            },
+            {
+              "raw": "Barcelona\nCarlos Alcaraz\nESP   Loss 6-4 6-2 1st\n14 Apr 26",
+              "event": "Barcelona",
+              "opponent": "Carlos Alcaraz",
+              "result": "ESP   Loss 6-4 6-2 1st",
+              "date": "14 Apr 26"
+            },
+            {
+              "raw": "Alexandre Muller\nFRA  6-4 6-4 Q.\n12 Apr 26",
+              "event": "",
+              "opponent": "Alexandre Muller",
+              "result": "FRA  6-4 6-4 Q.",
+              "date": "12 Apr 26"
+            },
+            {
+              "raw": "Aleksandar Vukic\nAUS  6-3 6-77 6-4 q1\n11 Apr 26",
+              "event": "",
+              "opponent": "Aleksandar Vukic",
+              "result": "AUS  6-3 6-77 6-4 q1",
+              "date": "11 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Aleksandar Vukic",
+          "record2026": {
+            "overall": "9-17",
+            "hard": "6-9",
+            "clay": "2-8",
+            "indoorHard": "0-0",
+            "grass": "1-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Birmingham Challenger\nJack Pinnington Jones\nGBR  2-6 6-4 6-3 1st\n02 Jun 26",
+              "event": "Birmingham Challenger",
+              "opponent": "Jack Pinnington Jones",
+              "result": "GBR  2-6 6-4 6-3 1st",
+              "date": "02 Jun 26"
+            },
+            {
+              "raw": "Paris\nRaphael Collignon\nBEL   Loss 6-3 6-3 7-64 1st\n25 May 26",
+              "event": "Paris",
+              "opponent": "Raphael Collignon",
+              "result": "BEL   Loss 6-3 6-3 7-64 1st",
+              "date": "25 May 26"
+            },
+            {
+              "raw": "Bordeaux Challenger\nGiovanni Mpetshi Perricard\nFRA   Loss 6-0 6-3 2nd\n14 May 26",
+              "event": "Bordeaux Challenger",
+              "opponent": "Giovanni Mpetshi Perricard",
+              "result": "FRA   Loss 6-0 6-3 2nd",
+              "date": "14 May 26"
+            },
+            {
+              "raw": "Rinky Hijikata\nAUS  6-1 6-73 6-3 1st\n12 May 26",
+              "event": "",
+              "opponent": "Rinky Hijikata",
+              "result": "AUS  6-1 6-73 6-3 1st",
+              "date": "12 May 26"
+            },
+            {
+              "raw": "Rome\nTommy Paul\nUSA   Loss 6-4 6-2 2nd\n08 May 26",
+              "event": "Rome",
+              "opponent": "Tommy Paul",
+              "result": "USA   Loss 6-4 6-2 2nd",
+              "date": "08 May 26"
+            },
+            {
+              "raw": "Patrick Kypson\nUSA  6-3 5-7 6-0 1st\n06 May 26",
+              "event": "",
+              "opponent": "Patrick Kypson",
+              "result": "USA  6-3 5-7 6-0 1st",
+              "date": "06 May 26"
+            },
+            {
+              "raw": "Cagliari Challenger\nMarcos Giron\nUSA   Loss 6-4 1-6 6-1 1st\n28 Apr 26",
+              "event": "Cagliari Challenger",
+              "opponent": "Marcos Giron",
+              "result": "USA   Loss 6-4 1-6 6-1 1st",
+              "date": "28 Apr 26"
+            },
+            {
+              "raw": "Madrid\nPablo Llamas Ruiz\nESP   Loss 6-4 6-2 q1\n20 Apr 26",
+              "event": "Madrid",
+              "opponent": "Pablo Llamas Ruiz",
+              "result": "ESP   Loss 6-4 6-2 q1",
+              "date": "20 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": "Otto Virtanen is good, but not spotless on clay at 2-7. Aleksandar Vukic has multiple recent clay matches with a tiebreak or three-set shape, which points toward set-extension or game-spread value if the number is generous. Otto Virtanen's recent clay record has enough pressure games that the lower-priced side can re-rate quickly if the first set stays on serve."
+    },
+    "opponentQualityData": {
+      "title": "Otto Virtanen vs Aleksandar Vukic",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Otto-Virtanen-Vs-Aleksandar-Vukic/",
+      "h2hRecord": "3:0",
+      "tennistonicPrediction": "Virtanen in 3",
+      "players": [
+        {
+          "name": "Otto Virtanen",
+          "ranking": {
+            "rank": 134,
+            "points": 462,
+            "age": 24,
+            "country": "Finland",
+            "tour": "ATP",
+            "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+            "profileUrl": "https://www.espn.com/tennis/player/_/id/4099/otto-virtanen",
+            "liveRankSource": null,
+            "asOf": "2026-06-02"
+          },
+          "records": {
+            "overall2026": {
+              "wins": 13,
+              "losses": 11,
+              "total": 24,
+              "winPct": 0.542
+            },
+            "clay2026": {
+              "wins": 2,
+              "losses": 7,
+              "total": 9,
+              "winPct": 0.222
+            },
+            "raw": {
+              "overall": "13-11",
+              "hard": "5-3",
+              "clay": "2-7",
+              "indoorHard": "5-1",
+              "grass": "1-0",
+              "carpet": "0-0"
+            }
+          },
+          "recentWindow": {
+            "matches": 8,
+            "completed": 8,
+            "wins": 3,
+            "losses": 5,
+            "winPct": 0.375,
+            "setsWon": 9,
+            "setsLost": 11,
+            "setPct": 0.45,
+            "gamesWon": 100,
+            "gamesLost": 102,
+            "gamePct": 0.495,
+            "resistanceMatches": 6,
+            "straightSetWins": 2,
+            "straightSetLosses": 2,
+            "avgKnownOpponentRank": 89.3,
+            "knownOpponentRanks": 6,
+            "missingOpponentRanks": 2,
+            "top10Opponents": 1,
+            "top25Opponents": 1,
+            "top50Opponents": 1,
+            "challengerOrItfMatches": 2,
+            "rankingCoveragePct": 0.75,
+            "scorelineFormScore": 57.3,
+            "opponentAdjustedFormScore": 57.3
+          },
+          "serviceData": {
+            "source": "not available in Tennistonic scrape",
+            "matchesWithStats": 0,
+            "avgServiceHoldPct": null,
+            "avgAces": null,
+            "avgFirstServeWonPct": null,
+            "note": "Recent scores support set/game resistance only until a Flashscore recent-match stat row is resolved."
+          },
+          "recentMatches": [
+            {
+              "event": "Birmingham Challenger",
+              "eventTier": "challenger",
+              "opponent": "Zhizhen Zhang",
+              "opponentRanking": null,
+              "result": "CHN  7-68 6-1 1st",
+              "date": "03 Jun 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 13,
+                "gamesLost": 7,
+                "tiebreakSets": 1,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-68"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 1,
+                    "raw": "6-1"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": 0.572,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Paris",
+              "eventTier": "tour-1000",
+              "opponent": "August Holmgren",
+              "opponentRanking": null,
+              "result": "DEN   Loss 7-68 6-2 q1",
+              "date": "18 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 8,
+                "gamesLost": 13,
+                "tiebreakSets": 1,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-68"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  }
+                ]
+              },
+              "opponentWeight": 0.66,
+              "qualityPoints": 0.268,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Bordeaux Challenger",
+              "eventTier": "challenger",
+              "opponent": "Giovanni Mpetshi Perricard",
+              "opponentRanking": {
+                "rank": 83,
+                "points": 710,
+                "age": 22,
+                "country": "France",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/8885/giovanni-mpetshi-perricard",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "FRA   Loss 2-6 7-5 6-4 1st",
+              "date": "13 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 1,
+                "setsLost": 2,
+                "gamesWon": 15,
+                "gamesLost": 15,
+                "tiebreakSets": 0,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 2,
+                    "rightGames": 6,
+                    "raw": "2-6"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 5,
+                    "raw": "7-5"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 0.648,
+              "qualityPoints": 0.313,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Rome",
+              "eventTier": "tour-1000",
+              "opponent": "Nicolai Budkov Kjaer",
+              "opponentRanking": {
+                "rank": 121,
+                "points": 520,
+                "age": 19,
+                "country": "Norway",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/13829/nicolai-budkov-kjaer",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "NOR   Loss 6-75 7-63 6-3 q1",
+              "date": "04 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 1,
+                "setsLost": 2,
+                "gamesWon": 16,
+                "gamesLost": 19,
+                "tiebreakSets": 2,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 7,
+                    "raw": "6-75"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-63"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  }
+                ]
+              },
+              "opponentWeight": 0.825,
+              "qualityPoints": 0.347,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Madrid",
+              "eventTier": "tour-1000",
+              "opponent": "Titouan Droguet",
+              "opponentRanking": {
+                "rank": 107,
+                "points": 578,
+                "age": 24,
+                "country": "France",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/8136/titouan-droguet",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "FRA   Loss 2-6 6-3 6-3 q1",
+              "date": "20 Apr 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 1,
+                "setsLost": 2,
+                "gamesWon": 12,
+                "gamesLost": 14,
+                "tiebreakSets": 0,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 2,
+                    "rightGames": 6,
+                    "raw": "2-6"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  }
+                ]
+              },
+              "opponentWeight": 0.825,
+              "qualityPoints": 0.357,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Barcelona",
+              "eventTier": "tour/other",
+              "opponent": "Carlos Alcaraz",
+              "opponentRanking": {
+                "rank": 2,
+                "points": 11960,
+                "age": 23,
+                "country": "Spain",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/3782/carlos-alcaraz",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "ESP   Loss 6-4 6-2 1st",
+              "date": "14 Apr 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 6,
+                "gamesLost": 12,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  }
+                ]
+              },
+              "opponentWeight": 1.35,
+              "qualityPoints": 0.102,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Alexandre Muller",
+              "opponentRanking": {
+                "rank": 127,
+                "points": 494,
+                "age": 29,
+                "country": "France",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/3308/alexandre-muller",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "FRA  6-4 6-4 Q.",
+              "date": "12 Apr 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 12,
+                "gamesLost": 8,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 0.637,
+              "qualityPoints": 0.677,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Aleksandar Vukic",
+              "opponentRanking": {
+                "rank": 96,
+                "points": 626,
+                "age": 30,
+                "country": "Australia",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/3471/aleksandar-vukic",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "AUS  6-3 6-77 6-4 q1",
+              "date": "11 Apr 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 2,
+                "setsLost": 1,
+                "gamesWon": 18,
+                "gamesLost": 14,
+                "tiebreakSets": 1,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 7,
+                    "raw": "6-77"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 0.765,
+              "qualityPoints": 0.885,
+              "flashscore": null,
+              "serviceStats": null
+            }
+          ]
+        },
+        {
+          "name": "Aleksandar Vukic",
+          "ranking": {
+            "rank": 96,
+            "points": 626,
+            "age": 30,
+            "country": "Australia",
+            "tour": "ATP",
+            "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+            "profileUrl": "https://www.espn.com/tennis/player/_/id/3471/aleksandar-vukic",
+            "liveRankSource": null,
+            "asOf": "2026-06-02"
+          },
+          "records": {
+            "overall2026": {
+              "wins": 9,
+              "losses": 17,
+              "total": 26,
+              "winPct": 0.346
+            },
+            "clay2026": {
+              "wins": 2,
+              "losses": 8,
+              "total": 10,
+              "winPct": 0.2
+            },
+            "raw": {
+              "overall": "9-17",
+              "hard": "6-9",
+              "clay": "2-8",
+              "indoorHard": "0-0",
+              "grass": "1-0",
+              "carpet": "0-0"
+            }
+          },
+          "recentWindow": {
+            "matches": 8,
+            "completed": 8,
+            "wins": 3,
+            "losses": 5,
+            "winPct": 0.375,
+            "setsWon": 7,
+            "setsLost": 14,
+            "setPct": 0.333,
+            "gamesWon": 87,
+            "gamesLost": 102,
+            "gamePct": 0.46,
+            "resistanceMatches": 5,
+            "straightSetWins": 0,
+            "straightSetLosses": 4,
+            "avgKnownOpponentRank": 86.9,
+            "knownOpponentRanks": 8,
+            "missingOpponentRanks": 0,
+            "top10Opponents": 0,
+            "top25Opponents": 1,
+            "top50Opponents": 1,
+            "challengerOrItfMatches": 3,
+            "rankingCoveragePct": 1,
+            "scorelineFormScore": 49.9,
+            "opponentAdjustedFormScore": 49.9
+          },
+          "serviceData": {
+            "source": "not available in Tennistonic scrape",
+            "matchesWithStats": 0,
+            "avgServiceHoldPct": null,
+            "avgAces": null,
+            "avgFirstServeWonPct": null,
+            "note": "Recent scores support set/game resistance only until a Flashscore recent-match stat row is resolved."
+          },
+          "recentMatches": [
+            {
+              "event": "Birmingham Challenger",
+              "eventTier": "challenger",
+              "opponent": "Jack Pinnington Jones",
+              "opponentRanking": {
+                "rank": 132,
+                "points": 468,
+                "age": 23,
+                "country": "Great Britain",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/10126/jack-pinnington-jones",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "GBR  2-6 6-4 6-3 1st",
+              "date": "02 Jun 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 2,
+                "setsLost": 1,
+                "gamesWon": 14,
+                "gamesLost": 13,
+                "tiebreakSets": 0,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 2,
+                    "rightGames": 6,
+                    "raw": "2-6"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  }
+                ]
+              },
+              "opponentWeight": 0.54,
+              "qualityPoints": 0.63,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Paris",
+              "eventTier": "tour-1000",
+              "opponent": "Raphael Collignon",
+              "opponentRanking": {
+                "rank": 62,
+                "points": 866,
+                "age": 24,
+                "country": "Belgium",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/11222/raphael-collignon",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "BEL   Loss 6-3 6-3 7-64 1st",
+              "date": "25 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 0,
+                "setsLost": 3,
+                "gamesWon": 12,
+                "gamesLost": 19,
+                "tiebreakSets": 1,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-64"
+                  }
+                ]
+              },
+              "opponentWeight": 0.99,
+              "qualityPoints": 0.366,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Bordeaux Challenger",
+              "eventTier": "challenger",
+              "opponent": "Giovanni Mpetshi Perricard",
+              "opponentRanking": {
+                "rank": 83,
+                "points": 710,
+                "age": 22,
+                "country": "France",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/8885/giovanni-mpetshi-perricard",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "FRA   Loss 6-0 6-3 2nd",
+              "date": "14 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 3,
+                "gamesLost": 12,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 0,
+                    "raw": "6-0"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  }
+                ]
+              },
+              "opponentWeight": 0.648,
+              "qualityPoints": -0.012,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Rinky Hijikata",
+              "opponentRanking": {
+                "rank": 98,
+                "points": 612,
+                "age": 25,
+                "country": "Australia",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/3716/rinky-hijikata",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "AUS  6-1 6-73 6-3 1st",
+              "date": "12 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 2,
+                "setsLost": 1,
+                "gamesWon": 18,
+                "gamesLost": 11,
+                "tiebreakSets": 1,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 1,
+                    "raw": "6-1"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 7,
+                    "raw": "6-73"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  }
+                ]
+              },
+              "opponentWeight": 0.765,
+              "qualityPoints": 0.915,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Rome",
+              "eventTier": "tour-1000",
+              "opponent": "Tommy Paul",
+              "opponentRanking": {
+                "rank": 21,
+                "points": 1945,
+                "age": 29,
+                "country": "USA",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/2964/tommy-paul",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "USA   Loss 6-4 6-2 2nd",
+              "date": "08 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 6,
+                "gamesLost": 12,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  }
+                ]
+              },
+              "opponentWeight": 1.32,
+              "qualityPoints": 0.098,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Patrick Kypson",
+              "opponentRanking": {
+                "rank": 93,
+                "points": 649,
+                "age": 26,
+                "country": "USA",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/10958/patrick-kypson",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "USA  6-3 5-7 6-0 1st",
+              "date": "06 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 2,
+                "setsLost": 1,
+                "gamesWon": 17,
+                "gamesLost": 10,
+                "tiebreakSets": 0,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  },
+                  {
+                    "leftGames": 5,
+                    "rightGames": 7,
+                    "raw": "5-7"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 0,
+                    "raw": "6-0"
+                  }
+                ]
+              },
+              "opponentWeight": 0.765,
+              "qualityPoints": 0.915,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Cagliari Challenger",
+              "eventTier": "challenger",
+              "opponent": "Marcos Giron",
+              "opponentRanking": {
+                "rank": 84,
+                "points": 705,
+                "age": 32,
+                "country": "USA",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/1993/marcos-giron",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "USA   Loss 6-4 1-6 6-1 1st",
+              "date": "28 Apr 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 1,
+                "setsLost": 2,
+                "gamesWon": 11,
+                "gamesLost": 13,
+                "tiebreakSets": 0,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 1,
+                    "rightGames": 6,
+                    "raw": "1-6"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 1,
+                    "raw": "6-1"
+                  }
+                ]
+              },
+              "opponentWeight": 0.648,
+              "qualityPoints": 0.293,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Madrid",
+              "eventTier": "tour-1000",
+              "opponent": "Pablo Llamas Ruiz",
+              "opponentRanking": {
+                "rank": 122,
+                "points": 515,
+                "age": 23,
+                "country": "Spain",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/3979/pablo-llamas-ruiz",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "ESP   Loss 6-4 6-2 q1",
+              "date": "20 Apr 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 6,
+                "gamesLost": 12,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  }
+                ]
+              },
+              "opponentWeight": 0.825,
+              "qualityPoints": 0.039,
+              "flashscore": null,
+              "serviceStats": null
+            }
+          ]
+        }
+      ],
+      "matchupRead": "Otto Virtanen owns the stronger 2026 clay record by 2.2 percentage points. Otto Virtanen leads the current opponent-adjusted form score by 7.4 points. 2 recent-opponent rankings are still missing, so this read should be treated as partially ranked until the ranking warehouse is filled."
+    },
+    "researchLinks": [
+      {
+        "label": "ESPN scoreboard",
+        "url": "https://www.espn.com/tennis/scoreboard/_/date/20260604"
+      },
+      {
+        "label": "Tennistonic H2H",
+        "url": "https://tennistonic.com/head-to-head-compare/Otto-Virtanen-Vs-Aleksandar-Vukic/"
+      },
+      {
+        "label": "DraftKings Sportsbook event",
+        "url": "https://sportsbook.draftkings.com/leagues/tennis/challenger-birmingham?event=34240559"
+      }
+    ],
+    "formEdgeName": "Otto Virtanen"
+  },
+  "participants": [
+    {
+      "id": "rh-atp-challenger-birmingham-virtanen-vs-vukic-2026-06-04:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Otto Virtanen",
+      "detail": "Grass | Live rank #134 | Finland | age 24 | hold 75%",
+      "americanOdds": -268,
+      "americanLabel": "-268",
+      "decimalOdds": 1.373134328358209,
+      "impliedProbability": 0.7282608695652174,
+      "impliedProbabilityLabel": "72.8%"
+    },
+    {
+      "id": "rh-atp-challenger-birmingham-virtanen-vs-vukic-2026-06-04:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Aleksandar Vukic",
+      "detail": "Grass | Live rank #96 | Australia | age 30 | hold 100%",
+      "americanOdds": 197,
+      "americanLabel": "+197",
+      "decimalOdds": 2.9699999999999998,
+      "impliedProbability": 0.3367003367003367,
+      "impliedProbabilityLabel": "33.7%"
+    }
+  ],
+  "moneyline": {
+    "available": true,
+    "label": "DraftKings Sportsbook moneyline",
+    "provider": "DraftKings Sportsbook",
+    "participants": [
+      {
+        "id": "rh-atp-challenger-birmingham-virtanen-vs-vukic-2026-06-04:0",
+        "index": 0,
+        "role": "Player 1",
+        "name": "Otto Virtanen",
+        "detail": "Grass | Live rank #134 | Finland | age 24 | hold 75%",
+        "americanOdds": -268,
+        "americanLabel": "-268",
+        "decimalOdds": 1.373134328358209,
+        "impliedProbability": 0.7282608695652174,
+        "impliedProbabilityLabel": "72.8%"
+      },
+      {
+        "id": "rh-atp-challenger-birmingham-virtanen-vs-vukic-2026-06-04:1",
+        "index": 1,
+        "role": "Player 2",
+        "name": "Aleksandar Vukic",
+        "detail": "Grass | Live rank #96 | Australia | age 30 | hold 100%",
+        "americanOdds": 197,
+        "americanLabel": "+197",
+        "decimalOdds": 2.9699999999999998,
+        "impliedProbability": 0.3367003367003367,
+        "impliedProbabilityLabel": "33.7%"
+      }
+    ]
+  },
+  "analysis": {
+    "available": true,
+    "participantId": "rh-atp-challenger-birmingham-virtanen-vs-vukic-2026-06-04:0",
+    "participant": {
+      "id": "rh-atp-challenger-birmingham-virtanen-vs-vukic-2026-06-04:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Otto Virtanen",
+      "detail": "Grass | Live rank #134 | Finland | age 24 | hold 75%",
+      "americanOdds": -268,
+      "americanLabel": "-268",
+      "decimalOdds": 1.373134328358209,
+      "impliedProbability": 0.7282608695652174,
+      "impliedProbabilityLabel": "72.8%"
+    },
+    "opponent": {
+      "id": "rh-atp-challenger-birmingham-virtanen-vs-vukic-2026-06-04:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Aleksandar Vukic",
+      "detail": "Grass | Live rank #96 | Australia | age 30 | hold 100%",
+      "americanOdds": 197,
+      "americanLabel": "+197",
+      "decimalOdds": 2.9699999999999998,
+      "impliedProbability": 0.3367003367003367,
+      "impliedProbabilityLabel": "33.7%"
+    },
+    "lean": "Lean Otto Virtanen; Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+    "rationale": "Our model pick: Otto Virtanen. Aleksandar Vukic has the recent service-hold edge 100% to 75%, so Otto Virtanen needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "confidence": 53.7,
+    "volatility": 46,
+    "recommendationScore": 42,
+    "tier": "Watch",
+    "sourceLabel": "DraftKings Sportsbook",
+    "modelEdge": null,
+    "modelEdgeLabel": "",
+    "marketProbability": 0.7282608695652174,
+    "marketProbabilityLabel": "72.8%",
+    "inputs": [],
+    "inputsUsed": 0,
+    "volatilityNotes": [],
+    "indicators": {}
+  },
+  "metadata": {
+    "participantCount": 2,
+    "participantNames": [
+      "Otto Virtanen",
+      "Aleksandar Vukic"
+    ],
+    "tagCount": 6,
+    "hasSeriesBreakdown": false,
+    "hasMoneyline": true,
+    "hasAnalysisPick": true,
+    "hasStructuredInputs": false,
+    "hasPlayerProps": false,
+    "startMinutes": 240,
+    "spotlight": false,
+    "league": "Tennis",
+    "oddsProvider": "DraftKings Sportsbook"
+  }
+}

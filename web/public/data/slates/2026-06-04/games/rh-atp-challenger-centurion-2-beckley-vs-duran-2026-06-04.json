@@ -1,0 +1,2084 @@
+{
+  "id": "rh-atp-challenger-centurion-2-beckley-vs-duran-2026-06-04",
+  "eventId": "ca93979e-616b-470d-8aad-b23bf7056db4",
+  "league": "Tennis",
+  "start": "1:00 AM",
+  "startMinutes": 60,
+  "title": "Alec Beckley vs Tuncay Duran",
+  "stage": "ATP Challenger Centurion 2 | Round Of 16",
+  "spotlight": false,
+  "confidence": 52,
+  "volatility": 48,
+  "tags": [
+    "ATP Challenger",
+    "Hard",
+    "Prediction market",
+    "Warehouse joined",
+    "Flashscore first",
+    "Coinflip price"
+  ],
+  "matchup": [
+    {
+      "side": "Player 1",
+      "name": "Alec Beckley",
+      "displayName": "Alec Beckley",
+      "detail": "Hard | Live rank #506 | RSA | age 24.9 | hold 75%"
+    },
+    {
+      "side": "Player 2",
+      "name": "Tuncay Duran",
+      "displayName": "Tuncay Duran",
+      "detail": "Hard | Live rank #759 | TUR | age 21.9 | hold 100%"
+    }
+  ],
+  "summary": "Our model pick: Tuncay Duran. Tuncay Duran has the recent service-hold edge 100% to 75%. Lean, not a chase.",
+  "factors": [
+    "Tuncay Duran has the recent service-hold edge 100% to 75%. Lean, not a chase.",
+    "Model 52% vs DraftKings Sportsbook implied 55.6% (-3.6 pts).",
+    "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+    "Wait for a visible service-pressure split before entering.",
+    "Best O/U angle: over if the book hangs a low best-of-five number, because both recent hold profiles can extend sets.",
+    "May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.",
+    "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. ML is close to fair; derivative or live entry needs to carry the edge."
+  ],
+  "lean": "Lean Tuncay Duran; ML is close to fair; derivative or live entry needs to carry the edge.",
+  "swing": "Risk: best-of-five set extension and tiebreak variance.",
+  "swingFactor": "Risk: best-of-five set extension and tiebreak variance.",
+  "odds": {
+    "participantOrder": [
+      0,
+      1
+    ],
+    "markets": [
+      {
+        "label": "Model fair",
+        "book": "Tennis warehouse model",
+        "value": "Alec Beckley 48.4% / Tuncay Duran 52%"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "book": "DraftKings Sportsbook",
+        "value": "Alec Beckley -110 / Tuncay Duran -125"
+      },
+      {
+        "label": "1st set total games",
+        "book": "DraftKings Sportsbook",
+        "value": "9.5 1st-set games: Over -125 / Under -110"
+      }
+    ],
+    "note": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. ML is close to fair; derivative or live entry needs to carry the edge.",
+    "provider": "DraftKings Sportsbook"
+  },
+  "tennisContext": {
+    "surface": "Hard",
+    "court": "ATP Challenger Centurion 2",
+    "h2hLeader": "",
+    "fatigueFlag": false,
+    "liveDog": false,
+    "weaknessEdge": {
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 0,
+      "attackingSide": null,
+      "vulnerableSide": null,
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+      "pick": {
+        "name": "Tuncay Duran",
+        "serviceHoldPct": 100,
+        "firstServeWonPct": null,
+        "secondServeWonPct": null,
+        "firstServePct": null,
+        "avgAces": null,
+        "avgDoubleFaults": null,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": null,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "protects serve well (100% hold)"
+        ],
+        "gameFlowRead": "Tuncay Duran has no major service weakness in the joined Flashscore sample."
+      },
+      "opponent": {
+        "name": "Alec Beckley",
+        "serviceHoldPct": 75,
+        "firstServeWonPct": null,
+        "secondServeWonPct": null,
+        "firstServePct": null,
+        "avgAces": null,
+        "avgDoubleFaults": null,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": null,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [],
+        "gameFlowRead": "Alec Beckley has no major service weakness in the joined Flashscore sample."
+      }
+    },
+    "warehouseContext": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-centurion-2-beckley-vs-duran-2026-06-04",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-04T08:00:00Z",
+      "surface": "Hard",
+      "tournament": "ATP Challenger Centurion 2",
+      "category": "ATP",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Alec Beckley",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "Alec Beckley",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 75,
+              "returnGamesWonPct": 0,
+              "breakPointsSaved": 0,
+              "breakPointsFaced": 1,
+              "breakPointsSavedPct": 0,
+              "breakPointsConverted": 0,
+              "breakPointsToConvert": 1,
+              "breakPointsConvertedPct": 0
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 0,
+                "bpFaced": 1,
+                "bpSavedPct": 0,
+                "bpConverted": 0,
+                "bpChances": 1,
+                "bpConvertedPct": 0
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Alec Beckley",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        },
+        {
+          "name": "Tuncay Duran",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "name": "Tuncay Duran",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 100,
+              "returnGamesWonPct": 25,
+              "breakPointsSaved": 1,
+              "breakPointsFaced": 1,
+              "breakPointsSavedPct": 100,
+              "breakPointsConverted": 1,
+              "breakPointsToConvert": 1,
+              "breakPointsConvertedPct": 100
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 1,
+                "bpFaced": 1,
+                "bpSavedPct": 100,
+                "bpConverted": 1,
+                "bpChances": 1,
+                "bpConvertedPct": 100
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Tuncay Duran",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        }
+      ],
+      "h2h": {
+        "homeName": "Alec Beckley",
+        "awayName": "Tuncay Duran",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Alec Beckley",
+          "awayName": "Tuncay Duran",
+          "homeVotes": 182,
+          "awayVotes": 215,
+          "homePct": 45.8,
+          "awayPct": 54.2
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Alec Beckley",
+            "fractionalValue": "6/5",
+            "impliedPct": 45.5,
+            "expected": 45,
+            "actual": 25
+          },
+          "away": {
+            "name": "Tuncay Duran",
+            "fractionalValue": "8/13",
+            "impliedPct": 61.9,
+            "expected": 62,
+            "actual": 90
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": null,
+          "away": null
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick.",
+        "eventId": "16257311",
+        "sourceUrl": "https://www.sofascore.com/tennis/match/tuncay-duran-alec-beckley#id:16257311",
+        "capturedAt": "2026-06-04T00:25:18.436Z"
+      },
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 16,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "sofascoreData": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-centurion-2-beckley-vs-duran-2026-06-04",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-04T08:00:00Z",
+      "surface": "Hard",
+      "tournament": "ATP Challenger Centurion 2",
+      "category": "ATP",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Alec Beckley",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "Alec Beckley",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 75,
+              "returnGamesWonPct": 0,
+              "breakPointsSaved": 0,
+              "breakPointsFaced": 1,
+              "breakPointsSavedPct": 0,
+              "breakPointsConverted": 0,
+              "breakPointsToConvert": 1,
+              "breakPointsConvertedPct": 0
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 0,
+                "bpFaced": 1,
+                "bpSavedPct": 0,
+                "bpConverted": 0,
+                "bpChances": 1,
+                "bpConvertedPct": 0
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Alec Beckley",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        },
+        {
+          "name": "Tuncay Duran",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "name": "Tuncay Duran",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 100,
+              "returnGamesWonPct": 25,
+              "breakPointsSaved": 1,
+              "breakPointsFaced": 1,
+              "breakPointsSavedPct": 100,
+              "breakPointsConverted": 1,
+              "breakPointsToConvert": 1,
+              "breakPointsConvertedPct": 100
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 1,
+                "bpFaced": 1,
+                "bpSavedPct": 100,
+                "bpConverted": 1,
+                "bpChances": 1,
+                "bpConvertedPct": 100
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Tuncay Duran",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        }
+      ],
+      "h2h": {
+        "homeName": "Alec Beckley",
+        "awayName": "Tuncay Duran",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Alec Beckley",
+          "awayName": "Tuncay Duran",
+          "homeVotes": 182,
+          "awayVotes": 215,
+          "homePct": 45.8,
+          "awayPct": 54.2
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Alec Beckley",
+            "fractionalValue": "6/5",
+            "impliedPct": 45.5,
+            "expected": 45,
+            "actual": 25
+          },
+          "away": {
+            "name": "Tuncay Duran",
+            "fractionalValue": "8/13",
+            "impliedPct": 61.9,
+            "expected": 62,
+            "actual": 90
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": null,
+          "away": null
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick.",
+        "eventId": "16257311",
+        "sourceUrl": "https://www.sofascore.com/tennis/match/tuncay-duran-alec-beckley#id:16257311",
+        "capturedAt": "2026-06-04T00:25:18.436Z"
+      },
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 16,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "players": [
+      {
+        "name": "Alec Beckley",
+        "rank": 506,
+        "label": "Alec Beckley",
+        "form": null,
+        "boardPct": 48.4,
+        "decimalOdds": 1.909,
+        "marketLabel": "-110 / 52.4% implied",
+        "clayLine": "Hard | Live rank #506 | RSA | age 24.9 | hold 75%",
+        "weakness": {
+          "name": "Alec Beckley",
+          "serviceHoldPct": 75,
+          "firstServeWonPct": null,
+          "secondServeWonPct": null,
+          "firstServePct": null,
+          "avgAces": null,
+          "avgDoubleFaults": null,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": null,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [],
+          "gameFlowRead": "Alec Beckley has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseStats": {
+          "name": "Alec Beckley",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "Alec Beckley",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 75,
+              "returnGamesWonPct": 0,
+              "breakPointsSaved": 0,
+              "breakPointsFaced": 1,
+              "breakPointsSavedPct": 0,
+              "breakPointsConverted": 0,
+              "breakPointsToConvert": 1,
+              "breakPointsConvertedPct": 0
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 0,
+                "bpFaced": 1,
+                "bpSavedPct": 0,
+                "bpConverted": 0,
+                "bpChances": 1,
+                "bpConvertedPct": 0
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Alec Beckley",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        },
+        "record2026": "",
+        "notes": "Opponent case: model 48%",
+        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
+      },
+      {
+        "name": "Tuncay Duran",
+        "rank": 759,
+        "label": "Tuncay Duran",
+        "form": null,
+        "boardPct": 52,
+        "decimalOdds": 1.8,
+        "marketLabel": "-125 / 55.6% implied",
+        "clayLine": "Hard | Live rank #759 | TUR | age 21.9 | hold 100%",
+        "weakness": {
+          "name": "Tuncay Duran",
+          "serviceHoldPct": 100,
+          "firstServeWonPct": null,
+          "secondServeWonPct": null,
+          "firstServePct": null,
+          "avgAces": null,
+          "avgDoubleFaults": null,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": null,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "protects serve well (100% hold)"
+          ],
+          "gameFlowRead": "Tuncay Duran has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseStats": {
+          "name": "Tuncay Duran",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "name": "Tuncay Duran",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 100,
+              "returnGamesWonPct": 25,
+              "breakPointsSaved": 1,
+              "breakPointsFaced": 1,
+              "breakPointsSavedPct": 100,
+              "breakPointsConverted": 1,
+              "breakPointsToConvert": 1,
+              "breakPointsConvertedPct": 100
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 1,
+                "bpFaced": 1,
+                "bpSavedPct": 100,
+                "bpConverted": 1,
+                "bpChances": 1,
+                "bpConvertedPct": 100
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Tuncay Duran",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        },
+        "record2026": "",
+        "notes": "Pick: model 52%",
+        "matchupNote": "Why pick: Tuncay Duran has the recent service-hold edge 100% to 75%. Lean, not a chase."
+      }
+    ],
+    "comparisonRows": [
+      {
+        "label": "Model pick",
+        "metric": "Fair win split",
+        "leftScore": 48.4,
+        "rightScore": 52,
+        "leftLabel": "Alec Beckley",
+        "rightLabel": "Tuncay Duran",
+        "winner": "Tuncay Duran"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "metric": "Implied price",
+        "leftScore": 52.4,
+        "rightScore": 55.6,
+        "leftLabel": "Alec Beckley",
+        "rightLabel": "Tuncay Duran",
+        "winner": "ML is close to fair; derivative or live entry needs to carry the edge."
+      },
+      {
+        "label": "Weakness",
+        "metric": "Lower is cleaner",
+        "leftScore": 0,
+        "rightScore": 0,
+        "leftLabel": "Alec Beckley",
+        "rightLabel": "Tuncay Duran",
+        "winner": "No clear weakness edge"
+      },
+      {
+        "label": "Volatility",
+        "metric": "Lower is cleaner",
+        "leftScore": 48,
+        "rightScore": 52,
+        "leftLabel": "Risk",
+        "rightLabel": "Stability",
+        "winner": "Stable enough"
+      }
+    ],
+    "predictionMarket": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T03:58:54.329Z",
+      "totalVolume": null,
+      "players": [
+        {
+          "name": "Alec Beckley",
+          "probabilityPct": 52.4,
+          "amount": null,
+          "americanOdds": -110,
+          "edgePct": -4,
+          "priceBand": "Coinflip"
+        },
+        {
+          "name": "Tuncay Duran",
+          "probabilityPct": 55.6,
+          "amount": null,
+          "americanOdds": -125,
+          "edgePct": -3.6,
+          "priceBand": "Coinflip"
+        }
+      ]
+    },
+    "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Tuncay Duran",
+        "line": null,
+        "americanOdds": -125,
+        "modelPct": 52,
+        "impliedPct": 55.6,
+        "edgePct": -3.6,
+        "evPer100": -6.4,
+        "netEvPer100": -8.4,
+        "grade": "Negative EV",
+        "issue": "Favorite price needs better proof",
+        "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "No bet",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": null,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": null,
+        "grade": "No direction",
+        "reason": "Total games need expected match games vs the posted line."
+      },
+      {
+        "marketType": "Win a set",
+        "label": "Win a set %",
+        "selection": "Alec Beckley 70% / Tuncay Duran 60%",
+        "rows": [
+          {
+            "name": "Alec Beckley",
+            "confidence": 70,
+            "modelPct": 48.4,
+            "label": "Underdog set-win path needs early holds"
+          },
+          {
+            "name": "Tuncay Duran",
+            "confidence": 60,
+            "modelPct": 52,
+            "label": "Market favorite to win a set"
+          }
+        ],
+        "confidence": 70,
+        "grade": "Price required",
+        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Pass / near line",
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "grade": "Near fair",
+        "reason": "Expected first-set games 9.5 vs DraftKings Sportsbook 9.5; Pass / near line."
+      }
+    ],
+    "derivativeMarketCase": null,
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Tuncay Duran",
+        "americanOdds": -125,
+        "modelPct": 52,
+        "impliedPct": 55.6,
+        "edgePct": -3.6,
+        "evPer100": -6.4,
+        "netEvPer100": -8.4,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Negative EV",
+        "betGrade": false
+      },
+      "spread": null,
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Pass / near line",
+        "line": 9.5,
+        "americanOdds": null,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Near fair",
+        "reason": "Expected first-set games 9.5 vs DraftKings Sportsbook 9.5; Pass / near line.",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Alec Beckley",
+          "confidence": 70,
+          "modelPct": 48.4,
+          "label": "Underdog set-win path needs early holds",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Tuncay Duran",
+          "confidence": 60,
+          "modelPct": 52,
+          "label": "Market favorite to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "ensembleValueCase": null,
+    "projection": {
+      "projectedWinner": "Tuncay Duran",
+      "projectedSetLine": "2-0/2-1 range",
+      "setWinProjections": [
+        {
+          "name": "Alec Beckley",
+          "confidence": 70,
+          "modelPct": 48.4,
+          "label": "Underdog set-win path needs early holds"
+        },
+        {
+          "name": "Tuncay Duran",
+          "confidence": 60,
+          "modelPct": 52,
+          "label": "Market favorite to win a set"
+        }
+      ],
+      "totalGames": null,
+      "straightSetsProbability": 48,
+      "upsetRisk": 48,
+      "overview": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "fantasy": []
+    },
+    "tradePlan": {
+      "laneLabel": "ML is close to fair; derivative or live entry needs to carry the edge.",
+      "summary": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "trigger": "Wait for a visible service-pressure split before entering.",
+      "headline": "No clear weakness edge",
+      "exit": "No spread line",
+      "tone": "warning"
+    },
+    "derivativeMarkets": [
+      {
+        "label": "ML",
+        "value": "Tuncay Duran -125; Model 52% vs DraftKings Sportsbook implied 55.6% (-3.6 pts).",
+        "lean": "ML is close to fair; derivative or live entry needs to carry the edge.",
+        "confidence": 52,
+        "marketType": "ML",
+        "selection": "Tuncay Duran",
+        "americanOdds": -125,
+        "modelPct": 52,
+        "impliedPct": 55.6,
+        "edgePct": -3.6,
+        "evPer100": -6.4,
+        "netEvPer100": -8.4,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Negative EV",
+        "betGrade": false,
+        "tone": "neutral",
+        "reason": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. ML is close to fair; derivative or live entry needs to carry the edge."
+      },
+      {
+        "label": "Win a set",
+        "value": "No set-win price captured",
+        "lean": "Underdog set-win path needs early holds",
+        "confidence": 70,
+        "setWinRows": [],
+        "valueGrade": "Needs posted price",
+        "tone": "accent",
+        "reason": "Best-of-five gives the non-ML side more room to win a set; use this to separate upset risk from match-winner confidence."
+      },
+      {
+        "label": "Spread",
+        "value": "No primary game spread captured",
+        "lean": "No spread line",
+        "confidence": 50,
+        "tone": "neutral",
+        "reason": "Wait for a visible service-pressure split before entering."
+      },
+      {
+        "label": "O/U",
+        "value": "No total captured",
+        "lean": "No bet",
+        "confidence": 50,
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st set O/U",
+        "value": "Line 9.5",
+        "lean": "Pass / near line",
+        "confidence": 50,
+        "marketType": "First-set total",
+        "selection": "Pass / near line",
+        "line": 9.5,
+        "americanOdds": null,
+        "expectedGames": 9.5,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Near fair",
+        "reason": "Expected first-set games 9.5 vs DraftKings Sportsbook 9.5; Pass / near line.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st service game",
+        "value": "No first-service-game market captured",
+        "lean": "First-service-game prices",
+        "confidence": 52,
+        "firstServiceGameRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-service-game market captured."
+      },
+      {
+        "label": "First games",
+        "value": "No first-game prop market captured",
+        "lean": "First-game prop prices",
+        "confidence": 52,
+        "firstGamePropRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-games prop captured."
+      }
+    ],
+    "marketEconomics": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T03:58:54.329Z",
+      "eventUrl": "https://sportsbook.draftkings.com/leagues/tennis/challenger-centurion-2?event=34236801",
+      "deskName": "Tuncay Duran",
+      "deskPricePct": 55.6,
+      "deskEdgePct": -3.6,
+      "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge.",
+      "players": [
+        {
+          "name": "Alec Beckley",
+          "americanOdds": -110,
+          "impliedPct": 52.4,
+          "modelPct": 48.4,
+          "edgePct": -4,
+          "priceBand": "Coinflip",
+          "grossProfitPct": 90.9,
+          "grossPayoutMultiple": 1.909,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 90.9,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        },
+        {
+          "name": "Tuncay Duran",
+          "americanOdds": -125,
+          "impliedPct": 55.6,
+          "modelPct": 52,
+          "edgePct": -3.6,
+          "priceBand": "Coinflip",
+          "grossProfitPct": 80,
+          "grossPayoutMultiple": 1.8,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 80,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        }
+      ]
+    },
+    "clayMatchupData": {
+      "title": "Alec Beckley vs Tuncay Duran",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Alec-Beckley-Vs-Tuncay-Duran/",
+      "h2hText": "0:1",
+      "h2hRecord": "0:1",
+      "prediction": "Duran in 3",
+      "players": [
+        {
+          "name": "Alec Beckley",
+          "record2026": {
+            "overall": "24-6",
+            "hard": "24-4",
+            "clay": "0-2",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Centurion 2 Challenger\nDominik Palan\nCZE  6-3 6-3 1st\n02 Jun 26",
+              "event": "Centurion 2 Challenger",
+              "opponent": "Dominik Palan",
+              "result": "CZE  6-3 6-3 1st",
+              "date": "02 Jun 26"
+            },
+            {
+              "raw": "Thando Longwe-Smit\nRSA  6-2 6-3 Q.\n01 Jun 26",
+              "event": "",
+              "opponent": "Thando Longwe-Smit",
+              "result": "RSA  6-2 6-3 Q.",
+              "date": "01 Jun 26"
+            },
+            {
+              "raw": "Alexander Zgirovsky\nBLR  6-4 6-4 q1\n31 May 26",
+              "event": "",
+              "opponent": "Alexander Zgirovsky",
+              "result": "BLR  6-4 6-4 q1",
+              "date": "31 May 26"
+            },
+            {
+              "raw": "Centurion 1 Challenger\nStefano Napolitano\nITA   Loss 6-4 6-2 2nd\n28 May 26",
+              "event": "Centurion 1 Challenger",
+              "opponent": "Stefano Napolitano",
+              "result": "ITA   Loss 6-4 6-2 2nd",
+              "date": "28 May 26"
+            },
+            {
+              "raw": "Constantin Bittoun Kouzmine\nFRA  3-6 6-1 6-4 1st\n26 May 26",
+              "event": "",
+              "opponent": "Constantin Bittoun Kouzmine",
+              "result": "FRA  3-6 6-1 6-4 1st",
+              "date": "26 May 26"
+            },
+            {
+              "raw": "Thando Longwe-Smit\nRSA  6-3 6-74 6-2 Q.\n25 May 26",
+              "event": "",
+              "opponent": "Thando Longwe-Smit",
+              "result": "RSA  6-3 6-74 6-2 Q.",
+              "date": "25 May 26"
+            },
+            {
+              "raw": "M15 Gaborone\nCooper Williams\nUSA  4-1 ret. Fin.\n24 May 26",
+              "event": "M15 Gaborone",
+              "opponent": "Cooper Williams",
+              "result": "USA  4-1 ret. Fin.",
+              "date": "24 May 26"
+            },
+            {
+              "raw": "Centurion 1 Challenger\nTy Host\nAUS  3-6 6-3 6-2 q1\n24 May 26",
+              "event": "Centurion 1 Challenger",
+              "opponent": "Ty Host",
+              "result": "AUS  3-6 6-3 6-2 q1",
+              "date": "24 May 26"
+            }
+          ]
+        },
+        {
+          "name": "Tuncay Duran",
+          "record2026": {
+            "overall": "19-9",
+            "hard": "19-8",
+            "clay": "0-1",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Centurion 2 Challenger\nStefano Napolitano\nITA  6-75 7-62 3-0 ret. 1st\n02 Jun 26",
+              "event": "Centurion 2 Challenger",
+              "opponent": "Stefano Napolitano",
+              "result": "ITA  6-75 7-62 3-0 ret. 1st",
+              "date": "02 Jun 26"
+            },
+            {
+              "raw": "Kris Van Wyk\nRSA  6-3 6-2 Q.\n01 Jun 26",
+              "event": "",
+              "opponent": "Kris Van Wyk",
+              "result": "RSA  6-3 6-2 Q.",
+              "date": "01 Jun 26"
+            },
+            {
+              "raw": "Stefan Vujic\nAUS  6-4 7-65 q1\n31 May 26",
+              "event": "",
+              "opponent": "Stefan Vujic",
+              "result": "AUS  6-4 7-65 q1",
+              "date": "31 May 26"
+            },
+            {
+              "raw": "Centurion 1 Challenger\nOrel Kimhi\nISR   Loss 6-3 6-3 Q.\n25 May 26",
+              "event": "Centurion 1 Challenger",
+              "opponent": "Orel Kimhi",
+              "result": "ISR   Loss 6-3 6-3 Q.",
+              "date": "25 May 26"
+            },
+            {
+              "raw": "Edison Ambarzumjan\nGER  6-4 6-4 q1\n24 May 26",
+              "event": "",
+              "opponent": "Edison Ambarzumjan",
+              "result": "GER  6-4 6-4 q1",
+              "date": "24 May 26"
+            },
+            {
+              "raw": "Istanbul Challenger\nFranco Agamenone\nITA   Loss 6-3 6-2 1st\n18 May 26",
+              "event": "Istanbul Challenger",
+              "opponent": "Franco Agamenone",
+              "result": "ITA   Loss 6-3 6-2 1st",
+              "date": "18 May 26"
+            },
+            {
+              "raw": "M15 Mbombela\nGiulio Perego\nITA   Loss 3-6 7-67 10-6 1/2\n02 May 26",
+              "event": "M15 Mbombela",
+              "opponent": "Giulio Perego",
+              "result": "ITA   Loss 3-6 7-67 10-6 1/2",
+              "date": "02 May 26"
+            },
+            {
+              "raw": "Jordan Hasson\nISR  6-4 6-1 1/4\n01 May 26",
+              "event": "",
+              "opponent": "Jordan Hasson",
+              "result": "ISR  6-4 6-1 1/4",
+              "date": "01 May 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": "Tuncay Duran is good, but not spotless on clay at 0-1. Alec Beckley has multiple recent clay matches with a tiebreak or three-set shape, which points toward set-extension or game-spread value if the number is generous. Tuncay Duran's recent clay record has enough pressure games that the lower-priced side can re-rate quickly if the first set stays on serve."
+    },
+    "opponentQualityData": {
+      "title": "Alec Beckley vs Tuncay Duran",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Alec-Beckley-Vs-Tuncay-Duran/",
+      "h2hRecord": "0:1",
+      "tennistonicPrediction": "Duran in 3",
+      "players": [
+        {
+          "name": "Alec Beckley",
+          "ranking": null,
+          "records": {
+            "overall2026": {
+              "wins": 24,
+              "losses": 6,
+              "total": 30,
+              "winPct": 0.8
+            },
+            "clay2026": {
+              "wins": 0,
+              "losses": 2,
+              "total": 2,
+              "winPct": 0
+            },
+            "raw": {
+              "overall": "24-6",
+              "hard": "24-4",
+              "clay": "0-2",
+              "indoorHard": "0-0",
+              "grass": "0-0",
+              "carpet": "0-0"
+            }
+          },
+          "recentWindow": {
+            "matches": 8,
+            "completed": 8,
+            "wins": 7,
+            "losses": 1,
+            "winPct": 0.875,
+            "setsWon": 13,
+            "setsLost": 5,
+            "setPct": 0.722,
+            "gamesWon": 94,
+            "gamesLost": 66,
+            "gamePct": 0.588,
+            "resistanceMatches": 3,
+            "straightSetWins": 3,
+            "straightSetLosses": 1,
+            "avgKnownOpponentRank": null,
+            "knownOpponentRanks": 0,
+            "missingOpponentRanks": 8,
+            "top10Opponents": 0,
+            "top25Opponents": 0,
+            "top50Opponents": 0,
+            "challengerOrItfMatches": 3,
+            "rankingCoveragePct": 0,
+            "scorelineFormScore": 103.6,
+            "opponentAdjustedFormScore": null
+          },
+          "serviceData": {
+            "source": "not available in Tennistonic scrape",
+            "matchesWithStats": 0,
+            "avgServiceHoldPct": null,
+            "avgAces": null,
+            "avgFirstServeWonPct": null,
+            "note": "Recent scores support set/game resistance only until a Flashscore recent-match stat row is resolved."
+          },
+          "recentMatches": [
+            {
+              "event": "Centurion 2 Challenger",
+              "eventTier": "challenger",
+              "opponent": "Dominik Palan",
+              "opponentRanking": null,
+              "result": "CZE  6-3 6-3 1st",
+              "date": "02 Jun 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 12,
+                "gamesLost": 6,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": 0.492,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Thando Longwe-Smit",
+              "opponentRanking": null,
+              "result": "RSA  6-2 6-3 Q.",
+              "date": "01 Jun 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 12,
+                "gamesLost": 5,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.58,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Alexander Zgirovsky",
+              "opponentRanking": null,
+              "result": "BLR  6-4 6-4 q1",
+              "date": "31 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 12,
+                "gamesLost": 8,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.55,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Centurion 1 Challenger",
+              "eventTier": "challenger",
+              "opponent": "Stefano Napolitano",
+              "opponentRanking": null,
+              "result": "ITA   Loss 6-4 6-2 2nd",
+              "date": "28 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 6,
+                "gamesLost": 12,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": -0.008,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Constantin Bittoun Kouzmine",
+              "opponentRanking": null,
+              "result": "FRA  3-6 6-1 6-4 1st",
+              "date": "26 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 2,
+                "setsLost": 1,
+                "gamesWon": 15,
+                "gamesLost": 11,
+                "tiebreakSets": 0,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 3,
+                    "rightGames": 6,
+                    "raw": "3-6"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 1,
+                    "raw": "6-1"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.63,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Thando Longwe-Smit",
+              "opponentRanking": null,
+              "result": "RSA  6-3 6-74 6-2 Q.",
+              "date": "25 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 2,
+                "setsLost": 1,
+                "gamesWon": 18,
+                "gamesLost": 12,
+                "tiebreakSets": 1,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 7,
+                    "raw": "6-74"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.65,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "M15 Gaborone",
+              "eventTier": "tour/other",
+              "opponent": "Cooper Williams",
+              "opponentRanking": null,
+              "result": "USA  4-1 ret. Fin.",
+              "date": "24 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": true,
+                "walkover": false,
+                "setsPlayed": 1,
+                "setsWon": 1,
+                "setsLost": 0,
+                "gamesWon": 4,
+                "gamesLost": 1,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 4,
+                    "rightGames": 1,
+                    "raw": "4-1"
+                  }
+                ]
+              },
+              "opponentWeight": 0.6,
+              "qualityPoints": 0.63,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Centurion 1 Challenger",
+              "eventTier": "challenger",
+              "opponent": "Ty Host",
+              "opponentRanking": null,
+              "result": "AUS  3-6 6-3 6-2 q1",
+              "date": "24 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 2,
+                "setsLost": 1,
+                "gamesWon": 15,
+                "gamesLost": 11,
+                "tiebreakSets": 0,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 3,
+                    "rightGames": 6,
+                    "raw": "3-6"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": 0.552,
+              "flashscore": null,
+              "serviceStats": null
+            }
+          ]
+        },
+        {
+          "name": "Tuncay Duran",
+          "ranking": null,
+          "records": {
+            "overall2026": {
+              "wins": 19,
+              "losses": 9,
+              "total": 28,
+              "winPct": 0.679
+            },
+            "clay2026": {
+              "wins": 0,
+              "losses": 1,
+              "total": 1,
+              "winPct": 0
+            },
+            "raw": {
+              "overall": "19-9",
+              "hard": "19-8",
+              "clay": "0-1",
+              "indoorHard": "0-0",
+              "grass": "0-0",
+              "carpet": "0-0"
+            }
+          },
+          "recentWindow": {
+            "matches": 8,
+            "completed": 8,
+            "wins": 5,
+            "losses": 3,
+            "winPct": 0.625,
+            "setsWon": 12,
+            "setsLost": 6,
+            "setPct": 0.667,
+            "gamesWon": 94,
+            "gamesLost": 75,
+            "gamePct": 0.556,
+            "resistanceMatches": 3,
+            "straightSetWins": 4,
+            "straightSetLosses": 2,
+            "avgKnownOpponentRank": null,
+            "knownOpponentRanks": 0,
+            "missingOpponentRanks": 8,
+            "top10Opponents": 0,
+            "top25Opponents": 0,
+            "top50Opponents": 0,
+            "challengerOrItfMatches": 3,
+            "rankingCoveragePct": 0,
+            "scorelineFormScore": 81.9,
+            "opponentAdjustedFormScore": null
+          },
+          "serviceData": {
+            "source": "not available in Tennistonic scrape",
+            "matchesWithStats": 0,
+            "avgServiceHoldPct": null,
+            "avgAces": null,
+            "avgFirstServeWonPct": null,
+            "note": "Recent scores support set/game resistance only until a Flashscore recent-match stat row is resolved."
+          },
+          "recentMatches": [
+            {
+              "event": "Centurion 2 Challenger",
+              "eventTier": "challenger",
+              "opponent": "Stefano Napolitano",
+              "opponentRanking": null,
+              "result": "ITA  6-75 7-62 3-0 ret. 1st",
+              "date": "02 Jun 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": true,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 2,
+                "setsLost": 1,
+                "gamesWon": 16,
+                "gamesLost": 13,
+                "tiebreakSets": 2,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 7,
+                    "raw": "6-75"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-62"
+                  },
+                  {
+                    "leftGames": 3,
+                    "rightGames": 0,
+                    "raw": "3-0"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": 0.542,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Kris Van Wyk",
+              "opponentRanking": null,
+              "result": "RSA  6-3 6-2 Q.",
+              "date": "01 Jun 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 12,
+                "gamesLost": 5,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.58,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Stefan Vujic",
+              "opponentRanking": null,
+              "result": "AUS  6-4 7-65 q1",
+              "date": "31 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 13,
+                "gamesLost": 10,
+                "tiebreakSets": 1,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-65"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.62,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Centurion 1 Challenger",
+              "eventTier": "challenger",
+              "opponent": "Orel Kimhi",
+              "opponentRanking": null,
+              "result": "ISR   Loss 6-3 6-3 Q.",
+              "date": "25 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 6,
+                "gamesLost": 12,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": -0.008,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Edison Ambarzumjan",
+              "opponentRanking": null,
+              "result": "GER  6-4 6-4 q1",
+              "date": "24 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 12,
+                "gamesLost": 8,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.55,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Istanbul Challenger",
+              "eventTier": "challenger",
+              "opponent": "Franco Agamenone",
+              "opponentRanking": null,
+              "result": "ITA   Loss 6-3 6-2 1st",
+              "date": "18 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 5,
+                "gamesLost": 12,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": -0.018,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "M15 Mbombela",
+              "eventTier": "tour/other",
+              "opponent": "Giulio Perego",
+              "opponentRanking": null,
+              "result": "ITA   Loss 3-6 7-67 10-6 1/2",
+              "date": "02 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 2,
+                "setsLost": 1,
+                "gamesWon": 18,
+                "gamesLost": 10,
+                "tiebreakSets": 1,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 3,
+                    "rightGames": 6,
+                    "raw": "3-6"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-67"
+                  },
+                  {
+                    "leftGames": 0,
+                    "rightGames": 6,
+                    "raw": "0-6"
+                  }
+                ]
+              },
+              "opponentWeight": 0.6,
+              "qualityPoints": 0.376,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Jordan Hasson",
+              "opponentRanking": null,
+              "result": "ISR  6-4 6-1 1/4",
+              "date": "01 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 12,
+                "gamesLost": 5,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 1,
+                    "raw": "6-1"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.58,
+              "flashscore": null,
+              "serviceStats": null
+            }
+          ]
+        }
+      ],
+      "matchupRead": "Alec Beckley owns the stronger 2026 clay record by 0.0 percentage points. Alec Beckley leads the current scoreline-form score by 21.7 points before opponent rankings are applied. 16 recent-opponent rankings are still missing, so this read should be treated as partially ranked until the ranking warehouse is filled."
+    },
+    "researchLinks": [
+      {
+        "label": "ESPN scoreboard",
+        "url": "https://www.espn.com/tennis/scoreboard/_/date/20260604"
+      },
+      {
+        "label": "Tennistonic H2H",
+        "url": "https://tennistonic.com/head-to-head-compare/Alec-Beckley-Vs-Tuncay-Duran/"
+      },
+      {
+        "label": "DraftKings Sportsbook event",
+        "url": "https://sportsbook.draftkings.com/leagues/tennis/challenger-centurion-2?event=34236801"
+      }
+    ],
+    "formEdgeName": "Tuncay Duran"
+  },
+  "participants": [
+    {
+      "id": "rh-atp-challenger-centurion-2-beckley-vs-duran-2026-06-04:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Alec Beckley",
+      "detail": "Hard | Live rank #506 | RSA | age 24.9 | hold 75%",
+      "americanOdds": -110,
+      "americanLabel": "-110",
+      "decimalOdds": 1.9090909090909092,
+      "impliedProbability": 0.5238095238095238,
+      "impliedProbabilityLabel": "52.4%"
+    },
+    {
+      "id": "rh-atp-challenger-centurion-2-beckley-vs-duran-2026-06-04:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Tuncay Duran",
+      "detail": "Hard | Live rank #759 | TUR | age 21.9 | hold 100%",
+      "americanOdds": -125,
+      "americanLabel": "-125",
+      "decimalOdds": 1.8,
+      "impliedProbability": 0.5555555555555556,
+      "impliedProbabilityLabel": "55.6%"
+    }
+  ],
+  "moneyline": {
+    "available": true,
+    "label": "DraftKings Sportsbook moneyline",
+    "provider": "DraftKings Sportsbook",
+    "participants": [
+      {
+        "id": "rh-atp-challenger-centurion-2-beckley-vs-duran-2026-06-04:0",
+        "index": 0,
+        "role": "Player 1",
+        "name": "Alec Beckley",
+        "detail": "Hard | Live rank #506 | RSA | age 24.9 | hold 75%",
+        "americanOdds": -110,
+        "americanLabel": "-110",
+        "decimalOdds": 1.9090909090909092,
+        "impliedProbability": 0.5238095238095238,
+        "impliedProbabilityLabel": "52.4%"
+      },
+      {
+        "id": "rh-atp-challenger-centurion-2-beckley-vs-duran-2026-06-04:1",
+        "index": 1,
+        "role": "Player 2",
+        "name": "Tuncay Duran",
+        "detail": "Hard | Live rank #759 | TUR | age 21.9 | hold 100%",
+        "americanOdds": -125,
+        "americanLabel": "-125",
+        "decimalOdds": 1.8,
+        "impliedProbability": 0.5555555555555556,
+        "impliedProbabilityLabel": "55.6%"
+      }
+    ]
+  },
+  "analysis": {
+    "available": true,
+    "participantId": "rh-atp-challenger-centurion-2-beckley-vs-duran-2026-06-04:1",
+    "participant": {
+      "id": "rh-atp-challenger-centurion-2-beckley-vs-duran-2026-06-04:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Tuncay Duran",
+      "detail": "Hard | Live rank #759 | TUR | age 21.9 | hold 100%",
+      "americanOdds": -125,
+      "americanLabel": "-125",
+      "decimalOdds": 1.8,
+      "impliedProbability": 0.5555555555555556,
+      "impliedProbabilityLabel": "55.6%"
+    },
+    "opponent": {
+      "id": "rh-atp-challenger-centurion-2-beckley-vs-duran-2026-06-04:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Alec Beckley",
+      "detail": "Hard | Live rank #506 | RSA | age 24.9 | hold 75%",
+      "americanOdds": -110,
+      "americanLabel": "-110",
+      "decimalOdds": 1.9090909090909092,
+      "impliedProbability": 0.5238095238095238,
+      "impliedProbabilityLabel": "52.4%"
+    },
+    "lean": "Lean Tuncay Duran; ML is close to fair; derivative or live entry needs to carry the edge.",
+    "rationale": "Our model pick: Tuncay Duran. Tuncay Duran has the recent service-hold edge 100% to 75%. Lean, not a chase.",
+    "confidence": 52,
+    "volatility": 48,
+    "recommendationScore": 40,
+    "tier": "Watch",
+    "sourceLabel": "DraftKings Sportsbook",
+    "modelEdge": null,
+    "modelEdgeLabel": "",
+    "marketProbability": 0.5555555555555556,
+    "marketProbabilityLabel": "55.6%",
+    "inputs": [],
+    "inputsUsed": 0,
+    "volatilityNotes": [],
+    "indicators": {}
+  },
+  "metadata": {
+    "participantCount": 2,
+    "participantNames": [
+      "Alec Beckley",
+      "Tuncay Duran"
+    ],
+    "tagCount": 6,
+    "hasSeriesBreakdown": false,
+    "hasMoneyline": true,
+    "hasAnalysisPick": true,
+    "hasStructuredInputs": false,
+    "hasPlayerProps": false,
+    "startMinutes": 60,
+    "spotlight": false,
+    "league": "Tennis",
+    "oddsProvider": "DraftKings Sportsbook"
+  }
+}

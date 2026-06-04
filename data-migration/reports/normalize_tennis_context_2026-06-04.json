@@ -1,0 +1,19 @@
+{
+  "date": "2026-06-04",
+  "dry_run": false,
+  "family": "tennis_context",
+  "generated_at": "2026-06-04T00:10:38.818306+00:00",
+  "inserted_match_context_snapshots": 0,
+  "inserted_player_form_snapshots": 0,
+  "match_context_rows": 0,
+  "ok": true,
+  "parsed_match_snapshots": 0,
+  "parsed_player_snapshots": 0,
+  "parser_module": "pipeline/sources/tennis/normalization/context.py",
+  "player_context_rows": 0,
+  "script": "data-migration/scripts/normalize_tennis_context.py",
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "source_rows": 0,
+  "unparsed_rows": 0,
+  "unresolved_rows_added": 0
+}

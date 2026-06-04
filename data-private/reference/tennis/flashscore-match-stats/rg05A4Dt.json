@@ -1,0 +1,525 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-birmingham-shimabukuro-vs-ymer-2026-06-04",
+  "boardTitle": "Sho Shimabukuro vs Elias Ymer",
+  "boardPlayerName": "Sho Shimabukuro",
+  "recentOpponentName": "Mochizuki S.",
+  "recentIndex": 0,
+  "recentEvent": "Birmingham (United Kingdom)",
+  "recentDate": "Jun 03, 26",
+  "recentIsoDate": "2026-06-03",
+  "recentResult": "Win 7-6 6-4",
+  "recentSurface": "Grass",
+  "flashscoreLabel": "Shimabukuro S. - Mochizuki S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/birmingham/",
+  "players": [
+    "Shimabukuro S.",
+    "Mochizuki S."
+  ],
+  "generatedAt": "2026-06-04T00:09:21.915Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/rg05A4Dt/",
+  "matchId": "rg05A4Dt",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_rg05A4Dt",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_rg05A4Dt"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 3,
+        "duration": "0:59"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:37"
+      }
+    ],
+    "totalDuration": "1:36"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "2",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "49%",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (32/41)",
+              "right": "70% (26/37)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (20/38)",
+              "right": "45% (17/38)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "4/7",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (11/37)",
+              "right": "22% (9/41)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (21/38)",
+              "right": "47% (18/38)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "2/5",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "24",
+              "right": "17",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "28",
+              "right": "32",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Net points won",
+              "left": "63% (5/8)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (52/79)",
+              "right": "57% (43/75)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (32/75)",
+              "right": "34% (27/79)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (84/154)",
+              "right": "45% (70/154)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "82% (9/11)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Return games won",
+              "left": "27% (3/11)",
+              "right": "18% (2/11)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Total games won",
+              "left": "55% (12/22)",
+              "right": "45% (10/22)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "45%",
+              "right": "40%",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (17/22)",
+              "right": "74% (14/19)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (13/27)",
+              "right": "39% (11/28)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "3/5",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (5/19)",
+              "right": "23% (5/22)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "61% (17/28)",
+              "right": "52% (14/27)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "2/4",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "9",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "23",
+              "right": "24",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (30/49)",
+              "right": "53% (25/47)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (22/47)",
+              "right": "39% (19/49)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (52/96)",
+              "right": "46% (44/96)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "64%",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (15/19)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (7/11)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "1/2",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (6/18)",
+              "right": "21% (4/19)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (4/10)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/1",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "8",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "8",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Net points won",
+              "left": "63% (5/8)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "73% (22/30)",
+              "right": "64% (18/28)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (10/28)",
+              "right": "27% (8/30)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (32/58)",
+              "right": "45% (26/58)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Shimabukuro S.",
+              "rightPlayer": "Mochizuki S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

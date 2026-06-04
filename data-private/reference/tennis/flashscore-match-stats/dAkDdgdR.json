@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-centurion-2-bertrand-vs-hussey-2026-06-04",
+  "boardTitle": "Giles Hussey vs Robin Bertrand",
+  "boardPlayerName": "Giles Hussey",
+  "recentOpponentName": "Sasikumar M.",
+  "recentIndex": 0,
+  "recentEvent": "Centurion 2 (South Africa)",
+  "recentDate": "Jun 02, 26",
+  "recentIsoDate": "2026-06-02",
+  "recentResult": "Win 7-5 6-2",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Sasikumar M. - Hussey G.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+  "players": [
+    "Sasikumar M.",
+    "Hussey G."
+  ],
+  "generatedAt": "2026-06-04T00:09:19.266Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/dAkDdgdR/",
+  "matchId": "dAkDdgdR",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_dAkDdgdR",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_dAkDdgdR"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:58"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": "0:49"
+      }
+    ],
+    "totalDuration": "1:47"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "5",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "72%",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (21/37)",
+              "right": "67% (35/52)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (14/33)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/9",
+              "right": "6/8",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (18/52)",
+              "right": "43% (16/37)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (11/20)",
+              "right": "58% (19/33)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/8",
+              "right": "5/9",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "11",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "48",
+              "right": "36",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "51% (36/71)",
+              "right": "61% (44/72)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (28/72)",
+              "right": "49% (35/71)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (64/143)",
+              "right": "55% (79/143)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "1",
+              "right": "9",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (5/10)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (2/10)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Total games won",
+              "left": "35% (7/20)",
+              "right": "65% (13/20)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "68%",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (12/20)",
+              "right": "60% (18/30)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (7/14)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "5/7",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (12/30)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (8/14)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "3/3",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "5",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "24",
+              "right": "23",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (18/34)",
+              "right": "55% (24/44)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (20/44)",
+              "right": "47% (16/34)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (38/78)",
+              "right": "51% (40/78)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "47%",
+              "right": "79%",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (9/17)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "37% (7/19)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "1/1",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (6/22)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (3/6)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "2/6",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "6",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "24",
+              "right": "13",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "49% (18/37)",
+              "right": "71% (20/28)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (8/28)",
+              "right": "51% (19/37)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (26/65)",
+              "right": "60% (39/65)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Sasikumar M.",
+              "rightPlayer": "Hussey G."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

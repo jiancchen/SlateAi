@@ -1,0 +1,668 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-centurion-2-strombachs-vs-henning-2026-06-04",
+  "boardTitle": "Philip Henning vs Robert Strombachs",
+  "boardPlayerName": "Robert Strombachs",
+  "recentOpponentName": "Hurrion M.",
+  "recentIndex": 0,
+  "recentEvent": "Centurion 2 (South Africa)",
+  "recentDate": "Jun 02, 26",
+  "recentIsoDate": "2026-06-02",
+  "recentResult": "Win 6-7 6-3 7-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Strombachs R. - Hurrion M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+  "players": [
+    "Strombachs R.",
+    "Hurrion M."
+  ],
+  "generatedAt": "2026-06-04T00:09:20.158Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/63samkJD/",
+  "matchId": "63samkJD",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_63samkJD",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_63samkJD"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:55"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:35"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 7,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:26"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "15",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "3",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "60%",
+              "right": "61%",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (55/69)",
+              "right": "77% (48/62)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (27/46)",
+              "right": "62% (24/39)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/5",
+              "right": "0/1",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (14/62)",
+              "right": "22% (15/69)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (15/39)",
+              "right": "41% (19/46)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/5",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "36",
+              "right": "33",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "38",
+              "right": "27",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (82/115)",
+              "right": "71% (72/101)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (29/101)",
+              "right": "29% (33/115)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (111/216)",
+              "right": "49% (105/216)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (17/17)",
+              "right": "94% (15/16)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Return games won",
+              "left": "6% (1/16)",
+              "right": "0% (0/17)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Total games won",
+              "left": "55% (18/33)",
+              "right": "45% (15/33)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "58%",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (19/23)",
+              "right": "73% (19/26)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (9/16)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (9/26)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "37% (7/19)",
+              "right": "44% (7/16)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "10",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "9",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (28/39)",
+              "right": "69% (31/45)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (14/45)",
+              "right": "28% (11/39)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (42/84)",
+              "right": "50% (42/84)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "5",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "63%",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (17/24)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (6/11)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "0/1",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (4/15)",
+              "right": "21% (5/24)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (4/9)",
+              "right": "45% (5/11)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/2",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "7",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "8",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (23/33)",
+              "right": "58% (14/24)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (10/24)",
+              "right": "30% (10/33)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (33/57)",
+              "right": "42% (24/57)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "6",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "66%",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "86% (19/22)",
+              "right": "95% (20/21)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (12/19)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/3",
+              "right": "0/0",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "5% (1/21)",
+              "right": "18% (4/22)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (4/11)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/3",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "16",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "10",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (31/43)",
+              "right": "84% (27/32)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "16% (5/32)",
+              "right": "28% (12/43)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (36/75)",
+              "right": "52% (39/75)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Strombachs R.",
+              "rightPlayer": "Hurrion M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

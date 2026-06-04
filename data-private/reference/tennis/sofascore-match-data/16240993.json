@@ -1,0 +1,659 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/yunchaokete-bu-billy-harris#id:16240993",
+  "eventId": "16240993",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-birmingham-harris-vs-bu-2026-06-04",
+  "boardTitle": "Billy Harris vs Yunchaokete Bu",
+  "capturedAt": "2026-06-04T00:24:59.614Z",
+  "compactEvent": {
+    "id": 16240993,
+    "slug": "yunchaokete-bu-billy-harris",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1780570800,
+    "tournament": {
+      "name": "Birmingham, Great Britain",
+      "slug": "birmingham-great-britain",
+      "category": "Challenger",
+      "uniqueTournament": "ATP Challenger Birmingham, Great Britain Men Singles"
+    },
+    "roundInfo": {
+      "round": 5,
+      "name": "Round of 16",
+      "slug": "round-of-16",
+      "cupRoundType": 8
+    },
+    "groundType": "Grass",
+    "homeTeam": {
+      "id": 111837,
+      "name": "Billy Harris",
+      "shortName": "B. Harris",
+      "ranking": 150,
+      "currentRanking": 141,
+      "country": {
+        "alpha2": "GB",
+        "alpha3": "GBR",
+        "name": "United Kingdom",
+        "slug": "united-kingdom"
+      },
+      "playerTeamInfo": {
+        "height": 1.93,
+        "weight": 89,
+        "plays": "right-handed",
+        "prizeCurrent": 167711,
+        "prizeTotal": 1280763,
+        "birthCity": {
+          "name": "Nottingham",
+          "country": {
+            "alpha2": "GB",
+            "alpha3": "GBR",
+            "name": "United Kingdom",
+            "slug": "united-kingdom"
+          },
+          "id": 24650
+        },
+        "residenceCity": {
+          "name": "Isle of Man",
+          "country": {
+            "alpha2": "GB",
+            "alpha3": "GBR",
+            "name": "United Kingdom",
+            "slug": "united-kingdom"
+          },
+          "id": 35809
+        },
+        "id": 2038,
+        "birthplace": "Nottingham, United Kingdom",
+        "birthDateTimestamp": 790992000,
+        "residence": "Isle of Man, United Kingdom",
+        "prizeCurrentRaw": {
+          "value": 167711,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 1280763,
+          "currency": "EUR"
+        },
+        "currentRanking": 141
+      }
+    },
+    "awayTeam": {
+      "id": 254227,
+      "name": "Yunchaokete Bu",
+      "shortName": "Y. Bu",
+      "ranking": 166,
+      "currentRanking": 163,
+      "country": {
+        "alpha2": "CN",
+        "alpha3": "CHN",
+        "name": "China",
+        "slug": "china"
+      },
+      "playerTeamInfo": {
+        "height": 1.85,
+        "weight": 82,
+        "plays": "right-handed",
+        "prizeCurrent": 138791,
+        "prizeTotal": 1615922,
+        "birthCity": {
+          "name": "Xinjiang",
+          "country": {
+            "alpha2": "CN",
+            "alpha3": "CHN",
+            "name": "China",
+            "slug": "china"
+          },
+          "id": 34609
+        },
+        "id": 5226,
+        "birthplace": "Xinjiang, China",
+        "birthDateTimestamp": 1011398400,
+        "prizeCurrentRaw": {
+          "value": 138791,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 1615922,
+          "currency": "EUR"
+        },
+        "currentRanking": 163
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "tournament": {
+            "name": "Birmingham, Great Britain",
+            "slug": "birmingham-great-britain",
+            "category": {
+              "name": "Challenger",
+              "slug": "challenger",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 5,
+              "country": {},
+              "id": 72,
+              "flag": "challenger",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "চ্যালেঞ্জার",
+                  "ar": "تحدي (تنس)",
+                  "hi": "डेनमार्क",
+                  "ru": "Challenger"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "ATP Challenger Birmingham, Great Britain Men Singles",
+              "slug": "atp-challenger-birmingham-great-britain-men-singles",
+              "category": {
+                "name": "Challenger",
+                "slug": "challenger",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 5,
+                "country": {},
+                "id": 72,
+                "flag": "challenger",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "চ্যালেঞ্জার",
+                    "ar": "تحدي (تنس)",
+                    "hi": "डेनमार्क",
+                    "ru": "Challenger"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 221,
+              "groundType": "Grass",
+              "hasRounds": false,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 26908,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "ATP Challenger برمنغهام، بريطانيا رجال فردي"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 186299,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1780272000
+          },
+          "season": {
+            "name": "ATP Challenger Birmingham, Great Britain Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 89810
+          },
+          "roundInfo": {
+            "round": 5,
+            "name": "Round of 16",
+            "slug": "round-of-16",
+            "cupRoundType": 8
+          },
+          "customId": "MLUsCJbc",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Birmingham",
+              "country": {
+                "alpha2": "EN",
+                "alpha3": "ENG",
+                "name": "England",
+                "slug": "england"
+              },
+              "id": 19186
+            },
+            "hidden": true,
+            "slug": "court-1",
+            "name": "Court 1",
+            "country": {
+              "alpha2": "EN",
+              "alpha3": "ENG",
+              "name": "England",
+              "slug": "england"
+            },
+            "id": 17238,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب 1",
+                "hi": "कोर्ट 1",
+                "bn": "কোর্ট 1"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court 1"
+            }
+          },
+          "homeTeam": {
+            "name": "Billy Harris",
+            "slug": "harris-billy",
+            "shortName": "B. Harris",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 2714,
+            "playerTeamInfo": {
+              "height": 1.93,
+              "weight": 89,
+              "plays": "right-handed",
+              "prizeCurrent": 167711,
+              "prizeTotal": 1280763,
+              "birthCity": {
+                "name": "Nottingham",
+                "country": {
+                  "alpha2": "GB",
+                  "alpha3": "GBR",
+                  "name": "United Kingdom",
+                  "slug": "united-kingdom"
+                },
+                "id": 24650
+              },
+              "residenceCity": {
+                "name": "Isle of Man",
+                "country": {
+                  "alpha2": "GB",
+                  "alpha3": "GBR",
+                  "name": "United Kingdom",
+                  "slug": "united-kingdom"
+                },
+                "id": 35809
+              },
+              "id": 2038,
+              "birthplace": "Nottingham, United Kingdom",
+              "birthDateTimestamp": 790992000,
+              "residence": "Isle of Man, United Kingdom",
+              "prizeCurrentRaw": {
+                "value": 167711,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 1280763,
+                "currency": "EUR"
+              },
+              "currentRanking": 141
+            },
+            "nameCode": "HAR",
+            "ranking": 150,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "GB",
+              "alpha3": "GBR",
+              "name": "United Kingdom",
+              "slug": "united-kingdom"
+            },
+            "id": 111837,
+            "fullName": "Billy Harris",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "بيلي هاريس"
+              },
+              "shortNameTranslation": {
+                "ar": "ب. هاريس"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Yunchaokete Bu",
+            "slug": "bu-yunchaokete",
+            "shortName": "Y. Bu",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 4017,
+            "playerTeamInfo": {
+              "height": 1.85,
+              "weight": 82,
+              "plays": "right-handed",
+              "prizeCurrent": 138791,
+              "prizeTotal": 1615922,
+              "birthCity": {
+                "name": "Xinjiang",
+                "country": {
+                  "alpha2": "CN",
+                  "alpha3": "CHN",
+                  "name": "China",
+                  "slug": "china"
+                },
+                "id": 34609
+              },
+              "id": 5226,
+              "birthplace": "Xinjiang, China",
+              "birthDateTimestamp": 1011398400,
+              "prizeCurrentRaw": {
+                "value": 138791,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 1615922,
+                "currency": "EUR"
+              },
+              "currentRanking": 163
+            },
+            "nameCode": "YUN",
+            "ranking": 166,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "CN",
+              "alpha3": "CHN",
+              "name": "China",
+              "slug": "china"
+            },
+            "id": 254227,
+            "fullName": "Yunchaokete Bu",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "يونتشوكيت ب"
+              },
+              "shortNameTranslation": {
+                "ar": "ي. ب",
+                "bn": "বি. ইউনচাওকেতে",
+                "hi": "बी. युनचाओकेटे"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16240993,
+          "defaultPeriodCount": 3,
+          "slug": "yunchaokete-bu-billy-harris",
+          "startTimestamp": 1780570800,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "??",
+            "AN",
+            "CU",
+            "IR",
+            "KP",
+            "SY",
+            "VE",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Grass",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "lower"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": null,
+        "managerDuel": null
+      }
+    },
+    "pointByPoint": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "votes": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "vote": {
+          "vote1": 973,
+          "vote2": 1067,
+          "voteX": null
+        },
+        "bothTeamsToScoreVote": {
+          "voteYes": 0,
+          "voteNo": 0
+        },
+        "firstTeamToScoreVote": {
+          "voteHome": 0,
+          "voteNoGoal": 0,
+          "voteAway": 0
+        },
+        "whoShouldHaveWonVote": {
+          "vote1": 0,
+          "vote2": 0
+        }
+      }
+    },
+    "tennisPower": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "tennisPowerRankings": []
+      }
+    },
+    "winningOdds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "home": {
+          "fractionalValue": "1/1",
+          "expected": 50,
+          "actual": 57,
+          "id": 22234615
+        },
+        "away": {
+          "fractionalValue": "73/100",
+          "expected": 58,
+          "actual": 50,
+          "id": 22234616
+        }
+      }
+    },
+    "odds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "featured": {
+          "default": {
+            "sourceId": 195679992,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195679992,
+            "suspended": false,
+            "id": 316672778,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "1/1",
+                "fractionalValue": "1/1",
+                "sourceId": 1424746370,
+                "name": "1",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "8/11",
+                "fractionalValue": "73/100",
+                "sourceId": 1424746419,
+                "name": "2",
+                "change": -1
+              }
+            ]
+          },
+          "asian": {
+            "sourceId": 195679992,
+            "structureType": 1,
+            "marketId": 11,
+            "marketName": "First set winner",
+            "isLive": false,
+            "fid": 195679992,
+            "suspended": false,
+            "id": 316683085,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "1st set",
+            "choices": [
+              {
+                "initialFractionalValue": "1/1",
+                "fractionalValue": "1/1",
+                "sourceId": 1424989916,
+                "name": "1",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "8/11",
+                "fractionalValue": "8/11",
+                "sourceId": 1424989939,
+                "name": "2",
+                "change": 0
+              }
+            ]
+          },
+          "fullTime": {
+            "sourceId": 195679992,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195679992,
+            "suspended": false,
+            "id": 316672778,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "1/1",
+                "fractionalValue": "1/1",
+                "sourceId": 1424746370,
+                "name": "1",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "8/11",
+                "fractionalValue": "73/100",
+                "sourceId": 1424746419,
+                "name": "2",
+                "change": -1
+              }
+            ]
+          }
+        },
+        "hasMoreOdds": true
+      }
+    },
+    "homeSeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "awaySeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

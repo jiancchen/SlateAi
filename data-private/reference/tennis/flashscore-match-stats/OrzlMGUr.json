@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-choinski-vs-mikrut-2026-06-04",
+  "boardTitle": "Luka Mikrut vs Jan Choinski",
+  "boardPlayerName": "Jan Choinski",
+  "recentOpponentName": "Gentzsch T.",
+  "recentIndex": 0,
+  "recentEvent": "Heilbronn (Germany)",
+  "recentDate": "Jun 02, 26",
+  "recentIsoDate": "2026-06-02",
+  "recentResult": "Win 6-4 6-4",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Choinski J. - Gentzsch T.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/heilbronn/",
+  "players": [
+    "Choinski J.",
+    "Gentzsch T."
+  ],
+  "generatedAt": "2026-06-04T00:09:23.023Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/OrzlMGUr/",
+  "matchId": "OrzlMGUr",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_OrzlMGUr",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_OrzlMGUr"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:33"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:57"
+      }
+    ],
+    "totalDuration": "1:30"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "4",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "6",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "53%",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (28/35)",
+              "right": "84% (27/32)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (20/32)",
+              "right": "46% (13/28)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/5",
+              "right": "6/8",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "16% (5/32)",
+              "right": "20% (7/35)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (15/28)",
+              "right": "38% (12/32)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/8",
+              "right": "0/5",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "22",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "25",
+              "right": "32",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (48/67)",
+              "right": "67% (40/60)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (20/60)",
+              "right": "28% (19/67)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (68/127)",
+              "right": "46% (59/127)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (10/10)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (2/10)",
+              "right": "0% (0/10)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "62%",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "92% (12/13)",
+              "right": "100% (16/16)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "91% (10/11)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (7/16)",
+              "right": "15% (2/13)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "70% (7/10)",
+              "right": "9% (1/11)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "9",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "91% (20/22)",
+              "right": "73% (19/26)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (7/26)",
+              "right": "9% (2/22)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (27/48)",
+              "right": "44% (21/48)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "51%",
+              "right": "47%",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (16/22)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (10/21)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/5",
+              "right": "5/6",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "-13% (-2/16)",
+              "right": "23% (5/22)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (8/18)",
+              "right": "52% (11/21)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/6",
+              "right": "0/5",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "15",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "23",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (28/45)",
+              "right": "62% (21/34)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (13/34)",
+              "right": "38% (17/45)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (41/79)",
+              "right": "48% (38/79)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Choinski J.",
+              "rightPlayer": "Gentzsch T."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

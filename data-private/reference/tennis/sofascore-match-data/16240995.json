@@ -1,0 +1,564 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/sho-shimabukuro-elias-ymer#id:16240995",
+  "eventId": "16240995",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-birmingham-shimabukuro-vs-ymer-2026-06-04",
+  "boardTitle": "Sho Shimabukuro vs Elias Ymer",
+  "capturedAt": "2026-06-04T00:24:55.067Z",
+  "compactEvent": {
+    "id": 16240995,
+    "slug": "sho-shimabukuro-elias-ymer",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1780565400,
+    "tournament": {
+      "name": "Birmingham, Great Britain",
+      "slug": "birmingham-great-britain",
+      "category": "Challenger",
+      "uniqueTournament": "ATP Challenger Birmingham, Great Britain Men Singles"
+    },
+    "roundInfo": {
+      "round": 5,
+      "name": "Round of 16",
+      "slug": "round-of-16",
+      "cupRoundType": 8
+    },
+    "groundType": "Grass",
+    "homeTeam": {
+      "id": 216154,
+      "name": "Sho Shimabukuro",
+      "shortName": "S. Shimabukuro",
+      "ranking": 103,
+      "currentRanking": 103,
+      "country": {
+        "alpha2": "JP",
+        "alpha3": "JPN",
+        "name": "Japan",
+        "slug": "japan"
+      },
+      "playerTeamInfo": {
+        "height": 1.8,
+        "weight": 83,
+        "plays": "right-handed",
+        "prizeCurrent": 141713,
+        "prizeTotal": 811961,
+        "birthCity": {
+          "name": "Gifu",
+          "country": {
+            "alpha2": "JP",
+            "alpha3": "JPN",
+            "name": "Japan",
+            "slug": "japan"
+          },
+          "id": 18837
+        },
+        "id": 2840,
+        "birthplace": "Gifu, Japan",
+        "birthDateTimestamp": 870220800,
+        "prizeCurrentRaw": {
+          "value": 141713,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 811961,
+          "currency": "EUR"
+        },
+        "currentRanking": 103
+      }
+    },
+    "awayTeam": {
+      "id": 83661,
+      "name": "Elias Ymer",
+      "shortName": "E. Ymer",
+      "ranking": 191,
+      "currentRanking": 182,
+      "country": {
+        "alpha2": "SE",
+        "alpha3": "SWE",
+        "name": "Sweden",
+        "slug": "sweden"
+      },
+      "playerTeamInfo": {
+        "height": 1.85,
+        "weight": 78,
+        "plays": "right-handed",
+        "turnedPro": "2014",
+        "prizeCurrent": 126539,
+        "prizeTotal": 2060679,
+        "birthCity": {
+          "name": "Skara",
+          "country": {
+            "alpha2": "SE",
+            "alpha3": "SWE",
+            "name": "Sweden",
+            "slug": "sweden"
+          },
+          "id": 22469
+        },
+        "residenceCity": {
+          "name": "Stockholm",
+          "country": {
+            "alpha2": "SE",
+            "alpha3": "SWE",
+            "name": "Sweden",
+            "slug": "sweden"
+          },
+          "id": 19506
+        },
+        "id": 134,
+        "birthplace": "Skara, Sweden",
+        "birthDateTimestamp": 829094400,
+        "residence": "Stockholm, Sweden",
+        "prizeCurrentRaw": {
+          "value": 126539,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 2060679,
+          "currency": "EUR"
+        },
+        "currentRanking": 182
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "homeTeamSeed": "6",
+          "awayTeamSeed": "Q",
+          "tournament": {
+            "name": "Birmingham, Great Britain",
+            "slug": "birmingham-great-britain",
+            "category": {
+              "name": "Challenger",
+              "slug": "challenger",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 5,
+              "country": {},
+              "id": 72,
+              "flag": "challenger",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "চ্যালেঞ্জার",
+                  "ar": "تحدي (تنس)",
+                  "hi": "डेनमार्क",
+                  "ru": "Challenger"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "ATP Challenger Birmingham, Great Britain Men Singles",
+              "slug": "atp-challenger-birmingham-great-britain-men-singles",
+              "category": {
+                "name": "Challenger",
+                "slug": "challenger",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 5,
+                "country": {},
+                "id": 72,
+                "flag": "challenger",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "চ্যালেঞ্জার",
+                    "ar": "تحدي (تنس)",
+                    "hi": "डेनमार्क",
+                    "ru": "Challenger"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 221,
+              "groundType": "Grass",
+              "hasRounds": false,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 26908,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "ATP Challenger برمنغهام، بريطانيا رجال فردي"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 186299,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1780272000
+          },
+          "season": {
+            "name": "ATP Challenger Birmingham, Great Britain Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 89810
+          },
+          "roundInfo": {
+            "round": 5,
+            "name": "Round of 16",
+            "slug": "round-of-16",
+            "cupRoundType": 8
+          },
+          "customId": "lyIseyLb",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Birmingham",
+              "country": {
+                "alpha2": "EN",
+                "alpha3": "ENG",
+                "name": "England",
+                "slug": "england"
+              },
+              "id": 19186
+            },
+            "hidden": true,
+            "slug": "court-4",
+            "name": "Court 4",
+            "country": {
+              "alpha2": "EN",
+              "alpha3": "ENG",
+              "name": "England",
+              "slug": "england"
+            },
+            "id": 17241,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب 4",
+                "hi": "कोर्ट 4",
+                "bn": "কোর্ট 4"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court 4"
+            }
+          },
+          "homeTeam": {
+            "name": "Sho Shimabukuro",
+            "slug": "shimabukuro-sho",
+            "shortName": "S. Shimabukuro",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 1814,
+            "playerTeamInfo": {
+              "height": 1.8,
+              "weight": 83,
+              "plays": "right-handed",
+              "prizeCurrent": 141713,
+              "prizeTotal": 811961,
+              "birthCity": {
+                "name": "Gifu",
+                "country": {
+                  "alpha2": "JP",
+                  "alpha3": "JPN",
+                  "name": "Japan",
+                  "slug": "japan"
+                },
+                "id": 18837
+              },
+              "id": 2840,
+              "birthplace": "Gifu, Japan",
+              "birthDateTimestamp": 870220800,
+              "prizeCurrentRaw": {
+                "value": 141713,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 811961,
+                "currency": "EUR"
+              },
+              "currentRanking": 103
+            },
+            "nameCode": "SHI",
+            "ranking": 103,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "JP",
+              "alpha3": "JPN",
+              "name": "Japan",
+              "slug": "japan"
+            },
+            "id": 216154,
+            "fullName": "Sho Shimabukuro",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "شو شيمابوكورو",
+                "bn": "শোহ শিমাবুকুরো",
+                "hi": "शो शिमाबुकुरो",
+                "ru": "Шимабукуро, Шо"
+              },
+              "shortNameTranslation": {
+                "ar": "ش. شيمابوكورو"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Elias Ymer",
+            "slug": "ymer-elias",
+            "shortName": "E. Ymer",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 3266,
+            "playerTeamInfo": {
+              "height": 1.85,
+              "weight": 78,
+              "plays": "right-handed",
+              "turnedPro": "2014",
+              "prizeCurrent": 126539,
+              "prizeTotal": 2060679,
+              "birthCity": {
+                "name": "Skara",
+                "country": {
+                  "alpha2": "SE",
+                  "alpha3": "SWE",
+                  "name": "Sweden",
+                  "slug": "sweden"
+                },
+                "id": 22469
+              },
+              "residenceCity": {
+                "name": "Stockholm",
+                "country": {
+                  "alpha2": "SE",
+                  "alpha3": "SWE",
+                  "name": "Sweden",
+                  "slug": "sweden"
+                },
+                "id": 19506
+              },
+              "id": 134,
+              "birthplace": "Skara, Sweden",
+              "birthDateTimestamp": 829094400,
+              "residence": "Stockholm, Sweden",
+              "prizeCurrentRaw": {
+                "value": 126539,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 2060679,
+                "currency": "EUR"
+              },
+              "currentRanking": 182
+            },
+            "nameCode": "YME",
+            "ranking": 191,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "SE",
+              "alpha3": "SWE",
+              "name": "Sweden",
+              "slug": "sweden"
+            },
+            "id": 83661,
+            "fullName": "Elias Ymer",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "إلياس يمر",
+                "bn": "ইলিয়াস ইয়ামার",
+                "hi": "एलियास यमर",
+                "ru": "Имер, Элиас"
+              },
+              "shortNameTranslation": {
+                "ar": "إ. يمر"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16240995,
+          "defaultPeriodCount": 3,
+          "slug": "sho-shimabukuro-elias-ymer",
+          "startTimestamp": 1780565400,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "feedLocked": false,
+          "groundType": "Grass",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "lower"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": {
+          "homeWins": 1,
+          "awayWins": 1,
+          "draws": 0
+        },
+        "managerDuel": null
+      }
+    },
+    "pointByPoint": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "votes": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "vote": {
+          "vote1": 218,
+          "vote2": 237,
+          "voteX": null
+        },
+        "bothTeamsToScoreVote": {
+          "voteYes": 0,
+          "voteNo": 0
+        },
+        "firstTeamToScoreVote": {
+          "voteHome": 0,
+          "voteNoGoal": 0,
+          "voteAway": 0
+        },
+        "whoShouldHaveWonVote": {
+          "vote1": 0,
+          "vote2": 0
+        }
+      }
+    },
+    "tennisPower": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "tennisPowerRankings": []
+      }
+    },
+    "winningOdds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "odds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "homeSeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "awaySeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

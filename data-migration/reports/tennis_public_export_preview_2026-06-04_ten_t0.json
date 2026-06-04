@@ -1,0 +1,25 @@
+{
+  "contract": "data-migration/contracts/tennis_public_export_contract.md",
+  "date": "2026-06-04",
+  "dry_run": false,
+  "export_manifest_id": "f0f5438e9d8307538604fa52d0100e3c",
+  "games": 23,
+  "generated_at": "2026-06-04T00:27:22.993159+00:00",
+  "model": "TEN-T0",
+  "ok": true,
+  "out_dir": "data-migration/export-previews/tennis/2026-06-04",
+  "prediction_rows": 23,
+  "resolved_model": {
+    "model_id": "TEN-T0",
+    "model_run_id": "tennis-TEN-T0-2026-06-04-db",
+    "model_version": "TEN-W1/TEN-F0/TEN-T0/TEN-E0",
+    "prediction_rows": 23,
+    "run_date": "2026-06-04",
+    "run_type": "pregame-db",
+    "status": "captured"
+  },
+  "script": "data-migration/scripts/export_tennis_public_from_db.py",
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "summary_path": "data-migration/export-previews/tennis/2026-06-04/summary.json",
+  "value_rows": 0
+}

@@ -1,0 +1,631 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/robert-strombachs-philip-henning#id:16257310",
+  "eventId": "16257310",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-centurion-2-strombachs-vs-henning-2026-06-04",
+  "boardTitle": "Philip Henning vs Robert Strombachs",
+  "capturedAt": "2026-06-04T00:25:27.882Z",
+  "compactEvent": {
+    "id": 16257310,
+    "slug": "robert-strombachs-philip-henning",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1780564200,
+    "tournament": {
+      "name": "Centurion 2, South Africa",
+      "slug": "centurion-2-south-africa",
+      "category": "Challenger",
+      "uniqueTournament": "ATP Challenger Centurion 2, South Africa Men Singles"
+    },
+    "roundInfo": {
+      "round": 5,
+      "name": "Round of 16",
+      "slug": "round-of-16",
+      "cupRoundType": 8
+    },
+    "groundType": "Hardcourt outdoor",
+    "homeTeam": {
+      "id": 263699,
+      "name": "Robert Strombachs",
+      "shortName": "R. Strombachs",
+      "ranking": 476,
+      "currentRanking": 458,
+      "country": {
+        "alpha2": "LV",
+        "alpha3": "LVA",
+        "name": "Latvia",
+        "slug": "latvia"
+      },
+      "playerTeamInfo": {
+        "height": 1.91,
+        "weight": 78,
+        "plays": "right-handed",
+        "prizeCurrent": 9687,
+        "prizeTotal": 140243,
+        "birthCity": {
+          "name": "Berlin",
+          "country": {
+            "alpha2": "LV",
+            "alpha3": "LVA",
+            "name": "Latvia",
+            "slug": "latvia"
+          },
+          "id": 37560
+        },
+        "residenceCity": {
+          "name": "Berlin, Gernany",
+          "country": {
+            "alpha2": "DE",
+            "alpha3": "DEU",
+            "name": "Germany",
+            "slug": "germany"
+          },
+          "id": 36158
+        },
+        "id": 3084,
+        "birthplace": "Berlin, Latvia",
+        "birthDateTimestamp": 937353600,
+        "residence": "Berlin, Gernany, Germany",
+        "prizeCurrentRaw": {
+          "value": 9687,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 140243,
+          "currency": "EUR"
+        },
+        "currentRanking": 458
+      }
+    },
+    "awayTeam": {
+      "id": 238147,
+      "name": "Philip Henning",
+      "shortName": "P. Henning",
+      "ranking": 319,
+      "currentRanking": 310,
+      "country": {
+        "alpha2": "ZA",
+        "alpha3": "ZAF",
+        "name": "South Africa",
+        "slug": "south-africa"
+      },
+      "playerTeamInfo": {
+        "height": 1.83,
+        "weight": 81,
+        "plays": "right-handed",
+        "prizeCurrent": 8763,
+        "prizeTotal": 72596,
+        "birthCity": {
+          "name": "Bloemfontein",
+          "country": {
+            "alpha2": "ZA",
+            "alpha3": "ZAF",
+            "name": "South Africa",
+            "slug": "south-africa"
+          },
+          "id": 20269
+        },
+        "id": 5162,
+        "birthplace": "Bloemfontein, South Africa",
+        "birthDateTimestamp": 973814400,
+        "prizeCurrentRaw": {
+          "value": 8763,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 72596,
+          "currency": "EUR"
+        },
+        "currentRanking": 310
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "awayTeamSeed": "6",
+          "tournament": {
+            "name": "Centurion 2, South Africa",
+            "slug": "centurion-2-south-africa",
+            "category": {
+              "name": "Challenger",
+              "slug": "challenger",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 5,
+              "country": {},
+              "id": 72,
+              "flag": "challenger",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "চ্যালেঞ্জার",
+                  "ar": "تحدي (تنس)",
+                  "hi": "डेनमार्क",
+                  "ru": "Challenger"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "ATP Challenger Centurion 2, South Africa Men Singles",
+              "slug": "atp-challenger-centurion-2-south-africa-men-singles",
+              "category": {
+                "name": "Challenger",
+                "slug": "challenger",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 5,
+                "country": {},
+                "id": 72,
+                "flag": "challenger",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "চ্যালেঞ্জার",
+                    "ar": "تحدي (تنس)",
+                    "hi": "डेनमार्क",
+                    "ru": "Challenger"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 48,
+              "groundType": "Hardcourt outdoor",
+              "hasRounds": false,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 35188,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 186719,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1780272000
+          },
+          "season": {
+            "name": "ATP Challenger Centurion 2, South Africa Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 95495
+          },
+          "roundInfo": {
+            "round": 5,
+            "name": "Round of 16",
+            "slug": "round-of-16",
+            "cupRoundType": 8
+          },
+          "customId": "XmVbsZyfc",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Centurion",
+              "country": {
+                "alpha2": "ZA",
+                "alpha3": "ZAF",
+                "name": "South Africa",
+                "slug": "south-africa"
+              },
+              "id": 20263
+            },
+            "hidden": true,
+            "slug": "centre-court",
+            "name": "Centre Court",
+            "country": {
+              "alpha2": "ZA",
+              "alpha3": "ZAF",
+              "name": "South Africa",
+              "slug": "south-africa"
+            },
+            "id": 59457,
+            "stadium": {
+              "name": "Centre Court"
+            }
+          },
+          "homeTeam": {
+            "name": "Robert Strombachs",
+            "slug": "strombachs-robert",
+            "shortName": "R. Strombachs",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 612,
+            "playerTeamInfo": {
+              "height": 1.91,
+              "weight": 78,
+              "plays": "right-handed",
+              "prizeCurrent": 9687,
+              "prizeTotal": 140243,
+              "birthCity": {
+                "name": "Berlin",
+                "country": {
+                  "alpha2": "LV",
+                  "alpha3": "LVA",
+                  "name": "Latvia",
+                  "slug": "latvia"
+                },
+                "id": 37560
+              },
+              "residenceCity": {
+                "name": "Berlin, Gernany",
+                "country": {
+                  "alpha2": "DE",
+                  "alpha3": "DEU",
+                  "name": "Germany",
+                  "slug": "germany"
+                },
+                "id": 36158
+              },
+              "id": 3084,
+              "birthplace": "Berlin, Latvia",
+              "birthDateTimestamp": 937353600,
+              "residence": "Berlin, Gernany, Germany",
+              "prizeCurrentRaw": {
+                "value": 9687,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 140243,
+                "currency": "EUR"
+              },
+              "currentRanking": 458
+            },
+            "nameCode": "STR",
+            "ranking": 476,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "LV",
+              "alpha3": "LVA",
+              "name": "Latvia",
+              "slug": "latvia"
+            },
+            "id": 263699,
+            "fullName": "Robert Strombachs",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "روبرت ستروماخس",
+                "ru": "Стромбахс, Роберт"
+              },
+              "shortNameTranslation": {
+                "ar": "ر. ستروماخس"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Philip Henning",
+            "slug": "henning-philip",
+            "shortName": "P. Henning",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 605,
+            "playerTeamInfo": {
+              "height": 1.83,
+              "weight": 81,
+              "plays": "right-handed",
+              "prizeCurrent": 8763,
+              "prizeTotal": 72596,
+              "birthCity": {
+                "name": "Bloemfontein",
+                "country": {
+                  "alpha2": "ZA",
+                  "alpha3": "ZAF",
+                  "name": "South Africa",
+                  "slug": "south-africa"
+                },
+                "id": 20269
+              },
+              "id": 5162,
+              "birthplace": "Bloemfontein, South Africa",
+              "birthDateTimestamp": 973814400,
+              "prizeCurrentRaw": {
+                "value": 8763,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 72596,
+                "currency": "EUR"
+              },
+              "currentRanking": 310
+            },
+            "nameCode": "HEN",
+            "ranking": 319,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "ZA",
+              "alpha3": "ZAF",
+              "name": "South Africa",
+              "slug": "south-africa"
+            },
+            "id": 238147,
+            "fullName": "Philip Henning",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "فيليب هينينغ"
+              },
+              "shortNameTranslation": {
+                "ar": "ف. هينينغ"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16257310,
+          "defaultPeriodCount": 3,
+          "slug": "robert-strombachs-philip-henning",
+          "startTimestamp": 1780564200,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "feedLocked": false,
+          "groundType": "Hardcourt outdoor",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "lower"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": {
+          "homeWins": 1,
+          "awayWins": 0,
+          "draws": 0
+        },
+        "managerDuel": null
+      }
+    },
+    "pointByPoint": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "votes": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "vote": {
+          "vote1": 74,
+          "vote2": 331,
+          "voteX": null
+        },
+        "bothTeamsToScoreVote": {
+          "voteYes": 0,
+          "voteNo": 0
+        },
+        "firstTeamToScoreVote": {
+          "voteHome": 0,
+          "voteNoGoal": 0,
+          "voteAway": 0
+        },
+        "whoShouldHaveWonVote": {
+          "vote1": 0,
+          "vote2": 0
+        }
+      }
+    },
+    "tennisPower": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "tennisPowerRankings": []
+      }
+    },
+    "winningOdds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "home": {
+          "fractionalValue": "5/2",
+          "expected": 29,
+          "actual": 21,
+          "id": 22230677
+        },
+        "away": {
+          "fractionalValue": "2/7",
+          "expected": 78,
+          "actual": 88,
+          "id": 22230678
+        }
+      }
+    },
+    "odds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "featured": {
+          "default": {
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195665075,
+            "suspended": false,
+            "id": 316547050,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "5/2",
+                "fractionalValue": "5/2",
+                "sourceId": 1422889733,
+                "name": "1",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "2/7",
+                "fractionalValue": "2/7",
+                "sourceId": 1422889812,
+                "name": "2",
+                "change": 0
+              }
+            ]
+          },
+          "asian": {
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195665075,
+            "suspended": false,
+            "id": 316547050,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "5/2",
+                "fractionalValue": "5/2",
+                "sourceId": 1422889733,
+                "name": "1",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "2/7",
+                "fractionalValue": "2/7",
+                "sourceId": 1422889812,
+                "name": "2",
+                "change": 0
+              }
+            ]
+          },
+          "fullTime": {
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195665075,
+            "suspended": false,
+            "id": 316547050,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "5/2",
+                "fractionalValue": "5/2",
+                "sourceId": 1422889733,
+                "name": "1",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "2/7",
+                "fractionalValue": "2/7",
+                "sourceId": 1422889812,
+                "name": "2",
+                "change": 0
+              }
+            ]
+          }
+        },
+        "hasMoreOdds": false
+      }
+    },
+    "homeSeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "awaySeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

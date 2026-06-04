@@ -1,0 +1,1995 @@
+{
+  "id": "rh-atp-challenger-birmingham-harris-vs-bu-2026-06-04",
+  "eventId": "683b1e9a-de04-428c-b9ab-168407d0d965",
+  "league": "Tennis",
+  "start": "4:00 AM",
+  "startMinutes": 240,
+  "title": "Billy Harris vs Yunchaokete Bu",
+  "stage": "ATP Challenger Birmingham | Round Of 16",
+  "spotlight": false,
+  "confidence": 54,
+  "volatility": 75,
+  "tags": [
+    "ATP Challenger",
+    "Grass",
+    "Prediction market",
+    "Market only",
+    "No model edge",
+    "Coinflip price"
+  ],
+  "matchup": [
+    {
+      "side": "Player 1",
+      "name": "Billy Harris",
+      "displayName": "Billy Harris",
+      "detail": "Grass | Live rank #150 | Great Britain | age 31"
+    },
+    {
+      "side": "Player 2",
+      "name": "Yunchaokete Bu",
+      "displayName": "Yunchaokete Bu",
+      "detail": "Grass | Live rank #165 | CHN | age 24.3"
+    }
+  ],
+  "summary": "Yunchaokete Bu is the current market favorite. Yunchaokete Bu is only the current Robinhood market favorite over Billy Harris; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+  "factors": [
+    "Yunchaokete Bu is only the current Robinhood market favorite over Billy Harris; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+    "Model 54% vs DraftKings Sportsbook implied 55.9% (-1.9 pts).",
+    "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+    "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+    "No posted sportsbook total captured for this Challenger market.",
+    "May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.",
+    "Market-only Challenger row: no warehouse edge, sportsbook derivative, or service profile has been joined yet."
+  ],
+  "lean": "Market watch: Yunchaokete Bu; do not treat as a model bet.",
+  "swing": "Risk: best-of-five set extension and tiebreak variance.",
+  "swingFactor": "Risk: best-of-five set extension and tiebreak variance.",
+  "odds": {
+    "participantOrder": [
+      0,
+      1
+    ],
+    "markets": [
+      {
+        "label": "Prediction market",
+        "book": "DraftKings Sportsbook",
+        "value": "Billy Harris 47% / Yunchaokete Bu 54%"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "book": "DraftKings Sportsbook",
+        "value": "Billy Harris -103 / Yunchaokete Bu -127"
+      },
+      {
+        "label": "1st set total games",
+        "book": "DraftKings Sportsbook",
+        "value": "9.5 1st-set games: Over -215 / Under +140"
+      }
+    ],
+    "note": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. ML is close to fair; derivative or live entry needs to carry the edge.",
+    "provider": "DraftKings Sportsbook"
+  },
+  "tennisContext": {
+    "surface": "Grass",
+    "court": "ATP Challenger Birmingham",
+    "h2hLeader": "",
+    "fatigueFlag": false,
+    "liveDog": false,
+    "weaknessEdge": {
+      "edgeType": "Market-only",
+      "target": "No warehouse weakness edge",
+      "scoreGap": null,
+      "attackingSide": null,
+      "vulnerableSide": null,
+      "gameFlow": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+      "liveTrigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+      "spreadRead": "No spread line",
+      "totalRead": "No total line",
+      "pick": {
+        "name": "Billy Harris",
+        "weaknessScore": null,
+        "liabilities": [
+          "No warehouse weakness data joined yet"
+        ],
+        "strengths": [],
+        "firstGameComfort": "Market-only row; wait for serve pressure data",
+        "gameFlowRead": "No service/break profile joined yet."
+      },
+      "opponent": {
+        "name": "Yunchaokete Bu",
+        "weaknessScore": null,
+        "liabilities": [
+          "No warehouse weakness data joined yet"
+        ],
+        "strengths": [],
+        "firstGameComfort": "Market-only row; wait for serve pressure data",
+        "gameFlowRead": "No service/break profile joined yet."
+      }
+    },
+    "warehouseContext": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-birmingham-harris-vs-bu-2026-06-04",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-04T11:00:00Z",
+      "surface": "Grass",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "ATP",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Billy Harris",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "Billy Harris",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 5,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {},
+            "pressureSamples": {}
+          },
+          "recentFormMetrics": {
+            "playerName": "Billy Harris",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        },
+        {
+          "name": "Yunchaokete Bu",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "name": "Yunchaokete Bu",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": null,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {},
+            "pressureSamples": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Billy Harris",
+        "awayName": "Yunchaokete Bu",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Billy Harris",
+          "awayName": "Yunchaokete Bu",
+          "homeVotes": 973,
+          "awayVotes": 1067,
+          "homePct": 47.7,
+          "awayPct": 52.3
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Billy Harris",
+            "fractionalValue": "1/1",
+            "impliedPct": 50,
+            "expected": 50,
+            "actual": 57
+          },
+          "away": {
+            "name": "Yunchaokete Bu",
+            "fractionalValue": "73/100",
+            "impliedPct": 57.8,
+            "expected": 58,
+            "actual": 50
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": null,
+          "away": null
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick.",
+        "eventId": "16240993",
+        "sourceUrl": "https://www.sofascore.com/tennis/match/yunchaokete-bu-billy-harris#id:16240993",
+        "capturedAt": "2026-06-04T00:24:59.614Z"
+      },
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "sofascoreData": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-birmingham-harris-vs-bu-2026-06-04",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-04T11:00:00Z",
+      "surface": "Grass",
+      "tournament": "ATP Challenger Birmingham",
+      "category": "ATP",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Billy Harris",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "Billy Harris",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 5,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {},
+            "pressureSamples": {}
+          },
+          "recentFormMetrics": {
+            "playerName": "Billy Harris",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        },
+        {
+          "name": "Yunchaokete Bu",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "name": "Yunchaokete Bu",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": null,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {},
+            "pressureSamples": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Billy Harris",
+        "awayName": "Yunchaokete Bu",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Billy Harris",
+          "awayName": "Yunchaokete Bu",
+          "homeVotes": 973,
+          "awayVotes": 1067,
+          "homePct": 47.7,
+          "awayPct": 52.3
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Billy Harris",
+            "fractionalValue": "1/1",
+            "impliedPct": 50,
+            "expected": 50,
+            "actual": 57
+          },
+          "away": {
+            "name": "Yunchaokete Bu",
+            "fractionalValue": "73/100",
+            "impliedPct": 57.8,
+            "expected": 58,
+            "actual": 50
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": null,
+          "away": null
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick.",
+        "eventId": "16240993",
+        "sourceUrl": "https://www.sofascore.com/tennis/match/yunchaokete-bu-billy-harris#id:16240993",
+        "capturedAt": "2026-06-04T00:24:59.614Z"
+      },
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 0,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "players": [
+      {
+        "name": "Billy Harris",
+        "rank": 150,
+        "label": "Billy Harris",
+        "form": null,
+        "boardPct": 47,
+        "decimalOdds": 1.971,
+        "marketLabel": "-103 / 50.7% implied",
+        "clayLine": "Grass | Live rank #150 | Great Britain | age 31",
+        "weakness": {
+          "name": "Billy Harris",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "warehouseStats": {
+          "name": "Billy Harris",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "Billy Harris",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 5,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {},
+            "pressureSamples": {}
+          },
+          "recentFormMetrics": {
+            "playerName": "Billy Harris",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        },
+        "record2026": "",
+        "notes": "Opponent case: model 46%",
+        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
+      },
+      {
+        "name": "Yunchaokete Bu",
+        "rank": 165,
+        "label": "Yunchaokete Bu",
+        "form": null,
+        "boardPct": 54,
+        "decimalOdds": 1.787,
+        "marketLabel": "-127 / 55.9% implied",
+        "clayLine": "Grass | Live rank #165 | CHN | age 24.3",
+        "weakness": {
+          "name": "Yunchaokete Bu",
+          "weaknessScore": null,
+          "liabilities": [
+            "No warehouse weakness data joined yet"
+          ],
+          "strengths": [],
+          "firstGameComfort": "Market-only row; wait for serve pressure data",
+          "gameFlowRead": "No service/break profile joined yet."
+        },
+        "warehouseStats": {
+          "name": "Yunchaokete Bu",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "name": "Yunchaokete Bu",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": null,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {},
+            "pressureSamples": {}
+          },
+          "recentFormMetrics": null
+        },
+        "record2026": "",
+        "notes": "Pick: model 54%",
+        "matchupNote": "Why pick: Yunchaokete Bu is only the current Robinhood market favorite over Billy Harris; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet."
+      }
+    ],
+    "comparisonRows": [
+      {
+        "label": "Model pick",
+        "metric": "Fair win split",
+        "leftScore": 47,
+        "rightScore": 54,
+        "leftLabel": "Billy Harris",
+        "rightLabel": "Yunchaokete Bu",
+        "winner": "Yunchaokete Bu"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "metric": "Implied price",
+        "leftScore": 50.7,
+        "rightScore": 55.9,
+        "leftLabel": "Billy Harris",
+        "rightLabel": "Yunchaokete Bu",
+        "winner": "ML is close to fair; derivative or live entry needs to carry the edge."
+      },
+      {
+        "label": "Weakness",
+        "metric": "Lower is cleaner",
+        "leftScore": 0,
+        "rightScore": 0,
+        "leftLabel": "Billy Harris",
+        "rightLabel": "Yunchaokete Bu",
+        "winner": "Market-only"
+      },
+      {
+        "label": "Volatility",
+        "metric": "Lower is cleaner",
+        "leftScore": 75,
+        "rightScore": 25,
+        "leftLabel": "Risk",
+        "rightLabel": "Stability",
+        "winner": "Pass-first"
+      }
+    ],
+    "predictionMarket": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T03:58:44.875Z",
+      "totalVolume": null,
+      "players": [
+        {
+          "name": "Billy Harris",
+          "probabilityPct": 50.7,
+          "amount": null,
+          "americanOdds": -103,
+          "edgePct": -3.7,
+          "priceBand": "Coinflip"
+        },
+        {
+          "name": "Yunchaokete Bu",
+          "probabilityPct": 55.9,
+          "amount": null,
+          "americanOdds": -127,
+          "edgePct": -1.9,
+          "priceBand": "Coinflip"
+        }
+      ]
+    },
+    "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Yunchaokete Bu",
+        "line": null,
+        "americanOdds": -127,
+        "modelPct": 54,
+        "impliedPct": 55.9,
+        "edgePct": -1.9,
+        "evPer100": -3.5,
+        "netEvPer100": -5.5,
+        "grade": "Near fair",
+        "issue": "Favorite price needs better proof",
+        "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "No bet",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": null,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": null,
+        "grade": "No direction",
+        "reason": "Total games need expected match games vs the posted line."
+      },
+      {
+        "marketType": "Win a set",
+        "label": "Win a set %",
+        "selection": "Billy Harris 68% / Yunchaokete Bu 62%",
+        "rows": [
+          {
+            "name": "Billy Harris",
+            "confidence": 68,
+            "modelPct": 47,
+            "label": "Underdog set-win path needs early holds"
+          },
+          {
+            "name": "Yunchaokete Bu",
+            "confidence": 62,
+            "modelPct": 54,
+            "label": "Market favorite to win a set"
+          }
+        ],
+        "confidence": 68,
+        "grade": "Price required",
+        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Over 9.5",
+        "expectedGames": 10.1,
+        "confidence": 58,
+        "tiebreakRisk": 42,
+        "earlyBreakRisk": 58,
+        "grade": "Thin value",
+        "reason": "Expected first-set games 10.1 vs DraftKings Sportsbook 9.5; Over 9.5."
+      }
+    ],
+    "derivativeMarketCase": null,
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Yunchaokete Bu",
+        "americanOdds": -127,
+        "modelPct": 54,
+        "impliedPct": 55.9,
+        "edgePct": -1.9,
+        "evPer100": -3.5,
+        "netEvPer100": -5.5,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Near fair",
+        "betGrade": false
+      },
+      "spread": null,
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Over 9.5",
+        "line": 9.5,
+        "americanOdds": -215,
+        "expectedGames": 10.1,
+        "confidence": 58,
+        "tiebreakRisk": 42,
+        "earlyBreakRisk": 58,
+        "modelPct": 58,
+        "evPer100": -15,
+        "netEvPer100": -17,
+        "valueGrade": "Thin value",
+        "reason": "Expected first-set games 10.1 vs DraftKings Sportsbook 9.5; Over 9.5.",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Billy Harris",
+          "confidence": 68,
+          "modelPct": 47,
+          "label": "Underdog set-win path needs early holds",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Yunchaokete Bu",
+          "confidence": 62,
+          "modelPct": 54,
+          "label": "Market favorite to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "ensembleValueCase": null,
+    "projection": {
+      "projectedWinner": "Yunchaokete Bu",
+      "projectedSetLine": "2-0/2-1 range",
+      "setWinProjections": [
+        {
+          "name": "Billy Harris",
+          "confidence": 68,
+          "modelPct": 47,
+          "label": "Underdog set-win path needs early holds"
+        },
+        {
+          "name": "Yunchaokete Bu",
+          "confidence": 62,
+          "modelPct": 54,
+          "label": "Market favorite to win a set"
+        }
+      ],
+      "totalGames": null,
+      "straightSetsProbability": 48,
+      "upsetRisk": 46,
+      "overview": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+      "fantasy": []
+    },
+    "tradePlan": {
+      "laneLabel": "ML is close to fair; derivative or live entry needs to carry the edge.",
+      "summary": "Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.",
+      "trigger": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.",
+      "headline": "Market-only",
+      "exit": "No spread line",
+      "tone": "warning"
+    },
+    "derivativeMarkets": [
+      {
+        "label": "ML",
+        "value": "Yunchaokete Bu -127; Model 54% vs DraftKings Sportsbook implied 55.9% (-1.9 pts).",
+        "lean": "ML is close to fair; derivative or live entry needs to carry the edge.",
+        "confidence": 54,
+        "marketType": "ML",
+        "selection": "Yunchaokete Bu",
+        "americanOdds": -127,
+        "modelPct": 54,
+        "impliedPct": 55.9,
+        "edgePct": -1.9,
+        "evPer100": -3.5,
+        "netEvPer100": -5.5,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Near fair",
+        "betGrade": false,
+        "tone": "neutral",
+        "reason": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. ML is close to fair; derivative or live entry needs to carry the edge."
+      },
+      {
+        "label": "Win a set",
+        "value": "No set-win price captured",
+        "lean": "Underdog set-win path needs early holds",
+        "confidence": 68,
+        "setWinRows": [],
+        "valueGrade": "Needs posted price",
+        "tone": "accent",
+        "reason": "Best-of-five gives the non-ML side more room to win a set; use this to separate upset risk from match-winner confidence."
+      },
+      {
+        "label": "Spread",
+        "value": "No primary game spread captured",
+        "lean": "No spread line",
+        "confidence": 50,
+        "tone": "neutral",
+        "reason": "Only enter after visible first-service comfort and break-point pressure; no pre-match model edge."
+      },
+      {
+        "label": "O/U",
+        "value": "No total captured",
+        "lean": "No bet",
+        "confidence": 50,
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st set O/U",
+        "value": "Line 9.5",
+        "lean": "Over 9.5",
+        "confidence": 58,
+        "marketType": "First-set total",
+        "selection": "Over 9.5",
+        "line": 9.5,
+        "americanOdds": -215,
+        "expectedGames": 10.1,
+        "tiebreakRisk": 42,
+        "earlyBreakRisk": 58,
+        "modelPct": 58,
+        "evPer100": -15,
+        "netEvPer100": -17,
+        "valueGrade": "Thin value",
+        "reason": "Expected first-set games 10.1 vs DraftKings Sportsbook 9.5; Over 9.5.",
+        "betGrade": false,
+        "tone": "accent"
+      },
+      {
+        "label": "1st service game",
+        "value": "No first-service-game market captured",
+        "lean": "First-service-game prices",
+        "confidence": 54,
+        "firstServiceGameRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-service-game market captured."
+      },
+      {
+        "label": "First games",
+        "value": "No first-game prop market captured",
+        "lean": "First-game prop prices",
+        "confidence": 54,
+        "firstGamePropRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-games prop captured."
+      }
+    ],
+    "marketEconomics": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T03:58:44.875Z",
+      "eventUrl": "https://sportsbook.draftkings.com/leagues/tennis/challenger-birmingham?event=34235870",
+      "deskName": "Yunchaokete Bu",
+      "deskPricePct": 55.9,
+      "deskEdgePct": -1.9,
+      "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge.",
+      "players": [
+        {
+          "name": "Billy Harris",
+          "americanOdds": -103,
+          "impliedPct": 50.7,
+          "modelPct": 47,
+          "edgePct": -3.7,
+          "priceBand": "Coinflip",
+          "grossProfitPct": 97.1,
+          "grossPayoutMultiple": 1.971,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 97.1,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        },
+        {
+          "name": "Yunchaokete Bu",
+          "americanOdds": -127,
+          "impliedPct": 55.9,
+          "modelPct": 54,
+          "edgePct": -1.9,
+          "priceBand": "Coinflip",
+          "grossProfitPct": 78.7,
+          "grossPayoutMultiple": 1.787,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 78.7,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        }
+      ]
+    },
+    "clayMatchupData": {
+      "title": "Billy Harris vs Yunchaokete Bu",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Bu-Yunchaokete-Vs-Billy-Harris/",
+      "h2hText": "0:0",
+      "h2hRecord": "0:0",
+      "prediction": "Yunchaokete in 3",
+      "players": [
+        {
+          "name": "Bu Yunchaokete",
+          "record2026": {
+            "overall": "13-10",
+            "hard": "12-8",
+            "clay": "0-1",
+            "indoorHard": "0-1",
+            "grass": "1-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Birmingham Challenger\nLloyd Harris\nRSA  7-65 1-6 6-1 1st\n02 Jun 26",
+              "event": "Birmingham Challenger",
+              "opponent": "Lloyd Harris",
+              "result": "RSA  7-65 1-6 6-1 1st",
+              "date": "02 Jun 26"
+            },
+            {
+              "raw": "Paris\nEmilio Nava\nUSA   Loss 7-64 7-63 q1\n19 May 26",
+              "event": "Paris",
+              "opponent": "Emilio Nava",
+              "result": "USA   Loss 7-64 7-63 q1",
+              "date": "19 May 26"
+            },
+            {
+              "raw": "Wuxi Challenger\nSoon-Woo Kwon\nKOR   Loss 6-2 7-62 Fin.\n10 May 26",
+              "event": "Wuxi Challenger",
+              "opponent": "Soon-Woo Kwon",
+              "result": "KOR   Loss 6-2 7-62 Fin.",
+              "date": "10 May 26"
+            },
+            {
+              "raw": "Jie Cui\nCHN  6-1 7-5 1/2\n09 May 26",
+              "event": "",
+              "opponent": "Jie Cui",
+              "result": "CHN  6-1 7-5 1/2",
+              "date": "09 May 26"
+            },
+            {
+              "raw": "Adam Walton\nAUS  6-2 6-0 1/4\n08 May 26",
+              "event": "",
+              "opponent": "Adam Walton",
+              "result": "AUS  6-2 6-0 1/4",
+              "date": "08 May 26"
+            },
+            {
+              "raw": "Ognjen Milic\nSRB  6-4 6-3 2nd\n07 May 26",
+              "event": "",
+              "opponent": "Ognjen Milic",
+              "result": "SRB  6-4 6-3 2nd",
+              "date": "07 May 26"
+            },
+            {
+              "raw": "Keegan Smith\nUSA  6-4 7-5 1st\n05 May 26",
+              "event": "",
+              "opponent": "Keegan Smith",
+              "result": "USA  6-4 7-5 1st",
+              "date": "05 May 26"
+            },
+            {
+              "raw": "Jiujiang Challenger\nChak Lam Coleman Wong\nHKG   Loss 7-62 7-68 1/4\n01 May 26",
+              "event": "Jiujiang Challenger",
+              "opponent": "Chak Lam Coleman Wong",
+              "result": "HKG   Loss 7-62 7-68 1/4",
+              "date": "01 May 26"
+            }
+          ]
+        },
+        {
+          "name": "Billy Harris",
+          "record2026": {
+            "overall": "8-18",
+            "hard": "5-6",
+            "clay": "1-8",
+            "indoorHard": "1-4",
+            "grass": "1-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Birmingham Challenger\nMartin Damm\nUSA  2-6 7-63 7-63 1st\n02 Jun 26",
+              "event": "Birmingham Challenger",
+              "opponent": "Martin Damm",
+              "result": "USA  2-6 7-63 7-63 1st",
+              "date": "02 Jun 26"
+            },
+            {
+              "raw": "Paris\nChak Lam Coleman Wong\nHKG   Loss 6-2 4-6 7-67 q1\n19 May 26",
+              "event": "Paris",
+              "opponent": "Chak Lam Coleman Wong",
+              "result": "HKG   Loss 6-2 4-6 7-67 q1",
+              "date": "19 May 26"
+            },
+            {
+              "raw": "Oeiras 4 Challenger\nPetr Brunclik\nCZE   Loss 7-5 5-7 6-3 1st\n11 May 26",
+              "event": "Oeiras 4 Challenger",
+              "opponent": "Petr Brunclik",
+              "result": "CZE   Loss 7-5 5-7 6-3 1st",
+              "date": "11 May 26"
+            },
+            {
+              "raw": "Rome\nFrancisco Comesana\nARG   Loss 6-3 6-4 q1\n04 May 26",
+              "event": "Rome",
+              "opponent": "Francisco Comesana",
+              "result": "ARG   Loss 6-3 6-4 q1",
+              "date": "04 May 26"
+            },
+            {
+              "raw": "Mauthausen Challenger\nDiego Dedura\nGER   Loss 6-70 6-2 6-3 1st\n27 Apr 26",
+              "event": "Mauthausen Challenger",
+              "opponent": "Diego Dedura",
+              "result": "GER   Loss 6-70 6-2 6-3 1st",
+              "date": "27 Apr 26"
+            },
+            {
+              "raw": "Madrid\nDaniel Merida Aguilar\nESP   Loss 6-3 7-5 q1\n20 Apr 26",
+              "event": "Madrid",
+              "opponent": "Daniel Merida Aguilar",
+              "result": "ESP   Loss 6-3 7-5 q1",
+              "date": "20 Apr 26"
+            },
+            {
+              "raw": "Oeiras 3 Challenger\nJurij Rodionov\nAUT   Loss 6-2 1-6 6-3 1st\n14 Apr 26",
+              "event": "Oeiras 3 Challenger",
+              "opponent": "Jurij Rodionov",
+              "result": "AUT   Loss 6-2 1-6 6-3 1st",
+              "date": "14 Apr 26"
+            },
+            {
+              "raw": "Monza Challenger\nDino Prizmic\nCRO   Loss 6-3 6-4 2nd\n09 Apr 26",
+              "event": "Monza Challenger",
+              "opponent": "Dino Prizmic",
+              "result": "CRO   Loss 6-3 6-4 2nd",
+              "date": "09 Apr 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": "Billy Harris is good, but not spotless on clay at 1-8. Bu Yunchaokete has multiple recent clay matches with a tiebreak or three-set shape, which points toward set-extension or game-spread value if the number is generous. Billy Harris's recent clay record has enough pressure games that the lower-priced side can re-rate quickly if the first set stays on serve."
+    },
+    "opponentQualityData": {
+      "title": "Billy Harris vs Yunchaokete Bu",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Bu-Yunchaokete-Vs-Billy-Harris/",
+      "h2hRecord": "0:0",
+      "tennistonicPrediction": "Yunchaokete in 3",
+      "players": [
+        {
+          "name": "Bu Yunchaokete",
+          "ranking": null,
+          "records": {
+            "overall2026": {
+              "wins": 13,
+              "losses": 10,
+              "total": 23,
+              "winPct": 0.565
+            },
+            "clay2026": {
+              "wins": 0,
+              "losses": 1,
+              "total": 1,
+              "winPct": 0
+            },
+            "raw": {
+              "overall": "13-10",
+              "hard": "12-8",
+              "clay": "0-1",
+              "indoorHard": "0-1",
+              "grass": "1-0",
+              "carpet": "0-0"
+            }
+          },
+          "recentWindow": {
+            "matches": 8,
+            "completed": 8,
+            "wins": 5,
+            "losses": 3,
+            "winPct": 0.625,
+            "setsWon": 10,
+            "setsLost": 7,
+            "setPct": 0.588,
+            "gamesWon": 96,
+            "gamesLost": 78,
+            "gamePct": 0.552,
+            "resistanceMatches": 4,
+            "straightSetWins": 4,
+            "straightSetLosses": 3,
+            "avgKnownOpponentRank": 110.8,
+            "knownOpponentRanks": 4,
+            "missingOpponentRanks": 4,
+            "top10Opponents": 0,
+            "top25Opponents": 0,
+            "top50Opponents": 0,
+            "challengerOrItfMatches": 3,
+            "rankingCoveragePct": 0.5,
+            "scorelineFormScore": 84.2,
+            "opponentAdjustedFormScore": 84.2
+          },
+          "serviceData": {
+            "source": "not available in Tennistonic scrape",
+            "matchesWithStats": 0,
+            "avgServiceHoldPct": null,
+            "avgAces": null,
+            "avgFirstServeWonPct": null,
+            "note": "Recent scores support set/game resistance only until a Flashscore recent-match stat row is resolved."
+          },
+          "recentMatches": [
+            {
+              "event": "Birmingham Challenger",
+              "eventTier": "challenger",
+              "opponent": "Lloyd Harris",
+              "opponentRanking": {
+                "rank": 143,
+                "points": 423,
+                "age": 29,
+                "country": "South Africa",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/2863/lloyd-harris",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "RSA  7-65 1-6 6-1 1st",
+              "date": "02 Jun 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 2,
+                "setsLost": 1,
+                "gamesWon": 14,
+                "gamesLost": 13,
+                "tiebreakSets": 1,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-65"
+                  },
+                  {
+                    "leftGames": 1,
+                    "rightGames": 6,
+                    "raw": "1-6"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 1,
+                    "raw": "6-1"
+                  }
+                ]
+              },
+              "opponentWeight": 0.54,
+              "qualityPoints": 0.63,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Paris",
+              "eventTier": "tour-1000",
+              "opponent": "Emilio Nava",
+              "opponentRanking": {
+                "rank": 94,
+                "points": 631,
+                "age": 24,
+                "country": "USA",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/3772/emilio-nava",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "USA   Loss 7-64 7-63 q1",
+              "date": "19 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 12,
+                "gamesLost": 14,
+                "tiebreakSets": 2,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-64"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-63"
+                  }
+                ]
+              },
+              "opponentWeight": 0.99,
+              "qualityPoints": 0.416,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Wuxi Challenger",
+              "eventTier": "challenger",
+              "opponent": "Soon-Woo Kwon",
+              "opponentRanking": null,
+              "result": "KOR   Loss 6-2 7-62 Fin.",
+              "date": "10 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 8,
+                "gamesLost": 13,
+                "tiebreakSets": 1,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-62"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": 0.186,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Jie Cui",
+              "opponentRanking": null,
+              "result": "CHN  6-1 7-5 1/2",
+              "date": "09 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 13,
+                "gamesLost": 6,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 1,
+                    "raw": "6-1"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 5,
+                    "raw": "7-5"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.58,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Adam Walton",
+              "opponentRanking": {
+                "rank": 97,
+                "points": 614,
+                "age": 27,
+                "country": "Australia",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/3093/adam-walton",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "AUS  6-2 6-0 1/4",
+              "date": "08 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 12,
+                "gamesLost": 2,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 0,
+                    "raw": "6-0"
+                  }
+                ]
+              },
+              "opponentWeight": 0.765,
+              "qualityPoints": 0.865,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Ognjen Milic",
+              "opponentRanking": null,
+              "result": "SRB  6-4 6-3 2nd",
+              "date": "07 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 12,
+                "gamesLost": 7,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.56,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Keegan Smith",
+              "opponentRanking": null,
+              "result": "USA  6-4 7-5 1st",
+              "date": "05 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 13,
+                "gamesLost": 9,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 5,
+                    "raw": "7-5"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.55,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Jiujiang Challenger",
+              "eventTier": "challenger",
+              "opponent": "Chak Lam Coleman Wong",
+              "opponentRanking": {
+                "rank": 109,
+                "points": 574,
+                "age": 21,
+                "country": "Hong Kong",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/11398/chak-lam-coleman-wong",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "HKG   Loss 7-62 7-68 1/4",
+              "date": "01 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 12,
+                "gamesLost": 14,
+                "tiebreakSets": 2,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-62"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-68"
+                  }
+                ]
+              },
+              "opponentWeight": 0.54,
+              "qualityPoints": 0.254,
+              "flashscore": null,
+              "serviceStats": null
+            }
+          ]
+        },
+        {
+          "name": "Billy Harris",
+          "ranking": {
+            "rank": 150,
+            "points": 408,
+            "age": 31,
+            "country": "Great Britain",
+            "tour": "ATP",
+            "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+            "profileUrl": "https://www.espn.com/tennis/player/_/id/2361/billy-harris",
+            "liveRankSource": null,
+            "asOf": "2026-06-02"
+          },
+          "records": {
+            "overall2026": {
+              "wins": 8,
+              "losses": 18,
+              "total": 26,
+              "winPct": 0.308
+            },
+            "clay2026": {
+              "wins": 1,
+              "losses": 8,
+              "total": 9,
+              "winPct": 0.111
+            },
+            "raw": {
+              "overall": "8-18",
+              "hard": "5-6",
+              "clay": "1-8",
+              "indoorHard": "1-4",
+              "grass": "1-0",
+              "carpet": "0-0"
+            }
+          },
+          "recentWindow": {
+            "matches": 8,
+            "completed": 8,
+            "wins": 1,
+            "losses": 7,
+            "winPct": 0.125,
+            "setsWon": 6,
+            "setsLost": 15,
+            "setPct": 0.286,
+            "gamesWon": 90,
+            "gamesLost": 121,
+            "gamePct": 0.427,
+            "resistanceMatches": 5,
+            "straightSetWins": 0,
+            "straightSetLosses": 3,
+            "avgKnownOpponentRank": 97,
+            "knownOpponentRanks": 5,
+            "missingOpponentRanks": 3,
+            "top10Opponents": 0,
+            "top25Opponents": 0,
+            "top50Opponents": 0,
+            "challengerOrItfMatches": 5,
+            "rankingCoveragePct": 0.625,
+            "scorelineFormScore": 33,
+            "opponentAdjustedFormScore": 33
+          },
+          "serviceData": {
+            "source": "not available in Tennistonic scrape",
+            "matchesWithStats": 0,
+            "avgServiceHoldPct": null,
+            "avgAces": null,
+            "avgFirstServeWonPct": null,
+            "note": "Recent scores support set/game resistance only until a Flashscore recent-match stat row is resolved."
+          },
+          "recentMatches": [
+            {
+              "event": "Birmingham Challenger",
+              "eventTier": "challenger",
+              "opponent": "Martin Damm",
+              "opponentRanking": {
+                "rank": 116,
+                "points": 547,
+                "age": 53,
+                "country": "Czechia",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/544/martin-damm",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "USA  2-6 7-63 7-63 1st",
+              "date": "02 Jun 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 2,
+                "setsLost": 1,
+                "gamesWon": 16,
+                "gamesLost": 18,
+                "tiebreakSets": 2,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 2,
+                    "rightGames": 6,
+                    "raw": "2-6"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-63"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-63"
+                  }
+                ]
+              },
+              "opponentWeight": 0.54,
+              "qualityPoints": 0.6,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Paris",
+              "eventTier": "tour-1000",
+              "opponent": "Chak Lam Coleman Wong",
+              "opponentRanking": {
+                "rank": 109,
+                "points": 574,
+                "age": 21,
+                "country": "Hong Kong",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/11398/chak-lam-coleman-wong",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "HKG   Loss 6-2 4-6 7-67 q1",
+              "date": "19 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 1,
+                "setsLost": 2,
+                "gamesWon": 14,
+                "gamesLost": 17,
+                "tiebreakSets": 1,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  },
+                  {
+                    "leftGames": 4,
+                    "rightGames": 6,
+                    "raw": "4-6"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-67"
+                  }
+                ]
+              },
+              "opponentWeight": 0.825,
+              "qualityPoints": 0.347,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Oeiras 4 Challenger",
+              "eventTier": "challenger",
+              "opponent": "Petr Brunclik",
+              "opponentRanking": null,
+              "result": "CZE   Loss 7-5 5-7 6-3 1st",
+              "date": "11 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 1,
+                "setsLost": 2,
+                "gamesWon": 15,
+                "gamesLost": 18,
+                "tiebreakSets": 0,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 7,
+                    "rightGames": 5,
+                    "raw": "7-5"
+                  },
+                  {
+                    "leftGames": 5,
+                    "rightGames": 7,
+                    "raw": "5-7"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": 0.206,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Rome",
+              "eventTier": "tour-1000",
+              "opponent": "Francisco Comesana",
+              "opponentRanking": {
+                "rank": 102,
+                "points": 598,
+                "age": 25,
+                "country": "Argentina",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/10044/francisco-comesana",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "ARG   Loss 6-3 6-4 q1",
+              "date": "04 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 7,
+                "gamesLost": 12,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 0.825,
+              "qualityPoints": 0.049,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Mauthausen Challenger",
+              "eventTier": "challenger",
+              "opponent": "Diego Dedura",
+              "opponentRanking": null,
+              "result": "GER   Loss 6-70 6-2 6-3 1st",
+              "date": "27 Apr 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 1,
+                "setsLost": 2,
+                "gamesWon": 12,
+                "gamesLost": 18,
+                "tiebreakSets": 1,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 7,
+                    "raw": "6-70"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": 0.176,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Madrid",
+              "eventTier": "tour-1000",
+              "opponent": "Daniel Merida Aguilar",
+              "opponentRanking": {
+                "rank": 86,
+                "points": 696,
+                "age": 21,
+                "country": "Spain",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/10239/daniel-merida",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "ESP   Loss 6-3 7-5 q1",
+              "date": "20 Apr 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 8,
+                "gamesLost": 13,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 5,
+                    "raw": "7-5"
+                  }
+                ]
+              },
+              "opponentWeight": 0.99,
+              "qualityPoints": 0.069,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Oeiras 3 Challenger",
+              "eventTier": "challenger",
+              "opponent": "Jurij Rodionov",
+              "opponentRanking": null,
+              "result": "AUT   Loss 6-2 1-6 6-3 1st",
+              "date": "14 Apr 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 1,
+                "setsLost": 2,
+                "gamesWon": 11,
+                "gamesLost": 13,
+                "tiebreakSets": 0,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  },
+                  {
+                    "leftGames": 1,
+                    "rightGames": 6,
+                    "raw": "1-6"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": 0.216,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Monza Challenger",
+              "eventTier": "challenger",
+              "opponent": "Dino Prizmic",
+              "opponentRanking": {
+                "rank": 72,
+                "points": 785,
+                "age": 20,
+                "country": "Croatia",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/10105/dino-prizmic",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "CRO   Loss 6-3 6-4 2nd",
+              "date": "09 Apr 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 7,
+                "gamesLost": 12,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 0.648,
+              "qualityPoints": 0.028,
+              "flashscore": null,
+              "serviceStats": null
+            }
+          ]
+        }
+      ],
+      "matchupRead": "Billy Harris owns the stronger 2026 clay record by 11.1 percentage points. Bu Yunchaokete leads the current opponent-adjusted form score by 51.2 points. 7 recent-opponent rankings are still missing, so this read should be treated as partially ranked until the ranking warehouse is filled."
+    },
+    "researchLinks": [
+      {
+        "label": "ESPN scoreboard",
+        "url": "https://www.espn.com/tennis/scoreboard/_/date/20260604"
+      },
+      {
+        "label": "Tennistonic H2H",
+        "url": "https://tennistonic.com/head-to-head-compare/Bu-Yunchaokete-Vs-Billy-Harris/"
+      },
+      {
+        "label": "DraftKings Sportsbook event",
+        "url": "https://sportsbook.draftkings.com/leagues/tennis/challenger-birmingham?event=34235870"
+      }
+    ],
+    "formEdgeName": "Yunchaokete Bu"
+  },
+  "participants": [
+    {
+      "id": "rh-atp-challenger-birmingham-harris-vs-bu-2026-06-04:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Billy Harris",
+      "detail": "Grass | Live rank #150 | Great Britain | age 31",
+      "americanOdds": -103,
+      "americanLabel": "-103",
+      "decimalOdds": 1.970873786407767,
+      "impliedProbability": 0.5073891625615764,
+      "impliedProbabilityLabel": "50.7%"
+    },
+    {
+      "id": "rh-atp-challenger-birmingham-harris-vs-bu-2026-06-04:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Yunchaokete Bu",
+      "detail": "Grass | Live rank #165 | CHN | age 24.3",
+      "americanOdds": -127,
+      "americanLabel": "-127",
+      "decimalOdds": 1.7874015748031495,
+      "impliedProbability": 0.5594713656387665,
+      "impliedProbabilityLabel": "55.9%"
+    }
+  ],
+  "moneyline": {
+    "available": true,
+    "label": "DraftKings Sportsbook moneyline",
+    "provider": "DraftKings Sportsbook",
+    "participants": [
+      {
+        "id": "rh-atp-challenger-birmingham-harris-vs-bu-2026-06-04:0",
+        "index": 0,
+        "role": "Player 1",
+        "name": "Billy Harris",
+        "detail": "Grass | Live rank #150 | Great Britain | age 31",
+        "americanOdds": -103,
+        "americanLabel": "-103",
+        "decimalOdds": 1.970873786407767,
+        "impliedProbability": 0.5073891625615764,
+        "impliedProbabilityLabel": "50.7%"
+      },
+      {
+        "id": "rh-atp-challenger-birmingham-harris-vs-bu-2026-06-04:1",
+        "index": 1,
+        "role": "Player 2",
+        "name": "Yunchaokete Bu",
+        "detail": "Grass | Live rank #165 | CHN | age 24.3",
+        "americanOdds": -127,
+        "americanLabel": "-127",
+        "decimalOdds": 1.7874015748031495,
+        "impliedProbability": 0.5594713656387665,
+        "impliedProbabilityLabel": "55.9%"
+      }
+    ]
+  },
+  "analysis": {
+    "available": true,
+    "participantId": "rh-atp-challenger-birmingham-harris-vs-bu-2026-06-04:1",
+    "participant": {
+      "id": "rh-atp-challenger-birmingham-harris-vs-bu-2026-06-04:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Yunchaokete Bu",
+      "detail": "Grass | Live rank #165 | CHN | age 24.3",
+      "americanOdds": -127,
+      "americanLabel": "-127",
+      "decimalOdds": 1.7874015748031495,
+      "impliedProbability": 0.5594713656387665,
+      "impliedProbabilityLabel": "55.9%"
+    },
+    "opponent": {
+      "id": "rh-atp-challenger-birmingham-harris-vs-bu-2026-06-04:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Billy Harris",
+      "detail": "Grass | Live rank #150 | Great Britain | age 31",
+      "americanOdds": -103,
+      "americanLabel": "-103",
+      "decimalOdds": 1.970873786407767,
+      "impliedProbability": 0.5073891625615764,
+      "impliedProbabilityLabel": "50.7%"
+    },
+    "lean": "Market watch: Yunchaokete Bu; do not treat as a model bet.",
+    "rationale": "Yunchaokete Bu is the current market favorite. Yunchaokete Bu is only the current Robinhood market favorite over Billy Harris; Grass surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.",
+    "confidence": 54,
+    "volatility": 75,
+    "recommendationScore": 35,
+    "tier": "Watch",
+    "sourceLabel": "DraftKings Sportsbook",
+    "modelEdge": null,
+    "modelEdgeLabel": "",
+    "marketProbability": 0.5594713656387665,
+    "marketProbabilityLabel": "55.9%",
+    "inputs": [],
+    "inputsUsed": 0,
+    "volatilityNotes": [],
+    "indicators": {}
+  },
+  "metadata": {
+    "participantCount": 2,
+    "participantNames": [
+      "Billy Harris",
+      "Yunchaokete Bu"
+    ],
+    "tagCount": 6,
+    "hasSeriesBreakdown": false,
+    "hasMoneyline": true,
+    "hasAnalysisPick": true,
+    "hasStructuredInputs": false,
+    "hasPlayerProps": false,
+    "startMinutes": 240,
+    "spotlight": false,
+    "league": "Tennis",
+    "oddsProvider": "DraftKings Sportsbook"
+  }
+}

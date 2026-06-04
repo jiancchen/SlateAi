@@ -118,6 +118,9 @@ const impliedPctFromParticipant = (participant: AnyRecord) => {
   return null
 }
 
+const finiteValueOrNull = (value: unknown) =>
+  value !== null && value !== undefined && value !== '' && Number.isFinite(Number(value)) ? Number(value) : null
+
 const payoffIsPlayable = (entry: AnyRecord) => {
   if (/bet-grade value|thin value/i.test(String(entry.valueGrade || entry.payoffAction || ''))) return true
   if (Number.isFinite(Number(entry.evPer100)) && Number(entry.evPer100) >= 6) return true
@@ -2041,6 +2044,7 @@ function App() {
   const [loadingStoryGamesByDay, setLoadingStoryGamesByDay] = useState<Record<string, Record<number, boolean>>>({})
   const [activeStoryId, setActiveStoryId] = useState('')
   const [selectedStoryGamePk, setSelectedStoryGamePk] = useState<number | null>(null)
+  const [activeTennisEventFilterByDay, setActiveTennisEventFilterByDay] = useState<Record<string, string>>({})
 
   const isMobileDetailViewport = () => window.matchMedia(MOBILE_DETAIL_MEDIA_QUERY).matches
 
@@ -2300,6 +2304,27 @@ function App() {
     ? [...baseFilterOptions, 'Value']
     : baseFilterOptions
   const activeDayIsoDate = activeDay?.slateMeta?.isoDate ?? activeDayShell?.id ?? ''
+  const tennisGamesCount = games.filter((game: AnyRecord) => game.league === 'Tennis').length
+  const shouldShowTennisRailFilter =
+    tennisGamesCount > 0 && (activeFilter === 'Tennis' || (activeFilter === 'All' && tennisGamesCount === games.length))
+  const tennisEventNameForGame = (game: AnyRecord) =>
+    String(game.stage || game.eventName || game.title || 'Tennis event').split('|')[0].trim() || 'Tennis event'
+  const activeTennisEventFilter = activeTennisEventFilterByDay[activeDayId] ?? 'all'
+  const tennisEventFilterOptions = useMemo(() => {
+    const tennisGames = games.filter((game: AnyRecord) => game.league === 'Tennis')
+    if (!tennisGames.length) return []
+    const eventCounts = new Map<string, number>()
+    tennisGames.forEach((game: AnyRecord) => {
+      const eventName = tennisEventNameForGame(game)
+      eventCounts.set(eventName, (eventCounts.get(eventName) || 0) + 1)
+    })
+    return [
+      { id: 'all', label: 'All tennis events', count: tennisGames.length },
+      ...Array.from(eventCounts.entries())
+        .sort((left, right) => right[1] - left[1] || left[0].localeCompare(right[0]))
+        .map(([eventName, count]) => ({ id: eventName, label: eventName, count }))
+    ]
+  }, [games])
 
   useEffect(() => {
     if (!filterOptions.includes(activeFilter)) setActiveFilter('All')
@@ -2361,6 +2386,10 @@ function App() {
     const search = marketSearch.trim().toLowerCase()
     return games.filter((game: AnyRecord) => {
       if (activeFilter !== 'All' && game.league !== activeFilter) return false
+      if (shouldShowTennisRailFilter && activeTennisEventFilter !== 'all') {
+        if (game.league !== 'Tennis') return false
+        if (tennisEventNameForGame(game) !== activeTennisEventFilter) return false
+      }
       if (!search) return true
       const haystack = [
         game.title,
@@ -2374,7 +2403,7 @@ function App() {
         .toLowerCase()
       return haystack.includes(search)
     })
-  }, [activeFilter, games, marketSearch])
+  }, [activeFilter, activeTennisEventFilter, games, marketSearch, shouldShowTennisRailFilter])
 
   useEffect(() => {
     const currentSelected = selectedGameIdByDay[activeDayId]
@@ -2959,8 +2988,8 @@ function App() {
           if (!game) return null
           const eventState = getEventState(game, activeDayIsoDate, pacificClock)
           const confidence = Number.isFinite(Number(row.confidence)) ? Number(row.confidence) : game.analysis?.confidence ?? 50
-          const evPer100 = Number.isFinite(Number(row.evPer100)) ? Number(row.evPer100) : null
-          const edgePct = Number.isFinite(Number(row.edgePct)) ? Number(row.edgePct) : null
+          const evPer100 = finiteValueOrNull(row.evPer100)
+          const edgePct = finiteValueOrNull(row.edgePct)
           const valueGrade = row.valueGrade || null
           const marketLabel = row.marketType || row.label || 'Market'
           const valueLabel = [
@@ -3027,8 +3056,8 @@ function App() {
           const confidence = Number.isFinite(Number(market.confidence)) ? Number(market.confidence) : game.analysis?.confidence ?? 50
           const marketEconomics = market.label === 'ML' ? game.tennisContext?.marketEconomics : null
           const payoffLabel = payoffTag(marketEconomics?.deskPricePct)
-          const evPer100 = Number.isFinite(Number(market.evPer100)) ? Number(market.evPer100) : null
-          const edgePct = Number.isFinite(Number(market.edgePct)) ? Number(market.edgePct) : null
+          const evPer100 = finiteValueOrNull(market.evPer100)
+          const edgePct = finiteValueOrNull(market.edgePct)
           const valueGrade = market.valueGrade || market.payoffAction || null
           const edgeScore =
             evPer100 != null
@@ -3255,16 +3284,20 @@ function App() {
         start: game.start,
         marketType: market.marketType || market.label,
         valueGrade: market.valueGrade || 'No grade',
-        evPer100: Number.isFinite(Number(market.evPer100)) ? Number(market.evPer100) : null,
-        edgePct: Number.isFinite(Number(market.edgePct)) ? Number(market.edgePct) : null,
+        evPer100: finiteValueOrNull(market.evPer100),
+        edgePct: finiteValueOrNull(market.edgePct),
         confidence: Number.isFinite(Number(market.confidence)) ? Number(market.confidence) : game.analysis?.confidence ?? 50
       }))
     )
     if (!rows.length) return null
 
     const marketKey = (row: AnyRecord) => String(row.marketType || row.label || '').toLowerCase()
+    const isMlRow = (row: AnyRecord) => {
+      const key = marketKey(row)
+      return key === 'ml' || key.includes('moneyline') || key.includes('prediction-market ml')
+    }
     const boardRank = (row: AnyRecord) => {
-      const ev = Number(row.evPer100)
+      const ev = finiteValueOrNull(row.evPer100)
       return (row.betGrade ? 1000 : 0) + (Number.isFinite(ev) ? 300 + ev : Number(row.confidence || row.modelPct || 0))
     }
     const sortByBoardRank = (left: AnyRecord, right: AnyRecord) => boardRank(right) - boardRank(left)
@@ -3286,7 +3319,7 @@ function App() {
       .sort((left: AnyRecord, right: AnyRecord) => (right.evPer100 ?? -999) - (left.evPer100 ?? -999))
     const validatedRows = betGradeRows.filter((row: AnyRecord) => row.validity?.valid)
     const rawPositiveRows = rows
-      .filter((row: AnyRecord) => Number(row.evPer100) > 0)
+      .filter((row: AnyRecord) => Number(finiteValueOrNull(row.evPer100)) > 0)
       .map((row: AnyRecord) => ({ ...row, validity: tennisValueValidity(row) }))
       .filter((row: AnyRecord) => !row.validity?.valid)
       .sort((left: AnyRecord, right: AnyRecord) => (right.evPer100 ?? -999) - (left.evPer100 ?? -999))
@@ -3294,9 +3327,9 @@ function App() {
       .filter((row: AnyRecord) => row.valueGrade === 'Thin value')
       .sort((left: AnyRecord, right: AnyRecord) => (right.evPer100 ?? -999) - (left.evPer100 ?? -999))
     const negativeMlRows = rows
-      .filter((row: AnyRecord) => row.valueGrade === 'Negative EV' && String(row.marketType).toLowerCase() === 'ml')
+      .filter((row: AnyRecord) => row.valueGrade === 'Negative EV' && isMlRow(row))
       .sort((left: AnyRecord, right: AnyRecord) => (left.evPer100 ?? 999) - (right.evPer100 ?? 999))
-    const pricedRows = rows.filter((row: AnyRecord) => Number.isFinite(Number(row.evPer100)))
+    const pricedRows = rows.filter((row: AnyRecord) => finiteValueOrNull(row.evPer100) !== null)
     const noPriceRows = rows.filter((row: AnyRecord) => /needs posted price|no price/i.test(String(row.valueGrade)))
 
     return {
@@ -3308,10 +3341,10 @@ function App() {
       betGradeRows,
       validatedRows,
       modelPickRows: rows
-        .filter((row: AnyRecord) => marketKey(row) === 'ml' && normalizeNameToken(row.selection) === normalizeNameToken(row.game?.analysis?.participant?.name))
+        .filter((row: AnyRecord) => isMlRow(row) && normalizeNameToken(row.selection) === normalizeNameToken(row.game?.analysis?.participant?.name))
         .sort(sortByBoardRank)
         .slice(0, 8),
-      mlRows: rows.filter((row: AnyRecord) => marketKey(row) === 'ml').sort(sortByBoardRank).slice(0, 8),
+      mlRows: rows.filter(isMlRow).sort(sortByBoardRank).slice(0, 8),
       matchTotalRows: rows.filter(isMatchTotalRow).sort(sortByBoardRank).slice(0, 8),
       firstSetRows: rows.filter(isFirstSetRow).sort(sortByBoardRank).slice(0, 8),
       spreadRows: rows.filter((row: AnyRecord) => marketKey(row) === 'spread').sort(sortByBoardRank).slice(0, 8),
@@ -4709,6 +4742,7 @@ function App() {
           activeDayId={activeDayId}
           activeDayIsoDate={activeDayIsoDate}
           activeFilter={activeFilter}
+          activeTennisEventFilter={activeTennisEventFilter}
           activeValueScope={activeValueScope}
           addAnalystPick={addAnalystPick}
           availableValueScopes={availableValueScopes}
@@ -4741,11 +4775,14 @@ function App() {
           mlbDetailProps={mlbDetailProps}
           renderMoneylinePanel={renderMoneylinePanel}
           tennisDetailProps={tennisDetailProps}
+          tennisEventFilterOptions={tennisEventFilterOptions}
+          shouldShowTennisRailFilter={shouldShowTennisRailFilter}
           selectedGame={selectedGame}
           selectedGameId={selectedGameId}
           selectedPicks={selectedPicks}
           setActiveDeskTab={setActiveDeskTab}
           setActiveFilter={setActiveFilter}
+          setActiveTennisEventFilterByDay={setActiveTennisEventFilterByDay}
           setActiveValueScopeByDay={setActiveValueScopeByDay}
           setSelectedGameIdByDay={setSelectedGameIdByDay}
           shouldShowValueScope={shouldShowValueScope}

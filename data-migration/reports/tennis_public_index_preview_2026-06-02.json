@@ -2,14 +2,14 @@
   "contract": "data-migration/contracts/tennis_public_index_contract.md",
   "date_count": 13,
   "dry_run": false,
-  "export_manifest_id": "5ccfe9e0e758bdbc96331b0030612069",
-  "generated_at": "2026-06-04T00:00:05.427663+00:00",
+  "export_manifest_id": "0f0848d0c1f873c012a37764e7ea9498",
+  "generated_at": "2026-06-04T00:27:22.836493+00:00",
   "index_path": "data-migration/export-previews/tennis/index/index.json",
   "match_count": 375,
-  "model_run_count": 17,
+  "model_run_count": 18,
   "ok": true,
   "out_dir": "data-migration/export-previews/tennis/index",
-  "prediction_row_count": 591,
+  "prediction_row_count": 614,
   "script": "data-migration/scripts/export_tennis_public_index_from_db.py",
   "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db"
 }

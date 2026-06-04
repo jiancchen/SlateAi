@@ -1,0 +1,668 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-centurion-2-beckley-vs-duran-2026-06-04",
+  "boardTitle": "Alec Beckley vs Tuncay Duran",
+  "boardPlayerName": "Tuncay Duran",
+  "recentOpponentName": "Napolitano S.",
+  "recentIndex": 0,
+  "recentEvent": "Centurion 2 (South Africa)",
+  "recentDate": "Jun 02, 26",
+  "recentIsoDate": "2026-06-02",
+  "recentResult": "Loss 6-7 7-6 3-0",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Duran T. - Napolitano S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+  "players": [
+    "Duran T.",
+    "Napolitano S."
+  ],
+  "generatedAt": "2026-06-04T00:09:17.617Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/URsoIIoC/",
+  "matchId": "URsoIIoC",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_URsoIIoC",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_URsoIIoC"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:01"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 2,
+        "duration": "0:48"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 0,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:02"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "22",
+              "right": "6",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "51%",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (49/61)",
+              "right": "69% (34/49)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (19/35)",
+              "right": "52% (25/48)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/6",
+              "right": "3/5",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (15/49)",
+              "right": "20% (12/61)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (23/48)",
+              "right": "46% (16/35)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "0/6",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "40",
+              "right": "20",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "42",
+              "right": "39",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (68/96)",
+              "right": "61% (59/97)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (38/97)",
+              "right": "29% (28/96)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (106/193)",
+              "right": "45% (87/193)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (13/13)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return games won",
+              "left": "14% (2/14)",
+              "right": "0% (0/13)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total games won",
+              "left": "56% (15/27)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "13",
+              "right": "4",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "48%",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (25/33)",
+              "right": "82% (18/22)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (11/19)",
+              "right": "54% (13/24)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/6",
+              "right": "1/1",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "18% (4/22)",
+              "right": "24% (8/33)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (11/24)",
+              "right": "42% (8/19)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "0/6",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "10",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "25",
+              "right": "20",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (36/52)",
+              "right": "67% (31/46)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (15/46)",
+              "right": "31% (16/52)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (51/98)",
+              "right": "48% (47/98)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "51%",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (17/22)",
+              "right": "74% (14/19)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (8/14)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (5/19)",
+              "right": "14% (3/22)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "44% (8/18)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "9",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "14",
+              "right": "13",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (28/39)",
+              "right": "65% (24/37)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (13/37)",
+              "right": "28% (11/39)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (41/76)",
+              "right": "46% (35/76)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "57%",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "117% (7/6)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "0% (0/2)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "75% (6/8)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (4/6)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "3",
+              "right": "6",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "80% (4/5)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "71% (10/14)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "74% (14/19)",
+              "right": "26% (5/19)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (1/1)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (2/2)",
+              "right": "0% (0/1)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            },
+            {
+              "label": "Total games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Duran T.",
+              "rightPlayer": "Napolitano S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

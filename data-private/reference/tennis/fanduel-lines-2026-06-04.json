@@ -1,0 +1,544 @@
+{
+  "date": "2026-06-04",
+  "source": "FanDuel Sportsbook event-page Chrome scrape",
+  "capturedAt": "2026-06-04T03:14:47.112Z",
+  "matches": [
+    {
+      "match": "Marta Kostyuk vs Mirra Andreeva",
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/marta-kostyuk-v-mirra-andreeva-35677996",
+      "eventId": "35677996",
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Marta Kostyuk",
+            "odds": -134
+          },
+          {
+            "player": "Mirra Andreeva",
+            "odds": 112
+          }
+        ],
+        "gameHandicap": [
+          {
+            "player": "Marta Kostyuk",
+            "spread": -1.5,
+            "odds": -112
+          },
+          {
+            "player": "Mirra Andreeva",
+            "spread": 1.5,
+            "odds": -118
+          }
+        ],
+        "totalGames": [
+          {
+            "side": "Over",
+            "line": 21.5,
+            "odds": -122
+          },
+          {
+            "side": "Under",
+            "line": 21.5,
+            "odds": -110
+          }
+        ],
+        "firstSetTotalGames": [
+          {
+            "side": "Over",
+            "line": 9.5,
+            "odds": -110
+          },
+          {
+            "side": "Under",
+            "line": 9.5,
+            "odds": -126
+          }
+        ],
+        "firstGameTotalPoints": [],
+        "firstServiceGameTotalPoints": [
+          {
+            "player": "Marta Kostyuk",
+            "market": "Marta Kostyuk Score of First Service Game",
+            "side": "Marta Kostyuk To Win To Love",
+            "line": null,
+            "odds": 700
+          },
+          {
+            "player": "Marta Kostyuk",
+            "market": "Marta Kostyuk Score of First Service Game",
+            "side": "Marta Kostyuk To Win To 15",
+            "line": null,
+            "odds": 380
+          },
+          {
+            "player": "Marta Kostyuk",
+            "market": "Marta Kostyuk Score of First Service Game",
+            "side": "Marta Kostyuk To Win To 30",
+            "line": null,
+            "odds": 370
+          },
+          {
+            "player": "Marta Kostyuk",
+            "market": "Marta Kostyuk Score of First Service Game",
+            "side": "Marta Kostyuk To Win To 40",
+            "line": null,
+            "odds": 400
+          },
+          {
+            "player": "Marta Kostyuk",
+            "market": "Marta Kostyuk Score of First Service Game",
+            "side": "Mirra Andreeva To Win To Love",
+            "line": null,
+            "odds": 1900
+          },
+          {
+            "player": "Marta Kostyuk",
+            "market": "Marta Kostyuk Score of First Service Game",
+            "side": "Mirra Andreeva To Win To 15",
+            "line": null,
+            "odds": 900
+          },
+          {
+            "player": "Marta Kostyuk",
+            "market": "Marta Kostyuk Score of First Service Game",
+            "side": "Mirra Andreeva To Win To 30",
+            "line": null,
+            "odds": 650
+          },
+          {
+            "player": "Marta Kostyuk",
+            "market": "Marta Kostyuk Score of First Service Game",
+            "side": "Mirra Andreeva To Win To 40",
+            "line": null,
+            "odds": 700
+          },
+          {
+            "player": "Mirra Andreeva",
+            "market": "Mirra Andreeva Score of First Service Game",
+            "side": "Marta Kostyuk To Win To Love",
+            "line": null,
+            "odds": 1800
+          },
+          {
+            "player": "Mirra Andreeva",
+            "market": "Mirra Andreeva Score of First Service Game",
+            "side": "Marta Kostyuk To Win To 15",
+            "line": null,
+            "odds": 900
+          },
+          {
+            "player": "Mirra Andreeva",
+            "market": "Mirra Andreeva Score of First Service Game",
+            "side": "Marta Kostyuk To Win To 30",
+            "line": null,
+            "odds": 650
+          },
+          {
+            "player": "Mirra Andreeva",
+            "market": "Mirra Andreeva Score of First Service Game",
+            "side": "Marta Kostyuk To Win To 40",
+            "line": null,
+            "odds": 650
+          },
+          {
+            "player": "Mirra Andreeva",
+            "market": "Mirra Andreeva Score of First Service Game",
+            "side": "Mirra Andreeva To Win To Love",
+            "line": null,
+            "odds": 650
+          },
+          {
+            "player": "Mirra Andreeva",
+            "market": "Mirra Andreeva Score of First Service Game",
+            "side": "Mirra Andreeva To Win To 15",
+            "line": null,
+            "odds": 400
+          },
+          {
+            "player": "Mirra Andreeva",
+            "market": "Mirra Andreeva Score of First Service Game",
+            "side": "Mirra Andreeva To Win To 30",
+            "line": null,
+            "odds": 380
+          },
+          {
+            "player": "Mirra Andreeva",
+            "market": "Mirra Andreeva Score of First Service Game",
+            "side": "Mirra Andreeva To Win To 40",
+            "line": null,
+            "odds": 390
+          }
+        ],
+        "winAtLeastOneSet": [
+          {
+            "market": "Marta Kostyuk to win at least one set",
+            "player": "Marta Kostyuk",
+            "selection": "Marta Kostyuk Yes",
+            "odds": -350
+          },
+          {
+            "market": "Marta Kostyuk to win at least one set",
+            "player": "Marta Kostyuk",
+            "selection": "Marta Kostyuk No",
+            "odds": 240
+          },
+          {
+            "market": "Mirra Andreeva to win at least one set",
+            "player": "Mirra Andreeva",
+            "selection": "Mirra Andreeva Yes",
+            "odds": -260
+          },
+          {
+            "market": "Mirra Andreeva to win at least one set",
+            "player": "Mirra Andreeva",
+            "selection": "Mirra Andreeva No",
+            "odds": 180
+          }
+        ],
+        "marketNames": [
+          "1st Set Score after 2 games",
+          "1st Set Score after 4 games",
+          "1st Set Score after 6 games",
+          "Alternative Game Spread",
+          "Alternative Game Spread",
+          "Alternative Game Spread",
+          "Alternative Game Spread",
+          "Alternative Game Spread",
+          "Alternative Game Spread",
+          "Alternative Set Spread",
+          "Alternative Total Games 1 20.5",
+          "Alternative Total Games 2 22.5",
+          "Alternative Total Games 3 19.5",
+          "Alternative Total Games 4 23.5",
+          "Alternative Total Games 5 18.5",
+          "Alternative Total Games 6 24.5",
+          "Correct Score 1st Set",
+          "Correct Score 2nd Set",
+          "Game Handicap -1.5",
+          "Marta Kostyuk Aces",
+          "Marta Kostyuk Score of First Service Game",
+          "Marta Kostyuk Total Double Faults 4.5",
+          "Marta Kostyuk Total Games 12.5",
+          "Marta Kostyuk to win at least one set",
+          "Mirra Andreeva Aces",
+          "Mirra Andreeva Score of First Service Game",
+          "Mirra Andreeva Total Double Faults 3.5",
+          "Mirra Andreeva Total Games 12.5",
+          "Mirra Andreeva to win at least one set",
+          "Moneyline",
+          "Set 1 Aces",
+          "Set 1 Correct Score Any Player",
+          "Set 1 Game Handicap -1.5",
+          "Set 1 Total Games 3 Way",
+          "Set 1 Total Games Over/Under 10.5",
+          "Set 1 Total Games Over/Under 12.5",
+          "Set 1 Total Games Over/Under 6.5",
+          "Set 1 Total Games Over/Under 7.5",
+          "Set 1 Total Games Over/Under 8.5",
+          "Set 1 Total Games Over/Under 9.5",
+          "Set 1 Winner",
+          "Set 2 Aces",
+          "Set 2 Correct Score Any Player",
+          "Set 2 Total Games 3 Way",
+          "Set 2 Total Games Over/Under 10.5",
+          "Set 2 Total Games Over/Under 12.5",
+          "Set 2 Total Games Over/Under 6.5",
+          "Set 2 Total Games Over/Under 7.5",
+          "Set 2 Total Games Over/Under 8.5",
+          "Set 2 Total Games Over/Under 9.5",
+          "Set 2 Winner",
+          "Set Betting",
+          "Set Handicap -1.5",
+          "Total Aces 3.5",
+          "Total Aces in the Match",
+          "Total Marta Kostyuk Aces 2.5",
+          "Total Match Games 21.5",
+          "Total Mirra Andreeva Aces 1.5",
+          "Total Sets 2.5"
+        ]
+      },
+      "capturedAt": "2026-06-04T03:14:37.851Z",
+      "source": "FanDuel Sportsbook event-page Chrome scrape"
+    },
+    {
+      "match": "Diana Shnaider vs Maja Chwalinska",
+      "href": "https://sportsbook.fanduel.com/tennis/women's-roland-garros-2026/diana-shnaider-v-maja-chwalinska-35682182",
+      "eventId": "35682182",
+      "markets": {
+        "moneyline": [
+          {
+            "player": "Diana Shnaider",
+            "odds": -184
+          },
+          {
+            "player": "Maja Chwalinska",
+            "odds": 152
+          }
+        ],
+        "gameHandicap": [
+          {
+            "player": "Diana Shnaider",
+            "spread": -3.5,
+            "odds": -110
+          },
+          {
+            "player": "Maja Chwalinska",
+            "spread": 3.5,
+            "odds": -124
+          }
+        ],
+        "totalGames": [
+          {
+            "side": "Over",
+            "line": 21.5,
+            "odds": -112
+          },
+          {
+            "side": "Under",
+            "line": 21.5,
+            "odds": -118
+          }
+        ],
+        "firstSetTotalGames": [
+          {
+            "side": "Over",
+            "line": 9.5,
+            "odds": 100
+          },
+          {
+            "side": "Under",
+            "line": 9.5,
+            "odds": -138
+          }
+        ],
+        "firstGameTotalPoints": [],
+        "firstServiceGameTotalPoints": [
+          {
+            "player": "Maja Chwalinska",
+            "market": "Maja Chwalinska Score of First Service Game",
+            "side": "Diana Shnaider To Win To Love",
+            "line": null,
+            "odds": 1100
+          },
+          {
+            "player": "Maja Chwalinska",
+            "market": "Maja Chwalinska Score of First Service Game",
+            "side": "Diana Shnaider To Win To 15",
+            "line": null,
+            "odds": 600
+          },
+          {
+            "player": "Maja Chwalinska",
+            "market": "Maja Chwalinska Score of First Service Game",
+            "side": "Diana Shnaider To Win To 30",
+            "line": null,
+            "odds": 470
+          },
+          {
+            "player": "Maja Chwalinska",
+            "market": "Maja Chwalinska Score of First Service Game",
+            "side": "Diana Shnaider To Win To 40",
+            "line": null,
+            "odds": 500
+          },
+          {
+            "player": "Maja Chwalinska",
+            "market": "Maja Chwalinska Score of First Service Game",
+            "side": "Maja Chwalinska To Win To Love",
+            "line": null,
+            "odds": 1000
+          },
+          {
+            "player": "Maja Chwalinska",
+            "market": "Maja Chwalinska Score of First Service Game",
+            "side": "Maja Chwalinska To Win To 15",
+            "line": null,
+            "odds": 550
+          },
+          {
+            "player": "Maja Chwalinska",
+            "market": "Maja Chwalinska Score of First Service Game",
+            "side": "Maja Chwalinska To Win To 30",
+            "line": null,
+            "odds": 500
+          },
+          {
+            "player": "Maja Chwalinska",
+            "market": "Maja Chwalinska Score of First Service Game",
+            "side": "Maja Chwalinska To Win To 40",
+            "line": null,
+            "odds": 460
+          },
+          {
+            "player": "Diana Shnaider",
+            "market": "Diana Shnaider Score of First Service Game",
+            "side": "Diana Shnaider To Win To Love",
+            "line": null,
+            "odds": 850
+          },
+          {
+            "player": "Diana Shnaider",
+            "market": "Diana Shnaider Score of First Service Game",
+            "side": "Diana Shnaider To Win To 15",
+            "line": null,
+            "odds": 460
+          },
+          {
+            "player": "Diana Shnaider",
+            "market": "Diana Shnaider Score of First Service Game",
+            "side": "Diana Shnaider To Win To 30",
+            "line": null,
+            "odds": 400
+          },
+          {
+            "player": "Diana Shnaider",
+            "market": "Diana Shnaider Score of First Service Game",
+            "side": "Diana Shnaider To Win To 40",
+            "line": null,
+            "odds": 460
+          },
+          {
+            "player": "Diana Shnaider",
+            "market": "Diana Shnaider Score of First Service Game",
+            "side": "Maja Chwalinska To Win To Love",
+            "line": null,
+            "odds": 1400
+          },
+          {
+            "player": "Diana Shnaider",
+            "market": "Diana Shnaider Score of First Service Game",
+            "side": "Maja Chwalinska To Win To 15",
+            "line": null,
+            "odds": 700
+          },
+          {
+            "player": "Diana Shnaider",
+            "market": "Diana Shnaider Score of First Service Game",
+            "side": "Maja Chwalinska To Win To 30",
+            "line": null,
+            "odds": 550
+          },
+          {
+            "player": "Diana Shnaider",
+            "market": "Diana Shnaider Score of First Service Game",
+            "side": "Maja Chwalinska To Win To 40",
+            "line": null,
+            "odds": 600
+          }
+        ],
+        "winAtLeastOneSet": [
+          {
+            "market": "Diana Shnaider to win at least one set",
+            "player": "Diana Shnaider",
+            "selection": "Diana Shnaider Yes",
+            "odds": -550
+          },
+          {
+            "market": "Diana Shnaider to win at least one set",
+            "player": "Diana Shnaider",
+            "selection": "Diana Shnaider No",
+            "odds": 350
+          },
+          {
+            "market": "Maja Chwalinska to win at least one set",
+            "player": "Maja Chwalinska",
+            "selection": "Maja Chwalinska Yes",
+            "odds": -180
+          },
+          {
+            "market": "Maja Chwalinska to win at least one set",
+            "player": "Maja Chwalinska",
+            "selection": "Maja Chwalinska No",
+            "odds": 132
+          }
+        ],
+        "marketNames": [
+          "1st Set Score after 2 games",
+          "1st Set Score after 4 games",
+          "1st Set Score after 6 games",
+          "Alternative Game Spread",
+          "Alternative Game Spread",
+          "Alternative Game Spread",
+          "Alternative Game Spread",
+          "Alternative Game Spread",
+          "Alternative Game Spread",
+          "Alternative Set Spread",
+          "Alternative Total Games 1 20.5",
+          "Alternative Total Games 2 22.5",
+          "Alternative Total Games 3 19.5",
+          "Alternative Total Games 4 23.5",
+          "Alternative Total Games 5 18.5",
+          "Alternative Total Games 6 24.5",
+          "Correct Score 1st Set",
+          "Correct Score 2nd Set",
+          "Diana Shnaider Aces",
+          "Diana Shnaider Score of First Service Game",
+          "Diana Shnaider Total Double Faults 3.5",
+          "Diana Shnaider Total Games 12.5",
+          "Diana Shnaider to win at least one set",
+          "Game Handicap -3.5",
+          "Maja Chwalinska Aces",
+          "Maja Chwalinska Score of First Service Game",
+          "Maja Chwalinska Total Double Faults 0.5",
+          "Maja Chwalinska Total Games 11.5",
+          "Maja Chwalinska to win at least one set",
+          "Moneyline",
+          "Set 1 Aces",
+          "Set 1 Correct Score Any Player",
+          "Set 1 Game Handicap -1.5",
+          "Set 1 Total Games 3 Way",
+          "Set 1 Total Games Over/Under 10.5",
+          "Set 1 Total Games Over/Under 12.5",
+          "Set 1 Total Games Over/Under 6.5",
+          "Set 1 Total Games Over/Under 7.5",
+          "Set 1 Total Games Over/Under 8.5",
+          "Set 1 Total Games Over/Under 9.5",
+          "Set 1 Winner",
+          "Set 2 Aces",
+          "Set 2 Correct Score Any Player",
+          "Set 2 Total Games 3 Way",
+          "Set 2 Total Games Over/Under 10.5",
+          "Set 2 Total Games Over/Under 12.5",
+          "Set 2 Total Games Over/Under 6.5",
+          "Set 2 Total Games Over/Under 7.5",
+          "Set 2 Total Games Over/Under 8.5",
+          "Set 2 Total Games Over/Under 9.5",
+          "Set 2 Winner",
+          "Set Betting",
+          "Set Handicap -1.5",
+          "Total Aces 1.5",
+          "Total Aces in the Match",
+          "Total Diana Shnaider Aces 1.5",
+          "Total Maja Chwalinska Aces 0.5",
+          "Total Match Games 21.5",
+          "Total Sets 2.5"
+        ]
+      },
+      "capturedAt": "2026-06-04T03:14:47.111Z",
+      "source": "FanDuel Sportsbook event-page Chrome scrape"
+    }
+  ],
+  "unmatched": [
+    "Alec Beckley vs Tuncay Duran",
+    "Edward Winter vs Alexander Donski",
+    "Vitaliy Sachko vs Vit Kopriva",
+    "Giles Hussey vs Robin Bertrand",
+    "Philip Henning vs Robert Strombachs",
+    "Coleman Wong vs Filippo Romano",
+    "Felix Gill vs Kamil Majchrzak",
+    "Sho Shimabukuro vs Elias Ymer",
+    "Diego Dedura-Palomero vs Joao Lucas Reis Da Silva",
+    "Janice Tjen vs Ashlyn Krueger",
+    "Luka Mikrut vs Jan Choinski",
+    "Milos Karol vs Alex Molcan",
+    "Alexandra Eala vs Alina Charaeva",
+    "Mananchaya Sawangkaew vs Kayla Day",
+    "Billy Harris vs Yunchaokete Bu",
+    "Mackenzie McDonald vs Rinky Hijikata",
+    "Otto Virtanen vs Aleksandar Vukic",
+    "Marco Trungelliti vs Yu Hsiou Hsu",
+    "Taro Daniel vs Damir Dzumhur",
+    "Arthur Fery vs Alex Bolt",
+    "Harry Wendelken vs Mark Lajal"
+  ]
+}

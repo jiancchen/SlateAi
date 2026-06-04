@@ -838,6 +838,39 @@ const priceBandFor = (impliedPct) => {
   return 'Underdog'
 }
 
+const predictionMarketGrade = (edgePct) => {
+  const edge = Number(edgePct)
+  if (!Number.isFinite(edge)) return 'No prediction-market price'
+  if (edge >= 7) return 'Prediction-market value'
+  if (edge >= 4) return 'Prediction-market watch'
+  if (edge > 0) return 'Thin prediction-market edge'
+  if (edge <= -7) return 'Prediction-market fade'
+  if (edge <= -4) return 'Prediction-market tax'
+  return 'Near fair'
+}
+
+const predictionMarketIssue = (edgePct) => {
+  const edge = Number(edgePct)
+  if (!Number.isFinite(edge)) return 'Need prediction-market ask before grading.'
+  if (edge >= 7) return 'Model is meaningfully above the prediction-market ask.'
+  if (edge >= 4) return 'Model is above the prediction-market ask, but not a validated sportsbook EV lane.'
+  if (edge > 0) return 'Small positive model-vs-ask gap; watch only.'
+  if (edge <= -7) return 'Prediction-market ask is far richer than the model.'
+  if (edge <= -4) return 'Prediction-market ask is ahead of the model.'
+  return 'Prediction-market ask is close to model fair.'
+}
+
+const predictionMarketPriceAction = (desk) => {
+  const edge = Number(desk?.edgePct)
+  if (!Number.isFinite(edge)) return 'Prediction-market price captured; wait for a clean ask before grading.'
+  if (edge >= 7) return 'Prediction-market value lane; cap entry by cents and do not treat as sportsbook arbitrage.'
+  if (edge >= 4) return 'Prediction-market watch lane; model is above the ask, but sizing still needs live liquidity.'
+  if (edge > 0) return 'Thin prediction-market edge; useful as a watch read more than a ticket.'
+  if (edge <= -7) return 'Prediction-market fade; market is asking too much versus the model.'
+  if (edge <= -4) return 'Prediction-market tax; price is ahead of the model.'
+  return 'Prediction-market price is near model fair.'
+}
+
 const playerLine = (lines, playerName) => {
   const key = normalizeName(playerName)
   const keyTokens = key.split(' ').filter(Boolean).sort().join(' ')
@@ -848,15 +881,18 @@ const playerLine = (lines, playerName) => {
   )
 }
 
-const buildFanDuelIndex = (lines) => {
+const buildSportsbookIndex = (...sources) => {
   const index = new Map()
-  for (const row of lines?.matches || []) {
-    index.set(normalizeName(row.match), row)
+  for (const lines of sources) {
+    for (const row of lines?.matches || []) {
+      const key = normalizeName(row.match)
+      if (key && !index.has(key)) index.set(key, row)
+    }
   }
   return index
 }
 
-const findFanDuelLine = (index, playerA, playerB) =>
+const findSportsbookLine = (index, playerA, playerB) =>
   index.get(normalizeName(`${playerA} vs ${playerB}`)) ?? index.get(normalizeName(`${playerB} vs ${playerA}`)) ?? null
 
 const buildRobinhoodIndex = (supplement) => {
@@ -893,6 +929,11 @@ const buildRobinhoodMarketData = ({ robinhood, players, pickName }) => {
     const impliedPct = Number(line?.impliedPct)
     const bidPct = Number(line?.bidPct)
     const lastTradePct = Number(line?.lastTradePct)
+    const modelPct = Number(player.modelPct)
+    const edgePct =
+      Number.isFinite(modelPct) && Number.isFinite(impliedPct)
+        ? Number((modelPct - impliedPct).toFixed(1))
+        : null
     const centsProfitIfWin = Number.isFinite(impliedPct) ? Number((100 - impliedPct).toFixed(1)) : null
     return {
       name: player.name,
@@ -902,8 +943,12 @@ const buildRobinhoodMarketData = ({ robinhood, players, pickName }) => {
       bidPct: Number.isFinite(bidPct) ? Number(bidPct.toFixed(1)) : null,
       lastTradePct: Number.isFinite(lastTradePct) ? Number(lastTradePct.toFixed(1)) : null,
       decimalOdds: null,
-      modelPct: player.modelPct,
-      edgePct: null,
+      modelPct: Number.isFinite(modelPct) ? Number(modelPct.toFixed(1)) : player.modelPct,
+      edgePct,
+      predictionMarketEdgePct: edgePct,
+      grossExpectedCents: edgePct,
+      netExpectedCents: edgePct,
+      maxEntryCents: Number.isFinite(modelPct) ? Math.max(1, Number((modelPct - 2).toFixed(1))) : null,
       priceBand: priceBandFor(impliedPct),
       grossProfitPct: centsProfitIfWin,
       grossPayoutMultiple: Number.isFinite(impliedPct) && impliedPct > 0 ? Number((100 / impliedPct).toFixed(3)) : null,
@@ -920,6 +965,7 @@ const buildRobinhoodMarketData = ({ robinhood, players, pickName }) => {
       .sort((left, right) => Number(right.impliedPct) - Number(left.impliedPct))[0] ??
     enrichedPlayers[0]
   const mlValue = enrichedPlayers.map((player) => `${player.name} ${player.americanLabel}`).join(' / ')
+  const priceAction = predictionMarketPriceAction(desk)
   return {
     source: 'Robinhood prediction market',
     sourceDetail: robinhood.source,
@@ -930,15 +976,15 @@ const buildRobinhoodMarketData = ({ robinhood, players, pickName }) => {
     totalVolume: robinhood.predictionMarket?.totalVolume ?? null,
     players: enrichedPlayers,
     desk,
-    priceAction: 'Prediction-market price captured; no sportsbook EV is inferred from this row.',
+    priceAction,
     spreadValue: 'No game spread captured',
     totalValue: 'No total captured',
     firstSetTotalValue: 'No first-set total captured',
     spreadLean: 'No spread line',
     totalLean: 'No total line',
     mlValue,
-    marketNote: `Robinhood prediction-market prices captured: ${mlValue}. This is price context, not a sportsbook value signal.`,
-    noVigNote: 'Prediction-market price only; no FanDuel moneyline edge calculated.'
+    marketNote: `Robinhood prediction-market prices captured: ${mlValue}. ${priceAction}`,
+    noVigNote: 'Prediction-market cents only; this is model-vs-ask edge, not sportsbook moneyline EV.'
   }
 }
 
@@ -1210,10 +1256,16 @@ const buildWeaknessEdge = ({ pickName, opponentName, pickQuality, oppQuality, pi
   }
 }
 
-const buildMarketData = ({ fanduel, players, pickName, weaknessEdge, confidence, totals }) => {
-  if (!fanduel?.markets?.moneyline?.length) return null
+const buildMarketData = ({ sportsbook, players, pickName, weaknessEdge, confidence, totals }) => {
+  if (!sportsbook?.markets?.moneyline?.length) return null
+  const provider =
+    /draftkings/i.test(String(sportsbook.source || ''))
+      ? 'DraftKings Sportsbook'
+      : /fanduel/i.test(String(sportsbook.source || ''))
+        ? 'FanDuel Sportsbook'
+        : sportsbook.source || 'Sportsbook'
   const enrichedPlayers = players.map((player) => {
-    const line = playerLine(fanduel.markets.moneyline, player.name)
+    const line = playerLine(sportsbook.markets.moneyline, player.name)
     const impliedPct = americanToImpliedPct(line?.odds)
     const decimalOdds = americanToDecimal(line?.odds)
     const grossProfitPct = profitOn100(line?.odds)
@@ -1233,24 +1285,27 @@ const buildMarketData = ({ fanduel, players, pickName, weaknessEdge, confidence,
     }
   })
   const desk = enrichedPlayers.find((player) => player.name === pickName) ?? enrichedPlayers[0]
-  const spread = playerLine(fanduel.markets.gameHandicap, pickName)
-  const total = (fanduel.markets.totalGames || [])[0]
-  const totalOver = (fanduel.markets.totalGames || []).find((line) => line.side === 'Over')
-  const totalUnder = (fanduel.markets.totalGames || []).find((line) => line.side === 'Under')
-  const firstSetTotal = (fanduel.markets.firstSetTotalGames || [])[0]
-  const firstSetTotalOver = (fanduel.markets.firstSetTotalGames || []).find((line) => line.side === 'Over')
-  const firstSetTotalUnder = (fanduel.markets.firstSetTotalGames || []).find((line) => line.side === 'Under')
+  const spread = playerLine(sportsbook.markets.gameHandicap, pickName)
+  const total = (sportsbook.markets.totalGames || [])[0]
+  const totalOver = (sportsbook.markets.totalGames || []).find((line) => line.side === 'Over')
+  const totalUnder = (sportsbook.markets.totalGames || []).find((line) => line.side === 'Under')
+  const firstSetTotal = (sportsbook.markets.firstSetTotalGames || [])[0]
+  const firstSetTotalOver = (sportsbook.markets.firstSetTotalGames || []).find((line) => line.side === 'Over')
+  const firstSetTotalUnder = (sportsbook.markets.firstSetTotalGames || []).find((line) => line.side === 'Under')
+  const firstServiceGameTotalPoints = sportsbook.markets.firstServiceGameTotalPoints || []
+  const firstGameProps = sportsbook.markets.firstGameProps || []
+  const setWinMarkets = sportsbook.markets.winAtLeastOneSet || []
   const edge = Number(desk?.edgePct)
   const impliedPct = Number(desk?.impliedPct)
-  let priceAction = 'FanDuel price captured; compare edge before betting.'
+  let priceAction = `${provider} price captured; compare edge before betting.`
   if (Number.isFinite(impliedPct) && impliedPct >= 82) {
     priceAction = 'ML payout is tiny; use spread/total or pass unless the number moves.'
   } else if (Number.isFinite(impliedPct) && impliedPct >= 70) {
     priceAction = 'Favorite price has limited payout; require a strong weakness edge or use spread/total.'
   } else if (Number.isFinite(edge) && edge >= 7) {
-    priceAction = 'Model is meaningfully above FanDuel implied price.'
+    priceAction = `Model is meaningfully above ${provider} implied price.`
   } else if (Number.isFinite(edge) && edge <= -4) {
-    priceAction = 'FanDuel price is richer than the model; pass ML unless live state improves.'
+    priceAction = `${provider} price is richer than the model; pass ML unless live state improves.`
   } else {
     priceAction = 'ML is close to fair; derivative or live entry needs to carry the edge.'
   }
@@ -1263,6 +1318,15 @@ const buildMarketData = ({ fanduel, players, pickName, weaknessEdge, confidence,
   const firstSetTotalValue = firstSetTotal
     ? `${firstSetTotal.line} 1st-set games: Over ${formatAmerican(firstSetTotalOver?.odds)} / Under ${formatAmerican(firstSetTotalUnder?.odds)}`
     : 'No first-set total captured'
+  const firstServiceGameValue = firstServiceGameTotalPoints.length
+    ? `${firstServiceGameTotalPoints.length} first-service-game prices captured`
+    : 'No first-service-game market captured'
+  const firstGamePropsValue = firstGameProps.length
+    ? firstGameProps.map((row) => `${row.market}: ${row.selection} ${formatAmerican(row.odds)}`).join(' / ')
+    : 'No first-game prop market captured'
+  const setWinValue = setWinMarkets.length
+    ? setWinMarkets.map((row) => `${row.selection} ${formatAmerican(row.odds)}`).join(' / ')
+    : 'No set-win price captured'
   const spreadLean = spread
     ? Math.abs(Number(spread.spread)) <= 3.5 && weaknessEdge?.edgeType === 'Weakness edge'
       ? `${pickName} spread is playable only if early return pressure shows`
@@ -1278,11 +1342,11 @@ const buildMarketData = ({ fanduel, players, pickName, weaknessEdge, confidence,
         : 'Total needs live serve data before entry'
     : 'No total line'
   return {
-    source: 'FanDuel Sportsbook',
-    sourceDetail: fanduel.source,
-    capturedAt: fanduel.capturedAt,
-    eventUrl: fanduel.href,
-    eventId: fanduel.eventId,
+    source: provider,
+    sourceDetail: sportsbook.source,
+    capturedAt: sportsbook.capturedAt,
+    eventUrl: sportsbook.href,
+    eventId: sportsbook.eventId,
     players: enrichedPlayers,
     desk,
     spread,
@@ -1292,15 +1356,21 @@ const buildMarketData = ({ fanduel, players, pickName, weaknessEdge, confidence,
     firstSetTotal,
     firstSetTotalOver,
     firstSetTotalUnder,
+    firstServiceGameTotalPoints,
+    firstGameProps,
+    setWinMarkets,
     priceAction,
     spreadValue,
     totalValue,
     firstSetTotalValue,
+    firstServiceGameValue,
+    firstGamePropsValue,
+    setWinValue,
     spreadLean,
     totalLean,
     mlValue: `${enrichedPlayers.map((player) => `${player.name} ${player.americanLabel}`).join(' / ')}`,
-    marketNote: `FanDuel ML, game handicap, match total, and first-set total captured from sportsbook page. ${priceAction}`,
-    noVigNote: Number.isFinite(edge) ? `Model ${confidence}% vs FanDuel implied ${desk.impliedPct}% (${edge > 0 ? '+' : ''}${edge} pts).` : 'No model-vs-price edge available.'
+    marketNote: `${provider} ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. ${priceAction}`,
+    noVigNote: Number.isFinite(edge) ? `Model ${confidence}% vs ${provider} implied ${desk.impliedPct}% (${edge > 0 ? '+' : ''}${edge} pts).` : 'No model-vs-price edge available.'
   }
 }
 
@@ -1358,8 +1428,8 @@ const firstSetValueBook = ({ derivativeCase, confidence, volatility, weaknessEdg
       valueGrade: selection.startsWith('Pass') ? 'Near fair' : Math.abs(lineGap) >= 0.65 ? 'Actionable live watch' : 'Thin value',
       reason:
         selection.startsWith('Pass')
-          ? `Expected first-set games ${expectedFromProfile} vs FanDuel ${postedLine}; near the number. ${totalsProfile?.reasonCore || ''}.`
-          : `Expected first-set games ${expectedFromProfile} vs FanDuel ${postedLine}; ${selection}. ${totalsProfile?.reasonCore || ''}.`,
+          ? `Expected first-set games ${expectedFromProfile} vs ${marketData?.source || 'sportsbook'} ${postedLine}; near the number. ${totalsProfile?.reasonCore || ''}.`
+          : `Expected first-set games ${expectedFromProfile} vs ${marketData?.source || 'sportsbook'} ${postedLine}; ${selection}. ${totalsProfile?.reasonCore || ''}.`,
       betGrade: false
     }
   }
@@ -1420,7 +1490,7 @@ const firstSetValueBook = ({ derivativeCase, confidence, volatility, weaknessEdg
     reason:
       lineGap == null
         ? 'Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone.'
-        : `Expected first-set games ${estimatedGames} vs FanDuel ${postedLine}; ${selection}.`,
+        : `Expected first-set games ${estimatedGames} vs ${marketData?.source || 'sportsbook'} ${postedLine}; ${selection}.`,
     betGrade: false
   }
 }
@@ -1465,6 +1535,64 @@ const buildValueBoard = ({ marketData, pickName, confidence, volatility, weaknes
       },
       firstSetTotal,
       setWin: setWinProjections
+    }
+  }
+  const isPredictionMarket = marketData.source === 'Robinhood prediction market'
+  if (isPredictionMarket) {
+    const desk = marketData.desk ?? {}
+    const marketEdge = Number(desk.edgePct)
+    const impliedPct = Number(desk.impliedPct)
+    const valueGradeText = predictionMarketGrade(marketEdge)
+    const valueIssueText = predictionMarketIssue(marketEdge)
+    const expectedCents = Number.isFinite(marketEdge) ? Number(marketEdge.toFixed(1)) : null
+    return {
+      note: 'Robinhood prediction-market rows use model probability minus ask cents. This is a prediction-market value lane, not sportsbook arbitrage.',
+      ml: {
+        marketType: 'Prediction-market ML',
+        selection: pickName,
+        americanOdds: null,
+        priceCents: Number.isFinite(impliedPct) ? impliedPct : null,
+        modelPct: confidence,
+        impliedPct: Number.isFinite(impliedPct) ? impliedPct : null,
+        edgePct: expectedCents,
+        predictionMarketEdgePct: expectedCents,
+        evPer100: expectedCents,
+        netEvPer100: expectedCents,
+        expectedCents,
+        maxEntryCents: desk.maxEntryCents ?? null,
+        feePer100: null,
+        valueIssue: valueIssueText,
+        valueGrade: valueGradeText,
+        betGrade: valueGradeText === 'Prediction-market value'
+      },
+      spread: {
+        marketType: 'Spread',
+        selection: pickName,
+        line: null,
+        americanOdds: null,
+        modelPct: Math.max(42, confidence - 6),
+        valueIssue: 'Robinhood did not expose a game-spread market for this event.',
+        valueGrade: 'Needs posted number',
+        betGrade: false
+      },
+      total: {
+        marketType: 'Total',
+        selection: 'No bet',
+        line: null,
+        americanOdds: null,
+        modelPct: Math.max(41, confidence - 8),
+        valueIssue: 'Robinhood did not expose a match-total market for this event.',
+        valueGrade: 'Needs posted total',
+        reason: totalsProfile?.reasonCore || 'No posted match-total line captured.',
+        betGrade: false
+      },
+      firstSetTotal,
+      setWin: setWinProjections.map((entry) => ({
+        ...entry,
+        marketType: 'Win a set',
+        valueGrade: 'Needs posted price',
+        betGrade: false
+      }))
     }
   }
   const mlOdds = marketData.desk?.odds
@@ -1517,9 +1645,9 @@ const buildValueBoard = ({ marketData, pickName, confidence, volatility, weaknes
   const totalNetEv = totalLine ? netEvPer100(totalModelPct, totalLine.odds) : null
   const totalReason =
     Number.isFinite(totalLineGap) && totalLine
-      ? `Expected match games ${expectedTotalGames} vs FanDuel ${postedTotalLine}; ${totalSelection}. ${totalsProfile?.reasonCore || ''}.`
+      ? `Expected match games ${expectedTotalGames} vs ${marketData?.source || 'sportsbook'} ${postedTotalLine}; ${totalSelection}. ${totalsProfile?.reasonCore || ''}.`
       : marketData.total
-        ? `FanDuel total is ${marketData.total.line}; model did not clear a full-match over/under edge from hold, return, and set-shape data. ${totalsProfile?.reasonCore || ''}.`
+        ? `${marketData?.source || 'Sportsbook'} total is ${marketData.total.line}; model did not clear a full-match over/under edge from hold, return, and set-shape data. ${totalsProfile?.reasonCore || ''}.`
         : 'No posted match total captured.'
   return {
     note: 'EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.',
@@ -1712,7 +1840,7 @@ const buildBettingMatrix = ({ marketData, valueBoard, setWinProjections, derivat
   return matrix
 }
 
-const buildGame = (match, rankings, quality, warehouse, date, fanduelIndex, robinhoodIndex, ensembleValueIndex, ensembleRowsByMatch, derivativeIndex) => {
+const buildGame = (match, rankings, quality, warehouse, date, sportsbookIndex, robinhoodIndex, ensembleValueIndex, ensembleRowsByMatch, derivativeIndex) => {
   const [a, b] = match.players
   const isAtp = /Men/i.test(match.round) || /ATP|Men/i.test(match.raw?.league || '') || !/^[A-Z][a-z]+a\b/.test(a.name)
   const idPrefix = match.raw?.lg?.includes?.('WTA') || /Women/i.test(match.raw?.league || '') ? 'w' : guessTour(a.name, b.name, rankings)
@@ -1757,10 +1885,10 @@ const buildGame = (match, rankings, quality, warehouse, date, fanduelIndex, robi
     { name: a.name, ranking: rankA, qualityName: qualityA?.name || null, profile: formatProfile(rankA, qualityA, surface), modelPct: Number(modelPctA.toFixed(1)), weakness: weaknessA },
     { name: b.name, ranking: rankB, qualityName: qualityB?.name || null, profile: formatProfile(rankB, qualityB, surface), modelPct: Number(modelPctB.toFixed(1)), weakness: weaknessB }
   ]
-  const fanduel = findFanDuelLine(fanduelIndex, a.name, b.name)
+  const sportsbook = findSportsbookLine(sportsbookIndex, a.name, b.name)
   const robinhood = findRobinhoodMarket(robinhoodIndex, a.name, b.name)
-  const fanDuelMarketData = buildMarketData({ fanduel, players, pickName, weaknessEdge, confidence, totals: read.totals })
-  const marketData = fanDuelMarketData ?? buildRobinhoodMarketData({ robinhood, players, pickName })
+  const sportsbookMarketData = buildMarketData({ sportsbook, players, pickName, weaknessEdge, confidence, totals: read.totals })
+  const marketData = sportsbookMarketData ?? buildRobinhoodMarketData({ robinhood, players, pickName })
   const playersWithMarket = players.map((player) => ({
     ...player,
     market: marketData?.players?.find((entry) => entry.name === player.name) ?? null
@@ -1843,7 +1971,7 @@ const warehouseDepthSummary = (warehousePlayer) => {
   }
 }
 
-const buildSupplementGame = (match, rankings, warehouse) => {
+const buildSupplementGame = (match, rankings, warehouse, sportsbookIndex) => {
   const [a, b] = match.players || []
   if (!a?.name || !b?.name) return null
   const marketPlayers = match.predictionMarket?.players || []
@@ -1946,7 +2074,9 @@ const buildSupplementGame = (match, rankings, warehouse) => {
       warehouseDepth: depthB
     }
   ]
-  const marketData = buildRobinhoodMarketData({ robinhood: match, players, pickName })
+  const sportsbook = findSportsbookLine(sportsbookIndex, a.name, b.name)
+  const sportsbookMarketData = buildMarketData({ sportsbook, players, pickName, weaknessEdge, confidence, totals: read.totals })
+  const marketData = sportsbookMarketData ?? buildRobinhoodMarketData({ robinhood: match, players, pickName })
   const setWinProjections = players.map((player) => ({
     name: player.name,
     confidence: player.name === pickName ? clamp(Math.round(confidence + 8), 58, 88) : clamp(Math.round(100 - confidence + 22), 36, 74),
@@ -2027,6 +2157,7 @@ const main = async () => {
     : await readJson('data-private/reference/tennis/player-rankings.json', { players: {} })
   const quality = await readJson(`web/src/lib/day-${options.date}-tennis-opponent-quality.generated.json`, { matches: {} })
   const warehouseContext = await readJson(`web/src/lib/day-${options.date}-tennis-warehouse-context.generated.json`, { matches: {} })
+  const draftkingsLines = await readJson(`data-private/reference/tennis/draftkings-lines-${options.date}.json`, { matches: [] })
   const fanduelLines = await readJson(`data-private/reference/tennis/fanduel-lines-${options.date}.json`, { matches: [] })
   const robinhoodMarkets = await readJson(`data-private/reference/tennis/robinhood-tennis-supplement-${options.date}.json`, { matches: [] })
   const ensemblePredictions = await readJson(`data-private/predictions/tennis/${options.date}-multimodel-ensemble.json`, { rows: [] })
@@ -2041,25 +2172,25 @@ const main = async () => {
       ensembleValueIndex.set(row.matchId, row)
     }
   }
-  const fanduelIndex = buildFanDuelIndex(fanduelLines)
+  const sportsbookIndex = buildSportsbookIndex(draftkingsLines, fanduelLines)
   const robinhoodIndex = buildRobinhoodIndex(robinhoodMarkets)
   const derivativeIndex = buildDerivativeIndex(derivativeMarkets.rows || [])
   const rolandGarrosGames = scoreboard.singles
     .filter((match) => !match.doubles && match.players?.length === 2)
     .filter(isSeniorRolandGarrosMatch)
     .filter((match) => !/qualifying/i.test(String(match.round || '')))
-    .map((match) => buildGame(match, rankings, quality, warehouseContext, options.date, fanduelIndex, robinhoodIndex, ensembleValueIndex, ensembleRowsByMatch, derivativeIndex))
-  const challengerGames = (robinhoodMarkets.matches || [])
-    .filter((match) => match.category === 'atp_challenger_singles')
-    .map((match) => buildSupplementGame(match, rankings, warehouseContext))
+    .map((match) => buildGame(match, rankings, quality, warehouseContext, options.date, sportsbookIndex, robinhoodIndex, ensembleValueIndex, ensembleRowsByMatch, derivativeIndex))
+  const supplementGames = (robinhoodMarkets.matches || [])
+    .filter((match) => match.singles !== false && match.category !== 'itf')
+    .map((match) => buildSupplementGame(match, rankings, warehouseContext, sportsbookIndex))
     .filter(Boolean)
-  const games = [...rolandGarrosGames, ...challengerGames].sort((left, right) => left.startMinutes - right.startMinutes || left.title.localeCompare(right.title))
+  const games = [...rolandGarrosGames, ...supplementGames].sort((left, right) => left.startMinutes - right.startMinutes || left.title.localeCompare(right.title))
   if (useDbInputs) {
     console.log(`TEN-T0 DB input adapter loaded ${scoreboard.singles.length} Roland Garros matches and ${Object.keys(rankings.players || {}).length} ranked players from ${options.dbPath}`)
   }
   const dayLabel = titleDate(options.date)
   const compact = options.date.replaceAll('-', '')
-  let moduleText = `import { createSportsMatchModel } from './sports-model.js'\nimport tennisClayContext from './day-${options.date}-tennis-clay-context.generated.json' with { type: 'json' }\nimport tennisOpponentQualityContext from './day-${options.date}-tennis-opponent-quality.generated.json' with { type: 'json' }\nimport tennisWarehouseContext from './day-${options.date}-tennis-warehouse-context.generated.json' with { type: 'json' }\n\nconst rawTennisGames = ${jsString(games)}\n\nconst normalizePlayerName = (value) => {\n  const normalized = String(value || '').normalize('NFKD').replace(/[\\u0300-\\u036f]/g, '').replace(/[^a-z0-9]+/gi, ' ').trim().toLowerCase()\n  return ({ 'xinyu wang': 'wang xinyu', 'xiyu wang': 'wang xiyu', 'yibing wu': 'wu yibing' })[normalized] || normalized\n}\n\nconst participant = (id, index, role, player) => ({\n  id: \`\${id}:\${index}\`,\n  index,\n  role,\n  name: player.name,\n  detail: player.profile || 'Profile pending',\n  americanOdds: player.market?.odds ?? null,\n  americanLabel: player.market?.americanLabel ?? 'N/A',\n  decimalOdds: player.market?.decimalOdds ?? null,\n  impliedProbability: player.market?.impliedPct ? player.market.impliedPct / 100 : null,\n  impliedProbabilityLabel: player.market?.impliedPct ? \`\${player.market.impliedPct}%\` : 'N/A'\n})\n\nconst buildGame = (raw) => {\n  const market = raw.marketData ?? null\n  const players = raw.players.map((player) => ({ ...player, market: market?.players?.find((entry) => entry.name === player.name) ?? null }))\n  const participants = [participant(raw.id, 0, 'Player 1', players[0]), participant(raw.id, 1, 'Player 2', players[1])]\n  const pickIndex = raw.pickName === raw.players[0].name ? 0 : 1\n  const picked = participants[pickIndex]\n  const opponent = participants[pickIndex === 0 ? 1 : 0]\n  const qualityContext = tennisOpponentQualityContext.matches?.[raw.id] ?? null\n  const clayData = tennisClayContext.matches?.[raw.id] ?? null\n  const warehouseContext = tennisWarehouseContext.matches?.[raw.id] ?? null\n  const marketPlayers = market?.players ?? []\n  const deskMarket = market?.desk ?? null\n  const marketEconomics = market ? {\n    source: market.source,\n    capturedAt: market.capturedAt,\n    eventUrl: market.eventUrl,\n    deskName: raw.pickName,\n    deskPricePct: deskMarket?.impliedPct ?? null,\n    deskEdgePct: deskMarket?.edgePct ?? null,\n    priceAction: market.priceAction,\n    players: marketPlayers.map((player) => ({\n      name: player.name,\n      americanOdds: player.odds,\n      impliedPct: player.impliedPct,\n      modelPct: player.modelPct,\n      edgePct: player.edgePct,\n      priceBand: player.priceBand,\n      grossProfitPct: player.grossProfitPct,\n      grossPayoutMultiple: player.grossPayoutMultiple,\n      centsAtRisk: player.centsAtRisk,\n      centsProfitIfWin: player.centsProfitIfWin\n    }))\n  } : null\n  const predictionMarket = market ? {\n    source: market.source,\n    capturedAt: market.capturedAt,\n    totalVolume: null,\n    players: marketPlayers.map((player) => ({ name: player.name, probabilityPct: player.impliedPct, amount: null, americanOdds: player.odds, edgePct: player.edgePct, priceBand: player.priceBand }))\n  } : null\n  const oddsMarkets = [\n    { label: 'Model fair', book: 'Tennis warehouse model', value: raw.players.map((player) => \`\${player.name} \${player.modelPct}%\`).join(' / ') },\n    market ? { label: 'FanDuel moneyline', book: market.source, value: market.mlValue } : null,\n    market?.spread ? { label: 'Game handicap', book: market.source, value: market.spreadValue } : null,\n    market?.total ? { label: 'Total games', book: market.source, value: market.totalValue } : null\n  ].filter(Boolean)\n  return createSportsMatchModel({\n    id: raw.id,\n    eventId: raw.eventId,\n    league: 'Tennis',\n    start: raw.start,\n    startMinutes: raw.startMinutes,\n    title: raw.title,\n    stage: \`Roland Garros \${raw.tour === 'ATP' ? 'Men' : 'Women'} | \${raw.round || 'Round 2'}\`,\n    spotlight: raw.tags.includes('High confidence'),\n    confidence: raw.confidence,\n    volatility: raw.volatility,\n    tags: raw.tags,\n    matchup: players.map((player, index) => ({ side: index === 0 ? 'Player 1' : 'Player 2', name: player.name, displayName: player.name, detail: player.profile || 'Profile pending' })),\n    summary: \`\${raw.pickName} is the desk side. \${raw.reason}\`,\n    factors: [\n      raw.reason,\n      market?.noVigNote,\n      raw.weaknessEdge?.gameFlow,\n      raw.weaknessEdge?.liveTrigger,\n      raw.totals,\n      'May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.',\n      market ? market.marketNote : 'No FanDuel line is stored for this match yet, so market edge is model-vs-fair only until a price is captured.'\n    ].filter(Boolean),\n    lean: market?.priceAction ? \`Lean \${raw.pickName}; \${market.priceAction}\` : \`Lean \${raw.pickName}; pass if the market price removes payout.\`,\n    swing: \`Risk: \${raw.tour === 'WTA' ? 'best-of-three volatility and break clusters' : 'best-of-five set extension and tiebreak variance'}.\`,\n    swingFactor: \`Risk: \${raw.tour === 'WTA' ? 'best-of-three volatility and break clusters' : 'best-of-five set extension and tiebreak variance'}.\`,\n    odds: {\n      participantOrder: [0, 1],\n      markets: oddsMarkets,\n      note: market?.marketNote || 'Market price not captured yet. Use this as fair-value context, not a bet ticket.',\n      provider: market?.source || 'Tennis warehouse model'\n    },\n    tennisContext: {\n      surface: 'Clay',\n      court: raw.court,\n      h2hLeader: '',\n      fatigueFlag: false,\n      liveDog: false,\n      weaknessEdge: raw.weaknessEdge,\n      warehouseContext,\n      sofascoreData: warehouseContext,\n      players: players.map((player) => ({\n        name: player.name,\n        rank: player.ranking?.rank ?? null,\n        label: player.name,\n        form: null,\n        boardPct: player.modelPct,\n        decimalOdds: player.market?.decimalOdds ?? null,\n        marketLabel: player.market ? \`\${player.market.americanLabel} / \${player.market.impliedPct}% implied\` : \`Model fair \${player.modelPct}%\`,\n        clayLine: player.profile || 'Profile pending',\n        weakness: player.weakness,\n        warehouseStats: warehouseContext?.players?.find((entry) => normalizePlayerName(entry.name) === normalizePlayerName(player.name)) ?? null,\n        record2026: '',\n        notes: player.name === raw.pickName ? \`Pick: model \${raw.confidence}%\` : \`Opponent case: model \${100 - raw.confidence}%\`,\n        matchupNote: player.name === raw.pickName ? \`Why pick: \${raw.reason}\` : 'Upset path: needs early scoreboard pressure or a market price that pays for volatility.'\n      })),\n      comparisonRows: [\n        { label: 'Model pick', metric: 'Fair win split', leftScore: raw.players[0].modelPct, rightScore: raw.players[1].modelPct, leftLabel: raw.players[0].name, rightLabel: raw.players[1].name, winner: raw.pickName },\n        market ? { label: 'FanDuel moneyline', metric: 'Implied price', leftScore: marketPlayers.find((player) => player.name === raw.players[0].name)?.impliedPct ?? 0, rightScore: marketPlayers.find((player) => player.name === raw.players[1].name)?.impliedPct ?? 0, leftLabel: raw.players[0].name, rightLabel: raw.players[1].name, winner: market.priceAction } : null,\n        { label: 'Weakness', metric: 'Lower is cleaner', leftScore: raw.players[0].weakness?.weaknessScore ?? 0, rightScore: raw.players[1].weakness?.weaknessScore ?? 0, leftLabel: raw.players[0].name, rightLabel: raw.players[1].name, winner: raw.weaknessEdge?.edgeType || 'No clear weakness edge' },\n        { label: 'Volatility', metric: 'Lower is cleaner', leftScore: raw.volatility, rightScore: 100 - raw.volatility, leftLabel: 'Risk', rightLabel: 'Stability', winner: raw.volatility <= 55 ? 'Stable enough' : 'Pass-first' }\n      ].filter(Boolean),\n      predictionMarket,\n      valueBoard: raw.valueBoard,\n      projection: { projectedWinner: raw.pickName, projectedSetLine: raw.tour === 'ATP' ? '3-1/3-2 range' : '2-0/2-1 range', setWinProjections: raw.setWinProjections, totalGames: market?.total?.line ?? null, straightSetsProbability: raw.tour === 'ATP' ? null : Math.max(48, Math.min(68, raw.confidence - 8)), upsetRisk: 100 - raw.confidence, overview: raw.weaknessEdge?.gameFlow || raw.reason, fantasy: [] },\n      tradePlan: { laneLabel: raw.tags.includes('High confidence') ? 'High confidence, price required' : market?.priceAction || 'Pass-first', summary: raw.weaknessEdge?.gameFlow || raw.totals, trigger: raw.weaknessEdge?.liveTrigger, headline: raw.weaknessEdge?.edgeType, exit: market?.spreadLean || raw.weaknessEdge?.spreadRead, tone: raw.tags.includes('High confidence') ? 'accent' : 'warning' },\n      derivativeMarkets: [\n        { label: 'ML', value: market ? \`\${raw.pickName} \${deskMarket?.americanLabel || ''}; \${market.noVigNote}\` : 'Need market price', lean: market?.priceAction || raw.weaknessEdge?.edgeType || 'Fair only', confidence: raw.confidence, ...(raw.valueBoard?.ml || {}), tone: market?.desk?.edgePct >= 7 ? 'accent' : market?.desk?.edgePct <= -4 ? 'warning' : 'neutral', reason: market?.marketNote || raw.weaknessEdge?.gameFlow || raw.reason },\n        { label: 'Win a set', value: raw.setWinProjections?.map((entry) => entry.name + ' ' + entry.confidence + '%').join(' / ') || 'No set projection', lean: raw.setWinProjections?.find((entry) => entry.name !== raw.pickName)?.label || 'Set-win path', confidence: Math.max(...(raw.setWinProjections || []).map((entry) => Number(entry.confidence) || 0), 0), setWinRows: raw.valueBoard?.setWin || [], valueGrade: 'Needs posted price', tone: raw.tour === 'ATP' ? 'accent' : 'neutral', reason: raw.tour === 'ATP' ? 'Best-of-five gives the non-ML side more room to win a set; use this to separate upset risk from match-winner confidence.' : 'Best-of-three set-win confidence is more fragile; early service holds matter more.' },\n        { label: 'Spread', value: market?.spreadValue || 'Need posted game spread', lean: market?.spreadLean || raw.weaknessEdge?.spreadRead || 'Need number', confidence: Math.max(50, raw.confidence - 6), ...(raw.valueBoard?.spread || {}), tone: raw.weaknessEdge?.edgeType === 'Weakness edge' ? 'accent' : 'neutral', reason: raw.weaknessEdge?.liveTrigger || 'Wait for first service cycle.' },\n        { label: 'O/U', value: market?.totalValue || 'Need posted total', lean: market?.totalLean || raw.weaknessEdge?.totalRead || raw.totals, confidence: Math.max(50, raw.confidence - 8), ...(raw.valueBoard?.total || {}), tone: raw.totals.includes('over') || raw.weaknessEdge?.totalRead?.includes('breaks') ? 'accent' : 'neutral', reason: raw.totals }\n      ],\n      marketEconomics,\n      clayMatchupData: clayData,\n      opponentQualityData: qualityContext,\n      researchLinks: [{ label: 'ESPN scoreboard', url: 'https://www.espn.com/tennis/scoreboard/_/date/${compact}' }, { label: 'Tennistonic H2H', url: raw.h2hUrl }, ...(market?.eventUrl ? [{ label: 'FanDuel event', url: market.eventUrl }] : [])],\n      formEdgeName: raw.pickName\n    },\n    participants,\n    moneyline: market ? { available: true, label: 'FanDuel moneyline', provider: market.source, participants } : { available: false, label: 'Moneyline', provider: 'Tennis warehouse model', participants: [] },\n    analysis: { available: true, participantId: picked.id, participant: picked, opponent, lean: \`Lean \${raw.pickName}\`, rationale: raw.reason, confidence: raw.confidence, volatility: raw.volatility, recommendationScore: raw.confidence - Math.round(raw.volatility / 3) + Math.round(Math.max(-8, Math.min(8, deskMarket?.edgePct ?? 0))), tier: raw.tags.includes('High confidence')  ? 'High confidence' : raw.tags.includes('Lean') ? 'Lean' : 'Watch', sourceLabel: market?.source || 'Tennis warehouse model', modelEdge: deskMarket?.edgePct ?? 0, modelEdgeLabel: deskMarket ? \`\${deskMarket.edgePct > 0 ? '+' : ''}\${deskMarket.edgePct} pts vs FanDuel implied\` : 'Fair value only until market price is captured', marketProbability: deskMarket?.impliedPct ? deskMarket.impliedPct / 100 : null, marketProbabilityLabel: deskMarket?.impliedPct ? \`\${deskMarket.impliedPct}% FanDuel implied\` : 'No market', inputs: [], inputsUsed: market ? 4 : 3, volatilityNotes: [] }\n  }, { structuredAnalysis: true })\n}\n\nconst matches = rawTennisGames.map(buildGame)\n\nexport const tennisModelCartridge = ${jsString(modelCartridge)}\nexport const slateMeta = { title: '${dayLabel} Tennis Desk', date: '${dayLabel}', isoDate: '${options.date}', timeZone: 'America/Los_Angeles', modelCartridge: tennisModelCartridge, subtitle: 'Singles-only Roland Garros main-draw slate with weakness-edge, game-flow gates, and sportsbook/market lines where captured.', notes: ['No doubles included.', 'FanDuel ML, game handicap, and total-games lines are attached where the sportsbook board exposes a matching singles event.', '${dayLabel} uses live rank, clay record, opponent-adjusted recent form, and warehouse service rows where joined.'] }\nexport const filters = ['All', 'Tennis']\nexport const oddsMeta = { provider: 'FanDuel Sportsbook + Tennis warehouse model', snapshot: '${dayLabel} Roland Garros desk', note: 'FanDuel lines are stored for priced matches; very expensive favorites are marked as low-payout or pass-first instead of automatic bets.' }\nexport const sources = [{ label: 'ESPN tennis scoreboard', url: 'https://www.espn.com/tennis/scoreboard/_/date/${compact}' }, { label: 'Live Tennis rankings warehouse', url: 'https://live-tennis.eu/' }, { label: 'FanDuel sportsbook tennis', url: 'https://sportsbook.fanduel.com/tennis' }]\nexport const games = matches.sort((left, right) => left.startMinutes - right.startMinutes || left.title.localeCompare(right.title))\n`
+  let moduleText = `import { createSportsMatchModel } from './sports-model.js'\nimport tennisClayContext from './day-${options.date}-tennis-clay-context.generated.json' with { type: 'json' }\nimport tennisOpponentQualityContext from './day-${options.date}-tennis-opponent-quality.generated.json' with { type: 'json' }\nimport tennisWarehouseContext from './day-${options.date}-tennis-warehouse-context.generated.json' with { type: 'json' }\n\nconst rawTennisGames = ${jsString(games)}\n\nconst normalizePlayerName = (value) => {\n  const normalized = String(value || '').normalize('NFKD').replace(/[\\u0300-\\u036f]/g, '').replace(/[^a-z0-9]+/gi, ' ').trim().toLowerCase()\n  return ({ 'bu yunchaokete': 'yunchaokete bu', 'chak lam coleman wong': 'coleman wong', 'diego dedura': 'diego dedura palomero', 'xinyu wang': 'wang xinyu', 'xiyu wang': 'wang xiyu', 'yibing wu': 'wu yibing' })[normalized] || normalized\n}\n\nconst participant = (id, index, role, player) => ({\n  id: \`\${id}:\${index}\`,\n  index,\n  role,\n  name: player.name,\n  detail: player.profile || 'Profile pending',\n  americanOdds: player.market?.odds ?? null,\n  americanLabel: player.market?.americanLabel ?? 'N/A',\n  decimalOdds: player.market?.decimalOdds ?? null,\n  impliedProbability: player.market?.impliedPct ? player.market.impliedPct / 100 : null,\n  impliedProbabilityLabel: player.market?.impliedPct ? \`\${player.market.impliedPct}%\` : 'N/A'\n})\n\nconst buildGame = (raw) => {\n  const market = raw.marketData ?? null\n  const players = raw.players.map((player) => ({ ...player, market: market?.players?.find((entry) => entry.name === player.name) ?? null }))\n  const participants = [participant(raw.id, 0, 'Player 1', players[0]), participant(raw.id, 1, 'Player 2', players[1])]\n  const pickIndex = raw.pickName === raw.players[0].name ? 0 : 1\n  const picked = participants[pickIndex]\n  const opponent = participants[pickIndex === 0 ? 1 : 0]\n  const qualityContext = tennisOpponentQualityContext.matches?.[raw.id] ?? null\n  const clayData = tennisClayContext.matches?.[raw.id] ?? null\n  const warehouseContext = tennisWarehouseContext.matches?.[raw.id] ?? null\n  const marketPlayers = market?.players ?? []\n  const deskMarket = market?.desk ?? null\n  const marketEconomics = market ? {\n    source: market.source,\n    capturedAt: market.capturedAt,\n    eventUrl: market.eventUrl,\n    deskName: raw.pickName,\n    deskPricePct: deskMarket?.impliedPct ?? null,\n    deskEdgePct: deskMarket?.edgePct ?? null,\n    priceAction: market.priceAction,\n    players: marketPlayers.map((player) => ({\n      name: player.name,\n      americanOdds: player.odds,\n      impliedPct: player.impliedPct,\n      modelPct: player.modelPct,\n      edgePct: player.edgePct,\n      priceBand: player.priceBand,\n      grossProfitPct: player.grossProfitPct,\n      grossPayoutMultiple: player.grossPayoutMultiple,\n      centsAtRisk: player.centsAtRisk,\n      centsProfitIfWin: player.centsProfitIfWin\n    }))\n  } : null\n  const predictionMarket = market ? {\n    source: market.source,\n    capturedAt: market.capturedAt,\n    totalVolume: null,\n    players: marketPlayers.map((player) => ({ name: player.name, probabilityPct: player.impliedPct, amount: null, americanOdds: player.odds, edgePct: player.edgePct, priceBand: player.priceBand }))\n  } : null\n  const oddsMarkets = [\n    { label: 'Model fair', book: 'Tennis warehouse model', value: raw.players.map((player) => \`\${player.name} \${player.modelPct}%\`).join(' / ') },\n    market ? { label: 'FanDuel moneyline', book: market.source, value: market.mlValue } : null,\n    market?.spread ? { label: 'Game handicap', book: market.source, value: market.spreadValue } : null,\n    market?.total ? { label: 'Total games', book: market.source, value: market.totalValue } : null\n  ].filter(Boolean)\n  return createSportsMatchModel({\n    id: raw.id,\n    eventId: raw.eventId,\n    league: 'Tennis',\n    start: raw.start,\n    startMinutes: raw.startMinutes,\n    title: raw.title,\n    stage: \`Roland Garros \${raw.tour === 'ATP' ? 'Men' : 'Women'} | \${raw.round || 'Round 2'}\`,\n    spotlight: raw.tags.includes('High confidence'),\n    confidence: raw.confidence,\n    volatility: raw.volatility,\n    tags: raw.tags,\n    matchup: players.map((player, index) => ({ side: index === 0 ? 'Player 1' : 'Player 2', name: player.name, displayName: player.name, detail: player.profile || 'Profile pending' })),\n    summary: \`\${raw.pickName} is the desk side. \${raw.reason}\`,\n    factors: [\n      raw.reason,\n      market?.noVigNote,\n      raw.weaknessEdge?.gameFlow,\n      raw.weaknessEdge?.liveTrigger,\n      raw.totals,\n      'May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.',\n      market ? market.marketNote : 'No FanDuel line is stored for this match yet, so market edge is model-vs-fair only until a price is captured.'\n    ].filter(Boolean),\n    lean: market?.priceAction ? \`Lean \${raw.pickName}; \${market.priceAction}\` : \`Lean \${raw.pickName}; pass if the market price removes payout.\`,\n    swing: \`Risk: \${raw.tour === 'WTA' ? 'best-of-three volatility and break clusters' : 'best-of-five set extension and tiebreak variance'}.\`,\n    swingFactor: \`Risk: \${raw.tour === 'WTA' ? 'best-of-three volatility and break clusters' : 'best-of-five set extension and tiebreak variance'}.\`,\n    odds: {\n      participantOrder: [0, 1],\n      markets: oddsMarkets,\n      note: market?.marketNote || 'Market price not captured yet. Use this as fair-value context, not a bet ticket.',\n      provider: market?.source || 'Tennis warehouse model'\n    },\n    tennisContext: {\n      surface: 'Clay',\n      court: raw.court,\n      h2hLeader: '',\n      fatigueFlag: false,\n      liveDog: false,\n      weaknessEdge: raw.weaknessEdge,\n      warehouseContext,\n      sofascoreData: warehouseContext,\n      players: players.map((player) => ({\n        name: player.name,\n        rank: player.ranking?.rank ?? null,\n        label: player.name,\n        form: null,\n        boardPct: player.modelPct,\n        decimalOdds: player.market?.decimalOdds ?? null,\n        marketLabel: player.market ? \`\${player.market.americanLabel} / \${player.market.impliedPct}% implied\` : \`Model fair \${player.modelPct}%\`,\n        clayLine: player.profile || 'Profile pending',\n        weakness: player.weakness,\n        warehouseStats: warehouseContext?.players?.find((entry) => normalizePlayerName(entry.name) === normalizePlayerName(player.name)) ?? null,\n        record2026: '',\n        notes: player.name === raw.pickName ? \`Pick: model \${raw.confidence}%\` : \`Opponent case: model \${100 - raw.confidence}%\`,\n        matchupNote: player.name === raw.pickName ? \`Why pick: \${raw.reason}\` : 'Upset path: needs early scoreboard pressure or a market price that pays for volatility.'\n      })),\n      comparisonRows: [\n        { label: 'Model pick', metric: 'Fair win split', leftScore: raw.players[0].modelPct, rightScore: raw.players[1].modelPct, leftLabel: raw.players[0].name, rightLabel: raw.players[1].name, winner: raw.pickName },\n        market ? { label: 'FanDuel moneyline', metric: 'Implied price', leftScore: marketPlayers.find((player) => player.name === raw.players[0].name)?.impliedPct ?? 0, rightScore: marketPlayers.find((player) => player.name === raw.players[1].name)?.impliedPct ?? 0, leftLabel: raw.players[0].name, rightLabel: raw.players[1].name, winner: market.priceAction } : null,\n        { label: 'Weakness', metric: 'Lower is cleaner', leftScore: raw.players[0].weakness?.weaknessScore ?? 0, rightScore: raw.players[1].weakness?.weaknessScore ?? 0, leftLabel: raw.players[0].name, rightLabel: raw.players[1].name, winner: raw.weaknessEdge?.edgeType || 'No clear weakness edge' },\n        { label: 'Volatility', metric: 'Lower is cleaner', leftScore: raw.volatility, rightScore: 100 - raw.volatility, leftLabel: 'Risk', rightLabel: 'Stability', winner: raw.volatility <= 55 ? 'Stable enough' : 'Pass-first' }\n      ].filter(Boolean),\n      predictionMarket,\n      valueBoard: raw.valueBoard,\n      projection: { projectedWinner: raw.pickName, projectedSetLine: raw.tour === 'ATP' ? '3-1/3-2 range' : '2-0/2-1 range', setWinProjections: raw.setWinProjections, totalGames: market?.total?.line ?? null, straightSetsProbability: raw.tour === 'ATP' ? null : Math.max(48, Math.min(68, raw.confidence - 8)), upsetRisk: 100 - raw.confidence, overview: raw.weaknessEdge?.gameFlow || raw.reason, fantasy: [] },\n      tradePlan: { laneLabel: raw.tags.includes('High confidence') ? 'High confidence, price required' : market?.priceAction || 'Pass-first', summary: raw.weaknessEdge?.gameFlow || raw.totals, trigger: raw.weaknessEdge?.liveTrigger, headline: raw.weaknessEdge?.edgeType, exit: market?.spreadLean || raw.weaknessEdge?.spreadRead, tone: raw.tags.includes('High confidence') ? 'accent' : 'warning' },\n      derivativeMarkets: [\n        { label: 'ML', value: market ? \`\${raw.pickName} \${deskMarket?.americanLabel || ''}; \${market.noVigNote}\` : 'Need market price', lean: market?.priceAction || raw.weaknessEdge?.edgeType || 'Fair only', confidence: raw.confidence, ...(raw.valueBoard?.ml || {}), tone: market?.desk?.edgePct >= 7 ? 'accent' : market?.desk?.edgePct <= -4 ? 'warning' : 'neutral', reason: market?.marketNote || raw.weaknessEdge?.gameFlow || raw.reason },\n        { label: 'Win a set', value: raw.setWinProjections?.map((entry) => entry.name + ' ' + entry.confidence + '%').join(' / ') || 'No set projection', lean: raw.setWinProjections?.find((entry) => entry.name !== raw.pickName)?.label || 'Set-win path', confidence: Math.max(...(raw.setWinProjections || []).map((entry) => Number(entry.confidence) || 0), 0), setWinRows: raw.valueBoard?.setWin || [], valueGrade: 'Needs posted price', tone: raw.tour === 'ATP' ? 'accent' : 'neutral', reason: raw.tour === 'ATP' ? 'Best-of-five gives the non-ML side more room to win a set; use this to separate upset risk from match-winner confidence.' : 'Best-of-three set-win confidence is more fragile; early service holds matter more.' },\n        { label: 'Spread', value: market?.spreadValue || 'Need posted game spread', lean: market?.spreadLean || raw.weaknessEdge?.spreadRead || 'Need number', confidence: Math.max(50, raw.confidence - 6), ...(raw.valueBoard?.spread || {}), tone: raw.weaknessEdge?.edgeType === 'Weakness edge' ? 'accent' : 'neutral', reason: raw.weaknessEdge?.liveTrigger || 'Wait for first service cycle.' },\n        { label: 'O/U', value: market?.totalValue || 'Need posted total', lean: market?.totalLean || raw.weaknessEdge?.totalRead || raw.totals, confidence: Math.max(50, raw.confidence - 8), ...(raw.valueBoard?.total || {}), tone: raw.totals.includes('over') || raw.weaknessEdge?.totalRead?.includes('breaks') ? 'accent' : 'neutral', reason: raw.totals }\n      ],\n      marketEconomics,\n      clayMatchupData: clayData,\n      opponentQualityData: qualityContext,\n      researchLinks: [{ label: 'ESPN scoreboard', url: 'https://www.espn.com/tennis/scoreboard/_/date/${compact}' }, { label: 'Tennistonic H2H', url: clayData?.sourceUrl || raw.h2hUrl }, ...(market?.eventUrl ? [{ label: 'FanDuel event', url: market.eventUrl }] : [])],\n      formEdgeName: raw.pickName\n    },\n    participants,\n    moneyline: market ? { available: true, label: 'FanDuel moneyline', provider: market.source, participants } : { available: false, label: 'Moneyline', provider: 'Tennis warehouse model', participants: [] },\n    analysis: { available: true, participantId: picked.id, participant: picked, opponent, lean: \`Lean \${raw.pickName}\`, rationale: raw.reason, confidence: raw.confidence, volatility: raw.volatility, recommendationScore: raw.confidence - Math.round(raw.volatility / 3) + Math.round(Math.max(-8, Math.min(8, deskMarket?.edgePct ?? 0))), tier: raw.tags.includes('High confidence')  ? 'High confidence' : raw.tags.includes('Lean') ? 'Lean' : 'Watch', sourceLabel: market?.source || 'Tennis warehouse model', modelEdge: deskMarket?.edgePct ?? 0, modelEdgeLabel: deskMarket ? \`\${deskMarket.edgePct > 0 ? '+' : ''}\${deskMarket.edgePct} pts vs FanDuel implied\` : 'Fair value only until market price is captured', marketProbability: deskMarket?.impliedPct ? deskMarket.impliedPct / 100 : null, marketProbabilityLabel: deskMarket?.impliedPct ? \`\${deskMarket.impliedPct}% FanDuel implied\` : 'No market', inputs: [], inputsUsed: market ? 4 : 3, volatilityNotes: [] }\n  }, { structuredAnalysis: true })\n}\n\nconst matches = rawTennisGames.map(buildGame)\n\nexport const tennisModelCartridge = ${jsString(modelCartridge)}\nexport const slateMeta = { title: '${dayLabel} Tennis Desk', date: '${dayLabel}', isoDate: '${options.date}', timeZone: 'America/Los_Angeles', modelCartridge: tennisModelCartridge, subtitle: 'Singles-only Roland Garros main-draw slate with weakness-edge, game-flow gates, and sportsbook/market lines where captured.', notes: ['No doubles included.', 'FanDuel ML, game handicap, and total-games lines are attached where the sportsbook board exposes a matching singles event.', '${dayLabel} uses live rank, clay record, opponent-adjusted recent form, and warehouse service rows where joined.'] }\nexport const filters = ['All', 'Tennis']\nexport const oddsMeta = { provider: 'FanDuel Sportsbook + Tennis warehouse model', snapshot: '${dayLabel} Roland Garros desk', note: 'FanDuel lines are stored for priced matches; very expensive favorites are marked as low-payout or pass-first instead of automatic bets.' }\nexport const sources = [{ label: 'ESPN tennis scoreboard', url: 'https://www.espn.com/tennis/scoreboard/_/date/${compact}' }, { label: 'Live Tennis rankings warehouse', url: 'https://live-tennis.eu/' }, { label: 'FanDuel sportsbook tennis', url: 'https://sportsbook.fanduel.com/tennis' }]\nexport const games = matches.sort((left, right) => left.startMinutes - right.startMinutes || left.title.localeCompare(right.title))\n`
 
   moduleText = moduleText.replace(
     '      valueBoard: raw.valueBoard,\n',
@@ -2067,11 +2198,15 @@ const main = async () => {
   )
   moduleText = moduleText.replace(
     "    market?.total ? { label: 'Total games', book: market.source, value: market.totalValue } : null\n  ].filter(Boolean)",
-    "    market?.total ? { label: 'Total games', book: market.source, value: market.totalValue } : null,\n    market?.firstSetTotal ? { label: '1st set total games', book: market.source, value: market.firstSetTotalValue } : null\n  ].filter(Boolean)"
+    "    market?.total ? { label: 'Total games', book: market.source, value: market.totalValue } : null,\n    market?.firstSetTotal ? { label: '1st set total games', book: market.source, value: market.firstSetTotalValue } : null,\n    market?.setWinMarkets?.length ? { label: 'To win a set', book: market.source, value: market.setWinValue } : null,\n    market?.firstServiceGameTotalPoints?.length ? { label: '1st service game', book: market.source, value: market.firstServiceGameValue } : null,\n    market?.firstGameProps?.length ? { label: 'First games props', book: market.source, value: market.firstGamePropsValue } : null\n  ].filter(Boolean)"
   )
   moduleText = moduleText.replace(
     "        { label: 'O/U', value: market?.totalValue || 'Need posted total', lean: market?.totalLean || raw.weaknessEdge?.totalRead || raw.totals, confidence: Math.max(50, raw.confidence - 8), ...(raw.valueBoard?.total || {}), tone: raw.totals.includes('over') || raw.weaknessEdge?.totalRead?.includes('breaks') ? 'accent' : 'neutral', reason: raw.totals }\n      ],",
-    "        { label: 'O/U', value: market?.totalValue || 'Need posted total', lean: raw.valueBoard?.total?.selection || market?.totalLean || raw.weaknessEdge?.totalRead || raw.totals, confidence: raw.valueBoard?.total?.modelPct ?? Math.max(50, raw.confidence - 8), ...(raw.valueBoard?.total || {}), tone: raw.valueBoard?.total?.selection === 'Over' || raw.valueBoard?.total?.selection === 'Under' ? 'accent' : 'neutral', reason: raw.valueBoard?.total?.reason || raw.totals },\n        { label: '1st set O/U', value: raw.valueBoard?.firstSetTotal?.line ? `Line ${raw.valueBoard.firstSetTotal.line}` : 'Need posted first-set total', lean: raw.valueBoard?.firstSetTotal?.selection || raw.valueBoard?.firstSetTotal?.lean || 'Price required', confidence: raw.valueBoard?.firstSetTotal?.confidence ?? Math.max(50, raw.confidence - 10), ...(raw.valueBoard?.firstSetTotal || {}), tone: raw.valueBoard?.firstSetTotal?.confidence >= 58 ? 'accent' : 'neutral', reason: raw.valueBoard?.firstSetTotal?.reason || 'Use expected first-set games against the posted 1st-set total.' }\n      ],"
+    "        { label: 'O/U', value: market?.totalValue || 'Need posted total', lean: raw.valueBoard?.total?.selection || market?.totalLean || raw.weaknessEdge?.totalRead || raw.totals, confidence: raw.valueBoard?.total?.modelPct ?? Math.max(50, raw.confidence - 8), ...(raw.valueBoard?.total || {}), tone: raw.valueBoard?.total?.selection === 'Over' || raw.valueBoard?.total?.selection === 'Under' ? 'accent' : 'neutral', reason: raw.valueBoard?.total?.reason || raw.totals },\n        { label: '1st set O/U', value: raw.valueBoard?.firstSetTotal?.line ? `Line ${raw.valueBoard.firstSetTotal.line}` : 'Need posted first-set total', lean: raw.valueBoard?.firstSetTotal?.selection || raw.valueBoard?.firstSetTotal?.lean || 'Price required', confidence: raw.valueBoard?.firstSetTotal?.confidence ?? Math.max(50, raw.confidence - 10), ...(raw.valueBoard?.firstSetTotal || {}), tone: raw.valueBoard?.firstSetTotal?.confidence >= 58 ? 'accent' : 'neutral', reason: raw.valueBoard?.firstSetTotal?.reason || 'Use expected first-set games against the posted 1st-set total.' },\n        { label: '1st service game', value: market?.firstServiceGameValue || 'No first-service-game market captured', lean: 'First-service-game prices', confidence: raw.confidence, firstServiceGameRows: market?.firstServiceGameTotalPoints || [], tone: market?.firstServiceGameTotalPoints?.length ? 'neutral' : 'muted', reason: market?.firstServiceGameTotalPoints?.length ? `${market.source} exposes first-service-game prices for this event.` : 'No sportsbook first-service-game market captured.' },\n        { label: 'First games', value: market?.firstGamePropsValue || 'No first-games prop captured', lean: 'First-game prop prices', confidence: raw.confidence, firstGamePropRows: market?.firstGameProps || [], tone: market?.firstGameProps?.length ? 'neutral' : 'muted', reason: market?.firstGameProps?.length ? `${market.source} exposes first-2/first-4 game props for this event.` : 'No sportsbook first-games prop captured.' }\n      ],"
+  )
+  moduleText = moduleText.replace(
+    "{ label: 'Win a set', value: raw.setWinProjections?.map((entry) => entry.name + ' ' + entry.confidence + '%').join(' / ') || 'No set projection', lean: raw.setWinProjections?.find((entry) => entry.name !== raw.pickName)?.label || 'Set-win path', confidence: Math.max(...(raw.setWinProjections || []).map((entry) => Number(entry.confidence) || 0), 0), setWinRows: raw.valueBoard?.setWin || [], valueGrade: 'Needs posted price', tone: raw.tour === 'ATP' ? 'accent' : 'neutral', reason: raw.tour === 'ATP' ? 'Best-of-five gives the non-ML side more room to win a set; use this to separate upset risk from match-winner confidence.' : 'Best-of-three set-win confidence is more fragile; early service holds matter more.' }",
+    "{ label: 'Win a set', value: market?.setWinValue || raw.setWinProjections?.map((entry) => entry.name + ' ' + entry.confidence + '%').join(' / ') || 'No set projection', lean: market?.setWinMarkets?.length ? `${market.source} set-win prices captured` : raw.setWinProjections?.find((entry) => entry.name !== raw.pickName)?.label || 'Set-win path', confidence: Math.max(...(raw.setWinProjections || []).map((entry) => Number(entry.confidence) || 0), 0), setWinRows: market?.setWinMarkets || raw.valueBoard?.setWin || [], valueGrade: market?.setWinMarkets?.length ? 'Priced set-win market' : 'Needs posted price', tone: market?.setWinMarkets?.length ? 'accent' : raw.tour === 'ATP' ? 'accent' : 'neutral', reason: market?.setWinMarkets?.length ? `${market.source} to-win-a-set prices are captured for this event.` : raw.tour === 'ATP' ? 'Best-of-five gives the non-ML side more room to win a set; use this to separate upset risk from match-winner confidence.' : 'Best-of-three set-win confidence is more fragile; early service holds matter more.' }"
   )
   moduleText = moduleText.replace(
     "    summary: `${raw.pickName} is the desk side. ${raw.reason}`,",
@@ -2095,7 +2230,7 @@ const main = async () => {
   )
   moduleText = moduleText.replace(
     "market ? { label: 'FanDuel moneyline', book: market.source, value: market.mlValue } : null",
-    "market ? { label: market.source === 'Robinhood prediction market' ? 'Prediction market prices' : 'FanDuel moneyline', book: market.source, value: market.mlValue } : null"
+    "market ? { label: market.source === 'Robinhood prediction market' ? 'Prediction market prices' : `${market.source} moneyline`, book: market.source, value: market.mlValue } : null"
   )
   moduleText = moduleText.replace(
     "stage: `Roland Garros ${raw.tour === 'ATP' ? 'Men' : 'Women'} | ${raw.round || 'Round 2'}`,",
@@ -2103,7 +2238,7 @@ const main = async () => {
   )
   moduleText = moduleText.replace(
     "market ? market.marketNote : 'No FanDuel line is stored for this match yet, so market edge is model-vs-fair only until a price is captured.'",
-    "raw.marketOnly ? 'Market-only Challenger row: no warehouse edge, sportsbook derivative, or service profile has been joined yet.' : market ? market.marketNote : 'No FanDuel line is stored for this match yet, so market edge is model-vs-fair only until a price is captured.'"
+    "raw.marketOnly ? 'Market-only Challenger row: no warehouse edge, sportsbook derivative, or service profile has been joined yet.' : market ? market.marketNote : 'No sportsbook line is stored for this match yet, so market edge is model-vs-fair only until a price is captured.'"
   )
   moduleText = moduleText.replace(
     "lean: market?.priceAction ? `Lean ${raw.pickName}; ${market.priceAction}` : `Lean ${raw.pickName}; pass if the market price removes payout.`,",
@@ -2120,15 +2255,23 @@ const main = async () => {
   )
   moduleText = moduleText.replace(
     "{ label: 'FanDuel event', url: market.eventUrl }",
-    "{ label: market.source === 'Robinhood prediction market' ? 'Robinhood market' : 'FanDuel event', url: market.eventUrl }"
+    "{ label: market.source === 'Robinhood prediction market' ? 'Robinhood market' : `${market.source} event`, url: market.eventUrl }"
   )
   moduleText = moduleText.replace(
     "moneyline: market ? { available: true, label: 'FanDuel moneyline', provider: market.source, participants }",
-    "moneyline: market ? { available: true, label: market.source === 'Robinhood prediction market' ? 'Prediction market' : 'FanDuel moneyline', provider: market.source, participants }"
+    "moneyline: market ? { available: true, label: market.source === 'Robinhood prediction market' ? 'Prediction market' : `${market.source} moneyline`, provider: market.source, participants }"
   )
   moduleText = moduleText.replace(
     "{ label: 'FanDuel moneyline', metric: 'Implied price'",
-    "{ label: market?.source === 'Robinhood prediction market' ? 'Prediction market' : 'FanDuel moneyline', metric: 'Implied price'"
+    "{ label: market?.source === 'Robinhood prediction market' ? 'Prediction market' : `${market.source} moneyline`, metric: 'Implied price'"
+  )
+  moduleText = moduleText.replace(
+    "modelEdgeLabel: deskMarket ? `${deskMarket.edgePct > 0 ? '+' : ''}${deskMarket.edgePct} pts vs FanDuel implied` : 'Fair value only until market price is captured'",
+    "modelEdgeLabel: deskMarket ? `${deskMarket.edgePct > 0 ? '+' : ''}${deskMarket.edgePct} pts vs ${market?.source === 'Robinhood prediction market' ? 'prediction-market ask' : `${market.source} implied`}` : 'Fair value only until market price is captured'"
+  )
+  moduleText = moduleText.replace(
+    "marketProbabilityLabel: deskMarket?.impliedPct ? `${deskMarket.impliedPct}% FanDuel implied` : 'No market'",
+    "marketProbabilityLabel: deskMarket?.impliedPct ? `${deskMarket.impliedPct}% ${market?.source === 'Robinhood prediction market' ? 'prediction-market ask' : `${market.source} implied`}` : 'No market'"
   )
   moduleText = moduleText.replace('totalVolume: null,', 'totalVolume: market?.totalVolume ?? null,')
   moduleText = moduleText.replace(
@@ -2148,12 +2291,20 @@ const main = async () => {
     "'${dayLabel} tags surface per match; clay record is full-strength only on clay and context-only on hard, grass, or unknown surfaces.'"
   )
   moduleText = moduleText.replace(
+    "'FanDuel ML, game handicap, and total-games lines are attached where the sportsbook board exposes a matching singles event.'",
+    "'DraftKings lines are preferred, with FanDuel and Robinhood fallback where needed.'"
+  )
+  moduleText = moduleText.replace(
+    "note: 'FanDuel lines are stored for priced matches; very expensive favorites are marked as low-payout or pass-first instead of automatic bets.'",
+    "note: 'DraftKings lines are preferred for priced matches; very expensive favorites are marked as low-payout or pass-first instead of automatic bets.'"
+  )
+  moduleText = moduleText.replace(
     "provider: 'FanDuel Sportsbook + Tennis warehouse model'",
-    "provider: 'FanDuel Sportsbook + Robinhood prediction markets + Tennis warehouse model'"
+    "provider: 'DraftKings Sportsbook + FanDuel fallback + Robinhood prediction markets + Tennis warehouse model'"
   )
   moduleText = moduleText.replace(
     "{ label: 'FanDuel sportsbook tennis', url: 'https://sportsbook.fanduel.com/tennis' }]",
-    "{ label: 'FanDuel sportsbook tennis', url: 'https://sportsbook.fanduel.com/tennis' }, { label: 'Robinhood tennis prediction markets', url: 'https://robinhood.com/us/en/prediction-markets/tennis/' }]"
+    "{ label: 'DraftKings sportsbook tennis', url: 'https://sportsbook.draftkings.com/sports/tennis' }, { label: 'FanDuel sportsbook tennis', url: 'https://sportsbook.fanduel.com/tennis' }, { label: 'Robinhood tennis prediction markets', url: 'https://robinhood.com/us/en/prediction-markets/tennis/' }]"
   )
 
   await fs.mkdir(path.dirname(path.resolve(ROOT, options.output)), { recursive: true })

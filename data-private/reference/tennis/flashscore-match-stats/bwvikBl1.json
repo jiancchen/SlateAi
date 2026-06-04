@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-centurion-2-bertrand-vs-hussey-2026-06-04",
+  "boardTitle": "Giles Hussey vs Robin Bertrand",
+  "boardPlayerName": "Robin Bertrand",
+  "recentOpponentName": "Zahraj P.",
+  "recentIndex": 0,
+  "recentEvent": "Centurion 2 (South Africa)",
+  "recentDate": "Jun 02, 26",
+  "recentIsoDate": "2026-06-02",
+  "recentResult": "Win 6-2 6-2",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Bertrand R. - Zahraj P.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+  "players": [
+    "Bertrand R.",
+    "Zahraj P."
+  ],
+  "generatedAt": "2026-06-04T00:09:19.030Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/bwvikBl1/",
+  "matchId": "bwvikBl1",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_bwvikBl1",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_bwvikBl1"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:34"
+      }
+    ],
+    "totalDuration": "1:11"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "46%",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (25/33)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (12/20)",
+              "right": "44% (11/25)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "4/8",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (7/21)",
+              "right": "24% (8/33)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (14/25)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/8",
+              "right": "0/4",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "20",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "28",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (37/53)",
+              "right": "54% (25/46)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (21/46)",
+              "right": "30% (16/53)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (58/99)",
+              "right": "41% (41/99)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (8/8)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (4/8)",
+              "right": "0% (0/8)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (12/16)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "52%",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (12/18)",
+              "right": "82% (9/11)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (9/14)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "1/3",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "18% (2/11)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "70% (7/10)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/4",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "13",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "15",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (21/32)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (9/21)",
+              "right": "34% (11/32)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (30/53)",
+              "right": "43% (23/53)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "40%",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "87% (13/15)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (3/6)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/5",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (5/10)",
+              "right": "13% (2/15)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "47% (7/15)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "0/0",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "13",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (16/21)",
+              "right": "52% (13/25)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (12/25)",
+              "right": "24% (5/21)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (28/46)",
+              "right": "39% (18/46)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Bertrand R.",
+              "rightPlayer": "Zahraj P."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

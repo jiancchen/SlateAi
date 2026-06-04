@@ -1,0 +1,710 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-birmingham-virtanen-vs-vukic-2026-06-04",
+  "boardTitle": "Otto Virtanen vs Aleksandar Vukic",
+  "boardPlayerName": "Otto Virtanen",
+  "recentOpponentName": "Budkov Kjaer N.",
+  "recentIndex": 3,
+  "recentEvent": "Rome (Italy)",
+  "recentDate": "May 04, 26",
+  "recentIsoDate": "2026-05-04",
+  "recentResult": "Loss 7-6 6-7 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Budkov Kjaer N. - Virtanen O.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/rome/",
+  "players": [
+    "Budkov Kjaer N.",
+    "Virtanen O."
+  ],
+  "generatedAt": "2026-06-04T00:09:24.061Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/KdEDE3KM/",
+  "matchId": "KdEDE3KM",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_KdEDE3KM",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_KdEDE3KM"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:52"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 3,
+        "duration": "1:07"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:35"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "9",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "54%",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (50/69)",
+              "right": "76% (45/59)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (27/45)",
+              "right": "48% (24/50)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "5/7",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "174 km/h",
+              "right": "209 km/h",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "160 km/h",
+              "right": "194 km/h",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (14/59)",
+              "right": "28% (19/69)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (26/50)",
+              "right": "40% (18/45)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/7",
+              "right": "1/2",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "24",
+              "right": "55",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "24",
+              "right": "66",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Net points won",
+              "left": "56% (10/18)",
+              "right": "74% (17/23)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (77/114)",
+              "right": "63% (69/109)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (40/109)",
+              "right": "32% (37/114)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (117/223)",
+              "right": "48% (106/223)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "94% (16/17)",
+              "right": "88% (14/16)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Return games won",
+              "left": "13% (2/16)",
+              "right": "6% (1/17)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Total games won",
+              "left": "55% (18/33)",
+              "right": "45% (15/33)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "58%",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (15/19)",
+              "right": "79% (22/28)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (12/16)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/3",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (6/28)",
+              "right": "26% (5/19)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (10/20)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "0/0",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "20",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "27",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "83% (10/12)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "75% (27/36)",
+              "right": "67% (32/48)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (16/48)",
+              "right": "25% (9/36)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (43/84)",
+              "right": "49% (41/84)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "6",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "58%",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (18/27)",
+              "right": "77% (17/22)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (11/23)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "1/2",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (5/22)",
+              "right": "33% (9/27)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (10/16)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "1/2",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "25",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "23",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Net points won",
+              "left": "56% (5/9)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (30/51)",
+              "right": "61% (23/38)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (15/38)",
+              "right": "41% (21/51)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (45/89)",
+              "right": "49% (44/89)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "39%",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (17/23)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (4/6)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (3/9)",
+              "right": "22% (5/23)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (6/14)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "10",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "16",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Net points won",
+              "left": "43% (3/7)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (20/27)",
+              "right": "61% (14/23)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (9/23)",
+              "right": "26% (7/27)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (29/50)",
+              "right": "42% (21/50)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Budkov Kjaer N.",
+              "rightPlayer": "Virtanen O."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

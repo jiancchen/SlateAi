@@ -1,0 +1,668 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-dedura-palomero-vs-reis-da-silva-2026-06-04",
+  "boardTitle": "Diego Dedura-Palomero vs Joao Lucas Reis Da Silva",
+  "boardPlayerName": "Joao Lucas Reis Da Silva",
+  "recentOpponentName": "Barrena A.",
+  "recentIndex": 0,
+  "recentEvent": "Heilbronn (Germany)",
+  "recentDate": "Jun 02, 26",
+  "recentIsoDate": "2026-06-02",
+  "recentResult": "Win 6-3 3-6 6-3",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Reis Da Silva J. - Barrena A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/heilbronn/",
+  "players": [
+    "Reis Da Silva J.",
+    "Barrena A."
+  ],
+  "generatedAt": "2026-06-04T00:09:21.666Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/KEuH7HFk/",
+  "matchId": "KEuH7HFk",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_KEuH7HFk",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_KEuH7HFk"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:43"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:06"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "4",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "41%",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (37/57)",
+              "right": "62% (21/34)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (17/29)",
+              "right": "59% (29/49)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "3/7",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (13/34)",
+              "right": "35% (20/57)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "41% (20/49)",
+              "right": "41% (12/29)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/7",
+              "right": "3/7",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "31",
+              "right": "15",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "50",
+              "right": "32",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (54/86)",
+              "right": "60% (50/83)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (33/83)",
+              "right": "37% (32/86)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (87/169)",
+              "right": "49% (82/169)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "79% (11/14)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Return games won",
+              "left": "31% (4/13)",
+              "right": "21% (3/14)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Total games won",
+              "left": "56% (15/27)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "79%",
+              "right": "43%",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (17/23)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "83% (5/6)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "2/3",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (4/12)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (8/16)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "0/2",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "3",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "11",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (22/29)",
+              "right": "61% (17/28)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (11/28)",
+              "right": "24% (7/29)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (33/57)",
+              "right": "42% (24/57)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "65%",
+              "right": "42%",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "53% (8/15)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (4/8)",
+              "right": "74% (14/19)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "1/2",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (5/14)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "26% (5/19)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/3",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "7",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "11",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "52% (12/23)",
+              "right": "67% (22/33)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (11/33)",
+              "right": "48% (11/23)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (23/56)",
+              "right": "59% (33/56)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "36%",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (12/19)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (8/15)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/2",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "50% (4/8)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (7/14)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "1/2",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "5",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "10",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (20/34)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (11/22)",
+              "right": "41% (14/34)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (31/56)",
+              "right": "45% (25/56)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Reis Da Silva J.",
+              "rightPlayer": "Barrena A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

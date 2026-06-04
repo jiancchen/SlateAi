@@ -1,0 +1,668 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-birmingham-virtanen-vs-vukic-2026-06-04",
+  "boardTitle": "Otto Virtanen vs Aleksandar Vukic",
+  "boardPlayerName": "Aleksandar Vukic",
+  "recentOpponentName": "Pinnington Jones J.",
+  "recentIndex": 0,
+  "recentEvent": "Birmingham (United Kingdom)",
+  "recentDate": "Jun 02, 26",
+  "recentIsoDate": "2026-06-02",
+  "recentResult": "Win 2-6 6-4 6-3",
+  "recentSurface": "Grass",
+  "flashscoreLabel": "Pinnington Jones J. - Vukic A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/birmingham/",
+  "players": [
+    "Pinnington Jones J.",
+    "Vukic A."
+  ],
+  "generatedAt": "2026-06-04T00:09:24.499Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/jJ3D8rrg/",
+  "matchId": "jJ3D8rrg",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_jJ3D8rrg",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_jJ3D8rrg"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:17"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:35"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "1:47"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "11",
+              "right": "3",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "61%",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "86% (44/51)",
+              "right": "71% (46/65)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (8/21)",
+              "right": "46% (19/41)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/7",
+              "right": "8/10",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (19/65)",
+              "right": "14% (7/51)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (22/41)",
+              "right": "62% (13/21)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/10",
+              "right": "2/7",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "26",
+              "right": "15",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "30",
+              "right": "24",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (52/72)",
+              "right": "61% (65/106)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (41/106)",
+              "right": "28% (20/72)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (93/178)",
+              "right": "48% (85/178)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "85% (11/13)",
+              "right": "86% (12/14)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Return games won",
+              "left": "14% (2/14)",
+              "right": "15% (2/13)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Total games won",
+              "left": "48% (13/27)",
+              "right": "52% (14/27)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "81%",
+              "right": "59%",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (13/13)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "100% (3/3)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/5",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (7/17)",
+              "right": "0% (0/13)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (8/12)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "0/0",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "0",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "2",
+              "right": "5",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "100% (16/16)",
+              "right": "48% (14/29)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "52% (15/29)",
+              "right": "0% (0/16)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "69% (31/45)",
+              "right": "31% (14/45)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "81%",
+              "right": "74%",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (17/22)",
+              "right": "80% (16/20)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (2/5)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "2/2",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (4/20)",
+              "right": "14% (3/22)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "29% (2/7)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "1/2",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "8",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "4",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (18/25)",
+              "right": "78% (21/27)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "22% (6/27)",
+              "right": "28% (7/25)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "46% (24/52)",
+              "right": "54% (28/52)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "56%",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (14/16)",
+              "right": "71% (20/28)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "23% (3/13)",
+              "right": "45% (10/22)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "3/3",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (8/28)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (12/22)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/3",
+              "right": "1/5",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "7",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "15",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (18/31)",
+              "right": "60% (30/50)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (20/50)",
+              "right": "42% (13/31)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (38/81)",
+              "right": "53% (43/81)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "4",
+              "right": "0",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Pinnington Jones J.",
+              "rightPlayer": "Vukic A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

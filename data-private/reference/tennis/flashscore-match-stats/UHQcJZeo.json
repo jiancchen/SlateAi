@@ -1,0 +1,668 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-birmingham-wendelken-vs-lajal-2026-06-04",
+  "boardTitle": "Harry Wendelken vs Mark Lajal",
+  "boardPlayerName": "Harry Wendelken",
+  "recentOpponentName": "Watt J.",
+  "recentIndex": 0,
+  "recentEvent": "Birmingham (United Kingdom)",
+  "recentDate": "Jun 02, 26",
+  "recentIsoDate": "2026-06-02",
+  "recentResult": "Win 6-4 6-7 7-6",
+  "recentSurface": "Grass",
+  "flashscoreLabel": "Watt J. - Wendelken H.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/birmingham/",
+  "players": [
+    "Watt J.",
+    "Wendelken H."
+  ],
+  "generatedAt": "2026-06-04T00:09:27.910Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/UHQcJZeo/",
+  "matchId": "UHQcJZeo",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_UHQcJZeo",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_UHQcJZeo"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:34"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:50"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 7,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:26"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "24",
+              "right": "2",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "9",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "57%",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "76% (56/74)",
+              "right": "81% (56/69)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (20/37)",
+              "right": "47% (25/53)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "4/6",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (14/69)",
+              "right": "24% (18/74)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (28/53)",
+              "right": "46% (17/37)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "3/4",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "44",
+              "right": "16",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "57",
+              "right": "30",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (75/109)",
+              "right": "66% (81/122)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (41/122)",
+              "right": "31% (34/109)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (116/231)",
+              "right": "50% (115/231)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "82% (14/17)",
+              "right": "88% (15/17)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Return games won",
+              "left": "12% (2/17)",
+              "right": "18% (3/17)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Total games won",
+              "left": "47% (16/34)",
+              "right": "53% (18/34)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "61%",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (11/17)",
+              "right": "85% (17/20)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "80% (8/10)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "1/1",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (7/20)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (7/13)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "1/1",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "12",
+              "right": "4",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "8",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (19/27)",
+              "right": "70% (23/33)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (10/33)",
+              "right": "30% (8/27)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (29/60)",
+              "right": "52% (31/60)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "9",
+              "right": "1",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "53%",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "87% (26/30)",
+              "right": "67% (14/21)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "18% (2/11)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "0/1",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "14% (3/21)",
+              "right": "13% (4/30)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (8/19)",
+              "right": "82% (9/11)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "1/2",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "6",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "19",
+              "right": "8",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (28/41)",
+              "right": "63% (26/41)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "37% (15/41)",
+              "right": "32% (13/41)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (43/82)",
+              "right": "48% (39/82)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "11",
+              "right": "0",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "5",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "57%",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (19/27)",
+              "right": "89% (25/28)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (10/16)",
+              "right": "38% (8/21)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "3/4",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "14% (4/28)",
+              "right": "30% (8/27)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (13/21)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "1/1",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "6",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "27",
+              "right": "14",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (28/41)",
+              "right": "67% (32/48)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (16/48)",
+              "right": "32% (13/41)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (44/89)",
+              "right": "51% (45/89)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Watt J.",
+              "rightPlayer": "Wendelken H."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

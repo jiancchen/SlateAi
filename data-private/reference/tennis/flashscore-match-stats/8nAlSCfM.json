@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-choinski-vs-mikrut-2026-06-04",
+  "boardTitle": "Luka Mikrut vs Jan Choinski",
+  "boardPlayerName": "Luka Mikrut",
+  "recentOpponentName": "Marti Pujolras A.",
+  "recentIndex": 0,
+  "recentEvent": "Heilbronn (Germany)",
+  "recentDate": "Jun 02, 26",
+  "recentIsoDate": "2026-06-02",
+  "recentResult": "Win 7-6 7-5",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Mikrut L. - Marti Pujolras A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/heilbronn/",
+  "players": [
+    "Mikrut L.",
+    "Marti Pujolras A."
+  ],
+  "generatedAt": "2026-06-04T00:09:22.567Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/8nAlSCfM/",
+  "matchId": "8nAlSCfM",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_8nAlSCfM",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_8nAlSCfM"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:15"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:55"
+      }
+    ],
+    "totalDuration": "2:10"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "5",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "70%",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (32/43)",
+              "right": "65% (37/57)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "48% (22/46)",
+              "right": "48% (12/25)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/9",
+              "right": "8/12",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (20/57)",
+              "right": "30% (13/43)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "52% (13/25)",
+              "right": "52% (24/46)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/12",
+              "right": "3/9",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "33",
+              "right": "17",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "35",
+              "right": "29",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (52/86)",
+              "right": "60% (49/82)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (33/82)",
+              "right": "40% (34/86)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (85/168)",
+              "right": "49% (83/168)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (9/12)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (4/12)",
+              "right": "25% (3/12)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Total games won",
+              "left": "54% (13/24)",
+              "right": "46% (11/24)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "51%",
+              "right": "68%",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "72% (18/25)",
+              "right": "71% (20/28)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "54% (13/24)",
+              "right": "62% (8/13)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "4/5",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (9/28)",
+              "right": "28% (7/25)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (5/13)",
+              "right": "46% (11/24)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "1/1",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "10",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "16",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (31/49)",
+              "right": "67% (28/42)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (14/42)",
+              "right": "37% (18/49)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (45/91)",
+              "right": "51% (46/91)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "2",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "45%",
+              "right": "71%",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (14/18)",
+              "right": "59% (17/29)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "41% (9/22)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/8",
+              "right": "4/7",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (11/29)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (8/12)",
+              "right": "59% (13/22)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/7",
+              "right": "2/8",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "7",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "13",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (21/37)",
+              "right": "53% (21/40)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (19/40)",
+              "right": "43% (16/37)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (40/77)",
+              "right": "48% (37/77)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (3/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Mikrut L.",
+              "rightPlayer": "Marti Pujolras A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

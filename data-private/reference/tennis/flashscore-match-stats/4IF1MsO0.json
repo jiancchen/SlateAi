@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-dedura-palomero-vs-reis-da-silva-2026-06-04",
+  "boardTitle": "Diego Dedura-Palomero vs Joao Lucas Reis Da Silva",
+  "boardPlayerName": "Diego Dedura-Palomero",
+  "recentOpponentName": "Wiskandt M.",
+  "recentIndex": 0,
+  "recentEvent": "Heilbronn (Germany)",
+  "recentDate": "Jun 02, 26",
+  "recentIsoDate": "2026-06-02",
+  "recentResult": "Win 6-1 6-4",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Dedura D. - Wiskandt M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/heilbronn/",
+  "players": [
+    "Dedura D.",
+    "Wiskandt M."
+  ],
+  "generatedAt": "2026-06-04T00:09:22.258Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/4IF1MsO0/",
+  "matchId": "4IF1MsO0",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_4IF1MsO0",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_4IF1MsO0"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:44"
+      }
+    ],
+    "totalDuration": "1:21"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "63%",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (28/45)",
+              "right": "58% (19/33)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "63% (10/16)",
+              "right": "26% (5/19)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/8",
+              "right": "4/9",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (14/33)",
+              "right": "38% (17/45)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "74% (14/19)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/9",
+              "right": "2/8",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "11",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "36",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (38/61)",
+              "right": "46% (24/52)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "54% (28/52)",
+              "right": "38% (23/61)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (66/113)",
+              "right": "42% (47/113)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "78% (7/9)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Return games won",
+              "left": "63% (5/8)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "75%",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (16/24)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "4/6",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (8/18)",
+              "right": "33% (8/24)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "83% (5/6)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "0/4",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "4",
+              "right": "5",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "19",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (21/32)",
+              "right": "45% (10/22)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "55% (12/22)",
+              "right": "34% (11/32)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "61% (33/54)",
+              "right": "39% (21/54)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "78%",
+              "right": "54%",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (12/21)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (4/6)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "0/3",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (6/15)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "69% (9/13)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "2/4",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "6",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "17",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (17/29)",
+              "right": "47% (14/30)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (16/30)",
+              "right": "41% (12/29)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (33/59)",
+              "right": "44% (26/59)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Return games won",
+              "left": "60% (3/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Wiskandt M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

@@ -1,0 +1,668 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-prostejov-sachko-vs-kopriva-2026-06-04",
+  "boardTitle": "Vitaliy Sachko vs Vit Kopriva",
+  "boardPlayerName": "Vitaliy Sachko",
+  "recentOpponentName": "Kumstat J.",
+  "recentIndex": 0,
+  "recentEvent": "Prostejov (Czech Republic)",
+  "recentDate": "Jun 02, 26",
+  "recentIsoDate": "2026-06-02",
+  "recentResult": "Win 5-7 6-0 6-3",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Sachko V. - Kumstat J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/prostejov/",
+  "players": [
+    "Sachko V.",
+    "Kumstat J."
+  ],
+  "generatedAt": "2026-06-04T00:09:18.261Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/UHC7bt85/",
+  "matchId": "UHC7bt85",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_UHC7bt85",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_UHC7bt85"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "0:58"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 0,
+        "duration": "0:34"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:10"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "6",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "8",
+              "right": "3",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "60%",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (38/52)",
+              "right": "59% (33/56)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (19/41)",
+              "right": "45% (17/38)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "10/16",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (23/56)",
+              "right": "29% (15/52)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (21/38)",
+              "right": "54% (22/41)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "6/16",
+              "right": "3/5",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "35",
+              "right": "28",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "41",
+              "right": "46",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (54/87)",
+              "right": "53% (50/94)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (44/94)",
+              "right": "38% (33/87)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (98/181)",
+              "right": "46% (83/181)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "79% (11/14)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Return games won",
+              "left": "46% (6/13)",
+              "right": "21% (3/14)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Total games won",
+              "left": "63% (17/27)",
+              "right": "37% (10/27)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "1",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "49%",
+              "right": "58%",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "50% (9/18)",
+              "right": "60% (18/30)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (9/19)",
+              "right": "55% (12/22)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/3",
+              "right": "8/10",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (12/30)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "45% (10/22)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/10",
+              "right": "3/3",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "12",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "27",
+              "right": "19",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (15/31)",
+              "right": "57% (29/51)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (22/51)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (37/82)",
+              "right": "55% (45/82)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "66%",
+              "right": "63%",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (15/19)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/2",
+              "right": "1/4",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "100% (10/10)",
+              "right": "21% (4/19)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (4/6)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/4",
+              "right": "0/2",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "8",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "14",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (19/29)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "71% (12/17)",
+              "right": "34% (10/29)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "67% (31/46)",
+              "right": "33% (15/46)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Return games won",
+              "left": "100% (3/3)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Total games won",
+              "left": "100% (6/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "62%",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "93% (14/15)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (6/12)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "6% (1/16)",
+              "right": "13% (2/15)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "70% (7/10)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "8",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "13",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "74% (20/27)",
+              "right": "62% (16/26)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (10/26)",
+              "right": "26% (7/27)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (30/53)",
+              "right": "43% (23/53)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Sachko V.",
+              "rightPlayer": "Kumstat J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

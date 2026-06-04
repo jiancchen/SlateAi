@@ -1,0 +1,641 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/mark-lajal-harry-wendelken#id:16240991",
+  "eventId": "16240991",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-birmingham-wendelken-vs-lajal-2026-06-04",
+  "boardTitle": "Harry Wendelken vs Mark Lajal",
+  "capturedAt": "2026-06-04T00:24:41.164Z",
+  "compactEvent": {
+    "id": 16240991,
+    "slug": "mark-lajal-harry-wendelken",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1780563600,
+    "tournament": {
+      "name": "Birmingham, Great Britain",
+      "slug": "birmingham-great-britain",
+      "category": "Challenger",
+      "uniqueTournament": "ATP Challenger Birmingham, Great Britain Men Singles"
+    },
+    "roundInfo": {
+      "round": 5,
+      "name": "Round of 16",
+      "slug": "round-of-16",
+      "cupRoundType": 8
+    },
+    "groundType": "Grass",
+    "homeTeam": {
+      "id": 267242,
+      "name": "Harry Wendelken",
+      "shortName": "H. Wendelken",
+      "ranking": 227,
+      "currentRanking": 216,
+      "country": {
+        "alpha2": "GB",
+        "alpha3": "GBR",
+        "name": "United Kingdom",
+        "slug": "united-kingdom"
+      },
+      "playerTeamInfo": {
+        "height": 1.78,
+        "weight": 68,
+        "plays": "right-handed",
+        "prizeCurrent": 28355,
+        "prizeTotal": 145533,
+        "birthCity": {
+          "name": "Cambridge",
+          "country": {
+            "alpha2": "GB",
+            "alpha3": "GBR",
+            "name": "United Kingdom",
+            "slug": "united-kingdom"
+          },
+          "id": 34735
+        },
+        "id": 4526,
+        "birthplace": "Cambridge, United Kingdom",
+        "birthDateTimestamp": 1008633600,
+        "prizeCurrentRaw": {
+          "value": 28355,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 145533,
+          "currency": "EUR"
+        },
+        "currentRanking": 216
+      }
+    },
+    "awayTeam": {
+      "id": 383991,
+      "name": "Mark Lajal",
+      "shortName": "M. Lajal",
+      "ranking": 157,
+      "currentRanking": 156,
+      "country": {
+        "alpha2": "EE",
+        "alpha3": "EST",
+        "name": "Estonia",
+        "slug": "estonia"
+      },
+      "playerTeamInfo": {
+        "height": 1.91,
+        "weight": 85,
+        "plays": "right-handed",
+        "prizeCurrent": 47571,
+        "prizeTotal": 532672,
+        "birthCity": {
+          "name": "Tallinn",
+          "country": {
+            "alpha2": "EE",
+            "alpha3": "EST",
+            "name": "Estonia",
+            "slug": "estonia"
+          },
+          "id": 19371
+        },
+        "id": 5181,
+        "birthplace": "Tallinn, Estonia",
+        "birthDateTimestamp": 1052697600,
+        "prizeCurrentRaw": {
+          "value": 47571,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 532672,
+          "currency": "EUR"
+        },
+        "currentRanking": 156
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "homeTeamSeed": "WC",
+          "awayTeamSeed": "A",
+          "tournament": {
+            "name": "Birmingham, Great Britain",
+            "slug": "birmingham-great-britain",
+            "category": {
+              "name": "Challenger",
+              "slug": "challenger",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 5,
+              "country": {},
+              "id": 72,
+              "flag": "challenger",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "চ্যালেঞ্জার",
+                  "ar": "تحدي (تنس)",
+                  "hi": "डेनमार्क",
+                  "ru": "Challenger"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "ATP Challenger Birmingham, Great Britain Men Singles",
+              "slug": "atp-challenger-birmingham-great-britain-men-singles",
+              "category": {
+                "name": "Challenger",
+                "slug": "challenger",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 5,
+                "country": {},
+                "id": 72,
+                "flag": "challenger",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "চ্যালেঞ্জার",
+                    "ar": "تحدي (تنس)",
+                    "hi": "डेनमार्क",
+                    "ru": "Challenger"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 221,
+              "groundType": "Grass",
+              "hasRounds": false,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 26908,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "ATP Challenger برمنغهام، بريطانيا رجال فردي"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 186299,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1780272000
+          },
+          "season": {
+            "name": "ATP Challenger Birmingham, Great Britain Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 89810
+          },
+          "roundInfo": {
+            "round": 5,
+            "name": "Round of 16",
+            "slug": "round-of-16",
+            "cupRoundType": 8
+          },
+          "customId": "RUgcsQEdd",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Birmingham",
+              "country": {
+                "alpha2": "EN",
+                "alpha3": "ENG",
+                "name": "England",
+                "slug": "england"
+              },
+              "id": 19186
+            },
+            "hidden": true,
+            "slug": "centre-court",
+            "name": "CENTRE COURT",
+            "country": {
+              "alpha2": "EN",
+              "alpha3": "ENG",
+              "name": "England",
+              "slug": "england"
+            },
+            "id": 17279,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "الملعب المركزي",
+                "hi": "सेंटर कोर्ट",
+                "bn": "সেন্টার কোর্ট"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "CENTRE COURT"
+            }
+          },
+          "homeTeam": {
+            "name": "Harry Wendelken",
+            "slug": "wendelken-harry",
+            "shortName": "H. Wendelken",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 907,
+            "playerTeamInfo": {
+              "height": 1.78,
+              "weight": 68,
+              "plays": "right-handed",
+              "prizeCurrent": 28355,
+              "prizeTotal": 145533,
+              "birthCity": {
+                "name": "Cambridge",
+                "country": {
+                  "alpha2": "GB",
+                  "alpha3": "GBR",
+                  "name": "United Kingdom",
+                  "slug": "united-kingdom"
+                },
+                "id": 34735
+              },
+              "id": 4526,
+              "birthplace": "Cambridge, United Kingdom",
+              "birthDateTimestamp": 1008633600,
+              "prizeCurrentRaw": {
+                "value": 28355,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 145533,
+                "currency": "EUR"
+              },
+              "currentRanking": 216
+            },
+            "nameCode": "WEN",
+            "ranking": 227,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "GB",
+              "alpha3": "GBR",
+              "name": "United Kingdom",
+              "slug": "united-kingdom"
+            },
+            "id": 267242,
+            "fullName": "Harry Wendelken",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "هاري ويندلكن",
+                "ru": "Венделькен, Гарри"
+              },
+              "shortNameTranslation": {
+                "ar": "ه. ويندلكن"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Mark Lajal",
+            "slug": "lajal-mark",
+            "shortName": "M. Lajal",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 2961,
+            "playerTeamInfo": {
+              "height": 1.91,
+              "weight": 85,
+              "plays": "right-handed",
+              "prizeCurrent": 47571,
+              "prizeTotal": 532672,
+              "birthCity": {
+                "name": "Tallinn",
+                "country": {
+                  "alpha2": "EE",
+                  "alpha3": "EST",
+                  "name": "Estonia",
+                  "slug": "estonia"
+                },
+                "id": 19371
+              },
+              "id": 5181,
+              "birthplace": "Tallinn, Estonia",
+              "birthDateTimestamp": 1052697600,
+              "prizeCurrentRaw": {
+                "value": 47571,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 532672,
+                "currency": "EUR"
+              },
+              "currentRanking": 156
+            },
+            "nameCode": "LAJ",
+            "ranking": 157,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "EE",
+              "alpha3": "EST",
+              "name": "Estonia",
+              "slug": "estonia"
+            },
+            "id": 383991,
+            "fullName": "Mark Lajal",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "مارك لاجال",
+                "bn": "মার্ক লাজল",
+                "hi": "मार्क लाजल"
+              },
+              "shortNameTranslation": {
+                "ar": "م. لاجال"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16240991,
+          "defaultPeriodCount": 3,
+          "slug": "mark-lajal-harry-wendelken",
+          "startTimestamp": 1780563600,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "??",
+            "AN",
+            "CU",
+            "IR",
+            "KP",
+            "SY",
+            "VE",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Grass",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "lower"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": null,
+        "managerDuel": null
+      }
+    },
+    "pointByPoint": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "votes": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "vote": {
+          "vote1": 297,
+          "vote2": 2089,
+          "voteX": null
+        },
+        "bothTeamsToScoreVote": {
+          "voteYes": 0,
+          "voteNo": 0
+        },
+        "firstTeamToScoreVote": {
+          "voteHome": 0,
+          "voteNoGoal": 0,
+          "voteAway": 0
+        },
+        "whoShouldHaveWonVote": {
+          "vote1": 0,
+          "vote2": 0
+        }
+      }
+    },
+    "tennisPower": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "tennisPowerRankings": []
+      }
+    },
+    "winningOdds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "home": {
+          "fractionalValue": "7/4",
+          "expected": 36,
+          "actual": 42,
+          "id": 22234611
+        },
+        "away": {
+          "fractionalValue": "2/5",
+          "expected": 71,
+          "actual": 76,
+          "id": 22234612
+        }
+      }
+    },
+    "odds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "featured": {
+          "default": {
+            "sourceId": 195679993,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195679993,
+            "suspended": false,
+            "id": 316672779,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "7/4",
+                "fractionalValue": "7/4",
+                "sourceId": 1424746584,
+                "name": "1",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "2/5",
+                "fractionalValue": "2/5",
+                "sourceId": 1424746648,
+                "name": "2",
+                "change": 0
+              }
+            ]
+          },
+          "asian": {
+            "sourceId": 195679993,
+            "structureType": 2,
+            "marketId": 12,
+            "marketName": "Total games won",
+            "choiceGroup": "22.5",
+            "isLive": false,
+            "fid": 195679993,
+            "suspended": false,
+            "id": 316683084,
+            "marketGroup": "Total sets/games",
+            "marketPeriod": "Extra time",
+            "choices": [
+              {
+                "initialFractionalValue": "1/1",
+                "fractionalValue": "10/11",
+                "sourceId": 1424922121,
+                "name": "Over",
+                "change": -1
+              },
+              {
+                "initialFractionalValue": "8/11",
+                "fractionalValue": "4/5",
+                "sourceId": 1424922095,
+                "name": "Under",
+                "change": 1
+              }
+            ]
+          },
+          "fullTime": {
+            "sourceId": 195679993,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195679993,
+            "suspended": false,
+            "id": 316672779,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "7/4",
+                "fractionalValue": "7/4",
+                "sourceId": 1424746584,
+                "name": "1",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "2/5",
+                "fractionalValue": "2/5",
+                "sourceId": 1424746648,
+                "name": "2",
+                "change": 0
+              }
+            ]
+          }
+        },
+        "hasMoreOdds": true
+      }
+    },
+    "homeSeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "awaySeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-prostejov-daniel-vs-dzumhur-2026-06-04",
+  "boardTitle": "Taro Daniel vs Damir Dzumhur",
+  "boardPlayerName": "Taro Daniel",
+  "recentOpponentName": "Forejtek J.",
+  "recentIndex": 0,
+  "recentEvent": "Prostejov (Czech Republic)",
+  "recentDate": "Jun 02, 26",
+  "recentIsoDate": "2026-06-02",
+  "recentResult": "Win 7-6 6-1",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Daniel T. - Forejtek J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/prostejov/",
+  "players": [
+    "Daniel T.",
+    "Forejtek J."
+  ],
+  "generatedAt": "2026-06-04T00:09:25.541Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/bigXE1hn/",
+  "matchId": "bigXE1hn",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_bigXE1hn",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_bigXE1hn"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 3,
+        "duration": "1:12"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:30"
+      }
+    ],
+    "totalDuration": "1:42"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "5",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "71%",
+              "right": "62%",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (40/54)",
+              "right": "64% (29/45)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "55% (12/22)",
+              "right": "46% (13/28)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/7",
+              "right": "5/8",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (16/45)",
+              "right": "26% (14/54)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "54% (15/28)",
+              "right": "45% (10/22)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/8",
+              "right": "1/7",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "22",
+              "right": "28",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "23",
+              "right": "31",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (52/76)",
+              "right": "58% (42/73)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (31/73)",
+              "right": "32% (24/76)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "56% (83/149)",
+              "right": "44% (66/149)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "90% (9/10)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (3/9)",
+              "right": "10% (1/10)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Total games won",
+              "left": "63% (12/19)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "5",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "63%",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (26/35)",
+              "right": "68% (23/34)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (8/16)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/6",
+              "right": "4/5",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (13/34)",
+              "right": "26% (9/35)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (10/20)",
+              "right": "50% (8/16)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "1/6",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "21",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "18",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (34/51)",
+              "right": "61% (33/54)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (21/54)",
+              "right": "33% (17/51)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (55/105)",
+              "right": "48% (50/105)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "76%",
+              "right": "58%",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (14/19)",
+              "right": "55% (6/11)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (4/6)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "1/3",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (3/11)",
+              "right": "26% (5/19)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/1",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "13",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (18/25)",
+              "right": "47% (9/19)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (10/19)",
+              "right": "28% (7/25)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "64% (28/44)",
+              "right": "36% (16/44)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "33% (1/3)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Return games won",
+              "left": "67% (2/3)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Daniel T.",
+              "rightPlayer": "Forejtek J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

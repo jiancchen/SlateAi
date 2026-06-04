@@ -1,0 +1,616 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/mananchaya-sawangkaew-kayla-day#id:16241019",
+  "eventId": "16241019",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-wta-125k-birmingham-sawangkaew-vs-day-2026-06-04",
+  "boardTitle": "Mananchaya Sawangkaew vs Kayla Day",
+  "capturedAt": "2026-06-04T00:26:00.708Z",
+  "compactEvent": {
+    "id": 16241019,
+    "slug": "mananchaya-sawangkaew-kayla-day",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1780569600,
+    "tournament": {
+      "name": "Birmingham, Great Britain",
+      "slug": "birmingham-great-britain",
+      "category": "WTA 125",
+      "uniqueTournament": "WTA 125K Birmingham, Great Britain Women Singles"
+    },
+    "roundInfo": {
+      "round": 5,
+      "name": "Round of 16",
+      "slug": "round-of-16",
+      "cupRoundType": 8
+    },
+    "groundType": "Grass",
+    "homeTeam": {
+      "id": 238275,
+      "name": "Mananchaya Sawangkaew",
+      "shortName": "M. Sawangkaew",
+      "ranking": 173,
+      "currentRanking": 82,
+      "country": {
+        "alpha2": "TH",
+        "alpha3": "THA",
+        "name": "Thailand",
+        "slug": "thailand"
+      },
+      "playerTeamInfo": {
+        "plays": "right-handed",
+        "prizeCurrent": 143107,
+        "prizeTotal": 428907,
+        "id": 3537,
+        "birthDateTimestamp": 1026259200,
+        "prizeCurrentRaw": {
+          "value": 143107,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 428907,
+          "currency": "EUR"
+        },
+        "currentRanking": 82
+      }
+    },
+    "awayTeam": {
+      "id": 137962,
+      "name": "Kayla Day",
+      "shortName": "K. Day",
+      "ranking": 145,
+      "currentRanking": 89,
+      "country": {
+        "alpha2": "US",
+        "alpha3": "USA",
+        "name": "USA",
+        "slug": "usa"
+      },
+      "playerTeamInfo": {
+        "height": 1.73,
+        "plays": "left-handed",
+        "turnedPro": "2016",
+        "prizeCurrent": 57771,
+        "prizeTotal": 1180464,
+        "birthCity": {
+          "name": "Santa Barbara",
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 20552
+        },
+        "residenceCity": {
+          "name": "Lake Nona",
+          "state": "US-FL",
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 36000
+        },
+        "id": 862,
+        "birthplace": "Santa Barbara, USA",
+        "birthDateTimestamp": 938476800,
+        "residence": "Lake Nona, Florida, USA",
+        "prizeCurrentRaw": {
+          "value": 57771,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 1180464,
+          "currency": "EUR"
+        },
+        "currentRanking": 89
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "homeTeamSeed": "Q",
+          "tournament": {
+            "name": "Birmingham, Great Britain",
+            "slug": "birmingham-great-britain",
+            "category": {
+              "name": "WTA 125",
+              "slug": "wta-125",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 4,
+              "country": {},
+              "id": 871,
+              "flag": "wta-125",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "رابطة محترفات التنس 125",
+                  "ru": "WTA 125"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "WTA 125K Birmingham, Great Britain Women Singles",
+              "slug": "wta-125k-birmingham-great-britain-women-singles",
+              "category": {
+                "name": "WTA 125",
+                "slug": "wta-125",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 4,
+                "country": {},
+                "id": 871,
+                "flag": "wta-125",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "ar": "رابطة محترفات التنس 125",
+                    "ru": "WTA 125"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 199,
+              "groundType": "Grass",
+              "tennisPoints": 125,
+              "hasRounds": false,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 26936,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "WTA 125K برمنغهام، بريطانيا سيدات فردي"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 186304,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1780272000
+          },
+          "season": {
+            "name": "WTA 125K Birmingham, Great Britain Women Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 89186
+          },
+          "roundInfo": {
+            "round": 5,
+            "name": "Round of 16",
+            "slug": "round-of-16",
+            "cupRoundType": 8
+          },
+          "customId": "mjfbsApVb",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Birmingham",
+              "country": {
+                "alpha2": "EN",
+                "alpha3": "ENG",
+                "name": "England",
+                "slug": "england"
+              },
+              "id": 19186
+            },
+            "hidden": true,
+            "slug": "court-2",
+            "name": "Court 2",
+            "country": {
+              "alpha2": "EN",
+              "alpha3": "ENG",
+              "name": "England",
+              "slug": "england"
+            },
+            "id": 17239,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب 2",
+                "hi": "कोर्ट 2",
+                "bn": "কোর্ট 2"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court 2"
+            }
+          },
+          "homeTeam": {
+            "name": "Mananchaya Sawangkaew",
+            "slug": "sawangkaew-mananchaya",
+            "shortName": "M. Sawangkaew",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 1388,
+            "playerTeamInfo": {
+              "plays": "right-handed",
+              "prizeCurrent": 143107,
+              "prizeTotal": 428907,
+              "id": 3537,
+              "birthDateTimestamp": 1026259200,
+              "prizeCurrentRaw": {
+                "value": 143107,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 428907,
+                "currency": "EUR"
+              },
+              "currentRanking": 82
+            },
+            "nameCode": "SAW",
+            "ranking": 173,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "TH",
+              "alpha3": "THA",
+              "name": "Thailand",
+              "slug": "thailand"
+            },
+            "id": 238275,
+            "fullName": "Mananchaya Sawangkaew",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "مانانشايا ساوانكاو",
+                "ru": "Савангкаев, Мананчая"
+              },
+              "shortNameTranslation": {
+                "ar": "م. ساوانكاو"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Kayla Day",
+            "slug": "day-kayla",
+            "shortName": "K. Day",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 1043,
+            "playerTeamInfo": {
+              "height": 1.73,
+              "plays": "left-handed",
+              "turnedPro": "2016",
+              "prizeCurrent": 57771,
+              "prizeTotal": 1180464,
+              "birthCity": {
+                "name": "Santa Barbara",
+                "country": {
+                  "alpha2": "US",
+                  "alpha3": "USA",
+                  "name": "USA",
+                  "slug": "usa"
+                },
+                "id": 20552
+              },
+              "residenceCity": {
+                "name": "Lake Nona",
+                "state": "US-FL",
+                "country": {
+                  "alpha2": "US",
+                  "alpha3": "USA",
+                  "name": "USA",
+                  "slug": "usa"
+                },
+                "id": 36000
+              },
+              "id": 862,
+              "birthplace": "Santa Barbara, USA",
+              "birthDateTimestamp": 938476800,
+              "residence": "Lake Nona, Florida, USA",
+              "prizeCurrentRaw": {
+                "value": 57771,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 1180464,
+                "currency": "EUR"
+              },
+              "currentRanking": 89
+            },
+            "nameCode": "DAY",
+            "ranking": 145,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "US",
+              "alpha3": "USA",
+              "name": "USA",
+              "slug": "usa"
+            },
+            "id": 137962,
+            "fullName": "Kayla Day",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "كايللا داي",
+                "bn": "কাইল ডে",
+                "hi": "कायला डे",
+                "ru": "Дэй, Кайла"
+              },
+              "shortNameTranslation": {
+                "ar": "ك. داي"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16241019,
+          "defaultPeriodCount": 3,
+          "slug": "mananchaya-sawangkaew-kayla-day",
+          "startTimestamp": 1780569600,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "feedLocked": false,
+          "groundType": "Grass",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "lower"
+            ],
+            "gender": [
+              "F"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": null,
+        "managerDuel": null
+      }
+    },
+    "pointByPoint": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "votes": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "vote": {
+          "vote1": 241,
+          "vote2": 251,
+          "voteX": null
+        },
+        "bothTeamsToScoreVote": {
+          "voteYes": 0,
+          "voteNo": 0
+        },
+        "firstTeamToScoreVote": {
+          "voteHome": 0,
+          "voteNoGoal": 0,
+          "voteAway": 0
+        },
+        "whoShouldHaveWonVote": {
+          "vote1": 0,
+          "vote2": 0
+        }
+      }
+    },
+    "tennisPower": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "tennisPowerRankings": []
+      }
+    },
+    "winningOdds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "home": {
+          "fractionalValue": "8/15",
+          "expected": 65,
+          "actual": 70,
+          "id": 22243175
+        },
+        "away": {
+          "fractionalValue": "11/8",
+          "expected": 42,
+          "actual": 50,
+          "id": 22243176
+        }
+      }
+    },
+    "odds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "featured": {
+          "default": {
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195680833,
+            "suspended": false,
+            "id": 316857461,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "8/15",
+                "fractionalValue": "8/15",
+                "sourceId": 1424823646,
+                "name": "1",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "11/8",
+                "fractionalValue": "11/8",
+                "sourceId": 1424823684,
+                "name": "2",
+                "change": 0
+              }
+            ]
+          },
+          "asian": {
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195680833,
+            "suspended": false,
+            "id": 316857461,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "8/15",
+                "fractionalValue": "8/15",
+                "sourceId": 1424823646,
+                "name": "1",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "11/8",
+                "fractionalValue": "11/8",
+                "sourceId": 1424823684,
+                "name": "2",
+                "change": 0
+              }
+            ]
+          },
+          "fullTime": {
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195680833,
+            "suspended": false,
+            "id": 316857461,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "8/15",
+                "fractionalValue": "8/15",
+                "sourceId": 1424823646,
+                "name": "1",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "11/8",
+                "fractionalValue": "11/8",
+                "sourceId": 1424823684,
+                "name": "2",
+                "change": 0
+              }
+            ]
+          }
+        },
+        "hasMoreOdds": false
+      }
+    },
+    "homeSeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "awaySeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

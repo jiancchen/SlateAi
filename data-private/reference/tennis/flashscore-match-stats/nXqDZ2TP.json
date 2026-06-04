@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-prostejov-molcan-vs-karol-2026-06-04",
+  "boardTitle": "Milos Karol vs Alex Molcan",
+  "boardPlayerName": "Alex Molcan",
+  "recentOpponentName": "Piros Z.",
+  "recentIndex": 0,
+  "recentEvent": "Prostejov (Czech Republic)",
+  "recentDate": "Jun 02, 26",
+  "recentIsoDate": "2026-06-02",
+  "recentResult": "Win 6-2 6-3",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Molcan A. - Piros Z.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/prostejov/",
+  "players": [
+    "Molcan A.",
+    "Piros Z."
+  ],
+  "generatedAt": "2026-06-04T00:09:22.807Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/nXqDZ2TP/",
+  "matchId": "nXqDZ2TP",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_nXqDZ2TP",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_nXqDZ2TP"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:31"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:37"
+      }
+    ],
+    "totalDuration": "1:08"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "6",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "47%",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (16/24)",
+              "right": "57% (16/28)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "72% (13/18)",
+              "right": "38% (12/32)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "4/9",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "43% (12/28)",
+              "right": "33% (8/24)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (20/32)",
+              "right": "28% (5/18)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/9",
+              "right": "1/2",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "14",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "15",
+              "right": "36",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (29/42)",
+              "right": "47% (28/60)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "53% (32/60)",
+              "right": "31% (13/42)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "60% (61/102)",
+              "right": "40% (41/102)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "88% (7/8)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "56% (5/9)",
+              "right": "13% (1/8)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "44%",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (8/14)",
+              "right": "36% (4/11)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (5/7)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "2/5",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "64% (7/11)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "71% (10/14)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "1/2",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "5",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "14",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (13/21)",
+              "right": "36% (9/25)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "64% (16/25)",
+              "right": "38% (8/21)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "63% (29/46)",
+              "right": "37% (17/46)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "49%",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (8/10)",
+              "right": "71% (12/17)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "73% (8/11)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (5/17)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (10/18)",
+              "right": "27% (3/11)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "9",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "7",
+              "right": "22",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (16/21)",
+              "right": "54% (19/35)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (16/35)",
+              "right": "24% (5/21)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (32/56)",
+              "right": "43% (24/56)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Molcan A.",
+              "rightPlayer": "Piros Z."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

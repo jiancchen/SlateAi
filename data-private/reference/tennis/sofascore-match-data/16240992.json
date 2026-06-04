@@ -1,0 +1,623 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/filippo-romano-coleman-wong#id:16240992",
+  "eventId": "16240992",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-birmingham-wong-vs-romano-2026-06-04",
+  "boardTitle": "Coleman Wong vs Filippo Romano",
+  "capturedAt": "2026-06-04T00:24:45.745Z",
+  "compactEvent": {
+    "id": 16240992,
+    "slug": "filippo-romano-coleman-wong",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1780565400,
+    "tournament": {
+      "name": "Birmingham, Great Britain",
+      "slug": "birmingham-great-britain",
+      "category": "Challenger",
+      "uniqueTournament": "ATP Challenger Birmingham, Great Britain Men Singles"
+    },
+    "roundInfo": {
+      "round": 5,
+      "name": "Round of 16",
+      "slug": "round-of-16",
+      "cupRoundType": 8
+    },
+    "groundType": "Grass",
+    "homeTeam": {
+      "id": 289106,
+      "name": "Coleman Wong",
+      "shortName": "C. Wong",
+      "ranking": 109,
+      "currentRanking": 109,
+      "country": {
+        "alpha2": "HK",
+        "alpha3": "HKG",
+        "name": "Hong Kong",
+        "slug": "hong-kong"
+      },
+      "playerTeamInfo": {
+        "height": 1.91,
+        "weight": 80,
+        "plays": "right-handed",
+        "prizeCurrent": 154368,
+        "prizeTotal": 940961,
+        "birthCity": {
+          "name": "Hong Kong",
+          "country": {
+            "alpha2": "HK",
+            "alpha3": "HKG",
+            "name": "Hong Kong",
+            "slug": "hong-kong"
+          },
+          "id": 20456
+        },
+        "id": 4987,
+        "birthplace": "Hong Kong, Hong Kong",
+        "birthDateTimestamp": 1086480000,
+        "prizeCurrentRaw": {
+          "value": 154368,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 940961,
+          "currency": "EUR"
+        },
+        "currentRanking": 109
+      }
+    },
+    "awayTeam": {
+      "id": 399603,
+      "name": "Filippo Romano",
+      "shortName": "F. Romano",
+      "ranking": 368,
+      "currentRanking": 365,
+      "country": {
+        "alpha2": "IT",
+        "alpha3": "ITA",
+        "name": "Italy",
+        "slug": "italy"
+      },
+      "playerTeamInfo": {
+        "height": 1.88,
+        "weight": 82,
+        "plays": "right-handed",
+        "prizeCurrent": 19276,
+        "prizeTotal": 98267,
+        "birthCity": {
+          "name": "Sarzana",
+          "country": {
+            "alpha2": "IT",
+            "alpha3": "ITA",
+            "name": "Italy",
+            "slug": "italy"
+          },
+          "id": 25855
+        },
+        "id": 12968,
+        "birthplace": "Sarzana, Italy",
+        "birthDateTimestamp": 1120694400,
+        "prizeCurrentRaw": {
+          "value": 19276,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 98267,
+          "currency": "EUR"
+        },
+        "currentRanking": 365
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "homeTeamSeed": "7",
+          "awayTeamSeed": "Q",
+          "tournament": {
+            "name": "Birmingham, Great Britain",
+            "slug": "birmingham-great-britain",
+            "category": {
+              "name": "Challenger",
+              "slug": "challenger",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 5,
+              "country": {},
+              "id": 72,
+              "flag": "challenger",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "চ্যালেঞ্জার",
+                  "ar": "تحدي (تنس)",
+                  "hi": "डेनमार्क",
+                  "ru": "Challenger"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "ATP Challenger Birmingham, Great Britain Men Singles",
+              "slug": "atp-challenger-birmingham-great-britain-men-singles",
+              "category": {
+                "name": "Challenger",
+                "slug": "challenger",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 5,
+                "country": {},
+                "id": 72,
+                "flag": "challenger",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "চ্যালেঞ্জার",
+                    "ar": "تحدي (تنس)",
+                    "hi": "डेनमार्क",
+                    "ru": "Challenger"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 221,
+              "groundType": "Grass",
+              "hasRounds": false,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 26908,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "ATP Challenger برمنغهام، بريطانيا رجال فردي"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 186299,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1780272000
+          },
+          "season": {
+            "name": "ATP Challenger Birmingham, Great Britain Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 89810
+          },
+          "roundInfo": {
+            "round": 5,
+            "name": "Round of 16",
+            "slug": "round-of-16",
+            "cupRoundType": 8
+          },
+          "customId": "gHpcsdRjd",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Birmingham",
+              "country": {
+                "alpha2": "EN",
+                "alpha3": "ENG",
+                "name": "England",
+                "slug": "england"
+              },
+              "id": 19186
+            },
+            "hidden": true,
+            "slug": "court-3",
+            "name": "Court 3",
+            "country": {
+              "alpha2": "EN",
+              "alpha3": "ENG",
+              "name": "England",
+              "slug": "england"
+            },
+            "id": 17240,
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ملعب 3",
+                "hi": "कोर्ट 3",
+                "bn": "কোর্ট 3"
+              },
+              "shortNameTranslation": {}
+            },
+            "stadium": {
+              "name": "Court 3"
+            }
+          },
+          "homeTeam": {
+            "name": "Coleman Wong",
+            "slug": "wong-chak-lam-coleman",
+            "shortName": "C. Wong",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 3819,
+            "playerTeamInfo": {
+              "height": 1.91,
+              "weight": 80,
+              "plays": "right-handed",
+              "prizeCurrent": 154368,
+              "prizeTotal": 940961,
+              "birthCity": {
+                "name": "Hong Kong",
+                "country": {
+                  "alpha2": "HK",
+                  "alpha3": "HKG",
+                  "name": "Hong Kong",
+                  "slug": "hong-kong"
+                },
+                "id": 20456
+              },
+              "id": 4987,
+              "birthplace": "Hong Kong, Hong Kong",
+              "birthDateTimestamp": 1086480000,
+              "prizeCurrentRaw": {
+                "value": 154368,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 940961,
+                "currency": "EUR"
+              },
+              "currentRanking": 109
+            },
+            "nameCode": "WON",
+            "ranking": 109,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "HK",
+              "alpha3": "HKG",
+              "name": "Hong Kong",
+              "slug": "hong-kong"
+            },
+            "id": 289106,
+            "fullName": "Coleman Wong",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "كولمان وونغ"
+              },
+              "shortNameTranslation": {
+                "ar": "ك. وونغ"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Filippo Romano",
+            "slug": "romano-filippo",
+            "shortName": "F. Romano",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 958,
+            "playerTeamInfo": {
+              "height": 1.88,
+              "weight": 82,
+              "plays": "right-handed",
+              "prizeCurrent": 19276,
+              "prizeTotal": 98267,
+              "birthCity": {
+                "name": "Sarzana",
+                "country": {
+                  "alpha2": "IT",
+                  "alpha3": "ITA",
+                  "name": "Italy",
+                  "slug": "italy"
+                },
+                "id": 25855
+              },
+              "id": 12968,
+              "birthplace": "Sarzana, Italy",
+              "birthDateTimestamp": 1120694400,
+              "prizeCurrentRaw": {
+                "value": 19276,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 98267,
+                "currency": "EUR"
+              },
+              "currentRanking": 365
+            },
+            "nameCode": "ROM",
+            "ranking": 368,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "IT",
+              "alpha3": "ITA",
+              "name": "Italy",
+              "slug": "italy"
+            },
+            "id": 399603,
+            "fullName": "Filippo Romano",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "فيليبو رومانو"
+              },
+              "shortNameTranslation": {
+                "ar": "ف. رومانو"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16240992,
+          "defaultPeriodCount": 3,
+          "slug": "filippo-romano-coleman-wong",
+          "startTimestamp": 1780565400,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "feedLocked": false,
+          "groundType": "Grass",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "lower"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": null,
+        "managerDuel": null
+      }
+    },
+    "pointByPoint": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "votes": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "vote": {
+          "vote1": 1074,
+          "vote2": 140,
+          "voteX": null
+        },
+        "bothTeamsToScoreVote": {
+          "voteYes": 0,
+          "voteNo": 0
+        },
+        "firstTeamToScoreVote": {
+          "voteHome": 0,
+          "voteNoGoal": 0,
+          "voteAway": 0
+        },
+        "whoShouldHaveWonVote": {
+          "vote1": 0,
+          "vote2": 0
+        }
+      }
+    },
+    "tennisPower": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "tennisPowerRankings": []
+      }
+    },
+    "winningOdds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "home": {
+          "fractionalValue": "9/50",
+          "expected": 85,
+          "actual": 82,
+          "id": 22234882
+        },
+        "away": {
+          "fractionalValue": "7/2",
+          "expected": 22,
+          "actual": 45,
+          "id": 22234883
+        }
+      }
+    },
+    "odds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "featured": {
+          "default": {
+            "sourceId": 195679995,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195679995,
+            "suspended": false,
+            "id": 316683034,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "11/25",
+                "fractionalValue": "9/50",
+                "sourceId": 1424746815,
+                "name": "1",
+                "change": -1
+              },
+              {
+                "initialFractionalValue": "163/100",
+                "fractionalValue": "7/2",
+                "sourceId": 1424746856,
+                "name": "2",
+                "change": 1
+              }
+            ]
+          },
+          "asian": {
+            "sourceId": 195679995,
+            "structureType": 2,
+            "marketId": 12,
+            "marketName": "Total games won",
+            "choiceGroup": "22.5",
+            "isLive": false,
+            "fid": 195679995,
+            "suspended": false,
+            "id": 316694681,
+            "marketGroup": "Total sets/games",
+            "marketPeriod": "Extra time",
+            "choices": [
+              {
+                "initialFractionalValue": "5/6",
+                "fractionalValue": "10/11",
+                "sourceId": 1424949571,
+                "name": "Over",
+                "change": 1
+              },
+              {
+                "initialFractionalValue": "5/6",
+                "fractionalValue": "4/5",
+                "sourceId": 1424949528,
+                "name": "Under",
+                "change": -1
+              }
+            ]
+          },
+          "fullTime": {
+            "sourceId": 195679995,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195679995,
+            "suspended": false,
+            "id": 316683034,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "11/25",
+                "fractionalValue": "9/50",
+                "sourceId": 1424746815,
+                "name": "1",
+                "change": -1
+              },
+              {
+                "initialFractionalValue": "163/100",
+                "fractionalValue": "7/2",
+                "sourceId": 1424746856,
+                "name": "2",
+                "change": 1
+              }
+            ]
+          }
+        },
+        "hasMoreOdds": true
+      }
+    },
+    "homeSeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "awaySeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

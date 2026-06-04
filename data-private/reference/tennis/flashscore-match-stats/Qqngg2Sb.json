@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-dedura-palomero-vs-reis-da-silva-2026-06-04",
+  "boardTitle": "Diego Dedura-Palomero vs Joao Lucas Reis Da Silva",
+  "boardPlayerName": "Diego Dedura-Palomero",
+  "recentOpponentName": "Pieri S.",
+  "recentIndex": 2,
+  "recentEvent": "Vicenza (Italy)",
+  "recentDate": "May 27, 26",
+  "recentIsoDate": "2026-05-27",
+  "recentResult": "Win 6-2 6-3",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Dedura D. - Pieri S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/vicenza/",
+  "players": [
+    "Dedura D.",
+    "Pieri S."
+  ],
+  "generatedAt": "2026-06-04T00:09:22.346Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Qqngg2Sb/",
+  "matchId": "Qqngg2Sb",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Qqngg2Sb",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Qqngg2Sb"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:38"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:44"
+      }
+    ],
+    "totalDuration": "1:22"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "66%",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (28/36)",
+              "right": "62% (24/39)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "69% (9/13)",
+              "right": "45% (9/20)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "6/9",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (15/39)",
+              "right": "22% (8/36)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "55% (11/20)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/9",
+              "right": "0/1",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "13",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "12",
+              "right": "3",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (5/5)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "76% (37/49)",
+              "right": "56% (33/59)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (26/59)",
+              "right": "24% (12/49)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (63/108)",
+              "right": "42% (45/108)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (9/9)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Return games won",
+              "left": "38% (3/8)",
+              "right": "0% (0/9)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Total games won",
+              "left": "71% (12/17)",
+              "right": "29% (5/17)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "67%",
+              "right": "61%",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (12/12)",
+              "right": "53% (10/19)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (4/6)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/5",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "47% (9/19)",
+              "right": "0% (0/12)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (6/12)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "0/0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "89% (16/18)",
+              "right": "52% (16/31)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (15/31)",
+              "right": "11% (2/18)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "63% (31/49)",
+              "right": "37% (18/49)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "71%",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "67% (16/24)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (5/7)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "3/4",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "30% (6/20)",
+              "right": "33% (8/24)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "0/1",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "0",
+              "right": "10",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "8",
+              "right": "0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (3/3)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (21/31)",
+              "right": "61% (17/28)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (11/28)",
+              "right": "32% (10/31)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (32/59)",
+              "right": "46% (27/59)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Dedura D.",
+              "rightPlayer": "Pieri S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

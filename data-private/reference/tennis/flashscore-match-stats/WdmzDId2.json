@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-birmingham-shimabukuro-vs-ymer-2026-06-04",
+  "boardTitle": "Sho Shimabukuro vs Elias Ymer",
+  "boardPlayerName": "Elias Ymer",
+  "recentOpponentName": "Purtseladze S.",
+  "recentIndex": 4,
+  "recentEvent": "Chisinau (Moldova)",
+  "recentDate": "May 25, 26",
+  "recentIsoDate": "2026-05-25",
+  "recentResult": "Win 7-6 6-2",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Ymer E. - Purtseladze S.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/chisinau/",
+  "players": [
+    "Ymer E.",
+    "Purtseladze S."
+  ],
+  "generatedAt": "2026-06-04T00:09:21.661Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/WdmzDId2/",
+  "matchId": "WdmzDId2",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_WdmzDId2",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_WdmzDId2"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 4,
+        "duration": "1:04"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:43"
+      }
+    ],
+    "totalDuration": "1:47"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "5",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "9",
+              "right": "13",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "44%",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "77% (27/35)",
+              "right": "70% (23/33)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "47% (14/30)",
+              "right": "38% (16/42)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "6/10",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (14/33)",
+              "right": "23% (8/35)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "62% (26/42)",
+              "right": "53% (16/30)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/10",
+              "right": "2/3",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "20",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "29",
+              "right": "45",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Net points won",
+              "left": "79% (11/14)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (40/64)",
+              "right": "52% (39/75)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "48% (36/75)",
+              "right": "38% (24/64)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (76/139)",
+              "right": "45% (63/139)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (8/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (4/10)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "4",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "7",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "49%",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (15/21)",
+              "right": "62% (16/26)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "62% (8/13)",
+              "right": "52% (14/27)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "4/5",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (10/26)",
+              "right": "29% (6/21)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "48% (13/27)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "1/1",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "14",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "23",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Net points won",
+              "left": "57% (4/7)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "68% (23/34)",
+              "right": "58% (30/52)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (22/52)",
+              "right": "32% (11/34)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (45/86)",
+              "right": "48% (41/86)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "45%",
+              "right": "32%",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "86% (12/14)",
+              "right": "100% (7/7)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "35% (6/17)",
+              "right": "13% (2/15)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/2",
+              "right": "2/5",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "57% (4/7)",
+              "right": "14% (2/14)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "87% (13/15)",
+              "right": "65% (11/17)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/5",
+              "right": "1/2",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "6",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "22",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (7/7)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "57% (17/30)",
+              "right": "39% (9/23)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "61% (14/23)",
+              "right": "43% (13/30)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "58% (31/53)",
+              "right": "42% (22/53)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Purtseladze S."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

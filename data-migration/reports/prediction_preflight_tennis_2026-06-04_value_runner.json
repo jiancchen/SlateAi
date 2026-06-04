@@ -1,0 +1,105 @@
+{
+  "generated_at": "2026-06-04T02:31:27.979Z",
+  "script": "data-migration/scripts/prediction_preflight.mjs",
+  "sport": "tennis",
+  "source_date": "2026-06-04",
+  "lane": "value",
+  "degraded": false,
+  "db_path": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "required_sources_checked": 4,
+  "passed_sources": 2,
+  "stale_sources": [
+    "tennis_odds",
+    "tennis_rankings"
+  ],
+  "warnings": [],
+  "blocking_errors": [
+    "tennis_odds: Stale or missing cache_valid_until: 2026-06-04 00:59:20",
+    "tennis_rankings: Missing source_fetch_status for tennis_rankings/2026-06-04"
+  ],
+  "sources": [
+    {
+      "source_name": "tennis_flashscore_stats",
+      "source_family": "match-stats",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-04",
+        "last_status": "success",
+        "last_completeness_status": "unknown",
+        "last_success_at": "2026-06-04T00:09:56.220275+00:00",
+        "cache_valid_until": "2026-06-04 12:09:56",
+        "expected_item_count": null,
+        "actual_item_count": 185,
+        "missing_item_count": null,
+        "unresolved_count": 0,
+        "notes": "{\"adapter\":\"tennis_flashscore_raw_to_typed\",\"dry_run\":false,\"note\":\"Typed parse run for Flashscore raw archive. This does not perform network fetch.\",\"parsed_rows\":47356,\"report_path\":\"data-migration/reports/ingest_tennis_flashscore_raw_to_typed_2026-06-04.json\",\"source_files\":185,\"unresolved_added\":0}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    },
+    {
+      "source_name": "tennis_odds",
+      "source_family": "markets",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-04",
+        "last_status": "success",
+        "last_completeness_status": "unknown",
+        "last_success_at": "2026-06-03T23:59:20.896407+00:00",
+        "cache_valid_until": "2026-06-04 00:59:20",
+        "expected_item_count": null,
+        "actual_item_count": 1,
+        "missing_item_count": null,
+        "unresolved_count": 0,
+        "notes": "{\"adapter\":\"tennis_odds_raw_to_typed\",\"dry_run\":false,\"note\":\"Typed parse run for tennis odds raw archive. This does not perform network fetch.\",\"parsed_snapshots\":46,\"report_path\":\"data-migration/reports/ingest_tennis_odds_raw_to_typed_2026-06-04.json\",\"source_files\":1,\"unresolved_added\":0}"
+      },
+      "stale": true,
+      "errors": [
+        "Stale or missing cache_valid_until: 2026-06-04 00:59:20"
+      ],
+      "warnings": [],
+      "ok": false
+    },
+    {
+      "source_name": "tennis_player_context",
+      "source_family": "player-context",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-04",
+        "last_status": "success",
+        "last_completeness_status": "unknown",
+        "last_success_at": "2026-06-04T00:09:53.831360+00:00",
+        "cache_valid_until": "2026-06-04 12:09:53",
+        "expected_item_count": null,
+        "actual_item_count": 2,
+        "missing_item_count": null,
+        "unresolved_count": 0,
+        "notes": "{\"adapter\":\"tennis_player_context_raw_to_typed\",\"dry_run\":false,\"note\":\"Typed parse run for tennis Flashscore player context raw archive. This does not perform network fetch.\",\"parsed_player_snapshots\":76,\"report_path\":\"data-migration/reports/ingest_tennis_player_context_raw_to_typed_2026-06-04.json\",\"source_files\":2,\"unresolved_added\":0}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    },
+    {
+      "source_name": "tennis_rankings",
+      "source_family": "rankings",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": null,
+      "stale": true,
+      "errors": [
+        "Missing source_fetch_status for tennis_rankings/2026-06-04"
+      ],
+      "warnings": [],
+      "ok": false
+    }
+  ],
+  "ok": false,
+  "publish_allowed": false
+}

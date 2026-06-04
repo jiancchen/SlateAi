@@ -138,7 +138,7 @@ const slateGames = async (date) => {
   try {
     fileNames = await fs.readdir(gamesDir)
   } catch {
-    return []
+    fileNames = []
   }
   const games = []
   for (const fileName of fileNames.filter((name) => name.endsWith('.json'))) {
@@ -152,6 +152,21 @@ const slateGames = async (date) => {
     games.push({
       id: game.id,
       title: game.title,
+      names,
+      normalizedSet: new Set(names.map(canonicalName))
+    })
+  }
+  const supplement = await readJsonIfExists(
+    path.resolve(ROOT, `data-private/reference/tennis/robinhood-tennis-supplement-${date}.json`),
+    { matches: [] }
+  )
+  for (const match of supplement.matches || []) {
+    if (games.some((game) => game.id === match.id)) continue
+    const names = (match.players || []).map((player) => player.name).filter(Boolean)
+    if (names.length !== 2) continue
+    games.push({
+      id: match.id,
+      title: match.title,
       names,
       normalizedSet: new Set(names.map(canonicalName))
     })

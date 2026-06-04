@@ -1,22 +1,24 @@
 {
   "sourceKind": "recent-match",
-  "slateDate": "2026-05-27",
-  "boardMatchId": "rg-m-karen-khachanov-jesper-de-jong-2026-05-29",
-  "boardTitle": "Karen Khachanov vs Jesper de Jong",
-  "boardPlayerName": "Karen Khachanov",
-  "recentOpponentName": "Marco Trungelliti",
-  "recentIndex": 0,
-  "recentEvent": "Paris",
-  "recentDate": "27 May 26",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-trungelliti-vs-hsu-2026-06-04",
+  "boardTitle": "Marco Trungelliti vs Yu Hsiou Hsu",
+  "boardPlayerName": "Marco Trungelliti",
+  "recentOpponentName": "Khachanov K.",
+  "recentIndex": 1,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 27, 26",
   "recentIsoDate": "2026-05-27",
-  "recentResult": "ARG  7-65 5-7 6-1 7-64 2nd",
+  "recentResult": "Loss 6-7 7-5 1-6 6-7",
+  "recentSurface": "Clay",
   "flashscoreLabel": "Khachanov K. - Trungelliti M.",
-  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
   "players": [
     "Khachanov K.",
     "Trungelliti M."
   ],
-  "generatedAt": "2026-05-29T02:02:31.479Z",
+  "generatedAt": "2026-06-04T00:09:25.121Z",
   "sourceUrl": "https://www.flashscoreusa.com/match/WbA6wfZ9/",
   "matchId": "WbA6wfZ9",
   "feedUrls": {
@@ -176,15 +178,15 @@
             },
             {
               "label": "Last 10 balls",
-              "left": "7",
-              "right": "3",
+              "left": "6",
+              "right": "4",
               "leftPlayer": "Khachanov K.",
               "rightPlayer": "Trungelliti M."
             },
             {
               "label": "Match points saved",
               "left": "0",
-              "right": "4",
+              "right": "2",
               "leftPlayer": "Khachanov K.",
               "rightPlayer": "Trungelliti M."
             }
@@ -816,7 +818,7 @@
             {
               "label": "Match points saved",
               "left": "0",
-              "right": "4",
+              "right": "2",
               "leftPlayer": "Khachanov K.",
               "rightPlayer": "Trungelliti M."
             }

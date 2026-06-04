@@ -1,0 +1,2161 @@
+{
+  "id": "rh-wta-125k-birmingham-eala-vs-charaeva-2026-06-04",
+  "eventId": "9101ad50-7f21-462b-9573-57878a44c130",
+  "league": "Tennis",
+  "start": "3:40 AM",
+  "startMinutes": 220,
+  "title": "Alexandra Eala vs Alina Charaeva",
+  "stage": "WTA 125K Birmingham | Round Of 16",
+  "spotlight": false,
+  "confidence": 65.7,
+  "volatility": 43,
+  "tags": [
+    "ATP Challenger",
+    "Grass",
+    "Prediction market",
+    "Warehouse joined",
+    "Flashscore first",
+    "Coinflip price"
+  ],
+  "matchup": [
+    {
+      "side": "Player 1",
+      "name": "Alexandra Eala",
+      "displayName": "Alexandra Eala",
+      "detail": "Grass | Live rank #37 | Philippines | age 21"
+    },
+    {
+      "side": "Player 2",
+      "name": "Alina Charaeva",
+      "displayName": "Alina Charaeva",
+      "detail": "Grass | Live rank #130 | Russia | age 24"
+    }
+  ],
+  "summary": "Our model pick: Alexandra Eala. Alexandra Eala has the cleaner composite of rank, recent opponent quality, and joined service data; clay record is context only on Grass. Lean, not a chase.",
+  "factors": [
+    "Alexandra Eala has the cleaner composite of rank, recent opponent quality, and joined service data; clay record is context only on Grass. Lean, not a chase.",
+    "Model 65.7% vs DraftKings Sportsbook implied 76.9% (-11.2 pts).",
+    "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+    "Wait for a visible service-pressure split before entering.",
+    "Best O/U angle: no play without a posted total.",
+    "May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.",
+    "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total."
+  ],
+  "lean": "Lean Alexandra Eala; Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+  "swing": "Risk: best-of-five set extension and tiebreak variance.",
+  "swingFactor": "Risk: best-of-five set extension and tiebreak variance.",
+  "odds": {
+    "participantOrder": [
+      0,
+      1
+    ],
+    "markets": [
+      {
+        "label": "Model fair",
+        "book": "Tennis warehouse model",
+        "value": "Alexandra Eala 65.7% / Alina Charaeva 35.5%"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "book": "DraftKings Sportsbook",
+        "value": "Alexandra Eala -333 / Alina Charaeva +238"
+      },
+      {
+        "label": "1st set total games",
+        "book": "DraftKings Sportsbook",
+        "value": "9.5 1st-set games: Over +110 / Under -165"
+      }
+    ],
+    "note": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+    "provider": "DraftKings Sportsbook"
+  },
+  "tennisContext": {
+    "surface": "Grass",
+    "court": "WTA 125K Birmingham",
+    "h2hLeader": "",
+    "fatigueFlag": false,
+    "liveDog": false,
+    "weaknessEdge": {
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 0,
+      "attackingSide": null,
+      "vulnerableSide": null,
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+      "pick": {
+        "name": "Alexandra Eala",
+        "serviceHoldPct": null,
+        "firstServeWonPct": null,
+        "secondServeWonPct": null,
+        "firstServePct": null,
+        "avgAces": null,
+        "avgDoubleFaults": null,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": null,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [],
+        "gameFlowRead": "Alexandra Eala has no major service weakness in the joined Flashscore sample."
+      },
+      "opponent": {
+        "name": "Alina Charaeva",
+        "serviceHoldPct": null,
+        "firstServeWonPct": null,
+        "secondServeWonPct": null,
+        "firstServePct": null,
+        "avgAces": null,
+        "avgDoubleFaults": null,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": null,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [],
+        "gameFlowRead": "Alina Charaeva has no major service weakness in the joined Flashscore sample."
+      }
+    },
+    "warehouseContext": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-wta-125k-birmingham-eala-vs-charaeva-2026-06-04",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-04T10:40:00Z",
+      "surface": "Grass",
+      "tournament": "WTA 125K Birmingham",
+      "category": "WTA",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Alexandra Eala",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "Alexandra Eala",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 8,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "opponentAdjustedFormScore": 39.9,
+              "recentWinPct": 0.375,
+              "recentGamePct": 0.467,
+              "clayWinPct": 0.444
+            },
+            "pressureSamples": {}
+          },
+          "recentFormMetrics": {
+            "playerName": "Alexandra Eala",
+            "matches": [],
+            "summary": [
+              {
+                "key": "opponent_adjusted_form_score",
+                "label": "Opponent-adjusted form",
+                "score": 39.9
+              },
+              {
+                "key": "recent_win_pct",
+                "label": "Recent win pct",
+                "score": 0.375
+              },
+              {
+                "key": "recent_game_pct",
+                "label": "Recent game pct",
+                "score": 0.467
+              },
+              {
+                "key": "scoreline_form_score",
+                "label": "Scoreline form",
+                "score": 39.9
+              }
+            ],
+            "coverage": {
+              "cells": 4,
+              "exactCells": 4,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        },
+        {
+          "name": "Alina Charaeva",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "name": "Alina Charaeva",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": null,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {},
+            "pressureSamples": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Alexandra Eala",
+        "awayName": "Alina Charaeva",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Alexandra Eala",
+          "awayName": "Alina Charaeva",
+          "homeVotes": 1695,
+          "awayVotes": 182,
+          "homePct": 90.3,
+          "awayPct": 9.7
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Alexandra Eala",
+            "fractionalValue": "3/10",
+            "impliedPct": 76.9,
+            "expected": 77,
+            "actual": 77
+          },
+          "away": {
+            "name": "Alina Charaeva",
+            "fractionalValue": "12/5",
+            "impliedPct": 29.4,
+            "expected": 29,
+            "actual": 40
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": null,
+          "away": null
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick.",
+        "eventId": "16241010",
+        "sourceUrl": "https://www.sofascore.com/tennis/match/alexandra-eala-alina-charaeva#id:16241010",
+        "capturedAt": "2026-06-04T00:25:55.793Z"
+      },
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 4,
+        "recentMetricRows": 4,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "sofascoreData": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-wta-125k-birmingham-eala-vs-charaeva-2026-06-04",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-04T10:40:00Z",
+      "surface": "Grass",
+      "tournament": "WTA 125K Birmingham",
+      "category": "WTA",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Alexandra Eala",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "Alexandra Eala",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 8,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "opponentAdjustedFormScore": 39.9,
+              "recentWinPct": 0.375,
+              "recentGamePct": 0.467,
+              "clayWinPct": 0.444
+            },
+            "pressureSamples": {}
+          },
+          "recentFormMetrics": {
+            "playerName": "Alexandra Eala",
+            "matches": [],
+            "summary": [
+              {
+                "key": "opponent_adjusted_form_score",
+                "label": "Opponent-adjusted form",
+                "score": 39.9
+              },
+              {
+                "key": "recent_win_pct",
+                "label": "Recent win pct",
+                "score": 0.375
+              },
+              {
+                "key": "recent_game_pct",
+                "label": "Recent game pct",
+                "score": 0.467
+              },
+              {
+                "key": "scoreline_form_score",
+                "label": "Scoreline form",
+                "score": 39.9
+              }
+            ],
+            "coverage": {
+              "cells": 4,
+              "exactCells": 4,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        },
+        {
+          "name": "Alina Charaeva",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "name": "Alina Charaeva",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": null,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {},
+            "pressureSamples": {}
+          },
+          "recentFormMetrics": null
+        }
+      ],
+      "h2h": {
+        "homeName": "Alexandra Eala",
+        "awayName": "Alina Charaeva",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Alexandra Eala",
+          "awayName": "Alina Charaeva",
+          "homeVotes": 1695,
+          "awayVotes": 182,
+          "homePct": 90.3,
+          "awayPct": 9.7
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Alexandra Eala",
+            "fractionalValue": "3/10",
+            "impliedPct": 76.9,
+            "expected": 77,
+            "actual": 77
+          },
+          "away": {
+            "name": "Alina Charaeva",
+            "fractionalValue": "12/5",
+            "impliedPct": 29.4,
+            "expected": 29,
+            "actual": 40
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": null,
+          "away": null
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick.",
+        "eventId": "16241010",
+        "sourceUrl": "https://www.sofascore.com/tennis/match/alexandra-eala-alina-charaeva#id:16241010",
+        "capturedAt": "2026-06-04T00:25:55.793Z"
+      },
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 4,
+        "recentMetricRows": 4,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "players": [
+      {
+        "name": "Alexandra Eala",
+        "rank": 37,
+        "label": "Alexandra Eala",
+        "form": null,
+        "boardPct": 65.7,
+        "decimalOdds": 1.3,
+        "marketLabel": "-333 / 76.9% implied",
+        "clayLine": "Grass | Live rank #37 | Philippines | age 21",
+        "weakness": {
+          "name": "Alexandra Eala",
+          "serviceHoldPct": null,
+          "firstServeWonPct": null,
+          "secondServeWonPct": null,
+          "firstServePct": null,
+          "avgAces": null,
+          "avgDoubleFaults": null,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": null,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [],
+          "gameFlowRead": "Alexandra Eala has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseStats": {
+          "name": "Alexandra Eala",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "Alexandra Eala",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 8,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "opponentAdjustedFormScore": 39.9,
+              "recentWinPct": 0.375,
+              "recentGamePct": 0.467,
+              "clayWinPct": 0.444
+            },
+            "pressureSamples": {}
+          },
+          "recentFormMetrics": {
+            "playerName": "Alexandra Eala",
+            "matches": [],
+            "summary": [
+              {
+                "key": "opponent_adjusted_form_score",
+                "label": "Opponent-adjusted form",
+                "score": 39.9
+              },
+              {
+                "key": "recent_win_pct",
+                "label": "Recent win pct",
+                "score": 0.375
+              },
+              {
+                "key": "recent_game_pct",
+                "label": "Recent game pct",
+                "score": 0.467
+              },
+              {
+                "key": "scoreline_form_score",
+                "label": "Scoreline form",
+                "score": 39.9
+              }
+            ],
+            "coverage": {
+              "cells": 4,
+              "exactCells": 4,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        },
+        "record2026": "",
+        "notes": "Pick: model 65.7%",
+        "matchupNote": "Why pick: Alexandra Eala has the cleaner composite of rank, recent opponent quality, and joined service data; clay record is context only on Grass. Lean, not a chase."
+      },
+      {
+        "name": "Alina Charaeva",
+        "rank": 130,
+        "label": "Alina Charaeva",
+        "form": null,
+        "boardPct": 35.5,
+        "decimalOdds": 3.38,
+        "marketLabel": "+238 / 29.6% implied",
+        "clayLine": "Grass | Live rank #130 | Russia | age 24",
+        "weakness": {
+          "name": "Alina Charaeva",
+          "serviceHoldPct": null,
+          "firstServeWonPct": null,
+          "secondServeWonPct": null,
+          "firstServePct": null,
+          "avgAces": null,
+          "avgDoubleFaults": null,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": null,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [],
+          "gameFlowRead": "Alina Charaeva has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseStats": {
+          "name": "Alina Charaeva",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "name": "Alina Charaeva",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": null,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {},
+            "pressureSamples": {}
+          },
+          "recentFormMetrics": null
+        },
+        "record2026": "",
+        "notes": "Opponent case: model 34.3%",
+        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
+      }
+    ],
+    "comparisonRows": [
+      {
+        "label": "Model pick",
+        "metric": "Fair win split",
+        "leftScore": 65.7,
+        "rightScore": 35.5,
+        "leftLabel": "Alexandra Eala",
+        "rightLabel": "Alina Charaeva",
+        "winner": "Alexandra Eala"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "metric": "Implied price",
+        "leftScore": 76.9,
+        "rightScore": 29.6,
+        "leftLabel": "Alexandra Eala",
+        "rightLabel": "Alina Charaeva",
+        "winner": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+      },
+      {
+        "label": "Weakness",
+        "metric": "Lower is cleaner",
+        "leftScore": 0,
+        "rightScore": 0,
+        "leftLabel": "Alexandra Eala",
+        "rightLabel": "Alina Charaeva",
+        "winner": "No clear weakness edge"
+      },
+      {
+        "label": "Volatility",
+        "metric": "Lower is cleaner",
+        "leftScore": 43,
+        "rightScore": 57,
+        "leftLabel": "Risk",
+        "rightLabel": "Stability",
+        "winner": "Stable enough"
+      }
+    ],
+    "predictionMarket": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T03:58:23.841Z",
+      "totalVolume": null,
+      "players": [
+        {
+          "name": "Alexandra Eala",
+          "probabilityPct": 76.9,
+          "amount": null,
+          "americanOdds": -333,
+          "edgePct": -11.2,
+          "priceBand": "Low-payout favorite"
+        },
+        {
+          "name": "Alina Charaeva",
+          "probabilityPct": 29.6,
+          "amount": null,
+          "americanOdds": 238,
+          "edgePct": 5.9,
+          "priceBand": "Underdog"
+        }
+      ]
+    },
+    "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Alexandra Eala",
+        "line": null,
+        "americanOdds": -333,
+        "modelPct": 65.7,
+        "impliedPct": 76.9,
+        "edgePct": -11.2,
+        "evPer100": -14.6,
+        "netEvPer100": -16.6,
+        "grade": "Negative EV",
+        "issue": "Favorite price needs better proof",
+        "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "No bet",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": null,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": null,
+        "grade": "No direction",
+        "reason": "Total games need expected match games vs the posted line."
+      },
+      {
+        "marketType": "Win a set",
+        "label": "Win a set %",
+        "selection": "Alexandra Eala 74% / Alina Charaeva 56%",
+        "rows": [
+          {
+            "name": "Alexandra Eala",
+            "confidence": 74,
+            "modelPct": 65.7,
+            "label": "Market favorite to win a set"
+          },
+          {
+            "name": "Alina Charaeva",
+            "confidence": 56,
+            "modelPct": 35.5,
+            "label": "Underdog set-win path needs early holds"
+          }
+        ],
+        "confidence": 74,
+        "grade": "Price required",
+        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Under 9.5",
+        "expectedGames": 9.2,
+        "confidence": 52,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "grade": "Near fair",
+        "reason": "Expected first-set games 9.2 vs DraftKings Sportsbook 9.5; Under 9.5."
+      }
+    ],
+    "derivativeMarketCase": null,
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Alexandra Eala",
+        "americanOdds": -333,
+        "modelPct": 65.7,
+        "impliedPct": 76.9,
+        "edgePct": -11.2,
+        "evPer100": -14.6,
+        "netEvPer100": -16.6,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Negative EV",
+        "betGrade": false
+      },
+      "spread": null,
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Under 9.5",
+        "line": 9.5,
+        "americanOdds": -165,
+        "expectedGames": 9.2,
+        "confidence": 52,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 52,
+        "evPer100": -16.5,
+        "netEvPer100": -18.5,
+        "valueGrade": "Near fair",
+        "reason": "Expected first-set games 9.2 vs DraftKings Sportsbook 9.5; Under 9.5.",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Alexandra Eala",
+          "confidence": 74,
+          "modelPct": 65.7,
+          "label": "Market favorite to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Alina Charaeva",
+          "confidence": 56,
+          "modelPct": 35.5,
+          "label": "Underdog set-win path needs early holds",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "ensembleValueCase": null,
+    "projection": {
+      "projectedWinner": "Alexandra Eala",
+      "projectedSetLine": "2-0/2-1 range",
+      "setWinProjections": [
+        {
+          "name": "Alexandra Eala",
+          "confidence": 74,
+          "modelPct": 65.7,
+          "label": "Market favorite to win a set"
+        },
+        {
+          "name": "Alina Charaeva",
+          "confidence": 56,
+          "modelPct": 35.5,
+          "label": "Underdog set-win path needs early holds"
+        }
+      ],
+      "totalGames": null,
+      "straightSetsProbability": 57.7,
+      "upsetRisk": 34.3,
+      "overview": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "fantasy": []
+    },
+    "tradePlan": {
+      "laneLabel": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+      "summary": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "trigger": "Wait for a visible service-pressure split before entering.",
+      "headline": "No clear weakness edge",
+      "exit": "No spread line",
+      "tone": "warning"
+    },
+    "derivativeMarkets": [
+      {
+        "label": "ML",
+        "value": "Alexandra Eala -333; Model 65.7% vs DraftKings Sportsbook implied 76.9% (-11.2 pts).",
+        "lean": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+        "confidence": 65.7,
+        "marketType": "ML",
+        "selection": "Alexandra Eala",
+        "americanOdds": -333,
+        "modelPct": 65.7,
+        "impliedPct": 76.9,
+        "edgePct": -11.2,
+        "evPer100": -14.6,
+        "netEvPer100": -16.6,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Negative EV",
+        "betGrade": false,
+        "tone": "warning",
+        "reason": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total."
+      },
+      {
+        "label": "Win a set",
+        "value": "No set-win price captured",
+        "lean": "Underdog set-win path needs early holds",
+        "confidence": 74,
+        "setWinRows": [],
+        "valueGrade": "Needs posted price",
+        "tone": "accent",
+        "reason": "Best-of-five gives the non-ML side more room to win a set; use this to separate upset risk from match-winner confidence."
+      },
+      {
+        "label": "Spread",
+        "value": "No primary game spread captured",
+        "lean": "No spread line",
+        "confidence": 59.7,
+        "tone": "neutral",
+        "reason": "Wait for a visible service-pressure split before entering."
+      },
+      {
+        "label": "O/U",
+        "value": "No total captured",
+        "lean": "No bet",
+        "confidence": 57.7,
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st set O/U",
+        "value": "Line 9.5",
+        "lean": "Under 9.5",
+        "confidence": 52,
+        "marketType": "First-set total",
+        "selection": "Under 9.5",
+        "line": 9.5,
+        "americanOdds": -165,
+        "expectedGames": 9.2,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 52,
+        "evPer100": -16.5,
+        "netEvPer100": -18.5,
+        "valueGrade": "Near fair",
+        "reason": "Expected first-set games 9.2 vs DraftKings Sportsbook 9.5; Under 9.5.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st service game",
+        "value": "No first-service-game market captured",
+        "lean": "First-service-game prices",
+        "confidence": 65.7,
+        "firstServiceGameRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-service-game market captured."
+      },
+      {
+        "label": "First games",
+        "value": "No first-game prop market captured",
+        "lean": "First-game prop prices",
+        "confidence": 65.7,
+        "firstGamePropRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-games prop captured."
+      }
+    ],
+    "marketEconomics": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T03:58:23.841Z",
+      "eventUrl": "https://sportsbook.draftkings.com/leagues/tennis/wta-birmingham?event=34235356",
+      "deskName": "Alexandra Eala",
+      "deskPricePct": 76.9,
+      "deskEdgePct": -11.2,
+      "priceAction": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+      "players": [
+        {
+          "name": "Alexandra Eala",
+          "americanOdds": -333,
+          "impliedPct": 76.9,
+          "modelPct": 65.7,
+          "edgePct": -11.2,
+          "priceBand": "Low-payout favorite",
+          "grossProfitPct": 30,
+          "grossPayoutMultiple": 1.3,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 30,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        },
+        {
+          "name": "Alina Charaeva",
+          "americanOdds": 238,
+          "impliedPct": 29.6,
+          "modelPct": 35.5,
+          "edgePct": 5.9,
+          "priceBand": "Underdog",
+          "grossProfitPct": 238,
+          "grossPayoutMultiple": 3.38,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 238,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        }
+      ]
+    },
+    "clayMatchupData": {
+      "title": "Alexandra Eala vs Alina Charaeva",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Alexandra-Eala-Vs-Alina-Charaeva/",
+      "h2hText": "1:1",
+      "h2hRecord": "1:1",
+      "prediction": "Eala in 2",
+      "players": [
+        {
+          "name": "Alexandra Eala",
+          "record2026": {
+            "overall": "19-14",
+            "hard": "14-8",
+            "clay": "4-6",
+            "indoorHard": "0-0",
+            "grass": "1-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Birmingham\nPriscilla Hon\nAUS  6-0 6-2 1st\n02 Jun 26",
+              "event": "Birmingham",
+              "opponent": "Priscilla Hon",
+              "result": "AUS  6-0 6-2 1st",
+              "date": "02 Jun 26"
+            },
+            {
+              "raw": "Paris\nIva Jovic\nUSA   Loss 6-4 6-2 1st\n26 May 26",
+              "event": "Paris",
+              "opponent": "Iva Jovic",
+              "result": "USA   Loss 6-4 6-2 1st",
+              "date": "26 May 26"
+            },
+            {
+              "raw": "Strasbourg\nOleksandra Oliynykova\nUKR   Loss 3-6 7-5 6-3 1st\n18 May 26",
+              "event": "Strasbourg",
+              "opponent": "Oleksandra Oliynykova",
+              "result": "UKR   Loss 3-6 7-5 6-3 1st",
+              "date": "18 May 26"
+            },
+            {
+              "raw": "Rome\nElena Rybakina\nKAZ   Loss 6-4 6-3 3rd\n10 May 26",
+              "event": "Rome",
+              "opponent": "Elena Rybakina",
+              "result": "KAZ   Loss 6-4 6-3 3rd",
+              "date": "10 May 26"
+            },
+            {
+              "raw": "Xinyu Wang\nCHN  6-4 6-3 2nd\n08 May 26",
+              "event": "",
+              "opponent": "Xinyu Wang",
+              "result": "CHN  6-4 6-3 2nd",
+              "date": "08 May 26"
+            },
+            {
+              "raw": "Magdalena Frech\nPOL  6-0 3-6 6-4 1st\n06 May 26",
+              "event": "",
+              "opponent": "Magdalena Frech",
+              "result": "POL  6-0 3-6 6-4 1st",
+              "date": "06 May 26"
+            },
+            {
+              "raw": "Madrid\nElise Mertens\nBEL   Loss 6-2 6-1 2nd\n24 Apr 26",
+              "event": "Madrid",
+              "opponent": "Elise Mertens",
+              "result": "BEL   Loss 6-2 6-1 2nd",
+              "date": "24 Apr 26"
+            },
+            {
+              "raw": "Anastasia Pavlyuchenkova\nRUS  6-3 6-3 1st\n22 Apr 26",
+              "event": "",
+              "opponent": "Anastasia Pavlyuchenkova",
+              "result": "RUS  6-3 6-3 1st",
+              "date": "22 Apr 26"
+            }
+          ]
+        },
+        {
+          "name": "Alina Charaeva",
+          "record2026": {
+            "overall": "20-13",
+            "hard": "0-3",
+            "clay": "14-9",
+            "indoorHard": "5-1",
+            "grass": "1-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Birmingham\nGreetje Minnen\nBEL  6-3 6-1 1st\n02 Jun 26",
+              "event": "Birmingham",
+              "opponent": "Greetje Minnen",
+              "result": "BEL  6-3 6-1 1st",
+              "date": "02 Jun 26"
+            },
+            {
+              "raw": "Paris\nLucrezia Stefanini\nITA   Loss 6-4 7-5 q1\n19 May 26",
+              "event": "Paris",
+              "opponent": "Lucrezia Stefanini",
+              "result": "ITA   Loss 6-4 7-5 q1",
+              "date": "19 May 26"
+            },
+            {
+              "raw": "Paris\nDiane Parry\nFRA   Loss 7-66 7-66 1/2\n16 May 26",
+              "event": "Paris",
+              "opponent": "Diane Parry",
+              "result": "FRA   Loss 7-66 7-66 1/2",
+              "date": "16 May 26"
+            },
+            {
+              "raw": "Aliaksandra Sasnovich\nBLR  6-4 6-0 1/4\n15 May 26",
+              "event": "",
+              "opponent": "Aliaksandra Sasnovich",
+              "result": "BLR  6-4 6-0 1/4",
+              "date": "15 May 26"
+            },
+            {
+              "raw": "Tamara Korpatsch\nGER  6-4 6-73 7-5 2nd\n14 May 26",
+              "event": "",
+              "opponent": "Tamara Korpatsch",
+              "result": "GER  6-4 6-73 7-5 2nd",
+              "date": "14 May 26"
+            },
+            {
+              "raw": "Sara Bejlek\nCZE  6-4 6-0 1st\n12 May 26",
+              "event": "",
+              "opponent": "Sara Bejlek",
+              "result": "CZE  6-4 6-0 1st",
+              "date": "12 May 26"
+            },
+            {
+              "raw": "Alice Tubello\nFRA  6-3 6-4 Q.\n11 May 26",
+              "event": "",
+              "opponent": "Alice Tubello",
+              "result": "FRA  6-3 6-4 Q.",
+              "date": "11 May 26"
+            },
+            {
+              "raw": "La Bisbal D'Emporda\nDaria Kasatkina\nAUS   Loss 4-6 6-0 6-4 1/4\n01 May 26",
+              "event": "La Bisbal D'Emporda",
+              "opponent": "Daria Kasatkina",
+              "result": "AUS   Loss 4-6 6-0 6-4 1/4",
+              "date": "01 May 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": "Alina Charaeva has a credible clay record at 14-9 in 2026, so the favorite still has to prove the service gap. Alexandra Eala is good, but not spotless on clay at 4-6. Alina Charaeva has multiple recent clay matches with a tiebreak or three-set shape, which points toward set-extension or game-spread value if the number is generous. Alexandra Eala's recent clay record has enough pressure games that the lower-priced side can re-rate quickly if the first set stays on serve."
+    },
+    "opponentQualityData": {
+      "title": "Alexandra Eala vs Alina Charaeva",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Alexandra-Eala-Vs-Alina-Charaeva/",
+      "h2hRecord": "1:1",
+      "tennistonicPrediction": "Eala in 2",
+      "players": [
+        {
+          "name": "Alexandra Eala",
+          "ranking": {
+            "rank": 37,
+            "points": 1340,
+            "age": 21,
+            "country": "Philippines",
+            "tour": "WTA",
+            "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+            "profileUrl": "https://www.espn.com/tennis/player/_/id/7759/alexandra-eala",
+            "liveRankSource": null,
+            "asOf": "2026-06-02"
+          },
+          "records": {
+            "overall2026": {
+              "wins": 19,
+              "losses": 14,
+              "total": 33,
+              "winPct": 0.576
+            },
+            "clay2026": {
+              "wins": 4,
+              "losses": 6,
+              "total": 10,
+              "winPct": 0.4
+            },
+            "raw": {
+              "overall": "19-14",
+              "hard": "14-8",
+              "clay": "4-6",
+              "indoorHard": "0-0",
+              "grass": "1-0",
+              "carpet": "0-0"
+            }
+          },
+          "recentWindow": {
+            "matches": 8,
+            "completed": 8,
+            "wins": 4,
+            "losses": 4,
+            "winPct": 0.5,
+            "setsWon": 9,
+            "setsLost": 9,
+            "setPct": 0.5,
+            "gamesWon": 81,
+            "gamesLost": 77,
+            "gamePct": 0.513,
+            "resistanceMatches": 2,
+            "straightSetWins": 3,
+            "straightSetLosses": 3,
+            "avgKnownOpponentRank": 55,
+            "knownOpponentRanks": 8,
+            "missingOpponentRanks": 0,
+            "top10Opponents": 1,
+            "top25Opponents": 3,
+            "top50Opponents": 5,
+            "challengerOrItfMatches": 0,
+            "rankingCoveragePct": 1,
+            "scorelineFormScore": 51.1,
+            "opponentAdjustedFormScore": 51.1
+          },
+          "serviceData": {
+            "source": "not available in Tennistonic scrape",
+            "matchesWithStats": 0,
+            "avgServiceHoldPct": null,
+            "avgAces": null,
+            "avgFirstServeWonPct": null,
+            "note": "Recent scores support set/game resistance only until a Flashscore recent-match stat row is resolved."
+          },
+          "recentMatches": [
+            {
+              "event": "Birmingham",
+              "eventTier": "tour/other",
+              "opponent": "Priscilla Hon",
+              "opponentRanking": {
+                "rank": 143,
+                "points": 527,
+                "age": 28,
+                "country": "Australia",
+                "tour": "WTA",
+                "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/2582/priscilla-hon",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "AUS  6-0 6-2 1st",
+              "date": "02 Jun 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 12,
+                "gamesLost": 2,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 0,
+                    "raw": "6-0"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  }
+                ]
+              },
+              "opponentWeight": 0.75,
+              "qualityPoints": 0.85,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Paris",
+              "eventTier": "tour-1000",
+              "opponent": "Iva Jovic",
+              "opponentRanking": {
+                "rank": 17,
+                "points": 2306,
+                "age": 18,
+                "country": "USA",
+                "tour": "WTA",
+                "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/14311/iva-jovic",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "USA   Loss 6-4 6-2 1st",
+              "date": "26 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 6,
+                "gamesLost": 12,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  }
+                ]
+              },
+              "opponentWeight": 1.32,
+              "qualityPoints": 0.098,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Strasbourg",
+              "eventTier": "tour/other",
+              "opponent": "Oleksandra Oliynykova",
+              "opponentRanking": {
+                "rank": 65,
+                "points": 1005,
+                "age": 25,
+                "country": "Ukraine",
+                "tour": "WTA",
+                "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/5705/oleksandra-oliynykova",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "UKR   Loss 3-6 7-5 6-3 1st",
+              "date": "18 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 1,
+                "setsLost": 2,
+                "gamesWon": 14,
+                "gamesLost": 16,
+                "tiebreakSets": 0,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 3,
+                    "rightGames": 6,
+                    "raw": "3-6"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 5,
+                    "raw": "7-5"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  }
+                ]
+              },
+              "opponentWeight": 0.9,
+              "qualityPoints": 0.384,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Rome",
+              "eventTier": "tour-1000",
+              "opponent": "Elena Rybakina",
+              "opponentRanking": {
+                "rank": 2,
+                "points": 8313,
+                "age": 26,
+                "country": "Kazakhstan",
+                "tour": "WTA",
+                "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/3126/elena-rybakina",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "KAZ   Loss 6-4 6-3 3rd",
+              "date": "10 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 7,
+                "gamesLost": 12,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  }
+                ]
+              },
+              "opponentWeight": 1.485,
+              "qualityPoints": 0.128,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Xinyu Wang",
+              "opponentRanking": {
+                "rank": 34,
+                "points": 1371,
+                "age": 24,
+                "country": "China",
+                "tour": "WTA",
+                "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/3387/wang-xinyu",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "CHN  6-4 6-3 2nd",
+              "date": "08 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 12,
+                "gamesLost": 7,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  }
+                ]
+              },
+              "opponentWeight": 0.892,
+              "qualityPoints": 0.943,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Magdalena Frech",
+              "opponentRanking": {
+                "rank": 46,
+                "points": 1238,
+                "age": 28,
+                "country": "Poland",
+                "tour": "WTA",
+                "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/2672/magdalena-frech",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "POL  6-0 3-6 6-4 1st",
+              "date": "06 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 2,
+                "setsLost": 1,
+                "gamesWon": 15,
+                "gamesLost": 10,
+                "tiebreakSets": 0,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 0,
+                    "raw": "6-0"
+                  },
+                  {
+                    "leftGames": 3,
+                    "rightGames": 6,
+                    "raw": "3-6"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 0.892,
+              "qualityPoints": 1.022,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Madrid",
+              "eventTier": "tour-1000",
+              "opponent": "Elise Mertens",
+              "opponentRanking": {
+                "rank": 21,
+                "points": 1858,
+                "age": 30,
+                "country": "Belgium",
+                "tour": "WTA",
+                "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/2221/elise-mertens",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "BEL   Loss 6-2 6-1 2nd",
+              "date": "24 Apr 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 3,
+                "gamesLost": 12,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 1,
+                    "raw": "6-1"
+                  }
+                ]
+              },
+              "opponentWeight": 1.32,
+              "qualityPoints": 0.068,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Anastasia Pavlyuchenkova",
+              "opponentRanking": {
+                "rank": 112,
+                "points": 694,
+                "age": 34,
+                "country": "Russia",
+                "tour": "WTA",
+                "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/824/anastasia-pavlyuchenkova",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "RUS  6-3 6-3 1st",
+              "date": "22 Apr 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 12,
+                "gamesLost": 6,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  }
+                ]
+              },
+              "opponentWeight": 0.637,
+              "qualityPoints": 0.698,
+              "flashscore": null,
+              "serviceStats": null
+            }
+          ]
+        },
+        {
+          "name": "Alina Charaeva",
+          "ranking": {
+            "rank": 130,
+            "points": 591,
+            "age": 24,
+            "country": "Russia",
+            "tour": "WTA",
+            "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+            "profileUrl": "https://www.espn.com/tennis/player/_/id/6570/alina-charaeva",
+            "liveRankSource": null,
+            "asOf": "2026-06-02"
+          },
+          "records": {
+            "overall2026": {
+              "wins": 20,
+              "losses": 13,
+              "total": 33,
+              "winPct": 0.606
+            },
+            "clay2026": {
+              "wins": 14,
+              "losses": 9,
+              "total": 23,
+              "winPct": 0.609
+            },
+            "raw": {
+              "overall": "20-13",
+              "hard": "0-3",
+              "clay": "14-9",
+              "indoorHard": "5-1",
+              "grass": "1-0",
+              "carpet": "0-0"
+            }
+          },
+          "recentWindow": {
+            "matches": 8,
+            "completed": 8,
+            "wins": 5,
+            "losses": 3,
+            "winPct": 0.625,
+            "setsWon": 11,
+            "setsLost": 7,
+            "setPct": 0.611,
+            "gamesWon": 98,
+            "gamesLost": 78,
+            "gamePct": 0.557,
+            "resistanceMatches": 3,
+            "straightSetWins": 4,
+            "straightSetLosses": 2,
+            "avgKnownOpponentRank": 79.8,
+            "knownOpponentRanks": 5,
+            "missingOpponentRanks": 3,
+            "top10Opponents": 0,
+            "top25Opponents": 0,
+            "top50Opponents": 1,
+            "challengerOrItfMatches": 0,
+            "rankingCoveragePct": 0.625,
+            "scorelineFormScore": 77.3,
+            "opponentAdjustedFormScore": 77.3
+          },
+          "serviceData": {
+            "source": "not available in Tennistonic scrape",
+            "matchesWithStats": 0,
+            "avgServiceHoldPct": null,
+            "avgAces": null,
+            "avgFirstServeWonPct": null,
+            "note": "Recent scores support set/game resistance only until a Flashscore recent-match stat row is resolved."
+          },
+          "recentMatches": [
+            {
+              "event": "Birmingham",
+              "eventTier": "tour/other",
+              "opponent": "Greetje Minnen",
+              "opponentRanking": null,
+              "result": "BEL  6-3 6-1 1st",
+              "date": "02 Jun 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 12,
+                "gamesLost": 4,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 1,
+                    "raw": "6-1"
+                  }
+                ]
+              },
+              "opponentWeight": 0.6,
+              "qualityPoints": 0.68,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Paris",
+              "eventTier": "tour-1000",
+              "opponent": "Lucrezia Stefanini",
+              "opponentRanking": null,
+              "result": "ITA   Loss 6-4 7-5 q1",
+              "date": "19 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 9,
+                "gamesLost": 13,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 5,
+                    "raw": "7-5"
+                  }
+                ]
+              },
+              "opponentWeight": 0.66,
+              "qualityPoints": 0.039,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Paris",
+              "eventTier": "tour-1000",
+              "opponent": "Diane Parry",
+              "opponentRanking": {
+                "rank": 92,
+                "points": 853,
+                "age": 23,
+                "country": "France",
+                "tour": "WTA",
+                "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/3332/diane-parry",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "FRA   Loss 7-66 7-66 1/2",
+              "date": "16 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 12,
+                "gamesLost": 14,
+                "tiebreakSets": 2,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-66"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-66"
+                  }
+                ]
+              },
+              "opponentWeight": 0.99,
+              "qualityPoints": 0.416,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Aliaksandra Sasnovich",
+              "opponentRanking": {
+                "rank": 124,
+                "points": 642,
+                "age": 32,
+                "country": "Belarus",
+                "tour": "WTA",
+                "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/1809/aliaksandra-sasnovich",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "BLR  6-4 6-0 1/4",
+              "date": "15 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 12,
+                "gamesLost": 4,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 0,
+                    "raw": "6-0"
+                  }
+                ]
+              },
+              "opponentWeight": 0.637,
+              "qualityPoints": 0.717,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Tamara Korpatsch",
+              "opponentRanking": {
+                "rank": 95,
+                "points": 829,
+                "age": 31,
+                "country": "Germany",
+                "tour": "WTA",
+                "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/3040/tamara-korpatsch",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "GER  6-4 6-73 7-5 2nd",
+              "date": "14 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 2,
+                "setsLost": 1,
+                "gamesWon": 19,
+                "gamesLost": 16,
+                "tiebreakSets": 1,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 7,
+                    "raw": "6-73"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 5,
+                    "raw": "7-5"
+                  }
+                ]
+              },
+              "opponentWeight": 0.765,
+              "qualityPoints": 0.875,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Sara Bejlek",
+              "opponentRanking": {
+                "rank": 35,
+                "points": 1369,
+                "age": 20,
+                "country": "Czechia",
+                "tour": "WTA",
+                "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/7819/sara-bejlek",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "CZE  6-4 6-0 1st",
+              "date": "12 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 12,
+                "gamesLost": 4,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 0,
+                    "raw": "6-0"
+                  }
+                ]
+              },
+              "opponentWeight": 0.892,
+              "qualityPoints": 0.972,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Alice Tubello",
+              "opponentRanking": null,
+              "result": "FRA  6-3 6-4 Q.",
+              "date": "11 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 12,
+                "gamesLost": 7,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.56,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "La Bisbal D'Emporda",
+              "eventTier": "tour/other",
+              "opponent": "Daria Kasatkina",
+              "opponentRanking": {
+                "rank": 53,
+                "points": 1119,
+                "age": 29,
+                "country": "Australia",
+                "tour": "WTA",
+                "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/2191/daria-kasatkina",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "AUS   Loss 4-6 6-0 6-4 1/4",
+              "date": "01 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 1,
+                "setsLost": 2,
+                "gamesWon": 10,
+                "gamesLost": 16,
+                "tiebreakSets": 0,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 4,
+                    "rightGames": 6,
+                    "raw": "4-6"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 0,
+                    "raw": "6-0"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 0.9,
+              "qualityPoints": 0.344,
+              "flashscore": null,
+              "serviceStats": null
+            }
+          ]
+        }
+      ],
+      "matchupRead": "Alina Charaeva owns the stronger 2026 clay record by 20.9 percentage points. Alina Charaeva leads the current opponent-adjusted form score by 26.2 points. 3 recent-opponent rankings are still missing, so this read should be treated as partially ranked until the ranking warehouse is filled."
+    },
+    "researchLinks": [
+      {
+        "label": "ESPN scoreboard",
+        "url": "https://www.espn.com/tennis/scoreboard/_/date/20260604"
+      },
+      {
+        "label": "Tennistonic H2H",
+        "url": "https://tennistonic.com/head-to-head-compare/Alexandra-Eala-Vs-Alina-Charaeva/"
+      },
+      {
+        "label": "DraftKings Sportsbook event",
+        "url": "https://sportsbook.draftkings.com/leagues/tennis/wta-birmingham?event=34235356"
+      }
+    ],
+    "formEdgeName": "Alexandra Eala"
+  },
+  "participants": [
+    {
+      "id": "rh-wta-125k-birmingham-eala-vs-charaeva-2026-06-04:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Alexandra Eala",
+      "detail": "Grass | Live rank #37 | Philippines | age 21",
+      "americanOdds": -333,
+      "americanLabel": "-333",
+      "decimalOdds": 1.3003003003003002,
+      "impliedProbability": 0.76905311778291,
+      "impliedProbabilityLabel": "76.9%"
+    },
+    {
+      "id": "rh-wta-125k-birmingham-eala-vs-charaeva-2026-06-04:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Alina Charaeva",
+      "detail": "Grass | Live rank #130 | Russia | age 24",
+      "americanOdds": 238,
+      "americanLabel": "+238",
+      "decimalOdds": 3.38,
+      "impliedProbability": 0.2958579881656805,
+      "impliedProbabilityLabel": "29.6%"
+    }
+  ],
+  "moneyline": {
+    "available": true,
+    "label": "DraftKings Sportsbook moneyline",
+    "provider": "DraftKings Sportsbook",
+    "participants": [
+      {
+        "id": "rh-wta-125k-birmingham-eala-vs-charaeva-2026-06-04:0",
+        "index": 0,
+        "role": "Player 1",
+        "name": "Alexandra Eala",
+        "detail": "Grass | Live rank #37 | Philippines | age 21",
+        "americanOdds": -333,
+        "americanLabel": "-333",
+        "decimalOdds": 1.3003003003003002,
+        "impliedProbability": 0.76905311778291,
+        "impliedProbabilityLabel": "76.9%"
+      },
+      {
+        "id": "rh-wta-125k-birmingham-eala-vs-charaeva-2026-06-04:1",
+        "index": 1,
+        "role": "Player 2",
+        "name": "Alina Charaeva",
+        "detail": "Grass | Live rank #130 | Russia | age 24",
+        "americanOdds": 238,
+        "americanLabel": "+238",
+        "decimalOdds": 3.38,
+        "impliedProbability": 0.2958579881656805,
+        "impliedProbabilityLabel": "29.6%"
+      }
+    ]
+  },
+  "analysis": {
+    "available": true,
+    "participantId": "rh-wta-125k-birmingham-eala-vs-charaeva-2026-06-04:0",
+    "participant": {
+      "id": "rh-wta-125k-birmingham-eala-vs-charaeva-2026-06-04:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Alexandra Eala",
+      "detail": "Grass | Live rank #37 | Philippines | age 21",
+      "americanOdds": -333,
+      "americanLabel": "-333",
+      "decimalOdds": 1.3003003003003002,
+      "impliedProbability": 0.76905311778291,
+      "impliedProbabilityLabel": "76.9%"
+    },
+    "opponent": {
+      "id": "rh-wta-125k-birmingham-eala-vs-charaeva-2026-06-04:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Alina Charaeva",
+      "detail": "Grass | Live rank #130 | Russia | age 24",
+      "americanOdds": 238,
+      "americanLabel": "+238",
+      "decimalOdds": 3.38,
+      "impliedProbability": 0.2958579881656805,
+      "impliedProbabilityLabel": "29.6%"
+    },
+    "lean": "Lean Alexandra Eala; Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+    "rationale": "Our model pick: Alexandra Eala. Alexandra Eala has the cleaner composite of rank, recent opponent quality, and joined service data; clay record is context only on Grass. Lean, not a chase.",
+    "confidence": 65.7,
+    "volatility": 43,
+    "recommendationScore": 55,
+    "tier": "Watch",
+    "sourceLabel": "DraftKings Sportsbook",
+    "modelEdge": null,
+    "modelEdgeLabel": "",
+    "marketProbability": 0.76905311778291,
+    "marketProbabilityLabel": "76.9%",
+    "inputs": [],
+    "inputsUsed": 0,
+    "volatilityNotes": [],
+    "indicators": {}
+  },
+  "metadata": {
+    "participantCount": 2,
+    "participantNames": [
+      "Alexandra Eala",
+      "Alina Charaeva"
+    ],
+    "tagCount": 6,
+    "hasSeriesBreakdown": false,
+    "hasMoneyline": true,
+    "hasAnalysisPick": true,
+    "hasStructuredInputs": false,
+    "hasPlayerProps": false,
+    "startMinutes": 220,
+    "spotlight": false,
+    "league": "Tennis",
+    "oddsProvider": "DraftKings Sportsbook"
+  }
+}

@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-birmingham-virtanen-vs-vukic-2026-06-04",
+  "boardTitle": "Otto Virtanen vs Aleksandar Vukic",
+  "boardPlayerName": "Otto Virtanen",
+  "recentOpponentName": "Droguet T.",
+  "recentIndex": 4,
+  "recentEvent": "Madrid (Spain)",
+  "recentDate": "Apr 20, 26",
+  "recentIsoDate": "2026-04-20",
+  "recentResult": "Loss 6-2 3-6 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Virtanen O. - Droguet T.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/madrid/",
+  "players": [
+    "Virtanen O.",
+    "Droguet T."
+  ],
+  "generatedAt": "2026-06-04T00:09:24.129Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/2170TtiB/",
+  "matchId": "2170TtiB",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_2170TtiB",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_2170TtiB"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:28"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:31"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "1:39"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "5",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "53%",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (34/48)",
+              "right": "85% (33/39)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (11/22)",
+              "right": "50% (17/34)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/5",
+              "right": "0/2",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "15% (6/39)",
+              "right": "29% (14/48)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (17/34)",
+              "right": "50% (11/22)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "3/5",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "28",
+              "right": "25",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "29",
+              "right": "25",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (10/15)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (45/70)",
+              "right": "68% (50/73)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (23/73)",
+              "right": "36% (25/70)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (68/143)",
+              "right": "52% (75/143)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "77% (10/13)",
+              "right": "85% (11/13)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Return games won",
+              "left": "15% (2/13)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Total games won",
+              "left": "46% (12/26)",
+              "right": "54% (14/26)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "52%",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (10/14)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (6/9)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "0/2",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (4/11)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (5/10)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "0/0",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "5",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "12",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "100% (1/1)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "70% (16/23)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (9/21)",
+              "right": "30% (7/23)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (25/44)",
+              "right": "43% (19/44)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "78%",
+              "right": "64%",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "79% (11/14)",
+              "right": "94% (17/18)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (1/4)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "0/0",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "6% (1/18)",
+              "right": "21% (3/14)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "60% (6/10)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "1/1",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "11",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "6",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (4/5)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (12/18)",
+              "right": "75% (21/28)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "25% (7/28)",
+              "right": "33% (6/18)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (19/46)",
+              "right": "59% (27/46)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "69%",
+              "right": "42%",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (13/20)",
+              "right": "90% (9/10)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (4/9)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "0/0",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "10% (1/10)",
+              "right": "35% (7/20)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (6/14)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "2/4",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "9",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "7",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Net points won",
+              "left": "50% (4/8)",
+              "right": "100% (2/2)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "59% (17/29)",
+              "right": "71% (17/24)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "29% (7/24)",
+              "right": "41% (12/29)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (24/53)",
+              "right": "55% (29/53)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Virtanen O.",
+              "rightPlayer": "Droguet T."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

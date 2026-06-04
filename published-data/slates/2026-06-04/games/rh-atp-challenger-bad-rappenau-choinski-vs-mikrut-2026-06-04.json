@@ -1,0 +1,2113 @@
+{
+  "id": "rh-atp-challenger-bad-rappenau-choinski-vs-mikrut-2026-06-04",
+  "eventId": "0af15356-3f82-4a06-a655-9215700b86d5",
+  "league": "Tennis",
+  "start": "3:00 AM",
+  "startMinutes": 180,
+  "title": "Luka Mikrut vs Jan Choinski",
+  "stage": "ATP Challenger Bad Rappenau | Round Of 16",
+  "spotlight": false,
+  "confidence": 52.6,
+  "volatility": 54,
+  "tags": [
+    "ATP Challenger",
+    "Clay",
+    "Prediction market",
+    "Warehouse joined",
+    "Flashscore first",
+    "Coinflip price"
+  ],
+  "matchup": [
+    {
+      "side": "Player 1",
+      "name": "Luka Mikrut",
+      "displayName": "Luka Mikrut",
+      "detail": "Clay | Live rank #192 | CRO | age 22.1 | hold 75%"
+    },
+    {
+      "side": "Player 2",
+      "name": "Jan Choinski",
+      "displayName": "Jan Choinski",
+      "detail": "Clay | Live rank #101 | Great Britain | age 29 | hold 25%"
+    }
+  ],
+  "summary": "Our model pick: Jan Choinski. Luka Mikrut has the recent service-hold edge 75% to 25%, so Jan Choinski needs the rank/form edge to show up on return games. Lean, not a chase.",
+  "factors": [
+    "Luka Mikrut has the recent service-hold edge 75% to 25%, so Jan Choinski needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "Model 52.6% vs DraftKings Sportsbook implied 66.3% (-13.7 pts).",
+    "Jan Choinski is the model side, but the fragile profile is on our pick: low recent hold rate (25%). Avoid laying a bad price until early holds are confirmed.",
+    "Do not upgrade Jan Choinski unless they hold cleanly in the first service game and keep double faults down.",
+    "Best O/U angle: no play without a posted total.",
+    "May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.",
+    "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+  ],
+  "lean": "Lean Jan Choinski; DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+  "swing": "Risk: best-of-five set extension and tiebreak variance.",
+  "swingFactor": "Risk: best-of-five set extension and tiebreak variance.",
+  "odds": {
+    "participantOrder": [
+      0,
+      1
+    ],
+    "markets": [
+      {
+        "label": "Model fair",
+        "book": "Tennis warehouse model",
+        "value": "Luka Mikrut 47.9% / Jan Choinski 52.6%"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "book": "DraftKings Sportsbook",
+        "value": "Luka Mikrut +149 / Jan Choinski -197"
+      },
+      {
+        "label": "1st set total games",
+        "book": "DraftKings Sportsbook",
+        "value": "9.5 1st-set games: Over -130 / Under -115"
+      }
+    ],
+    "note": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+    "provider": "DraftKings Sportsbook"
+  },
+  "tennisContext": {
+    "surface": "Clay",
+    "court": "ATP Challenger Bad Rappenau",
+    "h2hLeader": "",
+    "fatigueFlag": false,
+    "liveDog": false,
+    "weaknessEdge": {
+      "edgeType": "Weakness warning",
+      "target": "Jan Choinski",
+      "scoreGap": -39,
+      "attackingSide": null,
+      "vulnerableSide": "Jan Choinski",
+      "gameFlow": "Jan Choinski is the model side, but the fragile profile is on our pick: low recent hold rate (25%). Avoid laying a bad price until early holds are confirmed.",
+      "liveTrigger": "Do not upgrade Jan Choinski unless they hold cleanly in the first service game and keep double faults down.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "Avoid low unders if Jan Choinski faces early break points or second-serve pressure.",
+      "pick": {
+        "name": "Jan Choinski",
+        "serviceHoldPct": 25,
+        "firstServeWonPct": null,
+        "secondServeWonPct": null,
+        "firstServePct": null,
+        "avgAces": null,
+        "avgDoubleFaults": null,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": null,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 39,
+        "firstGameComfort": "Fragile opening-service profile",
+        "liabilities": [
+          "low recent hold rate (25%)"
+        ],
+        "strengths": [],
+        "gameFlowRead": "Jan Choinski can drop points quickly through low recent hold rate (25%)."
+      },
+      "opponent": {
+        "name": "Luka Mikrut",
+        "serviceHoldPct": 75,
+        "firstServeWonPct": null,
+        "secondServeWonPct": null,
+        "firstServePct": null,
+        "avgAces": null,
+        "avgDoubleFaults": null,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": null,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [],
+        "gameFlowRead": "Luka Mikrut has no major service weakness in the joined Flashscore sample."
+      }
+    },
+    "warehouseContext": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-bad-rappenau-choinski-vs-mikrut-2026-06-04",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-04T10:00:00Z",
+      "surface": "Clay",
+      "tournament": "ATP Challenger Bad Rappenau",
+      "category": "ATP",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Luka Mikrut",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "Luka Mikrut",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 75,
+              "returnGamesWonPct": 75,
+              "breakPointsSaved": 2,
+              "breakPointsFaced": 3,
+              "breakPointsSavedPct": 66.6667,
+              "breakPointsConverted": 3,
+              "breakPointsToConvert": 4,
+              "breakPointsConvertedPct": 75
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 2,
+                "bpFaced": 3,
+                "bpSavedPct": 66.6667,
+                "bpConverted": 3,
+                "bpChances": 4,
+                "bpConvertedPct": 75
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Luka Mikrut",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        },
+        {
+          "name": "Jan Choinski",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "name": "Jan Choinski",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 25,
+              "returnGamesWonPct": 25,
+              "breakPointsSaved": 1,
+              "breakPointsFaced": 4,
+              "breakPointsSavedPct": 25,
+              "breakPointsConverted": 1,
+              "breakPointsToConvert": 3,
+              "breakPointsConvertedPct": 33.3333
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 1,
+                "bpFaced": 4,
+                "bpSavedPct": 25,
+                "bpConverted": 1,
+                "bpChances": 3,
+                "bpConvertedPct": 33.3333
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Jan Choinski",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        }
+      ],
+      "h2h": {
+        "homeName": "Luka Mikrut",
+        "awayName": "Jan Choinski",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Jan Choinski",
+          "awayName": "Luka Mikrut",
+          "homeVotes": 866,
+          "awayVotes": 116,
+          "homePct": 88.2,
+          "awayPct": 11.8
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Jan Choinski",
+            "fractionalValue": "57/100",
+            "impliedPct": 63.7,
+            "expected": 64,
+            "actual": 64
+          },
+          "away": {
+            "name": "Luka Mikrut",
+            "fractionalValue": "5/4",
+            "impliedPct": 44.4,
+            "expected": 44,
+            "actual": 57
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": null,
+          "away": null
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick.",
+        "eventId": "16241114",
+        "sourceUrl": "https://www.sofascore.com/tennis/match/luka-mikrut-jan-choinski#id:16241114",
+        "capturedAt": "2026-06-04T00:24:31.283Z"
+      },
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 16,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "sofascoreData": {
+      "source": "SQLite tennis warehouse fallback",
+      "eventId": "rh-atp-challenger-bad-rappenau-choinski-vs-mikrut-2026-06-04",
+      "sourceUrl": null,
+      "capturedAt": "2026-06-04T10:00:00Z",
+      "surface": "Clay",
+      "tournament": "ATP Challenger Bad Rappenau",
+      "category": "ATP",
+      "startTimestamp": null,
+      "players": [
+        {
+          "name": "Luka Mikrut",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "Luka Mikrut",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 75,
+              "returnGamesWonPct": 75,
+              "breakPointsSaved": 2,
+              "breakPointsFaced": 3,
+              "breakPointsSavedPct": 66.6667,
+              "breakPointsConverted": 3,
+              "breakPointsToConvert": 4,
+              "breakPointsConvertedPct": 75
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 2,
+                "bpFaced": 3,
+                "bpSavedPct": 66.6667,
+                "bpConverted": 3,
+                "bpChances": 4,
+                "bpConvertedPct": 75
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Luka Mikrut",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        },
+        {
+          "name": "Jan Choinski",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "name": "Jan Choinski",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 25,
+              "returnGamesWonPct": 25,
+              "breakPointsSaved": 1,
+              "breakPointsFaced": 4,
+              "breakPointsSavedPct": 25,
+              "breakPointsConverted": 1,
+              "breakPointsToConvert": 3,
+              "breakPointsConvertedPct": 33.3333
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 1,
+                "bpFaced": 4,
+                "bpSavedPct": 25,
+                "bpConverted": 1,
+                "bpChances": 3,
+                "bpConvertedPct": 33.3333
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Jan Choinski",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        }
+      ],
+      "h2h": {
+        "homeName": "Luka Mikrut",
+        "awayName": "Jan Choinski",
+        "homeWins": null,
+        "awayWins": null,
+        "draws": null,
+        "matches": [],
+        "coverage": {
+          "datedRows": 0,
+          "surfaceRows": 0,
+          "weightedRows": 0
+        }
+      },
+      "score": {
+        "home": null,
+        "away": null
+      },
+      "result": null,
+      "sofascoreSignals": {
+        "source": "SofaScore",
+        "votes": {
+          "homeName": "Jan Choinski",
+          "awayName": "Luka Mikrut",
+          "homeVotes": 866,
+          "awayVotes": 116,
+          "homePct": 88.2,
+          "awayPct": 11.8
+        },
+        "winningOdds": {
+          "home": {
+            "name": "Jan Choinski",
+            "fractionalValue": "57/100",
+            "impliedPct": 63.7,
+            "expected": 64,
+            "actual": 64
+          },
+          "away": {
+            "name": "Luka Mikrut",
+            "fractionalValue": "5/4",
+            "impliedPct": 44.4,
+            "expected": 44,
+            "actual": 57
+          }
+        },
+        "tennisPower": {
+          "rows": 0,
+          "homePositiveGames": 0,
+          "awayPositiveGames": 0,
+          "avgHomePositivePower": null,
+          "avgAwayPositivePower": null
+        },
+        "seasonStats": {
+          "home": null,
+          "away": null
+        },
+        "note": "SofaScore exposes public votes, book winning-odds expected/actual fields, tennis-power flow, and tournament-season stat aggregates. If their gated AI insight endpoint is unavailable, this is stored as source context rather than our pick.",
+        "eventId": "16241114",
+        "sourceUrl": "https://www.sofascore.com/tennis/match/luka-mikrut-jan-choinski#id:16241114",
+        "capturedAt": "2026-06-04T00:24:31.283Z"
+      },
+      "weather": null,
+      "allStatRows": [],
+      "coverage": {
+        "hasEvent": false,
+        "hasH2h": false,
+        "allStatRows": 0,
+        "playerStatRows": 0,
+        "liveStatRows": 0,
+        "expectedStatRows": 16,
+        "recentMetricRows": 0,
+        "seasonStatRows": 0,
+        "liveStatsStatus": null,
+        "hasWeather": false,
+        "isPregame": true
+      }
+    },
+    "players": [
+      {
+        "name": "Luka Mikrut",
+        "rank": 192,
+        "label": "Luka Mikrut",
+        "form": null,
+        "boardPct": 47.9,
+        "decimalOdds": 2.49,
+        "marketLabel": "+149 / 40.2% implied",
+        "clayLine": "Clay | Live rank #192 | CRO | age 22.1 | hold 75%",
+        "weakness": {
+          "name": "Luka Mikrut",
+          "serviceHoldPct": 75,
+          "firstServeWonPct": null,
+          "secondServeWonPct": null,
+          "firstServePct": null,
+          "avgAces": null,
+          "avgDoubleFaults": null,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": null,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [],
+          "gameFlowRead": "Luka Mikrut has no major service weakness in the joined Flashscore sample."
+        },
+        "warehouseStats": {
+          "name": "Luka Mikrut",
+          "side": "home",
+          "stats": {},
+          "expectedStats": {
+            "name": "Luka Mikrut",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 75,
+              "returnGamesWonPct": 75,
+              "breakPointsSaved": 2,
+              "breakPointsFaced": 3,
+              "breakPointsSavedPct": 66.6667,
+              "breakPointsConverted": 3,
+              "breakPointsToConvert": 4,
+              "breakPointsConvertedPct": 75
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 2,
+                "bpFaced": 3,
+                "bpSavedPct": 66.6667,
+                "bpConverted": 3,
+                "bpChances": 4,
+                "bpConvertedPct": 75
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Luka Mikrut",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        },
+        "record2026": "",
+        "notes": "Opponent case: model 47.4%",
+        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
+      },
+      {
+        "name": "Jan Choinski",
+        "rank": 101,
+        "label": "Jan Choinski",
+        "form": null,
+        "boardPct": 52.6,
+        "decimalOdds": 1.508,
+        "marketLabel": "-197 / 66.3% implied",
+        "clayLine": "Clay | Live rank #101 | Great Britain | age 29 | hold 25%",
+        "weakness": {
+          "name": "Jan Choinski",
+          "serviceHoldPct": 25,
+          "firstServeWonPct": null,
+          "secondServeWonPct": null,
+          "firstServePct": null,
+          "avgAces": null,
+          "avgDoubleFaults": null,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": null,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 39,
+          "firstGameComfort": "Fragile opening-service profile",
+          "liabilities": [
+            "low recent hold rate (25%)"
+          ],
+          "strengths": [],
+          "gameFlowRead": "Jan Choinski can drop points quickly through low recent hold rate (25%)."
+        },
+        "warehouseStats": {
+          "name": "Jan Choinski",
+          "side": "away",
+          "stats": {},
+          "expectedStats": {
+            "name": "Jan Choinski",
+            "source": "sql-tennis.db typed pressure/form snapshots",
+            "matches": 1,
+            "note": "Pregame expected stats from typed tennis pressure and player-form snapshots.",
+            "stats": {
+              "holdPct": 25,
+              "returnGamesWonPct": 25,
+              "breakPointsSaved": 1,
+              "breakPointsFaced": 4,
+              "breakPointsSavedPct": 25,
+              "breakPointsConverted": 1,
+              "breakPointsToConvert": 3,
+              "breakPointsConvertedPct": 33.3333
+            },
+            "pressureSamples": {
+              "typed": {
+                "matches": 1,
+                "bpSaved": 1,
+                "bpFaced": 4,
+                "bpSavedPct": 25,
+                "bpConverted": 1,
+                "bpChances": 3,
+                "bpConvertedPct": 33.3333
+              }
+            }
+          },
+          "recentFormMetrics": {
+            "playerName": "Jan Choinski",
+            "matches": [],
+            "summary": [],
+            "coverage": {
+              "cells": 0,
+              "exactCells": 0,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots"
+          }
+        },
+        "record2026": "",
+        "notes": "Pick: model 52.6%",
+        "matchupNote": "Why pick: Luka Mikrut has the recent service-hold edge 75% to 25%, so Jan Choinski needs the rank/form edge to show up on return games. Lean, not a chase."
+      }
+    ],
+    "comparisonRows": [
+      {
+        "label": "Model pick",
+        "metric": "Fair win split",
+        "leftScore": 47.9,
+        "rightScore": 52.6,
+        "leftLabel": "Luka Mikrut",
+        "rightLabel": "Jan Choinski",
+        "winner": "Jan Choinski"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "metric": "Implied price",
+        "leftScore": 40.2,
+        "rightScore": 66.3,
+        "leftLabel": "Luka Mikrut",
+        "rightLabel": "Jan Choinski",
+        "winner": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+      },
+      {
+        "label": "Weakness",
+        "metric": "Lower is cleaner",
+        "leftScore": 0,
+        "rightScore": 39,
+        "leftLabel": "Luka Mikrut",
+        "rightLabel": "Jan Choinski",
+        "winner": "Weakness warning"
+      },
+      {
+        "label": "Volatility",
+        "metric": "Lower is cleaner",
+        "leftScore": 54,
+        "rightScore": 46,
+        "leftLabel": "Risk",
+        "rightLabel": "Stability",
+        "winner": "Stable enough"
+      }
+    ],
+    "predictionMarket": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T03:58:32.785Z",
+      "totalVolume": null,
+      "players": [
+        {
+          "name": "Luka Mikrut",
+          "probabilityPct": 40.2,
+          "amount": null,
+          "americanOdds": 149,
+          "edgePct": 7.7,
+          "priceBand": "Underdog"
+        },
+        {
+          "name": "Jan Choinski",
+          "probabilityPct": 66.3,
+          "amount": null,
+          "americanOdds": -197,
+          "edgePct": -13.7,
+          "priceBand": "Moderate favorite"
+        }
+      ]
+    },
+    "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Jan Choinski",
+        "line": null,
+        "americanOdds": -197,
+        "modelPct": 52.6,
+        "impliedPct": 66.3,
+        "edgePct": -13.7,
+        "evPer100": -20.7,
+        "netEvPer100": -22.7,
+        "grade": "Negative EV",
+        "issue": "Favorite price needs better proof",
+        "reason": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "No bet",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": null,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": null,
+        "grade": "No direction",
+        "reason": "Total games need expected match games vs the posted line."
+      },
+      {
+        "marketType": "Win a set",
+        "label": "Win a set %",
+        "selection": "Luka Mikrut 69% / Jan Choinski 61%",
+        "rows": [
+          {
+            "name": "Luka Mikrut",
+            "confidence": 69,
+            "modelPct": 47.9,
+            "label": "Underdog set-win path needs early holds"
+          },
+          {
+            "name": "Jan Choinski",
+            "confidence": 61,
+            "modelPct": 52.6,
+            "label": "Market favorite to win a set"
+          }
+        ],
+        "confidence": 69,
+        "grade": "Price required",
+        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Pass / near line",
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "grade": "Near fair",
+        "reason": "Expected first-set games 9.5 vs DraftKings Sportsbook 9.5; Pass / near line."
+      }
+    ],
+    "derivativeMarketCase": null,
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Jan Choinski",
+        "americanOdds": -197,
+        "modelPct": 52.6,
+        "impliedPct": 66.3,
+        "edgePct": -13.7,
+        "evPer100": -20.7,
+        "netEvPer100": -22.7,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Negative EV",
+        "betGrade": false
+      },
+      "spread": null,
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Pass / near line",
+        "line": 9.5,
+        "americanOdds": null,
+        "expectedGames": 9.5,
+        "confidence": 50,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Near fair",
+        "reason": "Expected first-set games 9.5 vs DraftKings Sportsbook 9.5; Pass / near line.",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Luka Mikrut",
+          "confidence": 69,
+          "modelPct": 47.9,
+          "label": "Underdog set-win path needs early holds",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Jan Choinski",
+          "confidence": 61,
+          "modelPct": 52.6,
+          "label": "Market favorite to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "ensembleValueCase": null,
+    "projection": {
+      "projectedWinner": "Jan Choinski",
+      "projectedSetLine": "2-0/2-1 range",
+      "setWinProjections": [
+        {
+          "name": "Luka Mikrut",
+          "confidence": 69,
+          "modelPct": 47.9,
+          "label": "Underdog set-win path needs early holds"
+        },
+        {
+          "name": "Jan Choinski",
+          "confidence": 61,
+          "modelPct": 52.6,
+          "label": "Market favorite to win a set"
+        }
+      ],
+      "totalGames": null,
+      "straightSetsProbability": 48,
+      "upsetRisk": 47.4,
+      "overview": "Jan Choinski is the model side, but the fragile profile is on our pick: low recent hold rate (25%). Avoid laying a bad price until early holds are confirmed.",
+      "fantasy": []
+    },
+    "tradePlan": {
+      "laneLabel": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+      "summary": "Jan Choinski is the model side, but the fragile profile is on our pick: low recent hold rate (25%). Avoid laying a bad price until early holds are confirmed.",
+      "trigger": "Do not upgrade Jan Choinski unless they hold cleanly in the first service game and keep double faults down.",
+      "headline": "Weakness warning",
+      "exit": "No spread line",
+      "tone": "warning"
+    },
+    "derivativeMarkets": [
+      {
+        "label": "ML",
+        "value": "Jan Choinski -197; Model 52.6% vs DraftKings Sportsbook implied 66.3% (-13.7 pts).",
+        "lean": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+        "confidence": 52.6,
+        "marketType": "ML",
+        "selection": "Jan Choinski",
+        "americanOdds": -197,
+        "modelPct": 52.6,
+        "impliedPct": 66.3,
+        "edgePct": -13.7,
+        "evPer100": -20.7,
+        "netEvPer100": -22.7,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Negative EV",
+        "betGrade": false,
+        "tone": "warning",
+        "reason": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+      },
+      {
+        "label": "Win a set",
+        "value": "No set-win price captured",
+        "lean": "Underdog set-win path needs early holds",
+        "confidence": 69,
+        "setWinRows": [],
+        "valueGrade": "Needs posted price",
+        "tone": "accent",
+        "reason": "Best-of-five gives the non-ML side more room to win a set; use this to separate upset risk from match-winner confidence."
+      },
+      {
+        "label": "Spread",
+        "value": "No primary game spread captured",
+        "lean": "No spread line",
+        "confidence": 50,
+        "tone": "neutral",
+        "reason": "Do not upgrade Jan Choinski unless they hold cleanly in the first service game and keep double faults down."
+      },
+      {
+        "label": "O/U",
+        "value": "No total captured",
+        "lean": "No bet",
+        "confidence": 50,
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": null,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st set O/U",
+        "value": "Line 9.5",
+        "lean": "Pass / near line",
+        "confidence": 50,
+        "marketType": "First-set total",
+        "selection": "Pass / near line",
+        "line": 9.5,
+        "americanOdds": null,
+        "expectedGames": 9.5,
+        "tiebreakRisk": 52,
+        "earlyBreakRisk": 48,
+        "modelPct": 50,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Near fair",
+        "reason": "Expected first-set games 9.5 vs DraftKings Sportsbook 9.5; Pass / near line.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st service game",
+        "value": "No first-service-game market captured",
+        "lean": "First-service-game prices",
+        "confidence": 52.6,
+        "firstServiceGameRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-service-game market captured."
+      },
+      {
+        "label": "First games",
+        "value": "No first-game prop market captured",
+        "lean": "First-game prop prices",
+        "confidence": 52.6,
+        "firstGamePropRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-games prop captured."
+      }
+    ],
+    "marketEconomics": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T03:58:32.785Z",
+      "eventUrl": "https://sportsbook.draftkings.com/leagues/tennis/challenger-heilbronn?event=34235762",
+      "deskName": "Jan Choinski",
+      "deskPricePct": 66.3,
+      "deskEdgePct": -13.7,
+      "priceAction": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+      "players": [
+        {
+          "name": "Luka Mikrut",
+          "americanOdds": 149,
+          "impliedPct": 40.2,
+          "modelPct": 47.9,
+          "edgePct": 7.7,
+          "priceBand": "Underdog",
+          "grossProfitPct": 149,
+          "grossPayoutMultiple": 2.49,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 149,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        },
+        {
+          "name": "Jan Choinski",
+          "americanOdds": -197,
+          "impliedPct": 66.3,
+          "modelPct": 52.6,
+          "edgePct": -13.7,
+          "priceBand": "Moderate favorite",
+          "grossProfitPct": 50.8,
+          "grossPayoutMultiple": 1.508,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 50.8,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        }
+      ]
+    },
+    "clayMatchupData": {
+      "title": "Luka Mikrut vs Jan Choinski",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Luka-Mikrut-Vs-Jan-Choinski/",
+      "h2hText": "0:1",
+      "h2hRecord": "0:1",
+      "prediction": "Choinski in 3",
+      "players": [
+        {
+          "name": "Luka Mikrut",
+          "record2026": {
+            "overall": "5-7",
+            "hard": "2-4",
+            "clay": "3-3",
+            "indoorHard": "0-0",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Bad Rappenau Challenger\nAlex Marti Pujolras\nESP  7-65 7-5 1st\n02 Jun 26",
+              "event": "Bad Rappenau Challenger",
+              "opponent": "Alex Marti Pujolras",
+              "result": "ESP  7-65 7-5 1st",
+              "date": "02 Jun 26"
+            },
+            {
+              "raw": "Paris\nNerman Fatic\nBIH   Loss 6-4 6-4 q1\n19 May 26",
+              "event": "Paris",
+              "opponent": "Nerman Fatic",
+              "result": "BIH   Loss 6-4 6-4 q1",
+              "date": "19 May 26"
+            },
+            {
+              "raw": "Zagreb Challenger\nChris Rodesch\nLUX   Loss 6-1 6-2 2nd\n14 May 26",
+              "event": "Zagreb Challenger",
+              "opponent": "Chris Rodesch",
+              "result": "LUX   Loss 6-1 6-2 2nd",
+              "date": "14 May 26"
+            },
+            {
+              "raw": "Justin Engel\nGER  6-4 3-6 6-2 1st\n13 May 26",
+              "event": "",
+              "opponent": "Justin Engel",
+              "result": "GER  6-4 3-6 6-2 1st",
+              "date": "13 May 26"
+            },
+            {
+              "raw": "Kigali 1 Challenger\nStefano Napolitano\nITA   Loss 1-6 7-65 3-2 ret. 2nd\n04 Mar 26",
+              "event": "Kigali 1 Challenger",
+              "opponent": "Stefano Napolitano",
+              "result": "ITA   Loss 1-6 7-65 3-2 ret. 2nd",
+              "date": "04 Mar 26"
+            },
+            {
+              "raw": "Jonas Forejtek\nCZE  6-3 7-65 1st\n02 Mar 26",
+              "event": "",
+              "opponent": "Jonas Forejtek",
+              "result": "CZE  6-3 7-65 1st",
+              "date": "02 Mar 26"
+            },
+            {
+              "raw": "Tenerife 2 Challenger\nPablo Llamas Ruiz\nESP   Loss 3-6 7-5 6-2 1/4\n13 Feb 26",
+              "event": "Tenerife 2 Challenger",
+              "opponent": "Pablo Llamas Ruiz",
+              "result": "ESP   Loss 3-6 7-5 6-2 1/4",
+              "date": "13 Feb 26"
+            },
+            {
+              "raw": "Giles Hussey\nGBR  6-4 4-6 6-1 2nd\n11 Feb 26",
+              "event": "",
+              "opponent": "Giles Hussey",
+              "result": "GBR  6-4 4-6 6-1 2nd",
+              "date": "11 Feb 26"
+            }
+          ]
+        },
+        {
+          "name": "Jan Choinski",
+          "record2026": {
+            "overall": "16-14",
+            "hard": "3-3",
+            "clay": "11-8",
+            "indoorHard": "2-3",
+            "grass": "0-0",
+            "carpet": "0-0"
+          },
+          "recentMatches": [
+            {
+              "raw": "Bad Rappenau Challenger\nTom Gentzsch\nGER  6-4 6-4 1st\n02 Jun 26",
+              "event": "Bad Rappenau Challenger",
+              "opponent": "Tom Gentzsch",
+              "result": "GER  6-4 6-4 1st",
+              "date": "02 Jun 26"
+            },
+            {
+              "raw": "Paris\nPierre-Hugues Herbert\nFRA   Loss w/o q2\n20 May 26",
+              "event": "Paris",
+              "opponent": "Pierre-Hugues Herbert",
+              "result": "FRA   Loss w/o q2",
+              "date": "20 May 26"
+            },
+            {
+              "raw": "Andres Andrade\nECU  7-64 6-4 q1\n19 May 26",
+              "event": "",
+              "opponent": "Andres Andrade",
+              "result": "ECU  7-64 6-4 q1",
+              "date": "19 May 26"
+            },
+            {
+              "raw": "Zagreb Challenger\nZsombor Piros\nHUN  7-65 7-62 Fin.\n17 May 26",
+              "event": "Zagreb Challenger",
+              "opponent": "Zsombor Piros",
+              "result": "HUN  7-65 7-62 Fin.",
+              "date": "17 May 26"
+            },
+            {
+              "raw": "Arthur Fery\nGBR  5-7 7-64 6-2 1/2\n17 May 26",
+              "event": "",
+              "opponent": "Arthur Fery",
+              "result": "GBR  5-7 7-64 6-2 1/2",
+              "date": "17 May 26"
+            },
+            {
+              "raw": "Chris Rodesch\nLUX  6-70 6-3 7-5 1/4\n14 May 26",
+              "event": "",
+              "opponent": "Chris Rodesch",
+              "result": "LUX  6-70 6-3 7-5 1/4",
+              "date": "14 May 26"
+            },
+            {
+              "raw": "Daniel Elahi Galan\nCOL  2-6 7-62 6-4 2nd\n14 May 26",
+              "event": "",
+              "opponent": "Daniel Elahi Galan",
+              "result": "COL  2-6 7-62 6-4 2nd",
+              "date": "14 May 26"
+            },
+            {
+              "raw": "Juan Pablo Ficovich\nARG  2-6 6-4 6-4 1st\n13 May 26",
+              "event": "",
+              "opponent": "Juan Pablo Ficovich",
+              "result": "ARG  2-6 6-4 6-4 1st",
+              "date": "13 May 26"
+            }
+          ]
+        }
+      ],
+      "tradeRead": "Luka Mikrut has a credible clay record at 3-3 in 2026, so the favorite still has to prove the service gap. Jan Choinski is good, but not spotless on clay at 11-8. Luka Mikrut has multiple recent clay matches with a tiebreak or three-set shape, which points toward set-extension or game-spread value if the number is generous. Jan Choinski's recent clay record has enough pressure games that the lower-priced side can re-rate quickly if the first set stays on serve."
+    },
+    "opponentQualityData": {
+      "title": "Luka Mikrut vs Jan Choinski",
+      "sourceUrl": "https://tennistonic.com/head-to-head-compare/Luka-Mikrut-Vs-Jan-Choinski/",
+      "h2hRecord": "0:1",
+      "tennistonicPrediction": "Choinski in 3",
+      "players": [
+        {
+          "name": "Luka Mikrut",
+          "ranking": null,
+          "records": {
+            "overall2026": {
+              "wins": 5,
+              "losses": 7,
+              "total": 12,
+              "winPct": 0.417
+            },
+            "clay2026": {
+              "wins": 3,
+              "losses": 3,
+              "total": 6,
+              "winPct": 0.5
+            },
+            "raw": {
+              "overall": "5-7",
+              "hard": "2-4",
+              "clay": "3-3",
+              "indoorHard": "0-0",
+              "grass": "0-0",
+              "carpet": "0-0"
+            }
+          },
+          "recentWindow": {
+            "matches": 8,
+            "completed": 8,
+            "wins": 4,
+            "losses": 4,
+            "winPct": 0.5,
+            "setsWon": 10,
+            "setsLost": 10,
+            "setPct": 0.5,
+            "gamesWon": 96,
+            "gamesLost": 94,
+            "gamePct": 0.505,
+            "resistanceMatches": 6,
+            "straightSetWins": 2,
+            "straightSetLosses": 2,
+            "avgKnownOpponentRank": 122,
+            "knownOpponentRanks": 1,
+            "missingOpponentRanks": 7,
+            "top10Opponents": 0,
+            "top25Opponents": 0,
+            "top50Opponents": 0,
+            "challengerOrItfMatches": 4,
+            "rankingCoveragePct": 0.125,
+            "scorelineFormScore": 73.1,
+            "opponentAdjustedFormScore": null
+          },
+          "serviceData": {
+            "source": "not available in Tennistonic scrape",
+            "matchesWithStats": 0,
+            "avgServiceHoldPct": null,
+            "avgAces": null,
+            "avgFirstServeWonPct": null,
+            "note": "Recent scores support set/game resistance only until a Flashscore recent-match stat row is resolved."
+          },
+          "recentMatches": [
+            {
+              "event": "Bad Rappenau Challenger",
+              "eventTier": "challenger",
+              "opponent": "Alex Marti Pujolras",
+              "opponentRanking": null,
+              "result": "ESP  7-65 7-5 1st",
+              "date": "02 Jun 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 14,
+                "gamesLost": 11,
+                "tiebreakSets": 1,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-65"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 5,
+                    "raw": "7-5"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": 0.542,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Paris",
+              "eventTier": "tour-1000",
+              "opponent": "Nerman Fatic",
+              "opponentRanking": null,
+              "result": "BIH   Loss 6-4 6-4 q1",
+              "date": "19 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 8,
+                "gamesLost": 12,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 0.66,
+              "qualityPoints": 0.039,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Zagreb Challenger",
+              "eventTier": "challenger",
+              "opponent": "Chris Rodesch",
+              "opponentRanking": null,
+              "result": "LUX   Loss 6-1 6-2 2nd",
+              "date": "14 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 0,
+                "setsLost": 2,
+                "gamesWon": 3,
+                "gamesLost": 12,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": true,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 1,
+                    "raw": "6-1"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": -0.038,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Justin Engel",
+              "opponentRanking": null,
+              "result": "GER  6-4 3-6 6-2 1st",
+              "date": "13 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 2,
+                "setsLost": 1,
+                "gamesWon": 15,
+                "gamesLost": 12,
+                "tiebreakSets": 0,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 3,
+                    "rightGames": 6,
+                    "raw": "3-6"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.62,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Kigali 1 Challenger",
+              "eventTier": "challenger",
+              "opponent": "Stefano Napolitano",
+              "opponentRanking": null,
+              "result": "ITA   Loss 1-6 7-65 3-2 ret. 2nd",
+              "date": "04 Mar 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": true,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 1,
+                "setsLost": 2,
+                "gamesWon": 14,
+                "gamesLost": 11,
+                "tiebreakSets": 1,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 1,
+                    "rightGames": 6,
+                    "raw": "1-6"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-65"
+                  },
+                  {
+                    "leftGames": 3,
+                    "rightGames": 2,
+                    "raw": "3-2"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": 0.266,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Jonas Forejtek",
+              "opponentRanking": null,
+              "result": "CZE  6-3 7-65 1st",
+              "date": "02 Mar 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 13,
+                "gamesLost": 9,
+                "tiebreakSets": 1,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-65"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.63,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Tenerife 2 Challenger",
+              "eventTier": "challenger",
+              "opponent": "Pablo Llamas Ruiz",
+              "opponentRanking": {
+                "rank": 122,
+                "points": 515,
+                "age": 23,
+                "country": "Spain",
+                "tour": "ATP",
+                "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+                "profileUrl": "https://www.espn.com/tennis/player/_/id/3979/pablo-llamas-ruiz",
+                "liveRankSource": null,
+                "asOf": "2026-06-02"
+              },
+              "result": "ESP   Loss 3-6 7-5 6-2 1/4",
+              "date": "13 Feb 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": false,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 1,
+                "setsLost": 2,
+                "gamesWon": 13,
+                "gamesLost": 16,
+                "tiebreakSets": 0,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 3,
+                    "rightGames": 6,
+                    "raw": "3-6"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 5,
+                    "raw": "7-5"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  }
+                ]
+              },
+              "opponentWeight": 0.54,
+              "qualityPoints": 0.244,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Giles Hussey",
+              "opponentRanking": null,
+              "result": "GBR  6-4 4-6 6-1 2nd",
+              "date": "11 Feb 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 2,
+                "setsLost": 1,
+                "gamesWon": 16,
+                "gamesLost": 11,
+                "tiebreakSets": 0,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 4,
+                    "rightGames": 6,
+                    "raw": "4-6"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 1,
+                    "raw": "6-1"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.64,
+              "flashscore": null,
+              "serviceStats": null
+            }
+          ]
+        },
+        {
+          "name": "Jan Choinski",
+          "ranking": {
+            "rank": 101,
+            "points": 599,
+            "age": 29,
+            "country": "Great Britain",
+            "tour": "ATP",
+            "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
+            "profileUrl": "https://www.espn.com/tennis/player/_/id/2720/jan-choinski",
+            "liveRankSource": null,
+            "asOf": "2026-06-02"
+          },
+          "records": {
+            "overall2026": {
+              "wins": 16,
+              "losses": 14,
+              "total": 30,
+              "winPct": 0.533
+            },
+            "clay2026": {
+              "wins": 11,
+              "losses": 8,
+              "total": 19,
+              "winPct": 0.579
+            },
+            "raw": {
+              "overall": "16-14",
+              "hard": "3-3",
+              "clay": "11-8",
+              "indoorHard": "2-3",
+              "grass": "0-0",
+              "carpet": "0-0"
+            }
+          },
+          "recentWindow": {
+            "matches": 8,
+            "completed": 7,
+            "wins": 7,
+            "losses": 0,
+            "winPct": 1,
+            "setsWon": 14,
+            "setsLost": 4,
+            "setPct": 0.778,
+            "gamesWon": 105,
+            "gamesLost": 90,
+            "gamePct": 0.538,
+            "resistanceMatches": 6,
+            "straightSetWins": 3,
+            "straightSetLosses": 0,
+            "avgKnownOpponentRank": null,
+            "knownOpponentRanks": 0,
+            "missingOpponentRanks": 8,
+            "top10Opponents": 0,
+            "top25Opponents": 0,
+            "top50Opponents": 0,
+            "challengerOrItfMatches": 2,
+            "rankingCoveragePct": 0,
+            "scorelineFormScore": 102.5,
+            "opponentAdjustedFormScore": null
+          },
+          "serviceData": {
+            "source": "not available in Tennistonic scrape",
+            "matchesWithStats": 0,
+            "avgServiceHoldPct": null,
+            "avgAces": null,
+            "avgFirstServeWonPct": null,
+            "note": "Recent scores support set/game resistance only until a Flashscore recent-match stat row is resolved."
+          },
+          "recentMatches": [
+            {
+              "event": "Bad Rappenau Challenger",
+              "eventTier": "challenger",
+              "opponent": "Tom Gentzsch",
+              "opponentRanking": null,
+              "result": "GER  6-4 6-4 1st",
+              "date": "02 Jun 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 12,
+                "gamesLost": 8,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": 0.472,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Paris",
+              "eventTier": "tour-1000",
+              "opponent": "Pierre-Hugues Herbert",
+              "opponentRanking": null,
+              "result": "FRA   Loss w/o q2",
+              "date": "20 May 26",
+              "parsed": {
+                "completed": false,
+                "playerWon": null,
+                "retirement": false,
+                "walkover": true,
+                "setsPlayed": 0,
+                "setsWon": 0,
+                "setsLost": 0,
+                "gamesWon": 0,
+                "gamesLost": 0,
+                "tiebreakSets": 0,
+                "decidingSet": false,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": false,
+                "scoreTokens": []
+              },
+              "opponentWeight": 0.66,
+              "qualityPoints": 0.132,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Andres Andrade",
+              "opponentRanking": null,
+              "result": "ECU  7-64 6-4 q1",
+              "date": "19 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 13,
+                "gamesLost": 10,
+                "tiebreakSets": 1,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-64"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.62,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "Zagreb Challenger",
+              "eventTier": "challenger",
+              "opponent": "Zsombor Piros",
+              "opponentRanking": null,
+              "result": "HUN  7-65 7-62 Fin.",
+              "date": "17 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 2,
+                "setsWon": 2,
+                "setsLost": 0,
+                "gamesWon": 14,
+                "gamesLost": 12,
+                "tiebreakSets": 2,
+                "decidingSet": false,
+                "straightSetWin": true,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-65"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-62"
+                  }
+                ]
+              },
+              "opponentWeight": 0.432,
+              "qualityPoints": 0.532,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Arthur Fery",
+              "opponentRanking": null,
+              "result": "GBR  5-7 7-64 6-2 1/2",
+              "date": "17 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 2,
+                "setsLost": 1,
+                "gamesWon": 18,
+                "gamesLost": 15,
+                "tiebreakSets": 1,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 5,
+                    "rightGames": 7,
+                    "raw": "5-7"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-64"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 2,
+                    "raw": "6-2"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.62,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Chris Rodesch",
+              "opponentRanking": null,
+              "result": "LUX  6-70 6-3 7-5 1/4",
+              "date": "14 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 2,
+                "setsLost": 1,
+                "gamesWon": 19,
+                "gamesLost": 15,
+                "tiebreakSets": 1,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 6,
+                    "rightGames": 7,
+                    "raw": "6-70"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 3,
+                    "raw": "6-3"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 5,
+                    "raw": "7-5"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.63,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Daniel Elahi Galan",
+              "opponentRanking": null,
+              "result": "COL  2-6 7-62 6-4 2nd",
+              "date": "14 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 2,
+                "setsLost": 1,
+                "gamesWon": 15,
+                "gamesLost": 16,
+                "tiebreakSets": 1,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 2,
+                    "rightGames": 6,
+                    "raw": "2-6"
+                  },
+                  {
+                    "leftGames": 7,
+                    "rightGames": 6,
+                    "raw": "7-62"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.58,
+              "flashscore": null,
+              "serviceStats": null
+            },
+            {
+              "event": "",
+              "eventTier": "same-event-run",
+              "opponent": "Juan Pablo Ficovich",
+              "opponentRanking": null,
+              "result": "ARG  2-6 6-4 6-4 1st",
+              "date": "13 May 26",
+              "parsed": {
+                "completed": true,
+                "playerWon": true,
+                "retirement": false,
+                "walkover": false,
+                "setsPlayed": 3,
+                "setsWon": 2,
+                "setsLost": 1,
+                "gamesWon": 14,
+                "gamesLost": 14,
+                "tiebreakSets": 0,
+                "decidingSet": true,
+                "straightSetWin": false,
+                "straightSetLoss": false,
+                "resistance": true,
+                "scoreTokens": [
+                  {
+                    "leftGames": 2,
+                    "rightGames": 6,
+                    "raw": "2-6"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  },
+                  {
+                    "leftGames": 6,
+                    "rightGames": 4,
+                    "raw": "6-4"
+                  }
+                ]
+              },
+              "opponentWeight": 0.51,
+              "qualityPoints": 0.59,
+              "flashscore": null,
+              "serviceStats": null
+            }
+          ]
+        }
+      ],
+      "matchupRead": "Jan Choinski owns the stronger 2026 clay record by 7.9 percentage points. Jan Choinski leads the current scoreline-form score by 29.4 points before opponent rankings are applied. 15 recent-opponent rankings are still missing, so this read should be treated as partially ranked until the ranking warehouse is filled."
+    },
+    "researchLinks": [
+      {
+        "label": "ESPN scoreboard",
+        "url": "https://www.espn.com/tennis/scoreboard/_/date/20260604"
+      },
+      {
+        "label": "Tennistonic H2H",
+        "url": "https://tennistonic.com/head-to-head-compare/Luka-Mikrut-Vs-Jan-Choinski/"
+      },
+      {
+        "label": "DraftKings Sportsbook event",
+        "url": "https://sportsbook.draftkings.com/leagues/tennis/challenger-heilbronn?event=34235762"
+      }
+    ],
+    "formEdgeName": "Jan Choinski"
+  },
+  "participants": [
+    {
+      "id": "rh-atp-challenger-bad-rappenau-choinski-vs-mikrut-2026-06-04:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Luka Mikrut",
+      "detail": "Clay | Live rank #192 | CRO | age 22.1 | hold 75%",
+      "americanOdds": 149,
+      "americanLabel": "+149",
+      "decimalOdds": 2.49,
+      "impliedProbability": 0.40160642570281124,
+      "impliedProbabilityLabel": "40.2%"
+    },
+    {
+      "id": "rh-atp-challenger-bad-rappenau-choinski-vs-mikrut-2026-06-04:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Jan Choinski",
+      "detail": "Clay | Live rank #101 | Great Britain | age 29 | hold 25%",
+      "americanOdds": -197,
+      "americanLabel": "-197",
+      "decimalOdds": 1.5076142131979695,
+      "impliedProbability": 0.6632996632996633,
+      "impliedProbabilityLabel": "66.3%"
+    }
+  ],
+  "moneyline": {
+    "available": true,
+    "label": "DraftKings Sportsbook moneyline",
+    "provider": "DraftKings Sportsbook",
+    "participants": [
+      {
+        "id": "rh-atp-challenger-bad-rappenau-choinski-vs-mikrut-2026-06-04:0",
+        "index": 0,
+        "role": "Player 1",
+        "name": "Luka Mikrut",
+        "detail": "Clay | Live rank #192 | CRO | age 22.1 | hold 75%",
+        "americanOdds": 149,
+        "americanLabel": "+149",
+        "decimalOdds": 2.49,
+        "impliedProbability": 0.40160642570281124,
+        "impliedProbabilityLabel": "40.2%"
+      },
+      {
+        "id": "rh-atp-challenger-bad-rappenau-choinski-vs-mikrut-2026-06-04:1",
+        "index": 1,
+        "role": "Player 2",
+        "name": "Jan Choinski",
+        "detail": "Clay | Live rank #101 | Great Britain | age 29 | hold 25%",
+        "americanOdds": -197,
+        "americanLabel": "-197",
+        "decimalOdds": 1.5076142131979695,
+        "impliedProbability": 0.6632996632996633,
+        "impliedProbabilityLabel": "66.3%"
+      }
+    ]
+  },
+  "analysis": {
+    "available": true,
+    "participantId": "rh-atp-challenger-bad-rappenau-choinski-vs-mikrut-2026-06-04:1",
+    "participant": {
+      "id": "rh-atp-challenger-bad-rappenau-choinski-vs-mikrut-2026-06-04:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Jan Choinski",
+      "detail": "Clay | Live rank #101 | Great Britain | age 29 | hold 25%",
+      "americanOdds": -197,
+      "americanLabel": "-197",
+      "decimalOdds": 1.5076142131979695,
+      "impliedProbability": 0.6632996632996633,
+      "impliedProbabilityLabel": "66.3%"
+    },
+    "opponent": {
+      "id": "rh-atp-challenger-bad-rappenau-choinski-vs-mikrut-2026-06-04:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Luka Mikrut",
+      "detail": "Clay | Live rank #192 | CRO | age 22.1 | hold 75%",
+      "americanOdds": 149,
+      "americanLabel": "+149",
+      "decimalOdds": 2.49,
+      "impliedProbability": 0.40160642570281124,
+      "impliedProbabilityLabel": "40.2%"
+    },
+    "lean": "Lean Jan Choinski; DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+    "rationale": "Our model pick: Jan Choinski. Luka Mikrut has the recent service-hold edge 75% to 25%, so Jan Choinski needs the rank/form edge to show up on return games. Lean, not a chase.",
+    "confidence": 52.6,
+    "volatility": 54,
+    "recommendationScore": 39,
+    "tier": "Watch",
+    "sourceLabel": "DraftKings Sportsbook",
+    "modelEdge": null,
+    "modelEdgeLabel": "",
+    "marketProbability": 0.6632996632996633,
+    "marketProbabilityLabel": "66.3%",
+    "inputs": [],
+    "inputsUsed": 0,
+    "volatilityNotes": [],
+    "indicators": {}
+  },
+  "metadata": {
+    "participantCount": 2,
+    "participantNames": [
+      "Luka Mikrut",
+      "Jan Choinski"
+    ],
+    "tagCount": 6,
+    "hasSeriesBreakdown": false,
+    "hasMoneyline": true,
+    "hasAnalysisPick": true,
+    "hasStructuredInputs": false,
+    "hasPlayerProps": false,
+    "startMinutes": 180,
+    "spotlight": false,
+    "league": "Tennis",
+    "oddsProvider": "DraftKings Sportsbook"
+  }
+}

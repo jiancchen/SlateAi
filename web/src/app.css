@@ -2854,6 +2854,38 @@ h3 {
   border-color: var(--line-strong);
 }
 
+.tennis-event-filter {
+  flex: 1 0 100%;
+  width: 100%;
+  display: grid;
+  gap: 5px;
+  margin-top: 6px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+}
+
+.tennis-event-filter select {
+  width: 100%;
+  min-width: 0;
+  height: 34px;
+  padding: 0 34px 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background:
+    linear-gradient(135deg, rgba(79, 210, 166, 0.07), rgba(255, 255, 255, 0.015)),
+    var(--panel);
+  color: var(--text);
+  font: 600 12px/1 var(--mono);
+  outline: none;
+  cursor: pointer;
+  color-scheme: dark;
+}
+
+.tennis-event-filter select:focus-visible {
+  border-color: rgba(79, 210, 166, 0.48);
+  box-shadow: 0 0 0 2px rgba(79, 210, 166, 0.12);
+}
+
 .games-rail-list {
   min-height: 0;
   overflow-y: auto;
@@ -6975,6 +7007,10 @@ h3 {
   gap: 6px;
 }
 
+.tennis-recent-stat-grid.compact {
+  grid-template-columns: repeat(auto-fit, minmax(118px, 1fr));
+}
+
 .tennis-recent-stat-grid div {
   min-height: 48px;
   padding: 7px;
@@ -7008,6 +7044,125 @@ h3 {
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.035);
   padding: 0.85rem;
+}
+
+.tennis-expectation-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0;
+}
+
+.tennis-expectation-bubble {
+  display: inline-grid;
+  min-width: 68px;
+  gap: 2px;
+  padding: 7px 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.tennis-expectation-bubble strong {
+  color: var(--heading);
+  font: 800 0.72rem/1 var(--mono);
+}
+
+.tennis-expectation-bubble small {
+  color: var(--muted);
+  font-size: 0.66rem;
+}
+
+.tennis-expectation-bubble.beat {
+  border-color: rgba(82, 214, 179, 0.3);
+  background: rgba(82, 214, 179, 0.12);
+}
+
+.tennis-expectation-bubble.met {
+  border-color: rgba(255, 196, 112, 0.3);
+  background: rgba(255, 196, 112, 0.12);
+}
+
+.tennis-expectation-bubble.miss {
+  border-color: rgba(224, 122, 95, 0.3);
+  background: rgba(224, 122, 95, 0.12);
+}
+
+.tennis-expectation-bubble.missing {
+  border-color: rgba(158, 198, 240, 0.18);
+  background: rgba(158, 198, 240, 0.06);
+}
+
+.tennis-last-five-strip {
+  display: grid;
+  gap: 7px;
+  margin: 9px 0 10px;
+}
+
+.tennis-last-five-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  color: var(--muted);
+  font: 700 0.68rem/1 var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tennis-last-five-meta small {
+  color: var(--muted-soft);
+  font: 600 0.65rem/1 var(--mono);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.tennis-last-five-bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tennis-last-five-bubble {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.035);
+  color: var(--heading);
+  flex: 0 0 auto;
+}
+
+.tennis-last-five-bubble strong {
+  font: 900 0.72rem/1 var(--mono);
+}
+
+.tennis-last-five-bubble small {
+  color: var(--muted);
+  font: 700 0.52rem/1 var(--mono);
+}
+
+.tennis-last-five-bubble.strong,
+.tennis-last-five-bubble.ok {
+  border-color: rgba(82, 214, 179, 0.38);
+  background: rgba(82, 214, 179, 0.14);
+}
+
+.tennis-last-five-bubble.watch {
+  border-color: rgba(255, 196, 112, 0.36);
+  background: rgba(255, 196, 112, 0.13);
+}
+
+.tennis-last-five-bubble.risk {
+  border-color: rgba(224, 122, 95, 0.38);
+  background: rgba(224, 122, 95, 0.13);
+}
+
+.tennis-last-five-bubble.missing {
+  border-color: rgba(158, 198, 240, 0.18);
+  background: rgba(158, 198, 240, 0.06);
 }
 
 .tennis-trade-chart-panel {
@@ -8386,6 +8541,17 @@ h3 {
     overflow-x: auto;
     overflow-y: hidden;
     flex-wrap: nowrap;
+  }
+
+  .games-rail-filters.with-tennis-event-select {
+    overflow-x: hidden;
+    flex-wrap: wrap;
+  }
+
+  .games-rail-filters.with-tennis-event-select .rail-filter-chip {
+    flex: 1 1 0;
+    justify-content: center;
+    min-width: 0;
   }
 
   .rail-filter-chip {

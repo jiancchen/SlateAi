@@ -1,0 +1,511 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-birmingham-shimabukuro-vs-ymer-2026-06-04",
+  "boardTitle": "Sho Shimabukuro vs Elias Ymer",
+  "boardPlayerName": "Elias Ymer",
+  "recentOpponentName": "Matusevich A.",
+  "recentIndex": 2,
+  "recentEvent": "Birmingham (United Kingdom)",
+  "recentDate": "May 31, 26",
+  "recentIsoDate": "2026-05-31",
+  "recentResult": "Win 7-5 6-3",
+  "recentSurface": "Grass",
+  "flashscoreLabel": "Ymer E. - Matusevich A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/birmingham/",
+  "players": [
+    "Ymer E.",
+    "Matusevich A."
+  ],
+  "generatedAt": "2026-06-04T00:09:21.459Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/lWOeoFpS/",
+  "matchId": "lWOeoFpS",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_lWOeoFpS",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_lWOeoFpS"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "0:47"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:40"
+      }
+    ],
+    "totalDuration": "1:27"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "9",
+              "right": "2",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "7",
+              "right": "2",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "66%",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "84% (37/44)",
+              "right": "74% (31/42)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (14/33)",
+              "right": "36% (8/22)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "1/3",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (11/42)",
+              "right": "16% (7/44)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (14/22)",
+              "right": "58% (19/33)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/1",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "24",
+              "right": "18",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "31",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (51/77)",
+              "right": "61% (39/64)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (25/64)",
+              "right": "34% (26/77)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (76/141)",
+              "right": "46% (65/141)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (11/11)",
+              "right": "80% (8/10)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (2/10)",
+              "right": "0% (0/11)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Total games won",
+              "left": "62% (13/21)",
+              "right": "38% (8/21)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "65%",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (16/22)",
+              "right": "81% (21/26)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (10/17)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (5/26)",
+              "right": "32% (7/22)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (8/14)",
+              "right": "41% (7/17)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "0/1",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "12",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "18",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (26/39)",
+              "right": "65% (24/37)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (13/37)",
+              "right": "33% (13/39)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (39/76)",
+              "right": "49% (37/76)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "8",
+              "right": "1",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "1",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "67%",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "95% (21/22)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "25% (4/16)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (6/16)",
+              "right": "0% (0/22)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "75% (6/8)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "16",
+              "right": "6",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "13",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (25/38)",
+              "right": "56% (15/27)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (12/27)",
+              "right": "34% (13/38)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (37/65)",
+              "right": "43% (28/65)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "4",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Ymer E.",
+              "rightPlayer": "Matusevich A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

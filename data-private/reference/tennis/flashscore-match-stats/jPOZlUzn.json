@@ -1,0 +1,546 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-trungelliti-vs-hsu-2026-06-04",
+  "boardTitle": "Marco Trungelliti vs Yu Hsiou Hsu",
+  "boardPlayerName": "Yu Hsiou Hsu",
+  "recentOpponentName": "Seyboth Wild T.",
+  "recentIndex": 4,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 19, 26",
+  "recentIsoDate": "2026-05-19",
+  "recentResult": "Loss 1-6 3-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Seyboth Wild T. - Hsu Y. H.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Seyboth Wild T.",
+    "Hsu Y. H."
+  ],
+  "generatedAt": "2026-06-04T00:09:25.420Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/jPOZlUzn/",
+  "matchId": "jPOZlUzn",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_jPOZlUzn",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_jPOZlUzn"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 1,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:35"
+      }
+    ],
+    "totalDuration": "1:12"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "73%",
+              "right": "64%",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (28/40)",
+              "right": "60% (18/30)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (9/15)",
+              "right": "47% (8/17)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "4/8",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Average 1st serve speed",
+              "left": "183 km/h",
+              "right": "177 km/h",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Average 2nd serve speed",
+              "left": "146 km/h",
+              "right": "150 km/h",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (12/30)",
+              "right": "30% (12/40)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (9/17)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/8",
+              "right": "0/1",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "13",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "23",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Net points won",
+              "left": "57% (8/14)",
+              "right": "46% (6/13)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (37/55)",
+              "right": "55% (26/47)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "45% (21/47)",
+              "right": "33% (18/55)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (58/102)",
+              "right": "43% (44/102)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (8/8)",
+              "right": "50% (4/8)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (4/8)",
+              "right": "0% (0/8)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (12/16)",
+              "right": "25% (4/16)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "61%",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "65% (11/17)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (6/10)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "3/6",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (5/14)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (6/9)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/6",
+              "right": "0/1",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "8",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "12",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (17/27)",
+              "right": "44% (12/27)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "56% (15/27)",
+              "right": "37% (10/27)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (32/54)",
+              "right": "41% (22/54)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (3/3)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Return games won",
+              "left": "75% (3/4)",
+              "right": "0% (0/3)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Total games won",
+              "left": "86% (6/7)",
+              "right": "14% (1/7)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "82%",
+              "right": "67%",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "74% (17/23)",
+              "right": "56% (9/16)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (3/5)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/2",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "44% (7/16)",
+              "right": "26% (6/23)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "0/0",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "5",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "11",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Net points won",
+              "left": "56% (5/9)",
+              "right": "29% (2/7)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "71% (20/28)",
+              "right": "70% (14/20)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (6/20)",
+              "right": "29% (8/28)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (26/48)",
+              "right": "46% (22/48)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Seyboth Wild T.",
+              "rightPlayer": "Hsu Y. H."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

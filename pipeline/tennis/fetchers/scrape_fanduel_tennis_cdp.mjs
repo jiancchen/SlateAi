@@ -26,6 +26,24 @@ const readJson = async (relativePath, fallback = null) => {
   }
 }
 
+const loadSlateMatches = async (date) => {
+  const modulePath = path.join(ROOT, 'web', 'src', 'lib', `day-${date}.js`)
+  try {
+    const day = await import(`${modulePath}?cacheBust=${Date.now()}`)
+    const games = Array.isArray(day.games) ? day.games : []
+    return games
+      .filter((game) => game?.league === 'Tennis' && Array.isArray(game.matchup) && game.matchup.length === 2)
+      .map((game) => ({
+        id: game.id,
+        round: game.stage,
+        players: game.matchup.map((entry) => ({ name: entry.name || entry.displayName })).filter((entry) => entry.name)
+      }))
+      .filter((match) => match.players.length === 2)
+  } catch {
+    return []
+  }
+}
+
 const normalizeName = (value) =>
   String(value || '')
     .normalize('NFKD')
@@ -145,7 +163,7 @@ const extractBoardLinks = async () => {
         page.evaluate(`Array.from(document.querySelectorAll('a')).map((anchor) => ({
           text: anchor.innerText,
           href: anchor.href
-        })).filter((anchor) => anchor.href.includes('/tennis/') && /roland-garros|french-open/i.test(anchor.href))`),
+        })).filter((anchor) => anchor.href.includes('/tennis/') && !anchor.href.includes('/navigation'))`),
       8000
     )
     links.push(...(pageLinks || []))
@@ -213,6 +231,24 @@ const chooseFirstSetMarket = (markets, priceMap) => {
   return candidates.sort((left, right) => Math.abs(left.line - 9.5) - Math.abs(right.line - 9.5))[0]?.market ?? null
 }
 
+const chooseFirstGameTotalMarket = (markets, priceMap) => {
+  const candidates = markets
+    .filter((market) => /^(?:Game 1|1st Game|First Game)\s+Total/i.test(market.marketName || '') || /Total Points.*(?:Game 1|1st Game|First Game)/i.test(market.marketName || ''))
+    .map((market) => ({
+      market,
+      line: lineFromMarketName(market.marketName),
+      hasPrice: (priceMap.get(market.marketId)?.runnerDetails || []).length > 0
+    }))
+    .filter((entry) => entry.hasPrice)
+  return candidates.sort((left, right) => Math.abs((left.line ?? 3.5) - 3.5) - Math.abs((right.line ?? 3.5) - 3.5))[0]?.market ?? null
+}
+
+const isToStealMarket = (marketName) =>
+  /(?:to win at least one set|to steal (?:a )?set|to take (?:a )?set|to win a set)/i.test(String(marketName || ''))
+
+const firstServiceGamePlayer = (marketName) =>
+  String(marketName || '').replace(/\s+Score of First Service Game.*$/i, '').trim()
+
 const parseEvent = async (href) =>
   withPage(
     href,
@@ -236,7 +272,9 @@ const parseEvent = async (href) =>
       const handicap = markets.find((market) => /^Game Handicap /i.test(market.marketName || ''))
       const total = markets.find((market) => /^Total Match Games /i.test(market.marketName || ''))
       const firstSetTotal = chooseFirstSetMarket(markets, priceMap)
-      const setWinMarkets = markets.filter((market) => /to win at least one set/i.test(market.marketName || ''))
+      const firstGameTotal = chooseFirstGameTotalMarket(markets, priceMap)
+      const firstServiceGameTotals = markets.filter((market) => /Score of First Service Game/i.test(market.marketName || ''))
+      const setWinMarkets = markets.filter((market) => isToStealMarket(market.marketName))
 
       return {
         href,
@@ -263,14 +301,34 @@ const parseEvent = async (href) =>
                 return { side: parsed?.side ?? runner.name, line: parsed?.line ?? lineFromMarketName(firstSetTotal.marketName), odds: runner.odds }
               })
             : [],
+          firstGameTotalPoints: firstGameTotal
+            ? pricedRunners(firstGameTotal, priceMap).map((runner) => {
+                const parsed = totalSide(runner.name)
+                return { side: parsed?.side ?? runner.name, line: parsed?.line ?? lineFromMarketName(firstGameTotal.marketName), odds: runner.odds }
+              })
+            : [],
+          firstServiceGameTotalPoints: firstServiceGameTotals.flatMap((market) => {
+            const player = firstServiceGamePlayer(market.marketName)
+            return pricedRunners(market, priceMap).map((runner) => {
+              const parsed = totalSide(runner.name)
+              return {
+                player,
+                market: market.marketName,
+                side: parsed?.side ?? runner.name,
+                line: parsed?.line ?? lineFromMarketName(market.marketName),
+                odds: runner.odds
+              }
+            })
+          }),
           winAtLeastOneSet: setWinMarkets.flatMap((market) =>
             pricedRunners(market, priceMap).map((runner) => ({
               market: market.marketName,
-              player: String(market.marketName).replace(/\s+to win at least one set/i, ''),
+              player: String(market.marketName).replace(/\s+(?:to win at least one set|to steal (?:a )?set|to take (?:a )?set|to win a set).*/i, ''),
               selection: runner.name,
               odds: runner.odds
             }))
-          )
+          ),
+          marketNames: markets.map((market) => market.marketName).filter(Boolean).sort()
         },
         capturedAt: new Date().toISOString(),
         source: SOURCE
@@ -281,10 +339,13 @@ const parseEvent = async (href) =>
 
 const main = async () => {
   const options = parseArgs()
-  const scoreboard = await readJson(`data-private/reference/tennis/espn-scoreboard-${options.date}.json`)
-  const singles = (scoreboard.singles || [])
-    .filter((match) => !match.doubles && match.players?.length === 2)
-    .filter((match) => !/qualifying/i.test(String(match.round || '')))
+  const scoreboard = await readJson(`data-private/reference/tennis/espn-scoreboard-${options.date}.json`, { singles: [] })
+  const slateMatches = await loadSlateMatches(options.date)
+  const singles = slateMatches.length
+    ? slateMatches
+    : (scoreboard.singles || [])
+        .filter((match) => !match.doubles && match.players?.length === 2)
+        .filter((match) => !/qualifying/i.test(String(match.round || '')))
   const links = await extractBoardLinks()
   const matches = []
   const unmatched = []

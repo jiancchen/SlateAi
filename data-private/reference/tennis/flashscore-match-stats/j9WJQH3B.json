@@ -1,0 +1,668 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-birmingham-wong-vs-romano-2026-06-04",
+  "boardTitle": "Coleman Wong vs Filippo Romano",
+  "boardPlayerName": "Filippo Romano",
+  "recentOpponentName": "Chidekh C.",
+  "recentIndex": 0,
+  "recentEvent": "Birmingham (United Kingdom)",
+  "recentDate": "Jun 02, 26",
+  "recentIsoDate": "2026-06-02",
+  "recentResult": "Win 3-6 6-4 6-4",
+  "recentSurface": "Grass",
+  "flashscoreLabel": "Chidekh C. - Romano F.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/birmingham/",
+  "players": [
+    "Chidekh C.",
+    "Romano F."
+  ],
+  "generatedAt": "2026-06-04T00:09:20.386Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/j9WJQH3B/",
+  "matchId": "j9WJQH3B",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_j9WJQH3B",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_j9WJQH3B"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:32"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": "0:41"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "1:52"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "11",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "58%",
+              "right": "62%",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (31/44)",
+              "right": "75% (45/60)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (19/32)",
+              "right": "49% (18/37)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "7/10",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "25% (15/60)",
+              "right": "30% (13/44)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "51% (19/37)",
+              "right": "41% (13/32)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/10",
+              "right": "3/4",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "23",
+              "right": "31",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "29",
+              "right": "35",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (50/76)",
+              "right": "65% (63/97)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (34/97)",
+              "right": "34% (26/76)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (84/173)",
+              "right": "51% (89/173)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "5",
+              "right": "5",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "79% (11/14)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (3/15)",
+              "right": "21% (3/14)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Total games won",
+              "left": "48% (14/29)",
+              "right": "52% (15/29)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "55%",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (10/12)",
+              "right": "88% (14/16)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "70% (7/10)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "13% (2/16)",
+              "right": "17% (2/12)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "77% (10/13)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "9",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "11",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "77% (17/22)",
+              "right": "56% (15/27)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (12/27)",
+              "right": "23% (5/22)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "59% (29/49)",
+              "right": "41% (20/49)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "68%",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "61% (11/18)",
+              "right": "64% (18/28)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (4/10)",
+              "right": "54% (7/13)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "4/5",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (10/28)",
+              "right": "39% (7/18)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "46% (6/13)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/5",
+              "right": "2/3",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "13",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "11",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (15/28)",
+              "right": "61% (25/41)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (16/41)",
+              "right": "46% (13/28)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (31/69)",
+              "right": "55% (38/69)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "54%",
+              "right": "59%",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "71% (10/14)",
+              "right": "81% (13/16)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "67% (8/12)",
+              "right": "73% (8/11)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "2/2",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (3/16)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "27% (3/11)",
+              "right": "33% (4/12)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "1/1",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "9",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "13",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (18/26)",
+              "right": "79% (23/29)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "21% (6/29)",
+              "right": "31% (8/26)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (24/55)",
+              "right": "56% (31/55)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Chidekh C.",
+              "rightPlayer": "Romano F."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

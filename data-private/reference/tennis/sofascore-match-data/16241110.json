@@ -1,0 +1,670 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/yu-hsiou-hsu-marco-trungelliti#id:16241110",
+  "eventId": "16241110",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-bad-rappenau-trungelliti-vs-hsu-2026-06-04",
+  "boardTitle": "Marco Trungelliti vs Yu Hsiou Hsu",
+  "capturedAt": "2026-06-04T00:24:36.401Z",
+  "compactEvent": {
+    "id": 16241110,
+    "slug": "yu-hsiou-hsu-marco-trungelliti",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1780571400,
+    "tournament": {
+      "name": "Bad Rappenau, Germany",
+      "slug": "bad-rappenau-germany",
+      "category": "Challenger",
+      "uniqueTournament": "ATP Challenger Bad Rappenau, Germany Men Singles"
+    },
+    "roundInfo": {
+      "round": 5,
+      "name": "Round of 16",
+      "slug": "round-of-16",
+      "cupRoundType": 8
+    },
+    "groundType": "Red clay",
+    "homeTeam": {
+      "id": 38517,
+      "name": "Marco Trungelliti",
+      "shortName": "M. Trungelliti",
+      "ranking": 81,
+      "currentRanking": 80,
+      "country": {
+        "alpha2": "AR",
+        "alpha3": "ARG",
+        "name": "Argentina",
+        "slug": "argentina"
+      },
+      "playerTeamInfo": {
+        "height": 1.78,
+        "weight": 80,
+        "plays": "right-handed",
+        "turnedPro": "2008",
+        "prizeCurrent": 204564,
+        "prizeTotal": 2084145,
+        "birthCity": {
+          "name": "Santiago del Estero",
+          "country": {
+            "alpha2": "AR",
+            "alpha3": "ARG",
+            "name": "Argentina",
+            "slug": "argentina"
+          },
+          "id": 21703
+        },
+        "residenceCity": {
+          "name": "Ordino",
+          "country": {
+            "alpha2": "AD",
+            "alpha3": "AND",
+            "name": "Andorra",
+            "slug": "andorra"
+          },
+          "id": 30913
+        },
+        "id": 142,
+        "birthplace": "Santiago del Estero, Argentina",
+        "birthDateTimestamp": 633744000,
+        "residence": "Ordino, Andorra",
+        "prizeCurrentRaw": {
+          "value": 204564,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 2084145,
+          "currency": "EUR"
+        },
+        "currentRanking": 80
+      }
+    },
+    "awayTeam": {
+      "id": 204329,
+      "name": "Yu Hsiou Hsu",
+      "shortName": "Y. Hsu",
+      "ranking": 207,
+      "currentRanking": 205,
+      "country": {
+        "alpha2": "TW",
+        "alpha3": "TWN",
+        "name": "Chinese Taipei",
+        "slug": "chinese-taipei"
+      },
+      "playerTeamInfo": {
+        "height": 1.78,
+        "weight": 75,
+        "plays": "right-handed",
+        "prizeCurrent": 43088,
+        "prizeTotal": 715759,
+        "birthCity": {
+          "name": "Yuanlin",
+          "country": {
+            "alpha2": "TW",
+            "alpha3": "TWN",
+            "name": "Chinese Taipei",
+            "slug": "chinese-taipei"
+          },
+          "id": 34606
+        },
+        "residenceCity": {
+          "name": "Changhwa",
+          "country": {
+            "alpha2": "TW",
+            "alpha3": "TWN",
+            "name": "Chinese Taipei",
+            "slug": "chinese-taipei"
+          },
+          "id": 36145
+        },
+        "id": 2717,
+        "birthplace": "Yuanlin, Chinese Taipei",
+        "birthDateTimestamp": 923011200,
+        "residence": "Changhwa, Chinese Taipei",
+        "prizeCurrentRaw": {
+          "value": 43088,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 715759,
+          "currency": "EUR"
+        },
+        "currentRanking": 205
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "homeTeamSeed": "1",
+          "tournament": {
+            "name": "Bad Rappenau, Germany",
+            "slug": "bad-rappenau-germany",
+            "category": {
+              "name": "Challenger",
+              "slug": "challenger",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 5,
+              "country": {},
+              "id": 72,
+              "flag": "challenger",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "চ্যালেঞ্জার",
+                  "ar": "تحدي (تنس)",
+                  "hi": "डेनमार्क",
+                  "ru": "Challenger"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "ATP Challenger Bad Rappenau, Germany Men Singles",
+              "slug": "atp-challenger-bad-rappenau-germany-men-singles",
+              "category": {
+                "name": "Challenger",
+                "slug": "challenger",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 5,
+                "country": {},
+                "id": 72,
+                "flag": "challenger",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "চ্যালেঞ্জার",
+                    "ar": "تحدي (تنس)",
+                    "hi": "डेनमार्क",
+                    "ru": "Challenger"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 76,
+              "groundType": "Red clay",
+              "hasRounds": false,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 35106,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 186312,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1780272000
+          },
+          "season": {
+            "name": "ATP Challenger Heilbronn, Germany Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 89786
+          },
+          "roundInfo": {
+            "round": 5,
+            "name": "Round of 16",
+            "slug": "round-of-16",
+            "cupRoundType": 8
+          },
+          "customId": "rvpsELGb",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Heilbronn / Bad Rappenau",
+              "country": {
+                "alpha2": "DE",
+                "alpha3": "DEU",
+                "name": "Germany",
+                "slug": "germany"
+              },
+              "id": 37597
+            },
+            "hidden": true,
+            "slug": "center-court",
+            "name": "Center Court",
+            "country": {
+              "alpha2": "DE",
+              "alpha3": "DEU",
+              "name": "Germany",
+              "slug": "germany"
+            },
+            "id": 59651,
+            "stadium": {
+              "name": "Center Court"
+            }
+          },
+          "homeTeam": {
+            "name": "Marco Trungelliti",
+            "slug": "trungelliti-marco",
+            "shortName": "M. Trungelliti",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 3952,
+            "playerTeamInfo": {
+              "height": 1.78,
+              "weight": 80,
+              "plays": "right-handed",
+              "turnedPro": "2008",
+              "prizeCurrent": 204564,
+              "prizeTotal": 2084145,
+              "birthCity": {
+                "name": "Santiago del Estero",
+                "country": {
+                  "alpha2": "AR",
+                  "alpha3": "ARG",
+                  "name": "Argentina",
+                  "slug": "argentina"
+                },
+                "id": 21703
+              },
+              "residenceCity": {
+                "name": "Ordino",
+                "country": {
+                  "alpha2": "AD",
+                  "alpha3": "AND",
+                  "name": "Andorra",
+                  "slug": "andorra"
+                },
+                "id": 30913
+              },
+              "id": 142,
+              "birthplace": "Santiago del Estero, Argentina",
+              "birthDateTimestamp": 633744000,
+              "residence": "Ordino, Andorra",
+              "prizeCurrentRaw": {
+                "value": 204564,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 2084145,
+                "currency": "EUR"
+              },
+              "currentRanking": 80
+            },
+            "nameCode": "TRU",
+            "ranking": 81,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "AR",
+              "alpha3": "ARG",
+              "name": "Argentina",
+              "slug": "argentina"
+            },
+            "id": 38517,
+            "fullName": "Marco Trungelliti",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "ماركو ترونغيلتي",
+                "bn": "মার্কো ট্রুঞ্জেলিটি",
+                "hi": "मार्को त्रुंगेलिती",
+                "ru": "Марко Трунджеллити"
+              },
+              "shortNameTranslation": {
+                "ar": "م. ترونغيلتي"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Yu Hsiou Hsu",
+            "slug": "hsu-yu-hsiou",
+            "shortName": "Y. Hsu",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 1276,
+            "playerTeamInfo": {
+              "height": 1.78,
+              "weight": 75,
+              "plays": "right-handed",
+              "prizeCurrent": 43088,
+              "prizeTotal": 715759,
+              "birthCity": {
+                "name": "Yuanlin",
+                "country": {
+                  "alpha2": "TW",
+                  "alpha3": "TWN",
+                  "name": "Chinese Taipei",
+                  "slug": "chinese-taipei"
+                },
+                "id": 34606
+              },
+              "residenceCity": {
+                "name": "Changhwa",
+                "country": {
+                  "alpha2": "TW",
+                  "alpha3": "TWN",
+                  "name": "Chinese Taipei",
+                  "slug": "chinese-taipei"
+                },
+                "id": 36145
+              },
+              "id": 2717,
+              "birthplace": "Yuanlin, Chinese Taipei",
+              "birthDateTimestamp": 923011200,
+              "residence": "Changhwa, Chinese Taipei",
+              "prizeCurrentRaw": {
+                "value": 43088,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 715759,
+                "currency": "EUR"
+              },
+              "currentRanking": 205
+            },
+            "nameCode": "HSU",
+            "ranking": 207,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "TW",
+              "alpha3": "TWN",
+              "name": "Chinese Taipei",
+              "slug": "chinese-taipei"
+            },
+            "id": 204329,
+            "fullName": "Yu Hsiou Hsu",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "يو هسيو هسو",
+                "ru": "Ю Сю Су"
+              },
+              "shortNameTranslation": {
+                "ar": "ي. هسو",
+                "bn": "ওয়াই. হু",
+                "hi": "वाई. ह्सु"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16241110,
+          "defaultPeriodCount": 3,
+          "slug": "yu-hsiou-hsu-marco-trungelliti",
+          "startTimestamp": 1780571400,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "hasBet365LiveStream": true,
+          "bet365ExcludedCountryCodes": [
+            "??",
+            "AN",
+            "CU",
+            "IR",
+            "KP",
+            "SY",
+            "VE",
+            "GR",
+            "RU",
+            "CH",
+            "CA"
+          ],
+          "feedLocked": false,
+          "groundType": "Red clay",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "lower"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": null,
+        "managerDuel": null
+      }
+    },
+    "pointByPoint": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "votes": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "vote": {
+          "vote1": 827,
+          "vote2": 33,
+          "voteX": null
+        },
+        "bothTeamsToScoreVote": {
+          "voteYes": 0,
+          "voteNo": 0
+        },
+        "firstTeamToScoreVote": {
+          "voteHome": 0,
+          "voteNoGoal": 0,
+          "voteAway": 0
+        },
+        "whoShouldHaveWonVote": {
+          "vote1": 0,
+          "vote2": 0
+        }
+      }
+    },
+    "tennisPower": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "tennisPowerRankings": []
+      }
+    },
+    "winningOdds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "home": {
+          "fractionalValue": "7/50",
+          "expected": 88,
+          "actual": 99,
+          "id": 22232670
+        },
+        "away": null
+      }
+    },
+    "odds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "featured": {
+          "default": {
+            "sourceId": 195672159,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195672159,
+            "suspended": false,
+            "id": 316632065,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "7/50",
+                "fractionalValue": "7/50",
+                "sourceId": 1423781016,
+                "name": "1",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "9/2",
+                "fractionalValue": "9/2",
+                "sourceId": 1423781157,
+                "name": "2",
+                "change": 0
+              }
+            ]
+          },
+          "asian": {
+            "sourceId": 195672159,
+            "structureType": 2,
+            "marketId": 12,
+            "marketName": "Total games won",
+            "choiceGroup": "20.5",
+            "isLive": false,
+            "fid": 195672159,
+            "suspended": false,
+            "id": 316659499,
+            "marketGroup": "Total sets/games",
+            "marketPeriod": "Extra time",
+            "choices": [
+              {
+                "initialFractionalValue": "1/1",
+                "fractionalValue": "1/1",
+                "sourceId": 1424229672,
+                "name": "Over",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "8/11",
+                "fractionalValue": "8/11",
+                "sourceId": 1424229668,
+                "name": "Under",
+                "change": 0
+              }
+            ]
+          },
+          "fullTime": {
+            "sourceId": 195672159,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195672159,
+            "suspended": false,
+            "id": 316632065,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "7/50",
+                "fractionalValue": "7/50",
+                "sourceId": 1423781016,
+                "name": "1",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "9/2",
+                "fractionalValue": "9/2",
+                "sourceId": 1423781157,
+                "name": "2",
+                "change": 0
+              }
+            ]
+          }
+        },
+        "hasMoreOdds": true
+      }
+    },
+    "homeSeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "awaySeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

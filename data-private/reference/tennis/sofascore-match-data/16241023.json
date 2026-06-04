@@ -1,0 +1,521 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/ashlyn-krueger-janice-tjen#id:16241023",
+  "eventId": "16241023",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-wta-125k-birmingham-krueger-vs-tjen-2026-06-04",
+  "boardTitle": "Janice Tjen vs Ashlyn Krueger",
+  "capturedAt": "2026-06-04T00:25:51.890Z",
+  "compactEvent": {
+    "id": 16241023,
+    "slug": "ashlyn-krueger-janice-tjen",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1780567200,
+    "tournament": {
+      "name": "Birmingham, Great Britain",
+      "slug": "birmingham-great-britain",
+      "category": "WTA 125",
+      "uniqueTournament": "WTA 125K Birmingham, Great Britain Women Singles"
+    },
+    "roundInfo": {
+      "round": 5,
+      "name": "Round of 16",
+      "slug": "round-of-16",
+      "cupRoundType": 8
+    },
+    "groundType": "Grass",
+    "homeTeam": {
+      "id": 311012,
+      "name": "Ashlyn Krueger",
+      "shortName": "A. Krueger",
+      "ranking": 120,
+      "currentRanking": 120,
+      "country": {
+        "alpha2": "US",
+        "alpha3": "USA",
+        "name": "USA",
+        "slug": "usa"
+      },
+      "playerTeamInfo": {
+        "height": 1.85,
+        "plays": "right-handed",
+        "prizeCurrent": 280582,
+        "prizeTotal": 2784032,
+        "birthCity": {
+          "name": "Dallas",
+          "state": "US-TX",
+          "country": {
+            "alpha2": "US",
+            "alpha3": "USA",
+            "name": "USA",
+            "slug": "usa"
+          },
+          "id": 28178
+        },
+        "id": 4789,
+        "birthplace": "Dallas, Texas, USA",
+        "birthDateTimestamp": 1083888000,
+        "prizeCurrentRaw": {
+          "value": 280582,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 2784032,
+          "currency": "EUR"
+        },
+        "currentRanking": 120
+      }
+    },
+    "awayTeam": {
+      "id": 291733,
+      "name": "Janice Tjen",
+      "shortName": "J. Tjen",
+      "ranking": 40,
+      "currentRanking": 40,
+      "country": {
+        "alpha2": "ID",
+        "alpha3": "IDN",
+        "name": "Indonesia",
+        "slug": "indonesia"
+      },
+      "playerTeamInfo": {
+        "height": 1.71,
+        "plays": "right-handed",
+        "prizeCurrent": 425240,
+        "prizeTotal": 733761,
+        "birthCity": {
+          "name": "Jakarta",
+          "country": {
+            "alpha2": "ID",
+            "alpha3": "IDN",
+            "name": "Indonesia",
+            "slug": "indonesia"
+          },
+          "id": 19557
+        },
+        "id": 12318,
+        "birthplace": "Jakarta, Indonesia",
+        "birthDateTimestamp": 1020643200,
+        "prizeCurrentRaw": {
+          "value": 425240,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 733761,
+          "currency": "EUR"
+        },
+        "currentRanking": 40
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "homeTeamSeed": "Q",
+          "awayTeamSeed": "2",
+          "tournament": {
+            "name": "Birmingham, Great Britain",
+            "slug": "birmingham-great-britain",
+            "category": {
+              "name": "WTA 125",
+              "slug": "wta-125",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 4,
+              "country": {},
+              "id": 871,
+              "flag": "wta-125",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "رابطة محترفات التنس 125",
+                  "ru": "WTA 125"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "WTA 125K Birmingham, Great Britain Women Singles",
+              "slug": "wta-125k-birmingham-great-britain-women-singles",
+              "category": {
+                "name": "WTA 125",
+                "slug": "wta-125",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 4,
+                "country": {},
+                "id": 871,
+                "flag": "wta-125",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "ar": "رابطة محترفات التنس 125",
+                    "ru": "WTA 125"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 199,
+              "groundType": "Grass",
+              "tennisPoints": 125,
+              "hasRounds": false,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 26936,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false,
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "WTA 125K برمنغهام، بريطانيا سيدات فردي"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 186304,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1780272000
+          },
+          "season": {
+            "name": "WTA 125K Birmingham, Great Britain Women Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 89186
+          },
+          "roundInfo": {
+            "round": 5,
+            "name": "Round of 16",
+            "slug": "round-of-16",
+            "cupRoundType": 8
+          },
+          "customId": "IJqcsmvzc",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Birmingham",
+              "country": {
+                "alpha2": "EN",
+                "alpha3": "ENG",
+                "name": "England",
+                "slug": "england"
+              },
+              "id": 19186
+            },
+            "hidden": true,
+            "slug": "court-5",
+            "name": "Court 5",
+            "country": {
+              "alpha2": "EN",
+              "alpha3": "ENG",
+              "name": "England",
+              "slug": "england"
+            },
+            "id": 49668,
+            "stadium": {
+              "name": "Court 5"
+            }
+          },
+          "homeTeam": {
+            "name": "Ashlyn Krueger",
+            "slug": "krueger-ashlyn",
+            "shortName": "A. Krueger",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 3465,
+            "playerTeamInfo": {
+              "height": 1.85,
+              "plays": "right-handed",
+              "prizeCurrent": 280582,
+              "prizeTotal": 2784032,
+              "birthCity": {
+                "name": "Dallas",
+                "state": "US-TX",
+                "country": {
+                  "alpha2": "US",
+                  "alpha3": "USA",
+                  "name": "USA",
+                  "slug": "usa"
+                },
+                "id": 28178
+              },
+              "id": 4789,
+              "birthplace": "Dallas, Texas, USA",
+              "birthDateTimestamp": 1083888000,
+              "prizeCurrentRaw": {
+                "value": 280582,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 2784032,
+                "currency": "EUR"
+              },
+              "currentRanking": 120
+            },
+            "nameCode": "KRU",
+            "ranking": 120,
+            "class": 0,
+            "disabled": false,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "US",
+              "alpha3": "USA",
+              "name": "USA",
+              "slug": "usa"
+            },
+            "id": 311012,
+            "fullName": "Ashlyn Krueger",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "أشلين كروجر",
+                "bn": "অ্যাশলিন কুরুগার",
+                "hi": "एश्लिन क्रूगर"
+              },
+              "shortNameTranslation": {
+                "ar": "أ. كروجر"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Janice Tjen",
+            "slug": "tjen-janice",
+            "shortName": "J. Tjen",
+            "gender": "F",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 3172,
+            "playerTeamInfo": {
+              "height": 1.71,
+              "plays": "right-handed",
+              "prizeCurrent": 425240,
+              "prizeTotal": 733761,
+              "birthCity": {
+                "name": "Jakarta",
+                "country": {
+                  "alpha2": "ID",
+                  "alpha3": "IDN",
+                  "name": "Indonesia",
+                  "slug": "indonesia"
+                },
+                "id": 19557
+              },
+              "id": 12318,
+              "birthplace": "Jakarta, Indonesia",
+              "birthDateTimestamp": 1020643200,
+              "prizeCurrentRaw": {
+                "value": 425240,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 733761,
+                "currency": "EUR"
+              },
+              "currentRanking": 40
+            },
+            "nameCode": "TJE",
+            "ranking": 40,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "ID",
+              "alpha3": "IDN",
+              "name": "Indonesia",
+              "slug": "indonesia"
+            },
+            "id": 291733,
+            "fullName": "Janice Tjen",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "جانيس تين"
+              },
+              "shortNameTranslation": {
+                "ar": "ج. تين"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16241023,
+          "defaultPeriodCount": 3,
+          "slug": "ashlyn-krueger-janice-tjen",
+          "startTimestamp": 1780567200,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "feedLocked": false,
+          "groundType": "Grass",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "lower"
+            ],
+            "gender": [
+              "F"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": null,
+        "managerDuel": null
+      }
+    },
+    "pointByPoint": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "votes": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "vote": {
+          "vote1": 95,
+          "vote2": 205,
+          "voteX": null
+        },
+        "bothTeamsToScoreVote": {
+          "voteYes": 0,
+          "voteNo": 0
+        },
+        "firstTeamToScoreVote": {
+          "voteHome": 0,
+          "voteNoGoal": 0,
+          "voteAway": 0
+        },
+        "whoShouldHaveWonVote": {
+          "vote1": 0,
+          "vote2": 0
+        }
+      }
+    },
+    "tennisPower": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "tennisPowerRankings": []
+      }
+    },
+    "winningOdds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "odds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "homeSeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "awaySeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}

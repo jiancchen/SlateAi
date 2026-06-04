@@ -1,0 +1,36 @@
+{
+  "ok": true,
+  "script": "data-migration/scripts/ingest_tennis_tennislive_to_typed.py",
+  "source_db": "/Users/jcchen/Documents/New project/data-private/warehouse/sports/tennis/sql-tennis.db",
+  "started_at": "2026-06-04T04:55:10.971546+00:00",
+  "finished_at": "2026-06-04T04:55:15.141586+00:00",
+  "player_urls": [
+    "https://www.tennislive.net/atp/carlos-alcaraz-garfia/"
+  ],
+  "match_urls": [
+    "https://www.tennislive.net/atp/match/alec-beckley-VS-dominik-palan/centurion-2-challenger-2026/"
+  ],
+  "max_matches": 2,
+  "player_results": [
+    {
+      "player_id": "tennis-player-carlos-alcaraz",
+      "player": "Carlos Alcaraz",
+      "snapshot_already_seen": false,
+      "surface_records": 77,
+      "match_links": 2,
+      "matches_fetched": 2,
+      "matches_skipped_existing": 0,
+      "matches_failed": 0
+    }
+  ],
+  "match_results": [
+    {
+      "match_id": "tl-2026-06-02-centurion-2-challenger-2026-alec-beckley-vs-dominik-palan",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "stats": 16,
+      "replay_games": 18,
+      "replay_points": 119
+    }
+  ]
+}

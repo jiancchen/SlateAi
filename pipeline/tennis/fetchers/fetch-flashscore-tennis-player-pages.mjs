@@ -30,6 +30,13 @@ const TOURNAMENT_SOURCES = [
     url: 'https://www.flashscoreusa.com/tennis/challenger-men-singles/birmingham/'
   },
   {
+    key: 'wta-125k-birmingham',
+    label: 'WTA 125K Birmingham',
+    aliases: ['WTA 125K Birmingham', 'Birmingham 125K Women'],
+    surface: 'Grass',
+    url: 'https://www.flashscoreusa.com/tennis/wta-125k-singles/birmingham/'
+  },
+  {
     key: 'centurion-2',
     label: 'ATP Challenger Centurion 2',
     aliases: ['ATP Challenger Centurion 2', 'Centurion 2 Challenger Men'],
@@ -332,22 +339,41 @@ const writeJson = async (filePath, payload) => {
 
 const readSlateGames = async (date) => {
   const gamesDir = path.join(ROOT, 'published-data/slates', date, 'games')
-  const files = await fs.readdir(gamesDir)
   const games = []
-  for (const file of files) {
-    if (!file.endsWith('.json')) continue
-    const payload = JSON.parse(await fs.readFile(path.join(gamesDir, file), 'utf8'))
-    if (payload.league !== 'Tennis') continue
-    const players = (payload.tennisContext?.players || payload.matchup || []).map((player) => player.name || player.displayName).filter(Boolean)
+  try {
+    const files = await fs.readdir(gamesDir)
+    for (const file of files) {
+      if (!file.endsWith('.json')) continue
+      const payload = JSON.parse(await fs.readFile(path.join(gamesDir, file), 'utf8'))
+      if (payload.league !== 'Tennis') continue
+      const players = (payload.tennisContext?.players || payload.matchup || []).map((player) => player.name || player.displayName).filter(Boolean)
+      if (players.length !== 2) continue
+      games.push({
+        id: payload.id,
+        title: payload.title,
+        stage: payload.stage,
+        tournament: payload.tennisContext?.warehouseContext?.tournament || payload.tennisContext?.court || payload.stage || '',
+        surface: payload.tennisContext?.surface || payload.surface || '',
+        players,
+        file
+      })
+    }
+  } catch (error) {
+    if (error.code !== 'ENOENT') throw error
+  }
+  const supplement = await readJson(`data-private/reference/tennis/robinhood-tennis-supplement-${date}.json`, { matches: [] })
+  for (const match of supplement.matches || []) {
+    if (games.some((game) => game.id === match.id)) continue
+    const players = (match.players || []).map((player) => player.name).filter(Boolean)
     if (players.length !== 2) continue
     games.push({
-      id: payload.id,
-      title: payload.title,
-      stage: payload.stage,
-      tournament: payload.tennisContext?.warehouseContext?.tournament || payload.tennisContext?.court || payload.stage || '',
-      surface: payload.tennisContext?.surface || payload.surface || '',
+      id: match.id,
+      title: match.title,
+      stage: match.tournament,
+      tournament: match.tournament,
+      surface: match.surface,
       players,
-      file
+      file: `robinhood-tennis-supplement-${date}.json`
     })
   }
   return games

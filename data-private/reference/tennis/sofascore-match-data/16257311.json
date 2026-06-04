@@ -1,0 +1,608 @@
+{
+  "source": "SofaScore",
+  "sourceUrl": "https://www.sofascore.com/tennis/match/tuncay-duran-alec-beckley#id:16257311",
+  "eventId": "16257311",
+  "slateDate": "2026-06-04",
+  "boardMatchId": "rh-atp-challenger-centurion-2-beckley-vs-duran-2026-06-04",
+  "boardTitle": "Alec Beckley vs Tuncay Duran",
+  "capturedAt": "2026-06-04T00:25:18.436Z",
+  "compactEvent": {
+    "id": 16257311,
+    "slug": "tuncay-duran-alec-beckley",
+    "status": {
+      "code": 0,
+      "description": "Not started",
+      "type": "notstarted"
+    },
+    "startTimestamp": 1780560000,
+    "tournament": {
+      "name": "Centurion 2, South Africa",
+      "slug": "centurion-2-south-africa",
+      "category": "Challenger",
+      "uniqueTournament": "ATP Challenger Centurion 2, South Africa Men Singles"
+    },
+    "roundInfo": {
+      "round": 5,
+      "name": "Round of 16",
+      "slug": "round-of-16",
+      "cupRoundType": 8
+    },
+    "groundType": "Hardcourt outdoor",
+    "homeTeam": {
+      "id": 305655,
+      "name": "Alec Beckley",
+      "shortName": "A. Beckley",
+      "ranking": 599,
+      "currentRanking": 486,
+      "country": {
+        "alpha2": "ZA",
+        "alpha3": "ZAF",
+        "name": "South Africa",
+        "slug": "south-africa"
+      },
+      "playerTeamInfo": {
+        "height": 1.83,
+        "weight": 75,
+        "plays": "right-handed",
+        "prizeCurrent": 4855,
+        "prizeTotal": 57375,
+        "birthCity": {
+          "name": "Johannesburg",
+          "country": {
+            "alpha2": "ZA",
+            "alpha3": "ZAF",
+            "name": "South Africa",
+            "slug": "south-africa"
+          },
+          "id": 19284
+        },
+        "id": 5052,
+        "birthplace": "Johannesburg, South Africa",
+        "birthDateTimestamp": 992822400,
+        "prizeCurrentRaw": {
+          "value": 4855,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 57375,
+          "currency": "EUR"
+        },
+        "currentRanking": 486
+      }
+    },
+    "awayTeam": {
+      "id": 377355,
+      "name": "Tuncay Duran",
+      "shortName": "T. Duran",
+      "ranking": 645,
+      "currentRanking": 645,
+      "country": {
+        "alpha2": "TR",
+        "alpha3": "TUR",
+        "name": "Türkiye",
+        "slug": "turkiye"
+      },
+      "playerTeamInfo": {
+        "height": 1.91,
+        "weight": 80,
+        "plays": "right-handed",
+        "prizeCurrent": 5563,
+        "prizeTotal": 28690,
+        "birthCity": {
+          "name": "Istanbul",
+          "country": {
+            "alpha2": "TR",
+            "alpha3": "TUR",
+            "name": "Türkiye",
+            "slug": "turkiye"
+          },
+          "id": 18208
+        },
+        "id": 5547,
+        "birthplace": "Istanbul, Türkiye",
+        "birthDateTimestamp": 1086134400,
+        "prizeCurrentRaw": {
+          "value": 5563,
+          "currency": "EUR"
+        },
+        "prizeTotalRaw": {
+          "value": 28690,
+          "currency": "EUR"
+        },
+        "currentRanking": 645
+      }
+    },
+    "homeScore": {},
+    "awayScore": {},
+    "winnerCode": null,
+    "firstToServe": null
+  },
+  "payloads": {
+    "event": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "event": {
+          "homeTeamSeed": "Q",
+          "awayTeamSeed": "Q",
+          "tournament": {
+            "name": "Centurion 2, South Africa",
+            "slug": "centurion-2-south-africa",
+            "category": {
+              "name": "Challenger",
+              "slug": "challenger",
+              "sport": {
+                "name": "Tennis",
+                "slug": "tennis",
+                "id": 5
+              },
+              "priority": 5,
+              "country": {},
+              "id": 72,
+              "flag": "challenger",
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "bn": "চ্যালেঞ্জার",
+                  "ar": "تحدي (تنس)",
+                  "hi": "डेनमार्क",
+                  "ru": "Challenger"
+                },
+                "shortNameTranslation": {}
+              }
+            },
+            "uniqueTournament": {
+              "name": "ATP Challenger Centurion 2, South Africa Men Singles",
+              "slug": "atp-challenger-centurion-2-south-africa-men-singles",
+              "category": {
+                "name": "Challenger",
+                "slug": "challenger",
+                "sport": {
+                  "name": "Tennis",
+                  "slug": "tennis",
+                  "id": 5
+                },
+                "priority": 5,
+                "country": {},
+                "id": 72,
+                "flag": "challenger",
+                "fieldTranslations": {
+                  "nameTranslation": {
+                    "bn": "চ্যালেঞ্জার",
+                    "ar": "تحدي (تنس)",
+                    "hi": "डेनमार्क",
+                    "ru": "Challenger"
+                  },
+                  "shortNameTranslation": {}
+                }
+              },
+              "userCount": 48,
+              "groundType": "Hardcourt outdoor",
+              "hasRounds": false,
+              "hasPerformanceGraphFeature": false,
+              "country": {},
+              "id": 35188,
+              "hasEventPlayerStatistics": false,
+              "displayInverseHomeAwayTeams": false
+            },
+            "priority": 0,
+            "isGroup": false,
+            "competitionType": 2,
+            "id": 186719,
+            "endTimestamp": 1780790400,
+            "startTimestamp": 1780272000
+          },
+          "season": {
+            "name": "ATP Challenger Centurion 2, South Africa Men Singles 2026",
+            "year": "2026",
+            "editor": false,
+            "id": 95495
+          },
+          "roundInfo": {
+            "round": 5,
+            "name": "Round of 16",
+            "slug": "round-of-16",
+            "cupRoundType": 8
+          },
+          "customId": "fnxcsfXad",
+          "status": {
+            "code": 0,
+            "description": "Not started",
+            "type": "notstarted"
+          },
+          "venue": {
+            "city": {
+              "name": "Centurion",
+              "country": {
+                "alpha2": "ZA",
+                "alpha3": "ZAF",
+                "name": "South Africa",
+                "slug": "south-africa"
+              },
+              "id": 20263
+            },
+            "hidden": true,
+            "slug": "centre-court",
+            "name": "Centre Court",
+            "country": {
+              "alpha2": "ZA",
+              "alpha3": "ZAF",
+              "name": "South Africa",
+              "slug": "south-africa"
+            },
+            "id": 59457,
+            "stadium": {
+              "name": "Centre Court"
+            }
+          },
+          "homeTeam": {
+            "name": "Alec Beckley",
+            "slug": "beckley-alec",
+            "shortName": "A. Beckley",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 249,
+            "playerTeamInfo": {
+              "height": 1.83,
+              "weight": 75,
+              "plays": "right-handed",
+              "prizeCurrent": 4855,
+              "prizeTotal": 57375,
+              "birthCity": {
+                "name": "Johannesburg",
+                "country": {
+                  "alpha2": "ZA",
+                  "alpha3": "ZAF",
+                  "name": "South Africa",
+                  "slug": "south-africa"
+                },
+                "id": 19284
+              },
+              "id": 5052,
+              "birthplace": "Johannesburg, South Africa",
+              "birthDateTimestamp": 992822400,
+              "prizeCurrentRaw": {
+                "value": 4855,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 57375,
+                "currency": "EUR"
+              },
+              "currentRanking": 486
+            },
+            "nameCode": "BEC",
+            "ranking": 599,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "ZA",
+              "alpha3": "ZAF",
+              "name": "South Africa",
+              "slug": "south-africa"
+            },
+            "id": 305655,
+            "fullName": "Alec Beckley",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "أليك بيكلي"
+              },
+              "shortNameTranslation": {
+                "ar": "أ. بيكلي"
+              }
+            },
+            "timeActive": []
+          },
+          "awayTeam": {
+            "name": "Tuncay Duran",
+            "slug": "duran-tuncay",
+            "shortName": "T. Duran",
+            "gender": "M",
+            "sport": {
+              "name": "Tennis",
+              "slug": "tennis",
+              "id": 5
+            },
+            "userCount": 262,
+            "playerTeamInfo": {
+              "height": 1.91,
+              "weight": 80,
+              "plays": "right-handed",
+              "prizeCurrent": 5563,
+              "prizeTotal": 28690,
+              "birthCity": {
+                "name": "Istanbul",
+                "country": {
+                  "alpha2": "TR",
+                  "alpha3": "TUR",
+                  "name": "Türkiye",
+                  "slug": "turkiye"
+                },
+                "id": 18208
+              },
+              "id": 5547,
+              "birthplace": "Istanbul, Türkiye",
+              "birthDateTimestamp": 1086134400,
+              "prizeCurrentRaw": {
+                "value": 5563,
+                "currency": "EUR"
+              },
+              "prizeTotalRaw": {
+                "value": 28690,
+                "currency": "EUR"
+              },
+              "currentRanking": 645
+            },
+            "nameCode": "DUR",
+            "ranking": 645,
+            "national": false,
+            "type": 1,
+            "country": {
+              "alpha2": "TR",
+              "alpha3": "TUR",
+              "name": "Türkiye",
+              "slug": "turkiye"
+            },
+            "id": 377355,
+            "fullName": "Tuncay Duran",
+            "subTeams": [],
+            "teamColors": {
+              "primary": "#374df5",
+              "secondary": "#374df5",
+              "text": "#ffffff"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "تونجاي دوران"
+              },
+              "shortNameTranslation": {
+                "ar": "ت. دوران"
+              }
+            },
+            "timeActive": []
+          },
+          "homeScore": {},
+          "awayScore": {},
+          "time": {},
+          "changes": {
+            "changeTimestamp": 0
+          },
+          "hasGlobalHighlights": false,
+          "crowdsourcingDataDisplayEnabled": false,
+          "id": 16257311,
+          "defaultPeriodCount": 3,
+          "slug": "tuncay-duran-alec-beckley",
+          "startTimestamp": 1780560000,
+          "periods": {
+            "point": "Game",
+            "current": "Match",
+            "period1": "1st set",
+            "period2": "2nd set",
+            "period3": "3rd set",
+            "period4": "4th set",
+            "period5": "5th set"
+          },
+          "finalResultOnly": false,
+          "feedLocked": false,
+          "groundType": "Hardcourt outdoor",
+          "showTotoPromo": true,
+          "isEditor": false,
+          "eventFilters": {
+            "category": [
+              "singles"
+            ],
+            "level": [
+              "pro"
+            ],
+            "tournament": [
+              "lower"
+            ],
+            "gender": [
+              "M"
+            ]
+          }
+        }
+      }
+    },
+    "statistics": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "h2h": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "teamDuel": {
+          "homeWins": 0,
+          "awayWins": 1,
+          "draws": 0
+        },
+        "managerDuel": null
+      }
+    },
+    "pointByPoint": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "votes": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "vote": {
+          "vote1": 182,
+          "vote2": 215,
+          "voteX": null
+        },
+        "bothTeamsToScoreVote": {
+          "voteYes": 0,
+          "voteNo": 0
+        },
+        "firstTeamToScoreVote": {
+          "voteHome": 0,
+          "voteNoGoal": 0,
+          "voteAway": 0
+        },
+        "whoShouldHaveWonVote": {
+          "vote1": 0,
+          "vote2": 0
+        }
+      }
+    },
+    "tennisPower": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "tennisPowerRankings": []
+      }
+    },
+    "winningOdds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "home": {
+          "fractionalValue": "6/5",
+          "expected": 45,
+          "actual": 25,
+          "id": 22243413
+        },
+        "away": {
+          "fractionalValue": "8/13",
+          "expected": 62,
+          "actual": 90,
+          "id": 22243414
+        }
+      }
+    },
+    "odds": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "featured": {
+          "default": {
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195675756,
+            "suspended": false,
+            "id": 316857414,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "6/5",
+                "fractionalValue": "6/5",
+                "sourceId": 1424256849,
+                "name": "1",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "8/13",
+                "fractionalValue": "8/13",
+                "sourceId": 1424256891,
+                "name": "2",
+                "change": 0
+              }
+            ]
+          },
+          "asian": {
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195675756,
+            "suspended": false,
+            "id": 316857414,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "6/5",
+                "fractionalValue": "6/5",
+                "sourceId": 1424256849,
+                "name": "1",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "8/13",
+                "fractionalValue": "8/13",
+                "sourceId": 1424256891,
+                "name": "2",
+                "change": 0
+              }
+            ]
+          },
+          "fullTime": {
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 195675756,
+            "suspended": false,
+            "id": 316857414,
+            "marketGroup": "Home/Away",
+            "marketPeriod": "Match",
+            "choices": [
+              {
+                "initialFractionalValue": "6/5",
+                "fractionalValue": "6/5",
+                "sourceId": 1424256849,
+                "name": "1",
+                "change": 0
+              },
+              {
+                "initialFractionalValue": "8/13",
+                "fractionalValue": "8/13",
+                "sourceId": 1424256891,
+                "name": "2",
+                "change": 0
+              }
+            ]
+          }
+        },
+        "hasMoreOdds": false
+      }
+    },
+    "homeSeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    },
+    "awaySeasonStats": {
+      "status": 200,
+      "ok": true,
+      "body": {
+        "error": {
+          "code": 404,
+          "message": "Not Found"
+        }
+      }
+    }
+  }
+}
