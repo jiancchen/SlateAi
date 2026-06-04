@@ -311,6 +311,102 @@ export function MlbDetail(props: MlbDetailProps) {
       </div>
     )
   }
+  const espnSplitColumns = (category: AnyRecord) => {
+    const preferred =
+      category.statType === 'battingAllowed'
+        ? ['AB', 'R', 'H', '2B', '3B', 'HR', 'RBI', 'BB', 'HBP', 'SO', 'SB', 'CS', 'AVG', 'OBP', 'SLG', 'OPS']
+        : ['ERA', 'W', 'L', 'GP', 'GS', 'IP', 'H', 'R', 'ER', 'HR', 'BB', 'K', 'OBA']
+    const labels = Array.isArray(category.labels) ? category.labels : []
+    return preferred.filter((label) => labels.includes(label))
+  }
+  const espnSplitValue = (row: AnyRecord, label: string) =>
+    row?.stats?.find((stat: AnyRecord) => stat.label === label || stat.name === label)?.value ?? ''
+  const renderEspnSplitTable = (starter: AnyRecord, teamName: string) => {
+    const splitBlock = starter.espnSplits
+    if (!splitBlock) return null
+    const categories = Array.isArray(splitBlock.categories)
+      ? splitBlock.categories.filter((category: AnyRecord) => Array.isArray(category.rows) && category.rows.length)
+      : []
+    const insights = Array.isArray(splitBlock.insights) ? splitBlock.insights.filter(Boolean).slice(0, 4) : []
+    const sourceStatus = splitBlock.sourceStatus || ''
+    if (!categories.length && sourceStatus !== 'fetched') {
+      return (
+        <div className="espn-splits-panel muted">
+          <div className="espn-splits-head">
+            <div>
+              <span>ESPN splits</span>
+              <strong>No split table available</strong>
+            </div>
+            <small>{sourceStatus || 'missing-source'}</small>
+          </div>
+        </div>
+      )
+    }
+    return (
+      <div className="espn-splits-panel">
+        <div className="espn-splits-head">
+          <div>
+            <span>ESPN splits</span>
+            <strong>{splitBlock.pitcherName || starter.headline.replace(/\s*\([LR?]HP\)$/, '')}</strong>
+          </div>
+          {splitBlock.sourceUrl ? (
+            <a href={splitBlock.sourceUrl} target="_blank" rel="noreferrer">
+              source
+            </a>
+          ) : (
+            <small>{sourceStatus || 'stored'}</small>
+          )}
+        </div>
+        {insights.length ? (
+          <div className="espn-splits-insights">
+            {insights.map((insight: string) => (
+              <span key={`${teamName}-espn-insight-${insight}`}>{insight}</span>
+            ))}
+          </div>
+        ) : null}
+        <div className="espn-splits-group-list">
+          {categories.map((category: AnyRecord) => {
+            const columns = espnSplitColumns(category)
+            if (!columns.length) return null
+            return (
+              <details
+                key={`${teamName}-espn-splits-${category.key}`}
+                className="espn-splits-group"
+                open={['split', 'byBreakdown', 'byRightLeft', 'byArena', 'byInningPitches'].includes(category.key)}
+              >
+                <summary>
+                  <strong>{category.label}</strong>
+                  <small>{category.statType === 'battingAllowed' ? 'batting allowed' : 'pitching'}</small>
+                </summary>
+                <div className="espn-splits-table-scroll">
+                  <table className="espn-splits-table">
+                    <thead>
+                      <tr>
+                        <th>{category.label}</th>
+                        {columns.map((label) => (
+                          <th key={`${teamName}-${category.key}-${label}`}>{label}</th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {category.rows.map((row: AnyRecord) => (
+                        <tr key={`${teamName}-${category.key}-${row.label}`}>
+                          <td>{row.label}</td>
+                          {columns.map((label) => (
+                            <td key={`${teamName}-${category.key}-${row.label}-${label}`}>{espnSplitValue(row, label)}</td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+            )
+          })}
+        </div>
+      </div>
+    )
+  }
   const awayRecentHistoryKey = `${historyScopeKey}:away:recent`
   const awayMatchupHistoryKey = `${historyScopeKey}:away:matchup`
   const homeRecentHistoryKey = `${historyScopeKey}:home:recent`
@@ -715,6 +811,7 @@ export function MlbDetail(props: MlbDetailProps) {
               `${awayStarter.headline.replace(/\s*\([LR?]HP\)$/, '')} has not started against ${homeTeam} this season.`
             )}
             {renderStatmuseMatchupPanel(awayStarter, awayTeam)}
+            {renderEspnSplitTable(awayStarter, awayTeam)}
           </div>
           {awayStarter.recent ? <small>{awayStarter.recent}</small> : null}
           {awayStarter.firstInningSeasonLine ? <small>{awayStarter.firstInningSeasonLine}</small> : null}
@@ -828,6 +925,7 @@ export function MlbDetail(props: MlbDetailProps) {
               `${homeStarter.headline.replace(/\s*\([LR?]HP\)$/, '')} has not started against ${awayTeam} this season.`
             )}
             {renderStatmuseMatchupPanel(homeStarter, homeTeam)}
+            {renderEspnSplitTable(homeStarter, homeTeam)}
           </div>
           {homeStarter.recent ? <small>{homeStarter.recent}</small> : null}
           {homeStarter.firstInningSeasonLine ? <small>{homeStarter.firstInningSeasonLine}</small> : null}

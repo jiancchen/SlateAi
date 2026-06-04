@@ -363,6 +363,15 @@ const loadDbContext = (date) => {
     `,
     [date]
   )
+  const espnPitcherSplitRows = querySqlite(
+    `
+    select *
+    from mlb_pitcher_espn_splits
+    where snapshot_date = ?
+    `,
+    [date],
+    { maxBuffer: 1024 * 1024 * 20 }
+  )
 
   return {
     pitcherSeasonById: indexBy(pitcherSeasonRows, (row) => row.pitcher_id),
@@ -381,7 +390,8 @@ const loadDbContext = (date) => {
     mistakeByTeamId: groupBy(mistakeRows, (row) => row.team_id),
     bullpenShapeByTeamId: groupBy(bullpenShapeRows, (row) => row.team_id),
     teamStateByTeamId: indexBy(teamStateRows, (row) => row.team_id),
-    sunByGameId: indexBy(sunRows, (row) => row.game_id)
+    sunByGameId: indexBy(sunRows, (row) => row.game_id),
+    espnPitcherSplitsByGamePitcher: indexBy(espnPitcherSplitRows, (row) => `${row.game_id}:${row.pitcher_id}`)
   }
 }
 
@@ -399,10 +409,28 @@ const buildPitchMixSummary = (rows = []) =>
     .map((row) => `${row.pitch_type} ${round(row.pitch_share, 0) ?? 0}%`)
     .join(' / ')
 
+const buildEspnPitcherSplits = (row = {}) => {
+  if (!row?.source_status) return null
+  return {
+    source: 'ESPN player splits',
+    sourceUrl: row.source_url || '',
+    sourceStatus: row.source_status,
+    espnAthleteId: row.espn_athlete_id || '',
+    pitcherName: row.pitcher_name || '',
+    pitcherTeam: row.pitcher_team || '',
+    opponentTeam: row.opponent_team || '',
+    venueName: row.venue_name || '',
+    categories: parseJson(row.categories_json) || [],
+    insights: parseJson(row.insights_json) || [],
+    fetchedAt: row.fetched_at || ''
+  }
+}
+
 const buildPitcher = (starter = {}, context) => {
   const season = context.pitcherSeasonById.get(starter.player_id) || {}
   const form = bestWindowRow(context.pitcherFormById.get(starter.player_id) || [], [5, 10])
   const pitchMixRows = context.pitcherPitchMixById.get(starter.player_id) || []
+  const espnSplits = buildEspnPitcherSplits(context.espnPitcherSplitsByGamePitcher.get(`${starter.game_id}:${starter.player_id}`))
   const outs = num(season.outs_recorded, 0)
   const innings = outs / 3
   const earnedRuns = num(season.earned_runs, null)
@@ -432,6 +460,7 @@ const buildPitcher = (starter = {}, context) => {
     gamesStarted: starts,
     probableSource: starter.source_name || 'typed-db',
     pitchMixSummary: buildPitchMixSummary(pitchMixRows),
+    espnSplits,
     recentForm: form
       ? {
           windowStarts: num(form.window_starts),
@@ -632,7 +661,15 @@ const buildBullpenChain = (teamId, context) => {
 
 const buildTeamOffenseContext = (teamId, role, context) => {
   const rolling = bestWindowRow(context.rollingByTeamId.get(teamId) || [], [10, 5, 15, 30])
-  if (!rolling) return null
+  if (!rolling) {
+    return {
+      hitsPerGame: 8,
+      last3HitsPerGame: 8,
+      awayHitsPerGame: /away/i.test(role) ? 8 : 7.9,
+      homeHitsPerGame: /home/i.test(role) ? 8 : 8.1,
+      staleFeed: true
+    }
+  }
   const hits = num(rolling.hits_per_game, null)
   return {
     hitsPerGame: hits,

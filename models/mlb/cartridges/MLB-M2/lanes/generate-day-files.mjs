@@ -1929,6 +1929,68 @@ const buildStarterVsTeamStatmuseByGameSide = ({ date, games }) => {
   return byGameSide
 }
 
+const buildEspnPitcherSplitsByGameSide = ({ date, games }) => {
+  const gamePks = [...new Set(games.map((game) => Number(game.gamePk)).filter((gamePk) => Number.isFinite(gamePk) && gamePk > 0))]
+  if (!gamePks.length) return {}
+
+  const rows = runSqliteJson(
+    `select
+      g.mlb_game_pk as game_pk,
+      splits.mlb_player_id,
+      splits.espn_athlete_id,
+      splits.pitcher_name,
+      splits.pitcher_team,
+      splits.opponent_team,
+      splits.venue_name,
+      splits.source_url,
+      splits.source_status,
+      splits.categories_json,
+      splits.insights_json,
+      splits.fetched_at
+    from mlb_pitcher_espn_splits splits
+    join games g on g.game_id = splits.game_id
+    where splits.snapshot_date = '${date}'
+      and g.mlb_game_pk in (${gamePks.join(',')})
+    order by g.mlb_game_pk, splits.pitcher_name;`
+  )
+
+  const byGamePk = Object.fromEntries(games.map((game) => [Number(game.gamePk), game]))
+  const byGameSide = {}
+  rows.forEach((row) => {
+    const game = byGamePk[Number(row.game_pk)]
+    if (!game) return
+    const mlbPlayerId = Number(row.mlb_player_id)
+    const pitcherName = String(row.pitcher_name || '')
+    const side =
+      Number.isFinite(mlbPlayerId) && mlbPlayerId === Number(game.awayPitcher?.id)
+        ? 'away'
+        : Number.isFinite(mlbPlayerId) && mlbPlayerId === Number(game.homePitcher?.id)
+          ? 'home'
+          : pitcherName && pitcherName === game.awayPitcher?.fullName
+            ? 'away'
+            : pitcherName && pitcherName === game.homePitcher?.fullName
+              ? 'home'
+              : ''
+    if (!side) return
+
+    byGameSide[`${game.id}:${side}`] = {
+      source: 'ESPN player splits',
+      sourceUrl: row.source_url || '',
+      sourceStatus: row.source_status || '',
+      espnAthleteId: row.espn_athlete_id || '',
+      pitcherName: row.pitcher_name || '',
+      pitcherTeam: row.pitcher_team || '',
+      opponentTeam: row.opponent_team || '',
+      venueName: row.venue_name || '',
+      categories: safeJsonParse(row.categories_json, []),
+      insights: safeJsonParse(row.insights_json, []),
+      fetchedAt: row.fetched_at || ''
+    }
+  })
+
+  return byGameSide
+}
+
 const buildRecentGamesByTeam = ({ date, games, limit = 8 }) => {
   const teams = [...new Set(games.flatMap((game) => [game.away, game.home]).filter(Boolean))]
 
@@ -3122,6 +3184,7 @@ const main = async () => {
   const pitcherWarByPitcherId = buildPitcherWarByPitcherId({ date: options.date, games: rawGames })
   const pitcherStrikeoutMarketsByGamePk = buildPitcherStrikeoutMarketsByGamePk({ date: options.date, games: rawGames })
   const starterVsTeamStatmuseByGameSide = buildStarterVsTeamStatmuseByGameSide({ date: options.date, games: rawGames })
+  const espnPitcherSplitsByGameSide = buildEspnPitcherSplitsByGameSide({ date: options.date, games: rawGames })
   const seriesEarlyPhaseByTeam = buildSeriesEarlyPhaseByTeam({ date: options.date, games: rawGames })
   const recentGamesByTeam = buildRecentGamesByTeam({ date: options.date, games: rawGames })
   const recentInningHistoryByTeam = buildRecentInningHistoryByTeam({ date: options.date, games: rawGames })
@@ -3145,6 +3208,7 @@ const main = async () => {
         : [],
       strikeoutMarket: Number.isFinite(game.gamePk) ? pitcherStrikeoutMarketsByGamePk[game.gamePk]?.away ?? null : null,
       statmuseVsOpponent: starterVsTeamStatmuseByGameSide[`${game.id}:away`] ?? null,
+      espnSplits: espnPitcherSplitsByGameSide[`${game.id}:away`] ?? null,
       recentForm: Number.isFinite(game.awayPitcher?.id)
         ? recentStarterFormByPitcherId[game.awayPitcher.id] ?? null
         : null,
@@ -3173,6 +3237,7 @@ const main = async () => {
         : [],
       strikeoutMarket: Number.isFinite(game.gamePk) ? pitcherStrikeoutMarketsByGamePk[game.gamePk]?.home ?? null : null,
       statmuseVsOpponent: starterVsTeamStatmuseByGameSide[`${game.id}:home`] ?? null,
+      espnSplits: espnPitcherSplitsByGameSide[`${game.id}:home`] ?? null,
       recentForm: Number.isFinite(game.homePitcher?.id)
         ? recentStarterFormByPitcherId[game.homePitcher.id] ?? null
         : null,

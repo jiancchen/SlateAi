@@ -873,7 +873,8 @@ const buildPitcherSummary = (
     usageLabel: usageContext.workloadLabel || '',
     usageNote: usageContext.note || '',
     usageStatusLabel: usageContext.label || '',
-    savant: pitcher.savant || null
+    savant: pitcher.savant || null,
+    espnSplits: pitcher.espnSplits || null
   }
 }
 
