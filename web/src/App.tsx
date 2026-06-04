@@ -67,6 +67,11 @@ const deskTabs: Array<{ id: DeskTabId; label: string }> = [
   { id: 'stories', label: 'Stories' }
 ]
 
+const publicDeskTabAllowlist = String(import.meta.env.VITE_PUBLIC_DESK_TABS || '')
+  .split(',')
+  .map((entry) => entry.trim())
+  .filter(Boolean)
+
 const sidebarTabs: Array<{ id: SidebarTabId; label: string }> = [
   { id: 'ticket', label: 'Ticket' },
   { id: 'markets', label: 'Markets' },
@@ -990,15 +995,28 @@ const buildTeamSnapshotChips = ({
   teamContext,
   lineupConversion,
   offenseContext,
-  firstInningTeam
+  firstInningTeam,
+  seriesEarlyPhase,
+  recentGames,
+  opponentName
 }: {
   teamState?: AnyRecord | null
   teamContext?: AnyRecord | null
   lineupConversion?: AnyRecord | null
   offenseContext?: AnyRecord | null
   firstInningTeam?: AnyRecord | null
+  seriesEarlyPhase?: AnyRecord | null
+  recentGames?: AnyRecord[] | null
+  opponentName?: string
 }) => {
   const chips: Array<{ label: string; value: string }> = []
+  const sampleCount = (rate: unknown, sample: number) => {
+    const numericRate = Number(rate)
+    if (!Number.isFinite(numericRate) || sample <= 0) return null
+    return Math.round(clamp(numericRate, 0, 1) * sample)
+  }
+  const gameWord = (count: number) => `${count} game${count === 1 ? '' : 's'}`
+  const opponentSuffix = opponentName ? ` vs ${opponentName}` : ''
 
   if (teamState && Number(teamState.gamesSample || 0) > 0) {
     const gamesSample = Number(teamState.gamesSample || 0)
@@ -1006,6 +1024,19 @@ const buildTeamSnapshotChips = ({
     chips.push({
       label: `Last ${gamesSample}`,
       value: `${recordLabel || 'n/a'} · ${formatSignedNumber(teamState.runDiffLast5, 1)} RD/G`
+    })
+  } else if (Array.isArray(recentGames) && recentGames.length) {
+    const recentWindow = recentGames.slice(-5)
+    const wins = recentWindow.filter((game) => String(game.result || '').toUpperCase() === 'W').length
+    const losses = recentWindow.filter((game) => String(game.result || '').toUpperCase() === 'L').length
+    const runDiff =
+      recentWindow.reduce(
+        (sum, game) => sum + (Number(game.runsFor || 0) - Number(game.runsAgainst || 0)),
+        0
+      ) / Math.max(1, recentWindow.length)
+    chips.push({
+      label: `Last ${recentWindow.length}`,
+      value: `${wins}-${losses} · ${formatSignedNumber(runDiff, 1)} RD/G`
     })
   }
 
@@ -1022,12 +1053,44 @@ const buildTeamSnapshotChips = ({
       label: `Recent ${Number(lineupConversion.gamesSample || 0)}`,
       value: `Conv ${formatNumber(lineupConversion.lineupConversionIndex, 0)} · Quiet F5 ${formatPercent(Number(lineupConversion.quietFirst5Rate || 0) * 100, 0)}`
     })
+  } else if (seriesEarlyPhase && Number(seriesEarlyPhase.gamesSample || 0) > 0) {
+    const gamesSample = Number(seriesEarlyPhase.gamesSample || 0)
+    const strandedGames = sampleCount(seriesEarlyPhase.trafficNoConversionRate, gamesSample)
+    const quietFirst3Games = sampleCount(seriesEarlyPhase.scorelessFirst3Rate, gamesSample)
+    const lines = [
+      strandedGames != null && strandedGames > 0
+        ? `Traffic stranded in ${strandedGames} of last ${gamesSample}${opponentSuffix}`
+        : `Converted traffic in last ${gamesSample}${opponentSuffix}`,
+      quietFirst3Games != null && quietFirst3Games > 0
+        ? `Quiet through 3 in ${quietFirst3Games} of last ${gamesSample}`
+        : `Early scoring showed up before the 4th`
+    ]
+    chips.push({
+      label: 'Series read',
+      value: lines.join(' · ')
+    })
   }
 
   if (firstInningTeam && Number(firstInningTeam.gamesSample || 0) > 0) {
     chips.push({
       label: `1st ${Number(firstInningTeam.gamesSample || 0)}`,
       value: `Score ${formatPercent(Number(firstInningTeam.scoredFirstInningRate || 0) * 100, 0)} · Allow ${formatPercent(Number(firstInningTeam.allowedFirstInningRate || 0) * 100, 0)}`
+    })
+  } else if (seriesEarlyPhase && Number(seriesEarlyPhase.gamesSample || 0) > 0) {
+    const gamesSample = Number(seriesEarlyPhase.gamesSample || 0)
+    const scoredGames = sampleCount(seriesEarlyPhase.scoredFirstInningRate, gamesSample)
+    const allowedGames = sampleCount(seriesEarlyPhase.allowedFirstInningRate, gamesSample)
+    const lines = [
+      scoredGames != null && scoredGames > 0
+        ? `Scored in the 1st in ${scoredGames} of last ${gamesSample}`
+        : `No 1st-inning runs scored in last ${gamesSample}`,
+      allowedGames != null && allowedGames > 0
+        ? `Allowed a 1st-inning run in ${allowedGames} of last ${gamesSample}`
+        : `No 1st-inning runs allowed in last ${gamesSample}`
+    ]
+    chips.push({
+      label: '1st inning',
+      value: lines.join(' · ')
     })
   }
 
@@ -1991,6 +2054,9 @@ function App() {
   const publicStaticMode = isPublicStaticMode()
   const visibleDeskTabs = useMemo(
     () =>
+      publicDeskTabAllowlist.length
+        ? deskTabs.filter((tab) => publicDeskTabAllowlist.includes(tab.id))
+        :
       publicStaticMode
         ? deskTabs.filter((tab) => !['models', 'history', 'stories'].includes(tab.id))
         : deskTabs,
@@ -3394,6 +3460,139 @@ function App() {
     const first5TotalRows: AnyRecord[] = []
     const first5TotalResearchRows: AnyRecord[] = []
 
+    mlbGames.forEach((game: AnyRecord) => {
+      const projection = game.analysis?.mlbProjection ?? {}
+      const awayFirst5Runs = Number(projection.awayFirst5ProjectedRuns)
+      const homeFirst5Runs = Number(projection.homeFirst5ProjectedRuns)
+      if (!Number.isFinite(awayFirst5Runs) || !Number.isFinite(homeFirst5Runs)) return
+
+      const participants = Array.isArray(game.moneyline?.participants) ? game.moneyline.participants : []
+      const eventState = getEventState(game, activeDayIsoDate, pacificClock)
+      const leadProbabilities = buildFirst5LeadProbabilities(awayFirst5Runs, homeFirst5Runs)
+      const pickIndex = homeFirst5Runs >= awayFirst5Runs ? 1 : 0
+      const participant =
+        participants.find((entry: AnyRecord) => Number(entry.index) === pickIndex) ??
+        participants[pickIndex] ??
+        game.matchup?.[pickIndex] ??
+        null
+      const pickRuns = pickIndex === 0 ? awayFirst5Runs : homeFirst5Runs
+      const opponentRuns = pickIndex === 0 ? homeFirst5Runs : awayFirst5Runs
+      const leadPct = pickIndex === 0 ? leadProbabilities.awayWinPct : leadProbabilities.homeWinPct
+      const runEdge = pickRuns - opponentRuns
+      const f5Confidence = clamp(Math.round(Number(leadPct) || 50), 50, 86)
+
+      if (participant && Math.abs(runEdge) >= 0.15) {
+        first5MoneylineRows.push({
+          id: `f5-ml:${game.id}:${participant.id || pickIndex}`,
+          category: 'first5-ml',
+          actionKind: 'ticket',
+          gameId: game.id,
+          league: game.league,
+          start: game.start,
+          startMinutes: Number(game.startMinutes) || 0,
+          stage: game.stage,
+          title: `${participant.name} F5 ML`,
+          subtitle: game.title,
+          confidence: f5Confidence,
+          sortConfidence: f5Confidence,
+          sortEdge: Math.abs(runEdge),
+          priceLabel: `Lead ${formatNumber(leadPct, 1)}% | Push ${formatNumber(leadProbabilities.tiePct, 1)}%`,
+          metaLabel: `Proj F5 ${formatNumber(awayFirst5Runs, 1)}-${formatNumber(homeFirst5Runs, 1)} | edge ${formatSignedNumber(runEdge, 1)} | push ${formatNumber(leadProbabilities.tiePct, 1)}%`,
+          summary: `${participant.name} projects ${formatSignedNumber(runEdge, 1)} first-five runs better in the M2 starter window.`,
+          tags: [
+            'M2 F5 ML',
+            `${formatNumber(leadPct, 1)}% lead`,
+            `push ${formatNumber(leadProbabilities.tiePct, 1)}%`,
+            projection.first5EdgeTeam ? `edge ${projection.first5EdgeTeam}` : null
+          ].filter(Boolean).slice(0, 4),
+          invalid: eventState.invalid,
+          statusLabel: eventState.label,
+          tone: eventState.tone,
+          selected: selectedPicks[game.id] === participant.id,
+          raw: {
+            game,
+            marketType: 'F5 ML',
+            selection: participant.name,
+            participant,
+            phaseId: 'first5',
+            projectedRuns: pickRuns,
+            opponentProjectedRuns: opponentRuns,
+            awayFirst5ProjectedRuns: awayFirst5Runs,
+            homeFirst5ProjectedRuns: homeFirst5Runs,
+            runEdge,
+            leadPct,
+            tiePct: leadProbabilities.tiePct,
+            pushPct: leadProbabilities.tiePct,
+            confidence: f5Confidence,
+            valueGate: 'model-owned',
+            hasMarket: false,
+            source: 'analysis.mlbProjection'
+          }
+        })
+      }
+
+      const first5Total = projection.totals?.first5 ?? null
+      const first5Lean = String(first5Total?.lean || '').trim()
+      const projectedFirst5Total = Number.isFinite(Number(first5Total?.tailOverlay?.adjustedProjectedRuns))
+        ? Number(first5Total.tailOverlay.adjustedProjectedRuns)
+        : awayFirst5Runs + homeFirst5Runs
+      const first5Edge = Number(first5Total?.edge)
+      const first5Line = Number.isFinite(first5Edge) ? projectedFirst5Total - first5Edge : Number.NaN
+      const totalProbability = buildTotalProbabilityPct(projectedFirst5Total, first5Line, first5Lean)
+      if (first5Lean && Number.isFinite(first5Edge) && Number.isFinite(first5Line)) {
+        const confidence = clamp(Math.round(Number(totalProbability) || (54 + Math.abs(first5Edge) * 8)), 50, 78)
+        first5TotalRows.push({
+          id: `f5-total:${game.id}`,
+          category: 'first5-total',
+          actionKind: 'total',
+          gameId: game.id,
+          league: game.league,
+          start: game.start,
+          startMinutes: Number(game.startMinutes) || 0,
+          stage: game.stage,
+          title: `${first5Lean} F5 ${formatNumber(first5Line, 1)}`,
+          subtitle: game.title,
+          confidence,
+          sortConfidence: confidence,
+          sortEdge: Math.abs(first5Edge),
+          priceLabel: `Proj ${formatNumber(projectedFirst5Total, 1)} | edge ${formatSignedNumber(first5Edge, 1)}`,
+          metaLabel: `${first5Total?.strength || 'Model'} | ${formatNumber(Number(totalProbability), 1)}% model`,
+          summary: first5Total?.summary || `${first5Lean} first-five total with ${formatSignedNumber(first5Edge, 1)} M2 run edge.`,
+          tags: [
+            'M2 F5 O/U',
+            first5Total?.strength,
+            `${formatSignedNumber(first5Edge, 1)} runs`,
+            first5Total?.chaosGate?.warning ? 'chaos warning' : null
+          ].filter(Boolean).slice(0, 4),
+          invalid: eventState.invalid,
+          statusLabel: eventState.label,
+          tone: eventState.tone,
+          selected: false,
+          raw: {
+            game,
+            marketType: 'F5 O/U',
+            selection: first5Lean,
+            phaseId: 'first5',
+            line: first5Line,
+            projectedRuns: projectedFirst5Total,
+            edge: first5Edge,
+            strength: first5Total?.strength || '',
+            probability: totalProbability,
+            valueGate: 'model-owned',
+            hasMarket: false,
+            source: 'analysis.mlbProjection.totals.first5'
+          }
+        })
+      }
+    })
+
+    first5MoneylineRows.sort(
+      (left: AnyRecord, right: AnyRecord) => right.sortEdge - left.sortEdge || right.sortConfidence - left.sortConfidence
+    )
+    first5TotalRows.sort(
+      (left: AnyRecord, right: AnyRecord) => right.sortEdge - left.sortEdge || right.sortConfidence - left.sortConfidence
+    )
+
     const mlShapeRows = mlbGames
       .map((game: AnyRecord) => {
         const projection = game.analysis?.mlbProjection ?? {}
@@ -3773,7 +3972,7 @@ function App() {
       first5TotalRows,
       first5TotalResearchRows,
       first5TotalGateNote:
-        'MLB value rows must be model-owned. The UI does not derive first-five O/U, first-five ML, or total value rows from projections.',
+        'First-five MLB rows are generated from the M2 starter-window projection fields already packaged on each game.',
       totalBaseRows,
       tbBackedRows,
       tbSoftHeatRows,
@@ -3793,8 +3992,8 @@ function App() {
       topRows,
         note:
           fullyPostedGames === mlbGames.length
-          ? 'MLB value center filters model-owned rows only. ML shape ranks the model pick by projected run difference as a share of the total run environment.'
-          : `MLB value center is live, but only ${fullyPostedGames}/${mlbGames.length} games are fully posted. ML shape ranks projected run difference as a share of total runs; UI-side first-five and totals EV transforms stay disabled.`
+          ? 'MLB value center filters model-owned rows only. ML shape and first-five rows use the packaged M2 projection fields for the slate.'
+          : `MLB value center is live, but only ${fullyPostedGames}/${mlbGames.length} games are fully posted. ML shape and first-five rows use packaged M2 projection fields; priced EV rows stay gated to model-owned market data.`
       }
   }, [
     activeDayId,

@@ -185,6 +185,112 @@ export function BoardView(props: BoardViewProps) {
     const hand = formatPitcherHand(starter.pitchHand || starter.hand || starter.throws || starter.handedness)
     return hand ? `SP ${name} (${hand})` : `SP ${name}`
   }
+  const statMuseSeasonRows = (history: AnyRecord | null | undefined) =>
+    Array.isArray(history?.seasons)
+      ? history.seasons.filter((season: AnyRecord) => String(season?.year || '').trim())
+      : []
+  const formatStatMuseInnings = (value: unknown) => {
+    const numeric = Number(value)
+    if (!Number.isFinite(numeric)) return String(value || '0.0')
+    const whole = Math.floor(numeric)
+    const partial = Math.round((numeric - whole) * 3)
+    return `${whole}.${partial >= 0 && partial <= 2 ? partial : 0}`
+  }
+  const statMuseFallbackLine = (history: AnyRecord | null | undefined) => {
+    if (!history) return ''
+    const summary = String(history.summary || '').trim()
+    if (summary) return summary
+    return history.status === 'found'
+      ? `${history.pitcherName || 'Starter'} vs ${history.opponentTeam || 'opponent'}: StatMuse table attached.`
+      : `No StatMuse pitcher-vs-team table found for ${history.pitcherName || 'starter'} vs ${history.opponentTeam || 'opponent'}.`
+  }
+  const renderStatMusePitcherHistory = (
+    label: string,
+    history: AnyRecord | null | undefined,
+    linkLabel: string
+  ) => {
+    if (!history) return null
+    const seasons = statMuseSeasonRows(history)
+    return (
+      <div className="statmuse-history-card">
+        <div className="statmuse-history-head">
+          <strong>{label}</strong>
+          {history.url ? (
+            <a href={history.url} target="_blank" rel="noreferrer">
+              {linkLabel}
+            </a>
+          ) : null}
+        </div>
+        {seasons.length ? (
+          <div className="statmuse-season-list">
+            {seasons.map((season: AnyRecord) => (
+              <div key={`${label}-${season.year}`} className="statmuse-season-row">
+                <strong>{season.year}</strong>
+                <span>
+                  {season.games || season.gamesStarted || 0} GS/app | {formatStatMuseInnings(season.ip ?? season.inningsPitched)} IP |{' '}
+                  {formatNumber(season.era, 2)} ERA | {Number(season.so ?? season.strikeouts ?? season.k ?? 0)} K |{' '}
+                  {Number(season.er ?? season.earnedRuns ?? 0)} ER | {Number(season.hr ?? season.homeRuns ?? 0)} HR |{' '}
+                  {Number(season.bb ?? season.walks ?? 0)} BB
+                </span>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <small>{statMuseFallbackLine(history)}</small>
+        )}
+      </div>
+    )
+  }
+  const formatMiniBridgeChain = (game: AnyRecord, sideKey: string, team: AnyRecord | null | undefined) => {
+    const shadowContext = game.relieverShadowContext?.[sideKey] ?? null
+    if (Array.isArray(shadowContext?.relievers) && shadowContext.relievers.length) {
+      const relievers = shadowContext.relievers
+      const chainLabel = relievers.slice(0, 2).map((reliever: AnyRecord) => reliever.name).filter(Boolean).join(' -> ')
+      const context = [
+        Number.isFinite(Number(shadowContext.topTwoSharePct)) ? `top-2 share ${formatNumber(shadowContext.topTwoSharePct, 1)}%` : null,
+        Number.isFinite(Number(shadowContext.starterHookRiskPct)) ? `hook ${formatNumber(shadowContext.starterHookRiskPct, 1)}%` : null,
+        Number.isFinite(Number(shadowContext.remainingTop3AvailabilityAvg))
+          ? `availability ${formatNumber(shadowContext.remainingTop3AvailabilityAvg, 0)}/100`
+          : null,
+        shadowContext.summaryLine || null
+      ].filter(Boolean)
+      return {
+        label: `Bridge chain (RP36): ${chainLabel || 'reliever cluster attached'}`,
+        detail: context.length ? context.join(' | ') : 'RP36 reliever-shadow cluster attached.'
+      }
+    }
+
+    const projection = game.analysis?.mlbProjection ?? {}
+    const projectedRelievers =
+      sideKey === 'away'
+        ? projection.awayLikelyRelievers
+        : projection.homeLikelyRelievers
+    const relievers = [
+      ...(Array.isArray(projectedRelievers) ? projectedRelievers : []),
+      ...(Array.isArray(game.bullpenChainContext?.[sideKey]?.topRelievers) ? game.bullpenChainContext[sideKey].topRelievers : []),
+      ...(Array.isArray(team?.summary?.bullpenPitchTypeSummary?.relievers) ? team.summary.bullpenPitchTypeSummary.relievers : [])
+    ]
+    const uniqueRelievers = relievers.filter((reliever: AnyRecord, index: number, all: AnyRecord[]) =>
+      reliever?.name && all.findIndex((entry: AnyRecord) => entry?.name === reliever.name) === index
+    )
+    const recent = game.bullpenChainContext?.[sideKey]?.recentBullpenSummary ?? null
+    const score = sideKey === 'away' ? projection.awayBullpenChainScore : projection.homeBullpenChainScore
+    const workload = sideKey === 'away' ? projection.awayBullpenExhaustionLabel : projection.homeBullpenExhaustionLabel
+    const chainLabel = uniqueRelievers.length
+      ? uniqueRelievers.slice(0, 2).map((reliever: AnyRecord) => reliever.name).join(' -> ')
+      : 'No RP36 reliever cluster stored'
+    const context = [
+      Number.isFinite(Number(score)) ? `score ${formatNumber(score, 1)}` : null,
+      workload && workload !== 'unknown' ? workload : null,
+      recent && Number(recent.gamesSample || 0) > 0
+        ? `last ${Number(recent.gamesSample || 0)} BP games ${formatNumber(recent.era, 2)} ERA / ${formatNumber(recent.whip, 2)} WHIP`
+        : null
+    ].filter(Boolean)
+    return {
+      label: `Bridge chain (RP36): ${chainLabel}`,
+      detail: context.length ? context.join(' | ') : 'RP36 reliever-shadow output is sparse for this game.'
+    }
+  }
   const getBoardTeamLogoUrl = (league: string, teamName: string) => mlbDetailProps?.getTeamLogoUrl?.(league, teamName) || ''
   const renderBoardTeamLogo = (league: string, teamName: string, variant: 'compact' | 'inline' | 'title' = 'compact') => {
     const logoUrl = mlbDetailProps?.getTeamLogoUrl?.(league, teamName)
@@ -320,6 +426,10 @@ export function BoardView(props: BoardViewProps) {
           {sides.map((side) => {
             const lineup = Array.isArray(side.team?.lineup) ? side.team.lineup.slice(0, 9) : []
             const playerBySlot = new Map<number, AnyRecord>()
+            const opponentSideKey = side.key === 'away' ? 'home' : 'away'
+            const starterHistory = game.statMusePitcherHistory?.[side.key]
+            const opponentStarterHistory = game.statMusePitcherHistory?.[opponentSideKey]
+            const bridgeChainSummary = formatMiniBridgeChain(game, side.key, side.team)
             lineup.forEach((player: AnyRecord, index: number) => {
               const slot = Number(player.slot)
               const normalizedSlot = Number.isFinite(slot) && slot >= 1 && slot <= 9 ? slot : index + 1
@@ -339,6 +449,16 @@ export function BoardView(props: BoardViewProps) {
                   <span className={`builder-status-pill ${side.status === 'posted' ? 'open' : ''}`}>
                     {lineupStatusLabel(side.status)}
                   </span>
+                </div>
+                {starterHistory || opponentStarterHistory ? (
+                  <div className="lineup-bvp-block">
+                    {renderStatMusePitcherHistory('Starter history', starterHistory, 'StatMuse starter')}
+                    {renderStatMusePitcherHistory(`Opp SP vs ${side.teamName}`, opponentStarterHistory, 'StatMuse opp SP')}
+                  </div>
+                ) : null}
+                <div className="lineup-bvp-block">
+                  <small>{bridgeChainSummary.label}</small>
+                  <small>{bridgeChainSummary.detail}</small>
                 </div>
                 <div className="mini-lineup-slots">
                   {miniLineupSlots.map((slot) => {
@@ -734,8 +854,7 @@ export function BoardView(props: BoardViewProps) {
                       </span>
                     </div>
                     <p>
-                      First 5 ML remains visible when priced. F5 O/U is withheld from bet-grade after the May 31 failure
-                      until the lane has settled calibration behind it.
+                      First 5 ML and O/U are shown from the M2 starter-window projection, with priced status called out separately when a live market is attached.
                     </p>
                     <div className="tennis-value-pill-row">
                       <span>F5 ML {mlbValueSummary.first5MoneylineRows?.length || 0}</span>

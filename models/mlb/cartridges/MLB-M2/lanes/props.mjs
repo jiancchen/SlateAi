@@ -198,6 +198,7 @@ const loadPitcherStrikeoutOddsByGame = (date) => {
       game_id,
       player_name,
       line_value,
+      MAX(sportsbook) AS sportsbook,
       MAX(CASE WHEN selection='Over' THEN american_odds END) AS over_price,
       MAX(CASE WHEN selection='Under' THEN american_odds END) AS under_price
     FROM prop_market_snapshots
@@ -215,7 +216,8 @@ const loadPitcherStrikeoutOddsByGame = (date) => {
       playerName: row.player_name,
       line: Number.isFinite(Number(row.line_value)) ? Number(row.line_value) : null,
       overPrice: Number.isFinite(Number(row.over_price)) ? Number(row.over_price) : null,
-      underPrice: Number.isFinite(Number(row.under_price)) ? Number(row.under_price) : null
+      underPrice: Number.isFinite(Number(row.under_price)) ? Number(row.under_price) : null,
+      sportsbook: row.sportsbook || row.source_name || 'Prop market'
     }
     return acc
   }, {})
@@ -224,6 +226,13 @@ const loadPitcherStrikeoutOddsByGame = (date) => {
 const average = (values = [], fallback = 0) => {
   const valid = values.map((value) => Number(value)).filter(Number.isFinite)
   return valid.length ? valid.reduce((sum, value) => sum + value, 0) / valid.length : fallback
+}
+
+const normalizeLineupStatus = (status = '') => {
+  const normalized = String(status || '').toLowerCase()
+  if (['posted', 'confirmed', 'official'].includes(normalized)) return 'posted'
+  if (normalized === 'partial') return 'partial'
+  return 'pending'
 }
 
 const buildPitcherStrikeoutPick = ({ game, starter, teamName, opponentName, opponentLineup, lineupStatus, projectedRunsAgainst, market }) => {
@@ -280,10 +289,11 @@ const buildPitcherStrikeoutPick = ({ game, starter, teamName, opponentName, oppo
 
   const lean = edge > 0 ? 'Over' : 'Under'
   const selectedPrice = lean === 'Over' ? market.overPrice : market.underPrice
+  const normalizedLineupStatus = lineup.length >= 9 ? 'posted' : normalizeLineupStatus(lineupStatus)
   const baseConfidence =
     56 +
     Math.abs(edge) * 17 +
-    (lineupStatus === 'posted' ? 4 : lineupStatus === 'partial' ? -2 : -8) +
+    (normalizedLineupStatus === 'posted' ? 4 : normalizedLineupStatus === 'partial' ? -2 : -8) +
     (recentForm?.startsSample ? 4 : 0) +
     (usageStatus === 'tiny-sample' ? -6 : usageStatus === 'debut-window' ? -10 : usageStatus === 'season-only' ? -2 : 0)
   const confidence = Math.round(clamp(baseConfidence, 42, 81))
@@ -303,7 +313,7 @@ const buildPitcherStrikeoutPick = ({ game, starter, teamName, opponentName, oppo
   )
 
   const scriptTags = [
-    lineupStatus === 'posted' ? 'posted-lineup' : lineupStatus === 'partial' ? 'partial-lineup' : 'pending-lineup',
+    normalizedLineupStatus === 'posted' ? 'posted-lineup' : normalizedLineupStatus === 'partial' ? 'partial-lineup' : 'pending-lineup',
     'starter-k-lane',
     whiffResistance >= 1.03 ? 'opponent-whiff-lane' : 'contact-resistance',
     usageStatus === 'tiny-sample' || usageStatus === 'debut-window' ? 'short-leash-risk' : 'starter-volume-live'
@@ -338,9 +348,9 @@ const buildPitcherStrikeoutPick = ({ game, starter, teamName, opponentName, oppo
     recommendationTier: confidence >= 76 ? 'Core' : confidence >= 68 ? 'Strong' : 'Lean',
     reason: reasons.join(' | '),
     scriptTags,
-    matchupNote: `FanDuel K line ${market.line} · ${lean} price ${priceLabel}`,
+    matchupNote: `${market.sportsbook || 'Market'} K line ${market.line} · ${lean} price ${priceLabel}`,
     teamScriptLabel: starter.usageContext?.workloadLabel || '',
-    lineupStatus,
+    lineupStatus: normalizedLineupStatus,
     playerSummary: `${starter.era} ERA | ${starter.inningsPitched} IP | ${starter.strikeOuts} SO | ${starter.usageContext?.note || starter.usageContext?.label || ''}`
   }
 }

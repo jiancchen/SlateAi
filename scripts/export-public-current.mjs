@@ -92,6 +92,61 @@ const copyIfPresent = async (sourcePath, targetPath) => {
   return true
 }
 
+const copyMlbPropsIfPresent = async (slateId, targetPath) => {
+  const primarySource = path.join(root, 'data-private', 'predictions', 'mlb-player-props', `${slateId}-player-props.json`)
+  const legacySource = path.join(root, 'data-private', 'predictions', 'mlb-player-props-legacy', `${slateId}-player-props-legacy.json`)
+
+  if (!fsSync.existsSync(primarySource)) {
+    return copyIfPresent(legacySource, targetPath)
+  }
+
+  const primaryPayload = await readJson(primarySource)
+  const primaryPicks = Array.isArray(primaryPayload?.picks) ? primaryPayload.picks : []
+  if (primaryPicks.length > 0 && fsSync.existsSync(legacySource)) {
+    const legacyPayload = await readJson(legacySource)
+    const legacyPicks = Array.isArray(legacyPayload?.picks) ? legacyPayload.picks : []
+    const seen = new Set()
+    const picks = [...primaryPicks, ...legacyPicks].filter((pick) => {
+      const key = pick.id || `${pick.gameId}:${pick.playerName}:${pick.propType}:${pick.marketLabel}`
+      if (seen.has(key)) return false
+      seen.add(key)
+      return true
+    }).map((pick, index) => ({ ...pick, rank: index + 1 }))
+    await fs.mkdir(path.dirname(targetPath), { recursive: true })
+    await writeJson(targetPath, {
+      ...legacyPayload,
+      ...primaryPayload,
+      mergedFrom: ['mlb-player-props', 'mlb-player-props-legacy'],
+      mergeReason: 'Primary tracked pitcher props are combined with legacy batter props for this slate.',
+      summary: {
+        ...(legacyPayload.summary || {}),
+        ...(primaryPayload.summary || {}),
+        totalPicks: picks.length,
+        byType: picks.reduce((summary, pick) => {
+          summary[pick.propType] = (summary[pick.propType] || 0) + 1
+          return summary
+        }, {})
+      },
+      picks
+    })
+    return true
+  }
+
+  if (primaryPicks.length > 0 || !fsSync.existsSync(legacySource)) {
+    await fs.mkdir(path.dirname(targetPath), { recursive: true })
+    await writeJson(targetPath, primaryPayload)
+    return true
+  }
+
+  const legacyPayload = await readJson(legacySource)
+  await writeJson(targetPath, {
+    ...legacyPayload,
+    fallbackFrom: 'mlb-player-props-legacy',
+    fallbackReason: 'Primary MLB player-props board had no picks for this slate.'
+  })
+  return true
+}
+
 const normalizeSearchText = (value) =>
   String(value ?? '')
     .normalize('NFKD')
@@ -318,11 +373,10 @@ const exportSlateBundle = async (slate, targetRoot) => {
   await fs.cp(sourceGamesRoot, path.join(targetRoot, 'games'), { recursive: true })
   await fs.copyFile(sourceSummaryPath, path.join(targetRoot, 'summary.json'))
 
-  const propsSource = path.join(root, 'data-private', 'predictions', 'mlb-player-props', `${slate.id}-player-props.json`)
   const homeRunsSource = path.join(root, 'data-private', 'predictions', 'mlb-home-runs', `${slate.id}-statcast-prototype.json`)
   const propsTarget = path.join(targetRoot, 'props.json')
   const homeRunsTarget = path.join(targetRoot, 'home-runs.json')
-  const hasProps = await copyIfPresent(propsSource, propsTarget)
+  const hasProps = await copyMlbPropsIfPresent(slate.id, propsTarget)
   const hasHomeRuns = await copyIfPresent(homeRunsSource, homeRunsTarget)
 
   const summary = await readJson(path.join(targetRoot, 'summary.json'))

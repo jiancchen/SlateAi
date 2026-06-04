@@ -86,6 +86,12 @@ const normalizePersonName = (value = '') =>
     .trim()
     .toLowerCase()
 
+const normalizePersonNameWithoutSuffix = (value = '') =>
+  normalizePersonName(value)
+    .replace(/\b(jr|sr|ii|iii|iv|v)\b/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+
 const decodeHtmlEntities = (value = '') =>
   value
     .replace(/&nbsp;/g, ' ')
@@ -1033,10 +1039,15 @@ const buildRosterLookup = (boxscoreSide = {}) => {
     const playerId = playerRecord?.person?.id
     if (!fullName || !playerId) continue
 
-    lookup.set(normalizePersonName(fullName), {
+    const entry = {
       playerId,
       playerRecord
-    })
+    }
+    lookup.set(normalizePersonName(fullName), entry)
+    const suffixlessKey = normalizePersonNameWithoutSuffix(fullName)
+    if (suffixlessKey && !lookup.has(suffixlessKey)) {
+      lookup.set(suffixlessKey, entry)
+    }
   }
 
   return lookup
@@ -1070,7 +1081,10 @@ const mapRotoLineupPlayerIds = (rotoSide = null, boxscoreSide = {}) => {
   const rosterLookup = buildRosterLookup(boxscoreSide)
 
   return rotoSide.players
-    .map((player) => rosterLookup.get(normalizePersonName(player.name))?.playerId)
+    .map((player) => {
+      const exactKey = normalizePersonName(player.name)
+      return rosterLookup.get(exactKey)?.playerId || rosterLookup.get(normalizePersonNameWithoutSuffix(player.name))?.playerId
+    })
     .filter(Boolean)
 }
 
@@ -1887,7 +1901,8 @@ const extractSupplementalLineupPlayers = ({
 
   return rotoSide.players
     .map((player) => {
-      const rosterEntry = rosterLookup.get(normalizePersonName(player.name))
+      const exactKey = normalizePersonName(player.name)
+      const rosterEntry = rosterLookup.get(exactKey) || rosterLookup.get(normalizePersonNameWithoutSuffix(player.name))
       if (!rosterEntry?.playerId) return null
 
       const playerId = rosterEntry.playerId

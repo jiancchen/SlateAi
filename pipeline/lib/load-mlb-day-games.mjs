@@ -157,6 +157,46 @@ export const loadMlbDayGames = async (date) => {
     }
   }
 
+  const splitDataModulePath = path.join(rootDir, 'web', 'src', 'lib', `day-${date}-data.js`)
+  if (fs.existsSync(splitDataModulePath)) {
+    const dataModule = await importFresh(splitDataModulePath)
+    const contextModule = await importFresh(path.join(rootDir, 'web', 'src', 'lib', `mlb-context-${date}.js`))
+    const lineupModule = await importFresh(path.join(rootDir, 'web', 'src', 'lib', `day-${date}-lineups.js`))
+    const relieverShadowModule =
+      (await importMaybeFresh(path.join(rootDir, 'web', 'src', 'lib', `day-${date}-reliever-shadow.js`))) ?? {}
+    const storyModule =
+      (await importMaybeFresh(path.join(rootDir, 'web', 'src', 'lib', `mlb-story-context-${date}.js`))) ?? {}
+
+    const rawGames = dataModule.rawGames ?? []
+    const dependencies = {
+      standingsContextByTeam: contextModule.standingsContextByTeam ?? {},
+      teamOffenseContextByTeam: contextModule.teamOffenseContextByTeam ?? {},
+      teamBullpenContextByTeam: contextModule.teamBullpenContextByTeam ?? {},
+      teamSavantContextByTeam: contextModule.teamSavantContextByTeam ?? {},
+      teamStoryContextByTeam: storyModule.teamStoryContextByTeam ?? {},
+      bullpenChainByTeam: dataModule.bullpenChainByTeam ?? {},
+      relieverShadowByTeam: relieverShadowModule.relieverShadowByTeam ?? {},
+      lineupBoardsByGameId: lineupModule.lineupBoardsByGameId ?? {},
+      lineupMatchupContextByGameId: lineupModule.lineupMatchupContextByGameId ?? {}
+    }
+
+    const rawIdCounts = new Map()
+    return rawGames.map((raw) => {
+      const baseId = raw.id
+      const seenCount = rawIdCounts.get(baseId) ?? 0
+      rawIdCounts.set(baseId, seenCount + 1)
+      const uniqueId =
+        seenCount > 0 && Number.isFinite(Number(raw.gamePk))
+          ? `${baseId}-${Number(raw.gamePk)}`
+          : seenCount > 0
+            ? `${baseId}-g${seenCount + 1}`
+            : baseId
+      const game = buildGenericMlbGame(raw, { ...dependencies, uniqueId })
+      const adapter = resolveMlbAppAdapter(game.metadata?.modelCartridge)
+      return adapter.createSportsMatchModel(game, oddsProvider)
+    })
+  }
+
   const dayWrapperPath = path.join(rootDir, 'web', 'src', 'lib', `day-${date}.js`)
   const wrappedDay = await importMaybeFresh(dayWrapperPath)
   if (wrappedDay?.games) {
@@ -164,44 +204,5 @@ export const loadMlbDayGames = async (date) => {
     if (wrappedMlbGames.length) return wrappedMlbGames
   }
 
-  const splitDataModulePath = path.join(rootDir, 'web', 'src', 'lib', `day-${date}-data.js`)
-  if (!fs.existsSync(splitDataModulePath)) {
-    return []
-  }
-  const dataModule = await importFresh(splitDataModulePath)
-  const contextModule = await importFresh(path.join(rootDir, 'web', 'src', 'lib', `mlb-context-${date}.js`))
-  const lineupModule = await importFresh(path.join(rootDir, 'web', 'src', 'lib', `day-${date}-lineups.js`))
-  const relieverShadowModule =
-    (await importMaybeFresh(path.join(rootDir, 'web', 'src', 'lib', `day-${date}-reliever-shadow.js`))) ?? {}
-  const storyModule =
-    (await importMaybeFresh(path.join(rootDir, 'web', 'src', 'lib', `mlb-story-context-${date}.js`))) ?? {}
-
-  const rawGames = dataModule.rawGames ?? []
-  const dependencies = {
-    standingsContextByTeam: contextModule.standingsContextByTeam ?? {},
-    teamOffenseContextByTeam: contextModule.teamOffenseContextByTeam ?? {},
-    teamBullpenContextByTeam: contextModule.teamBullpenContextByTeam ?? {},
-    teamSavantContextByTeam: contextModule.teamSavantContextByTeam ?? {},
-    teamStoryContextByTeam: storyModule.teamStoryContextByTeam ?? {},
-    bullpenChainByTeam: dataModule.bullpenChainByTeam ?? {},
-    relieverShadowByTeam: relieverShadowModule.relieverShadowByTeam ?? {},
-    lineupBoardsByGameId: lineupModule.lineupBoardsByGameId ?? {},
-    lineupMatchupContextByGameId: lineupModule.lineupMatchupContextByGameId ?? {}
-  }
-
-  const rawIdCounts = new Map()
-  return rawGames.map((raw) => {
-    const baseId = raw.id
-    const seenCount = rawIdCounts.get(baseId) ?? 0
-    rawIdCounts.set(baseId, seenCount + 1)
-    const uniqueId =
-      seenCount > 0 && Number.isFinite(Number(raw.gamePk))
-        ? `${baseId}-${Number(raw.gamePk)}`
-        : seenCount > 0
-          ? `${baseId}-g${seenCount + 1}`
-          : baseId
-    const game = buildGenericMlbGame(raw, { ...dependencies, uniqueId })
-    const adapter = resolveMlbAppAdapter(game.metadata?.modelCartridge)
-    return adapter.createSportsMatchModel(game, oddsProvider)
-  })
+  return []
 }

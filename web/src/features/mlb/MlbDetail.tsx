@@ -105,6 +105,62 @@ export function MlbDetail(props: MlbDetailProps) {
   const homeTeam = game.matchup?.[1]?.name ?? 'Home'
   const awayLineup = game.lineupBoard?.away
   const homeLineup = game.lineupBoard?.home
+  const statMuseSeasonRows = (history: AnyRecord | null | undefined) =>
+    Array.isArray(history?.seasons)
+      ? history.seasons.filter((season: AnyRecord) => String(season?.year || '').trim())
+      : []
+  const formatStatMuseInnings = (value: unknown) => {
+    const numeric = Number(value)
+    if (!Number.isFinite(numeric)) return String(value || '0.0')
+    const whole = Math.floor(numeric)
+    const partial = Math.round((numeric - whole) * 3)
+    return `${whole}.${partial >= 0 && partial <= 2 ? partial : 0}`
+  }
+  const statMuseFallbackLine = (history: AnyRecord | null | undefined) => {
+    if (!history) return ''
+    const summary = String(history.summary || '').trim()
+    if (summary) return summary
+    return history.status === 'found'
+      ? `${history.pitcherName || 'Starter'} vs ${history.opponentTeam || 'opponent'}: StatMuse table attached.`
+      : `No StatMuse pitcher-vs-team table found for ${history.pitcherName || 'starter'} vs ${history.opponentTeam || 'opponent'}.`
+  }
+  const renderStatMusePitcherHistory = (
+    label: string,
+    history: AnyRecord | null | undefined,
+    linkLabel: string
+  ) => {
+    if (!history) return null
+    const seasons = statMuseSeasonRows(history)
+    return (
+      <div className="statmuse-history-card">
+        <div className="statmuse-history-head">
+          <strong>{label}</strong>
+          {history.url ? (
+            <a href={history.url} target="_blank" rel="noreferrer">
+              {linkLabel}
+            </a>
+          ) : null}
+        </div>
+        {seasons.length ? (
+          <div className="statmuse-season-list">
+            {seasons.map((season: AnyRecord) => (
+              <div key={`${label}-${season.year}`} className="statmuse-season-row">
+                <strong>{season.year}</strong>
+                <span>
+                  {season.games || season.gamesStarted || 0} GS/app | {formatStatMuseInnings(season.ip ?? season.inningsPitched)} IP |{' '}
+                  {formatNumber(season.era, 2)} ERA | {Number(season.so ?? season.strikeouts ?? season.k ?? 0)} K |{' '}
+                  {Number(season.er ?? season.earnedRuns ?? 0)} ER | {Number(season.hr ?? season.homeRuns ?? 0)} HR |{' '}
+                  {Number(season.bb ?? season.walks ?? 0)} BB
+                </span>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <small>{statMuseFallbackLine(history)}</small>
+        )}
+      </div>
+    )
+  }
   const homeRunTargets = game.homeRunTargets?.featured ?? game.homeRunTargets?.targets ?? []
   const awayScript = projection?.teamScripts?.find((entry: AnyRecord) => entry.teamName === awayTeam)
   const homeScript = projection?.teamScripts?.find((entry: AnyRecord) => entry.teamName === homeTeam)
@@ -157,14 +213,20 @@ export function MlbDetail(props: MlbDetailProps) {
     teamContext: game.teamContext?.away ?? null,
     lineupConversion: awayLineupConversion,
     offenseContext: game.offenseContext?.away ?? null,
-    firstInningTeam: awayFirstInningTeam
+    firstInningTeam: awayFirstInningTeam,
+    seriesEarlyPhase: game.stateContext?.seriesEarlyPhase?.away ?? null,
+    recentGames: awayRecentGames,
+    opponentName: homeTeam
   })
   const homeSnapshotChips = buildTeamSnapshotChips({
     teamState: homeTeamState,
     teamContext: game.teamContext?.home ?? null,
     lineupConversion: homeLineupConversion,
     offenseContext: game.offenseContext?.home ?? null,
-    firstInningTeam: homeFirstInningTeam
+    firstInningTeam: homeFirstInningTeam,
+    seriesEarlyPhase: game.stateContext?.seriesEarlyPhase?.home ?? null,
+    recentGames: homeRecentGames,
+    opponentName: awayTeam
   })
   const awayBullpenPulse = buildBullpenPulseLine(awayRecentBullpenSummary, awaySeasonBullpenSummary)
   const homeBullpenPulse = buildBullpenPulseLine(homeRecentBullpenSummary, homeSeasonBullpenSummary)
@@ -379,12 +441,17 @@ export function MlbDetail(props: MlbDetailProps) {
             ? ` vs season ${formatNumber(seasonBullpenSummary.era, 2)} ERA / ${formatNumber(seasonBullpenSummary.whip, 2)} WHIP`
             : ''}
         </p>
+      ) : seasonBullpenSummary && !seasonBullpenSummary.staleFeed ? (
+        <p className="react-section-copy">
+          Season bullpen: {formatNumber(seasonBullpenSummary.era, 2)} ERA / {formatNumber(seasonBullpenSummary.whip, 2)} WHIP
+          {Number.isFinite(Number(seasonBullpenSummary.saves)) ? ` / ${Number(seasonBullpenSummary.saves)} SV` : ''}
+        </p>
       ) : null}
       {shadowContext?.relievers?.length ? (
         <div className="bridge-shadow-box">
           <div className="bridge-shadow-head">
             <div>
-              <p className="eyebrow">E34 shadow</p>
+              <p className="eyebrow">RP36 / E36 shadow</p>
               <strong>{shadowContext.summaryLine || 'First-up reliever shadow board'}</strong>
             </div>
             <small>
@@ -1065,6 +1132,10 @@ export function MlbDetail(props: MlbDetailProps) {
             {[awayLineup, homeLineup].map((lineupTeam: AnyRecord, index: number) => {
               if (!lineupTeam) return null
               const teamName = index === 0 ? awayTeam : homeTeam
+              const sideKey = index === 0 ? 'away' : 'home'
+              const opponentSideKey = index === 0 ? 'home' : 'away'
+              const starterHistory = game.statMusePitcherHistory?.[sideKey]
+              const opponentStarterHistory = game.statMusePitcherHistory?.[opponentSideKey]
               return (
                 <article key={teamName} className="react-lineup-card">
                   <div className="react-lineup-card-head">
@@ -1104,6 +1175,12 @@ export function MlbDetail(props: MlbDetailProps) {
                       ) : null}
                     </div>
                     <p className="react-section-copy">{lineupTeam.summary?.overview || lineupTeam.summary?.bullpenOverview || lineupTeam.opposingStarter?.pitchMixSummary}</p>
+                    {starterHistory || opponentStarterHistory ? (
+                      <div className="lineup-bvp-block">
+                        {renderStatMusePitcherHistory('Starter history', starterHistory, 'StatMuse starter')}
+                        {renderStatMusePitcherHistory(`Opp SP vs ${teamName}`, opponentStarterHistory, 'StatMuse opp SP')}
+                      </div>
+                    ) : null}
                     <div className="react-pill-row">
                       {(lineupTeam.summary?.overperformHitters || []).slice(0, 3).map((hitter: AnyRecord, hitterIndex: number) => (
                         <span key={`${teamName}-carry-${hitter.name}-${hitter.tag || 'x'}-${hitterIndex}`} className="game-highlight-chip accent">

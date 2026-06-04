@@ -1,8 +1,14 @@
+import path from 'node:path'
+import { fileURLToPath, pathToFileURL } from 'node:url'
+
 import { activeMlbAppModelId, resolveMlbAppAdapter } from '../app-model.js'
 import { currentDayBoardForDate } from './queries.mjs'
 import { querySqlite } from './sqlite.mjs'
 
 const oddsProvider = 'MLB typed DB current-day board'
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+const rootDir = path.resolve(__dirname, '..', '..', '..')
 
 const shortTeamNameByOfficial = {
   'Arizona Diamondbacks': 'Diamondbacks',
@@ -51,6 +57,14 @@ const parseJson = (value) => {
   if (!value) return null
   try {
     return JSON.parse(value)
+  } catch {
+    return null
+  }
+}
+
+const importMaybeFresh = async (absolutePath) => {
+  try {
+    return await import(`${pathToFileURL(absolutePath).href}?t=${Date.now()}`)
   } catch {
     return null
   }
@@ -739,7 +753,7 @@ const buildSpread = (markets) => {
 const formatPitcherDetail = (pitcher = {}) =>
   `${pitcher.fullName} (${pitcher.pitchHand || '?'}HP) | ${pitcher.era || '-'} ERA | ${pitcher.strikeOuts || 0} SO | ${pitcher.whip || '-'} WHIP | ${pitcher.inningsPitched || '0.0'} IP`
 
-const buildDbGame = (game, context) => {
+const buildDbGame = (game, context, relieverShadowByTeam = {}) => {
   const awayName = shortTeamName(game.away_team)
   const homeName = shortTeamName(game.home_team)
   const awayTeamId = game.away_team_id || game.lineups && Object.values(game.lineups).find((lineup) => lineup.team_name === game.away_team)?.team_id
@@ -807,7 +821,10 @@ const buildDbGame = (game, context) => {
       away: buildBullpenChain(awayTeamId, context),
       home: buildBullpenChain(homeTeamId, context)
     },
-    relieverShadowContext: { away: null, home: null },
+    relieverShadowContext: {
+      away: relieverShadowByTeam[awayName] ?? null,
+      home: relieverShadowByTeam[homeName] ?? null
+    },
     savantContext: {
       away: buildTeamSavantContext(awayTeamId, context),
       home: buildTeamSavantContext(homeTeamId, context)
@@ -831,7 +848,7 @@ const buildDbGame = (game, context) => {
       inputSource: 'sql-mlb.db',
       dbInputAdapter: 'models/mlb/db/day-games.mjs',
       compatibilityLayer: true,
-      remainingGaps: ['parkContext', 'weatherContext', 'standingsContext', 'relieverShadowContext']
+      remainingGaps: ['parkContext', 'weatherContext', 'standingsContext']
     },
     odds: makeBoardOdds({
       spread,
@@ -863,5 +880,8 @@ export const loadMlbDayGamesFromDb = async (date) => {
   const board = currentDayBoardForDate(date)
   if (!board.games.length) return []
   const context = loadDbContext(date)
-  return board.games.map((game) => buildDbGame(game, context))
+  const relieverShadowModule =
+    (await importMaybeFresh(path.join(rootDir, 'web', 'src', 'lib', `day-${date}-reliever-shadow.js`))) ?? {}
+  const relieverShadowByTeam = relieverShadowModule.relieverShadowByTeam ?? {}
+  return board.games.map((game) => buildDbGame(game, context, relieverShadowByTeam))
 }

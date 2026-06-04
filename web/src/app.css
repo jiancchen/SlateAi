@@ -7827,6 +7827,69 @@ h3 {
   gap: 8px;
 }
 
+.statmuse-history-card {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+  padding: 8px;
+  border: 1px solid rgba(152, 181, 211, 0.18);
+  border-radius: 8px;
+  background: rgba(9, 14, 17, 0.38);
+}
+
+.statmuse-history-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.statmuse-history-head strong {
+  min-width: 0;
+  color: var(--heading);
+  font-size: 0.78rem;
+}
+
+.statmuse-history-head a {
+  flex: 0 0 auto;
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.statmuse-season-list {
+  display: grid;
+  gap: 4px;
+  max-height: 170px;
+  overflow: auto;
+  padding-right: 2px;
+}
+
+.statmuse-season-row {
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr);
+  gap: 7px;
+  align-items: start;
+  min-width: 0;
+  padding: 5px 6px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.035);
+  color: var(--muted);
+  font-size: 0.68rem;
+  line-height: 1.25;
+}
+
+.statmuse-season-row strong {
+  color: var(--heading);
+}
+
+.statmuse-season-row span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .react-lineup-list {
   display: grid;
   gap: 8px;

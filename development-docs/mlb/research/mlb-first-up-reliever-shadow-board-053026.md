@@ -10,9 +10,9 @@ Goal:
 
 Target slate:
 
-- date: `2026-06-03`
-- team-side shadow cards: `30`
-- reliever candidates scored: `287`
+- date: `2026-06-04`
+- team-side shadow cards: `18`
+- reliever candidates scored: `161`
 - conversion window: `8`
 - dependency window: `5`
 
@@ -32,16 +32,16 @@ Target slate:
 
 | Team | Opponent | Lead | Alt | Starter hook | Top-2 share |
 | --- | --- | --- | --- | --- | --- |
-| Yankees | Guardians | Fernando Cruz | Jake Bird | 0.0% | 58.2% |
-| Brewers | Giants | Chad Patrick | Carlos Rodriguez | 0.0% | 47.0% |
-| Astros | Pirates | Nate Pearson | Alimber Santa | 0.0% | 46.8% |
-| Phillies | Padres | Tim Mayza | Jonathan Bowlan | 0.0% | 46.6% |
-| Cardinals | Rangers | Ryan Fernandez | Justin Bruihl | 0.0% | 46.0% |
-| Padres | Phillies | Wandy Peralta | Adrian Morejon | 0.0% | 45.5% |
-| Mets | Mariners | Huascar Brazobán | Brooks Raley | 0.0% | 44.8% |
-| Mariners | Mets | José A. Ferrer | Matt Brash | 0.0% | 44.7% |
-| Pirates | Astros | Evan Sisk | Yohan Ramírez | 0.0% | 43.2% |
-| Diamondbacks | Dodgers | Brandon Pfaadt | Ryan Thompson | 0.0% | 42.8% |
+| Diamondbacks | Dodgers | Brandyn Garcia | Kevin Ginkel | 0.0% | 60.3% |
+| Pirates | Astros | Evan Sisk | Cam Sanders | 0.0% | 53.0% |
+| Astros | Pirates | Enyel De Los Santos | Steven Okert | 0.0% | 52.0% |
+| Braves | Blue Jays | Didier Fuentes | Dylan Dodd | 0.0% | 49.6% |
+| Padres | Phillies | Bradgley Rodriguez | Yuki Matsui | 0.0% | 49.0% |
+| Guardians | Yankees | Matt Festa | Codi Heuer | 0.0% | 48.8% |
+| Cubs | Athletics | Trent Thornton | Jacob Webb | 0.0% | 43.3% |
+| Yankees | Guardians | Jake Bird | Brent Headrick | 0.0% | 40.3% |
+| Dodgers | Diamondbacks | Edgardo Henriquez | Will Klein | 0.0% | 39.9% |
+| Phillies | Padres | Tim Mayza | Tanner Banks | 0.0% | 39.2% |
 
 ## Top Shadow Features
 

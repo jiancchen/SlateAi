@@ -1,0 +1,3393 @@
+{
+  "date": "2026-06-04",
+  "generatedAt": "2026-06-04T17:07:56.753Z",
+  "source": "StatMuse",
+  "rows": [
+    {
+      "gameId": "padres-phillies",
+      "side": "away",
+      "teamName": "Padres",
+      "opponentTeam": "Phillies",
+      "pitcherName": "Lucas Giolito",
+      "source": "StatMuse",
+      "query": "Lucas Giolito vs Phillies",
+      "url": "https://www.statmuse.com/mlb/ask/lucas-giolito-vs-phillies",
+      "fetchedAt": "2026-06-04T17:07:50.259Z",
+      "status": "found",
+      "summary": "Lucas Giolito vs Phillies: 3 GS/app, 15.2 IP, 5.74 ERA, 15 K, 10 ER, 7 HR, 6 BB.",
+      "seasonSummary": "2023: 2 GS/app, 11.2 IP, 3.86 ERA, 13 K, 5 ER, 3 HR, 5 BB | 2025: 1 GS/app, 4.0 IP, 11.25 ERA, 2 K, 5 ER, 4 HR, 1 BB",
+      "seasons": [
+        {
+          "year": "2023",
+          "games": 2,
+          "starts": 2,
+          "ip": 11.667,
+          "er": 5,
+          "runs": 5,
+          "hits": 4,
+          "hr": 3,
+          "bb": 5,
+          "so": 13,
+          "tbf": 44,
+          "era": 3.86,
+          "display": "2023: 2 GS/app, 11.2 IP, 3.86 ERA, 13 K, 5 ER, 3 HR, 5 BB"
+        },
+        {
+          "year": "2025",
+          "games": 1,
+          "starts": 1,
+          "ip": 4,
+          "er": 5,
+          "runs": 5,
+          "hits": 6,
+          "hr": 4,
+          "bb": 1,
+          "so": 2,
+          "tbf": 19,
+          "era": 11.25,
+          "display": "2025: 1 GS/app, 4.0 IP, 11.25 ERA, 2 K, 5 ER, 4 HR, 1 BB"
+        }
+      ],
+      "metrics": {
+        "GS": {
+          "display": "3",
+          "value": 3
+        },
+        "ERA": {
+          "display": "5.74",
+          "value": 5.7447
+        },
+        "SO": {
+          "display": "15",
+          "value": 15
+        },
+        "IP": {
+          "display": "15.2",
+          "value": 15.6667
+        },
+        "H": {
+          "display": "10",
+          "value": 10
+        },
+        "ER": {
+          "display": "10",
+          "value": 10
+        },
+        "R": {
+          "display": "10",
+          "value": 10
+        },
+        "HR": {
+          "display": "7",
+          "value": 7
+        },
+        "BB": {
+          "display": "6",
+          "value": 6
+        },
+        "TBF": {
+          "display": "63",
+          "value": 63
+        }
+      },
+      "textRecord": null
+    },
+    {
+      "gameId": "padres-phillies",
+      "side": "home",
+      "teamName": "Phillies",
+      "opponentTeam": "Padres",
+      "pitcherName": "Zack Wheeler",
+      "source": "StatMuse",
+      "query": "Zack Wheeler vs Padres",
+      "url": "https://www.statmuse.com/mlb/ask/zack-wheeler-vs-padres",
+      "fetchedAt": "2026-06-04T17:07:50.451Z",
+      "status": "found",
+      "summary": "Zack Wheeler vs Padres: 11 GS/app, 70.2 IP, 2.17 ERA, 83 K, 17 ER, 5 HR, 11 BB.",
+      "seasonSummary": "2013: 1 GS/app, 6.0 IP, 1.50 ERA, 12 K, 1 ER, 0 HR, 1 BB | 2014: 2 GS/app, 11.0 IP, 4.09 ERA, 11 K, 5 ER, 1 HR, 4 BB | 2018: 2 GS/app, 12.0 IP, 3.00 ERA, 12 K, 4 ER, 0 HR, 3 BB | 2021: 1 GS/app, 7.2 IP, 0.00 ERA, 9 K, 0 ER, 0 HR, 0 BB | 2022: 1 GS/app, 7.0 IP, 0.00 ERA, 9 K, 0 ER, 0 HR, 0 BB | 2023: 2 GS/app, 13.0 IP, 2.08 ERA, 14 K, 3 ER, 2 HR, 2 BB | 2025: 2 GS/app, 14.0 IP, 2.57 ERA, 16 K, 4 ER, 2 HR, 1 BB",
+      "seasons": [
+        {
+          "year": "2013",
+          "games": 1,
+          "starts": 1,
+          "ip": 6,
+          "er": 1,
+          "runs": 1,
+          "hits": 7,
+          "hr": 0,
+          "bb": 1,
+          "so": 12,
+          "tbf": 25,
+          "era": 1.5,
+          "display": "2013: 1 GS/app, 6.0 IP, 1.50 ERA, 12 K, 1 ER, 0 HR, 1 BB"
+        },
+        {
+          "year": "2014",
+          "games": 2,
+          "starts": 2,
+          "ip": 11,
+          "er": 5,
+          "runs": 5,
+          "hits": 14,
+          "hr": 1,
+          "bb": 4,
+          "so": 11,
+          "tbf": 49,
+          "era": 4.09,
+          "display": "2014: 2 GS/app, 11.0 IP, 4.09 ERA, 11 K, 5 ER, 1 HR, 4 BB"
+        },
+        {
+          "year": "2018",
+          "games": 2,
+          "starts": 2,
+          "ip": 12,
+          "er": 4,
+          "runs": 4,
+          "hits": 10,
+          "hr": 0,
+          "bb": 3,
+          "so": 12,
+          "tbf": 47,
+          "era": 3,
+          "display": "2018: 2 GS/app, 12.0 IP, 3.00 ERA, 12 K, 4 ER, 0 HR, 3 BB"
+        },
+        {
+          "year": "2021",
+          "games": 1,
+          "starts": 1,
+          "ip": 7.667,
+          "er": 0,
+          "runs": 0,
+          "hits": 4,
+          "hr": 0,
+          "bb": 0,
+          "so": 9,
+          "tbf": 27,
+          "era": 0,
+          "display": "2021: 1 GS/app, 7.2 IP, 0.00 ERA, 9 K, 0 ER, 0 HR, 0 BB"
+        },
+        {
+          "year": "2022",
+          "games": 1,
+          "starts": 1,
+          "ip": 7,
+          "er": 0,
+          "runs": 0,
+          "hits": 4,
+          "hr": 0,
+          "bb": 0,
+          "so": 9,
+          "tbf": 24,
+          "era": 0,
+          "display": "2022: 1 GS/app, 7.0 IP, 0.00 ERA, 9 K, 0 ER, 0 HR, 0 BB"
+        },
+        {
+          "year": "2023",
+          "games": 2,
+          "starts": 2,
+          "ip": 13,
+          "er": 3,
+          "runs": 3,
+          "hits": 6,
+          "hr": 2,
+          "bb": 2,
+          "so": 14,
+          "tbf": 47,
+          "era": 2.08,
+          "display": "2023: 2 GS/app, 13.0 IP, 2.08 ERA, 14 K, 3 ER, 2 HR, 2 BB"
+        },
+        {
+          "year": "2025",
+          "games": 2,
+          "starts": 2,
+          "ip": 14,
+          "er": 4,
+          "runs": 4,
+          "hits": 12,
+          "hr": 2,
+          "bb": 1,
+          "so": 16,
+          "tbf": 56,
+          "era": 2.57,
+          "display": "2025: 2 GS/app, 14.0 IP, 2.57 ERA, 16 K, 4 ER, 2 HR, 1 BB"
+        }
+      ],
+      "metrics": {
+        "GS": {
+          "display": "11",
+          "value": 11
+        },
+        "ERA": {
+          "display": "2.17",
+          "value": 2.1651
+        },
+        "SO": {
+          "display": "83",
+          "value": 83
+        },
+        "IP": {
+          "display": "70.2",
+          "value": 70.6667
+        },
+        "H": {
+          "display": "57",
+          "value": 57
+        },
+        "ER": {
+          "display": "17",
+          "value": 17
+        },
+        "R": {
+          "display": "17",
+          "value": 17
+        },
+        "HR": {
+          "display": "5",
+          "value": 5
+        },
+        "BB": {
+          "display": "11",
+          "value": 11
+        },
+        "TBF": {
+          "display": "275",
+          "value": 275
+        }
+      },
+      "textRecord": null
+    },
+    {
+      "gameId": "guardians-yankees",
+      "side": "away",
+      "teamName": "Guardians",
+      "opponentTeam": "Yankees",
+      "pitcherName": "Slade Cecconi",
+      "source": "StatMuse",
+      "query": "Slade Cecconi vs Yankees",
+      "url": "https://www.statmuse.com/mlb/ask/slade-cecconi-vs-yankees",
+      "fetchedAt": "2026-06-04T17:07:50.644Z",
+      "status": "found",
+      "summary": "Slade Cecconi vs Yankees: 1 GS/app, 7.2 IP, 3.52 ERA, 5 K, 3 ER, 2 HR, 2 BB.",
+      "seasonSummary": "2023: 1 GS/app, 2.2 IP, 3.37 ERA, 2 K, 1 ER, 1 HR, 0 BB | 2025: 1 GS/app, 5.0 IP, 3.60 ERA, 3 K, 2 ER, 1 HR, 2 BB",
+      "seasons": [
+        {
+          "year": "2023",
+          "games": 1,
+          "starts": 0,
+          "ip": 2.667,
+          "er": 1,
+          "runs": 1,
+          "hits": 3,
+          "hr": 1,
+          "bb": 0,
+          "so": 2,
+          "tbf": 10,
+          "era": 3.37,
+          "display": "2023: 1 GS/app, 2.2 IP, 3.37 ERA, 2 K, 1 ER, 1 HR, 0 BB"
+        },
+        {
+          "year": "2025",
+          "games": 1,
+          "starts": 1,
+          "ip": 5,
+          "er": 2,
+          "runs": 2,
+          "hits": 5,
+          "hr": 1,
+          "bb": 2,
+          "so": 3,
+          "tbf": 22,
+          "era": 3.6,
+          "display": "2025: 1 GS/app, 5.0 IP, 3.60 ERA, 3 K, 2 ER, 1 HR, 2 BB"
+        }
+      ],
+      "metrics": {
+        "GS": {
+          "display": "1",
+          "value": 1
+        },
+        "ERA": {
+          "display": "3.52",
+          "value": 3.5217
+        },
+        "SO": {
+          "display": "5",
+          "value": 5
+        },
+        "IP": {
+          "display": "7.2",
+          "value": 7.6667
+        },
+        "H": {
+          "display": "8",
+          "value": 8
+        },
+        "ER": {
+          "display": "3",
+          "value": 3
+        },
+        "R": {
+          "display": "3",
+          "value": 3
+        },
+        "HR": {
+          "display": "2",
+          "value": 2
+        },
+        "BB": {
+          "display": "2",
+          "value": 2
+        },
+        "TBF": {
+          "display": "32",
+          "value": 32
+        }
+      },
+      "textRecord": null
+    },
+    {
+      "gameId": "guardians-yankees",
+      "side": "home",
+      "teamName": "Yankees",
+      "opponentTeam": "Guardians",
+      "pitcherName": "Carlos Rodón",
+      "source": "StatMuse",
+      "query": "Carlos Rodón vs Guardians",
+      "url": "https://www.statmuse.com/mlb/ask/carlos-rod-n-vs-guardians",
+      "fetchedAt": "2026-06-04T17:07:50.835Z",
+      "status": "found",
+      "summary": "Carlos Rodón vs Guardians: 10-5, 21 GS/app, 139.0 IP, 2.59 ERA, 140 K, 40 ER, 10 HR, 44 BB.",
+      "seasonSummary": "2015: 4 GS/app, 29.2 IP, 1.52 ERA, 26 K, 5 ER, 0 HR, 10 BB | 2016: 4 GS/app, 25.1 IP, 3.55 ERA, 29 K, 10 ER, 2 HR, 7 BB | 2017: 1 GS/app, 6.2 IP, 1.35 ERA, 9 K, 1 ER, 1 HR, 2 BB | 2018: 4 GS/app, 26.1 IP, 3.42 ERA, 15 K, 10 ER, 2 HR, 10 BB | 2019: 1 GS/app, 6.0 IP, 0.00 ERA, 9 K, 0 ER, 0 HR, 1 BB | 2020: 1 GS/app, 4.0 IP, 13.50 ERA, 4 K, 6 ER, 1 HR, 3 BB | 2021: 3 GS/app, 20.0 IP, 2.70 ERA, 23 K, 6 ER, 4 HR, 6 BB | 2022: 1 GS/app, 7.0 IP, 1.29 ERA, 9 K, 1 ER, 0 HR, 2 BB | 2025: 2 GS/app, 14.0 IP, 0.64 ERA, 16 K, 1 ER, 0 HR, 3 BB",
+      "seasons": [
+        {
+          "year": "2015",
+          "games": 5,
+          "starts": 4,
+          "ip": 29.667,
+          "er": 5,
+          "runs": 5,
+          "hits": 23,
+          "hr": 0,
+          "bb": 10,
+          "so": 26,
+          "tbf": 121,
+          "era": 1.52,
+          "display": "2015: 4 GS/app, 29.2 IP, 1.52 ERA, 26 K, 5 ER, 0 HR, 10 BB"
+        },
+        {
+          "year": "2016",
+          "games": 4,
+          "starts": 4,
+          "ip": 25.333,
+          "er": 10,
+          "runs": 10,
+          "hits": 27,
+          "hr": 2,
+          "bb": 7,
+          "so": 29,
+          "tbf": 106,
+          "era": 3.55,
+          "display": "2016: 4 GS/app, 25.1 IP, 3.55 ERA, 29 K, 10 ER, 2 HR, 7 BB"
+        },
+        {
+          "year": "2017",
+          "games": 1,
+          "starts": 1,
+          "ip": 6.667,
+          "er": 1,
+          "runs": 1,
+          "hits": 6,
+          "hr": 1,
+          "bb": 2,
+          "so": 9,
+          "tbf": 27,
+          "era": 1.35,
+          "display": "2017: 1 GS/app, 6.2 IP, 1.35 ERA, 9 K, 1 ER, 1 HR, 2 BB"
+        },
+        {
+          "year": "2018",
+          "games": 4,
+          "starts": 4,
+          "ip": 26.333,
+          "er": 10,
+          "runs": 11,
+          "hits": 18,
+          "hr": 2,
+          "bb": 10,
+          "so": 15,
+          "tbf": 108,
+          "era": 3.42,
+          "display": "2018: 4 GS/app, 26.1 IP, 3.42 ERA, 15 K, 10 ER, 2 HR, 10 BB"
+        },
+        {
+          "year": "2019",
+          "games": 1,
+          "starts": 1,
+          "ip": 6,
+          "er": 0,
+          "runs": 1,
+          "hits": 2,
+          "hr": 0,
+          "bb": 1,
+          "so": 9,
+          "tbf": 23,
+          "era": 0,
+          "display": "2019: 1 GS/app, 6.0 IP, 0.00 ERA, 9 K, 0 ER, 0 HR, 1 BB"
+        },
+        {
+          "year": "2020",
+          "games": 2,
+          "starts": 1,
+          "ip": 4,
+          "er": 6,
+          "runs": 6,
+          "hits": 6,
+          "hr": 1,
+          "bb": 3,
+          "so": 4,
+          "tbf": 20,
+          "era": 13.5,
+          "display": "2020: 1 GS/app, 4.0 IP, 13.50 ERA, 4 K, 6 ER, 1 HR, 3 BB"
+        },
+        {
+          "year": "2021",
+          "games": 3,
+          "starts": 3,
+          "ip": 20,
+          "er": 6,
+          "runs": 7,
+          "hits": 12,
+          "hr": 4,
+          "bb": 6,
+          "so": 23,
+          "tbf": 80,
+          "era": 2.7,
+          "display": "2021: 3 GS/app, 20.0 IP, 2.70 ERA, 23 K, 6 ER, 4 HR, 6 BB"
+        },
+        {
+          "year": "2022",
+          "games": 1,
+          "starts": 1,
+          "ip": 7,
+          "er": 1,
+          "runs": 1,
+          "hits": 2,
+          "hr": 0,
+          "bb": 2,
+          "so": 9,
+          "tbf": 25,
+          "era": 1.29,
+          "display": "2022: 1 GS/app, 7.0 IP, 1.29 ERA, 9 K, 1 ER, 0 HR, 2 BB"
+        },
+        {
+          "year": "2025",
+          "games": 2,
+          "starts": 2,
+          "ip": 14,
+          "er": 1,
+          "runs": 2,
+          "hits": 9,
+          "hr": 0,
+          "bb": 3,
+          "so": 16,
+          "tbf": 53,
+          "era": 0.64,
+          "display": "2025: 2 GS/app, 14.0 IP, 0.64 ERA, 16 K, 1 ER, 0 HR, 3 BB"
+        }
+      ],
+      "metrics": {
+        "GS": {
+          "display": "21",
+          "value": 21
+        },
+        "ERA": {
+          "display": "2.59",
+          "value": 2.5899
+        },
+        "SO": {
+          "display": "140",
+          "value": 140
+        },
+        "IP": {
+          "display": "139.0",
+          "value": 139
+        },
+        "H": {
+          "display": "105",
+          "value": 105
+        },
+        "ER": {
+          "display": "40",
+          "value": 40
+        },
+        "R": {
+          "display": "44",
+          "value": 44
+        },
+        "HR": {
+          "display": "10",
+          "value": 10
+        },
+        "BB": {
+          "display": "44",
+          "value": 44
+        },
+        "TBF": {
+          "display": "563",
+          "value": 563
+        }
+      },
+      "textRecord": {
+        "record": "10-5",
+        "era": "2.59",
+        "strikeouts": "140",
+        "appearances": "23",
+        "opponentLabel": "Guardians in his career"
+      }
+    },
+    {
+      "gameId": "orioles-red-sox",
+      "side": "away",
+      "teamName": "Orioles",
+      "opponentTeam": "Red Sox",
+      "pitcherName": "Trevor Rogers",
+      "source": "StatMuse",
+      "query": "Trevor Rogers vs Red Sox",
+      "url": "https://www.statmuse.com/mlb/ask/trevor-rogers-vs-red-sox",
+      "fetchedAt": "2026-06-04T17:07:51.023Z",
+      "status": "found",
+      "summary": "Trevor Rogers vs Red Sox: 6 GS/app, 27.0 IP, 3.00 ERA, 29 K, 9 ER, 0 HR, 8 BB.",
+      "seasonSummary": "2020: 1 GS/app, 3.0 IP, 3.00 ERA, 3 K, 1 ER, 0 HR, 2 BB | 2021: 1 GS/app, 6.0 IP, 3.00 ERA, 6 K, 2 ER, 0 HR, 0 BB | 2024: 1 GS/app, 3.0 IP, 6.00 ERA, 6 K, 2 ER, 0 HR, 3 BB | 2025: 2 GS/app, 13.1 IP, 0.68 ERA, 12 K, 1 ER, 0 HR, 1 BB | 2026: 1 GS/app, 1.2 IP, 16.20 ERA, 2 K, 3 ER, 0 HR, 2 BB",
+      "seasons": [
+        {
+          "year": "2020",
+          "games": 1,
+          "starts": 1,
+          "ip": 3,
+          "er": 1,
+          "runs": 1,
+          "hits": 3,
+          "hr": 0,
+          "bb": 2,
+          "so": 3,
+          "tbf": 15,
+          "era": 3,
+          "display": "2020: 1 GS/app, 3.0 IP, 3.00 ERA, 3 K, 1 ER, 0 HR, 2 BB"
+        },
+        {
+          "year": "2021",
+          "games": 1,
+          "starts": 1,
+          "ip": 6,
+          "er": 2,
+          "runs": 2,
+          "hits": 9,
+          "hr": 0,
+          "bb": 0,
+          "so": 6,
+          "tbf": 26,
+          "era": 3,
+          "display": "2021: 1 GS/app, 6.0 IP, 3.00 ERA, 6 K, 2 ER, 0 HR, 0 BB"
+        },
+        {
+          "year": "2024",
+          "games": 1,
+          "starts": 1,
+          "ip": 3,
+          "er": 2,
+          "runs": 2,
+          "hits": 5,
+          "hr": 0,
+          "bb": 3,
+          "so": 6,
+          "tbf": 17,
+          "era": 6,
+          "display": "2024: 1 GS/app, 3.0 IP, 6.00 ERA, 6 K, 2 ER, 0 HR, 3 BB"
+        },
+        {
+          "year": "2025",
+          "games": 2,
+          "starts": 2,
+          "ip": 13.333,
+          "er": 1,
+          "runs": 1,
+          "hits": 6,
+          "hr": 0,
+          "bb": 1,
+          "so": 12,
+          "tbf": 47,
+          "era": 0.68,
+          "display": "2025: 2 GS/app, 13.1 IP, 0.68 ERA, 12 K, 1 ER, 0 HR, 1 BB"
+        },
+        {
+          "year": "2026",
+          "games": 1,
+          "starts": 1,
+          "ip": 1.667,
+          "er": 3,
+          "runs": 3,
+          "hits": 4,
+          "hr": 0,
+          "bb": 2,
+          "so": 2,
+          "tbf": 11,
+          "era": 16.2,
+          "display": "2026: 1 GS/app, 1.2 IP, 16.20 ERA, 2 K, 3 ER, 0 HR, 2 BB"
+        }
+      ],
+      "metrics": {
+        "GS": {
+          "display": "6",
+          "value": 6
+        },
+        "ERA": {
+          "display": "3.00",
+          "value": 3
+        },
+        "SO": {
+          "display": "29",
+          "value": 29
+        },
+        "IP": {
+          "display": "27.0",
+          "value": 27
+        },
+        "H": {
+          "display": "27",
+          "value": 27
+        },
+        "ER": {
+          "display": "9",
+          "value": 9
+        },
+        "R": {
+          "display": "9",
+          "value": 9
+        },
+        "HR": {
+          "display": "0",
+          "value": 0
+        },
+        "BB": {
+          "display": "8",
+          "value": 8
+        },
+        "TBF": {
+          "display": "116",
+          "value": 116
+        }
+      },
+      "textRecord": null
+    },
+    {
+      "gameId": "orioles-red-sox",
+      "side": "home",
+      "teamName": "Red Sox",
+      "opponentTeam": "Orioles",
+      "pitcherName": "Brayan Bello",
+      "source": "StatMuse",
+      "query": "Brayan Bello vs Orioles",
+      "url": "https://www.statmuse.com/mlb/ask/brayan-bello-vs-orioles",
+      "fetchedAt": "2026-06-04T17:07:51.217Z",
+      "status": "found",
+      "summary": "Brayan Bello vs Orioles: 4-3, 9 GS/app, 46.0 IP, 4.70 ERA, 47 K, 24 ER, 6 HR, 19 BB.",
+      "seasonSummary": "2022: 1 GS/app, 5.1 IP, 5.06 ERA, 7 K, 3 ER, 0 HR, 4 BB | 2023: 1 GS/app, 5.0 IP, 5.40 ERA, 4 K, 3 ER, 0 HR, 0 BB | 2024: 4 GS/app, 21.2 IP, 2.91 ERA, 21 K, 7 ER, 1 HR, 12 BB | 2025: 2 GS/app, 10.2 IP, 2.53 ERA, 13 K, 3 ER, 0 HR, 2 BB | 2026: 1 GS/app, 3.1 IP, 21.60 ERA, 2 K, 8 ER, 5 HR, 1 BB",
+      "seasons": [
+        {
+          "year": "2022",
+          "games": 1,
+          "starts": 1,
+          "ip": 5.333,
+          "er": 3,
+          "runs": 3,
+          "hits": 3,
+          "hr": 0,
+          "bb": 4,
+          "so": 7,
+          "tbf": 21,
+          "era": 5.06,
+          "display": "2022: 1 GS/app, 5.1 IP, 5.06 ERA, 7 K, 3 ER, 0 HR, 4 BB"
+        },
+        {
+          "year": "2023",
+          "games": 1,
+          "starts": 1,
+          "ip": 5,
+          "er": 3,
+          "runs": 3,
+          "hits": 7,
+          "hr": 0,
+          "bb": 0,
+          "so": 4,
+          "tbf": 20,
+          "era": 5.4,
+          "display": "2023: 1 GS/app, 5.0 IP, 5.40 ERA, 4 K, 3 ER, 0 HR, 0 BB"
+        },
+        {
+          "year": "2024",
+          "games": 4,
+          "starts": 4,
+          "ip": 21.667,
+          "er": 7,
+          "runs": 9,
+          "hits": 14,
+          "hr": 1,
+          "bb": 12,
+          "so": 21,
+          "tbf": 96,
+          "era": 2.91,
+          "display": "2024: 4 GS/app, 21.2 IP, 2.91 ERA, 21 K, 7 ER, 1 HR, 12 BB"
+        },
+        {
+          "year": "2025",
+          "games": 2,
+          "starts": 2,
+          "ip": 10.667,
+          "er": 3,
+          "runs": 4,
+          "hits": 11,
+          "hr": 0,
+          "bb": 2,
+          "so": 13,
+          "tbf": 45,
+          "era": 2.53,
+          "display": "2025: 2 GS/app, 10.2 IP, 2.53 ERA, 13 K, 3 ER, 0 HR, 2 BB"
+        },
+        {
+          "year": "2026",
+          "games": 1,
+          "starts": 1,
+          "ip": 3.333,
+          "er": 8,
+          "runs": 8,
+          "hits": 13,
+          "hr": 5,
+          "bb": 1,
+          "so": 2,
+          "tbf": 23,
+          "era": 21.6,
+          "display": "2026: 1 GS/app, 3.1 IP, 21.60 ERA, 2 K, 8 ER, 5 HR, 1 BB"
+        }
+      ],
+      "metrics": {
+        "GS": {
+          "display": "9",
+          "value": 9
+        },
+        "ERA": {
+          "display": "4.70",
+          "value": 4.6957
+        },
+        "SO": {
+          "display": "47",
+          "value": 47
+        },
+        "IP": {
+          "display": "46.0",
+          "value": 46
+        },
+        "H": {
+          "display": "48",
+          "value": 48
+        },
+        "ER": {
+          "display": "24",
+          "value": 24
+        },
+        "R": {
+          "display": "27",
+          "value": 27
+        },
+        "HR": {
+          "display": "6",
+          "value": 6
+        },
+        "BB": {
+          "display": "19",
+          "value": 19
+        },
+        "TBF": {
+          "display": "205",
+          "value": 205
+        }
+      },
+      "textRecord": {
+        "record": "4-3",
+        "era": "4.70",
+        "strikeouts": "47",
+        "appearances": "9",
+        "opponentLabel": "Orioles in his career"
+      }
+    },
+    {
+      "gameId": "giants-brewers",
+      "side": "away",
+      "teamName": "Giants",
+      "opponentTeam": "Brewers",
+      "pitcherName": "Adrian Houser",
+      "source": "StatMuse",
+      "query": "Adrian Houser vs Brewers",
+      "url": "https://www.statmuse.com/mlb/ask/adrian-houser-vs-brewers",
+      "fetchedAt": "2026-06-04T17:07:51.973Z",
+      "status": "missing",
+      "summary": "No StatMuse pitcher-vs-team table found for Adrian Houser vs Brewers.",
+      "seasonSummary": "",
+      "seasons": [],
+      "metrics": {
+        "GS": null,
+        "ERA": null,
+        "SO": null,
+        "IP": null,
+        "H": null,
+        "ER": null,
+        "R": null,
+        "HR": null,
+        "BB": null,
+        "TBF": null
+      },
+      "textRecord": null
+    },
+    {
+      "gameId": "giants-brewers",
+      "side": "home",
+      "teamName": "Brewers",
+      "opponentTeam": "Giants",
+      "pitcherName": "Coleman Crow",
+      "source": "StatMuse",
+      "query": "Coleman Crow vs Giants",
+      "url": "https://www.statmuse.com/mlb/ask/coleman-crow-vs-giants",
+      "fetchedAt": "2026-06-04T17:07:52.653Z",
+      "status": "missing",
+      "summary": "No StatMuse pitcher-vs-team table found for Coleman Crow vs Giants.",
+      "seasonSummary": "",
+      "seasons": [],
+      "metrics": {
+        "GS": null,
+        "ERA": null,
+        "SO": null,
+        "IP": null,
+        "H": null,
+        "ER": null,
+        "R": null,
+        "HR": null,
+        "BB": null,
+        "TBF": null
+      },
+      "textRecord": null
+    },
+    {
+      "gameId": "blue-jays-braves",
+      "side": "away",
+      "teamName": "Blue Jays",
+      "opponentTeam": "Braves",
+      "pitcherName": "Mason Fluharty",
+      "source": "StatMuse",
+      "query": "Mason Fluharty vs Braves",
+      "url": "https://www.statmuse.com/mlb/ask/mason-fluharty-vs-braves",
+      "fetchedAt": "2026-06-04T17:07:52.840Z",
+      "status": "found",
+      "summary": "Mason Fluharty vs Braves: 0 GS/app, 1.1 IP, 0.00 ERA, 0 K, 0 ER, 0 HR, 1 BB.",
+      "seasonSummary": "2025: 1 GS/app, 0.2 IP, 0.00 ERA, 0 K, 0 ER, 0 HR, 1 BB | 2026: 1 GS/app, 0.2 IP, 0.00 ERA, 0 K, 0 ER, 0 HR, 0 BB",
+      "seasons": [
+        {
+          "year": "2025",
+          "games": 1,
+          "starts": 0,
+          "ip": 0.667,
+          "er": 0,
+          "runs": 0,
+          "hits": 0,
+          "hr": 0,
+          "bb": 1,
+          "so": 0,
+          "tbf": 3,
+          "era": 0,
+          "display": "2025: 1 GS/app, 0.2 IP, 0.00 ERA, 0 K, 0 ER, 0 HR, 1 BB"
+        },
+        {
+          "year": "2026",
+          "games": 1,
+          "starts": 0,
+          "ip": 0.667,
+          "er": 0,
+          "runs": 0,
+          "hits": 1,
+          "hr": 0,
+          "bb": 0,
+          "so": 0,
+          "tbf": 3,
+          "era": 0,
+          "display": "2026: 1 GS/app, 0.2 IP, 0.00 ERA, 0 K, 0 ER, 0 HR, 0 BB"
+        }
+      ],
+      "metrics": {
+        "GS": {
+          "display": "0",
+          "value": 0
+        },
+        "ERA": {
+          "display": "0.00",
+          "value": 0
+        },
+        "SO": {
+          "display": "0",
+          "value": 0
+        },
+        "IP": {
+          "display": "1.1",
+          "value": 1.3333
+        },
+        "H": {
+          "display": "1",
+          "value": 1
+        },
+        "ER": {
+          "display": "0",
+          "value": 0
+        },
+        "R": {
+          "display": "0",
+          "value": 0
+        },
+        "HR": {
+          "display": "0",
+          "value": 0
+        },
+        "BB": {
+          "display": "1",
+          "value": 1
+        },
+        "TBF": {
+          "display": "6",
+          "value": 6
+        }
+      },
+      "textRecord": null
+    },
+    {
+      "gameId": "blue-jays-braves",
+      "side": "home",
+      "teamName": "Braves",
+      "opponentTeam": "Blue Jays",
+      "pitcherName": "Chris Sale",
+      "source": "StatMuse",
+      "query": "Chris Sale vs Blue Jays",
+      "url": "https://www.statmuse.com/mlb/ask/chris-sale-vs-blue-jays",
+      "fetchedAt": "2026-06-04T17:07:53.018Z",
+      "status": "found",
+      "summary": "Chris Sale vs Blue Jays: 18 GS/app, 119.2 IP, 2.71 ERA, 146 K, 36 ER, 18 HR, 29 BB.",
+      "seasonSummary": "2011: 3 GS/app, 5.0 IP, 3.60 ERA, 6 K, 2 ER, 0 HR, 4 BB | 2013: 1 GS/app, 7.0 IP, 2.57 ERA, 6 K, 2 ER, 0 HR, 1 BB | 2014: 1 GS/app, 7.0 IP, 2.57 ERA, 6 K, 2 ER, 1 HR, 5 BB | 2015: 1 GS/app, 9.0 IP, 2.00 ERA, 6 K, 2 ER, 2 HR, 0 BB | 2016: 2 GS/app, 16.0 IP, 1.69 ERA, 13 K, 3 ER, 3 HR, 4 BB | 2017: 4 GS/app, 27.0 IP, 1.67 ERA, 43 K, 5 ER, 4 HR, 4 BB | 2018: 3 GS/app, 16.0 IP, 3.38 ERA, 21 K, 6 ER, 3 HR, 2 BB | 2019: 4 GS/app, 20.2 IP, 5.66 ERA, 28 K, 13 ER, 4 HR, 6 BB | 2023: 1 GS/app, 6.0 IP, 1.50 ERA, 10 K, 1 ER, 1 HR, 2 BB | 2024: 1 GS/app, 6.0 IP, 0.00 ERA, 7 K, 0 ER, 0 HR, 1 BB",
+      "seasons": [
+        {
+          "year": "2011",
+          "games": 3,
+          "starts": 0,
+          "ip": 5,
+          "er": 2,
+          "runs": 2,
+          "hits": 5,
+          "hr": 0,
+          "bb": 4,
+          "so": 6,
+          "tbf": 23,
+          "era": 3.6,
+          "display": "2011: 3 GS/app, 5.0 IP, 3.60 ERA, 6 K, 2 ER, 0 HR, 4 BB"
+        },
+        {
+          "year": "2013",
+          "games": 1,
+          "starts": 1,
+          "ip": 7,
+          "er": 2,
+          "runs": 3,
+          "hits": 4,
+          "hr": 0,
+          "bb": 1,
+          "so": 6,
+          "tbf": 26,
+          "era": 2.57,
+          "display": "2013: 1 GS/app, 7.0 IP, 2.57 ERA, 6 K, 2 ER, 0 HR, 1 BB"
+        },
+        {
+          "year": "2014",
+          "games": 1,
+          "starts": 1,
+          "ip": 7,
+          "er": 2,
+          "runs": 2,
+          "hits": 4,
+          "hr": 1,
+          "bb": 5,
+          "so": 6,
+          "tbf": 29,
+          "era": 2.57,
+          "display": "2014: 1 GS/app, 7.0 IP, 2.57 ERA, 6 K, 2 ER, 1 HR, 5 BB"
+        },
+        {
+          "year": "2015",
+          "games": 1,
+          "starts": 1,
+          "ip": 9,
+          "er": 2,
+          "runs": 2,
+          "hits": 6,
+          "hr": 2,
+          "bb": 0,
+          "so": 6,
+          "tbf": 32,
+          "era": 2,
+          "display": "2015: 1 GS/app, 9.0 IP, 2.00 ERA, 6 K, 2 ER, 2 HR, 0 BB"
+        },
+        {
+          "year": "2016",
+          "games": 2,
+          "starts": 2,
+          "ip": 16,
+          "er": 3,
+          "runs": 3,
+          "hits": 9,
+          "hr": 3,
+          "bb": 4,
+          "so": 13,
+          "tbf": 57,
+          "era": 1.69,
+          "display": "2016: 2 GS/app, 16.0 IP, 1.69 ERA, 13 K, 3 ER, 3 HR, 4 BB"
+        },
+        {
+          "year": "2017",
+          "games": 4,
+          "starts": 4,
+          "ip": 27,
+          "er": 5,
+          "runs": 5,
+          "hits": 19,
+          "hr": 4,
+          "bb": 4,
+          "so": 43,
+          "tbf": 106,
+          "era": 1.67,
+          "display": "2017: 4 GS/app, 27.0 IP, 1.67 ERA, 43 K, 5 ER, 4 HR, 4 BB"
+        },
+        {
+          "year": "2018",
+          "games": 3,
+          "starts": 3,
+          "ip": 16,
+          "er": 6,
+          "runs": 6,
+          "hits": 11,
+          "hr": 3,
+          "bb": 2,
+          "so": 21,
+          "tbf": 63,
+          "era": 3.38,
+          "display": "2018: 3 GS/app, 16.0 IP, 3.38 ERA, 21 K, 6 ER, 3 HR, 2 BB"
+        },
+        {
+          "year": "2019",
+          "games": 4,
+          "starts": 4,
+          "ip": 20.667,
+          "er": 13,
+          "runs": 14,
+          "hits": 25,
+          "hr": 4,
+          "bb": 6,
+          "so": 28,
+          "tbf": 94,
+          "era": 5.66,
+          "display": "2019: 4 GS/app, 20.2 IP, 5.66 ERA, 28 K, 13 ER, 4 HR, 6 BB"
+        },
+        {
+          "year": "2023",
+          "games": 1,
+          "starts": 1,
+          "ip": 6,
+          "er": 1,
+          "runs": 1,
+          "hits": 2,
+          "hr": 1,
+          "bb": 2,
+          "so": 10,
+          "tbf": 21,
+          "era": 1.5,
+          "display": "2023: 1 GS/app, 6.0 IP, 1.50 ERA, 10 K, 1 ER, 1 HR, 2 BB"
+        },
+        {
+          "year": "2024",
+          "games": 1,
+          "starts": 1,
+          "ip": 6,
+          "er": 0,
+          "runs": 0,
+          "hits": 2,
+          "hr": 0,
+          "bb": 1,
+          "so": 7,
+          "tbf": 23,
+          "era": 0,
+          "display": "2024: 1 GS/app, 6.0 IP, 0.00 ERA, 7 K, 0 ER, 0 HR, 1 BB"
+        }
+      ],
+      "metrics": {
+        "GS": {
+          "display": "18",
+          "value": 18
+        },
+        "ERA": {
+          "display": "2.71",
+          "value": 2.7075
+        },
+        "SO": {
+          "display": "146",
+          "value": 146
+        },
+        "IP": {
+          "display": "119.2",
+          "value": 119.6667
+        },
+        "H": {
+          "display": "87",
+          "value": 87
+        },
+        "ER": {
+          "display": "36",
+          "value": 36
+        },
+        "R": {
+          "display": "38",
+          "value": 38
+        },
+        "HR": {
+          "display": "18",
+          "value": 18
+        },
+        "BB": {
+          "display": "29",
+          "value": 29
+        },
+        "TBF": {
+          "display": "474",
+          "value": 474
+        }
+      },
+      "textRecord": null
+    },
+    {
+      "gameId": "royals-twins",
+      "side": "away",
+      "teamName": "Royals",
+      "opponentTeam": "Twins",
+      "pitcherName": "Seth Lugo",
+      "source": "StatMuse",
+      "query": "Seth Lugo vs Twins",
+      "url": "https://www.statmuse.com/mlb/ask/seth-lugo-vs-twins",
+      "fetchedAt": "2026-06-04T17:07:53.196Z",
+      "status": "found",
+      "summary": "Seth Lugo vs Twins: 7 GS/app, 39.2 IP, 4.76 ERA, 30 K, 21 ER, 6 HR, 16 BB.",
+      "seasonSummary": "2016: 1 GS/app, 5.0 IP, 1.80 ERA, 2 K, 1 ER, 1 HR, 4 BB | 2019: 2 GS/app, 3.0 IP, 3.00 ERA, 3 K, 1 ER, 1 HR, 0 BB | 2023: 1 GS/app, 6.0 IP, 3.00 ERA, 5 K, 2 ER, 1 HR, 1 BB | 2024: 3 GS/app, 16.0 IP, 4.50 ERA, 13 K, 8 ER, 1 HR, 6 BB | 2025: 2 GS/app, 9.2 IP, 8.38 ERA, 7 K, 9 ER, 2 HR, 5 BB",
+      "seasons": [
+        {
+          "year": "2016",
+          "games": 1,
+          "starts": 1,
+          "ip": 5,
+          "er": 1,
+          "runs": 1,
+          "hits": 4,
+          "hr": 1,
+          "bb": 4,
+          "so": 2,
+          "tbf": 23,
+          "era": 1.8,
+          "display": "2016: 1 GS/app, 5.0 IP, 1.80 ERA, 2 K, 1 ER, 1 HR, 4 BB"
+        },
+        {
+          "year": "2019",
+          "games": 2,
+          "starts": 0,
+          "ip": 3,
+          "er": 1,
+          "runs": 1,
+          "hits": 3,
+          "hr": 1,
+          "bb": 0,
+          "so": 3,
+          "tbf": 12,
+          "era": 3,
+          "display": "2019: 2 GS/app, 3.0 IP, 3.00 ERA, 3 K, 1 ER, 1 HR, 0 BB"
+        },
+        {
+          "year": "2023",
+          "games": 1,
+          "starts": 1,
+          "ip": 6,
+          "er": 2,
+          "runs": 2,
+          "hits": 5,
+          "hr": 1,
+          "bb": 1,
+          "so": 5,
+          "tbf": 23,
+          "era": 3,
+          "display": "2023: 1 GS/app, 6.0 IP, 3.00 ERA, 5 K, 2 ER, 1 HR, 1 BB"
+        },
+        {
+          "year": "2024",
+          "games": 3,
+          "starts": 3,
+          "ip": 16,
+          "er": 8,
+          "runs": 9,
+          "hits": 17,
+          "hr": 1,
+          "bb": 6,
+          "so": 13,
+          "tbf": 73,
+          "era": 4.5,
+          "display": "2024: 3 GS/app, 16.0 IP, 4.50 ERA, 13 K, 8 ER, 1 HR, 6 BB"
+        },
+        {
+          "year": "2025",
+          "games": 2,
+          "starts": 2,
+          "ip": 9.667,
+          "er": 9,
+          "runs": 9,
+          "hits": 14,
+          "hr": 2,
+          "bb": 5,
+          "so": 7,
+          "tbf": 46,
+          "era": 8.38,
+          "display": "2025: 2 GS/app, 9.2 IP, 8.38 ERA, 7 K, 9 ER, 2 HR, 5 BB"
+        }
+      ],
+      "metrics": {
+        "GS": {
+          "display": "7",
+          "value": 7
+        },
+        "ERA": {
+          "display": "4.76",
+          "value": 4.7647
+        },
+        "SO": {
+          "display": "30",
+          "value": 30
+        },
+        "IP": {
+          "display": "39.2",
+          "value": 39.6667
+        },
+        "H": {
+          "display": "43",
+          "value": 43
+        },
+        "ER": {
+          "display": "21",
+          "value": 21
+        },
+        "R": {
+          "display": "22",
+          "value": 22
+        },
+        "HR": {
+          "display": "6",
+          "value": 6
+        },
+        "BB": {
+          "display": "16",
+          "value": 16
+        },
+        "TBF": {
+          "display": "177",
+          "value": 177
+        }
+      },
+      "textRecord": null
+    },
+    {
+      "gameId": "royals-twins",
+      "side": "home",
+      "teamName": "Twins",
+      "opponentTeam": "Royals",
+      "pitcherName": "Andrew Morris",
+      "source": "StatMuse",
+      "query": "Andrew Morris vs Royals",
+      "url": "https://www.statmuse.com/mlb/ask/andrew-morris-vs-royals",
+      "fetchedAt": "2026-06-04T17:07:53.849Z",
+      "status": "missing",
+      "summary": "No StatMuse pitcher-vs-team table found for Andrew Morris vs Royals.",
+      "seasonSummary": "",
+      "seasons": [],
+      "metrics": {
+        "GS": null,
+        "ERA": null,
+        "SO": null,
+        "IP": null,
+        "H": null,
+        "ER": null,
+        "R": null,
+        "HR": null,
+        "BB": null,
+        "TBF": null
+      },
+      "textRecord": null
+    },
+    {
+      "gameId": "athletics-cubs",
+      "side": "away",
+      "teamName": "Athletics",
+      "opponentTeam": "Cubs",
+      "pitcherName": "J.T. Ginn",
+      "source": "StatMuse",
+      "query": "J.T. Ginn vs Cubs",
+      "url": "https://www.statmuse.com/mlb/ask/j-t-ginn-vs-cubs",
+      "fetchedAt": "2026-06-04T17:07:54.658Z",
+      "status": "missing",
+      "summary": "No StatMuse pitcher-vs-team table found for J.T. Ginn vs Cubs.",
+      "seasonSummary": "",
+      "seasons": [],
+      "metrics": {
+        "GS": null,
+        "ERA": null,
+        "SO": null,
+        "IP": null,
+        "H": null,
+        "ER": null,
+        "R": null,
+        "HR": null,
+        "BB": null,
+        "TBF": null
+      },
+      "textRecord": null
+    },
+    {
+      "gameId": "athletics-cubs",
+      "side": "home",
+      "teamName": "Cubs",
+      "opponentTeam": "Athletics",
+      "pitcherName": "Shota Imanaga",
+      "source": "StatMuse",
+      "query": "Shota Imanaga vs Athletics",
+      "url": "https://www.statmuse.com/mlb/ask/shota-imanaga-vs-athletics",
+      "fetchedAt": "2026-06-04T17:07:54.852Z",
+      "status": "found",
+      "summary": "Shota Imanaga vs Athletics: 1 GS/app, N/A IP, N/A ERA, N/A K.",
+      "seasonSummary": "2024: 1 GS/app, 6.0 IP, 3.00 ERA, 11 K, 2 ER, 1 HR, 3 BB",
+      "seasons": [
+        {
+          "year": "2024",
+          "games": 1,
+          "starts": 1,
+          "ip": 6,
+          "er": 2,
+          "runs": 2,
+          "hits": 5,
+          "hr": 1,
+          "bb": 3,
+          "so": 11,
+          "tbf": 26,
+          "era": 3,
+          "display": "2024: 1 GS/app, 6.0 IP, 3.00 ERA, 11 K, 2 ER, 1 HR, 3 BB"
+        }
+      ],
+      "metrics": {
+        "GS": null,
+        "ERA": null,
+        "SO": null,
+        "IP": null,
+        "H": null,
+        "ER": null,
+        "R": null,
+        "HR": null,
+        "BB": null,
+        "TBF": null
+      },
+      "textRecord": null
+    },
+    {
+      "gameId": "pirates-astros",
+      "side": "away",
+      "teamName": "Pirates",
+      "opponentTeam": "Astros",
+      "pitcherName": "Jared Jones",
+      "source": "StatMuse",
+      "query": "Jared Jones vs Astros",
+      "url": "https://www.statmuse.com/mlb/ask/jared-jones-vs-astros",
+      "fetchedAt": "2026-06-04T17:07:55.501Z",
+      "status": "missing",
+      "summary": "No StatMuse pitcher-vs-team table found for Jared Jones vs Astros.",
+      "seasonSummary": "",
+      "seasons": [],
+      "metrics": {
+        "GS": null,
+        "ERA": null,
+        "SO": null,
+        "IP": null,
+        "H": null,
+        "ER": null,
+        "R": null,
+        "HR": null,
+        "BB": null,
+        "TBF": null
+      },
+      "textRecord": null
+    },
+    {
+      "gameId": "pirates-astros",
+      "side": "home",
+      "teamName": "Astros",
+      "opponentTeam": "Pirates",
+      "pitcherName": "Kai-Wei Teng",
+      "source": "StatMuse",
+      "query": "Kai-Wei Teng vs Pirates",
+      "url": "https://www.statmuse.com/mlb/ask/kai-wei-teng-vs-pirates",
+      "fetchedAt": "2026-06-04T17:07:56.220Z",
+      "status": "missing",
+      "summary": "No StatMuse pitcher-vs-team table found for Kai-Wei Teng vs Pirates.",
+      "seasonSummary": "",
+      "seasons": [],
+      "metrics": {
+        "GS": null,
+        "ERA": null,
+        "SO": null,
+        "IP": null,
+        "H": null,
+        "ER": null,
+        "R": null,
+        "HR": null,
+        "BB": null,
+        "TBF": null
+      },
+      "textRecord": null
+    },
+    {
+      "gameId": "dodgers-diamondbacks",
+      "side": "away",
+      "teamName": "Dodgers",
+      "opponentTeam": "Diamondbacks",
+      "pitcherName": "Justin Wrobleski",
+      "source": "StatMuse",
+      "query": "Justin Wrobleski vs Diamondbacks",
+      "url": "https://www.statmuse.com/mlb/ask/justin-wrobleski-vs-diamondbacks",
+      "fetchedAt": "2026-06-04T17:07:56.413Z",
+      "status": "found",
+      "summary": "Justin Wrobleski vs Diamondbacks: 1 GS/app, 6.1 IP, 14.21 ERA, 4 K, 10 ER, 2 HR, 2 BB.",
+      "seasonSummary": "2024: 1 GS/app, 5.1 IP, 16.88 ERA, 2 K, 10 ER, 2 HR, 2 BB | 2025: 1 GS/app, 1.0 IP, 0.00 ERA, 2 K, 0 ER, 0 HR, 0 BB",
+      "seasons": [
+        {
+          "year": "2024",
+          "games": 1,
+          "starts": 1,
+          "ip": 5.333,
+          "er": 10,
+          "runs": 10,
+          "hits": 10,
+          "hr": 2,
+          "bb": 2,
+          "so": 2,
+          "tbf": 29,
+          "era": 16.88,
+          "display": "2024: 1 GS/app, 5.1 IP, 16.88 ERA, 2 K, 10 ER, 2 HR, 2 BB"
+        },
+        {
+          "year": "2025",
+          "games": 1,
+          "starts": 0,
+          "ip": 1,
+          "er": 0,
+          "runs": 0,
+          "hits": 0,
+          "hr": 0,
+          "bb": 0,
+          "so": 2,
+          "tbf": 3,
+          "era": 0,
+          "display": "2025: 1 GS/app, 1.0 IP, 0.00 ERA, 2 K, 0 ER, 0 HR, 0 BB"
+        }
+      ],
+      "metrics": {
+        "GS": {
+          "display": "1",
+          "value": 1
+        },
+        "ERA": {
+          "display": "14.21",
+          "value": 14.2105
+        },
+        "SO": {
+          "display": "4",
+          "value": 4
+        },
+        "IP": {
+          "display": "6.1",
+          "value": 6.3333
+        },
+        "H": {
+          "display": "10",
+          "value": 10
+        },
+        "ER": {
+          "display": "10",
+          "value": 10
+        },
+        "R": {
+          "display": "10",
+          "value": 10
+        },
+        "HR": {
+          "display": "2",
+          "value": 2
+        },
+        "BB": {
+          "display": "2",
+          "value": 2
+        },
+        "TBF": {
+          "display": "32",
+          "value": 32
+        }
+      },
+      "textRecord": null
+    },
+    {
+      "gameId": "dodgers-diamondbacks",
+      "side": "home",
+      "teamName": "Diamondbacks",
+      "opponentTeam": "Dodgers",
+      "pitcherName": "Ryne Nelson",
+      "source": "StatMuse",
+      "query": "Ryne Nelson vs Dodgers",
+      "url": "https://www.statmuse.com/mlb/ask/ryne-nelson-vs-dodgers",
+      "fetchedAt": "2026-06-04T17:07:56.601Z",
+      "status": "found",
+      "summary": "Ryne Nelson vs Dodgers: 5 GS/app, 39.2 IP, 2.72 ERA, 33 K, 12 ER, 3 HR, 12 BB.",
+      "seasonSummary": "2022: 1 GS/app, 6.0 IP, 0.00 ERA, 6 K, 0 ER, 0 HR, 2 BB | 2023: 1 GS/app, 6.0 IP, 4.50 ERA, 3 K, 3 ER, 0 HR, 2 BB | 2024: 2 GS/app, 10.0 IP, 0.90 ERA, 8 K, 1 ER, 0 HR, 4 BB | 2025: 2 GS/app, 13.0 IP, 2.77 ERA, 12 K, 4 ER, 1 HR, 1 BB | 2026: 1 GS/app, 4.2 IP, 7.71 ERA, 4 K, 4 ER, 2 HR, 3 BB",
+      "seasons": [
+        {
+          "year": "2022",
+          "games": 1,
+          "starts": 1,
+          "ip": 6,
+          "er": 0,
+          "runs": 0,
+          "hits": 2,
+          "hr": 0,
+          "bb": 2,
+          "so": 6,
+          "tbf": 22,
+          "era": 0,
+          "display": "2022: 1 GS/app, 6.0 IP, 0.00 ERA, 6 K, 0 ER, 0 HR, 2 BB"
+        },
+        {
+          "year": "2023",
+          "games": 1,
+          "starts": 1,
+          "ip": 6,
+          "er": 3,
+          "runs": 3,
+          "hits": 4,
+          "hr": 0,
+          "bb": 2,
+          "so": 3,
+          "tbf": 25,
+          "era": 4.5,
+          "display": "2023: 1 GS/app, 6.0 IP, 4.50 ERA, 3 K, 3 ER, 0 HR, 2 BB"
+        },
+        {
+          "year": "2024",
+          "games": 2,
+          "starts": 0,
+          "ip": 10,
+          "er": 1,
+          "runs": 1,
+          "hits": 11,
+          "hr": 0,
+          "bb": 4,
+          "so": 8,
+          "tbf": 44,
+          "era": 0.9,
+          "display": "2024: 2 GS/app, 10.0 IP, 0.90 ERA, 8 K, 1 ER, 0 HR, 4 BB"
+        },
+        {
+          "year": "2025",
+          "games": 3,
+          "starts": 2,
+          "ip": 13,
+          "er": 4,
+          "runs": 4,
+          "hits": 10,
+          "hr": 1,
+          "bb": 1,
+          "so": 12,
+          "tbf": 49,
+          "era": 2.77,
+          "display": "2025: 2 GS/app, 13.0 IP, 2.77 ERA, 12 K, 4 ER, 1 HR, 1 BB"
+        },
+        {
+          "year": "2026",
+          "games": 1,
+          "starts": 1,
+          "ip": 4.667,
+          "er": 4,
+          "runs": 4,
+          "hits": 2,
+          "hr": 2,
+          "bb": 3,
+          "so": 4,
+          "tbf": 19,
+          "era": 7.71,
+          "display": "2026: 1 GS/app, 4.2 IP, 7.71 ERA, 4 K, 4 ER, 2 HR, 3 BB"
+        }
+      ],
+      "metrics": {
+        "GS": {
+          "display": "5",
+          "value": 5
+        },
+        "ERA": {
+          "display": "2.72",
+          "value": 2.7227
+        },
+        "SO": {
+          "display": "33",
+          "value": 33
+        },
+        "IP": {
+          "display": "39.2",
+          "value": 39.6667
+        },
+        "H": {
+          "display": "29",
+          "value": 29
+        },
+        "ER": {
+          "display": "12",
+          "value": 12
+        },
+        "R": {
+          "display": "12",
+          "value": 12
+        },
+        "HR": {
+          "display": "3",
+          "value": 3
+        },
+        "BB": {
+          "display": "12",
+          "value": 12
+        },
+        "TBF": {
+          "display": "159",
+          "value": 159
+        }
+      },
+      "textRecord": null
+    }
+  ],
+  "byGame": {
+    "padres-phillies": {
+      "away": {
+        "gameId": "padres-phillies",
+        "side": "away",
+        "teamName": "Padres",
+        "opponentTeam": "Phillies",
+        "pitcherName": "Lucas Giolito",
+        "source": "StatMuse",
+        "query": "Lucas Giolito vs Phillies",
+        "url": "https://www.statmuse.com/mlb/ask/lucas-giolito-vs-phillies",
+        "fetchedAt": "2026-06-04T17:07:50.259Z",
+        "status": "found",
+        "summary": "Lucas Giolito vs Phillies: 3 GS/app, 15.2 IP, 5.74 ERA, 15 K, 10 ER, 7 HR, 6 BB.",
+        "seasonSummary": "2023: 2 GS/app, 11.2 IP, 3.86 ERA, 13 K, 5 ER, 3 HR, 5 BB | 2025: 1 GS/app, 4.0 IP, 11.25 ERA, 2 K, 5 ER, 4 HR, 1 BB",
+        "seasons": [
+          {
+            "year": "2023",
+            "games": 2,
+            "starts": 2,
+            "ip": 11.667,
+            "er": 5,
+            "runs": 5,
+            "hits": 4,
+            "hr": 3,
+            "bb": 5,
+            "so": 13,
+            "tbf": 44,
+            "era": 3.86,
+            "display": "2023: 2 GS/app, 11.2 IP, 3.86 ERA, 13 K, 5 ER, 3 HR, 5 BB"
+          },
+          {
+            "year": "2025",
+            "games": 1,
+            "starts": 1,
+            "ip": 4,
+            "er": 5,
+            "runs": 5,
+            "hits": 6,
+            "hr": 4,
+            "bb": 1,
+            "so": 2,
+            "tbf": 19,
+            "era": 11.25,
+            "display": "2025: 1 GS/app, 4.0 IP, 11.25 ERA, 2 K, 5 ER, 4 HR, 1 BB"
+          }
+        ],
+        "metrics": {
+          "GS": {
+            "display": "3",
+            "value": 3
+          },
+          "ERA": {
+            "display": "5.74",
+            "value": 5.7447
+          },
+          "SO": {
+            "display": "15",
+            "value": 15
+          },
+          "IP": {
+            "display": "15.2",
+            "value": 15.6667
+          },
+          "H": {
+            "display": "10",
+            "value": 10
+          },
+          "ER": {
+            "display": "10",
+            "value": 10
+          },
+          "R": {
+            "display": "10",
+            "value": 10
+          },
+          "HR": {
+            "display": "7",
+            "value": 7
+          },
+          "BB": {
+            "display": "6",
+            "value": 6
+          },
+          "TBF": {
+            "display": "63",
+            "value": 63
+          }
+        },
+        "textRecord": null
+      },
+      "home": {
+        "gameId": "padres-phillies",
+        "side": "home",
+        "teamName": "Phillies",
+        "opponentTeam": "Padres",
+        "pitcherName": "Zack Wheeler",
+        "source": "StatMuse",
+        "query": "Zack Wheeler vs Padres",
+        "url": "https://www.statmuse.com/mlb/ask/zack-wheeler-vs-padres",
+        "fetchedAt": "2026-06-04T17:07:50.451Z",
+        "status": "found",
+        "summary": "Zack Wheeler vs Padres: 11 GS/app, 70.2 IP, 2.17 ERA, 83 K, 17 ER, 5 HR, 11 BB.",
+        "seasonSummary": "2013: 1 GS/app, 6.0 IP, 1.50 ERA, 12 K, 1 ER, 0 HR, 1 BB | 2014: 2 GS/app, 11.0 IP, 4.09 ERA, 11 K, 5 ER, 1 HR, 4 BB | 2018: 2 GS/app, 12.0 IP, 3.00 ERA, 12 K, 4 ER, 0 HR, 3 BB | 2021: 1 GS/app, 7.2 IP, 0.00 ERA, 9 K, 0 ER, 0 HR, 0 BB | 2022: 1 GS/app, 7.0 IP, 0.00 ERA, 9 K, 0 ER, 0 HR, 0 BB | 2023: 2 GS/app, 13.0 IP, 2.08 ERA, 14 K, 3 ER, 2 HR, 2 BB | 2025: 2 GS/app, 14.0 IP, 2.57 ERA, 16 K, 4 ER, 2 HR, 1 BB",
+        "seasons": [
+          {
+            "year": "2013",
+            "games": 1,
+            "starts": 1,
+            "ip": 6,
+            "er": 1,
+            "runs": 1,
+            "hits": 7,
+            "hr": 0,
+            "bb": 1,
+            "so": 12,
+            "tbf": 25,
+            "era": 1.5,
+            "display": "2013: 1 GS/app, 6.0 IP, 1.50 ERA, 12 K, 1 ER, 0 HR, 1 BB"
+          },
+          {
+            "year": "2014",
+            "games": 2,
+            "starts": 2,
+            "ip": 11,
+            "er": 5,
+            "runs": 5,
+            "hits": 14,
+            "hr": 1,
+            "bb": 4,
+            "so": 11,
+            "tbf": 49,
+            "era": 4.09,
+            "display": "2014: 2 GS/app, 11.0 IP, 4.09 ERA, 11 K, 5 ER, 1 HR, 4 BB"
+          },
+          {
+            "year": "2018",
+            "games": 2,
+            "starts": 2,
+            "ip": 12,
+            "er": 4,
+            "runs": 4,
+            "hits": 10,
+            "hr": 0,
+            "bb": 3,
+            "so": 12,
+            "tbf": 47,
+            "era": 3,
+            "display": "2018: 2 GS/app, 12.0 IP, 3.00 ERA, 12 K, 4 ER, 0 HR, 3 BB"
+          },
+          {
+            "year": "2021",
+            "games": 1,
+            "starts": 1,
+            "ip": 7.667,
+            "er": 0,
+            "runs": 0,
+            "hits": 4,
+            "hr": 0,
+            "bb": 0,
+            "so": 9,
+            "tbf": 27,
+            "era": 0,
+            "display": "2021: 1 GS/app, 7.2 IP, 0.00 ERA, 9 K, 0 ER, 0 HR, 0 BB"
+          },
+          {
+            "year": "2022",
+            "games": 1,
+            "starts": 1,
+            "ip": 7,
+            "er": 0,
+            "runs": 0,
+            "hits": 4,
+            "hr": 0,
+            "bb": 0,
+            "so": 9,
+            "tbf": 24,
+            "era": 0,
+            "display": "2022: 1 GS/app, 7.0 IP, 0.00 ERA, 9 K, 0 ER, 0 HR, 0 BB"
+          },
+          {
+            "year": "2023",
+            "games": 2,
+            "starts": 2,
+            "ip": 13,
+            "er": 3,
+            "runs": 3,
+            "hits": 6,
+            "hr": 2,
+            "bb": 2,
+            "so": 14,
+            "tbf": 47,
+            "era": 2.08,
+            "display": "2023: 2 GS/app, 13.0 IP, 2.08 ERA, 14 K, 3 ER, 2 HR, 2 BB"
+          },
+          {
+            "year": "2025",
+            "games": 2,
+            "starts": 2,
+            "ip": 14,
+            "er": 4,
+            "runs": 4,
+            "hits": 12,
+            "hr": 2,
+            "bb": 1,
+            "so": 16,
+            "tbf": 56,
+            "era": 2.57,
+            "display": "2025: 2 GS/app, 14.0 IP, 2.57 ERA, 16 K, 4 ER, 2 HR, 1 BB"
+          }
+        ],
+        "metrics": {
+          "GS": {
+            "display": "11",
+            "value": 11
+          },
+          "ERA": {
+            "display": "2.17",
+            "value": 2.1651
+          },
+          "SO": {
+            "display": "83",
+            "value": 83
+          },
+          "IP": {
+            "display": "70.2",
+            "value": 70.6667
+          },
+          "H": {
+            "display": "57",
+            "value": 57
+          },
+          "ER": {
+            "display": "17",
+            "value": 17
+          },
+          "R": {
+            "display": "17",
+            "value": 17
+          },
+          "HR": {
+            "display": "5",
+            "value": 5
+          },
+          "BB": {
+            "display": "11",
+            "value": 11
+          },
+          "TBF": {
+            "display": "275",
+            "value": 275
+          }
+        },
+        "textRecord": null
+      }
+    },
+    "guardians-yankees": {
+      "away": {
+        "gameId": "guardians-yankees",
+        "side": "away",
+        "teamName": "Guardians",
+        "opponentTeam": "Yankees",
+        "pitcherName": "Slade Cecconi",
+        "source": "StatMuse",
+        "query": "Slade Cecconi vs Yankees",
+        "url": "https://www.statmuse.com/mlb/ask/slade-cecconi-vs-yankees",
+        "fetchedAt": "2026-06-04T17:07:50.644Z",
+        "status": "found",
+        "summary": "Slade Cecconi vs Yankees: 1 GS/app, 7.2 IP, 3.52 ERA, 5 K, 3 ER, 2 HR, 2 BB.",
+        "seasonSummary": "2023: 1 GS/app, 2.2 IP, 3.37 ERA, 2 K, 1 ER, 1 HR, 0 BB | 2025: 1 GS/app, 5.0 IP, 3.60 ERA, 3 K, 2 ER, 1 HR, 2 BB",
+        "seasons": [
+          {
+            "year": "2023",
+            "games": 1,
+            "starts": 0,
+            "ip": 2.667,
+            "er": 1,
+            "runs": 1,
+            "hits": 3,
+            "hr": 1,
+            "bb": 0,
+            "so": 2,
+            "tbf": 10,
+            "era": 3.37,
+            "display": "2023: 1 GS/app, 2.2 IP, 3.37 ERA, 2 K, 1 ER, 1 HR, 0 BB"
+          },
+          {
+            "year": "2025",
+            "games": 1,
+            "starts": 1,
+            "ip": 5,
+            "er": 2,
+            "runs": 2,
+            "hits": 5,
+            "hr": 1,
+            "bb": 2,
+            "so": 3,
+            "tbf": 22,
+            "era": 3.6,
+            "display": "2025: 1 GS/app, 5.0 IP, 3.60 ERA, 3 K, 2 ER, 1 HR, 2 BB"
+          }
+        ],
+        "metrics": {
+          "GS": {
+            "display": "1",
+            "value": 1
+          },
+          "ERA": {
+            "display": "3.52",
+            "value": 3.5217
+          },
+          "SO": {
+            "display": "5",
+            "value": 5
+          },
+          "IP": {
+            "display": "7.2",
+            "value": 7.6667
+          },
+          "H": {
+            "display": "8",
+            "value": 8
+          },
+          "ER": {
+            "display": "3",
+            "value": 3
+          },
+          "R": {
+            "display": "3",
+            "value": 3
+          },
+          "HR": {
+            "display": "2",
+            "value": 2
+          },
+          "BB": {
+            "display": "2",
+            "value": 2
+          },
+          "TBF": {
+            "display": "32",
+            "value": 32
+          }
+        },
+        "textRecord": null
+      },
+      "home": {
+        "gameId": "guardians-yankees",
+        "side": "home",
+        "teamName": "Yankees",
+        "opponentTeam": "Guardians",
+        "pitcherName": "Carlos Rodón",
+        "source": "StatMuse",
+        "query": "Carlos Rodón vs Guardians",
+        "url": "https://www.statmuse.com/mlb/ask/carlos-rod-n-vs-guardians",
+        "fetchedAt": "2026-06-04T17:07:50.835Z",
+        "status": "found",
+        "summary": "Carlos Rodón vs Guardians: 10-5, 21 GS/app, 139.0 IP, 2.59 ERA, 140 K, 40 ER, 10 HR, 44 BB.",
+        "seasonSummary": "2015: 4 GS/app, 29.2 IP, 1.52 ERA, 26 K, 5 ER, 0 HR, 10 BB | 2016: 4 GS/app, 25.1 IP, 3.55 ERA, 29 K, 10 ER, 2 HR, 7 BB | 2017: 1 GS/app, 6.2 IP, 1.35 ERA, 9 K, 1 ER, 1 HR, 2 BB | 2018: 4 GS/app, 26.1 IP, 3.42 ERA, 15 K, 10 ER, 2 HR, 10 BB | 2019: 1 GS/app, 6.0 IP, 0.00 ERA, 9 K, 0 ER, 0 HR, 1 BB | 2020: 1 GS/app, 4.0 IP, 13.50 ERA, 4 K, 6 ER, 1 HR, 3 BB | 2021: 3 GS/app, 20.0 IP, 2.70 ERA, 23 K, 6 ER, 4 HR, 6 BB | 2022: 1 GS/app, 7.0 IP, 1.29 ERA, 9 K, 1 ER, 0 HR, 2 BB | 2025: 2 GS/app, 14.0 IP, 0.64 ERA, 16 K, 1 ER, 0 HR, 3 BB",
+        "seasons": [
+          {
+            "year": "2015",
+            "games": 5,
+            "starts": 4,
+            "ip": 29.667,
+            "er": 5,
+            "runs": 5,
+            "hits": 23,
+            "hr": 0,
+            "bb": 10,
+            "so": 26,
+            "tbf": 121,
+            "era": 1.52,
+            "display": "2015: 4 GS/app, 29.2 IP, 1.52 ERA, 26 K, 5 ER, 0 HR, 10 BB"
+          },
+          {
+            "year": "2016",
+            "games": 4,
+            "starts": 4,
+            "ip": 25.333,
+            "er": 10,
+            "runs": 10,
+            "hits": 27,
+            "hr": 2,
+            "bb": 7,
+            "so": 29,
+            "tbf": 106,
+            "era": 3.55,
+            "display": "2016: 4 GS/app, 25.1 IP, 3.55 ERA, 29 K, 10 ER, 2 HR, 7 BB"
+          },
+          {
+            "year": "2017",
+            "games": 1,
+            "starts": 1,
+            "ip": 6.667,
+            "er": 1,
+            "runs": 1,
+            "hits": 6,
+            "hr": 1,
+            "bb": 2,
+            "so": 9,
+            "tbf": 27,
+            "era": 1.35,
+            "display": "2017: 1 GS/app, 6.2 IP, 1.35 ERA, 9 K, 1 ER, 1 HR, 2 BB"
+          },
+          {
+            "year": "2018",
+            "games": 4,
+            "starts": 4,
+            "ip": 26.333,
+            "er": 10,
+            "runs": 11,
+            "hits": 18,
+            "hr": 2,
+            "bb": 10,
+            "so": 15,
+            "tbf": 108,
+            "era": 3.42,
+            "display": "2018: 4 GS/app, 26.1 IP, 3.42 ERA, 15 K, 10 ER, 2 HR, 10 BB"
+          },
+          {
+            "year": "2019",
+            "games": 1,
+            "starts": 1,
+            "ip": 6,
+            "er": 0,
+            "runs": 1,
+            "hits": 2,
+            "hr": 0,
+            "bb": 1,
+            "so": 9,
+            "tbf": 23,
+            "era": 0,
+            "display": "2019: 1 GS/app, 6.0 IP, 0.00 ERA, 9 K, 0 ER, 0 HR, 1 BB"
+          },
+          {
+            "year": "2020",
+            "games": 2,
+            "starts": 1,
+            "ip": 4,
+            "er": 6,
+            "runs": 6,
+            "hits": 6,
+            "hr": 1,
+            "bb": 3,
+            "so": 4,
+            "tbf": 20,
+            "era": 13.5,
+            "display": "2020: 1 GS/app, 4.0 IP, 13.50 ERA, 4 K, 6 ER, 1 HR, 3 BB"
+          },
+          {
+            "year": "2021",
+            "games": 3,
+            "starts": 3,
+            "ip": 20,
+            "er": 6,
+            "runs": 7,
+            "hits": 12,
+            "hr": 4,
+            "bb": 6,
+            "so": 23,
+            "tbf": 80,
+            "era": 2.7,
+            "display": "2021: 3 GS/app, 20.0 IP, 2.70 ERA, 23 K, 6 ER, 4 HR, 6 BB"
+          },
+          {
+            "year": "2022",
+            "games": 1,
+            "starts": 1,
+            "ip": 7,
+            "er": 1,
+            "runs": 1,
+            "hits": 2,
+            "hr": 0,
+            "bb": 2,
+            "so": 9,
+            "tbf": 25,
+            "era": 1.29,
+            "display": "2022: 1 GS/app, 7.0 IP, 1.29 ERA, 9 K, 1 ER, 0 HR, 2 BB"
+          },
+          {
+            "year": "2025",
+            "games": 2,
+            "starts": 2,
+            "ip": 14,
+            "er": 1,
+            "runs": 2,
+            "hits": 9,
+            "hr": 0,
+            "bb": 3,
+            "so": 16,
+            "tbf": 53,
+            "era": 0.64,
+            "display": "2025: 2 GS/app, 14.0 IP, 0.64 ERA, 16 K, 1 ER, 0 HR, 3 BB"
+          }
+        ],
+        "metrics": {
+          "GS": {
+            "display": "21",
+            "value": 21
+          },
+          "ERA": {
+            "display": "2.59",
+            "value": 2.5899
+          },
+          "SO": {
+            "display": "140",
+            "value": 140
+          },
+          "IP": {
+            "display": "139.0",
+            "value": 139
+          },
+          "H": {
+            "display": "105",
+            "value": 105
+          },
+          "ER": {
+            "display": "40",
+            "value": 40
+          },
+          "R": {
+            "display": "44",
+            "value": 44
+          },
+          "HR": {
+            "display": "10",
+            "value": 10
+          },
+          "BB": {
+            "display": "44",
+            "value": 44
+          },
+          "TBF": {
+            "display": "563",
+            "value": 563
+          }
+        },
+        "textRecord": {
+          "record": "10-5",
+          "era": "2.59",
+          "strikeouts": "140",
+          "appearances": "23",
+          "opponentLabel": "Guardians in his career"
+        }
+      }
+    },
+    "orioles-red-sox": {
+      "away": {
+        "gameId": "orioles-red-sox",
+        "side": "away",
+        "teamName": "Orioles",
+        "opponentTeam": "Red Sox",
+        "pitcherName": "Trevor Rogers",
+        "source": "StatMuse",
+        "query": "Trevor Rogers vs Red Sox",
+        "url": "https://www.statmuse.com/mlb/ask/trevor-rogers-vs-red-sox",
+        "fetchedAt": "2026-06-04T17:07:51.023Z",
+        "status": "found",
+        "summary": "Trevor Rogers vs Red Sox: 6 GS/app, 27.0 IP, 3.00 ERA, 29 K, 9 ER, 0 HR, 8 BB.",
+        "seasonSummary": "2020: 1 GS/app, 3.0 IP, 3.00 ERA, 3 K, 1 ER, 0 HR, 2 BB | 2021: 1 GS/app, 6.0 IP, 3.00 ERA, 6 K, 2 ER, 0 HR, 0 BB | 2024: 1 GS/app, 3.0 IP, 6.00 ERA, 6 K, 2 ER, 0 HR, 3 BB | 2025: 2 GS/app, 13.1 IP, 0.68 ERA, 12 K, 1 ER, 0 HR, 1 BB | 2026: 1 GS/app, 1.2 IP, 16.20 ERA, 2 K, 3 ER, 0 HR, 2 BB",
+        "seasons": [
+          {
+            "year": "2020",
+            "games": 1,
+            "starts": 1,
+            "ip": 3,
+            "er": 1,
+            "runs": 1,
+            "hits": 3,
+            "hr": 0,
+            "bb": 2,
+            "so": 3,
+            "tbf": 15,
+            "era": 3,
+            "display": "2020: 1 GS/app, 3.0 IP, 3.00 ERA, 3 K, 1 ER, 0 HR, 2 BB"
+          },
+          {
+            "year": "2021",
+            "games": 1,
+            "starts": 1,
+            "ip": 6,
+            "er": 2,
+            "runs": 2,
+            "hits": 9,
+            "hr": 0,
+            "bb": 0,
+            "so": 6,
+            "tbf": 26,
+            "era": 3,
+            "display": "2021: 1 GS/app, 6.0 IP, 3.00 ERA, 6 K, 2 ER, 0 HR, 0 BB"
+          },
+          {
+            "year": "2024",
+            "games": 1,
+            "starts": 1,
+            "ip": 3,
+            "er": 2,
+            "runs": 2,
+            "hits": 5,
+            "hr": 0,
+            "bb": 3,
+            "so": 6,
+            "tbf": 17,
+            "era": 6,
+            "display": "2024: 1 GS/app, 3.0 IP, 6.00 ERA, 6 K, 2 ER, 0 HR, 3 BB"
+          },
+          {
+            "year": "2025",
+            "games": 2,
+            "starts": 2,
+            "ip": 13.333,
+            "er": 1,
+            "runs": 1,
+            "hits": 6,
+            "hr": 0,
+            "bb": 1,
+            "so": 12,
+            "tbf": 47,
+            "era": 0.68,
+            "display": "2025: 2 GS/app, 13.1 IP, 0.68 ERA, 12 K, 1 ER, 0 HR, 1 BB"
+          },
+          {
+            "year": "2026",
+            "games": 1,
+            "starts": 1,
+            "ip": 1.667,
+            "er": 3,
+            "runs": 3,
+            "hits": 4,
+            "hr": 0,
+            "bb": 2,
+            "so": 2,
+            "tbf": 11,
+            "era": 16.2,
+            "display": "2026: 1 GS/app, 1.2 IP, 16.20 ERA, 2 K, 3 ER, 0 HR, 2 BB"
+          }
+        ],
+        "metrics": {
+          "GS": {
+            "display": "6",
+            "value": 6
+          },
+          "ERA": {
+            "display": "3.00",
+            "value": 3
+          },
+          "SO": {
+            "display": "29",
+            "value": 29
+          },
+          "IP": {
+            "display": "27.0",
+            "value": 27
+          },
+          "H": {
+            "display": "27",
+            "value": 27
+          },
+          "ER": {
+            "display": "9",
+            "value": 9
+          },
+          "R": {
+            "display": "9",
+            "value": 9
+          },
+          "HR": {
+            "display": "0",
+            "value": 0
+          },
+          "BB": {
+            "display": "8",
+            "value": 8
+          },
+          "TBF": {
+            "display": "116",
+            "value": 116
+          }
+        },
+        "textRecord": null
+      },
+      "home": {
+        "gameId": "orioles-red-sox",
+        "side": "home",
+        "teamName": "Red Sox",
+        "opponentTeam": "Orioles",
+        "pitcherName": "Brayan Bello",
+        "source": "StatMuse",
+        "query": "Brayan Bello vs Orioles",
+        "url": "https://www.statmuse.com/mlb/ask/brayan-bello-vs-orioles",
+        "fetchedAt": "2026-06-04T17:07:51.217Z",
+        "status": "found",
+        "summary": "Brayan Bello vs Orioles: 4-3, 9 GS/app, 46.0 IP, 4.70 ERA, 47 K, 24 ER, 6 HR, 19 BB.",
+        "seasonSummary": "2022: 1 GS/app, 5.1 IP, 5.06 ERA, 7 K, 3 ER, 0 HR, 4 BB | 2023: 1 GS/app, 5.0 IP, 5.40 ERA, 4 K, 3 ER, 0 HR, 0 BB | 2024: 4 GS/app, 21.2 IP, 2.91 ERA, 21 K, 7 ER, 1 HR, 12 BB | 2025: 2 GS/app, 10.2 IP, 2.53 ERA, 13 K, 3 ER, 0 HR, 2 BB | 2026: 1 GS/app, 3.1 IP, 21.60 ERA, 2 K, 8 ER, 5 HR, 1 BB",
+        "seasons": [
+          {
+            "year": "2022",
+            "games": 1,
+            "starts": 1,
+            "ip": 5.333,
+            "er": 3,
+            "runs": 3,
+            "hits": 3,
+            "hr": 0,
+            "bb": 4,
+            "so": 7,
+            "tbf": 21,
+            "era": 5.06,
+            "display": "2022: 1 GS/app, 5.1 IP, 5.06 ERA, 7 K, 3 ER, 0 HR, 4 BB"
+          },
+          {
+            "year": "2023",
+            "games": 1,
+            "starts": 1,
+            "ip": 5,
+            "er": 3,
+            "runs": 3,
+            "hits": 7,
+            "hr": 0,
+            "bb": 0,
+            "so": 4,
+            "tbf": 20,
+            "era": 5.4,
+            "display": "2023: 1 GS/app, 5.0 IP, 5.40 ERA, 4 K, 3 ER, 0 HR, 0 BB"
+          },
+          {
+            "year": "2024",
+            "games": 4,
+            "starts": 4,
+            "ip": 21.667,
+            "er": 7,
+            "runs": 9,
+            "hits": 14,
+            "hr": 1,
+            "bb": 12,
+            "so": 21,
+            "tbf": 96,
+            "era": 2.91,
+            "display": "2024: 4 GS/app, 21.2 IP, 2.91 ERA, 21 K, 7 ER, 1 HR, 12 BB"
+          },
+          {
+            "year": "2025",
+            "games": 2,
+            "starts": 2,
+            "ip": 10.667,
+            "er": 3,
+            "runs": 4,
+            "hits": 11,
+            "hr": 0,
+            "bb": 2,
+            "so": 13,
+            "tbf": 45,
+            "era": 2.53,
+            "display": "2025: 2 GS/app, 10.2 IP, 2.53 ERA, 13 K, 3 ER, 0 HR, 2 BB"
+          },
+          {
+            "year": "2026",
+            "games": 1,
+            "starts": 1,
+            "ip": 3.333,
+            "er": 8,
+            "runs": 8,
+            "hits": 13,
+            "hr": 5,
+            "bb": 1,
+            "so": 2,
+            "tbf": 23,
+            "era": 21.6,
+            "display": "2026: 1 GS/app, 3.1 IP, 21.60 ERA, 2 K, 8 ER, 5 HR, 1 BB"
+          }
+        ],
+        "metrics": {
+          "GS": {
+            "display": "9",
+            "value": 9
+          },
+          "ERA": {
+            "display": "4.70",
+            "value": 4.6957
+          },
+          "SO": {
+            "display": "47",
+            "value": 47
+          },
+          "IP": {
+            "display": "46.0",
+            "value": 46
+          },
+          "H": {
+            "display": "48",
+            "value": 48
+          },
+          "ER": {
+            "display": "24",
+            "value": 24
+          },
+          "R": {
+            "display": "27",
+            "value": 27
+          },
+          "HR": {
+            "display": "6",
+            "value": 6
+          },
+          "BB": {
+            "display": "19",
+            "value": 19
+          },
+          "TBF": {
+            "display": "205",
+            "value": 205
+          }
+        },
+        "textRecord": {
+          "record": "4-3",
+          "era": "4.70",
+          "strikeouts": "47",
+          "appearances": "9",
+          "opponentLabel": "Orioles in his career"
+        }
+      }
+    },
+    "giants-brewers": {
+      "away": {
+        "gameId": "giants-brewers",
+        "side": "away",
+        "teamName": "Giants",
+        "opponentTeam": "Brewers",
+        "pitcherName": "Adrian Houser",
+        "source": "StatMuse",
+        "query": "Adrian Houser vs Brewers",
+        "url": "https://www.statmuse.com/mlb/ask/adrian-houser-vs-brewers",
+        "fetchedAt": "2026-06-04T17:07:51.973Z",
+        "status": "missing",
+        "summary": "No StatMuse pitcher-vs-team table found for Adrian Houser vs Brewers.",
+        "seasonSummary": "",
+        "seasons": [],
+        "metrics": {
+          "GS": null,
+          "ERA": null,
+          "SO": null,
+          "IP": null,
+          "H": null,
+          "ER": null,
+          "R": null,
+          "HR": null,
+          "BB": null,
+          "TBF": null
+        },
+        "textRecord": null
+      },
+      "home": {
+        "gameId": "giants-brewers",
+        "side": "home",
+        "teamName": "Brewers",
+        "opponentTeam": "Giants",
+        "pitcherName": "Coleman Crow",
+        "source": "StatMuse",
+        "query": "Coleman Crow vs Giants",
+        "url": "https://www.statmuse.com/mlb/ask/coleman-crow-vs-giants",
+        "fetchedAt": "2026-06-04T17:07:52.653Z",
+        "status": "missing",
+        "summary": "No StatMuse pitcher-vs-team table found for Coleman Crow vs Giants.",
+        "seasonSummary": "",
+        "seasons": [],
+        "metrics": {
+          "GS": null,
+          "ERA": null,
+          "SO": null,
+          "IP": null,
+          "H": null,
+          "ER": null,
+          "R": null,
+          "HR": null,
+          "BB": null,
+          "TBF": null
+        },
+        "textRecord": null
+      }
+    },
+    "blue-jays-braves": {
+      "away": {
+        "gameId": "blue-jays-braves",
+        "side": "away",
+        "teamName": "Blue Jays",
+        "opponentTeam": "Braves",
+        "pitcherName": "Mason Fluharty",
+        "source": "StatMuse",
+        "query": "Mason Fluharty vs Braves",
+        "url": "https://www.statmuse.com/mlb/ask/mason-fluharty-vs-braves",
+        "fetchedAt": "2026-06-04T17:07:52.840Z",
+        "status": "found",
+        "summary": "Mason Fluharty vs Braves: 0 GS/app, 1.1 IP, 0.00 ERA, 0 K, 0 ER, 0 HR, 1 BB.",
+        "seasonSummary": "2025: 1 GS/app, 0.2 IP, 0.00 ERA, 0 K, 0 ER, 0 HR, 1 BB | 2026: 1 GS/app, 0.2 IP, 0.00 ERA, 0 K, 0 ER, 0 HR, 0 BB",
+        "seasons": [
+          {
+            "year": "2025",
+            "games": 1,
+            "starts": 0,
+            "ip": 0.667,
+            "er": 0,
+            "runs": 0,
+            "hits": 0,
+            "hr": 0,
+            "bb": 1,
+            "so": 0,
+            "tbf": 3,
+            "era": 0,
+            "display": "2025: 1 GS/app, 0.2 IP, 0.00 ERA, 0 K, 0 ER, 0 HR, 1 BB"
+          },
+          {
+            "year": "2026",
+            "games": 1,
+            "starts": 0,
+            "ip": 0.667,
+            "er": 0,
+            "runs": 0,
+            "hits": 1,
+            "hr": 0,
+            "bb": 0,
+            "so": 0,
+            "tbf": 3,
+            "era": 0,
+            "display": "2026: 1 GS/app, 0.2 IP, 0.00 ERA, 0 K, 0 ER, 0 HR, 0 BB"
+          }
+        ],
+        "metrics": {
+          "GS": {
+            "display": "0",
+            "value": 0
+          },
+          "ERA": {
+            "display": "0.00",
+            "value": 0
+          },
+          "SO": {
+            "display": "0",
+            "value": 0
+          },
+          "IP": {
+            "display": "1.1",
+            "value": 1.3333
+          },
+          "H": {
+            "display": "1",
+            "value": 1
+          },
+          "ER": {
+            "display": "0",
+            "value": 0
+          },
+          "R": {
+            "display": "0",
+            "value": 0
+          },
+          "HR": {
+            "display": "0",
+            "value": 0
+          },
+          "BB": {
+            "display": "1",
+            "value": 1
+          },
+          "TBF": {
+            "display": "6",
+            "value": 6
+          }
+        },
+        "textRecord": null
+      },
+      "home": {
+        "gameId": "blue-jays-braves",
+        "side": "home",
+        "teamName": "Braves",
+        "opponentTeam": "Blue Jays",
+        "pitcherName": "Chris Sale",
+        "source": "StatMuse",
+        "query": "Chris Sale vs Blue Jays",
+        "url": "https://www.statmuse.com/mlb/ask/chris-sale-vs-blue-jays",
+        "fetchedAt": "2026-06-04T17:07:53.018Z",
+        "status": "found",
+        "summary": "Chris Sale vs Blue Jays: 18 GS/app, 119.2 IP, 2.71 ERA, 146 K, 36 ER, 18 HR, 29 BB.",
+        "seasonSummary": "2011: 3 GS/app, 5.0 IP, 3.60 ERA, 6 K, 2 ER, 0 HR, 4 BB | 2013: 1 GS/app, 7.0 IP, 2.57 ERA, 6 K, 2 ER, 0 HR, 1 BB | 2014: 1 GS/app, 7.0 IP, 2.57 ERA, 6 K, 2 ER, 1 HR, 5 BB | 2015: 1 GS/app, 9.0 IP, 2.00 ERA, 6 K, 2 ER, 2 HR, 0 BB | 2016: 2 GS/app, 16.0 IP, 1.69 ERA, 13 K, 3 ER, 3 HR, 4 BB | 2017: 4 GS/app, 27.0 IP, 1.67 ERA, 43 K, 5 ER, 4 HR, 4 BB | 2018: 3 GS/app, 16.0 IP, 3.38 ERA, 21 K, 6 ER, 3 HR, 2 BB | 2019: 4 GS/app, 20.2 IP, 5.66 ERA, 28 K, 13 ER, 4 HR, 6 BB | 2023: 1 GS/app, 6.0 IP, 1.50 ERA, 10 K, 1 ER, 1 HR, 2 BB | 2024: 1 GS/app, 6.0 IP, 0.00 ERA, 7 K, 0 ER, 0 HR, 1 BB",
+        "seasons": [
+          {
+            "year": "2011",
+            "games": 3,
+            "starts": 0,
+            "ip": 5,
+            "er": 2,
+            "runs": 2,
+            "hits": 5,
+            "hr": 0,
+            "bb": 4,
+            "so": 6,
+            "tbf": 23,
+            "era": 3.6,
+            "display": "2011: 3 GS/app, 5.0 IP, 3.60 ERA, 6 K, 2 ER, 0 HR, 4 BB"
+          },
+          {
+            "year": "2013",
+            "games": 1,
+            "starts": 1,
+            "ip": 7,
+            "er": 2,
+            "runs": 3,
+            "hits": 4,
+            "hr": 0,
+            "bb": 1,
+            "so": 6,
+            "tbf": 26,
+            "era": 2.57,
+            "display": "2013: 1 GS/app, 7.0 IP, 2.57 ERA, 6 K, 2 ER, 0 HR, 1 BB"
+          },
+          {
+            "year": "2014",
+            "games": 1,
+            "starts": 1,
+            "ip": 7,
+            "er": 2,
+            "runs": 2,
+            "hits": 4,
+            "hr": 1,
+            "bb": 5,
+            "so": 6,
+            "tbf": 29,
+            "era": 2.57,
+            "display": "2014: 1 GS/app, 7.0 IP, 2.57 ERA, 6 K, 2 ER, 1 HR, 5 BB"
+          },
+          {
+            "year": "2015",
+            "games": 1,
+            "starts": 1,
+            "ip": 9,
+            "er": 2,
+            "runs": 2,
+            "hits": 6,
+            "hr": 2,
+            "bb": 0,
+            "so": 6,
+            "tbf": 32,
+            "era": 2,
+            "display": "2015: 1 GS/app, 9.0 IP, 2.00 ERA, 6 K, 2 ER, 2 HR, 0 BB"
+          },
+          {
+            "year": "2016",
+            "games": 2,
+            "starts": 2,
+            "ip": 16,
+            "er": 3,
+            "runs": 3,
+            "hits": 9,
+            "hr": 3,
+            "bb": 4,
+            "so": 13,
+            "tbf": 57,
+            "era": 1.69,
+            "display": "2016: 2 GS/app, 16.0 IP, 1.69 ERA, 13 K, 3 ER, 3 HR, 4 BB"
+          },
+          {
+            "year": "2017",
+            "games": 4,
+            "starts": 4,
+            "ip": 27,
+            "er": 5,
+            "runs": 5,
+            "hits": 19,
+            "hr": 4,
+            "bb": 4,
+            "so": 43,
+            "tbf": 106,
+            "era": 1.67,
+            "display": "2017: 4 GS/app, 27.0 IP, 1.67 ERA, 43 K, 5 ER, 4 HR, 4 BB"
+          },
+          {
+            "year": "2018",
+            "games": 3,
+            "starts": 3,
+            "ip": 16,
+            "er": 6,
+            "runs": 6,
+            "hits": 11,
+            "hr": 3,
+            "bb": 2,
+            "so": 21,
+            "tbf": 63,
+            "era": 3.38,
+            "display": "2018: 3 GS/app, 16.0 IP, 3.38 ERA, 21 K, 6 ER, 3 HR, 2 BB"
+          },
+          {
+            "year": "2019",
+            "games": 4,
+            "starts": 4,
+            "ip": 20.667,
+            "er": 13,
+            "runs": 14,
+            "hits": 25,
+            "hr": 4,
+            "bb": 6,
+            "so": 28,
+            "tbf": 94,
+            "era": 5.66,
+            "display": "2019: 4 GS/app, 20.2 IP, 5.66 ERA, 28 K, 13 ER, 4 HR, 6 BB"
+          },
+          {
+            "year": "2023",
+            "games": 1,
+            "starts": 1,
+            "ip": 6,
+            "er": 1,
+            "runs": 1,
+            "hits": 2,
+            "hr": 1,
+            "bb": 2,
+            "so": 10,
+            "tbf": 21,
+            "era": 1.5,
+            "display": "2023: 1 GS/app, 6.0 IP, 1.50 ERA, 10 K, 1 ER, 1 HR, 2 BB"
+          },
+          {
+            "year": "2024",
+            "games": 1,
+            "starts": 1,
+            "ip": 6,
+            "er": 0,
+            "runs": 0,
+            "hits": 2,
+            "hr": 0,
+            "bb": 1,
+            "so": 7,
+            "tbf": 23,
+            "era": 0,
+            "display": "2024: 1 GS/app, 6.0 IP, 0.00 ERA, 7 K, 0 ER, 0 HR, 1 BB"
+          }
+        ],
+        "metrics": {
+          "GS": {
+            "display": "18",
+            "value": 18
+          },
+          "ERA": {
+            "display": "2.71",
+            "value": 2.7075
+          },
+          "SO": {
+            "display": "146",
+            "value": 146
+          },
+          "IP": {
+            "display": "119.2",
+            "value": 119.6667
+          },
+          "H": {
+            "display": "87",
+            "value": 87
+          },
+          "ER": {
+            "display": "36",
+            "value": 36
+          },
+          "R": {
+            "display": "38",
+            "value": 38
+          },
+          "HR": {
+            "display": "18",
+            "value": 18
+          },
+          "BB": {
+            "display": "29",
+            "value": 29
+          },
+          "TBF": {
+            "display": "474",
+            "value": 474
+          }
+        },
+        "textRecord": null
+      }
+    },
+    "royals-twins": {
+      "away": {
+        "gameId": "royals-twins",
+        "side": "away",
+        "teamName": "Royals",
+        "opponentTeam": "Twins",
+        "pitcherName": "Seth Lugo",
+        "source": "StatMuse",
+        "query": "Seth Lugo vs Twins",
+        "url": "https://www.statmuse.com/mlb/ask/seth-lugo-vs-twins",
+        "fetchedAt": "2026-06-04T17:07:53.196Z",
+        "status": "found",
+        "summary": "Seth Lugo vs Twins: 7 GS/app, 39.2 IP, 4.76 ERA, 30 K, 21 ER, 6 HR, 16 BB.",
+        "seasonSummary": "2016: 1 GS/app, 5.0 IP, 1.80 ERA, 2 K, 1 ER, 1 HR, 4 BB | 2019: 2 GS/app, 3.0 IP, 3.00 ERA, 3 K, 1 ER, 1 HR, 0 BB | 2023: 1 GS/app, 6.0 IP, 3.00 ERA, 5 K, 2 ER, 1 HR, 1 BB | 2024: 3 GS/app, 16.0 IP, 4.50 ERA, 13 K, 8 ER, 1 HR, 6 BB | 2025: 2 GS/app, 9.2 IP, 8.38 ERA, 7 K, 9 ER, 2 HR, 5 BB",
+        "seasons": [
+          {
+            "year": "2016",
+            "games": 1,
+            "starts": 1,
+            "ip": 5,
+            "er": 1,
+            "runs": 1,
+            "hits": 4,
+            "hr": 1,
+            "bb": 4,
+            "so": 2,
+            "tbf": 23,
+            "era": 1.8,
+            "display": "2016: 1 GS/app, 5.0 IP, 1.80 ERA, 2 K, 1 ER, 1 HR, 4 BB"
+          },
+          {
+            "year": "2019",
+            "games": 2,
+            "starts": 0,
+            "ip": 3,
+            "er": 1,
+            "runs": 1,
+            "hits": 3,
+            "hr": 1,
+            "bb": 0,
+            "so": 3,
+            "tbf": 12,
+            "era": 3,
+            "display": "2019: 2 GS/app, 3.0 IP, 3.00 ERA, 3 K, 1 ER, 1 HR, 0 BB"
+          },
+          {
+            "year": "2023",
+            "games": 1,
+            "starts": 1,
+            "ip": 6,
+            "er": 2,
+            "runs": 2,
+            "hits": 5,
+            "hr": 1,
+            "bb": 1,
+            "so": 5,
+            "tbf": 23,
+            "era": 3,
+            "display": "2023: 1 GS/app, 6.0 IP, 3.00 ERA, 5 K, 2 ER, 1 HR, 1 BB"
+          },
+          {
+            "year": "2024",
+            "games": 3,
+            "starts": 3,
+            "ip": 16,
+            "er": 8,
+            "runs": 9,
+            "hits": 17,
+            "hr": 1,
+            "bb": 6,
+            "so": 13,
+            "tbf": 73,
+            "era": 4.5,
+            "display": "2024: 3 GS/app, 16.0 IP, 4.50 ERA, 13 K, 8 ER, 1 HR, 6 BB"
+          },
+          {
+            "year": "2025",
+            "games": 2,
+            "starts": 2,
+            "ip": 9.667,
+            "er": 9,
+            "runs": 9,
+            "hits": 14,
+            "hr": 2,
+            "bb": 5,
+            "so": 7,
+            "tbf": 46,
+            "era": 8.38,
+            "display": "2025: 2 GS/app, 9.2 IP, 8.38 ERA, 7 K, 9 ER, 2 HR, 5 BB"
+          }
+        ],
+        "metrics": {
+          "GS": {
+            "display": "7",
+            "value": 7
+          },
+          "ERA": {
+            "display": "4.76",
+            "value": 4.7647
+          },
+          "SO": {
+            "display": "30",
+            "value": 30
+          },
+          "IP": {
+            "display": "39.2",
+            "value": 39.6667
+          },
+          "H": {
+            "display": "43",
+            "value": 43
+          },
+          "ER": {
+            "display": "21",
+            "value": 21
+          },
+          "R": {
+            "display": "22",
+            "value": 22
+          },
+          "HR": {
+            "display": "6",
+            "value": 6
+          },
+          "BB": {
+            "display": "16",
+            "value": 16
+          },
+          "TBF": {
+            "display": "177",
+            "value": 177
+          }
+        },
+        "textRecord": null
+      },
+      "home": {
+        "gameId": "royals-twins",
+        "side": "home",
+        "teamName": "Twins",
+        "opponentTeam": "Royals",
+        "pitcherName": "Andrew Morris",
+        "source": "StatMuse",
+        "query": "Andrew Morris vs Royals",
+        "url": "https://www.statmuse.com/mlb/ask/andrew-morris-vs-royals",
+        "fetchedAt": "2026-06-04T17:07:53.849Z",
+        "status": "missing",
+        "summary": "No StatMuse pitcher-vs-team table found for Andrew Morris vs Royals.",
+        "seasonSummary": "",
+        "seasons": [],
+        "metrics": {
+          "GS": null,
+          "ERA": null,
+          "SO": null,
+          "IP": null,
+          "H": null,
+          "ER": null,
+          "R": null,
+          "HR": null,
+          "BB": null,
+          "TBF": null
+        },
+        "textRecord": null
+      }
+    },
+    "athletics-cubs": {
+      "away": {
+        "gameId": "athletics-cubs",
+        "side": "away",
+        "teamName": "Athletics",
+        "opponentTeam": "Cubs",
+        "pitcherName": "J.T. Ginn",
+        "source": "StatMuse",
+        "query": "J.T. Ginn vs Cubs",
+        "url": "https://www.statmuse.com/mlb/ask/j-t-ginn-vs-cubs",
+        "fetchedAt": "2026-06-04T17:07:54.658Z",
+        "status": "missing",
+        "summary": "No StatMuse pitcher-vs-team table found for J.T. Ginn vs Cubs.",
+        "seasonSummary": "",
+        "seasons": [],
+        "metrics": {
+          "GS": null,
+          "ERA": null,
+          "SO": null,
+          "IP": null,
+          "H": null,
+          "ER": null,
+          "R": null,
+          "HR": null,
+          "BB": null,
+          "TBF": null
+        },
+        "textRecord": null
+      },
+      "home": {
+        "gameId": "athletics-cubs",
+        "side": "home",
+        "teamName": "Cubs",
+        "opponentTeam": "Athletics",
+        "pitcherName": "Shota Imanaga",
+        "source": "StatMuse",
+        "query": "Shota Imanaga vs Athletics",
+        "url": "https://www.statmuse.com/mlb/ask/shota-imanaga-vs-athletics",
+        "fetchedAt": "2026-06-04T17:07:54.852Z",
+        "status": "found",
+        "summary": "Shota Imanaga vs Athletics: 1 GS/app, N/A IP, N/A ERA, N/A K.",
+        "seasonSummary": "2024: 1 GS/app, 6.0 IP, 3.00 ERA, 11 K, 2 ER, 1 HR, 3 BB",
+        "seasons": [
+          {
+            "year": "2024",
+            "games": 1,
+            "starts": 1,
+            "ip": 6,
+            "er": 2,
+            "runs": 2,
+            "hits": 5,
+            "hr": 1,
+            "bb": 3,
+            "so": 11,
+            "tbf": 26,
+            "era": 3,
+            "display": "2024: 1 GS/app, 6.0 IP, 3.00 ERA, 11 K, 2 ER, 1 HR, 3 BB"
+          }
+        ],
+        "metrics": {
+          "GS": null,
+          "ERA": null,
+          "SO": null,
+          "IP": null,
+          "H": null,
+          "ER": null,
+          "R": null,
+          "HR": null,
+          "BB": null,
+          "TBF": null
+        },
+        "textRecord": null
+      }
+    },
+    "pirates-astros": {
+      "away": {
+        "gameId": "pirates-astros",
+        "side": "away",
+        "teamName": "Pirates",
+        "opponentTeam": "Astros",
+        "pitcherName": "Jared Jones",
+        "source": "StatMuse",
+        "query": "Jared Jones vs Astros",
+        "url": "https://www.statmuse.com/mlb/ask/jared-jones-vs-astros",
+        "fetchedAt": "2026-06-04T17:07:55.501Z",
+        "status": "missing",
+        "summary": "No StatMuse pitcher-vs-team table found for Jared Jones vs Astros.",
+        "seasonSummary": "",
+        "seasons": [],
+        "metrics": {
+          "GS": null,
+          "ERA": null,
+          "SO": null,
+          "IP": null,
+          "H": null,
+          "ER": null,
+          "R": null,
+          "HR": null,
+          "BB": null,
+          "TBF": null
+        },
+        "textRecord": null
+      },
+      "home": {
+        "gameId": "pirates-astros",
+        "side": "home",
+        "teamName": "Astros",
+        "opponentTeam": "Pirates",
+        "pitcherName": "Kai-Wei Teng",
+        "source": "StatMuse",
+        "query": "Kai-Wei Teng vs Pirates",
+        "url": "https://www.statmuse.com/mlb/ask/kai-wei-teng-vs-pirates",
+        "fetchedAt": "2026-06-04T17:07:56.220Z",
+        "status": "missing",
+        "summary": "No StatMuse pitcher-vs-team table found for Kai-Wei Teng vs Pirates.",
+        "seasonSummary": "",
+        "seasons": [],
+        "metrics": {
+          "GS": null,
+          "ERA": null,
+          "SO": null,
+          "IP": null,
+          "H": null,
+          "ER": null,
+          "R": null,
+          "HR": null,
+          "BB": null,
+          "TBF": null
+        },
+        "textRecord": null
+      }
+    },
+    "dodgers-diamondbacks": {
+      "away": {
+        "gameId": "dodgers-diamondbacks",
+        "side": "away",
+        "teamName": "Dodgers",
+        "opponentTeam": "Diamondbacks",
+        "pitcherName": "Justin Wrobleski",
+        "source": "StatMuse",
+        "query": "Justin Wrobleski vs Diamondbacks",
+        "url": "https://www.statmuse.com/mlb/ask/justin-wrobleski-vs-diamondbacks",
+        "fetchedAt": "2026-06-04T17:07:56.413Z",
+        "status": "found",
+        "summary": "Justin Wrobleski vs Diamondbacks: 1 GS/app, 6.1 IP, 14.21 ERA, 4 K, 10 ER, 2 HR, 2 BB.",
+        "seasonSummary": "2024: 1 GS/app, 5.1 IP, 16.88 ERA, 2 K, 10 ER, 2 HR, 2 BB | 2025: 1 GS/app, 1.0 IP, 0.00 ERA, 2 K, 0 ER, 0 HR, 0 BB",
+        "seasons": [
+          {
+            "year": "2024",
+            "games": 1,
+            "starts": 1,
+            "ip": 5.333,
+            "er": 10,
+            "runs": 10,
+            "hits": 10,
+            "hr": 2,
+            "bb": 2,
+            "so": 2,
+            "tbf": 29,
+            "era": 16.88,
+            "display": "2024: 1 GS/app, 5.1 IP, 16.88 ERA, 2 K, 10 ER, 2 HR, 2 BB"
+          },
+          {
+            "year": "2025",
+            "games": 1,
+            "starts": 0,
+            "ip": 1,
+            "er": 0,
+            "runs": 0,
+            "hits": 0,
+            "hr": 0,
+            "bb": 0,
+            "so": 2,
+            "tbf": 3,
+            "era": 0,
+            "display": "2025: 1 GS/app, 1.0 IP, 0.00 ERA, 2 K, 0 ER, 0 HR, 0 BB"
+          }
+        ],
+        "metrics": {
+          "GS": {
+            "display": "1",
+            "value": 1
+          },
+          "ERA": {
+            "display": "14.21",
+            "value": 14.2105
+          },
+          "SO": {
+            "display": "4",
+            "value": 4
+          },
+          "IP": {
+            "display": "6.1",
+            "value": 6.3333
+          },
+          "H": {
+            "display": "10",
+            "value": 10
+          },
+          "ER": {
+            "display": "10",
+            "value": 10
+          },
+          "R": {
+            "display": "10",
+            "value": 10
+          },
+          "HR": {
+            "display": "2",
+            "value": 2
+          },
+          "BB": {
+            "display": "2",
+            "value": 2
+          },
+          "TBF": {
+            "display": "32",
+            "value": 32
+          }
+        },
+        "textRecord": null
+      },
+      "home": {
+        "gameId": "dodgers-diamondbacks",
+        "side": "home",
+        "teamName": "Diamondbacks",
+        "opponentTeam": "Dodgers",
+        "pitcherName": "Ryne Nelson",
+        "source": "StatMuse",
+        "query": "Ryne Nelson vs Dodgers",
+        "url": "https://www.statmuse.com/mlb/ask/ryne-nelson-vs-dodgers",
+        "fetchedAt": "2026-06-04T17:07:56.601Z",
+        "status": "found",
+        "summary": "Ryne Nelson vs Dodgers: 5 GS/app, 39.2 IP, 2.72 ERA, 33 K, 12 ER, 3 HR, 12 BB.",
+        "seasonSummary": "2022: 1 GS/app, 6.0 IP, 0.00 ERA, 6 K, 0 ER, 0 HR, 2 BB | 2023: 1 GS/app, 6.0 IP, 4.50 ERA, 3 K, 3 ER, 0 HR, 2 BB | 2024: 2 GS/app, 10.0 IP, 0.90 ERA, 8 K, 1 ER, 0 HR, 4 BB | 2025: 2 GS/app, 13.0 IP, 2.77 ERA, 12 K, 4 ER, 1 HR, 1 BB | 2026: 1 GS/app, 4.2 IP, 7.71 ERA, 4 K, 4 ER, 2 HR, 3 BB",
+        "seasons": [
+          {
+            "year": "2022",
+            "games": 1,
+            "starts": 1,
+            "ip": 6,
+            "er": 0,
+            "runs": 0,
+            "hits": 2,
+            "hr": 0,
+            "bb": 2,
+            "so": 6,
+            "tbf": 22,
+            "era": 0,
+            "display": "2022: 1 GS/app, 6.0 IP, 0.00 ERA, 6 K, 0 ER, 0 HR, 2 BB"
+          },
+          {
+            "year": "2023",
+            "games": 1,
+            "starts": 1,
+            "ip": 6,
+            "er": 3,
+            "runs": 3,
+            "hits": 4,
+            "hr": 0,
+            "bb": 2,
+            "so": 3,
+            "tbf": 25,
+            "era": 4.5,
+            "display": "2023: 1 GS/app, 6.0 IP, 4.50 ERA, 3 K, 3 ER, 0 HR, 2 BB"
+          },
+          {
+            "year": "2024",
+            "games": 2,
+            "starts": 0,
+            "ip": 10,
+            "er": 1,
+            "runs": 1,
+            "hits": 11,
+            "hr": 0,
+            "bb": 4,
+            "so": 8,
+            "tbf": 44,
+            "era": 0.9,
+            "display": "2024: 2 GS/app, 10.0 IP, 0.90 ERA, 8 K, 1 ER, 0 HR, 4 BB"
+          },
+          {
+            "year": "2025",
+            "games": 3,
+            "starts": 2,
+            "ip": 13,
+            "er": 4,
+            "runs": 4,
+            "hits": 10,
+            "hr": 1,
+            "bb": 1,
+            "so": 12,
+            "tbf": 49,
+            "era": 2.77,
+            "display": "2025: 2 GS/app, 13.0 IP, 2.77 ERA, 12 K, 4 ER, 1 HR, 1 BB"
+          },
+          {
+            "year": "2026",
+            "games": 1,
+            "starts": 1,
+            "ip": 4.667,
+            "er": 4,
+            "runs": 4,
+            "hits": 2,
+            "hr": 2,
+            "bb": 3,
+            "so": 4,
+            "tbf": 19,
+            "era": 7.71,
+            "display": "2026: 1 GS/app, 4.2 IP, 7.71 ERA, 4 K, 4 ER, 2 HR, 3 BB"
+          }
+        ],
+        "metrics": {
+          "GS": {
+            "display": "5",
+            "value": 5
+          },
+          "ERA": {
+            "display": "2.72",
+            "value": 2.7227
+          },
+          "SO": {
+            "display": "33",
+            "value": 33
+          },
+          "IP": {
+            "display": "39.2",
+            "value": 39.6667
+          },
+          "H": {
+            "display": "29",
+            "value": 29
+          },
+          "ER": {
+            "display": "12",
+            "value": 12
+          },
+          "R": {
+            "display": "12",
+            "value": 12
+          },
+          "HR": {
+            "display": "3",
+            "value": 3
+          },
+          "BB": {
+            "display": "12",
+            "value": 12
+          },
+          "TBF": {
+            "display": "159",
+            "value": 159
+          }
+        },
+        "textRecord": null
+      }
+    }
+  }
+}

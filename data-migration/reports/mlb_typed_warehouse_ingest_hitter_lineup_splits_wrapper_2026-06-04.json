@@ -1,0 +1,32 @@
+{
+  "date": "2026-06-04",
+  "db_path": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "dry_run": false,
+  "lineup_file": "data-private/lineups/mlb/2026-06-04-lineup-board.json",
+  "mode": "ingest_hitter_lineup_splits",
+  "ok": true,
+  "results": [
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "data-migration/scripts/ingest_mlb_lineups_raw_to_typed.py",
+        "--date",
+        "2026-06-04",
+        "--source-db",
+        "data-private/warehouse/sports/mlb/sql-mlb.db",
+        "--report",
+        "data-migration/reports/mlb_typed_warehouse_ingest_hitter_lineup_splits_2026-06-04.json",
+        "--lineup-file",
+        "data-private/lineups/mlb/2026-06-04-lineup-board.json"
+      ],
+      "date": "2026-06-04",
+      "family": "lineups",
+      "ok": true,
+      "report_path": "data-migration/reports/mlb_typed_warehouse_ingest_hitter_lineup_splits_2026-06-04.json",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"board_path\": \"data-private/lineups/mlb/2026-06-04-lineup-board.json\",\n  \"date\": \"2026-06-04\",\n  \"dry_run\": false,\n  \"errors\": [],\n  \"expected_game_count\": 9,\n  \"expected_lineup_slot_count\": 162,\n  \"generated_at\": \"2026-06-04T17:34:06.957716+00:00\",\n  \"lineup_board\": {\n    \"games\": 9,\n    \"lineup_matchup_snapshots\": 162,\n    \"lineup_slots\": 162,\n    \"lineups\": 18,\n    \"players\": 162,\n    \"probable_pitchers\": 18,\n    \"probables_source_snapshot_id\": \"mlb-77eb3e42cd2619b632ab4522dfba7d42\",\n    \"source_files\": 1,\n    \"source_snapshot_id\": \"mlb-4158a42f9032c67a6e335d042ac6f792\",\n    \"unresolved_games\": 0,\n    \"unresolved_players\": 0\n  },\n  \"lineup_file\": \"data-private/lineups/mlb/2026-06-04-lineup-board.json\",\n  \"lineup_root\": \"data-private/lineups/mlb\",\n  \"ok\": true,\n  \"row_count_delta\": {\n    \"health_checks\": 0,\n    \"lineup_matchup_snapshots\": 4,\n    \"lineup_slots\": 4,\n    \"lineups\": 0,\n    \"players\": 0,\n    \"source_fetch_runs\": 2,\n    \"source_fetch_status\": 0,\n    \"source_snapshots\": 2,\n    \"starting_pitchers\": 0,\n    \"unresolved_entities\": 0\n  },\n  \"script\": \"data-migration/scripts/ingest_mlb_lineups_raw_to_typed.py\",\n  \"source_db\": \"data-private/warehouse/sports/mlb/sql-mlb.db\"\n}\n"
+    }
+  ],
+  "version": "1.0.0"
+}
