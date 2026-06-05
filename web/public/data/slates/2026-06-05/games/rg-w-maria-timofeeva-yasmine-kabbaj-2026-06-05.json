@@ -1,0 +1,727 @@
+{
+  "id": "rg-w-maria-timofeeva-yasmine-kabbaj-2026-06-05",
+  "eventId": "177736",
+  "league": "Tennis",
+  "start": "8:30 AM",
+  "startMinutes": 510,
+  "title": "Maria Timofeeva vs Yasmine Kabbaj",
+  "stage": "WTA Makarska | Quarterfinal",
+  "spotlight": false,
+  "confidence": 51,
+  "volatility": 59,
+  "tags": [
+    "Clay",
+    "WTA Makarska",
+    "WTA",
+    "Watch only",
+    "No blind bet",
+    "WTA volatility tax",
+    "Controlled volatility"
+  ],
+  "matchup": [
+    {
+      "side": "Player 1",
+      "name": "Maria Timofeeva",
+      "displayName": "Maria Timofeeva",
+      "detail": "Live rank #118 | Uzbekistan | age 22 | adj form 75"
+    },
+    {
+      "side": "Player 2",
+      "name": "Yasmine Kabbaj",
+      "displayName": "Yasmine Kabbaj",
+      "detail": "Rank not joined | adj form 74"
+    }
+  ],
+  "summary": "Our model pick: Maria Timofeeva. Opponent-adjusted recent form is basically even: Maria Timofeeva 75, Yasmine Kabbaj 74. Lean, not a chase.",
+  "factors": [
+    "Opponent-adjusted recent form is basically even: Maria Timofeeva 75, Yasmine Kabbaj 74. Lean, not a chase.",
+    "Model 51% vs DraftKings Sportsbook implied 78.8% (-27.8 pts).",
+    "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+    "Wait for a visible service-pressure split before entering.",
+    "Best O/U angle: no play without a posted total.",
+    "May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.",
+    "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total."
+  ],
+  "lean": "Lean Maria Timofeeva; Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+  "swing": "Risk: best-of-three volatility and break clusters.",
+  "swingFactor": "Risk: best-of-three volatility and break clusters.",
+  "odds": {
+    "participantOrder": [
+      0,
+      1
+    ],
+    "markets": [
+      {
+        "label": "Model fair",
+        "book": "Tennis warehouse model",
+        "value": "Maria Timofeeva 51% / Yasmine Kabbaj 49%"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "book": "DraftKings Sportsbook",
+        "value": "Maria Timofeeva -372 / Yasmine Kabbaj +262"
+      },
+      {
+        "label": "1st set total games",
+        "book": "DraftKings Sportsbook",
+        "value": "9.5 1st-set games: Over +120 / Under -185"
+      }
+    ],
+    "note": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+    "provider": "DraftKings Sportsbook"
+  },
+  "tennisContext": {
+    "surface": "Clay",
+    "court": "Court 1",
+    "h2hLeader": "",
+    "fatigueFlag": false,
+    "liveDog": false,
+    "weaknessEdge": {
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 1,
+      "attackingSide": null,
+      "vulnerableSide": null,
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "Pre-match spread is fragile; wait for both players to serve once.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+      "pick": {
+        "name": "Maria Timofeeva",
+        "serviceHoldPct": null,
+        "firstServeWonPct": 57,
+        "secondServeWonPct": 50,
+        "firstServePct": 65,
+        "avgAces": 1.2,
+        "avgDoubleFaults": 2.6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": 57,
+        "servicePointsWonPct": 54,
+        "weakServeMatches": 2,
+        "pressureMatches": null,
+        "matchesWithStats": 5,
+        "weaknessScore": 9,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [
+          "first-serve points won below comfort (57%)"
+        ],
+        "strengths": [
+          "creates return pressure (57% return points won)"
+        ],
+        "gameFlowRead": "Maria Timofeeva can drop points quickly through first-serve points won below comfort (57%)."
+      },
+      "opponent": {
+        "name": "Yasmine Kabbaj",
+        "serviceHoldPct": null,
+        "firstServeWonPct": 58,
+        "secondServeWonPct": 55,
+        "firstServePct": 75,
+        "avgAces": 0.2,
+        "avgDoubleFaults": 2.6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": 50,
+        "servicePointsWonPct": 57,
+        "weakServeMatches": 3,
+        "pressureMatches": null,
+        "matchesWithStats": 5,
+        "weaknessScore": 10,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [
+          "first-serve points won below comfort (58%)",
+          "3 recent matches with serve instability"
+        ],
+        "strengths": [
+          "second serve holds up (55%)",
+          "creates return pressure (50% return points won)"
+        ],
+        "gameFlowRead": "Yasmine Kabbaj can drop points quickly through first-serve points won below comfort (58%) and 3 recent matches with serve instability."
+      }
+    },
+    "warehouseContext": null,
+    "players": [
+      {
+        "name": "Maria Timofeeva",
+        "rank": 118,
+        "label": "Maria Timofeeva",
+        "form": null,
+        "boardPct": 51,
+        "decimalOdds": 1.269,
+        "marketLabel": "-372 / 78.8% implied",
+        "clayLine": "Live rank #118 | Uzbekistan | age 22 | adj form 75",
+        "weakness": {
+          "name": "Maria Timofeeva",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 57,
+          "secondServeWonPct": 50,
+          "firstServePct": 65,
+          "avgAces": 1.2,
+          "avgDoubleFaults": 2.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 57,
+          "servicePointsWonPct": 54,
+          "weakServeMatches": 2,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 9,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "first-serve points won below comfort (57%)"
+          ],
+          "strengths": [
+            "creates return pressure (57% return points won)"
+          ],
+          "gameFlowRead": "Maria Timofeeva can drop points quickly through first-serve points won below comfort (57%)."
+        },
+        "warehouseStats": null,
+        "record2026": "",
+        "notes": "Pick: model 51%",
+        "matchupNote": "Why pick: Opponent-adjusted recent form is basically even: Maria Timofeeva 75, Yasmine Kabbaj 74. Lean, not a chase."
+      },
+      {
+        "name": "Yasmine Kabbaj",
+        "rank": null,
+        "label": "Yasmine Kabbaj",
+        "form": null,
+        "boardPct": 49,
+        "decimalOdds": 3.62,
+        "marketLabel": "+262 / 27.6% implied",
+        "clayLine": "Rank not joined | adj form 74",
+        "weakness": {
+          "name": "Yasmine Kabbaj",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 58,
+          "secondServeWonPct": 55,
+          "firstServePct": 75,
+          "avgAces": 0.2,
+          "avgDoubleFaults": 2.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 50,
+          "servicePointsWonPct": 57,
+          "weakServeMatches": 3,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 10,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "first-serve points won below comfort (58%)",
+            "3 recent matches with serve instability"
+          ],
+          "strengths": [
+            "second serve holds up (55%)",
+            "creates return pressure (50% return points won)"
+          ],
+          "gameFlowRead": "Yasmine Kabbaj can drop points quickly through first-serve points won below comfort (58%) and 3 recent matches with serve instability."
+        },
+        "warehouseStats": null,
+        "record2026": "",
+        "notes": "Opponent case: model 49%",
+        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
+      }
+    ],
+    "comparisonRows": [
+      {
+        "label": "Model pick",
+        "metric": "Fair win split",
+        "leftScore": 51,
+        "rightScore": 49,
+        "leftLabel": "Maria Timofeeva",
+        "rightLabel": "Yasmine Kabbaj",
+        "winner": "Maria Timofeeva"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "metric": "Implied price",
+        "leftScore": 78.8,
+        "rightScore": 27.6,
+        "leftLabel": "Maria Timofeeva",
+        "rightLabel": "Yasmine Kabbaj",
+        "winner": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+      },
+      {
+        "label": "Weakness",
+        "metric": "Lower is cleaner",
+        "leftScore": 9,
+        "rightScore": 10,
+        "leftLabel": "Maria Timofeeva",
+        "rightLabel": "Yasmine Kabbaj",
+        "winner": "No clear weakness edge"
+      },
+      {
+        "label": "Volatility",
+        "metric": "Lower is cleaner",
+        "leftScore": 59,
+        "rightScore": 41,
+        "leftLabel": "Risk",
+        "rightLabel": "Stability",
+        "winner": "Pass-first"
+      }
+    ],
+    "predictionMarket": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T22:16:18.192Z",
+      "totalVolume": null,
+      "players": [
+        {
+          "name": "Maria Timofeeva",
+          "probabilityPct": 78.8,
+          "amount": null,
+          "americanOdds": -372,
+          "edgePct": -27.8,
+          "priceBand": "Low-payout favorite"
+        },
+        {
+          "name": "Yasmine Kabbaj",
+          "probabilityPct": 27.6,
+          "amount": null,
+          "americanOdds": 262,
+          "edgePct": 21.4,
+          "priceBand": "Underdog"
+        }
+      ]
+    },
+    "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Yasmine Kabbaj",
+        "line": null,
+        "americanOdds": 262,
+        "modelPct": 49,
+        "impliedPct": 27.6,
+        "edgePct": 21.4,
+        "evPer100": 77.4,
+        "netEvPer100": 75.4,
+        "grade": "Outlier price/manual review",
+        "issue": "Picked side is overpriced; value board flips to Yasmine Kabbaj because that side has the better posted-price edge.",
+        "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "No bet",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": null,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": 21.4,
+        "edgeGames": null,
+        "confidence": null,
+        "grade": "No direction",
+        "reason": "No posted match total captured."
+      },
+      {
+        "marketType": "Win a set",
+        "label": "Win a set %",
+        "selection": "Maria Timofeeva 70% / Yasmine Kabbaj 65%",
+        "rows": [
+          {
+            "name": "Maria Timofeeva",
+            "confidence": 70,
+            "modelPct": 51,
+            "label": "Live to win a set"
+          },
+          {
+            "name": "Yasmine Kabbaj",
+            "confidence": 65,
+            "modelPct": 49,
+            "label": "Needs early hold pressure"
+          }
+        ],
+        "confidence": 70,
+        "grade": "Price required",
+        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Under 9.5",
+        "expectedGames": 9,
+        "confidence": 59,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "grade": "Thin value",
+        "reason": "Expected first-set games 9 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 60%, first-set sample N/A, 0 recent sets."
+      }
+    ],
+    "derivativeMarketCase": null,
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Yasmine Kabbaj",
+        "americanOdds": 262,
+        "modelPct": 49,
+        "impliedPct": 27.6,
+        "edgePct": 21.4,
+        "evPer100": 77.4,
+        "netEvPer100": 75.4,
+        "feePer100": 2,
+        "valueIssue": "Picked side is overpriced; value board flips to Yasmine Kabbaj because that side has the better posted-price edge.",
+        "valueGrade": "Outlier price/manual review",
+        "betGrade": false
+      },
+      "spread": null,
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": 21.4,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Under 9.5",
+        "line": 9.5,
+        "americanOdds": -185,
+        "expectedGames": 9,
+        "confidence": 59,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "modelPct": 59,
+        "evPer100": -9.1,
+        "netEvPer100": -11.1,
+        "valueGrade": "Thin value",
+        "reason": "Expected first-set games 9 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 60%, first-set sample N/A, 0 recent sets.",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Maria Timofeeva",
+          "confidence": 70,
+          "modelPct": 51,
+          "label": "Live to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Yasmine Kabbaj",
+          "confidence": 65,
+          "modelPct": 49,
+          "label": "Needs early hold pressure",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "ensembleValueCase": null,
+    "projection": {
+      "projectedWinner": "Maria Timofeeva",
+      "projectedSetLine": "2-0/2-1 range",
+      "setWinProjections": [
+        {
+          "name": "Maria Timofeeva",
+          "confidence": 70,
+          "modelPct": 51,
+          "label": "Live to win a set"
+        },
+        {
+          "name": "Yasmine Kabbaj",
+          "confidence": 65,
+          "modelPct": 49,
+          "label": "Needs early hold pressure"
+        }
+      ],
+      "totalGames": null,
+      "straightSetsProbability": 48,
+      "upsetRisk": 49,
+      "overview": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "fantasy": []
+    },
+    "tradePlan": {
+      "laneLabel": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+      "summary": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "trigger": "Wait for a visible service-pressure split before entering.",
+      "headline": "No clear weakness edge",
+      "exit": "No spread line",
+      "tone": "warning"
+    },
+    "derivativeMarkets": [
+      {
+        "label": "ML",
+        "value": "Maria Timofeeva -372; Model 51% vs DraftKings Sportsbook implied 78.8% (-27.8 pts).",
+        "lean": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+        "confidence": 51,
+        "marketType": "ML",
+        "selection": "Yasmine Kabbaj",
+        "americanOdds": 262,
+        "modelPct": 49,
+        "impliedPct": 27.6,
+        "edgePct": 21.4,
+        "evPer100": 77.4,
+        "netEvPer100": 75.4,
+        "feePer100": 2,
+        "valueIssue": "Picked side is overpriced; value board flips to Yasmine Kabbaj because that side has the better posted-price edge.",
+        "valueGrade": "Outlier price/manual review",
+        "betGrade": false,
+        "tone": "warning",
+        "reason": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total."
+      },
+      {
+        "label": "Win a set",
+        "value": "No set-win price captured",
+        "lean": "Needs early hold pressure",
+        "confidence": 70,
+        "setWinRows": [],
+        "valueGrade": "Needs posted price",
+        "tone": "neutral",
+        "reason": "Best-of-three set-win confidence is more fragile; early service holds matter more."
+      },
+      {
+        "label": "Spread",
+        "value": "No primary game spread captured",
+        "lean": "No spread line",
+        "confidence": 50,
+        "tone": "neutral",
+        "reason": "Wait for a visible service-pressure split before entering."
+      },
+      {
+        "label": "O/U",
+        "value": "No total captured",
+        "lean": "No bet",
+        "confidence": 50,
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": 21.4,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st set O/U",
+        "value": "Line 9.5",
+        "lean": "Under 9.5",
+        "confidence": 59,
+        "marketType": "First-set total",
+        "selection": "Under 9.5",
+        "line": 9.5,
+        "americanOdds": -185,
+        "expectedGames": 9,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "modelPct": 59,
+        "evPer100": -9.1,
+        "netEvPer100": -11.1,
+        "valueGrade": "Thin value",
+        "reason": "Expected first-set games 9 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 60%, first-set sample N/A, 0 recent sets.",
+        "betGrade": false,
+        "tone": "accent"
+      },
+      {
+        "label": "1st service game",
+        "value": "No first-service-game market captured",
+        "lean": "First-service-game prices",
+        "confidence": 51,
+        "firstServiceGameRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-service-game market captured."
+      },
+      {
+        "label": "First games",
+        "value": "No first-game prop market captured",
+        "lean": "First-game prop prices",
+        "confidence": 51,
+        "firstGamePropRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-games prop captured."
+      }
+    ],
+    "marketEconomics": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T22:16:18.192Z",
+      "eventUrl": "https://sportsbook.draftkings.com/leagues/tennis/wta-makarska?event=34244593",
+      "deskName": "Maria Timofeeva",
+      "deskPricePct": 78.8,
+      "deskEdgePct": -27.8,
+      "priceAction": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+      "players": [
+        {
+          "name": "Maria Timofeeva",
+          "americanOdds": -372,
+          "impliedPct": 78.8,
+          "modelPct": 51,
+          "edgePct": -27.8,
+          "priceBand": "Low-payout favorite",
+          "grossProfitPct": 26.9,
+          "grossPayoutMultiple": 1.269,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 26.9,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        },
+        {
+          "name": "Yasmine Kabbaj",
+          "americanOdds": 262,
+          "impliedPct": 27.6,
+          "modelPct": 49,
+          "edgePct": 21.4,
+          "priceBand": "Underdog",
+          "grossProfitPct": 262,
+          "grossPayoutMultiple": 3.62,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 262,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        }
+      ]
+    },
+    "clayMatchupData": null,
+    "opponentQualityData": null,
+    "researchLinks": [
+      {
+        "label": "ESPN tennis scoreboard",
+        "url": "https://www.espn.com/tennis/scoreboard/_/date/20260605"
+      },
+      {
+        "label": "TennisLive",
+        "url": "https://www.tennislive.net/"
+      },
+      {
+        "label": "DraftKings Sportsbook event",
+        "url": "https://sportsbook.draftkings.com/leagues/tennis/wta-makarska?event=34244593"
+      }
+    ],
+    "formEdgeName": "Maria Timofeeva"
+  },
+  "participants": [
+    {
+      "id": "rg-w-maria-timofeeva-yasmine-kabbaj-2026-06-05:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Maria Timofeeva",
+      "detail": "Live rank #118 | Uzbekistan | age 22 | adj form 75",
+      "americanOdds": -372,
+      "americanLabel": "-372",
+      "decimalOdds": 1.2688172043010753,
+      "impliedProbability": 0.788135593220339,
+      "impliedProbabilityLabel": "78.8%"
+    },
+    {
+      "id": "rg-w-maria-timofeeva-yasmine-kabbaj-2026-06-05:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Yasmine Kabbaj",
+      "detail": "Rank not joined | adj form 74",
+      "americanOdds": 262,
+      "americanLabel": "+262",
+      "decimalOdds": 3.62,
+      "impliedProbability": 0.27624309392265195,
+      "impliedProbabilityLabel": "27.6%"
+    }
+  ],
+  "moneyline": {
+    "available": true,
+    "label": "DraftKings Sportsbook moneyline",
+    "provider": "DraftKings Sportsbook",
+    "participants": [
+      {
+        "id": "rg-w-maria-timofeeva-yasmine-kabbaj-2026-06-05:0",
+        "index": 0,
+        "role": "Player 1",
+        "name": "Maria Timofeeva",
+        "detail": "Live rank #118 | Uzbekistan | age 22 | adj form 75",
+        "americanOdds": -372,
+        "americanLabel": "-372",
+        "decimalOdds": 1.2688172043010753,
+        "impliedProbability": 0.788135593220339,
+        "impliedProbabilityLabel": "78.8%"
+      },
+      {
+        "id": "rg-w-maria-timofeeva-yasmine-kabbaj-2026-06-05:1",
+        "index": 1,
+        "role": "Player 2",
+        "name": "Yasmine Kabbaj",
+        "detail": "Rank not joined | adj form 74",
+        "americanOdds": 262,
+        "americanLabel": "+262",
+        "decimalOdds": 3.62,
+        "impliedProbability": 0.27624309392265195,
+        "impliedProbabilityLabel": "27.6%"
+      }
+    ]
+  },
+  "analysis": {
+    "available": true,
+    "participantId": "rg-w-maria-timofeeva-yasmine-kabbaj-2026-06-05:0",
+    "participant": {
+      "id": "rg-w-maria-timofeeva-yasmine-kabbaj-2026-06-05:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Maria Timofeeva",
+      "detail": "Live rank #118 | Uzbekistan | age 22 | adj form 75",
+      "americanOdds": -372,
+      "americanLabel": "-372",
+      "decimalOdds": 1.2688172043010753,
+      "impliedProbability": 0.788135593220339,
+      "impliedProbabilityLabel": "78.8%"
+    },
+    "opponent": {
+      "id": "rg-w-maria-timofeeva-yasmine-kabbaj-2026-06-05:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Yasmine Kabbaj",
+      "detail": "Rank not joined | adj form 74",
+      "americanOdds": 262,
+      "americanLabel": "+262",
+      "decimalOdds": 3.62,
+      "impliedProbability": 0.27624309392265195,
+      "impliedProbabilityLabel": "27.6%"
+    },
+    "lean": "Lean Maria Timofeeva; Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+    "rationale": "Our model pick: Maria Timofeeva. Opponent-adjusted recent form is basically even: Maria Timofeeva 75, Yasmine Kabbaj 74. Lean, not a chase.",
+    "confidence": 51,
+    "volatility": 59,
+    "recommendationScore": 36,
+    "tier": "Watch",
+    "sourceLabel": "DraftKings Sportsbook",
+    "modelEdge": null,
+    "modelEdgeLabel": "",
+    "marketProbability": 0.788135593220339,
+    "marketProbabilityLabel": "78.8%",
+    "inputs": [],
+    "inputsUsed": 0,
+    "volatilityNotes": [],
+    "indicators": {}
+  },
+  "metadata": {
+    "participantCount": 2,
+    "participantNames": [
+      "Maria Timofeeva",
+      "Yasmine Kabbaj"
+    ],
+    "tagCount": 7,
+    "hasSeriesBreakdown": false,
+    "hasMoneyline": true,
+    "hasAnalysisPick": true,
+    "hasStructuredInputs": false,
+    "hasPlayerProps": false,
+    "startMinutes": 510,
+    "spotlight": false,
+    "league": "Tennis",
+    "oddsProvider": "DraftKings Sportsbook"
+  }
+}

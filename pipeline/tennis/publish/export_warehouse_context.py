@@ -153,6 +153,302 @@ def weighted_average(values: list[dict[str, Any]]) -> float | None:
     return round(sum(float(row["score"]) * float(row["weight"]) for row in clean) / total, 1) if total else None
 
 
+def pct_from_stat_text(value: Any) -> float | None:
+    match = re.search(r"\((\d+(?:\.\d+)?)%\)", str(value or ""))
+    if not match:
+        return None
+    return float(match.group(1))
+
+
+def tennislive_match_service_stats(conn: sqlite3.Connection, player_id: str, match_id: str | None) -> dict[str, Any] | None:
+    if not match_id or not table_exists(conn, "match_stat_rows"):
+        return None
+    rows = [
+        dict(row)
+        for row in conn.execute(
+            """
+            select stat_name, stat_value, stat_made, stat_attempts, stat_text
+            from match_stat_rows
+            where source_name = 'tennislive'
+              and player_id = ?
+              and match_id = ?
+            order by stat_name
+            """,
+            (player_id, match_id),
+        )
+    ]
+    if not rows:
+        return None
+    stats: dict[str, Any] = {"source": "tennislive", "rows": []}
+    for row in rows:
+        label = str(row.get("stat_name") or "").strip().upper()
+        text = str(row.get("stat_text") or "").strip()
+        pct = pct_from_stat_text(text)
+        value = row.get("stat_value")
+        if label == "ACES":
+            stats["aces"] = int(value) if value is not None else text
+        elif label == "DOUBLE FAULTS":
+            stats["doubleFaults"] = int(value) if value is not None else text
+        elif label == "1ST SERVE %":
+            stats["firstServePct"] = pct
+            stats["firstServeIn"] = text
+        elif label == "1ST SERVE POINTS WON":
+            stats["firstServeWonPct"] = pct
+            stats["firstServePointsWon"] = text
+        elif label == "2ND SERVE POINTS WON":
+            stats["secondServeWonPct"] = pct
+            stats["secondServePointsWon"] = text
+        elif label == "BREAK POINTS WON":
+            stats["breakPointsConverted"] = text
+            stats["breakPointsConvertedPct"] = pct
+        elif label == "TOTAL RETURN POINTS WON":
+            stats["returnPointsWonPct"] = pct
+            stats["returnPointsWon"] = text
+        elif label == "TOTAL POINTS WON":
+            stats["totalPointsWonPct"] = pct
+            stats["totalPointsWon"] = text
+        stats["rows"].append(
+            {
+                "label": row.get("stat_name"),
+                "value": text,
+                "made": row.get("stat_made"),
+                "attempts": row.get("stat_attempts"),
+                "pct": pct,
+            }
+        )
+    return {key: value for key, value in stats.items() if value is not None}
+
+
+def tennislive_link_for_recent(conn: sqlite3.Connection, player_id: str, recent: dict[str, Any]) -> dict[str, Any] | None:
+    if not table_exists(conn, "tennislive_player_match_links"):
+        return None
+    rows = [
+        dict(row)
+        for row in conn.execute(
+            """
+            select match_id, source_match_url, opponent_name, match_date, tournament, score_text
+            from tennislive_player_match_links
+            where player_id = ?
+              and source_name = 'tennislive'
+              and coalesce(match_date, '') = coalesce(?, '')
+            order by
+              case when nullif(trim(coalesce(match_id, '')), '') is not null then 0 else 1 end,
+              source_match_url
+            """,
+            (player_id, recent.get("match_date")),
+        )
+    ]
+    opponent = normalize_name(recent.get("opponent_name"))
+    tournament = normalize_name(recent.get("tournament_name"))
+    score = re.sub(r"\s+", " ", str(recent.get("score") or "").strip())
+    for row in rows:
+        if opponent and normalize_name(row.get("opponent_name")) != opponent:
+            continue
+        if tournament and normalize_name(row.get("tournament")) != tournament:
+            continue
+        row_score = re.sub(r"\s+", " ", str(row.get("score_text") or "").strip())
+        if score and row_score and score != row_score:
+            continue
+        return row
+    return rows[0] if len(rows) == 1 else None
+
+
+def typed_recent_matches_for_player(conn: sqlite3.Connection, player_id: str, limit: int = 5, source_name: str | None = None) -> list[dict[str, Any]]:
+    if not (table_exists(conn, "recent_matches") and table_exists(conn, "players")):
+        return []
+    matches: list[dict[str, Any]] = []
+    for row in (
+        dict(item)
+        for item in conn.execute(
+            """
+            select
+              rm.match_date,
+              rm.tournament_name,
+              rm.surface,
+              rm.round,
+              rm.result,
+              rm.score,
+              rm.source_name,
+              p.name as opponent_name
+            from recent_matches rm
+            left join players p on p.player_id = rm.opponent_player_id
+            where rm.player_id = ?
+              and (nullif(trim(coalesce(rm.score, '')), '') is not null or nullif(trim(coalesce(rm.result, '')), '') is not null)
+              and (? is null or rm.source_name = ?)
+            order by coalesce(rm.match_date, '') desc, rm.recent_match_id
+            limit ?
+            """,
+            (player_id, source_name, source_name, limit),
+        )
+    ):
+        link = tennislive_link_for_recent(conn, player_id, row) if row.get("source_name") == "tennislive" else None
+        service_stats = tennislive_match_service_stats(conn, player_id, link.get("match_id") if link else None)
+        payload = {
+            "opponentName": row.get("opponent_name"),
+            "event": row.get("tournament_name"),
+            "matchDateLabel": row.get("match_date"),
+            "isoDate": row.get("match_date"),
+            "surface": row.get("surface"),
+            "round": row.get("round"),
+            "result": row.get("result"),
+            "score": row.get("score"),
+            "source": row.get("source_name"),
+            "sourceUrl": link.get("source_match_url") if link else None,
+            "matchId": link.get("match_id") if link else None,
+        }
+        if service_stats:
+            payload["serviceStats"] = service_stats
+            payload["stats"] = service_stats
+        matches.append(payload)
+    return matches
+
+
+def typed_recent_form_entry(conn: sqlite3.Connection, row: dict[str, Any]) -> dict[str, Any]:
+    features = as_json(row.get("features_json")) or {}
+    summary = []
+    for key, label in (
+        ("opponent_adjusted_form_score", "Opponent-adjusted form"),
+        ("recent_win_pct", "Recent win pct"),
+        ("recent_game_pct", "Recent game pct"),
+        ("scoreline_form_score", "Scoreline form"),
+    ):
+        value = features.get(key)
+        if isinstance(value, (int, float)):
+            summary.append({"key": key, "label": label, "score": value, "source": features.get("source") or "sql-tennis.db"})
+    source_name = "tennislive"
+    matches = typed_recent_matches_for_player(conn, row["player_id"], source_name=source_name)
+    if not matches and isinstance(features.get("recent_matches"), list):
+        matches = [
+            {
+                "opponentName": item.get("opponent"),
+                "event": item.get("tournament"),
+                "matchDateLabel": item.get("date"),
+                "isoDate": item.get("date"),
+                "surface": item.get("surface"),
+                "round": item.get("round"),
+                "result": item.get("result"),
+                "score": item.get("score"),
+                "source": features.get("source"),
+                "sourceUrl": item.get("sourceUrl"),
+            }
+            for item in features.get("recent_matches")
+            if isinstance(item, dict) and (str(item.get("score") or "").strip() or str(item.get("result") or "").strip())
+        ]
+        matches = matches[:5]
+    return {
+        "playerName": row.get("player_name"),
+        "matches": matches,
+        "summary": summary,
+        "coverage": {
+            "cells": len(summary) + len(matches),
+            "exactCells": len(summary) + len(matches),
+            "estimatedCells": 0,
+            "missingCells": 0,
+        },
+        "source": "sql-tennis.db:player_form_snapshots/recent_matches",
+        "sourceUrl": features.get("source_url"),
+    }
+
+
+def latest_tennislive_profile(conn: sqlite3.Connection, player_id: str) -> dict[str, Any] | None:
+    if not table_exists(conn, "tennislive_player_profiles"):
+        return None
+    row = conn.execute(
+        """
+        select name, country, birthdate, age, current_ranking, ranking_label,
+               top_ranking, top_ranking_date, top_ranking_points, points,
+               prize_money, matches_total, wins, losses, win_pct,
+               source_player_url, captured_at
+        from tennislive_player_profiles
+        where player_id = ?
+        order by captured_at desc
+        limit 1
+        """,
+        (player_id,),
+    ).fetchone()
+    if not row:
+        return None
+    payload = dict(row)
+    return {
+        "source": "tennislive_player_profiles",
+        "name": payload.get("name"),
+        "country": payload.get("country"),
+        "birthdate": payload.get("birthdate"),
+        "age": payload.get("age"),
+        "rank": payload.get("current_ranking"),
+        "rankingLabel": payload.get("ranking_label"),
+        "topRank": payload.get("top_ranking"),
+        "topRankDate": payload.get("top_ranking_date"),
+        "topRankPoints": payload.get("top_ranking_points"),
+        "points": payload.get("points"),
+        "prizeMoney": payload.get("prize_money"),
+        "matchesTotal": payload.get("matches_total"),
+        "wins": payload.get("wins"),
+        "losses": payload.get("losses"),
+        "winPct": payload.get("win_pct"),
+        "sourceUrl": payload.get("source_player_url"),
+        "capturedAt": payload.get("captured_at"),
+    }
+
+
+def parse_tennislive_chart_date(value: str | None) -> str | None:
+    if not value:
+        return None
+    try:
+        return datetime.strptime(value, "%d.%m.%Y").date().isoformat()
+    except ValueError:
+        return None
+
+
+def tennislive_form_chart(conn: sqlite3.Connection, player_id: str, limit: int = 36) -> dict[str, Any] | None:
+    if not table_exists(conn, "tennislive_form_chart_points"):
+        return None
+    rows = [
+        dict(row)
+        for row in conn.execute(
+            """
+            select f.sequence_index, f.form_value, f.label, f.source_url, f.captured_at,
+                   opp.name as opponent_name
+            from tennislive_form_chart_points f
+            left join players opp on opp.player_id = f.opponent_player_id
+            where f.player_id = ?
+            order by f.captured_at desc, f.sequence_index desc
+            limit ?
+            """,
+            (player_id, limit),
+        )
+    ]
+    if not rows:
+        return None
+    rows = list(reversed(rows))
+    points = []
+    for index, chart_row in enumerate(rows):
+        label = str(chart_row.get("label") or "")
+        date_match = re.search(r"(\d{1,2}\.\d{1,2}\.\d{4})", label)
+        result_match = re.search(r"\((win|lost|loss)\s+vs\s+([^)]+)\)", label, re.I)
+        points.append(
+            {
+                "index": index,
+                "sequenceIndex": chart_row.get("sequence_index"),
+                "value": chart_row.get("form_value"),
+                "label": label,
+                "date": parse_tennislive_chart_date(date_match.group(1)) if date_match else None,
+                "result": result_match.group(1).lower() if result_match else None,
+                "opponentName": chart_row.get("opponent_name") or (result_match.group(2).strip() if result_match else None),
+            }
+        )
+    values = [point["value"] for point in points if isinstance(point.get("value"), (int, float))]
+    return {
+        "source": "tennislive_form_chart_points",
+        "sourceUrl": rows[-1].get("source_url"),
+        "capturedAt": rows[-1].get("captured_at"),
+        "points": points,
+        "latestValue": points[-1].get("value") if points else None,
+        "minValue": min(values) if values else None,
+        "maxValue": max(values) if values else None,
+    }
+
+
 def typed_recent_form_metrics(conn: sqlite3.Connection, match_id: str) -> dict[str, dict[str, Any]]:
     if not (table_exists(conn, "match_players") and table_exists(conn, "players") and table_exists(conn, "player_form_snapshots")):
         return {}
@@ -171,10 +467,12 @@ def typed_recent_form_metrics(conn: sqlite3.Connection, match_id: str) -> dict[s
             join players p on p.player_id = mp.player_id
             left join player_form_snapshots fs on fs.player_id = p.player_id
             where mp.match_id = ?
+              and json_extract(fs.features_json, '$.source') = 'tennislive'
               and fs.form_snapshot_id = (
                 select inner_fs.form_snapshot_id
                 from player_form_snapshots inner_fs
                 where inner_fs.player_id = p.player_id
+                  and json_extract(inner_fs.features_json, '$.source') = 'tennislive'
                 order by inner_fs.snapshot_date desc, inner_fs.created_at desc
                 limit 1
               )
@@ -185,35 +483,70 @@ def typed_recent_form_metrics(conn: sqlite3.Connection, match_id: str) -> dict[s
     ]
     result: dict[str, dict[str, Any]] = {}
     for row in rows:
-        features = as_json(row.get("features_json")) or {}
-        summary = []
-        for key, label in (
-            ("opponent_adjusted_form_score", "Opponent-adjusted form"),
-            ("recent_win_pct", "Recent win pct"),
-            ("recent_game_pct", "Recent game pct"),
-            ("scoreline_form_score", "Scoreline form"),
-        ):
-            value = features.get(key)
-            if isinstance(value, (int, float)):
-                summary.append({"key": key, "label": label, "score": value})
+        result[normalize_name(row.get("player_name"))] = typed_recent_form_entry(conn, row)
+    return result
+
+
+def typed_recent_form_by_player(conn: sqlite3.Connection) -> dict[str, dict[str, Any]]:
+    if not (table_exists(conn, "players") and table_exists(conn, "player_form_snapshots")):
+        return {}
+    rows = [
+        dict(row)
+        for row in conn.execute(
+            """
+            select
+              p.name as player_name,
+              p.player_id,
+              fs.surface,
+              fs.sample_size,
+              fs.features_json,
+              fs.created_at
+            from players p
+            join player_form_snapshots fs on fs.player_id = p.player_id
+            where json_extract(fs.features_json, '$.source') = 'tennislive'
+              and fs.form_snapshot_id = (
+              select inner_fs.form_snapshot_id
+              from player_form_snapshots inner_fs
+              where inner_fs.player_id = p.player_id
+                and json_extract(inner_fs.features_json, '$.source') = 'tennislive'
+              order by inner_fs.snapshot_date desc, inner_fs.created_at desc
+              limit 1
+            )
+            """
+        )
+    ]
+    result: dict[str, dict[str, Any]] = {}
+    for row in rows:
+        form_metrics = typed_recent_form_entry(conn, row)
+        profile = latest_tennislive_profile(conn, row["player_id"])
+        form_chart = tennislive_form_chart(conn, row["player_id"])
         result[normalize_name(row.get("player_name"))] = {
-            "playerName": row.get("player_name"),
-            "matches": [],
-            "summary": summary,
-            "coverage": {
-                "cells": len(summary),
-                "exactCells": len(summary),
-                "estimatedCells": 0,
-                "missingCells": 0,
-            },
-            "source": "sql-tennis.db:player_form_snapshots",
+            "name": row.get("player_name"),
+            "profile": profile,
+            "ranking": {
+                "rank": profile.get("rank") if profile else None,
+                "points": profile.get("points") if profile else None,
+                "country": profile.get("country") if profile else None,
+                "age": profile.get("age") if profile else None,
+                "tour": profile.get("rankingLabel") if profile else None,
+                "source": profile.get("source") if profile else None,
+                "sourceUrl": profile.get("sourceUrl") if profile else None,
+                "asOf": profile.get("capturedAt") if profile else None,
+            } if profile else None,
+            "formChart": form_chart,
+            "expectedStats": expected_stats_from_form_metrics(form_metrics),
+            "recentFormMetrics": form_metrics,
         }
     return result
 
 
 def recent_form_metrics(conn: sqlite3.Connection, match_id: str) -> dict[str, dict[str, Any]]:
+    typed = typed_recent_form_metrics(conn, match_id)
+    if typed:
+        return typed
+    return {}
     if not table_exists(conn, "tennis_recent_form_metrics"):
-        return typed_recent_form_metrics(conn, match_id)
+        return {}
     rows = [
         dict(row)
         for row in conn.execute(
@@ -394,6 +727,10 @@ def expected_stats_from_form_metrics(form_metrics: dict[str, Any] | None) -> dic
         return None
     service_stats = []
     for match in form_metrics.get("matches") or []:
+        direct_stats = match.get("serviceStats") or match.get("stats") or {}
+        if direct_stats:
+            service_stats.append(direct_stats)
+            continue
         metric_rows = (match.get("metrics") or {}).values()
         stat_payload = next(
             (
@@ -457,9 +794,9 @@ def expected_stats_from_form_metrics(form_metrics: dict[str, Any] | None) -> dic
     if not stats:
         return None
     return {
-        "source": "Flashscore player-page recent-match stats",
+        "source": "TennisLive recent-match stats",
         "matches": len(service_stats),
-        "note": "Pregame expected stats are averaged from Flashscore player-page recent singles matches joined to stat feeds.",
+        "note": "Pregame expected stats are averaged from TennisLive recent singles match stat tables.",
         "stats": stats,
         "pressureSamples": {
             "recent": recent_pressure,
@@ -1094,8 +1431,9 @@ def legacy_match_rows(conn: sqlite3.Connection, date: str) -> list[dict[str, Any
 def export_context(date: str, db_path: Path | None = None) -> dict[str, Any]:
     conn = connect(db_path)
     matches: dict[str, Any] = {}
+    players_by_name = typed_recent_form_by_player(conn)
     player_page_expected = player_page_expected_stats(conn, date)
-    sofascore_by_match = sofascore_signals_by_match(date)
+    external_signals_by_match: dict[str, dict[str, Any]] = {}
     if not matches:
         for row in legacy_match_rows(conn, date):
             match_id = row["match_id"]
@@ -1141,6 +1479,7 @@ def export_context(date: str, db_path: Path | None = None) -> dict[str, Any]:
                 elif page_expected:
                     expected = page_expected
                 form_metrics = form_metrics_by_player.get(player_key)
+                player_by_name = players_by_name.get(player_key) or {}
                 form_expected = expected_stats_from_form_metrics(form_metrics)
                 if expected and form_expected:
                     expected_stats_non_null = {
@@ -1184,11 +1523,14 @@ def export_context(date: str, db_path: Path | None = None) -> dict[str, Any]:
                         "name": player_name,
                         "side": side,
                         "stats": {},
+                        "profile": player_by_name.get("profile"),
+                        "ranking": player_by_name.get("ranking"),
+                        "formChart": player_by_name.get("formChart"),
                         "expectedStats": expected
                         or {
-                            "source": "Flashscore recent-form metric fallback",
+                            "source": "TennisLive recent-form metric fallback",
                             "matches": len((form_metrics or {}).get("matches") or []),
-                            "note": "SofaScore schedule was unavailable, so expected rows are shown from Flashscore recent-form metrics.",
+                            "note": "Expected rows are shown from TennisLive recent-form metrics.",
                             "stats": stats,
                         },
                         "recentFormMetrics": form_metrics,
@@ -1231,7 +1573,7 @@ def export_context(date: str, db_path: Path | None = None) -> dict[str, Any]:
                     "away": (result_score or {}).get("away"),
                 },
                 "result": result_score,
-                "sofascoreSignals": sofascore_by_match.get(match_id),
+                "externalSignals": external_signals_by_match.get(match_id),
                 "weather": weather,
                 "allStatRows": [],
                 "coverage": {
@@ -1253,6 +1595,7 @@ def export_context(date: str, db_path: Path | None = None) -> dict[str, Any]:
         "date": date,
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "source": "SQLite tennis warehouse",
+        "playersByName": players_by_name,
         "matches": matches,
     }
 

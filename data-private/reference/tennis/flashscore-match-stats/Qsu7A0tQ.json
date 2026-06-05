@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-05",
+  "boardMatchId": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05",
+  "boardTitle": "Matteo Arnaldi vs Flavio Cobolli",
+  "boardPlayerName": "Matteo Arnaldi",
+  "recentOpponentName": "Berrettini M.",
+  "recentIndex": 0,
+  "recentEvent": "French Open (France)",
+  "recentDate": "Jun 03, 26",
+  "recentIsoDate": "2026-06-03",
+  "recentResult": "Win 7-5 5-2",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Berrettini M. - Arnaldi M.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Berrettini M.",
+    "Arnaldi M."
+  ],
+  "generatedAt": "2026-06-04T21:31:58.311Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/Qsu7A0tQ/",
+  "matchId": "Qsu7A0tQ",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_Qsu7A0tQ",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_Qsu7A0tQ"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:17"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 2,
+        "rightGames": 5,
+        "duration": "0:40"
+      }
+    ],
+    "totalDuration": "1:57"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "66%",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "59% (33/56)",
+              "right": "65% (24/37)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "35% (11/31)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "10/15",
+              "right": "0/3",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (13/37)",
+              "right": "41% (23/56)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (8/19)",
+              "right": "65% (20/31)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "3/3",
+              "right": "5/15",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "26",
+              "right": "16",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "37",
+              "right": "16",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Net points won",
+              "left": "65% (15/23)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "51% (44/87)",
+              "right": "63% (35/56)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (21/56)",
+              "right": "49% (43/87)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (65/143)",
+              "right": "55% (78/143)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "8",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "44% (4/9)",
+              "right": "70% (7/10)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Return games won",
+              "left": "30% (3/10)",
+              "right": "56% (5/9)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Total games won",
+              "left": "37% (7/19)",
+              "right": "63% (12/19)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "2",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "61%",
+              "right": "69%",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (27/42)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "30% (8/27)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "10/13",
+              "right": "0/2",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "36% (8/22)",
+              "right": "36% (15/42)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (5/10)",
+              "right": "70% (19/27)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/2",
+              "right": "3/13",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "9",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "24",
+              "right": "11",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Net points won",
+              "left": "63% (12/19)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "51% (35/69)",
+              "right": "59% (19/32)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "41% (13/32)",
+              "right": "49% (34/69)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (48/101)",
+              "right": "52% (53/101)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (3/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Total games won",
+              "left": "42% (5/12)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "78%",
+              "right": "63%",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "43% (6/14)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "75% (3/4)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "0/1",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (5/15)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (3/9)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/1",
+              "right": "2/2",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "7",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "5",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (9/18)",
+              "right": "67% (16/24)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (8/24)",
+              "right": "50% (9/18)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (17/42)",
+              "right": "60% (25/42)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Total games won",
+              "left": "29% (2/7)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Berrettini M.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

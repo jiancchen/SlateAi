@@ -1,0 +1,668 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-05",
+  "boardMatchId": "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05",
+  "boardTitle": "Alexander Donski vs Tuncay Duran",
+  "boardPlayerName": "Alexander Donski",
+  "recentOpponentName": "Winter E.",
+  "recentIndex": 0,
+  "recentEvent": "Centurion 2 (South Africa)",
+  "recentDate": "Jun 04, 26",
+  "recentIsoDate": "2026-06-04",
+  "recentResult": "Win 7-6 6-7 7-5",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Donski A. - Winter E.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+  "players": [
+    "Donski A.",
+    "Winter E."
+  ],
+  "generatedAt": "2026-06-04T21:31:59.420Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/0rSM14QG/",
+  "matchId": "0rSM14QG",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_0rSM14QG",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_0rSM14QG"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 2,
+        "duration": "1:04"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 7,
+        "duration": "1:12"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "3:24"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "14",
+              "right": "1",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "13",
+              "right": "4",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "50%",
+              "right": "61%",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (58/72)",
+              "right": "69% (52/75)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (31/72)",
+              "right": "57% (27/47)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "13/14",
+              "right": "6/8",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (23/75)",
+              "right": "19% (14/72)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (20/47)",
+              "right": "57% (41/72)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/8",
+              "right": "1/14",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "46",
+              "right": "20",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "80",
+              "right": "36",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (92/146)",
+              "right": "67% (81/121)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (40/121)",
+              "right": "37% (54/146)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (132/267)",
+              "right": "51% (135/267)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "94% (17/18)",
+              "right": "89% (16/18)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Return games won",
+              "left": "11% (2/18)",
+              "right": "6% (1/18)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Total games won",
+              "left": "53% (19/36)",
+              "right": "47% (17/36)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "5",
+              "right": "0",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "1",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "59%",
+              "right": "55%",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (25/30)",
+              "right": "73% (16/22)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (9/21)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/5",
+              "right": "0/0",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "27% (6/22)",
+              "right": "17% (5/30)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (6/18)",
+              "right": "57% (12/21)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/5",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "19",
+              "right": "5",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "30",
+              "right": "14",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (34/51)",
+              "right": "70% (28/40)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "30% (12/40)",
+              "right": "33% (17/51)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (46/91)",
+              "right": "49% (45/91)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "6",
+              "right": "1",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "5",
+              "right": "0",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "51%",
+              "right": "68%",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "86% (25/29)",
+              "right": "77% (20/26)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "32% (9/28)",
+              "right": "75% (9/12)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/4",
+              "right": "0/0",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (6/26)",
+              "right": "14% (4/29)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "25% (3/12)",
+              "right": "68% (19/28)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/0",
+              "right": "0/4",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "18",
+              "right": "8",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "33",
+              "right": "8",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (34/57)",
+              "right": "76% (29/38)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "24% (9/38)",
+              "right": "40% (23/57)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (43/95)",
+              "right": "55% (52/95)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (6/6)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/6)",
+              "right": "0% (0/6)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "3",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "36%",
+              "right": "61%",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (8/13)",
+              "right": "59% (16/27)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (13/23)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/5",
+              "right": "6/8",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (11/27)",
+              "right": "38% (5/13)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "65% (11/17)",
+              "right": "43% (10/23)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/8",
+              "right": "1/5",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "9",
+              "right": "7",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "14",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "63% (24/38)",
+              "right": "56% (24/43)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (19/43)",
+              "right": "37% (14/38)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (43/81)",
+              "right": "47% (38/81)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Match points saved",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (7/12)",
+              "right": "42% (5/12)",
+              "leftPlayer": "Donski A.",
+              "rightPlayer": "Winter E."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

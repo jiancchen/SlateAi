@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "script": "data-migration/scripts/ingest_tennis_tennislive_to_typed.py",
+  "source_db": "/Users/jcchen/Documents/New project/data-private/warehouse/sports/tennis/sql-tennis.db",
+  "started_at": "2026-06-04T22:54:03.095930+00:00",
+  "finished_at": "2026-06-04T22:54:04.575569+00:00",
+  "player_urls": [
+    "https://www.tennislive.net/wta/georgia-pedone/",
+    "https://www.tennislive.net/atp/bu-yunchaokete/"
+  ],
+  "match_urls": [],
+  "max_links": 10,
+  "max_matches": 5,
+  "player_results": [
+    {
+      "status": "ok",
+      "player_id": "tennis-player-georgia-pedone",
+      "player": "Georgia Pedone",
+      "snapshot_already_seen": false,
+      "surface_records": 63,
+      "match_links": 10,
+      "recent_matches_upserted": 5,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-bu-yunchaokete",
+      "player": "Bu Yunchaokete",
+      "snapshot_already_seen": false,
+      "surface_records": 84,
+      "match_links": 10,
+      "recent_matches_upserted": 5,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    }
+  ],
+  "match_results": [],
+  "failures": []
+}

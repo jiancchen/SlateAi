@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-05",
+  "boardMatchId": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05",
+  "boardTitle": "Matteo Arnaldi vs Flavio Cobolli",
+  "boardPlayerName": "Flavio Cobolli",
+  "recentOpponentName": "Wu Y.",
+  "recentIndex": 3,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 28, 26",
+  "recentIsoDate": "2026-05-28",
+  "recentResult": "Win 6-4 6-4 6-4",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Cobolli F. - Wu Y.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Cobolli F.",
+    "Wu Y."
+  ],
+  "generatedAt": "2026-06-04T21:31:58.793Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/rDQ3y6to/",
+  "matchId": "rDQ3y6to",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_rDQ3y6to",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_rDQ3y6to"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:39"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:49"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:12"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "7",
+              "right": "4",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "54%",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "82% (40/49)",
+              "right": "54% (28/52)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "53% (20/38)",
+              "right": "62% (28/45)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "9/14",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (24/52)",
+              "right": "18% (9/49)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (17/45)",
+              "right": "47% (18/38)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/14",
+              "right": "2/4",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "35",
+              "right": "18",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "35",
+              "right": "35",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "82% (9/11)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (60/87)",
+              "right": "58% (56/97)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (41/97)",
+              "right": "31% (27/87)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (101/184)",
+              "right": "45% (83/184)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "87% (13/15)",
+              "right": "67% (10/15)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (5/15)",
+              "right": "13% (2/15)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (18/30)",
+              "right": "40% (12/30)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "0",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "50%",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "87% (13/15)",
+              "right": "77% (10/13)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "57% (8/14)",
+              "right": "69% (9/13)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/4",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "23% (3/13)",
+              "right": "13% (2/15)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "31% (4/13)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "0/0",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "4",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "9",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (2/3)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "72% (21/29)",
+              "right": "73% (19/26)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (7/26)",
+              "right": "28% (8/29)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (28/55)",
+              "right": "49% (27/55)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "68%",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (14/18)",
+              "right": "48% (12/25)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (7/14)",
+              "right": "58% (7/12)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/3",
+              "right": "2/4",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "52% (13/25)",
+              "right": "22% (4/18)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (5/12)",
+              "right": "50% (7/14)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "1/3",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "7",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "16",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (4/4)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "66% (21/32)",
+              "right": "51% (19/37)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "49% (18/37)",
+              "right": "34% (11/32)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (39/69)",
+              "right": "43% (30/69)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "62%",
+              "right": "41%",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "81% (13/16)",
+              "right": "43% (6/14)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "50% (5/10)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/1",
+              "right": "4/6",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "57% (8/14)",
+              "right": "19% (3/16)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "40% (8/20)",
+              "right": "50% (5/10)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/6",
+              "right": "1/1",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "7",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "10",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (3/4)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (18/26)",
+              "right": "53% (18/34)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "47% (16/34)",
+              "right": "31% (8/26)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "57% (34/60)",
+              "right": "43% (26/60)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (4/5)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "20% (1/5)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Cobolli F.",
+              "rightPlayer": "Wu Y."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

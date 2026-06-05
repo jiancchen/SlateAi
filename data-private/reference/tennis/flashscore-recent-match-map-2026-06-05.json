@@ -1,0 +1,5455 @@
+{
+  "generatedAt": "2026-06-04T21:31:59.871Z",
+  "source": "/Users/jcchen/Documents/New project/data-private/reference/tennis/flashscore-player-pages-2026-06-05.json",
+  "outputDir": "/Users/jcchen/Documents/New project/data-private/reference/tennis/flashscore-match-stats",
+  "coverage": {
+    "playerPageSlateMatches": 17,
+    "playerPageMatchedSlateMatches": 4,
+    "playerPageProfiles": 8,
+    "playerPageRecentRows": 40,
+    "playerPageRecentStatsFetched": 40,
+    "fetchedRows": 40,
+    "matchedRows": 40,
+    "recentRows": 40
+  },
+  "map": {
+    "rg-m-jakub-mensik-alexander-zverev-2026-06-05::jakub mensik::0": {
+      "key": "rg-m-jakub-mensik-alexander-zverev-2026-06-05::jakub mensik::0",
+      "boardMatchId": "rg-m-jakub-mensik-alexander-zverev-2026-06-05",
+      "boardTitle": "Jakub Mensik vs Alexander Zverev",
+      "playerName": "Jakub Mensik",
+      "boardPlayerName": "Jakub Mensik",
+      "opponentName": "Fonseca J.",
+      "recentIndex": 0,
+      "recentEvent": "French Open (France)",
+      "recentDate": "Jun 02, 26",
+      "recentIsoDate": "2026-06-02",
+      "recentResult": "Win 6-4 6-3 7-6",
+      "recentSurface": "Clay",
+      "flashscoreId": "xfKv2kTb",
+      "flashscoreLabel": "Mensik J. - Fonseca J.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/mensik-jakub/UFj257G8/",
+      "currentMatchFlashscoreId": "2FOmfoWO",
+      "currentMatchTournament": "ATP French Open",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "xfKv2kTb",
+        "sourceUrl": "https://www.flashscoreusa.com/match/xfKv2kTb/",
+        "aces": 11,
+        "doubleFaults": 4,
+        "firstServePct": 64,
+        "firstServeWonPct": 83,
+        "secondServeWonPct": 33,
+        "breakPointsSaved": "3/5",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "5/21",
+        "winners": 49,
+        "unforcedErrors": 39,
+        "servicePointsWonPct": 65,
+        "returnPointsWonPct": 40,
+        "serviceGamesWon": "87% (13/15)",
+        "serviceHoldPct": 87,
+        "holdPct": 87,
+        "returnGamesWon": "31% (5/16)",
+        "returnGamesWonPct": 31,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "11"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "4"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "64%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "83% (54/65)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "33% (12/36)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "3/5"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "39% (35/89)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "42% (16/38)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "5/21"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "49"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "39"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "75% (38/51)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "65% (66/101)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "40% (51/127)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "51% (117/228)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "7"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "87% (13/15)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "31% (5/16)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "58% (18/31)"
+          }
+        ]
+      }
+    },
+    "rg-m-jakub-mensik-alexander-zverev-2026-06-05::jakub mensik::1": {
+      "key": "rg-m-jakub-mensik-alexander-zverev-2026-06-05::jakub mensik::1",
+      "boardMatchId": "rg-m-jakub-mensik-alexander-zverev-2026-06-05",
+      "boardTitle": "Jakub Mensik vs Alexander Zverev",
+      "playerName": "Jakub Mensik",
+      "boardPlayerName": "Jakub Mensik",
+      "opponentName": "Rublev A.",
+      "recentIndex": 1,
+      "recentEvent": "French Open (France)",
+      "recentDate": "May 31, 26",
+      "recentIsoDate": "2026-05-31",
+      "recentResult": "Win 6-3 7-6 4-6 2-6 6-3",
+      "recentSurface": "Clay",
+      "flashscoreId": "dGWwzpmC",
+      "flashscoreLabel": "Mensik J. - Rublev A.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/mensik-jakub/UFj257G8/",
+      "currentMatchFlashscoreId": "2FOmfoWO",
+      "currentMatchTournament": "ATP French Open",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "dGWwzpmC",
+        "sourceUrl": "https://www.flashscoreusa.com/match/dGWwzpmC/",
+        "aces": 13,
+        "doubleFaults": 9,
+        "firstServePct": 65,
+        "firstServeWonPct": 77,
+        "secondServeWonPct": 43,
+        "breakPointsSaved": "10/15",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "4/18",
+        "winners": 69,
+        "unforcedErrors": 65,
+        "servicePointsWonPct": 65,
+        "returnPointsWonPct": 38,
+        "serviceGamesWon": "80% (20/25)",
+        "serviceHoldPct": 80,
+        "holdPct": 80,
+        "returnGamesWon": "17% (4/23)",
+        "returnGamesWonPct": 17,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "13"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "9"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "65%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "77% (77/100)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "43% (23/53)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "10/15"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "30% (31/105)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "51% (32/63)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "4/18"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "69"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "65"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "76% (25/33)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "65% (100/153)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "38% (63/168)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "51% (163/321)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "6"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "80% (20/25)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "17% (4/23)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "50% (24/48)"
+          }
+        ]
+      }
+    },
+    "rg-m-jakub-mensik-alexander-zverev-2026-06-05::jakub mensik::2": {
+      "key": "rg-m-jakub-mensik-alexander-zverev-2026-06-05::jakub mensik::2",
+      "boardMatchId": "rg-m-jakub-mensik-alexander-zverev-2026-06-05",
+      "boardTitle": "Jakub Mensik vs Alexander Zverev",
+      "playerName": "Jakub Mensik",
+      "boardPlayerName": "Jakub Mensik",
+      "opponentName": "De Minaur A.",
+      "recentIndex": 2,
+      "recentEvent": "French Open (France)",
+      "recentDate": "May 29, 26",
+      "recentIsoDate": "2026-05-29",
+      "recentResult": "Win 0-6 6-2 6-2 6-3",
+      "recentSurface": "Clay",
+      "flashscoreId": "WdJof93b",
+      "flashscoreLabel": "De Minaur A. - Mensik J.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/mensik-jakub/UFj257G8/",
+      "currentMatchFlashscoreId": "2FOmfoWO",
+      "currentMatchTournament": "ATP French Open",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "WdJof93b",
+        "sourceUrl": "https://www.flashscoreusa.com/match/WdJof93b/",
+        "aces": 6,
+        "doubleFaults": 5,
+        "firstServePct": 54,
+        "firstServeWonPct": 67,
+        "secondServeWonPct": 48,
+        "breakPointsSaved": "2/7",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "7/14",
+        "winners": 33,
+        "unforcedErrors": 38,
+        "servicePointsWonPct": 58,
+        "returnPointsWonPct": 49,
+        "serviceGamesWon": "69% (11/16)",
+        "serviceHoldPct": 69,
+        "holdPct": 69,
+        "returnGamesWon": "47% (7/15)",
+        "returnGamesWonPct": 47,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "6"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "5"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "54%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "67% (34/51)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "48% (21/44)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "2/7"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "47% (26/55)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "53% (18/34)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "7/14"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "33"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "38"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "80% (33/41)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "58% (55/95)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "49% (44/89)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "54% (99/184)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "5"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "69% (11/16)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "47% (7/15)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "58% (18/31)"
+          }
+        ]
+      }
+    },
+    "rg-m-jakub-mensik-alexander-zverev-2026-06-05::jakub mensik::3": {
+      "key": "rg-m-jakub-mensik-alexander-zverev-2026-06-05::jakub mensik::3",
+      "boardMatchId": "rg-m-jakub-mensik-alexander-zverev-2026-06-05",
+      "boardTitle": "Jakub Mensik vs Alexander Zverev",
+      "playerName": "Jakub Mensik",
+      "boardPlayerName": "Jakub Mensik",
+      "opponentName": "Navone M.",
+      "recentIndex": 3,
+      "recentEvent": "French Open (France)",
+      "recentDate": "May 27, 26",
+      "recentIsoDate": "2026-05-27",
+      "recentResult": "Win 6-3 2-6 6-4 1-6 7-6",
+      "recentSurface": "Clay",
+      "flashscoreId": "zB9jZ2nB",
+      "flashscoreLabel": "Navone M. - Mensik J.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/mensik-jakub/UFj257G8/",
+      "currentMatchFlashscoreId": "2FOmfoWO",
+      "currentMatchTournament": "ATP French Open",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "zB9jZ2nB",
+        "sourceUrl": "https://www.flashscoreusa.com/match/zB9jZ2nB/",
+        "aces": 11,
+        "doubleFaults": 8,
+        "firstServePct": 54,
+        "firstServeWonPct": 75,
+        "secondServeWonPct": 45,
+        "breakPointsSaved": "11/16",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "3/14",
+        "winners": 60,
+        "unforcedErrors": 85,
+        "servicePointsWonPct": 61,
+        "returnPointsWonPct": 37,
+        "serviceGamesWon": "78% (18/23)",
+        "serviceHoldPct": 78,
+        "holdPct": 78,
+        "returnGamesWon": "13% (3/23)",
+        "returnGamesWonPct": 13,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "11"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "8"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "54%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "75% (67/89)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "45% (35/77)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "11/16"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "34% (44/131)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "50% (15/30)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "3/14"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "60"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "85"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "67% (41/61)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "61% (102/166)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "37% (60/163)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "49% (162/329)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "6"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "78% (18/23)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "13% (3/23)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "46% (21/46)"
+          }
+        ]
+      }
+    },
+    "rg-m-jakub-mensik-alexander-zverev-2026-06-05::jakub mensik::4": {
+      "key": "rg-m-jakub-mensik-alexander-zverev-2026-06-05::jakub mensik::4",
+      "boardMatchId": "rg-m-jakub-mensik-alexander-zverev-2026-06-05",
+      "boardTitle": "Jakub Mensik vs Alexander Zverev",
+      "playerName": "Jakub Mensik",
+      "boardPlayerName": "Jakub Mensik",
+      "opponentName": "Droguet T.",
+      "recentIndex": 4,
+      "recentEvent": "French Open (France)",
+      "recentDate": "May 24, 26",
+      "recentIsoDate": "2026-05-24",
+      "recentResult": "Win 6-3 6-2 6-4",
+      "recentSurface": "Clay",
+      "flashscoreId": "bqZDD0T7",
+      "flashscoreLabel": "Droguet T. - Mensik J.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/mensik-jakub/UFj257G8/",
+      "currentMatchFlashscoreId": "2FOmfoWO",
+      "currentMatchTournament": "ATP French Open",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "bqZDD0T7",
+        "sourceUrl": "https://www.flashscoreusa.com/match/bqZDD0T7/",
+        "aces": 6,
+        "doubleFaults": 7,
+        "firstServePct": 41,
+        "firstServeWonPct": 90,
+        "secondServeWonPct": 44,
+        "breakPointsSaved": "6/8",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "6/11",
+        "winners": 34,
+        "unforcedErrors": 36,
+        "servicePointsWonPct": 63,
+        "returnPointsWonPct": 45,
+        "serviceGamesWon": "86% (12/14)",
+        "serviceHoldPct": 86,
+        "holdPct": 86,
+        "returnGamesWon": "46% (6/13)",
+        "returnGamesWonPct": 46,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "6"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "7"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "41%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "90% (37/41)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "44% (26/59)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "6/8"
+          },
+          {
+            "section": "Service",
+            "label": "Average 1st serve speed",
+            "value": "200 km/h"
+          },
+          {
+            "section": "Service",
+            "label": "Average 2nd serve speed",
+            "value": "158 km/h"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "27% (10/37)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "62% (24/39)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "6/11"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "34"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "36"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "67% (12/18)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "63% (63/100)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "45% (34/76)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "55% (97/176)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "6"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "86% (12/14)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "46% (6/13)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "67% (18/27)"
+          }
+        ]
+      }
+    },
+    "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05::matteo arnaldi::1": {
+      "key": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05::matteo arnaldi::1",
+      "boardMatchId": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05",
+      "boardTitle": "Matteo Arnaldi vs Flavio Cobolli",
+      "playerName": "Matteo Arnaldi",
+      "boardPlayerName": "Matteo Arnaldi",
+      "opponentName": "Tiafoe F.",
+      "recentIndex": 1,
+      "recentEvent": "French Open (France)",
+      "recentDate": "Jun 01, 26",
+      "recentIsoDate": "2026-06-01",
+      "recentResult": "Win 7-6 6-7 3-6 7-6 6-4",
+      "recentSurface": "Clay",
+      "flashscoreId": "jXjiOxDc",
+      "flashscoreLabel": "Tiafoe F. - Arnaldi M.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/arnaldi-matteo/hlVLAfZK/",
+      "currentMatchFlashscoreId": "j3aDamSk",
+      "currentMatchTournament": "ATP French Open",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "jXjiOxDc",
+        "sourceUrl": "https://www.flashscoreusa.com/match/jXjiOxDc/",
+        "aces": 18,
+        "doubleFaults": 5,
+        "firstServePct": 65,
+        "firstServeWonPct": 65,
+        "secondServeWonPct": 44,
+        "breakPointsSaved": "17/25",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "8/16",
+        "winners": 74,
+        "unforcedErrors": 76,
+        "servicePointsWonPct": 58,
+        "returnPointsWonPct": 44,
+        "serviceGamesWon": "70% (19/27)",
+        "serviceHoldPct": 70,
+        "holdPct": 70,
+        "returnGamesWon": "29% (8/28)",
+        "returnGamesWonPct": 29,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "18"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "5"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "65%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "65% (91/139)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "44% (33/75)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "17/25"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "38% (42/110)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "51% (45/89)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "8/16"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "74"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "76"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "72% (23/32)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "58% (124/214)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "44% (87/199)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "51% (211/413)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "6"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "70% (19/27)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "29% (8/28)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "49% (27/55)"
+          }
+        ]
+      }
+    },
+    "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05::matteo arnaldi::0": {
+      "key": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05::matteo arnaldi::0",
+      "boardMatchId": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05",
+      "boardTitle": "Matteo Arnaldi vs Flavio Cobolli",
+      "playerName": "Matteo Arnaldi",
+      "boardPlayerName": "Matteo Arnaldi",
+      "opponentName": "Berrettini M.",
+      "recentIndex": 0,
+      "recentEvent": "French Open (France)",
+      "recentDate": "Jun 03, 26",
+      "recentIsoDate": "2026-06-03",
+      "recentResult": "Win 7-5 5-2",
+      "recentSurface": "Clay",
+      "flashscoreId": "Qsu7A0tQ",
+      "flashscoreLabel": "Berrettini M. - Arnaldi M.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/arnaldi-matteo/hlVLAfZK/",
+      "currentMatchFlashscoreId": "j3aDamSk",
+      "currentMatchTournament": "ATP French Open",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "Qsu7A0tQ",
+        "sourceUrl": "https://www.flashscoreusa.com/match/Qsu7A0tQ/",
+        "aces": 1,
+        "doubleFaults": 3,
+        "firstServePct": 66,
+        "firstServeWonPct": 65,
+        "secondServeWonPct": 58,
+        "breakPointsSaved": "0/3",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "5/15",
+        "winners": 16,
+        "unforcedErrors": 16,
+        "servicePointsWonPct": 63,
+        "returnPointsWonPct": 49,
+        "serviceGamesWon": "70% (7/10)",
+        "serviceHoldPct": 70,
+        "holdPct": 70,
+        "returnGamesWon": "56% (5/9)",
+        "returnGamesWonPct": 56,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "1"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "3"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "66%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "65% (24/37)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "58% (11/19)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "0/3"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "41% (23/56)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "65% (20/31)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "5/15"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "16"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "16"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "59% (10/17)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "63% (35/56)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "49% (43/87)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "55% (78/143)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "8"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "70% (7/10)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "56% (5/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "63% (12/19)"
+          }
+        ]
+      }
+    },
+    "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05::matteo arnaldi::2": {
+      "key": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05::matteo arnaldi::2",
+      "boardMatchId": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05",
+      "boardTitle": "Matteo Arnaldi vs Flavio Cobolli",
+      "playerName": "Matteo Arnaldi",
+      "boardPlayerName": "Matteo Arnaldi",
+      "opponentName": "Collignon R.",
+      "recentIndex": 2,
+      "recentEvent": "French Open (France)",
+      "recentDate": "May 30, 26",
+      "recentIsoDate": "2026-05-30",
+      "recentResult": "Win 6-4 6-7 5-7 6-4 7-6",
+      "recentSurface": "Clay",
+      "flashscoreId": "pteVllqK",
+      "flashscoreLabel": "Arnaldi M. - Collignon R.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/arnaldi-matteo/hlVLAfZK/",
+      "currentMatchFlashscoreId": "j3aDamSk",
+      "currentMatchTournament": "ATP French Open",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "pteVllqK",
+        "sourceUrl": "https://www.flashscoreusa.com/match/pteVllqK/",
+        "aces": 14,
+        "doubleFaults": 5,
+        "firstServePct": 62,
+        "firstServeWonPct": 76,
+        "secondServeWonPct": 53,
+        "breakPointsSaved": "7/11",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "5/13",
+        "winners": 80,
+        "unforcedErrors": 63,
+        "servicePointsWonPct": 67,
+        "returnPointsWonPct": 35,
+        "serviceGamesWon": "86% (24/28)",
+        "serviceHoldPct": 86,
+        "holdPct": 86,
+        "returnGamesWon": "18% (5/28)",
+        "returnGamesWonPct": 18,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "14"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "5"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "62%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "76% (86/113)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "53% (36/68)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "7/11"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "25% (33/130)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "54% (34/63)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "5/13"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "80"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "63"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "77% (30/39)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "67% (123/183)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "35% (67/193)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "51% (190/376)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "7"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "86% (24/28)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "18% (5/28)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "52% (29/56)"
+          }
+        ]
+      }
+    },
+    "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05::matteo arnaldi::3": {
+      "key": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05::matteo arnaldi::3",
+      "boardMatchId": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05",
+      "boardTitle": "Matteo Arnaldi vs Flavio Cobolli",
+      "playerName": "Matteo Arnaldi",
+      "boardPlayerName": "Matteo Arnaldi",
+      "opponentName": "Tsitsipas S.",
+      "recentIndex": 3,
+      "recentEvent": "French Open (France)",
+      "recentDate": "May 28, 26",
+      "recentIsoDate": "2026-05-28",
+      "recentResult": "Win 7-6 5-7 6-3 6-2",
+      "recentSurface": "Clay",
+      "flashscoreId": "vX1cgNqd",
+      "flashscoreLabel": "Arnaldi M. - Tsitsipas S.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/arnaldi-matteo/hlVLAfZK/",
+      "currentMatchFlashscoreId": "j3aDamSk",
+      "currentMatchTournament": "ATP French Open",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "vX1cgNqd",
+        "sourceUrl": "https://www.flashscoreusa.com/match/vX1cgNqd/",
+        "aces": 4,
+        "doubleFaults": 1,
+        "firstServePct": 60,
+        "firstServeWonPct": 77,
+        "secondServeWonPct": 55,
+        "breakPointsSaved": "4/6",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "4/12",
+        "winners": 46,
+        "unforcedErrors": 28,
+        "servicePointsWonPct": 68,
+        "returnPointsWonPct": 36,
+        "serviceGamesWon": "90% (19/21)",
+        "serviceHoldPct": 90,
+        "holdPct": 90,
+        "returnGamesWon": "20% (4/20)",
+        "returnGamesWonPct": 20,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "4"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "1"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "60%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "77% (59/77)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "55% (28/51)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "4/6"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "28% (18/65)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "46% (24/52)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "4/12"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "46"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "28"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "81% (21/26)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "68% (87/128)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "36% (42/117)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "53% (129/245)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "7"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "90% (19/21)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "20% (4/20)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "56% (23/41)"
+          }
+        ]
+      }
+    },
+    "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05::matteo arnaldi::4": {
+      "key": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05::matteo arnaldi::4",
+      "boardMatchId": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05",
+      "boardTitle": "Matteo Arnaldi vs Flavio Cobolli",
+      "playerName": "Matteo Arnaldi",
+      "boardPlayerName": "Matteo Arnaldi",
+      "opponentName": "Griekspoor T.",
+      "recentIndex": 4,
+      "recentEvent": "French Open (France)",
+      "recentDate": "May 26, 26",
+      "recentIsoDate": "2026-05-26",
+      "recentResult": "Win 6-7 6-3 7-6 6-3",
+      "recentSurface": "Clay",
+      "flashscoreId": "bobglp0d",
+      "flashscoreLabel": "Griekspoor T. - Arnaldi M.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/arnaldi-matteo/hlVLAfZK/",
+      "currentMatchFlashscoreId": "j3aDamSk",
+      "currentMatchTournament": "ATP French Open",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "bobglp0d",
+        "sourceUrl": "https://www.flashscoreusa.com/match/bobglp0d/",
+        "aces": 7,
+        "doubleFaults": 2,
+        "firstServePct": 64,
+        "firstServeWonPct": 78,
+        "secondServeWonPct": 65,
+        "breakPointsSaved": "5/5",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "4/12",
+        "winners": 61,
+        "unforcedErrors": 34,
+        "servicePointsWonPct": 72,
+        "returnPointsWonPct": 39,
+        "serviceGamesWon": "100% (20/20)",
+        "serviceHoldPct": 100,
+        "holdPct": 100,
+        "returnGamesWon": "18% (4/22)",
+        "returnGamesWonPct": 18,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "7"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "64%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "78% (66/85)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "65% (31/48)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "5/5"
+          },
+          {
+            "section": "Service",
+            "label": "Average 1st serve speed",
+            "value": "186 km/h"
+          },
+          {
+            "section": "Service",
+            "label": "Average 2nd serve speed",
+            "value": "158 km/h"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "35% (31/88)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "41% (32/78)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "4/12"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "61"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "34"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "68% (17/25)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "72% (96/133)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "39% (64/166)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "54% (160/299)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "8"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "100% (20/20)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "18% (4/22)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "57% (24/42)"
+          }
+        ]
+      }
+    },
+    "rg-m-jakub-mensik-alexander-zverev-2026-06-05::alexander zverev::0": {
+      "key": "rg-m-jakub-mensik-alexander-zverev-2026-06-05::alexander zverev::0",
+      "boardMatchId": "rg-m-jakub-mensik-alexander-zverev-2026-06-05",
+      "boardTitle": "Jakub Mensik vs Alexander Zverev",
+      "playerName": "Alexander Zverev",
+      "boardPlayerName": "Alexander Zverev",
+      "opponentName": "Jodar R.",
+      "recentIndex": 0,
+      "recentEvent": "French Open (France)",
+      "recentDate": "Jun 02, 26",
+      "recentIsoDate": "2026-06-02",
+      "recentResult": "Win 7-6 6-1 6-3",
+      "recentSurface": "Clay",
+      "flashscoreId": "ppkhJhzo",
+      "flashscoreLabel": "Jodar R. - Zverev A.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/zverev-alexander/dGbUhw9m/",
+      "currentMatchFlashscoreId": "2FOmfoWO",
+      "currentMatchTournament": "ATP French Open",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "ppkhJhzo",
+        "sourceUrl": "https://www.flashscoreusa.com/match/ppkhJhzo/",
+        "aces": 7,
+        "doubleFaults": 0,
+        "firstServePct": 80,
+        "firstServeWonPct": 71,
+        "secondServeWonPct": 61,
+        "breakPointsSaved": "5/6",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "5/11",
+        "winners": 35,
+        "unforcedErrors": 35,
+        "servicePointsWonPct": 69,
+        "returnPointsWonPct": 44,
+        "serviceGamesWon": "93% (13/14)",
+        "serviceHoldPct": 93,
+        "holdPct": 93,
+        "returnGamesWon": "36% (5/14)",
+        "returnGamesWonPct": 36,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "7"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "0"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "80%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "71% (51/72)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "61% (11/18)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "5/6"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "45% (34/75)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "41% (11/27)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "5/11"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "35"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "35"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "73% (19/26)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "69% (62/90)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "44% (45/102)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "56% (107/192)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "7"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "93% (13/14)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "36% (5/14)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "64% (18/28)"
+          }
+        ]
+      }
+    },
+    "rg-m-jakub-mensik-alexander-zverev-2026-06-05::alexander zverev::1": {
+      "key": "rg-m-jakub-mensik-alexander-zverev-2026-06-05::alexander zverev::1",
+      "boardMatchId": "rg-m-jakub-mensik-alexander-zverev-2026-06-05",
+      "boardTitle": "Jakub Mensik vs Alexander Zverev",
+      "playerName": "Alexander Zverev",
+      "boardPlayerName": "Alexander Zverev",
+      "opponentName": "De Jong J.",
+      "recentIndex": 1,
+      "recentEvent": "French Open (France)",
+      "recentDate": "May 31, 26",
+      "recentIsoDate": "2026-05-31",
+      "recentResult": "Win 7-6 6-4 6-1",
+      "recentSurface": "Clay",
+      "flashscoreId": "I7KNZquo",
+      "flashscoreLabel": "De Jong J. - Zverev A.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/zverev-alexander/dGbUhw9m/",
+      "currentMatchFlashscoreId": "2FOmfoWO",
+      "currentMatchTournament": "ATP French Open",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "I7KNZquo",
+        "sourceUrl": "https://www.flashscoreusa.com/match/I7KNZquo/",
+        "aces": 4,
+        "doubleFaults": 2,
+        "firstServePct": 75,
+        "firstServeWonPct": 81,
+        "secondServeWonPct": 62,
+        "breakPointsSaved": "1/2",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "4/7",
+        "winners": 43,
+        "unforcedErrors": 26,
+        "servicePointsWonPct": 76,
+        "returnPointsWonPct": 44,
+        "serviceGamesWon": "93% (14/15)",
+        "serviceHoldPct": 93,
+        "holdPct": 93,
+        "returnGamesWon": "29% (4/14)",
+        "returnGamesWonPct": 29,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "4"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "75%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "81% (51/63)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "62% (13/21)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "1/2"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "33% (18/55)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "67% (18/27)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "4/7"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "43"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "26"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "76% (29/38)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "76% (64/84)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "44% (36/82)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "60% (100/166)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "8"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "93% (14/15)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "29% (4/14)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "62% (18/29)"
+          }
+        ]
+      }
+    },
+    "rg-m-jakub-mensik-alexander-zverev-2026-06-05::alexander zverev::2": {
+      "key": "rg-m-jakub-mensik-alexander-zverev-2026-06-05::alexander zverev::2",
+      "boardMatchId": "rg-m-jakub-mensik-alexander-zverev-2026-06-05",
+      "boardTitle": "Jakub Mensik vs Alexander Zverev",
+      "playerName": "Alexander Zverev",
+      "boardPlayerName": "Alexander Zverev",
+      "opponentName": "Halys Q.",
+      "recentIndex": 2,
+      "recentEvent": "French Open (France)",
+      "recentDate": "May 29, 26",
+      "recentIsoDate": "2026-05-29",
+      "recentResult": "Win 6-4 6-3 5-7 6-2",
+      "recentSurface": "Clay",
+      "flashscoreId": "nsJQYCfT",
+      "flashscoreLabel": "Halys Q. - Zverev A.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/zverev-alexander/dGbUhw9m/",
+      "currentMatchFlashscoreId": "2FOmfoWO",
+      "currentMatchTournament": "ATP French Open",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "nsJQYCfT",
+        "sourceUrl": "https://www.flashscoreusa.com/match/nsJQYCfT/",
+        "aces": 6,
+        "doubleFaults": 7,
+        "firstServePct": 67,
+        "firstServeWonPct": 71,
+        "secondServeWonPct": 60,
+        "breakPointsSaved": "2/5",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "7/17",
+        "winners": 53,
+        "unforcedErrors": 47,
+        "servicePointsWonPct": 67,
+        "returnPointsWonPct": 44,
+        "serviceGamesWon": "84% (16/19)",
+        "serviceHoldPct": 84,
+        "holdPct": 84,
+        "returnGamesWon": "35% (7/20)",
+        "returnGamesWonPct": 35,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "6"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "7"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "67%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "71% (51/72)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "60% (21/35)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "2/5"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "40% (36/90)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "51% (25/49)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "7/17"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "53"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "47"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "74% (29/39)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "67% (72/107)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "44% (61/139)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "54% (133/246)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "5"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "84% (16/19)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "35% (7/20)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "59% (23/39)"
+          }
+        ]
+      }
+    },
+    "rg-m-jakub-mensik-alexander-zverev-2026-06-05::alexander zverev::3": {
+      "key": "rg-m-jakub-mensik-alexander-zverev-2026-06-05::alexander zverev::3",
+      "boardMatchId": "rg-m-jakub-mensik-alexander-zverev-2026-06-05",
+      "boardTitle": "Jakub Mensik vs Alexander Zverev",
+      "playerName": "Alexander Zverev",
+      "boardPlayerName": "Alexander Zverev",
+      "opponentName": "Machac T.",
+      "recentIndex": 3,
+      "recentEvent": "French Open (France)",
+      "recentDate": "May 27, 26",
+      "recentIsoDate": "2026-05-27",
+      "recentResult": "Win 6-4 6-2 6-2",
+      "recentSurface": "Clay",
+      "flashscoreId": "bwEpNGFL",
+      "flashscoreLabel": "Machac T. - Zverev A.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/zverev-alexander/dGbUhw9m/",
+      "currentMatchFlashscoreId": "2FOmfoWO",
+      "currentMatchTournament": "ATP French Open",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "bwEpNGFL",
+        "sourceUrl": "https://www.flashscoreusa.com/match/bwEpNGFL/",
+        "aces": 19,
+        "doubleFaults": 2,
+        "firstServePct": 72,
+        "firstServeWonPct": 85,
+        "secondServeWonPct": 78,
+        "breakPointsSaved": "1/1",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "5/11",
+        "winners": 45,
+        "unforcedErrors": 17,
+        "servicePointsWonPct": 83,
+        "returnPointsWonPct": 45,
+        "serviceGamesWon": "100% (13/13)",
+        "serviceHoldPct": 100,
+        "holdPct": 100,
+        "returnGamesWon": "38% (5/13)",
+        "returnGamesWonPct": 38,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "19"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "72%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "85% (40/47)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "78% (14/18)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "1/1"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "42% (28/66)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "52% (12/23)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "5/11"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "45"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "17"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "62% (8/13)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "83% (54/65)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "45% (40/89)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "61% (94/154)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "4"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "100% (13/13)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "38% (5/13)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "69% (18/26)"
+          }
+        ]
+      }
+    },
+    "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05::flavio cobolli::1": {
+      "key": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05::flavio cobolli::1",
+      "boardMatchId": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05",
+      "boardTitle": "Matteo Arnaldi vs Flavio Cobolli",
+      "playerName": "Flavio Cobolli",
+      "boardPlayerName": "Flavio Cobolli",
+      "opponentName": "Svajda Z.",
+      "recentIndex": 1,
+      "recentEvent": "French Open (France)",
+      "recentDate": "Jun 01, 26",
+      "recentIsoDate": "2026-06-01",
+      "recentResult": "Win 6-2 6-3 6-7 7-6",
+      "recentSurface": "Clay",
+      "flashscoreId": "pWVT5bC5",
+      "flashscoreLabel": "Cobolli F. - Svajda Z.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/cobolli-flavio/zDtaCcPe/",
+      "currentMatchFlashscoreId": "j3aDamSk",
+      "currentMatchTournament": "ATP French Open",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "pWVT5bC5",
+        "sourceUrl": "https://www.flashscoreusa.com/match/pWVT5bC5/",
+        "aces": 8,
+        "doubleFaults": 2,
+        "firstServePct": 53,
+        "firstServeWonPct": 70,
+        "secondServeWonPct": 58,
+        "breakPointsSaved": "5/8",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "7/17",
+        "winners": 57,
+        "unforcedErrors": 56,
+        "servicePointsWonPct": 64,
+        "returnPointsWonPct": 41,
+        "serviceGamesWon": "85% (17/20)",
+        "serviceHoldPct": 85,
+        "holdPct": 85,
+        "returnGamesWon": "33% (7/21)",
+        "returnGamesWonPct": 33,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "8"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "53%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "70% (51/73)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "58% (38/66)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "5/8"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "32% (23/73)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "52% (33/64)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "7/17"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "57"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "56"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "78% (18/23)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "64% (89/139)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "41% (56/137)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "53% (145/276)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "6"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "85% (17/20)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "33% (7/21)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "59% (24/41)"
+          }
+        ]
+      }
+    },
+    "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05::flavio cobolli::0": {
+      "key": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05::flavio cobolli::0",
+      "boardMatchId": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05",
+      "boardTitle": "Matteo Arnaldi vs Flavio Cobolli",
+      "playerName": "Flavio Cobolli",
+      "boardPlayerName": "Flavio Cobolli",
+      "opponentName": "Auger-Aliassime F.",
+      "recentIndex": 0,
+      "recentEvent": "French Open (France)",
+      "recentDate": "Jun 03, 26",
+      "recentIsoDate": "2026-06-03",
+      "recentResult": "Win 4-6 6-4 6-4 6-4",
+      "recentSurface": "Clay",
+      "flashscoreId": "C80slxrg",
+      "flashscoreLabel": "Auger-Aliassime F. - Cobolli F.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/cobolli-flavio/zDtaCcPe/",
+      "currentMatchFlashscoreId": "j3aDamSk",
+      "currentMatchTournament": "ATP French Open",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "C80slxrg",
+        "sourceUrl": "https://www.flashscoreusa.com/match/C80slxrg/",
+        "aces": 8,
+        "doubleFaults": 2,
+        "firstServePct": 62,
+        "firstServeWonPct": 69,
+        "secondServeWonPct": 56,
+        "breakPointsSaved": "8/11",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "5/10",
+        "winners": 33,
+        "unforcedErrors": 46,
+        "servicePointsWonPct": 64,
+        "returnPointsWonPct": 36,
+        "serviceGamesWon": "85% (17/20)",
+        "serviceHoldPct": 85,
+        "holdPct": 85,
+        "returnGamesWon": "25% (5/20)",
+        "returnGamesWonPct": 25,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "8"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "62%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "69% (56/81)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "56% (28/50)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "8/11"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "30% (27/89)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "50% (16/32)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "5/10"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "33"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "46"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "54% (15/28)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "64% (84/131)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "36% (43/121)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "50% (127/252)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "5"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "85% (17/20)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "25% (5/20)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "55% (22/40)"
+          }
+        ]
+      }
+    },
+    "rg-m-jakub-mensik-alexander-zverev-2026-06-05::alexander zverev::4": {
+      "key": "rg-m-jakub-mensik-alexander-zverev-2026-06-05::alexander zverev::4",
+      "boardMatchId": "rg-m-jakub-mensik-alexander-zverev-2026-06-05",
+      "boardTitle": "Jakub Mensik vs Alexander Zverev",
+      "playerName": "Alexander Zverev",
+      "boardPlayerName": "Alexander Zverev",
+      "opponentName": "Bonzi B.",
+      "recentIndex": 4,
+      "recentEvent": "French Open (France)",
+      "recentDate": "May 24, 26",
+      "recentIsoDate": "2026-05-24",
+      "recentResult": "Win 6-3 6-4 6-2",
+      "recentSurface": "Clay",
+      "flashscoreId": "dC0NtKEi",
+      "flashscoreLabel": "Bonzi B. - Zverev A.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/zverev-alexander/dGbUhw9m/",
+      "currentMatchFlashscoreId": "2FOmfoWO",
+      "currentMatchTournament": "ATP French Open",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "dC0NtKEi",
+        "sourceUrl": "https://www.flashscoreusa.com/match/dC0NtKEi/",
+        "aces": 5,
+        "doubleFaults": 1,
+        "firstServePct": 65,
+        "firstServeWonPct": 67,
+        "secondServeWonPct": 77,
+        "breakPointsSaved": "1/2",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "5/10",
+        "winners": 38,
+        "unforcedErrors": 31,
+        "servicePointsWonPct": 71,
+        "returnPointsWonPct": 45,
+        "serviceGamesWon": "93% (13/14)",
+        "serviceHoldPct": 93,
+        "holdPct": 93,
+        "returnGamesWon": "38% (5/13)",
+        "returnGamesWonPct": 38,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "5"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "1"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "65%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "67% (37/55)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "77% (23/30)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "1/2"
+          },
+          {
+            "section": "Service",
+            "label": "Average 1st serve speed",
+            "value": "205 km/h"
+          },
+          {
+            "section": "Service",
+            "label": "Average 2nd serve speed",
+            "value": "179 km/h"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "44% (21/48)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "47% (17/36)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "5/10"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "38"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "31"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "71% (17/24)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "71% (60/85)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "45% (38/84)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "58% (98/169)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "6"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "93% (13/14)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "38% (5/13)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "67% (18/27)"
+          }
+        ]
+      }
+    },
+    "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05::flavio cobolli::2": {
+      "key": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05::flavio cobolli::2",
+      "boardMatchId": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05",
+      "boardTitle": "Matteo Arnaldi vs Flavio Cobolli",
+      "playerName": "Flavio Cobolli",
+      "boardPlayerName": "Flavio Cobolli",
+      "opponentName": "Tien L.",
+      "recentIndex": 2,
+      "recentEvent": "French Open (France)",
+      "recentDate": "May 30, 26",
+      "recentIsoDate": "2026-05-30",
+      "recentResult": "Win 6-2 6-2 6-3",
+      "recentSurface": "Clay",
+      "flashscoreId": "n7IrJlXG",
+      "flashscoreLabel": "Cobolli F. - Tien L.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/cobolli-flavio/zDtaCcPe/",
+      "currentMatchFlashscoreId": "j3aDamSk",
+      "currentMatchTournament": "ATP French Open",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "n7IrJlXG",
+        "sourceUrl": "https://www.flashscoreusa.com/match/n7IrJlXG/",
+        "aces": 7,
+        "doubleFaults": 2,
+        "firstServePct": 55,
+        "firstServeWonPct": 81,
+        "secondServeWonPct": 57,
+        "breakPointsSaved": "3/4",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "7/13",
+        "winners": 28,
+        "unforcedErrors": 33,
+        "servicePointsWonPct": 70,
+        "returnPointsWonPct": 50,
+        "serviceGamesWon": "92% (11/12)",
+        "serviceHoldPct": 92,
+        "holdPct": 92,
+        "returnGamesWon": "54% (7/13)",
+        "returnGamesWonPct": 54,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "7"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "55%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "81% (30/37)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "57% (17/30)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "3/4"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "43% (20/46)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "57% (23/40)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "7/13"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "28"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "33"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "83% (5/6)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "70% (47/67)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "50% (43/86)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "59% (90/153)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "6"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "92% (11/12)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "54% (7/13)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "72% (18/25)"
+          }
+        ]
+      }
+    },
+    "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05::flavio cobolli::3": {
+      "key": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05::flavio cobolli::3",
+      "boardMatchId": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05",
+      "boardTitle": "Matteo Arnaldi vs Flavio Cobolli",
+      "playerName": "Flavio Cobolli",
+      "boardPlayerName": "Flavio Cobolli",
+      "opponentName": "Wu Y.",
+      "recentIndex": 3,
+      "recentEvent": "French Open (France)",
+      "recentDate": "May 28, 26",
+      "recentIsoDate": "2026-05-28",
+      "recentResult": "Win 6-4 6-4 6-4",
+      "recentSurface": "Clay",
+      "flashscoreId": "rDQ3y6to",
+      "flashscoreLabel": "Cobolli F. - Wu Y.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/cobolli-flavio/zDtaCcPe/",
+      "currentMatchFlashscoreId": "j3aDamSk",
+      "currentMatchTournament": "ATP French Open",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "rDQ3y6to",
+        "sourceUrl": "https://www.flashscoreusa.com/match/rDQ3y6to/",
+        "aces": 7,
+        "doubleFaults": 4,
+        "firstServePct": 56,
+        "firstServeWonPct": 82,
+        "secondServeWonPct": 53,
+        "breakPointsSaved": "2/4",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "5/14",
+        "winners": 35,
+        "unforcedErrors": 35,
+        "servicePointsWonPct": 69,
+        "returnPointsWonPct": 42,
+        "serviceGamesWon": "87% (13/15)",
+        "serviceHoldPct": 87,
+        "holdPct": 87,
+        "returnGamesWon": "33% (5/15)",
+        "returnGamesWonPct": 33,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "7"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "4"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "56%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "82% (40/49)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "53% (20/38)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "2/4"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "46% (24/52)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "38% (17/45)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "5/14"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "35"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "35"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "82% (9/11)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "69% (60/87)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "42% (41/97)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "55% (101/184)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "6"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "87% (13/15)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "33% (5/15)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "60% (18/30)"
+          }
+        ]
+      }
+    },
+    "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05::flavio cobolli::4": {
+      "key": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05::flavio cobolli::4",
+      "boardMatchId": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05",
+      "boardTitle": "Matteo Arnaldi vs Flavio Cobolli",
+      "playerName": "Flavio Cobolli",
+      "boardPlayerName": "Flavio Cobolli",
+      "opponentName": "Pellegrino A.",
+      "recentIndex": 4,
+      "recentEvent": "French Open (France)",
+      "recentDate": "May 25, 26",
+      "recentIsoDate": "2026-05-25",
+      "recentResult": "Win 6-4 7-6 6-3",
+      "recentSurface": "Clay",
+      "flashscoreId": "G8if8814",
+      "flashscoreLabel": "Cobolli F. - Pellegrino A.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/cobolli-flavio/zDtaCcPe/",
+      "currentMatchFlashscoreId": "j3aDamSk",
+      "currentMatchTournament": "ATP French Open",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "G8if8814",
+        "sourceUrl": "https://www.flashscoreusa.com/match/G8if8814/",
+        "aces": 9,
+        "doubleFaults": 2,
+        "firstServePct": 64,
+        "firstServeWonPct": 84,
+        "secondServeWonPct": 72,
+        "breakPointsSaved": "2/3",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "3/4",
+        "winners": 41,
+        "unforcedErrors": 35,
+        "servicePointsWonPct": 80,
+        "returnPointsWonPct": 36,
+        "serviceGamesWon": "94% (15/16)",
+        "serviceHoldPct": 94,
+        "holdPct": 94,
+        "returnGamesWon": "20% (3/15)",
+        "returnGamesWonPct": 20,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "9"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "64%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "84% (48/57)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "72% (23/32)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "2/3"
+          },
+          {
+            "section": "Service",
+            "label": "Average 1st serve speed",
+            "value": "184 km/h"
+          },
+          {
+            "section": "Service",
+            "label": "Average 2nd serve speed",
+            "value": "152 km/h"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "39% (19/49)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "34% (17/50)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "3/4"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "41"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "35"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "92% (11/12)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "80% (71/89)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "36% (36/99)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "57% (107/188)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "6"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "94% (15/16)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "20% (3/15)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "58% (18/31)"
+          }
+        ]
+      }
+    },
+    "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05::arda azkara::1": {
+      "key": "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05::arda azkara::1",
+      "boardMatchId": "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05",
+      "boardTitle": "Arda Azkara vs Khololwam Montsi",
+      "playerName": "Arda Azkara",
+      "boardPlayerName": "Arda Azkara",
+      "opponentName": "Alkaya M.",
+      "recentIndex": 1,
+      "recentEvent": "Centurion 2 (South Africa)",
+      "recentDate": "Jun 01, 26",
+      "recentIsoDate": "2026-06-01",
+      "recentResult": "Win 4-6 6-3 6-2",
+      "recentSurface": "Hard",
+      "flashscoreId": "djaJzCZ7",
+      "flashscoreLabel": "Alkaya M. - Azkara A.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/azkara-arda/raVvSv3g/",
+      "currentMatchFlashscoreId": "Mwz8oLjt",
+      "currentMatchTournament": "ATP Challenger Centurion 2",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "djaJzCZ7",
+        "sourceUrl": "https://www.flashscoreusa.com/match/djaJzCZ7/",
+        "aces": 2,
+        "doubleFaults": 3,
+        "firstServePct": 61,
+        "firstServeWonPct": 81,
+        "secondServeWonPct": 61,
+        "breakPointsSaved": "6/7",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "3/7",
+        "winners": 14,
+        "unforcedErrors": 28,
+        "servicePointsWonPct": 73,
+        "returnPointsWonPct": 36,
+        "serviceGamesWon": "93% (13/14)",
+        "serviceHoldPct": 93,
+        "holdPct": 93,
+        "returnGamesWon": "23% (3/13)",
+        "returnGamesWonPct": 23,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "3"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "61%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "81% (39/48)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "61% (19/31)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "6/7"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "20% (7/35)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "49% (22/45)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "3/7"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "14"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "28"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "73% (58/79)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "36% (29/80)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "55% (87/159)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "7"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "93% (13/14)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "23% (3/13)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "59% (16/27)"
+          }
+        ]
+      }
+    },
+    "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05::arda azkara::0": {
+      "key": "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05::arda azkara::0",
+      "boardMatchId": "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05",
+      "boardTitle": "Arda Azkara vs Khololwam Montsi",
+      "playerName": "Arda Azkara",
+      "boardPlayerName": "Arda Azkara",
+      "opponentName": "Dalmasso G.",
+      "recentIndex": 0,
+      "recentEvent": "Centurion 2 (South Africa)",
+      "recentDate": "Jun 03, 26",
+      "recentIsoDate": "2026-06-03",
+      "recentResult": "Win 7-6 6-2",
+      "recentSurface": "Hard",
+      "flashscoreId": "nk5SBaCi",
+      "flashscoreLabel": "Azkara A. - Dalmasso G.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/azkara-arda/raVvSv3g/",
+      "currentMatchFlashscoreId": "Mwz8oLjt",
+      "currentMatchTournament": "ATP Challenger Centurion 2",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "nk5SBaCi",
+        "sourceUrl": "https://www.flashscoreusa.com/match/nk5SBaCi/",
+        "aces": 1,
+        "doubleFaults": 9,
+        "firstServePct": 48,
+        "firstServeWonPct": 88,
+        "secondServeWonPct": 49,
+        "breakPointsSaved": "5/7",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "4/7",
+        "winners": 17,
+        "unforcedErrors": 29,
+        "servicePointsWonPct": 67,
+        "returnPointsWonPct": 46,
+        "serviceGamesWon": "80% (8/10)",
+        "serviceHoldPct": 80,
+        "holdPct": 80,
+        "returnGamesWon": "40% (4/10)",
+        "returnGamesWonPct": 40,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "1"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "9"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "48%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "88% (28/32)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "49% (17/35)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "5/7"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "35% (18/51)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "64% (18/28)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "4/7"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "17"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "29"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "90% (9/10)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "67% (45/67)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "46% (36/79)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "55% (81/146)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "8"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "80% (8/10)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "40% (4/10)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "60% (12/20)"
+          }
+        ]
+      }
+    },
+    "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05::arda azkara::3": {
+      "key": "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05::arda azkara::3",
+      "boardMatchId": "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05",
+      "boardTitle": "Arda Azkara vs Khololwam Montsi",
+      "playerName": "Arda Azkara",
+      "boardPlayerName": "Arda Azkara",
+      "opponentName": "Peliwo F.",
+      "recentIndex": 3,
+      "recentEvent": "Centurion (South Africa)",
+      "recentDate": "May 26, 26",
+      "recentIsoDate": "2026-05-26",
+      "recentResult": "Win 4-6 6-4 6-3",
+      "recentSurface": "Hard",
+      "flashscoreId": "88qIVaXO",
+      "flashscoreLabel": "Peliwo F. - Azkara A.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/azkara-arda/raVvSv3g/",
+      "currentMatchFlashscoreId": "Mwz8oLjt",
+      "currentMatchTournament": "ATP Challenger Centurion 2",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "88qIVaXO",
+        "sourceUrl": "https://www.flashscoreusa.com/match/88qIVaXO/",
+        "aces": 5,
+        "doubleFaults": 9,
+        "firstServePct": 53,
+        "firstServeWonPct": 71,
+        "secondServeWonPct": 42,
+        "breakPointsSaved": "5/10",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "7/12",
+        "winners": 24,
+        "unforcedErrors": 59,
+        "servicePointsWonPct": 57,
+        "returnPointsWonPct": 47,
+        "serviceGamesWon": "64% (9/14)",
+        "serviceHoldPct": 64,
+        "holdPct": 64,
+        "returnGamesWon": "47% (7/15)",
+        "returnGamesWonPct": 47,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "5"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "9"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "53%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "71% (42/59)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "42% (22/53)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "5/10"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "44% (24/55)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "53% (20/38)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "7/12"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "24"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "59"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "67% (16/24)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "57% (64/112)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "47% (44/93)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "53% (108/205)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "7"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "64% (9/14)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "47% (7/15)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "55% (16/29)"
+          }
+        ]
+      }
+    },
+    "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05::arda azkara::2": {
+      "key": "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05::arda azkara::2",
+      "boardMatchId": "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05",
+      "boardTitle": "Arda Azkara vs Khololwam Montsi",
+      "playerName": "Arda Azkara",
+      "boardPlayerName": "Arda Azkara",
+      "opponentName": "Coulibaly E.",
+      "recentIndex": 2,
+      "recentEvent": "Centurion (South Africa)",
+      "recentDate": "May 27, 26",
+      "recentIsoDate": "2026-05-27",
+      "recentResult": "Loss 6-7 1-6",
+      "recentSurface": "Hard",
+      "flashscoreId": "nkPdzXEj",
+      "flashscoreLabel": "Azkara A. - Coulibaly E.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/azkara-arda/raVvSv3g/",
+      "currentMatchFlashscoreId": "Mwz8oLjt",
+      "currentMatchTournament": "ATP Challenger Centurion 2",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "nkPdzXEj",
+        "sourceUrl": "https://www.flashscoreusa.com/match/nkPdzXEj/",
+        "aces": 2,
+        "doubleFaults": 2,
+        "firstServePct": 62,
+        "firstServeWonPct": 78,
+        "secondServeWonPct": 36,
+        "breakPointsSaved": "5/7",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "0/9",
+        "winners": 2,
+        "unforcedErrors": 0,
+        "servicePointsWonPct": 62,
+        "returnPointsWonPct": 35,
+        "serviceGamesWon": "78% (7/9)",
+        "serviceHoldPct": 78,
+        "holdPct": 78,
+        "returnGamesWon": "0% (0/10)",
+        "returnGamesWonPct": 0,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "62%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "78% (28/36)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "36% (8/22)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "5/7"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "19% (8/43)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "53% (21/40)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "0/9"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "2"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "0"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "400% (4/1)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "62% (36/58)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "35% (29/83)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "46% (65/141)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "5"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "78% (7/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "0% (0/10)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "37% (7/19)"
+          }
+        ]
+      }
+    },
+    "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05::khololwam montsi::0": {
+      "key": "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05::khololwam montsi::0",
+      "boardMatchId": "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05",
+      "boardTitle": "Arda Azkara vs Khololwam Montsi",
+      "playerName": "Khololwam Montsi",
+      "boardPlayerName": "Khololwam Montsi",
+      "opponentName": "Gonzalez Fernandez M.",
+      "recentIndex": 0,
+      "recentEvent": "Centurion 2 (South Africa)",
+      "recentDate": "Jun 03, 26",
+      "recentIsoDate": "2026-06-03",
+      "recentResult": "Win 6-1 6-3",
+      "recentSurface": "Hard",
+      "flashscoreId": "ImtkpLAs",
+      "flashscoreLabel": "Gonzalez Fernandez M. - Montsi K.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/montsi-khololwam/251Dqlpn/",
+      "currentMatchFlashscoreId": "Mwz8oLjt",
+      "currentMatchTournament": "ATP Challenger Centurion 2",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "ImtkpLAs",
+        "sourceUrl": "https://www.flashscoreusa.com/match/ImtkpLAs/",
+        "aces": 0,
+        "doubleFaults": 1,
+        "firstServePct": 75,
+        "firstServeWonPct": 66,
+        "secondServeWonPct": 57,
+        "breakPointsSaved": "2/3",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "5/6",
+        "winners": 13,
+        "unforcedErrors": 23,
+        "servicePointsWonPct": 64,
+        "returnPointsWonPct": 55,
+        "serviceGamesWon": "88% (7/8)",
+        "serviceHoldPct": 88,
+        "holdPct": 88,
+        "returnGamesWon": "63% (5/8)",
+        "returnGamesWonPct": 63,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "0"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "1"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "75%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "66% (27/41)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "57% (8/14)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "2/3"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "32% (8/25)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "74% (23/31)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "5/6"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "13"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "23"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "71% (5/7)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "64% (35/55)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "55% (31/56)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "59% (66/111)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "6"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "88% (7/8)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "63% (5/8)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "75% (12/16)"
+          }
+        ]
+      }
+    },
+    "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05::arda azkara::4": {
+      "key": "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05::arda azkara::4",
+      "boardMatchId": "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05",
+      "boardTitle": "Arda Azkara vs Khololwam Montsi",
+      "playerName": "Arda Azkara",
+      "boardPlayerName": "Arda Azkara",
+      "opponentName": "Schoen P.",
+      "recentIndex": 4,
+      "recentEvent": "M15 Kayseri (Turkey)",
+      "recentDate": "May 24, 26",
+      "recentIsoDate": "2026-05-24",
+      "recentResult": "Loss 2-6 4-6",
+      "recentSurface": "Hard",
+      "flashscoreId": "jXM9eSke",
+      "flashscoreLabel": "Azkara A. - Schoen P.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m15-kayseri/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/azkara-arda/raVvSv3g/",
+      "currentMatchFlashscoreId": "Mwz8oLjt",
+      "currentMatchTournament": "ATP Challenger Centurion 2",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "jXM9eSke",
+        "sourceUrl": "https://www.flashscoreusa.com/match/jXM9eSke/",
+        "rows": [
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "2"
+          }
+        ]
+      }
+    },
+    "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05::khololwam montsi::1": {
+      "key": "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05::khololwam montsi::1",
+      "boardMatchId": "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05",
+      "boardTitle": "Arda Azkara vs Khololwam Montsi",
+      "playerName": "Khololwam Montsi",
+      "boardPlayerName": "Khololwam Montsi",
+      "opponentName": "Hemery C.",
+      "recentIndex": 1,
+      "recentEvent": "Centurion 2 (South Africa)",
+      "recentDate": "Jun 02, 26",
+      "recentIsoDate": "2026-06-02",
+      "recentResult": "Win 3-6 6-3 7-5",
+      "recentSurface": "Hard",
+      "flashscoreId": "QPuqiXJl",
+      "flashscoreLabel": "Montsi K. - Hemery C.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/montsi-khololwam/251Dqlpn/",
+      "currentMatchFlashscoreId": "Mwz8oLjt",
+      "currentMatchTournament": "ATP Challenger Centurion 2",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "QPuqiXJl",
+        "sourceUrl": "https://www.flashscoreusa.com/match/QPuqiXJl/",
+        "aces": 2,
+        "doubleFaults": 2,
+        "firstServePct": 68,
+        "firstServeWonPct": 63,
+        "secondServeWonPct": 52,
+        "breakPointsSaved": "6/10",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "5/13",
+        "winners": 27,
+        "unforcedErrors": 39,
+        "servicePointsWonPct": 59,
+        "returnPointsWonPct": 44,
+        "serviceGamesWon": "73% (11/15)",
+        "serviceHoldPct": 73,
+        "holdPct": 73,
+        "returnGamesWon": "33% (5/15)",
+        "returnGamesWonPct": 33,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "68%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "63% (39/62)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "52% (15/29)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "6/10"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "40% (30/75)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "53% (18/34)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "5/13"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "27"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "39"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "59% (54/91)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "44% (48/109)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "51% (102/200)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "7"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "73% (11/15)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "33% (5/15)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "53% (16/30)"
+          }
+        ]
+      }
+    },
+    "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05::khololwam montsi::2": {
+      "key": "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05::khololwam montsi::2",
+      "boardMatchId": "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05",
+      "boardTitle": "Arda Azkara vs Khololwam Montsi",
+      "playerName": "Khololwam Montsi",
+      "boardPlayerName": "Khololwam Montsi",
+      "opponentName": "Hemery C.",
+      "recentIndex": 2,
+      "recentEvent": "Centurion (South Africa)",
+      "recentDate": "May 26, 26",
+      "recentIsoDate": "2026-05-26",
+      "recentResult": "Loss 4-6 6-7",
+      "recentSurface": "Hard",
+      "flashscoreId": "GfjNRjWj",
+      "flashscoreLabel": "Hemery C. - Montsi K.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/montsi-khololwam/251Dqlpn/",
+      "currentMatchFlashscoreId": "Mwz8oLjt",
+      "currentMatchTournament": "ATP Challenger Centurion 2",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "GfjNRjWj",
+        "sourceUrl": "https://www.flashscoreusa.com/match/GfjNRjWj/",
+        "aces": 0,
+        "doubleFaults": 5,
+        "firstServePct": 51,
+        "firstServeWonPct": 57,
+        "secondServeWonPct": 45,
+        "breakPointsSaved": "4/9",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "4/15",
+        "winners": 22,
+        "unforcedErrors": 36,
+        "servicePointsWonPct": 51,
+        "returnPointsWonPct": 41,
+        "serviceGamesWon": "55% (6/11)",
+        "serviceHoldPct": 55,
+        "holdPct": 55,
+        "returnGamesWon": "36% (4/11)",
+        "returnGamesWonPct": 36,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "0"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "5"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "51%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "57% (20/35)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "45% (15/33)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "4/9"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "35% (19/54)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "52% (17/33)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "4/15"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "22"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "36"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "63% (12/19)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "51% (35/68)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "41% (36/87)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "46% (71/155)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "2"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "55% (6/11)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "36% (4/11)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "45% (10/22)"
+          }
+        ]
+      }
+    },
+    "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05::khololwam montsi::3": {
+      "key": "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05::khololwam montsi::3",
+      "boardMatchId": "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05",
+      "boardTitle": "Arda Azkara vs Khololwam Montsi",
+      "playerName": "Khololwam Montsi",
+      "boardPlayerName": "Khololwam Montsi",
+      "opponentName": "Benchakroun M.",
+      "recentIndex": 3,
+      "recentEvent": "M15 Orlando, FL 3 (USA)",
+      "recentDate": "Nov 12, 25",
+      "recentIsoDate": "2025-11-12",
+      "recentResult": "Loss 4-6 4-6",
+      "recentSurface": "Clay",
+      "flashscoreId": "biUHr4fM",
+      "flashscoreLabel": "Montsi K. - Benchakroun M.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m15-orlando-fl-3/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/montsi-khololwam/251Dqlpn/",
+      "currentMatchFlashscoreId": "Mwz8oLjt",
+      "currentMatchTournament": "ATP Challenger Centurion 2",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "biUHr4fM",
+        "sourceUrl": "https://www.flashscoreusa.com/match/biUHr4fM/",
+        "rows": [
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "2"
+          }
+        ]
+      }
+    },
+    "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05::alexander donski::0": {
+      "key": "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05::alexander donski::0",
+      "boardMatchId": "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05",
+      "boardTitle": "Alexander Donski vs Tuncay Duran",
+      "playerName": "Alexander Donski",
+      "boardPlayerName": "Alexander Donski",
+      "opponentName": "Winter E.",
+      "recentIndex": 0,
+      "recentEvent": "Centurion 2 (South Africa)",
+      "recentDate": "Jun 04, 26",
+      "recentIsoDate": "2026-06-04",
+      "recentResult": "Win 7-6 6-7 7-5",
+      "recentSurface": "Hard",
+      "flashscoreId": "0rSM14QG",
+      "flashscoreLabel": "Donski A. - Winter E.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/donski-alexander/hvM3ptDk/",
+      "currentMatchFlashscoreId": "zJDcQw8m",
+      "currentMatchTournament": "ATP Challenger Centurion 2",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "0rSM14QG",
+        "sourceUrl": "https://www.flashscoreusa.com/match/0rSM14QG/",
+        "aces": 14,
+        "doubleFaults": 13,
+        "firstServePct": 50,
+        "firstServeWonPct": 81,
+        "secondServeWonPct": 43,
+        "breakPointsSaved": "13/14",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "2/8",
+        "winners": 46,
+        "unforcedErrors": 80,
+        "servicePointsWonPct": 63,
+        "returnPointsWonPct": 33,
+        "serviceGamesWon": "94% (17/18)",
+        "serviceHoldPct": 94,
+        "holdPct": 94,
+        "returnGamesWon": "11% (2/18)",
+        "returnGamesWonPct": 11,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "14"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "13"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "50%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "81% (58/72)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "43% (31/72)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "13/14"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "31% (23/75)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "43% (20/47)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "2/8"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "46"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "80"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "63% (92/146)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "33% (40/121)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "49% (132/267)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "7"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "1"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "94% (17/18)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "11% (2/18)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "53% (19/36)"
+          }
+        ]
+      }
+    },
+    "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05::khololwam montsi::4": {
+      "key": "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05::khololwam montsi::4",
+      "boardMatchId": "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05",
+      "boardTitle": "Arda Azkara vs Khololwam Montsi",
+      "playerName": "Khololwam Montsi",
+      "boardPlayerName": "Khololwam Montsi",
+      "opponentName": "Smith K.",
+      "recentIndex": 4,
+      "recentEvent": "M15 Fayetteville, AR (USA)",
+      "recentDate": "Sep 19, 25",
+      "recentIsoDate": "2025-09-19",
+      "recentResult": "Loss 3-6 6-7",
+      "recentSurface": "Hard",
+      "flashscoreId": "G8x1YyTg",
+      "flashscoreLabel": "Montsi K. - Smith K.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m15-fayetteville-ar/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/montsi-khololwam/251Dqlpn/",
+      "currentMatchFlashscoreId": "Mwz8oLjt",
+      "currentMatchTournament": "ATP Challenger Centurion 2",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "G8x1YyTg",
+        "sourceUrl": "https://www.flashscoreusa.com/match/G8x1YyTg/",
+        "rows": [
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "3"
+          }
+        ]
+      }
+    },
+    "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05::alexander donski::1": {
+      "key": "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05::alexander donski::1",
+      "boardMatchId": "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05",
+      "boardTitle": "Alexander Donski vs Tuncay Duran",
+      "playerName": "Alexander Donski",
+      "boardPlayerName": "Alexander Donski",
+      "opponentName": "Santillan A.",
+      "recentIndex": 1,
+      "recentEvent": "Centurion 2 (South Africa)",
+      "recentDate": "Jun 02, 26",
+      "recentIsoDate": "2026-06-02",
+      "recentResult": "Win 7-5 7-5",
+      "recentSurface": "Hard",
+      "flashscoreId": "h4L2z01t",
+      "flashscoreLabel": "Santillan A. - Donski A.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/donski-alexander/hvM3ptDk/",
+      "currentMatchFlashscoreId": "zJDcQw8m",
+      "currentMatchTournament": "ATP Challenger Centurion 2",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "h4L2z01t",
+        "sourceUrl": "https://www.flashscoreusa.com/match/h4L2z01t/",
+        "aces": 7,
+        "doubleFaults": 7,
+        "firstServePct": 48,
+        "firstServeWonPct": 79,
+        "secondServeWonPct": 48,
+        "breakPointsSaved": "6/8",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "4/8",
+        "winners": 21,
+        "unforcedErrors": 43,
+        "servicePointsWonPct": 63,
+        "returnPointsWonPct": 40,
+        "serviceGamesWon": "83% (10/12)",
+        "serviceHoldPct": 83,
+        "holdPct": 83,
+        "returnGamesWon": "33% (4/12)",
+        "returnGamesWonPct": 33,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "7"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "7"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "48%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "79% (30/38)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "48% (20/42)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "6/8"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "35% (16/46)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "48% (13/27)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "4/8"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "21"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "43"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "63% (50/80)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "40% (29/73)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "52% (79/153)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "9"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "83% (10/12)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "33% (4/12)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "58% (14/24)"
+          }
+        ]
+      }
+    },
+    "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05::alexander donski::2": {
+      "key": "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05::alexander donski::2",
+      "boardMatchId": "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05",
+      "boardTitle": "Alexander Donski vs Tuncay Duran",
+      "playerName": "Alexander Donski",
+      "boardPlayerName": "Alexander Donski",
+      "opponentName": "Honda N.",
+      "recentIndex": 2,
+      "recentEvent": "Centurion 2 (South Africa)",
+      "recentDate": "Jun 01, 26",
+      "recentIsoDate": "2026-06-01",
+      "recentResult": "Win 2-6 6-3 6-4",
+      "recentSurface": "Hard",
+      "flashscoreId": "jZXBDpAa",
+      "flashscoreLabel": "Donski A. - Honda N.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/donski-alexander/hvM3ptDk/",
+      "currentMatchFlashscoreId": "zJDcQw8m",
+      "currentMatchTournament": "ATP Challenger Centurion 2",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "jZXBDpAa",
+        "sourceUrl": "https://www.flashscoreusa.com/match/jZXBDpAa/",
+        "aces": 19,
+        "doubleFaults": 12,
+        "firstServePct": 47,
+        "firstServeWonPct": 80,
+        "secondServeWonPct": 48,
+        "breakPointsSaved": "3/5",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "2/4",
+        "winners": 32,
+        "unforcedErrors": 51,
+        "servicePointsWonPct": 63,
+        "returnPointsWonPct": 36,
+        "serviceGamesWon": "86% (12/14)",
+        "serviceHoldPct": 86,
+        "holdPct": 86,
+        "returnGamesWon": "15% (2/13)",
+        "returnGamesWonPct": 15,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "19"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "12"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "47%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "80% (39/49)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "48% (27/56)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "3/5"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "27% (13/48)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "49% (17/35)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "2/4"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "32"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "51"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "63% (66/105)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "36% (30/83)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "51% (96/188)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "5"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "86% (12/14)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "15% (2/13)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "52% (14/27)"
+          }
+        ]
+      }
+    },
+    "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05::alexander donski::3": {
+      "key": "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05::alexander donski::3",
+      "boardMatchId": "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05",
+      "boardTitle": "Alexander Donski vs Tuncay Duran",
+      "playerName": "Alexander Donski",
+      "boardPlayerName": "Alexander Donski",
+      "opponentName": "Beckles D.",
+      "recentIndex": 3,
+      "recentEvent": "Centurion 2 (South Africa)",
+      "recentDate": "May 31, 26",
+      "recentIsoDate": "2026-05-31",
+      "recentResult": "Win 6-3 6-3",
+      "recentSurface": "Hard",
+      "flashscoreId": "pjpRGHbt",
+      "flashscoreLabel": "Donski A. - Beckles D.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/donski-alexander/hvM3ptDk/",
+      "currentMatchFlashscoreId": "zJDcQw8m",
+      "currentMatchTournament": "ATP Challenger Centurion 2",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "pjpRGHbt",
+        "sourceUrl": "https://www.flashscoreusa.com/match/pjpRGHbt/",
+        "aces": 11,
+        "doubleFaults": 16,
+        "firstServePct": 45,
+        "firstServeWonPct": 90,
+        "secondServeWonPct": 34,
+        "breakPointsSaved": "1/3",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "5/6",
+        "winners": 24,
+        "unforcedErrors": 38,
+        "servicePointsWonPct": 59,
+        "returnPointsWonPct": 50,
+        "serviceGamesWon": "78% (7/9)",
+        "serviceHoldPct": 78,
+        "holdPct": 78,
+        "returnGamesWon": "56% (5/9)",
+        "returnGamesWonPct": 56,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "11"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "16"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "45%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "90% (26/29)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "34% (12/35)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "1/3"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "30% (8/27)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "69% (20/29)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "5/6"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "24"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "38"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "59% (38/64)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "50% (28/56)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "55% (66/120)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "7"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "78% (7/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "56% (5/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "67% (12/18)"
+          }
+        ]
+      }
+    },
+    "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05::tuncay duran::0": {
+      "key": "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05::tuncay duran::0",
+      "boardMatchId": "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05",
+      "boardTitle": "Alexander Donski vs Tuncay Duran",
+      "playerName": "Tuncay Duran",
+      "boardPlayerName": "Tuncay Duran",
+      "opponentName": "Beckley A.",
+      "recentIndex": 0,
+      "recentEvent": "Centurion 2 (South Africa)",
+      "recentDate": "Jun 04, 26",
+      "recentIsoDate": "2026-06-04",
+      "recentResult": "Win 6-3 6-4",
+      "recentSurface": "Hard",
+      "flashscoreId": "djaWMWB5",
+      "flashscoreLabel": "Beckley A. - Duran T.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/duran-tuncay/UVOuN15n/",
+      "currentMatchFlashscoreId": "zJDcQw8m",
+      "currentMatchTournament": "ATP Challenger Centurion 2",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "djaWMWB5",
+        "sourceUrl": "https://www.flashscoreusa.com/match/djaWMWB5/",
+        "aces": 3,
+        "doubleFaults": 5,
+        "firstServePct": 71,
+        "firstServeWonPct": 74,
+        "secondServeWonPct": 42,
+        "breakPointsSaved": "4/5",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "3/7",
+        "winners": 17,
+        "unforcedErrors": 38,
+        "servicePointsWonPct": 65,
+        "returnPointsWonPct": 44,
+        "serviceGamesWon": "90% (9/10)",
+        "serviceHoldPct": 90,
+        "holdPct": 90,
+        "returnGamesWon": "33% (3/9)",
+        "returnGamesWonPct": 33,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "3"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "5"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "71%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "74% (35/47)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "42% (8/19)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "4/5"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "44% (16/36)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "43% (13/30)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "3/7"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "17"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "38"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "65% (43/66)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "44% (29/66)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "55% (72/132)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "5"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "90% (9/10)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "33% (3/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "63% (12/19)"
+          }
+        ]
+      }
+    },
+    "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05::alexander donski::4": {
+      "key": "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05::alexander donski::4",
+      "boardMatchId": "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05",
+      "boardTitle": "Alexander Donski vs Tuncay Duran",
+      "playerName": "Alexander Donski",
+      "boardPlayerName": "Alexander Donski",
+      "opponentName": "Vujic S.",
+      "recentIndex": 4,
+      "recentEvent": "Centurion (South Africa)",
+      "recentDate": "May 25, 26",
+      "recentIsoDate": "2026-05-25",
+      "recentResult": "Loss 6-7 7-6 4-6",
+      "recentSurface": "Hard",
+      "flashscoreId": "zct2hZUO",
+      "flashscoreLabel": "Donski A. - Vujic S.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/donski-alexander/hvM3ptDk/",
+      "currentMatchFlashscoreId": "zJDcQw8m",
+      "currentMatchTournament": "ATP Challenger Centurion 2",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "zct2hZUO",
+        "sourceUrl": "https://www.flashscoreusa.com/match/zct2hZUO/",
+        "aces": 15,
+        "doubleFaults": 4,
+        "firstServePct": 54,
+        "firstServeWonPct": 72,
+        "secondServeWonPct": 66,
+        "breakPointsSaved": "7/9",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "1/1",
+        "servicePointsWonPct": 70,
+        "returnPointsWonPct": 26,
+        "serviceGamesWon": "88% (15/17)",
+        "serviceHoldPct": 88,
+        "holdPct": 88,
+        "returnGamesWon": "6% (1/17)",
+        "returnGamesWonPct": 6,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "15"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "4"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "54%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "72% (42/58)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "66% (33/50)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "7/9"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "21% (15/72)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "39% (12/31)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "1/1"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "70% (75/107)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "26% (27/103)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "49% (102/210)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "2"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "88% (15/17)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "6% (1/17)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "47% (16/34)"
+          }
+        ]
+      }
+    },
+    "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05::tuncay duran::1": {
+      "key": "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05::tuncay duran::1",
+      "boardMatchId": "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05",
+      "boardTitle": "Alexander Donski vs Tuncay Duran",
+      "playerName": "Tuncay Duran",
+      "boardPlayerName": "Tuncay Duran",
+      "opponentName": "Napolitano S.",
+      "recentIndex": 1,
+      "recentEvent": "Centurion 2 (South Africa)",
+      "recentDate": "Jun 02, 26",
+      "recentIsoDate": "2026-06-02",
+      "recentResult": "Loss 6-7 7-6 3-0",
+      "recentSurface": "Hard",
+      "flashscoreId": "URsoIIoC",
+      "flashscoreLabel": "Duran T. - Napolitano S.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/duran-tuncay/UVOuN15n/",
+      "currentMatchFlashscoreId": "zJDcQw8m",
+      "currentMatchTournament": "ATP Challenger Centurion 2",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "URsoIIoC",
+        "sourceUrl": "https://www.flashscoreusa.com/match/URsoIIoC/",
+        "aces": 22,
+        "doubleFaults": 4,
+        "firstServePct": 64,
+        "firstServeWonPct": 80,
+        "secondServeWonPct": 54,
+        "breakPointsSaved": "6/6",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "2/5",
+        "winners": 40,
+        "unforcedErrors": 42,
+        "servicePointsWonPct": 71,
+        "returnPointsWonPct": 39,
+        "serviceGamesWon": "100% (13/13)",
+        "serviceHoldPct": 100,
+        "holdPct": 100,
+        "returnGamesWon": "14% (2/14)",
+        "returnGamesWonPct": 14,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "22"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "4"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "64%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "80% (49/61)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "54% (19/35)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "6/6"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "31% (15/49)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "48% (23/48)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "2/5"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "40"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "42"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "71% (68/96)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "39% (38/97)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "55% (106/193)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "6"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "100% (13/13)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "14% (2/14)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "56% (15/27)"
+          }
+        ]
+      }
+    },
+    "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05::tuncay duran::2": {
+      "key": "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05::tuncay duran::2",
+      "boardMatchId": "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05",
+      "boardTitle": "Alexander Donski vs Tuncay Duran",
+      "playerName": "Tuncay Duran",
+      "boardPlayerName": "Tuncay Duran",
+      "opponentName": "van Wyk K.",
+      "recentIndex": 2,
+      "recentEvent": "Centurion 2 (South Africa)",
+      "recentDate": "Jun 01, 26",
+      "recentIsoDate": "2026-06-01",
+      "recentResult": "Win 6-3 6-2",
+      "recentSurface": "Hard",
+      "flashscoreId": "QcLtCyTH",
+      "flashscoreLabel": "Duran T. - van Wyk K.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/duran-tuncay/UVOuN15n/",
+      "currentMatchFlashscoreId": "zJDcQw8m",
+      "currentMatchTournament": "ATP Challenger Centurion 2",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "QcLtCyTH",
+        "sourceUrl": "https://www.flashscoreusa.com/match/QcLtCyTH/",
+        "aces": 4,
+        "doubleFaults": 2,
+        "firstServePct": 56,
+        "firstServeWonPct": 81,
+        "secondServeWonPct": 52,
+        "breakPointsSaved": "1/2",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "5/9",
+        "winners": 12,
+        "unforcedErrors": 24,
+        "servicePointsWonPct": 69,
+        "returnPointsWonPct": 52,
+        "serviceGamesWon": "88% (7/8)",
+        "serviceHoldPct": 88,
+        "holdPct": 88,
+        "returnGamesWon": "56% (5/9)",
+        "returnGamesWonPct": 56,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "4"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "56%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "81% (22/27)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "52% (11/21)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "1/2"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "38% (11/29)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "65% (22/34)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "5/9"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "12"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "24"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "69% (33/48)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "52% (33/63)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "59% (66/111)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "7"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "88% (7/8)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "56% (5/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "71% (12/17)"
+          }
+        ]
+      }
+    },
+    "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05::tuncay duran::3": {
+      "key": "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05::tuncay duran::3",
+      "boardMatchId": "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05",
+      "boardTitle": "Alexander Donski vs Tuncay Duran",
+      "playerName": "Tuncay Duran",
+      "boardPlayerName": "Tuncay Duran",
+      "opponentName": "Vujic S.",
+      "recentIndex": 3,
+      "recentEvent": "Centurion 2 (South Africa)",
+      "recentDate": "May 31, 26",
+      "recentIsoDate": "2026-05-31",
+      "recentResult": "Win 6-4 7-6",
+      "recentSurface": "Hard",
+      "flashscoreId": "Q9aO7vMP",
+      "flashscoreLabel": "Duran T. - Vujic S.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/duran-tuncay/UVOuN15n/",
+      "currentMatchFlashscoreId": "zJDcQw8m",
+      "currentMatchTournament": "ATP Challenger Centurion 2",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "Q9aO7vMP",
+        "sourceUrl": "https://www.flashscoreusa.com/match/Q9aO7vMP/",
+        "aces": 9,
+        "doubleFaults": 0,
+        "firstServePct": 55,
+        "firstServeWonPct": 74,
+        "secondServeWonPct": 61,
+        "breakPointsSaved": "4/6",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "3/6",
+        "winners": 32,
+        "unforcedErrors": 33,
+        "servicePointsWonPct": 68,
+        "returnPointsWonPct": 38,
+        "serviceGamesWon": "82% (9/11)",
+        "serviceHoldPct": 82,
+        "holdPct": 82,
+        "returnGamesWon": "27% (3/11)",
+        "returnGamesWonPct": 27,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "9"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "0"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "55%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "74% (28/38)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "61% (19/31)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "4/6"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "28% (11/39)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "55% (18/33)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "3/6"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "32"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "33"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "68% (47/69)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "38% (27/71)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "53% (74/140)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "6"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "0"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "82% (9/11)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "27% (3/11)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "55% (12/22)"
+          }
+        ]
+      }
+    },
+    "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05::tuncay duran::4": {
+      "key": "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05::tuncay duran::4",
+      "boardMatchId": "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05",
+      "boardTitle": "Alexander Donski vs Tuncay Duran",
+      "playerName": "Tuncay Duran",
+      "boardPlayerName": "Tuncay Duran",
+      "opponentName": "Kimhi O.",
+      "recentIndex": 4,
+      "recentEvent": "Centurion (South Africa)",
+      "recentDate": "May 25, 26",
+      "recentIsoDate": "2026-05-25",
+      "recentResult": "Loss 3-6 3-6",
+      "recentSurface": "Hard",
+      "flashscoreId": "pSF0GKGd",
+      "flashscoreLabel": "Duran T. - Kimhi O.",
+      "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion/",
+      "playerProfileUrl": "https://www.flashscoreusa.com/player/duran-tuncay/UVOuN15n/",
+      "currentMatchFlashscoreId": "zJDcQw8m",
+      "currentMatchTournament": "ATP Challenger Centurion 2",
+      "currentMatchTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+      "serviceStats": {
+        "source": "Flashscore",
+        "flashscoreId": "pSF0GKGd",
+        "sourceUrl": "https://www.flashscoreusa.com/match/pSF0GKGd/",
+        "aces": 2,
+        "doubleFaults": 1,
+        "firstServePct": 53,
+        "firstServeWonPct": 69,
+        "secondServeWonPct": 42,
+        "breakPointsSaved": "2/5",
+        "breakPointsSavedPct": null,
+        "breakPointsConverted": "0/1",
+        "winners": 18,
+        "unforcedErrors": 42,
+        "servicePointsWonPct": 56,
+        "returnPointsWonPct": 27,
+        "serviceGamesWon": "67% (6/9)",
+        "serviceHoldPct": 67,
+        "holdPct": 67,
+        "returnGamesWon": "0% (0/9)",
+        "returnGamesWonPct": 0,
+        "rows": [
+          {
+            "section": "Service",
+            "label": "Aces",
+            "value": "2"
+          },
+          {
+            "section": "Service",
+            "label": "Double Faults",
+            "value": "1"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve percentage",
+            "value": "53%"
+          },
+          {
+            "section": "Service",
+            "label": "1st serve points won",
+            "value": "69% (20/29)"
+          },
+          {
+            "section": "Service",
+            "label": "2nd serve points won",
+            "value": "42% (11/26)"
+          },
+          {
+            "section": "Service",
+            "label": "Break Points Saved",
+            "value": "2/5"
+          },
+          {
+            "section": "Return",
+            "label": "1st return points won",
+            "value": "20% (8/40)"
+          },
+          {
+            "section": "Return",
+            "label": "2nd return points won",
+            "value": "53% (8/15)"
+          },
+          {
+            "section": "Return",
+            "label": "Break Points Converted",
+            "value": "0/1"
+          },
+          {
+            "section": "Points",
+            "label": "Winners",
+            "value": "18"
+          },
+          {
+            "section": "Points",
+            "label": "Unforced errors",
+            "value": "42"
+          },
+          {
+            "section": "Points",
+            "label": "Net points won",
+            "value": "53% (8/15)"
+          },
+          {
+            "section": "Points",
+            "label": "Service Points Won",
+            "value": "56% (31/55)"
+          },
+          {
+            "section": "Points",
+            "label": "Return Points Won",
+            "value": "27% (15/55)"
+          },
+          {
+            "section": "Points",
+            "label": "Total Points Won",
+            "value": "42% (46/110)"
+          },
+          {
+            "section": "Points",
+            "label": "Last 10 balls",
+            "value": "4"
+          },
+          {
+            "section": "Points",
+            "label": "Match points saved",
+            "value": "3"
+          },
+          {
+            "section": "Games",
+            "label": "Service games won",
+            "value": "67% (6/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Return games won",
+            "value": "0% (0/9)"
+          },
+          {
+            "section": "Games",
+            "label": "Total games won",
+            "value": "33% (6/18)"
+          }
+        ]
+      }
+    }
+  },
+  "failed": []
+}

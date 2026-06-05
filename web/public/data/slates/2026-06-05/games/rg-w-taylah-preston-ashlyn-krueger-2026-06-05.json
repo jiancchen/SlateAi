@@ -1,0 +1,720 @@
+{
+  "id": "rg-w-taylah-preston-ashlyn-krueger-2026-06-05",
+  "eventId": "176196",
+  "league": "Tennis",
+  "start": "2:30 AM",
+  "startMinutes": 150,
+  "title": "Taylah Preston vs Ashlyn Krueger",
+  "stage": "WTA Birmingham | Quarterfinal",
+  "spotlight": false,
+  "confidence": 52,
+  "volatility": 57,
+  "tags": [
+    "Grass",
+    "WTA Birmingham",
+    "WTA",
+    "No clay boost",
+    "Watch only",
+    "No blind bet",
+    "WTA volatility tax",
+    "Controlled volatility"
+  ],
+  "matchup": [
+    {
+      "side": "Player 1",
+      "name": "Taylah Preston",
+      "displayName": "Taylah Preston",
+      "detail": "Live rank #127 | Australia | age 20 | adj form 60"
+    },
+    {
+      "side": "Player 2",
+      "name": "Ashlyn Krueger",
+      "displayName": "Ashlyn Krueger",
+      "detail": "Live rank #120 | USA | age 22 | adj form 75"
+    }
+  ],
+  "summary": "Our model pick: Ashlyn Krueger. Ashlyn Krueger grades 15 points better on opponent-adjusted recent form. Lean, not a chase.",
+  "factors": [
+    "Ashlyn Krueger grades 15 points better on opponent-adjusted recent form. Lean, not a chase.",
+    "Model 52% vs DraftKings Sportsbook implied 69.7% (-17.7 pts).",
+    "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+    "Wait for a visible service-pressure split before entering.",
+    "Best O/U angle: no play without a posted total.",
+    "May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.",
+    "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+  ],
+  "lean": "Lean Ashlyn Krueger; DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+  "swing": "Risk: best-of-three volatility and break clusters.",
+  "swingFactor": "Risk: best-of-three volatility and break clusters.",
+  "odds": {
+    "participantOrder": [
+      0,
+      1
+    ],
+    "markets": [
+      {
+        "label": "Model fair",
+        "book": "Tennis warehouse model",
+        "value": "Taylah Preston 48% / Ashlyn Krueger 52%"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "book": "DraftKings Sportsbook",
+        "value": "Taylah Preston +172 / Ashlyn Krueger -230"
+      },
+      {
+        "label": "1st set total games",
+        "book": "DraftKings Sportsbook",
+        "value": "9.5 1st-set games: Over +105 / Under -150"
+      }
+    ],
+    "note": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+    "provider": "DraftKings Sportsbook"
+  },
+  "tennisContext": {
+    "surface": "Grass",
+    "court": "Court 1",
+    "h2hLeader": "",
+    "fatigueFlag": false,
+    "liveDog": false,
+    "weaknessEdge": {
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 1,
+      "attackingSide": null,
+      "vulnerableSide": null,
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+      "pick": {
+        "name": "Ashlyn Krueger",
+        "serviceHoldPct": null,
+        "firstServeWonPct": 67,
+        "secondServeWonPct": 52,
+        "firstServePct": 69,
+        "avgAces": 3.2,
+        "avgDoubleFaults": 3,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": 46,
+        "servicePointsWonPct": 62,
+        "weakServeMatches": 2,
+        "pressureMatches": null,
+        "matchesWithStats": 5,
+        "weaknessScore": 5,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "creates return pressure (46% return points won)"
+        ],
+        "gameFlowRead": "Ashlyn Krueger has no major service weakness in the joined warehouse sample."
+      },
+      "opponent": {
+        "name": "Taylah Preston",
+        "serviceHoldPct": null,
+        "firstServeWonPct": 62,
+        "secondServeWonPct": 50,
+        "firstServePct": 65,
+        "avgAces": 0.8,
+        "avgDoubleFaults": 2.8,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": 49,
+        "servicePointsWonPct": 58,
+        "weakServeMatches": 2,
+        "pressureMatches": null,
+        "matchesWithStats": 5,
+        "weaknessScore": 6,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [
+          "first-serve points won below comfort (62%)"
+        ],
+        "strengths": [
+          "creates return pressure (49% return points won)"
+        ],
+        "gameFlowRead": "Taylah Preston can drop points quickly through first-serve points won below comfort (62%)."
+      }
+    },
+    "warehouseContext": null,
+    "players": [
+      {
+        "name": "Taylah Preston",
+        "rank": 127,
+        "label": "Taylah Preston",
+        "form": null,
+        "boardPct": 48,
+        "decimalOdds": 2.72,
+        "marketLabel": "+172 / 36.8% implied",
+        "clayLine": "Live rank #127 | Australia | age 20 | adj form 60",
+        "weakness": {
+          "name": "Taylah Preston",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 62,
+          "secondServeWonPct": 50,
+          "firstServePct": 65,
+          "avgAces": 0.8,
+          "avgDoubleFaults": 2.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 49,
+          "servicePointsWonPct": 58,
+          "weakServeMatches": 2,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 6,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "first-serve points won below comfort (62%)"
+          ],
+          "strengths": [
+            "creates return pressure (49% return points won)"
+          ],
+          "gameFlowRead": "Taylah Preston can drop points quickly through first-serve points won below comfort (62%)."
+        },
+        "warehouseStats": null,
+        "record2026": "",
+        "notes": "Opponent case: model 48%",
+        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
+      },
+      {
+        "name": "Ashlyn Krueger",
+        "rank": 120,
+        "label": "Ashlyn Krueger",
+        "form": null,
+        "boardPct": 52,
+        "decimalOdds": 1.435,
+        "marketLabel": "-230 / 69.7% implied",
+        "clayLine": "Live rank #120 | USA | age 22 | adj form 75",
+        "weakness": {
+          "name": "Ashlyn Krueger",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 67,
+          "secondServeWonPct": 52,
+          "firstServePct": 69,
+          "avgAces": 3.2,
+          "avgDoubleFaults": 3,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 46,
+          "servicePointsWonPct": 62,
+          "weakServeMatches": 2,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 5,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "creates return pressure (46% return points won)"
+          ],
+          "gameFlowRead": "Ashlyn Krueger has no major service weakness in the joined warehouse sample."
+        },
+        "warehouseStats": null,
+        "record2026": "",
+        "notes": "Pick: model 52%",
+        "matchupNote": "Why pick: Ashlyn Krueger grades 15 points better on opponent-adjusted recent form. Lean, not a chase."
+      }
+    ],
+    "comparisonRows": [
+      {
+        "label": "Model pick",
+        "metric": "Fair win split",
+        "leftScore": 48,
+        "rightScore": 52,
+        "leftLabel": "Taylah Preston",
+        "rightLabel": "Ashlyn Krueger",
+        "winner": "Ashlyn Krueger"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "metric": "Implied price",
+        "leftScore": 36.8,
+        "rightScore": 69.7,
+        "leftLabel": "Taylah Preston",
+        "rightLabel": "Ashlyn Krueger",
+        "winner": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+      },
+      {
+        "label": "Weakness",
+        "metric": "Lower is cleaner",
+        "leftScore": 6,
+        "rightScore": 5,
+        "leftLabel": "Taylah Preston",
+        "rightLabel": "Ashlyn Krueger",
+        "winner": "No clear weakness edge"
+      },
+      {
+        "label": "Volatility",
+        "metric": "Lower is cleaner",
+        "leftScore": 57,
+        "rightScore": 43,
+        "leftLabel": "Risk",
+        "rightLabel": "Stability",
+        "winner": "Pass-first"
+      }
+    ],
+    "predictionMarket": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T22:16:07.638Z",
+      "totalVolume": null,
+      "players": [
+        {
+          "name": "Taylah Preston",
+          "probabilityPct": 36.8,
+          "amount": null,
+          "americanOdds": 172,
+          "edgePct": 11.2,
+          "priceBand": "Underdog"
+        },
+        {
+          "name": "Ashlyn Krueger",
+          "probabilityPct": 69.7,
+          "amount": null,
+          "americanOdds": -230,
+          "edgePct": -17.7,
+          "priceBand": "Moderate favorite"
+        }
+      ]
+    },
+    "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Taylah Preston",
+        "line": null,
+        "americanOdds": 172,
+        "modelPct": 48,
+        "impliedPct": 36.8,
+        "edgePct": 11.2,
+        "evPer100": 30.6,
+        "netEvPer100": 28.6,
+        "grade": "Bet-grade value",
+        "issue": "Picked side is overpriced; value board flips to Taylah Preston because that side has the better posted-price edge.",
+        "reason": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "No bet",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": null,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": 22.4,
+        "edgeGames": null,
+        "confidence": null,
+        "grade": "No direction",
+        "reason": "No posted match total captured."
+      },
+      {
+        "marketType": "Win a set",
+        "label": "Win a set %",
+        "selection": "Taylah Preston 64% / Ashlyn Krueger 71%",
+        "rows": [
+          {
+            "name": "Taylah Preston",
+            "confidence": 64,
+            "modelPct": 48,
+            "label": "Needs early hold pressure"
+          },
+          {
+            "name": "Ashlyn Krueger",
+            "confidence": 71,
+            "modelPct": 52,
+            "label": "Live to win a set"
+          }
+        ],
+        "confidence": 71,
+        "grade": "Price required",
+        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Pass / near line",
+        "expectedGames": 9.4,
+        "confidence": 51,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "grade": "Near fair",
+        "reason": "Expected first-set games 9.4 vs DraftKings Sportsbook 9.5; near the number. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets."
+      }
+    ],
+    "derivativeMarketCase": null,
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Taylah Preston",
+        "americanOdds": 172,
+        "modelPct": 48,
+        "impliedPct": 36.8,
+        "edgePct": 11.2,
+        "evPer100": 30.6,
+        "netEvPer100": 28.6,
+        "feePer100": 2,
+        "valueIssue": "Picked side is overpriced; value board flips to Taylah Preston because that side has the better posted-price edge.",
+        "valueGrade": "Bet-grade value",
+        "betGrade": false
+      },
+      "spread": null,
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": 22.4,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Pass / near line",
+        "line": 9.5,
+        "americanOdds": null,
+        "expectedGames": 9.4,
+        "confidence": 51,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "modelPct": 51,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Near fair",
+        "reason": "Expected first-set games 9.4 vs DraftKings Sportsbook 9.5; near the number. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets.",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Taylah Preston",
+          "confidence": 64,
+          "modelPct": 48,
+          "label": "Needs early hold pressure",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Ashlyn Krueger",
+          "confidence": 71,
+          "modelPct": 52,
+          "label": "Live to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "ensembleValueCase": null,
+    "projection": {
+      "projectedWinner": "Ashlyn Krueger",
+      "projectedSetLine": "2-0/2-1 range",
+      "setWinProjections": [
+        {
+          "name": "Taylah Preston",
+          "confidence": 64,
+          "modelPct": 48,
+          "label": "Needs early hold pressure"
+        },
+        {
+          "name": "Ashlyn Krueger",
+          "confidence": 71,
+          "modelPct": 52,
+          "label": "Live to win a set"
+        }
+      ],
+      "totalGames": null,
+      "straightSetsProbability": 48,
+      "upsetRisk": 48,
+      "overview": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "fantasy": []
+    },
+    "tradePlan": {
+      "laneLabel": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+      "summary": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "trigger": "Wait for a visible service-pressure split before entering.",
+      "headline": "No clear weakness edge",
+      "exit": "No spread line",
+      "tone": "warning"
+    },
+    "derivativeMarkets": [
+      {
+        "label": "ML",
+        "value": "Ashlyn Krueger -230; Model 52% vs DraftKings Sportsbook implied 69.7% (-17.7 pts).",
+        "lean": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+        "confidence": 52,
+        "marketType": "ML",
+        "selection": "Taylah Preston",
+        "americanOdds": 172,
+        "modelPct": 48,
+        "impliedPct": 36.8,
+        "edgePct": 11.2,
+        "evPer100": 30.6,
+        "netEvPer100": 28.6,
+        "feePer100": 2,
+        "valueIssue": "Picked side is overpriced; value board flips to Taylah Preston because that side has the better posted-price edge.",
+        "valueGrade": "Bet-grade value",
+        "betGrade": false,
+        "tone": "warning",
+        "reason": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+      },
+      {
+        "label": "Win a set",
+        "value": "No set-win price captured",
+        "lean": "Needs early hold pressure",
+        "confidence": 71,
+        "setWinRows": [],
+        "valueGrade": "Needs posted price",
+        "tone": "neutral",
+        "reason": "Best-of-three set-win confidence is more fragile; early service holds matter more."
+      },
+      {
+        "label": "Spread",
+        "value": "No primary game spread captured",
+        "lean": "No spread line",
+        "confidence": 50,
+        "tone": "neutral",
+        "reason": "Wait for a visible service-pressure split before entering."
+      },
+      {
+        "label": "O/U",
+        "value": "No total captured",
+        "lean": "No bet",
+        "confidence": 50,
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": 22.4,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st set O/U",
+        "value": "Line 9.5",
+        "lean": "Pass / near line",
+        "confidence": 51,
+        "marketType": "First-set total",
+        "selection": "Pass / near line",
+        "line": 9.5,
+        "americanOdds": null,
+        "expectedGames": 9.4,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "modelPct": 51,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Near fair",
+        "reason": "Expected first-set games 9.4 vs DraftKings Sportsbook 9.5; near the number. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st service game",
+        "value": "No first-service-game market captured",
+        "lean": "First-service-game prices",
+        "confidence": 52,
+        "firstServiceGameRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-service-game market captured."
+      },
+      {
+        "label": "First games",
+        "value": "No first-game prop market captured",
+        "lean": "First-game prop prices",
+        "confidence": 52,
+        "firstGamePropRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-games prop captured."
+      }
+    ],
+    "marketEconomics": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T22:16:07.638Z",
+      "eventUrl": "https://sportsbook.draftkings.com/leagues/tennis/wta-birmingham?event=34244118",
+      "deskName": "Ashlyn Krueger",
+      "deskPricePct": 69.7,
+      "deskEdgePct": -17.7,
+      "priceAction": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+      "players": [
+        {
+          "name": "Taylah Preston",
+          "americanOdds": 172,
+          "impliedPct": 36.8,
+          "modelPct": 48,
+          "edgePct": 11.2,
+          "priceBand": "Underdog",
+          "grossProfitPct": 172,
+          "grossPayoutMultiple": 2.72,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 172,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        },
+        {
+          "name": "Ashlyn Krueger",
+          "americanOdds": -230,
+          "impliedPct": 69.7,
+          "modelPct": 52,
+          "edgePct": -17.7,
+          "priceBand": "Moderate favorite",
+          "grossProfitPct": 43.5,
+          "grossPayoutMultiple": 1.435,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 43.5,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        }
+      ]
+    },
+    "clayMatchupData": null,
+    "opponentQualityData": null,
+    "researchLinks": [
+      {
+        "label": "ESPN tennis scoreboard",
+        "url": "https://www.espn.com/tennis/scoreboard/_/date/20260605"
+      },
+      {
+        "label": "TennisLive",
+        "url": "https://www.tennislive.net/"
+      },
+      {
+        "label": "DraftKings Sportsbook event",
+        "url": "https://sportsbook.draftkings.com/leagues/tennis/wta-birmingham?event=34244118"
+      }
+    ],
+    "formEdgeName": "Ashlyn Krueger"
+  },
+  "participants": [
+    {
+      "id": "rg-w-taylah-preston-ashlyn-krueger-2026-06-05:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Taylah Preston",
+      "detail": "Live rank #127 | Australia | age 20 | adj form 60",
+      "americanOdds": 172,
+      "americanLabel": "+172",
+      "decimalOdds": 2.7199999999999998,
+      "impliedProbability": 0.36764705882352944,
+      "impliedProbabilityLabel": "36.8%"
+    },
+    {
+      "id": "rg-w-taylah-preston-ashlyn-krueger-2026-06-05:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Ashlyn Krueger",
+      "detail": "Live rank #120 | USA | age 22 | adj form 75",
+      "americanOdds": -230,
+      "americanLabel": "-230",
+      "decimalOdds": 1.434782608695652,
+      "impliedProbability": 0.696969696969697,
+      "impliedProbabilityLabel": "69.7%"
+    }
+  ],
+  "moneyline": {
+    "available": true,
+    "label": "DraftKings Sportsbook moneyline",
+    "provider": "DraftKings Sportsbook",
+    "participants": [
+      {
+        "id": "rg-w-taylah-preston-ashlyn-krueger-2026-06-05:0",
+        "index": 0,
+        "role": "Player 1",
+        "name": "Taylah Preston",
+        "detail": "Live rank #127 | Australia | age 20 | adj form 60",
+        "americanOdds": 172,
+        "americanLabel": "+172",
+        "decimalOdds": 2.7199999999999998,
+        "impliedProbability": 0.36764705882352944,
+        "impliedProbabilityLabel": "36.8%"
+      },
+      {
+        "id": "rg-w-taylah-preston-ashlyn-krueger-2026-06-05:1",
+        "index": 1,
+        "role": "Player 2",
+        "name": "Ashlyn Krueger",
+        "detail": "Live rank #120 | USA | age 22 | adj form 75",
+        "americanOdds": -230,
+        "americanLabel": "-230",
+        "decimalOdds": 1.434782608695652,
+        "impliedProbability": 0.696969696969697,
+        "impliedProbabilityLabel": "69.7%"
+      }
+    ]
+  },
+  "analysis": {
+    "available": true,
+    "participantId": "rg-w-taylah-preston-ashlyn-krueger-2026-06-05:1",
+    "participant": {
+      "id": "rg-w-taylah-preston-ashlyn-krueger-2026-06-05:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Ashlyn Krueger",
+      "detail": "Live rank #120 | USA | age 22 | adj form 75",
+      "americanOdds": -230,
+      "americanLabel": "-230",
+      "decimalOdds": 1.434782608695652,
+      "impliedProbability": 0.696969696969697,
+      "impliedProbabilityLabel": "69.7%"
+    },
+    "opponent": {
+      "id": "rg-w-taylah-preston-ashlyn-krueger-2026-06-05:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Taylah Preston",
+      "detail": "Live rank #127 | Australia | age 20 | adj form 60",
+      "americanOdds": 172,
+      "americanLabel": "+172",
+      "decimalOdds": 2.7199999999999998,
+      "impliedProbability": 0.36764705882352944,
+      "impliedProbabilityLabel": "36.8%"
+    },
+    "lean": "Lean Ashlyn Krueger; DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+    "rationale": "Our model pick: Ashlyn Krueger. Ashlyn Krueger grades 15 points better on opponent-adjusted recent form. Lean, not a chase.",
+    "confidence": 52,
+    "volatility": 57,
+    "recommendationScore": 38,
+    "tier": "Watch",
+    "sourceLabel": "DraftKings Sportsbook",
+    "modelEdge": null,
+    "modelEdgeLabel": "",
+    "marketProbability": 0.696969696969697,
+    "marketProbabilityLabel": "69.7%",
+    "inputs": [],
+    "inputsUsed": 0,
+    "volatilityNotes": [],
+    "indicators": {}
+  },
+  "metadata": {
+    "participantCount": 2,
+    "participantNames": [
+      "Taylah Preston",
+      "Ashlyn Krueger"
+    ],
+    "tagCount": 8,
+    "hasSeriesBreakdown": false,
+    "hasMoneyline": true,
+    "hasAnalysisPick": true,
+    "hasStructuredInputs": false,
+    "hasPlayerProps": false,
+    "startMinutes": 150,
+    "spotlight": false,
+    "league": "Tennis",
+    "oddsProvider": "DraftKings Sportsbook"
+  }
+}

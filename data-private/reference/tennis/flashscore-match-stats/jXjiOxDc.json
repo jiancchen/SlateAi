@@ -1,25 +1,1022 @@
 {
-  "slateDate": "2026-06-01",
-  "boardMatchId": "rg-m-frances-tiafoe-matteo-arnaldi-2026-06-01",
-  "boardTitle": "Frances Tiafoe vs Matteo Arnaldi",
-  "flashscoreLabel": "Arnaldi Matteo - Tiafoe Frances",
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-05",
+  "boardMatchId": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05",
+  "boardTitle": "Matteo Arnaldi vs Flavio Cobolli",
+  "boardPlayerName": "Matteo Arnaldi",
+  "recentOpponentName": "Tiafoe F.",
+  "recentIndex": 1,
+  "recentEvent": "French Open (France)",
+  "recentDate": "Jun 01, 26",
+  "recentIsoDate": "2026-06-01",
+  "recentResult": "Win 7-6 6-7 3-6 7-6 6-4",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Tiafoe F. - Arnaldi M.",
   "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
-  "generatedAt": "2026-06-01T07:16:14.752Z",
-  "sourceUrl": "https://www.flashscoreusa.com/game/tennis/arnaldi-matteo-hlVLAfZK/tiafoe-frances-AHDLJaph/",
-  "matchId": "jXjiOxDc",
   "players": [
-    "Matteo Arnaldi",
-    "Frances Tiafoe"
+    "Tiafoe F.",
+    "Arnaldi M."
   ],
+  "generatedAt": "2026-06-04T21:31:58.307Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/jXjiOxDc/",
+  "matchId": "jXjiOxDc",
   "feedUrls": {
     "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_jXjiOxDc",
     "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_jXjiOxDc"
   },
   "scoreSummary": {
-    "sets": [],
-    "totalDuration": ""
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 5,
+        "rightGames": 7,
+        "duration": "1:10"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:24"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": ""
+      },
+      {
+        "label": "Set 4",
+        "leftGames": 3,
+        "rightGames": 7,
+        "duration": ""
+      },
+      {
+        "label": "Set 5",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "5:30"
   },
-  "scopes": [],
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "8",
+              "right": "18",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "8",
+              "right": "5",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "55%",
+              "right": "65%",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "62% (68/110)",
+              "right": "65% (91/139)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "49% (44/89)",
+              "right": "44% (33/75)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "8/16",
+              "right": "17/25",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (48/139)",
+              "right": "38% (42/110)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "56% (42/75)",
+              "right": "51% (45/89)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "8/25",
+              "right": "8/16",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "69",
+              "right": "74",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "69",
+              "right": "76",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (33/44)",
+              "right": "72% (23/32)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (112/199)",
+              "right": "58% (124/214)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "42% (90/214)",
+              "right": "44% (87/199)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "49% (202/413)",
+              "right": "51% (211/413)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "71% (20/28)",
+              "right": "70% (19/27)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Return games won",
+              "left": "30% (8/27)",
+              "right": "29% (8/28)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Total games won",
+              "left": "51% (28/55)",
+              "right": "49% (27/55)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "63%",
+              "right": "70%",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (18/31)",
+              "right": "58% (19/33)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "44% (8/18)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "3/5",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "42% (14/33)",
+              "right": "42% (13/31)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (6/14)",
+              "right": "56% (10/18)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "2/5",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "14",
+              "right": "18",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "18",
+              "right": "17",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Net points won",
+              "left": "67% (6/9)",
+              "right": "64% (7/11)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (26/49)",
+              "right": "57% (27/47)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (20/47)",
+              "right": "47% (23/49)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (46/96)",
+              "right": "52% (50/96)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "5",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "64%",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "58% (14/24)",
+              "right": "61% (23/38)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "58% (15/26)",
+              "right": "43% (9/21)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "6/8",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (15/38)",
+              "right": "42% (10/24)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "57% (12/21)",
+              "right": "42% (11/26)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/8",
+              "right": "2/4",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "19",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "26",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Net points won",
+              "left": "80% (12/15)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "58% (29/50)",
+              "right": "54% (32/59)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (27/59)",
+              "right": "42% (21/50)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (56/109)",
+              "right": "49% (53/109)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "65%",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "73% (11/15)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "64% (9/14)",
+              "right": "38% (3/8)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "3/4",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "20% (3/15)",
+              "right": "27% (4/15)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (5/8)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "0/0",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "12",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "5",
+              "right": "9",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (3/5)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (20/29)",
+              "right": "65% (15/23)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "35% (8/23)",
+              "right": "31% (9/29)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "54% (28/52)",
+              "right": "46% (24/52)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Return games won",
+              "left": "25% (1/4)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 4",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "3",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "67%",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "64% (16/25)",
+              "right": "67% (20/30)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "42% (8/19)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "3/5",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "33% (10/30)",
+              "right": "36% (9/25)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (8/15)",
+              "right": "58% (11/19)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/5",
+              "right": "2/3",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "15",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "16",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (6/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "55% (24/44)",
+              "right": "60% (27/45)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (18/45)",
+              "right": "45% (20/44)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "47% (42/89)",
+              "right": "53% (47/89)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 5",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "4",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "1",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "56%",
+              "right": "58%",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "60% (9/15)",
+              "right": "74% (17/23)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (4/12)",
+              "right": "35% (6/17)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "2/3",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (6/23)",
+              "right": "40% (6/15)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "65% (11/17)",
+              "right": "67% (8/12)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "2/4",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "10",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "8",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Net points won",
+              "left": "86% (6/7)",
+              "right": "50% (1/2)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "48% (13/27)",
+              "right": "57% (23/40)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (17/40)",
+              "right": "52% (14/27)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (30/67)",
+              "right": "55% (37/67)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            },
+            {
+              "label": "Total games won",
+              "left": "40% (4/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Tiafoe F.",
+              "rightPlayer": "Arnaldi M."
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "notes": [
     "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
     "Service games won and return games won are sourced directly from Flashscore match statistics."

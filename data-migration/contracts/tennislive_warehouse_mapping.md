@@ -45,12 +45,16 @@ Example page: `https://www.tennislive.net/atp/match/tomas-machac-VS-carlos-alcar
 | --- | --- |
 | Date / round / player names / score / tournament / surface | `tennislive_match_summaries`, `matches`, `match_players` |
 | Match source URL | `tennislive_match_sources.source_match_url` |
+| Match-page player compare block: country, birthdate/age, current rank, points, prize money, photo | `tennislive_match_player_snapshots` |
 | MATCH STATS table | `match_stat_rows` |
 | Game-by-game replay rows | `tennislive_match_replay_games`, `replay_games` |
 | Point strings within each game | `tennislive_match_replay_points`, `replay_points` |
 | `[BP]` markers | `is_break_point` on replay points; counts on replay games |
 | `40-40` markers | `is_deuce` on replay points; counts on replay games |
 | Tiebreak point strings | `is_tiebreak` when inferred from the replay row |
+| H2H matches table for the two players | `tennislive_h2h_source_rows` |
+| Embedded Google form-chart arrays | `tennislive_form_chart_points` |
+| Match-page "last matches" blocks | intentionally skipped here; player pages own recent-form ingestion |
 
 ## Source-Native Tables
 
@@ -62,10 +66,11 @@ Example page: `https://www.tennislive.net/atp/match/tomas-machac-VS-carlos-alcar
 | `tennislive_player_match_links` | Match links discovered from player pages |
 | `tennislive_match_sources` | Internal match to TennisLive match URL association |
 | `tennislive_match_summaries` | Source-native match header/summary |
+| `tennislive_match_player_snapshots` | Match-page player compare block captured at match ingest time |
 | `tennislive_match_replay_games` | Source-native game replay rows with raw point string |
 | `tennislive_match_replay_points` | Source-native point rows split from raw point string |
-| `tennislive_h2h_source_rows` | Reserved for H2H table rows on match pages |
-| `tennislive_form_chart_points` | Reserved for parsed chart points when TennisLive chart JavaScript is normalized |
+| `tennislive_h2h_source_rows` | H2H table rows from the match page only |
+| `tennislive_form_chart_points` | Parsed match-page form chart points from TennisLive JavaScript arrays |
 
 ## Canonical Tables Fed By TennisLive
 
@@ -83,13 +88,13 @@ Example page: `https://www.tennislive.net/atp/match/tomas-machac-VS-carlos-alcar
 The ingestor must stay bounded.
 
 - Fetch explicit `--player-url` and/or `--match-url` only.
-- From a player page, fetch only newest `--max-matches` discovered match links.
+- From a player page, store discovered match links but fetch detail pages only for completed recent matches up to `--max-matches`.
+- From a match page, do not ingest the "last matches" blocks; those duplicate player-page recent-form data.
 - Skip a match page already stored with the same content hash unless `--force` is passed.
 - Do not crawl tournament pages recursively.
 - Do not crawl all H2H history unless explicitly requested later.
 
 ## Current Gaps
 
-- H2H rows and form chart points have tables reserved but are not fully parsed yet.
 - Point winners are not inferred yet; point score, server, break point, deuce, and tiebreak flags are stored.
-- TennisLive does not expose every live chart value in simple table form; chart extraction should be implemented as a follow-up parser once the JavaScript shape is sampled across pages.
+- TennisLive form-chart points are stored as source-native rows, but they are not yet promoted into prediction features.

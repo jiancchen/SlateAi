@@ -1,0 +1,284 @@
+{
+  "date": "2026-06-05",
+  "source": "Robinhood public prediction-markets tennis page",
+  "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+  "capturedAt": "2026-06-04T21:28:55.667Z",
+  "totalEvents": 61,
+  "atpChallengerSingles": 2,
+  "frenchOpenSingles": 2,
+  "nonItfSingles": 4,
+  "surfaceCounts": {
+    "Hard": 2,
+    "Clay": 2
+  },
+  "matches": [
+    {
+      "id": "rh-atp-challenger-centurion-2-donski-vs-duran-2026-06-05",
+      "eventId": "a004abb6-fa2d-417d-9077-d4d8796afaa9",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Alexander Donski vs Tuncay Duran",
+      "tournament": "ATP Challenger Centurion 2",
+      "category": "atp_challenger_singles",
+      "round": "Quarterfinal",
+      "surface": "Hard",
+      "surfaceSource": "ATP Challenger Centurion surface",
+      "startIso": "2026-06-05T08:00:00Z",
+      "eventDay": "June 5, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Alexander Donski",
+          "shortName": "A. Donski",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN05DONDUR-DON",
+          "yesBid": 0.52,
+          "yesAsk": 0.56,
+          "lastTradePrice": 0,
+          "yesBidCents": 52,
+          "yesAskCents": 56,
+          "lastTradeCents": 0,
+          "openInterest": 0,
+          "volume": 0
+        },
+        {
+          "name": "Tuncay Duran",
+          "shortName": "T. Duran",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN05DONDUR-DUR",
+          "yesBid": 0.44,
+          "yesAsk": 0.48,
+          "lastTradePrice": 0.44,
+          "yesBidCents": 44,
+          "yesAskCents": 48,
+          "lastTradeCents": 44,
+          "openInterest": 1,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "a004abb6-fa2d-417d-9077-d4d8796afaa9",
+        "totalOpenInterest": 1,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Alexander Donski",
+            "probabilityPct": 56,
+            "bidPct": 52,
+            "lastTradePct": 0,
+            "amount": 0,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN05DONDUR-DON"
+          },
+          {
+            "name": "Tuncay Duran",
+            "probabilityPct": 48,
+            "bidPct": 44,
+            "lastTradePct": 44,
+            "amount": 1,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN05DONDUR-DUR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05",
+      "eventId": "e00c5f31-17e8-4244-826b-a6989cd05870",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Arda Azkara vs Khololwam Montsi",
+      "tournament": "ATP Challenger Centurion 2",
+      "category": "atp_challenger_singles",
+      "round": "Quarterfinal",
+      "surface": "Hard",
+      "surfaceSource": "ATP Challenger Centurion surface",
+      "startIso": "2026-06-05T08:00:00Z",
+      "eventDay": "June 5, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Arda Azkara",
+          "shortName": "A. Azkara",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN05AZKMON-AZK",
+          "yesBid": 0.45,
+          "yesAsk": 0.48,
+          "lastTradePrice": 0,
+          "yesBidCents": 45,
+          "yesAskCents": 48,
+          "lastTradeCents": 0,
+          "openInterest": 0,
+          "volume": 0
+        },
+        {
+          "name": "Khololwam Montsi",
+          "shortName": "K. Montsi",
+          "symbol": "KXATPCHALLENGERMATCH-26JUN05AZKMON-MON",
+          "yesBid": 0.52,
+          "yesAsk": 0.55,
+          "lastTradePrice": 0,
+          "yesBidCents": 52,
+          "yesAskCents": 55,
+          "lastTradeCents": 0,
+          "openInterest": 0,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "e00c5f31-17e8-4244-826b-a6989cd05870",
+        "totalOpenInterest": 0,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Arda Azkara",
+            "probabilityPct": 48,
+            "bidPct": 45,
+            "lastTradePct": 0,
+            "amount": 0,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN05AZKMON-AZK"
+          },
+          {
+            "name": "Khololwam Montsi",
+            "probabilityPct": 55,
+            "bidPct": 52,
+            "lastTradePct": 0,
+            "amount": 0,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN05AZKMON-MON"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rh-french-open-men-singles-mensik-vs-zverev-2026-06-05",
+      "eventId": "9ed349eb-c1c6-40f4-baff-f5fc9d02b863",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Jakub Mensik vs Alexander Zverev",
+      "tournament": "French Open Men Singles",
+      "category": "french_open_men_singles",
+      "round": "Semifinal",
+      "surface": "Clay",
+      "surfaceSource": "Grand Slam tournament surface",
+      "startIso": "2026-06-05T12:30:00Z",
+      "eventDay": "June 5, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Jakub Mensik",
+          "shortName": "J. Mensik",
+          "symbol": "KXATPMATCH-26JUN05MENZVE-MEN",
+          "yesBid": 0.22,
+          "yesAsk": 0.23,
+          "lastTradePrice": 0.23,
+          "yesBidCents": 22,
+          "yesAskCents": 23,
+          "lastTradeCents": 23,
+          "openInterest": 416777,
+          "volume": 0
+        },
+        {
+          "name": "Alexander Zverev",
+          "shortName": "A. Zverev",
+          "symbol": "KXATPMATCH-26JUN05MENZVE-ZVE",
+          "yesBid": 0.77,
+          "yesAsk": 0.78,
+          "lastTradePrice": 0.78,
+          "yesBidCents": 77,
+          "yesAskCents": 78,
+          "lastTradeCents": 78,
+          "openInterest": 166688,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "9ed349eb-c1c6-40f4-baff-f5fc9d02b863",
+        "totalOpenInterest": 583465,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Jakub Mensik",
+            "probabilityPct": 23,
+            "bidPct": 22,
+            "lastTradePct": 23,
+            "amount": 416777,
+            "symbol": "KXATPMATCH-26JUN05MENZVE-MEN"
+          },
+          {
+            "name": "Alexander Zverev",
+            "probabilityPct": 78,
+            "bidPct": 77,
+            "lastTradePct": 78,
+            "amount": 166688,
+            "symbol": "KXATPMATCH-26JUN05MENZVE-ZVE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rh-french-open-men-singles-arnaldi-vs-cobolli-2026-06-05",
+      "eventId": "9e40c422-b3a8-4ad5-a77c-20e1647cc858",
+      "source": "Robinhood public prediction-markets tennis page",
+      "sourceUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+      "title": "Matteo Arnaldi vs Flavio Cobolli",
+      "tournament": "French Open Men Singles",
+      "category": "french_open_men_singles",
+      "round": "Semifinal",
+      "surface": "Clay",
+      "surfaceSource": "Grand Slam tournament surface",
+      "startIso": "2026-06-05T17:00:00Z",
+      "eventDay": "June 5, 2026",
+      "singles": true,
+      "players": [
+        {
+          "name": "Matteo Arnaldi",
+          "shortName": "M. Arnaldi",
+          "symbol": "KXATPMATCH-26JUN05ARNCOB-ARN",
+          "yesBid": 0.31,
+          "yesAsk": 0.32,
+          "lastTradePrice": 0.32,
+          "yesBidCents": 31,
+          "yesAskCents": 32,
+          "lastTradeCents": 32,
+          "openInterest": 92922,
+          "volume": 0
+        },
+        {
+          "name": "Flavio Cobolli",
+          "shortName": "F. Cobolli",
+          "symbol": "KXATPMATCH-26JUN05ARNCOB-COB",
+          "yesBid": 0.68,
+          "yesAsk": 0.69,
+          "lastTradePrice": 0.68,
+          "yesBidCents": 68,
+          "yesAskCents": 69,
+          "lastTradeCents": 68,
+          "openInterest": 93442,
+          "volume": 0
+        }
+      ],
+      "predictionMarket": {
+        "source": "Robinhood public prediction-markets tennis page",
+        "eventId": "9e40c422-b3a8-4ad5-a77c-20e1647cc858",
+        "totalOpenInterest": 186364,
+        "totalVolume": 0,
+        "players": [
+          {
+            "name": "Matteo Arnaldi",
+            "probabilityPct": 32,
+            "bidPct": 31,
+            "lastTradePct": 32,
+            "amount": 92922,
+            "symbol": "KXATPMATCH-26JUN05ARNCOB-ARN"
+          },
+          {
+            "name": "Flavio Cobolli",
+            "probabilityPct": 69,
+            "bidPct": 68,
+            "lastTradePct": 68,
+            "amount": 93442,
+            "symbol": "KXATPMATCH-26JUN05ARNCOB-COB"
+          }
+        ]
+      }
+    }
+  ]
+}

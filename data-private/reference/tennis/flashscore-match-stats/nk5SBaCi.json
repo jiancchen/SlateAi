@@ -1,0 +1,532 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-05",
+  "boardMatchId": "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05",
+  "boardTitle": "Arda Azkara vs Khololwam Montsi",
+  "boardPlayerName": "Arda Azkara",
+  "recentOpponentName": "Dalmasso G.",
+  "recentIndex": 0,
+  "recentEvent": "Centurion 2 (South Africa)",
+  "recentDate": "Jun 03, 26",
+  "recentIsoDate": "2026-06-03",
+  "recentResult": "Win 7-6 6-2",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Azkara A. - Dalmasso G.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+  "players": [
+    "Azkara A.",
+    "Dalmasso G."
+  ],
+  "generatedAt": "2026-06-04T21:31:58.982Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/nk5SBaCi/",
+  "matchId": "nk5SBaCi",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_nk5SBaCi",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_nk5SBaCi"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 7,
+        "rightGames": 5,
+        "duration": "1:10"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 2,
+        "duration": "0:31"
+      }
+    ],
+    "totalDuration": "1:41"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "9",
+              "right": "5",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "48%",
+              "right": "65%",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (28/32)",
+              "right": "65% (33/51)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "49% (17/35)",
+              "right": "36% (10/28)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "5/7",
+              "right": "3/7",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "35% (18/51)",
+              "right": "13% (4/32)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "64% (18/28)",
+              "right": "51% (18/35)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "4/7",
+              "right": "2/7",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "17",
+              "right": "12",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "29",
+              "right": "41",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Net points won",
+              "left": "90% (9/10)",
+              "right": "67% (12/18)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "67% (45/67)",
+              "right": "54% (43/79)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "46% (36/79)",
+              "right": "33% (22/67)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "55% (81/146)",
+              "right": "45% (65/146)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "8",
+              "right": "2",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "80% (8/10)",
+              "right": "60% (6/10)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (4/10)",
+              "right": "20% (2/10)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (12/20)",
+              "right": "40% (8/20)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "2",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "43%",
+              "right": "64%",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (16/20)",
+              "right": "68% (23/34)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "46% (12/26)",
+              "right": "37% (7/19)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/6",
+              "right": "2/4",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (11/34)",
+              "right": "20% (4/20)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "63% (12/19)",
+              "right": "54% (14/26)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/4",
+              "right": "2/6",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "8",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "23",
+              "right": "27",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Net points won",
+              "left": "88% (7/8)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (28/46)",
+              "right": "57% (30/53)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "43% (23/53)",
+              "right": "39% (18/46)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (51/99)",
+              "right": "48% (48/99)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "57%",
+              "right": "65%",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "100% (12/12)",
+              "right": "59% (10/17)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "56% (5/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "1/3",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "41% (7/17)",
+              "right": "0% (0/12)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (6/9)",
+              "right": "44% (4/9)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/1",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "4",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "6",
+              "right": "14",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (2/2)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "81% (17/21)",
+              "right": "50% (13/26)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "50% (13/26)",
+              "right": "19% (4/21)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "64% (30/47)",
+              "right": "36% (17/47)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Return games won",
+              "left": "50% (2/4)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            },
+            {
+              "label": "Total games won",
+              "left": "75% (6/8)",
+              "right": "25% (2/8)",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Dalmasso G."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

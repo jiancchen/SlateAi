@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-05",
+  "boardMatchId": "rg-m-jakub-mensik-alexander-zverev-2026-06-05",
+  "boardTitle": "Jakub Mensik vs Alexander Zverev",
+  "boardPlayerName": "Alexander Zverev",
+  "recentOpponentName": "Jodar R.",
+  "recentIndex": 0,
+  "recentEvent": "French Open (France)",
+  "recentDate": "Jun 02, 26",
+  "recentIsoDate": "2026-06-02",
+  "recentResult": "Win 7-6 6-1 6-3",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Jodar R. - Zverev A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Jodar R.",
+    "Zverev A."
+  ],
+  "generatedAt": "2026-06-04T21:31:58.530Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/ppkhJhzo/",
+  "matchId": "ppkhJhzo",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_ppkhJhzo",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_ppkhJhzo"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 3,
+        "rightGames": 7,
+        "duration": "1:07"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:28"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "7",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "74%",
+              "right": "80%",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "55% (41/75)",
+              "right": "71% (51/72)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "59% (16/27)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "6/11",
+              "right": "5/6",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "29% (21/72)",
+              "right": "45% (34/75)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "39% (7/18)",
+              "right": "41% (11/27)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/6",
+              "right": "5/11",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "22",
+              "right": "35",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "29",
+              "right": "35",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Net points won",
+              "left": "79% (15/19)",
+              "right": "73% (19/26)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "56% (57/102)",
+              "right": "69% (62/90)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "31% (28/90)",
+              "right": "44% (45/102)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "44% (85/192)",
+              "right": "56% (107/192)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "64% (9/14)",
+              "right": "93% (13/14)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "7% (1/14)",
+              "right": "36% (5/14)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "36% (10/28)",
+              "right": "64% (18/28)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "70%",
+              "right": "81%",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "56% (18/32)",
+              "right": "68% (23/34)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "71% (10/14)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "3/4",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (11/34)",
+              "right": "44% (14/32)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "29% (4/14)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "1/4",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "11",
+              "right": "17",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "11",
+              "right": "16",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Net points won",
+              "left": "82% (9/11)",
+              "right": "71% (10/14)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "61% (28/46)",
+              "right": "67% (28/42)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "33% (14/42)",
+              "right": "39% (18/46)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "48% (42/88)",
+              "right": "52% (46/88)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "83% (5/6)",
+              "right": "83% (5/6)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "17% (1/6)",
+              "right": "17% (1/6)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "1",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "75%",
+              "right": "76%",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "47% (7/15)",
+              "right": "68% (13/19)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "60% (3/5)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "2/4",
+              "right": "1/1",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (6/19)",
+              "right": "53% (8/15)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "33% (2/6)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "2/4",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "9",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "8",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Net points won",
+              "left": "33% (1/3)",
+              "right": "100% (6/6)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "50% (10/20)",
+              "right": "68% (17/25)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (8/25)",
+              "right": "50% (10/20)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (18/45)",
+              "right": "60% (27/45)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "33% (1/3)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "67% (2/3)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "3",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "78%",
+              "right": "83%",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "57% (16/28)",
+              "right": "79% (15/19)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "38% (3/8)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/3",
+              "right": "1/1",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "21% (4/19)",
+              "right": "43% (12/28)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "50% (2/4)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "2/3",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "5",
+              "right": "9",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "11",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Net points won",
+              "left": "100% (5/5)",
+              "right": "50% (3/6)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "53% (19/36)",
+              "right": "74% (17/23)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "26% (6/23)",
+              "right": "47% (17/36)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (25/59)",
+              "right": "58% (34/59)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "60% (3/5)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Jodar R.",
+              "rightPlayer": "Zverev A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

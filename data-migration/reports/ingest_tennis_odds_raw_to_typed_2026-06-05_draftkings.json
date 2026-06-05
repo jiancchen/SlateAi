@@ -1,0 +1,43 @@
+{
+  "after_counts": {
+    "market_contracts": 1010,
+    "market_price_ticks": 131434,
+    "market_snapshots": 1722,
+    "unresolved_entities": 449
+  },
+  "before_counts": {
+    "market_contracts": 1002,
+    "market_price_ticks": 131426,
+    "market_snapshots": 1638,
+    "unresolved_entities": 438
+  },
+  "date": "2026-06-05",
+  "dry_run": false,
+  "generated_at": "2026-06-04T21:31:49.872636+00:00",
+  "inserted_contracts": 8,
+  "inserted_snapshots": 84,
+  "inserted_ticks": 8,
+  "ok": true,
+  "parsed_contracts": 8,
+  "parsed_snapshots": 84,
+  "parsed_ticks": 8,
+  "parser_module": "pipeline/sources/tennis/normalization/markets.py",
+  "row_count_delta": {
+    "market_contracts": 8,
+    "market_price_ticks": 8,
+    "market_snapshots": 84,
+    "unresolved_entities": 11
+  },
+  "sample_source_snapshots": [
+    "tennis-b4f7702e6c7ed2c1200c3d73e11a57a3",
+    "tennis-8276daa8efea7f2d52c06b827b03f576"
+  ],
+  "script": "data-migration/scripts/ingest_tennis_odds_raw_to_typed.py",
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "source_files": 2,
+  "source_name": "tennis_odds",
+  "source_rows": 84,
+  "source_snapshot_rows": 2,
+  "unparsed_rows": 11,
+  "unresolved_rows_added": 11
+}

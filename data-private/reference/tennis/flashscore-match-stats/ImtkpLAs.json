@@ -1,0 +1,525 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-05",
+  "boardMatchId": "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05",
+  "boardTitle": "Arda Azkara vs Khololwam Montsi",
+  "boardPlayerName": "Khololwam Montsi",
+  "recentOpponentName": "Gonzalez Fernandez M.",
+  "recentIndex": 0,
+  "recentEvent": "Centurion 2 (South Africa)",
+  "recentDate": "Jun 03, 26",
+  "recentIsoDate": "2026-06-03",
+  "recentResult": "Win 6-1 6-3",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Gonzalez Fernandez M. - Montsi K.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+  "players": [
+    "Gonzalez Fernandez M.",
+    "Montsi K."
+  ],
+  "generatedAt": "2026-06-04T21:31:59.194Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/ImtkpLAs/",
+  "matchId": "ImtkpLAs",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_ImtkpLAs",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_ImtkpLAs"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 1,
+        "rightGames": 6,
+        "duration": "0:37"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:53"
+      }
+    ],
+    "totalDuration": "1:30"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "1",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "45%",
+              "right": "75%",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "68% (17/25)",
+              "right": "66% (27/41)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "26% (8/31)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/6",
+              "right": "2/3",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "34% (14/41)",
+              "right": "32% (8/25)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "43% (6/14)",
+              "right": "74% (23/31)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "5/6",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "10",
+              "right": "13",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "37",
+              "right": "23",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Net points won",
+              "left": "79% (11/14)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "45% (25/56)",
+              "right": "64% (35/55)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "36% (20/55)",
+              "right": "55% (31/56)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (45/111)",
+              "right": "59% (66/111)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "4",
+              "right": "6",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "38% (3/8)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Return games won",
+              "left": "13% (1/8)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (4/16)",
+              "right": "75% (12/16)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "52%",
+              "right": "76%",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "63% (10/16)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "20% (3/15)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/4",
+              "right": "1/1",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "38% (6/16)",
+              "right": "38% (6/16)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "0% (0/5)",
+              "right": "80% (12/15)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "3/4",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "3",
+              "right": "5",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "16",
+              "right": "12",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "43% (13/30)",
+              "right": "68% (13/19)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (6/19)",
+              "right": "57% (17/30)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "39% (19/49)",
+              "right": "61% (30/49)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "25% (1/4)",
+              "right": "100% (3/3)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/3)",
+              "right": "75% (3/4)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Total games won",
+              "left": "14% (1/7)",
+              "right": "86% (6/7)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "36%",
+              "right": "74%",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "78% (7/9)",
+              "right": "68% (17/25)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "31% (5/16)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "1/2",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "32% (8/25)",
+              "right": "22% (2/9)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (6/9)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/2",
+              "right": "2/2",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "7",
+              "right": "8",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "21",
+              "right": "11",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Net points won",
+              "left": "79% (11/14)",
+              "right": "71% (5/7)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "46% (12/26)",
+              "right": "61% (22/36)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "39% (14/36)",
+              "right": "54% (14/26)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "42% (26/62)",
+              "right": "58% (36/62)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Match points saved",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Gonzalez Fernandez M.",
+              "rightPlayer": "Montsi K."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

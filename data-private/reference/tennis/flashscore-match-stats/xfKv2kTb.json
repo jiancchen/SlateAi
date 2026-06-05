@@ -1,0 +1,696 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-05",
+  "boardMatchId": "rg-m-jakub-mensik-alexander-zverev-2026-06-05",
+  "boardTitle": "Jakub Mensik vs Alexander Zverev",
+  "boardPlayerName": "Jakub Mensik",
+  "recentOpponentName": "Fonseca J.",
+  "recentIndex": 0,
+  "recentEvent": "French Open (France)",
+  "recentDate": "Jun 02, 26",
+  "recentIsoDate": "2026-06-02",
+  "recentResult": "Win 6-4 6-3 7-6",
+  "recentSurface": "Clay",
+  "flashscoreLabel": "Mensik J. - Fonseca J.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
+  "players": [
+    "Mensik J.",
+    "Fonseca J."
+  ],
+  "generatedAt": "2026-06-04T21:31:58.083Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/xfKv2kTb/",
+  "matchId": "xfKv2kTb",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_xfKv2kTb",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_xfKv2kTb"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:43"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 6,
+        "rightGames": 3,
+        "duration": "0:42"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 7,
+        "rightGames": 3,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "2:47"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "11",
+              "right": "6",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "4",
+              "right": "4",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "64%",
+              "right": "70%",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (54/65)",
+              "right": "61% (54/89)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (12/36)",
+              "right": "58% (22/38)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "16/21",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "39% (35/89)",
+              "right": "17% (11/65)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "42% (16/38)",
+              "right": "67% (24/36)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "5/21",
+              "right": "2/5",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "49",
+              "right": "39",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "39",
+              "right": "38",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Net points won",
+              "left": "75% (38/51)",
+              "right": "52% (12/23)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "65% (66/101)",
+              "right": "60% (76/127)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "40% (51/127)",
+              "right": "35% (35/101)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "51% (117/228)",
+              "right": "49% (111/228)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "7",
+              "right": "3",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "6",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "87% (13/15)",
+              "right": "69% (11/16)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return games won",
+              "left": "31% (5/16)",
+              "right": "13% (2/15)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total games won",
+              "left": "58% (18/31)",
+              "right": "42% (13/31)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "72%",
+              "right": "79%",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (19/23)",
+              "right": "74% (17/23)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "33% (3/9)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "2/3",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "26% (6/23)",
+              "right": "17% (4/23)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "67% (4/6)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/3",
+              "right": "0/0",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "15",
+              "right": "11",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "9",
+              "right": "11",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Net points won",
+              "left": "60% (6/10)",
+              "right": "40% (2/5)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "69% (22/32)",
+              "right": "66% (19/29)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "34% (10/29)",
+              "right": "31% (10/32)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (32/61)",
+              "right": "48% (29/61)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "1",
+              "right": "3",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "77%",
+              "right": "59%",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "88% (15/17)",
+              "right": "60% (12/20)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "20% (1/5)",
+              "right": "64% (9/14)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/0",
+              "right": "1/3",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "40% (8/20)",
+              "right": "12% (2/17)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "36% (5/14)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/3",
+              "right": "0/0",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "13",
+              "right": "7",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "10",
+              "right": "7",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Net points won",
+              "left": "83% (10/12)",
+              "right": "0% (0/2)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "73% (16/22)",
+              "right": "62% (21/34)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "38% (13/34)",
+              "right": "27% (6/22)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "52% (29/56)",
+              "right": "48% (27/56)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (4/4)",
+              "right": "60% (3/5)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return games won",
+              "left": "40% (2/5)",
+              "right": "0% (0/4)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total games won",
+              "left": "67% (6/9)",
+              "right": "33% (3/9)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "3",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Double Faults",
+              "left": "3",
+              "right": "1",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "53%",
+              "right": "72%",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (20/25)",
+              "right": "54% (25/46)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "36% (8/22)",
+              "right": "61% (11/18)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/5",
+              "right": "13/15",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "46% (21/46)",
+              "right": "20% (5/25)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "39% (7/18)",
+              "right": "64% (14/22)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "2/15",
+              "right": "2/5",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "21",
+              "right": "21",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "20",
+              "right": "20",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Net points won",
+              "left": "76% (22/29)",
+              "right": "63% (10/16)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "60% (28/47)",
+              "right": "56% (36/64)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "44% (28/64)",
+              "right": "40% (19/47)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "50% (56/111)",
+              "right": "50% (55/111)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "6",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "67% (4/6)",
+              "right": "67% (4/6)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Return games won",
+              "left": "33% (2/6)",
+              "right": "33% (2/6)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            },
+            {
+              "label": "Total games won",
+              "left": "50% (6/12)",
+              "right": "50% (6/12)",
+              "leftPlayer": "Mensik J.",
+              "rightPlayer": "Fonseca J."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

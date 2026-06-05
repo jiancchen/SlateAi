@@ -1,0 +1,975 @@
+{
+  "id": "rg-m-jakub-mensik-alexander-zverev-2026-06-05",
+  "eventId": "175679",
+  "league": "Tennis",
+  "start": "5:30 AM",
+  "startMinutes": 330,
+  "title": "Jakub Mensik vs Alexander Zverev",
+  "stage": "Roland Garros Men | Semifinal",
+  "spotlight": false,
+  "confidence": 68,
+  "volatility": 32,
+  "tags": [
+    "Clay",
+    "Roland Garros Men",
+    "ATP",
+    "Lean",
+    "No blind bet",
+    "Men more stable",
+    "Controlled volatility"
+  ],
+  "matchup": [
+    {
+      "side": "Player 1",
+      "name": "Jakub Mensik",
+      "displayName": "Jakub Mensik",
+      "detail": "Live rank #27 | Czechia | age 20 | adj form 87"
+    },
+    {
+      "side": "Player 2",
+      "name": "Alexander Zverev",
+      "displayName": "Alexander Zverev",
+      "detail": "Live rank #3 | Germany | age 29 | adj form 89"
+    }
+  ],
+  "summary": "Our model pick: Alexander Zverev. Opponent-adjusted recent form is basically even: Alexander Zverev 89, Jakub Mensik 87. Lean, not a chase.",
+  "factors": [
+    "Opponent-adjusted recent form is basically even: Alexander Zverev 89, Jakub Mensik 87. Lean, not a chase.",
+    "Model 68% vs DraftKings Sportsbook implied 80% (-12 pts).",
+    "Alexander Zverev has a real path if Jakub Mensik's first two service games show the same weakness: second-serve points won are attackable (43%); double-fault pressure (6.6 avg).",
+    "Look for Jakub Mensik facing break points or second-serve pressure before 3-3.",
+    "Best O/U angle: no play without a posted total.",
+    "May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.",
+    "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total."
+  ],
+  "lean": "Lean Alexander Zverev; Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+  "swing": "Risk: best-of-five set extension and tiebreak variance.",
+  "swingFactor": "Risk: best-of-five set extension and tiebreak variance.",
+  "odds": {
+    "participantOrder": [
+      0,
+      1
+    ],
+    "markets": [
+      {
+        "label": "Model fair",
+        "book": "Tennis warehouse model",
+        "value": "Jakub Mensik 32% / Alexander Zverev 68%"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "book": "DraftKings Sportsbook",
+        "value": "Jakub Mensik +303 / Alexander Zverev -399"
+      },
+      {
+        "label": "Game handicap",
+        "book": "DraftKings Sportsbook",
+        "value": "Alexander Zverev -5.5 (-115)"
+      },
+      {
+        "label": "Total games",
+        "book": "DraftKings Sportsbook",
+        "value": "37.5 games: Over -130 / Under -110"
+      },
+      {
+        "label": "1st set total games",
+        "book": "DraftKings Sportsbook",
+        "value": "9.5 1st-set games: Over -165 / Under +110"
+      },
+      {
+        "label": "To win a set",
+        "book": "DraftKings Sportsbook",
+        "value": "Jakub Mensik Yes -225 / Jakub Mensik No +160 / Alexander Zverev Yes -2500 / Alexander Zverev No +1300"
+      },
+      {
+        "label": "1st service game",
+        "book": "DraftKings Sportsbook",
+        "value": "16 first-service-game prices captured"
+      },
+      {
+        "label": "First games props",
+        "book": "DraftKings Sportsbook",
+        "value": "First 2 Game Props: All Holds of Serve -275 / First 2 Game Props: Break Point in Every Game +550 / First 2 Game Props: All Breaks of Serve +1700 / First 4 Game Props: All Holds of Serve -140 / First 4 Game Props: Break Point in Every Game +4000 / First 4 Game Props: All Breaks of Serve +8000"
+      }
+    ],
+    "note": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+    "provider": "DraftKings Sportsbook"
+  },
+  "tennisContext": {
+    "surface": "Clay",
+    "court": "Court Philippe-Chatrier",
+    "h2hLeader": "",
+    "fatigueFlag": false,
+    "liveDog": false,
+    "weaknessEdge": {
+      "edgeType": "Weakness edge",
+      "target": "Jakub Mensik",
+      "scoreGap": 22,
+      "attackingSide": "Alexander Zverev",
+      "vulnerableSide": "Jakub Mensik",
+      "gameFlow": "Alexander Zverev has a real path if Jakub Mensik's first two service games show the same weakness: second-serve points won are attackable (43%); double-fault pressure (6.6 avg).",
+      "liveTrigger": "Look for Jakub Mensik facing break points or second-serve pressure before 3-3.",
+      "spreadRead": "Alexander Zverev spread only if the handicap is short and Jakub Mensik is under pressure early.",
+      "totalRead": "Avoid low unders if Jakub Mensik faces early break points or second-serve pressure.",
+      "pick": {
+        "name": "Alexander Zverev",
+        "serviceHoldPct": null,
+        "firstServeWonPct": 75,
+        "secondServeWonPct": 68,
+        "firstServePct": 72,
+        "avgAces": 8.2,
+        "avgDoubleFaults": 2.4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": 44,
+        "servicePointsWonPct": 73,
+        "weakServeMatches": 1,
+        "pressureMatches": null,
+        "matchesWithStats": 5,
+        "weaknessScore": 2,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "wins enough first-serve points (75%)",
+          "second serve holds up (68%)"
+        ],
+        "gameFlowRead": "Alexander Zverev has no major service weakness in the joined warehouse sample."
+      },
+      "opponent": {
+        "name": "Jakub Mensik",
+        "serviceHoldPct": null,
+        "firstServeWonPct": 78,
+        "secondServeWonPct": 43,
+        "firstServePct": 56,
+        "avgAces": 9.4,
+        "avgDoubleFaults": 6.6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": 42,
+        "servicePointsWonPct": 63,
+        "weakServeMatches": 4,
+        "pressureMatches": null,
+        "matchesWithStats": 5,
+        "weaknessScore": 24,
+        "firstGameComfort": "Needs early holds confirmed",
+        "liabilities": [
+          "second-serve points won are attackable (43%)",
+          "double-fault pressure (6.6 avg)",
+          "4 recent matches with serve instability"
+        ],
+        "strengths": [
+          "wins enough first-serve points (78%)"
+        ],
+        "gameFlowRead": "Jakub Mensik can drop points quickly through second-serve points won are attackable (43%) and double-fault pressure (6.6 avg)."
+      }
+    },
+    "warehouseContext": null,
+    "players": [
+      {
+        "name": "Jakub Mensik",
+        "rank": 27,
+        "label": "Jakub Mensik",
+        "form": null,
+        "boardPct": 32,
+        "decimalOdds": 4.03,
+        "marketLabel": "+303 / 24.8% implied",
+        "clayLine": "Live rank #27 | Czechia | age 20 | adj form 87",
+        "weakness": {
+          "name": "Jakub Mensik",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 78,
+          "secondServeWonPct": 43,
+          "firstServePct": 56,
+          "avgAces": 9.4,
+          "avgDoubleFaults": 6.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 42,
+          "servicePointsWonPct": 63,
+          "weakServeMatches": 4,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 24,
+          "firstGameComfort": "Needs early holds confirmed",
+          "liabilities": [
+            "second-serve points won are attackable (43%)",
+            "double-fault pressure (6.6 avg)",
+            "4 recent matches with serve instability"
+          ],
+          "strengths": [
+            "wins enough first-serve points (78%)"
+          ],
+          "gameFlowRead": "Jakub Mensik can drop points quickly through second-serve points won are attackable (43%) and double-fault pressure (6.6 avg)."
+        },
+        "warehouseStats": null,
+        "record2026": "",
+        "notes": "Opponent case: model 32%",
+        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
+      },
+      {
+        "name": "Alexander Zverev",
+        "rank": 3,
+        "label": "Alexander Zverev",
+        "form": null,
+        "boardPct": 68,
+        "decimalOdds": 1.251,
+        "marketLabel": "-399 / 80% implied",
+        "clayLine": "Live rank #3 | Germany | age 29 | adj form 89",
+        "weakness": {
+          "name": "Alexander Zverev",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 75,
+          "secondServeWonPct": 68,
+          "firstServePct": 72,
+          "avgAces": 8.2,
+          "avgDoubleFaults": 2.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 44,
+          "servicePointsWonPct": 73,
+          "weakServeMatches": 1,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 2,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "wins enough first-serve points (75%)",
+            "second serve holds up (68%)"
+          ],
+          "gameFlowRead": "Alexander Zverev has no major service weakness in the joined warehouse sample."
+        },
+        "warehouseStats": null,
+        "record2026": "",
+        "notes": "Pick: model 68%",
+        "matchupNote": "Why pick: Opponent-adjusted recent form is basically even: Alexander Zverev 89, Jakub Mensik 87. Lean, not a chase."
+      }
+    ],
+    "comparisonRows": [
+      {
+        "label": "Model pick",
+        "metric": "Fair win split",
+        "leftScore": 32,
+        "rightScore": 68,
+        "leftLabel": "Jakub Mensik",
+        "rightLabel": "Alexander Zverev",
+        "winner": "Alexander Zverev"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "metric": "Implied price",
+        "leftScore": 24.8,
+        "rightScore": 80,
+        "leftLabel": "Jakub Mensik",
+        "rightLabel": "Alexander Zverev",
+        "winner": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+      },
+      {
+        "label": "Weakness",
+        "metric": "Lower is cleaner",
+        "leftScore": 24,
+        "rightScore": 2,
+        "leftLabel": "Jakub Mensik",
+        "rightLabel": "Alexander Zverev",
+        "winner": "Weakness edge"
+      },
+      {
+        "label": "Volatility",
+        "metric": "Lower is cleaner",
+        "leftScore": 32,
+        "rightScore": 68,
+        "leftLabel": "Risk",
+        "rightLabel": "Stability",
+        "winner": "Stable enough"
+      }
+    ],
+    "predictionMarket": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T22:16:03.247Z",
+      "totalVolume": null,
+      "players": [
+        {
+          "name": "Jakub Mensik",
+          "probabilityPct": 24.8,
+          "amount": null,
+          "americanOdds": 303,
+          "edgePct": 7.2,
+          "priceBand": "Underdog"
+        },
+        {
+          "name": "Alexander Zverev",
+          "probabilityPct": 80,
+          "amount": null,
+          "americanOdds": -399,
+          "edgePct": -12,
+          "priceBand": "Low-payout favorite"
+        }
+      ]
+    },
+    "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Jakub Mensik",
+        "line": null,
+        "americanOdds": 303,
+        "modelPct": 32,
+        "impliedPct": 24.8,
+        "edgePct": 7.2,
+        "evPer100": 29,
+        "netEvPer100": 27,
+        "grade": "Outlier price/manual review",
+        "issue": "Picked side is overpriced; value board flips to Jakub Mensik because that side has the better posted-price edge.",
+        "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+      },
+      {
+        "marketType": "Game spread",
+        "label": "Game spread",
+        "selection": "Alexander Zverev",
+        "line": -5.5,
+        "americanOdds": -115,
+        "modelPct": 66,
+        "impliedPct": 53.5,
+        "edgePct": 12.5,
+        "evPer100": 23.4,
+        "netEvPer100": 21.4,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": 66,
+        "grade": "Watch only",
+        "reason": "Spread is number-dependent; verify first service cycle"
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "Under",
+        "line": 37.5,
+        "americanOdds": -110,
+        "modelPct": 57,
+        "impliedPct": 52.4,
+        "edgePct": 4.6,
+        "evPer100": 8.8,
+        "netEvPer100": 6.8,
+        "expectedGames": 36.6,
+        "edgeGames": null,
+        "confidence": 57,
+        "grade": "Raw positive EV",
+        "reason": "Expected match games 36.6 vs DraftKings Sportsbook 37.5; Under. hold avg N/A, BP saved N/A, BP converted 41%, first-set sample N/A, 0 recent sets."
+      },
+      {
+        "marketType": "Win a set",
+        "label": "Win a set %",
+        "selection": "Jakub Mensik 59% / Alexander Zverev 89%",
+        "rows": [
+          {
+            "name": "Jakub Mensik",
+            "confidence": 59,
+            "modelPct": 32,
+            "label": "Needs early hold pressure"
+          },
+          {
+            "name": "Alexander Zverev",
+            "confidence": 89,
+            "modelPct": 68,
+            "label": "Strong set-win path"
+          }
+        ],
+        "confidence": 89,
+        "grade": "Price required",
+        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Over 9.5",
+        "expectedGames": 10.3,
+        "confidence": 62,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 54,
+        "grade": "Actionable live watch",
+        "reason": "Expected first-set games 10.3 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 41%, first-set sample N/A, 0 recent sets."
+      }
+    ],
+    "derivativeMarketCase": null,
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Jakub Mensik",
+        "americanOdds": 303,
+        "modelPct": 32,
+        "impliedPct": 24.8,
+        "edgePct": 7.2,
+        "evPer100": 29,
+        "netEvPer100": 27,
+        "feePer100": 2,
+        "valueIssue": "Picked side is overpriced; value board flips to Jakub Mensik because that side has the better posted-price edge.",
+        "valueGrade": "Outlier price/manual review",
+        "betGrade": false
+      },
+      "spread": {
+        "marketType": "Spread",
+        "selection": "Alexander Zverev",
+        "line": -5.5,
+        "americanOdds": -115,
+        "modelPct": 66,
+        "impliedPct": 53.5,
+        "edgePct": 12.5,
+        "evPer100": 23.4,
+        "netEvPer100": 21.4,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Watch only",
+        "betGrade": false
+      },
+      "total": {
+        "marketType": "Total",
+        "selection": "Under",
+        "line": 37.5,
+        "americanOdds": -110,
+        "expectedGames": 36.6,
+        "modelPct": 57,
+        "impliedPct": 52.4,
+        "edgePct": 4.6,
+        "evPer100": 8.8,
+        "netEvPer100": 6.8,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
+        "valueGrade": "Raw positive EV",
+        "reason": "Expected match games 36.6 vs DraftKings Sportsbook 37.5; Under. hold avg N/A, BP saved N/A, BP converted 41%, first-set sample N/A, 0 recent sets.",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Over 9.5",
+        "line": 9.5,
+        "americanOdds": -165,
+        "expectedGames": 10.3,
+        "confidence": 62,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 54,
+        "modelPct": 62,
+        "evPer100": -0.4,
+        "netEvPer100": -2.4,
+        "valueGrade": "Actionable live watch",
+        "reason": "Expected first-set games 10.3 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 41%, first-set sample N/A, 0 recent sets.",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Jakub Mensik",
+          "confidence": 59,
+          "modelPct": 32,
+          "label": "Needs early hold pressure",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Alexander Zverev",
+          "confidence": 89,
+          "modelPct": 68,
+          "label": "Strong set-win path",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "ensembleValueCase": null,
+    "projection": {
+      "projectedWinner": "Alexander Zverev",
+      "projectedSetLine": "3-1/3-2 range",
+      "setWinProjections": [
+        {
+          "name": "Jakub Mensik",
+          "confidence": 59,
+          "modelPct": 32,
+          "label": "Needs early hold pressure"
+        },
+        {
+          "name": "Alexander Zverev",
+          "confidence": 89,
+          "modelPct": 68,
+          "label": "Strong set-win path"
+        }
+      ],
+      "totalGames": 37.5,
+      "straightSetsProbability": null,
+      "upsetRisk": 32,
+      "overview": "Alexander Zverev has a real path if Jakub Mensik's first two service games show the same weakness: second-serve points won are attackable (43%); double-fault pressure (6.6 avg).",
+      "fantasy": []
+    },
+    "tradePlan": {
+      "laneLabel": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+      "summary": "Alexander Zverev has a real path if Jakub Mensik's first two service games show the same weakness: second-serve points won are attackable (43%); double-fault pressure (6.6 avg).",
+      "trigger": "Look for Jakub Mensik facing break points or second-serve pressure before 3-3.",
+      "headline": "Weakness edge",
+      "exit": "Spread is number-dependent; verify first service cycle",
+      "tone": "warning"
+    },
+    "derivativeMarkets": [
+      {
+        "label": "ML",
+        "value": "Alexander Zverev -399; Model 68% vs DraftKings Sportsbook implied 80% (-12 pts).",
+        "lean": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+        "confidence": 68,
+        "marketType": "ML",
+        "selection": "Jakub Mensik",
+        "americanOdds": 303,
+        "modelPct": 32,
+        "impliedPct": 24.8,
+        "edgePct": 7.2,
+        "evPer100": 29,
+        "netEvPer100": 27,
+        "feePer100": 2,
+        "valueIssue": "Picked side is overpriced; value board flips to Jakub Mensik because that side has the better posted-price edge.",
+        "valueGrade": "Outlier price/manual review",
+        "betGrade": false,
+        "tone": "warning",
+        "reason": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total."
+      },
+      {
+        "label": "Win a set",
+        "value": "Jakub Mensik Yes -225 / Jakub Mensik No +160 / Alexander Zverev Yes -2500 / Alexander Zverev No +1300",
+        "lean": "DraftKings Sportsbook set-win prices captured",
+        "confidence": 89,
+        "setWinRows": [
+          {
+            "market": "Player to Win at Least One Set",
+            "player": "Jakub Mensik",
+            "selection": "Jakub Mensik Yes",
+            "odds": -225
+          },
+          {
+            "market": "Player to Win at Least One Set",
+            "player": "Jakub Mensik",
+            "selection": "Jakub Mensik No",
+            "odds": 160
+          },
+          {
+            "market": "Player to Win at Least One Set",
+            "player": "Alexander Zverev",
+            "selection": "Alexander Zverev Yes",
+            "odds": -2500
+          },
+          {
+            "market": "Player to Win at Least One Set",
+            "player": "Alexander Zverev",
+            "selection": "Alexander Zverev No",
+            "odds": 1300
+          }
+        ],
+        "valueGrade": "Priced set-win market",
+        "tone": "accent",
+        "reason": "DraftKings Sportsbook to-win-a-set prices are captured for this event."
+      },
+      {
+        "label": "Spread",
+        "value": "Alexander Zverev -5.5 (-115)",
+        "lean": "Spread is number-dependent; verify first service cycle",
+        "confidence": 62,
+        "marketType": "Spread",
+        "selection": "Alexander Zverev",
+        "line": -5.5,
+        "americanOdds": -115,
+        "modelPct": 66,
+        "impliedPct": 53.5,
+        "edgePct": 12.5,
+        "evPer100": 23.4,
+        "netEvPer100": 21.4,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Watch only",
+        "betGrade": false,
+        "tone": "accent",
+        "reason": "Look for Jakub Mensik facing break points or second-serve pressure before 3-3."
+      },
+      {
+        "label": "O/U",
+        "value": "37.5 games: Over -130 / Under -110",
+        "lean": "Under",
+        "confidence": 57,
+        "marketType": "Total",
+        "selection": "Under",
+        "line": 37.5,
+        "americanOdds": -110,
+        "expectedGames": 36.6,
+        "modelPct": 57,
+        "impliedPct": 52.4,
+        "edgePct": 4.6,
+        "evPer100": 8.8,
+        "netEvPer100": 6.8,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
+        "valueGrade": "Raw positive EV",
+        "reason": "Expected match games 36.6 vs DraftKings Sportsbook 37.5; Under. hold avg N/A, BP saved N/A, BP converted 41%, first-set sample N/A, 0 recent sets.",
+        "betGrade": false,
+        "tone": "accent"
+      },
+      {
+        "label": "1st set O/U",
+        "value": "Line 9.5",
+        "lean": "Over 9.5",
+        "confidence": 62,
+        "marketType": "First-set total",
+        "selection": "Over 9.5",
+        "line": 9.5,
+        "americanOdds": -165,
+        "expectedGames": 10.3,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 54,
+        "modelPct": 62,
+        "evPer100": -0.4,
+        "netEvPer100": -2.4,
+        "valueGrade": "Actionable live watch",
+        "reason": "Expected first-set games 10.3 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 41%, first-set sample N/A, 0 recent sets.",
+        "betGrade": false,
+        "tone": "accent"
+      },
+      {
+        "label": "1st service game",
+        "value": "16 first-service-game prices captured",
+        "lean": "First-service-game prices",
+        "confidence": 68,
+        "firstServiceGameRows": [
+          {
+            "player": "Jakub Mensik",
+            "market": "Jakub Mensik’s 1st Service Game - Winner",
+            "side": "Jakub Mensik",
+            "line": null,
+            "odds": -380
+          },
+          {
+            "player": "Jakub Mensik",
+            "market": "Jakub Mensik’s 1st Service Game - Winner",
+            "side": "Alexander Zverev",
+            "line": null,
+            "odds": 240
+          },
+          {
+            "player": "Alexander Zverev",
+            "market": "Alexander Zverev’s 1st Service Game - Winner",
+            "side": "Jakub Mensik",
+            "line": null,
+            "odds": 450
+          },
+          {
+            "player": "Alexander Zverev",
+            "market": "Alexander Zverev’s 1st Service Game - Winner",
+            "side": "Alexander Zverev",
+            "line": null,
+            "odds": -900
+          },
+          {
+            "player": "Jakub Mensik",
+            "market": "Jakub Mensik’s 1st Service Game - 1st Point",
+            "side": "Jakub Mensik",
+            "line": null,
+            "odds": -185
+          },
+          {
+            "player": "Jakub Mensik",
+            "market": "Jakub Mensik’s 1st Service Game - 1st Point",
+            "side": "Alexander Zverev",
+            "line": null,
+            "odds": 125
+          },
+          {
+            "player": "Alexander Zverev",
+            "market": "Alexander Zverev’s 1st Service Game - 1st Point",
+            "side": "Jakub Mensik",
+            "line": null,
+            "odds": 160
+          },
+          {
+            "player": "Alexander Zverev",
+            "market": "Alexander Zverev’s 1st Service Game - 1st Point",
+            "side": "Alexander Zverev",
+            "line": null,
+            "odds": -240
+          },
+          {
+            "player": "Jakub Mensik",
+            "market": "Jakub Mensik's 1st Service Game - Win to Love or 15",
+            "side": "Yes",
+            "line": null,
+            "odds": 140
+          },
+          {
+            "player": "Jakub Mensik",
+            "market": "Jakub Mensik's 1st Service Game - Win to Love or 15",
+            "side": "No",
+            "line": null,
+            "odds": -200
+          },
+          {
+            "player": "Alexander Zverev",
+            "market": "Alexander Zverev's 1st Service Game - Win to Love or 15",
+            "side": "Yes",
+            "line": null,
+            "odds": -110
+          },
+          {
+            "player": "Alexander Zverev",
+            "market": "Alexander Zverev's 1st Service Game - Win to Love or 15",
+            "side": "No",
+            "line": null,
+            "odds": -125
+          },
+          {
+            "player": "Jakub Mensik",
+            "market": "Jakub Mensik's 1st Service Game - Win to Love, 15 or 30",
+            "side": "Yes",
+            "line": null,
+            "odds": -165
+          },
+          {
+            "player": "Jakub Mensik",
+            "market": "Jakub Mensik's 1st Service Game - Win to Love, 15 or 30",
+            "side": "No",
+            "line": null,
+            "odds": 120
+          },
+          {
+            "player": "Alexander Zverev",
+            "market": "Alexander Zverev's 1st Service Game - Win to Love, 15 or 30",
+            "side": "Yes",
+            "line": null,
+            "odds": -275
+          },
+          {
+            "player": "Alexander Zverev",
+            "market": "Alexander Zverev's 1st Service Game - Win to Love, 15 or 30",
+            "side": "No",
+            "line": null,
+            "odds": 195
+          }
+        ],
+        "tone": "neutral",
+        "reason": "DraftKings Sportsbook exposes first-service-game prices for this event."
+      },
+      {
+        "label": "First games",
+        "value": "First 2 Game Props: All Holds of Serve -275 / First 2 Game Props: Break Point in Every Game +550 / First 2 Game Props: All Breaks of Serve +1700 / First 4 Game Props: All Holds of Serve -140 / First 4 Game Props: Break Point in Every Game +4000 / First 4 Game Props: All Breaks of Serve +8000",
+        "lean": "First-game prop prices",
+        "confidence": 68,
+        "firstGamePropRows": [
+          {
+            "market": "First 2 Game Props",
+            "selection": "All Holds of Serve",
+            "odds": -275
+          },
+          {
+            "market": "First 2 Game Props",
+            "selection": "Break Point in Every Game",
+            "odds": 550
+          },
+          {
+            "market": "First 2 Game Props",
+            "selection": "All Breaks of Serve",
+            "odds": 1700
+          },
+          {
+            "market": "First 4 Game Props",
+            "selection": "All Holds of Serve",
+            "odds": -140
+          },
+          {
+            "market": "First 4 Game Props",
+            "selection": "Break Point in Every Game",
+            "odds": 4000
+          },
+          {
+            "market": "First 4 Game Props",
+            "selection": "All Breaks of Serve",
+            "odds": 8000
+          }
+        ],
+        "tone": "neutral",
+        "reason": "DraftKings Sportsbook exposes first-2/first-4 game props for this event."
+      }
+    ],
+    "marketEconomics": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T22:16:03.247Z",
+      "eventUrl": "https://sportsbook.draftkings.com/leagues/tennis/french-open-men?event=34237156",
+      "deskName": "Alexander Zverev",
+      "deskPricePct": 80,
+      "deskEdgePct": -12,
+      "priceAction": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+      "players": [
+        {
+          "name": "Jakub Mensik",
+          "americanOdds": 303,
+          "impliedPct": 24.8,
+          "modelPct": 32,
+          "edgePct": 7.2,
+          "priceBand": "Underdog",
+          "grossProfitPct": 303,
+          "grossPayoutMultiple": 4.03,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 303,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        },
+        {
+          "name": "Alexander Zverev",
+          "americanOdds": -399,
+          "impliedPct": 80,
+          "modelPct": 68,
+          "edgePct": -12,
+          "priceBand": "Low-payout favorite",
+          "grossProfitPct": 25.1,
+          "grossPayoutMultiple": 1.251,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 25.1,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        }
+      ]
+    },
+    "clayMatchupData": null,
+    "opponentQualityData": null,
+    "researchLinks": [
+      {
+        "label": "ESPN tennis scoreboard",
+        "url": "https://www.espn.com/tennis/scoreboard/_/date/20260605"
+      },
+      {
+        "label": "TennisLive",
+        "url": "https://www.tennislive.net/"
+      },
+      {
+        "label": "DraftKings Sportsbook event",
+        "url": "https://sportsbook.draftkings.com/leagues/tennis/french-open-men?event=34237156"
+      }
+    ],
+    "formEdgeName": "Alexander Zverev"
+  },
+  "participants": [
+    {
+      "id": "rg-m-jakub-mensik-alexander-zverev-2026-06-05:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Jakub Mensik",
+      "detail": "Live rank #27 | Czechia | age 20 | adj form 87",
+      "americanOdds": 303,
+      "americanLabel": "+303",
+      "decimalOdds": 4.029999999999999,
+      "impliedProbability": 0.24813895781637718,
+      "impliedProbabilityLabel": "24.8%"
+    },
+    {
+      "id": "rg-m-jakub-mensik-alexander-zverev-2026-06-05:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Alexander Zverev",
+      "detail": "Live rank #3 | Germany | age 29 | adj form 89",
+      "americanOdds": -399,
+      "americanLabel": "-399",
+      "decimalOdds": 1.25062656641604,
+      "impliedProbability": 0.7995991983967936,
+      "impliedProbabilityLabel": "80.0%"
+    }
+  ],
+  "moneyline": {
+    "available": true,
+    "label": "DraftKings Sportsbook moneyline",
+    "provider": "DraftKings Sportsbook",
+    "participants": [
+      {
+        "id": "rg-m-jakub-mensik-alexander-zverev-2026-06-05:0",
+        "index": 0,
+        "role": "Player 1",
+        "name": "Jakub Mensik",
+        "detail": "Live rank #27 | Czechia | age 20 | adj form 87",
+        "americanOdds": 303,
+        "americanLabel": "+303",
+        "decimalOdds": 4.029999999999999,
+        "impliedProbability": 0.24813895781637718,
+        "impliedProbabilityLabel": "24.8%"
+      },
+      {
+        "id": "rg-m-jakub-mensik-alexander-zverev-2026-06-05:1",
+        "index": 1,
+        "role": "Player 2",
+        "name": "Alexander Zverev",
+        "detail": "Live rank #3 | Germany | age 29 | adj form 89",
+        "americanOdds": -399,
+        "americanLabel": "-399",
+        "decimalOdds": 1.25062656641604,
+        "impliedProbability": 0.7995991983967936,
+        "impliedProbabilityLabel": "80.0%"
+      }
+    ]
+  },
+  "analysis": {
+    "available": true,
+    "participantId": "rg-m-jakub-mensik-alexander-zverev-2026-06-05:1",
+    "participant": {
+      "id": "rg-m-jakub-mensik-alexander-zverev-2026-06-05:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Alexander Zverev",
+      "detail": "Live rank #3 | Germany | age 29 | adj form 89",
+      "americanOdds": -399,
+      "americanLabel": "-399",
+      "decimalOdds": 1.25062656641604,
+      "impliedProbability": 0.7995991983967936,
+      "impliedProbabilityLabel": "80.0%"
+    },
+    "opponent": {
+      "id": "rg-m-jakub-mensik-alexander-zverev-2026-06-05:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Jakub Mensik",
+      "detail": "Live rank #27 | Czechia | age 20 | adj form 87",
+      "americanOdds": 303,
+      "americanLabel": "+303",
+      "decimalOdds": 4.029999999999999,
+      "impliedProbability": 0.24813895781637718,
+      "impliedProbabilityLabel": "24.8%"
+    },
+    "lean": "Lean Alexander Zverev; Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+    "rationale": "Our model pick: Alexander Zverev. Opponent-adjusted recent form is basically even: Alexander Zverev 89, Jakub Mensik 87. Lean, not a chase.",
+    "confidence": 68,
+    "volatility": 32,
+    "recommendationScore": 60,
+    "tier": "Watch",
+    "sourceLabel": "DraftKings Sportsbook",
+    "modelEdge": null,
+    "modelEdgeLabel": "",
+    "marketProbability": 0.7995991983967936,
+    "marketProbabilityLabel": "80.0%",
+    "inputs": [],
+    "inputsUsed": 0,
+    "volatilityNotes": [],
+    "indicators": {}
+  },
+  "metadata": {
+    "participantCount": 2,
+    "participantNames": [
+      "Jakub Mensik",
+      "Alexander Zverev"
+    ],
+    "tagCount": 7,
+    "hasSeriesBreakdown": false,
+    "hasMoneyline": true,
+    "hasAnalysisPick": true,
+    "hasStructuredInputs": false,
+    "hasPlayerProps": false,
+    "startMinutes": 330,
+    "spotlight": false,
+    "league": "Tennis",
+    "oddsProvider": "DraftKings Sportsbook"
+  }
+}

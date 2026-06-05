@@ -1,0 +1,730 @@
+{
+  "id": "rg-w-nikola-bartunkova-mika-stojsavljevic-2026-06-05",
+  "eventId": "176195",
+  "league": "Tennis",
+  "start": "5:30 AM",
+  "startMinutes": 330,
+  "title": "Nikola Bartunkova vs Mika Stojsavljevic",
+  "stage": "WTA Birmingham | Quarterfinal",
+  "spotlight": false,
+  "confidence": 52,
+  "volatility": 57,
+  "tags": [
+    "Grass",
+    "WTA Birmingham",
+    "WTA",
+    "No clay boost",
+    "Watch only",
+    "No blind bet",
+    "WTA volatility tax",
+    "Controlled volatility"
+  ],
+  "matchup": [
+    {
+      "side": "Player 1",
+      "name": "Nikola Bartunkova",
+      "displayName": "Nikola Bartunkova",
+      "detail": "Live rank #69 | Czechia | age 20 | adj form 55"
+    },
+    {
+      "side": "Player 2",
+      "name": "Mika Stojsavljevic",
+      "displayName": "Mika Stojsavljevic",
+      "detail": "Rank not joined | adj form 57"
+    }
+  ],
+  "summary": "Our model pick: Nikola Bartunkova. Opponent-adjusted recent form is basically even: Nikola Bartunkova 55, Mika Stojsavljevic 57. Lean, not a chase.",
+  "factors": [
+    "Opponent-adjusted recent form is basically even: Nikola Bartunkova 55, Mika Stojsavljevic 57. Lean, not a chase.",
+    "Model 52% vs DraftKings Sportsbook implied 67% (-15 pts).",
+    "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+    "Wait for a visible service-pressure split before entering.",
+    "Best O/U angle: no play without a posted total.",
+    "May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.",
+    "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+  ],
+  "lean": "Lean Nikola Bartunkova; DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+  "swing": "Risk: best-of-three volatility and break clusters.",
+  "swingFactor": "Risk: best-of-three volatility and break clusters.",
+  "odds": {
+    "participantOrder": [
+      0,
+      1
+    ],
+    "markets": [
+      {
+        "label": "Model fair",
+        "book": "Tennis warehouse model",
+        "value": "Nikola Bartunkova 52% / Mika Stojsavljevic 48%"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "book": "DraftKings Sportsbook",
+        "value": "Nikola Bartunkova -203 / Mika Stojsavljevic +153"
+      },
+      {
+        "label": "1st set total games",
+        "book": "DraftKings Sportsbook",
+        "value": "9.5 1st-set games: Over -105 / Under -140"
+      }
+    ],
+    "note": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+    "provider": "DraftKings Sportsbook"
+  },
+  "tennisContext": {
+    "surface": "Grass",
+    "court": "Centre Court",
+    "h2hLeader": "",
+    "fatigueFlag": false,
+    "liveDog": false,
+    "weaknessEdge": {
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": -2,
+      "attackingSide": null,
+      "vulnerableSide": null,
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+      "pick": {
+        "name": "Nikola Bartunkova",
+        "serviceHoldPct": null,
+        "firstServeWonPct": 60,
+        "secondServeWonPct": 43,
+        "firstServePct": 55,
+        "avgAces": 2,
+        "avgDoubleFaults": 4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": 41,
+        "servicePointsWonPct": 53,
+        "weakServeMatches": 3,
+        "pressureMatches": null,
+        "matchesWithStats": 5,
+        "weaknessScore": 17,
+        "firstGameComfort": "Needs early holds confirmed",
+        "liabilities": [
+          "first-serve points won below comfort (60%)",
+          "second-serve points won are attackable (43%)",
+          "double-fault pressure (4.0 avg)",
+          "3 recent matches with serve instability"
+        ],
+        "strengths": [],
+        "gameFlowRead": "Nikola Bartunkova can drop points quickly through first-serve points won below comfort (60%) and second-serve points won are attackable (43%)."
+      },
+      "opponent": {
+        "name": "Mika Stojsavljevic",
+        "serviceHoldPct": null,
+        "firstServeWonPct": 72,
+        "secondServeWonPct": 42,
+        "firstServePct": 61,
+        "avgAces": 5.4,
+        "avgDoubleFaults": 4.6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": 40,
+        "servicePointsWonPct": 60,
+        "weakServeMatches": 3,
+        "pressureMatches": null,
+        "matchesWithStats": 5,
+        "weaknessScore": 15,
+        "firstGameComfort": "Needs early holds confirmed",
+        "liabilities": [
+          "second-serve points won are attackable (42%)",
+          "double-fault pressure (4.6 avg)",
+          "3 recent matches with serve instability"
+        ],
+        "strengths": [
+          "wins enough first-serve points (72%)"
+        ],
+        "gameFlowRead": "Mika Stojsavljevic can drop points quickly through second-serve points won are attackable (42%) and double-fault pressure (4.6 avg)."
+      }
+    },
+    "warehouseContext": null,
+    "players": [
+      {
+        "name": "Nikola Bartunkova",
+        "rank": 69,
+        "label": "Nikola Bartunkova",
+        "form": null,
+        "boardPct": 52,
+        "decimalOdds": 1.493,
+        "marketLabel": "-203 / 67% implied",
+        "clayLine": "Live rank #69 | Czechia | age 20 | adj form 55",
+        "weakness": {
+          "name": "Nikola Bartunkova",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 60,
+          "secondServeWonPct": 43,
+          "firstServePct": 55,
+          "avgAces": 2,
+          "avgDoubleFaults": 4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 41,
+          "servicePointsWonPct": 53,
+          "weakServeMatches": 3,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 17,
+          "firstGameComfort": "Needs early holds confirmed",
+          "liabilities": [
+            "first-serve points won below comfort (60%)",
+            "second-serve points won are attackable (43%)",
+            "double-fault pressure (4.0 avg)",
+            "3 recent matches with serve instability"
+          ],
+          "strengths": [],
+          "gameFlowRead": "Nikola Bartunkova can drop points quickly through first-serve points won below comfort (60%) and second-serve points won are attackable (43%)."
+        },
+        "warehouseStats": null,
+        "record2026": "",
+        "notes": "Pick: model 52%",
+        "matchupNote": "Why pick: Opponent-adjusted recent form is basically even: Nikola Bartunkova 55, Mika Stojsavljevic 57. Lean, not a chase."
+      },
+      {
+        "name": "Mika Stojsavljevic",
+        "rank": null,
+        "label": "Mika Stojsavljevic",
+        "form": null,
+        "boardPct": 48,
+        "decimalOdds": 2.53,
+        "marketLabel": "+153 / 39.5% implied",
+        "clayLine": "Rank not joined | adj form 57",
+        "weakness": {
+          "name": "Mika Stojsavljevic",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 72,
+          "secondServeWonPct": 42,
+          "firstServePct": 61,
+          "avgAces": 5.4,
+          "avgDoubleFaults": 4.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 40,
+          "servicePointsWonPct": 60,
+          "weakServeMatches": 3,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 15,
+          "firstGameComfort": "Needs early holds confirmed",
+          "liabilities": [
+            "second-serve points won are attackable (42%)",
+            "double-fault pressure (4.6 avg)",
+            "3 recent matches with serve instability"
+          ],
+          "strengths": [
+            "wins enough first-serve points (72%)"
+          ],
+          "gameFlowRead": "Mika Stojsavljevic can drop points quickly through second-serve points won are attackable (42%) and double-fault pressure (4.6 avg)."
+        },
+        "warehouseStats": null,
+        "record2026": "",
+        "notes": "Opponent case: model 48%",
+        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
+      }
+    ],
+    "comparisonRows": [
+      {
+        "label": "Model pick",
+        "metric": "Fair win split",
+        "leftScore": 52,
+        "rightScore": 48,
+        "leftLabel": "Nikola Bartunkova",
+        "rightLabel": "Mika Stojsavljevic",
+        "winner": "Nikola Bartunkova"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "metric": "Implied price",
+        "leftScore": 67,
+        "rightScore": 39.5,
+        "leftLabel": "Nikola Bartunkova",
+        "rightLabel": "Mika Stojsavljevic",
+        "winner": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+      },
+      {
+        "label": "Weakness",
+        "metric": "Lower is cleaner",
+        "leftScore": 17,
+        "rightScore": 15,
+        "leftLabel": "Nikola Bartunkova",
+        "rightLabel": "Mika Stojsavljevic",
+        "winner": "No clear weakness edge"
+      },
+      {
+        "label": "Volatility",
+        "metric": "Lower is cleaner",
+        "leftScore": 57,
+        "rightScore": 43,
+        "leftLabel": "Risk",
+        "rightLabel": "Stability",
+        "winner": "Pass-first"
+      }
+    ],
+    "predictionMarket": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T22:16:10.987Z",
+      "totalVolume": null,
+      "players": [
+        {
+          "name": "Nikola Bartunkova",
+          "probabilityPct": 67,
+          "amount": null,
+          "americanOdds": -203,
+          "edgePct": -15,
+          "priceBand": "Moderate favorite"
+        },
+        {
+          "name": "Mika Stojsavljevic",
+          "probabilityPct": 39.5,
+          "amount": null,
+          "americanOdds": 153,
+          "edgePct": 8.5,
+          "priceBand": "Underdog"
+        }
+      ]
+    },
+    "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Mika Stojsavljevic",
+        "line": null,
+        "americanOdds": 153,
+        "modelPct": 48,
+        "impliedPct": 39.5,
+        "edgePct": 8.5,
+        "evPer100": 21.4,
+        "netEvPer100": 19.4,
+        "grade": "Bet-grade value",
+        "issue": "Picked side is overpriced; value board flips to Mika Stojsavljevic because that side has the better posted-price edge.",
+        "reason": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "No bet",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": null,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": 22.1,
+        "edgeGames": null,
+        "confidence": null,
+        "grade": "No direction",
+        "reason": "No posted match total captured."
+      },
+      {
+        "marketType": "Win a set",
+        "label": "Win a set %",
+        "selection": "Nikola Bartunkova 69% / Mika Stojsavljevic 63%",
+        "rows": [
+          {
+            "name": "Nikola Bartunkova",
+            "confidence": 69,
+            "modelPct": 52,
+            "label": "Live to win a set"
+          },
+          {
+            "name": "Mika Stojsavljevic",
+            "confidence": 63,
+            "modelPct": 48,
+            "label": "Needs early hold pressure"
+          }
+        ],
+        "confidence": 69,
+        "grade": "Price required",
+        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Pass / near line",
+        "expectedGames": 9.3,
+        "confidence": 51,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "grade": "Near fair",
+        "reason": "Expected first-set games 9.3 vs DraftKings Sportsbook 9.5; near the number. hold avg N/A, BP saved N/A, BP converted 49%, first-set sample N/A, 0 recent sets."
+      }
+    ],
+    "derivativeMarketCase": null,
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Mika Stojsavljevic",
+        "americanOdds": 153,
+        "modelPct": 48,
+        "impliedPct": 39.5,
+        "edgePct": 8.5,
+        "evPer100": 21.4,
+        "netEvPer100": 19.4,
+        "feePer100": 2,
+        "valueIssue": "Picked side is overpriced; value board flips to Mika Stojsavljevic because that side has the better posted-price edge.",
+        "valueGrade": "Bet-grade value",
+        "betGrade": false
+      },
+      "spread": null,
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": 22.1,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Pass / near line",
+        "line": 9.5,
+        "americanOdds": null,
+        "expectedGames": 9.3,
+        "confidence": 51,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "modelPct": 51,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Near fair",
+        "reason": "Expected first-set games 9.3 vs DraftKings Sportsbook 9.5; near the number. hold avg N/A, BP saved N/A, BP converted 49%, first-set sample N/A, 0 recent sets.",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Nikola Bartunkova",
+          "confidence": 69,
+          "modelPct": 52,
+          "label": "Live to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Mika Stojsavljevic",
+          "confidence": 63,
+          "modelPct": 48,
+          "label": "Needs early hold pressure",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "ensembleValueCase": null,
+    "projection": {
+      "projectedWinner": "Nikola Bartunkova",
+      "projectedSetLine": "2-0/2-1 range",
+      "setWinProjections": [
+        {
+          "name": "Nikola Bartunkova",
+          "confidence": 69,
+          "modelPct": 52,
+          "label": "Live to win a set"
+        },
+        {
+          "name": "Mika Stojsavljevic",
+          "confidence": 63,
+          "modelPct": 48,
+          "label": "Needs early hold pressure"
+        }
+      ],
+      "totalGames": null,
+      "straightSetsProbability": 48,
+      "upsetRisk": 48,
+      "overview": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "fantasy": []
+    },
+    "tradePlan": {
+      "laneLabel": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+      "summary": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "trigger": "Wait for a visible service-pressure split before entering.",
+      "headline": "No clear weakness edge",
+      "exit": "No spread line",
+      "tone": "warning"
+    },
+    "derivativeMarkets": [
+      {
+        "label": "ML",
+        "value": "Nikola Bartunkova -203; Model 52% vs DraftKings Sportsbook implied 67% (-15 pts).",
+        "lean": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+        "confidence": 52,
+        "marketType": "ML",
+        "selection": "Mika Stojsavljevic",
+        "americanOdds": 153,
+        "modelPct": 48,
+        "impliedPct": 39.5,
+        "edgePct": 8.5,
+        "evPer100": 21.4,
+        "netEvPer100": 19.4,
+        "feePer100": 2,
+        "valueIssue": "Picked side is overpriced; value board flips to Mika Stojsavljevic because that side has the better posted-price edge.",
+        "valueGrade": "Bet-grade value",
+        "betGrade": false,
+        "tone": "warning",
+        "reason": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+      },
+      {
+        "label": "Win a set",
+        "value": "No set-win price captured",
+        "lean": "Needs early hold pressure",
+        "confidence": 69,
+        "setWinRows": [],
+        "valueGrade": "Needs posted price",
+        "tone": "neutral",
+        "reason": "Best-of-three set-win confidence is more fragile; early service holds matter more."
+      },
+      {
+        "label": "Spread",
+        "value": "No primary game spread captured",
+        "lean": "No spread line",
+        "confidence": 50,
+        "tone": "neutral",
+        "reason": "Wait for a visible service-pressure split before entering."
+      },
+      {
+        "label": "O/U",
+        "value": "No total captured",
+        "lean": "No bet",
+        "confidence": 50,
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": 22.1,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st set O/U",
+        "value": "Line 9.5",
+        "lean": "Pass / near line",
+        "confidence": 51,
+        "marketType": "First-set total",
+        "selection": "Pass / near line",
+        "line": 9.5,
+        "americanOdds": null,
+        "expectedGames": 9.3,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "modelPct": 51,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Near fair",
+        "reason": "Expected first-set games 9.3 vs DraftKings Sportsbook 9.5; near the number. hold avg N/A, BP saved N/A, BP converted 49%, first-set sample N/A, 0 recent sets.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st service game",
+        "value": "No first-service-game market captured",
+        "lean": "First-service-game prices",
+        "confidence": 52,
+        "firstServiceGameRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-service-game market captured."
+      },
+      {
+        "label": "First games",
+        "value": "No first-game prop market captured",
+        "lean": "First-game prop prices",
+        "confidence": 52,
+        "firstGamePropRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-games prop captured."
+      }
+    ],
+    "marketEconomics": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T22:16:10.987Z",
+      "eventUrl": "https://sportsbook.draftkings.com/leagues/tennis/wta-birmingham?event=34244180",
+      "deskName": "Nikola Bartunkova",
+      "deskPricePct": 67,
+      "deskEdgePct": -15,
+      "priceAction": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+      "players": [
+        {
+          "name": "Nikola Bartunkova",
+          "americanOdds": -203,
+          "impliedPct": 67,
+          "modelPct": 52,
+          "edgePct": -15,
+          "priceBand": "Moderate favorite",
+          "grossProfitPct": 49.3,
+          "grossPayoutMultiple": 1.493,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 49.3,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        },
+        {
+          "name": "Mika Stojsavljevic",
+          "americanOdds": 153,
+          "impliedPct": 39.5,
+          "modelPct": 48,
+          "edgePct": 8.5,
+          "priceBand": "Underdog",
+          "grossProfitPct": 153,
+          "grossPayoutMultiple": 2.53,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 153,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        }
+      ]
+    },
+    "clayMatchupData": null,
+    "opponentQualityData": null,
+    "researchLinks": [
+      {
+        "label": "ESPN tennis scoreboard",
+        "url": "https://www.espn.com/tennis/scoreboard/_/date/20260605"
+      },
+      {
+        "label": "TennisLive",
+        "url": "https://www.tennislive.net/"
+      },
+      {
+        "label": "DraftKings Sportsbook event",
+        "url": "https://sportsbook.draftkings.com/leagues/tennis/wta-birmingham?event=34244180"
+      }
+    ],
+    "formEdgeName": "Nikola Bartunkova"
+  },
+  "participants": [
+    {
+      "id": "rg-w-nikola-bartunkova-mika-stojsavljevic-2026-06-05:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Nikola Bartunkova",
+      "detail": "Live rank #69 | Czechia | age 20 | adj form 55",
+      "americanOdds": -203,
+      "americanLabel": "-203",
+      "decimalOdds": 1.4926108374384237,
+      "impliedProbability": 0.66996699669967,
+      "impliedProbabilityLabel": "67.0%"
+    },
+    {
+      "id": "rg-w-nikola-bartunkova-mika-stojsavljevic-2026-06-05:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Mika Stojsavljevic",
+      "detail": "Rank not joined | adj form 57",
+      "americanOdds": 153,
+      "americanLabel": "+153",
+      "decimalOdds": 2.5300000000000002,
+      "impliedProbability": 0.3952569169960474,
+      "impliedProbabilityLabel": "39.5%"
+    }
+  ],
+  "moneyline": {
+    "available": true,
+    "label": "DraftKings Sportsbook moneyline",
+    "provider": "DraftKings Sportsbook",
+    "participants": [
+      {
+        "id": "rg-w-nikola-bartunkova-mika-stojsavljevic-2026-06-05:0",
+        "index": 0,
+        "role": "Player 1",
+        "name": "Nikola Bartunkova",
+        "detail": "Live rank #69 | Czechia | age 20 | adj form 55",
+        "americanOdds": -203,
+        "americanLabel": "-203",
+        "decimalOdds": 1.4926108374384237,
+        "impliedProbability": 0.66996699669967,
+        "impliedProbabilityLabel": "67.0%"
+      },
+      {
+        "id": "rg-w-nikola-bartunkova-mika-stojsavljevic-2026-06-05:1",
+        "index": 1,
+        "role": "Player 2",
+        "name": "Mika Stojsavljevic",
+        "detail": "Rank not joined | adj form 57",
+        "americanOdds": 153,
+        "americanLabel": "+153",
+        "decimalOdds": 2.5300000000000002,
+        "impliedProbability": 0.3952569169960474,
+        "impliedProbabilityLabel": "39.5%"
+      }
+    ]
+  },
+  "analysis": {
+    "available": true,
+    "participantId": "rg-w-nikola-bartunkova-mika-stojsavljevic-2026-06-05:0",
+    "participant": {
+      "id": "rg-w-nikola-bartunkova-mika-stojsavljevic-2026-06-05:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Nikola Bartunkova",
+      "detail": "Live rank #69 | Czechia | age 20 | adj form 55",
+      "americanOdds": -203,
+      "americanLabel": "-203",
+      "decimalOdds": 1.4926108374384237,
+      "impliedProbability": 0.66996699669967,
+      "impliedProbabilityLabel": "67.0%"
+    },
+    "opponent": {
+      "id": "rg-w-nikola-bartunkova-mika-stojsavljevic-2026-06-05:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Mika Stojsavljevic",
+      "detail": "Rank not joined | adj form 57",
+      "americanOdds": 153,
+      "americanLabel": "+153",
+      "decimalOdds": 2.5300000000000002,
+      "impliedProbability": 0.3952569169960474,
+      "impliedProbabilityLabel": "39.5%"
+    },
+    "lean": "Lean Nikola Bartunkova; DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+    "rationale": "Our model pick: Nikola Bartunkova. Opponent-adjusted recent form is basically even: Nikola Bartunkova 55, Mika Stojsavljevic 57. Lean, not a chase.",
+    "confidence": 52,
+    "volatility": 57,
+    "recommendationScore": 38,
+    "tier": "Watch",
+    "sourceLabel": "DraftKings Sportsbook",
+    "modelEdge": null,
+    "modelEdgeLabel": "",
+    "marketProbability": 0.66996699669967,
+    "marketProbabilityLabel": "67.0%",
+    "inputs": [],
+    "inputsUsed": 0,
+    "volatilityNotes": [],
+    "indicators": {}
+  },
+  "metadata": {
+    "participantCount": 2,
+    "participantNames": [
+      "Nikola Bartunkova",
+      "Mika Stojsavljevic"
+    ],
+    "tagCount": 8,
+    "hasSeriesBreakdown": false,
+    "hasMoneyline": true,
+    "hasAnalysisPick": true,
+    "hasStructuredInputs": false,
+    "hasPlayerProps": false,
+    "startMinutes": 330,
+    "spotlight": false,
+    "league": "Tennis",
+    "oddsProvider": "DraftKings Sportsbook"
+  }
+}

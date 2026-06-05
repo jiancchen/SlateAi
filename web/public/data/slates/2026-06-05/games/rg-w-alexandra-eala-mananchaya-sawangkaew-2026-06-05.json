@@ -1,0 +1,722 @@
+{
+  "id": "rg-w-alexandra-eala-mananchaya-sawangkaew-2026-06-05",
+  "eventId": "176217",
+  "league": "Tennis",
+  "start": "7:00 AM",
+  "startMinutes": 420,
+  "title": "Alexandra Eala vs Mananchaya Sawangkaew",
+  "stage": "WTA Birmingham | Quarterfinal",
+  "spotlight": false,
+  "confidence": 55,
+  "volatility": 54,
+  "tags": [
+    "Grass",
+    "WTA Birmingham",
+    "WTA",
+    "No clay boost",
+    "Watch only",
+    "No blind bet",
+    "WTA volatility tax",
+    "Controlled volatility"
+  ],
+  "matchup": [
+    {
+      "side": "Player 1",
+      "name": "Alexandra Eala",
+      "displayName": "Alexandra Eala",
+      "detail": "Live rank #37 | Philippines | age 21 | adj form 44"
+    },
+    {
+      "side": "Player 2",
+      "name": "Mananchaya Sawangkaew",
+      "displayName": "Mananchaya Sawangkaew",
+      "detail": "Rank not joined | adj form 74"
+    }
+  ],
+  "summary": "Our model pick: Alexandra Eala. Mananchaya Sawangkaew grades 30 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
+  "factors": [
+    "Mananchaya Sawangkaew grades 30 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
+    "Model 55% vs DraftKings Sportsbook implied 67.7% (-12.7 pts).",
+    "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+    "Wait for a visible service-pressure split before entering.",
+    "Best O/U angle: no play without a posted total.",
+    "May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.",
+    "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+  ],
+  "lean": "Lean Alexandra Eala; DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+  "swing": "Risk: best-of-three volatility and break clusters.",
+  "swingFactor": "Risk: best-of-three volatility and break clusters.",
+  "odds": {
+    "participantOrder": [
+      0,
+      1
+    ],
+    "markets": [
+      {
+        "label": "Model fair",
+        "book": "Tennis warehouse model",
+        "value": "Alexandra Eala 55% / Mananchaya Sawangkaew 45%"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "book": "DraftKings Sportsbook",
+        "value": "Alexandra Eala -210 / Mananchaya Sawangkaew +158"
+      },
+      {
+        "label": "1st set total games",
+        "book": "DraftKings Sportsbook",
+        "value": "9.5 1st-set games: Over +105 / Under -165"
+      }
+    ],
+    "note": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+    "provider": "DraftKings Sportsbook"
+  },
+  "tennisContext": {
+    "surface": "Grass",
+    "court": "Centre Court",
+    "h2hLeader": "",
+    "fatigueFlag": false,
+    "liveDog": false,
+    "weaknessEdge": {
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": -2,
+      "attackingSide": null,
+      "vulnerableSide": null,
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+      "pick": {
+        "name": "Alexandra Eala",
+        "serviceHoldPct": null,
+        "firstServeWonPct": 61,
+        "secondServeWonPct": 51,
+        "firstServePct": 66,
+        "avgAces": 1.4,
+        "avgDoubleFaults": 2.2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": 47,
+        "servicePointsWonPct": 58,
+        "weakServeMatches": 3,
+        "pressureMatches": null,
+        "matchesWithStats": 5,
+        "weaknessScore": 8,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [
+          "first-serve points won below comfort (61%)",
+          "3 recent matches with serve instability"
+        ],
+        "strengths": [
+          "creates return pressure (47% return points won)"
+        ],
+        "gameFlowRead": "Alexandra Eala can drop points quickly through first-serve points won below comfort (61%) and 3 recent matches with serve instability."
+      },
+      "opponent": {
+        "name": "Mananchaya Sawangkaew",
+        "serviceHoldPct": null,
+        "firstServeWonPct": 67,
+        "secondServeWonPct": 47,
+        "firstServePct": 70,
+        "avgAces": 1.6,
+        "avgDoubleFaults": 3.2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": 48,
+        "servicePointsWonPct": 61,
+        "weakServeMatches": 2,
+        "pressureMatches": null,
+        "matchesWithStats": 5,
+        "weaknessScore": 6,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "creates return pressure (48% return points won)"
+        ],
+        "gameFlowRead": "Mananchaya Sawangkaew has no major service weakness in the joined warehouse sample."
+      }
+    },
+    "warehouseContext": null,
+    "players": [
+      {
+        "name": "Alexandra Eala",
+        "rank": 37,
+        "label": "Alexandra Eala",
+        "form": null,
+        "boardPct": 55,
+        "decimalOdds": 1.476,
+        "marketLabel": "-210 / 67.7% implied",
+        "clayLine": "Live rank #37 | Philippines | age 21 | adj form 44",
+        "weakness": {
+          "name": "Alexandra Eala",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 61,
+          "secondServeWonPct": 51,
+          "firstServePct": 66,
+          "avgAces": 1.4,
+          "avgDoubleFaults": 2.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 47,
+          "servicePointsWonPct": 58,
+          "weakServeMatches": 3,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 8,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "first-serve points won below comfort (61%)",
+            "3 recent matches with serve instability"
+          ],
+          "strengths": [
+            "creates return pressure (47% return points won)"
+          ],
+          "gameFlowRead": "Alexandra Eala can drop points quickly through first-serve points won below comfort (61%) and 3 recent matches with serve instability."
+        },
+        "warehouseStats": null,
+        "record2026": "",
+        "notes": "Pick: model 55%",
+        "matchupNote": "Why pick: Mananchaya Sawangkaew grades 30 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase."
+      },
+      {
+        "name": "Mananchaya Sawangkaew",
+        "rank": null,
+        "label": "Mananchaya Sawangkaew",
+        "form": null,
+        "boardPct": 45,
+        "decimalOdds": 2.58,
+        "marketLabel": "+158 / 38.8% implied",
+        "clayLine": "Rank not joined | adj form 74",
+        "weakness": {
+          "name": "Mananchaya Sawangkaew",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 67,
+          "secondServeWonPct": 47,
+          "firstServePct": 70,
+          "avgAces": 1.6,
+          "avgDoubleFaults": 3.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 48,
+          "servicePointsWonPct": 61,
+          "weakServeMatches": 2,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 6,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "creates return pressure (48% return points won)"
+          ],
+          "gameFlowRead": "Mananchaya Sawangkaew has no major service weakness in the joined warehouse sample."
+        },
+        "warehouseStats": null,
+        "record2026": "",
+        "notes": "Opponent case: model 45%",
+        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
+      }
+    ],
+    "comparisonRows": [
+      {
+        "label": "Model pick",
+        "metric": "Fair win split",
+        "leftScore": 55,
+        "rightScore": 45,
+        "leftLabel": "Alexandra Eala",
+        "rightLabel": "Mananchaya Sawangkaew",
+        "winner": "Alexandra Eala"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "metric": "Implied price",
+        "leftScore": 67.7,
+        "rightScore": 38.8,
+        "leftLabel": "Alexandra Eala",
+        "rightLabel": "Mananchaya Sawangkaew",
+        "winner": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+      },
+      {
+        "label": "Weakness",
+        "metric": "Lower is cleaner",
+        "leftScore": 8,
+        "rightScore": 6,
+        "leftLabel": "Alexandra Eala",
+        "rightLabel": "Mananchaya Sawangkaew",
+        "winner": "No clear weakness edge"
+      },
+      {
+        "label": "Volatility",
+        "metric": "Lower is cleaner",
+        "leftScore": 54,
+        "rightScore": 46,
+        "leftLabel": "Risk",
+        "rightLabel": "Stability",
+        "winner": "Stable enough"
+      }
+    ],
+    "predictionMarket": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T22:16:12.547Z",
+      "totalVolume": null,
+      "players": [
+        {
+          "name": "Alexandra Eala",
+          "probabilityPct": 67.7,
+          "amount": null,
+          "americanOdds": -210,
+          "edgePct": -12.7,
+          "priceBand": "Moderate favorite"
+        },
+        {
+          "name": "Mananchaya Sawangkaew",
+          "probabilityPct": 38.8,
+          "amount": null,
+          "americanOdds": 158,
+          "edgePct": 6.2,
+          "priceBand": "Underdog"
+        }
+      ]
+    },
+    "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Mananchaya Sawangkaew",
+        "line": null,
+        "americanOdds": 158,
+        "modelPct": 45,
+        "impliedPct": 38.8,
+        "edgePct": 6.2,
+        "evPer100": 16.1,
+        "netEvPer100": 14.1,
+        "grade": "Raw ML edge only",
+        "issue": "Picked side is overpriced; value board flips to Mananchaya Sawangkaew because that side has the better posted-price edge.",
+        "reason": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "No bet",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": null,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": 21.9,
+        "edgeGames": null,
+        "confidence": null,
+        "grade": "No direction",
+        "reason": "No posted match total captured."
+      },
+      {
+        "marketType": "Win a set",
+        "label": "Win a set %",
+        "selection": "Alexandra Eala 71% / Mananchaya Sawangkaew 61%",
+        "rows": [
+          {
+            "name": "Alexandra Eala",
+            "confidence": 71,
+            "modelPct": 55,
+            "label": "Live to win a set"
+          },
+          {
+            "name": "Mananchaya Sawangkaew",
+            "confidence": 61,
+            "modelPct": 45,
+            "label": "Needs early hold pressure"
+          }
+        ],
+        "confidence": 71,
+        "grade": "Price required",
+        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Under 9.5",
+        "expectedGames": 9.2,
+        "confidence": 57,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "grade": "Thin value",
+        "reason": "Expected first-set games 9.2 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 53%, first-set sample N/A, 0 recent sets."
+      }
+    ],
+    "derivativeMarketCase": null,
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Mananchaya Sawangkaew",
+        "americanOdds": 158,
+        "modelPct": 45,
+        "impliedPct": 38.8,
+        "edgePct": 6.2,
+        "evPer100": 16.1,
+        "netEvPer100": 14.1,
+        "feePer100": 2,
+        "valueIssue": "Picked side is overpriced; value board flips to Mananchaya Sawangkaew because that side has the better posted-price edge.",
+        "valueGrade": "Raw ML edge only",
+        "betGrade": false
+      },
+      "spread": null,
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": 21.9,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Under 9.5",
+        "line": 9.5,
+        "americanOdds": -165,
+        "expectedGames": 9.2,
+        "confidence": 57,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "modelPct": 57,
+        "evPer100": -8.5,
+        "netEvPer100": -10.5,
+        "valueGrade": "Thin value",
+        "reason": "Expected first-set games 9.2 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 53%, first-set sample N/A, 0 recent sets.",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Alexandra Eala",
+          "confidence": 71,
+          "modelPct": 55,
+          "label": "Live to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Mananchaya Sawangkaew",
+          "confidence": 61,
+          "modelPct": 45,
+          "label": "Needs early hold pressure",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "ensembleValueCase": null,
+    "projection": {
+      "projectedWinner": "Alexandra Eala",
+      "projectedSetLine": "2-0/2-1 range",
+      "setWinProjections": [
+        {
+          "name": "Alexandra Eala",
+          "confidence": 71,
+          "modelPct": 55,
+          "label": "Live to win a set"
+        },
+        {
+          "name": "Mananchaya Sawangkaew",
+          "confidence": 61,
+          "modelPct": 45,
+          "label": "Needs early hold pressure"
+        }
+      ],
+      "totalGames": null,
+      "straightSetsProbability": 48,
+      "upsetRisk": 45,
+      "overview": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "fantasy": []
+    },
+    "tradePlan": {
+      "laneLabel": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+      "summary": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "trigger": "Wait for a visible service-pressure split before entering.",
+      "headline": "No clear weakness edge",
+      "exit": "No spread line",
+      "tone": "warning"
+    },
+    "derivativeMarkets": [
+      {
+        "label": "ML",
+        "value": "Alexandra Eala -210; Model 55% vs DraftKings Sportsbook implied 67.7% (-12.7 pts).",
+        "lean": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+        "confidence": 55,
+        "marketType": "ML",
+        "selection": "Mananchaya Sawangkaew",
+        "americanOdds": 158,
+        "modelPct": 45,
+        "impliedPct": 38.8,
+        "edgePct": 6.2,
+        "evPer100": 16.1,
+        "netEvPer100": 14.1,
+        "feePer100": 2,
+        "valueIssue": "Picked side is overpriced; value board flips to Mananchaya Sawangkaew because that side has the better posted-price edge.",
+        "valueGrade": "Raw ML edge only",
+        "betGrade": false,
+        "tone": "warning",
+        "reason": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+      },
+      {
+        "label": "Win a set",
+        "value": "No set-win price captured",
+        "lean": "Needs early hold pressure",
+        "confidence": 71,
+        "setWinRows": [],
+        "valueGrade": "Needs posted price",
+        "tone": "neutral",
+        "reason": "Best-of-three set-win confidence is more fragile; early service holds matter more."
+      },
+      {
+        "label": "Spread",
+        "value": "No primary game spread captured",
+        "lean": "No spread line",
+        "confidence": 50,
+        "tone": "neutral",
+        "reason": "Wait for a visible service-pressure split before entering."
+      },
+      {
+        "label": "O/U",
+        "value": "No total captured",
+        "lean": "No bet",
+        "confidence": 50,
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": 21.9,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st set O/U",
+        "value": "Line 9.5",
+        "lean": "Under 9.5",
+        "confidence": 57,
+        "marketType": "First-set total",
+        "selection": "Under 9.5",
+        "line": 9.5,
+        "americanOdds": -165,
+        "expectedGames": 9.2,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "modelPct": 57,
+        "evPer100": -8.5,
+        "netEvPer100": -10.5,
+        "valueGrade": "Thin value",
+        "reason": "Expected first-set games 9.2 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 53%, first-set sample N/A, 0 recent sets.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st service game",
+        "value": "No first-service-game market captured",
+        "lean": "First-service-game prices",
+        "confidence": 55,
+        "firstServiceGameRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-service-game market captured."
+      },
+      {
+        "label": "First games",
+        "value": "No first-game prop market captured",
+        "lean": "First-game prop prices",
+        "confidence": 55,
+        "firstGamePropRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-games prop captured."
+      }
+    ],
+    "marketEconomics": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T22:16:12.547Z",
+      "eventUrl": "https://sportsbook.draftkings.com/leagues/tennis/wta-birmingham?event=34244117",
+      "deskName": "Alexandra Eala",
+      "deskPricePct": 67.7,
+      "deskEdgePct": -12.7,
+      "priceAction": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+      "players": [
+        {
+          "name": "Alexandra Eala",
+          "americanOdds": -210,
+          "impliedPct": 67.7,
+          "modelPct": 55,
+          "edgePct": -12.7,
+          "priceBand": "Moderate favorite",
+          "grossProfitPct": 47.6,
+          "grossPayoutMultiple": 1.476,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 47.6,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        },
+        {
+          "name": "Mananchaya Sawangkaew",
+          "americanOdds": 158,
+          "impliedPct": 38.8,
+          "modelPct": 45,
+          "edgePct": 6.2,
+          "priceBand": "Underdog",
+          "grossProfitPct": 158,
+          "grossPayoutMultiple": 2.58,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 158,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        }
+      ]
+    },
+    "clayMatchupData": null,
+    "opponentQualityData": null,
+    "researchLinks": [
+      {
+        "label": "ESPN tennis scoreboard",
+        "url": "https://www.espn.com/tennis/scoreboard/_/date/20260605"
+      },
+      {
+        "label": "TennisLive",
+        "url": "https://www.tennislive.net/"
+      },
+      {
+        "label": "DraftKings Sportsbook event",
+        "url": "https://sportsbook.draftkings.com/leagues/tennis/wta-birmingham?event=34244117"
+      }
+    ],
+    "formEdgeName": "Alexandra Eala"
+  },
+  "participants": [
+    {
+      "id": "rg-w-alexandra-eala-mananchaya-sawangkaew-2026-06-05:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Alexandra Eala",
+      "detail": "Live rank #37 | Philippines | age 21 | adj form 44",
+      "americanOdds": -210,
+      "americanLabel": "-210",
+      "decimalOdds": 1.4761904761904763,
+      "impliedProbability": 0.6774193548387096,
+      "impliedProbabilityLabel": "67.7%"
+    },
+    {
+      "id": "rg-w-alexandra-eala-mananchaya-sawangkaew-2026-06-05:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Mananchaya Sawangkaew",
+      "detail": "Rank not joined | adj form 74",
+      "americanOdds": 158,
+      "americanLabel": "+158",
+      "decimalOdds": 2.58,
+      "impliedProbability": 0.3875968992248062,
+      "impliedProbabilityLabel": "38.8%"
+    }
+  ],
+  "moneyline": {
+    "available": true,
+    "label": "DraftKings Sportsbook moneyline",
+    "provider": "DraftKings Sportsbook",
+    "participants": [
+      {
+        "id": "rg-w-alexandra-eala-mananchaya-sawangkaew-2026-06-05:0",
+        "index": 0,
+        "role": "Player 1",
+        "name": "Alexandra Eala",
+        "detail": "Live rank #37 | Philippines | age 21 | adj form 44",
+        "americanOdds": -210,
+        "americanLabel": "-210",
+        "decimalOdds": 1.4761904761904763,
+        "impliedProbability": 0.6774193548387096,
+        "impliedProbabilityLabel": "67.7%"
+      },
+      {
+        "id": "rg-w-alexandra-eala-mananchaya-sawangkaew-2026-06-05:1",
+        "index": 1,
+        "role": "Player 2",
+        "name": "Mananchaya Sawangkaew",
+        "detail": "Rank not joined | adj form 74",
+        "americanOdds": 158,
+        "americanLabel": "+158",
+        "decimalOdds": 2.58,
+        "impliedProbability": 0.3875968992248062,
+        "impliedProbabilityLabel": "38.8%"
+      }
+    ]
+  },
+  "analysis": {
+    "available": true,
+    "participantId": "rg-w-alexandra-eala-mananchaya-sawangkaew-2026-06-05:0",
+    "participant": {
+      "id": "rg-w-alexandra-eala-mananchaya-sawangkaew-2026-06-05:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Alexandra Eala",
+      "detail": "Live rank #37 | Philippines | age 21 | adj form 44",
+      "americanOdds": -210,
+      "americanLabel": "-210",
+      "decimalOdds": 1.4761904761904763,
+      "impliedProbability": 0.6774193548387096,
+      "impliedProbabilityLabel": "67.7%"
+    },
+    "opponent": {
+      "id": "rg-w-alexandra-eala-mananchaya-sawangkaew-2026-06-05:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Mananchaya Sawangkaew",
+      "detail": "Rank not joined | adj form 74",
+      "americanOdds": 158,
+      "americanLabel": "+158",
+      "decimalOdds": 2.58,
+      "impliedProbability": 0.3875968992248062,
+      "impliedProbabilityLabel": "38.8%"
+    },
+    "lean": "Lean Alexandra Eala; DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+    "rationale": "Our model pick: Alexandra Eala. Mananchaya Sawangkaew grades 30 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
+    "confidence": 55,
+    "volatility": 54,
+    "recommendationScore": 42,
+    "tier": "Watch",
+    "sourceLabel": "DraftKings Sportsbook",
+    "modelEdge": null,
+    "modelEdgeLabel": "",
+    "marketProbability": 0.6774193548387096,
+    "marketProbabilityLabel": "67.7%",
+    "inputs": [],
+    "inputsUsed": 0,
+    "volatilityNotes": [],
+    "indicators": {}
+  },
+  "metadata": {
+    "participantCount": 2,
+    "participantNames": [
+      "Alexandra Eala",
+      "Mananchaya Sawangkaew"
+    ],
+    "tagCount": 8,
+    "hasSeriesBreakdown": false,
+    "hasMoneyline": true,
+    "hasAnalysisPick": true,
+    "hasStructuredInputs": false,
+    "hasPlayerProps": false,
+    "startMinutes": 420,
+    "spotlight": false,
+    "league": "Tennis",
+    "oddsProvider": "DraftKings Sportsbook"
+  }
+}

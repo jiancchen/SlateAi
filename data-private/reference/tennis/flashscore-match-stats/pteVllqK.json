@@ -1,22 +1,24 @@
 {
   "sourceKind": "recent-match",
-  "slateDate": "2026-06-01",
-  "boardMatchId": "rg-m-frances-tiafoe-matteo-arnaldi-2026-06-01",
-  "boardTitle": "Frances Tiafoe vs Matteo Arnaldi",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-05",
+  "boardMatchId": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05",
+  "boardTitle": "Matteo Arnaldi vs Flavio Cobolli",
   "boardPlayerName": "Matteo Arnaldi",
-  "recentOpponentName": "Raphael Collignon",
-  "recentIndex": 0,
-  "recentEvent": "Paris",
-  "recentDate": "30 May 26",
+  "recentOpponentName": "Collignon R.",
+  "recentIndex": 2,
+  "recentEvent": "French Open (France)",
+  "recentDate": "May 30, 26",
   "recentIsoDate": "2026-05-30",
-  "recentResult": "BEL  6-4 6-75 5-7 6-4 7-64 3rd",
+  "recentResult": "Win 6-4 6-7 5-7 6-4 7-6",
+  "recentSurface": "Clay",
   "flashscoreLabel": "Arnaldi M. - Collignon R.",
-  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/results/",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/atp-singles/french-open/",
   "players": [
     "Arnaldi M.",
     "Collignon R."
   ],
-  "generatedAt": "2026-06-01T07:24:57.546Z",
+  "generatedAt": "2026-06-04T21:31:58.342Z",
   "sourceUrl": "https://www.flashscoreusa.com/match/pteVllqK/",
   "matchId": "pteVllqK",
   "feedUrls": {
@@ -182,15 +184,15 @@
             },
             {
               "label": "Last 10 balls",
-              "left": "8",
-              "right": "2",
+              "left": "7",
+              "right": "3",
               "leftPlayer": "Arnaldi M.",
               "rightPlayer": "Collignon R."
             },
             {
               "label": "Match points saved",
               "left": "0",
-              "right": "3",
+              "right": "1",
               "leftPlayer": "Arnaldi M.",
               "rightPlayer": "Collignon R."
             }
@@ -980,7 +982,7 @@
             {
               "label": "Match points saved",
               "left": "0",
-              "right": "3",
+              "right": "1",
               "leftPlayer": "Arnaldi M.",
               "rightPlayer": "Collignon R."
             }

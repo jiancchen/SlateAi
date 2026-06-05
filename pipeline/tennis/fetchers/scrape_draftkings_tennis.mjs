@@ -93,6 +93,16 @@ const loadDraftKingsLeagues = async () => {
 
 const splitEventName = (name) => String(name || '').split(/\s+vs\s+/i).map((part) => part.trim()).filter(Boolean)
 
+const slug = (value) =>
+  normalizeName(value)
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '')
+
+const isDiscoverableSupplementLeague = (league) => {
+  const text = `${league.eventGroupName || ''} ${league.nameIdentifier || ''}`.toLowerCase()
+  return text.includes('challenger') && !text.includes('wta') && !text.includes('women')
+}
+
 const americanOdds = (selection) => {
   const value = selection?.displayOdds?.american
   if (value === null || value === undefined) return null
@@ -261,13 +271,15 @@ const main = async () => {
       if (names.length !== 2) continue
       const key = names.map(tokenKey).sort().join(' | ')
       const slateMatch = slateKeys.get(key)
-      if (!slateMatch) continue
+      if (!slateMatch && !isDiscoverableSupplementLeague(league)) continue
       const detail = await fetchEventDetail(event.id)
+      const matchedPlayers = slateMatch?.players || names.map((name) => ({ name }))
       matches.push({
-        match: slateMatch.players.map((player) => player.name).join(' vs '),
+        match: matchedPlayers.map((player) => player.name).join(' vs '),
         draftKingsMatch: event.name,
         href: `https://sportsbook.draftkings.com/leagues/tennis/${league.urlName}?event=${event.id}`,
         eventId: event.id,
+        syntheticSlateId: slateMatch?.id || `dk-atp-${slug(league.eventGroupName)}-${slug(names[0])}-vs-${slug(names[1])}-${options.date}`,
         leagueId: league.eventGroupId,
         leagueName: league.eventGroupName,
         startEventDate: event.startEventDate,
@@ -275,7 +287,7 @@ const main = async () => {
         capturedAt: new Date().toISOString(),
         source: SOURCE
       })
-      unmatched.delete(slateMatch.players.map((player) => player.name).join(' vs '))
+      if (slateMatch) unmatched.delete(slateMatch.players.map((player) => player.name).join(' vs '))
       console.log(`Captured DK ${event.name} (${league.eventGroupName})`)
     }
   }

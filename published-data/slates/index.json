@@ -311,5 +311,17 @@
       "totalGames": 32,
       "mlbGames": 9
     }
+  },
+  {
+    "id": "2026-06-05",
+    "label": "June 5, 2026",
+    "status": "ready",
+    "slateMeta": {
+      "date": "June 5, 2026",
+      "isoDate": "2026-06-05"
+    },
+    "summary": {
+      "totalGames": 32
+    }
   }
 ]

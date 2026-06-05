@@ -1,0 +1,102 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-05",
+  "boardMatchId": "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05",
+  "boardTitle": "Arda Azkara vs Khololwam Montsi",
+  "boardPlayerName": "Arda Azkara",
+  "recentOpponentName": "Schoen P.",
+  "recentIndex": 4,
+  "recentEvent": "M15 Kayseri (Turkey)",
+  "recentDate": "May 24, 26",
+  "recentIsoDate": "2026-05-24",
+  "recentResult": "Loss 2-6 4-6",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Azkara A. - Schoen P.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/itf-men-singles/m15-kayseri/",
+  "players": [
+    "Azkara A.",
+    "Schoen P."
+  ],
+  "generatedAt": "2026-06-04T21:31:59.198Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/jXM9eSke/",
+  "matchId": "jXM9eSke",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_jXM9eSke",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_jXM9eSke"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 4,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": ""
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Last 10 balls",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Schoen P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Schoen P."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Azkara A.",
+              "rightPlayer": "Schoen P."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

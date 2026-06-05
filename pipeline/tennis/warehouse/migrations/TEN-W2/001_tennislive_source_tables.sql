@@ -130,6 +130,33 @@ create table if not exists tennislive_match_summaries (
   raw_json text
 );
 
+create table if not exists tennislive_match_player_snapshots (
+  match_player_snapshot_id text primary key,
+  match_id text not null,
+  player_id text,
+  source_name text not null default 'tennislive',
+  source_match_url text,
+  side integer,
+  player_name text,
+  country text,
+  birthdate text,
+  age integer,
+  height text,
+  weight text,
+  pro_since text,
+  play_hand text,
+  current_ranking integer,
+  points integer,
+  prize_money text,
+  photo_url text,
+  source_snapshot_id text,
+  captured_at text not null,
+  raw_json text
+);
+
+create index if not exists idx_tennislive_match_player_snapshots_match
+  on tennislive_match_player_snapshots(match_id, side);
+
 create table if not exists tennislive_match_replay_games (
   replay_game_id text primary key,
   match_id text not null,

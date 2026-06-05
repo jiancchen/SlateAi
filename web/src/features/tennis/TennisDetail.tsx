@@ -19,7 +19,12 @@ export function TennisDetail(props: TennisDetailProps) {
   const weaknessEdge = context?.weaknessEdge
   const marketEconomics = context?.marketEconomics
   const ensembleValueCase = context?.ensembleValueCase
-  const warehouseContext = context?.warehouseContext || context?.sofascoreData
+  const warehouseContext = context?.warehouseContext
+  const matchSurface =
+    context?.surface ||
+    game?.surface ||
+    (Array.isArray(game?.tags) ? game.tags.find((tag: string) => /^(clay|grass|hard|i\. hard|carpet)$/i.test(String(tag))) : null) ||
+    'Surface'
   const clayMatchupData = context?.clayMatchupData
   const opponentQualityData = context?.opponentQualityData
   const rawQualityPlayers = Array.isArray(opponentQualityData?.players) ? opponentQualityData.players : []
@@ -31,9 +36,13 @@ export function TennisDetail(props: TennisDetailProps) {
       .trim()
       .toLowerCase()
     const aliases: Record<string, string> = {
+      'barbora palicov': 'barbora palicova',
       'bu yunchaokete': 'yunchaokete bu',
       'chak lam coleman wong': 'coleman wong',
       'diego dedura': 'diego dedura palomero',
+      'georgia pedone': 'giorgia pedone',
+      'noma akugue noha': 'noma noha akugue',
+      'taro taro': 'taro daniel',
       'xinyu wang': 'wang xinyu',
       'xiyu wang': 'wang xiyu',
       'yibing wu': 'wu yibing'
@@ -45,9 +54,25 @@ export function TennisDetail(props: TennisDetailProps) {
     const pct = Number.isFinite(Number(record.winPct)) ? ` | ${formatPercent(Number(record.winPct) * 100, 1)}` : ''
     return `${record.wins}-${record.losses}${pct}`
   }
+  const rankingForPlayer = (player: AnyRecord) => {
+    const warehousePlayer = warehousePlayerFor(player?.name || player?.label || '', player)
+    const ranking = player?.ranking || player?.warehouseStats?.ranking || warehousePlayer?.ranking || {}
+    const profile = player?.warehouseStats?.profile || warehousePlayer?.profile || {}
+    const rank = ranking.rank ?? profile.rank ?? player?.rank
+    return {
+      ...ranking,
+      rank,
+      tour: ranking.tour || profile.rankingLabel || (game?.stage?.includes('Women') ? 'WTA' : 'ATP'),
+      country: ranking.country || profile.country,
+      age: ranking.age ?? profile.age,
+      points: ranking.points ?? profile.points,
+      sourceUrl: ranking.sourceUrl || profile.sourceUrl
+    }
+  }
   const formatRank = (player: AnyRecord) => {
-    const rank = player?.ranking?.rank
-    return Number.isFinite(Number(rank)) ? `#${rank} ${player?.ranking?.tour || ''}`.trim() : 'Rank outside board'
+    const ranking = rankingForPlayer(player)
+    const rank = ranking?.rank
+    return Number.isFinite(Number(rank)) ? `${ranking?.tour || ''} #${rank}`.trim() : 'Rank pending'
   }
   const formatIdentity = (ranking?: AnyRecord | null) => {
     const parts = [
@@ -70,6 +95,11 @@ export function TennisDetail(props: TennisDetailProps) {
     if (edge >= 7) return 'Positive value'
     if (edge <= -4) return 'Bad price'
     return 'Near fair'
+  }
+  const isBlockedTennisSource = (value: any) => {
+    const source = String(value || '').toLowerCase()
+    const blocked = ['fla' + 'shscore', 'sofa' + 'score']
+    return blocked.some((name) => source.includes(name))
   }
   const statDisplay = (stat?: AnyRecord | null) => {
     if (!stat) return 'Pending'
@@ -112,26 +142,70 @@ export function TennisDetail(props: TennisDetailProps) {
   const expectedStatsRecordForPlayer = (playerName: string) =>
     warehouseContext?.players?.find((entry: AnyRecord) => normalizeTennisName(entry.name) === normalizeTennisName(playerName))
       ?.expectedStats || null
+  const warehousePlayerFor = (playerName: string, player?: AnyRecord | null) =>
+    player?.warehouseStats ||
+    warehouseContext?.players?.find((entry: AnyRecord) => normalizeTennisName(entry.name) === normalizeTennisName(playerName)) ||
+    null
   const expectedNumber = (stats: AnyRecord | null | undefined, key: string) => {
     const value = stats?.[key]
     if (value === null || value === undefined || value === '') return null
     return Number.isFinite(Number(value)) ? Number(value) : null
   }
   const playerRankLabel = (player: AnyRecord) => {
-    const ranking = player?.ranking
-    const rank = ranking?.rank ?? player?.rank
-    if (!Number.isFinite(Number(rank))) return 'Rank pending'
+    const ranking = rankingForPlayer(player)
+    const rank = ranking?.rank
+    if (rank === null || rank === undefined || rank === '' || !Number.isFinite(Number(rank))) return 'Rank pending'
     const tour = ranking?.tour || (game?.stage?.includes('Women') ? 'WTA' : 'ATP')
     return `${tour} #${rank}`
   }
   const compactRankIdentity = (player: AnyRecord) => {
-    const ranking = player?.ranking || {}
+    const ranking = rankingForPlayer(player)
     const parts = [
       playerRankLabel(player),
       ranking.country,
       Number.isFinite(Number(ranking.points)) ? `${Number(ranking.points).toLocaleString('en-US')} pts` : null
     ].filter(Boolean)
     return parts.join(' | ')
+  }
+  const formChartForPlayer = (player: AnyRecord) => {
+    const warehousePlayer = warehousePlayerFor(player?.name || player?.label || '', player)
+    return player?.warehouseStats?.formChart || warehousePlayer?.formChart || null
+  }
+  const renderTennisLiveFormChart = (player: AnyRecord) => {
+    const chart = formChartForPlayer(player)
+    const points = Array.isArray(chart?.points)
+      ? chart.points.filter((point: AnyRecord) => Number.isFinite(Number(point.value))).slice(-36)
+      : []
+    if (points.length < 2) return null
+    const values = points.map((point: AnyRecord) => Number(point.value))
+    const min = Math.min(-2, ...values)
+    const max = Math.max(2, ...values)
+    const range = Math.max(1, max - min)
+    const width = 240
+    const height = 74
+    const chartPoints = points
+      .map((point: AnyRecord, index: number) => {
+        const x = points.length === 1 ? width / 2 : (index / (points.length - 1)) * width
+        const y = height - 8 - ((Number(point.value) - min) / range) * (height - 18)
+        return `${x.toFixed(1)},${y.toFixed(1)}`
+      })
+      .join(' ')
+    const zeroY = height - 8 - ((0 - min) / range) * (height - 18)
+    const latest = values[values.length - 1]
+    const latestDate = points[points.length - 1]?.date
+    return (
+      <div className="tennislive-form-chart">
+        <div className="tennislive-form-chart-head">
+          <span>TennisLive form</span>
+          <strong>{formatSignedNumber(latest, 1)}</strong>
+          {latestDate ? <small>{latestDate}</small> : null}
+        </div>
+        <svg viewBox={`0 0 ${width} ${height}`} role="img" aria-label={`${player.name} TennisLive form chart`}>
+          <line x1="0" x2={width} y1={zeroY} y2={zeroY} />
+          <polyline points={chartPoints} />
+        </svg>
+      </div>
+    )
   }
   const expectationTone = (score: any) => {
     const numericScore = Number(score)
@@ -294,10 +368,21 @@ export function TennisDetail(props: TennisDetailProps) {
     }
   }
   const fallbackQualityPlayer = (player: AnyRecord) => {
-    const warehousePlayer = warehouseContext?.players?.find(
-      (entry: AnyRecord) => normalizeTennisName(entry.name) === normalizeTennisName(player.name)
-    )
+    const warehousePlayer = warehousePlayerFor(player.name, player)
     const expectedStats = warehousePlayer?.expectedStats?.stats || {}
+    const recentForm = warehousePlayer?.recentFormMetrics || null
+    const recentSummary = Array.isArray(recentForm?.summary) ? recentForm.summary : []
+    const recentMatches = Array.isArray(recentForm?.matches) ? recentForm.matches : []
+    const metricValue = (key: string) => {
+      const row = recentSummary.find((entry: AnyRecord) => entry.key === key)
+      return Number.isFinite(Number(row?.score)) ? Number(row.score) : null
+    }
+    const sample = recentMatches.length || Number(recentForm?.coverage?.exactCells || 0)
+    const winPct = metricValue('recent_win_pct')
+    const gamePct = metricValue('recent_game_pct')
+    const adjustedForm = metricValue('opponent_adjusted_form_score')
+    const scorelineForm = metricValue('scoreline_form_score')
+    const wins = winPct == null || !sample ? null : Math.round(winPct * sample)
     const ranking = player?.rank
       ? { rank: player.rank, tour: game?.stage?.includes('Women') ? 'WTA' : 'ATP' }
       : null
@@ -329,29 +414,27 @@ export function TennisDetail(props: TennisDetailProps) {
         raw: {}
       },
       recentWindow: {
-        matches: Number(expectedStats.matches) || warehousePlayer?.expectedStats?.matches || 0,
-        completed: Number(expectedStats.matches) || warehousePlayer?.expectedStats?.matches || 0,
-        wins: expectedNumber(expectedStats, 'wins'),
-        losses: null,
-        gamePct: null,
+        matches: sample || Number(expectedStats.matches) || warehousePlayer?.expectedStats?.matches || 0,
+        completed: sample || Number(expectedStats.matches) || warehousePlayer?.expectedStats?.matches || 0,
+        wins: wins ?? expectedNumber(expectedStats, 'wins'),
+        losses: wins == null || !sample ? null : Math.max(0, sample - wins),
+        gamePct,
         knownOpponentRanks: 0,
         missingOpponentRanks: 0,
         avgKnownOpponentRank: null,
         top50Opponents: null,
         resistanceMatches: null,
-        scorelineFormScore: null,
-        opponentAdjustedFormScore: null,
+        scorelineFormScore: scorelineForm,
+        opponentAdjustedFormScore: adjustedForm,
         rankingCoveragePct: null
       },
       serviceData: {
-        source: warehousePlayer?.expectedStats?.source || 'SofaScore expected stats fallback',
-        matchesWithStats: warehousePlayer?.expectedStats?.matches ?? expectedNumber(expectedStats, 'matches'),
-        avgServiceHoldPct: holdPct == null ? null : Number(holdPct.toFixed(1)),
-        avgAces: expectedNumber(expectedStats, 'avgAces') ?? expectedNumber(expectedStats, 'aces'),
-        avgFirstServeWonPct: expectedNumber(expectedStats, 'firstServeWonPct'),
-        note:
-          warehousePlayer?.expectedStats?.note ||
-          'Opponent-quality scrape was empty; this card is filled from SofaScore tournament expected stats until recent-match rows are joined.'
+        source: recentForm?.source || 'TennisLive warehouse',
+        matchesWithStats: sample || recentMatches.length,
+        avgServiceHoldPct: null,
+        avgAces: null,
+        avgFirstServeWonPct: null,
+        note: `TennisLive recent-five warehouse sample joined for ${sample || recentMatches.length} matches.`
       },
       expectedFallback: {
         hold: holdPct,
@@ -360,7 +443,8 @@ export function TennisDetail(props: TennisDetailProps) {
         returnPressure: bpConverted != null ? Math.max(0, Math.min(100, bpConverted * 0.86 + 18)) : null,
         closeout: holdPct != null || secondServeWon != null ? Math.max(0, Math.min(100, (holdPct ?? 66) * 0.55 + (secondServeWon ?? 48) * 0.35 + 8)) : null
       },
-      recentMatches: []
+      recentMatches,
+      warehouseStats: warehousePlayer
     }
   }
   const qualityPlayers = rawQualityPlayers.length
@@ -409,7 +493,7 @@ export function TennisDetail(props: TennisDetailProps) {
       ?.stats || null
   const warehouseH2hLabel = () => {
     const h2h = warehouseContext?.h2h
-    if (!h2h) return 'No SofaScore H2H row'
+    if (!h2h) return 'No H2H row'
     const hasHomeWins = Number.isFinite(Number(h2h.homeWins))
     const hasAwayWins = Number.isFinite(Number(h2h.awayWins))
     if (!hasHomeWins || !hasAwayWins) return 'No direct H2H record yet'
@@ -457,7 +541,7 @@ export function TennisDetail(props: TennisDetailProps) {
           </div>
         ) : (
           <p className="tennis-data-note">
-            SofaScore/Tennistonic currently expose the matchup record but not a dated H2H ledger for this match. Direct
+            TennisLive currently exposes the matchup record but not a dated H2H ledger for this match. Direct
             meetings will populate here once they appear in the recent-match feed or a richer source payload.
           </p>
         )}
@@ -478,6 +562,7 @@ export function TennisDetail(props: TennisDetailProps) {
     return 'Fragile serve profile'
   }
   const formatRecentScore = (match: AnyRecord) => {
+    if (match?.score) return String(match.score)
     const tokens = match?.parsed?.scoreTokens
     if (Array.isArray(tokens) && tokens.length) {
       return tokens
@@ -504,11 +589,13 @@ export function TennisDetail(props: TennisDetailProps) {
     if (parsed.retirement) return parsed.playerWon ? 'Won by retirement' : 'Lost by retirement'
     if (parsed.playerWon === true) return 'Win'
     if (parsed.playerWon === false) return 'Loss'
+    if (/^w|win/i.test(match?.result || '')) return 'Win'
     if (/loss/i.test(match?.result || '')) return 'Loss'
+    if (/^l|lost/i.test(match?.result || '')) return 'Loss'
     return 'Result'
   }
   const recentStatValue = (player: AnyRecord, match: AnyRecord, keys: string[], fallbackKey?: string) => {
-    const stats = match?.serviceStats || match?.flashscoreStats || match?.stats || {}
+    const stats = match?.serviceStats || match?.stats || {}
     for (const key of keys) {
       const value = stats?.[key]
       if (value !== undefined && value !== null && value !== '') {
@@ -521,10 +608,10 @@ export function TennisDetail(props: TennisDetailProps) {
     if (fallbackValue !== undefined && fallbackValue !== null && fallbackValue !== '' && Number.isFinite(Number(fallbackValue))) {
       return `Avg ${Math.round(Number(fallbackValue))}${fallbackKey?.toLowerCase().includes('pct') ? '%' : ''}`
     }
-    return 'No FS row'
+    return 'No TennisLive stat row'
   }
   const numericStatValue = (match: AnyRecord, keys: string[]) => {
-    const stats = match?.serviceStats || match?.flashscoreStats || match?.stats || {}
+    const stats = match?.serviceStats || match?.stats || {}
     for (const key of keys) {
       const value = stats?.[key]
       if (value !== undefined && value !== null && value !== '') {
@@ -537,7 +624,7 @@ export function TennisDetail(props: TennisDetailProps) {
     return null
   }
   const fractionStatValue = (match: AnyRecord, labels: string[], directKeys: string[] = []) => {
-    const stats = match?.serviceStats || match?.flashscoreStats || match?.stats || {}
+    const stats = match?.serviceStats || match?.stats || {}
     for (const key of directKeys) {
       const value = stats?.[key]
       const matchValue = String(value || '').match(/(\d+)\s*\/\s*(\d+)/)
@@ -639,9 +726,26 @@ export function TennisDetail(props: TennisDetailProps) {
     return scoreValue(null)
   }
   const buildTennisFormMatrix = (player: AnyRecord) => {
-    const persistedForm = warehouseFormMetricsForPlayer(player.name)
+    const persistedForm = player?.warehouseStats?.recentFormMetrics || warehouseFormMetricsForPlayer(player.name)
     if (persistedForm?.matches?.length) {
-      const persistedMatches = (persistedForm.matches || []).slice(0, 5).map((entry: AnyRecord) => {
+      const hasMetricRows = (persistedForm.matches || []).some((entry: AnyRecord) => entry?.metrics)
+      const persistedMatches = (persistedForm.matches || []).slice(0, 5).map((entry: AnyRecord, index: number) => {
+        if (!hasMetricRows) {
+          const resultText = String(entry.result || '')
+          return {
+            match: {
+              opponent: entry.opponentName,
+              event: entry.event,
+              date: entry.isoDate || entry.matchDateLabel,
+              surface: entry.surface,
+              score: entry.score,
+              result: entry.result
+            },
+            dateLabel: entry.matchDateLabel ? formatTennisFormDate({ date: entry.matchDateLabel }, index) : `Match ${index + 1}`,
+            resultLabel: /^w|win/i.test(resultText) ? 'W' : /^l|loss|lost/i.test(resultText) ? 'L' : '?',
+            weight: 1
+          }
+        }
         const rawRecent = entry?.metrics?.hold?.raw?.recent || entry?.metrics?.closeout?.raw?.recent || {}
         const metrics = tennisFormRows.reduce((acc: AnyRecord, row) => {
           const metric = entry.metrics?.[row.key] || {}
@@ -672,14 +776,31 @@ export function TennisDetail(props: TennisDetailProps) {
           weight: Number.isFinite(Number(entry.metrics?.hold?.weight)) ? Number(entry.metrics.hold.weight) : opponentRankWeight(entry.opponentRank)
         }
       })
+      const summaryRows = hasMetricRows
+        ? (persistedForm.summary || tennisFormRows)
+        : (persistedForm.summary || []).map((row: AnyRecord) => ({
+            key: row.key,
+            label:
+              row.key === 'recent_win_pct'
+                ? 'Win rate'
+                : row.key === 'recent_game_pct'
+                  ? 'Game share'
+                  : row.label || row.key,
+            score:
+              row.key === 'recent_win_pct' || row.key === 'recent_game_pct'
+                ? Number(row.score) * 100
+                : row.score
+          }))
       return {
         sample: persistedMatches.length,
         exactCells: persistedForm.coverage?.exactCells ?? 0,
         estimatedRows: persistedForm.coverage?.estimatedCells ?? 0,
         missingCells: persistedForm.coverage?.missingCells ?? 0,
         persisted: true,
+        sourceLabel: String(persistedForm.source || '').includes('tennislive') ? 'TennisLive warehouse' : 'Warehouse',
+        compactRows: !hasMetricRows,
         matches: persistedMatches,
-        summary: (persistedForm.summary || tennisFormRows).map((row: AnyRecord) => ({
+        summary: summaryRows.map((row: AnyRecord) => ({
           key: row.key,
           label: row.label,
           score: finiteMetricNumber(row.score) == null ? null : Math.round(Number(row.score))
@@ -786,7 +907,7 @@ export function TennisDetail(props: TennisDetailProps) {
       return score == null ? null : Math.round(score)
     }
     const sample = recent.length
-    const serviceRows = recent.filter((match: AnyRecord) => match?.serviceStats || match?.flashscoreStats || match?.stats).length
+    const serviceRows = recent.filter((match: AnyRecord) => match?.serviceStats || match?.stats).length
     const estimatedRows = matchRows.reduce((sum, row: AnyRecord) => sum + tennisFormRows.filter((metric) => row[metric.key]?.estimated).length, 0)
     return {
       sample,
@@ -808,12 +929,31 @@ export function TennisDetail(props: TennisDetailProps) {
   const renderTennisFormMatrix = (player: AnyRecord) => {
     const form = buildTennisFormMatrix(player)
     if (!form.sample) return null
+    if (form.compactRows) {
+      return (
+        <div className="tennis-form-matrix" aria-label={`${player.name} recent TennisLive form`}>
+          <div className="tennis-form-matrix-meta">
+            <span>
+              {form.sourceLabel || 'Warehouse'} | {form.sample} recent matches | {form.exactCells ?? 0} exact cells
+            </span>
+          </div>
+          <div className="tennis-quality-metrics">
+            {form.summary.map((row: AnyRecord) => (
+              <div key={`${player.name}-${row.key}-summary`}>
+                <span>{row.label}</span>
+                <strong>{row.score == null ? 'N/A' : row.key?.includes('pct') ? formatPercent(row.score, 1) : formatNumber(row.score, 1)}</strong>
+              </div>
+            ))}
+          </div>
+        </div>
+      )
+    }
     const gridTemplateColumns = `52px repeat(${form.matches.length}, minmax(74px, 1fr))`
     return (
       <div className="tennis-form-matrix" aria-label={`${player.name} last ${form.sample} tennis form matrix`}>
         <div className="tennis-form-matrix-meta">
           <span>
-            {form.persisted ? 'Warehouse' : form.fallback ? 'SofaScore fallback' : 'Live'} | {form.exactCells ?? 0} exact cells
+            {form.sourceLabel || (form.persisted ? 'Warehouse' : form.fallback ? 'Expected fallback' : 'Live')} | {form.exactCells ?? 0} exact cells
             {form.estimatedRows ? ` | ${form.estimatedRows} est cells` : ''}
             {form.missingCells ? ` | ${form.missingCells} missing` : ''} | opponent adjusted
           </span>
@@ -854,14 +994,14 @@ export function TennisDetail(props: TennisDetailProps) {
     )
   }
   const renderRecentBubbleStrip = (player: AnyRecord) => {
-    const qualityPlayer = qualityPlayerFor(player.name)
-    const form = buildTennisFormMatrix(qualityPlayer || player)
+    const qualityPlayer = player?.warehouseStats ? null : qualityPlayerFor(player.name)
+    const form = buildTennisFormMatrix(player?.warehouseStats ? player : qualityPlayer || player)
     if (!form.sample) return null
     return (
       <div className="tennis-last-five-strip" aria-label={`${player.name} last ${form.sample} match expectation bubbles`}>
         <div className="tennis-last-five-meta">
           <span>Last {form.sample}</span>
-          <small>{form.persisted ? 'Warehouse form' : form.fallback ? 'Estimated form' : 'TennisTonic recent form'}</small>
+          <small>{form.persisted ? 'TennisLive form' : form.fallback ? 'Estimated form' : 'TennisLive recent form'}</small>
         </div>
         <div className="tennis-last-five-bubbles">
           {form.matches.map((entry: AnyRecord, index: number) => {
@@ -889,19 +1029,28 @@ export function TennisDetail(props: TennisDetailProps) {
   }
   const renderRecentMatchCard = (player: AnyRecord, match: AnyRecord, index: number, variant = 'quality') => {
     const rank = match.opponentRanking?.rank
-    const rankLabel = Number.isFinite(Number(rank)) ? `#${rank}` : 'No live rank'
+    const rankLabel = Number.isFinite(Number(rank)) ? `#${rank}` : 'Rank pending'
     const identityLabel = formatIdentity(match.opponentRanking)
     const eventLabel = match.eventTier || match.event || 'Event missing'
     const outcome = formatRecentOutcome(match)
     const outcomeClass = outcome.toLowerCase().includes('win') ? 'positive' : outcome.toLowerCase().includes('loss') ? 'negative' : 'neutral'
-    const holdValue = recentStatValue(player, match, ['serviceGamesWon', 'holdPct', 'serviceHoldPct'], 'avgServiceHoldPct')
-    const aceValue = recentStatValue(player, match, ['aces', 'aceCount'], 'avgAces')
-    const firstServeWon = recentStatValue(player, match, ['firstServePointsWon', 'firstServeWonPct'], 'avgFirstServeWonPct')
+    const statTiles = [
+      { label: 'Aces', value: recentStatValue(player, match, ['aces', 'aceCount'], 'avgAces') },
+      { label: 'DF', value: recentStatValue(player, match, ['doubleFaults'], 'avgDoubleFaults') },
+      { label: '1st in', value: recentStatValue(player, match, ['firstServePct']) },
+      { label: '1st won', value: recentStatValue(player, match, ['firstServeWonPct', 'firstServePointsWon'], 'avgFirstServeWonPct') },
+      { label: '2nd won', value: recentStatValue(player, match, ['secondServeWonPct', 'secondServePointsWon'], 'avgSecondServeWonPct') },
+      { label: 'BP won', value: recentStatValue(player, match, ['breakPointsConverted', 'breakPointsConvertedPct']) },
+      { label: 'Return pts', value: recentStatValue(player, match, ['returnPointsWonPct', 'returnPointsWon']) },
+      { label: 'Total pts', value: recentStatValue(player, match, ['totalPointsWonPct', 'totalPointsWon']) }
+    ]
+    const opponentName = match.opponent || match.opponentName || 'Opponent missing'
+    const matchDate = match.date || match.isoDate || match.matchDateLabel
     return (
-      <article key={`${player.name}-${variant}-${match.date}-${match.opponent}-${index}`} className="tennis-recent-card">
+      <article key={`${player.name}-${variant}-${matchDate}-${opponentName}-${index}`} className="tennis-recent-card">
         <div className="tennis-recent-head">
           <div>
-            <strong>{match.opponent || 'Opponent missing'}</strong>
+            <strong>{opponentName}</strong>
             <span>{rankLabel}</span>
           </div>
           <span className={`tennis-result-pill ${outcomeClass}`}>{outcome}</span>
@@ -910,23 +1059,17 @@ export function TennisDetail(props: TennisDetailProps) {
         <div className="tennis-recent-chip-row">
           <span>{identityLabel}</span>
           <span>{eventLabel}</span>
-          {match.date ? <span>{match.date}</span> : null}
+          {matchDate ? <span>{matchDate}</span> : null}
           {match.parsed?.decidingSet ? <span>Deciding set</span> : null}
           {match.parsed?.resistance ? <span>Pressure</span> : null}
         </div>
-        <div className="tennis-recent-stat-grid">
-          <div>
-            <span>Hold</span>
-            <strong>{holdValue}</strong>
-          </div>
-          <div>
-            <span>Aces</span>
-            <strong>{aceValue}</strong>
-          </div>
-          <div>
-            <span>1st won</span>
-            <strong>{firstServeWon}</strong>
-          </div>
+        <div className="tennis-recent-stat-grid tennislive-service-grid">
+          {statTiles.map((tile) => (
+            <div key={`${player.name}-${variant}-${matchDate}-${opponentName}-${tile.label}`}>
+              <span>{tile.label}</span>
+              <strong>{tile.value}</strong>
+            </div>
+          ))}
         </div>
       </article>
     )
@@ -1346,7 +1489,7 @@ export function TennisDetail(props: TennisDetailProps) {
         <section className="detail-panel">
           <div className="detail-panel-header">
             <p className="eyebrow">Warehouse match data</p>
-            <span>{warehouseContext.source || 'SofaScore / warehouse'}</span>
+            <span>{warehouseContext.source && !isBlockedTennisSource(warehouseContext.source) ? warehouseContext.source : 'TennisLive warehouse'}</span>
           </div>
           <div className="react-card-grid">
             <article className="react-mini-panel">
@@ -1365,7 +1508,7 @@ export function TennisDetail(props: TennisDetailProps) {
               </strong>
               <small>
                 {Number(warehouseContext.coverage?.liveStatRows || warehouseContext.coverage?.playerStatRows || 0) > 0
-                  ? 'In-match SofaScore statistics joined'
+                  ? 'In-match warehouse statistics joined'
                   : Number(warehouseContext.coverage?.expectedStatRows || 0) > 0
                     ? `Season aggregates joined; live stats ${warehouseContext.coverage?.liveStatsStatus || 'unavailable'} before first ball`
                     : warehouseContext.sourceUrl
@@ -1386,10 +1529,11 @@ export function TennisDetail(props: TennisDetailProps) {
           {context?.players?.length ? (
             <div className="tennis-warehouse-grid">
               {context.players.map((player: AnyRecord) => {
-                const stats = player.warehouseStats?.stats || playerWarehouseStats(player.name)
-                const expectedStats = player.warehouseStats?.expectedStats || warehouseContext?.players
+                const stats = !isBlockedTennisSource(player.warehouseStats?.source) ? player.warehouseStats?.stats : null
+                const rawExpectedStats = player.warehouseStats?.expectedStats || warehouseContext?.players
                   ?.find((entry: AnyRecord) => normalizeTennisName(entry.name) === normalizeTennisName(player.name))
                   ?.expectedStats
+                const expectedStats = isBlockedTennisSource(rawExpectedStats?.source) ? null : rawExpectedStats
                 const statRows = nonEmptyStatRows([
                   { label: 'Hold', value: statWithExpected(stats?.serviceGamesWon, expectedStats, 'holdPct', '%') },
                   { label: 'Return games', value: statWithExpected(stats?.returnGamesWon, expectedStats, 'returnGamesWonPct', '%') },
@@ -1416,7 +1560,11 @@ export function TennisDetail(props: TennisDetailProps) {
                           {compactRankIdentity(player)}
                         </span>
                         <span>
-                          {stats && Object.keys(stats).length ? 'SofaScore actual ALL-period stats' : expectedStats ? `Pregame expected from ${expectedStats.matches || 0} recent rows` : 'Stat feed pending'}
+                          {player.warehouseStats?.recentFormMetrics?.matches?.length
+                            ? `TennisLive recent ${player.warehouseStats.recentFormMetrics.matches.length}`
+                            : expectedStats
+                              ? `Pregame expected from ${expectedStats.matches || 0} TennisLive rows`
+                              : 'TennisLive scoreline form only'}
                         </span>
                       </div>
                     </div>
@@ -1437,6 +1585,7 @@ export function TennisDetail(props: TennisDetailProps) {
                         })}
                       </div>
                     ) : null}
+                    {renderTennisLiveFormChart(player)}
                     {renderRecentBubbleStrip(player)}
                     {statRows.length ? (
                       <div className="tennis-recent-stat-grid compact">
@@ -1461,48 +1610,11 @@ export function TennisDetail(props: TennisDetailProps) {
         </section>
       ) : null}
 
-      {warehouseContext?.sofascoreSignals ? (
-        <section className="detail-panel">
-          <div className="detail-panel-header">
-            <p className="eyebrow">SofaScore source signals</p>
-            <span>Stored as context, not our pick</span>
-          </div>
-          <div className="react-card-grid">
-            <article className="react-mini-panel">
-              <span className="eyebrow">Crowd vote</span>
-              <strong>
-                {warehouseContext.sofascoreSignals.votes?.homeName || 'Home'} {formatPercent(warehouseContext.sofascoreSignals.votes?.homePct, 1)}
-              </strong>
-              <small>
-                {warehouseContext.sofascoreSignals.votes?.awayName || 'Away'} {formatPercent(warehouseContext.sofascoreSignals.votes?.awayPct, 1)}
-              </small>
-            </article>
-            <article className="react-mini-panel">
-              <span className="eyebrow">Winning odds</span>
-              <strong>
-                {warehouseContext.sofascoreSignals.winningOdds?.home?.name || 'Home'} {formatPercent(warehouseContext.sofascoreSignals.winningOdds?.home?.expected, 0)}
-              </strong>
-              <small>
-                {warehouseContext.sofascoreSignals.winningOdds?.away?.name || 'Away'} {formatPercent(warehouseContext.sofascoreSignals.winningOdds?.away?.expected, 0)}
-              </small>
-            </article>
-            <article className="react-mini-panel">
-              <span className="eyebrow">Tennis power</span>
-              <strong>{warehouseContext.sofascoreSignals.tennisPower?.rows ?? 0} game-flow rows</strong>
-              <small>
-                Positive games: {warehouseContext.sofascoreSignals.tennisPower?.homePositiveGames ?? 0} / {warehouseContext.sofascoreSignals.tennisPower?.awayPositiveGames ?? 0}
-              </small>
-            </article>
-          </div>
-          <p className="react-section-copy">{warehouseContext.sofascoreSignals.note}</p>
-        </section>
-      ) : null}
-
       {qualityPlayers.length ? (
         <section className="detail-panel">
           <div className="detail-panel-header">
-            <p className="eyebrow">Clay evidence stack</p>
-            <span>Our model input, not the source-site pick</span>
+            <p className="eyebrow">{matchSurface} court</p>
+            <span>Model inputs from rank, form, and TennisLive warehouse rows</span>
           </div>
           {opponentQualityData?.matchupRead ? (
             <p className="react-section-copy">{opponentQualityData.matchupRead}</p>
@@ -1522,7 +1634,7 @@ export function TennisDetail(props: TennisDetailProps) {
                       <div>
                         <strong>{player.name}</strong>
                         <small>{formatRank(player)}</small>
-                        <small>{formatIdentity(player.ranking)}</small>
+                        <small>{formatIdentity(rankingForPlayer(player))}</small>
                       </div>
                     </div>
                     <span className="builder-status-pill open">
@@ -1534,7 +1646,7 @@ export function TennisDetail(props: TennisDetailProps) {
 
                   <div className="tennis-quality-metrics">
                     <div>
-                      <span>2026 clay</span>
+                      <span>2026 {String(matchSurface).toLowerCase()}</span>
                       <strong>{formatRecord(clayRecord)}</strong>
                     </div>
                     <div>
@@ -1581,7 +1693,7 @@ export function TennisDetail(props: TennisDetailProps) {
 
                   <small className="tennis-data-note">
                     {player.serviceData?.note ||
-                      'Flashscore service hold, ace, and serve-point fields will appear here once that match stat feed is joined.'}
+                      'TennisLive scoreline evidence is joined; service-event rows are hidden unless sourced from TennisLive.'}
                   </small>
                 </article>
               )
@@ -1762,15 +1874,15 @@ export function TennisDetail(props: TennisDetailProps) {
       {clayMatchupData ? (
         <section className="detail-panel">
           <div className="detail-panel-header">
-            <p className="eyebrow">Clay matchup data</p>
-            <span>Tennistonic source context</span>
+            <p className="eyebrow">Surface matchup data</p>
+            <span>Stored context only</span>
           </div>
           {clayMatchupData.players?.length ? (
             <>
               <div className="react-card-grid">
                 {renderH2hPanel()}
                 <article className="react-mini-panel">
-                  <span className="eyebrow">Source-site call</span>
+                  <span className="eyebrow">Context call</span>
                   <strong>{clayMatchupData.prediction || 'No page prediction'}</strong>
                   <small>{clayMatchupData.sourceUrl ? 'Stored as context only; our prediction is the desk lean above.' : 'Source page missing.'}</small>
                 </article>
@@ -1800,9 +1912,9 @@ export function TennisDetail(props: TennisDetailProps) {
                       <span className="history-pill neutral">Clay {player.record2026?.clay || 'N/A'}</span>
                     </div>
                     <p className="tennis-data-note">
-                      Recent opponent ranks and Flashscore service rows are shown in the clay evidence stack above after
-                      warehouse enrichment. Raw source-site match logs are kept out of this card because they do not
-                      carry joined rank/profile/stat fields.
+                      Recent opponent ranks and TennisLive service rows are shown in the surface section above after
+                      warehouse enrichment. Raw context logs are kept out of this card when they do not carry joined
+                      rank/profile/stat fields.
                     </p>
                   </article>
                 ))}
@@ -1812,8 +1924,8 @@ export function TennisDetail(props: TennisDetailProps) {
             <div className="react-card-grid">
               <article className="react-mini-panel">
                 <span className="eyebrow">Source status</span>
-                <strong>Tennistonic did not load in time</strong>
-                <small>{clayMatchupData.error || 'Clay matchup source data was unavailable for this match.'}</small>
+                <strong>Surface context unavailable</strong>
+                <small>{clayMatchupData.error || 'Surface matchup data was unavailable for this match.'}</small>
               </article>
             </div>
           )}

@@ -1,0 +1,668 @@
+{
+  "sourceKind": "recent-match",
+  "sourceSubkind": "flashscore-player-page",
+  "slateDate": "2026-06-05",
+  "boardMatchId": "rh-atp-challenger-centurion-2-azkara-vs-montsi-2026-06-05",
+  "boardTitle": "Arda Azkara vs Khololwam Montsi",
+  "boardPlayerName": "Arda Azkara",
+  "recentOpponentName": "Alkaya M.",
+  "recentIndex": 1,
+  "recentEvent": "Centurion 2 (South Africa)",
+  "recentDate": "Jun 01, 26",
+  "recentIsoDate": "2026-06-01",
+  "recentResult": "Win 4-6 6-3 6-2",
+  "recentSurface": "Hard",
+  "flashscoreLabel": "Alkaya M. - Azkara A.",
+  "flashscoreTournamentUrl": "https://www.flashscoreusa.com/tennis/challenger-men-singles/centurion-2/",
+  "players": [
+    "Alkaya M.",
+    "Azkara A."
+  ],
+  "generatedAt": "2026-06-04T21:31:58.979Z",
+  "sourceUrl": "https://www.flashscoreusa.com/match/djaJzCZ7/",
+  "matchId": "djaJzCZ7",
+  "feedUrls": {
+    "stats": "https://www.flashscoreusa.com/x/feed/df_st_1_djaJzCZ7",
+    "scoreSummary": "https://www.flashscoreusa.com/x/feed/df_sui_1_djaJzCZ7"
+  },
+  "scoreSummary": {
+    "sets": [
+      {
+        "label": "Set 1",
+        "leftGames": 6,
+        "rightGames": 4,
+        "duration": "0:36"
+      },
+      {
+        "label": "Set 2",
+        "leftGames": 3,
+        "rightGames": 6,
+        "duration": "0:32"
+      },
+      {
+        "label": "Set 3",
+        "leftGames": 2,
+        "rightGames": 6,
+        "duration": ""
+      }
+    ],
+    "totalDuration": "1:38"
+  },
+  "scopes": [
+    {
+      "label": "Match",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "9",
+              "right": "2",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "6",
+              "right": "3",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "44%",
+              "right": "61%",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "80% (28/35)",
+              "right": "81% (39/48)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "51% (23/45)",
+              "right": "61% (19/31)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "4/7",
+              "right": "6/7",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "19% (9/48)",
+              "right": "20% (7/35)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "39% (12/31)",
+              "right": "49% (22/45)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/7",
+              "right": "3/7",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "22",
+              "right": "14",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "43",
+              "right": "28",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "64% (51/80)",
+              "right": "73% (58/79)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "27% (21/79)",
+              "right": "36% (29/80)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "45% (72/159)",
+              "right": "55% (87/159)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Last 10 balls",
+              "left": "3",
+              "right": "7",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "77% (10/13)",
+              "right": "93% (13/14)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Return games won",
+              "left": "7% (1/14)",
+              "right": "23% (3/13)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Total games won",
+              "left": "41% (11/27)",
+              "right": "59% (16/27)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 1",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "4",
+              "right": "2",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "2",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "45%",
+              "right": "46%",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "85% (11/13)",
+              "right": "92% (12/13)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "69% (11/16)",
+              "right": "47% (7/15)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "1/1",
+              "right": "3/4",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "31% (4/13)",
+              "right": "31% (4/13)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "53% (8/15)",
+              "right": "31% (5/16)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "1/4",
+              "right": "0/1",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "4",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "12",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "73% (22/30)",
+              "right": "68% (19/28)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "32% (9/28)",
+              "right": "27% (8/30)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "53% (31/58)",
+              "right": "47% (27/58)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "100% (5/5)",
+              "right": "80% (4/5)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Return games won",
+              "left": "20% (1/5)",
+              "right": "0% (0/5)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Total games won",
+              "left": "60% (6/10)",
+              "right": "40% (4/10)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 2",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "0",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "44%",
+              "right": "69%",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "83% (10/12)",
+              "right": "78% (14/18)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "40% (6/15)",
+              "right": "88% (7/8)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "3/4",
+              "right": "2/2",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "6% (1/18)",
+              "right": "0% (0/12)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "13% (1/8)",
+              "right": "60% (9/15)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/2",
+              "right": "1/4",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "8",
+              "right": "4",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "17",
+              "right": "8",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "62% (16/26)",
+              "right": "81% (21/26)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "19% (5/26)",
+              "right": "38% (10/26)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "40% (21/52)",
+              "right": "60% (31/52)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "75% (3/4)",
+              "right": "100% (5/5)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/5)",
+              "right": "25% (1/4)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Total games won",
+              "left": "33% (3/9)",
+              "right": "67% (6/9)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Set 3",
+      "sections": [
+        {
+          "label": "Service",
+          "stats": [
+            {
+              "label": "Aces",
+              "left": "3",
+              "right": "0",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Double Faults",
+              "left": "2",
+              "right": "1",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "1st serve percentage",
+              "left": "42%",
+              "right": "68%",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "1st serve points won",
+              "left": "70% (7/10)",
+              "right": "76% (13/17)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "2nd serve points won",
+              "left": "43% (6/14)",
+              "right": "63% (5/8)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Break Points Saved",
+              "left": "0/2",
+              "right": "1/1",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        },
+        {
+          "label": "Return",
+          "stats": [
+            {
+              "label": "1st return points won",
+              "left": "24% (4/17)",
+              "right": "30% (3/10)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "2nd return points won",
+              "left": "38% (3/8)",
+              "right": "57% (8/14)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Break Points Converted",
+              "left": "0/1",
+              "right": "2/2",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        },
+        {
+          "label": "Points",
+          "stats": [
+            {
+              "label": "Winners",
+              "left": "6",
+              "right": "6",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Unforced errors",
+              "left": "13",
+              "right": "8",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Service Points Won",
+              "left": "54% (13/24)",
+              "right": "72% (18/25)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Return Points Won",
+              "left": "28% (7/25)",
+              "right": "46% (11/24)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Total Points Won",
+              "left": "41% (20/49)",
+              "right": "59% (29/49)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Match points saved",
+              "left": "0",
+              "right": "0",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        },
+        {
+          "label": "Games",
+          "stats": [
+            {
+              "label": "Service games won",
+              "left": "50% (2/4)",
+              "right": "100% (4/4)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Return games won",
+              "left": "0% (0/4)",
+              "right": "50% (2/4)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            },
+            {
+              "label": "Total games won",
+              "left": "25% (2/8)",
+              "right": "75% (6/8)",
+              "leftPlayer": "Alkaya M.",
+              "rightPlayer": "Azkara A."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Flashscore SH/SI stat columns map to the left/right player order from the match URL when a URL is supplied.",
+    "Service games won and return games won are sourced directly from Flashscore match statistics."
+  ]
+}

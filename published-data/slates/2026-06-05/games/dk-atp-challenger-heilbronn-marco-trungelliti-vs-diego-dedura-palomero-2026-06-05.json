@@ -1,0 +1,1978 @@
+{
+  "id": "dk-atp-challenger-heilbronn-marco-trungelliti-vs-diego-dedura-palomero-2026-06-05",
+  "eventId": "34243304",
+  "league": "Tennis",
+  "start": "6:00 AM",
+  "startMinutes": 360,
+  "title": "Marco Trungelliti vs Diego Dedura-Palomero",
+  "stage": "ATP Challenger - Heilbronn | DraftKings board",
+  "spotlight": false,
+  "confidence": 63.4,
+  "volatility": 45,
+  "tags": [
+    "ATP Challenger",
+    "Clay",
+    "Prediction market",
+    "Warehouse joined",
+    "TennisLive recent five",
+    "Coinflip price"
+  ],
+  "matchup": [
+    {
+      "side": "Player 1",
+      "name": "Marco Trungelliti",
+      "displayName": "Marco Trungelliti",
+      "detail": "Clay | Live rank #81 | Argentina | age 36 | adj form 59"
+    },
+    {
+      "side": "Player 2",
+      "name": "Diego Dedura-Palomero",
+      "displayName": "Diego Dedura-Palomero",
+      "detail": "Clay | Rank not joined"
+    }
+  ],
+  "summary": "Our model pick: Marco Trungelliti. Marco Trungelliti has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
+  "factors": [
+    "Marco Trungelliti has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
+    "Model 63.4% vs DraftKings Sportsbook implied 73.6% (-10.2 pts).",
+    "Marco Trungelliti is the model side, but the fragile profile is on our pick: double-fault pressure (4.2 avg); 3 recent matches with serve instability. Avoid laying a bad price until early holds are confirmed.",
+    "Do not upgrade Marco Trungelliti unless they hold cleanly in the first service game and keep double faults down.",
+    "Best O/U angle: no play without a posted total.",
+    "May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.",
+    "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total."
+  ],
+  "lean": "Lean Marco Trungelliti; Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+  "swing": "Risk: best-of-five set extension and tiebreak variance.",
+  "swingFactor": "Risk: best-of-five set extension and tiebreak variance.",
+  "odds": {
+    "participantOrder": [
+      0,
+      1
+    ],
+    "markets": [
+      {
+        "label": "Model fair",
+        "book": "Tennis warehouse model",
+        "value": "Marco Trungelliti 63.4% / Diego Dedura-Palomero 39.3%"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "book": "DraftKings Sportsbook",
+        "value": "Marco Trungelliti -279 / Diego Dedura-Palomero +204"
+      },
+      {
+        "label": "1st set total games",
+        "book": "DraftKings Sportsbook",
+        "value": "9.5 1st-set games: Over +105 / Under -150"
+      }
+    ],
+    "note": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+    "provider": "DraftKings Sportsbook"
+  },
+  "tennisContext": {
+    "surface": "Clay",
+    "court": "ATP Challenger - Heilbronn",
+    "h2hLeader": "",
+    "fatigueFlag": false,
+    "liveDog": false,
+    "weaknessEdge": {
+      "edgeType": "Weakness warning",
+      "target": "Marco Trungelliti",
+      "scoreGap": -10,
+      "attackingSide": null,
+      "vulnerableSide": "Marco Trungelliti",
+      "gameFlow": "Marco Trungelliti is the model side, but the fragile profile is on our pick: double-fault pressure (4.2 avg); 3 recent matches with serve instability. Avoid laying a bad price until early holds are confirmed.",
+      "liveTrigger": "Do not upgrade Marco Trungelliti unless they hold cleanly in the first service game and keep double faults down.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+      "pick": {
+        "name": "Marco Trungelliti",
+        "serviceHoldPct": null,
+        "firstServeWonPct": 71,
+        "secondServeWonPct": 54,
+        "firstServePct": 64,
+        "avgAces": 5.8,
+        "avgDoubleFaults": 4.2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": 44,
+        "servicePointsWonPct": 64,
+        "weakServeMatches": 3,
+        "pressureMatches": null,
+        "matchesWithStats": 5,
+        "weaknessScore": 10,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [
+          "double-fault pressure (4.2 avg)",
+          "3 recent matches with serve instability"
+        ],
+        "strengths": [
+          "wins enough first-serve points (71%)"
+        ],
+        "gameFlowRead": "Marco Trungelliti can drop points quickly through double-fault pressure (4.2 avg) and 3 recent matches with serve instability."
+      },
+      "opponent": {
+        "name": "Diego Dedura-Palomero",
+        "serviceHoldPct": null,
+        "firstServeWonPct": null,
+        "secondServeWonPct": null,
+        "firstServePct": null,
+        "avgAces": null,
+        "avgDoubleFaults": null,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": null,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [],
+        "gameFlowRead": "Diego Dedura-Palomero has no major service weakness in the joined warehouse sample."
+      }
+    },
+    "warehouseContext": null,
+    "players": [
+      {
+        "name": "Marco Trungelliti",
+        "rank": 81,
+        "label": "Marco Trungelliti",
+        "form": null,
+        "boardPct": 63.4,
+        "decimalOdds": 1.358,
+        "marketLabel": "-279 / 73.6% implied",
+        "clayLine": "Clay | Live rank #81 | Argentina | age 36 | adj form 59",
+        "weakness": {
+          "name": "Marco Trungelliti",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 71,
+          "secondServeWonPct": 54,
+          "firstServePct": 64,
+          "avgAces": 5.8,
+          "avgDoubleFaults": 4.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 44,
+          "servicePointsWonPct": 64,
+          "weakServeMatches": 3,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 10,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "double-fault pressure (4.2 avg)",
+            "3 recent matches with serve instability"
+          ],
+          "strengths": [
+            "wins enough first-serve points (71%)"
+          ],
+          "gameFlowRead": "Marco Trungelliti can drop points quickly through double-fault pressure (4.2 avg) and 3 recent matches with serve instability."
+        },
+        "warehouseStats": {
+          "name": "Marco Trungelliti",
+          "profile": {
+            "source": "tennislive_player_profiles",
+            "name": "Marco Trungelliti",
+            "country": "Argentina",
+            "birthdate": "1990-01-31",
+            "age": 36,
+            "rank": 81,
+            "rankingLabel": "ATP ranking",
+            "topRank": 76,
+            "topRankDate": "2026-04-06",
+            "topRankPoints": 732,
+            "points": 731,
+            "prizeMoney": "2.156.637 $",
+            "matchesTotal": 1061,
+            "wins": 624,
+            "losses": 437,
+            "winPct": 58.81,
+            "sourceUrl": "https://www.tennislive.net/atp/marco-trungelliti/",
+            "capturedAt": "2026-06-04T23:40:11.067982+00:00"
+          },
+          "ranking": {
+            "rank": 81,
+            "points": 731,
+            "country": "Argentina",
+            "age": 36,
+            "tour": "ATP ranking",
+            "source": "tennislive_player_profiles",
+            "sourceUrl": "https://www.tennislive.net/atp/marco-trungelliti/",
+            "asOf": "2026-06-04T23:40:11.067982+00:00"
+          },
+          "formChart": {
+            "source": "tennislive_form_chart_points",
+            "sourceUrl": "https://www.tennislive.net/atp/match/mariano-navone-VS-marco-trungelliti/gonet-geneva-open-geneva-2026/",
+            "capturedAt": "2026-06-04T23:40:17.114025+00:00",
+            "points": [
+              {
+                "index": 0,
+                "sequenceIndex": 25,
+                "value": 5,
+                "label": "06.05.2026 (lost vs Zachary Svajda)",
+                "date": "2026-05-06",
+                "result": "lost",
+                "opponentName": "Zachary Svajda"
+              },
+              {
+                "index": 1,
+                "sequenceIndex": 26,
+                "value": 4,
+                "label": "17.05.2026 (lost vs Mariano Navone)",
+                "date": "2026-05-17",
+                "result": "lost",
+                "opponentName": "Mariano Navone"
+              },
+              {
+                "index": 2,
+                "sequenceIndex": 27,
+                "value": 5,
+                "label": "24.05.2026 (win vs Kyrian Jacquet)",
+                "date": "2026-05-24",
+                "result": "win",
+                "opponentName": "Kyrian Jacquet"
+              },
+              {
+                "index": 3,
+                "sequenceIndex": 28,
+                "value": 4,
+                "label": "27.05.2026 (lost vs Karen Khachanov)",
+                "date": "2026-05-27",
+                "result": "lost",
+                "opponentName": "Karen Khachanov"
+              },
+              {
+                "index": 4,
+                "sequenceIndex": 29,
+                "value": 5,
+                "label": "02.06.2026 (win vs Abedallah Shelbayh)",
+                "date": "2026-06-02",
+                "result": "win",
+                "opponentName": "Abedallah Shelbayh"
+              },
+              {
+                "index": 5,
+                "sequenceIndex": 30,
+                "value": 6,
+                "label": "04.06.2026 (win vs Yu Hsiou Hsu)",
+                "date": "2026-06-04",
+                "result": "win",
+                "opponentName": "Yu Hsiou Hsu"
+              },
+              {
+                "index": 6,
+                "sequenceIndex": 1,
+                "value": -1,
+                "label": "08.02.2026 (lost vs Hyeon Chung)",
+                "date": "2026-02-08",
+                "result": "lost",
+                "opponentName": "Hyeon Chung"
+              },
+              {
+                "index": 7,
+                "sequenceIndex": 2,
+                "value": -2,
+                "label": "14.02.2026 (lost vs Billy Harris)",
+                "date": "2026-02-14",
+                "result": "lost",
+                "opponentName": "Billy Harris"
+              },
+              {
+                "index": 8,
+                "sequenceIndex": 3,
+                "value": -3,
+                "label": "21.02.2026 (lost vs Luca Nardi)",
+                "date": "2026-02-21",
+                "result": "lost",
+                "opponentName": "Luca Nardi"
+              },
+              {
+                "index": 9,
+                "sequenceIndex": 4,
+                "value": -2,
+                "label": "02.03.2026 (win vs Garrett Johns)",
+                "date": "2026-03-02",
+                "result": "win",
+                "opponentName": "Garrett Johns"
+              },
+              {
+                "index": 10,
+                "sequenceIndex": 5,
+                "value": -1,
+                "label": "04.03.2026 (win vs Florent Bax)",
+                "date": "2026-03-04",
+                "result": "win",
+                "opponentName": "Florent Bax"
+              },
+              {
+                "index": 11,
+                "sequenceIndex": 6,
+                "value": -2,
+                "label": "05.03.2026 (lost vs Joel Schwaerzler)",
+                "date": "2026-03-05",
+                "result": "lost",
+                "opponentName": "Joel Schwaerzler"
+              },
+              {
+                "index": 12,
+                "sequenceIndex": 7,
+                "value": -1,
+                "label": "09.03.2026 (win vs Pol Martin Tiffon)",
+                "date": "2026-03-09",
+                "result": "win",
+                "opponentName": "Pol Martin Tiffon"
+              },
+              {
+                "index": 13,
+                "sequenceIndex": 8,
+                "value": 0,
+                "label": "11.03.2026 (win vs Jonas Forejtek)",
+                "date": "2026-03-11",
+                "result": "win",
+                "opponentName": "Jonáš Forejtek"
+              },
+              {
+                "index": 14,
+                "sequenceIndex": 9,
+                "value": 1,
+                "label": "13.03.2026 (win vs Max Houkes)",
+                "date": "2026-03-13",
+                "result": "win",
+                "opponentName": "Max Houkes"
+              },
+              {
+                "index": 15,
+                "sequenceIndex": 10,
+                "value": 2,
+                "label": "14.03.2026 (win vs Zdenek Kolar)",
+                "date": "2026-03-14",
+                "result": "win",
+                "opponentName": "Zdeněk Kolář"
+              },
+              {
+                "index": 16,
+                "sequenceIndex": 11,
+                "value": 3,
+                "label": "15.03.2026 (win vs Marco Cecchinato)",
+                "date": "2026-03-15",
+                "result": "win",
+                "opponentName": "Marco Cecchinato"
+              },
+              {
+                "index": 17,
+                "sequenceIndex": 12,
+                "value": 4,
+                "label": "29.03.2026 (win vs Hynek Barton)",
+                "date": "2026-03-29",
+                "result": "win",
+                "opponentName": "Hynek Bartoň"
+              },
+              {
+                "index": 18,
+                "sequenceIndex": 13,
+                "value": 5,
+                "label": "30.03.2026 (win vs Rei Sakamoto)",
+                "date": "2026-03-30",
+                "result": "win",
+                "opponentName": "Rei Sakamoto"
+              },
+              {
+                "index": 19,
+                "sequenceIndex": 14,
+                "value": 6,
+                "label": "31.03.2026 (win vs Henrique Rocha)",
+                "date": "2026-03-31",
+                "result": "win",
+                "opponentName": "Henrique Rocha"
+              },
+              {
+                "index": 20,
+                "sequenceIndex": 15,
+                "value": 7,
+                "label": "01.04.2026 (win vs Kamil Majchrzak)",
+                "date": "2026-04-01",
+                "result": "win",
+                "opponentName": "Kamil Majchrzak"
+              },
+              {
+                "index": 21,
+                "sequenceIndex": 16,
+                "value": 8,
+                "label": "03.04.2026 (win vs Corentin Moutet)",
+                "date": "2026-04-03",
+                "result": "win",
+                "opponentName": "Corentin Moutet"
+              },
+              {
+                "index": 22,
+                "sequenceIndex": 17,
+                "value": 9,
+                "label": "04.04.2026 (win vs Luciano Darderi)",
+                "date": "2026-04-04",
+                "result": "win",
+                "opponentName": "Luciano Darderi"
+              },
+              {
+                "index": 23,
+                "sequenceIndex": 18,
+                "value": 8,
+                "label": "05.04.2026 (lost vs Rafael Jodar)",
+                "date": "2026-04-05",
+                "result": "lost",
+                "opponentName": "Rafael Jodar"
+              },
+              {
+                "index": 24,
+                "sequenceIndex": 19,
+                "value": 9,
+                "label": "11.04.2026 (win vs Nicolai Budkov Kjaer)",
+                "date": "2026-04-11",
+                "result": "win",
+                "opponentName": "Nicolai Budkov Kjaer"
+              },
+              {
+                "index": 25,
+                "sequenceIndex": 20,
+                "value": 8,
+                "label": "12.04.2026 (lost vs Pedro Martinez Portero)",
+                "date": "2026-04-12",
+                "result": "lost",
+                "opponentName": "Pedro Martinez Portero"
+              },
+              {
+                "index": 26,
+                "sequenceIndex": 21,
+                "value": 7,
+                "label": "13.04.2026 (lost vs Hamad Medjedovic)",
+                "date": "2026-04-13",
+                "result": "lost",
+                "opponentName": "Hamad Medjedovic"
+              },
+              {
+                "index": 27,
+                "sequenceIndex": 22,
+                "value": 8,
+                "label": "20.04.2026 (win vs Borna Gojo)",
+                "date": "2026-04-20",
+                "result": "win",
+                "opponentName": "Borna Gojo"
+              },
+              {
+                "index": 28,
+                "sequenceIndex": 23,
+                "value": 7,
+                "label": "21.04.2026 (lost vs Daniel Merida Aguilar)",
+                "date": "2026-04-21",
+                "result": "lost",
+                "opponentName": "Daniel Merida Aguilar"
+              },
+              {
+                "index": 29,
+                "sequenceIndex": 24,
+                "value": 6,
+                "label": "23.04.2026 (lost vs Daniel Merida Aguilar)",
+                "date": "2026-04-23",
+                "result": "lost",
+                "opponentName": "Daniel Merida Aguilar"
+              },
+              {
+                "index": 30,
+                "sequenceIndex": 25,
+                "value": 5,
+                "label": "06.05.2026 (lost vs Zachary Svajda)",
+                "date": "2026-05-06",
+                "result": "lost",
+                "opponentName": "Zachary Svajda"
+              },
+              {
+                "index": 31,
+                "sequenceIndex": 26,
+                "value": 4,
+                "label": "17.05.2026 (lost vs Mariano Navone)",
+                "date": "2026-05-17",
+                "result": "lost",
+                "opponentName": "Mariano Navone"
+              },
+              {
+                "index": 32,
+                "sequenceIndex": 27,
+                "value": 5,
+                "label": "24.05.2026 (win vs Kyrian Jacquet)",
+                "date": "2026-05-24",
+                "result": "win",
+                "opponentName": "Kyrian Jacquet"
+              },
+              {
+                "index": 33,
+                "sequenceIndex": 28,
+                "value": 4,
+                "label": "27.05.2026 (lost vs Karen Khachanov)",
+                "date": "2026-05-27",
+                "result": "lost",
+                "opponentName": "Karen Khachanov"
+              },
+              {
+                "index": 34,
+                "sequenceIndex": 29,
+                "value": 5,
+                "label": "02.06.2026 (win vs Abedallah Shelbayh)",
+                "date": "2026-06-02",
+                "result": "win",
+                "opponentName": "Abedallah Shelbayh"
+              },
+              {
+                "index": 35,
+                "sequenceIndex": 30,
+                "value": 6,
+                "label": "04.06.2026 (win vs Yu Hsiou Hsu)",
+                "date": "2026-06-04",
+                "result": "win",
+                "opponentName": "Yu Hsiou Hsu"
+              }
+            ],
+            "latestValue": 6,
+            "minValue": -3,
+            "maxValue": 9
+          },
+          "expectedStats": {
+            "source": "TennisLive recent-match stats",
+            "matches": 5,
+            "note": "Pregame expected stats are averaged from TennisLive recent singles match stat tables.",
+            "stats": {
+              "aces": 5.8,
+              "avgAces": 5.8,
+              "doubleFaults": 4.2,
+              "avgDoubleFaults": 4.2,
+              "firstServePct": 63.6,
+              "firstServeWonPct": 70.6,
+              "secondServeWonPct": 53.8,
+              "returnPointsWonPct": 43.8,
+              "breakPointsConvertedPct": 51.1,
+              "breakPointsSaved": 0,
+              "breakPointsFaced": 0,
+              "breakPointsConverted": 24,
+              "breakPointsToConvert": 47,
+              "breakPointChancesPerMatch": 9.4
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpConverted": 24,
+                "bpChances": 47,
+                "bpConvertedPct": 51.1,
+                "bpChancesPerMatch": 9.4
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpConverted": 24,
+                "bpChances": 47,
+                "bpConvertedPct": 51.1,
+                "bpChancesPerMatch": 9.4
+              }
+            },
+            "sourceUrl": null
+          },
+          "recentFormMetrics": {
+            "playerName": "Marco Trungelliti",
+            "matches": [
+              {
+                "opponentName": "Yu Hsiou Hsu",
+                "event": "Bad Rappenau",
+                "matchDateLabel": "2026-06-04",
+                "isoDate": "2026-06-04",
+                "surface": "Clay",
+                "round": "2 nd round",
+                "result": "win",
+                "score": "3-6, 6-1, 6-1",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/marco-trungelliti-VS-yu-hsiou-hsu/bad-rappenau-challenger-2026/",
+                "matchId": "tl-2026-06-04-bad-rappenau-challenger-2026-marco-trungelliti-vs-yu-hsiou-hsu",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "47/71 (66%)",
+                      "made": 47,
+                      "attempts": 71,
+                      "pct": 66
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "33/47 (70%)",
+                      "made": 33,
+                      "attempts": 47,
+                      "pct": 70
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "9/24 (38%)",
+                      "made": 9,
+                      "attempts": 24,
+                      "pct": 38
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "6",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "7/12 (58%)",
+                      "made": 7,
+                      "attempts": 12,
+                      "pct": 58
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "5",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "81/139 (58%)",
+                      "made": 81,
+                      "attempts": 139,
+                      "pct": 58
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "39/68 (57%)",
+                      "made": 39,
+                      "attempts": 68,
+                      "pct": 57
+                    }
+                  ],
+                  "firstServePct": 66,
+                  "firstServeIn": "47/71 (66%)",
+                  "firstServeWonPct": 70,
+                  "firstServePointsWon": "33/47 (70%)",
+                  "secondServeWonPct": 38,
+                  "secondServePointsWon": "9/24 (38%)",
+                  "aces": 6,
+                  "breakPointsConverted": "7/12 (58%)",
+                  "breakPointsConvertedPct": 58,
+                  "doubleFaults": 5,
+                  "totalPointsWonPct": 58,
+                  "totalPointsWon": "81/139 (58%)",
+                  "returnPointsWonPct": 57,
+                  "returnPointsWon": "39/68 (57%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "47/71 (66%)",
+                      "made": 47,
+                      "attempts": 71,
+                      "pct": 66
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "33/47 (70%)",
+                      "made": 33,
+                      "attempts": 47,
+                      "pct": 70
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "9/24 (38%)",
+                      "made": 9,
+                      "attempts": 24,
+                      "pct": 38
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "6",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "7/12 (58%)",
+                      "made": 7,
+                      "attempts": 12,
+                      "pct": 58
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "5",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "81/139 (58%)",
+                      "made": 81,
+                      "attempts": 139,
+                      "pct": 58
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "39/68 (57%)",
+                      "made": 39,
+                      "attempts": 68,
+                      "pct": 57
+                    }
+                  ],
+                  "firstServePct": 66,
+                  "firstServeIn": "47/71 (66%)",
+                  "firstServeWonPct": 70,
+                  "firstServePointsWon": "33/47 (70%)",
+                  "secondServeWonPct": 38,
+                  "secondServePointsWon": "9/24 (38%)",
+                  "aces": 6,
+                  "breakPointsConverted": "7/12 (58%)",
+                  "breakPointsConvertedPct": 58,
+                  "doubleFaults": 5,
+                  "totalPointsWonPct": 58,
+                  "totalPointsWon": "81/139 (58%)",
+                  "returnPointsWonPct": 57,
+                  "returnPointsWon": "39/68 (57%)"
+                }
+              },
+              {
+                "opponentName": "Abedallah Shelbayh",
+                "event": "Bad Rappenau",
+                "matchDateLabel": "2026-06-02",
+                "isoDate": "2026-06-02",
+                "surface": "Clay",
+                "round": "1 st round",
+                "result": "win",
+                "score": "6-3, 6-4",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/marco-trungelliti-VS-abedallah-shelbayh/bad-rappenau-challenger-2026/",
+                "matchId": "tl-2026-06-02-bad-rappenau-challenger-2026-marco-trungelliti-vs-abedallah-shelbayh",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "43/54 (80%)",
+                      "made": 43,
+                      "attempts": 54,
+                      "pct": 80
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "34/43 (79%)",
+                      "made": 34,
+                      "attempts": 43,
+                      "pct": 79
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "8/11 (73%)",
+                      "made": 8,
+                      "attempts": 11,
+                      "pct": 73
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "8",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "2/6 (33%)",
+                      "made": 2,
+                      "attempts": 6,
+                      "pct": 33
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "69/119 (58%)",
+                      "made": 69,
+                      "attempts": 119,
+                      "pct": 58
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "27/65 (42%)",
+                      "made": 27,
+                      "attempts": 65,
+                      "pct": 42
+                    }
+                  ],
+                  "firstServePct": 80,
+                  "firstServeIn": "43/54 (80%)",
+                  "firstServeWonPct": 79,
+                  "firstServePointsWon": "34/43 (79%)",
+                  "secondServeWonPct": 73,
+                  "secondServePointsWon": "8/11 (73%)",
+                  "aces": 8,
+                  "breakPointsConverted": "2/6 (33%)",
+                  "breakPointsConvertedPct": 33,
+                  "doubleFaults": 0,
+                  "totalPointsWonPct": 58,
+                  "totalPointsWon": "69/119 (58%)",
+                  "returnPointsWonPct": 42,
+                  "returnPointsWon": "27/65 (42%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "43/54 (80%)",
+                      "made": 43,
+                      "attempts": 54,
+                      "pct": 80
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "34/43 (79%)",
+                      "made": 34,
+                      "attempts": 43,
+                      "pct": 79
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "8/11 (73%)",
+                      "made": 8,
+                      "attempts": 11,
+                      "pct": 73
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "8",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "2/6 (33%)",
+                      "made": 2,
+                      "attempts": 6,
+                      "pct": 33
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "69/119 (58%)",
+                      "made": 69,
+                      "attempts": 119,
+                      "pct": 58
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "27/65 (42%)",
+                      "made": 27,
+                      "attempts": 65,
+                      "pct": 42
+                    }
+                  ],
+                  "firstServePct": 80,
+                  "firstServeIn": "43/54 (80%)",
+                  "firstServeWonPct": 79,
+                  "firstServePointsWon": "34/43 (79%)",
+                  "secondServeWonPct": 73,
+                  "secondServePointsWon": "8/11 (73%)",
+                  "aces": 8,
+                  "breakPointsConverted": "2/6 (33%)",
+                  "breakPointsConvertedPct": 33,
+                  "doubleFaults": 0,
+                  "totalPointsWonPct": 58,
+                  "totalPointsWon": "69/119 (58%)",
+                  "returnPointsWonPct": 42,
+                  "returnPointsWon": "27/65 (42%)"
+                }
+              },
+              {
+                "opponentName": "Karen Khachanov",
+                "event": "Paris",
+                "matchDateLabel": "2026-05-27",
+                "isoDate": "2026-05-27",
+                "surface": "Clay",
+                "round": "2 nd round",
+                "result": "lost",
+                "score": "7-6 5 , 5-7, 6-1, 7-6 4",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/karen-khachanov-VS-marco-trungelliti/french-open-paris-2026/",
+                "matchId": "tl-2026-05-27-french-open-paris-2026-karen-khachanov-vs-marco-trungelliti",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "76/136 (56%)",
+                      "made": 76,
+                      "attempts": 136,
+                      "pct": 56
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "47/76 (62%)",
+                      "made": 47,
+                      "attempts": 76,
+                      "pct": 62
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "34/60 (57%)",
+                      "made": 34,
+                      "attempts": 60,
+                      "pct": 57
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "5",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "5/12 (42%)",
+                      "made": 5,
+                      "attempts": 12,
+                      "pct": 42
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "8",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "127/273 (47%)",
+                      "made": 127,
+                      "attempts": 273,
+                      "pct": 47
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "46/137 (34%)",
+                      "made": 46,
+                      "attempts": 137,
+                      "pct": 34
+                    }
+                  ],
+                  "firstServePct": 56,
+                  "firstServeIn": "76/136 (56%)",
+                  "firstServeWonPct": 62,
+                  "firstServePointsWon": "47/76 (62%)",
+                  "secondServeWonPct": 57,
+                  "secondServePointsWon": "34/60 (57%)",
+                  "aces": 5,
+                  "breakPointsConverted": "5/12 (42%)",
+                  "breakPointsConvertedPct": 42,
+                  "doubleFaults": 8,
+                  "totalPointsWonPct": 47,
+                  "totalPointsWon": "127/273 (47%)",
+                  "returnPointsWonPct": 34,
+                  "returnPointsWon": "46/137 (34%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "76/136 (56%)",
+                      "made": 76,
+                      "attempts": 136,
+                      "pct": 56
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "47/76 (62%)",
+                      "made": 47,
+                      "attempts": 76,
+                      "pct": 62
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "34/60 (57%)",
+                      "made": 34,
+                      "attempts": 60,
+                      "pct": 57
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "5",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "5/12 (42%)",
+                      "made": 5,
+                      "attempts": 12,
+                      "pct": 42
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "8",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "127/273 (47%)",
+                      "made": 127,
+                      "attempts": 273,
+                      "pct": 47
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "46/137 (34%)",
+                      "made": 46,
+                      "attempts": 137,
+                      "pct": 34
+                    }
+                  ],
+                  "firstServePct": 56,
+                  "firstServeIn": "76/136 (56%)",
+                  "firstServeWonPct": 62,
+                  "firstServePointsWon": "47/76 (62%)",
+                  "secondServeWonPct": 57,
+                  "secondServePointsWon": "34/60 (57%)",
+                  "aces": 5,
+                  "breakPointsConverted": "5/12 (42%)",
+                  "breakPointsConvertedPct": 42,
+                  "doubleFaults": 8,
+                  "totalPointsWonPct": 47,
+                  "totalPointsWon": "127/273 (47%)",
+                  "returnPointsWonPct": 34,
+                  "returnPointsWon": "46/137 (34%)"
+                }
+              },
+              {
+                "opponentName": "Kyrian Jacquet",
+                "event": "Paris",
+                "matchDateLabel": "2026-05-24",
+                "isoDate": "2026-05-24",
+                "surface": "Clay",
+                "round": "1 st round",
+                "result": "win",
+                "score": "6-4, 6-2, 6-2",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/marco-trungelliti-VS-kyrian-jacquet/french-open-paris-2026/",
+                "matchId": "tl-2026-05-24-french-open-paris-2026-marco-trungelliti-vs-kyrian-jacquet",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "43/70 (61%)",
+                      "made": 43,
+                      "attempts": 70,
+                      "pct": 61
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "33/43 (77%)",
+                      "made": 33,
+                      "attempts": 43,
+                      "pct": 77
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "17/27 (63%)",
+                      "made": 17,
+                      "attempts": 27,
+                      "pct": 63
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "6",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "6/8 (75%)",
+                      "made": 6,
+                      "attempts": 8,
+                      "pct": 75
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "93/157 (59%)",
+                      "made": 93,
+                      "attempts": 157,
+                      "pct": 59
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "43/87 (49%)",
+                      "made": 43,
+                      "attempts": 87,
+                      "pct": 49
+                    }
+                  ],
+                  "firstServePct": 61,
+                  "firstServeIn": "43/70 (61%)",
+                  "firstServeWonPct": 77,
+                  "firstServePointsWon": "33/43 (77%)",
+                  "secondServeWonPct": 63,
+                  "secondServePointsWon": "17/27 (63%)",
+                  "aces": 6,
+                  "breakPointsConverted": "6/8 (75%)",
+                  "breakPointsConvertedPct": 75,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 59,
+                  "totalPointsWon": "93/157 (59%)",
+                  "returnPointsWonPct": 49,
+                  "returnPointsWon": "43/87 (49%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "43/70 (61%)",
+                      "made": 43,
+                      "attempts": 70,
+                      "pct": 61
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "33/43 (77%)",
+                      "made": 33,
+                      "attempts": 43,
+                      "pct": 77
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "17/27 (63%)",
+                      "made": 17,
+                      "attempts": 27,
+                      "pct": 63
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "6",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "6/8 (75%)",
+                      "made": 6,
+                      "attempts": 8,
+                      "pct": 75
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "93/157 (59%)",
+                      "made": 93,
+                      "attempts": 157,
+                      "pct": 59
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "43/87 (49%)",
+                      "made": 43,
+                      "attempts": 87,
+                      "pct": 49
+                    }
+                  ],
+                  "firstServePct": 61,
+                  "firstServeIn": "43/70 (61%)",
+                  "firstServeWonPct": 77,
+                  "firstServePointsWon": "33/43 (77%)",
+                  "secondServeWonPct": 63,
+                  "secondServePointsWon": "17/27 (63%)",
+                  "aces": 6,
+                  "breakPointsConverted": "6/8 (75%)",
+                  "breakPointsConvertedPct": 75,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 59,
+                  "totalPointsWon": "93/157 (59%)",
+                  "returnPointsWonPct": 49,
+                  "returnPointsWon": "43/87 (49%)"
+                }
+              },
+              {
+                "opponentName": "Mariano Navone",
+                "event": "Geneva",
+                "matchDateLabel": "2026-05-17",
+                "isoDate": "2026-05-17",
+                "surface": "Clay",
+                "round": "1 st round",
+                "result": "lost",
+                "score": "5-7, 7-5, 6-1",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/mariano-navone-VS-marco-trungelliti/gonet-geneva-open-geneva-2026/",
+                "matchId": "tl-2026-05-17-gonet-geneva-open-geneva-2026-mariano-navone-vs-marco-trungelliti",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "77/140 (55%)",
+                      "made": 77,
+                      "attempts": 140,
+                      "pct": 55
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "50/77 (65%)",
+                      "made": 50,
+                      "attempts": 77,
+                      "pct": 65
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "24/63 (38%)",
+                      "made": 24,
+                      "attempts": 63,
+                      "pct": 38
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "4",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "4/9 (44%)",
+                      "made": 4,
+                      "attempts": 9,
+                      "pct": 44
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "6",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "107/230 (47%)",
+                      "made": 107,
+                      "attempts": 230,
+                      "pct": 47
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "33/90 (37%)",
+                      "made": 33,
+                      "attempts": 90,
+                      "pct": 37
+                    }
+                  ],
+                  "firstServePct": 55,
+                  "firstServeIn": "77/140 (55%)",
+                  "firstServeWonPct": 65,
+                  "firstServePointsWon": "50/77 (65%)",
+                  "secondServeWonPct": 38,
+                  "secondServePointsWon": "24/63 (38%)",
+                  "aces": 4,
+                  "breakPointsConverted": "4/9 (44%)",
+                  "breakPointsConvertedPct": 44,
+                  "doubleFaults": 6,
+                  "totalPointsWonPct": 47,
+                  "totalPointsWon": "107/230 (47%)",
+                  "returnPointsWonPct": 37,
+                  "returnPointsWon": "33/90 (37%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "77/140 (55%)",
+                      "made": 77,
+                      "attempts": 140,
+                      "pct": 55
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "50/77 (65%)",
+                      "made": 50,
+                      "attempts": 77,
+                      "pct": 65
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "24/63 (38%)",
+                      "made": 24,
+                      "attempts": 63,
+                      "pct": 38
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "4",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "4/9 (44%)",
+                      "made": 4,
+                      "attempts": 9,
+                      "pct": 44
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "6",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "107/230 (47%)",
+                      "made": 107,
+                      "attempts": 230,
+                      "pct": 47
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "33/90 (37%)",
+                      "made": 33,
+                      "attempts": 90,
+                      "pct": 37
+                    }
+                  ],
+                  "firstServePct": 55,
+                  "firstServeIn": "77/140 (55%)",
+                  "firstServeWonPct": 65,
+                  "firstServePointsWon": "50/77 (65%)",
+                  "secondServeWonPct": 38,
+                  "secondServePointsWon": "24/63 (38%)",
+                  "aces": 4,
+                  "breakPointsConverted": "4/9 (44%)",
+                  "breakPointsConvertedPct": 44,
+                  "doubleFaults": 6,
+                  "totalPointsWonPct": 47,
+                  "totalPointsWon": "107/230 (47%)",
+                  "returnPointsWonPct": 37,
+                  "returnPointsWon": "33/90 (37%)"
+                }
+              }
+            ],
+            "summary": [
+              {
+                "key": "opponent_adjusted_form_score",
+                "label": "Opponent-adjusted form",
+                "score": 59,
+                "source": "tennislive"
+              },
+              {
+                "key": "recent_win_pct",
+                "label": "Recent win pct",
+                "score": 0.6,
+                "source": "tennislive"
+              },
+              {
+                "key": "recent_game_pct",
+                "label": "Recent game pct",
+                "score": 0.568,
+                "source": "tennislive"
+              },
+              {
+                "key": "scoreline_form_score",
+                "label": "Scoreline form",
+                "score": 59,
+                "source": "tennislive"
+              }
+            ],
+            "coverage": {
+              "cells": 9,
+              "exactCells": 9,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots/recent_matches",
+            "sourceUrl": "https://www.tennislive.net/atp/marco-trungelliti/"
+          }
+        },
+        "record2026": "",
+        "notes": "Pick: model 63.4%",
+        "matchupNote": "Why pick: Marco Trungelliti has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase."
+      },
+      {
+        "name": "Diego Dedura-Palomero",
+        "rank": null,
+        "label": "Diego Dedura-Palomero",
+        "form": null,
+        "boardPct": 39.3,
+        "decimalOdds": 3.04,
+        "marketLabel": "+204 / 32.9% implied",
+        "clayLine": "Clay | Rank not joined",
+        "weakness": {
+          "name": "Diego Dedura-Palomero",
+          "serviceHoldPct": null,
+          "firstServeWonPct": null,
+          "secondServeWonPct": null,
+          "firstServePct": null,
+          "avgAces": null,
+          "avgDoubleFaults": null,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": null,
+          "servicePointsWonPct": null,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 0,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [],
+          "gameFlowRead": "Diego Dedura-Palomero has no major service weakness in the joined warehouse sample."
+        },
+        "warehouseStats": null,
+        "record2026": "",
+        "notes": "Opponent case: model 36.6%",
+        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
+      }
+    ],
+    "comparisonRows": [
+      {
+        "label": "Model pick",
+        "metric": "Fair win split",
+        "leftScore": 63.4,
+        "rightScore": 39.3,
+        "leftLabel": "Marco Trungelliti",
+        "rightLabel": "Diego Dedura-Palomero",
+        "winner": "Marco Trungelliti"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "metric": "Implied price",
+        "leftScore": 73.6,
+        "rightScore": 32.9,
+        "leftLabel": "Marco Trungelliti",
+        "rightLabel": "Diego Dedura-Palomero",
+        "winner": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+      },
+      {
+        "label": "Weakness",
+        "metric": "Lower is cleaner",
+        "leftScore": 10,
+        "rightScore": 0,
+        "leftLabel": "Marco Trungelliti",
+        "rightLabel": "Diego Dedura-Palomero",
+        "winner": "Weakness warning"
+      },
+      {
+        "label": "Volatility",
+        "metric": "Lower is cleaner",
+        "leftScore": 45,
+        "rightScore": 55,
+        "leftLabel": "Risk",
+        "rightLabel": "Stability",
+        "winner": "Stable enough"
+      }
+    ],
+    "predictionMarket": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T22:16:32.394Z",
+      "totalVolume": null,
+      "players": [
+        {
+          "name": "Marco Trungelliti",
+          "probabilityPct": 73.6,
+          "amount": null,
+          "americanOdds": -279,
+          "edgePct": -10.2,
+          "priceBand": "Low-payout favorite"
+        },
+        {
+          "name": "Diego Dedura-Palomero",
+          "probabilityPct": 32.9,
+          "amount": null,
+          "americanOdds": 204,
+          "edgePct": 6.4,
+          "priceBand": "Underdog"
+        }
+      ]
+    },
+    "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Diego Dedura-Palomero",
+        "line": null,
+        "americanOdds": 204,
+        "modelPct": 39.3,
+        "impliedPct": 32.9,
+        "edgePct": 6.4,
+        "evPer100": 19.5,
+        "netEvPer100": 17.5,
+        "grade": "Raw ML edge only",
+        "issue": "Picked side is overpriced; value board flips to Diego Dedura-Palomero because that side has the better posted-price edge.",
+        "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "No bet",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": null,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": 39.1,
+        "edgeGames": null,
+        "confidence": null,
+        "grade": "No direction",
+        "reason": "No posted match total captured."
+      },
+      {
+        "marketType": "Win a set",
+        "label": "Win a set %",
+        "selection": "Marco Trungelliti 71% / Diego Dedura-Palomero 59%",
+        "rows": [
+          {
+            "name": "Marco Trungelliti",
+            "confidence": 71,
+            "modelPct": 63.4,
+            "label": "Market favorite to win a set"
+          },
+          {
+            "name": "Diego Dedura-Palomero",
+            "confidence": 59,
+            "modelPct": 39.3,
+            "label": "Underdog set-win path needs early holds"
+          }
+        ],
+        "confidence": 71,
+        "grade": "Price required",
+        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Over 9.5",
+        "expectedGames": 9.9,
+        "confidence": 56,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "grade": "Thin value",
+        "reason": "Expected first-set games 9.9 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 50%, first-set sample N/A, 0 recent sets."
+      }
+    ],
+    "derivativeMarketCase": null,
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Diego Dedura-Palomero",
+        "americanOdds": 204,
+        "modelPct": 39.3,
+        "impliedPct": 32.9,
+        "edgePct": 6.4,
+        "evPer100": 19.5,
+        "netEvPer100": 17.5,
+        "feePer100": 2,
+        "valueIssue": "Picked side is overpriced; value board flips to Diego Dedura-Palomero because that side has the better posted-price edge.",
+        "valueGrade": "Raw ML edge only",
+        "betGrade": false
+      },
+      "spread": null,
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": 39.1,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Over 9.5",
+        "line": 9.5,
+        "americanOdds": 105,
+        "expectedGames": 9.9,
+        "confidence": 56,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "modelPct": 56,
+        "evPer100": 14.8,
+        "netEvPer100": 12.8,
+        "valueGrade": "Thin value",
+        "reason": "Expected first-set games 9.9 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 50%, first-set sample N/A, 0 recent sets.",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Marco Trungelliti",
+          "confidence": 71,
+          "modelPct": 63.4,
+          "label": "Market favorite to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Diego Dedura-Palomero",
+          "confidence": 59,
+          "modelPct": 39.3,
+          "label": "Underdog set-win path needs early holds",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "ensembleValueCase": null,
+    "projection": {
+      "projectedWinner": "Marco Trungelliti",
+      "projectedSetLine": "2-0/2-1 range",
+      "setWinProjections": [
+        {
+          "name": "Marco Trungelliti",
+          "confidence": 71,
+          "modelPct": 63.4,
+          "label": "Market favorite to win a set"
+        },
+        {
+          "name": "Diego Dedura-Palomero",
+          "confidence": 59,
+          "modelPct": 39.3,
+          "label": "Underdog set-win path needs early holds"
+        }
+      ],
+      "totalGames": null,
+      "straightSetsProbability": 55.4,
+      "upsetRisk": 36.6,
+      "overview": "Marco Trungelliti is the model side, but the fragile profile is on our pick: double-fault pressure (4.2 avg); 3 recent matches with serve instability. Avoid laying a bad price until early holds are confirmed.",
+      "fantasy": []
+    },
+    "tradePlan": {
+      "laneLabel": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+      "summary": "Marco Trungelliti is the model side, but the fragile profile is on our pick: double-fault pressure (4.2 avg); 3 recent matches with serve instability. Avoid laying a bad price until early holds are confirmed.",
+      "trigger": "Do not upgrade Marco Trungelliti unless they hold cleanly in the first service game and keep double faults down.",
+      "headline": "Weakness warning",
+      "exit": "No spread line",
+      "tone": "warning"
+    },
+    "derivativeMarkets": [
+      {
+        "label": "ML",
+        "value": "Marco Trungelliti -279; Model 63.4% vs DraftKings Sportsbook implied 73.6% (-10.2 pts).",
+        "lean": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+        "confidence": 63.4,
+        "marketType": "ML",
+        "selection": "Diego Dedura-Palomero",
+        "americanOdds": 204,
+        "modelPct": 39.3,
+        "impliedPct": 32.9,
+        "edgePct": 6.4,
+        "evPer100": 19.5,
+        "netEvPer100": 17.5,
+        "feePer100": 2,
+        "valueIssue": "Picked side is overpriced; value board flips to Diego Dedura-Palomero because that side has the better posted-price edge.",
+        "valueGrade": "Raw ML edge only",
+        "betGrade": false,
+        "tone": "warning",
+        "reason": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total."
+      },
+      {
+        "label": "Win a set",
+        "value": "No set-win price captured",
+        "lean": "Underdog set-win path needs early holds",
+        "confidence": 71,
+        "setWinRows": [],
+        "valueGrade": "Needs posted price",
+        "tone": "accent",
+        "reason": "Best-of-five gives the non-ML side more room to win a set; use this to separate upset risk from match-winner confidence."
+      },
+      {
+        "label": "Spread",
+        "value": "No primary game spread captured",
+        "lean": "No spread line",
+        "confidence": 57.4,
+        "tone": "neutral",
+        "reason": "Do not upgrade Marco Trungelliti unless they hold cleanly in the first service game and keep double faults down."
+      },
+      {
+        "label": "O/U",
+        "value": "No total captured",
+        "lean": "No bet",
+        "confidence": 55.4,
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": 39.1,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st set O/U",
+        "value": "Line 9.5",
+        "lean": "Over 9.5",
+        "confidence": 56,
+        "marketType": "First-set total",
+        "selection": "Over 9.5",
+        "line": 9.5,
+        "americanOdds": 105,
+        "expectedGames": 9.9,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "modelPct": 56,
+        "evPer100": 14.8,
+        "netEvPer100": 12.8,
+        "valueGrade": "Thin value",
+        "reason": "Expected first-set games 9.9 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 50%, first-set sample N/A, 0 recent sets.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st service game",
+        "value": "No first-service-game market captured",
+        "lean": "First-service-game prices",
+        "confidence": 63.4,
+        "firstServiceGameRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-service-game market captured."
+      },
+      {
+        "label": "First games",
+        "value": "No first-game prop market captured",
+        "lean": "First-game prop prices",
+        "confidence": 63.4,
+        "firstGamePropRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-games prop captured."
+      }
+    ],
+    "marketEconomics": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T22:16:32.394Z",
+      "eventUrl": "https://sportsbook.draftkings.com/leagues/tennis/challenger-heilbronn?event=34243304",
+      "deskName": "Marco Trungelliti",
+      "deskPricePct": 73.6,
+      "deskEdgePct": -10.2,
+      "priceAction": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+      "players": [
+        {
+          "name": "Marco Trungelliti",
+          "americanOdds": -279,
+          "impliedPct": 73.6,
+          "modelPct": 63.4,
+          "edgePct": -10.2,
+          "priceBand": "Low-payout favorite",
+          "grossProfitPct": 35.8,
+          "grossPayoutMultiple": 1.358,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 35.8,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        },
+        {
+          "name": "Diego Dedura-Palomero",
+          "americanOdds": 204,
+          "impliedPct": 32.9,
+          "modelPct": 39.3,
+          "edgePct": 6.4,
+          "priceBand": "Underdog",
+          "grossProfitPct": 204,
+          "grossPayoutMultiple": 3.04,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 204,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        }
+      ]
+    },
+    "clayMatchupData": null,
+    "opponentQualityData": null,
+    "researchLinks": [
+      {
+        "label": "ESPN scoreboard",
+        "url": "https://www.espn.com/tennis/scoreboard/_/date/20260605"
+      },
+      {
+        "label": "TennisLive",
+        "url": "https://www.tennislive.net/"
+      },
+      {
+        "label": "DraftKings Sportsbook event",
+        "url": "https://sportsbook.draftkings.com/leagues/tennis/challenger-heilbronn?event=34243304"
+      }
+    ],
+    "formEdgeName": "Marco Trungelliti"
+  },
+  "participants": [
+    {
+      "id": "dk-atp-challenger-heilbronn-marco-trungelliti-vs-diego-dedura-palomero-2026-06-05:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Marco Trungelliti",
+      "detail": "Clay | Live rank #81 | Argentina | age 36 | adj form 59",
+      "americanOdds": -279,
+      "americanLabel": "-279",
+      "decimalOdds": 1.3584229390681004,
+      "impliedProbability": 0.7361477572559367,
+      "impliedProbabilityLabel": "73.6%"
+    },
+    {
+      "id": "dk-atp-challenger-heilbronn-marco-trungelliti-vs-diego-dedura-palomero-2026-06-05:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Diego Dedura-Palomero",
+      "detail": "Clay | Rank not joined",
+      "americanOdds": 204,
+      "americanLabel": "+204",
+      "decimalOdds": 3.04,
+      "impliedProbability": 0.32894736842105265,
+      "impliedProbabilityLabel": "32.9%"
+    }
+  ],
+  "moneyline": {
+    "available": true,
+    "label": "DraftKings Sportsbook moneyline",
+    "provider": "DraftKings Sportsbook",
+    "participants": [
+      {
+        "id": "dk-atp-challenger-heilbronn-marco-trungelliti-vs-diego-dedura-palomero-2026-06-05:0",
+        "index": 0,
+        "role": "Player 1",
+        "name": "Marco Trungelliti",
+        "detail": "Clay | Live rank #81 | Argentina | age 36 | adj form 59",
+        "americanOdds": -279,
+        "americanLabel": "-279",
+        "decimalOdds": 1.3584229390681004,
+        "impliedProbability": 0.7361477572559367,
+        "impliedProbabilityLabel": "73.6%"
+      },
+      {
+        "id": "dk-atp-challenger-heilbronn-marco-trungelliti-vs-diego-dedura-palomero-2026-06-05:1",
+        "index": 1,
+        "role": "Player 2",
+        "name": "Diego Dedura-Palomero",
+        "detail": "Clay | Rank not joined",
+        "americanOdds": 204,
+        "americanLabel": "+204",
+        "decimalOdds": 3.04,
+        "impliedProbability": 0.32894736842105265,
+        "impliedProbabilityLabel": "32.9%"
+      }
+    ]
+  },
+  "analysis": {
+    "available": true,
+    "participantId": "dk-atp-challenger-heilbronn-marco-trungelliti-vs-diego-dedura-palomero-2026-06-05:0",
+    "participant": {
+      "id": "dk-atp-challenger-heilbronn-marco-trungelliti-vs-diego-dedura-palomero-2026-06-05:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Marco Trungelliti",
+      "detail": "Clay | Live rank #81 | Argentina | age 36 | adj form 59",
+      "americanOdds": -279,
+      "americanLabel": "-279",
+      "decimalOdds": 1.3584229390681004,
+      "impliedProbability": 0.7361477572559367,
+      "impliedProbabilityLabel": "73.6%"
+    },
+    "opponent": {
+      "id": "dk-atp-challenger-heilbronn-marco-trungelliti-vs-diego-dedura-palomero-2026-06-05:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Diego Dedura-Palomero",
+      "detail": "Clay | Rank not joined",
+      "americanOdds": 204,
+      "americanLabel": "+204",
+      "decimalOdds": 3.04,
+      "impliedProbability": 0.32894736842105265,
+      "impliedProbabilityLabel": "32.9%"
+    },
+    "lean": "Lean Marco Trungelliti; Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+    "rationale": "Our model pick: Marco Trungelliti. Marco Trungelliti has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
+    "confidence": 63.4,
+    "volatility": 45,
+    "recommendationScore": 52,
+    "tier": "Watch",
+    "sourceLabel": "DraftKings Sportsbook",
+    "modelEdge": null,
+    "modelEdgeLabel": "",
+    "marketProbability": 0.7361477572559367,
+    "marketProbabilityLabel": "73.6%",
+    "inputs": [],
+    "inputsUsed": 0,
+    "volatilityNotes": [],
+    "indicators": {}
+  },
+  "metadata": {
+    "participantCount": 2,
+    "participantNames": [
+      "Marco Trungelliti",
+      "Diego Dedura-Palomero"
+    ],
+    "tagCount": 6,
+    "hasSeriesBreakdown": false,
+    "hasMoneyline": true,
+    "hasAnalysisPick": true,
+    "hasStructuredInputs": false,
+    "hasPlayerProps": false,
+    "startMinutes": 360,
+    "spotlight": false,
+    "league": "Tennis",
+    "oddsProvider": "DraftKings Sportsbook"
+  }
+}

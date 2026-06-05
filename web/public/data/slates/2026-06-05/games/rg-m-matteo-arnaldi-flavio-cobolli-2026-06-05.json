@@ -1,0 +1,969 @@
+{
+  "id": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05",
+  "eventId": "175655",
+  "league": "Tennis",
+  "start": "10:00 AM",
+  "startMinutes": 600,
+  "title": "Matteo Arnaldi vs Flavio Cobolli",
+  "stage": "Roland Garros Men | Semifinal",
+  "spotlight": false,
+  "confidence": 66,
+  "volatility": 35,
+  "tags": [
+    "Clay",
+    "Roland Garros Men",
+    "ATP",
+    "Lean",
+    "No blind bet",
+    "Men more stable",
+    "Controlled volatility"
+  ],
+  "matchup": [
+    {
+      "side": "Player 1",
+      "name": "Matteo Arnaldi",
+      "displayName": "Matteo Arnaldi",
+      "detail": "Live rank #104 | Italy | age 25 | adj form 87"
+    },
+    {
+      "side": "Player 2",
+      "name": "Flavio Cobolli",
+      "displayName": "Flavio Cobolli",
+      "detail": "Live rank #14 | Italy | age 24 | adj form 88"
+    }
+  ],
+  "summary": "Our model pick: Flavio Cobolli. Opponent-adjusted recent form is basically even: Flavio Cobolli 88, Matteo Arnaldi 87. Lean, not a chase.",
+  "factors": [
+    "Opponent-adjusted recent form is basically even: Flavio Cobolli 88, Matteo Arnaldi 87. Lean, not a chase.",
+    "Model 66% vs DraftKings Sportsbook implied 72.9% (-6.9 pts).",
+    "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+    "Wait for a visible service-pressure split before entering.",
+    "Best O/U angle: no play without a posted total.",
+    "May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.",
+    "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total."
+  ],
+  "lean": "Lean Flavio Cobolli; Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+  "swing": "Risk: best-of-five set extension and tiebreak variance.",
+  "swingFactor": "Risk: best-of-five set extension and tiebreak variance.",
+  "odds": {
+    "participantOrder": [
+      0,
+      1
+    ],
+    "markets": [
+      {
+        "label": "Model fair",
+        "book": "Tennis warehouse model",
+        "value": "Matteo Arnaldi 34% / Flavio Cobolli 66%"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "book": "DraftKings Sportsbook",
+        "value": "Matteo Arnaldi +213 / Flavio Cobolli -269"
+      },
+      {
+        "label": "Game handicap",
+        "book": "DraftKings Sportsbook",
+        "value": "Flavio Cobolli -4.5 (-125)"
+      },
+      {
+        "label": "Total games",
+        "book": "DraftKings Sportsbook",
+        "value": "38.5 games: Over -115 / Under -125"
+      },
+      {
+        "label": "1st set total games",
+        "book": "DraftKings Sportsbook",
+        "value": "9.5 1st-set games: Over -135 / Under -105"
+      },
+      {
+        "label": "To win a set",
+        "book": "DraftKings Sportsbook",
+        "value": "Matteo Arnaldi Yes -300 / Matteo Arnaldi No +210 / Flavio Cobolli Yes -2000 / Flavio Cobolli No +900"
+      },
+      {
+        "label": "1st service game",
+        "book": "DraftKings Sportsbook",
+        "value": "16 first-service-game prices captured"
+      },
+      {
+        "label": "First games props",
+        "book": "DraftKings Sportsbook",
+        "value": "First 2 Game Props: All Holds of Serve -165 / First 2 Game Props: Break Point in Every Game +350 / First 2 Game Props: All Breaks of Serve +1100 / First 4 Game Props: All Holds of Serve +140 / First 4 Game Props: Break Point in Every Game +1800 / First 4 Game Props: All Breaks of Serve +8000"
+      }
+    ],
+    "note": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+    "provider": "DraftKings Sportsbook"
+  },
+  "tennisContext": {
+    "surface": "Clay",
+    "court": "Court Philippe-Chatrier",
+    "h2hLeader": "",
+    "fatigueFlag": false,
+    "liveDog": false,
+    "weaknessEdge": {
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 4,
+      "attackingSide": null,
+      "vulnerableSide": null,
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+      "pick": {
+        "name": "Flavio Cobolli",
+        "serviceHoldPct": null,
+        "firstServeWonPct": 77,
+        "secondServeWonPct": 59,
+        "firstServePct": 58,
+        "avgAces": 7.8,
+        "avgDoubleFaults": 2.4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": 41,
+        "servicePointsWonPct": 70,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 5,
+        "weaknessScore": 1,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "wins enough first-serve points (77%)",
+          "second serve holds up (59%)"
+        ],
+        "gameFlowRead": "Flavio Cobolli has no major service weakness in the joined warehouse sample."
+      },
+      "opponent": {
+        "name": "Matteo Arnaldi",
+        "serviceHoldPct": null,
+        "firstServeWonPct": 72,
+        "secondServeWonPct": 55,
+        "firstServePct": 63,
+        "avgAces": 8.8,
+        "avgDoubleFaults": 3.2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": 40,
+        "servicePointsWonPct": 66,
+        "weakServeMatches": 2,
+        "pressureMatches": null,
+        "matchesWithStats": 5,
+        "weaknessScore": 5,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [
+          "wins enough first-serve points (72%)",
+          "second serve holds up (55%)"
+        ],
+        "gameFlowRead": "Matteo Arnaldi has no major service weakness in the joined warehouse sample."
+      }
+    },
+    "warehouseContext": null,
+    "players": [
+      {
+        "name": "Matteo Arnaldi",
+        "rank": 104,
+        "label": "Matteo Arnaldi",
+        "form": null,
+        "boardPct": 34,
+        "decimalOdds": 3.13,
+        "marketLabel": "+213 / 31.9% implied",
+        "clayLine": "Live rank #104 | Italy | age 25 | adj form 87",
+        "weakness": {
+          "name": "Matteo Arnaldi",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 72,
+          "secondServeWonPct": 55,
+          "firstServePct": 63,
+          "avgAces": 8.8,
+          "avgDoubleFaults": 3.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 40,
+          "servicePointsWonPct": 66,
+          "weakServeMatches": 2,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 5,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "wins enough first-serve points (72%)",
+            "second serve holds up (55%)"
+          ],
+          "gameFlowRead": "Matteo Arnaldi has no major service weakness in the joined warehouse sample."
+        },
+        "warehouseStats": null,
+        "record2026": "",
+        "notes": "Opponent case: model 34%",
+        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
+      },
+      {
+        "name": "Flavio Cobolli",
+        "rank": 14,
+        "label": "Flavio Cobolli",
+        "form": null,
+        "boardPct": 66,
+        "decimalOdds": 1.372,
+        "marketLabel": "-269 / 72.9% implied",
+        "clayLine": "Live rank #14 | Italy | age 24 | adj form 88",
+        "weakness": {
+          "name": "Flavio Cobolli",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 77,
+          "secondServeWonPct": 59,
+          "firstServePct": 58,
+          "avgAces": 7.8,
+          "avgDoubleFaults": 2.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 41,
+          "servicePointsWonPct": 70,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 1,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "wins enough first-serve points (77%)",
+            "second serve holds up (59%)"
+          ],
+          "gameFlowRead": "Flavio Cobolli has no major service weakness in the joined warehouse sample."
+        },
+        "warehouseStats": null,
+        "record2026": "",
+        "notes": "Pick: model 66%",
+        "matchupNote": "Why pick: Opponent-adjusted recent form is basically even: Flavio Cobolli 88, Matteo Arnaldi 87. Lean, not a chase."
+      }
+    ],
+    "comparisonRows": [
+      {
+        "label": "Model pick",
+        "metric": "Fair win split",
+        "leftScore": 34,
+        "rightScore": 66,
+        "leftLabel": "Matteo Arnaldi",
+        "rightLabel": "Flavio Cobolli",
+        "winner": "Flavio Cobolli"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "metric": "Implied price",
+        "leftScore": 31.9,
+        "rightScore": 72.9,
+        "leftLabel": "Matteo Arnaldi",
+        "rightLabel": "Flavio Cobolli",
+        "winner": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+      },
+      {
+        "label": "Weakness",
+        "metric": "Lower is cleaner",
+        "leftScore": 5,
+        "rightScore": 1,
+        "leftLabel": "Matteo Arnaldi",
+        "rightLabel": "Flavio Cobolli",
+        "winner": "No clear weakness edge"
+      },
+      {
+        "label": "Volatility",
+        "metric": "Lower is cleaner",
+        "leftScore": 35,
+        "rightScore": 65,
+        "leftLabel": "Risk",
+        "rightLabel": "Stability",
+        "winner": "Stable enough"
+      }
+    ],
+    "predictionMarket": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T22:16:04.678Z",
+      "totalVolume": null,
+      "players": [
+        {
+          "name": "Matteo Arnaldi",
+          "probabilityPct": 31.9,
+          "amount": null,
+          "americanOdds": 213,
+          "edgePct": 2.1,
+          "priceBand": "Underdog"
+        },
+        {
+          "name": "Flavio Cobolli",
+          "probabilityPct": 72.9,
+          "amount": null,
+          "americanOdds": -269,
+          "edgePct": -6.9,
+          "priceBand": "Low-payout favorite"
+        }
+      ]
+    },
+    "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Matteo Arnaldi",
+        "line": null,
+        "americanOdds": 213,
+        "modelPct": 34,
+        "impliedPct": 31.9,
+        "edgePct": 2.1,
+        "evPer100": 6.4,
+        "netEvPer100": 4.4,
+        "grade": "Raw ML edge only",
+        "issue": "Picked side is overpriced; value board flips to Matteo Arnaldi because that side has the better posted-price edge.",
+        "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+      },
+      {
+        "marketType": "Game spread",
+        "label": "Game spread",
+        "selection": "Flavio Cobolli",
+        "line": -4.5,
+        "americanOdds": -125,
+        "modelPct": 60,
+        "impliedPct": 55.6,
+        "edgePct": 4.4,
+        "evPer100": 8,
+        "netEvPer100": 6,
+        "expectedGames": null,
+        "edgeGames": null,
+        "confidence": 60,
+        "grade": "Raw positive EV",
+        "reason": "Spread is number-dependent; verify first service cycle"
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "Under",
+        "line": 38.5,
+        "americanOdds": -125,
+        "modelPct": 56,
+        "impliedPct": 55.6,
+        "edgePct": 0.4,
+        "evPer100": 0.8,
+        "netEvPer100": -1.2,
+        "expectedGames": 37.3,
+        "edgeGames": null,
+        "confidence": 56,
+        "grade": "Near fair",
+        "reason": "Expected match games 37.3 vs DraftKings Sportsbook 38.5; Under. hold avg N/A, BP saved N/A, BP converted 44%, first-set sample N/A, 0 recent sets."
+      },
+      {
+        "marketType": "Win a set",
+        "label": "Win a set %",
+        "selection": "Matteo Arnaldi 63% / Flavio Cobolli 89%",
+        "rows": [
+          {
+            "name": "Matteo Arnaldi",
+            "confidence": 63,
+            "modelPct": 34,
+            "label": "Needs early hold pressure"
+          },
+          {
+            "name": "Flavio Cobolli",
+            "confidence": 89,
+            "modelPct": 66,
+            "label": "Strong set-win path"
+          }
+        ],
+        "confidence": 89,
+        "grade": "Price required",
+        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Over 9.5",
+        "expectedGames": 10.5,
+        "confidence": 63,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "grade": "Actionable live watch",
+        "reason": "Expected first-set games 10.5 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 44%, first-set sample N/A, 0 recent sets."
+      }
+    ],
+    "derivativeMarketCase": null,
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Matteo Arnaldi",
+        "americanOdds": 213,
+        "modelPct": 34,
+        "impliedPct": 31.9,
+        "edgePct": 2.1,
+        "evPer100": 6.4,
+        "netEvPer100": 4.4,
+        "feePer100": 2,
+        "valueIssue": "Picked side is overpriced; value board flips to Matteo Arnaldi because that side has the better posted-price edge.",
+        "valueGrade": "Raw ML edge only",
+        "betGrade": false
+      },
+      "spread": {
+        "marketType": "Spread",
+        "selection": "Flavio Cobolli",
+        "line": -4.5,
+        "americanOdds": -125,
+        "modelPct": 60,
+        "impliedPct": 55.6,
+        "edgePct": 4.4,
+        "evPer100": 8,
+        "netEvPer100": 6,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Raw positive EV",
+        "betGrade": false
+      },
+      "total": {
+        "marketType": "Total",
+        "selection": "Under",
+        "line": 38.5,
+        "americanOdds": -125,
+        "expectedGames": 37.3,
+        "modelPct": 56,
+        "impliedPct": 55.6,
+        "edgePct": 0.4,
+        "evPer100": 0.8,
+        "netEvPer100": -1.2,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
+        "valueGrade": "Near fair",
+        "reason": "Expected match games 37.3 vs DraftKings Sportsbook 38.5; Under. hold avg N/A, BP saved N/A, BP converted 44%, first-set sample N/A, 0 recent sets.",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Over 9.5",
+        "line": 9.5,
+        "americanOdds": -135,
+        "expectedGames": 10.5,
+        "confidence": 63,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "modelPct": 63,
+        "evPer100": 9.7,
+        "netEvPer100": 7.7,
+        "valueGrade": "Actionable live watch",
+        "reason": "Expected first-set games 10.5 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 44%, first-set sample N/A, 0 recent sets.",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Matteo Arnaldi",
+          "confidence": 63,
+          "modelPct": 34,
+          "label": "Needs early hold pressure",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Flavio Cobolli",
+          "confidence": 89,
+          "modelPct": 66,
+          "label": "Strong set-win path",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "ensembleValueCase": null,
+    "projection": {
+      "projectedWinner": "Flavio Cobolli",
+      "projectedSetLine": "3-1/3-2 range",
+      "setWinProjections": [
+        {
+          "name": "Matteo Arnaldi",
+          "confidence": 63,
+          "modelPct": 34,
+          "label": "Needs early hold pressure"
+        },
+        {
+          "name": "Flavio Cobolli",
+          "confidence": 89,
+          "modelPct": 66,
+          "label": "Strong set-win path"
+        }
+      ],
+      "totalGames": 38.5,
+      "straightSetsProbability": null,
+      "upsetRisk": 34,
+      "overview": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "fantasy": []
+    },
+    "tradePlan": {
+      "laneLabel": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+      "summary": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "trigger": "Wait for a visible service-pressure split before entering.",
+      "headline": "No clear weakness edge",
+      "exit": "Spread is number-dependent; verify first service cycle",
+      "tone": "warning"
+    },
+    "derivativeMarkets": [
+      {
+        "label": "ML",
+        "value": "Flavio Cobolli -269; Model 66% vs DraftKings Sportsbook implied 72.9% (-6.9 pts).",
+        "lean": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+        "confidence": 66,
+        "marketType": "ML",
+        "selection": "Matteo Arnaldi",
+        "americanOdds": 213,
+        "modelPct": 34,
+        "impliedPct": 31.9,
+        "edgePct": 2.1,
+        "evPer100": 6.4,
+        "netEvPer100": 4.4,
+        "feePer100": 2,
+        "valueIssue": "Picked side is overpriced; value board flips to Matteo Arnaldi because that side has the better posted-price edge.",
+        "valueGrade": "Raw ML edge only",
+        "betGrade": false,
+        "tone": "warning",
+        "reason": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total."
+      },
+      {
+        "label": "Win a set",
+        "value": "Matteo Arnaldi Yes -300 / Matteo Arnaldi No +210 / Flavio Cobolli Yes -2000 / Flavio Cobolli No +900",
+        "lean": "DraftKings Sportsbook set-win prices captured",
+        "confidence": 89,
+        "setWinRows": [
+          {
+            "market": "Player to Win at Least One Set",
+            "player": "Matteo Arnaldi",
+            "selection": "Matteo Arnaldi Yes",
+            "odds": -300
+          },
+          {
+            "market": "Player to Win at Least One Set",
+            "player": "Matteo Arnaldi",
+            "selection": "Matteo Arnaldi No",
+            "odds": 210
+          },
+          {
+            "market": "Player to Win at Least One Set",
+            "player": "Flavio Cobolli",
+            "selection": "Flavio Cobolli Yes",
+            "odds": -2000
+          },
+          {
+            "market": "Player to Win at Least One Set",
+            "player": "Flavio Cobolli",
+            "selection": "Flavio Cobolli No",
+            "odds": 900
+          }
+        ],
+        "valueGrade": "Priced set-win market",
+        "tone": "accent",
+        "reason": "DraftKings Sportsbook to-win-a-set prices are captured for this event."
+      },
+      {
+        "label": "Spread",
+        "value": "Flavio Cobolli -4.5 (-125)",
+        "lean": "Spread is number-dependent; verify first service cycle",
+        "confidence": 60,
+        "marketType": "Spread",
+        "selection": "Flavio Cobolli",
+        "line": -4.5,
+        "americanOdds": -125,
+        "modelPct": 60,
+        "impliedPct": 55.6,
+        "edgePct": 4.4,
+        "evPer100": 8,
+        "netEvPer100": 6,
+        "feePer100": 2,
+        "valueIssue": "Spread watch only",
+        "valueGrade": "Raw positive EV",
+        "betGrade": false,
+        "tone": "neutral",
+        "reason": "Wait for a visible service-pressure split before entering."
+      },
+      {
+        "label": "O/U",
+        "value": "38.5 games: Over -115 / Under -125",
+        "lean": "Under",
+        "confidence": 56,
+        "marketType": "Total",
+        "selection": "Under",
+        "line": 38.5,
+        "americanOdds": -125,
+        "expectedGames": 37.3,
+        "modelPct": 56,
+        "impliedPct": 55.6,
+        "edgePct": 0.4,
+        "evPer100": 0.8,
+        "netEvPer100": -1.2,
+        "feePer100": 2,
+        "valueIssue": "Total watch only",
+        "valueGrade": "Near fair",
+        "reason": "Expected match games 37.3 vs DraftKings Sportsbook 38.5; Under. hold avg N/A, BP saved N/A, BP converted 44%, first-set sample N/A, 0 recent sets.",
+        "betGrade": false,
+        "tone": "accent"
+      },
+      {
+        "label": "1st set O/U",
+        "value": "Line 9.5",
+        "lean": "Over 9.5",
+        "confidence": 63,
+        "marketType": "First-set total",
+        "selection": "Over 9.5",
+        "line": 9.5,
+        "americanOdds": -135,
+        "expectedGames": 10.5,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "modelPct": 63,
+        "evPer100": 9.7,
+        "netEvPer100": 7.7,
+        "valueGrade": "Actionable live watch",
+        "reason": "Expected first-set games 10.5 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 44%, first-set sample N/A, 0 recent sets.",
+        "betGrade": false,
+        "tone": "accent"
+      },
+      {
+        "label": "1st service game",
+        "value": "16 first-service-game prices captured",
+        "lean": "First-service-game prices",
+        "confidence": 66,
+        "firstServiceGameRows": [
+          {
+            "player": "Matteo Arnaldi",
+            "market": "Matteo Arnaldi’s 1st Service Game - Winner",
+            "side": "Matteo Arnaldi",
+            "line": null,
+            "odds": -275
+          },
+          {
+            "player": "Matteo Arnaldi",
+            "market": "Matteo Arnaldi’s 1st Service Game - Winner",
+            "side": "Flavio Cobolli",
+            "line": null,
+            "odds": 185
+          },
+          {
+            "player": "Flavio Cobolli",
+            "market": "Flavio Cobolli’s 1st Service Game - Winner",
+            "side": "Matteo Arnaldi",
+            "line": null,
+            "odds": 300
+          },
+          {
+            "player": "Flavio Cobolli",
+            "market": "Flavio Cobolli’s 1st Service Game - Winner",
+            "side": "Flavio Cobolli",
+            "line": null,
+            "odds": -500
+          },
+          {
+            "player": "Matteo Arnaldi",
+            "market": "Matteo Arnaldi’s 1st Service Game - 1st Point",
+            "side": "Matteo Arnaldi",
+            "line": null,
+            "odds": -165
+          },
+          {
+            "player": "Matteo Arnaldi",
+            "market": "Matteo Arnaldi’s 1st Service Game - 1st Point",
+            "side": "Flavio Cobolli",
+            "line": null,
+            "odds": 120
+          },
+          {
+            "player": "Flavio Cobolli",
+            "market": "Flavio Cobolli’s 1st Service Game - 1st Point",
+            "side": "Matteo Arnaldi",
+            "line": null,
+            "odds": 140
+          },
+          {
+            "player": "Flavio Cobolli",
+            "market": "Flavio Cobolli’s 1st Service Game - 1st Point",
+            "side": "Flavio Cobolli",
+            "line": null,
+            "odds": -200
+          },
+          {
+            "player": "Matteo Arnaldi",
+            "market": "Matteo Arnaldi's 1st Service Game - Win to Love or 15",
+            "side": "Yes",
+            "line": null,
+            "odds": 195
+          },
+          {
+            "player": "Matteo Arnaldi",
+            "market": "Matteo Arnaldi's 1st Service Game - Win to Love or 15",
+            "side": "No",
+            "line": null,
+            "odds": -275
+          },
+          {
+            "player": "Flavio Cobolli",
+            "market": "Flavio Cobolli's 1st Service Game - Win to Love or 15",
+            "side": "Yes",
+            "line": null,
+            "odds": 140
+          },
+          {
+            "player": "Flavio Cobolli",
+            "market": "Flavio Cobolli's 1st Service Game - Win to Love or 15",
+            "side": "No",
+            "line": null,
+            "odds": -200
+          },
+          {
+            "player": "Matteo Arnaldi",
+            "market": "Matteo Arnaldi's 1st Service Game - Win to Love, 15 or 30",
+            "side": "Yes",
+            "line": null,
+            "odds": -115
+          },
+          {
+            "player": "Matteo Arnaldi",
+            "market": "Matteo Arnaldi's 1st Service Game - Win to Love, 15 or 30",
+            "side": "No",
+            "line": null,
+            "odds": -120
+          },
+          {
+            "player": "Flavio Cobolli",
+            "market": "Flavio Cobolli's 1st Service Game - Win to Love, 15 or 30",
+            "side": "Yes",
+            "line": null,
+            "odds": -165
+          },
+          {
+            "player": "Flavio Cobolli",
+            "market": "Flavio Cobolli's 1st Service Game - Win to Love, 15 or 30",
+            "side": "No",
+            "line": null,
+            "odds": 120
+          }
+        ],
+        "tone": "neutral",
+        "reason": "DraftKings Sportsbook exposes first-service-game prices for this event."
+      },
+      {
+        "label": "First games",
+        "value": "First 2 Game Props: All Holds of Serve -165 / First 2 Game Props: Break Point in Every Game +350 / First 2 Game Props: All Breaks of Serve +1100 / First 4 Game Props: All Holds of Serve +140 / First 4 Game Props: Break Point in Every Game +1800 / First 4 Game Props: All Breaks of Serve +8000",
+        "lean": "First-game prop prices",
+        "confidence": 66,
+        "firstGamePropRows": [
+          {
+            "market": "First 2 Game Props",
+            "selection": "All Holds of Serve",
+            "odds": -165
+          },
+          {
+            "market": "First 2 Game Props",
+            "selection": "Break Point in Every Game",
+            "odds": 350
+          },
+          {
+            "market": "First 2 Game Props",
+            "selection": "All Breaks of Serve",
+            "odds": 1100
+          },
+          {
+            "market": "First 4 Game Props",
+            "selection": "All Holds of Serve",
+            "odds": 140
+          },
+          {
+            "market": "First 4 Game Props",
+            "selection": "Break Point in Every Game",
+            "odds": 1800
+          },
+          {
+            "market": "First 4 Game Props",
+            "selection": "All Breaks of Serve",
+            "odds": 8000
+          }
+        ],
+        "tone": "neutral",
+        "reason": "DraftKings Sportsbook exposes first-2/first-4 game props for this event."
+      }
+    ],
+    "marketEconomics": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T22:16:04.678Z",
+      "eventUrl": "https://sportsbook.draftkings.com/leagues/tennis/french-open-men?event=34241070",
+      "deskName": "Flavio Cobolli",
+      "deskPricePct": 72.9,
+      "deskEdgePct": -6.9,
+      "priceAction": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+      "players": [
+        {
+          "name": "Matteo Arnaldi",
+          "americanOdds": 213,
+          "impliedPct": 31.9,
+          "modelPct": 34,
+          "edgePct": 2.1,
+          "priceBand": "Underdog",
+          "grossProfitPct": 213,
+          "grossPayoutMultiple": 3.13,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 213,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        },
+        {
+          "name": "Flavio Cobolli",
+          "americanOdds": -269,
+          "impliedPct": 72.9,
+          "modelPct": 66,
+          "edgePct": -6.9,
+          "priceBand": "Low-payout favorite",
+          "grossProfitPct": 37.2,
+          "grossPayoutMultiple": 1.372,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 37.2,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        }
+      ]
+    },
+    "clayMatchupData": null,
+    "opponentQualityData": null,
+    "researchLinks": [
+      {
+        "label": "ESPN tennis scoreboard",
+        "url": "https://www.espn.com/tennis/scoreboard/_/date/20260605"
+      },
+      {
+        "label": "TennisLive",
+        "url": "https://www.tennislive.net/"
+      },
+      {
+        "label": "DraftKings Sportsbook event",
+        "url": "https://sportsbook.draftkings.com/leagues/tennis/french-open-men?event=34241070"
+      }
+    ],
+    "formEdgeName": "Flavio Cobolli"
+  },
+  "participants": [
+    {
+      "id": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Matteo Arnaldi",
+      "detail": "Live rank #104 | Italy | age 25 | adj form 87",
+      "americanOdds": 213,
+      "americanLabel": "+213",
+      "decimalOdds": 3.13,
+      "impliedProbability": 0.3194888178913738,
+      "impliedProbabilityLabel": "31.9%"
+    },
+    {
+      "id": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Flavio Cobolli",
+      "detail": "Live rank #14 | Italy | age 24 | adj form 88",
+      "americanOdds": -269,
+      "americanLabel": "-269",
+      "decimalOdds": 1.3717472118959106,
+      "impliedProbability": 0.7289972899728997,
+      "impliedProbabilityLabel": "72.9%"
+    }
+  ],
+  "moneyline": {
+    "available": true,
+    "label": "DraftKings Sportsbook moneyline",
+    "provider": "DraftKings Sportsbook",
+    "participants": [
+      {
+        "id": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05:0",
+        "index": 0,
+        "role": "Player 1",
+        "name": "Matteo Arnaldi",
+        "detail": "Live rank #104 | Italy | age 25 | adj form 87",
+        "americanOdds": 213,
+        "americanLabel": "+213",
+        "decimalOdds": 3.13,
+        "impliedProbability": 0.3194888178913738,
+        "impliedProbabilityLabel": "31.9%"
+      },
+      {
+        "id": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05:1",
+        "index": 1,
+        "role": "Player 2",
+        "name": "Flavio Cobolli",
+        "detail": "Live rank #14 | Italy | age 24 | adj form 88",
+        "americanOdds": -269,
+        "americanLabel": "-269",
+        "decimalOdds": 1.3717472118959106,
+        "impliedProbability": 0.7289972899728997,
+        "impliedProbabilityLabel": "72.9%"
+      }
+    ]
+  },
+  "analysis": {
+    "available": true,
+    "participantId": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05:1",
+    "participant": {
+      "id": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Flavio Cobolli",
+      "detail": "Live rank #14 | Italy | age 24 | adj form 88",
+      "americanOdds": -269,
+      "americanLabel": "-269",
+      "decimalOdds": 1.3717472118959106,
+      "impliedProbability": 0.7289972899728997,
+      "impliedProbabilityLabel": "72.9%"
+    },
+    "opponent": {
+      "id": "rg-m-matteo-arnaldi-flavio-cobolli-2026-06-05:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Matteo Arnaldi",
+      "detail": "Live rank #104 | Italy | age 25 | adj form 87",
+      "americanOdds": 213,
+      "americanLabel": "+213",
+      "decimalOdds": 3.13,
+      "impliedProbability": 0.3194888178913738,
+      "impliedProbabilityLabel": "31.9%"
+    },
+    "lean": "Lean Flavio Cobolli; Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+    "rationale": "Our model pick: Flavio Cobolli. Opponent-adjusted recent form is basically even: Flavio Cobolli 88, Matteo Arnaldi 87. Lean, not a chase.",
+    "confidence": 66,
+    "volatility": 35,
+    "recommendationScore": 57,
+    "tier": "Watch",
+    "sourceLabel": "DraftKings Sportsbook",
+    "modelEdge": null,
+    "modelEdgeLabel": "",
+    "marketProbability": 0.7289972899728997,
+    "marketProbabilityLabel": "72.9%",
+    "inputs": [],
+    "inputsUsed": 0,
+    "volatilityNotes": [],
+    "indicators": {}
+  },
+  "metadata": {
+    "participantCount": 2,
+    "participantNames": [
+      "Matteo Arnaldi",
+      "Flavio Cobolli"
+    ],
+    "tagCount": 7,
+    "hasSeriesBreakdown": false,
+    "hasMoneyline": true,
+    "hasAnalysisPick": true,
+    "hasStructuredInputs": false,
+    "hasPlayerProps": false,
+    "startMinutes": 600,
+    "spotlight": false,
+    "league": "Tennis",
+    "oddsProvider": "DraftKings Sportsbook"
+  }
+}

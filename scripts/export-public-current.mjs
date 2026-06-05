@@ -15,6 +15,27 @@ const writeJson = async (filePath, payload) => {
   await fs.writeFile(filePath, `${JSON.stringify(payload)}\n`, 'utf8')
 }
 
+const sanitizePublicSourcePath = (value) => {
+  const text = String(value || '')
+  return text
+    .replace(/^.*data-private\/raw\/odds\//, 'raw-odds/')
+    .replace(/^.*data-private\/reference\//, 'reference/')
+    .replace(/^.*data-private\//, 'private-source/')
+}
+
+const sanitizePublicPayload = (value) => {
+  if (Array.isArray(value)) return value.map((entry) => sanitizePublicPayload(entry))
+  if (!value || typeof value !== 'object') return value
+  return Object.fromEntries(
+    Object.entries(value).map(([key, entry]) => [
+      key,
+      key === 'sourcePath' || key === 'localPath'
+        ? sanitizePublicSourcePath(entry)
+        : sanitizePublicPayload(entry)
+    ])
+  )
+}
+
 const argValue = (name) => {
   const prefix = `${name}=`
   const inline = process.argv.find((arg) => arg.startsWith(prefix))
@@ -113,7 +134,7 @@ const copyMlbPropsIfPresent = async (slateId, targetPath) => {
       return true
     }).map((pick, index) => ({ ...pick, rank: index + 1 }))
     await fs.mkdir(path.dirname(targetPath), { recursive: true })
-    await writeJson(targetPath, {
+    await writeJson(targetPath, sanitizePublicPayload({
       ...legacyPayload,
       ...primaryPayload,
       mergedFrom: ['mlb-player-props', 'mlb-player-props-legacy'],
@@ -128,22 +149,22 @@ const copyMlbPropsIfPresent = async (slateId, targetPath) => {
         }, {})
       },
       picks
-    })
+    }))
     return true
   }
 
   if (primaryPicks.length > 0 || !fsSync.existsSync(legacySource)) {
     await fs.mkdir(path.dirname(targetPath), { recursive: true })
-    await writeJson(targetPath, primaryPayload)
+    await writeJson(targetPath, sanitizePublicPayload(primaryPayload))
     return true
   }
 
   const legacyPayload = await readJson(legacySource)
-  await writeJson(targetPath, {
+  await writeJson(targetPath, sanitizePublicPayload({
     ...legacyPayload,
     fallbackFrom: 'mlb-player-props-legacy',
     fallbackReason: 'Primary MLB player-props board had no picks for this slate.'
-  })
+  }))
   return true
 }
 

@@ -1,0 +1,731 @@
+{
+  "id": "rg-w-barbora-palicova-elina-avanesyan-2026-06-05",
+  "eventId": "177737",
+  "league": "Tennis",
+  "start": "7:00 AM",
+  "startMinutes": 420,
+  "title": "Barbora Palicova vs Elina Avanesyan",
+  "stage": "WTA Makarska | Quarterfinal",
+  "spotlight": false,
+  "confidence": 51,
+  "volatility": 59,
+  "tags": [
+    "Clay",
+    "WTA Makarska",
+    "WTA",
+    "Watch only",
+    "Positive price edge",
+    "WTA volatility tax",
+    "Controlled volatility"
+  ],
+  "matchup": [
+    {
+      "side": "Player 1",
+      "name": "Barbora Palicova",
+      "displayName": "Barbora Palicova",
+      "detail": "Rank not joined | adj form 58"
+    },
+    {
+      "side": "Player 2",
+      "name": "Elina Avanesyan",
+      "displayName": "Elina Avanesyan",
+      "detail": "Rank not joined | adj form 57"
+    }
+  ],
+  "summary": "Our model pick: Barbora Palicova. Opponent-adjusted recent form is basically even: Barbora Palicova 58, Elina Avanesyan 57. Lean, not a chase.",
+  "factors": [
+    "Opponent-adjusted recent form is basically even: Barbora Palicova 58, Elina Avanesyan 57. Lean, not a chase.",
+    "Model 51% vs DraftKings Sportsbook implied 31.5% (+19.5 pts).",
+    "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+    "Wait for a visible service-pressure split before entering.",
+    "Best O/U angle: no play without a posted total.",
+    "May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.",
+    "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Model is meaningfully above DraftKings Sportsbook implied price."
+  ],
+  "lean": "Lean Barbora Palicova; Model is meaningfully above DraftKings Sportsbook implied price.",
+  "swing": "Risk: best-of-three volatility and break clusters.",
+  "swingFactor": "Risk: best-of-three volatility and break clusters.",
+  "odds": {
+    "participantOrder": [
+      0,
+      1
+    ],
+    "markets": [
+      {
+        "label": "Model fair",
+        "book": "Tennis warehouse model",
+        "value": "Barbora Palicova 51% / Elina Avanesyan 49%"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "book": "DraftKings Sportsbook",
+        "value": "Barbora Palicova +217 / Elina Avanesyan -300"
+      },
+      {
+        "label": "1st set total games",
+        "book": "DraftKings Sportsbook",
+        "value": "9.5 1st-set games: Over +110 / Under -175"
+      }
+    ],
+    "note": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Model is meaningfully above DraftKings Sportsbook implied price.",
+    "provider": "DraftKings Sportsbook"
+  },
+  "tennisContext": {
+    "surface": "Clay",
+    "court": "Court 1",
+    "h2hLeader": "",
+    "fatigueFlag": false,
+    "liveDog": false,
+    "weaknessEdge": {
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 3,
+      "attackingSide": null,
+      "vulnerableSide": null,
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "Pre-match spread is fragile; wait for both players to serve once.",
+      "totalRead": "Avoid low unders if either player faces early break points or second-serve pressure.",
+      "pick": {
+        "name": "Barbora Palicova",
+        "serviceHoldPct": null,
+        "firstServeWonPct": 62,
+        "secondServeWonPct": 51,
+        "firstServePct": 57,
+        "avgAces": 1,
+        "avgDoubleFaults": 6.3,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": 47,
+        "servicePointsWonPct": 57,
+        "weakServeMatches": 4,
+        "pressureMatches": null,
+        "matchesWithStats": 4,
+        "weaknessScore": 21,
+        "firstGameComfort": "Needs early holds confirmed",
+        "liabilities": [
+          "double-fault pressure (6.3 avg)",
+          "4 recent matches with serve instability"
+        ],
+        "strengths": [
+          "creates return pressure (47% return points won)"
+        ],
+        "gameFlowRead": "Barbora Palicova can drop points quickly through double-fault pressure (6.3 avg) and 4 recent matches with serve instability."
+      },
+      "opponent": {
+        "name": "Elina Avanesyan",
+        "serviceHoldPct": null,
+        "firstServeWonPct": 58,
+        "secondServeWonPct": 37,
+        "firstServePct": 70,
+        "avgAces": 0.4,
+        "avgDoubleFaults": 4.4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": 47,
+        "servicePointsWonPct": 52,
+        "weakServeMatches": 4,
+        "pressureMatches": null,
+        "matchesWithStats": 5,
+        "weaknessScore": 24,
+        "firstGameComfort": "Needs early holds confirmed",
+        "liabilities": [
+          "first-serve points won below comfort (58%)",
+          "second-serve points won are attackable (37%)",
+          "double-fault pressure (4.4 avg)",
+          "4 recent matches with serve instability"
+        ],
+        "strengths": [
+          "creates return pressure (47% return points won)"
+        ],
+        "gameFlowRead": "Elina Avanesyan can drop points quickly through first-serve points won below comfort (58%) and second-serve points won are attackable (37%)."
+      }
+    },
+    "warehouseContext": null,
+    "players": [
+      {
+        "name": "Barbora Palicova",
+        "rank": null,
+        "label": "Barbora Palicova",
+        "form": null,
+        "boardPct": 51,
+        "decimalOdds": 3.17,
+        "marketLabel": "+217 / 31.5% implied",
+        "clayLine": "Rank not joined | adj form 58",
+        "weakness": {
+          "name": "Barbora Palicova",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 62,
+          "secondServeWonPct": 51,
+          "firstServePct": 57,
+          "avgAces": 1,
+          "avgDoubleFaults": 6.3,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 47,
+          "servicePointsWonPct": 57,
+          "weakServeMatches": 4,
+          "pressureMatches": null,
+          "matchesWithStats": 4,
+          "weaknessScore": 21,
+          "firstGameComfort": "Needs early holds confirmed",
+          "liabilities": [
+            "double-fault pressure (6.3 avg)",
+            "4 recent matches with serve instability"
+          ],
+          "strengths": [
+            "creates return pressure (47% return points won)"
+          ],
+          "gameFlowRead": "Barbora Palicova can drop points quickly through double-fault pressure (6.3 avg) and 4 recent matches with serve instability."
+        },
+        "warehouseStats": null,
+        "record2026": "",
+        "notes": "Pick: model 51%",
+        "matchupNote": "Why pick: Opponent-adjusted recent form is basically even: Barbora Palicova 58, Elina Avanesyan 57. Lean, not a chase."
+      },
+      {
+        "name": "Elina Avanesyan",
+        "rank": null,
+        "label": "Elina Avanesyan",
+        "form": null,
+        "boardPct": 49,
+        "decimalOdds": 1.333,
+        "marketLabel": "-300 / 75% implied",
+        "clayLine": "Rank not joined | adj form 57",
+        "weakness": {
+          "name": "Elina Avanesyan",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 58,
+          "secondServeWonPct": 37,
+          "firstServePct": 70,
+          "avgAces": 0.4,
+          "avgDoubleFaults": 4.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 47,
+          "servicePointsWonPct": 52,
+          "weakServeMatches": 4,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 24,
+          "firstGameComfort": "Needs early holds confirmed",
+          "liabilities": [
+            "first-serve points won below comfort (58%)",
+            "second-serve points won are attackable (37%)",
+            "double-fault pressure (4.4 avg)",
+            "4 recent matches with serve instability"
+          ],
+          "strengths": [
+            "creates return pressure (47% return points won)"
+          ],
+          "gameFlowRead": "Elina Avanesyan can drop points quickly through first-serve points won below comfort (58%) and second-serve points won are attackable (37%)."
+        },
+        "warehouseStats": null,
+        "record2026": "",
+        "notes": "Opponent case: model 49%",
+        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
+      }
+    ],
+    "comparisonRows": [
+      {
+        "label": "Model pick",
+        "metric": "Fair win split",
+        "leftScore": 51,
+        "rightScore": 49,
+        "leftLabel": "Barbora Palicova",
+        "rightLabel": "Elina Avanesyan",
+        "winner": "Barbora Palicova"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "metric": "Implied price",
+        "leftScore": 31.5,
+        "rightScore": 75,
+        "leftLabel": "Barbora Palicova",
+        "rightLabel": "Elina Avanesyan",
+        "winner": "Model is meaningfully above DraftKings Sportsbook implied price."
+      },
+      {
+        "label": "Weakness",
+        "metric": "Lower is cleaner",
+        "leftScore": 21,
+        "rightScore": 24,
+        "leftLabel": "Barbora Palicova",
+        "rightLabel": "Elina Avanesyan",
+        "winner": "No clear weakness edge"
+      },
+      {
+        "label": "Volatility",
+        "metric": "Lower is cleaner",
+        "leftScore": 59,
+        "rightScore": 41,
+        "leftLabel": "Risk",
+        "rightLabel": "Stability",
+        "winner": "Pass-first"
+      }
+    ],
+    "predictionMarket": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T22:16:14.092Z",
+      "totalVolume": null,
+      "players": [
+        {
+          "name": "Barbora Palicova",
+          "probabilityPct": 31.5,
+          "amount": null,
+          "americanOdds": 217,
+          "edgePct": 19.5,
+          "priceBand": "Underdog"
+        },
+        {
+          "name": "Elina Avanesyan",
+          "probabilityPct": 75,
+          "amount": null,
+          "americanOdds": -300,
+          "edgePct": -26,
+          "priceBand": "Low-payout favorite"
+        }
+      ]
+    },
+    "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Barbora Palicova",
+        "line": null,
+        "americanOdds": 217,
+        "modelPct": 51,
+        "impliedPct": 31.5,
+        "edgePct": 19.5,
+        "evPer100": 61.7,
+        "netEvPer100": 59.7,
+        "grade": "Bet-grade value",
+        "issue": "Validated ML candidate",
+        "reason": "Model is meaningfully above DraftKings Sportsbook implied price."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "No bet",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": null,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": 21.2,
+        "edgeGames": null,
+        "confidence": null,
+        "grade": "No direction",
+        "reason": "No posted match total captured."
+      },
+      {
+        "marketType": "Win a set",
+        "label": "Win a set %",
+        "selection": "Barbora Palicova 68% / Elina Avanesyan 63%",
+        "rows": [
+          {
+            "name": "Barbora Palicova",
+            "confidence": 68,
+            "modelPct": 51,
+            "label": "Live to win a set"
+          },
+          {
+            "name": "Elina Avanesyan",
+            "confidence": 63,
+            "modelPct": 49,
+            "label": "Needs early hold pressure"
+          }
+        ],
+        "confidence": 68,
+        "grade": "Price required",
+        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Under 9.5",
+        "expectedGames": 8.9,
+        "confidence": 60,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "grade": "Thin value",
+        "reason": "Expected first-set games 8.9 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 45%, first-set sample N/A, 0 recent sets."
+      }
+    ],
+    "derivativeMarketCase": null,
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Barbora Palicova",
+        "americanOdds": 217,
+        "modelPct": 51,
+        "impliedPct": 31.5,
+        "edgePct": 19.5,
+        "evPer100": 61.7,
+        "netEvPer100": 59.7,
+        "feePer100": 2,
+        "valueIssue": "Validated ML candidate",
+        "valueGrade": "Bet-grade value",
+        "betGrade": true
+      },
+      "spread": null,
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": 21.2,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Under 9.5",
+        "line": 9.5,
+        "americanOdds": -175,
+        "expectedGames": 8.9,
+        "confidence": 60,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "modelPct": 60,
+        "evPer100": -5.7,
+        "netEvPer100": -7.7,
+        "valueGrade": "Thin value",
+        "reason": "Expected first-set games 8.9 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 45%, first-set sample N/A, 0 recent sets.",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Barbora Palicova",
+          "confidence": 68,
+          "modelPct": 51,
+          "label": "Live to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Elina Avanesyan",
+          "confidence": 63,
+          "modelPct": 49,
+          "label": "Needs early hold pressure",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "ensembleValueCase": null,
+    "projection": {
+      "projectedWinner": "Barbora Palicova",
+      "projectedSetLine": "2-0/2-1 range",
+      "setWinProjections": [
+        {
+          "name": "Barbora Palicova",
+          "confidence": 68,
+          "modelPct": 51,
+          "label": "Live to win a set"
+        },
+        {
+          "name": "Elina Avanesyan",
+          "confidence": 63,
+          "modelPct": 49,
+          "label": "Needs early hold pressure"
+        }
+      ],
+      "totalGames": null,
+      "straightSetsProbability": 48,
+      "upsetRisk": 49,
+      "overview": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "fantasy": []
+    },
+    "tradePlan": {
+      "laneLabel": "Model is meaningfully above DraftKings Sportsbook implied price.",
+      "summary": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "trigger": "Wait for a visible service-pressure split before entering.",
+      "headline": "No clear weakness edge",
+      "exit": "No spread line",
+      "tone": "warning"
+    },
+    "derivativeMarkets": [
+      {
+        "label": "ML",
+        "value": "Barbora Palicova +217; Model 51% vs DraftKings Sportsbook implied 31.5% (+19.5 pts).",
+        "lean": "Model is meaningfully above DraftKings Sportsbook implied price.",
+        "confidence": 51,
+        "marketType": "ML",
+        "selection": "Barbora Palicova",
+        "americanOdds": 217,
+        "modelPct": 51,
+        "impliedPct": 31.5,
+        "edgePct": 19.5,
+        "evPer100": 61.7,
+        "netEvPer100": 59.7,
+        "feePer100": 2,
+        "valueIssue": "Validated ML candidate",
+        "valueGrade": "Bet-grade value",
+        "betGrade": true,
+        "tone": "accent",
+        "reason": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Model is meaningfully above DraftKings Sportsbook implied price."
+      },
+      {
+        "label": "Win a set",
+        "value": "No set-win price captured",
+        "lean": "Needs early hold pressure",
+        "confidence": 68,
+        "setWinRows": [],
+        "valueGrade": "Needs posted price",
+        "tone": "neutral",
+        "reason": "Best-of-three set-win confidence is more fragile; early service holds matter more."
+      },
+      {
+        "label": "Spread",
+        "value": "No primary game spread captured",
+        "lean": "No spread line",
+        "confidence": 50,
+        "tone": "neutral",
+        "reason": "Wait for a visible service-pressure split before entering."
+      },
+      {
+        "label": "O/U",
+        "value": "No total captured",
+        "lean": "No bet",
+        "confidence": 50,
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": 21.2,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st set O/U",
+        "value": "Line 9.5",
+        "lean": "Under 9.5",
+        "confidence": 60,
+        "marketType": "First-set total",
+        "selection": "Under 9.5",
+        "line": 9.5,
+        "americanOdds": -175,
+        "expectedGames": 8.9,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "modelPct": 60,
+        "evPer100": -5.7,
+        "netEvPer100": -7.7,
+        "valueGrade": "Thin value",
+        "reason": "Expected first-set games 8.9 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 45%, first-set sample N/A, 0 recent sets.",
+        "betGrade": false,
+        "tone": "accent"
+      },
+      {
+        "label": "1st service game",
+        "value": "No first-service-game market captured",
+        "lean": "First-service-game prices",
+        "confidence": 51,
+        "firstServiceGameRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-service-game market captured."
+      },
+      {
+        "label": "First games",
+        "value": "No first-game prop market captured",
+        "lean": "First-game prop prices",
+        "confidence": 51,
+        "firstGamePropRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-games prop captured."
+      }
+    ],
+    "marketEconomics": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T22:16:14.092Z",
+      "eventUrl": "https://sportsbook.draftkings.com/leagues/tennis/wta-makarska?event=34244707",
+      "deskName": "Barbora Palicova",
+      "deskPricePct": 31.5,
+      "deskEdgePct": 19.5,
+      "priceAction": "Model is meaningfully above DraftKings Sportsbook implied price.",
+      "players": [
+        {
+          "name": "Barbora Palicova",
+          "americanOdds": 217,
+          "impliedPct": 31.5,
+          "modelPct": 51,
+          "edgePct": 19.5,
+          "priceBand": "Underdog",
+          "grossProfitPct": 217,
+          "grossPayoutMultiple": 3.17,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 217,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        },
+        {
+          "name": "Elina Avanesyan",
+          "americanOdds": -300,
+          "impliedPct": 75,
+          "modelPct": 49,
+          "edgePct": -26,
+          "priceBand": "Low-payout favorite",
+          "grossProfitPct": 33.3,
+          "grossPayoutMultiple": 1.333,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 33.3,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        }
+      ]
+    },
+    "clayMatchupData": null,
+    "opponentQualityData": null,
+    "researchLinks": [
+      {
+        "label": "ESPN tennis scoreboard",
+        "url": "https://www.espn.com/tennis/scoreboard/_/date/20260605"
+      },
+      {
+        "label": "TennisLive",
+        "url": "https://www.tennislive.net/"
+      },
+      {
+        "label": "DraftKings Sportsbook event",
+        "url": "https://sportsbook.draftkings.com/leagues/tennis/wta-makarska?event=34244707"
+      }
+    ],
+    "formEdgeName": "Barbora Palicova"
+  },
+  "participants": [
+    {
+      "id": "rg-w-barbora-palicova-elina-avanesyan-2026-06-05:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Barbora Palicova",
+      "detail": "Rank not joined | adj form 58",
+      "americanOdds": 217,
+      "americanLabel": "+217",
+      "decimalOdds": 3.17,
+      "impliedProbability": 0.31545741324921134,
+      "impliedProbabilityLabel": "31.5%"
+    },
+    {
+      "id": "rg-w-barbora-palicova-elina-avanesyan-2026-06-05:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Elina Avanesyan",
+      "detail": "Rank not joined | adj form 57",
+      "americanOdds": -300,
+      "americanLabel": "-300",
+      "decimalOdds": 1.3333333333333333,
+      "impliedProbability": 0.75,
+      "impliedProbabilityLabel": "75.0%"
+    }
+  ],
+  "moneyline": {
+    "available": true,
+    "label": "DraftKings Sportsbook moneyline",
+    "provider": "DraftKings Sportsbook",
+    "participants": [
+      {
+        "id": "rg-w-barbora-palicova-elina-avanesyan-2026-06-05:0",
+        "index": 0,
+        "role": "Player 1",
+        "name": "Barbora Palicova",
+        "detail": "Rank not joined | adj form 58",
+        "americanOdds": 217,
+        "americanLabel": "+217",
+        "decimalOdds": 3.17,
+        "impliedProbability": 0.31545741324921134,
+        "impliedProbabilityLabel": "31.5%"
+      },
+      {
+        "id": "rg-w-barbora-palicova-elina-avanesyan-2026-06-05:1",
+        "index": 1,
+        "role": "Player 2",
+        "name": "Elina Avanesyan",
+        "detail": "Rank not joined | adj form 57",
+        "americanOdds": -300,
+        "americanLabel": "-300",
+        "decimalOdds": 1.3333333333333333,
+        "impliedProbability": 0.75,
+        "impliedProbabilityLabel": "75.0%"
+      }
+    ]
+  },
+  "analysis": {
+    "available": true,
+    "participantId": "rg-w-barbora-palicova-elina-avanesyan-2026-06-05:0",
+    "participant": {
+      "id": "rg-w-barbora-palicova-elina-avanesyan-2026-06-05:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Barbora Palicova",
+      "detail": "Rank not joined | adj form 58",
+      "americanOdds": 217,
+      "americanLabel": "+217",
+      "decimalOdds": 3.17,
+      "impliedProbability": 0.31545741324921134,
+      "impliedProbabilityLabel": "31.5%"
+    },
+    "opponent": {
+      "id": "rg-w-barbora-palicova-elina-avanesyan-2026-06-05:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Elina Avanesyan",
+      "detail": "Rank not joined | adj form 57",
+      "americanOdds": -300,
+      "americanLabel": "-300",
+      "decimalOdds": 1.3333333333333333,
+      "impliedProbability": 0.75,
+      "impliedProbabilityLabel": "75.0%"
+    },
+    "lean": "Lean Barbora Palicova; Model is meaningfully above DraftKings Sportsbook implied price.",
+    "rationale": "Our model pick: Barbora Palicova. Opponent-adjusted recent form is basically even: Barbora Palicova 58, Elina Avanesyan 57. Lean, not a chase.",
+    "confidence": 51,
+    "volatility": 59,
+    "recommendationScore": 36,
+    "tier": "Watch",
+    "sourceLabel": "DraftKings Sportsbook",
+    "modelEdge": null,
+    "modelEdgeLabel": "",
+    "marketProbability": 0.31545741324921134,
+    "marketProbabilityLabel": "31.5%",
+    "inputs": [],
+    "inputsUsed": 0,
+    "volatilityNotes": [],
+    "indicators": {}
+  },
+  "metadata": {
+    "participantCount": 2,
+    "participantNames": [
+      "Barbora Palicova",
+      "Elina Avanesyan"
+    ],
+    "tagCount": 7,
+    "hasSeriesBreakdown": false,
+    "hasMoneyline": true,
+    "hasAnalysisPick": true,
+    "hasStructuredInputs": false,
+    "hasPlayerProps": false,
+    "startMinutes": 420,
+    "spotlight": false,
+    "league": "Tennis",
+    "oddsProvider": "DraftKings Sportsbook"
+  }
+}

@@ -1,0 +1,727 @@
+{
+  "id": "rg-w-tyra-caterina-grant-tatiana-pieri-2026-06-05",
+  "eventId": "176237",
+  "league": "Tennis",
+  "start": "9:00 AM",
+  "startMinutes": 540,
+  "title": "Tyra Caterina Grant vs Tatiana Pieri",
+  "stage": "WTA Foggia | Quarterfinal",
+  "spotlight": false,
+  "confidence": 53,
+  "volatility": 56,
+  "tags": [
+    "Clay",
+    "WTA Foggia",
+    "WTA",
+    "Watch only",
+    "No blind bet",
+    "WTA volatility tax",
+    "Controlled volatility"
+  ],
+  "matchup": [
+    {
+      "side": "Player 1",
+      "name": "Tyra Caterina Grant",
+      "displayName": "Tyra Caterina Grant",
+      "detail": "Rank not joined | adj form 73"
+    },
+    {
+      "side": "Player 2",
+      "name": "Tatiana Pieri",
+      "displayName": "Tatiana Pieri",
+      "detail": "Rank not joined | adj form 40"
+    }
+  ],
+  "summary": "Our model pick: Tyra Caterina Grant. Tyra Caterina Grant grades 33 points better on opponent-adjusted recent form. Lean, not a chase.",
+  "factors": [
+    "Tyra Caterina Grant grades 33 points better on opponent-adjusted recent form. Lean, not a chase.",
+    "Model 53% vs DraftKings Sportsbook implied 97.5% (-44.5 pts).",
+    "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+    "Wait for a visible service-pressure split before entering.",
+    "Best O/U angle: no play without a posted total.",
+    "May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.",
+    "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. ML payout is tiny; use spread/total or pass unless the number moves."
+  ],
+  "lean": "Lean Tyra Caterina Grant; ML payout is tiny; use spread/total or pass unless the number moves.",
+  "swing": "Risk: best-of-three volatility and break clusters.",
+  "swingFactor": "Risk: best-of-three volatility and break clusters.",
+  "odds": {
+    "participantOrder": [
+      0,
+      1
+    ],
+    "markets": [
+      {
+        "label": "Model fair",
+        "book": "Tennis warehouse model",
+        "value": "Tyra Caterina Grant 53% / Tatiana Pieri 47%"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "book": "DraftKings Sportsbook",
+        "value": "Tyra Caterina Grant -3900 / Tatiana Pieri +1080"
+      },
+      {
+        "label": "1st set total games",
+        "book": "DraftKings Sportsbook",
+        "value": "8.5 1st-set games: Over -105 / Under -135"
+      }
+    ],
+    "note": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. ML payout is tiny; use spread/total or pass unless the number moves.",
+    "provider": "DraftKings Sportsbook"
+  },
+  "tennisContext": {
+    "surface": "Clay",
+    "court": "Center Court",
+    "h2hLeader": "",
+    "fatigueFlag": false,
+    "liveDog": false,
+    "weaknessEdge": {
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 0,
+      "attackingSide": null,
+      "vulnerableSide": null,
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+      "pick": {
+        "name": "Tyra Caterina Grant",
+        "serviceHoldPct": null,
+        "firstServeWonPct": 62,
+        "secondServeWonPct": 40,
+        "firstServePct": 68,
+        "avgAces": 1.8,
+        "avgDoubleFaults": 5.6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": 50,
+        "servicePointsWonPct": 55,
+        "weakServeMatches": 4,
+        "pressureMatches": null,
+        "matchesWithStats": 5,
+        "weaknessScore": 22,
+        "firstGameComfort": "Needs early holds confirmed",
+        "liabilities": [
+          "second-serve points won are attackable (40%)",
+          "double-fault pressure (5.6 avg)",
+          "4 recent matches with serve instability"
+        ],
+        "strengths": [
+          "creates return pressure (50% return points won)"
+        ],
+        "gameFlowRead": "Tyra Caterina Grant can drop points quickly through second-serve points won are attackable (40%) and double-fault pressure (5.6 avg)."
+      },
+      "opponent": {
+        "name": "Tatiana Pieri",
+        "serviceHoldPct": null,
+        "firstServeWonPct": 52,
+        "secondServeWonPct": 42,
+        "firstServePct": 65,
+        "avgAces": null,
+        "avgDoubleFaults": 2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": 39,
+        "servicePointsWonPct": 48,
+        "weakServeMatches": 4,
+        "pressureMatches": null,
+        "matchesWithStats": 5,
+        "weaknessScore": 22,
+        "firstGameComfort": "Needs early holds confirmed",
+        "liabilities": [
+          "first-serve points won below comfort (52%)",
+          "second-serve points won are attackable (42%)",
+          "4 recent matches with serve instability"
+        ],
+        "strengths": [],
+        "gameFlowRead": "Tatiana Pieri can drop points quickly through first-serve points won below comfort (52%) and second-serve points won are attackable (42%)."
+      }
+    },
+    "warehouseContext": null,
+    "players": [
+      {
+        "name": "Tyra Caterina Grant",
+        "rank": null,
+        "label": "Tyra Caterina Grant",
+        "form": null,
+        "boardPct": 53,
+        "decimalOdds": 1.026,
+        "marketLabel": "-3900 / 97.5% implied",
+        "clayLine": "Rank not joined | adj form 73",
+        "weakness": {
+          "name": "Tyra Caterina Grant",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 62,
+          "secondServeWonPct": 40,
+          "firstServePct": 68,
+          "avgAces": 1.8,
+          "avgDoubleFaults": 5.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 50,
+          "servicePointsWonPct": 55,
+          "weakServeMatches": 4,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 22,
+          "firstGameComfort": "Needs early holds confirmed",
+          "liabilities": [
+            "second-serve points won are attackable (40%)",
+            "double-fault pressure (5.6 avg)",
+            "4 recent matches with serve instability"
+          ],
+          "strengths": [
+            "creates return pressure (50% return points won)"
+          ],
+          "gameFlowRead": "Tyra Caterina Grant can drop points quickly through second-serve points won are attackable (40%) and double-fault pressure (5.6 avg)."
+        },
+        "warehouseStats": null,
+        "record2026": "",
+        "notes": "Pick: model 53%",
+        "matchupNote": "Why pick: Tyra Caterina Grant grades 33 points better on opponent-adjusted recent form. Lean, not a chase."
+      },
+      {
+        "name": "Tatiana Pieri",
+        "rank": null,
+        "label": "Tatiana Pieri",
+        "form": null,
+        "boardPct": 47,
+        "decimalOdds": 11.8,
+        "marketLabel": "+1080 / 8.5% implied",
+        "clayLine": "Rank not joined | adj form 40",
+        "weakness": {
+          "name": "Tatiana Pieri",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 52,
+          "secondServeWonPct": 42,
+          "firstServePct": 65,
+          "avgAces": null,
+          "avgDoubleFaults": 2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 39,
+          "servicePointsWonPct": 48,
+          "weakServeMatches": 4,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 22,
+          "firstGameComfort": "Needs early holds confirmed",
+          "liabilities": [
+            "first-serve points won below comfort (52%)",
+            "second-serve points won are attackable (42%)",
+            "4 recent matches with serve instability"
+          ],
+          "strengths": [],
+          "gameFlowRead": "Tatiana Pieri can drop points quickly through first-serve points won below comfort (52%) and second-serve points won are attackable (42%)."
+        },
+        "warehouseStats": null,
+        "record2026": "",
+        "notes": "Opponent case: model 47%",
+        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
+      }
+    ],
+    "comparisonRows": [
+      {
+        "label": "Model pick",
+        "metric": "Fair win split",
+        "leftScore": 53,
+        "rightScore": 47,
+        "leftLabel": "Tyra Caterina Grant",
+        "rightLabel": "Tatiana Pieri",
+        "winner": "Tyra Caterina Grant"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "metric": "Implied price",
+        "leftScore": 97.5,
+        "rightScore": 8.5,
+        "leftLabel": "Tyra Caterina Grant",
+        "rightLabel": "Tatiana Pieri",
+        "winner": "ML payout is tiny; use spread/total or pass unless the number moves."
+      },
+      {
+        "label": "Weakness",
+        "metric": "Lower is cleaner",
+        "leftScore": 22,
+        "rightScore": 22,
+        "leftLabel": "Tyra Caterina Grant",
+        "rightLabel": "Tatiana Pieri",
+        "winner": "No clear weakness edge"
+      },
+      {
+        "label": "Volatility",
+        "metric": "Lower is cleaner",
+        "leftScore": 56,
+        "rightScore": 44,
+        "leftLabel": "Risk",
+        "rightLabel": "Stability",
+        "winner": "Pass-first"
+      }
+    ],
+    "predictionMarket": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T22:16:53.445Z",
+      "totalVolume": null,
+      "players": [
+        {
+          "name": "Tyra Caterina Grant",
+          "probabilityPct": 97.5,
+          "amount": null,
+          "americanOdds": -3900,
+          "edgePct": -44.5,
+          "priceBand": "Very expensive favorite"
+        },
+        {
+          "name": "Tatiana Pieri",
+          "probabilityPct": 8.5,
+          "amount": null,
+          "americanOdds": 1080,
+          "edgePct": 38.5,
+          "priceBand": "Underdog"
+        }
+      ]
+    },
+    "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Tatiana Pieri",
+        "line": null,
+        "americanOdds": 1080,
+        "modelPct": 47,
+        "impliedPct": 8.5,
+        "edgePct": 38.5,
+        "evPer100": 454.6,
+        "netEvPer100": 452.6,
+        "grade": "Outlier price/manual review",
+        "issue": "Picked side is overpriced; value board flips to Tatiana Pieri because that side has the better posted-price edge.",
+        "reason": "ML payout is tiny; use spread/total or pass unless the number moves."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "No bet",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": null,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": 20.9,
+        "edgeGames": null,
+        "confidence": null,
+        "grade": "No direction",
+        "reason": "No posted match total captured."
+      },
+      {
+        "marketType": "Win a set",
+        "label": "Win a set %",
+        "selection": "Tyra Caterina Grant 69% / Tatiana Pieri 61%",
+        "rows": [
+          {
+            "name": "Tyra Caterina Grant",
+            "confidence": 69,
+            "modelPct": 53,
+            "label": "Live to win a set"
+          },
+          {
+            "name": "Tatiana Pieri",
+            "confidence": 61,
+            "modelPct": 47,
+            "label": "Needs early hold pressure"
+          }
+        ],
+        "confidence": 69,
+        "grade": "Price required",
+        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Over 8.5",
+        "expectedGames": 8.8,
+        "confidence": 57,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "grade": "Thin value",
+        "reason": "Expected first-set games 8.8 vs DraftKings Sportsbook 8.5; Over 8.5. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets."
+      }
+    ],
+    "derivativeMarketCase": null,
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Tatiana Pieri",
+        "americanOdds": 1080,
+        "modelPct": 47,
+        "impliedPct": 8.5,
+        "edgePct": 38.5,
+        "evPer100": 454.6,
+        "netEvPer100": 452.6,
+        "feePer100": 2,
+        "valueIssue": "Picked side is overpriced; value board flips to Tatiana Pieri because that side has the better posted-price edge.",
+        "valueGrade": "Outlier price/manual review",
+        "betGrade": false
+      },
+      "spread": null,
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": 20.9,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Over 8.5",
+        "line": 8.5,
+        "americanOdds": -105,
+        "expectedGames": 8.8,
+        "confidence": 57,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "modelPct": 57,
+        "evPer100": 11.3,
+        "netEvPer100": 9.3,
+        "valueGrade": "Thin value",
+        "reason": "Expected first-set games 8.8 vs DraftKings Sportsbook 8.5; Over 8.5. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets.",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Tyra Caterina Grant",
+          "confidence": 69,
+          "modelPct": 53,
+          "label": "Live to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Tatiana Pieri",
+          "confidence": 61,
+          "modelPct": 47,
+          "label": "Needs early hold pressure",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "ensembleValueCase": null,
+    "projection": {
+      "projectedWinner": "Tyra Caterina Grant",
+      "projectedSetLine": "2-0/2-1 range",
+      "setWinProjections": [
+        {
+          "name": "Tyra Caterina Grant",
+          "confidence": 69,
+          "modelPct": 53,
+          "label": "Live to win a set"
+        },
+        {
+          "name": "Tatiana Pieri",
+          "confidence": 61,
+          "modelPct": 47,
+          "label": "Needs early hold pressure"
+        }
+      ],
+      "totalGames": null,
+      "straightSetsProbability": 48,
+      "upsetRisk": 47,
+      "overview": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "fantasy": []
+    },
+    "tradePlan": {
+      "laneLabel": "ML payout is tiny; use spread/total or pass unless the number moves.",
+      "summary": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "trigger": "Wait for a visible service-pressure split before entering.",
+      "headline": "No clear weakness edge",
+      "exit": "No spread line",
+      "tone": "warning"
+    },
+    "derivativeMarkets": [
+      {
+        "label": "ML",
+        "value": "Tyra Caterina Grant -3900; Model 53% vs DraftKings Sportsbook implied 97.5% (-44.5 pts).",
+        "lean": "ML payout is tiny; use spread/total or pass unless the number moves.",
+        "confidence": 53,
+        "marketType": "ML",
+        "selection": "Tatiana Pieri",
+        "americanOdds": 1080,
+        "modelPct": 47,
+        "impliedPct": 8.5,
+        "edgePct": 38.5,
+        "evPer100": 454.6,
+        "netEvPer100": 452.6,
+        "feePer100": 2,
+        "valueIssue": "Picked side is overpriced; value board flips to Tatiana Pieri because that side has the better posted-price edge.",
+        "valueGrade": "Outlier price/manual review",
+        "betGrade": false,
+        "tone": "warning",
+        "reason": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. ML payout is tiny; use spread/total or pass unless the number moves."
+      },
+      {
+        "label": "Win a set",
+        "value": "No set-win price captured",
+        "lean": "Needs early hold pressure",
+        "confidence": 69,
+        "setWinRows": [],
+        "valueGrade": "Needs posted price",
+        "tone": "neutral",
+        "reason": "Best-of-three set-win confidence is more fragile; early service holds matter more."
+      },
+      {
+        "label": "Spread",
+        "value": "No primary game spread captured",
+        "lean": "No spread line",
+        "confidence": 50,
+        "tone": "neutral",
+        "reason": "Wait for a visible service-pressure split before entering."
+      },
+      {
+        "label": "O/U",
+        "value": "No total captured",
+        "lean": "No bet",
+        "confidence": 50,
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": 20.9,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st set O/U",
+        "value": "Line 8.5",
+        "lean": "Over 8.5",
+        "confidence": 57,
+        "marketType": "First-set total",
+        "selection": "Over 8.5",
+        "line": 8.5,
+        "americanOdds": -105,
+        "expectedGames": 8.8,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "modelPct": 57,
+        "evPer100": 11.3,
+        "netEvPer100": 9.3,
+        "valueGrade": "Thin value",
+        "reason": "Expected first-set games 8.8 vs DraftKings Sportsbook 8.5; Over 8.5. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st service game",
+        "value": "No first-service-game market captured",
+        "lean": "First-service-game prices",
+        "confidence": 53,
+        "firstServiceGameRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-service-game market captured."
+      },
+      {
+        "label": "First games",
+        "value": "No first-game prop market captured",
+        "lean": "First-game prop prices",
+        "confidence": 53,
+        "firstGamePropRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-games prop captured."
+      }
+    ],
+    "marketEconomics": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T22:16:53.445Z",
+      "eventUrl": "https://sportsbook.draftkings.com/leagues/tennis/wta-foggia?event=34241330",
+      "deskName": "Tyra Caterina Grant",
+      "deskPricePct": 97.5,
+      "deskEdgePct": -44.5,
+      "priceAction": "ML payout is tiny; use spread/total or pass unless the number moves.",
+      "players": [
+        {
+          "name": "Tyra Caterina Grant",
+          "americanOdds": -3900,
+          "impliedPct": 97.5,
+          "modelPct": 53,
+          "edgePct": -44.5,
+          "priceBand": "Very expensive favorite",
+          "grossProfitPct": 2.6,
+          "grossPayoutMultiple": 1.026,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 2.6,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        },
+        {
+          "name": "Tatiana Pieri",
+          "americanOdds": 1080,
+          "impliedPct": 8.5,
+          "modelPct": 47,
+          "edgePct": 38.5,
+          "priceBand": "Underdog",
+          "grossProfitPct": 1080,
+          "grossPayoutMultiple": 11.8,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 1080,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        }
+      ]
+    },
+    "clayMatchupData": null,
+    "opponentQualityData": null,
+    "researchLinks": [
+      {
+        "label": "ESPN tennis scoreboard",
+        "url": "https://www.espn.com/tennis/scoreboard/_/date/20260605"
+      },
+      {
+        "label": "TennisLive",
+        "url": "https://www.tennislive.net/"
+      },
+      {
+        "label": "DraftKings Sportsbook event",
+        "url": "https://sportsbook.draftkings.com/leagues/tennis/wta-foggia?event=34241330"
+      }
+    ],
+    "formEdgeName": "Tyra Caterina Grant"
+  },
+  "participants": [
+    {
+      "id": "rg-w-tyra-caterina-grant-tatiana-pieri-2026-06-05:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Tyra Caterina Grant",
+      "detail": "Rank not joined | adj form 73",
+      "americanOdds": -3900,
+      "americanLabel": "-3900",
+      "decimalOdds": 1.0256410256410255,
+      "impliedProbability": 0.975,
+      "impliedProbabilityLabel": "97.5%"
+    },
+    {
+      "id": "rg-w-tyra-caterina-grant-tatiana-pieri-2026-06-05:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Tatiana Pieri",
+      "detail": "Rank not joined | adj form 40",
+      "americanOdds": 1080,
+      "americanLabel": "+1080",
+      "decimalOdds": 11.8,
+      "impliedProbability": 0.0847457627118644,
+      "impliedProbabilityLabel": "8.5%"
+    }
+  ],
+  "moneyline": {
+    "available": true,
+    "label": "DraftKings Sportsbook moneyline",
+    "provider": "DraftKings Sportsbook",
+    "participants": [
+      {
+        "id": "rg-w-tyra-caterina-grant-tatiana-pieri-2026-06-05:0",
+        "index": 0,
+        "role": "Player 1",
+        "name": "Tyra Caterina Grant",
+        "detail": "Rank not joined | adj form 73",
+        "americanOdds": -3900,
+        "americanLabel": "-3900",
+        "decimalOdds": 1.0256410256410255,
+        "impliedProbability": 0.975,
+        "impliedProbabilityLabel": "97.5%"
+      },
+      {
+        "id": "rg-w-tyra-caterina-grant-tatiana-pieri-2026-06-05:1",
+        "index": 1,
+        "role": "Player 2",
+        "name": "Tatiana Pieri",
+        "detail": "Rank not joined | adj form 40",
+        "americanOdds": 1080,
+        "americanLabel": "+1080",
+        "decimalOdds": 11.8,
+        "impliedProbability": 0.0847457627118644,
+        "impliedProbabilityLabel": "8.5%"
+      }
+    ]
+  },
+  "analysis": {
+    "available": true,
+    "participantId": "rg-w-tyra-caterina-grant-tatiana-pieri-2026-06-05:0",
+    "participant": {
+      "id": "rg-w-tyra-caterina-grant-tatiana-pieri-2026-06-05:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Tyra Caterina Grant",
+      "detail": "Rank not joined | adj form 73",
+      "americanOdds": -3900,
+      "americanLabel": "-3900",
+      "decimalOdds": 1.0256410256410255,
+      "impliedProbability": 0.975,
+      "impliedProbabilityLabel": "97.5%"
+    },
+    "opponent": {
+      "id": "rg-w-tyra-caterina-grant-tatiana-pieri-2026-06-05:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Tatiana Pieri",
+      "detail": "Rank not joined | adj form 40",
+      "americanOdds": 1080,
+      "americanLabel": "+1080",
+      "decimalOdds": 11.8,
+      "impliedProbability": 0.0847457627118644,
+      "impliedProbabilityLabel": "8.5%"
+    },
+    "lean": "Lean Tyra Caterina Grant; ML payout is tiny; use spread/total or pass unless the number moves.",
+    "rationale": "Our model pick: Tyra Caterina Grant. Tyra Caterina Grant grades 33 points better on opponent-adjusted recent form. Lean, not a chase.",
+    "confidence": 53,
+    "volatility": 56,
+    "recommendationScore": 39,
+    "tier": "Watch",
+    "sourceLabel": "DraftKings Sportsbook",
+    "modelEdge": null,
+    "modelEdgeLabel": "",
+    "marketProbability": 0.975,
+    "marketProbabilityLabel": "97.5%",
+    "inputs": [],
+    "inputsUsed": 0,
+    "volatilityNotes": [],
+    "indicators": {}
+  },
+  "metadata": {
+    "participantCount": 2,
+    "participantNames": [
+      "Tyra Caterina Grant",
+      "Tatiana Pieri"
+    ],
+    "tagCount": 7,
+    "hasSeriesBreakdown": false,
+    "hasMoneyline": true,
+    "hasAnalysisPick": true,
+    "hasStructuredInputs": false,
+    "hasPlayerProps": false,
+    "startMinutes": 540,
+    "spotlight": false,
+    "league": "Tennis",
+    "oddsProvider": "DraftKings Sportsbook"
+  }
+}

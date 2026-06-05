@@ -48,8 +48,54 @@ def compact_json(value: Any) -> str:
     return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
 
 
+def score_result_score(score_text: Any) -> tuple[int, int] | None:
+    sets = re.findall(r"(\d+)\s*-\s*(\d+)", str(score_text or ""))
+    if not sets:
+        return None
+    left = 0
+    right = 0
+    for a_text, b_text in sets:
+        a = int(a_text)
+        b = int(b_text)
+        if a > b:
+            left += 1
+        elif b > a:
+            right += 1
+    return (left, right)
+
+
+def score_game_pct(score_text: Any, outcome: Any) -> float | None:
+    games = re.findall(r"(\d+)\s*-\s*(\d+)", str(score_text or ""))
+    if not games:
+        return None
+    won = 0
+    lost = 0
+    player_won = str(outcome or "").upper().startswith("W")
+    for a_text, b_text in games:
+        a = int(a_text)
+        b = int(b_text)
+        if player_won:
+            won += a
+            lost += b
+        else:
+            won += b
+            lost += a
+    total = won + lost
+    return round(won / total, 3) if total else None
+
+
+def has_completed_score(link: dict[str, Any]) -> bool:
+    result = str(link.get("outcome") or link.get("result_text") or "").strip()
+    score = str(link.get("score_text") or "").strip()
+    if not result and not score:
+        return False
+    if re.search(r"\d+\s*-\s*\d+", score):
+        return True
+    return bool(re.search(r"\b(?:win|won|loss|lost|retired|walkover)\b", result, flags=re.I))
+
+
 def visible_text(value: str) -> str:
-    text = re.sub(r"<sup>(.*?)</sup>", r"\1", value, flags=re.I | re.S)
+    text = re.sub(r"<sup>(.*?)</sup>", r" \1", value, flags=re.I | re.S)
     text = re.sub(r"<[^>]+>", " ", text)
     text = html.unescape(text)
     return re.sub(r"\s+", " ", text).strip()
@@ -91,6 +137,17 @@ def parse_date(value: Any) -> str | None:
     year_int = int(year)
     if year_int < 100:
         year_int += 2000
+    return f"{year_int:04d}-{int(month):02d}-{int(day):02d}"
+
+
+def parse_birthdate(value: Any) -> str | None:
+    match = re.search(r"(\d{1,2})\.(\d{1,2})\.(\d{2,4})", str(value or ""))
+    if not match:
+        return None
+    day, month, year = match.groups()
+    year_int = int(year)
+    if year_int < 100:
+        year_int += 1900 if year_int >= 40 else 2000
     return f"{year_int:04d}-{int(month):02d}-{int(day):02d}"
 
 
@@ -337,6 +394,108 @@ def upsert_entity_alias(
     )
 
 
+def upsert_recent_form_from_links(
+    con: sqlite3.Connection,
+    *,
+    player_id: str,
+    player_name: str,
+    tour: str | None,
+    source_player_url: str,
+    source_snapshot_id: str,
+    links: list[dict[str, Any]],
+    max_matches: int,
+) -> int:
+    recent_links = [link for link in links if link.get("source_match_url") and has_completed_score(link)][:max_matches]
+    if not recent_links:
+        return 0
+    created_at = utc_now()
+    compact_matches: list[dict[str, Any]] = []
+    wins = 0
+    game_pcts: list[float] = []
+    surface_counts: dict[str, int] = {}
+    for index, link in enumerate(recent_links):
+        opponent_name = link.get("opponent_name")
+        opponent_id = upsert_player(con, opponent_name, tour) if opponent_name else None
+        recent_match_id = stable_id("tennislive-recent", player_id, link.get("source_match_url"))
+        outcome = str(link.get("outcome") or "").upper()
+        if outcome.startswith("W"):
+            wins += 1
+        game_pct = score_game_pct(link.get("score_text"), outcome)
+        if isinstance(game_pct, float):
+            game_pcts.append(game_pct)
+        surface = link.get("surface")
+        if surface:
+            surface_counts[str(surface)] = surface_counts.get(str(surface), 0) + 1
+        con.execute(
+            """
+            insert or replace into recent_matches(
+              recent_match_id, player_id, opponent_player_id, match_date, tournament_name,
+              surface, round, result, score, opponent_rank, source_name, source_snapshot_id
+            ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, null, ?, ?)
+            """,
+            (
+                recent_match_id,
+                player_id,
+                opponent_id,
+                link.get("match_date"),
+                link.get("tournament"),
+                surface,
+                link.get("round"),
+                link.get("outcome") or link.get("result_text"),
+                link.get("score_text"),
+                SOURCE_NAME,
+                source_snapshot_id,
+            ),
+        )
+        compact_matches.append(
+            {
+                "index": index + 1,
+                "date": link.get("match_date"),
+                "opponent": opponent_name,
+                "tournament": link.get("tournament"),
+                "surface": surface,
+                "round": link.get("round"),
+                "result": link.get("outcome") or link.get("result_text"),
+                "score": link.get("score_text"),
+                "sourceUrl": link.get("source_match_url"),
+            }
+        )
+    sample_size = len(recent_links)
+    recent_win_pct = round(wins / sample_size, 3) if sample_size else None
+    recent_game_pct = round(sum(game_pcts) / len(game_pcts), 3) if game_pcts else None
+    form_score = None
+    if recent_win_pct is not None:
+        form_score = round((recent_win_pct * 100) * 0.7 + ((recent_game_pct or 0.5) * 100) * 0.3, 1)
+    features = {
+        "source": SOURCE_NAME,
+        "source_url": source_player_url,
+        "recent_match_count": sample_size,
+        "recent_matches": compact_matches,
+        "recent_win_pct": recent_win_pct,
+        "recent_game_pct": recent_game_pct,
+        "scoreline_form_score": form_score,
+        "opponent_adjusted_form_score": form_score,
+        "surface_counts": surface_counts,
+    }
+    form_snapshot_id = stable_id("tennislive-form", player_id, source_player_url, "recent5")
+    con.execute(
+        """
+        insert or replace into player_form_snapshots(
+          form_snapshot_id, player_id, snapshot_date, surface, sample_size, features_json, created_at
+        ) values (?, ?, ?, null, ?, ?, ?)
+        """,
+        (
+            form_snapshot_id,
+            player_id,
+            created_at[:10],
+            sample_size,
+            compact_json(features),
+            created_at,
+        ),
+    )
+    return sample_size
+
+
 def parse_profile(html_text: str, root: Node, url: str) -> dict[str, Any]:
     block_match = re.search(r'<div class="player_stats">(.*?)</div>', html_text, flags=re.I | re.S)
     block = block_match.group(1) if block_match else ""
@@ -354,7 +513,7 @@ def parse_profile(html_text: str, root: Node, url: str) -> dict[str, Any]:
     return {
         "name": after("Name"),
         "country": after("Country"),
-        "birthdate": parse_date(birth),
+        "birthdate": parse_birthdate(birth),
         "age": parse_int(re.search(r",\s*(\d+)\s+years", birth).group(1)) if re.search(r",\s*(\d+)\s+years", birth) else None,
         "ranking_label": ranking_label,
         "current_ranking": parse_int(ranking_match.group(1) if ranking_match else after(ranking_label) if ranking_label else None),
@@ -504,6 +663,138 @@ def parse_match_stats(root: Node) -> list[dict[str, Any]]:
     return []
 
 
+def html_cells(row_html: str) -> list[str]:
+    return re.findall(r"<td\b[^>]*>(.*?)</td>", row_html, flags=re.I | re.S)
+
+
+def html_cells_with_attrs(row_html: str) -> list[tuple[str, str]]:
+    return re.findall(r"<td\b([^>]*)>(.*?)</td>", row_html, flags=re.I | re.S)
+
+
+def html_class_attr(attrs: str) -> str:
+    match = re.search(r'class="([^"]*)"', attrs or "", flags=re.I)
+    return match.group(1) if match else ""
+
+
+def parse_match_player_snapshots(html_text: str, summary: dict[str, Any], url: str) -> list[dict[str, Any]]:
+    block_match = re.search(r'<div class="player_compare">(.*?)</div>\s*<b>INFO</b>', html_text, flags=re.I | re.S)
+    if not block_match:
+        return []
+    block = block_match.group(1)
+    info_matches = re.findall(r'<div class="player_comp_info_(left|right)">(.*?)</div>', block, flags=re.I | re.S)
+    photo_matches = re.findall(r'<img\b[^>]*class="img-circle"[^>]*>', block, flags=re.I | re.S)
+    snapshots = []
+    for index, side_name in enumerate(("left", "right")):
+        info = next((payload for direction, payload in info_matches if direction.lower() == side_name), "")
+        values = [visible_text(item) or None for item in re.split(r"<br\s*/?>", info, flags=re.I)]
+        while values and values[-1] is None:
+            values.pop()
+        player_name = summary.get("player1_name") if side_name == "left" else summary.get("player2_name")
+        photo_tag = photo_matches[index] if index < len(photo_matches) else ""
+        photo_url = None
+        photo_match = re.search(r'\bsrc="([^"]+)"', photo_tag, flags=re.I)
+        if photo_match:
+            photo_url = urljoin(url, photo_match.group(1))
+        birthdate = None
+        age = None
+        if len(values) > 1 and values[1]:
+            birth_parts = [part.strip() for part in str(values[1]).split(",", 1)]
+            birthdate = parse_birthdate(birth_parts[0])
+            if len(birth_parts) > 1:
+                age = parse_int(birth_parts[1])
+        snapshots.append(
+            {
+                "side": 1 if side_name == "left" else 2,
+                "player_name": player_name,
+                "country": values[0] if len(values) > 0 else None,
+                "birthdate": birthdate,
+                "age": age,
+                "height": values[2] if len(values) > 2 else None,
+                "weight": values[3] if len(values) > 3 else None,
+                "pro_since": values[4] if len(values) > 4 else None,
+                "play_hand": values[5] if len(values) > 5 else None,
+                "current_ranking": parse_int(values[6]) if len(values) > 6 else None,
+                "points": parse_int(values[7]) if len(values) > 7 else None,
+                "prize_money": values[8] if len(values) > 8 else None,
+                "photo_url": photo_url,
+                "raw": values,
+            }
+        )
+    return snapshots
+
+
+def parse_h2h_source_rows(html_text: str, summary: dict[str, Any], url: str) -> list[dict[str, Any]]:
+    h2h_match = re.search(r"- H2H matches</span></h2>\s*<table class=\"table_pmatches\">(.*?)</table>", html_text, flags=re.I | re.S)
+    if not h2h_match:
+        return []
+    rows = []
+    current_tournament = ""
+    current_surface = ""
+    for row_html in re.findall(r"<tr\b([^>]*)>(.*?)</tr>", h2h_match.group(1), flags=re.I | re.S):
+        attrs, body = row_html
+        cell_pairs = html_cells_with_attrs(body)
+        cells = [cell_body for _, cell_body in cell_pairs]
+        if len(cells) < 6:
+            continue
+        if len(cells) > 6:
+            tournament_cell = cells[6]
+            current_tournament = visible_text(tournament_cell)
+            current_surface = surface_from_class(html_class_attr(cell_pairs[7][0]) if len(cell_pairs) > 7 else "", current_surface)
+        detail_match = re.search(r'<a\b[^>]*href="([^"]+)"[^>]*title="match details"', cells[5], flags=re.I | re.S)
+        player1_cell = cells[2]
+        player2_cell = cells[3]
+        player1_name = visible_text(player1_cell)
+        player2_name = visible_text(player2_cell)
+        winner_name = player1_name if re.search(r"<b\b", player1_cell, flags=re.I) else player2_name if re.search(r"<b\b", player2_cell, flags=re.I) else None
+        rows.append(
+            {
+                "match_date": parse_date(visible_text(cells[0])),
+                "round": visible_text(cells[1]),
+                "player1_name": player1_name,
+                "player2_name": player2_name,
+                "winner_name": winner_name,
+                "score_text": visible_text(cells[4]),
+                "tournament": current_tournament,
+                "surface": current_surface,
+                "source_match_url": urljoin(url, detail_match.group(1)) if detail_match else None,
+                "raw": visible_text(" ".join(cells)),
+            }
+        )
+    return rows
+
+
+def parse_form_chart_points(html_text: str, summary: dict[str, Any], url: str) -> list[dict[str, Any]]:
+    points = []
+    blocks = re.findall(r"var\s+data([12])\s*=\s*google\.visualization\.arrayToDataTable\(\[(.*?)\]\);", html_text, flags=re.I | re.S)
+    for chart_id, payload in blocks:
+        player_name = summary.get("player1_name") if chart_id == "1" else summary.get("player2_name")
+        for index, (label, value_text) in enumerate(re.findall(r"\['([^']*)'\s*,\s*(-?\d+(?:\.\d+)?)\]", payload)):
+            if label == "0":
+                continue
+            label_match = re.match(r"(\d{1,2}\.\d{1,2}\.\d{2,4})\s+\((.*?)\)", label)
+            result = None
+            opponent_name = None
+            if label_match:
+                result_match = re.match(r"(win|lost|loss)\s+vs\s+(.+)", label_match.group(2), flags=re.I)
+                if result_match:
+                    result = result_match.group(1).lower()
+                    opponent_name = result_match.group(2).strip()
+            points.append(
+                {
+                    "player_name": player_name,
+                    "chart_context": f"match_page_form_player_{chart_id}",
+                    "sequence_index": index,
+                    "form_value": float(value_text),
+                    "label": label,
+                    "match_date": parse_date(label_match.group(1)) if label_match else None,
+                    "result": result,
+                    "opponent_name": opponent_name,
+                    "raw": {"source_match_url": url, "label": label, "value": float(value_text)},
+                }
+            )
+    return points
+
+
 def parse_replay(root: Node) -> list[dict[str, Any]]:
     replay: list[dict[str, Any]] = []
     game_number_by_set: dict[int, int] = {}
@@ -649,11 +940,23 @@ def ingest_player(con: sqlite3.Connection, url: str, max_links: int, max_matches
         )
         surface_count += 1
     links = extract_match_links(root, profile["name"], url, max_links)
+    recent_rows = upsert_recent_form_from_links(
+        con,
+        player_id=player_id,
+        player_name=profile["name"],
+        tour="ATP" if "/atp/" in url else "WTA" if "/wta/" in url else None,
+        source_player_url=url,
+        source_snapshot_id=snapshot_id,
+        links=links,
+        max_matches=max_matches,
+    )
     fetched = 0
     skipped = 0
     failed = 0
-    for index, link in enumerate(links):
+    link_ids: dict[str, str] = {}
+    for link in links:
         link_id = stable_id("tennislive-match-link", player_id, link["source_match_url"])
+        link_ids[link["source_match_url"]] = link_id
         con.execute(
             """
             insert into tennislive_player_match_links(
@@ -691,8 +994,8 @@ def ingest_player(con: sqlite3.Connection, url: str, max_links: int, max_matches
                 link["opponent_name"], link["result_text"], link["score_text"], link["tournament"], link["surface"], link["outcome"], snapshot_id, "discovered", compact_json(link),
             ),
         )
-        if index >= max_matches:
-            continue
+    for link in [item for item in links if has_completed_score(item)][:max_matches]:
+        link_id = link_ids[link["source_match_url"]]
         existing = con.execute("select last_content_hash from tennislive_match_sources where source_match_url = ?", (link["source_match_url"],)).fetchone()
         if existing and not force:
             skipped += 1
@@ -716,6 +1019,7 @@ def ingest_player(con: sqlite3.Connection, url: str, max_links: int, max_matches
         "snapshot_already_seen": already,
         "surface_records": surface_count,
         "match_links": len(links),
+        "recent_matches_upserted": recent_rows,
         "matches_fetched": fetched,
         "matches_skipped_existing": skipped,
         "matches_failed": failed,
@@ -732,6 +1036,7 @@ def ingest_match(con: sqlite3.Connection, url: str, force: bool = False) -> dict
     existing = con.execute("select match_id, last_content_hash from tennislive_match_sources where source_match_url = ?", (url,)).fetchone()
     if existing and existing["last_content_hash"] == digest and not force:
         return {"match_id": existing["match_id"], "skipped_existing": True}
+    tour = "ATP" if "/atp/" in url else "WTA" if "/wta/" in url else None
     match_id, player1_id, player2_id = upsert_match(con, summary, url, snapshot_id)
     captured_at = utc_now()
     event_slug = urlparse(url).path.strip("/").split("/")[-1]
@@ -759,6 +1064,83 @@ def ingest_match(con: sqlite3.Connection, url: str, force: bool = False) -> dict
             summary.get("status"), snapshot_id, captured_at, compact_json(summary),
         ),
     )
+    con.execute("delete from tennislive_match_player_snapshots where match_id = ? and source_name = ?", (match_id, SOURCE_NAME))
+    snapshot_count = 0
+    for row in parse_match_player_snapshots(html_text, summary, url):
+        row_player_id = player1_id if row["side"] == 1 else player2_id if row["side"] == 2 else upsert_player(con, row.get("player_name"), tour)
+        row_id = stable_id("tennislive-match-player-snapshot", match_id, row_player_id, row["side"], snapshot_id)
+        con.execute(
+            """
+            insert or replace into tennislive_match_player_snapshots(
+              match_player_snapshot_id, match_id, player_id, source_name, source_match_url,
+              side, player_name, country, birthdate, age, height, weight, pro_since,
+              play_hand, current_ranking, points, prize_money, photo_url,
+              source_snapshot_id, captured_at, raw_json
+            ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                row_id, match_id, row_player_id, SOURCE_NAME, url, row["side"], row.get("player_name"),
+                row.get("country"), row.get("birthdate"), row.get("age"), row.get("height"), row.get("weight"),
+                row.get("pro_since"), row.get("play_hand"), row.get("current_ranking"), row.get("points"),
+                row.get("prize_money"), row.get("photo_url"), snapshot_id, captured_at, compact_json(row),
+            ),
+        )
+        snapshot_count += 1
+    con.execute("delete from tennislive_h2h_source_rows where source_url = ? and source_name = ?", (url, SOURCE_NAME))
+    h2h_count = 0
+    for row in parse_h2h_source_rows(html_text, summary, url):
+        row_player1_id = upsert_player(con, row.get("player1_name"), tour) if row.get("player1_name") else None
+        row_player2_id = upsert_player(con, row.get("player2_name"), tour) if row.get("player2_name") else None
+        winner_id = upsert_player(con, row.get("winner_name"), tour) if row.get("winner_name") else None
+        source_match_url = row.get("source_match_url")
+        row_match_id = canonical_match_id(
+            {
+                "match_date": row.get("match_date"),
+                "tournament": row.get("tournament"),
+                "player1_name": row.get("player1_name"),
+                "player2_name": row.get("player2_name"),
+            },
+            source_match_url or "",
+        )
+        h2h_row_id = stable_id("tennislive-h2h", url, row.get("match_date"), row.get("player1_name"), row.get("player2_name"), row.get("score_text"))
+        con.execute(
+            """
+            insert or replace into tennislive_h2h_source_rows(
+              h2h_source_row_id, source_name, source_url, player1_id, player2_id,
+              match_id, match_date, round, player1_name, player2_name, winner_name,
+              score_text, tournament, surface, source_match_url, source_snapshot_id,
+              captured_at, raw_json
+            ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                h2h_row_id, SOURCE_NAME, url, row_player1_id, row_player2_id, row_match_id,
+                row.get("match_date"), row.get("round"), row.get("player1_name"), row.get("player2_name"),
+                row.get("winner_name"), row.get("score_text"), row.get("tournament"), row.get("surface"),
+                source_match_url, snapshot_id, captured_at, compact_json({**row, "winner_id": winner_id}),
+            ),
+        )
+        h2h_count += 1
+    con.execute("delete from tennislive_form_chart_points where source_url = ? and source_name = ?", (url, SOURCE_NAME))
+    chart_count = 0
+    for row in parse_form_chart_points(html_text, summary, url):
+        row_player_id = player1_id if normalize_name(row.get("player_name")) == normalize_name(summary.get("player1_name")) else player2_id
+        opponent_id = upsert_player(con, row.get("opponent_name"), tour) if row.get("opponent_name") else None
+        point_id = stable_id("tennislive-form-chart", url, row_player_id, row.get("sequence_index"), row.get("label"))
+        con.execute(
+            """
+            insert or replace into tennislive_form_chart_points(
+              form_chart_point_id, player_id, source_name, source_url, chart_context,
+              opponent_player_id, sequence_index, form_value, label, source_snapshot_id,
+              captured_at, raw_json
+            ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                point_id, row_player_id, SOURCE_NAME, url, row.get("chart_context"), opponent_id,
+                row.get("sequence_index"), row.get("form_value"), row.get("label"),
+                snapshot_id, captured_at, compact_json(row),
+            ),
+        )
+        chart_count += 1
     con.execute("delete from match_stat_rows where match_id = ? and source_name = ?", (match_id, SOURCE_NAME))
     stat_count = 0
     for row in parse_match_stats(root):
@@ -848,6 +1230,9 @@ def ingest_match(con: sqlite3.Connection, url: str, force: bool = False) -> dict
         "match_id": match_id,
         "skipped_existing": False,
         "snapshot_already_seen": already,
+        "player_snapshots": snapshot_count,
+        "h2h_rows": h2h_count,
+        "form_chart_points": chart_count,
         "stats": stat_count,
         "replay_games": replay_game_count,
         "replay_points": replay_point_count,
